@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "declared_object_scope": "one continuously maintained Korean edition of the complete EGA corpus; this exact cumulative release covers only the enumerated current frontier",
+  "original_or_source_title": "Éléments de géométrie algébrique I and EGA 0_I",
+  "original_or_source_edition": "NUMDAM-based canonical French TeX working authority observed 2026-08-13",
+  "original_or_source_identifier": "https://doi.org/10.5281/zenodo.20414353",
+  "source_artifact_path_or_public_url": "source/ega1/ega0-1-fr.tex in the canonical French EGA corpus",
+  "source_artifact_bytes": 282505,
+  "source_artifact_sha256": "F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16",
+  "translated_prefix": {
+    "locator": "LF-normalized source lines 1-2313 with terminal LF; end of 4.1.7 and subsection 4.1",
+    "bytes": 113784,
+    "sha256": "A456769080204F8C36ED29D0466A0B6CC797FE8A87C248CC6E0103942A135C75"
+  },
+  "additional_complete_components": [
+    "EGA I front matter",
+    "EGA I complete introduction",
+    "EGA I bibliography with 22 items"
+  ],
+  "authority_hierarchy": [
+    "NUMDAM-based canonical French TeX, read-only",
+    "English witnesses only for sense checking; never source authority"
+  ],
+  "excluded_scope": [
+    "EGA 0_I from 4.2 onward",
+    "remaining EGA I chapters and later EGA volumes"
+  ],
+  "subwork_doi_policy": "EGA volumes are reader files within this single Korean EGA language DOI lineage, not separate DOI lineages"
+}

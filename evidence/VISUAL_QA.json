@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "reader_sha256": "3A1878316D1A18D8995AC656D90F36067B12E98AF6F533E274F6CE9E4B210AB6",
+  "render_count": 30,
+  "render_dimensions": "1191x1684",
+  "dpi": 144,
+  "rotation": 0,
+  "inspection": "direct every-page visual inspection; standalone deterministic release PDF rerender reproduced all 30 inspected PNGs byte-for-byte",
+  "checked": [
+    "cover and edition/DOI page",
+    "historical legal leaf",
+    "linked Korean table of contents",
+    "all Korean prose and displayed formulas",
+    "dense diagrams and footnotes",
+    "current 4.1.7 frontier page",
+    "bibliography"
+  ],
+  "defects": 0,
+  "result": "PASS"
+}

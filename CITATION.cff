@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the Korean EGA edition using the preferred citation."
+title: "Source and build repository for the Korean cumulative edition of EGA"
+type: software
+authors:
+  - name: "OpenAI Codex / Interlanguage Project"
+repository-code: "https://github.com/KokunoYumeto/ega-ko"
+version: "2026-08-13-r1"
+preferred-citation:
+  type: book
+  title: "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition"
+  authors:
+    - family-names: "Grothendieck"
+      given-names: "Alexander"
+    - family-names: "Dieudonné"
+      given-names: "Jean"
+  translators:
+    - name: "OpenAI Codex / Interlanguage Project"
+  languages:
+    - "ko"
+  doi: "10.5281/zenodo.21921514"
+  version: "2026-08-13-r1"
+  year: "2026"
+  url: "https://doi.org/10.5281/zenodo.21921513"

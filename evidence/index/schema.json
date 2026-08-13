@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ag-ko-structure-v1",
+  "title": "Korean algebraic-geometry structural unit",
+  "type": "object",
+  "required": ["id", "kind", "parent", "order", "authority", "target", "language", "state"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"enum": ["frontmatter", "legal", "section", "subsection", "prose", "enumeration", "environment", "display", "footnote", "bibliography"]},
+    "parent": {"type": ["string", "null"]},
+    "order": {"type": "integer", "minimum": 1},
+    "authority": {
+      "type": "object",
+      "required": ["path", "sha256", "locator"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
+        "locator": {"type": "string"}
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": ["path", "locator"],
+      "properties": {
+        "path": {"type": "string"},
+        "locator": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"}
+      }
+    },
+    "relations": {"type": "array", "items": {"type": "string"}},
+    "language": {"const": "ko-KR"},
+    "state": {
+      "type": "object",
+      "required": ["translation", "build", "visual", "publication"],
+      "properties": {
+        "translation": {"enum": ["complete", "partial", "pending"]},
+        "build": {"enum": ["pass", "pending", "not_applicable"]},
+        "visual": {"enum": ["pass", "pending", "not_applicable"]},
+        "publication": {"enum": ["private_working", "release_ready", "published"]}
+      }
+    }
+  }
+}

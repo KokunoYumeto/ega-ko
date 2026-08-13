@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "version": "2026-08-13-r1",
+  "coverage": "EGA I front matter and complete introduction; EGA 0_I source lines 1-2313 through 4.1.7; bibliography",
+  "corpus_complete": false,
+  "source_replay": "PASS: exact French authority and LF-normalized translated-prefix hashes reproduced",
+  "model_or_agent_checks": "PASS for every translated closed unit through the declared frontier; decisions and adverse evidence retained",
+  "deterministic_build": "PASS: standalone XeLaTeX three-pass build with fixed SOURCE_DATE_EPOCH repeated; 30-page PDF remained byte-identical at 378163 bytes / 3A1878316D1A18D8995AC656D90F36067B12E98AF6F533E274F6CE9E4B210AB6",
+  "compile_diagnostics": "PASS: zero Undefined control sequence, LaTeX Error, Missing character, overfull hbox, or underfull hbox hits",
+  "extraction": "PASS: 106580-byte UTF-8 extraction / 817DEB127A9CC3E78C71ABB0F901253C3B1DFF83B5787661C9D3619C7DBB07E6; 22006 Hangul syllables; both DOIs, repository, 4.1.7 and gluing terminology present",
+  "rendered_inspection": "PASS: all 30 pages rendered at 144 dpi and directly inspected; the standalone deterministic PDF reproduced the inspected extraction byte-for-byte and all 30 rendered PNGs byte-for-byte; no clipping, overlap, tofu, malformed formula, footnote collision, or bibliography collision",
+  "artifact_manifest": "evidence/ARTIFACT_SHA256.tsv",
+  "unresolved_items": "evidence/UNRESOLVED_ITEMS.tsv",
+  "human_review_required": false,
+  "release_closed": true,
+  "closure_reason": "Exact current scope is source-pinned, translated, repeat-built, extracted, rendered on every page, and fully represented in the evidence ledgers. Whole-corpus incompleteness is stated explicitly and does not omit any completed unit."
+}

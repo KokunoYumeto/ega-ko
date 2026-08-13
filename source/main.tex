@@ -1,0 +1,71 @@
+\documentclass[10pt,oneside]{book}
+
+\usepackage{fontspec}
+\setmainfont{Malgun Gothic}[
+  ItalicFont={Malgun Gothic},
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont={Malgun Gothic Bold},
+  BoldItalicFeatures={FakeSlant=0.2}
+]
+\setsansfont{Malgun Gothic}
+\XeTeXlinebreaklocale "ko"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage[all]{xy}
+\usepackage{tikz-cd}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  hypertexnames=false,
+  unicode=true,
+  pdfencoding=auto
+]{hyperref}
+\hypersetup{
+  pdftitle={대수기하학 원론 I -- 스킴의 언어 -- 한국어 누적판},
+  pdfauthor={알렉산더 그로텐디크와 장 디외도네},
+  pdfsubject={NUMDAM 프랑스어 권위본에 따른 한국어 누적 번역}
+}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\bibname}{참고문헌}
+\renewcommand{\contentsname}{목차}
+\newcommand{\oldpage}[2][]{%
+  \setcounter{footnote}{0}%
+  \marginpar{\scriptsize\textbf{#1}~|~#2}\ignorespaces}
+\newenvironment{env}[1][]{\par\medskip\noindent\textbf{(#1)}\ }{\par}
+\newenvironment{definition}[1][]{%
+  \par\medskip\noindent\itshape 정의 (#1). ---\ }{\par}
+\newenvironment{proposition}[1][]{%
+  \par\medskip\noindent\itshape 명제 (#1). ---\ }{\par}
+\newenvironment{theorem}[1][]{%
+  \par\medskip\noindent\itshape 정리 (#1). ---\ }{\par}
+\newenvironment{corollary}[1][]{%
+  \par\medskip\noindent\itshape 따름정리 (#1). ---\ }{\par}
+\newenvironment{remark}[1][]{%
+  \par\medskip\noindent\itshape 주 (#1). ---\ }{\par}
+\newenvironment{lemma}[1][]{%
+  \par\medskip\noindent\itshape 보조정리 (#1). ---\ }{\par}
+\newenvironment{example}[1][]{%
+  \par\medskip\noindent\textit{예 (#1). ---\ }}{\par}
+\newenvironment{examples}[1][]{%
+  \par\medskip\noindent\textit{예들 (#1). ---\ }}{\par}
+\newenvironment{notation}[1][]{%
+  \par\medskip\noindent\textit{표기 (#1). ---\ }}{\par}
+\newenvironment{proof}{%
+  \par\medskip\noindent\textit{증명. ---\ }}{\par}
+\newenvironment{namedtheorem}[2][]{%
+  \par\medskip\noindent\itshape #2 (#1). ---\ }{\par}
+\newenvironment{namedlemma}[2][]{%
+  \par\medskip\noindent\itshape #2 (#1). ---\ }{\par}
+
+\begin{document}
+\input{front.tex}
+\tableofcontents
+\clearpage
+\input{intro.tex}
+\clearpage
+\input{c0.tex}
+\input{bib.tex}
+\end{document}

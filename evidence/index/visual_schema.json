@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ag-ko-visual-v1",
+  "type": "object",
+  "required": ["id", "kind", "path", "sha256", "dimensions", "dpi", "linked", "qa", "rights", "disposition"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"enum": ["target_render", "source_crop", "diagram", "contact_sheet", "segmentation", "overlay"]},
+    "path": {"type": "string"},
+    "sha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
+    "dimensions": {"type": "string"},
+    "dpi": {"type": "number"},
+    "rotation": {"type": "number"},
+    "linked": {"type": "array", "items": {"type": "string"}},
+    "qa": {"type": "string"},
+    "rights": {"type": "string"},
+    "disposition": {"type": "string"}
+  }
+}

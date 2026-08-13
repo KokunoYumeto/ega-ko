@@ -1,0 +1,1796 @@
+% Authority: EGA I ega0-1-fr.tex, SHA-256 F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16.
+% Sequential translation begins at authority lines 1-63.
+\section{분수환}
+\label{section:0.1-ko}
+
+\setcounter{subsection}{-1}
+\subsection{환과 대수}
+\label{subsection:0.1.0-ko}
+
+\oldpage[0\textsubscript{I}]{11}
+\begin{env}[1.0.1]
+\label{0.1.0.1-ko}
+이 논고에서 다루는 모든 환은 \emph{단위원}을 갖는다.
+그러한 환 위의 모든 가군은 \emph{단위원 가군}이라고 가정한다. 환 준동형은 언제나 단위원을 단위원으로 보낸다고 가정하며, 명시적으로 달리 말하지 않는 한 환 $A$의 부분환은 $A$의 \emph{단위원을 포함}한다고 가정한다.
+주로 \emph{가환환}을 다루며, 아무 수식 없이 환이라고 말할 때에는 가환환을 뜻하는 것으로 이해한다.
+$A$가 반드시 가환일 필요가 없는 환이면, 명시적으로 달리 말하지 않는 한 $A$-가군은 언제나 \emph{왼쪽} 가군을 뜻한다.
+\end{env}
+
+\begin{env}[1.0.2]
+\label{0.1.0.2-ko}
+$A$, $B$를 반드시 가환일 필요가 없는 두 환이라 하고, $\varphi:A\to B$를 준동형이라 하자.
+모든 왼쪽(각각 오른쪽) $B$-가군 $M$에는 $a.m=\varphi(a).m$(각각 $m.a=m.\varphi(a)$)로 놓아 왼쪽(각각 오른쪽) $A$-가군 구조를 줄 수 있다. $M$ 위의 $A$-가군 구조와 $B$-가군 구조를 구별해야 할 때에는 이렇게 정의한 왼쪽(각각 오른쪽) $A$-가군을 $M_{[\varphi]}$로 나타낸다.
+$L$이 $A$-가군이면 준동형 $u:L\to M_{[\varphi]}$는 곧 $a\in A$, $x\in L$에 대하여 $u(a.x)=\varphi(a).u(x)$를 만족하는 가환군 준동형이다. 이를 $L\to M$인 \emph{$\varphi$-준동형}이라고도 하며, 쌍 $(\varphi,u)$(또는 언어를 남용하여 $u$)를 $(A,L)$에서 $(B,M)$로 가는 \emph{디-준동형}이라고 한다.
+따라서 환 $A$와 $A$-가군 $L$로 이루어진 쌍 $(A,L)$들은 디-준동형을 사상으로 하는 하나의 \emph{범주}를 이룬다.
+\end{env}
+
+\begin{env}[1.0.3]
+\label{0.1.0.3-ko}
+(1.0.2)의 가정 아래에서 $\mathfrak{J}$가 $A$의 왼쪽(각각 오른쪽) 아이디얼이면, $\varphi(\mathfrak{J})$가 생성하는 $B$의 왼쪽(각각 오른쪽) 아이디얼 $B\varphi(\mathfrak{J})$(각각 $\varphi(\mathfrak{J})B$)를 $B\mathfrak{J}$(각각 $\mathfrak{J}B$)로 나타낸다. 이는 왼쪽(각각 오른쪽) $B$-가군의 표준 준동형 $B\otimes_A\mathfrak{J}\to B$(각각 $\mathfrak{J}\otimes_A B\to B$)의 상이기도 하다.
+\end{env}
+
+\begin{env}[1.0.4]
+\label{0.1.0.4-ko}
+$A$가 (가환)환이고 $B$가 반드시 가환일 필요가 없는 환이면, $B$에 \emph{$A$-대수} 구조를 주는 것은 $\varphi(A)$가 $B$의 중심에 포함되도록 하는 환 준동형 $\varphi:A\to B$를 주는 것과 동치이다.
+$A$의 모든 아이디얼 $\mathfrak{J}$에 대하여 $\mathfrak{J}B=B\mathfrak{J}$는 $B$의 양쪽 아이디얼이고, 모든 $B$-가군 $M$에 대하여 $\mathfrak{J}M$은 $(B\mathfrak{J})M$과 같은 $B$-부분가군이다.
+\end{env}
+
+\begin{env}[1.0.5]
+\label{0.1.0.5-ko}
+\emph{유한 생성 가군}과 \emph{유한 생성} (가환) \emph{대수}의 개념은 다시 설명하지 않겠다. $A$-가군 $M$이 유한 생성이라는 것은 완전열
+
+\oldpage[0\textsubscript{I}]{12}
+$A^p\to M\to 0$이 존재한다는 뜻이다.
+$A$-가군 $M$이 어떤 준동형 $A^p\to A^q$의 여핵과 동형일 때, 다시 말해 완전열 $A^p\to A^q\to M\to 0$이 존재할 때 $M$이 \emph{유한 표시}를 갖는다고 한다.
+\emph{뇌터 환} $A$ 위의 모든 유한 생성 $A$-가군은 유한 표시를 갖는다는 점에 유의하자.
+
+$A$-대수 $B$의 모든 원소가 $A$에 계수를 갖는 일계수 다항식의 $B$ 안에서의 근일 때 $B$가 \emph{$A$ 위에서 정수적}이라고 함을 상기하자. 이는 $B$의 모든 원소가 유한 생성 \emph{$A$-가군}인 $B$의 어떤 부분대수에 들어간다는 것과 동치이다.
+이 조건이 성립하고 $B$가 가환이면, $B$의 유한 부분집합이 생성하는 $B$의 부분대수는 유한 생성 $A$-가군이다. 따라서 가환대수 $B$가 $A$ 위에서 정수적이면서 유한 생성일 필요충분조건은 $B$가 유한 생성 $A$-가군인 것이다. 이때 $B$를 \emph{유한 정수적} $A$-대수라고도 한다(혼동의 우려가 없으면 단순히 \emph{유한} $A$-대수라고 한다).
+이 정의들에서는 $A$-대수 구조를 정하는 준동형 $A\to B$가 단사라고 가정하지 않는다는 점에 유의하자.
+\end{env}
+
+\begin{env}[1.0.6]
+\label{0.1.0.6-ko}
+\emph{정역}은 $0$이 아닌 원소들로 이루어진 유한족의 곱이 $0$이 아닌 환이다. 이는 그러한 환에서 $0\neq 1$이고, $0$이 아닌 두 원소의 곱이 $0$이 아니라는 것과 동치이다.
+환 $A$의 \emph{소 아이디얼}은 $A/\mathfrak{p}$가 정역이 되게 하는 아이디얼 $\mathfrak{p}$이다. 따라서 $\mathfrak{p}\neq A$이다.
+환 $A$가 적어도 하나의 소 아이디얼을 가질 필요충분조건은 $A\neq\{0\}$이다.
+\end{env}
+
+\begin{env}[1.0.7]
+\label{0.1.0.7-ko}
+\emph{국소환}은 유일한 극대 아이디얼을 갖는 환 $A$이다. 이 극대 아이디얼은 가역원들의 여집합이며 $A$가 아닌 모든 아이디얼을 포함한다.
+$A$, $B$가 각각 극대 아이디얼 $\mathfrak{m}$, $\mathfrak{n}$을 갖는 두 국소환일 때, 준동형 $\varphi:A\to B$가 $\varphi(\mathfrak{m})\subset\mathfrak{n}$을 만족하면(또는 이와 동치로 $\varphi^{-1}(\mathfrak{n})=\mathfrak{m}$이면) $\varphi$를 \emph{국소 준동형}이라고 한다.
+몫으로 내려가면 이러한 준동형은 잉여체 $A/\mathfrak{m}$에서 잉여체 $B/\mathfrak{n}$으로 가는 단사 준동형을 정한다.
+두 국소 준동형의 합성은 국소 준동형이다.
+\end{env}
+
+\subsection{아이디얼의 근기. 환의 멱영근기와 근기}
+\label{subsection:0.1.1-ko}
+
+\begin{env}[1.1.1]
+\label{0.1.1.1-ko}
+$\mathfrak{a}$를 환 $A$의 아이디얼이라 하자. $\mathfrak{a}$의 \emph{근기} $\mathfrak{r}(\mathfrak{a})$는 어떤 정수 $n>0$에 대하여 $x^n\in\mathfrak{a}$가 되는 $x\in A$ 전체의 집합이다. 이는 $\mathfrak{a}$를 포함하는 아이디얼이다.
+$\mathfrak{r}(\mathfrak{r}(\mathfrak{a}))=\mathfrak{r}(\mathfrak{a})$이고, 관계 $\mathfrak{a}\subset\mathfrak{b}$는 $\mathfrak{r}(\mathfrak{a})\subset\mathfrak{r}(\mathfrak{b})$를 함의하며, 유한개의 아이디얼의 교집합의 근기는 각 근기의 교집합이다.
+$\varphi$가 환 $A'$에서 $A$로 가는 준동형이면, 모든 아이디얼 $\mathfrak{a}\subset A$에 대하여 $\mathfrak{r}(\varphi^{-1}(\mathfrak{a}))=\varphi^{-1}(\mathfrak{r}(\mathfrak{a}))$이다.
+한 아이디얼이 어떤 아이디얼의 근기일 필요충분조건은 그것이 소 아이디얼들의 교집합인 것이다.
+아이디얼 $\mathfrak{a}$의 근기는 $\mathfrak{a}$를 포함하는 소 아이디얼들 가운데 \emph{극소}인 것들의 교집합이다. $A$가 뇌터 환이면 이러한 극소 소 아이디얼은 유한개이다.
+
+영 아이디얼 $(0)$의 근기를 $A$의 \emph{멱영근기}라고도 한다. 이는 $A$의 멱영원 전체의 집합 $\mathfrak{N}$이다.
+$\mathfrak{N}=(0)$일 때 환 $A$를 \emph{축소환}이라고 한다. 모든 환 $A$에 대하여 멱영근기로 나눈 몫환 $A/\mathfrak{N}$은 축소환이다.
+\end{env}
+
+\begin{env}[1.1.2]
+\label{0.1.1.2-ko}
+환 $A$(반드시 가환일 필요는 없다)의 \emph{근기} $\mathfrak{R}(A)$는 $A$의 극대 왼쪽 아이디얼 전체의 교집합(또한 극대 오른쪽 아이디얼 전체의 교집합)임을 상기하자.
+$A/\mathfrak{R}(A)$의 근기는 $(0)$이다.
+\end{env}
+
+\subsection{분수가군과 분수환}
+\label{subsection:0.1.2-ko}
+
+\oldpage[0\textsubscript{I}]{13}
+\begin{env}[1.2.1]
+\label{0.1.2.1-ko}
+환 $A$의 부분집합 $S$가 $1\in S$를 만족하고 $S$의 두 원소의 곱이 다시 $S$에 속하면 $S$를 \emph{곱셈적}이라고 한다.
+이후 가장 중요한 예는 다음과 같다. $1^\circ$ 원소 $f\in A$의 거듭제곱 $f^n$($n\geq 0$) 전체의 집합 $S_f$. $2^\circ$ \emph{소} 아이디얼 $\mathfrak{p}$의 여집합 $A-\mathfrak{p}$.
+\end{env}
+
+\begin{env}[1.2.2]
+\label{0.1.2.2-ko}
+$S$를 환 $A$의 곱셈적 부분집합이라 하고, $M$을 $A$-가군이라 하자. 집합 $M\times S$에서 두 쌍 $(m_1,s_1)$, $(m_2,s_2)$ 사이의 관계
+\[
+  \text{``$s(s_1m_2-s_2m_1)=0$이 되는 $s\in S$가 존재한다''}
+\]
+는 동치관계이다.
+이 관계에 의한 $M\times S$의 몫집합을 $S^{-1}M$으로 나타내고, 쌍 $(m,s)$의 $S^{-1}M$에서의 표준 상을 $m/s$로 나타낸다. 사상 $i_M^S:m\mapsto m/1$($i^S$로도 쓴다)을 $M$에서 $S^{-1}M$으로 가는 \emph{표준 사상}이라고 한다.
+이 사상은 일반적으로 단사도 전사도 아니다. 그 핵은 어떤 $s\in S$에 대하여 $sm=0$이 되는 $m\in M$ 전체의 집합이다.
+
+$S^{-1}M$ 위에
+\[
+  (m_1/s_1)+(m_2/s_2)=(s_2m_1+s_1m_2)/(s_1s_2)
+\]
+로 놓아 덧셈군 연산을 정의한다(이는 선택한 $S^{-1}M$의 원소의 표현에 무관함을 확인할 수 있다).
+또 $S^{-1}A$ 위에 $(a_1/s_1)(a_2/s_2)=(a_1a_2)/(s_1s_2)$로 곱셈을 정의하고, 끝으로 $(a/s)(m/s')=(am)/(ss')$로 놓아 $S^{-1}A$를 작용소 집합으로 하는 $S^{-1}M$ 위의 외부 연산을 정의한다.
+이로써 $S^{-1}A$에는 환 구조가 주어지고($S$에 분모를 갖는 $A$의 \emph{분수환}이라 한다), $S^{-1}M$에는 $S^{-1}A$-가군 구조가 주어진다($S$에 분모를 갖는 $M$의 \emph{분수가군}이라 한다). 모든 $s\in S$에 대하여 $s/1$은 $S^{-1}A$에서 가역이고 그 역원은 $1/s$이다.
+표준 사상 $i_A^S$(각각 $i_M^S$)은 환 준동형(각각 $A$-가군 준동형)이다. 여기서 $S^{-1}M$은 준동형 $i_A^S:A\to S^{-1}A$를 통해 $A$-가군으로 본다.
+\end{env}
+
+\begin{env}[1.2.3]
+\label{0.1.2.3-ko}
+$f\in A$에 대하여 $S_f=\{f^n\}_{n\geq 0}$이면, $S_f^{-1}A$와 $S_f^{-1}M$ 대신 $A_f$와 $M_f$를 쓴다. $A_f$를 $A$ 위의 대수로 볼 때에는 $A_f=A[1/f]$라고 쓸 수 있다.
+$A_f$는 몫대수 $A[T]/(fT-1)A[T]$와 동형이다.
+$f=1$이면 $A_f$와 $M_f$는 각각 $A$와 $M$에 표준적으로 동일시된다. $f$가 멱영원이면 $A_f$와 $M_f$는 모두 영 대상이다.
+
+$S=A-\mathfrak{p}$이고 $\mathfrak{p}$가 $A$의 소 아이디얼이면, $S^{-1}A$와 $S^{-1}M$ 대신 $A_{\mathfrak{p}}$와 $M_{\mathfrak{p}}$를 쓴다. $A_{\mathfrak{p}}$는 $i_A^S(\mathfrak{p})$가 생성하는 극대 아이디얼 $\mathfrak{q}$를 갖는 \emph{국소환}이고 $(i_A^S)^{-1}(\mathfrak{q})=\mathfrak{p}$이다. 몫으로 내려가면 $i_A^S$는 정역 $A/\mathfrak{p}$에서 체 $A_{\mathfrak{p}}/\mathfrak{q}$로 가는 단사 준동형을 주며, 이 체는 $A/\mathfrak{p}$의 분수체와 동일시된다.
+\end{env}
+
+\begin{env}[1.2.4]
+\label{0.1.2.4-ko}
+분수환 $S^{-1}A$와 표준 준동형 $i_A^S$는 하나의 \emph{보편 사상 문제}의 해이다. $u(S)$가 $B$의 \emph{가역원}들로 이루어지도록 하는 $A$에서 환 $B$로 가는 모든 준동형 $u$는 유일한 방식으로
+\[
+  u:A\xrightarrow{i_A^S}S^{-1}A\xrightarrow{u^*}B
+\]
+
+\oldpage[0\textsubscript{I}]{14}
+와 같이 분해된다. 여기서 $u^*$는 환 준동형이다.
+같은 가정 아래에서 $M$을 $A$-가군, $N$을 $B$-가군이라 하고, $v:M\to N$을 $A$-가군 준동형이라 하자($N$의 $A$-가군 구조는 $u:A\to B$로 정한다). 그러면 $v$는 유일한 방식으로
+\[
+  v:M\xrightarrow{i_M^S}S^{-1}M\xrightarrow{v^*}N
+\]
+와 같이 분해된다. 여기서 $v^*$는 $S^{-1}A$-가군 준동형이다($N$의 $S^{-1}A$-가군 구조는 $u^*$로 정한다).
+\end{env}
+
+\begin{env}[1.2.5]
+\label{0.1.2.5-ko}
+원소 $(a/s)\otimes m$에 원소 $(am)/s$를 대응시켜 $S^{-1}A$-가군의 표준 동형 $S^{-1}A\otimes_A M\xrightarrow{\sim}S^{-1}M$을 정의한다. 그 역동형은 $m/s$를 $(1/s)\otimes m$으로 보낸다.
+\end{env}
+
+\begin{env}[1.2.6]
+\label{0.1.2.6-ko}
+$S^{-1}A$의 모든 아이디얼 $\mathfrak{a}'$에 대하여 $\mathfrak{a}=(i_A^S)^{-1}(\mathfrak{a}')$은 $A$의 아이디얼이고, $\mathfrak{a}'$은 $i_A^S(\mathfrak{a})$가 생성하는 $S^{-1}A$의 아이디얼이며 $S^{-1}\mathfrak{a}$와 동일시된다(1.3.2).
+사상 $\mathfrak{p}'\mapsto(i_A^S)^{-1}(\mathfrak{p}')$은 $S^{-1}A$의 \emph{소} 아이디얼 전체의 순서집합에서 $\mathfrak{p}\cap S=\varnothing$을 만족하는 $A$의 소 아이디얼 $\mathfrak{p}$ 전체의 순서집합으로 가는 순서동형이다.
+또한 이때 국소환 $A_{\mathfrak{p}}$와 $(S^{-1}A)_{S^{-1}\mathfrak{p}}$는 표준적으로 동형이다(1.5.1).
+\end{env}
+
+\begin{env}[1.2.7]
+\label{0.1.2.7-ko}
+$A$가 \emph{정역}이고 그 분수체를 $K$로 나타내면, $0$을 포함하지 않는 모든 곱셈적 부분집합 $S$에 대하여 표준 사상 $i_A^S:A\to S^{-1}A$는 단사이고, $S^{-1}A$는 $A$를 포함하는 $K$의 부분환과 표준적으로 동일시된다.
+특히 $A$의 모든 소 아이디얼 $\mathfrak{p}$에 대하여 $A_{\mathfrak{p}}$는 $A$를 포함하고 극대 아이디얼 $\mathfrak{p}A_{\mathfrak{p}}$를 갖는 국소환이며 $\mathfrak{p}A_{\mathfrak{p}}\cap A=\mathfrak{p}$이다.
+\end{env}
+
+\begin{env}[1.2.8]
+\label{0.1.2.8-ko}
+$A$가 \emph{축소환}이면(1.1.1), $S^{-1}A$도 축소환이다. 실제로 $x\in A$, $s\in S$에 대하여 $(x/s)^n=0$이면 $s'x^n=0$이 되는 $s'\in S$가 존재한다. 따라서 $(s'x)^n=0$이고, 가정에 따라 $s'x=0$이므로 $x/s=0$이다.
+\end{env}
+
+\subsection{함자적 성질}
+\label{subsection:0.1.3-ko}
+
+\begin{env}[1.3.1]
+\label{0.1.3.1-ko}
+$M$, $N$을 두 $A$-가군이라 하고, $u$를 $A$-준동형 $M\to N$이라 하자.
+$S$가 $A$의 곱셈적 부분집합이면, $(S^{-1}u)(m/s)=u(m)/s$로 놓아 $S^{-1}u$로 나타내는 $S^{-1}A$-준동형 $S^{-1}M\to S^{-1}N$을 정의한다. $S^{-1}M$과 $S^{-1}N$을 각각 $S^{-1}A\otimes_A M$과 $S^{-1}A\otimes_A N$에 표준적으로 동일시하면(1.2.5), $S^{-1}u$는 $1\otimes u$와 동일시된다.
+$P$가 세 번째 $A$-가군이고 $v$가 $A$-준동형 $N\to P$이면 $S^{-1}(v\circ u)=(S^{-1}v)\circ(S^{-1}u)$이다. 다시 말해 $A$와 $S$를 고정하면 $S^{-1}M$은 $A$-가군의 범주에서 $S^{-1}A$-가군의 범주로 가는, \emph{$M$에 관한 공변 함자}이다.
+\end{env}
+
+\begin{env}[1.3.2]
+\label{0.1.3.2-ko}
+함자 $S^{-1}M$은 \emph{완전}하다. 다시 말해 열
+\[
+  M\xrightarrow{u}N\xrightarrow{v}P
+\]
+이 완전하면 열
+\[
+  S^{-1}M\xrightarrow{S^{-1}u}S^{-1}N\xrightarrow{S^{-1}v}S^{-1}P
+\]
+도 완전하다.
+특히 $u:M\to N$이 단사(각각 전사)이면 $S^{-1}u$도 단사(각각 전사)이다.
+
+\oldpage[0\textsubscript{I}]{15}
+$N$과 $P$가 $M$의 두 부분가군이면, $S^{-1}N$과 $S^{-1}P$는 $S^{-1}M$의 부분가군에 표준적으로 동일시되며
+\[
+  S^{-1}(N+P)=S^{-1}N+S^{-1}P
+  \quad\text{이고}\quad
+  S^{-1}(N\cap P)=(S^{-1}N)\cap(S^{-1}P)
+\]
+이다.
+\end{env}
+
+\begin{env}[1.3.3]
+\label{0.1.3.3-ko}
+$(M_\alpha,\varphi_{\beta\alpha})$를 $A$-가군의 귀납계라 하자. 그러면 $(S^{-1}M_\alpha,S^{-1}\varphi_{\beta\alpha})$는 $S^{-1}A$-가군의 귀납계이다.
+$S^{-1}M_\alpha$와 $S^{-1}\varphi_{\beta\alpha}$를 텐서곱으로 나타내고(1.2.5, 1.3.1), 텐서곱과 귀납극한을 취하는 연산들이 서로 교환한다는 사실을 쓰면 표준 동형
+\[
+  S^{-1}\varinjlim M_\alpha\xrightarrow{\sim}\varinjlim S^{-1}M_\alpha
+\]
+를 얻는다. 이를 함자 $S^{-1}M$($M$에 관한 함자)이 \emph{귀납극한과 가환한다}고도 표현한다.
+\end{env}
+
+\begin{env}[1.3.4]
+\label{0.1.3.4-ko}
+$M$, $N$을 두 $A$-가군이라 하자. $(M,N)$에 관해 \emph{함자적인} 표준 동형
+\[
+  (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)
+  \xrightarrow{\sim}
+  S^{-1}(M\otimes_A N)
+\]
+이 존재하며, 이는 $(m/s)\otimes(n/t)$를 $(m\otimes n)/st$로 보낸다.
+\end{env}
+
+\begin{env}[1.3.5]
+\label{0.1.3.5-ko}
+마찬가지로 $(M,N)$에 관해 \emph{함자적인} 준동형
+\[
+  S^{-1}\operatorname{Hom}_A(M,N)
+  \longrightarrow
+  \operatorname{Hom}_{S^{-1}A}(S^{-1}M,S^{-1}N)
+\]
+이 존재하며, 이는 $u/s$에 준동형 $m/t\mapsto u(m)/st$를 대응시킨다.
+$M$이 \emph{유한 표시}를 가지면 앞의 준동형은 \emph{동형}이다. $M$이 $A^r$ 꼴일 때에는 바로 알 수 있고, 일반적인 경우에는 완전열 $A^p\to A^q\to M\to 0$에서 출발하여 함자 $S^{-1}M$의 완전성과 $M$에 관한 함자 $\operatorname{Hom}_A(M,N)$의 왼쪽 완전성을 사용하면 된다.
+$A$가 \emph{뇌터 환}이고 $A$-가군 $M$이 \emph{유한 생성}이면 언제나 이 경우에 해당한다는 점에 유의하자.
+\end{env}
+
+\subsection{곱셈적 부분집합의 변경}
+\label{subsection:0.1.4-ko}
+
+\begin{env}[1.4.1]
+\label{0.1.4.1-ko}
+$S$, $T$를 $S\subset T$인 환 $A$의 두 곱셈적 부분집합이라 하자. $S^{-1}A$의 $a/s$로 나타낸 원소를 $T^{-1}A$에서 역시 $a/s$로 나타낸 원소에 대응시키는 표준 준동형 $\rho_A^{T,S}$($\rho^{T,S}$로도 쓴다)이 $S^{-1}A$에서 $T^{-1}A$로 존재하며
+\[
+  i_A^T=\rho_A^{T,S}\circ i_A^S
+\]
+이다.
+모든 $A$-가군 $M$에 대하여 $S^{-1}M$에서 $T^{-1}M$으로 가는 $S^{-1}A$-선형 사상도 존재한다. 여기서 $T^{-1}M$은 준동형 $\rho_A^{T,S}$를 통해 $S^{-1}A$-가군으로 보며, 이 사상은 $S^{-1}M$의 원소 $m/s$를 $T^{-1}M$의 원소 $m/s$로 보낸다. 이 사상을 $\rho_M^{T,S}$ 또는 단순히 $\rho^{T,S}$로 나타내며
+\[
+  i_M^T=\rho_M^{T,S}\circ i_M^S
+\]
+이다. 표준 동일시 (1.2.5) 아래에서 $\rho_M^{T,S}$는 $\rho_A^{T,S}\otimes 1$과 동일시된다.
+준동형 $\rho_M^{T,S}$는 함자 $S^{-1}M$에서 함자 $T^{-1}M$으로 가는 \emph{함자적 사상}(또는 자연변환)이다. 다시 말해 그림
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+S^{-1}M \arrow[r,"S^{-1}u"] \arrow[d,"\rho_M^{T,S}"'] & S^{-1}N \arrow[d,"\rho_N^{T,S}"] \\
+T^{-1}M \arrow[r,"T^{-1}u"] & T^{-1}N
+\end{tikzcd}
+\]
+
+\oldpage[0\textsubscript{I}]{16}
+은 모든 준동형 $u:M\to N$에 대하여 가환한다. 또한 $T^{-1}u$는 $S^{-1}u$에 의해 완전히 결정된다는 점에 유의하자. 실제로 $m\in M$, $t\in T$에 대하여
+\[
+  (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}\bigl((S^{-1}u)(m/1)\bigr)
+\]
+이다.
+\end{env}
+
+\begin{env}[1.4.2]
+\label{0.1.4.2-ko}
+같은 표기 아래에서 두 $A$-가군 $M$, $N$에 관한 다음 그림들은 가환한다(1.3.4, 1.3.5 참조).
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+(S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N) \arrow[r,"\sim"] \arrow[d]
+  & S^{-1}(M\otimes_A N) \arrow[d]
+  \\
+(T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N) \arrow[r,"\sim"]
+  & T^{-1}(M\otimes_A N)
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+S^{-1}\operatorname{Hom}_A(M,N) \arrow[r] \arrow[d]
+  & \operatorname{Hom}_{S^{-1}A}(S^{-1}M,S^{-1}N) \arrow[d] \\
+T^{-1}\operatorname{Hom}_A(M,N) \arrow[r]
+  & \operatorname{Hom}_{T^{-1}A}(T^{-1}M,T^{-1}N)
+\end{tikzcd}
+\]
+\end{env}
+
+\begin{env}[1.4.3]
+\label{0.1.4.3-ko}
+준동형 $\rho^{T,S}$가 \emph{전단사}인 중요한 경우가 있다. 곧 $T$의 모든 원소가 $S$의 어떤 원소의 약수인 경우이다. 이때 $\rho^{T,S}$를 통해 가군 $S^{-1}M$과 $T^{-1}M$을 동일시한다.
+$S$의 원소의 $A$ 안에서의 모든 약수가 다시 $S$에 속할 때 $S$를 \emph{포화}되었다고 한다. $S$를 $S$의 원소들의 약수 전체의 집합 $T$로 바꾸면($T$는 곱셈적이고 포화되어 있다), 원한다면 언제나 $S$가 포화된 분수가군 $S^{-1}M$만을 고려해도 됨을 알 수 있다.
+\end{env}
+
+\begin{env}[1.4.4]
+\label{0.1.4.4-ko}
+$S$, $T$, $U$가 $S\subset T\subset U$인 $A$의 세 곱셈적 부분집합이면
+\[
+  \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}
+\]
+이다.
+\end{env}
+
+\begin{env}[1.4.5]
+\label{0.1.4.5-ko}
+$A$의 곱셈적 부분집합들의 \emph{증가 여과족} $(S_\alpha)$를 생각하자($S_\alpha\subset S_\beta$일 때 $\alpha\leq\beta$라고 쓴다). 곱셈적 부분집합 $S=\bigcup_\alpha S_\alpha$로 놓고
+\[
+  \rho_{\beta\alpha}=\rho_A^{S_\beta,S_\alpha}\quad\text{($\alpha\leq\beta$일 때)}
+\]
+로 놓자.
+(1.4.4)에 따라 준동형 $\rho_{\beta\alpha}$들은 환의 귀납계 $(S_\alpha^{-1}A,\rho_{\beta\alpha})$의 \emph{귀납극한}인 환 $A'$을 정의한다.
+$\rho_\alpha$를 표준 사상 $S_\alpha^{-1}A\to A'$이라 하고 $\varphi_\alpha=\rho_A^{S,S_\alpha}$로 놓자. (1.4.4)에 따라 $\alpha\leq\beta$이면 $\varphi_\alpha=\varphi_\beta\circ\rho_{\beta\alpha}$이므로, 그림
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+  & S_\alpha^{-1}A
+      \arrow[ddl,"\rho_\alpha"']
+      \arrow[d,"\rho_{\beta\alpha}"]
+      \arrow[ddr,"\varphi_\alpha"] & \\
+  & S_\beta^{-1}A
+      \arrow[dl,"\rho_\beta"]
+      \arrow[dr,"\varphi_\beta"'] & \\
+A' \arrow[rr,"\varphi"'] & & S^{-1}A
+\end{tikzcd}
+\qquad(\alpha\leq\beta)
+\]
+이 가환하도록 하는 준동형 $\varphi:A'\to S^{-1}A$를 유일하게 정의할 수 있다.
+실제로 $\varphi$는 \emph{동형}이다. 구성으로부터 $\varphi$가 전사라는 것은 바로 알 수 있다.
+한편 $\varphi(\rho_\alpha(a/s_\alpha))=0$인 $\rho_\alpha(a/s_\alpha)\in A'$이 있다고 하자. 이는 $S^{-1}A$에서 $a/s_\alpha=0$, 즉 $sa=0$인 $s\in S$가 존재한다는 뜻이다. 그런데 $s\in S_\beta$인 $\beta\geq\alpha$가 존재하므로 $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$이다. 따라서 $\varphi$는 단사이다.
+$A$-가군 $M$의 경우도 똑같이 다루어 표준 동형
+\[
+  \varinjlim S_\alpha^{-1}A\xrightarrow{\sim}
+  (\varinjlim S_\alpha)^{-1}A,
+  \qquad
+  \varinjlim S_\alpha^{-1}M\xrightarrow{\sim}
+  (\varinjlim S_\alpha)^{-1}M
+\]
+을 얻는다. 둘째 동형은 \emph{$M$에 관해 함자적}이다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{17}
+\begin{env}[1.4.6]
+\label{0.1.4.6-ko}
+$S_1$, $S_2$를 $A$의 두 곱셈적 부분집합이라 하자. 그러면 $S_1S_2$도 $A$의 곱셈적 부분집합이다.
+$S_2'$을 환 $S_1^{-1}A$ 안에서의 $S_2$의 표준 상이라 하자. 이는 이 환의 곱셈적 부분집합이다.
+모든 $A$-가군 $M$에 대하여 함자적 동형
+\[
+  S_2'^{-1}(S_1^{-1}M)\xrightarrow{\sim}(S_1S_2)^{-1}M
+\]
+이 존재하며, 이는 $(m/s_1)/(s_2/1)$을 $m/(s_1s_2)$에 대응시킨다.
+\end{env}
+
+\subsection{환의 변경}
+\label{subsection:0.1.5-ko}
+
+\begin{env}[1.5.1]
+\label{0.1.5.1-ko}
+$A$, $A'$을 두 환, $\varphi$를 준동형 $A'\to A$, $S$(각각 $S'$)를 $\varphi(S')\subset S$를 만족하는 $A$(각각 $A'$)의 곱셈적 부분집합이라 하자. 합성 준동형
+\[
+  A'\xrightarrow{\varphi}A\longrightarrow S^{-1}A
+\]
+은 (1.2.4)에 따라
+\[
+  A'\longrightarrow S'^{-1}A'\xrightarrow{\varphi^{S'}}S^{-1}A
+\]
+와 같이 분해되며, $\varphi^{S'}(a'/s')=\varphi(a')/\varphi(s')$이다.
+$A=\varphi(A')$이고 $S=\varphi(S')$이면 $\varphi^{S'}$는 \emph{전사}이다.
+$A'=A$이고 $\varphi$가 항등사상이면 $\varphi^{S'}$는 (1.4.1)에서 정의한 준동형 $\rho_A^{S,S'}$와 다르지 않다.
+\end{env}
+
+\begin{env}[1.5.2]
+\label{0.1.5.2-ko}
+(1.5.1)의 가정 아래에서 $M$을 $A$-가군이라 하자.
+$S'^{-1}A'$-가군의 표준적인 함자적 준동형
+\[
+  \sigma:S'^{-1}(M_{[\varphi]})\longrightarrow
+  (S^{-1}M)_{[\varphi^{S'}]}
+\]
+이 존재하며, 이는 $S'^{-1}(M_{[\varphi]})$의 모든 원소 $m/s'$을 $(S^{-1}M)_{[\varphi^{S'}]}$의 원소 $m/\varphi(s')$에 대응시킨다. 이 정의가 해당 원소의 표현 $m/s'$에 무관하다는 것은 바로 확인할 수 있다.
+$S=\varphi(S')$이면 준동형 $\sigma$는 \emph{전단사}이다.
+$A'=A$이고 $\varphi$가 항등사상이면 $\sigma$는 (1.4.1)에서 정의한 준동형 $\rho_M^{S,S'}$와 다르지 않다.
+
+특히 $M=A$로 놓으면 준동형 $\varphi$는 $A$ 위에 $A'$-대수 구조를 정의한다. 이때 $S'^{-1}(A_{[\varphi]})$에는 $(\varphi(S'))^{-1}A$와 동일시되는 환 구조가 주어지고, 준동형
+\[
+  \sigma:S'^{-1}(A_{[\varphi]})\longrightarrow S^{-1}A
+\]
+는 $S'^{-1}A'$-대수의 준동형이다.
+\end{env}
+
+\begin{env}[1.5.3]
+\label{0.1.5.3-ko}
+$M$, $N$을 두 $A$-가군이라 하자. (1.3.4)와 (1.5.2)에서 정의한 준동형들을 합성하면 준동형
+\[
+  (S^{-1}M\otimes_{S^{-1}A}S^{-1}N)_{[\varphi^{S'}]}
+  \longleftarrow
+  S'^{-1}((M\otimes_A N)_{[\varphi]})
+\]
+을 얻으며, $\varphi(S')=S$이면 이는 동형이다.
+마찬가지로 준동형 (1.3.5)와 (1.5.2)를 합성하면 준동형
+\[
+  S'^{-1}((\operatorname{Hom}_A(M,N))_{[\varphi]})
+  \longrightarrow
+  (\operatorname{Hom}_{S^{-1}A}(S^{-1}M,S^{-1}N))_{[\varphi^{S'}]}
+\]
+을 얻으며, $\varphi(S')=S$이고 $M$이 유한 표시를 가지면 이는 동형이다.
+\end{env}
+
+\begin{env}[1.5.4]
+\label{0.1.5.4-ko}
+이제 $A'$-가군 $N'$을 생각하고 텐서곱 $N'\otimes_{A'}A_{[\varphi]}$를 만들자. 이를
+\[
+  a.(n'\otimes b)=n'\otimes(ab)
+\]
+로 놓아 $A$-가군으로 볼 수 있다.
+$S^{-1}A$-가군의 함자적 동형
+\[
+  \tau:(S'^{-1}N')\otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+  \xrightarrow{\sim}
+  S^{-1}(N'\otimes_{A'}A_{[\varphi]})
+\]
+이 존재한다.
+
+\oldpage[0\textsubscript{I}]{18}
+이는 원소 $(n'/s')\otimes(a/s)$를 원소 $(n'\otimes a)/(\varphi(s')s)$에 대응시킨다. $n'/s'$(각각 $a/s$)를 같은 원소의 다른 표현으로 바꾸어도 $(n'\otimes a)/(\varphi(s')s)$가 변하지 않는다는 것을 각각 확인할 수 있다. 한편 $(n'\otimes a)/s$에 $(n'/1)\otimes(a/s)$를 대응시켜 $\tau$의 역준동형을 정의할 수 있다. 여기서는 $S^{-1}(N'\otimes_{A'}A_{[\varphi]})$가 $(N'\otimes_{A'}A_{[\varphi]})\otimes_A S^{-1}A$와 표준적으로 동형이고(1.2.5), 따라서 $A'$에서 $S^{-1}A$로 가는 합성 준동형 $a'\mapsto\varphi(a')/1$을 $\psi$로 나타낼 때 $N'\otimes_{A'}(S^{-1}A)_{[\psi]}$와도 표준적으로 동형이라는 사실을 사용한다.
+\end{env}
+
+\begin{env}[1.5.5]
+\label{0.1.5.5-ko}
+$M'$, $N'$이 두 $A'$-가군이면, (1.3.4)와 (1.5.4)의 동형들을 합성하여 동형
+\[
+  S'^{-1}M'\otimes_{S'^{-1}A'}S'^{-1}N'
+  \otimes_{S'^{-1}A'}S^{-1}A
+  \xrightarrow{\sim}
+  S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A)
+\]
+을 얻는다.
+마찬가지로 $M'$이 유한 표시를 가지면 (1.3.5)와 (1.5.4)에 따라 동형
+\[
+  \operatorname{Hom}_{S'^{-1}A'}(S'^{-1}M',S'^{-1}N')
+  \otimes_{S'^{-1}A'}S^{-1}A
+  \xrightarrow{\sim}
+  S^{-1}(\operatorname{Hom}_{A'}(M',N')\otimes_{A'}A)
+\]
+을 얻는다.
+\end{env}
+
+\begin{env}[1.5.6]
+\label{0.1.5.6-ko}
+(1.5.1)의 가정 아래에서 $T$(각각 $T'$)를 $S\subset T$(각각 $S'\subset T'$)이고 $\varphi(T')\subset T$인 $A$(각각 $A'$)의 두 번째 곱셈적 부분집합이라 하자. 그러면 그림
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+S'^{-1}A' \arrow[r,"\varphi^{S'}"] \arrow[d,"\rho^{T',S'}"']
+  & S^{-1}A \arrow[d,"\rho^{T,S}"] \\
+T'^{-1}A' \arrow[r,"\varphi^{T'}"']
+  & T^{-1}A
+\end{tikzcd}
+\]
+은 가환한다. $M$이 $A$-가군이면 그림
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+S'^{-1}(M_{[\varphi]}) \arrow[r,"\sigma"] \arrow[d,"\rho^{T',S'}"']
+  & (S^{-1}M)_{[\varphi^{S'}]} \arrow[d,"\rho^{T,S}"] \\
+T'^{-1}(M_{[\varphi]}) \arrow[r,"\sigma"']
+  & (T^{-1}M)_{[\varphi^{T'}]}
+\end{tikzcd}
+\]
+도 가환한다. 끝으로 $N'$이 $A'$-가군이면 그림
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+(S'^{-1}N')\otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+  \arrow[r,"\tau","{\sim}"'] \arrow[d]
+  & S^{-1}(N'\otimes_{A'}A_{[\varphi]}) \arrow[d,"\rho^{T,S}"] \\
+(T'^{-1}N')\otimes_{T'^{-1}A'}(T^{-1}A)_{[\varphi^{T'}]}
+  \arrow[r,"\tau"',"{\sim}"]
+  & T^{-1}(N'\otimes_{A'}A_{[\varphi]})
+\end{tikzcd}
+\]
+도 가환한다. 왼쪽의 수직 화살표는 $S'^{-1}N'$에 $\rho_{N'}^{T',S'}$를, $S^{-1}A$에 $\rho_A^{T,S}$를 적용하여 얻는다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{19}
+
+\begin{env}[1.5.7]
+\label{0.1.5.7-ko}
+$A''$을 세 번째 환, $\varphi':A''\to A'$을 환 준동형, $S''$을 $\varphi'(S'')\subset S'$인 $A''$의 곱셈적 부분집합이라 하자. $\varphi''=\varphi\circ\varphi'$로 놓으면
+\[
+  \varphi''^{S''}=\varphi^{S'}\circ\varphi'^{S''}
+\]
+이다.
+$M$을 $A$-가군이라 하자. 분명히 $M_{[\varphi'']}=(M_{[\varphi]})_{[\varphi']}$이다. $\sigma$가 (1.5.2)에서 $\varphi$로부터 정의된 것과 같은 방식으로 $\varphi'$과 $\varphi''$에서 정의된 준동형을 각각 $\sigma'$과 $\sigma''$이라 하면 추이 공식
+\[
+  \sigma''=\sigma\circ\sigma'
+\]
+이 성립한다.
+끝으로 $N''$을 $A''$-가군이라 하자. $A$-가군 $N''\otimes_{A''}A_{[\varphi'']}$는
+\[
+  (N''\otimes_{A''}A'_{[\varphi']})\otimes_{A'}A_{[\varphi]}
+\]
+와 표준적으로 동일시된다.
+마찬가지로 $S^{-1}A$-가군
+\[
+  (S''^{-1}N'')\otimes_{S''^{-1}A''}
+  (S^{-1}A)_{[\varphi''^{S''}]}
+\]
+는
+\[
+  \bigl((S''^{-1}N'')\otimes_{S''^{-1}A''}
+  (S'^{-1}A')_{[\varphi'^{S''}]}\bigr)
+  \otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+\]
+와 표준적으로 동일시된다.
+이 동일시들 아래에서 $\tau$가 (1.5.4)에서 $\varphi$로부터 정의된 것과 같은 방식으로 $\varphi'$과 $\varphi''$에서 정의된 동형을 각각 $\tau'$과 $\tau''$이라 하면 추이 공식
+\[
+  \tau''=\tau\circ(\tau'\otimes 1)
+\]
+이 성립한다.
+\end{env}
+
+\begin{env}[1.5.8]
+\label{0.1.5.8-ko}
+$A$를 환 $B$의 부분환이라 하자. $A$의 모든 \emph{극소} 소 아이디얼 $\mathfrak p$에 대하여 $\mathfrak p=A\cap\mathfrak q$가 되는 $B$의 극소 소 아이디얼 $\mathfrak q$가 존재한다. 실제로 $A_{\mathfrak p}$는 $B_{\mathfrak p}$의 부분환이고(1.3.2), 유일한 소 아이디얼 $\mathfrak p'$을 갖는다(1.2.6). $B_{\mathfrak p}$는 영환이 아니므로 적어도 하나의 소 아이디얼 $\mathfrak q'$을 가지며, 반드시 $\mathfrak q'\cap A_{\mathfrak p}=\mathfrak p'$이다. 따라서 $\mathfrak q'$의 역상인 $B$의 소 아이디얼 $\mathfrak q_1$은 $\mathfrak q_1\cap A=\mathfrak p$를 만족한다. 그러므로 특히 $\mathfrak q_1$에 포함된 $B$의 모든 극소 소 아이디얼 $\mathfrak q$에 대하여 $\mathfrak q\cap A=\mathfrak p$이다.
+\end{env}
+
+\subsection{가군 $M_f$와 귀납극한의 동일시}
+\label{subsection:0.1.6-ko}
+
+\begin{env}[1.6.1]
+\label{0.1.6.1-ko}
+$M$을 $A$-가군, $f$를 $A$의 원소라 하자. 모두 $M$과 같은 $A$-가군들의 열 $(M_n)$을 생각하고, 정수의 모든 쌍 $m\leq n$에 대하여 $\varphi_{nm}$을 $M_m$에서 $M_n$으로 가는 준동형 $z\mapsto f^{n-m}z$라 하자. $((M_n),(\varphi_{nm}))$이 $A$-가군의 \emph{귀납계}임은 자명하다. 이 계의 귀납극한을 $N=\varinjlim M_n$이라 하자. 이제 $N$에서 $M_f$ 위로 가는 함자적인 표준 $A$-동형을 정의하겠다. 이를 위해 모든 $n$에 대하여
+\[
+  \theta_n:z\longmapsto z/f^n
+\]
+은 $M=M_n$에서 $M_f$로 가는 $A$-준동형이고, 정의로부터 $m\leq n$일 때 $\theta_n\circ\varphi_{nm}=\theta_m$임에 유의하자. 따라서 표준 준동형 $M_n\to N$을 $\varphi_n$이라 할 때, 모든 $n$에 대하여 $\theta_n=\theta\circ\varphi_n$을 만족하는 $A$-준동형 $\theta:N\to M_f$가 존재한다. 가정에 따라 $M_f$의 모든 원소는 어떤 $n$에 대하여 $z/f^n$의 꼴이므로 $\theta$가 전사임은 분명하다. 한편 $\theta(\varphi_n(z))=0$, 즉 $z/f^n=0$이면 $f^kz=0$인 정수 $k>0$이 존재한다. 따라서 $\varphi_{n+k,n}(z)=0$이고, 이로부터 $\varphi_n(z)=0$이 따른다. 그러므로 $\theta$를 통해 $M_f$와 $\varinjlim M_n$을 동일시할 수 있다.
+\end{env}
+
+\begin{env}[1.6.2]
+\label{0.1.6.2-ko}
+이제 $M_n$, $\varphi_{nm}$, $\varphi_n$ 대신 각각 $M_{f,n}$, $\varphi_{nm}^f$, $\varphi_n^f$라 쓰자. $g$를 $A$의 두 번째 원소라 하자. $f^n$이 $f^ng^n$의 약수이므로 함자적 준동형
+\[
+  \rho_{fg,f}:M_f\longrightarrow M_{fg}\qquad\text{(1.4.1과 1.4.3)}
+\]
+이 존재한다.
+
+\oldpage[0\textsubscript{I}]{20}
+
+$M_f$와 $M_{fg}$를 각각 $\varinjlim M_{f,n}$과 $\varinjlim M_{fg,n}$으로 동일시하면, $\rho_{fg,f}$는
+\[
+  \rho_{fg,f}^n:M_{f,n}\longrightarrow M_{fg,n},
+  \qquad \rho_{fg,f}^n(z)=g^nz
+\]
+로 정의되는 사상들의 \emph{귀납극한}과 동일시된다. 실제로 이는 그림
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+M_{f,n} \arrow[r,"\rho_{fg,f}^n"] \arrow[d,"\varphi_n^f"']
+  & M_{fg,n} \arrow[d,"\varphi_n^{fg}"] \\
+M_f \arrow[r,"\rho_{fg,f}"]
+  & M_{fg}
+\end{tikzcd}
+\]
+의 가환성에서 바로 따른다.
+\end{env}
+
+\subsection{가군의 지지집합}
+\label{subsection:0.1.7-ko}
+
+\begin{env}[1.7.1]
+\label{0.1.7.1-ko}
+$A$-가군 $M$이 주어졌을 때, $M_{\mathfrak p}\neq0$인 $A$의 소 아이디얼 $\mathfrak p$들의 집합을 $M$의 \emph{지지집합}이라 하고 $\operatorname{Supp}(M)$으로 나타낸다. $M=0$이기 위한 필요충분조건은 $\operatorname{Supp}(M)=\varnothing$인 것이다. 실제로 모든 $\mathfrak p$에 대하여 $M_{\mathfrak p}=0$이면, 임의의 원소 $x\in M$의 소멸자는 $A$의 어떤 소 아이디얼에도 포함될 수 없으므로 $A$ 전체와 같다.
+\end{env}
+
+\begin{env}[1.7.2]
+\label{0.1.7.2-ko}
+$A$-가군의 완전열 $0\to N\to M\to P\to0$이 있으면
+\[
+  \operatorname{Supp}(M)=\operatorname{Supp}(N)\cup\operatorname{Supp}(P)
+\]
+이다. 실제로 $A$의 모든 소 아이디얼 $\mathfrak p$에 대하여 열
+\[
+  0\longrightarrow N_{\mathfrak p}\longrightarrow M_{\mathfrak p}
+  \longrightarrow P_{\mathfrak p}\longrightarrow0
+\]
+은 완전하고(1.3.2), $M_{\mathfrak p}=0$이기 위한 필요충분조건은 $N_{\mathfrak p}=P_{\mathfrak p}=0$인 것이다.
+\end{env}
+
+\begin{env}[1.7.3]
+\label{0.1.7.3-ko}
+$M$이 부분가군들의 족 $(M_\lambda)$의 합이면, $A$의 모든 소 아이디얼 $\mathfrak p$에 대하여 $M_{\mathfrak p}$는 $(M_\lambda)_{\mathfrak p}$들의 합이므로(1.3.3과 1.3.2)
+\[
+  \operatorname{Supp}(M)=\bigcup_\lambda\operatorname{Supp}(M_\lambda)
+\]
+이다.
+\end{env}
+
+\begin{env}[1.7.4]
+\label{0.1.7.4-ko}
+$M$이 \emph{유한 생성} $A$-가군이면, $\operatorname{Supp}(M)$은 \emph{$M$의 소멸자를 포함하는} 소 아이디얼들의 집합이다. 실제로 $M$이 한 원소로 생성되고 $x$가 그 생성원이면, $M_{\mathfrak p}=0$이라는 것은 $s.x=0$인 $s\notin\mathfrak p$가 존재한다는 뜻이고, 따라서 $\mathfrak p$가 $x$의 소멸자를 포함하지 않는다는 뜻이다. 이제 $M$이 유한 생성계 $(x_i)_{1\leq i\leq n}$을 가지고 $\mathfrak a_i$가 $x_i$의 소멸자라 하자. (1.7.3)에 따라 $\operatorname{Supp}(M)$은 $\mathfrak a_i$들 가운데 하나를 포함하는 $\mathfrak p$들의 집합이며, 이는 $M$의 소멸자인 $\mathfrak a=\bigcap_i\mathfrak a_i$를 포함하는 $\mathfrak p$들의 집합과 같다.
+\end{env}
+
+\begin{env}[1.7.5]
+\label{0.1.7.5-ko}
+$M$, $N$이 두 \emph{유한 생성} $A$-가군이면
+\[
+  \operatorname{Supp}(M\otimes_A N)
+  =\operatorname{Supp}(M)\cap\operatorname{Supp}(N)
+\]
+이다. 이를 위해서는 $A$의 소 아이디얼 $\mathfrak p$에 대하여 조건
+\[
+  M_{\mathfrak p}\otimes_{A_{\mathfrak p}}N_{\mathfrak p}\neq0
+\]
+이 ``$M_{\mathfrak p}\neq0$이고 $N_{\mathfrak p}\neq0$이다''와 동치임을 보이면 충분하다((1.3.4) 참조). 다시 말해 국소환 $B$ 위의 두 유한 생성 가군 $P$, $Q$가 영가군이 아니면 $P\otimes_BQ\neq0$임을 보이면 된다. $B$의 극대 아이디얼을 $\mathfrak m$이라 하자. 나카야마 보조정리에 따라 벡터공간 $P/\mathfrak mP$와 $Q/\mathfrak mQ$는 영공간이 아니므로, 그 텐서곱
+\[
+  (P/\mathfrak mP)\otimes_{B/\mathfrak m}(Q/\mathfrak mQ)
+  =(P\otimes_B Q)\otimes_B(B/\mathfrak m)
+\]
+도 영공간이 아니다. 이로부터 결론이 따른다.
+
+특히 $M$이 유한 생성 $A$-가군이고 $\mathfrak a$가 $A$의 아이디얼이면, $\operatorname{Supp}(M/\mathfrak aM)$은 $\mathfrak a$와 $M$의 소멸자 $\mathfrak n$을 모두 포함하는 소 아이디얼들의 집합이며(1.7.4), 다시 말해 $\mathfrak a+\mathfrak n$을 포함하는 소 아이디얼들의 집합이다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{21}
+
+\section{기약공간과 뇌터 공간}
+\label{section:0.2-ko}
+
+\subsection{기약공간}
+\label{subsection:0.2.1-ko}
+
+\begin{env}[2.1.1]
+\label{0.2.1.1-ko}
+위상공간 $X$가 공집합이 아니고 $X$ 자체와 다른 두 닫힌 부분공간의 합집합으로 나타나지 않으면 $X$를 \emph{기약}이라 한다. 이는 $X\neq\varnothing$이고 $X$의 공집합이 아닌 두 열린집합(따라서 유한 개의 열린집합)의 교집합이 공집합이 아니라고 하는 것, 또는 공집합이 아닌 모든 열린집합이 모든 곳에서 조밀하다고 하는 것, 또는 $X$와 다른 모든 닫힌 부분집합이 \emph{어디에서도 조밀하지 않다}고 하는 것, 또는 끝으로 $X$의 모든 열린집합이 \emph{연결}되어 있다고 하는 것과 동치이다.
+\end{env}
+
+\begin{env}[2.1.2]
+\label{0.2.1.2-ko}
+위상공간 $X$의 부분공간 $Y$가 기약이기 위한 필요충분조건은 그 폐포 $\overline Y$가 기약인 것이다. 특히 한 점만으로 이루어진 부분공간의 폐포 $\overline{\{x\}}$인 모든 부분공간은 기약이다. 관계
+\[
+  y\in\overline{\{x\}}
+  \qquad\bigl(\text{동치로 }\overline{\{y\}}\subset\overline{\{x\}}\bigr)
+\]
+를 $y$가 $x$의 \emph{특수화}라고 하거나 $x$가 $y$의 \emph{일반화}라고 표현하겠다. 기약공간 $X$에 $X=\overline{\{x\}}$인 점 $x$가 존재하면 $x$를 $X$의 \emph{일반점}이라 한다. 이때 $X$의 공집합이 아닌 모든 열린집합은 $x$를 포함하고, $x$를 포함하는 모든 부분공간은 $x$를 일반점으로 갖는다.
+\end{env}
+
+\begin{env}[2.1.3]
+\label{0.2.1.3-ko}
+다음 분리 공리를 만족하는 위상공간 $X$를 \emph{콜모고로프 공간}이라 함을 상기하자.
+
+\smallskip
+\noindent
+\textup{(T$_0$)} $X$의 서로 다른 두 점 $x\neq y$가 주어지면, $x$, $y$ 중 한 점을 포함하고 다른 점은 포함하지 않는 열린집합이 존재한다.
+
+기약 콜모고로프 공간에 일반점이 존재하면 그것은 \emph{유일}하다. 실제로 공집합이 아닌 열린집합은 모든 일반점을 포함한다.
+
+위상공간 $X$의 모든 열린 덮개에서 $X$의 유한 열린 덮개를 뽑아낼 수 있으면 $X$를 \emph{준콤팩트}라 함을 상기하자. 이는 공집합이 아닌 닫힌집합들의 모든 감소 여과족이 공집합이 아닌 교집합을 갖는다는 것과 동치이다. $X$가 준콤팩트 공간이면 $X$의 공집합이 아닌 모든 닫힌 부분집합 $A$는 공집합이 아닌 \emph{극소} 닫힌집합 $M$을 포함한다. 실제로 $A$의 공집합이 아닌 닫힌 부분집합들의 집합은 포함관계 $\supset$에 관하여 귀납적이다. 더 나아가 $X$가 콜모고로프 공간이면 $M$은 반드시 한 점만으로 이루어진다. 이러한 $M$을 관용적으로 \emph{닫힌점}이라고도 한다.
+\end{env}
+
+\begin{env}[2.1.4]
+\label{0.2.1.4-ko}
+기약공간 $X$에서 공집합이 아닌 모든 열린 부분공간 $U$는 기약이고, $X$가 일반점 $x$를 가지면 $x$는 $U$의 일반점이기도 하다.
+
+공집합이 아닌 열린집합들로 이루어진 위상공간 $X$의 덮개 $(U_\alpha)$를 생각하자. 이때 지표집합도 공집합이 아니라고 한다. $X$가 기약이기 위한 필요충분조건은 모든 $\alpha$에 대하여 $U_\alpha$가 기약이고 임의의 $\alpha$, $\beta$에 대하여 $U_\alpha\cap U_\beta\neq\varnothing$인 것이다. 이 조건이 필요함은 자명하다. 충분함을 보이려면 $X$의 공집합이 아닌 열린집합 $V$에 대하여 모든 $\alpha$에서 $V\cap U_\alpha$가 공집합이 아님을 보이면 충분하다. 그러면 모든 $\alpha$에서 $V\cap U_\alpha$가 $U_\alpha$에 조밀하고, 따라서 $V$가 $X$에 조밀하기 때문이다. 그런데 $V\cap U_\gamma\neq\varnothing$인 지표 $\gamma$가 적어도 하나 존재하므로 $V\cap U_\gamma$는 $U_\gamma$에 조밀하다. 또한 모든 $\alpha$에 대하여 $U_\alpha\cap U_\gamma\neq\varnothing$이므로 $V\cap U_\alpha\cap U_\gamma\neq\varnothing$이다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{22}
+
+\begin{env}[2.1.5]
+\label{0.2.1.5-ko}
+$X$를 기약공간, $f$를 $X$에서 위상공간 $Y$로 가는 연속사상이라 하자. 그러면 $f(X)$는 기약이고, $x$가 $X$의 일반점이면 $f(x)$는 $f(X)$의 일반점이며 따라서 $\overline{f(X)}$의 일반점이기도 하다. 특히 $Y$도 기약이고 유일한 일반점 $y$를 가지면, $f(X)$가 모든 곳에서 조밀하기 위한 필요충분조건은 $f(x)=y$인 것이다.
+\end{env}
+
+\begin{env}[2.1.6]
+\label{0.2.1.6-ko}
+위상공간 $X$의 모든 기약 부분공간은 \emph{극대} 기약 부분공간에 포함되고, 이러한 극대 기약 부분공간은 반드시 닫혀 있다. $X$의 극대 기약 부분공간들을 $X$의 \emph{기약 성분}이라 한다. $Z_1$, $Z_2$가 $X$의 서로 다른 두 기약 성분이면 $Z_1\cap Z_2$는 부분공간 $Z_1$, $Z_2$ 각각에서 닫혀 있고 \emph{어디에서도 조밀하지 않은} 집합이다. 특히 $X$의 한 기약 성분이 일반점을 가지면(2.1.2), 그 일반점은 다른 어떤 기약 성분에도 속할 수 없다. $X$가 유한 개의 기약 성분 $Z_i$ $(1\leq i\leq n)$만을 가지고 각 $i$에 대하여
+\[
+  U_i=Z_i\cap\complement\Bigl(\bigcup_{j\neq i}Z_j\Bigr)
+\]
+로 놓으면, $U_i$들은 열려 있고 기약이며 서로소이고 그 합집합은 $X$에 조밀하다.
+
+$U$를 위상공간 $X$의 열린 부분집합이라 하자. $Z$가 $U$와 만나는 $X$의 기약 부분집합이면 $Z\cap U$는 $Z$에서 열려 있고 조밀하며 따라서 기약이다. 역으로 $Y$가 $U$의 닫힌 기약 부분집합이면, $X$에서의 $Y$의 폐포 $\overline Y$는 기약이고 $\overline Y\cap U=Y$이다. 따라서 $U$의 기약 성분들과 $U$와 만나는 $X$의 기약 성분들 사이에는 \emph{전단사 대응}이 있다.
+\end{env}
+
+\begin{env}[2.1.7]
+\label{0.2.1.7-ko}
+위상공간 $X$가 유한 개의 닫힌 기약 부분공간 $Y_i$의 합집합이면, $X$의 기약 성분들은 $Y_i$들의 집합에서 극대인 원소들이다. 실제로 $Z$가 $X$의 닫힌 기약 부분집합이면 $Z$는 $Z\cap Y_i$들의 합집합이고, 이로부터 $Z$가 어떤 $Y_i$에 포함되어야 함이 곧바로 따른다. $Y$를 위상공간 $X$의 부분공간이라 하고 $Y$가 유한 개의 기약 성분 $Y_i$ $(1\leq i\leq n)$만을 가진다고 하자. 그러면 $X$에서의 폐포 $\overline{Y_i}$들은 $\overline Y$의 기약 성분들이다.
+\end{env}
+
+\begin{env}[2.1.8]
+\label{0.2.1.8-ko}
+$Y$를 유일한 일반점 $y$를 갖는 기약공간이라 하고, $X$를 위상공간, $f$를 $X$에서 $Y$로 가는 연속사상이라 하자. 그러면 $f^{-1}(y)$와 만나는 $X$의 모든 기약 성분 $Z$에 대하여 $f(Z)$는 $Y$에 조밀하다. 그 역은 반드시 참인 것은 아니다. 그러나 $Z$가 일반점 $z$를 가지고 $f(Z)$가 $Y$에 조밀하면 반드시 $f(z)=y$이다(2.1.5). 또한 이때 $Z\cap f^{-1}(y)$는 $f^{-1}(y)$에서 $\{z\}$의 폐포이므로 기약이고, $z$를 포함하는 $f^{-1}(y)$의 모든 기약 부분집합은 반드시 $Z$에 포함되므로(2.1.6) $z$는 $Z\cap f^{-1}(y)$의 일반점이다. $f^{-1}(y)$의 모든 기약 성분은 $X$의 한 기약 성분에 포함되므로, $f^{-1}(y)$와 만나는 $X$의 모든 기약 성분 $Z$가 일반점을 가진다면 이 기약 성분들의 집합과 $f^{-1}(y)$의 기약 성분들 $Z\cap f^{-1}(y)$의 집합 사이에는 \emph{전단사 대응}이 있다. 이때 $Z$의 일반점과 $Z\cap f^{-1}(y)$의 일반점은 같다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{23}
+
+\subsection{뇌터 공간}
+\label{subsection:0.2.2-ko}
+
+\begin{env}[2.2.1]
+\label{0.2.2.1-ko}
+위상공간 $X$의 열린집합들의 집합이 \emph{극대 조건}을 만족하면, 또는 이와 동치로 $X$의 닫힌집합들의 집합이 \emph{극소 조건}을 만족하면 $X$를 \emph{뇌터}라 한다. 모든 $x\in X$가 뇌터 부분공간인 근방을 가지면 $X$를 \emph{국소 뇌터}라 한다.
+\end{env}
+
+\begin{env}[2.2.2]
+\label{0.2.2.2-ko}
+$E$를 \emph{극소 조건}을 만족하는 순서집합이라 하고, $P$를 $E$의 원소들에 관한 다음 조건을 만족하는 성질이라 하자. $a\in E$에 대하여 모든 $x<a$에서 $P(x)$가 참이면 $P(a)$도 참이다. 그러면 \emph{모든 $x\in E$에 대하여 $P(x)$가 참이다}. 이를 ``뇌터 귀납법의 원리''라 한다. 실제로 $P(x)$가 거짓인 $x\in E$들의 집합을 $F$라 하자. $F$가 공집합이 아니면 극소 원소 $a$를 갖는다. 그러면 모든 $x<a$에 대하여 $P(x)$가 참이므로 $P(a)$도 참이어야 하며, 이는 모순이다.
+
+특히 $E$가 \emph{뇌터 공간의 닫힌 부분집합들의 집합}인 경우에 이 원리를 적용하겠다.
+\end{env}
+
+\begin{env}[2.2.3]
+\label{0.2.2.3-ko}
+뇌터 공간의 모든 부분공간은 뇌터이다. 역으로 유한 개의 뇌터 부분공간의 합집합인 모든 위상공간은 뇌터이다.
+\end{env}
+
+\begin{env}[2.2.4]
+\label{0.2.2.4-ko}
+모든 뇌터 공간은 준콤팩트이다. 역으로 모든 열린집합이 준콤팩트인 위상공간은 뇌터이다.
+\end{env}
+
+\begin{env}[2.2.5]
+\label{0.2.2.5-ko}
+뇌터 공간은 유한 개의 기약 성분만을 가진다. 이는 뇌터 귀납법으로 알 수 있다.
+\end{env}
+
+\section{층에 관한 보충}
+\label{section:0.3-ko}
+
+\subsection{범주에 값을 갖는 층}
+\label{subsection:0.3.1-ko}
+
+\begin{env}[3.1.1]
+\label{0.3.1.1-ko}
+$\mathbf K$를 범주라 하고, $(A_\alpha)_{\alpha\in I}$와 $(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$를 $A_{\beta\alpha}=A_{\alpha\beta}$를 만족하는 $\mathbf K$의 두 대상족이라 하자. 또한 $(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$를 사상
+\[
+  \rho_{\alpha\beta}:A_\alpha\longrightarrow A_{\alpha\beta}
+\]
+들의 족이라 하자. $\mathbf K$의 대상 $A$와 사상족 $\rho_\alpha:A\to A_\alpha$로 이루어진 쌍이 다음 조건을 만족하면, 이 쌍을 족 $(A_\alpha)$, $(A_{\alpha\beta})$, $(\rho_{\alpha\beta})$가 정의하는 \emph{보편 문제의 해}라 한다. $\mathbf K$의 모든 대상 $B$에 대하여 각 $f\in\operatorname{Hom}(B,A)$에 족
+\[
+  (\rho_\alpha\circ f)\in
+  \prod_\alpha\operatorname{Hom}(B,A_\alpha)
+\]
+를 대응시키는 사상은 $\operatorname{Hom}(B,A)$에서 모든 지표쌍 $(\alpha,\beta)$에 대하여
+\[
+  \rho_{\alpha\beta}\circ f_\alpha
+  =\rho_{\beta\alpha}\circ f_\beta
+\]
+를 만족하는 족 $(f_\alpha)$들의 집합 위로 가는 \emph{전단사}이다. 이러한 해가 존재하면 동형을 제외하고 유일함은 곧바로 알 수 있다.
+\end{env}
+
+\begin{env}[3.1.2]
+\label{0.3.1.2-ko}
+위상공간 $X$ 위에서 범주 $\mathbf K$에 값을 갖는 \emph{준층} $U\mapsto\mathcal F(U)$의 정의는 상기하지 않겠다(G, I, 1.9). 이러한 준층이 다음 공리를 만족하면 \emph{$\mathbf K$에 값을 갖는 층}이라 한다.
+
+\smallskip
+\noindent
+\textup{(F)} \emph{$X$의 열린집합 $U$를 $U$에 포함된 열린집합 $U_\alpha$들로 덮는 임의의 덮개 $(U_\alpha)$에 대하여, $\rho_\alpha$(각각 $\rho_{\alpha\beta}$)를 제한사상}
+\[
+  \mathcal F(U)\longrightarrow\mathcal F(U_\alpha)
+  \qquad
+  \bigl(\text{각각 }\mathcal F(U_\alpha)
+  \longrightarrow\mathcal F(U_\alpha\cap U_\beta)\bigr)
+\]
+
+\oldpage[0\textsubscript{I}]{24}
+
+\emph{이라 하면, $\mathcal F(U)$와 족 $(\rho_\alpha)$로 이루어진 쌍은 $(\mathcal F(U_\alpha))$, $(\mathcal F(U_\alpha\cap U_\beta))$, $(\rho_{\alpha\beta})$에 관한 보편 문제의 해이다(3.1.1).}%
+\footnote{이는 여과되지 않아도 되는 일반적인 \emph{사영극한} 개념의 특수한 경우이다((T, I, 1.8) 및 서론에서 예고한 집필 중인 책 참조).}
+
+이는 $\mathbf K$의 모든 대상 $T$에 대하여 족
+\[
+  U\longmapsto\operatorname{Hom}(T,\mathcal F(U))
+\]
+이 \emph{집합의 층}이라고 하는 것과 동치이다.
+\end{env}
+
+\begin{env}[3.1.3]
+\label{0.3.1.3-ko}
+$\mathbf K$가 ``사상을 갖는 구조의 한 종류'' $\Sigma$로 정의되는 범주라고 하자. 따라서 $\mathbf K$의 대상은 $\Sigma$형 구조가 주어진 집합들이고 사상은 $\Sigma$의 사상들이다. 더 나아가 범주 $\mathbf K$가 다음 조건을 만족한다고 하자.
+
+\smallskip
+\noindent
+\textup{(E)} $(A,(\rho_\alpha))$가 족 $(A_\alpha)$, $(A_{\alpha\beta})$, $(\rho_{\alpha\beta})$에 관하여 \emph{범주 $\mathbf K$ 안에서} 보편 사상 문제의 해이면, 같은 족에 관하여 \emph{집합의 범주 안에서도} 보편 사상 문제의 해이다. 여기서는 $A$, $A_\alpha$, $A_{\alpha\beta}$를 집합으로, $\rho_\alpha$, $\rho_{\alpha\beta}$를 사상으로 본다.%
+\footnote{이는 표준 함자 $\mathbf K\to(\mathrm{Ens})$가 여과될 필요가 없는 \emph{사영극한과 교환한다}는 뜻이기도 함을 증명할 수 있다.}
+
+이 조건 아래에서 (F)는 $U\mapsto\mathcal F(U)$를 \emph{집합의 준층}으로 보았을 때 \emph{층}이 되게 한다. 또한 (F)에 따라 사상 $u:T\to\mathcal F(U)$가 $\mathbf K$의 사상이기 위한 필요충분조건은 각 합성 $\rho_\alpha\circ u$가 $T\to\mathcal F(U_\alpha)$인 $\mathbf K$의 사상인 것이다. 이는 $\mathcal F(U)$ 위의 $\Sigma$형 구조가 사상 $\rho_\alpha$들에 관한 \emph{시초 구조}라는 뜻이다. 역으로 $X$ 위에서 $\mathbf K$에 값을 갖는 준층 $U\mapsto\mathcal F(U)$가 \emph{집합의 층}이고 앞의 조건을 만족한다고 하자. 그러면 이 준층은 (F)를 만족하므로 \emph{$\mathbf K$에 값을 갖는 층}이다.
+\end{env}
+
+\begin{env}[3.1.4]
+\label{0.3.1.4-ko}
+$\Sigma$가 군 또는 환 구조의 종류이면, $\mathbf K$에 값을 갖는 준층 $U\mapsto\mathcal F(U)$가 \emph{집합의 층}이라는 사실만으로 곧바로 \emph{$\mathbf K$에 값을 갖는 층}, 즉 (G)의 의미에서 군의 층 또는 환의 층이 된다.%
+\footnote{이는 범주 $\mathbf K$에서 집합의 사상으로서 \emph{전단사}인 모든 사상이 \emph{동형}이기 때문이다. 예를 들어 $\mathbf K$가 위상공간의 범주이면 더 이상 그렇지 않다.}
+그러나 예를 들어 $\mathbf K$가 연속 준동형을 사상으로 하는 \emph{위상환}의 범주이면 더 이상 그렇지 않다. $\mathbf K$에 값을 갖는 층은 다음 조건을 만족하는 환의 층 $U\mapsto\mathcal F(U)$이다. 모든 열린집합 $U$와 $U$에 포함된 열린집합 $U_\alpha$들에 의한 모든 덮개에 대하여, 환 $\mathcal F(U)$의 위상은 준동형
+\[
+  \mathcal F(U)\longrightarrow\mathcal F(U_\alpha)
+\]
+들을 연속이 되게 하는 \emph{가장 약한} 위상이다. 이 경우 위상을 잊고 환의 층으로 본 $U\mapsto\mathcal F(U)$를 위상환의 층 $U\mapsto\mathcal F(U)$의 \emph{바탕} 층이라 한다. 따라서 위상환의 층 사이의 사상 $u_V:\mathcal F(V)\to\mathcal G(V)$($V$는 $X$의 임의의 열린집합)은 바탕 환의 층 사이의 준동형으로서, 모든 열린집합 $V\subset X$에 대하여 $u_V$가 \emph{연속}인 것들이다. 이를 바탕 환의 층 사이의 임의의 준동형과 구별하기 위해 위상환의 층 사이의 \emph{연속} 준동형이라 부르겠다. 위상공간의 층이나 위상군의 층에 대해서도 비슷한 정의와 규약을 사용한다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{25}
+
+\begin{env}[3.1.5]
+\label{0.3.1.5-ko}
+임의의 범주 $\mathbf K$에 대하여 $\mathcal F$가 $X$ 위에서 $\mathbf K$에 값을 갖는 준층(각각 층)이고 $U$가 $X$의 열린집합이면, 열린집합 $V\subset U$에 대한 $\mathcal F(V)$들은 $\mathbf K$에 값을 갖는 준층(각각 층)을 이룬다. 이를 $U$ 위에서 $\mathcal F$가 \emph{유도하는} 준층(각각 층)이라 하고 $\mathcal F|U$로 나타낸다.
+
+$X$ 위에서 $\mathbf K$에 값을 갖는 준층 사이의 모든 사상 $u:\mathcal F\to\mathcal G$에 대하여, $V\subset U$인 $u_V$들로 이루어진 사상 $\mathcal F|U\to\mathcal G|U$를 $u|U$로 나타낸다.
+\end{env}
+
+\begin{env}[3.1.6]
+\label{0.3.1.6-ko}
+이제 범주 $\mathbf K$가 \emph{귀납극한}을 갖는다고 하자(T, 1.8). 그러면 $X$ 위에서 $\mathbf K$에 값을 갖는 모든 준층(특히 모든 층) $\mathcal F$와 모든 $x\in X$에 대하여, $\mathbf K$의 대상인 \emph{줄기} $\mathcal F_x$를 다음 귀납극한으로 정의할 수 있다. $x$의 열린 근방 $U$들의 집합을 $\supset$에 관한 여과집합으로 보고, 사상 $\rho_U^V:\mathcal F(V)\to\mathcal F(U)$에 따른 $\mathcal F(U)$들의 귀납극한을 취한다. $u:\mathcal F\to\mathcal G$가 $\mathbf K$에 값을 갖는 준층 사이의 사상이면, 모든 $x\in X$에 대하여 사상
+\[
+  u_x:\mathcal F_x\longrightarrow\mathcal G_x
+\]
+를 $x$의 열린 근방들의 집합을 따라 $u_U:\mathcal F(U)\to\mathcal G(U)$들의 귀납극한으로 정의한다. 이렇게 하여 모든 $x\in X$에 대하여 $\mathcal F_x$는 $\mathcal F$에 관한 공변함자로 정의되며 $\mathbf K$에 값을 갖는다.
+
+더 나아가 $\mathbf K$가 사상을 갖는 구조의 종류 $\Sigma$로 정의되는 경우, $\mathbf K$에 값을 갖는 \emph{층 $\mathcal F$}의 $U$ \emph{위의 단면}은 여전히 $\mathcal F(U)$의 원소를 뜻하며, 이때 $\mathcal F(U)$ 대신 $\Gamma(U,\mathcal F)$라 쓴다. $s\in\Gamma(U,\mathcal F)$이고 $V$가 $U$에 포함된 열린집합이면 $\rho_V^U(s)$ 대신 $s|V$라 쓴다. 모든 $x\in U$에 대하여 $\mathcal F_x$에서 $s$의 표준 상을 점 $x$에서 $s$의 \emph{싹}이라 하고 $s_x$로 나타낸다. 이 의미로는 \emph{표기 $s(x)$를 결코 사용하지 않겠다}. 이 표기는 이 논고에서 뒤에 다룰 특정 층에 관한 다른 개념을 위해 남겨 둔다(5.5.1).
+
+$u:\mathcal F\to\mathcal G$가 $\mathbf K$에 값을 갖는 층 사이의 사상이면, 모든 $s\in\Gamma(U,\mathcal F)$에 대하여 $u_V(s)$ 대신 $u(s)$라 쓰겠다.
+
+$\mathcal F$가 가환군, 환 또는 가군의 층이면 $\mathcal F_x\neq\{0\}$인 $x\in X$들의 집합을 $\mathcal F$의 \emph{지지집합}이라 하고 $\operatorname{Supp}(\mathcal F)$로 나타낸다. 이 집합은 $X$에서 반드시 닫혀 있지는 않다.
+
+$\mathbf K$가 사상을 갖는 구조의 한 종류로 정의되는 경우, $\mathbf K$에 값을 갖는 층에 관해서는 \emph{``에탈레 공간''의 관점을 체계적으로 사용하지 않겠다}. 다시 말해 층을 위상공간으로, 심지어 그 줄기들의 합집합인 집합으로도 보지 않을 것이며, $X$ 위의 이러한 층 사이의 사상 $u:\mathcal F\to\mathcal G$를 위상공간 사이의 연속사상으로 보지도 않을 것이다.
+\end{env}
+
+\subsection{열린집합의 기저 위의 준층}
+\label{subsection:0.3.2-ko}
+
+\begin{env}[3.2.1]
+\label{0.3.2.1-ko}
+앞으로는 (일반화된, 즉 반드시 여과될 필요가 없는 준순서집합에 대응하는) \emph{사영극한}을 갖는 범주 $\mathbf K$만을 다루겠다((T, 1.8) 참조). $X$를 위상공간, $\mathfrak B$를 $X$의 위상의 열린집합 기저라 하자. 각 $U\in\mathfrak B$에 대응하는 대상 $\mathcal F(U)\in\mathbf K$의 족과, $U\subset V$인 $\mathfrak B$의 모든 원소쌍 $(U,V)$에 대하여 정의된 사상
+\[
+  \rho_U^V:\mathcal F(V)\longrightarrow\mathcal F(U)
+\]
+들의 족을 \emph{$\mathbf K$에 값을 갖는 $\mathfrak B$ 위의 준층}이라 한다.
+
+\oldpage[0\textsubscript{I}]{26}
+
+여기에는 $\rho_U^U=\text{항등사상}$이라는 조건과, $U\subset V\subset W$인 $\mathfrak B$의 원소 $U,V,W$에 대하여
+\[
+  \rho_U^W=\rho_U^V\circ\rho_V^W
+\]
+라는 조건을 부과한다. 이 준층에는 보통 의미에서 $\mathbf K$에 값을 갖는 준층 $U\mapsto\mathcal F'(U)$를 다음과 같이 대응시킬 수 있다. 모든 열린집합 $U$에 대하여
+\[
+  \mathcal F'(U)=\varprojlim_{V\subset U}\mathcal F(V)
+\]
+로 놓는다. 여기서 $V$는 $V\subset U$인 $V\in\mathfrak B$들의 $\subset$에 관한 순서집합을 움직이며, 이 순서집합은 일반적으로 \emph{여과되지 않는다}. 실제로 $\mathcal F(V)$들은 $V\subset W\subset U$, $V,W\in\mathfrak B$일 때의 $\rho_V^W$에 관하여 사영계를 이룬다. $U\subset U'$인 $X$의 두 열린집합 $U,U'$가 주어지면, $\rho'_U{}^{U'}$를 $V\subset U$에 관한 표준 사상 $\mathcal F'(U')\to\mathcal F(V)$들의 사영극한으로 정의한다. 다시 말해 이는 표준 사상 $\mathcal F'(U)\to\mathcal F(V)$들과 합성했을 때 표준 사상 $\mathcal F'(U')\to\mathcal F(V)$가 되는 유일한 사상
+\[
+  \mathcal F'(U')\longrightarrow\mathcal F'(U)
+\]
+이다. 그러면 $\rho'_U{}^{U'}$의 추이성은 곧바로 확인된다. 더 나아가 $U\in\mathfrak B$이면 표준 사상 $\mathcal F'(U)\to\mathcal F(U)$는 동형이므로 두 대상을 동일시할 수 있다.%
+\footnote{$X$가 \emph{뇌터 공간}이면, $\mathbf K$가 \emph{유한} 사영계의 사영극한만을 갖는다고 가정해도 $\mathcal F'(U)$를 정의하고 이것이 보통 의미의 준층임을 보일 수 있다. 실제로 $U$가 $X$의 임의의 열린집합이면 $\mathfrak B$의 원소들로 이루어진 $U$의 \emph{유한} 덮개 $(V_i)$가 존재한다. 각 지표쌍 $(i,j)$에 대하여 $(V_{ijk})$를 $\mathfrak B$의 원소들로 이루어진 $V_i\cap V_j$의 유한 덮개라 하자. $I$를 지표 $i$와 삼중항 $(i,j,k)$들로 이루어진 집합으로 하고, 오직 $i>(i,j,k)$와 $j>(i,j,k)$라는 관계로 순서를 주자. 이때 $\mathcal F'(U)$를 $\mathcal F(V_i)$와 $\mathcal F(V_{ijk})$로 이루어진 계의 사영극한으로 취한다. 이것이 덮개 $(V_i)$와 $(V_{ijk})$에 의존하지 않으며 $U\mapsto\mathcal F'(U)$가 준층임은 쉽게 확인된다.}
+\end{env}
+
+\begin{env}[3.2.2]
+\label{0.3.2.2-ko}
+이렇게 정의한 준층 $\mathcal F'$가 \emph{층}이기 위한 필요충분조건은 $\mathfrak B$ 위의 준층 $\mathcal F$가 다음 조건을 만족하는 것이다.
+
+\smallskip
+\noindent
+\textup{(F\textsubscript{0})} \emph{$U\in\mathfrak B$를 $U$에 포함되는 $U_\alpha\in\mathfrak B$들로 덮는 모든 덮개 $(U_\alpha)$와 모든 대상 $T\in\mathbf K$에 대하여, 각 $f\in\operatorname{Hom}(T,\mathcal F(U))$에 족}
+\[
+  (\rho_{U_\alpha}^{U}\circ f)
+  \in\prod_\alpha\operatorname{Hom}(T,\mathcal F(U_\alpha))
+\]
+\emph{을 대응시키는 사상은 $\operatorname{Hom}(T,\mathcal F(U))$에서 다음 조건을 만족하는 족 $(f_\alpha)$들의 집합 위로 가는 전단사이다. 모든 지표쌍 $(\alpha,\beta)$와 $V\subset U_\alpha\cap U_\beta$인 모든 $V\in\mathfrak B$에 대하여}
+\[
+  \rho_V^{U_\alpha}\circ f_\alpha
+  =\rho_V^{U_\beta}\circ f_\beta.
+\]%
+\footnote{이는 $\mathcal F(U)$와 $\rho_\alpha=\rho_{U_\alpha}^{U}$들로 이루어진 쌍이 (3.1.1)에서 다음 자료로 정의한 보편 문제의 해라는 뜻이기도 하다. $A_\alpha=\mathcal F(U_\alpha)$이고,
+$A_{\alpha\beta}=\prod\mathcal F(V)$이다. 여기서 곱은 $V\subset U_\alpha\cap U_\beta$인 $V\in\mathfrak B$ 전체에 걸친다. 또한
+$\rho_{\alpha\beta}=(\rho_V''):\mathcal F(U_\alpha)\to\prod\mathcal F(V)$이며, 이는 $V,V',W\in\mathfrak B$, $V\cup V'\subset U_\alpha\cap U_\beta$, $W\subset V\cap V'$일 때
+$\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$가 되도록 정의한다.}
+
+이 조건이 필요함은 자명하다. 충분함을 보이기 위해 먼저 $\mathfrak B$에 \emph{포함되는} $X$의 위상의 두 번째 기저 $\mathfrak B'$를 생각하자. 부분족 $(\mathcal F(V))_{V\in\mathfrak B'}$에서 얻은 준층을 $\mathcal F''$라 하면 $\mathcal F''$는 $\mathcal F'$와 \emph{표준적으로 동형}임을 보이겠다. 우선 $V\in\mathfrak B'$, $V\subset U$에 관한 표준 사상 $\mathcal F'(U)\to\mathcal F(V)$들의 사영극한은 모든 열린집합 $U$에 대하여 사상 $\mathcal F'(U)\to\mathcal F''(U)$를 준다. $U\in\mathfrak B$이면 이 사상은 동형이다. 실제로 가정에 따라 $V\in\mathfrak B'$, $V\subset U$에 대한 표준 사상 $\mathcal F''(U)\to\mathcal F(V)$들은
+\[
+  \mathcal F''(U)\longrightarrow\mathcal F(U)
+  \longrightarrow\mathcal F(V)
+\]
+로 분해되며, 이렇게 정의된 사상 $\mathcal F(U)\to\mathcal F''(U)$와 $\mathcal F''(U)\to\mathcal F(U)$의 두 합성이 항등사상임은 곧바로 알 수 있다. 이제 모든 열린집합 $U$에 대하여, $W\in\mathfrak B$, $W\subset U$일 때의 사상 $\mathcal F''(U)\to\mathcal F''(W)=\mathcal F(W)$들은 $\mathcal F(W)$들의 사영극한을 특징짓는 조건을 만족한다. 따라서 사영극한이 동형을 제외하고 유일하다는 사실에 의해 주장이 증명된다.
+
+이제 $U$를 $X$의 임의의 열린집합, $(U_\alpha)$를 $U$에 포함되는 열린집합들에 의한 $U$의 덮개라 하고, $\mathfrak B'$를 다음 원소들로 이루어진 부분족이라 하자.
+
+\oldpage[0\textsubscript{I}]{27}
+
+그 원소들은 $\mathfrak B$에 속하며 적어도 하나의 $U_\alpha$에 포함된다. $\mathfrak B'$도 여전히 $X$의 위상의 기저임은 명백하다. 따라서 $\mathcal F'(U)$는 $V\in\mathfrak B'$, $V\subset U$인 $\mathcal F(V)$들의 사영극한이고, $\mathcal F''(U_\alpha)$는 $V\in\mathfrak B'$, $V\subset U_\alpha$인 $\mathcal F(V)$들의 사영극한이다. 그러므로 사영극한의 정의에 의해 공리 (F)가 곧바로 성립한다.
+
+(F\textsubscript{0})가 성립할 때에는 용어를 남용하여 $\mathfrak B$ 위의 준층 $\mathcal F$를 \emph{층}이라 하겠다.
+\end{env}
+
+\begin{env}[3.2.3]
+\label{0.3.2.3-ko}
+$\mathcal F$, $\mathcal G$를 $\mathbf K$에 값을 갖는 $\mathfrak B$ 위의 두 준층이라 하자. \emph{사상} $u:\mathcal F\to\mathcal G$를 제한사상 $\rho_V^W$와의 통상적인 호환조건을 만족하는 사상
+\[
+  u_V:\mathcal F(V)\longrightarrow\mathcal G(V)
+  \qquad(V\in\mathfrak B)
+\]
+들의 족 $(u_V)_{V\in\mathfrak B}$로 정의한다. (3.2.1)의 표기에 따라, $V\in\mathfrak B$, $V\subset U$인 $u_V$들의 사영극한을 $u_U'$로 취하면 대응하는 보통 준층 사이의 사상 $u':\mathcal F'\to\mathcal G'$를 얻는다. $\rho'_U{}^{U'}$와의 호환조건은 사영극한의 함자성에서 따른다.
+\end{env}
+
+\begin{env}[3.2.4]
+\label{0.3.2.4-ko}
+범주 $\mathbf K$가 귀납극한을 갖고 $\mathcal F$가 $\mathbf K$에 값을 갖는 $\mathfrak B$ 위의 준층이라고 하자. 모든 $x\in X$에 대하여 $\mathfrak B$에 속하는 $x$의 근방들은 $x$의 모든 근방들의 집합에서 $\supset$에 관한 공종집합을 이룬다. 따라서 $\mathcal F'$가 $\mathcal F$에 대응하는 보통 준층이면 줄기 $\mathcal F_x'$는
+\[
+  \varinjlim_{\mathfrak B}\mathcal F(V)
+\]
+와 같다. 여기서 극한은 $x$를 포함하는 $V\in\mathfrak B$들의 집합을 따라 취한다. $u:\mathcal F\to\mathcal G$가 $\mathbf K$에 값을 갖는 $\mathfrak B$ 위의 준층 사이의 사상이고 $u':\mathcal F'\to\mathcal G'$가 대응하는 보통 준층 사이의 사상이면, $u_x'$도 마찬가지로 $V\in\mathfrak B$, $x\in V$인 사상 $u_V:\mathcal F(V)\to\mathcal G(V)$들의 귀납극한이다.
+\end{env}
+
+\begin{env}[3.2.5]
+\label{0.3.2.5-ko}
+(3.2.1)의 일반적인 조건으로 돌아가자. $\mathcal F$가 $\mathbf K$에 값을 갖는 보통 \emph{층}이고 $\mathcal F_1$이 $\mathcal F$를 $\mathfrak B$에 제한하여 얻은 \emph{$\mathfrak B$ 위의 층}이면, (3.2.1)의 절차로 $\mathcal F_1$에서 얻는 보통 층 $\mathcal F_1'$은 조건 (F)와 사영극한의 유일성에 따라 $\mathcal F$와 표준적으로 동형이다. 보통 $\mathcal F$와 $\mathcal F_1'$을 동일시하겠다.
+
+$\mathcal G$가 $X$ 위에서 $\mathbf K$에 값을 갖는 두 번째 보통 층이고 $u:\mathcal F\to\mathcal G$가 사상이라 하자. 앞의 설명에 따르면 \emph{$V\in\mathfrak B$인 $u_V:\mathcal F(V)\to\mathcal G(V)$들만} 주어도 $u$가 완전히 결정된다. 역으로 $V\in\mathfrak B$인 $u_V$들이 주어졌을 때, $V,W\in\mathfrak B$, $V\subset W$인 제한사상 $\rho_V^W$들과의 가환도만 확인하면, 모든 $V\in\mathfrak B$에 대하여 $u_V'=u_V$인 $\mathcal F$에서 $\mathcal G$로 가는 사상 $u'$가 유일하게 존재한다(3.2.3).
+\end{env}
+
+\begin{env}[3.2.6]
+\label{0.3.2.6-ko}
+계속해서 $\mathbf K$가 사영극한을 갖는다고 하자. 그러면 \emph{$\mathbf K$에 값을 갖는 $X$ 위의 층}들의 범주도 \emph{사영극한}을 갖는다. 실제로 $(\mathcal F_\lambda)$가 $X$ 위에서 $\mathbf K$에 값을 갖는 층들의 사영계이면
+\[
+  \mathcal F(U)=\varprojlim_\lambda\mathcal F_\lambda(U)
+\]
+들은 $\mathbf K$에 값을 갖는 준층을 정의한다. 공리 (F)는 사영극한의 추이성으로부터 성립하며, 이때 $\mathcal F$가 $\mathcal F_\lambda$들의 사영극한이라는 사실은 자명하다.
+
+$\mathbf K$가 집합의 범주일 때, 다음 조건을 만족하는 모든 사영계 $(\mathcal H_\lambda)$에 대하여
+
+\oldpage[0\textsubscript{I}]{28}
+
+모든 $\lambda$에 대하여 $\mathcal H_\lambda$는 $\mathcal F_\lambda$의 \emph{부분층}이고, $\varprojlim_\lambda\mathcal H_\lambda$는 $\varprojlim_\lambda\mathcal F_\lambda$의 \emph{부분층}과 표준적으로 동일시된다. $\mathbf K$가 가환군의 범주이면 공변함자 $\varprojlim_\lambda\mathcal F_\lambda$는 \emph{가법적이고 왼쪽 완전}이다.
+\end{env}
+
+\subsection{층의 붙이기}
+\label{subsection:0.3.3-ko}
+
+\begin{env}[3.3.1]
+\label{0.3.3.1-ko}
+계속해서 범주 $\mathbf K$가 일반화된 사영극한을 갖는다고 하자. $X$를 위상공간, $\mathfrak U=(U_\lambda)_{\lambda\in L}$를 $X$의 열린 덮개라 하고, 각 $\lambda\in L$에 대하여 $\mathcal F_\lambda$를 $U_\lambda$ 위에서 $\mathbf K$에 값을 갖는 층이라 하자. 모든 지표쌍 $(\lambda,\mu)$에 대하여 \emph{동형}
+\[
+  \theta_{\lambda\mu}:
+  \mathcal F_\mu|(U_\lambda\cap U_\mu)
+  \xrightarrow{\sim}
+  \mathcal F_\lambda|(U_\lambda\cap U_\mu)
+\]
+이 주어졌다고 하자. 더 나아가 모든 삼중항 $(\lambda,\mu,\nu)$에 대하여 $\theta'_{\lambda\mu}$, $\theta'_{\mu\nu}$, $\theta'_{\lambda\nu}$를 각각 $\theta_{\lambda\mu}$, $\theta_{\mu\nu}$, $\theta_{\lambda\nu}$의 $U_\lambda\cap U_\mu\cap U_\nu$로의 제한이라 할 때
+\[
+  \theta'_{\lambda\nu}
+  =\theta'_{\lambda\mu}\circ\theta'_{\mu\nu}
+\]
+가 성립한다고 하자. 이를 $\theta_{\lambda\mu}$들에 관한 \emph{붙이기 조건}이라 한다. 그러면 $X$ 위에서 $\mathbf K$에 값을 갖는 층 $\mathcal F$와 각 $\lambda$에 대한 동형
+\[
+  \eta_\lambda:\mathcal F|U_\lambda
+  \xrightarrow{\sim}\mathcal F_\lambda
+\]
+가 존재하여 다음 조건을 만족한다. 모든 지표쌍 $(\lambda,\mu)$에 대하여 $\eta'_\lambda$, $\eta'_\mu$를 각각 $\eta_\lambda$, $\eta_\mu$의 $U_\lambda\cap U_\mu$로의 제한이라 하면
+\[
+  \theta_{\lambda\mu}
+  =\eta'_\lambda\circ{\eta'_\mu}^{-1}.
+\]
+더 나아가 이 조건들에 의해 $\mathcal F$와 $\eta_\lambda$들은 유일한 동형을 제외하고 결정된다. 유일성은 (3.2.5)에서 곧바로 따른다. $\mathcal F$의 존재를 보이기 위해, 적어도 하나의 $U_\lambda$에 포함되는 열린집합들로 이루어진 열린집합 기저를 $\mathfrak B$라 하자. 모든 $U\in\mathfrak B$에 대하여 $U\subset U_\lambda$인 $\lambda$ 하나를 골라, 그 $\mathcal F_\lambda(U)$ 가운데 하나를 힐베르트의 $\tau$ 함수로 선택한다. 이 대상을 $\mathcal F(U)$라 하면 $U\subset V$, $U,V\in\mathfrak B$인 $\rho_U^V$들은 $\theta_{\lambda\mu}$를 사용하여 명백한 방식으로 정의된다. 추이성 조건은 붙이기 조건에서 따르고, (F\textsubscript{0})도 곧바로 확인된다. 따라서 이렇게 정의한 $\mathfrak B$ 위의 준층은 층이며, 일반적인 절차 (3.2.1)에 의해 요구한 성질을 갖는 보통 층을 얻는다. 이 층도 $\mathcal F$라 쓰겠다. $\mathcal F$는 \emph{$\theta_{\lambda\mu}$들을 사용하여 $\mathcal F_\lambda$들을 붙여 얻었다}고 말하며, 보통 $\eta_\lambda$를 통해 $\mathcal F_\lambda$와 $\mathcal F|U_\lambda$를 동일시하겠다.
+
+$X$ 위에서 $\mathbf K$에 값을 갖는 모든 층 $\mathcal F$는 다음과 같이 붙여 얻은 것으로 볼 수 있음이 명백하다. $X$의 임의의 열린 덮개 $(U_\lambda)$에 대하여 $\mathcal F_\lambda=\mathcal F|U_\lambda$로 놓고, $\theta_{\lambda\mu}$를 항등사상으로 취한다.
+\end{env}
+
+\begin{env}[3.3.2]
+\label{0.3.3.2-ko}
+같은 표기 아래에서, 모든 $\lambda\in L$에 대하여 $\mathcal G_\lambda$를 $U_\lambda$ 위에서 $\mathbf K$에 값을 갖는 두 번째 층이라 하자. 모든 지표쌍 $(\lambda,\mu)$에 대하여 붙이기 조건을 만족하는 동형
+\[
+  \omega_{\lambda\mu}:
+  \mathcal G_\mu|(U_\lambda\cap U_\mu)
+  \xrightarrow{\sim}
+  \mathcal G_\lambda|(U_\lambda\cap U_\mu)
+\]
+이 주어졌다고 하자. 끝으로 모든 $\lambda$에 대하여 사상 $u_\lambda:\mathcal F_\lambda\to\mathcal G_\lambda$가 주어지고, 가환도
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\mathcal F_\mu|(U_\lambda\cap U_\mu)
+  \arrow[r,"u_\mu"] \arrow[d]
+  & \mathcal G_\mu|(U_\lambda\cap U_\mu) \arrow[d] \\
+\mathcal F_\lambda|(U_\lambda\cap U_\mu)
+  \arrow[r,"u_\lambda"']
+  & \mathcal G_\lambda|(U_\lambda\cap U_\mu)
+\end{tikzcd}
+\tag{3.3.2.1}\label{0.3.3.2.1-ko}
+\end{equation}
+들이 가환이라고 하자. $\mathcal G$가 $\omega_{\lambda\mu}$들을 사용하여 $\mathcal G_\lambda$들을 붙여 얻은 층이면, 사상 $u:\mathcal F\to\mathcal G$가 유일하게 존재한다. 그 조건은 다음 가환도들이
+
+\oldpage[0\textsubscript{I}]{29}
+
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+\mathcal F|U_\lambda
+  \arrow[r,"u|U_\lambda"] \arrow[d]
+  & \mathcal G|U_\lambda \arrow[d] \\
+\mathcal F_\lambda
+  \arrow[r,"u_\lambda"']
+  & \mathcal G_\lambda
+\end{tikzcd}
+\]
+가환인 것이다. 이는 (3.2.3)에서 곧바로 따른다. 족 $(u_\lambda)$와 $u$ 사이의 대응은 조건 (3.3.2.1)을 만족하는
+\[
+  \prod_\lambda
+  \operatorname{Hom}(\mathcal F_\lambda,\mathcal G_\lambda)
+\]
+의 부분에서 $\operatorname{Hom}(\mathcal F,\mathcal G)$ 위로 가는 함자적 전단사이다.
+\end{env}
+
+\begin{env}[3.3.3]
+\label{0.3.3.3-ko}
+(3.3.1)의 표기에서 $V$를 $X$의 열린집합이라 하자. $\theta_{\lambda\mu}$들의 $V\cap U_\lambda\cap U_\mu$로의 제한들은 유도된 층 $\mathcal F_\lambda|(V\cap U_\lambda)$들에 관한 붙이기 조건을 만족한다. 이 층들을 붙여 얻은 $V$ 위의 층은 $\mathcal F|V$와 표준적으로 동일시됨이 곧바로 따른다.
+\end{env}
+
+\subsection{준층의 직상}
+\label{subsection:0.3.4-ko}
+
+\begin{env}[3.4.1]
+\label{0.3.4.1-ko}
+$X$, $Y$를 두 위상공간, $\psi:X\to Y$를 연속사상이라 하자. $\mathcal F$를 $X$ 위에서 범주 $\mathbf K$에 값을 갖는 준층이라 하자. 모든 열린집합 $U\subset Y$에 대하여
+\[
+  \mathcal G(U)=\mathcal F(\psi^{-1}(U))
+\]
+로 놓고, $U\subset V$인 $Y$의 두 열린 부분집합 $U,V$에 대하여 $\rho_U^V$를 사상
+\[
+  \mathcal F(\psi^{-1}(V))
+  \longrightarrow\mathcal F(\psi^{-1}(U))
+\]
+이라 하자. $\mathcal G(U)$들과 $\rho_U^V$들은 $Y$ 위에서 $\mathbf K$에 값을 갖는 \emph{준층}을 정의함이 곧바로 따른다. 이를 \emph{$\psi$에 의한 $\mathcal F$의 직상}이라 하고 $\psi_*(\mathcal F)$로 나타낸다. $\mathcal F$가 층이면 준층 $\mathcal G$에 관한 공리 (F)가 곧바로 확인되므로 $\psi_*(\mathcal F)$도 층이다.
+\end{env}
+
+\begin{env}[3.4.2]
+\label{0.3.4.2-ko}
+$\mathcal F_1$, $\mathcal F_2$를 $X$ 위에서 $\mathbf K$에 값을 갖는 두 준층이라 하고, $u:\mathcal F_1\to\mathcal F_2$를 사상이라 하자. $U$가 $Y$의 열린 부분집합 전체를 움직일 때 사상족
+\[
+  u_{\psi^{-1}(U)}:
+  \mathcal F_1(\psi^{-1}(U))
+  \longrightarrow\mathcal F_2(\psi^{-1}(U))
+\]
+은 제한사상과의 호환조건을 만족하므로 사상
+\[
+  \psi_*(u):\psi_*(\mathcal F_1)
+  \longrightarrow\psi_*(\mathcal F_2)
+\]
+를 정의한다. $\mathcal F_3$가 $X$ 위에서 $\mathbf K$에 값을 갖는 세 번째 준층이고 $v:\mathcal F_2\to\mathcal F_3$가 사상이면
+\[
+  \psi_*(v\circ u)=\psi_*(v)\circ\psi_*(u).
+\]
+다시 말해 $\psi_*(\mathcal F)$는 $\mathcal F$에 관한 \emph{공변함자}이며, $X$ 위에서 $\mathbf K$에 값을 갖는 준층(각각 층)의 범주에서 $Y$ 위에서 $\mathbf K$에 값을 갖는 준층(각각 층)의 범주로 간다.
+\end{env}
+
+\begin{env}[3.4.3]
+\label{0.3.4.3-ko}
+$Z$를 세 번째 위상공간, $\psi':Y\to Z$를 연속사상이라 하고 $\psi''=\psi'\circ\psi$로 놓자. $X$ 위에서 $\mathbf K$에 값을 갖는 모든 준층 $\mathcal F$에 대하여
+\[
+  \psi_*''(\mathcal F)
+  =\psi_*'(\psi_*(\mathcal F))
+\]
+임은 명백하다. 또한 이러한 준층 사이의 모든 사상 $u:\mathcal F\to\mathcal G$에 대하여
+\[
+  \psi_*''(u)=\psi_*'(\psi_*(u)).
+\]
+다시 말해 $\psi_*''$은 함자 $\psi_*'$과 $\psi_*$의 \emph{합성}이며, 이를
+\[
+  (\psi'\circ\psi)_*=\psi_*'\circ\psi_*
+\]
+로 쓸 수 있다.
+
+더 나아가 $Y$의 모든 열린집합 $U$에 대하여, 유도된 준층 $\mathcal F|\psi^{-1}(U)$의 제한사상 $\psi|\psi^{-1}(U)$에 의한 직상은 바로 유도된 준층 $\psi_*(\mathcal F)|U$이다.
+\end{env}
+
+\begin{env}[3.4.4]
+\label{0.3.4.4-ko}
+범주 $\mathbf K$가 귀납극한을 갖는다고 하고, $\mathcal F$를 $X$ 위에서 $\mathbf K$에 값을 갖는 준층이라 하자. 모든 $x\in X$에 대하여 사상
+\[
+  \Gamma(\psi^{-1}(U),\mathcal F)
+  \longrightarrow\mathcal F_x
+\]
+들은 귀납계를 이룬다. 여기서 $U$는 $Y$에서 $\psi(x)$의 열린 근방을 움직인다. 이 귀납계에서
+
+\oldpage[0\textsubscript{I}]{30}
+
+귀납극한으로 넘어가면 줄기 사이의 사상
+\[
+  \psi_x:(\psi_*(\mathcal F))_{\psi(x)}
+  \longrightarrow\mathcal F_x
+\]
+을 얻는다. 일반적으로 이 사상은 \emph{단사도 전사도 아니다}. 이 사상은 함자적이다. 실제로 $u:\mathcal F_1\to\mathcal F_2$가 $X$ 위에서 $\mathbf K$에 값을 갖는 준층 사이의 사상이면 가환도
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+(\psi_*(\mathcal F_1))_{\psi(x)}
+  \arrow[r,"\psi_x"] \arrow[d,"{(\psi_*(u))_{\psi(x)}}"']
+  & (\mathcal F_1)_x \arrow[d,"u_x"] \\
+(\psi_*(\mathcal F_2))_{\psi(x)}
+  \arrow[r,"\psi_x"']
+  & (\mathcal F_2)_x
+\end{tikzcd}
+\]
+는 가환이다. $Z$가 세 번째 위상공간이고 $\psi':Y\to Z$가 연속사상이며 $\psi''=\psi'\circ\psi$이면, 모든 $x\in X$에 대하여
+\[
+  \psi_x''=\psi_x\circ\psi'_{\psi(x)}.
+\]
+\end{env}
+
+\begin{env}[3.4.5]
+\label{0.3.4.5-ko}
+(3.4.4)의 가정 아래에서, 더 나아가 $\psi$가 $X$에서 $Y$의 부분공간 $\psi(X)$ 위로 가는 \emph{위상동형}이라고 하자. 그러면 모든 $x\in X$에 대하여 $\psi_x$는 \emph{동형}이다. 이는 특히 $Y$의 부분집합 $X$에서 $Y$로 가는 표준 단사사상 $j$에 적용된다.
+\end{env}
+
+\begin{env}[3.4.6]
+\label{0.3.4.6-ko}
+$\mathbf K$가 군, 환 등의 범주라고 하자. $\mathcal F$가 $X$ 위에서 $\mathbf K$에 값을 갖고 지지집합이 $S$인 층이며 $y\notin\overline{\psi(S)}$이면, $\psi_*(\mathcal F)$의 정의로부터
+\[
+  (\psi_*(\mathcal F))_y=\{0\}
+\]
+을 얻는다. 다시 말해 $\psi_*(\mathcal F)$의 지지집합은 $\overline{\psi(S)}$에 포함되지만 반드시 $\psi(S)$에 포함되는 것은 아니다. 같은 가정 아래에서 $j$가 $Y$의 부분집합 $X$에서 $Y$로 가는 표준 단사사상이면, 층 $j_*(\mathcal F)$가 $X$ 위에 유도하는 층은 $\mathcal F$이다. 더 나아가 $X$가 $Y$에서 \emph{닫혀} 있으면 $j_*(\mathcal F)$는 $X$ 위에 $\mathcal F$를, $Y-X$ 위에 $0$을 유도하는 $Y$ 위의 층이다(G, II, 2.9.2). 그러나 $X$가 국소 닫혔지만 닫히지는 않았다고 가정하면 일반적으로 $j_*(\mathcal F)$는 이 마지막 층과 다르다.
+\end{env}
+
+\subsection{준층의 역상}
+\label{subsection:0.3.5-ko}
+
+\begin{env}[3.5.1]
+\label{0.3.5.1-ko}
+(3.4.1)의 가정 아래에서 $\mathcal F$가 $X$ 위의 준층이고 $\mathcal G$가 $Y$ 위의 준층이며 둘 다 $\mathbf K$에 값을 갖는다고 하자. $Y$ 위의 준층 사이의 모든 사상
+\[
+  u:\mathcal G\longrightarrow\psi_*(\mathcal F)
+\]
+을 역시 $\mathcal G$에서 $\mathcal F$로 가는 $\psi$-\emph{사상}이라 하고 $\mathcal G\to\mathcal F$로도 쓴다. 또한 $\mathcal G$에서 $\mathcal F$로 가는 $\psi$-사상들의 집합
+\[
+  \operatorname{Hom}_Y(\mathcal G,\psi_*(\mathcal F))
+\]
+을 $\operatorname{Hom}_\psi(\mathcal G,\mathcal F)$로 나타낸다.
+
+$U$가 $X$의 열린집합이고 $V$가 $\psi(U)\subset V$를 만족하는 $Y$의 열린집합인 모든 쌍 $(U,V)$에 대하여, 제한사상
+\[
+  \mathcal F(\psi^{-1}(V))\longrightarrow\mathcal F(U)
+\]
+과 사상
+\[
+  u_V:\mathcal G(V)\longrightarrow
+  \psi_*(\mathcal F)(V)=\mathcal F(\psi^{-1}(V))
+\]
+을 합성하여 사상 $u_{U,V}:\mathcal G(V)\to\mathcal F(U)$를 얻는다. 이 사상들은 $U'\subset U$, $V'\subset V$, $\psi(U')\subset V'$일 때 가환도
+\begin{equation*}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\mathcal G(V) \arrow[r,"u_{U,V}"] \arrow[d]
+  & \mathcal F(U) \arrow[d] \\
+\mathcal G(V') \arrow[r,"u_{U',V'}"']
+  & \mathcal F(U')
+\end{tikzcd}
+\tag{3.5.1.1}\label{0.3.5.1.1-ko}
+\end{equation*}
+들을 가환이 되게 함이 곧바로 따른다. 역으로 가환도 (3.5.1.1)을 가환이 되게 하는 사상족 $(u_{U,V})$가 주어지면
+\[
+  u_V=u_{\psi^{-1}(V),V}
+\]
+로 취함으로써 $\psi$-사상 $u$가 정의된다.
+
+\oldpage[0\textsubscript{I}]{31}
+
+범주 $\mathbf K$가 일반화된 사영극한을 갖고 $\mathfrak B$, $\mathfrak B'$이 각각 $X$, $Y$의 위상의 기저라고 하자. 층 사이의 $\psi$-사상 $u$를 정의하려면 $U\in\mathfrak B$, $V\in\mathfrak B'$, $\psi(U)\subset V$인 $u_{U,V}$들만 주고, $U,U'\in\mathfrak B$, $V,V'\in\mathfrak B'$에 대하여 호환조건 (3.5.1.1)을 확인하면 된다. 실제로 모든 열린집합 $W\subset Y$에 대하여 $u_W$를 $V\in\mathfrak B'$, $V\subset W$, $U\in\mathfrak B$, $\psi(U)\subset V$인 $u_{U,V}$들의 사영극한으로 정의하면 된다.
+
+범주 $\mathbf K$가 귀납극한을 가질 때에는 모든 $x\in X$와 $Y$에서 $\psi(x)$의 모든 열린 근방 $V$에 대하여 사상
+\[
+  \mathcal G(V)\longrightarrow
+  \mathcal F(\psi^{-1}(V))\longrightarrow\mathcal F_x
+\]
+을 얻는다. 이 사상들은 귀납계를 이루며, 귀납극한으로 넘어가면 사상
+\[
+  \mathcal G_{\psi(x)}\longrightarrow\mathcal F_x
+\]
+을 얻는다.
+\end{env}
+
+\begin{env}[3.5.2]
+\label{0.3.5.2-ko}
+(3.4.3)의 가정 아래에서 $\mathcal F$, $\mathcal G$, $\mathcal H$를 각각 $X$, $Y$, $Z$ 위에서 $\mathbf K$에 값을 갖는 준층이라 하고,
+\[
+  u:\mathcal G\longrightarrow\psi_*(\mathcal F),
+  \qquad
+  v:\mathcal H\longrightarrow\psi'_*(\mathcal G)
+\]
+를 각각 $\psi$-사상과 $\psi'$-사상이라 하자. 이들로부터 $\psi''$-사상
+\[
+  w:\mathcal H\xrightarrow{v}\psi'_*(\mathcal G)
+  \xrightarrow{\psi'_*(u)}
+  \psi'_*(\psi_*(\mathcal F))=\psi''_*(\mathcal F)
+\]
+을 얻으며, 이를 정의에 따라 $u$와 $v$의 \emph{합성}이라 한다. 따라서 위상공간 $X$와 그 위에서 $\mathbf K$에 값을 갖는 준층 $\mathcal F$의 쌍 $(X,\mathcal F)$들을 하나의 \emph{범주}를 이루는 것으로 볼 수 있다. 여기서 사상
+\[
+  (\psi,\theta):(X,\mathcal F)\longrightarrow(Y,\mathcal G)
+\]
+은 연속사상 $\psi:X\to Y$와 $\psi$-사상 $\theta:\mathcal G\to\mathcal F$의 쌍이다.
+\end{env}
+
+\begin{env}[3.5.3]
+\label{0.3.5.3-ko}
+$\psi:X\to Y$를 연속사상, $\mathcal G$를 $Y$ 위에서 $\mathbf K$에 값을 갖는 \emph{준층}이라 하자. $\psi$에 의한 $\mathcal G$의 \emph{역상}을 쌍 $(\mathcal G',\rho)$로 정의한다. 여기서 $\mathcal G'$은 $X$ 위에서 $\mathbf K$에 값을 갖는 \emph{층}이고, $\rho:\mathcal G\to\mathcal G'$은 $\psi$-사상, 다시 말해 준층의 사상 $\mathcal G\to\psi_*(\mathcal G')$이며, 다음 조건을 만족한다. $X$ 위에서 $\mathbf K$에 값을 갖는 모든 \emph{층} $\mathcal F$에 대하여 $v$를 $\psi_*(v)\circ\rho$로 보내는 사상
+\begin{equation*}
+  \operatorname{Hom}_X(\mathcal G',\mathcal F)
+  \longrightarrow \operatorname{Hom}_\psi(\mathcal G,\mathcal F)
+  =\operatorname{Hom}_Y(\mathcal G,\psi_*(\mathcal F))
+\tag{3.5.3.1}\label{0.3.5.3.1-ko}
+\end{equation*}
+이 \emph{전단사}이다. 이 사상은 $\mathcal F$에 관하여 함자적이므로 $\mathcal F$에 관한 함자들의 동형을 정의한다. 쌍 $(\mathcal G',\rho)$은 보편문제의 해이므로, 존재할 때 \emph{유일한 동형을 제외하고 결정된다}. 이때
+\[
+  \mathcal G'=\psi^*(\mathcal G),
+  \qquad
+  \rho=\rho_{\mathcal G}
+\]
+로 쓰고, 표현을 약간 남용하여 $\psi^*(\mathcal G)$를 $\psi$에 의한 $\mathcal G$의 \emph{역상층}이라 하겠다. 여기서는 $\psi^*(\mathcal G)$에 표준 $\psi$-사상
+\[
+  \rho_{\mathcal G}:\mathcal G\longrightarrow\psi^*(\mathcal G),
+\]
+즉 $Y$ 위의 준층 사이의 \emph{표준 사상}
+\begin{equation*}
+  \rho_{\mathcal G}:\mathcal G
+  \longrightarrow\psi_*(\psi^*(\mathcal G))
+\tag{3.5.3.2}\label{0.3.5.3.2-ko}
+\end{equation*}
+이 갖추어져 있다고 이해한다.
+
+$v:\psi^*(\mathcal G)\to\mathcal F$가 $X$ 위에서 $\mathbf K$에 값을 갖는 층 사이의 사상이면
+\[
+  v^b=\psi_*(v)\circ\rho_{\mathcal G}:
+  \mathcal G\longrightarrow\psi_*(\mathcal F)
+\]
+로 놓는다. 정의에 따라 준층 사이의 \emph{모든} 사상 $u:\mathcal G\to\psi_*(\mathcal F)$는 유일한 하나의 $v$에 대하여 $v^b$의 꼴이고, 이 $v$를 $u^\sharp$이라 쓴다. 다시 말해 준층 사이의 모든 사상 $u:\mathcal G\to\psi_*(\mathcal F)$는 유일하게
+\begin{equation*}
+  u:\mathcal G\xrightarrow{\rho_{\mathcal G}}
+  \psi_*(\psi^*(\mathcal G))
+  \xrightarrow{\psi_*(u^\sharp)}\psi_*(\mathcal F)
+\tag{3.5.3.3}\label{0.3.5.3.3-ko}
+\end{equation*}
+로 분해된다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{32}
+
+\begin{env}[3.5.4]
+\label{0.3.5.4-ko}
+이제 범주 $\mathbf K$가 다음 성질을 갖는다고 하자.\footnote{서론에서 인용한 책에서, $\mathbf K$에 값을 갖는 준층의 역상이 존재함을 보장하는 범주 $\mathbf K$에 대한 매우 일반적인 조건을 제시할 것이다.} $Y$ 위에서 $\mathbf K$에 값을 갖는 \emph{모든} 준층 $\mathcal G$는 $\psi$에 의한 역상을 가지며, 이를 $\psi^*(\mathcal G)$로 쓴다.
+
+$\psi^*(\mathcal G)$를 $\mathcal G$에 관한 \emph{공변함자}, 즉 $Y$ 위에서 $\mathbf K$에 값을 갖는 준층의 범주에서 $X$ 위에서 $\mathbf K$에 값을 갖는 층의 범주로 가는 함자로 정의할 수 있음을 보이겠다. 이때 동형 $v\mapsto v^b$는 $\mathcal G$와 $\mathcal F$에 관한 \emph{쌍함자의 동형}
+\begin{equation*}
+  \operatorname{Hom}_X(\psi^*(\mathcal G),\mathcal F)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_Y(\mathcal G,\psi_*(\mathcal F))
+\tag{3.5.4.1}\label{0.3.5.4.1-ko}
+\end{equation*}
+이 된다.
+
+실제로 $w:\mathcal G_1\to\mathcal G_2$가 $Y$ 위에서 $\mathbf K$에 값을 갖는 준층 사이의 사상이면 합성사상
+\[
+  \mathcal G_1\xrightarrow{w}\mathcal G_2
+  \xrightarrow{\rho_{\mathcal G_2}}
+  \psi_*(\psi^*(\mathcal G_2))
+\]
+을 생각하자. 이에 대응하는 사상
+\[
+  (\rho_{\mathcal G_2}\circ w)^\sharp:
+  \psi^*(\mathcal G_1)\longrightarrow\psi^*(\mathcal G_2)
+\]
+을 $\psi^*(w)$라 쓰겠다. (3.5.3.3)에 따라
+\begin{equation*}
+  \psi_*(\psi^*(w))\circ\rho_{\mathcal G_1}
+  =\rho_{\mathcal G_2}\circ w
+\tag{3.5.4.2}\label{0.3.5.4.2-ko}
+\end{equation*}
+이다. 여기서 $\mathcal F$가 $X$ 위에서 $\mathbf K$에 값을 갖는 층이고 $u:\mathcal G_2\to\psi_*(\mathcal F)$가 사상이면, (3.5.3.3), (3.5.4.2), 그리고 $v^b$의 정의로부터
+\[
+  (u^\sharp\circ\psi^*(w))^b
+  =\psi_*(u^\sharp)\circ\psi_*(\psi^*(w))\circ\rho_{\mathcal G_1}
+  =\psi_*(u^\sharp)\circ\rho_{\mathcal G_2}\circ w
+  =u\circ w,
+\]
+즉
+\begin{equation*}
+  (u\circ w)^\sharp=u^\sharp\circ\psi^*(w)
+\tag{3.5.4.3}\label{0.3.5.4.3-ko}
+\end{equation*}
+을 얻는다. 특히 $u$를 사상
+\[
+  \mathcal G_2\xrightarrow{w'}\mathcal G_3
+  \xrightarrow{\rho_{\mathcal G_3}}
+  \psi_*(\psi^*(\mathcal G_3))
+\]
+으로 취하면
+\[
+  \psi^*(w'\circ w)
+  =(\rho_{\mathcal G_3}\circ w'\circ w)^\sharp
+  =(\rho_{\mathcal G_3}\circ w')^\sharp\circ\psi^*(w)
+  =\psi^*(w')\circ\psi^*(w)
+\]
+을 얻는다. 이로써 주장이 증명된다.
+
+끝으로 $X$ 위에서 $\mathbf K$에 값을 갖는 모든 층 $\mathcal F$에 대하여 $i_{\mathcal F}$를 $\psi_*(\mathcal F)$의 항등사상이라 하고,
+\[
+  \sigma_{\mathcal F}:
+  \psi^*(\psi_*(\mathcal F))\longrightarrow\mathcal F
+\]
+를 사상 $(i_{\mathcal F})^\sharp$이라 쓰자. 식 (3.5.4.3)은 모든 사상 $u:\mathcal G\to\psi_*(\mathcal F)$에 대하여 특히 분해
+\begin{equation*}
+  u^\sharp:\psi^*(\mathcal G)
+  \xrightarrow{\psi^*(u)}
+  \psi^*(\psi_*(\mathcal F))
+  \xrightarrow{\sigma_{\mathcal F}}\mathcal F
+\tag{3.5.4.4}\label{0.3.5.4.4-ko}
+\end{equation*}
+를 준다. 사상 $\sigma_{\mathcal F}$를 \emph{표준적}이라고 하겠다.
+\end{env}
+
+\begin{env}[3.5.5]
+\label{0.3.5.5-ko}
+$\psi':Y\to Z$를 연속사상이라 하고, $Z$ 위에서 $\mathbf K$에 값을 갖는 모든 준층 $\mathcal H$가 $\psi'$에 의한 역상 $\psi'^*(\mathcal H)$을 갖는다고 하자. 그러면 (3.5.4)의 가정 아래에서 $Z$ 위에서 $\mathbf K$에 값을 갖는 모든 준층 $\mathcal H$는 $\psi''=\psi'\circ\psi$에 의한 역상을 가지며, 함자적인 표준 동형
+\begin{equation*}
+  \psi''^*(\mathcal H)\xrightarrow{\sim}
+  \psi^*(\psi'^*(\mathcal H))
+\tag{3.5.5.1}\label{0.3.5.5.1-ko}
+\end{equation*}
+이 존재한다.
+
+\oldpage[0\textsubscript{I}]{33}
+
+이는 $\psi''_*=\psi'_*\circ\psi_*$임을 고려하면 정의에서 곧바로 따른다. 또한 $u:\mathcal G\to\psi_*(\mathcal F)$가 $\psi$-사상이고, $v:\mathcal H\to\psi'_*(\mathcal G)$가 $\psi'$-사상이며, $w=\psi'_*(u)\circ v$가 이들의 합성이라 하자(3.5.2). 그러면 $w^\sharp$은 합성사상
+\[
+  w^\sharp:\psi^*(\psi'^*(\mathcal H))
+  \xrightarrow{\psi^*(v^\sharp)}
+  \psi^*(\mathcal G)
+  \xrightarrow{u^\sharp}\mathcal F
+\]
+임이 곧바로 확인된다.
+\end{env}
+
+\begin{env}[3.5.6]
+\label{0.3.5.6-ko}
+특히 $\psi$를 항등사상 $1_X:X\to X$로 취하자. $X$ 위에서 $\mathbf K$에 값을 갖는 준층 $\mathcal F$의 $\psi$에 의한 역상이 존재하면, 이 역상을 \emph{준층 $\mathcal F$의 층화}라 한다. $\mathcal F$에서 $\mathbf K$에 값을 갖는 \emph{층} $\mathcal F'$으로 가는 모든 사상 $u:\mathcal F\to\mathcal F'$은 유일하게
+\[
+  \mathcal F\xrightarrow{\rho_{\mathcal F}}
+  1_X^*(\mathcal F)\xrightarrow{u^\sharp}\mathcal F'
+\]
+으로 분해된다.
+\end{env}
+
+\subsection{상수층과 국소 상수층}
+\label{subsection:0.3.6-ko}
+
+\begin{env}[3.6.1]
+\label{0.3.6.1-ko}
+$X$ 위에서 $\mathbf K$에 값을 갖는 \emph{준층} $\mathcal F$를 생각하자. 모든 공집합이 아닌 열린집합 $U\subset X$에 대하여 표준 사상
+\[
+  \mathcal F(X)\longrightarrow\mathcal F(U)
+\]
+이 \emph{동형}이면 $\mathcal F$를 \emph{상수 준층}이라 하겠다. $\mathcal F$가 반드시 층인 것은 아님에 유의하자. 상수 준층의 층화인 \emph{층}을 \emph{상수층}이라 한다(원문의 «단순층»). 층 $\mathcal F$가 \emph{국소 상수}라는 것은 모든 $x\in X$가 $\mathcal F|U$가 상수층이 되는 열린 근방 $U$를 갖는다는 뜻이다.
+\end{env}
+
+\begin{env}[3.6.2]
+\label{0.3.6.2-ko}
+$X$가 \emph{기약}이라고 하자(2.1.1). 그러면 다음 성질들은 서로 동치이다.
+\begin{enumerate}
+  \item[a)] \emph{$\mathcal F$는 $X$ 위의 상수 준층이다.}
+  \item[b)] \emph{$\mathcal F$는 $X$ 위의 상수층이다.}
+  \item[c)] \emph{$\mathcal F$는 $X$ 위의 국소 상수층이다.}
+\end{enumerate}
+
+실제로 $\mathcal F$를 $X$ 위의 상수 준층이라 하자. $U$, $V$가 $X$의 공집합이 아닌 두 열린집합이면 $U\cap V$도 공집합이 아니다. 따라서
+\[
+  \mathcal F(X)\longrightarrow\mathcal F(U)
+  \longrightarrow\mathcal F(U\cap V)
+\]
+와 $\mathcal F(X)\to\mathcal F(U)$가 동형이므로 $\mathcal F(U)\to\mathcal F(U\cap V)$도 동형이고, 마찬가지로 $\mathcal F(V)\to\mathcal F(U\cap V)$도 동형이다. 이로부터 (3.1.2)의 공리 (F)가 성립함이 곧바로 따른다. 따라서 $\mathcal F$는 그 층화와 동형이고, a)는 b)를 함의한다.
+
+이제 $(U_\alpha)$를 공집합이 아닌 열린집합들로 이루어진 $X$의 열린 덮개라 하고, $\mathcal F$를 모든 $\alpha$에 대하여 $\mathcal F|U_\alpha$가 상수층인 $X$ 위의 층이라 하자. $U_\alpha$는 기약이므로 앞의 결과에 따라 $\mathcal F|U_\alpha$는 상수 준층이다. $U_\alpha\cap U_\beta$가 공집합이 아니므로
+\[
+  \mathcal F(U_\alpha)\longrightarrow
+  \mathcal F(U_\alpha\cap U_\beta),
+  \qquad
+  \mathcal F(U_\beta)\longrightarrow
+  \mathcal F(U_\alpha\cap U_\beta)
+\]
+는 동형이다. 따라서 모든 지표쌍에 대하여 표준 동형
+\[
+  \theta_{\alpha\beta}:
+  \mathcal F(U_\alpha)\xrightarrow{\sim}\mathcal F(U_\beta)
+\]
+을 얻는다. 그런데 $U=X$에 조건 (F)를 적용하면, 모든 지표 $\alpha_0$에 대하여 $\mathcal F(U_{\alpha_0})$와 $\theta_{\alpha_0\alpha}$들이 보편문제의 해임을 알 수 있다. 유일성에 따라
+\[
+  \mathcal F(X)\longrightarrow\mathcal F(U_{\alpha_0})
+\]
+는 동형이다. 그러므로 c)는 a)를 함의한다.
+\end{env}
+
+\subsection{군 또는 환 준층의 역상}
+\label{subsection:0.3.7-ko}
+
+\oldpage[0\textsubscript{I}]{34}
+
+\begin{env}[3.7.1]
+\label{0.3.7.1-ko}
+$\mathbf K$를 집합의 범주로 취할 때, $\mathbf K$에 값을 갖는 모든 준층 $\mathcal G$는 $\psi$에 의한 역상을 \emph{항상 가짐}을 보이겠다. $X$, $Y$, $\psi$에 관한 표기와 가정은 (3.5.3)의 것을 사용한다. 모든 열린집합 $U\subset X$에 대하여 $\mathcal G'(U)$를 다음과 같이 정의하자. $\mathcal G'(U)$의 원소 $s'$은 족 $(s'_x)_{x\in U}$이고, 모든 $x\in U$에 대하여
+\[
+  s'_x\in\mathcal G_{\psi(x)}
+\]
+이며 다음 조건을 만족한다. 모든 $x\in U$에 대하여 $Y$에서 $\psi(x)$의 열린 근방 $V$, $X$에서 $x$의 근방 $W\subset\psi^{-1}(V)\cap U$, 그리고 원소 $s\in\mathcal G(V)$가 존재하여 모든 $z\in W$에 대하여
+\[
+  s'_z=s_{\psi(z)}
+\]
+이다. $U\mapsto\mathcal G'(U)$가 \emph{층}의 공리들을 만족함은 곧바로 확인된다.
+
+이제 $\mathcal F$를 $X$ 위의 집합의 층이라 하고
+\[
+  u:\mathcal G\longrightarrow\psi_*(\mathcal F),
+  \qquad
+  v:\mathcal G'\longrightarrow\mathcal F
+\]
+를 사상이라 하자. $u^\sharp$과 $v^b$를 다음과 같이 정의한다. $s'$이 $x\in X$의 근방 $U$ 위의 $\mathcal G'$의 단면이고, $V$가 $\psi(x)$의 열린 근방이며, $s\in\mathcal G(V)$가 $x$의 어떤 근방 $W\subset\psi^{-1}(V)\cap U$에서 모든 $z\in W$에 대하여 $s'_z=s_{\psi(z)}$를 만족한다고 하자. 이때
+\[
+  u_x^\sharp(s'_x)=u_{\psi(x)}(s_{\psi(x)})
+\]
+로 취한다. 마찬가지로 $V$가 $Y$의 열린집합이고 $s\in\mathcal G(V)$이면, $v^b(s)$는 $\psi^{-1}(V)$ 위의 $\mathcal G'$의 단면
+\[
+  s'=(s_{\psi(x)})_{x\in\psi^{-1}(V)}
+\]
+의 $v$에 의한 상인 $\psi^{-1}(V)$ 위의 $\mathcal F$의 단면이다.
+
+더 나아가 표준 사상 (3.5.3)
+\[
+  \rho:\mathcal G\longrightarrow\psi_*(\psi^*(\mathcal G))
+\]
+은 다음과 같이 정의된다. 모든 열린집합 $V\subset Y$와 모든 단면 $s\in\Gamma(V,\mathcal G)$에 대하여 $\rho(s)$는 $\psi^{-1}(V)$ 위의 $\psi^*(\mathcal G)$의 단면
+\[
+  (s_{\psi(x)})_{x\in\psi^{-1}(V)}
+\]
+이다. 관계식
+\[
+  (u^\sharp)^b=u,\qquad
+  (v^b)^\sharp=v,\qquad
+  v^b=\psi_*(v)\circ\rho
+\]
+은 곧바로 확인되며, 이로써 주장이 증명된다.
+
+$w:\mathcal G_1\to\mathcal G_2$가 $Y$ 위의 집합의 준층 사이의 사상이면 $\psi^*(w)$는 다음과 같이 구체적으로 주어진다. $s'=(s'_x)_{x\in U}$가 $X$의 열린집합 $U$ 위의 $\psi^*(\mathcal G_1)$의 단면이면
+\[
+  (\psi^*(w))(s')
+  =(w_{\psi(x)}(s'_x))_{x\in U}.
+\]
+끝으로 $Y$의 모든 열린집합 $V$에 대하여, $\psi$의 $\psi^{-1}(V)$로의 제한에 의한 $\mathcal G|V$의 역상은 유도된 층
+\[
+  \psi^*(\mathcal G)|\psi^{-1}(V)
+\]
+과 동일하다.
+
+$\psi$가 항등사상 $1_X$일 때에는 준층에 대응하는 집합의 층의 정의를 다시 얻는다(G, II, 1.2). 앞의 논의는 $\mathbf K$가 군 또는 반드시 가환일 필요는 없는 환의 범주일 때에도 아무런 변경 없이 적용된다.
+
+$X$가 위상공간 $Y$의 임의의 부분집합이고 $j:X\to Y$가 표준 단사사상이라고 하자. 범주 $\mathbf K$에 값을 갖는 $Y$ 위의 모든 층 $\mathcal G$에 대하여, 역상 $j^*(\mathcal G)$이 존재할 때 이를 $\mathcal G$가 $X$ 위에 \emph{유도하는 층}이라 한다. 집합, 군 또는 환의 층에 대해서는 통상적인 정의를 다시 얻는다(G, II, 1.5).
+\end{env}
+
+\begin{env}[3.7.2]
+\label{0.3.7.2-ko}
+(3.5.3)의 표기와 가정을 유지하고, $\mathcal G$가 $Y$ 위의 군의 층(각각 환의 층)이라고 하자. $\psi^*(\mathcal G)$의 단면에 관한 정의 (3.7.1)와 (3.4.4)에 따르면 줄기 사상
+\[
+  \psi_x\circ\rho_{\psi(x)}:
+  \mathcal G_{\psi(x)}
+  \longrightarrow(\psi^*(\mathcal G))_x
+\]
+은 $\mathcal G$에 관하여 함자적인 \emph{동형}이다. 이 동형을 통해 두 줄기를 동일시할 수 있다. 이 동일시 아래에서 $u_x^\sharp$은 (3.5.1)에서 정의한 준동형과 같고, 특히
+\[
+  \operatorname{Supp}(\psi^*(\mathcal G))
+  =\psi^{-1}(\operatorname{Supp}(\mathcal G))
+\]
+이다.
+
+이 결과로부터 가환군의 층들의 아벨 범주에서 \emph{함자 $\psi^*(\mathcal G)$는 $\mathcal G$에 관하여 완전하다}는 것이 곧바로 따른다.
+\end{env}
+
+\subsection{의사이산 공간의 층}
+\label{subsection:0.3.8-ko}
+
+\oldpage[0\textsubscript{I}]{35}
+
+\begin{env}[3.8.1]
+\label{0.3.8.1-ko}
+$X$를 위상이 \emph{준콤팩트} 열린집합들로 이루어진 기저 $\mathfrak B$를 갖는 위상공간이라 하자. $\mathcal F$를 $X$ 위의 \emph{집합의 층}이라 하자. 각 $\mathcal F(U)$에 \emph{이산위상}을 주면
+\[
+  U\longmapsto\mathcal F(U)
+\]
+는 \emph{위상공간의 준층}이 된다. 모든 \emph{준콤팩트} 열린집합 $U$에 대하여 $\Gamma(U,\mathcal F')$가 이산공간 $\mathcal F(U)$인, $\mathcal F$에 대응하는 \emph{위상공간의 층 $\mathcal F'$}이 존재함을 보이겠다(3.5.6).
+
+이를 위해서는 이산 위상공간의 준층 $U\mapsto\mathcal F(U)$가 $\mathfrak B$ \emph{위에서} (3.2.2)의 조건 $(\mathrm F_0)$를 만족함을 보이면 충분하다. 더 일반적으로 $U$가 준콤팩트 열린집합이고 $(U_\alpha)$가 $\mathfrak B$의 원소들로 이루어진 $U$의 덮개이면, 사상
+\[
+  \Gamma(U,\mathcal F)\longrightarrow
+  \Gamma(U_\alpha,\mathcal F)
+\]
+들을 연속이 되게 하는 $\Gamma(U,\mathcal F)$ 위의 가장 엉성한 위상 $\mathcal T$가 \emph{이산위상}임을 보이면 충분하다. 실제로
+\[
+  U=\bigcup_iU_{\alpha_i}
+\]
+가 되게 하는 유한개의 지표 $\alpha_i$가 존재한다. $s\in\Gamma(U,\mathcal F)$라 하고 $s_i$를 $\Gamma(U_{\alpha_i},\mathcal F)$에서의 그 상이라 하자. 집합 $\{s_i\}$들의 역상들의 교집합은 정의에 따라 $\mathcal T$에서 $s$의 근방이다. 그런데 $\mathcal F$는 집합의 층이고 $U_{\alpha_i}$들이 $U$를 덮으므로 이 교집합은 $\{s\}$와 같다. 이로써 주장이 증명된다.
+
+$U$가 $X$의 준콤팩트하지 않은 열린집합이면 위상공간 $\Gamma(U,\mathcal F')$의 바탕집합은 여전히 $\Gamma(U,\mathcal F)$이지만, 그 위상은 일반적으로 이산위상이 아니다. 그 위상은 $V\in\mathfrak B$, $V\subset U$인 사상
+\[
+  \Gamma(U,\mathcal F)\longrightarrow\Gamma(V,\mathcal F)
+\]
+들을 연속이 되게 하는 가장 엉성한 위상이다. 여기서 각 $\Gamma(V,\mathcal F)$는 이산공간이다.
+
+앞의 논의는 반드시 가환일 필요는 없는 군 또는 환의 층에도 아무런 변경 없이 적용되어, 각각 \emph{위상군} 또는 \emph{위상환}의 층을 대응시킨다. 줄여서 $\mathcal F'$을 집합(각각 군, 환)의 층 $\mathcal F$에 대응하는 \emph{의사이산 공간}(각각 \emph{의사이산 군}, \emph{의사이산 환})의 층이라 하겠다.
+\end{env}
+
+\begin{env}[3.8.2]
+\label{0.3.8.2-ko}
+$\mathcal F$, $\mathcal G$를 $X$ 위의 집합(각각 군, 환)의 두 층이라 하고 $u:\mathcal F\to\mathcal G$를 사상이라 하자. $\mathcal F'$, $\mathcal G'$을 각각 $\mathcal F$, $\mathcal G$에 대응하는 의사이산 층이라 하면, $u$는 \emph{연속인} 사상
+\[
+  \mathcal F'\longrightarrow\mathcal G'
+\]
+이기도 하다. 이는 (3.2.5)에서 따른다.
+\end{env}
+
+\begin{env}[3.8.3]
+\label{0.3.8.3-ko}
+$\mathcal F$를 집합의 층, $\mathcal H$를 $\mathcal F$의 부분층이라 하고, $\mathcal F'$, $\mathcal H'$을 각각 $\mathcal F$, $\mathcal H$에 대응하는 의사이산 층이라 하자. 그러면 모든 열린집합 $U\subset X$에 대하여
+\[
+  \Gamma(U,\mathcal H')
+\]
+은 $\Gamma(U,\mathcal F')$에서 \emph{닫혀} 있다. 실제로 이는 $V\in\mathfrak B$, $V\subset U$인 연속사상
+\[
+  \Gamma(U,\mathcal F)\longrightarrow\Gamma(V,\mathcal F)
+\]
+에 의한 $\Gamma(V,\mathcal H)$들의 역상들의 교집합이며, $\Gamma(V,\mathcal H)$는 이산공간 $\Gamma(V,\mathcal F)$에서 닫혀 있다.
+\end{env}
+
+\section{환 달린 공간}
+\label{section:0.4-ko}
+
+\subsection{환 달린 공간, $\mathcal A$-가군, $\mathcal A$-대수}
+\label{subsection:0.4.1-ko}
+
+\begin{env}[4.1.1]
+\label{0.4.1.1-ko}
+\emph{환 달린 공간}(각각 \emph{위상환 달린 공간})은 위상공간 $X$와 $X$ 위의 반드시 가환일 필요는 없는 환의 층(각각 위상환의 층) $\mathcal A$로 이루어진 쌍 $(X,\mathcal A)$이다. $X$를 환 달린 공간 $(X,\mathcal A)$의 바탕
+\oldpage[0\textsubscript{I}]{36}
+위상공간이라 하고, $\mathcal A$를 \emph{구조층}이라 한다. 구조층은 $\mathcal O_X$로 나타내며, 한 점 $x\in X$에서의 그 줄기는 $\mathcal O_{X,x}$ 또는 혼동할 염려가 없을 때에는 간단히 $\mathcal O_x$로 나타낸다.
+
+$X$ 위의 $\mathcal O_X$의 \emph{단위원 단면}, 곧 $\Gamma(X,\mathcal O_X)$의 단위원은 $1$ 또는 $e$로 나타낸다.
+
+이 논고에서는 주로 \emph{가환}환의 층을 다룰 것이므로, 별도의 명시 없이 환 달린 공간 $(X,\mathcal A)$을 말할 때에는 $\mathcal A$가 가환환의 층임을 전제로 한다.
+
+구조층이 반드시 가환일 필요가 없는 환 달린 공간들(각각 위상환 달린 공간들)은 다음과 같이 \emph{범주}를 이룬다. \emph{사상}
+\[
+  (X,\mathcal A)\longrightarrow(Y,\mathcal B)
+\]
+을 연속사상 $\psi:X\to Y$와 환의 층(각각 위상환의 층)의 $\psi$-\emph{사상} $\theta:\mathcal B\to\mathcal A$ (3.5.1)로 이루어진 쌍 $(\psi,\theta)=\Psi$로 정의한다. 두 번째 사상
+\[
+  \Psi'=(\psi',\theta'):(Y,\mathcal B)\longrightarrow(Z,\mathcal C)
+\]
+과 $\Psi$의 \emph{합성}은 $\Psi''=\Psi'\circ\Psi$로 나타내며, 이는 $\psi''=\psi'\circ\psi$이고 $\theta''$가 $\theta$와 $\theta'$의 합성인 사상 $(\psi'',\theta'')$이다. 이때 $\theta''=\psi'_*(\theta)\circ\theta'$이다(3.5.2 참조). 환 달린 공간에 대해서는
+\[
+  \theta''^\sharp
+  =\theta^\sharp\circ\psi^*(\theta'^\sharp)
+\]
+임을 상기하자(3.5.5). 따라서 $\theta'^\sharp$과 $\theta^\sharp$이 \emph{단사}(각각 \emph{전사}) 준동형이면 $\theta''^\sharp$도 그러하다. 여기서는 모든 $x\in X$에 대하여 $\psi_x\circ\rho_{\psi(x)}$가 동형이라는 사실을 함께 사용한다(3.7.2). 앞의 사실들로부터 $\psi$가 \emph{단사} 연속사상이고 $\theta^\sharp$이 환의 층의 \emph{전사} 준동형이면 사상 $(\psi,\theta)$가 환 달린 공간의 범주에서 \emph{단사사상}(T, 1.1)임을 곧바로 확인할 수 있다.
+
+혼동할 염려가 없을 때에는 표기에서 흔히 $\psi$를 $\Psi$로 바꾸어 쓰겠다. 예를 들어 $Y$의 부분집합 $U$에 대하여 $\psi^{-1}(U)$ 대신 $\Psi^{-1}(U)$라고 쓴다.
+\end{env}
+
+\begin{env}[4.1.2]
+\label{0.4.1.2-ko}
+$X$의 임의의 부분집합 $M$에 대하여 쌍 $(M,\mathcal A|M)$은 자명하게 환 달린 공간이다. 이를 환 달린 공간 $(X,\mathcal A)$이 $M$ 위에 \emph{유도하는} 환 달린 공간이라 하며, $(X,\mathcal A)$의 $M$으로의 \emph{제한}이라고도 한다. $j:M\to X$가 표준 단사사상이고 $\omega$가 $\mathcal A|M$의 항등사상이면,
+\[
+  (j,\omega^b):(M,\mathcal A|M)\longrightarrow(X,\mathcal A)
+\]
+은 환 달린 공간의 단사사상이며 이를 \emph{표준 단사사상}이라 한다. 사상 $\Psi:(X,\mathcal A)\to(Y,\mathcal B)$와 이 표준 단사사상의 합성을 $\Psi$의 $M$으로의 \emph{제한}이라 한다.
+\end{env}
+
+\begin{env}[4.1.3]
+\label{0.4.1.3-ko}
+환 달린 공간 $(X,\mathcal A)$ 위의 $\mathcal A$-가군 또는 대수적 층의 정의(G, II, 2.2)는 다시 설명하지 않겠다. $\mathcal A$가 반드시 가환일 필요가 없는 환의 층이면, 반대의 것을 명시하지 않는 한 $\mathcal A$-가군은 항상 ``왼쪽 $\mathcal A$-가군''을 뜻한다. $\mathcal A$의 부분-$\mathcal A$-가군은 $\mathcal A$ 안의 (왼쪽, 오른쪽 또는 양쪽) \emph{아이디얼층} 또는 $\mathcal A$-아이디얼이라 한다.
+
+$\mathcal A$가 가환환의 층일 때 $\mathcal A$-가군의 정의에서 가군 구조를 모두 대수 구조로 바꾸면 $X$ 위의 $\mathcal A$-대수의 정의를 얻는다. 이는 반드시 가환일 필요는 없는 $\mathcal A$-대수가 $\mathcal A$-가군 $\mathcal C$에 $\mathcal A$-가군 준동형
+\[
+  \varphi:
+  \mathcal C\otimes_{\mathcal A}\mathcal C
+  \longrightarrow\mathcal C
+\]
+과 $X$ 위의 단면 $e$를 주어 다음 조건들을 만족시키는 것과 같다. 1\textsuperscript{o} 도표
+\oldpage[0\textsubscript{I}]{37}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}
+  \arrow[r,"\varphi\otimes 1"]
+  \arrow[d,"1\otimes\varphi"']
+&
+\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}
+  \arrow[d,"\varphi"]
+\\
+\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}
+  \arrow[r,"\varphi"']
+&
+\mathcal{C}
+\end{tikzcd}
+\]
+가 가환이다. 2\textsuperscript{o} 모든 열린집합 $U\subset X$와 모든 단면 $s\in\Gamma(U,\mathcal C)$에 대하여
+\[
+  \varphi((e|U)\otimes s)
+  =\varphi(s\otimes(e|U))
+  =s
+\]
+이다. $\mathcal C$가 가환 $\mathcal A$-대수라는 것은 이에 더하여 도표
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}
+  \arrow[rr,"\sigma"]
+  \arrow[dr,"\varphi"']
+&&
+\mathcal{C}\otimes_{\mathcal{A}}\mathcal{C}
+  \arrow[dl,"\varphi"]
+\\
+& \mathcal{C} &
+\end{tikzcd}
+\]
+가 가환이라는 뜻이다. 여기서 $\sigma$는 텐서곱 $\mathcal C\otimes_{\mathcal A}\mathcal C$의 표준 대칭이다.
+
+$\mathcal A$-대수의 준동형도 (G, II, 2.2)의 $\mathcal A$-가군 준동형과 같은 방식으로 정의하지만, 이제 그 준동형들은 당연히 아벨군을 이루지 않는다.
+
+$\mathcal M$이 $\mathcal A$-대수 $\mathcal C$의 부분-$\mathcal A$-가군이면, $\mathcal M$이 생성하는 $\mathcal C$의 부분-$\mathcal A$-대수는 $n\geqslant0$에 대한 준동형
+\[
+  \bigotimes^n\mathcal M\longrightarrow\mathcal C
+\]
+들의 상들의 합이다. 이는 대수의 준층 $U\mapsto\mathcal B(U)$의 층화이기도 하다. 여기서 $\mathcal B(U)$는 부분가군 $\Gamma(U,\mathcal M)$이 생성하는 $\Gamma(U,\mathcal C)$의 부분대수이다.
+\end{env}
+
+\begin{env}[4.1.4]
+\label{0.4.1.4-ko}
+위상공간 $X$ 위의 환의 층 $\mathcal A$에 대하여 줄기 $\mathcal A_x$가 축소환(1.1.1)이면 $\mathcal A$가 $X$의 점 $x$에서 \emph{축소}라고 한다. $\mathcal A$가 $X$의 모든 점에서 축소이면 $\mathcal A$를 \emph{축소}라고 한다. 환 $A$의 모든 소 아이디얼 $\mathfrak p$에 대하여 국소화환 $A_{\mathfrak p}$가 정칙 국소환이면 $A$를 \emph{정칙환}이라 한다는 것을 상기하자. $\mathcal A_x$가 정칙환이면 $\mathcal A$가 점 $x$에서 \emph{정칙}이라고 하고, 모든 점에서 정칙이면 $\mathcal A$를 \emph{정칙}이라고 한다. 끝으로 $\mathcal A_x$가 정수적으로 닫힌 정역이면 $\mathcal A$가 점 $x$에서 \emph{정규}라고 하고, 모든 점에서 정규이면 $\mathcal A$를 \emph{정규}라고 한다. 환 달린 공간 $(X,\mathcal A)$이 앞의 성질 가운데 하나를 갖는다는 것은 환의 층 $\mathcal A$가 그 성질을 갖는다는 뜻이다.
+
+\emph{등급환의 층} $\mathcal A$는 정의에 따라 아벨군의 층들의 족 $(\mathcal A_n)_{n\in\mathbf Z}$의 직합(G, II, 2.7)인 환의 층으로서
+\[
+  \mathcal A_m\mathcal A_n
+  \subset\mathcal A_{m+n}
+\]
+을 만족하는 것이다. \emph{등급 $\mathcal A$-가군}은 아벨군의 층들의 족 $(\mathcal F_n)_{n\in\mathbf Z}$의 직합인 $\mathcal A$-가군 $\mathcal F$로서
+\[
+  \mathcal A_m\mathcal F_n
+  \subset\mathcal F_{m+n}
+\]
+을 만족하는 것이다. 이는 모든 점 $x$에서
+\[
+  (\mathcal A_m)_x(\mathcal A_n)_x
+  \subset(\mathcal A_{m+n})_x
+\]
+(각각
+\[
+  (\mathcal A_m)_x(\mathcal F_n)_x
+  \subset(\mathcal F_{m+n})_x
+\]
+)가 성립한다는 것과 같다.
+\end{env}
+
+\begin{env}[4.1.5]
+\label{0.4.1.5-ko}
+반드시 가환일 필요가 없는 환 달린 공간 $(X,\mathcal A)$을 생각하자. 경우에 따라 왼쪽 또는 오른쪽 $\mathcal A$-가군의 범주에서 정의되고 아벨군의 층의 범주(또는 더
+\oldpage[0\textsubscript{I}]{38}
+일반적으로 $\mathcal C$가 $\mathcal A$의 중심이면 $\mathcal C$-가군의 범주)에 값을 갖는 쌍함자
+\[
+  \mathcal F\otimes_{\mathcal A}\mathcal G,
+  \qquad
+  \mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G),
+  \qquad
+  \operatorname{Hom}_{\mathcal A}(\mathcal F,\mathcal G)
+\]
+의 정의(G, II, 2.8 및 2.2)는 여기서 되풀이하지 않겠다. 모든 점 $x\in X$에서 줄기
+\[
+  (\mathcal F\otimes_{\mathcal A}\mathcal G)_x
+\]
+는 표준적으로 $\mathcal F_x\otimes_{\mathcal A_x}\mathcal G_x$와 동일시되며, 함자적인 표준 준동형
+\[
+  (\mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G))_x
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal A_x}(\mathcal F_x,\mathcal G_x)
+\]
+이 정의된다. 이 준동형은 일반적으로 단사도 전사도 아니다.
+
+앞의 쌍함자들은 가법적이며, 특히 유한 직합과 가환한다. $\mathcal F\otimes_{\mathcal A}\mathcal G$는 $\mathcal F$와 $\mathcal G$ 각각에 관하여 오른쪽 완전하고 귀납극한과 가환하며,
+\[
+  \mathcal A\otimes_{\mathcal A}\mathcal G
+  \simeq\mathcal G,
+  \qquad
+  \mathcal F\otimes_{\mathcal A}\mathcal A
+  \simeq\mathcal F
+\]
+인 표준 동형이 있다. 함자 $\mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G)$와 $\operatorname{Hom}_{\mathcal A}(\mathcal F,\mathcal G)$은 $\mathcal F$와 $\mathcal G$에 관하여 \emph{왼쪽 완전}하다. 더 정확히 말하면 완전열
+\[
+  0\longrightarrow\mathcal G'
+  \longrightarrow\mathcal G
+  \longrightarrow\mathcal G''
+\]
+이 주어질 때 열
+\[
+  0\longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G')
+  \longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G)
+  \longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G'')
+\]
+은 완전하고, 완전열
+\[
+  \mathcal F'\longrightarrow\mathcal F
+  \longrightarrow\mathcal F''\longrightarrow0
+\]
+이 주어질 때 열
+\[
+  0\longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F'',\mathcal G)
+  \longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G)
+  \longrightarrow
+  \mathcal H\!om_{\mathcal A}(\mathcal F',\mathcal G)
+\]
+은 완전하다. $\operatorname{Hom}$ 함자에도 같은 성질들이 성립한다. 또한 $\mathcal H\!om_{\mathcal A}(\mathcal A,\mathcal G)$는 표준적으로 $\mathcal G$와 동일시되며, 모든 열린집합 $U\subset X$에 대하여
+\[
+  \Gamma\bigl(U,\mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal G)\bigr)
+  =
+  \operatorname{Hom}_{\mathcal A|U}(\mathcal F|U,\mathcal G|U)
+\]
+이다.
+
+모든 왼쪽(각각 오른쪽) $\mathcal A$-가군 $\mathcal F$에 대하여 오른쪽(각각 왼쪽) $\mathcal A$-가군
+\[
+  \check{\mathcal F}
+  =\mathcal H\!om_{\mathcal A}(\mathcal F,\mathcal A)
+\]
+를 $\mathcal F$의 \emph{쌍대}라 한다.
+
+끝으로 $\mathcal A$가 가환환의 층이고 $\mathcal F$가 $\mathcal A$-가군이면
+\[
+  U\longmapsto\bigwedge^p\Gamma(U,\mathcal F)
+\]
+는 준층을 이룬다. 이 준층의 층화는 $\bigwedge^p\mathcal F$로 나타내는 $\mathcal A$-가군이며, 이를 $\mathcal F$의 \emph{$p$차 외승}이라 한다. 준층 $U\mapsto\bigwedge^p\Gamma(U,\mathcal F)$에서 그 층화 $\bigwedge^p\mathcal F$로 가는 표준 사상은 \emph{단사}이고, 모든 $x\in X$에 대하여
+\[
+  (\bigwedge^p\mathcal F)_x
+  =\bigwedge^p(\mathcal F_x)
+\]
+이다. $\bigwedge^p\mathcal F$가 $\mathcal F$에 관한 공변함자임은 자명하다.
+\end{env}
+
+\begin{env}[4.1.6]
+\label{0.4.1.6-ko}
+$\mathcal A$를 반드시 가환일 필요는 없는 환의 층, $\mathcal J$를 $\mathcal A$의 왼쪽 아이디얼층, $\mathcal F$를 왼쪽 $\mathcal A$-가군이라 하자. 이때 $\mathcal J\mathcal F$는 표준 사상
+\[
+  \mathcal J\otimes_{\mathbf Z}\mathcal F
+  \longrightarrow\mathcal F
+\]
+의 상인 $\mathcal F$의 부분-$\mathcal A$-가군을 나타낸다. 여기서 $\mathbf Z$는 상수 준층 $U\mapsto\mathbf Z$의 층화이다. 모든 $x\in X$에 대하여
+\[
+  (\mathcal J\mathcal F)_x
+  =\mathcal J_x\mathcal F_x
+\]
+임은 자명하다. $\mathcal A$가 가환이면 $\mathcal J\mathcal F$는 표준 사상
+\[
+  \mathcal J\otimes_{\mathcal A}\mathcal F
+  \longrightarrow\mathcal F
+\]
+의 상이기도 하다. 또한 $\mathcal J\mathcal F$는 준층
+\[
+  U\longmapsto
+  \Gamma(U,\mathcal J)\Gamma(U,\mathcal F)
+\]
+의 층화이다. $\mathcal J_1$, $\mathcal J_2$가 $\mathcal A$의 두 왼쪽 아이디얼층이면
+\[
+  \mathcal J_1(\mathcal J_2\mathcal F)
+  =(\mathcal J_1\mathcal J_2)\mathcal F
+\]
+이다.
+\end{env}
+
+\begin{env}[4.1.7]
+\label{0.4.1.7-ko}
+$(X_\lambda,\mathcal A_\lambda)_{\lambda\in L}$를 환 달린 공간들의 족이라 하자. 각 $(\lambda,\mu)$에 대하여 $X_\lambda$의 열린부분집합 $V_{\lambda\mu}$와 환 달린 공간의 동형사상
+\[
+  \varphi_{\lambda\mu}:
+  (V_{\mu\lambda},\mathcal A_\mu|V_{\mu\lambda})
+  \xrightarrow{\sim}
+  (V_{\lambda\mu},\mathcal A_\lambda|V_{\lambda\mu})
+\]
+이 주어졌다고 하자. 여기서 $V_{\lambda\lambda}=X_\lambda$이고 $\varphi_{\lambda\lambda}$는 항등사상이다. 더 나아가 모든 세쌍 $(\lambda,\mu,\nu)$에 대하여, $\varphi'_{\mu\lambda}$가 $\varphi_{\mu\lambda}$의 $V_{\lambda\mu}\cap V_{\lambda\nu}$에 대한 제한을 뜻할 때, $\varphi'_{\mu\lambda}$가
+\[
+  (V_{\lambda\mu}\cap V_{\lambda\nu},
+   \mathcal A_\lambda|(V_{\lambda\mu}\cap V_{\lambda\nu}))
+\]
+에서
+\[
+  (V_{\mu\nu}\cap V_{\mu\lambda},
+   \mathcal A_\mu|(V_{\mu\nu}\cap V_{\mu\lambda}))
+\]
+로 가는 동형사상이고
+$\varphi'_{\lambda\nu}=\varphi'_{\lambda\mu}\circ\varphi'_{\mu\nu}$
+라고 하자. 이를 $\varphi_{\lambda\mu}$들에 관한 \emph{붙이기 조건}이라 한다. 그러면 먼저 $X_\lambda$들을
+
+\oldpage[0\textsubscript{I}]{39}
+$V_{\lambda\mu}$들을 따라 $\varphi_{\lambda\mu}$들로 붙여서 얻는 위상공간 $X$를 생각할 수 있다. $X_\lambda$를 $X$ 안의 대응하는 열린부분집합 $X'_\lambda$와 동일시하면, 가정에 따라 세 집합
+$V_{\lambda\mu}\cap V_{\lambda\nu}$,
+$V_{\mu\nu}\cap V_{\mu\lambda}$,
+$V_{\nu\lambda}\cap V_{\nu\mu}$는 모두
+$X'_\lambda\cap X'_\mu\cap X'_\nu$와 동일시된다. 이제 $X_\lambda$의 환 달린 공간 구조를 $X'_\lambda$로 옮길 수 있다. $\mathcal A'_\lambda$가 $\mathcal A_\lambda$로부터 옮겨진 환의 층이면, $\mathcal A'_\lambda$들은 붙이기 조건 (3.3.1)을 만족하므로 $X$ 위의 환의 층 $\mathcal A$를 정의한다. 이때 $(X,\mathcal A)$를 $\varphi_{\lambda\mu}$들을 사용하여 $V_{\lambda\mu}$들을 따라 $(X_\lambda,\mathcal A_\lambda)$들을 \emph{붙여서 얻은 환 달린 공간}이라 한다.
+\end{env}

@@ -1,0 +1,39 @@
+{
+  "creators": [
+    {"name": "Grothendieck, Alexander"},
+    {"name": "Dieudonné, Jean"}
+  ],
+  "contributors": [
+    {"name": "OpenAI Codex / Interlanguage Project", "type": "Other"}
+  ],
+  "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+  "version": "2026-08-13-r1",
+  "access_right": "open",
+  "description": "<p><strong>읽기 / Read first:</strong> <a href=\"reader/00_EGA_ko_CUMULATIVE_READER.pdf\">the cumulative Korean EGA reader</a>. This exact release covers EGA I front matter and introduction and EGA 0_I through §4.1.7. The full Korean EGA corpus continues in this one language lineage.</p><p>DataCite intent: this Korean edition IsTranslationOf and IsPartOf the stable global/source EGA object at https://doi.org/10.5281/zenodo.20414353. Full provenance and relation sidecars are included.</p>",
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.20414353",
+      "relation": "isPartOf",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/KokunoYumeto/ega-ko",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "keywords": [
+    "Éléments de géométrie algébrique",
+    "EGA",
+    "algebraic geometry",
+    "대수기하학",
+    "한국어",
+    "Korean translation",
+    "Grothendieck",
+    "Dieudonné"
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "kor"
+}

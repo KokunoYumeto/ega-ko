@@ -1,0 +1,3 @@
+item_id	location	type	current_reading	alternatives	evidence	impact	status
+AGKO-H001	French EGA authority after the current Korean cursor	source-version debt	consume exact upstream deltas once when they reach translated text	freeze the observed source forever	hard.jsonl AGKO-H001	possible future bounded rebase; no current reader defect	open_nonblocking
+AGKO-H009	EGA 0_I 4.1.1, French source line 2026	source notation anomaly	Korean target uses contextually typed theta:B->A	copy undefined French theta:G->F literally	hard.jsonl AGKO-H009	French authority remains uncorrected; Korean mathematical typing is coherent	held_nonblocking

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "source_sha256": "F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16",
+  "completed_through": "source line 2313, end of 4.1.7 and complete subsection 4.1",
+  "next": "source line 2315, subsection 4.2 and environment 4.2.1 on direct images of module sheaves",
+  "policy": "advance once and rebase only exact affected deltas"
+}
