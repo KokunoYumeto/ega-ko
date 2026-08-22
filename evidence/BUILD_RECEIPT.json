@@ -5,12 +5,12 @@
   "repeat_comparison": "byte-identical",
   "pdf": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
   "pages": 135,
-  "bytes": 1185919,
-  "sha256": "F893C25E3D7F88438E5AF41C67F6D38BD83722E0ED026B988DF87B6181D7532C",
+  "bytes": 1190237,
+  "sha256": "EAE475AD613C2F80D62162D2A7DFC4A544E08391B0906A8BDFE32049B80D51B8",
   "log_bytes": 43291,
-  "log_sha256": "EE36B1230C3DDAAC410ED0BBC975FDE78E51B5AC3B26DEF6DCB9C0100B50C5D7",
+  "log_sha256": "1F52B46BBD04C1A2B05FF49EAE0588DCBD0A9C799C177129272A759797403496",
   "extraction_match_to_inspected_reader": true,
-  "render_match_to_inspected_reader": "standalone pages1,2,132-135 pixel-identical to directly inspected working-head200dpi PNGs; prior sealed pages carried by the cumulative visual ledger",
+  "render_match_to_inspected_reader": "standalone pages1,2,133-135 pixel-identical to directly inspected working-head200dpi PNGs; prior sealed pages carried by the cumulative visual ledger",
   "diagnostic_hits": 0,
   "result": "PASS"
 }

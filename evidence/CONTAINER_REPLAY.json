@@ -2,22 +2,22 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1185919,
-    "sha256": "F893C25E3D7F88438E5AF41C67F6D38BD83722E0ED026B988DF87B6181D7532C"
+    "bytes": 1190237,
+    "sha256": "EAE475AD613C2F80D62162D2A7DFC4A544E08391B0906A8BDFE32049B80D51B8"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r139/main.pdf",
-    "bytes": 1185929,
-    "sha256": "CD4DC36C5EBCB7411219F239EE51E6BC95E0884C1872858F3C84F86AD04533D8"
+    "path": "build/ega1/r140/main.pdf",
+    "bytes": 1190247,
+    "sha256": "8E4159291995A08C7672E39834465CDDB466A54EBD25D55AE311A030F9904650"
   },
   "source_files_exact": true,
   "comparison": {
     "pages": 135,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "hangul_syllables_each": 123033,
+    "hangul_syllables_each": 123746,
     "replacement_characters_each": 0,
-    "pages1_2_132_133_134_135_200dpi_pixel_exact": true
+    "pages1_2_133_134_135_200dpi_pixel_exact": true
   },
-  "disposition": "The standalone repository build is the canonical main working-head container. Its ten-byte size difference from the working-tree build is retained as a bounded container-level delta: all135 pypdf page texts, full pdftotext extraction and inspected200dpi pages1,2,132-135 are exact. No content or status inference is drawn from the container difference. DOI22051764 remains the immutable prior formal release."
+  "disposition": "The standalone repository build is the canonical main working-head container. Its ten-byte size difference from working-tree r140 is retained as a bounded container-level delta: all135 pypdf page texts, full pdftotext extraction and inspected200dpi pages1,2,133-135 are exact. No content or status inference is drawn from the container difference. DOI22051764 remains the immutable prior formal release."
 }

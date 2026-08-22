@@ -932,3 +932,77 @@ $(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$는 형식적 준스킴이다.
 $\mathfrak{X}$의 정의 아이디얼들의 기본계를 이루며,
 $\mathscr{J}^{(0)}$은 아이디얼층들 $\mathscr{J}_i$의 사영극한이다.
 \end{proposition}
+
+\begin{proof}
+먼저 각 줄기에서 $u_{ji}$는 전사 준동형이며
+\emph{따라서 특히} 국소 준동형임에 유의하자. 그러므로
+$v_{ij}=(1_{\mathfrak{X}},u_{ji})$는 준스킴의 사상
+$X_j\to X_i$ ($i\geq j$)이다
+(\hyperref[I.2.2.1-ko]{2.2.1}). 우선 각 $X_i$가
+환 $A_i$의 아핀 스킴이라고 가정하자.
+\emph{환 준동형}
+$\varphi_{ji}:A_i\to A_j$가 존재하여
+$u_{ji}=\widetilde{\varphi_{ji}}$를 만족한다
+(\hyperref[I.1.7.3-ko]{1.7.3}). 따라서
+(\hyperref[I.1.6.3-ko]{1.6.3}), 층 $\mathscr{O}_j$는
+$\mathscr{O}_i$-가군으로서 $X_i$ 위에서 준연접이다(그 스칼라
+작용은 $u_{ji}$로 정의된다). 이 층은 $A_j$를 $A_i$-가군으로 보아
+얻는 가군에 대응하며, 이때 그 가군 구조는 $\varphi_{ji}$로 정한다.
+모든 $f\in A_i$에 대하여
+$f'=\varphi_{ji}(f)$라 하자. 가정에 따라 열린집합 $D(f)$와
+$D(f')$는 $\mathfrak{X}$에서 동일하며,
+$\Gamma(D(f),\mathscr{O}_i)=(A_i)_f$에서
+$\Gamma(D(f),\mathscr{O}_j)=(A_j)_{f'}$로 가는 준동형 가운데
+$u_{ji}$에 대응하는 것은 바로
+$(\varphi_{ji})_f$이다
+(\hyperref[I.1.6.1-ko]{1.6.1}). 한편 $A_j$를 $A_i$-가군으로 보면,
+$(A_j)_{f'}$는 $(A_i)_f$-가군 $(A_j)_f$이다. 따라서
+$u_{ji}=\widetilde{\varphi_{ji}}$가 여전히 성립하는데, 이번에는
+$\varphi_{ji}$를 $A_i$-가군 준동형으로 본다. 이제 $u_{ji}$가
+전사이므로 $\varphi_{ji}$도 전사임을 알 수 있다
+(\hyperref[I.1.3.9-ko]{1.3.9}). $\mathfrak{J}_{ji}$가
+$\varphi_{ji}$의 핵이면, $u_{ji}$의 핵은 준연접
+$\mathscr{O}_i$-가군이고 $\widetilde{\mathfrak{J}_{ji}}$와 같다. 특히
+$\mathscr{J}_i=\widetilde{\mathfrak{J}_i}$이고, 여기서
+$\mathfrak{J}_i$는 $\varphi_{0i}:A_i\to A_0$의 핵이다. 가정 b)로부터
+$\mathscr{J}_i$가 \emph{멱영}임이 따른다. 실제로
+$\mathfrak{X}$가 준콤팩트이므로, $\mathfrak{X}$를 유한 개의
+열린집합 $U_k$로 덮을 수 있고, 각각
+$(\mathscr{J}_i|U_k)^{n_k}=0$을 만족한다.
+$n$을 $n_k$들 가운데 가장 큰 수로 택하면
+$\mathscr{J}_i^n=0$이다. 따라서 $\mathfrak{J}_i$는 멱영이다
+(\hyperref[I.1.3.13-ko]{1.3.13}). 이제 환
+$A=\varprojlim A_i$는 허용환이다
+(\hyperref[0.7.2.2-ko]{0, 7.2.2}). 또한 표준 준동형
+$\varphi_i:A\to A_i$는 전사이다. 그 핵 $\mathfrak{J}^{(i)}$는
+$\mathfrak{J}_{ik}$들($k\geq i$)의 사영극한이며,
+$\mathfrak{J}^{(i)}$들은 $A$에서 0의 근방들의 기본계를 이룬다.
+이 경우 (\hyperref[I.10.6.3-ko]{10.6.3})의 주장들은
+(\hyperref[I.10.1.1-ko]{10.1.1})과
+(\hyperref[I.10.3.2-ko]{10.3.2})에서 따른다. 실제로
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$는 다름 아닌
+$\operatorname{Spf}(A)$이다.
+
+여전히 이 특수한 경우에, $f=(f_i)$가 사영극한
+$A=\varprojlim A_i$의 원소라고 하자. 모든 열린집합 $D(f_i)$는
+$X_i$에서의 아핀 열린집합이며, $\mathfrak{D}(f)$라는
+$\mathfrak{X}$의 열린집합과 동일시된다. 따라서 $X_i$가
+$\mathfrak{D}(f)$에 유도하는 준스킴은 아핀 스킴
+$\operatorname{Spec}((A_i)_{f_i})$와 동일시된다.
+
+일반적인 경우에는 먼저, 임의의 준콤팩트 열린집합 $U$를
+$\mathfrak{X}$에서 택하면 각 $\mathscr{J}_i|U$가 멱영임에
+유의하자. 이는 위의
+논법으로 알 수 있다. 이제 모든 $x\in\mathfrak{X}$에 대하여,
+어떤 열린집합 $U$가 존재하여 $x$를 포함하고 $\mathfrak{X}$에서 열린 근방이며,
+\emph{모든 $X_i$에 대하여 아핀 열린집합}임을 보이자. 실제로
+$U$를 $X_0$의 아핀 열린집합으로 택하고
+$\mathscr{O}_{X_0}=\mathscr{O}_{X_i}/\mathscr{J}_i$임에 유의하자.
+앞에서 본 바와 같이 $\mathscr{J}_i|U$가 멱영이므로,
+(\hyperref[I.5.1.9-ko]{5.1.9})에 따라 $U$는 각 $X_i$에 대하여도
+아핀 열린집합이다. 이제 앞의 조건을 만족하는 모든 $U$에 대하여,
+위에서 다룬 아핀 경우에 의해 $(U,\mathscr{O}_{\mathfrak{X}}|U)$는
+형식적 준스킴이고, $\mathscr{J}^{(i)}|U$들은 정의 아이디얼들의
+기본계를 이루며, $\mathscr{J}^{(0)}|U$는
+$\mathscr{J}_i|U$들의 사영극한이다. 이로써 결론을 얻는다.
+\end{proof}

@@ -3,13 +3,13 @@
   "language": "ko-KR",
   "corpus": "EGA",
   "version": "2026-08-22-main-working-head",
-  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through proposition10.6.2 proof and proposition10.6.3 statement; bibliography",
-  "next_translation_cursor": "source/ega1/ega1-10-fr.tex line977, proof of proposition10.6.3",
+  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through the complete proof of proposition10.6.3; bibliography",
+  "next_translation_cursor": "source/ega1/ega1-10-fr.tex line1047, corollary10.6.4",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
     "pages": 135,
-    "bytes": 1185919,
-    "sha256": "F893C25E3D7F88438E5AF41C67F6D38BD83722E0ED026B988DF87B6181D7532C"
+    "bytes": 1190237,
+    "sha256": "EAE475AD613C2F80D62162D2A7DFC4A544E08391B0906A8BDFE32049B80D51B8"
   },
   "language_concept_doi": "10.5281/zenodo.21921513",
   "exact_version_doi": "10.5281/zenodo.22051764",

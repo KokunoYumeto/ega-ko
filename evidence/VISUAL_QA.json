@@ -1,18 +1,17 @@
 {
   "schema_version": 1,
-  "reader_sha256": "F893C25E3D7F88438E5AF41C67F6D38BD83722E0ED026B988DF87B6181D7532C",
-  "render_count": 6,
+  "reader_sha256": "EAE475AD613C2F80D62162D2A7DFC4A544E08391B0906A8BDFE32049B80D51B8",
+  "render_count": 5,
   "render_dimensions": "1654x2339",
   "dpi": 200,
   "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit and working-head metadata; standalone public-tree pages1,2,132-135 reproduce the inspected working-build PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
+  "inspection": "direct inspection of every page changed by the newest mathematical unit and working-head metadata; standalone public-tree pages1,2,133-135 reproduce the inspected working-build PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
   "checked": [
     "title page with exact working-head coverage",
     "information page distinguishing working head from immutable exact DOI release",
-    "proof10.6.2 start and exact diagram10.6.2.1",
-    "proof10.6.2 completion, proposition10.6.3 statement, marker190 and official correction note",
-    "pixel-exact sealed predecessor page132",
-    "directly inspected complete shifted bibliography page135"
+    "complete proof10.6.3 with exact maps, ideals, nilpotence and common-neighborhood quantifier",
+    "pixel-exact sealed predecessor page133",
+    "pixel-exact complete bibliography page135"
   ],
   "defects": 0,
   "result": "PASS"

@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-cursor-v1",
-  "updated": "2026-08-22T04:57:23+02:00",
+  "updated": "2026-08-22T06:21:21+02:00",
   "corpus": "EGA",
   "volume": "I",
   "source": "source/ega1/ega1-10-fr.tex",
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "complete chapter1 sections1-9 and section10 through proposition10.6.2 proof and proposition10.6.3 statement; source/ega1/ega1-10-fr.tex lines1-976 43516 bytes / C248E5031A832D6828C8AD8FC5997B3D8D3AAC4D1CC532492A99ECBED8845D31; newest substantive lines890-975 3738 characters / 3789 bytes / 1EFA98EFB3E50E1BF9680708CFAAC7B9EEAF6DFF26147DCD9F3D3007E9524BAB; target ega/I/c1s10.tex lines1-934 EOF 45146 bytes / 7A086CC215CE52DDA680D7389EC14E5AC4625079BA3D377DB0D04240D2AB7999; deterministic135-page working head1185929 bytes / CD4DC36C5EBCB7411219F239EE51E6BC95E0884C1872858F3C84F86AD04533D8; official correction H131, agreement control H132 and D108-E108 provenance retained; latest public exact DOI10.5281/zenodo.22051764 remains the proposition10.5.6 checkpoint",
-  "next": "source/ega1/ega1-10-fr.tex line977 proof of proposition10.6.3; continue once in canonical driver order",
-  "target": "continue the existing editable ega/I/c1s10.tex from source line977 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-976",
+  "completed_through": "complete chapter1 sections1-9 and section10 through the complete proof of proposition10.6.3; source/ega1/ega1-10-fr.tex lines1-1046 47563 bytes / E3442801713A008D3C5AE1D14EC5A6DB84182506A048BD04A7A9D6490D7BE85A; newest substantive lines977-1045 3999 characters / 4046 bytes / 49ADCA3878B1EF37D48D90DC69D474AB172369932ADC64D731E011AA2DC34CD7; target ega/I/c1s10.tex lines1-1008 EOF 49370 bytes / 74CD7AC1105D1D699E448F5F9FC2D704D6442CC7647DBE24574DF17007E71521; deterministic135-page working head1190247 bytes / 8E4159291995A08C7672E39834465CDDB466A54EBD25D55AE311A030F9904650; D110-E110 provenance retained; latest public exact DOI10.5281/zenodo.22051764 remains the proposition10.5.6 checkpoint",
+  "next": "source/ega1/ega1-10-fr.tex line1047 corollary10.6.4; continue once in canonical driver order",
+  "target": "continue the existing editable ega/I/c1s10.tex from source line1047 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-1046",
   "policy": "advance once; never reopen unchanged completed units"
 }

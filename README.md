@@ -7,13 +7,13 @@
 - 전역 EGA 자료실 및 프랑스어 원전 계열: [10.5281/zenodo.20414353](https://doi.org/10.5281/zenodo.20414353)
 - 언어: 한국어 (`ko`; Zenodo `kor`)
 - 최근 공개 정확판: `2026-08-22-r1`, 제10절 명제 10.5.6까지
-- `main` 작업 머리 범위: EGA I 앞부분과 서론, EGA $0_{\mathrm I}$ 전부, 제I장 머리와 제1절부터 제9절 전부, 제10절 명제 10.6.2의 증명과 명제 10.6.3의 명제문까지
+- `main` 작업 머리 범위: EGA I 앞부분과 서론, EGA $0_{\mathrm I}$ 전부, 제I장 머리와 제1절부터 제9절 전부, 제10절 명제 10.6.3의 증명까지
 
 이 저장소는 EGA 전체를 한국어로 옮기는 하나의 연속된 언어판을 유지한다. `main`은 위 작업 머리 범위까지 완성된 모든 번역을 빠짐없이 담지만, EGA 전집이 이미 완성되었다고 주장하지 않는다. DOI 22051764와 `release/`의 네 산출물은 변경하지 않은 최근 공개 정확판이며, 후속 번역은 같은 한국어 DOI 계열과 이 저장소의 `main` 브랜치에서 누적된다. 완성된 EGA 각 권의 독자용 PDF도 이 언어판 안에 함께 두며, 권별로 경쟁하는 DOI를 만들지 않는다.
 
 ## English identification
 
-This is the independently maintained Korean cumulative edition of Grothendieck and Dieudonné's *Éléments de géométrie algébrique* (EGA). The immutable exact DOI release covers §10 through Proposition 10.5.6. The current `main` working head continues through the proof of Proposition 10.6.2 and the complete statement of Proposition 10.6.3, with exact source, build, extraction and rendered-QA evidence. It is not a critical edition or a claim of human certification.
+This is the independently maintained Korean cumulative edition of Grothendieck and Dieudonné's *Éléments de géométrie algébrique* (EGA). The immutable exact DOI release covers §10 through Proposition 10.5.6. The current `main` working head continues through the complete proof of Proposition 10.6.3, with exact source, build, extraction and rendered-QA evidence. It is not a critical edition or a claim of human certification.
 
 ## 공개 구조
 
