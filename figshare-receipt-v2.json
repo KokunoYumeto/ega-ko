@@ -1,0 +1,82 @@
+{
+  "schema": "ag-ko-figshare-publication-receipt-v1",
+  "created": "2026-08-22T21:44:00+02:00",
+  "publication": {
+    "host": "Figshare",
+    "article_id": 33314679,
+    "article_doi": "10.6084/m9.figshare.33314679",
+    "article_doi_url": "https://doi.org/10.6084/m9.figshare.33314679",
+    "version": 2,
+    "version_doi": "10.6084/m9.figshare.33314679.v2",
+    "version_doi_url": "https://doi.org/10.6084/m9.figshare.33314679.v2",
+    "version_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/2",
+    "published_date": "2026-08-22T19:41:07Z",
+    "access": "public",
+    "resource_type": "book",
+    "license": "CC BY 4.0"
+  },
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "authors": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "project_contribution": "AI typesetting & translation",
+    "project_contribution_placement": "Description, exactly once; the Figshare author list contains only the historical work authors.",
+    "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through subsection 10.7, Proposition 10.7.3, both proofs, and the immediately following formal-product-properties paragraph",
+    "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
+    "categories": [
+      {"id": 29830, "title": "Algebraic and differential geometry"},
+      {"id": 29365, "title": "Korean language"},
+      {"id": 29383, "title": "Translation and interpretation studies"}
+    ],
+    "references": [
+      "https://doi.org/10.5281/zenodo.22060640",
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://doi.org/10.5281/zenodo.20414353"
+    ],
+    "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence. Underlying and third-party materials retain their own rights and attribution.",
+    "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
+  },
+  "files": [
+    {"id": 67761297, "name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1206543, "md5": "415459388c0504b96260505194bd109f", "sha256": "F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B", "pages": 137},
+    {"id": 67761303, "name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 209932, "md5": "b28265f69cbea3bebf53d25375594a2d", "sha256": "832901BBF5156144745299085F60ABCD41B28AC2C11898B44ACD71AC7B39ABFB", "entries": 24},
+    {"id": 67761306, "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 27868342, "md5": "a46212af92fea9f728fd06a03e458356", "sha256": "3749C2D22A92D52E262B2CE0BB14C97BC305D119BC5AF99AA5CFE98A857F63AA", "entries": 119},
+    {"id": 67761309, "name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 342, "md5": "a1bf90b031b22410f10a0e7fc035dc67", "sha256": "8FD472ED9C3A79F277FD53E440CFAE31782676EBCEBEF05AB81E686D29C0CB69", "rows": 3}
+  ],
+  "anonymous_readback": {
+    "article_api": "https://api.figshare.com/v2/articles/33314679",
+    "version_api": "https://api.figshare.com/v2/articles/33314679/versions/2",
+    "download_root": "release/2026-08-22-r6/figshare-readback",
+    "files_downloaded": 4,
+    "files_byte_md5_and_sha256_exact": 4,
+    "identical_to_zenodo_r6_files": 4,
+    "manifest_rows_replayed": 3,
+    "source_zip_entries_replayed": 24,
+    "evidence_zip_entries_replayed": 119,
+    "zip_order_timestamps_attributes_and_member_bytes": "PASS",
+    "metadata_checks": {
+      "article_id_and_version": "PASS",
+      "version_doi": "PASS",
+      "title": "PASS",
+      "historical_authors_only": "PASS",
+      "sole_project_contribution": "PASS",
+      "book_type": "PASS",
+      "license": "PASS",
+      "categories_keywords_and_references": "PASS",
+      "coverage_and_completion_limit": "PASS",
+      "bounded_rights_scope": "PASS",
+      "source_relation": "PASS",
+      "non_endorsement": "PASS",
+      "forbidden_project_tool_and_account_author_labels_absent": "PASS",
+      "file_inventory": "PASS"
+    },
+    "version_1_immutable": "PASS",
+    "doi_resolution": "PASS",
+    "result": "PASS"
+  },
+  "continuity": {
+    "canonical_zenodo_concept_doi": "10.5281/zenodo.21921513",
+    "identical_zenodo_exact_doi": "10.5281/zenodo.22060640",
+    "previous_version_doi": "10.6084/m9.figshare.33314679.v1",
+    "policy": "Future cumulative checkpoints update this same Figshare article as new versions; no duplicate mirror article is created."
+  },
+  "credential_material": "NONE"
+}

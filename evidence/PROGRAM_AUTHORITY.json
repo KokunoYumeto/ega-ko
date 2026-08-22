@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-authority-v1",
-  "updated": "2026-08-22T21:03:11+02:00",
+  "updated": "2026-08-22T21:44:00+02:00",
   "order": ["EGA I", "EGA II", "FGA"],
   "active": "EGA",
   "ega": {
@@ -29,18 +29,16 @@
   "publication_scope": {
     "rule": "one independent Zenodo DOI lineage for the full Korean EGA corpus plus one additive continuing Figshare mirror article; cumulative exact releases state actual coverage; completed volume readers remain files or versions within these lineages rather than separate DOI lineages",
     "language_concept_doi": "10.5281/zenodo.21921513",
-    "exact_version_doi": "10.5281/zenodo.22059890",
-    "previous_exact_version_doi": "10.5281/zenodo.22059444",
+    "exact_version_doi": "10.5281/zenodo.22060640",
+    "previous_exact_version_doi": "10.5281/zenodo.22059890",
     "global_ega_concept_doi": "10.5281/zenodo.20414353",
     "github": "https://github.com/KokunoYumeto/ega-ko",
-    "github_status": "repository reinstated according to Floris's direct 2026-08-22 report; artifact commit ded37140440fd0a585c0526e27b70ae5b4ff4d9f retains its earlier complete anonymous verification; the S113 head is not claimed public there until a narrow push and anonymous readback pass",
-    "reserved_next_exact_version_doi": "10.5281/zenodo.22060640",
-    "reserved_next_record": "https://zenodo.org/records/22060640",
-    "zenodo_record": "https://zenodo.org/records/22059890",
-    "readback": "Zenodo exact version22059890 and Figshare exact version33314679.v1 each replay files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24, evidence ZIP113/113 and formal metadata; cross-host bytes exact under AGKO-D118 and AGKO-E118; prior Zenodo exact version22059444 remains immutable",
+    "github_status": "public main commit552eeebae33065f691ebcb7ef6f1a4389c6aba42 anonymously replayed after reinstatement: commit API exact, archive69794105 bytes /E62769B20743CD4F2835965B6D004F86275C3231FD6DCD88E9DC7F46CC6D8F7F, artifact manifest137/137 and frozen release4/4 PASS; initial commit36ad912 manifest gap118/137 and exact 19-file remediation retained",
+    "zenodo_record": "https://zenodo.org/records/22060640",
+    "readback": "Zenodo exact version22060640 and Figshare exact version33314679.v2 each replay files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24, evidence ZIP119/119 and formal metadata; Figshare v1 immutable; GitHub commit552eeeb archive manifest137/137 and release4/4 exact under AGKO-D120 and AGKO-E120",
     "figshare_article_doi": "10.6084/m9.figshare.33314679",
-    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v1",
-    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/1; public version1 mirrors the exact four r5 bytes; future checkpoints update this article rather than create duplicates",
+    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v2",
+    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/2; public version2 mirrors the exact four r6 bytes; version1 remains immutable and future checkpoints update this article rather than create duplicates",
     "directive": "raw/u004.txt 2120 bytes / 20CFCB919D25FCD822E02DCF780CD00387BB333B4DB92F6D553901ACB8AEE460"
   }
 }
