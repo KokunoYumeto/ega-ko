@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-cursor-v1",
-  "updated": "2026-08-22T03:49:38+02:00",
+  "updated": "2026-08-22T04:57:23+02:00",
   "corpus": "EGA",
   "volume": "I",
   "source": "source/ega1/ega1-10-fr.tex",
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "complete chapter1 sections1-9 and section10 heading plus proposition10.5.6 proof, subsection10.6.1 and proposition10.6.2 statement; source/ega1/ega1-10-fr.tex lines1-889 39726 bytes / 0F0541884AE0AD3ACD3742618B1138F8E6C6C530F408F9867176142E2E6ECACE; target ega/I/c1s10.tex lines1-854 EOF 41268 bytes / 7714CE0324999C1BDE653A1C9EF8D02E3BAC9DC3818ECC3DEC4C7486E6B9D8EA; deterministic134-page working head1180911 bytes / B355E4F8CA24FA61FAB8682A7BD8675A18A73C7750A529C521E5F5EC327BA82E; H129-H130 and D106-E106 provenance retained; latest public exact DOI10.5281/zenodo.22051764 remains the proposition10.5.6 checkpoint",
-  "next": "source/ega1/ega1-10-fr.tex line890 proof of proposition10.6.2; continue once in canonical driver order",
-  "target": "continue the existing editable ega/I/c1s10.tex from source line890 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-889",
+  "completed_through": "complete chapter1 sections1-9 and section10 through proposition10.6.2 proof and proposition10.6.3 statement; source/ega1/ega1-10-fr.tex lines1-976 43516 bytes / C248E5031A832D6828C8AD8FC5997B3D8D3AAC4D1CC532492A99ECBED8845D31; newest substantive lines890-975 3738 characters / 3789 bytes / 1EFA98EFB3E50E1BF9680708CFAAC7B9EEAF6DFF26147DCD9F3D3007E9524BAB; target ega/I/c1s10.tex lines1-934 EOF 45146 bytes / 7A086CC215CE52DDA680D7389EC14E5AC4625079BA3D377DB0D04240D2AB7999; deterministic135-page working head1185929 bytes / CD4DC36C5EBCB7411219F239EE51E6BC95E0884C1872858F3C84F86AD04533D8; official correction H131, agreement control H132 and D108-E108 provenance retained; latest public exact DOI10.5281/zenodo.22051764 remains the proposition10.5.6 checkpoint",
+  "next": "source/ega1/ega1-10-fr.tex line977 proof of proposition10.6.3; continue once in canonical driver order",
+  "target": "continue the existing editable ega/I/c1s10.tex from source line977 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-976",
   "policy": "advance once; never reopen unchanged completed units"
 }

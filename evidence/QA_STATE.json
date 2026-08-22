@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "version": "2026-08-22-main-working-head",
-  "coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through proposition10.5.6 proof, environment10.6.1 and proposition10.6.2 statement; bibliography",
+  "coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through proposition10.6.2 proof and proposition10.6.3 statement; bibliography",
   "corpus_complete": false,
-  "source_replay": "PASS: exact French authority and LF-normalized translated-prefix hashes reproduced",
-  "model_or_agent_checks": "PASS for every translated closed unit through the declared frontier; decisions and adverse evidence retained",
-  "deterministic_build": "PASS: two standalone XeLaTeX three-pass cycles in the public tree with fixed SOURCE_DATE_EPOCH, FORCE_SOURCE_DATE and TZ; 134-page main working-head PDF remained byte-identical at 1180897 bytes / 5D150B295646CD32B9868F54C71F6CCAB5BF0023C9F59F7E6494D38FB8BFE6AB",
+  "source_replay": "PASS: exact French authority, lines890-975 unit, lines1-976 cumulative seal and LF-normalized translated-prefix hashes reproduced; H131 official correction and H132 agreement locus bounded",
+  "model_or_agent_checks": "PASS: independent boundary, official-control, mathematical and Korean audits for every translated closed unit through the declared frontier; decisions and adverse evidence retained",
+  "deterministic_build": "PASS: two standalone XeLaTeX three-pass cycles in the public tree with fixed SOURCE_DATE_EPOCH, FORCE_SOURCE_DATE and TZ; 135-page main working-head PDF remained byte-identical at 1185919 bytes / F893C25E3D7F88438E5AF41C67F6D38BD83722E0ED026B988DF87B6181D7532C",
   "compile_diagnostics": "PASS: zero Undefined control sequence, LaTeX Error, Missing character, overfull hbox, or underfull hbox hits",
-  "extraction": "PASS: original Windows Poppler extraction 593164 bytes / F28015E98A4C3BFF760EFA1017AC7D0A86D3A51F62C0BB98D3CFEE1CC8CC1D64; repository-canonical LF copy evidence/extract.txt 582708 bytes / 65723DCF19BEADF10AE04F1A094BE895DD83E8F760520A6740F1B9D47F5ED341; pdftotext315829 LF-normalized characters and pypdf303586 characters; both122406 Hangul syllables; replacement characters0; all134 pypdf page texts exact to the inspected working build",
-  "rendered_inspection": "PASS: changed physical pages1,2,6,133 directly inspected at200dpi; pages132 and134 carried with exact pixel stability; standalone public-tree pages1,2,6,132-134 are pixel-identical to the inspected working-build rasters; no clipping, overlap, tofu, malformed formula, note collision or bibliography collision",
+  "extraction": "PASS: original Windows Poppler extraction 595916 bytes / 868822BBDC67DB02086FDAE08C6208877A488BC7F7F9200E637B2E4C60B99CFB; repository-canonical LF copy evidence/extract.txt 585403 bytes / 334E2FD6465A9120802BBE8E89BD85EA155C01F2CF2B1A958FC0A93960C300AC; pdftotext317198 LF-normalized characters and pypdf304764 page-text characters; both123033 Hangul syllables; replacement characters0; all135 pypdf page texts and full Poppler output exact to the inspected working build",
+  "rendered_inspection": "PASS: changed physical pages1,2,133,134 and shifted bibliography135 directly inspected at200dpi; page132 carried with exact pixel stability; standalone public-tree pages1,2,132-135 are pixel-identical to the inspected working-build rasters; no clipping, overlap, tofu, malformed formula, correction-note collision or bibliography collision",
   "artifact_manifest": "evidence/ARTIFACT_SHA256.tsv",
   "unresolved_items": "evidence/UNRESOLVED_ITEMS.tsv",
   "human_review_required": false,
   "working_head_closed": true,
   "release_closed": false,
-  "closure_reason": "The main working-head scope is source-pinned, translated, independently reviewed, repeat-built, dual-extracted, proportionally rendered and represented in the evidence ledgers. DOI22051764 and release assets remain the immutable prior formal release to avoid micro-release spam."
+  "closure_reason": "The main working-head scope through proposition10.6.3 statement is source-pinned, translated, independently reviewed, repeat-built, dual-extracted, proportionally rendered and represented in the evidence ledgers. DOI22051764 and release assets remain the immutable prior formal release to avoid micro-release spam."
 }

@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-state-v1",
-  "updated": "2026-08-22T04:21:04+02:00",
+  "updated": "2026-08-22T04:57:23+02:00",
   "owner_task": "019f757c-a43b-7ed0-b810-b8effdc5d904",
   "goal": "Complete and maintain a source-synchronized Korean translation programme in this strict order: first finish EGA I from the current canonical cursor through the end of the volume; second complete EGA II; third complete FGA. Do not begin SGA in this task. Korean SGA work is certain future work, but Floris will coordinate its structure and execution separately. Do not allow old summaries or previous broad goals to reintroduce SGA, Stacks, Emmy Noether, Lean, or unrelated corpora into this lane.\n\nTreat EGA III and every later EGA volume as conditionally queued, not presently authorized production. A later volume becomes eligible only when its complete project-canonical French transcription is demonstrably source-accurate: every page and structural unit is present, the canonical validation gate passes, material ambiguities and corrections are resolved or explicitly bounded, and no source span remains missing or provisional. Recheck readiness at the scheduled seven-day follow-up. Translate only the contiguous ready sequence beginning with EGA III. If III alone is ready, do III alone. If III and following volumes are ready, take them in canonical order and stop before the first incomplete volume. Never fill gaps from OCR, draft English, memory, inference, or another edition, and never start a volume merely because fragments exist.\n\nFor every admitted unit, preserve exact authority and target identities with stable paths, locators, byte counts, and SHA-256; preserve formulas, labels, references, citations, page markers, notes, hypotheses, quantifiers, map directions, object types, and source corrections. Keep French authority read-only. Correct genuine source defects only in the Korean downstream layer, classify their status accurately, and disclose substantive repairs without promoting an inference to an official erratum. Govern Korean terminology by mathematical sense and type, with Hangul-first South Korean register, direct math-particle attachment, stable spacing, and explicit distinctions between similarly named objects.\n\nCompletion requires editable Korean TeX in canonical source order, deterministic serial builds, stable late passes, zero critical diagnostics, usable extraction, font and ToUnicode integrity where applicable, and proportional rendered-page inspection. Keep source binding, translation/formula fidelity, build, extraction, visual QA, provenance, and publication state separate. Preserve immutable evidence and accepted checkpoints. Rebuild or re-audit only when bytes changed, a concrete defect was found, a required invariant was never covered, or publication readback demands it. Do not confuse repeated checking with rigor.\n\nAim hard at perfection: fidelity, mathematical typing, Korean clarity, reproducibility, provenance, and visual legibility should be as close to flawless as evidence permits. Also guard hard against perfectionism. Do not reopen sealed correct work for stylistic restlessness, rerun equivalent audits, generate speculative side projects, create pilots instead of completing the corpus, or delay validated progress for an unattainable feeling of certainty. Use proportional risk: inspect deeply where source meaning, formulas, corrections, page boundaries, typography, or publication bytes can fail; otherwise carry accepted evidence forward and advance once. Never manufacture work or claim completion without exact evidence, and never let a balanced but misordered or mistyped result pass.\n\nMaintain one external Korean EGA lineage rather than duplicate deposits. The public repository is https://github.com/KokunoYumeto/ega-ko. The Korean EGA concept DOI is https://doi.org/10.5281/zenodo.21921513 and the current published checkpoint is https://doi.org/10.5281/zenodo.22051764. Use these links as the outward continuity point in handoffs and future release metadata. Publish only substantively ready, validated checkpoints into the existing lineage, then perform public-byte and metadata readback. Do not imply that the private working head is public, and do not create a competing concept DOI or repository.\n\nThe immediate cursor remains EGA I. The task is complete only when EGA I, EGA II, and FGA have complete source-synchronized Korean editions satisfying these gates, plus any later EGA volumes admitted by the readiness rule. SGA remains out of scope until Floris supplies a separate coordination plan.",
   "mode": "full_production_no_pilot",
   "hardening": {
     "directive": "raw/u005.txt 2271 bytes / 2D69CEB50C5873FA89DA782337200FF3892525B9C8B49EE8A34F91F8ABA87A3C",
-    "workflow": "HARDENED.md 63598 bytes / B50563EC2E73E68F61E4A43CF7DC964C9BC9BB9EC609EE853E67F7AC1F2FFC8E",
+    "workflow": "HARDENED.md 68157 bytes / D983A44F338320356CD38F2200E10981F7ABFC8CC1C69C24856F3B5E14771CFA",
     "rule": "ignore session compactions and summaries; reconstruct only from raw directive, hardened workflow, cursor/state/authority, append-only ledgers, and rehashed artifacts"
   },
   "active_corpus": "EGA",
@@ -25,7 +25,7 @@
     "EGA I chapter1 section7 complete source file lines1-786 EOF: subsections7.1-7.4 through environment7.4.7",
     "EGA I chapter1 section8 complete source file lines1-410 EOF: subsections8.1-8.3 through environment8.3.2",
     "EGA I chapter1 section9 complete source file lines1-1183 EOF: subsections9.1-9.6 through proposition9.6.6",
-    "EGA I chapter1 section10 through proposition10.5.6 proof, environment10.6.1 and proposition10.6.2 statement, source lines1-889 separator"
+    "EGA I chapter1 section10 through proposition10.6.2 proof and proposition10.6.3 statement, source lines1-976 separator"
   ],
   "source_coverage": {
     "frontmatter": "complete",
@@ -41,14 +41,14 @@
     "chapter1_section7": "complete source/ega1/ega1-7-fr.tex lines1-786 EOF; 38226 bytes / 73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522; target ega/I/c1s7.tex 776 lines / 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; subsections7.1-7.4 complete; printed7.3.8 replaced downstream by the official EGA II text",
     "chapter1_section8": "complete source/ega1/ega1-8-fr.tex lines1-410 EOF; 20600 bytes / 188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825; subsection8.3 exact slice lines359-410 2607 LF bytes / B970AF93BCA7F54462DF1ABB4F587BA2224486D4B39C38F36A63B6017BDF73AF; target ega/I/c1s8.tex lines1-410 / 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; subsections8.1-8.3 complete; admitted printed source trace error in8.2 corrected and disclosed under AGKO-H111",
     "chapter1_section9": "complete source/ega1/ega1-9-fr.tex lines1-1183 EOF; 53127 bytes / 976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091; exact subsection9.6 lines1024-1183 EOF 7816 LF bytes / 0BCD1491C2AB3EE58FEE75BA6F44FF65AD51B6F22DAD5CF887EDD621F9FDC31B; target ega/I/c1s9.tex lines1-1179 EOF / 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; section9 heading and subsections9.1-9.6 complete; H112-H120 provenance retained",
-    "chapter1_section10": "partial source/ega1/ega1-10-fr.tex lines1-889; 39726 LF-terminal bytes / 0F0541884AE0AD3ACD3742618B1138F8E6C6C530F408F9867176142E2E6ECACE; exact substantive unit proof10.5.6 through proposition10.6.2 statement lines793-888 4063 characters / 4109 bytes / EBE7B223C49B982BD6E80F94F245D58EA552E466D5E41E40A4B5AF629A7487F4; closure through line889 separator 4110 bytes / 0FE6A91FCC36B722D9FB5D972BCAE0C38488216F089481667D290622A90C6710; target ega/I/c1s10.tex lines1-854 EOF / 41268 bytes / 7714CE0324999C1BDE653A1C9EF8D02E3BAC9DC3818ECC3DEC4C7486E6B9D8EA; section10 heading, proposition10.5.6 proof,10.6.1 and proposition10.6.2 statement complete; H129-H130 and T008 T149 T150 provenance retained; next source line890 proof of10.6.2"
+    "chapter1_section10": "partial source/ega1/ega1-10-fr.tex lines1-976; 43516 LF-terminal bytes / C248E5031A832D6828C8AD8FC5997B3D8D3AAC4D1CC532492A99ECBED8845D31; exact substantive unit proof10.6.2 through proposition10.6.3 statement lines890-975 3738 characters / 3789 bytes / 1EFA98EFB3E50E1BF9680708CFAAC7B9EEAF6DFF26147DCD9F3D3007E9524BAB; closure through line976 separator 3790 bytes / 4F16D124E6011B57CC59D7B79F480FAF69883D689F15432761B6F629EDD1EC5A; target ega/I/c1s10.tex lines1-934 EOF / 45146 bytes / 7A086CC215CE52DDA680D7389EC14E5AC4625079BA3D377DB0D04240D2AB7999; section10 heading, proposition10.6.2 proof and proposition10.6.3 statement complete; official correction H131, agreement control H132 and T008 T017 T028 T029 T067 T149 T150 provenance retained; next source line977 proof of10.6.3"
   },
   "target": {
     "path": "ega/I/main.tex",
     "bytes": 2749,
     "sha256": "84CACAEB665E0DF9616A69E4BC3F6C092CCCF807F15212327424B30F52BBA10E",
     "components": [
-      "ega/I/front.tex 3166 bytes / 2981F5F0F0BB0995DE9B29103CF529E0FA776328CA89CF8E02EF90F460187290; working head through proposition10.6.2 statement distinguished from latest public exact DOI22051764 through10.5.6",
+      "ega/I/front.tex 3166 bytes / BEA87AC4C16CBC1DF0C5553598E6CE8D81F40B8C9084BC191878FA9E526326D6; working head through proposition10.6.3 statement distinguished from latest public exact DOI22051764 through10.5.6",
       "ega/I/c1front.tex 2069 bytes / 4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
       "ega/I/c1s1.tex 71250 bytes / E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
       "ega/I/c1s2.tex 27982 bytes / C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
@@ -59,51 +59,39 @@
       "ega/I/c1s7.tex 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; complete source section7 through EOF",
       "ega/I/c1s8.tex 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; complete source section8 through EOF",
       "ega/I/c1s9.tex 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; complete source section9 through EOF",
-      "ega/I/c1s10.tex lines1-854 EOF / 41268 bytes / 7714CE0324999C1BDE653A1C9EF8D02E3BAC9DC3818ECC3DEC4C7486E6B9D8EA; section10 heading, proposition10.5.6 proof, environment10.6.1 and proposition10.6.2 statement complete through source line889 separator"
+      "ega/I/c1s10.tex lines1-934 EOF / 45146 bytes / 7A086CC215CE52DDA680D7389EC14E5AC4625079BA3D377DB0D04240D2AB7999; section10 heading, proposition10.6.2 proof and proposition10.6.3 statement complete through source line976 separator"
     ]
   },
   "build": {
     "state": "pass",
-    "engine": "XeLaTeX three-pass; r138_ref and r138 byte-identical across two fixed-metadata cycles under SOURCE_DATE_EPOCH1786633200 FORCE_SOURCE_DATE1 TZ UTC",
-    "pages": 134,
+    "engine": "XeLaTeX three-pass; r139_ref and r139 byte-identical across two fixed-metadata cycles under SOURCE_DATE_EPOCH1786633200 FORCE_SOURCE_DATE1 TZ UTC",
+    "pages": 135,
     "pdf": "build/ega1/main.pdf",
-    "bytes": 1180911,
-    "sha256": "B355E4F8CA24FA61FAB8682A7BD8675A18A73C7750A529C521E5F5EC327BA82E",
-    "log": "build/ega1/main.log 43502 bytes / A24C638547C339A0082ACC187AD8534D82DBAC7AB7F52B183E35673767663D6B",
+    "bytes": 1185929,
+    "sha256": "CD4DC36C5EBCB7411219F239EE51E6BC95E0884C1872858F3C84F86AD04533D8",
+    "log": "build/ega1/main.log 43527 bytes / 6B3083F91D35B8A1564F93A19109DC2E0322F9D8B02FFCBCE42FB194EBE7A022",
     "critical_diagnostics": 0,
     "known_noncritical": "one existing marginpar movement warning; Malgun Gothic small-caps request falls back to normal shape in unchanged bibliography"
   },
   "render": {
     "state": "pass",
-    "pages_inspected": "r138 differs textually from r137 only on physical pages1,2,6,133; all four were directly inspected at200dpi in V422-V425 and pass. Physical page132 and complete bibliography page134 are pixel-identical to accepted r137 in V426-V427. Formula directions, omega-b, D30 diagram, marker189, working/public metadata distinction, DOI links and contents show no clipping, overlap, tofu or malformed content.",
+    "pages_inspected": "r139 physical pages1,2,133,134 and shifted bibliography135 were directly inspected at200dpi in V428-V432 and pass; physical page132 is pixel-identical to accepted r138 in V433. Proof10.6.2, exact diagram10.6.2.1, proposition10.6.3 statement, official correction note, marker190, working/public metadata distinction and complete bibliography show no clipping, overlap, tofu, malformed formula or footnote collision.",
     "dpi": 200,
     "root": "render/ega1",
-    "text": "render/ega1/text.txt 593164 bytes / F28015E98A4C3BFF760EFA1017AC7D0A86D3A51F62C0BB98D3CFEE1CC8CC1D64; pdftotext LF-normalized 315829 characters / 122406 Hangul; render/ega1/text-pypdf.txt 561681 bytes / 95F436B968008BEF05BA8531FCBAD99181E453A8A0CB4442D6F9B6B01040A635; pypdf 134 pages / 303586 characters / 122406 Hangul; replacement characters 0"
+    "text": "render/ega1/text.txt 595916 bytes / 868822BBDC67DB02086FDAE08C6208877A488BC7F7F9200E637B2E4C60B99CFB; pdftotext LF-normalized 317198 characters / 334E2FD6465A9120802BBE8E89BD85EA155C01F2CF2B1A958FC0A93960C300AC / 123033 Hangul; render/ega1/text-pypdf.txt 564293 bytes / 0A418B09BEE345DFF2F9B350507490D4D1CF711C1C79954903662BAFA2BD9FFB; pypdf 135 pages / 304764 page-text characters / 304898 serialized characters / 123033 Hangul; replacement characters 0"
   },
   "working_head": {
-    "state": "published_github_main_readback_pass",
-    "coverage": "EGA I through proposition10.6.2 statement; next source line890 proof",
-    "pdf": "build/ega1/r138/main.pdf",
-    "pages": 134,
-    "bytes": 1180911,
-    "sha256": "B355E4F8CA24FA61FAB8682A7BD8675A18A73C7750A529C521E5F5EC327BA82E",
+    "state": "validated_local_checkpoint_pending_existing_repository_sync",
+    "coverage": "EGA I through proposition10.6.3 statement; next source line977 proof",
+    "pdf": "build/ega1/r139/main.pdf",
+    "pages": 135,
+    "bytes": 1185929,
+    "sha256": "CD4DC36C5EBCB7411219F239EE51E6BC95E0884C1872858F3C84F86AD04533D8",
     "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "github_main_commit": "4da98927706676e7b0c23a1f7ed0b10644d0234b",
-    "public_reader": {
-      "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-      "pages": 134,
-      "bytes": 1180897,
-      "sha256": "5D150B295646CD32B9868F54C71F6CCAB5BF0023C9F59F7E6494D38FB8BFE6AB"
-    },
-    "artifact_manifest": {
-      "path": "pub/ega-ko/evidence/ARTIFACT_SHA256.tsv",
-      "rows": 100,
-      "artifact_commit_bytes": 9585,
-      "artifact_commit_sha256": "56A863E4EBC9929A1988A51BBB2111329938BE7AAC154F9A5C17A30EC45AA098"
-    },
-    "readback": "PASS: direct anonymous raw files6/6 and complete anonymous commit-archive manifest replay100/100",
-    "decision": "AGKO-D107",
-    "evidence": "AGKO-E107",
+    "previous_public_main_commit": "4da98927706676e7b0c23a1f7ed0b10644d0234b",
+    "previous_public_receipt_commit": "6ba82c08ece33102212123d657e6c1f548404e33",
+    "decision": "AGKO-D108",
+    "evidence": "AGKO-E108",
     "publication_policy": "push preservation-ready working files to the existing repository; reserve a new Zenodo exact version for a substantive non-spam cumulative checkpoint"
   },
   "publication": {
