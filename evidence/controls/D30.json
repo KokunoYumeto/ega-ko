@@ -5,7 +5,7 @@
   "pass": true,
   "locator": {
     "authority_pdf": {
-      "path": "C:\\Users\\Floris\\Documents\\Papors\\OS\\NUMDAM\\EGA_I_PMIHES_1960_4.pdf",
+      "path": "C:\\Users\\[USERPROFILE]\\Documents\\Papors\\OS\\NUMDAM\\EGA_I_PMIHES_1960_4.pdf",
       "bytes": 31680717,
       "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6",
       "pdf_one_based_page": 187,

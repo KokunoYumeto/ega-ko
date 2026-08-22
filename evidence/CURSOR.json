@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "EGA 0_I complete; EGA I Chapter I sections1-9 complete; source/ega1/ega1-10-fr.tex lines1-1401 through subsection10.7, Proposition10.7.3, both proofs, the attached formal-product-properties paragraph and separator",
-  "next": "source/ega1/ega1-10-fr.tex line1402, environment10.7.4",
-  "exact_version_doi": "10.5281/zenodo.22060640",
+  "completed_through": "EGA 0_I complete; EGA I Chapter I sections1-9 complete; source/ega1/ega1-10-fr.tex lines1-1491 through environment10.7.4, subsection10.8 environment10.8.1 and separator",
+  "next": "source/ega1/ega1-10-fr.tex line1492, Lemma10.8.2",
+  "exact_version_doi": "10.5281/zenodo.22062160",
   "figshare_mirror_doi": "10.6084/m9.figshare.33314679",
   "policy": "advance once and rebase only exact affected deltas"
 }

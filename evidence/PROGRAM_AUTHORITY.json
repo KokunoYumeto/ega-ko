@@ -1,11 +1,11 @@
 {
   "schema": "ag-ko-authority-v1",
-  "updated": "2026-08-22T21:44:00+02:00",
+  "updated": "2026-08-22T22:48:22+02:00",
   "order": ["EGA I", "EGA II", "FGA"],
   "active": "EGA",
   "ega": {
     "role": "primary French authority, read-only",
-    "root": "C:\\Users\\Floris\\Documents\\interlanguage\\Transcription\\03_working_transcriptions\\EGA_French_NUMDAM_canonical_TeX_20260801_r1",
+    "root": "Transcription\\03_working_transcriptions\\EGA_French_NUMDAM_canonical_TeX_20260801_r1",
     "driver": {"path": "source/EGA_FR.tex", "bytes": 2646, "sha256": "399AEFF4618643CEAAC2087B6C05EE8CFA07313AEDF97EDB467C5E5184D9BD56"},
     "status": {"path": "STATUS.md", "bytes": 572216, "sha256": "520A7D35DF20D53925E54B9BDE13345B22FC1A82EEFE7CB981988F50D4F64885", "observed": "2026-08-15T17:24:55+02:00"},
     "frontmatter": {"path": "source/ega1/frontmatter-fr.tex", "bytes": 1120, "sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9"},
@@ -20,7 +20,7 @@
     "chapter1_sections_7": {"path": "source/ega1/ega1-7-fr.tex", "bytes": 38226, "sha256": "73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522", "coverage": "Korean complete through source EOF line786, section7 heading and subsections7.1-7.4; target ega/I/c1s7.tex 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; official EGA II replacement applied to printed7.3.8 with explicit provenance"},
     "chapter1_sections_8": {"path": "source/ega1/ega1-8-fr.tex", "bytes": 20600, "sha256": "188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825", "coverage": "Korean complete through source EOF line410, section8 heading and subsections8.1-8.3; target ega/I/c1s8.tex 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; admitted line195 trace error corrected and disclosed under AGKO-H111"},
     "chapter1_sections_9": {"path": "source/ega1/ega1-9-fr.tex", "bytes": 53127, "sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091", "coverage": "Korean complete through source EOF line1183: section9 heading and subsections9.1-9.6; exact subsection9.6 lines1024-1183 EOF 7816 LF bytes / 0BCD1491C2AB3EE58FEE75BA6F44FF65AD51B6F22DAD5CF887EDD621F9FDC31B; target ega/I/c1s9.tex lines1-1179 EOF 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; H112-H120 provenance retained; section9 source file complete"},
-    "chapter1_sections_10": {"path": "source/ega1/ega1-10-fr.tex", "bytes": 159763, "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C", "coverage": "Korean complete through source line1401 separator: section10 heading through subsection10.7, Proposition10.7.3, both proofs and the attached formal-product-properties paragraph; cumulative source lines1-1401 61214 characters / 62060 LF-terminal bytes / D6D35C18B93AF8EA7561094BCD62223497AE2FAAE867D6C1E0541D25390F8C84; newest substantive closed unit lines1339-1400 2326 characters / 2365 bytes / 3F508D0BD9779DA7EDD46D195666D9868A591E9670A7684F7CB5C1A5031ABCBE; closure through line1401 2366 bytes / 095ED5AE39CCE574721173BE5BF8096487E3E07AE87F48C327750B435A1FE4D1; target ega/I/c1s10.tex lines1-1361 EOF 64276 bytes / 5A9796959B16D76C1C7BB03D86AC5BF61E6B276675FBB1BA57400AC1D1421997; P189 controls, markers191-193, official correction H131 and agreement control H132 retained; no new source correction; T008 T017 T028 T029 T067 T081 T149 T150 terminology retained; next untranslated line1402 begins environment10.7.4."},
+    "chapter1_sections_10": {"path": "source/ega1/ega1-10-fr.tex", "bytes": 159763, "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C", "coverage": "Korean complete through source line1491 separator: section10 heading through environment10.7.4 and subsection10.8 environment10.8.1; cumulative source lines1-1491 65466 characters / 66377 LF-terminal bytes / 9A408ADCA6DAF3D87A75493F312A3D0AAC3A4E90991129270465D04FE9C29D62; newest substantive closed unit lines1402-1490 4251 characters / 4316 bytes / 6BB1242293E438C7451AC57163438232667A0C4A2A24D7DB4458AD26ACBB5439; closure through line1491 4317 bytes / 1932CA114E366E48B0E83CB30A710E457143DA7DF1ED765A58443563C942EB9E; target ega/I/c1s10.tex lines1-1449 EOF 68686 bytes / 0692E70E87E1F56E064E6F624B3BA360A087625FA22B4FEF0F63A5BFD283D78A; markers191-194, official correction H131 and agreement control H132 retained; no new source correction; established terminology provenance retained and no definition entry activated before10.8.4; next untranslated line1492 begins Lemma10.8.2."},
     "bibliography": {"path": "source/ega1/bib-fr.tex", "bytes": 3430, "sha256": "E69C28D9B0E54F14E11FBA2A59F66037CE9E5286BD9FACE9D64CEFB56875CF75"},
     "live_source_note": "French source correction is active elsewhere; consume exact later deltas once without reopening completed unchanged Korean units."
   },
@@ -30,6 +30,9 @@
     "rule": "one independent Zenodo DOI lineage for the full Korean EGA corpus plus one additive continuing Figshare mirror article; cumulative exact releases state actual coverage; completed volume readers remain files or versions within these lineages rather than separate DOI lineages",
     "language_concept_doi": "10.5281/zenodo.21921513",
     "exact_version_doi": "10.5281/zenodo.22060640",
+    "reserved_next_exact_version_doi": "10.5281/zenodo.22062160",
+    "reserved_next_zenodo_record": "https://zenodo.org/uploads/22062160; unpublished draft",
+    "pending_scope": "EGA I through environment10.8.1; AGKO-D121 and AGKO-E121 local gates PASS; packaging, publication and anonymous readback pending",
     "previous_exact_version_doi": "10.5281/zenodo.22059890",
     "global_ega_concept_doi": "10.5281/zenodo.20414353",
     "github": "https://github.com/KokunoYumeto/ega-ko",

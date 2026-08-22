@@ -1,13 +1,13 @@
 {
   "schema": "ag-ko-cursor-v1",
-  "updated": "2026-08-22T21:44:00+02:00",
+  "updated": "2026-08-22T22:48:22+02:00",
   "corpus": "EGA",
   "volume": "I",
   "source": "source/ega1/ega1-10-fr.tex",
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "complete chapter1 sections1-9 and section10 through subsection10.7, Proposition10.7.3, both proofs and the attached formal-product-properties paragraph; source/ega1/ega1-10-fr.tex lines1-1401 61214 characters /62060 bytes /D6D35C18B93AF8EA7561094BCD62223497AE2FAAE867D6C1E0541D25390F8C84; target ega/I/c1s10.tex lines1-1361 EOF 64276 bytes /5A9796959B16D76C1C7BB03D86AC5BF61E6B276675FBB1BA57400AC1D1421997; D119/E119/V458-V463 local gates and D120/E120 public preservation evidence retained; current exact public checkpoint is Zenodo10.5281/zenodo.22060640, byte-identical Figshare10.6084/m9.figshare.33314679.v2 and GitHub commit552eeebae33065f691ebcb7ef6f1a4389c6aba42 with anonymous DOI files4/4, ZIP24/119, GitHub manifest137/137 and release4/4 replay PASS",
-  "next": "source/ega1/ega1-10-fr.tex line1402 environment10.7.4; continue once in canonical driver order with the next natural approximately4000-character closed unit",
+  "completed_through": "complete chapter1 sections1-9 and section10 through environment10.7.4 and subsection10.8 environment10.8.1; source/ega1/ega1-10-fr.tex lines1-1491 65466 characters /66377 bytes /9A408ADCA6DAF3D87A75493F312A3D0AAC3A4E90991129270465D04FE9C29D62; target ega/I/c1s10.tex lines1-1449 EOF 68686 bytes /0692E70E87E1F56E064E6F624B3BA360A087625FA22B4FEF0F63A5BFD283D78A; D121/E121/V464-V470 local gates PASS; current exact public checkpoint remains Zenodo10.5281/zenodo.22060640, byte-identical Figshare10.6084/m9.figshare.33314679.v2 and GitHub commit552eeebae33065f691ebcb7ef6f1a4389c6aba42 with anonymous DOI files4/4, ZIP24/119, GitHub manifest137/137 and release4/4 replay PASS; reserved Zenodo DOI10.5281/zenodo.22062160 remains unpublished until r7 packaging and three-endpoint readback finish",
+  "next": "source/ega1/ega1-10-fr.tex line1492 Lemma10.8.2; continue once in canonical driver order with the next natural approximately4000-character closed unit",
   "public_checkpoint": "Zenodo exact DOI10.5281/zenodo.22060640, Figshare exact DOI10.6084/m9.figshare.33314679.v2 and GitHub artifact commit552eeebae33065f691ebcb7ef6f1a4389c6aba42 through Proposition10.7.3 and the attached formal-product-properties paragraph; DOI hosts anonymous files4/4, manifest3/3, source ZIP24/24 and evidence ZIP119/119 exact; GitHub archive manifest137/137 and release4/4 exact; earlier DOI versions immutable",
-  "target": "continue the existing editable ega/I/c1s10.tex from source line1402 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-1401",
+  "target": "continue the existing editable ega/I/c1s10.tex from source line1492 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-1491",
   "policy": "advance once; never reopen unchanged completed units"
 }

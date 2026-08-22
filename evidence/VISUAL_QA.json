@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
-  "reader_sha256": "F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B",
-  "render_count": 6,
+  "reader_sha256": "E652F121559C855F7C13619518EECC9A40223944A5E68F69B5A0DC2A2B58F349",
+  "render_count": 7,
   "render_dimensions": "1654x2339",
   "dpi": 200,
   "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit, TOC and exact-DOI/repository-availability metadata; six immutable V458-V463 records retained, and standalone public-tree pages1,2,6,135-137 reproduce all six accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
+  "inspection": "direct inspection of every page changed by the newest mathematical unit, TOC and exact-DOI/repository-availability metadata; seven immutable V464-V470 records retained, and standalone public-tree pages1,2,6,135-138 reproduce all seven accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
   "checked": [
     "title page with exact working-head coverage",
-    "information page with exact DOI22060640, stable concept DOI and restored GitHub availability",
-    "changed TOC page6 with complete subsection10.7 entry",
-    "sealed predecessor page135, pixel-identical to V454",
-    "subsection10.7 through Proposition10.7.3, both proofs and attached formal-product-properties paragraph on page136",
-    "complete bibliography page137, pixel-identical to V456",
-    "standalone public-tree render replay exact6/6"
+    "information page with exact DOI22062160, stable concept DOI and restored GitHub availability",
+    "changed TOC page6 with complete subsection10.7 and subsection10.8 entries",
+    "sealed predecessor page135, pixel-identical to V467",
+    "environment10.7.4 on page136",
+    "environment10.7.4 closure, subsection10.8 and environment10.8.1 on page137",
+    "complete bibliography page138",
+    "standalone public-tree render replay exact7/7"
   ],
   "defects": 0,
   "result": "PASS"

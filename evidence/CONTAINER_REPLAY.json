@@ -2,22 +2,22 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1206543,
-    "sha256": "F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B"
+    "bytes": 1212194,
+    "sha256": "E652F121559C855F7C13619518EECC9A40223944A5E68F69B5A0DC2A2B58F349"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r148/main.pdf",
-    "bytes": 1206551,
-    "sha256": "4BB234B49B5D74D1ACCBEA2F38282655671F94F3588DC6EAA1787C4ED8A23C34"
+    "path": "build/ega1/r150/main.pdf",
+    "bytes": 1212201,
+    "sha256": "E80D072B18FEBA6225D7592BD4D03BE3E105388F62950276D1E49B18B5765F29"
   },
   "source_files_exact": true,
   "comparison": {
-    "pages": 137,
+    "pages": 138,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "hangul_syllables_each": 125708,
+    "hangul_syllables_each": 126270,
     "replacement_characters_each": 0,
-    "pages1_2_6_135_136_137_200dpi_pixel_exact": true
+    "pages1_2_6_135_136_137_138_200dpi_pixel_exact": true
   },
-  "disposition": "The standalone repository build is the canonical exact-version container. Its eight-byte size difference from working-tree r148 is retained as a bounded container-level delta: all137 pypdf page texts, full Poppler extraction and inspected200dpi pages1,2,6,135-137 are exact. No content or status inference is drawn from the container difference."
+  "disposition": "The standalone repository build is the canonical exact-version container. Its seven-byte size difference from working-tree r150 is retained as a bounded container-level delta: all138 pypdf page texts, full Poppler extraction and inspected200dpi pages1,2,6,135-138 are exact. No content or status inference is drawn from the container difference."
 }
