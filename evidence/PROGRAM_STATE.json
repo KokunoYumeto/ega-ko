@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-state-v1",
-  "updated": "2026-08-22T22:48:22+02:00",
+  "updated": "2026-08-23T00:00:26+02:00",
   "owner_task": "019f757c-a43b-7ed0-b810-b8effdc5d904",
-  "goal": "Complete and maintain a source-synchronized Korean translation programme in this strict order: first finish EGA I from the current canonical cursor through the end of the volume; second complete EGA II; third complete FGA. Do not begin SGA in this task. Korean SGA work is certain future work, but the user will coordinate its structure and execution separately. Do not allow old summaries or previous broad goals to reintroduce SGA, Stacks, Emmy Noether, Lean, or unrelated corpora into this lane.\n\nTreat EGA III and every later EGA volume as conditionally queued, not presently authorized production. A later volume becomes eligible only when its complete project-canonical French transcription is demonstrably source-accurate: every page and structural unit is present, the canonical validation gate passes, material ambiguities and corrections are resolved or explicitly bounded, and no source span remains missing or provisional. Recheck readiness at the scheduled seven-day follow-up. Translate only the contiguous ready sequence beginning with EGA III. If III alone is ready, do III alone. If III and following volumes are ready, take them in canonical order and stop before the first incomplete volume. Never fill gaps from OCR, draft English, memory, inference, or another edition, and never start a volume merely because fragments exist.\n\nFor every admitted unit, preserve exact authority and target identities with stable paths, locators, byte counts, and SHA-256; preserve formulas, labels, references, citations, page markers, notes, hypotheses, quantifiers, map directions, object types, and source corrections. Keep French authority read-only. Correct genuine source defects only in the Korean downstream layer, classify their status accurately, and disclose substantive repairs without promoting an inference to an official erratum. Govern Korean terminology by mathematical sense and type, with Hangul-first South Korean register, direct math-particle attachment, stable spacing, and explicit distinctions between similarly named objects.\n\nCompletion requires editable Korean TeX in canonical source order, deterministic serial builds, stable late passes, zero critical diagnostics, usable extraction, font and ToUnicode integrity where applicable, and proportional rendered-page inspection. Keep source binding, translation/formula fidelity, build, extraction, visual QA, provenance, and publication state separate. Preserve immutable evidence and accepted checkpoints. Rebuild or re-audit only when bytes changed, a concrete defect was found, a required invariant was never covered, or publication readback demands it. Do not confuse repeated checking with rigor.\n\nAim hard at perfection: fidelity, mathematical typing, Korean clarity, reproducibility, provenance, and visual legibility should be as close to flawless as evidence permits. Also guard hard against perfectionism. Do not reopen sealed correct work for stylistic restlessness, rerun equivalent audits, generate speculative side projects, create pilots instead of completing the corpus, or delay validated progress for an unattainable feeling of certainty. Use proportional risk: inspect deeply where source meaning, formulas, corrections, page boundaries, typography, or publication bytes can fail; otherwise carry accepted evidence forward and advance once. Never manufacture work or claim completion without exact evidence, and never let a balanced but misordered or mistyped result pass.\n\nMaintain one canonical external Korean EGA Zenodo lineage and one additive versioned Figshare mirror rather than duplicate deposits. The GitHub repository https://github.com/KokunoYumeto/ega-ko was reinstated according to the user's direct report after the VPN-related suspension; publish validated checkpoints there with narrow task-local Git operations and anonymous readback, while retaining Zenodo and Figshare as independent preservation endpoints. Canonical continuity is https://doi.org/10.5281/zenodo.21921513, the current exact checkpoint is https://doi.org/10.5281/zenodo.22060640, and its byte-identical mirror is https://doi.org/10.6084/m9.figshare.33314679.v2 within continuing article https://doi.org/10.6084/m9.figshare.33314679. Use these public DOI links as outward continuity points. Publish only substantively ready, validated checkpoints into the existing Zenodo lineage and Figshare article, then perform anonymous public-byte and metadata readback on both. Do not imply that a private working head is public and do not create competing lineages or mirror articles.\n\nThe immediate cursor remains EGA I. The task is complete only when EGA I, EGA II, and FGA have complete source-synchronized Korean editions satisfying these gates, plus any later EGA volumes admitted by the readiness rule. SGA remains out of scope until the user supplies a separate coordination plan.",
+  "goal": "Complete and maintain a source-synchronized Korean translation programme in this strict order: first finish EGA I from the current canonical cursor through the end of the volume; second complete EGA II; third complete FGA. Do not begin SGA in this task. Korean SGA work is certain future work, but its structure and execution will be coordinated separately. Do not let summaries or older broad goals reintroduce SGA, Stacks, Emmy Noether, Lean, or unrelated corpora into this lane.\n\nEGA III is candidate-ready on the user's direct report and is no longer a waiting blocker. It remains sequenced after completion of EGA I, EGA II and FGA and must pass exact project-canonical source-authority packet validation before admission: every page and structural unit present, canonical validation passed, material ambiguities and corrections resolved or explicitly bounded, and no source span missing or provisional. Once those sequence and validation gates pass, admit EGA III without any scheduled, elapsed-time or conversational wait. Thereafter translate only the contiguous ready sequence and stop before the first incomplete later volume. Never fill gaps from OCR, draft English, memory, inference, or another edition.\n\nFor every admitted unit, use natural source-bounded units of roughly 4,000 substantive source characters and preserve exact authority and target identities with stable paths, locators, byte counts, and SHA-256. Preserve formulas, labels, references, citations, page markers, notes, hypotheses, quantifiers, map directions, object types, and source corrections. Keep French authority read-only. Correct genuine source defects only in the Korean downstream layer, classify them accurately, and disclose substantive repairs without promoting an inference to an official erratum. Govern terminology by mathematical sense and type, with Hangul-first South Korean register, direct math-particle attachment, stable spacing, and explicit distinctions between similarly named objects.\n\nCompletion requires editable Korean TeX in canonical source order, deterministic serial builds with stable late passes and zero critical diagnostics, usable dual extraction, font and ToUnicode integrity where applicable, and proportional rendered-page inspection. Keep source binding, translation and formula fidelity, build, extraction, visual QA, provenance, and publication state separate. Preserve immutable evidence and accepted checkpoints. Rebuild or re-audit only when bytes changed, a concrete defect was found, a required invariant was never covered, or publication readback demands it. Aim hard at perfection in fidelity, mathematical typing, Korean clarity, reproducibility, provenance, and visual legibility, while guarding equally hard against perfectionism: do not reopen sealed correct work for stylistic restlessness, rerun equivalent audits, create pilots instead of completing the corpus, or delay validated progress for an unattainable feeling of certainty.\n\nMaintain one canonical external Korean EGA Zenodo lineage, one additive continuing Figshare article, and the reinstated GitHub repository. Canonical continuity is https://doi.org/10.5281/zenodo.21921513; the current exact public checkpoint is https://doi.org/10.5281/zenodo.22062160, mirrored byte-identically as https://doi.org/10.6084/m9.figshare.33314679.v3 within https://doi.org/10.6084/m9.figshare.33314679 and at GitHub artifact commit 0848b6df0f4408168dbc7b749e0c4ae44d8b0b90 in https://github.com/KokunoYumeto/ega-ko. The validated next head has reserved Zenodo DOI https://doi.org/10.5281/zenodo.22062589 and must be published immediately after its package gate, followed by anonymous public-byte and metadata readback on Zenodo, Figshare and GitHub. Never imply that a private working head is public, create a competing lineage or mirror article, or make a blanket rights claim.\n\nThe immediate cursor remains EGA I. The task is complete only when EGA I, EGA II and FGA have complete source-synchronized Korean editions satisfying all gates, plus every later EGA volume admitted by the readiness rule. SGA remains out of scope. Durable reentry state is authoritative only in 03_projects/language_management/cjk/03_working_translations/ag_ko/authority.json, cursor.json, state.json, decisions.jsonl, evidence.jsonl, terms.jsonl, hard.jsonl and HARDENED.md; at each material checkpoint update these exact files with artifact identities, hashes, completed and unresolved work, public status and the next executable action.",
   "mode": "full_production_no_pilot",
   "hardening": {
     "directive": "raw/u005.txt 2271 bytes / 2D69CEB50C5873FA89DA782337200FF3892525B9C8B49EE8A34F91F8ABA87A3C",
-    "workflow": "HARDENED.md 116988 bytes / 21DDBDC5A644F841001619E636FEDCF8845B9EA1EE7C4F084FC2399FE639995C",
+    "workflow": "HARDENED.md 125792 bytes / 08DF8F521506512138D17B43D35109D84A2ABF960C9BE2D7A2845973FEF37575",
     "rule": "ignore session compactions and summaries; reconstruct only from raw directive, hardened workflow, cursor/state/authority, append-only ledgers, and rehashed artifacts"
   },
   "active_corpus": "EGA",
@@ -25,7 +25,7 @@
     "EGA I chapter1 section7 complete source file lines1-786 EOF: subsections7.1-7.4 through environment7.4.7",
     "EGA I chapter1 section8 complete source file lines1-410 EOF: subsections8.1-8.3 through environment8.3.2",
     "EGA I chapter1 section9 complete source file lines1-1183 EOF: subsections9.1-9.6 through proposition9.6.6",
-    "EGA I chapter1 section10 through environment10.7.4 and subsection10.8 environment10.8.1, source lines1-1491 separator"
+    "EGA I chapter1 section10 through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the completion-functor paragraph immediately before Proposition10.8.5, source lines1-1586 separator"
   ],
   "source_coverage": {
     "frontmatter": "complete",
@@ -41,14 +41,14 @@
     "chapter1_section7": "complete source/ega1/ega1-7-fr.tex lines1-786 EOF; 38226 bytes / 73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522; target ega/I/c1s7.tex 776 lines / 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; subsections7.1-7.4 complete; printed7.3.8 replaced downstream by the official EGA II text",
     "chapter1_section8": "complete source/ega1/ega1-8-fr.tex lines1-410 EOF; 20600 bytes / 188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825; subsection8.3 exact slice lines359-410 2607 LF bytes / B970AF93BCA7F54462DF1ABB4F587BA2224486D4B39C38F36A63B6017BDF73AF; target ega/I/c1s8.tex lines1-410 / 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; subsections8.1-8.3 complete; admitted printed source trace error in8.2 corrected and disclosed under AGKO-H111",
     "chapter1_section9": "complete source/ega1/ega1-9-fr.tex lines1-1183 EOF; 53127 bytes / 976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091; exact subsection9.6 lines1024-1183 EOF 7816 LF bytes / 0BCD1491C2AB3EE58FEE75BA6F44FF65AD51B6F22DAD5CF887EDD621F9FDC31B; target ega/I/c1s9.tex lines1-1179 EOF / 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; section9 heading and subsections9.1-9.6 complete; H112-H120 provenance retained",
-    "chapter1_section10": "partial source/ega1/ega1-10-fr.tex lines1-1491 separator; 66377 LF-terminal bytes / 9A408ADCA6DAF3D87A75493F312A3D0AAC3A4E90991129270465D04FE9C29D62; exact substantive unit lines1402-1490 4251 characters / 4316 bytes / 6BB1242293E438C7451AC57163438232667A0C4A2A24D7DB4458AD26ACBB5439; closure through line1491 separator 4317 bytes / 1932CA114E366E48B0E83CB30A710E457143DA7DF1ED765A58443563C942EB9E; target ega/I/c1s10.tex lines1-1449 EOF / 68686 bytes / 0692E70E87E1F56E064E6F624B3BA360A087625FA22B4FEF0F63A5BFD283D78A; section10 through environment10.7.4 and subsection10.8 environment10.8.1; markers191-194, official correction H131, agreement control H132 and established terminology provenance retained; no new source correction; next source line1492 Lemma10.8.2"
+    "chapter1_section10": "partial source/ega1/ega1-10-fr.tex lines1-1586 separator; 70857 LF-terminal bytes / 001AFDD830444C9817512F9626369B33D32CF0DF4C511AFB3E77836E3A304B1F; exact substantive unit lines1492-1585 4434 characters / 4479 bytes / 4E64E4988B09D00574C2E4509EAB684DD6A24E5101379F108CBDAF1BF85168A6; closure through line1586 separator 4480 bytes / 62A8783D3643C1E32B3FBAC613D6296ECC9C26CA093BA15C15B916BB23E57260; target ega/I/c1s10.tex lines1-1541 EOF / 73112 bytes / 643A0870B28EC5342FC5CD1954859953EA145AB31C7F865D621F3D0DA30C7DB0; section10 through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the attached restriction, topological inverse-limit and additive covariant completion-functor paragraphs; marker195 and established correction/terminology provenance retained; no new source correction; next source line1587 Proposition10.8.5"
   },
   "target": {
     "path": "ega/I/main.tex",
     "bytes": 2749,
     "sha256": "84CACAEB665E0DF9616A69E4BC3F6C092CCCF807F15212327424B30F52BBA10E",
     "components": [
-      "ega/I/front.tex 3075 bytes / 4D23784D029EBD7CA55D41AD0ABE0289BBCB5FA2BA323611ABD86A3ECC9EFA1E; exact scope through environment10.8.1, reserved exact DOI22062160, stable concept DOI and restored GitHub availability embedded",
+      "ega/I/front.tex 3270 bytes / E081CAEBA4E9808E908600828518D6E8903C8547F91F5F70F352B7E70A10BFF2; exact scope through Definition10.8.4 and the completion-functor paragraph before Proposition10.8.5, reserved exact DOI22062589, stable concept DOI, stable Figshare DOI and reinstated GitHub repository embedded",
       "ega/I/c1front.tex 2069 bytes / 4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
       "ega/I/c1s1.tex 71250 bytes / E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
       "ega/I/c1s2.tex 27982 bytes / C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
@@ -59,99 +59,103 @@
       "ega/I/c1s7.tex 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; complete source section7 through EOF",
       "ega/I/c1s8.tex 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; complete source section8 through EOF",
       "ega/I/c1s9.tex 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; complete source section9 through EOF",
-      "ega/I/c1s10.tex lines1-1449 EOF / 68686 bytes / 0692E70E87E1F56E064E6F624B3BA360A087625FA22B4FEF0F63A5BFD283D78A; section10 through environment10.7.4 and subsection10.8 environment10.8.1; source line1491 separator"
+      "ega/I/c1s10.tex lines1-1541 EOF / 73112 bytes / 643A0870B28EC5342FC5CD1954859953EA145AB31C7F865D621F3D0DA30C7DB0; section10 through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the completion-functor paragraph before Proposition10.8.5; source line1586 separator"
     ]
   },
   "build": {
     "state": "pass",
-    "engine": "XeLaTeX three-pass; r150 exact-DOI cycle1 and cycle2 byte-identical across two fixed-metadata cycles under SOURCE_DATE_EPOCH1786633200 FORCE_SOURCE_DATE1 TZ UTC; r149 scope build independently byte-stable",
+    "engine": "XeLaTeX three-pass; r152 exact-DOI cycle1 and cycle2 byte-identical across two fixed-metadata cycles under SOURCE_DATE_EPOCH1786633200 FORCE_SOURCE_DATE1 TZ UTC; r151 scope build independently byte-stable",
     "pages": 138,
-    "pdf": "build/ega1/r150/main.pdf",
-    "bytes": 1212201,
-    "sha256": "E80D072B18FEBA6225D7592BD4D03BE3E105388F62950276D1E49B18B5765F29",
-    "log": "build/ega1/r150/main.log 43317 bytes / D5CB10685FD468DAF91D0D9ACF3EAED02F16A7A03CF0D95830FB14C81EFB815E",
+    "pdf": "build/ega1/r152/main.pdf",
+    "bytes": 1218686,
+    "sha256": "B007C6468357F74118899334F911ED7D0E86BB708E9F1B1765207F40FF7BF89C",
+    "log": "build/ega1/r152/main.log 43358 bytes / 1338FF9A5A52F936532D752C39750EE4E9A660DEC415CE1D238DB8050C00172F",
     "critical_diagnostics": 0,
     "known_noncritical": "one existing marginpar movement warning; Malgun Gothic small-caps request falls back to normal shape in unchanged bibliography"
   },
   "render": {
     "state": "pass",
-    "pages_inspected": "r150 physical pages1,2,6,135-138 were inspected at200dpi in V464-V470 and pass; page135 is pixel-exact to the accepted predecessor, and final pages1,6,135-138 are pixel-exact to the accepted r149 scope build while page2 differs only by the exact reserved DOI. Environment10.7.4, subsection10.8 and environment10.8.1, formulas, maps, links, exact DOI, title and bibliography show no clipping, overlap, tofu, malformed formula or footnote collision.",
+    "pages_inspected": "r152 physical pages1,2,6,136-138 were inspected at200dpi in V471-V476 and pass; final pages1,6,136-138 are pixel-exact to the accepted r151 scope build while page2 differs only by the exact reserved DOI; pages6,136 and138 are pixel-exact to accepted r150. Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4, completion formulas, maps, links, exact DOI, title and bibliography show no clipping, overlap, tofu, malformed formula or footnote collision.",
     "dpi": 200,
     "root": "render/ega1",
-    "text": "build/ega1/r150/text-poppler.txt 611478 bytes / 2A61F53164CCA5999462DEA83E483C34B3BD71F2B5E27B7C6DDEC1E97C805DBA; build/ega1/r150/text-pypdf.txt 579160 bytes / A5C3E430E338612A834DF036EAB9138C2E9EE510222E912587F6C7D0AB4A44FA; both126270 Hangul; replacement characters0; r150 differs from accepted r149 only on exact-DOI information page2"
+    "text": "build/ega1/r152/text-poppler.txt 614667 bytes / 740C498040BEDAA0C258E7033E6F49267981405E1EA6DF13D2C719FB235B9AFC; build/ega1/r152/text-pypdf.txt 582222 bytes / 6483AD42A850346F246D5437FCECA48E075173C71D9C3134A14CFD598C60851D; both126913 Hangul; replacement characters0; exact DOI occurs once in each; r152 differs from accepted r151 only on exact-DOI information page2"
   },
   "working_head": {
-    "state": "validated_local_release_ready_publication_pending",
-    "coverage": "EGA I through environment10.7.4 and subsection10.8 environment10.8.1; next source line1492 Lemma10.8.2",
-    "pdf": "build/ega1/r150/main.pdf",
+    "state": "validated_local_r8_reserved_unpublished",
+    "coverage": "EGA I through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the completion-functor paragraph before Proposition10.8.5; next source line1587 Proposition10.8.5",
+    "pdf": "build/ega1/r152/main.pdf",
     "pages": 138,
-    "bytes": 1212201,
-    "sha256": "E80D072B18FEBA6225D7592BD4D03BE3E105388F62950276D1E49B18B5765F29",
+    "bytes": 1218686,
+    "sha256": "B007C6468357F74118899334F911ED7D0E86BB708E9F1B1765207F40FF7BF89C",
     "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "github_main_artifact_commit": "552eeebae33065f691ebcb7ef6f1a4389c6aba42",
-    "github_artifact_readback": "PASS: anonymous main API exact; commit archive 69794105 bytes / E62769B20743CD4F2835965B6D004F86275C3231FD6DCD88E9DC7F46CC6D8F7F; artifact manifest137/137 and frozen release4/4 exact after bounded 19-render completion",
+    "github_main_artifact_commit": "0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "github_main_receipt_commit": "2b1463f08426a12a59feced41037b39f3385d53b",
+    "github_artifact_readback": "PASS: anonymous commit API exact; commit archive103837140 bytes / 956DB76715D5AFDCE74CF19C14775F078C7E2FDEAF5F1B0688976E07B3EBAB18; artifact manifest144/144 and frozen release4/4 exact; final main receipt commit and receipts3/3 exact",
     "github_initial_gap": "commit36ad912160dce83966455df3232c8ba2b7d1b737 first replay release4/4 exact but artifact manifest118/137; missing older render witnesses verified locally19/19 and added only in commit552eeebae33065f691ebcb7ef6f1a4389c6aba42",
-    "repository_status": "public and anonymously replayed after reinstatement; S113 checkpoint and complete manifest-bound artifact tree are available",
-    "reserved_next_zenodo_exact_doi": "10.5281/zenodo.22062160",
-    "reserved_next_zenodo_record": "https://zenodo.org/uploads/22062160; unpublished draft",
-    "pending_public_scope": "r7 through environment10.8.1; exact packaging, Zenodo publication, Figshare v3, narrow GitHub push and anonymous readback pending",
-    "current_public_zenodo_exact_doi": "10.5281/zenodo.22060640",
-    "current_public_zenodo_record": "https://zenodo.org/records/22060640",
+    "repository_status": "public and anonymously replayed; S114 checkpoint, complete manifest-bound artifact tree and credential-free receipts are available",
+    "current_public_zenodo_exact_doi": "10.5281/zenodo.22062160",
+    "current_public_zenodo_record": "https://zenodo.org/records/22062160",
     "current_public_figshare_article_doi": "10.6084/m9.figshare.33314679",
-    "current_public_figshare_exact_doi": "10.6084/m9.figshare.33314679.v2",
-    "current_public_figshare_version": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/2",
+    "current_public_figshare_exact_doi": "10.6084/m9.figshare.33314679.v3",
+    "current_public_figshare_version": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/3",
     "current_public_reader": {
       "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-      "pages": 137,
-      "bytes": 1206543,
-      "sha256": "F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B"
+      "pages": 138,
+      "bytes": 1212194,
+      "sha256": "E652F121559C855F7C13619518EECC9A40223944A5E68F69B5A0DC2A2B58F349"
     },
     "current_public_artifact_manifest": {
       "path": "pub/ega-ko/evidence/ARTIFACT_SHA256.tsv",
-      "rows": 137,
-      "bytes": 13405,
-      "sha256": "6B4F8483E9DECA8197F3BAFA3B98005295809C4C8EF40ECD1FA91D50164C190F"
+      "rows": 144,
+      "bytes": 14138,
+      "sha256": "9FA62AC3AD0EF40080465C7C70A0F2B9BF755FD4B68E7258D36BE14B92DFF7AF"
     },
-    "current_public_readback": "PASS on Zenodo22060640 and Figshare33314679.v2: each host anonymous files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24 and evidence ZIP119/119 full member replay, exact metadata and cross-host identity; Figshare v1 immutable; GitHub552eeeb archive manifest137/137 and release4/4 exact",
-    "decision": "AGKO-D121",
-    "evidence": "AGKO-E121",
-    "publication_policy": "publish this ready checkpoint in the existing Zenodo concept lineage as exact DOI10.5281/zenodo.22062160, as version3 of Figshare article33314679 and through a narrow push to the reinstated GitHub repository; anonymously replay all endpoints and never create duplicate lineages or mirror articles"
+    "current_public_readback": "PASS on Zenodo22062160 and Figshare33314679.v3: each host anonymous files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24 and evidence ZIP126/126 full member replay, exact metadata and cross-host identity; Figshare v2 immutable; GitHub0848b6df archive manifest144/144 and release4/4 exact; receipt commit2b1463f receipts3/3 exact",
+    "reserved_next_exact_version_doi": "10.5281/zenodo.22062589",
+    "reserved_next_draft": "https://zenodo.org/uploads/22062589",
+    "decision": "AGKO-D123",
+    "evidence": "AGKO-E123",
+    "publication_policy": "publish future ready checkpoints in the existing Zenodo concept lineage, continuing Figshare article33314679 and reinstated GitHub repository; anonymously replay all endpoints and never create duplicate lineages or mirror articles"
   },
   "previous_public_head": {
-    "coverage": "EGA I through Corollaries10.6.10-10.6.11, both proofs and the attached inverse-limit reformulation; next source line1339 subsection10.7",
-    "zenodo_exact_doi": "10.5281/zenodo.22059890",
-    "reader": "137 pages / 1204290 bytes / 1874B717A474C1CCBC132A6F582A6FA26B6023853B1A21B431AEBE25064A9230",
-    "manifest": "public files4/4, embedded manifest3/3, source ZIP24 and evidence ZIP113 exact; sanitized receipts receipt-r5.json and figshare-receipt-v1.json",
-    "readback": "PASS under AGKO-D118 and AGKO-E118"
+    "coverage": "EGA I through subsection10.7, Proposition10.7.3, both proofs and the attached formal-product-properties paragraph; next source line1402 environment10.7.4",
+    "zenodo_exact_doi": "10.5281/zenodo.22060640",
+    "reader": "137 pages / 1206543 bytes / F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B",
+    "manifest": "public files4/4, embedded manifest3/3, source ZIP24 and evidence ZIP119 exact; sanitized receipts receipt-r6.json, figshare-receipt-v2.json and github-receipt-r6.json",
+    "readback": "PASS under AGKO-D120 and AGKO-E120"
   },
   "publication": {
-    "state": "published_current_checkpoint_triple_endpoint_public_readback_pass",
-    "object": "one Korean EGA corpus lineage; the validated137-page cumulative edition through subsection10.7, Proposition10.7.3, both proofs and the immediately following formal-product-properties paragraph is the current public checkpoint; the full corpus remains incomplete",
+    "state": "r7_current_public_r8_validated_reserved_unpublished",
+    "object": "one Korean EGA corpus lineage; r7 through environment10.8.1 remains the current public checkpoint while the validated138-page r8 cumulative edition through Definition10.8.4 and the completion-functor paragraph before Proposition10.8.5 is reserved for immediate publication; the full corpus remains incomplete",
     "language_concept_doi": "10.5281/zenodo.21921513",
-    "exact_version_doi": "10.5281/zenodo.22060640",
+    "exact_version_doi": "10.5281/zenodo.22062160",
+    "reserved_next_exact_version_doi": "10.5281/zenodo.22062589",
+    "reserved_next_draft": "https://zenodo.org/uploads/22062589",
     "global_ega_concept_doi": "10.5281/zenodo.20414353",
-    "previous_exact_version_doi": "10.5281/zenodo.22059890",
+    "previous_exact_version_doi": "10.5281/zenodo.22060640",
     "figshare_article_doi": "10.6084/m9.figshare.33314679",
-    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v2",
-    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/2",
+    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v3",
+    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/3",
     "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "github_artifact_commit": "552eeebae33065f691ebcb7ef6f1a4389c6aba42",
-    "github_artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/552eeebae33065f691ebcb7ef6f1a4389c6aba42",
-    "repository_status": "public and anonymously replayed: artifact manifest137/137 and frozen release4/4 exact; initial118/137 gap and exact 19-file remediation preserved",
-    "zenodo_record": "https://zenodo.org/records/22060640",
+    "github_artifact_commit": "0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "github_artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "github_receipt_commit": "2b1463f08426a12a59feced41037b39f3385d53b",
+    "github_receipt_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/2b1463f08426a12a59feced41037b39f3385d53b",
+    "repository_status": "public and anonymously replayed: artifact manifest144/144 and frozen release4/4 exact; final credential-free receipts3/3 exact",
+    "zenodo_record": "https://zenodo.org/records/22062160",
     "public_reader": {
       "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-      "pages": 137,
-      "bytes": 1206543,
-      "sha256": "F035D8534EDE15387C00465E16FA3AFADA0005840FFFE7405CE1B697F8B04B6B"
+      "pages": 138,
+      "bytes": 1212194,
+      "sha256": "E652F121559C855F7C13619518EECC9A40223944A5E68F69B5A0DC2A2B58F349"
     },
-    "readback": "PASS on Zenodo22060640 and Figshare33314679.v2: anonymous4/4 byte-MD5-SHA-256 identities per host and cross-host, manifest3/3, source ZIP24/24, evidence ZIP119/119 and exact metadata; Figshare v1 immutable; GitHub552eeeb archive manifest137/137 and release4/4 exact",
-    "zenodo_receipt": "pub/ega-ko/receipt-r6.json 4446 bytes / D4EA307D28D166A46E7911F3C00ADA695A2F4BEFAE01E758CDFEDAFC54FAB134",
-    "figshare_receipt": "pub/ega-ko/figshare-receipt-v2.json 4760 bytes / 580FE8DD6012A0C068971BC55C7E63728A3115F214F6907985A357FC6B97767B",
-    "github_receipt": "pub/ega-ko/github-receipt-r6.json 3514 bytes / DF50972D75CAF0A424EAB9218A1D65B15700CF131574735639B3FA47520FA419",
-    "previous_receipt": "pub/ega-ko/receipt-r5.json"
+    "readback": "PASS on Zenodo22062160 and Figshare33314679.v3: anonymous4/4 byte-MD5-SHA-256 identities per host and cross-host, manifest3/3, source ZIP24/24, evidence ZIP126/126 and exact metadata; Figshare v2 immutable; GitHub0848b6df archive manifest144/144 and release4/4 exact; receipt commit2b1463f receipts3/3 exact",
+    "zenodo_receipt": "pub/ega-ko/receipt-r7.json 3090 bytes / FD6F233B2B67A6F5900F51C2A27DD6023A24048FFA53429B0583F9ECF92D44E3",
+    "figshare_receipt": "pub/ega-ko/figshare-receipt-v3.json 3859 bytes / 556D123E78A16D2E008415C5556F3BE9492366BF4C4B7A5513D6BAECBF5327CD",
+    "github_receipt": "pub/ega-ko/github-receipt-r7.json 2129 bytes / C16C76BB1B4BF51572A52655DB34F320C61BF3DEB238E0F4E2FB0FA36072633E",
+    "previous_receipt": "pub/ega-ko/receipt-r6.json"
   },
-  "external_publication": "current S113 checkpoint through Proposition10.7.3 is public as Zenodo exact DOI10.5281/zenodo.22060640 in concept DOI10.5281/zenodo.21921513, byte-identical Figshare DOI10.6084/m9.figshare.33314679.v2 and GitHub commit552eeebae33065f691ebcb7ef6f1a4389c6aba42; complete anonymous DOI file/member replay and GitHub manifest137/137 plus release4/4 replay PASS; earlier DOI versions immutable",
+  "external_publication": "current S114/r7 checkpoint through environment10.8.1 remains public as Zenodo exact DOI10.5281/zenodo.22062160 in concept DOI10.5281/zenodo.21921513, byte-identical Figshare DOI10.6084/m9.figshare.33314679.v3 and GitHub artifact commit0848b6df0f4408168dbc7b749e0c4ae44d8b0b90; complete anonymous DOI file/member replay, GitHub manifest144/144 plus release4/4 replay, and final receipt commit2b1463f receipts3/3 PASS; validated S115/r8 is locally sealed with Zenodo DOI10.5281/zenodo.22062589 reserved but is not yet public; earlier DOI versions immutable",
   "noether_owner_elsewhere": true,
   "lean_forbidden": true
 }

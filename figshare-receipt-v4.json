@@ -1,0 +1,54 @@
+{
+  "schema": "ag-ko-figshare-publication-receipt-v1",
+  "created": "2026-08-23T00:29:36+02:00",
+  "publication": {
+    "host": "Figshare",
+    "article_id": 33314679,
+    "article_doi": "10.6084/m9.figshare.33314679",
+    "article_doi_url": "https://doi.org/10.6084/m9.figshare.33314679",
+    "version": 4,
+    "version_doi": "10.6084/m9.figshare.33314679.v4",
+    "version_doi_url": "https://doi.org/10.6084/m9.figshare.33314679.v4",
+    "version_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/4",
+    "published": "2026-08-22T22:28:05Z",
+    "access": "public",
+    "resource_type": "book",
+    "license": "CC BY 4.0"
+  },
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "authors": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "author_ids": [24613959, 24613962],
+    "project_contribution": "AI typesetting & translation",
+    "project_contribution_placement": "Description, exactly once; the author list contains only the historical work authors.",
+    "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Lemma 10.8.2 with proof, environment 10.8.3, Definition 10.8.4, and the attached restriction, topological inverse-limit and additive covariant completion-functor paragraphs immediately before Proposition 10.8.5",
+    "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
+    "categories": [29365, 29383, 29830],
+    "references": ["https://doi.org/10.5281/zenodo.21921513", "https://doi.org/10.5281/zenodo.20414353", "https://doi.org/10.5281/zenodo.22062589"],
+    "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; underlying and third-party materials retain their own rights and attribution.",
+    "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
+  },
+  "files": [
+    {"id": 67761918, "name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1218684, "md5": "b3a72480166a623a4464d80951edb646", "sha256": "46B41FCF2F0996FBDB49242C6DAFB9EB6E2BBD11A0052439660CBFAE54339DE8", "pages": 138},
+    {"id": 67761921, "name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 212134, "md5": "7e28565d09ebd67e06b256e66d777443", "sha256": "C6DDB4CF4F0CAC8DA8274B2CE26E1EC343ECE8B01D03AB1C8E3E822F42DA68DF", "entries": 24},
+    {"id": 67761924, "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 32453227, "md5": "50b224d3349682339fdb235558e2eeef", "sha256": "252827D8DECB0A7BACE30C482A5C2EB69EF5D3974677DBA86BF5B791F205C45E", "entries": 132},
+    {"id": 67761927, "name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 342, "md5": "4491f51d865c6e99a7b2e230e5b4f02e", "sha256": "9C2F3620D27DD55A7148F9548F8557F090FC85C70AE0507F0C7EB35A30476C0C", "rows": 3}
+  ],
+  "anonymous_readback": {
+    "article_api": "https://api.figshare.com/v2/articles/33314679",
+    "version_api": "https://api.figshare.com/v2/articles/33314679/versions/4",
+    "article_json": "6944 bytes / FE979C8675458C408E49327D3E1B4527517CE36B9E0A686FFE2DF156A9A83019",
+    "version_json": "6946 bytes / ABAE8446292013A100EB043B740112B8DEAFE1C276644B97DFDA0CC279678323",
+    "download_root": "release/2026-08-22-r8/figshare-readback",
+    "files_byte_md5_and_sha256_exact": "4/4",
+    "identical_to_zenodo_r8_files": "4/4",
+    "manifest_rows_replayed": "3/3",
+    "source_zip_entries_replayed": "24/24",
+    "evidence_zip_entries_replayed": "132/132",
+    "version_3_immutable": "PASS: 6664 bytes / 0EEE567F013A0B78CE37D298B427E5DF69BFA0BA1734F0A72FAFA9747EC42932",
+    "doi_resolution": "PASS",
+    "metadata_checks": "PASS",
+    "result": "PASS"
+  },
+  "credential_material": "NONE"
+}

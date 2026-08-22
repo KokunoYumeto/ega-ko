@@ -1,0 +1,49 @@
+{
+  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "created": "2026-08-23T00:29:36+02:00",
+  "publication": {
+    "host": "Zenodo",
+    "record_id": 22062589,
+    "record_url": "https://zenodo.org/records/22062589",
+    "doi": "10.5281/zenodo.22062589",
+    "doi_url": "https://doi.org/10.5281/zenodo.22062589",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "version": "2026-08-22-r8",
+    "published": "2026-08-22T22:23:25.947347+00:00",
+    "access": "open",
+    "resource_type": "publication/book",
+    "language": "kor",
+    "license": "CC BY 4.0"
+  },
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributor": "AI typesetting & translation (Other)",
+    "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Lemma 10.8.2 with proof, environment 10.8.3, Definition 10.8.4, and the attached restriction, topological inverse-limit and additive covariant completion-functor paragraphs immediately before Proposition 10.8.5",
+    "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
+    "source_relation": "IsPartOf https://doi.org/10.5281/zenodo.20414353",
+    "mirror_relation": "IsIdenticalTo https://doi.org/10.6084/m9.figshare.33314679",
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; underlying and third-party materials retain their own rights and attribution.",
+    "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
+  },
+  "files": [
+    {"name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1218684, "md5": "b3a72480166a623a4464d80951edb646", "sha256": "46B41FCF2F0996FBDB49242C6DAFB9EB6E2BBD11A0052439660CBFAE54339DE8", "pages": 138},
+    {"name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 212134, "md5": "7e28565d09ebd67e06b256e66d777443", "sha256": "C6DDB4CF4F0CAC8DA8274B2CE26E1EC343ECE8B01D03AB1C8E3E822F42DA68DF", "entries": 24},
+    {"name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 32453227, "md5": "50b224d3349682339fdb235558e2eeef", "sha256": "252827D8DECB0A7BACE30C482A5C2EB69EF5D3974677DBA86BF5B791F205C45E", "entries": 132},
+    {"name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 342, "md5": "4491f51d865c6e99a7b2e230e5b4f02e", "sha256": "9C2F3620D27DD55A7148F9548F8557F090FC85C70AE0507F0C7EB35A30476C0C", "rows": 3}
+  ],
+  "anonymous_readback": {
+    "record_api": "https://zenodo.org/api/records/22062589",
+    "record_json": "7730 bytes / 3C584081FF41C82BF601C4711260214F4FF5A61A4A153D40671505B466598926",
+    "download_root": "release/2026-08-22-r8/zenodo-readback",
+    "files_byte_md5_and_sha256_exact": "4/4",
+    "manifest_rows_replayed": "3/3",
+    "source_zip_entries_replayed": "24/24",
+    "evidence_zip_entries_replayed": "132/132",
+    "artifact_manifest_rows_replayed": "150/150",
+    "metadata_checks": "PASS",
+    "result": "PASS"
+  },
+  "credential_material": "NONE"
+}

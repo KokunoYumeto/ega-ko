@@ -1,11 +1,12 @@
 {
   "schema": "ag-ko-authority-v1",
-  "updated": "2026-08-22T22:48:22+02:00",
+  "updated": "2026-08-23T00:00:26+02:00",
   "order": ["EGA I", "EGA II", "FGA"],
   "active": "EGA",
+  "later_ega_status": "The user directly reported that the EGA III producer work is finished enough not to remain a waiting blocker. Treat EGA III as candidate-ready, but admit it only after the standing EGA I, EGA II, FGA sequence and exact source-authority packet validation; do not impose an elapsed-time or conversational wait after that gate passes.",
   "ega": {
     "role": "primary French authority, read-only",
-    "root": "Transcription\\03_working_transcriptions\\EGA_French_NUMDAM_canonical_TeX_20260801_r1",
+    "root": "C:\\Users\\the user\\Documents\\interlanguage\\Transcription\\03_working_transcriptions\\EGA_French_NUMDAM_canonical_TeX_20260801_r1",
     "driver": {"path": "source/EGA_FR.tex", "bytes": 2646, "sha256": "399AEFF4618643CEAAC2087B6C05EE8CFA07313AEDF97EDB467C5E5184D9BD56"},
     "status": {"path": "STATUS.md", "bytes": 572216, "sha256": "520A7D35DF20D53925E54B9BDE13345B22FC1A82EEFE7CB981988F50D4F64885", "observed": "2026-08-15T17:24:55+02:00"},
     "frontmatter": {"path": "source/ega1/frontmatter-fr.tex", "bytes": 1120, "sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9"},
@@ -20,7 +21,7 @@
     "chapter1_sections_7": {"path": "source/ega1/ega1-7-fr.tex", "bytes": 38226, "sha256": "73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522", "coverage": "Korean complete through source EOF line786, section7 heading and subsections7.1-7.4; target ega/I/c1s7.tex 39742 bytes / FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8; official EGA II replacement applied to printed7.3.8 with explicit provenance"},
     "chapter1_sections_8": {"path": "source/ega1/ega1-8-fr.tex", "bytes": 20600, "sha256": "188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825", "coverage": "Korean complete through source EOF line410, section8 heading and subsections8.1-8.3; target ega/I/c1s8.tex 21278 bytes / 183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1; admitted line195 trace error corrected and disclosed under AGKO-H111"},
     "chapter1_sections_9": {"path": "source/ega1/ega1-9-fr.tex", "bytes": 53127, "sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091", "coverage": "Korean complete through source EOF line1183: section9 heading and subsections9.1-9.6; exact subsection9.6 lines1024-1183 EOF 7816 LF bytes / 0BCD1491C2AB3EE58FEE75BA6F44FF65AD51B6F22DAD5CF887EDD621F9FDC31B; target ega/I/c1s9.tex lines1-1179 EOF 55580 bytes / E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D; H112-H120 provenance retained; section9 source file complete"},
-    "chapter1_sections_10": {"path": "source/ega1/ega1-10-fr.tex", "bytes": 159763, "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C", "coverage": "Korean complete through source line1491 separator: section10 heading through environment10.7.4 and subsection10.8 environment10.8.1; cumulative source lines1-1491 65466 characters / 66377 LF-terminal bytes / 9A408ADCA6DAF3D87A75493F312A3D0AAC3A4E90991129270465D04FE9C29D62; newest substantive closed unit lines1402-1490 4251 characters / 4316 bytes / 6BB1242293E438C7451AC57163438232667A0C4A2A24D7DB4458AD26ACBB5439; closure through line1491 4317 bytes / 1932CA114E366E48B0E83CB30A710E457143DA7DF1ED765A58443563C942EB9E; target ega/I/c1s10.tex lines1-1449 EOF 68686 bytes / 0692E70E87E1F56E064E6F624B3BA360A087625FA22B4FEF0F63A5BFD283D78A; markers191-194, official correction H131 and agreement control H132 retained; no new source correction; established terminology provenance retained and no definition entry activated before10.8.4; next untranslated line1492 begins Lemma10.8.2."},
+    "chapter1_sections_10": {"path": "source/ega1/ega1-10-fr.tex", "bytes": 159763, "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C", "coverage": "Korean complete through source line1586 separator: section10 heading through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the attached restriction, topological inverse-limit and additive covariant completion-functor paragraphs; cumulative source lines1-1586 69901 characters / 70857 LF-terminal bytes / 001AFDD830444C9817512F9626369B33D32CF0DF4C511AFB3E77836E3A304B1F; newest substantive closed unit lines1492-1585 4434 characters / 4479 bytes / 4E64E4988B09D00574C2E4509EAB684DD6A24E5101379F108CBDAF1BF85168A6; closure through line1586 4480 bytes / 62A8783D3643C1E32B3FBAC613D6296ECC9C26CA093BA15C15B916BB23E57260; target ega/I/c1s10.tex lines1-1541 EOF 73112 bytes / 643A0870B28EC5342FC5CD1954859953EA145AB31C7F865D621F3D0DA30C7DB0; markers191-195, official correction H131, agreement control H132 and formal-completion terminology AGKO-T151 retained; no new source correction; next untranslated line1587 begins Proposition10.8.5."},
     "bibliography": {"path": "source/ega1/bib-fr.tex", "bytes": 3430, "sha256": "E69C28D9B0E54F14E11FBA2A59F66037CE9E5286BD9FACE9D64CEFB56875CF75"},
     "live_source_note": "French source correction is active elsewhere; consume exact later deltas once without reopening completed unchanged Korean units."
   },
@@ -29,19 +30,19 @@
   "publication_scope": {
     "rule": "one independent Zenodo DOI lineage for the full Korean EGA corpus plus one additive continuing Figshare mirror article; cumulative exact releases state actual coverage; completed volume readers remain files or versions within these lineages rather than separate DOI lineages",
     "language_concept_doi": "10.5281/zenodo.21921513",
-    "exact_version_doi": "10.5281/zenodo.22060640",
-    "reserved_next_exact_version_doi": "10.5281/zenodo.22062160",
-    "reserved_next_zenodo_record": "https://zenodo.org/uploads/22062160; unpublished draft",
-    "pending_scope": "EGA I through environment10.8.1; AGKO-D121 and AGKO-E121 local gates PASS; packaging, publication and anonymous readback pending",
-    "previous_exact_version_doi": "10.5281/zenodo.22059890",
+    "exact_version_doi": "10.5281/zenodo.22062160",
+    "reserved_next_exact_version_doi": "10.5281/zenodo.22062589",
+    "reserved_next_record": "https://zenodo.org/uploads/22062589",
+    "reserved_next_state": "unpublished existing-lineage draft for validated S115/r8; do not claim public before packaging, publication and anonymous readback",
+    "previous_exact_version_doi": "10.5281/zenodo.22060640",
     "global_ega_concept_doi": "10.5281/zenodo.20414353",
     "github": "https://github.com/KokunoYumeto/ega-ko",
-    "github_status": "public main commit552eeebae33065f691ebcb7ef6f1a4389c6aba42 anonymously replayed after reinstatement: commit API exact, archive69794105 bytes /E62769B20743CD4F2835965B6D004F86275C3231FD6DCD88E9DC7F46CC6D8F7F, artifact manifest137/137 and frozen release4/4 PASS; initial commit36ad912 manifest gap118/137 and exact 19-file remediation retained",
-    "zenodo_record": "https://zenodo.org/records/22060640",
-    "readback": "Zenodo exact version22060640 and Figshare exact version33314679.v2 each replay files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24, evidence ZIP119/119 and formal metadata; Figshare v1 immutable; GitHub commit552eeeb archive manifest137/137 and release4/4 exact under AGKO-D120 and AGKO-E120",
+    "github_status": "public artifact commit0848b6df0f4408168dbc7b749e0c4ae44d8b0b90 anonymously replayed: archive103837140 bytes /956DB76715D5AFDCE74CF19C14775F078C7E2FDEAF5F1B0688976E07B3EBAB18, artifact manifest144/144 and frozen release4/4 PASS; final main receipt commit2b1463f08426a12a59feced41037b39f3385d53b and receipts3/3 exact",
+    "zenodo_record": "https://zenodo.org/records/22062160",
+    "readback": "Zenodo exact version22062160 and Figshare exact version33314679.v3 each replay files4/4 byte-MD5-SHA-256 exact, manifest3/3, source ZIP24/24, evidence ZIP126/126 and formal metadata; Figshare v2 immutable; GitHub artifact commit0848b6df archive manifest144/144 and release4/4 exact, final receipt commit2b1463f receipts3/3 exact under AGKO-D122 and AGKO-E122",
     "figshare_article_doi": "10.6084/m9.figshare.33314679",
-    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v2",
-    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/2; public version2 mirrors the exact four r6 bytes; version1 remains immutable and future checkpoints update this article rather than create duplicates",
+    "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v3",
+    "figshare_mirror": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/3; public version3 mirrors the exact four r7 bytes; versions1-2 remain immutable and future checkpoints update this article rather than create duplicates",
     "directive": "raw/u004.txt 2120 bytes / 20CFCB919D25FCD822E02DCF780CD00387BB333B4DB92F6D553901ACB8AEE460"
   }
 }

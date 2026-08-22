@@ -1447,3 +1447,95 @@ $\mathscr{O}_X$ 안의 연접 아이디얼층이고, $\mathscr{O}_X/\mathscr{J}$
 \hyperref[I.4.1.4-ko]{4.1.4}와
 \hyperref[I.6.1.1-ko]{6.1.1}), 관계 $\supset$로 순서를 주기로 한다.
 \end{env}
+
+\begin{lemma}[10.8.2]
+\label{I.10.8.2-ko}
+순서집합 $\Phi$는 여과집합이다. $X$가 뇌터이면, 모든
+$\mathscr{J}_0\in\Phi$에 대하여 거듭제곱 $\mathscr{J}_0^n$
+($n>0$)으로 이루어진 집합은 $\Phi$에서 공종이다.
+\end{lemma}
+
+\begin{proof}
+실제로 $\mathscr{J}_1$과 $\mathscr{J}_2$가 $\Phi$에 속하고
+$\mathscr{J}=\mathscr{J}_1\cap\mathscr{J}_2$라 놓으면,
+$\mathscr{O}_X$가 연접이므로 $\mathscr{J}$도 연접이고
+(\hyperref[I.6.1.1-ko]{6.1.1}과
+\hyperref[0.5.3.4-ko]{0, 5.3.4}), 모든 $x\in X$에 대하여
+$\mathscr{J}_x=(\mathscr{J}_1)_x\cap(\mathscr{J}_2)_x$이다. 따라서
+$x\notin X'$이면 $\mathscr{J}_x=\mathscr{O}_x$이고
+$x\in X'$이면 $\mathscr{J}_x\neq\mathscr{O}_x$이므로
+$\mathscr{J}\in\Phi$이다. 한편 $X$가 뇌터이고
+$\mathscr{J}_0$와 $\mathscr{J}$가 $\Phi$에 속하면,
+$\mathscr{J}_0^n(\mathscr{O}_X/\mathscr{J})=0$이 되는 정수
+$n>0$이 존재한다(\hyperref[I.9.3.4-ko]{9.3.4}). 이는
+$\mathscr{J}_0^n\subset\mathscr{J}$를 뜻한다.
+\end{proof}
+
+\begin{env}[10.8.3]
+\label{I.10.8.3-ko}
+이제 $\mathscr{F}$를 연접 $\mathscr{O}_X$-가군이라 하자. 모든
+$\mathscr{J}\in\Phi$에 대하여
+$\mathscr{F}\otimes_{\mathscr{O}_X}(\mathscr{O}_X/\mathscr{J})$는
+연접 $\mathscr{O}_X$-가군이고
+(\hyperref[I.9.1.1-ko]{9.1.1}), 그 지지집합은 $X'$에 포함된다. 우리는
+이 층을 대개 $X'$으로 제한한 층과 동일시하겠다. $\mathscr{J}$가
+$\Phi$를 달릴 때 이 층들은 아벨군의 층들의
+\emph{사영계}를 이룬다.
+\end{env}
+
+\begin{definition}[10.8.4]
+\label{I.10.8.4-ko}
+국소 뇌터 준스킴 $X$의 닫힌 부분집합 $X'$과 연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$가 주어졌을 때, 층
+
+\oldpage[I]{195}
+
+$\varprojlim_{\Phi}
+(\mathscr{F}\otimes_{\mathscr{O}_X}
+(\mathscr{O}_X/\mathscr{J}))$의 $X'$으로의 제한을
+\emph{$X'$을 따른 $\mathscr{F}$의 완비화}라 하고
+$\mathscr{F}_{/X'}$로 나타내며, 혼동의 우려가 없으면
+$\widehat{\mathscr{F}}$로도 나타낸다. 이 완비화의 $X'$ 위 단면들을
+\emph{$X'$을 따른 $\mathscr{F}$의 형식적 단면}이라 한다.
+\end{definition}
+
+모든 열린집합 $U\subset X$에 대하여 다음이 곧바로 성립한다.
+$(\mathscr{F}|U)_{/(U\cap X')}=(\mathscr{F}_{/X'})|(U\cap X')$.
+
+사영극한을 취하면 $(\mathscr{O}_X)_{/X'}$가 환의 층이고
+$\mathscr{F}_{/X'}$를 $(\mathscr{O}_X)_{/X'}$-가군으로 볼 수 있음은
+명백하다. 또한 $X'$의 위상에는 준콤팩트 열린집합들로 이루어진 기저가
+있으므로, $(\mathscr{O}_X)_{/X'}$ (각각 $\mathscr{F}_{/X'}$)를
+\emph{의사이산} 환의 층들 (각각 의사이산 군의 층들)
+$\mathscr{O}_X/\mathscr{J}$ (각각
+$\mathscr{F}\otimes_{\mathscr{O}_X}
+(\mathscr{O}_X/\mathscr{J})=\mathscr{F}/\mathscr{J}\mathscr{F}$)의
+사영극한인 \emph{위상환의 층} (각각 \emph{위상군의 층})으로 볼 수
+있다. 이때 사영극한을 취하면 $\mathscr{F}_{/X'}$는
+\emph{위상 $(\mathscr{O}_X)_{/X'}$-가군}이 된다
+(\hyperref[0.3.8.1-ko]{0, 3.8.1}과
+\hyperref[0.3.8.2-ko]{3.8.2}). 모든 \emph{준콤팩트} 열린집합
+$U\subset X$에 대하여
+$\Gamma(U\cap X',(\mathscr{O}_X)_{/X'})$ (각각
+$\Gamma(U\cap X',\mathscr{F}_{/X'})$)는 이산환들 (각각 이산군들)
+$\Gamma(U,\mathscr{O}_X/\mathscr{J})$ (각각
+$\Gamma(U,\mathscr{F}/\mathscr{J}\mathscr{F})$)의 사영극한임을
+상기하자.
+
+이제 $u:\mathscr{F}\to\mathscr{G}$가 $\mathscr{O}_X$-가군 사이의
+준동형이면, 모든 $\mathscr{J}\in\Phi$에 대하여 표준적으로 준동형
+$u_{\mathscr{J}}:
+\mathscr{F}\otimes_{\mathscr{O}_X}(\mathscr{O}_X/\mathscr{J})
+\to
+\mathscr{G}\otimes_{\mathscr{O}_X}(\mathscr{O}_X/\mathscr{J})$를 얻으며,
+이 준동형들은 사영계를 이룬다. 사영극한을 취하고 $X'$에 제한하면
+연속 $(\mathscr{O}_X)_{/X'}$-준동형
+$\mathscr{F}_{/X'}\to\mathscr{G}_{/X'}$를 얻는다. 이를
+$u_{/X'}$ 또는 $\widehat u$로 나타내며,
+\emph{$X'$을 따른 준동형 $u$의 완비화}라 한다. 또한
+$v:\mathscr{G}\to\mathscr{H}$가 $\mathscr{O}_X$-가군 사이의
+또 하나의 준동형이면
+$(v\circ u)_{/X'}=(v_{/X'})\circ(u_{/X'})$임은 명백하다. 따라서
+$\mathscr{F}_{/X'}$는 $\mathscr{F}$에 관한
+\emph{가법적 공변 함자}이며, 연접 $\mathscr{O}_X$-가군의 범주에서
+위상 $(\mathscr{O}_X)_{/X'}$-가군의 범주에 값을 갖는다.

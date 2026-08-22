@@ -1,96 +1,49 @@
 {
-  "schema": "ag-ko-publication-receipt-v1",
-  "id": "AGKO-PUB-2026-08-22-R1",
-  "time": "2026-08-22T03:08:10+02:00",
-  "precision": "second",
-  "state": "published_and_anonymously_read_back",
-  "scope": "Korean cumulative EGA edition through EGA I proposition10.5.6 statement",
-  "language": {
-    "bcp47": "ko",
-    "zenodo": "kor"
+  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "created": "2026-08-23T00:29:36+02:00",
+  "publication": {
+    "host": "Zenodo",
+    "record_id": 22062589,
+    "record_url": "https://zenodo.org/records/22062589",
+    "doi": "10.5281/zenodo.22062589",
+    "doi_url": "https://doi.org/10.5281/zenodo.22062589",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "version": "2026-08-22-r8",
+    "published": "2026-08-22T22:23:25.947347+00:00",
+    "access": "open",
+    "resource_type": "publication/book",
+    "language": "kor",
+    "license": "CC BY 4.0"
   },
-  "coverage": {
-    "description": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through proposition10.5.6 statement",
-    "active_source_path": "source/ega1/ega1-10-fr.tex",
-    "active_source_whole_bytes": 159763,
-    "active_source_whole_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-    "active_source_interval": "lines1-792 LF-terminal",
-    "active_source_interval_bytes": 35616,
-    "active_source_interval_sha256": "0418CB9047F44A3DA65F8C534049B7891B347998C395713EF6A4F35E87C1C32A",
-    "next_cursor": "source/ega1/ega1-10-fr.tex line793, proof of proposition10.5.6"
-  },
-  "github": {
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributor": "AI typesetting & translation (Other)",
+    "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Lemma 10.8.2 with proof, environment 10.8.3, Definition 10.8.4, and the attached restriction, topological inverse-limit and additive covariant completion-functor paragraphs immediately before Proposition 10.8.5",
+    "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
+    "source_relation": "IsPartOf https://doi.org/10.5281/zenodo.20414353",
+    "mirror_relation": "IsIdenticalTo https://doi.org/10.6084/m9.figshare.33314679",
     "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "branch": "main",
-    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-22-r1",
-    "release_id": 374759358,
-    "tag": "ega-ko-2026-08-22-r1",
-    "tag_commit": "798103eb28eba4552521248dc131a7fdbd8843c2",
-    "release_state": "public",
-    "anonymous_asset_readback": "PASS 4/4 byte and SHA-256 identities"
+    "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; underlying and third-party materials retain their own rights and attribution.",
+    "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
   },
-  "zenodo": {
-    "record_id": 22051764,
-    "record": "https://zenodo.org/records/22051764",
-    "exact_version_doi": "10.5281/zenodo.22051764",
-    "language_concept_doi": "10.5281/zenodo.21921513",
-    "global_ega_concept_doi": "10.5281/zenodo.20414353",
-    "version": "2026-08-22-r1",
-    "state": "published",
-    "files": 4,
-    "anonymous_readback": "PASS 4/4 byte and SHA-256 identities",
-    "metadata_readback": "PASS exact title, historical creators, sole standardized contributor, cc-by-4.0 license, non-endorsement and no forbidden project-name prose"
-  },
-  "artifacts": [
-    {
-      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1177111,
-      "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C",
-      "pages": 134,
-      "github_readback": "PASS",
-      "zenodo_readback": "PASS"
-    },
-    {
-      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 200400,
-      "sha256": "1887C83601AEF533737E6C76FA609CB5BC5A082AD04E8D8BE96381BDCE0B1F22",
-      "members": 24,
-      "files": 22,
-      "member_replay": "PASS",
-      "github_readback": "PASS",
-      "zenodo_readback": "PASS"
-    },
-    {
-      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 11111820,
-      "sha256": "1F3EA8C200EFC77AEBACA0EDB2293B957D2EC5892542703007E66AA84B219026",
-      "members": 73,
-      "files": 68,
-      "member_replay": "PASS",
-      "github_readback": "PASS",
-      "zenodo_readback": "PASS"
-    },
-    {
-      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
-      "bytes": 342,
-      "sha256": "1C79E61E9E5609ED5FDD3EDDC8B719ACBBF6D8116C1E45D336205DE404405D4F",
-      "listed_artifacts": 3,
-      "manifest_replay": "PASS",
-      "github_readback": "PASS",
-      "zenodo_readback": "PASS"
-    }
+  "files": [
+    {"name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1218684, "md5": "b3a72480166a623a4464d80951edb646", "sha256": "46B41FCF2F0996FBDB49242C6DAFB9EB6E2BBD11A0052439660CBFAE54339DE8", "pages": 138},
+    {"name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 212134, "md5": "7e28565d09ebd67e06b256e66d777443", "sha256": "C6DDB4CF4F0CAC8DA8274B2CE26E1EC343ECE8B01D03AB1C8E3E822F42DA68DF", "entries": 24},
+    {"name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 32453227, "md5": "50b224d3349682339fdb235558e2eeef", "sha256": "252827D8DECB0A7BACE30C482A5C2EB69EF5D3974677DBA86BF5B791F205C45E", "entries": 132},
+    {"name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 342, "md5": "4491f51d865c6e99a7b2e230e5b4f02e", "sha256": "9C2F3620D27DD55A7148F9548F8557F090FC85C70AE0507F0C7EB35A30476C0C", "rows": 3}
   ],
-  "reader_qa": {
-    "pages": 134,
-    "deterministic_repeat_build": "PASS in the standalone public tree",
-    "pdf_sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C",
-    "text_extraction": "PASS, 121882 Hangul syllables, replacement characters0",
-    "visual": "PASS, release-information page2 and mathematical/bibliography pages132-134 directly inspected at200dpi; exact pixel replay"
+  "anonymous_readback": {
+    "record_api": "https://zenodo.org/api/records/22062589",
+    "record_json": "7730 bytes / 3C584081FF41C82BF601C4711260214F4FF5A61A4A153D40671505B466598926",
+    "download_root": "release/2026-08-22-r8/zenodo-readback",
+    "files_byte_md5_and_sha256_exact": "4/4",
+    "manifest_rows_replayed": "3/3",
+    "source_zip_entries_replayed": "24/24",
+    "evidence_zip_entries_replayed": "132/132",
+    "artifact_manifest_rows_replayed": "150/150",
+    "metadata_checks": "PASS",
+    "result": "PASS"
   },
-  "claims": {
-    "whole_ega_complete": false,
-    "current_declared_scope_complete": true,
-    "human_certification": false,
-    "critical_edition": false
-  }
+  "credential_material": "NONE"
 }

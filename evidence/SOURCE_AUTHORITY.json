@@ -8,22 +8,31 @@
   "source_artifact_bytes": 159763,
   "source_artifact_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "translated_prefix": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1-1491 with terminal LF; environment10.7.4, subsection10.8 environment10.8.1 and separator",
-    "bytes": 66377,
-    "sha256": "9A408ADCA6DAF3D87A75493F312A3D0AAC3A4E90991129270465D04FE9C29D62"
+    "locator": "source/ega1/ega1-10-fr.tex lines1-1586 with terminal LF; Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4, completion-functor paragraphs and separator",
+    "characters": 69901,
+    "bytes": 70857,
+    "sha256": "001AFDD830444C9817512F9626369B33D32CF0DF4C511AFB3E77836E3A304B1F"
   },
   "newest_closed_unit": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1402-1490",
-    "characters": 4251,
-    "bytes": 4316,
-    "sha256": "6BB1242293E438C7451AC57163438232667A0C4A2A24D7DB4458AD26ACBB5439"
+    "locator": "source/ega1/ega1-10-fr.tex lines1492-1585",
+    "characters": 4434,
+    "bytes": 4479,
+    "sha256": "4E64E4988B09D00574C2E4509EAB684DD6A24E5101379F108CBDAF1BF85168A6",
+    "closure_through_separator_bytes": 4480,
+    "closure_through_separator_sha256": "62A8783D3643C1E32B3FBAC613D6296ECC9C26CA093BA15C15B916BB23E57260"
+  },
+  "translated_target": {
+    "path": "source/c1s10.tex",
+    "lines": 1541,
+    "bytes": 73112,
+    "sha256": "643A0870B28EC5342FC5CD1954859953EA145AB31C7F865D621F3D0DA30C7DB0"
   },
   "additional_complete_components": [
     "EGA I front matter",
     "EGA I complete introduction",
     "EGA 0_I complete source file, sections1-7",
     "EGA I Chapter I programme and sections1-9 complete",
-    "EGA I Chapter I section10 through environment10.7.4 and subsection10.8 environment10.8.1",
+    "EGA I Chapter I section10 through the completion-functor paragraphs immediately before Proposition10.8.5",
     "EGA I bibliography with22 items"
   ],
   "authority_hierarchy": [
@@ -31,7 +40,7 @@
     "English witnesses only for sense checking; never source authority"
   ],
   "excluded_scope": [
-    "EGA I Chapter I section10 from Lemma10.8.2 onward",
+    "EGA I Chapter I section10 from Proposition10.8.5 onward",
     "remaining EGA I chapters and later EGA volumes"
   ],
   "subwork_doi_policy": "EGA volumes are reader files within this single Korean EGA language DOI lineage, not separate DOI lineages"
