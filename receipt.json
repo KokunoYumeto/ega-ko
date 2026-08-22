@@ -1,9 +1,9 @@
 {
   "schema": "ag-ko-publication-receipt-v1",
   "id": "AGKO-PUB-2026-08-22-R1",
-  "time": "2026-08-22T02:44:03+02:00",
+  "time": "2026-08-22T03:08:10+02:00",
   "precision": "second",
-  "state": "release_candidate_reserved_not_yet_public",
+  "state": "published_and_anonymously_read_back",
   "scope": "Korean cumulative EGA edition through EGA I proposition10.5.6 statement",
   "language": {
     "bcp47": "ko",
@@ -22,25 +22,33 @@
   "github": {
     "repository": "https://github.com/KokunoYumeto/ega-ko",
     "branch": "main",
+    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-22-r1",
+    "release_id": 374759358,
     "tag": "ega-ko-2026-08-22-r1",
-    "release_state": "pending"
+    "tag_commit": "798103eb28eba4552521248dc131a7fdbd8843c2",
+    "release_state": "public",
+    "anonymous_asset_readback": "PASS 4/4 byte and SHA-256 identities"
   },
   "zenodo": {
     "record_id": 22051764,
-    "record": "https://zenodo.org/uploads/22051764",
+    "record": "https://zenodo.org/records/22051764",
     "exact_version_doi": "10.5281/zenodo.22051764",
     "language_concept_doi": "10.5281/zenodo.21921513",
     "global_ega_concept_doi": "10.5281/zenodo.20414353",
     "version": "2026-08-22-r1",
-    "state": "reserved_draft",
-    "previous_public_record": "https://zenodo.org/records/21921514"
+    "state": "published",
+    "files": 4,
+    "anonymous_readback": "PASS 4/4 byte and SHA-256 identities",
+    "metadata_readback": "PASS exact title, historical creators, sole standardized contributor, cc-by-4.0 license, non-endorsement and no forbidden project-name prose"
   },
   "artifacts": [
     {
       "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
       "bytes": 1177111,
       "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C",
-      "pages": 134
+      "pages": 134,
+      "github_readback": "PASS",
+      "zenodo_readback": "PASS"
     },
     {
       "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
@@ -48,7 +56,9 @@
       "sha256": "1887C83601AEF533737E6C76FA609CB5BC5A082AD04E8D8BE96381BDCE0B1F22",
       "members": 24,
       "files": 22,
-      "member_replay": "PASS"
+      "member_replay": "PASS",
+      "github_readback": "PASS",
+      "zenodo_readback": "PASS"
     },
     {
       "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
@@ -56,14 +66,18 @@
       "sha256": "1F3EA8C200EFC77AEBACA0EDB2293B957D2EC5892542703007E66AA84B219026",
       "members": 73,
       "files": 68,
-      "member_replay": "PASS"
+      "member_replay": "PASS",
+      "github_readback": "PASS",
+      "zenodo_readback": "PASS"
     },
     {
       "name": "03_EGA_ko_SHA256_MANIFEST.txt",
       "bytes": 342,
       "sha256": "1C79E61E9E5609ED5FDD3EDDC8B719ACBBF6D8116C1E45D336205DE404405D4F",
       "listed_artifacts": 3,
-      "manifest_replay": "PASS"
+      "manifest_replay": "PASS",
+      "github_readback": "PASS",
+      "zenodo_readback": "PASS"
     }
   ],
   "reader_qa": {
