@@ -1539,3 +1539,95 @@ $(v\circ u)_{/X'}=(v_{/X'})\circ(u_{/X'})$임은 명백하다. 따라서
 $\mathscr{F}_{/X'}$는 $\mathscr{F}$에 관한
 \emph{가법적 공변 함자}이며, 연접 $\mathscr{O}_X$-가군의 범주에서
 위상 $(\mathscr{O}_X)_{/X'}$-가군의 범주에 값을 갖는다.
+
+\begin{proposition}[10.8.5]
+\label{I.10.8.5-ko}
+$(\mathscr{O}_X)_{/X'}$의 지지집합은 $X'$이다. 위상환 달린 공간
+$(X',(\mathscr{O}_X)_{/X'})$는 국소 뇌터 형식적 준스킴이며, 모든
+$\mathscr{J}\in\Phi$에 대하여 $\mathscr{J}_{/X'}$는 이 형식적
+준스킴의 정의 아이디얼이다. $X=\operatorname{Spec}(A)$가 뇌터 환을
+갖는 아핀 스킴이고, $\mathscr{J}=\widetilde{\mathfrak{J}}$이며,
+$\mathfrak{J}$가 $A$의 아이디얼이고 $X'=V(\mathfrak{J})$이면,
+$(X',(\mathscr{O}_X)_{/X'})$는 표준적으로
+$\operatorname{Spf}(\widehat A)$와 동일시된다. 여기서 $\widehat A$는
+$A$에 $\mathfrak{J}$-준아딕 위상을 주어 얻는 분리 완비화이다.
+\end{proposition}
+
+\begin{proof}
+마지막 주장만 증명하면 충분함은 명백하다.
+(\hyperref[0.7.3.3-ko]{0, 7.3.3})에 의해, $\mathfrak{J}$의
+$\mathfrak{J}$-준아딕 위상에 관한 분리 완비화
+$\widehat{\mathfrak{J}}$는 $\widehat A$의 아이디얼
+$\mathfrak{J}\widehat A$와 동일시된다. 또한 $\widehat A$는
+뇌터 $\widehat{\mathfrak{J}}$-아딕환이며
+$\widehat A/\widehat{\mathfrak{J}}^n=A/\mathfrak{J}^n$임을 안다
+(\hyperref[0.7.2.6-ko]{0, 7.2.6}). 이 마지막 관계에서
+$\widehat A$의 열린 소 아이디얼들은
+$\widehat{\mathfrak p}=\mathfrak p\widehat A$ 꼴의 아이디얼들임을 알 수
+있다. 여기서 $\mathfrak p$는 $A$의 소 아이디얼이고
+$\mathfrak{J}$를 포함하며, $\widehat{\mathfrak p}\cap A=\mathfrak p$이다. 따라서
+바탕공간으로서 $\operatorname{Spf}(\widehat A)=X'$이다. 또한
+$\mathscr{O}_X/\mathscr{J}^n=(A/\mathfrak{J}^n)^{\sim}$이므로, 명제는
+정의들에서 곧바로 따른다.
+\end{proof}
+
+이렇게 정의한 형식적 준스킴을 \emph{$X'$을 따른 $X$의 완비화}라 하고
+$X_{/X'}$로 나타내며, 혼동의 우려가 없으면 $\widehat X$로도 나타낸다.
+$X'=X$로 잡을 때에는 $\mathscr{J}=0$을 택할 수 있으므로
+$X_{/X}=X$이다.
+
+$U$가 $X$의 열린집합 위에 유도된 부분준스킴이면,
+$U_{/(U\cap X')}$는 $X_{/X'}$가 $X'$의 열린집합 $U\cap X'$ 위에
+유도하는 형식적 부분준스킴과 표준적으로 동일시됨은 명백하다.
+
+\begin{corollary}[10.8.6]
+\label{I.10.8.6-ko}
+(보통 의미의) 준스킴 $\widehat X_{\mathrm{red}}$는 $X$의 유일한 축소
+부분준스킴으로서, 그 바탕공간은 $X'$이다
+(\hyperref[I.5.2.1-ko]{5.2.1}). $\widehat X$가 뇌터이기 위한
+필요충분조건은 $\widehat X_{\mathrm{red}}$가 뇌터인 것이며, 더 나아가
+$X$가 뇌터이면 전자도 뇌터이다.
+\end{corollary}
+
+\oldpage[I]{196}
+
+$\widehat X_{\mathrm{red}}$의 결정은 국소적이므로
+(\hyperref[I.10.5.4-ko]{10.5.4}), 다시 $X$가 뇌터 환을 갖는 아핀 스킴인
+경우로 한정할 수 있다. (\hyperref[I.10.8.5-ko]{10.8.5})의 표기를
+쓰면, 아이디얼 $\mathfrak{T}$는 $\widehat A$의 위상적으로 멱영인
+원소들로 이루어지며, 표준 사상
+$\widehat A\to\widehat A/\widehat{\mathfrak{J}}=A/\mathfrak{J}$에 의한
+$A/\mathfrak{J}$의 멱영근기의 역상이다
+(\hyperref[0.7.1.3-ko]{0, 7.1.3}). 따라서
+$\widehat A/\mathfrak{T}$는 $A/\mathfrak{J}$를 그 멱영근기로 나눈
+몫과 동형이다. 그러므로 첫 번째 주장은
+(\hyperref[I.10.5.4-ko]{10.5.4})와
+(\hyperref[I.5.1.1-ko]{5.1.1})에서 따른다.
+$\widehat X_{\mathrm{red}}$가 뇌터이면 그 바탕공간 $X'$도 뇌터이므로,
+$X'_n=\operatorname{Spec}(\mathscr{O}_X/\mathscr{J}^n)$은 뇌터이고
+(\hyperref[I.6.1.2-ko]{6.1.2}), $\widehat X$도 뇌터이다
+(\hyperref[I.10.6.4-ko]{10.6.4}). 역은
+(\hyperref[I.6.1.2-ko]{6.1.2})에 의해 명백하다.
+
+\begin{env}[10.8.7]
+\label{I.10.8.7-ko}
+표준 준동형 $\mathscr{O}_X\to\mathscr{O}_X/\mathscr{J}$
+($\mathscr{J}\in\Phi$)들은 사영계를 이루므로, 사영극한을 취하면 환의
+층의 준동형
+$\theta:\mathscr{O}_X\to\psi_*((\mathscr{O}_X)_{/X'})
+=\varprojlim_\Phi(\mathscr{O}_X/\mathscr{J})$를 얻는다. 여기서 $\psi$는
+바탕공간 사이의 표준 포함 사상 $X'\to X$이다. 환 달린 공간의 사상
+\[
+  (\psi,\theta):X_{/X'}\to X
+\]
+을 $i$ (또는 $i_X$)로 나타내고 표준 사상이라 하겠다.
+
+텐서곱을 취하면, 모든 연접 $\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여
+표준 준동형 $\mathscr{O}_X\to\mathscr{O}_X/\mathscr{J}$들로부터
+$\mathscr{O}_X$-가군 준동형
+$\mathscr{F}\to
+\mathscr{F}\otimes_{\mathscr{O}_X}(\mathscr{O}_X/\mathscr{J})$들을 얻으며,
+이들도 사영계를 이룬다. 따라서 사영극한을 취하면 함자적인 표준
+$\mathscr{O}_X$-가군 준동형
+$\gamma:\mathscr{F}\to\psi_*(\mathscr{F}_{/X'})$를 얻는다.
+\end{env}

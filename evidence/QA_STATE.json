@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "version": "2026-08-22-r8",
-  "coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through Lemma10.8.2 with proof, environment10.8.3, Definition10.8.4 and the completion-functor paragraphs immediately before Proposition10.8.5; bibliography",
+  "version": "2026-08-23-r9",
+  "coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through Proposition10.8.5 with proof, completion naming and open restriction, Corollary10.8.6 with attached proof and environment10.8.7 immediately before Proposition10.8.8; bibliography",
   "corpus_complete": false,
-  "source_replay": "PASS: exact French authority, lines1492-1585 unit, lines1-1586 cumulative seal and translated-prefix hashes reproduced; no new source correction introduced",
-  "model_or_agent_checks": "PASS: D123/E123 independent mathematical, structural and Korean-register audits plus final re-audits; seven bounded clarity/register repairs applied before closure",
-  "deterministic_build": "PASS: two standalone XeLaTeX three-pass cycles in the public tree with fixed SOURCE_DATE_EPOCH, FORCE_SOURCE_DATE and TZ; 138-page exact-version PDF byte-identical at1218684 bytes / 46B41FCF2F0996FBDB49242C6DAFB9EB6E2BBD11A0052439660CBFAE54339DE8",
+  "source_replay": "PASS: exact French authority, lines1587-1681 unit, lines1-1682 cumulative seal and translated-prefix hashes reproduced; no new source correction introduced",
+  "model_or_agent_checks": "PASS: D125/E125 independent mathematical, structural and Korean-register audits plus final re-audits; bounded wording repairs applied before closure",
+  "deterministic_build": "PASS: two standalone XeLaTeX three-pass cycles in the public tree with fixed SOURCE_DATE_EPOCH, FORCE_SOURCE_DATE and TZ; 139-page exact-version PDF byte-identical at1224625 bytes / C36FEDCDBB795413A30458795219F2732845313D361E7C551E47555E2233F8BF",
   "compile_diagnostics": "PASS: zero Undefined control sequence, LaTeX Error, Missing character, overfull hbox, underfull hbox, undefined reference or rerun hits",
-  "extraction": "PASS: repository-canonical LF Poppler extraction evidence/extract.txt603897 bytes /388DF9B19804FE3D97FBA6DDAA987969A9D1C48CC8C97995EB35B588A28680A0 and pypdf extraction582222 bytes /6483AD42A850346F246D5437FCECA48E075173C71D9C3134A14CFD598C60851D; both138 pages,126913 Hangul and replacement0; exact to inspected r152",
-  "rendered_inspection": "PASS: pages1,2,6,136-138 directly inspected or exact-stability controlled at200dpi; standalone public-tree pixels match accepted final working-build rasters6/6; no clipping, overlap, tofu, malformed formula, diagram, footnote or bibliography collision",
+  "extraction": "PASS: repository-canonical LF Poppler extraction evidence/extract.txt618431 bytes /5ECFD6E58A2D308BD68915A0290D719EF62236DD646F6C7D03DB3F059736C4FA and pypdf extraction585833 bytes /0B7D245BB329F5081509097B940238E9543F43DDD0228DC932A2CB67325794A1; both139 pages,127753 Hangul and replacement0; exact to inspected r154",
+  "rendered_inspection": "PASS: pages1,2,6,136-139 directly inspected or exact-stability controlled at200dpi; standalone public-tree pixels match accepted final working-build rasters7/7; no clipping, overlap, tofu, malformed formula, diagram, footnote or bibliography collision",
   "artifact_manifest": "evidence/ARTIFACT_SHA256.tsv",
   "unresolved_items": "evidence/UNRESOLVED_ITEMS.tsv",
   "human_review_required": false,
   "working_head_closed": true,
   "release_candidate_closed": true,
   "public_readback_required": true,
-  "closure_reason": "The exact-version scope through the completion-functor paragraph before Proposition10.8.5 is source-pinned, translated, independently reviewed, repeat-built, dual-extracted, proportionally rendered and represented in the evidence ledgers. Exact DOI22062589 is reserved and Figshare v4 is the intended continuing mirror; publication on any host is not claimed by this pre-publication evidence snapshot."
+  "closure_reason": "The exact-version scope through environment10.8.7 immediately before Proposition10.8.8 is source-pinned, translated, independently reviewed, repeat-built, dual-extracted, proportionally rendered and represented in the evidence ledgers. Exact DOI22062866 is reserved; public status on each host is not claimed by this pre-publication evidence snapshot."
 }

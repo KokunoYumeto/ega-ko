@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "EGA 0_I complete; EGA I Chapter I sections1-9 complete; source/ega1/ega1-10-fr.tex lines1-1586 through the completion-functor paragraphs immediately before Proposition10.8.5 and separator",
-  "next": "source/ega1/ega1-10-fr.tex line1587, Proposition10.8.5",
-  "exact_version_doi": "10.5281/zenodo.22062589",
-  "previous_exact_version_doi": "10.5281/zenodo.22062160",
+  "completed_through": "EGA 0_I complete; EGA I Chapter I sections1-9 complete; source/ega1/ega1-10-fr.tex lines1-1682 through Proposition10.8.5 with proof, completion naming and open restriction, Corollary10.8.6 with attached proof, environment10.8.7 and separator",
+  "next": "source/ega1/ega1-10-fr.tex line1683, Proposition10.8.8",
+  "exact_version_doi": "10.5281/zenodo.22062866",
+  "previous_exact_version_doi": "10.5281/zenodo.22062589",
   "figshare_mirror_doi": "10.6084/m9.figshare.33314679",
-  "figshare_exact_version_doi": "10.6084/m9.figshare.33314679.v4",
+  "figshare_exact_version_doi": null,
+  "figshare_status": "continuing-article version assignment pending publication and anonymous readback",
   "policy": "advance once and rebase only exact affected deltas"
 }

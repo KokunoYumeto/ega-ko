@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
-  "reader_sha256": "46B41FCF2F0996FBDB49242C6DAFB9EB6E2BBD11A0052439660CBFAE54339DE8",
-  "render_count": 6,
+  "reader_sha256": "C36FEDCDBB795413A30458795219F2732845313D361E7C551E47555E2233F8BF",
+  "render_count": 7,
   "render_dimensions": "1654x2339",
   "dpi": 200,
   "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit, TOC and exact-DOI metadata; six immutable V471-V476 records retained, and standalone public-tree pages1,2,6,136-138 reproduce all six accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
+  "inspection": "direct inspection of every page changed by the newest mathematical unit, TOC and final exact-DOI metadata; seven immutable V484-V490 records retained, and standalone public-tree pages1,2,6,136-139 reproduce all seven accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
   "checked": [
     "title page with exact working-head coverage",
-    "information page with exact DOI22062589, stable concept DOI, stable Figshare DOI and reinstated GitHub repository",
+    "information page with exact DOI22062866, bounded rights, stable concept, Figshare and GitHub continuity",
     "TOC page6 exact-stability control",
-    "sealed predecessor and new mathematics page136",
-    "Lemma10.8.2 closure, environment10.8.3, Definition10.8.4 and completion discussion on page137",
-    "complete bibliography page138",
-    "standalone public-tree render replay exact6/6"
+    "sealed predecessor page136",
+    "Proposition10.8.5, proof, completion naming and open restriction on page137",
+    "Corollary10.8.6, attached proof and environment10.8.7 on page138",
+    "complete bibliography page139",
+    "standalone public-tree render replay exact7/7"
   ],
   "defects": 0,
   "result": "PASS"
