@@ -2,17 +2,17 @@
   "schema_version": 1,
   "language": "ko-KR",
   "corpus": "EGA",
-  "version": "2026-08-13-r1",
-  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I source lines 1-2313 through 4.1.7; bibliography",
-  "next_translation_cursor": "EGA 0_I source line 2315, subsection 4.2 and environment 4.2.1",
+  "version": "2026-08-22-r1",
+  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through the full proposition10.5.6 statement; bibliography",
+  "next_translation_cursor": "source/ega1/ega1-10-fr.tex line793, proof of proposition10.5.6",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 30,
-    "bytes": 378163,
-    "sha256": "3A1878316D1A18D8995AC656D90F36067B12E98AF6F533E274F6CE9E4B210AB6"
+    "pages": 134,
+    "bytes": 1177111,
+    "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C"
   },
   "language_concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.21921514",
+  "exact_version_doi": "10.5281/zenodo.22051764",
   "repository": "https://github.com/KokunoYumeto/ega-ko",
   "full_corpus_complete": false,
   "lean_used": false

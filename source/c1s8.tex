@@ -1,0 +1,410 @@
+\section{슈발레 스킴}
+\label{section:I.8-ko}
+
+\subsection{서로 연관된 국소환}
+\label{subsection:I.8.1-ko}
+
+임의의 국소환 $A$에 대하여 $A$의 극대 아이디얼을
+$\mathfrak m(A)$로 나타낸다.
+
+\begin{lemma}[8.1.1]
+\label{I.8.1.1-ko}
+$A$, $B$를 $A\subset B$인 두 국소환이라 하자. 다음 조건들은
+동치이다.
+\begin{enumerate}
+  \item[(i)] $\mathfrak m(B)\cap A=\mathfrak m(A)$이다.
+  \item[(ii)] $\mathfrak m(A)\subset\mathfrak m(B)$이다.
+  \item[(iii)] $1$은 $\mathfrak m(A)$에 의해 생성되는 $B$의
+    아이디얼에 속하지 않는다.
+\end{enumerate}
+\end{lemma}
+
+(i)가 (ii)를 함의하고 (ii)가 (iii)을 함의함은 명백하다. 끝으로
+(iii)이 성립하면 $\mathfrak m(B)\cap A$는 $\mathfrak m(A)$를 포함하고
+$1$을 포함하지 않으므로 $\mathfrak m(A)$와 같다.
+
+(\hyperref[I.8.1.1-ko]{8.1.1})의 동치인 조건들이 성립할 때 $B$가
+$A$를 \emph{지배한다}고 한다. 이는 포함 준동형 $A\to B$가
+\emph{국소} 준동형이라고 하는 것과 같다. 환 $R$의 국소 부분환들의
+집합에서 지배관계가 순서관계임은 명백하다.
+
+\begin{env}[8.1.2]
+\label{I.8.1.2-ko}
+이제 \emph{체} $R$을 생각하자. $R$의 임의의 부분환 $A$에 대하여
+$\mathfrak p$가 $A$의 소 스펙트럼을 달릴 때의 국소환
+$A_\mathfrak p$들의 집합을 $L(A)$로 나타낸다. 이 환들은 $A$를
+포함하는 $R$의 부분환으로 동일시된다.
+$\mathfrak p=(\mathfrak p A_\mathfrak p)\cap A$이므로,
+$\operatorname{Spec}(A)$에서 $L(A)$로 가는 사상
+$\mathfrak p\mapsto A_\mathfrak p$는 전단사이다.
+\end{env}
+
+\begin{lemma}[8.1.3]
+\label{I.8.1.3-ko}
+$R$을 체, $A$를 $R$의 부분환이라 하자. $R$의 국소 부분환 $M$이
+환 $A_\mathfrak p\in L(A)$를 지배할 필요충분조건은
+$A\subset M$인 것이다. 이때 $M$이 지배하는 국소환
+$A_\mathfrak p$는 유일하며,
+$\mathfrak p=\mathfrak m(M)\cap A$에 대응한다.
+\end{lemma}
+
+실제로 $M$이 $A_\mathfrak p$를 지배하면
+(\hyperref[I.8.1.1-ko]{8.1.1})에 따라
+$\mathfrak m(M)\cap A_\mathfrak p=\mathfrak p A_\mathfrak p$이므로
+$\mathfrak p$는 유일하다. 다른 한편 $A\subset M$이면
+$\mathfrak m(M)\cap A=\mathfrak p$는 $A$의 소 아이디얼이고,
+$A-\mathfrak p\subset M$이므로 $A_\mathfrak p\subset M$이고
+$\mathfrak p A_\mathfrak p\subset\mathfrak m(M)$이다. 따라서 $M$은
+$A_\mathfrak p$를 지배한다.
+
+\oldpage[I]{165}
+\begin{lemma}[8.1.4]
+\label{I.8.1.4-ko}
+$R$을 체, $M$, $N$을 $R$의 두 국소 부분환, $P$를 $M\cup N$에 의해
+생성되는 $R$의 부분환이라 하자. 다음 조건들은 동치이다.
+\begin{enumerate}
+  \item[(i)] $P$의 소 아이디얼 $\mathfrak p$가 존재하여
+    $\mathfrak m(M)=\mathfrak p\cap M$,
+    $\mathfrak m(N)=\mathfrak p\cap N$이다.
+  \item[(ii)] $\mathfrak m(M)\cup\mathfrak m(N)$에 의해 $P$에서
+    생성되는 아이디얼 $\mathfrak a$는 $P$와 다르다.
+  \item[(iii)] $M$과 $N$을 모두 지배하는 $R$의 국소 부분환 $Q$가
+    존재한다.
+\end{enumerate}
+\end{lemma}
+
+(i)가 (ii)를 함의함은 명백하다. 역으로 $\mathfrak a\ne P$이면
+$\mathfrak a$는 $P$의 어떤 극대 아이디얼 $\mathfrak n$에 포함된다.
+$1\notin\mathfrak n$이므로 $\mathfrak n\cap M$은 $\mathfrak m(M)$을
+포함하면서 $M$과 다르며, 따라서
+$\mathfrak n\cap M=\mathfrak m(M)$이다. 마찬가지로
+$\mathfrak n\cap N=\mathfrak m(N)$이다. $Q$가 $M$과 $N$을 지배하면
+$P\subset Q$이고
+\[
+  \mathfrak m(M)=\mathfrak m(Q)\cap M
+  =(\mathfrak m(Q)\cap P)\cap M,\qquad
+  \mathfrak m(N)=(\mathfrak m(Q)\cap P)\cap N,
+\]
+이므로 (iii)은 (i)를 함의한다. 역은 $Q=P_\mathfrak p$로 두면
+명백하다.
+
+(\hyperref[I.8.1.4-ko]{8.1.4})의 조건들이 성립할 때 C.~슈발레를 따라
+국소환 $M$과 $N$이 \emph{서로 연관되어 있다}고 한다.
+
+\begin{proposition}[8.1.5]
+\label{I.8.1.5-ko}
+$A$, $B$를 체 $R$의 두 부분환, $C$를 $A\cup B$에 의해 생성되는
+$R$의 부분환이라 하자. 다음 조건들은 동치이다.
+\begin{enumerate}
+  \item[(i)] $A$와 $B$를 포함하는 모든 국소환 $Q$에 대하여
+    $\mathfrak p=\mathfrak m(Q)\cap A$,
+    $\mathfrak q=\mathfrak m(Q)\cap B$로 놓으면
+    $A_\mathfrak p=B_\mathfrak q$이다.
+  \item[(ii)] $C$의 모든 소 아이디얼 $\mathfrak r$에 대하여
+    $\mathfrak p=\mathfrak r\cap A$, $\mathfrak q=\mathfrak r\cap B$로
+    놓으면 $A_\mathfrak p=B_\mathfrak q$이다.
+  \item[(iii)] $M\in L(A)$와 $N\in L(B)$가 서로 연관되어 있으면
+    두 환은 같다.
+  \item[(iv)] $L(A)\cap L(B)=L(C)$이다.
+\end{enumerate}
+\end{proposition}
+
+보조정리 (\hyperref[I.8.1.3-ko]{8.1.3})과
+(\hyperref[I.8.1.4-ko]{8.1.4})는 (i)와 (iii)이 동치임을 보인다.
+(i)를 $Q=C_\mathfrak r$에 적용하면 (i)가 (ii)를 함의함은 명백하다.
+역으로 $Q$가 $A\cup B$를 포함하면 $C$도 포함한다. 이때
+$\mathfrak r=\mathfrak m(Q)\cap C$로 놓으면
+(\hyperref[I.8.1.3-ko]{8.1.3})에 따라
+$\mathfrak p=\mathfrak r\cap A$이고 $\mathfrak q=\mathfrak r\cap B$이므로
+(ii)는 (i)를 함의한다. (iv)가 (i)를 함의함도 곧 알 수 있다. 실제로
+$Q$가 $A\cup B$를 포함하면 (\hyperref[I.8.1.3-ko]{8.1.3})에 따라
+어떤 국소환 $C_\mathfrak r\in L(C)$를 지배한다. 가정에 따라
+$C_\mathfrak r\in L(A)\cap L(B)$이고,
+(\hyperref[I.8.1.1-ko]{8.1.1})과
+(\hyperref[I.8.1.3-ko]{8.1.3})에 따라
+$C_\mathfrak r=A_\mathfrak p=B_\mathfrak q$이다.
+
+끝으로 (iii)이 (iv)를 함의함을 보이자. $Q\in L(C)$라 하자.
+(\hyperref[I.8.1.3-ko]{8.1.3})에 따라 $Q$는 어떤 $M\in L(A)$와
+$N\in L(B)$를 지배한다. 따라서 서로 연관된 $M$과 $N$은 가정에 따라
+같다. 이제 $C\subset M$이므로 (\hyperref[I.8.1.3-ko]{8.1.3})에 따라
+$M$은 어떤 $Q'\in L(C)$를 지배한다. 따라서 $Q$는 $Q'$을 지배한다.
+그러므로 (\hyperref[I.8.1.3-ko]{8.1.3})에 따라 반드시
+$Q=Q'=M$이고, $Q\in L(A)\cap L(B)$이다. 역으로
+$Q\in L(A)\cap L(B)$이면 $C\subset Q$이므로
+(\hyperref[I.8.1.3-ko]{8.1.3})에 따라 $Q$는 어떤
+$Q''\in L(C)\subset L(A)\cap L(B)$를 지배한다. 서로 연관된 $Q$와
+$Q''$은 같으므로 $Q''=Q\in L(C)$이다. 이로써 증명이 끝난다.
+
+\subsection{정역 스킴의 국소환}
+\label{subsection:I.8.2-ko}
+
+\begin{env}[8.2.1]
+\label{I.8.2.1-ko}
+$X$를 \emph{정역} 준스킴이라 하자. 그 유리함수체 $R$은 $X$의 일반점
+$a$의 국소환과 같다. 모든 $x\in X$에 대하여
+$\mathscr{O}_x$는 $R$의 부분환과 표준적으로 동일시된다
+(\hyperref[I.7.1.5-ko]{7.1.5}). 또한 임의의 유리함수 $f\in R$에
+대하여 $f$의 정의역 $\delta(f)$는 $f\in\mathscr{O}_x$인 점
+$x\in X$들의 열린집합이다. 따라서
+(\hyperref[I.7.2.6-ko]{7.2.6}) 모든 열린집합 $U\subset X$에 대하여
+\begin{equation}
+  \Gamma(U,\mathscr{O}_X)=\bigcap_{x\in U}\mathscr{O}_x.
+  \tag{8.2.1.1}\label{I.8.2.1.1-ko}
+\end{equation}
+\end{env}
+
+\oldpage[I]{166}
+\begin{proposition}[8.2.2]
+\label{I.8.2.2-ko}
+$X$를 정역 준스킴, $R$을 그 유리함수체라 하자. $X$가 스킴이기 위한
+필요충분조건은 $X$의 두 점 $x$, $y$ 사이의 관계
+``$\mathscr{O}_x$와 $\mathscr{O}_y$가 서로 연관되어 있다''
+(\hyperref[I.8.1.4-ko]{8.1.4})가 $x=y$를 함의하는 것이다.
+\end{proposition}
+
+이 조건이 성립한다고 가정하고 $X$가 분리임을 보이자. $X$의 서로 다른
+두 아핀 열린집합을 $U$, $V$라 하고, 그 환을 각각 $A$, $B$라 하여
+이들을 $R$의 부분환과 동일시하자. 그러면 $U$와 $V$는 각각
+(\hyperref[I.8.1.2-ko]{8.1.2})에 따라 $L(A)$와 $L(B)$로 동일시된다.
+가정과 (\hyperref[I.8.1.5-ko]{8.1.5})에 따라 $C$가 $A\cup B$에 의해
+$R$에서 생성되는 부분환이면 $W=U\cap V$는
+$L(A)\cap L(B)=L(C)$와 동일시된다. 한편 $R$의 모든 부분환 $E$는
+$L(E)$에 속하는 국소환들의 교집합과 같음이 알려져 있다
+(\cite{I-1}, p.~5-03, 명제~4 \emph{bis}). 따라서 $C$는 $z\in W$에
+대한 국소환 $\mathscr{O}_z$들의 교집합, 즉
+(\hyperref[I.8.2.1.1-ko]{8.2.1.1})에 따라
+$\Gamma(W,\mathscr{O}_X)$와 동일시된다. 이제 $W$ 위에 $X$가 유도하는
+부분준스킴을 생각하자. 항등 준동형
+$\varphi:C\to\Gamma(W,\mathscr{O}_X)$에 대응하여
+(\hyperref[I.2.2.4-ko]{2.2.4}) 사상
+$\Phi=(\psi,\theta):W\to\operatorname{Spec}(C)$가 존재한다. $\Phi$가
+준스킴의 \emph{동형}임을 보이면 $W$가 \emph{아핀} 열린집합임이
+따른다. $W$와 $L(C)=\operatorname{Spec}(C)$의 동일시에 따라
+$\psi$는 \emph{전단사}이다. 또한 모든 $x\in W$에 대하여
+$\mathfrak r=\mathfrak m_x\cap C$로 놓으면 $\theta_x^\sharp$는 포함
+준동형 $C_\mathfrak r\to\mathscr{O}_x$이고, 정의에 따라
+$C_\mathfrak r$는 $\mathscr{O}_x$와 동일시되므로
+$\theta_x^\sharp$는 전단사이다. 따라서 $\psi$가 \emph{위상동형}, 즉
+모든 닫힌 부분집합 $F\subset W$에 대하여 $\psi(F)$가
+$\operatorname{Spec}(C)$에서 닫혔음을 보이는 일만 남는다. $F$는
+$A$의 어떤 아이디얼 $\mathfrak a$에 대하여 $V(\mathfrak a)$ 꼴인
+$U$의 닫힌 부분집합이 $W$ 위에 남기는 자취이다. 이제
+$\psi(F)=V(\mathfrak a C)$임을 보이자. 그러면 주장이 따른다. 실제로
+$\mathfrak a C$를 포함하는 $C$의 소 아이디얼들은 $\mathfrak a$를
+포함하는 $C$의 소 아이디얼들, 즉 $x\in W$이고
+$\mathfrak a\subset\mathfrak m_x$인
+$\psi(x)=\mathfrak m_x\cap C$ 꼴의 아이디얼들이다. 이러한 점에 대하여
+$\mathfrak a\subset\mathfrak m_x$인 것은
+$x\in W\cap V(\mathfrak a)=F$인 것과 동치이다.\footnote{\emph{[번역 주]
+인쇄 원문은 여기서 불가능한 등식
+$x\in V(\mathfrak a)=W\cap F$를 적는다. 앞 문장의 정의에 맞는
+등식 $F=W\cap V(\mathfrak a)$을 사용하였다.}} 따라서
+$\psi(F)=V(\mathfrak a C)$이다.
+
+$U\cap V$가 아핀이고 그 환 $C$가 $U$와 $V$의 두 환의 합집합
+$A\cup B$에 의해 생성되므로 $X$는 분리이다
+(\hyperref[I.5.5.6-ko]{5.5.6}).
+
+역으로 $X$가 분리라고 하고, $\mathscr{O}_x$와 $\mathscr{O}_y$가 서로
+연관되어 있는 $X$의 두 점을 $x$, $y$라 하자. $x$를 포함하는 아핀
+열린집합 $U$의 환을 $A$, $y$를 포함하는 아핀 열린집합 $V$의 환을
+$B$라 하자. 그러면 $U\cap V$는 아핀이고 그 환 $C$는 $A\cup B$에
+의해 생성된다(\hyperref[I.5.5.6-ko]{5.5.6}).
+$\mathfrak p=\mathfrak m_x\cap A$,
+$\mathfrak q=\mathfrak m_y\cap B$라 놓으면
+$A_\mathfrak p=\mathscr{O}_x$, $B_\mathfrak q=\mathscr{O}_y$이다.
+$A_\mathfrak p$와 $B_\mathfrak q$가 서로 연관되어 있으므로
+(\hyperref[I.8.1.4-ko]{8.1.4})
+$\mathfrak p=\mathfrak r\cap A$,
+$\mathfrak q=\mathfrak r\cap B$인 $C$의 소 아이디얼
+$\mathfrak r$가 존재한다. $U\cap V$가 아핀이므로
+$\mathfrak r=\mathfrak m_z\cap C$인 점 $z\in U\cap V$가 존재한다.
+그러면 자명하게 $x=z$이고 $y=z$이므로 $x=y$이다.
+
+\begin{corollary}[8.2.3]
+\label{I.8.2.3-ko}
+$X$를 정역 스킴, $x$, $y$를 $X$의 두 점이라 하자.
+$x\in\overline{\{y\}}$이기 위한 필요충분조건은
+$\mathscr{O}_x\subset\mathscr{O}_y$인 것, 즉 $x$에서 정의되는 모든
+유리함수가 $y$에서도 정의되는 것이다.
+\end{corollary}
+
+유리함수 $f\in R$의 정의역 $\delta(f)$가 열려 있으므로 이 조건이
+필요함은 자명하다. 충분함을 보이자. $\mathscr{O}_x\subset
+\mathscr{O}_y$이면 (\hyperref[I.8.1.3-ko]{8.1.3})
+$\mathscr{O}_y$가 $(\mathscr{O}_x)_\mathfrak p$를 지배하는
+$\mathscr{O}_x$의 소 아이디얼 $\mathfrak p$가 존재한다. 그런데
+(\hyperref[I.2.4.2-ko]{2.4.2})
+$x\in\overline{\{z\}}$이고
+$\mathscr{O}_z=(\mathscr{O}_x)_\mathfrak p$인 점 $z\in X$가 존재한다.
+$\mathscr{O}_z$와 $\mathscr{O}_y$가 서로 연관되어 있으므로
+(\hyperref[I.8.2.2-ko]{8.2.2})에 따라 $z=y$이고, 따름정리가 증명된다.
+
+\begin{corollary}[8.2.4]
+\label{I.8.2.4-ko}
+$X$가 정역 스킴이면 사상 $x\mapsto\mathscr{O}_x$는 단사이다. 즉
+$x$, $y$가 $X$의 서로 다른 두 점이면 그 가운데 한 점에서는 정의되고
+다른 점에서는 정의되지 않는 유리함수가 존재한다.
+\end{corollary}
+
+\oldpage[I]{167}
+이는 (\hyperref[I.8.2.3-ko]{8.2.3})과 공리
+$(T_0)$ (\hyperref[I.2.1.4-ko]{2.1.4})에서 따른다.
+
+\begin{corollary}[8.2.5]
+\label{I.8.2.5-ko}
+$X$를 바탕공간이 뇌터인 정역 스킴이라 하자. $f$가 $X$ 위의
+유리함수체 $R$을 달릴 때 집합 $\delta(f)$들은 $X$의 위상을 생성한다.
+\end{corollary}
+
+실제로 $X$의 모든 닫힌 부분집합은 유한개의 기약 닫힌 부분집합, 즉
+$\overline{\{y\}}$ 꼴인 집합들의 합집합이다
+(\hyperref[I.2.1.5-ko]{2.1.5}). 그런데
+$x\notin\overline{\{y\}}$이면 $x$에서는 정의되고 $y$에서는 정의되지
+않는 유리함수 $f$가 존재한다(\hyperref[I.8.2.3-ko]{8.2.3}). 다시
+말해 $x\in\delta(f)$이고 $\delta(f)$는 $\overline{\{y\}}$와 만나지
+않는다. 따라서 $\overline{\{y\}}$의 여집합은 $\delta(f)$ 꼴인
+집합들의 합집합이다. 첫 관찰에 따라 $X$의 모든 열린집합은
+$\delta(f)$ 꼴인 열린집합들의 유한 교집합들의 합집합이다.
+
+\begin{env}[8.2.6]
+\label{I.8.2.6-ko}
+따름정리 (\hyperref[I.8.2.5-ko]{8.2.5})에 따라 $X$의 위상은 $R$을
+분수체로 갖는 국소환들의 족 $(\mathscr{O}_x)_{x\in X}$으로 완전히
+특징지어진다. 동치로 $X$의 닫힌 부분집합들은 다음과 같이 정의된다.
+$X$의 유한 부분집합 $\{x_1,\ldots,x_n\}$을 주고, 어떤 첨자 $i$에
+대하여 $\mathscr{O}_y\subset\mathscr{O}_{x_i}$인 점 $y\in X$들의
+집합을 생각하자. $\{x_1,\ldots,x_n\}$의 모든 선택에 대하여 얻는
+이 집합들이 바로 $X$의 닫힌 부분집합들이다. 더욱이 $X$의 위상을
+알고 나면 구조층 $\mathscr{O}_X$도 $\mathscr{O}_x$들의 족으로
+결정된다. 실제로
+$\Gamma(U,\mathscr{O}_X)=\bigcap_{x\in U}\mathscr{O}_x$이다
+(\hyperref[I.8.2.1.1-ko]{8.2.1.1}). 따라서 $X$가 바탕공간이 뇌터인
+정역 스킴이면 족 $(\mathscr{O}_x)_{x\in X}$가 준스킴 $X$를 완전히
+결정한다.
+\end{env}
+
+\begin{proposition}[8.2.7]
+\label{I.8.2.7-ko}
+$X$, $Y$를 두 정역 스킴, $f:X\to Y$를 우세 사상
+(\hyperref[I.2.2.6-ko]{2.2.6})이라 하자. $X$와 $Y$ 위의 유리함수체를
+각각 $K$, $L$이라 하자. 그러면 $L$은 $K$의 부분체와 동일시되고,
+모든 $x\in X$에 대하여 $\mathscr{O}_{f(x)}$는 $\mathscr{O}_x$가
+지배하는 $Y$의 유일한 국소환이다.
+\end{proposition}
+
+실제로 $f=(\psi,\theta)$이고 $a$가 $X$의 일반점이면 $\psi(a)$는
+$Y$의 일반점이다(\hyperref[0.2.1.5-ko]{0, 2.1.5}). 따라서
+$\theta_a^\sharp$는 체 $L=\mathscr{O}_{\psi(a)}$에서 체
+$K=\mathscr{O}_a$로 가는 단사 준동형이다. $Y$의 공집합이 아닌 모든
+아핀 열린집합 $U$가 $\psi(a)$를 포함하므로
+(\hyperref[I.2.2.4-ko]{2.2.4})에 따라 $f$에 대응하는 준동형
+$\Gamma(U,\mathscr{O}_Y)\to
+\Gamma(\psi^{-1}(U),\mathscr{O}_X)$는
+$\theta_a^\sharp$를 $\Gamma(U,\mathscr{O}_Y)$에 제한한 준동형이다.
+따라서 모든 $x\in X$에 대하여 $\theta_x^\sharp$는
+$\theta_a^\sharp$를 $\mathscr{O}_{\psi(x)}$에 제한한 것이므로
+단사이다. 또한 $\theta_x^\sharp$는 국소 준동형이다. 그러므로
+$\theta_a^\sharp$를 통해 $L$을 $K$의 부분체와 동일시하면
+$\mathscr{O}_{\psi(x)}$는 $\mathscr{O}_x$가 지배한다
+(\hyperref[I.8.1.1-ko]{8.1.1}). 이것은 $\mathscr{O}_x$가 지배하는
+$Y$의 유일한 국소환이다. 실제로 $Y$의 서로 연관된 두 국소환은
+같기 때문이다(\hyperref[I.8.2.2-ko]{8.2.2}).
+
+\begin{proposition}[8.2.8]
+\label{I.8.2.8-ko}
+$X$를 기약 준스킴, $f:X\to Y$를 국소 몰입 사상(각각 국소
+동형사상)이라 하고, 더 나아가 사상 $f$가 분리라고 하자. 그러면
+$f$는 몰입 사상(각각 열린 몰입 사상)이다.
+\end{proposition}
+
+$f=(\psi,\theta)$라 하자. 두 경우 모두 $\psi$가 $X$에서
+$\psi(X)$로 가는 \emph{위상동형}임을 보이면 충분하다
+(\hyperref[I.4.5.3-ko]{4.5.3}). $f$를 $f_{\mathrm{red}}$로 바꾸면
+(\hyperref[I.5.1.6-ko]{5.1.6} 및
+\hyperref[I.5.5.1-ko]{5.5.1, (vi)})에 따라 $X$와 $Y$가 축소라고 가정할 수
+있다. $Y'$을 바탕공간이 $\overline{\psi(X)}$인 $Y$의 축소 닫힌
+부분준스킴이라 하자. 그러면 $f$는
+$X\xrightarrow{f'}Y'\xrightarrow{j}Y$로 인수분해되며 $j$는 표준 포함
+사상이다(\hyperref[I.5.2.2-ko]{5.2.2}).
+(\hyperref[I.5.5.1-ko]{5.5.1, (v)})에 따라 $f'$도 여전히 분리
+사상이다. 또한 $f'$은 여전히
+\oldpage[I]{168}
+국소 몰입 사상(각각 국소 동형사상)이다. 실제로 이 문제는 $X$와
+$Y$ 위에서 국소적이므로, 이를 보일 때 $f$가 닫힌 몰입 사상(각각
+열린 몰입 사상)인 경우만 다루면 되고, 이때 주장은
+(\hyperref[I.4.2.2-ko]{4.2.2})에서 곧바로 따른다.
+
+따라서 $f$가 \emph{우세} 사상이라고 가정할 수 있다. 그러면 $Y$도
+기약이다(\hyperref[0.2.1.5-ko]{0, 2.1.5}). 따라서 $X$와 $Y$는 모두
+\emph{정역}이다. 또한 이 문제는 $Y$ 위에서 국소적이므로 $Y$가 아핀
+스킴이라고 가정할 수 있다. $f$가 분리이므로 $X$는 스킴이다
+(\hyperref[I.5.5.1-ko]{5.5.1, (ii)}). 이제
+(\hyperref[I.8.2.7-ko]{8.2.7})의 가정들이 모두 성립한다. 그러면 모든
+$x\in X$에 대하여 $\theta_x^\sharp$는 단사이다. 한편 $f$가 국소
+몰입 사상이라는 가정에 따라 $\theta_x^\sharp$는 전사이다
+(\hyperref[I.4.2.2-ko]{4.2.2}). 따라서 $\theta_x^\sharp$는
+전단사이고, (\hyperref[I.8.2.7-ko]{8.2.7})의 동일시 아래
+$\mathscr{O}_{\psi(x)}=\mathscr{O}_x$이다. 그러므로
+(\hyperref[I.8.2.4-ko]{8.2.4})에 따라 $\psi$는 \emph{단사}이다. $f$가 국소
+동형사상인 경우에는 이것으로 명제가 증명된다
+(\hyperref[I.4.5.3-ko]{4.5.3}). $f$가 국소 몰입 사상이라고만
+가정하는 경우, 모든 $x\in X$에 대하여 $X$에서 $x$의 열린 근방
+$U$와 $Y$에서 $\psi(x)$의 열린 근방 $V$가 존재하여 $\psi$를 $U$에
+제한한 사상은 $U$에서 $V$의 어떤 \emph{닫힌} 부분집합으로 가는
+위상동형이다. 그런데 $U$는 $X$에서 조밀하므로 $\psi(U)$는 $Y$에서
+조밀하고, \emph{따라서 특히} $V$에서 조밀하다. 그러므로
+$\psi(U)=V$이다. $\psi$가 단사이므로 $\psi^{-1}(V)=U$이고, 이로써
+$\psi$가 $X$에서 $\psi(X)$로 가는 위상동형임이 증명된다.
+
+\subsection{슈발레 스킴}
+\label{subsection:I.8.3-ko}
+
+\begin{env}[8.3.1]
+\label{I.8.3.1-ko}
+$X$를 \emph{뇌터} 정역 스킴, $R$을 그 유리함수체라 하자. $x$가 $X$를
+달릴 때 국소 부분환 $\mathscr{O}_x\subset R$들의 집합을
+$X'$이라 쓰자. 집합 $X'$은 다음 세 조건을 만족한다.
+\begin{enumerate}
+  \item[(Sch. 1)] \emph{모든 $M\in X'$에 대하여 $R$은 $M$의
+    분수체이다.}
+  \item[(Sch. 2)] \emph{$R$의 뇌터 부분환 $A_i$가 유한개 존재하여
+    $X'=\bigcup_i L(A_i)$이고, 모든 첨자쌍 $i$, $j$에 대하여
+    $A_i\cup A_j$에 의해 $R$에서 생성되는 부분환 $A_{ij}$는 $A_i$
+    위의 유한 생성 대수이다.}
+  \item[(Sch. 3)] \emph{$X'$의 서로 연관된 두 원소 $M$, $N$은
+    같다.}
+\end{enumerate}
+\end{env}
+
+실제로 (Sch. 1)은 (\hyperref[I.8.2.1-ko]{8.2.1})에서 보았고,
+(Sch. 3)은 (\hyperref[I.8.2.2-ko]{8.2.2})에서 따른다. (Sch. 2)를
+보이기 위해서는 $X$를 환이 뇌터인 유한개의 아핀 열린집합 $U_i$로
+덮고 $A_i=\Gamma(U_i,\mathscr{O}_X)$로 두면 충분하다. $X$가 스킴이라는
+가정에 따라 $U_i\cap U_j$는 아핀이고
+$\Gamma(U_i\cap U_j,\mathscr{O}_X)=A_{ij}$이다
+(\hyperref[I.5.5.6-ko]{5.5.6}). 더욱이 $U_i$의 바탕공간이 뇌터이므로
+몰입 사상 $U_i\cap U_j\to U_i$는 유한형이다
+(\hyperref[I.6.3.5-ko]{6.3.5}). 따라서 $A_{ij}$는 $A_i$ 위의 유한
+생성 대수이다(\hyperref[I.6.3.3-ko]{6.3.3}).
+
+\begin{env}[8.3.2]
+\label{I.8.3.2-ko}
+공리 (Sch. 1), (Sch. 2), (Sch. 3)을 갖는 구조는 C.~슈발레가 말한
+의미의 「스킴」을 일반화한다. 슈발레는 이에 더하여 $R$이 어떤 체
+$K$의 유한 생성 확대체이고 $A_i$들이 $K$ 위의 유한 생성
+대수라고 가정한다. 이 가정 아래에서는 (Sch. 2)의 일부가 불필요하다
+\cite{I-1}. 역으로 집합 $X'$ 위에 이러한 구조가 주어지면
+(\hyperref[I.8.2.6-ko]{8.2.6})의 관찰을 이용하여 이에 정역 스킴 $X$를
+대응시킬 수 있다. $X$의 바탕공간은
+(\hyperref[I.8.2.6-ko]{8.2.6})에서 정의한 위상을 갖춘 $X'$이고,
+구조층 $\mathscr{O}_X$는
+
+\oldpage[I]{169}
+모든 열린집합 $U\subset X$에 대하여
+$\Gamma(U,\mathscr{O}_X)=\bigcap_{x\in U}\mathscr{O}_x$를 만족하며
+제한 준동형은 자명하게 정의된다. 이로써 국소환들이 정확히 $X'$의
+원소들인 정역 스킴을 실제로 얻는다는 확인은 독자에게 맡긴다. 우리는
+뒤에서 이 결과를 사용하지 않는다.
+\end{env}

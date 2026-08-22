@@ -1,0 +1,1733 @@
+% Authority: EGA I ega1-1-fr.tex, whole-file SHA-256 25840D1D77C5284A158CDC78D622A458221DA3FE9ECAECC5EA9382A5C4EC595B.
+% Sequential coverage in this file: authority lines 1-1624, complete subsections 1.1-1.7.
+\setcounter{section}{0}
+\section{아핀 스킴}
+\label{section:I.1-ko}
+
+\setcounter{subsection}{0}
+\subsection{환의 소 스펙트럼}
+\label{subsection:I.1.1-ko}
+
+\oldpage[I]{80}
+\begin{env}[1.1.1]
+\label{I.1.1.1-ko}
+\emph{표기}: $A$를 (가환)환, $M$을 $A$-가군이라 하자. 이 장과
+이어지는 장들에서는 다음 표기들을 계속 사용한다.
+
+\smallskip
+\noindent
+$\operatorname{Spec}(A)={}$ $A$의 \emph{소 아이디얼들의 집합}이며,
+$A$의 \emph{소 스펙트럼}이라고도 한다. 흔히
+$x\in X=\operatorname{Spec}(A)$ 대신 $\mathfrak{j}_x$라고 쓰는 것이
+편리하다. $\operatorname{Spec}(A)$가 \emph{공집합}일 필요충분조건은
+$A$가 영환인 것이다.
+
+\smallskip
+\noindent
+$A_x=A_{\mathfrak{j}_x}={}$ \emph{$S^{-1}A$라는 (국소) 분수환},
+여기서 $S=A-\mathfrak{j}_x$이다.
+
+\smallskip
+\noindent
+$\mathfrak{m}_x=\mathfrak{j}_xA_{\mathfrak{j}_x}={}$ $A_x$의
+\emph{극대 아이디얼}.
+
+\smallskip
+\noindent
+$k(x)=A_x/\mathfrak{m}_x={}$ $A_x$의 \emph{잉여체}. 이는 정역
+$A/\mathfrak{j}_x$의 분수체와 표준적으로 동형이며, 그 분수체와
+동일시한다.
+
+\smallskip
+\noindent
+$f(x)={}$ $A/\mathfrak{j}_x\subset k(x)$ 안에서 취한 \emph{$f$의
+$\mathfrak{j}_x$ 법 동치류} ($f\in A$, $x\in X$). $f(x)$를
+$x\in\operatorname{Spec}(A)$에서의 $f$의 \emph{값}이라고도 한다.
+관계 $f(x)=0$과 $f\in\mathfrak{j}_x$는 \emph{동치}이다.
+
+\smallskip
+\noindent
+$M_x=M\otimes_AA_x={}$ $A-\mathfrak{j}_x$에 분모를 갖는
+\emph{분수가군}.
+
+\smallskip
+\noindent
+$\mathfrak{r}(E)={}$ $A$의 부분집합 $E$가 생성하는 아이디얼의
+\emph{근기}.
+
+\smallskip
+\noindent
+$V(E)={}$ \emph{$E\subset\mathfrak{j}_x$를 만족하는 $x\in X$들의 집합}
+(여기서 $E\subset A$)
+(또는 같은 말로, 모든 $f\in E$에 대하여 $f(x)=0$인 $x\in X$들의
+집합). 따라서
+\begin{equation}
+  \mathfrak{r}(E)=\bigcap_{x\in V(E)}\mathfrak{j}_x.
+  \tag{1.1.1.1}\label{I.1.1.1.1-ko}
+\end{equation}
+
+\smallskip
+\noindent
+$V(f)=V(\{f\})$ ($f\in A$).
+
+\smallskip
+\noindent
+$D(f)=X-V(f)={}$ \emph{$f(x)\neq0$인 $x\in X$들의 집합}.
+\end{env}
+
+\begin{proposition}[1.1.2]
+\label{I.1.1.2-ko}
+다음 성질들이 성립한다.
+\begin{enumerate}
+  \item[\rm(i)] $V(0)=X$, $V(1)=\varnothing$.
+  \item[\rm(ii)] $E\subset E'$이면 $V(E)\supset V(E')$이다.
+  \item[\rm(iii)] $A$의 부분집합들의 임의의 족 $(E_\lambda)$에 대하여
+  \[
+    V\left(\bigcup_\lambda E_\lambda\right)
+      =V\left(\sum_\lambda E_\lambda\right)
+      =\bigcap_\lambda V(E_\lambda).
+  \]
+  \item[\rm(iv)] $V(EE')=V(E)\cup V(E')$.
+  \item[\rm(v)] $V(E)=V(\mathfrak{r}(E))$.
+\end{enumerate}
+\end{proposition}
+
+성질 (i), (ii), (iii)은 자명하고, (v)는 (ii)와 공식
+(\hyperref[I.1.1.1.1-ko]{1.1.1.1})에서 따른다.
+$V(EE')\supset V(E)\cup V(E')$임은 자명하다. 역으로
+$x\notin V(E)$이고 $x\notin V(E')$이면 $k(x)$ 안에서
+$f(x)\neq0$, $f'(x)\neq0$을 만족하는 $f\in E$, $f'\in E'$가
+존재한다. 따라서 $f(x)f'(x)\neq0$, 즉 $x\notin V(EE')$이고,
+이로써 (iv)가 증명된다.
+
+명제 (\hyperref[I.1.1.2-ko]{1.1.2})에서 특히 $E$가 $A$의 모든
+부분집합을 달릴 때 $V(E)$ 꼴의 집합들이 $X$ 위의 한 위상의
+\emph{닫힌집합}들이 됨을 알 수 있다. 이 위상을
+\emph{스펙트럼 위상}\footnote{대수기하학에 이 위상을 도입한 사람은
+자리스키이다. 따라서 흔히 $X$의 ``자리스키 위상''이라고도 한다.}이라
+하겠다. 명시적으로 달리 말하지 않는 한
+$X=\operatorname{Spec}(A)$에는 언제나 스펙트럼 위상을 준다.
+
+\oldpage[I]{81}
+\begin{env}[1.1.3]
+\label{I.1.1.3-ko}
+$X$의 임의의 부분집합 $Y$에 대하여 $\mathfrak{j}(Y)$는 모든
+$y\in Y$에서 $f(y)=0$인 $f\in A$들의 집합을 뜻한다. 같은 말로
+$\mathfrak{j}(Y)$는 $y\in Y$에 대한 소 아이디얼
+$\mathfrak{j}_y$들의 교집합이다. $Y\subset Y'$이면
+$\mathfrak{j}(Y)\supset\mathfrak{j}(Y')$임은 자명하며, $X$의
+부분집합들의 임의의 족 $(Y_\lambda)$에 대하여
+\begin{equation}
+  \mathfrak{j}\left(\bigcup_\lambda Y_\lambda\right)
+    =\bigcap_\lambda\mathfrak{j}(Y_\lambda)
+  \tag{1.1.3.1}\label{I.1.1.3.1-ko}
+\end{equation}
+이다. 끝으로
+\begin{equation}
+  \mathfrak{j}(\{x\})=\mathfrak{j}_x
+  \tag{1.1.3.2}\label{I.1.1.3.2-ko}
+\end{equation}
+이다.
+\end{env}
+
+\begin{proposition}[1.1.4]
+\label{I.1.1.4-ko}
+\begin{enumerate}
+  \item[\rm(i)] $A$의 모든 부분집합 $E$에 대하여
+  $\mathfrak{j}(V(E))=\mathfrak{r}(E)$이다.
+  \item[\rm(ii)] $X$의 모든 부분집합 $Y$에 대하여
+  $V(\mathfrak{j}(Y))=\overline{Y}$이며, 여기서
+  $\overline{Y}$는 $X$에서의 $Y$의 폐포이다.
+\end{enumerate}
+\end{proposition}
+
+(i)는 정의와 (\hyperref[I.1.1.1.1-ko]{1.1.1.1})에서 바로 따른다.
+한편 $V(\mathfrak{j}(Y))$는 닫혀 있고 $Y$를 포함한다. 역으로
+$Y\subset V(E)$이면 모든 $f\in E$, $y\in Y$에 대하여 $f(y)=0$이므로
+$E\subset\mathfrak{j}(Y)$이고
+$V(E)\supset V(\mathfrak{j}(Y))$이다. 이로써 (ii)가 증명된다.
+
+\begin{corollary}[1.1.5]
+\label{I.1.1.5-ko}
+$X=\operatorname{Spec}(A)$의 닫힌 부분집합들과 자기 근기와 같은
+$A$의 아이디얼들(다시 말해 소 아이디얼들의 교집합들)은 포함관계를
+뒤집는 사상
+$Y\mapsto\mathfrak{j}(Y)$, $\mathfrak{a}\mapsto V(\mathfrak{a})$에
+의하여 서로 전단사 대응한다. 두 닫힌 부분집합의 합집합
+$Y_1\cup Y_2$에는 $\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)$가
+대응하고, 닫힌 부분집합들의 임의의 족 $(Y_\lambda)$의 교집합에는
+$\mathfrak{j}(Y_\lambda)$들의 합의 근기가 대응한다.
+\end{corollary}
+
+\begin{corollary}[1.1.6]
+\label{I.1.1.6-ko}
+$A$가 뇌터 환이면 $X=\operatorname{Spec}(A)$는 뇌터 공간이다.
+\end{corollary}
+
+이 따름정리의 역은 거짓이다. 예를 들어 영 아이디얼이 아닌 소
+아이디얼을 단 하나만 갖는 비뇌터 정역, 이를테면 랭크 1인 비이산
+값매김환이 반례가 된다.
+
+스펙트럼이 뇌터 공간이 아닌 환 $A$의 예로는 무한 콤팩트 공간
+$Y$ 위의 실수값 연속함수들의 환 $\mathcal{C}(Y)$를 들 수 있다.
+집합으로서 $Y$는 $A$의 극대 아이디얼들의 집합과 동일시된다는 것이
+알려져 있고, $X=\operatorname{Spec}(A)$의 위상이 $Y$ 위에 유도하는
+위상은 $Y$의 본래 위상임을 쉽게 알 수 있다. $Y$가 뇌터 공간이
+아니므로 $X$도 뇌터 공간이 아니다.
+
+\begin{corollary}[1.1.7]
+\label{I.1.1.7-ko}
+모든 $x\in X$에 대하여 $\{x\}$의 폐포는
+$\mathfrak{j}_x\subset\mathfrak{j}_y$를 만족하는 $y\in X$들의
+집합이다. $\{x\}$가 닫혀 있을 필요충분조건은
+$\mathfrak{j}_x$가 극대인 것이다.
+\end{corollary}
+
+\begin{corollary}[1.1.8]
+\label{I.1.1.8-ko}
+공간 $X=\operatorname{Spec}(A)$는 콜모고로프 공간이다.
+\end{corollary}
+
+실제로 $x$, $y$가 $X$의 서로 다른 두 점이면
+$\mathfrak{j}_x\not\subset\mathfrak{j}_y$이거나
+$\mathfrak{j}_y\not\subset\mathfrak{j}_x$이다. 따라서 두 점
+$x$, $y$ 가운데 하나는 다른 하나의 폐포에 속하지 않는다.
+
+\begin{env}[1.1.9]
+\label{I.1.1.9-ko}
+명제 (\hyperref[I.1.1.2-ko]{1.1.2}, (iv))에 따라 $A$의 두 원소
+$f$, $g$에 대하여
+\begin{equation}
+  D(fg)=D(f)\cap D(g)
+  \tag{1.1.9.1}\label{I.1.1.9.1-ko}
+\end{equation}
+이다. 또한 명제 (\hyperref[I.1.1.4-ko]{1.1.4}, (i))와
+명제 (\hyperref[I.1.1.2-ko]{1.1.2}, (v))에 따르면
+$D(f)=D(g)$라는 관계는
+$\mathfrak{r}(f)=\mathfrak{r}(g)$라는 뜻이며, 같은 말로
+$(f)$와 $(g)$를 포함하는 극소 소 아이디얼들이 같다는 뜻이다.
+특히 $u$가 가역원이고 $f=ug$이면 그러하다.
+\end{env}
+
+\oldpage[I]{82}
+\begin{proposition}[1.1.10]
+\label{I.1.1.10-ko}
+\begin{enumerate}
+  \item[\rm(i)] $f$가 $A$를 달릴 때 집합 $D(f)$들은 $X$의 위상의
+  한 기저를 이룬다.
+  \item[\rm(ii)] 모든 $f\in A$에 대하여 $D(f)$는 준콤팩트이다.
+  특히 $X=D(1)$은 준콤팩트이다.
+\end{enumerate}
+\end{proposition}
+
+(i) $U$를 $X$의 열린집합이라 하자. 정의에 따라 $A$의 한 부분집합
+$E$에 대하여 $U=X-V(E)$이고,
+$V(E)=\bigcap_{f\in E}V(f)$이다. 따라서
+$U=\bigcup_{f\in E}D(f)$이다.
+
+(ii) (i)에 따라 다음을 보이면 충분하다. $A$의 원소들의 족
+$(f_\lambda)_{\lambda\in L}$이
+$D(f)\subset\bigcup_{\lambda\in L}D(f_\lambda)$를 만족하면,
+$D(f)\subset\bigcup_{\lambda\in J}D(f_\lambda)$가 되는 $L$의
+유한 부분집합 $J$가 존재한다. $\mathfrak{a}$를 $f_\lambda$들이
+생성하는 $A$의 아이디얼이라 하자. 가정에 따라
+$V(f)\supset V(\mathfrak{a})$이므로
+$\mathfrak{r}(f)\subset\mathfrak{r}(\mathfrak{a})$이다.
+$f\in\mathfrak{r}(f)$이므로 어떤 정수 $n\geq0$에 대하여
+$f^n\in\mathfrak{a}$이다. 그러면 $f^n$은 한 유한 부분족
+$(f_\lambda)_{\lambda\in J}$이 생성하는 아이디얼
+$\mathfrak{b}$에 속하며,
+$V(f)=V(f^n)\supset V(\mathfrak{b})
+=\bigcap_{\lambda\in J}V(f_\lambda)$이다. 다시 말해
+$D(f)\subset\bigcup_{\lambda\in J}D(f_\lambda)$이다.
+
+\begin{proposition}[1.1.11]
+\label{I.1.1.11-ko}
+$A$의 모든 아이디얼 $\mathfrak{a}$에 대하여
+$\operatorname{Spec}(A/\mathfrak{a})$는
+$\operatorname{Spec}(A)$의 닫힌 부분공간 $V(\mathfrak{a})$와
+표준적으로 동일시된다.
+\end{proposition}
+
+실제로 $A/\mathfrak{a}$의 아이디얼들(각각 소 아이디얼들)과
+$\mathfrak{a}$를 포함하는 $A$의 아이디얼들(각각 소 아이디얼들)
+사이에는 포함관계의 순서구조를 보존하는 표준 전단사 대응이 있다.
+
+$A$의 멱영원들의 집합 $\mathfrak{N}$, 곧 $A$의
+\emph{멱영근기}는 $\mathfrak{r}(0)$과 같은 아이디얼이고
+$A$의 모든 소 아이디얼의 교집합임을 상기하자
+(\hyperref[0.1.1.1-ko]{0, 1.1.1}).
+
+\begin{corollary}[1.1.12]
+\label{I.1.1.12-ko}
+위상공간 $\operatorname{Spec}(A)$와
+$\operatorname{Spec}(A/\mathfrak{N})$은 표준적으로 동형이다.
+\end{corollary}
+
+\begin{proposition}[1.1.13]
+\label{I.1.1.13-ko}
+$X=\operatorname{Spec}(A)$가 기약일
+(\hyperref[0.2.1.1-ko]{0, 2.1.1}) 필요충분조건은
+$A/\mathfrak{N}$이 정역인 것이다. 이는 $\mathfrak{N}$이
+소 아이디얼인 것과도 동치이다.
+\end{proposition}
+
+따름정리 (\hyperref[I.1.1.12-ko]{1.1.12})에 따라
+$\mathfrak{N}=0$인 경우만 생각하면 된다. $X$가 기약이 아니면
+$X$와 다른 두 닫힌 부분집합 $Y_1$, $Y_2$가 존재하여
+$X=Y_1\cup Y_2$이고, 따라서
+$\mathfrak{j}(X)=\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)=0$이다.
+아이디얼 $\mathfrak{j}(Y_1)$과 $\mathfrak{j}(Y_2)$는 모두
+$(0)$과 다르므로(\hyperref[I.1.1.5-ko]{1.1.5}) $A$는 정역이
+아니다. 역으로 $A$에 $f\neq0$, $g\neq0$, $fg=0$인 두 원소가
+있으면, $A$의 모든 소 아이디얼의 교집합이 $(0)$이므로
+$V(f)\neq X$, $V(g)\neq X$이고
+$X=V(fg)=V(f)\cup V(g)$이다.
+
+\begin{corollary}[1.1.14]
+\label{I.1.1.14-ko}
+\begin{enumerate}
+  \item[\rm(i)] $X=\operatorname{Spec}(A)$의 닫힌 부분집합들과 자기
+  근기와 같은 $A$의 아이디얼들 사이의 전단사 대응에서, $X$의 닫힌
+  기약 부분집합들은 $A$의 소 아이디얼들과 대응한다. 특히 $X$의
+  기약 성분들은 $A$의 극소 소 아이디얼들과 대응한다.
+  \item[\rm(ii)] 사상 $x\mapsto\overline{\{x\}}$는 $X$와 $X$의
+  닫힌 기약 부분집합들의 집합 사이에 전단사 대응을 정한다.
+  다시 말해 $X$의 모든 닫힌 기약 부분집합은 일반점을 하나만 갖는다.
+\end{enumerate}
+\end{corollary}
+
+(i)는 (\hyperref[I.1.1.13-ko]{1.1.13})과
+(\hyperref[I.1.1.11-ko]{1.1.11})에서 바로 따른다. (ii)를
+증명할 때에도 (\hyperref[I.1.1.11-ko]{1.1.11})에 따라 $X$가
+기약인 경우만 생각하면 된다. 그러면 명제
+(\hyperref[I.1.1.13-ko]{1.1.13})에 따라 $A$에는 가장 작은 소
+아이디얼 $\mathfrak{N}$이 존재하고, 이는 $X$의 한 일반점에
+대응한다.
+\oldpage[I]{83}
+더욱이 $X$는 콜모고로프 공간이므로
+((\hyperref[I.1.1.8-ko]{1.1.8})과
+(\hyperref[0.2.1.3-ko]{0, 2.1.3})) 일반점을 하나만 갖는다.
+
+\begin{proposition}[1.1.15]
+\label{I.1.1.15-ko}
+$\mathfrak{J}$가 $A$의 근기 $\mathfrak{R}(A)$에 포함되는
+아이디얼이면, $X=\operatorname{Spec}(A)$에서
+$V(\mathfrak{J})$의 유일한 근방은 $X$ 전체이다.
+\end{proposition}
+
+실제로 $A$의 모든 극대 아이디얼은 정의에 따라
+$V(\mathfrak{J})$에 속한다. $A$의 모든 아이디얼
+$\mathfrak{a}$는 어떤 극대 아이디얼에 포함되므로
+$V(\mathfrak{a})\cap V(\mathfrak{J})\neq\varnothing$이고,
+이로부터 명제가 따른다.
+
+\subsection{환의 소 스펙트럼의 함자적 성질}
+\label{subsection:I.1.2-ko}
+
+\begin{env}[1.2.1]
+\label{I.1.2.1-ko}
+$A$, $A'$을 두 환이라 하고
+\[
+  \varphi:A'\longrightarrow A
+\]
+를 환 준동형이라 하자. 모든 소 아이디얼
+$x=\mathfrak{j}_x\in\operatorname{Spec}(A)=X$에 대하여 환
+$A'/\varphi^{-1}(\mathfrak{j}_x)$는
+$A/\mathfrak{j}_x$의 한 부분환과 표준적으로 동형이므로 정역이다.
+다시 말해 $\varphi^{-1}(\mathfrak{j}_x)$는 $A'$의 소 아이디얼이다.
+이를 ${}^a\varphi(x)$로 나타내면 사상
+\[
+  {}^a\varphi:X=\operatorname{Spec}(A)\longrightarrow
+  X'=\operatorname{Spec}(A')
+\]
+가 정의된다. 이 사상은 $\operatorname{Spec}(\varphi)$라고도 쓰며,
+준동형 $\varphi$에 대응하는 사상이라고 한다. 몫으로 내려가서
+$\varphi$로부터 얻는
+$A'/\varphi^{-1}(\mathfrak{j}_x)$에서
+$A/\mathfrak{j}_x$로 가는 단사 준동형과, 이를 체의 단사 준동형으로
+표준 연장한 것을 모두 $\varphi^x$로 나타낸다. 따라서
+\[
+  \varphi^x:k({}^a\varphi(x))\longrightarrow k(x).
+\]
+정의에 따라 모든 $f'\in A'$에 대하여
+\begin{equation}
+  \varphi^x\bigl(f'({}^a\varphi(x))\bigr)=\bigl(\varphi(f')\bigr)(x)
+  \qquad(x\in X).
+  \tag{1.2.1.1}\label{I.1.2.1.1-ko}
+\end{equation}
+\end{env}
+
+\begin{proposition}[1.2.2]
+\label{I.1.2.2-ko}
+\begin{enumerate}
+  \item[\rm(i)] $A'$의 임의의 부분집합 $E'$에 대하여
+  \begin{equation}
+    {}^a\varphi^{-1}(V(E'))=V(\varphi(E'))
+    \tag{1.2.2.1}\label{I.1.2.2.1-ko}
+  \end{equation}
+  이고, 특히 모든 $f'\in A'$에 대하여
+  \begin{equation}
+    {}^a\varphi^{-1}(D(f'))=D(\varphi(f')).
+    \tag{1.2.2.2}\label{I.1.2.2.2-ko}
+  \end{equation}
+  \item[\rm(ii)] $A$의 모든 아이디얼 $\mathfrak{a}$에 대하여
+  \begin{equation}
+    \overline{{}^a\varphi(V(\mathfrak{a}))}
+    =V(\varphi^{-1}(\mathfrak{a})).
+    \tag{1.2.2.3}\label{I.1.2.2.3-ko}
+  \end{equation}
+\end{enumerate}
+\end{proposition}
+
+실제로 관계 ${}^a\varphi(x)\in V(E')$는 정의에 따라
+$E'\subset\varphi^{-1}(\mathfrak{j}_x)$와 동치이고, 이는 다시
+$\varphi(E')\subset\mathfrak{j}_x$, 끝으로
+$x\in V(\varphi(E'))$와 동치이다. 이로써 (i)가 증명된다. (ii)를
+증명할 때에는 $V(\mathfrak{r}(\mathfrak{a}))=V(\mathfrak{a})$
+((\hyperref[I.1.1.2-ko]{1.1.2 (v)}))이고
+\[
+  \varphi^{-1}(\mathfrak{r}(\mathfrak{a}))
+  =\mathfrak{r}(\varphi^{-1}(\mathfrak{a}))
+\]
+이므로 $\mathfrak{a}$가 자기 근기와 같다고 가정해도 된다.
+$Y=V(\mathfrak{a})$와
+$\mathfrak{a}'=\mathfrak{j}({}^a\varphi(Y))$로 놓으면 명제
+(\hyperref[I.1.1.4-ko]{1.1.4 (ii)})에 따라
+$\overline{{}^a\varphi(Y)}=V(\mathfrak{a}')$이다. 관계
+$f'\in\mathfrak{a}'$은 정의에 따라 모든
+$x'\in{}^a\varphi(Y)$에 대하여 $f'(x')=0$이라는 것과 동치이다.
+공식 (\hyperref[I.1.2.1.1-ko]{1.2.1.1})에 따라 이는 모든
+$x\in Y$에 대하여 $\varphi(f')(x)=0$이라는 것과도 동치이고,
+$\mathfrak{a}$가 자기 근기와 같으므로 다시
+$\varphi(f')\in\mathfrak{j}(Y)=\mathfrak{a}$와 동치이다. 이로써
+(ii)가 증명된다.
+
+\begin{corollary}[1.2.3]
+\label{I.1.2.3-ko}
+사상 ${}^a\varphi$는 연속이다.
+\end{corollary}
+
+$A''$이 세 번째 환이고 $\varphi':A''\to A'$이 환 준동형이면
+\[
+  {}^a(\varphi\circ\varphi')={}^a\varphi'\circ{}^a\varphi.
+\]
+이 결과와 따름정리 (\hyperref[I.1.2.3-ko]{1.2.3})은
+$\operatorname{Spec}(A)$가 $A$에 관하여 환의 범주에서 위상공간의
+범주로 가는 반변 함자임을 뜻한다.
+
+\begin{corollary}[1.2.4]
+\label{I.1.2.4-ko}
+\oldpage[I]{84}
+$\varphi$가 다음 성질을 갖는다고 하자. 모든 $f\in A$를
+\[
+  f=h\varphi(f')
+\]
+꼴로 쓸 수 있고, 여기서 $h$는 $A$의 가역원이다. 특히
+$\varphi$가 전사이면 이 성질이 성립한다. 그러면 ${}^a\varphi$는
+$X$에서 ${}^a\varphi(X)$로 가는 위상동형이다.
+\end{corollary}
+
+임의의 부분집합 $E\subset A$에 대하여
+$V(E)=V(\varphi(E'))$가 되는 $A'$의 부분집합 $E'$이 존재함을
+보이자. 공리 $(T_0)$
+((\hyperref[I.1.1.8-ko]{1.1.8}))과 공식
+(\hyperref[I.1.2.2.1-ko]{1.2.2.1})에 따라 이 사실은 먼저
+${}^a\varphi$가 단사임을 보이고, 다시 같은 공식에 따라
+${}^a\varphi$가 위상동형임을 보인다. 실제로 각 $f\in E$마다
+$h\varphi(f')=f$이고 $h$가 $A$의 가역원이 되도록 $f'\in A'$을
+하나 택하면 충분하다. 이렇게 얻은 원소 $f'$들의 집합 $E'$이 원하는
+조건을 만족한다.
+
+\begin{env}[1.2.5]
+\label{I.1.2.5-ko}
+특히 $\varphi$가 $A$에서 몫환 $A/\mathfrak{a}$로 가는 표준
+준동형이면 (\hyperref[I.1.1.12-ko]{1.1.12})를 다시 얻는다. 이때
+${}^a\varphi$는 $\operatorname{Spec}(A/\mathfrak{a})$와 동일시한
+$V(\mathfrak{a})$에서 $X=\operatorname{Spec}(A)$로 가는 표준
+단사 사상이다.
+\end{env}
+
+(\hyperref[I.1.2.4-ko]{1.2.4})의 또 다른 특수한 경우로 다음을
+얻는다.
+
+\begin{corollary}[1.2.6]
+\label{I.1.2.6-ko}
+$S$가 $A$의 곱셈적 부분집합이면 스펙트럼
+$\operatorname{Spec}(S^{-1}A)$는, 위상까지 포함하여,
+$X=\operatorname{Spec}(A)$에서
+$\mathfrak{j}_x\cap S=\varnothing$을 만족하는 점 $x$들로 이루어진
+부분공간과 표준적으로 동일시된다.
+\end{corollary}
+
+실제로 $S^{-1}A$의 소 아이디얼들이
+$\mathfrak{j}_x\cap S=\varnothing$을 만족하는
+$S^{-1}\mathfrak{j}_x$들이고
+\[
+  \mathfrak{j}_x=({}^S i_A)^{-1}(S^{-1}\mathfrak{j}_x)
+\]
+임은 (\hyperref[0.1.2.6-ko]{0, 1.2.6})에서 이미 알고 있다. 따라서
+${}^S i_A$에 따름정리 (\hyperref[I.1.2.4-ko]{1.2.4})를 적용하면
+된다.
+
+\begin{corollary}[1.2.7]
+\label{I.1.2.7-ko}
+${}^a\varphi(X)$가 $X'$에서 모든 곳에서 조밀하기 위한 필요충분조건은
+$\operatorname{Ker}\varphi$의 모든 원소가 멱영원인 것이다.
+\end{corollary}
+
+실제로 공식 (\hyperref[I.1.2.2.3-ko]{1.2.2.3})을 아이디얼
+$\mathfrak{a}=(0)$에 적용하면
+\[
+  \overline{{}^a\varphi(X)}=V(\operatorname{Ker}\varphi)
+\]
+를 얻는다. $V(\operatorname{Ker}\varphi)=X'$이기 위한
+필요충분조건은 $\operatorname{Ker}\varphi$가 $A'$의 모든 소
+아이디얼, 곧 $A'$의 멱영근기 $\mathfrak{N}$에 포함되는 것이다.
+
+\subsection{가군에 대응하는 층}
+\label{subsection:I.1.3-ko}
+\label{I.1.3-ko}
+
+\begin{env}[1.3.1]
+\label{I.1.3.1-ko}
+$A$를 가환환, $M$을 $A$-가군, $f$를 $A$의 원소라 하고,
+$S_f$를 $n\geq0$일 때의 $f^n$들로 이루어진 곱셈적 집합이라 하자.
+$A_f=S_f^{-1}A$, $M_f=S_f^{-1}M$으로 놓는다는 것을 상기하자.
+$S'_f$가 $S_f$의 한 원소를 나누는 $g\in A$들로 이루어진 $A$의
+포화 곱셈적 부분집합이면, $A_f$와 $M_f$는 각각
+${S'_f}^{-1}A$와 ${S'_f}^{-1}M$에 표준적으로 동일시된다
+(\hyperref[0.1.4.3-ko]{0, 1.4.3}).
+\end{env}
+
+\begin{lemma}[1.3.2]
+\label{I.1.3.2-ko}
+다음 조건들은 서로 동치이다.
+\begin{enumerate}
+  \item[\rm(a)] $g\in S'_f$;
+  \item[\rm(b)] $S'_g\subset S'_f$;
+  \item[\rm(c)] $f\in\mathfrak{r}(g)$;
+  \item[\rm(d)] $\mathfrak{r}(f)\subset\mathfrak{r}(g)$;
+  \item[\rm(e)] $V(g)\subset V(f)$;
+  \item[\rm(f)] $D(f)\subset D(g)$.
+\end{enumerate}
+\end{lemma}
+
+이는 정의와 (\hyperref[I.1.1.5-ko]{1.1.5})에서 바로 따른다.
+
+\begin{env}[1.3.3]
+\label{I.1.3.3-ko}
+$D(f)=D(g)$이면 보조정리 (\hyperref[I.1.3.2-ko]{1.3.2, b)})에
+따라 $M_f=M_g$이다. 더 일반적으로 $D(f)\supset D(g)$, 따라서
+$S'_f\subset S'_g$이면 함자적인 표준 준동형
+\[
+  \rho_{g,f}:M_f\longrightarrow M_g
+\]
+가 존재함을 알고 있다(\hyperref[0.1.4.1-ko]{0, 1.4.1}). 또한
+$D(f)\supset D(g)\supset D(h)$이면
+(\hyperref[0.1.4.4-ko]{0, 1.4.4})
+\begin{equation}
+  \rho_{h,g}\circ\rho_{g,f}=\rho_{h,f}.
+  \tag{1.3.3.1}\label{I.1.3.3.1-ko}
+\end{equation}
+\end{env}
+
+\oldpage[I]{85}
+주어진 $x\in X=\operatorname{Spec}(A)$에 대하여 $f$가
+$A-\mathfrak{j}_x$를 움직일 때, $S'_f$들은
+$A-\mathfrak{j}_x$의 부분집합들로 이루어진 증가 여과족을 이룬다.
+실제로 $A-\mathfrak{j}_x$의 두 원소 $f$, $g$에 대하여 $S'_f$와
+$S'_g$는 $S'_{fg}$에 포함되고, $f\in A-\mathfrak{j}_x$일 때의
+$S'_f$들의 합집합은 $A-\mathfrak{j}_x$이다. 따라서
+(\hyperref[0.1.4.5-ko]{0, 1.4.5}) $A_x$-가군 $M_x$는 준동형족
+$(\rho_{g,f})$에 관한 귀납극한 $\varinjlim M_f$와 표준적으로
+동일시된다. $f\in A-\mathfrak{j}_x$, 또는 같은 말로
+$x\in D(f)$일 때의 표준 준동형을
+\[
+  \rho_x^f:M_f\longrightarrow M_x
+\]
+로 나타내겠다.
+
+\begin{definition}[1.3.4]
+\label{I.1.3.4-ko}
+$D(f)$($f\in A$)들로 이루어진 $X$의 기저 $\mathfrak{B}$ 위의
+준층 $D(f)\mapsto A_f$(각각 $D(f)\mapsto M_f$)에 대응하는 환의
+층(각각 $\widetilde{A}$-가군)을 소 스펙트럼
+$X=\operatorname{Spec}(A)$의 \emph{구조층}(각각 \emph{$A$-가군
+$M$에 대응하는 층})이라 하고, $\widetilde{A}$ 또는
+$\mathscr{O}_X$(각각 $\widetilde{M}$)로 나타낸다
+((\hyperref[I.1.1.10-ko]{1.1.10}),
+(\hyperref[0.3.2.1-ko]{0, 3.2.1} 및
+\hyperref[0.3.5.6-ko]{3.5.6})).
+\end{definition}
+
+줄기 $\widetilde{A}_x$(각각 $\widetilde{M}_x$)가 환 $A_x$(각각
+$A_x$-가군 $M_x$)와 동일시됨은 이미 보았다
+(\hyperref[0.3.2.4-ko]{0, 3.2.4}). 표준 사상을
+\[
+  \theta_f:A_f\longrightarrow\Gamma(D(f),\widetilde{A})
+\]
+\[
+  \text{(각각 }\theta_f:M_f\longrightarrow
+  \Gamma(D(f),\widetilde{M})\text{)}
+\]
+로 나타내겠다. 그러면 모든 $x\in D(f)$와 모든 $\xi\in M_f$에
+대하여
+\begin{equation}
+  (\theta_f(\xi))_x=\rho_x^f(\xi).
+  \tag{1.3.4.1}\label{I.1.3.4.1-ko}
+\end{equation}
+
+\begin{proposition}[1.3.5]
+\label{I.1.3.5-ko}
+$\widetilde{M}$은 $M$에 관한 완전 공변 함자로서, $A$-가군의
+범주에서 $\widetilde{A}$-가군의 범주로 간다.
+\end{proposition}
+
+실제로 $M$, $N$을 두 $A$-가군, $u:M\to N$을 준동형이라 하자.
+모든 $f\in A$에 대하여 $u$에는 $A_f$-가군 $M_f$에서
+$A_f$-가군 $N_f$로 가는 준동형 $u_f$가 표준적으로 대응하고,
+$D(g)\subset D(f)$일 때 그림
+\[
+  \xymatrix{
+    M_f\ar[r]^{u_f}\ar[d]_{\rho_{g,f}} & N_f\ar[d]^{\rho_{g,f}}\\
+    M_g\ar[r]_{u_g} & N_g
+  }
+\]
+은 가환한다(\hyperref[0.1.4.1-ko]{0, 1.4.1}). 따라서 이 준동형들은
+$\widetilde{A}$-가군 준동형
+$\widetilde{u}:\widetilde{M}\to\widetilde{N}$을 정의한다
+(\hyperref[0.3.2.3-ko]{0, 3.2.3}). 더욱이 모든 $x\in X$에 대하여
+$\widetilde{u}_x$는 $x\in D(f)$($f\in A$)일 때의 $u_f$들의
+귀납극한이다. 따라서 $\widetilde{M}_x$와 $\widetilde{N}_x$를 각각
+$M_x$와 $N_x$에 표준적으로 동일시하면
+(\hyperref[0.1.4.5-ko]{0, 1.4.5}), $\widetilde{u}_x$는 $u$에서
+표준적으로 얻는 준동형 $u_x$와 동일시된다. 이제 $P$를 세 번째
+$A$-가군, $v:N\to P$를 준동형이라 하고 $w=v\circ u$로 놓으면
+$w_x=v_x\circ u_x$이고, 따라서
+$\widetilde{w}=\widetilde{v}\circ\widetilde{u}$임은 자명하다. 이로써
+$M\mapsto\widetilde{M}$을 $A$-가군의 범주에서
+$\widetilde{A}$-가군의 범주로 가는 \emph{공변 함자}로 정의하였다.
+이 함자는 \emph{완전}하다. 실제로 모든 $x\in X$에 대하여 $M_x$는
+$M$에 관한 완전 함자이기 때문이다
+(\hyperref[0.1.3.2-ko]{0, 1.3.2}). 또한 두 지지집합의 정의에 따라
+(\hyperref[0.1.7.1-ko]{0, 1.7.1} 및
+\hyperref[0.3.1.6-ko]{3.1.6})
+$\operatorname{Supp}(M)=\operatorname{Supp}(\widetilde{M})$이다.
+
+\oldpage[I]{86}
+\begin{proposition}[1.3.6]
+\label{I.1.3.6-ko}
+모든 $f\in A$에 대하여 열린집합 $D(f)\subset X$는 소 스펙트럼
+$\operatorname{Spec}(A_f)$와 표준적으로 동일시되고, $A_f$-가군
+$M_f$에 대응하는 층 $\widetilde{M_f}$는 제한
+$\widetilde{M}|D(f)$와 표준적으로 동일시된다.
+\end{proposition}
+
+첫째 명제는 (\hyperref[I.1.2.6-ko]{1.2.6})의 특수한 경우이다.
+더욱이 $D(g)\subset D(f)$인 $g\in A$에 대하여 $M_g$는 분모가
+$A_f$에서 $g$의 표준 상의 거듭제곱인 $M_f$의 분수가군과
+표준적으로 동일시된다(\hyperref[0.1.4.6-ko]{0, 1.4.6}). 이제
+$\widetilde{M_f}$와 $\widetilde{M}|D(f)$의 표준적인 동일시는
+정의에서 따른다.
+
+\begin{theorem}[1.3.7]
+\label{I.1.3.7-ko}
+모든 $A$-가군 $M$과 모든 $f\in A$에 대하여 준동형
+\[
+  \theta_f:M_f\longrightarrow\Gamma(D(f),\widetilde{M})
+\]
+는 전단사이다. 다시 말해 준층 $D(f)\mapsto M_f$는 \emph{층}이다.
+특히 $M$은 $\theta_1$에 의해 $\Gamma(X,\widetilde{M})$와
+동일시된다.
+\end{theorem}
+
+$M=A$이면 $\theta_f$가 환 구조의 준동형임에 유의하자. 따라서
+정리 (\hyperref[I.1.3.7-ko]{1.3.7})에 따라 $\theta_f$를 통하여
+환 $A_f$와 $\Gamma(D(f),\widetilde{A})$를 동일시하면, 준동형
+$\theta_f:M_f\to\Gamma(D(f),\widetilde{M})$는 \emph{가군의 동형}이
+된다.
+
+먼저 $\theta_f$가 \emph{단사}임을 보이자. 실제로
+$\theta_f(\xi)=0$인 $\xi\in M_f$에 대하여, 이는 $A_f$의 모든 소
+아이디얼 $\mathfrak{p}$마다 $h\notin\mathfrak{p}$이고 $h\xi=0$인
+$h$가 존재한다는 뜻이다. 따라서 $\xi$의 소멸자는 $A_f$의 어느 소
+아이디얼에도 포함되지 않으므로 $A_f$ 전체이고, 결국 $\xi=0$이다.
+
+이제 $\theta_f$가 \emph{전사}임을 보이면 된다. 일반적인 경우는
+(\hyperref[I.1.3.6-ko]{1.3.6})을 써서 ``국소화''함으로써 얻으므로
+$f=1$인 경우로 귀착할 수 있다. $s$를 $X$ 위의
+$\widetilde{M}$의 절단이라 하자. (\hyperref[I.1.3.4-ko]{1.3.4})와
+(\hyperref[I.1.1.10-ko]{1.1.10, (ii)})에 따라 $X$의 \emph{유한}
+덮개 $(D(f_i))_{i\in I}$($f_i\in A$)가 존재하여, 모든 $i\in I$에
+대하여 제한 $s_i=s|D(f_i)$는 어떤 $\xi_i\in M_{f_i}$에 대한
+$\theta_{f_i}(\xi_i)$ 꼴이다. $i$, $j$가 $I$의 두 지표이면 $s_i$와
+$s_j$의 $D(f_i)\cap D(f_j)=D(f_i f_j)$로의 제한들이 같다는 조건은
+$\widetilde{M}$의 정의에 따라
+\begin{equation}
+  \rho_{f_i f_j,f_i}(\xi_i)=\rho_{f_i f_j,f_j}(\xi_j).
+  \tag{1.3.7.1}\label{I.1.3.7.1-ko}
+\end{equation}
+이 된다. 정의에 따라 모든 $i\in I$에 대하여
+$\xi_i=z_i/f_i^{n_i}$($z_i\in M$)로 쓸 수 있다. $I$가 유한이므로
+각 $z_i$에 $f_i$의 거듭제곱을 곱하여 모든 $n_i$가 같은 $n$이라고
+가정할 수 있다. 그러면 (\hyperref[I.1.3.7.1-ko]{1.3.7.1})은
+정의에 따라 어떤 정수 $m_{ij}\geq0$에 대하여
+$(f_i f_j)^{m_{ij}}(f_j^n z_i-f_i^n z_j)=0$이라는 뜻이다. 모든
+$m_{ij}$도 같은 정수 $m$이라고 가정할 수 있다. 이제 $z_i$를
+$f_i^m z_i$로 바꾸면 $m=0$인 경우, 즉 모든 $i$, $j$에 대하여
+\begin{equation}
+  f_j^n z_i=f_i^n z_j
+  \tag{1.3.7.2}\label{I.1.3.7.2-ko}
+\end{equation}
+인 경우로 귀착된다. 한편 $D(f_i^n)=D(f_i)$이고 $D(f_i)$들이 $X$를
+덮으므로, $f_i^n$들이 생성하는 아이디얼은 $A$이다. 다시 말해
+$\sum_i g_i f_i^n=1$인 원소 $g_i\in A$들이 존재한다. 이제
+$M$의 원소 $z=\sum_i g_i z_i$를 생각하자. 공식
+(\hyperref[I.1.3.7.2-ko]{1.3.7.2})에 따라
+$f_i^n z=\sum_j g_j f_i^n z_j=(\sum_j g_j f_j^n)z_i=z_i$이고,
+따라서 정의에 따라 $M_{f_i}$에서 $\xi_i=z/1$이다.
+\oldpage[I]{87}
+그러므로 $s_i$는 $\theta_1(z)$의 $D(f_i)$로의 제한이다. 따라서
+$s=\theta_1(z)$이고 증명이 끝난다.
+
+\begin{corollary}[1.3.8]
+\label{I.1.3.8-ko}
+$M$, $N$을 두 $A$-가군이라 하자. 표준 준동형
+\[
+  u\longmapsto\widetilde{u}:
+  \operatorname{Hom}_A(M,N)\longrightarrow
+  \operatorname{Hom}_{\widetilde{A}}(\widetilde{M},\widetilde{N})
+\]
+는 전단사이다. 특히 $M=0$과 $\widetilde{M}=0$은 서로 동치이다.
+\end{corollary}
+
+실제로 표준 준동형
+\[
+  v\longmapsto\Gamma(v):
+  \operatorname{Hom}_{\widetilde{A}}(\widetilde{M},\widetilde{N})
+  \longrightarrow
+  \operatorname{Hom}_{\Gamma(\widetilde{A})}
+  (\Gamma(\widetilde{M}),\Gamma(\widetilde{N}))
+\]
+을 생각하자. 정리 (\hyperref[I.1.3.7-ko]{1.3.7})에 따라 끝의
+가군은 $\operatorname{Hom}_A(M,N)$과 표준적으로 동일시된다.
+$u\mapsto\widetilde{u}$와 $v\mapsto\Gamma(v)$가 서로 역임을 확인하면
+된다. $\widetilde{u}$의 정의에 따라
+$\Gamma(\widetilde{u})=u$임은 자명하다. 반대로
+$v\in\operatorname{Hom}_{\widetilde{A}}(\widetilde{M},\widetilde{N})$에
+대하여 $u=\Gamma(v)$로 놓으면, $v$에서 표준적으로 얻는 사상
+\[
+  w:\Gamma(D(f),\widetilde{M})\longrightarrow
+  \Gamma(D(f),\widetilde{N})
+\]
+에 대하여 그림
+\[
+  \xymatrix{
+    M\ar[r]^u\ar[d]_{\rho_{f,1}} & N\ar[d]^{\rho_{f,1}}\\
+    M_f\ar[r]_w & N_f
+  }
+\]
+은 가환한다. 따라서 모든 $f\in A$에 대하여 반드시 $w=u_f$이고
+(\hyperref[0.1.2.4-ko]{0, 1.2.4}), 이로부터
+$\widetilde{\Gamma(v)}=v$가 따른다.
+
+\begin{corollary}[1.3.9]
+\label{I.1.3.9-ko}
+\begin{enumerate}
+  \item[\rm(i)] $u:M\to N$을 $A$-가군의 준동형이라 하자. 그러면
+  $\operatorname{Ker}u$, $\operatorname{Im}u$,
+  $\operatorname{Coker}u$에 대응하는 층들은 각각
+  $\operatorname{Ker}\widetilde{u}$,
+  $\operatorname{Im}\widetilde{u}$,
+  $\operatorname{Coker}\widetilde{u}$이다. 특히 $\widetilde{u}$가
+  단사(각각 전사, 전단사)이기 위한 필요충분조건은 $u$가
+  단사(각각 전사, 전단사)인 것이다.
+  \item[\rm(ii)] $M$이 $A$-가군족 $(M_\lambda)$의
+  귀납극한(각각 직합)이면, $\widetilde{M}$은 표준 동형을 제외하고
+  $(\widetilde{M_\lambda})$의 귀납극한(각각 직합)이다.
+\end{enumerate}
+\end{corollary}
+
+(i) $\widetilde{M}$이 $M$에 관한 완전 함자라는 사실
+(\hyperref[I.1.3.5-ko]{1.3.5})을 두 $A$-가군의 완전열
+\[
+  0\to\operatorname{Ker}u\to M\to\operatorname{Im}u\to0
+\]
+과
+\[
+  0\to\operatorname{Im}u\to N\to\operatorname{Coker}u\to0
+\]
+에 적용하면 된다. 두 번째 명제는 정리
+(\hyperref[I.1.3.7-ko]{1.3.7})에서 따른다.
+
+(ii) $(M_\lambda,g_{\mu\lambda})$를 귀납극한이 $M$인 $A$-가군의
+귀납계라 하고, $g_\lambda:M_\lambda\to M$을 표준 준동형이라 하자.
+$\lambda\leq\mu\leq\nu$에 대하여
+\[
+  \widetilde{g_{\nu\mu}}\circ\widetilde{g_{\mu\lambda}}
+  =\widetilde{g_{\nu\lambda}},
+  \qquad
+  \widetilde{g_\lambda}=\widetilde{g_\mu}\circ
+  \widetilde{g_{\mu\lambda}}
+\]
+이므로 $(\widetilde{M_\lambda},\widetilde{g_{\mu\lambda}})$는
+$X$ 위 층들의 귀납계이다. 표준 준동형
+\[
+  h_\lambda:\widetilde{M_\lambda}\longrightarrow
+  \varinjlim\widetilde{M_\lambda}
+\]
+를 생각하면
+$v\circ h_\lambda=\widetilde{g_\lambda}$를 만족하는 유일한 준동형
+\[
+  v:\varinjlim\widetilde{M_\lambda}\longrightarrow\widetilde{M}
+\]
+가 존재한다. $v$가 전단사임을 보이려면 모든 $x\in X$에 대하여
+$v_x$가 $(\varinjlim\widetilde{M_\lambda})_x$에서
+$\widetilde{M}_x$ 위로 가는 전단사임을 확인하면 된다. 그런데
+$\widetilde{M}_x=M_x$이고
+\[
+  (\varinjlim\widetilde{M_\lambda})_x
+  =\varinjlim(\widetilde{M_\lambda})_x
+  =\varinjlim(M_\lambda)_x=M_x
+  \quad(\hyperref[0.1.3.3-ko]{0, 1.3.3}).
+\]
+또한 정의에 따라 $(\widetilde{g_\lambda})_x$와 $(h_\lambda)_x$는
+모두 $(M_\lambda)_x$에서 $M_x$로 가는 표준 사상이다. 따라서
+$(\widetilde{g_\lambda})_x=v_x\circ(h_\lambda)_x$이므로 $v_x$는
+항등사상이다.
+\oldpage[I]{88}
+끝으로 $M$이 두 $A$-가군 $N$, $P$의 직합이면
+$\widetilde{M}=\widetilde{N}\oplus\widetilde{P}$임은 자명하다. 모든
+직합은 유한 직합들의 귀납극한이므로 (ii)가 증명되었다.
+
+(\hyperref[I.1.3.8-ko]{1.3.8})에 따라 $A$-가군에 대응하는 층들과
+동형인 층들은 \emph{아벨 범주}를 이룸에 유의하자(T, I, 1.4).
+
+또한 (\hyperref[I.1.3.9-ko]{1.3.9})에서 다음이 따른다. $M$이
+\emph{유한 생성} $A$-가군, 즉 전사 준동형 $A^n\to M$이 존재하는
+가군이면 전사 준동형
+$\widetilde{A^n}\to\widetilde{M}$이 존재한다. 다시 말해
+$\widetilde{A}$-가군 $\widetilde{M}$은 \emph{$X$ 위의 유한한
+절단족에 의해 생성된다}(\hyperref[0.5.1.1-ko]{0, 5.1.1}). 그 역도
+성립한다.
+
+\begin{env}[1.3.10]
+\label{I.1.3.10-ko}
+$N$이 $A$-가군 $M$의 부분가군이면 표준 단사 준동형 $j:N\to M$은
+(\hyperref[I.1.3.9-ko]{1.3.9})에 따라 단사 준동형
+$\widetilde{N}\to\widetilde{M}$을 준다. 이를 통하여
+$\widetilde{N}$을 $\widetilde{M}$의
+\emph{부분-$\widetilde{A}$-가군}과 표준적으로 동일시하며, 앞으로
+항상 이 동일시를 사용하겠다. $N$, $P$가 $M$의 두 부분가군이면
+\begin{equation}
+  \widetilde{(N+P)}=\widetilde{N}+\widetilde{P}
+  \tag{1.3.10.1}\label{I.1.3.10.1-ko}
+\end{equation}
+이고
+\begin{equation}
+  \widetilde{(N\cap P)}=\widetilde{N}\cap\widetilde{P}.
+  \tag{1.3.10.2}\label{I.1.3.10.2-ko}
+\end{equation}
+실제로 $N+P$와 $N\cap P$는 각각 표준 준동형
+$N\oplus P\to M$의 상과 표준 준동형
+$M\to(M/N)\oplus(M/P)$의 핵이므로
+(\hyperref[I.1.3.9-ko]{1.3.9})를 적용하면 된다.
+
+(\hyperref[I.1.3.10.1-ko]{1.3.10.1})과
+(\hyperref[I.1.3.10.2-ko]{1.3.10.2})에 따라
+$\widetilde{N}=\widetilde{P}$이면 $N=P$이다.
+\end{env}
+
+\begin{corollary}[1.3.11]
+\label{I.1.3.11-ko}
+$A$-가군에 대응하는 층들과 동형인 층들의 범주에서 함자 $\Gamma$는
+완전하다.
+\end{corollary}
+
+실제로 $A$-가군 준동형 $u:M\to N$, $v:N\to P$에 대응하는 완전열
+\[
+  \widetilde{M}\xrightarrow{\widetilde{u}}\widetilde{N}
+  \xrightarrow{\widetilde{v}}\widetilde{P}
+\]
+을 생각하자. $Q=\operatorname{Im}u$, $R=\operatorname{Ker}v$로
+놓으면 따름정리 (\hyperref[I.1.3.9-ko]{1.3.9})에 따라
+\[
+  \widetilde{Q}=\operatorname{Im}\widetilde{u}
+  =\operatorname{Ker}\widetilde{v}=\widetilde{R},
+\]
+따라서 $Q=R$이다.
+
+\begin{corollary}[1.3.12]
+\label{I.1.3.12-ko}
+$M$, $N$을 두 $A$-가군이라 하자.
+\begin{enumerate}
+  \item[\rm(i)] $M\otimes_A N$에 대응하는 층은
+  $\widetilde{M}\otimes_{\widetilde{A}}\widetilde{N}$과 표준적으로
+  동일시된다.
+  \item[\rm(ii)] 더욱이 $M$이 유한 표시를 가지면
+  $\operatorname{Hom}_A(M,N)$에 대응하는 층은
+  $\mathscr{H}\!om_{\widetilde{A}}(\widetilde{M},\widetilde{N})$과
+  표준적으로 동일시된다.
+\end{enumerate}
+\end{corollary}
+
+(i) 층
+$\mathscr{F}=\widetilde{M}\otimes_{\widetilde{A}}\widetilde{N}$은
+$X$에서 $D(f)$($f\in A$)들로 이루어진 기저
+(\hyperref[I.1.1.10-ko]{1.1.10, (i)}) 위의 준층
+\[
+  U\longmapsto\mathscr{F}(U)=\Gamma(U,\widetilde{M})
+  \otimes_{\Gamma(U,\widetilde{A})}\Gamma(U,\widetilde{N})
+\]
+에 대응한다. 그런데 (\hyperref[I.1.3.7-ko]{1.3.7})과
+(\hyperref[I.1.3.6-ko]{1.3.6})에 따라 $\mathscr{F}(D(f))$는
+$M_f\otimes_{A_f}N_f$와 표준적으로 동일시된다. 한편 이
+$A_f$-가군은 $(M\otimes_A N)_f$와 표준적으로 동형이고
+(\hyperref[0.1.3.4-ko]{0, 1.3.4}), 다시 이는
+$\Gamma(D(f),\widetilde{(M\otimes_A N)})$과 표준적으로 동형이다
+(\hyperref[I.1.3.7-ko]{1.3.7} 및
+\hyperref[I.1.3.6-ko]{1.3.6}). 또한 이렇게 얻은 표준 동형
+\[
+  \mathscr{F}(D(f))\simeq
+  \Gamma(D(f),\widetilde{(M\otimes_A N)})
+\]
+\oldpage[I]{89}
+들은 제한 준동형과의 양립 조건을 만족한다
+(\hyperref[0.1.4.2-ko]{0, 1.4.2}). 따라서 이들은 함자적인 표준 동형
+\[
+  \widetilde{M}\otimes_{\widetilde{A}}\widetilde{N}
+  \simeq\widetilde{(M\otimes_A N)}
+\]
+을 정의한다.
+
+(ii) 층
+$\mathscr{G}=\mathscr{H}\!om_{\widetilde{A}}(\widetilde{M},
+\widetilde{N})$은 $D(f)$들로 이루어진 $X$의 기저 위의 준층
+\[
+  U\longmapsto\mathscr{G}(U)
+  =\operatorname{Hom}_{\widetilde{A}|U}
+  (\widetilde{M}|U,\widetilde{N}|U)
+\]
+에 대응한다. 그런데 $\mathscr{G}(D(f))$는
+$\operatorname{Hom}_{A_f}(M_f,N_f)$와 표준적으로 동일시된다
+(\hyperref[I.1.3.6-ko]{1.3.6} 및
+\hyperref[I.1.3.8-ko]{1.3.8}). 이는 $M$에 관한 가정에 따라 다시
+$(\operatorname{Hom}_A(M,N))_f$와 표준적으로 동일시되고
+(\hyperref[0.1.3.5-ko]{0, 1.3.5}), 끝으로
+$(\operatorname{Hom}_A(M,N))_f$는
+$\Gamma(D(f),\widetilde{(\operatorname{Hom}_A(M,N))})$과
+표준적으로 동일시된다(\hyperref[I.1.3.6-ko]{1.3.6} 및
+\hyperref[I.1.3.7-ko]{1.3.7}). 이렇게 얻은 표준 동형
+\[
+  \mathscr{G}(D(f))\simeq
+  \Gamma(D(f),\widetilde{(\operatorname{Hom}_A(M,N))})
+\]
+들은 제한 준동형과 양립하므로
+(\hyperref[0.1.4.2-ko]{0, 1.4.2}) 표준 동형
+\[
+  \mathscr{H}\!om_{\widetilde{A}}(\widetilde{M},\widetilde{N})
+  \simeq\widetilde{(\operatorname{Hom}_A(M,N))}
+\]
+을 정의한다.
+
+\begin{env}[1.3.13]
+\label{I.1.3.13-ko}
+이제 $B$를 (가환) $A$-대수라 하자. 이는 $B$가 $A$-가군이고,
+한 원소 $e\in B$와 $A$-준동형
+$\varphi:B\otimes_A B\to B$가 주어져 다음 조건들을 만족한다고
+해석할 수 있다. $1^\circ$ 그림
+\[
+  \xymatrix{
+    B\otimes_A B\otimes_A B\ar[r]^{\varphi\otimes 1}
+      \ar[d]_{1\otimes\varphi} &
+    B\otimes_A B\ar[d]^\varphi & &
+    B\otimes_A B\ar[rr]^\sigma\ar[rd]_\varphi & &
+    B\otimes_A B\ar[dl]^\varphi\\
+    B\otimes_A B\ar[r]_\varphi &
+    B & & & B
+  }
+\]
+들이 가환한다($\sigma$는 표준 대칭사상). $2^\circ$
+$\varphi(e\otimes x)=\varphi(x\otimes e)=x$이다. 따름정리
+(\hyperref[I.1.3.12-ko]{1.3.12})에 따라 $\widetilde{A}$-가군의
+준동형
+\[
+  \widetilde{\varphi}:
+  \widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}
+  \longrightarrow\widetilde{B}
+\]
+도 같은 조건들을 만족하므로 $\widetilde{B}$에
+$\widetilde{A}$-대수 구조를 정의한다. 마찬가지로 $B$-가군 $N$을
+주는 것은 $A$-가군 $N$과, 그림
+\[
+  \xymatrix{
+    B\otimes_A B\otimes_A N\ar[r]^{\varphi\otimes 1}
+      \ar[d]_{1\otimes\psi} &
+    B\otimes_A N\ar[d]^\psi\\
+    B\otimes_A N\ar[r]_\psi & N
+  }
+\]
+이 가환하고 $\psi(e\otimes n)=n$을 만족하는 $A$-준동형
+$\psi:B\otimes_A N\to N$을 주는 것과 같다. 준동형
+\[
+  \widetilde{\psi}:
+  \widetilde{B}\otimes_{\widetilde{A}}\widetilde{N}
+  \longrightarrow\widetilde{N}
+\]
+도 같은 조건을 만족하므로 $\widetilde{N}$에
+$\widetilde{B}$-가군 구조를 정의한다.
+
+같은 방식으로 다음을 알 수 있다. $u:B\to B'$가 $A$-대수의
+준동형(각각 $v:N\to N'$이 $B$-가군의 준동형)이면
+$\widetilde{u}$는 $\widetilde{A}$-대수의 준동형(각각
+$\widetilde{v}$는 $\widetilde{B}$-가군의 준동형)이고,
+$\operatorname{Ker}\widetilde{u}$는 $\widetilde{B}$-아이디얼이며
+(각각 $\operatorname{Ker}\widetilde{v}$,
+$\operatorname{Coker}\widetilde{v}$,
+$\operatorname{Im}\widetilde{v}$는 $\widetilde{B}$-가군이다).
+$N$이 $B$-가군이면 $\widetilde{N}$이 유한 생성
+$\widetilde{B}$-가군이기 위한 필요충분조건은 $N$이 유한 생성
+$B$-가군인 것이다(\hyperref[0.5.2.3-ko]{0, 5.2.3}).
+\oldpage[I]{90}
+$M$, $N$이 두 $B$-가군이면 $\widetilde{B}$-가군
+$\widetilde{M}\otimes_{\widetilde{B}}\widetilde{N}$은
+$\widetilde{(M\otimes_B N)}$과 표준적으로 동일시된다. 또한 $M$이
+유한 표시를 가지면
+$\mathscr{H}\!om_{\widetilde{B}}(\widetilde{M},\widetilde{N})$은
+$\widetilde{(\operatorname{Hom}_B(M,N))}$과 표준적으로 동일시된다.
+증명은 (\hyperref[I.1.3.12-ko]{1.3.12})와 같다.
+
+$\mathfrak{J}$가 $B$의 아이디얼이고 $N$이 $B$-가군이면
+\[
+  \widetilde{(\mathfrak{J}N)}
+  =\widetilde{\mathfrak{J}}\cdot\widetilde{N}.
+\]
+
+끝으로 $B$가 부분-$A$-가군 $B_n$($n\in\mathbb{Z}$)들로 등급이
+매겨진 $A$-대수이면, $\widetilde{A}$-가군
+$\widetilde{B_n}$들의 직합인 $\widetilde{A}$-대수
+$\widetilde{B}$(\hyperref[I.1.3.9-ko]{1.3.9})도 이
+부분-$\widetilde{A}$-가군들로 등급이 매겨진다. 실제로 등급 공리는
+준동형 $B_m\otimes_A B_n\to B$의 상이 $B_{m+n}$에 포함된다는
+조건으로 표현된다. 마찬가지로 $M$이 부분가군 $M_n$들로 등급이
+매겨진 $B$-가군이면, $\widetilde{M}$은
+$\widetilde{M_n}$들로 등급이 매겨진 $\widetilde{B}$-가군이다.
+\end{env}
+
+\begin{env}[1.3.14]
+\label{I.1.3.14-ko}
+$B$가 $A$-대수이고 $M$이 $B$의 부분가군이면,
+$\widetilde{M}$이 생성하는 $\widetilde{B}$의
+부분-$\widetilde{A}$-대수(\hyperref[0.4.1.3-ko]{0, 4.1.3})는
+$\widetilde{C}$이다. 여기서 $C$는 $M$이 생성하는 $B$의 부분대수이다.
+실제로 $C$는 준동형 $\bigotimes_A^n M\to B$($n\geq0$)의 상인
+$B$의 부분가군들의 합이고, (\hyperref[I.1.3.9-ko]{1.3.9})와
+(\hyperref[I.1.3.12-ko]{1.3.12})를 적용하면 된다.
+\end{env}
+
+\subsection{소 스펙트럼 위의 준연접층}
+\label{subsection:I.1.4-ko}
+
+\begin{theorem}[1.4.1]
+\label{I.1.4.1-ko}
+$X$를 환 $A$의 소 스펙트럼, $V$를 $X$의 준콤팩트 열린 부분집합,
+$\mathscr{F}$를 $(\mathscr{O}_X|V)$-가군이라 하자. 다음 네 조건은
+서로 동치이다.
+\begin{enumerate}
+  \item[\textit{a})] $\mathscr{F}$가 $\widetilde{M}|V$와 동형이 되는
+  $A$-가군 $M$이 존재한다.
+  \item[\textit{b})] $V$에 포함되고 $D(f_i)$($f_i\in A$) 꼴인
+  집합들로 이루어진 $V$의 유한 열린 덮개 $(V_i)$가 존재하여, 모든
+  $i$에 대하여 $\mathscr{F}|V_i$는 어떤 $A_{f_i}$-가군 $M_i$에
+  대응하는 층 $\widetilde{M_i}$와 동형이다.
+  \item[\textit{c})] 층 $\mathscr{F}$는 준연접이다
+  (\hyperref[0.5.1.3-ko]{0, 5.1.3}).
+  \item[\textit{d})] 다음 두 성질이 성립한다.
+  \begin{enumerate}
+    \item[\textit{d}\,1)] $D(f)\subset V$인 모든 $f\in A$와 모든 절단
+    $s\in\Gamma(D(f),\mathscr{F})$에 대하여, $f^n s$가 $V$ 위의
+    $\mathscr{F}$의 절단으로 연장되는 정수 $n\geq0$이 존재한다.
+    \item[\textit{d}\,2)] $D(f)\subset V$인 모든 $f\in A$와,
+    $D(f)$로의 제한이 $0$인 모든 절단
+    $t\in\Gamma(V,\mathscr{F})$에 대하여, $f^n t=0$인 정수
+    $n\geq0$이 존재한다.
+  \end{enumerate}
+\end{enumerate}
+\end{theorem}
+
+(조건 \textit{d}\,1)과 \textit{d}\,2)를 쓸 때에는
+(\hyperref[I.1.3.7-ko]{1.3.7})에 따라 $A$와
+$\Gamma(\widetilde{A})$를 암묵적으로 동일시하였다.)
+
+\textit{a})가 \textit{b})를 함의함은
+(\hyperref[I.1.3.6-ko]{1.3.6})과 $D(f_i)$들이 $X$의 위상의 기저를
+이룬다는 사실(\hyperref[I.1.1.10-ko]{1.1.10})에서 바로 따른다.
+모든 $A$-가군은 어떤 준동형 $A^{(I)}\to A^{(J)}$의 여핵과
+동형이므로, (\hyperref[I.1.3.9-ko]{1.3.9})에 따라 모든 $A$-가군에
+대응하는 층은 준연접이다. 따라서 \textit{b})는 \textit{c})를
+함의한다. 역으로 $\mathscr{F}$가 준연접이면 모든 $x\in V$는 다음
+성질을 갖는 $D(f)\subset V$ 꼴의 근방을 가진다. 즉,
+$\mathscr{F}|D(f)$는 어떤 준동형
+$\widetilde{A_f}^{(I)}\to\widetilde{A_f}^{(J)}$의 여핵과 동형이고,
+따라서 이에 대응하는 준동형 $A_f^{(I)}\to A_f^{(J)}$의 여핵인
+가군 $N$에 대응하는 층 $\widetilde{N}$과 동형이다
+(\hyperref[I.1.3.8-ko]{1.3.8} 및
+\hyperref[I.1.3.9-ko]{1.3.9}). $V$가 준콤팩트이므로
+\textit{c})가 \textit{b})를 함의함은 자명하다.
+\oldpage[I]{91}
+\textit{b})가 \textit{d}\,1)과 \textit{d}\,2)를 함의함을
+증명하기 위해 먼저 어떤 $g\in A$에 대하여 $V=D(g)$이고,
+$\mathscr{F}$가 $A_g$-가군 $N$에 대응하는 층
+$\widetilde{N}$과 동형이라고 하자. $X$를 $V$로, $A$를 $A_g$로
+바꾸면(\hyperref[I.1.3.6-ko]{1.3.6}) $g=1$인 경우로 귀착할 수
+있다. 그러면 $\Gamma(D(f),\widetilde{N})$과 $N_f$는 표준적으로
+동일시된다(\hyperref[I.1.3.6-ko]{1.3.6} 및
+\hyperref[I.1.3.7-ko]{1.3.7}). 따라서 절단
+$s\in\Gamma(D(f),\widetilde{N})$는 $z\in N$인 $z/f^n$ 꼴의
+원소와 동일시된다. 절단 $f^n s$는 $N_f$의 원소 $z/1$과
+동일시되고, 따라서 $z\in N$과 동일시되는 $X$ 위의
+$\widetilde{N}$의 절단을 $D(f)$로 제한한 것이다. 이로써 이 경우의
+\textit{d}\,1)을 얻는다. 마찬가지로
+$t\in\Gamma(X,\widetilde{N})$는 어떤 원소 $z'\in N$과 동일시된다.
+$t$의 $D(f)$로의 제한은 $N_f$에서 $z'$의 상 $z'/1$과 동일시되고,
+이 상이 $0$이라는 것은 $N$에서 $f^n z'=0$인 어떤 $n\geq0$이
+존재한다는 뜻이다. 이는 $f^n t=0$과 같다.
+
+\textit{b})가 \textit{d}\,1)과 \textit{d}\,2)를 함의함을
+마치려면 다음 보조정리를 증명하면 충분하다.
+
+\begin{lemma}[1.4.1.1]
+\label{I.1.4.1.1-ko}
+$V$가 $D(g_i)$ 꼴의 집합들의 유한 합집합이고, 각 층
+$\mathscr{F}|D(g_i)$와
+$\mathscr{F}|(D(g_i)\cap D(g_j))=\mathscr{F}|D(g_i g_j)$가
+\textit{d}\,1)과 \textit{d}\,2)를 만족한다고 하자. 그러면
+$\mathscr{F}$는 다음 두 성질을 갖는다.
+\begin{enumerate}
+  \item[\textit{d}'\,1)] 모든 $f\in A$와 모든 절단
+  $s\in\Gamma(D(f)\cap V,\mathscr{F})$에 대하여, $f^n s$가
+  $V$ 위의 $\mathscr{F}$의 절단으로 연장되는 정수 $n\geq0$이
+  존재한다.
+  \item[\textit{d}'\,2)] 모든 $f\in A$와, $D(f)\cap V$로의 제한이
+  $0$인 모든 절단 $t\in\Gamma(V,\mathscr{F})$에 대하여,
+  $f^n t=0$인 정수 $n\geq0$이 존재한다.
+\end{enumerate}
+\end{lemma}
+
+먼저 \textit{d}'\,2)를 증명하자. $D(f)\cap D(g_i)=D(fg_i)$이므로
+모든 $i$에 대하여 $(fg_i)^{n_i}t$의 $D(g_i)$로의 제한이 $0$인
+정수 $n_i$가 존재한다. $A_{g_i}$에서 $g_i$의 상은 가역원이므로
+$f^{n_i}t$의 $D(g_i)$로의 제한도 $0$이다. $n$을 $n_i$들의
+최댓값으로 취하면 \textit{d}'\,2)를 얻는다.
+
+\textit{d}'\,1)을 증명하기 위해 층 $\mathscr{F}|D(g_i)$에
+\textit{d}\,1)을 적용하자. 그러면 정수 $n_i\geq0$과
+$D(g_i)$ 위의 $\mathscr{F}$의 절단 $s_i'$이 존재하여,
+$s_i'$은 $(fg_i)^{n_i}s$의 $D(fg_i)$로의 제한을 연장한다.
+$A_{g_i}$에서 $g_i$의 상이 가역원이므로, $s_i'=g_i^{n_i}s_i$이고
+$f^{n_i}s$의 $D(fg_i)$로의 제한을 연장하는 $D(g_i)$ 위의 절단
+$s_i$가 존재한다. 모든 $n_i$가 같은 정수 $n$이라고 가정할 수도
+있다. 구성에 따라 $s_i-s_j$의
+$D(f)\cap D(g_i)\cap D(g_j)=D(fg_i g_j)$로의 제한은 $0$이다.
+층 $\mathscr{F}|D(g_i g_j)$에 \textit{d}\,2)를 적용하면,
+$(fg_i g_j)^{m_{ij}}(s_i-s_j)$의 $D(g_i g_j)$로의 제한이 $0$인
+정수 $m_{ij}\geq0$이 존재한다. $A_{g_i g_j}$에서 $g_i g_j$의 상이
+가역원이므로 $f^{m_{ij}}(s_i-s_j)$의 $D(g_i g_j)$로의 제한도
+$0$이다. 모든 $m_{ij}$가 같은 정수 $m$이라고 가정할 수 있다.
+그러면 $f^m s_i$들을 연장하는 절단
+$s'\in\Gamma(V,\mathscr{F})$가 존재하고, 이 절단은
+$f^{n+m}s$를 연장한다. 이로써 \textit{d}'\,1)을 얻는다.
+
+이제 \textit{d}\,1)과 \textit{d}\,2)가 \textit{a})를
+함의함을 증명하면 된다. 먼저 이 두 조건이, $D(g)\subset V$인 모든
+$g\in A$에 대하여 층 $\mathscr{F}|D(g)$에도 성립함을 보이자.
+\textit{d}\,1)에 대해서는 자명하다. 한편
+$t\in\Gamma(D(g),\mathscr{F})$이고 그 $D(f)\subset D(g)$로의
+제한이 $0$이라고 하자. \textit{d}\,1)에 따라 $g^m t$가 $V$ 위의
+$\mathscr{F}$의 절단 $s$로 연장되는 정수 $m\geq0$이 존재한다.
+\oldpage[I]{92}
+\textit{d}\,2)를 적용하면 $f^n g^m t=0$인 정수 $n\geq0$이
+존재한다. $A_g$에서 $g$의 상이 가역원이므로 $f^n t=0$이다.
+
+이제 $V$가 준콤팩트이므로 보조정리
+(\hyperref[I.1.4.1.1-ko]{1.4.1.1})에 따라 조건
+\textit{d}'\,1)과 \textit{d}'\,2)가 성립한다. $A$-가군
+$M=\Gamma(V,\mathscr{F})$을 생각하자. $j:V\to X$를 표준
+포함사상이라 하고 $\widetilde{A}$-가군 준동형
+\[
+  u:\widetilde{M}\longrightarrow j_*(\mathscr{F})
+\]
+을 정의하겠다. $D(f)$들이 $X$의 위상의 기저를 이루므로, 모든
+$f\in A$에 대하여 통상적인 양립 조건
+(\hyperref[0.3.2.5-ko]{0, 3.2.5})을 만족하는 준동형
+\[
+  u_f:M_f\longrightarrow
+  \Gamma(D(f),j_*(\mathscr{F}))
+  =\Gamma(D(f)\cap V,\mathscr{F})
+\]
+을 정의하면 충분하다. $A_f$에서 $f$의 표준 상이 가역원이므로 제한
+준동형
+\[
+  M=\Gamma(V,\mathscr{F})\longrightarrow
+  \Gamma(D(f)\cap V,\mathscr{F})
+\]
+은 다음과 같이 분해된다
+(\hyperref[0.1.2.4-ko]{0, 1.2.4}).
+\[
+  M\longrightarrow M_f\xrightarrow{u_f}
+  \Gamma(D(f)\cap V,\mathscr{F}).
+\]
+$D(g)\subset D(f)$에 대한 양립 조건은 바로 확인된다.
+\textit{d}'\,1)(각각 \textit{d}'\,2))이 모든 $u_f$가
+전사(각각 단사)임을 함의함을 보이면 $u$가 \emph{전단사}이고,
+따라서 $\mathscr{F}$는 $\widetilde{M}|V$와 동형이다. 그런데
+$s\in\Gamma(D(f)\cap V,\mathscr{F})$이면 \textit{d}'\,1)에 따라
+$f^n s$가 어떤 절단 $z\in M$으로 연장되는 정수 $n\geq0$이
+존재한다. 그러면 $u_f(z/f^n)=s$이므로 $u_f$는 전사이다. 마찬가지로
+$u_f(z/1)=0$인 $z\in M$에 대하여, 이는 절단 $z$의
+$D(f)\cap V$로의 제한이 $0$이라는 뜻이다. \textit{d}'\,2)에 따라
+$f^n z=0$인 정수 $n\geq0$이 존재하므로 $M_f$에서 $z/1=0$이고,
+따라서 $u_f$는 단사이다.
+
+\par\hfill C.Q.F.D.\par
+
+\begin{corollary}[1.4.2]
+\label{I.1.4.2-ko}
+$X$의 준콤팩트 열린집합 위의 모든 준연접층은 $X$ 위의 어떤
+준연접층으로부터 유도된다.
+\end{corollary}
+
+\begin{corollary}[1.4.3]
+\label{I.1.4.3-ko}
+$X=\operatorname{Spec}(A)$ 위의 모든 준연접
+$\mathscr{O}_X$-대수는 어떤 $A$-대수 $B$에 대한
+$\widetilde{B}$ 꼴의 $\mathscr{O}_X$-대수와 동형이다. 모든 준연접
+$\widetilde{B}$-가군은 어떤 $B$-가군 $N$에 대한
+$\widetilde{N}$ 꼴의 $\widetilde{B}$-가군과 동형이다.
+\end{corollary}
+
+실제로 준연접 $\mathscr{O}_X$-대수는 준연접
+$\mathscr{O}_X$-가군이므로, 어떤 $A$-가군 $B$에 대한
+$\widetilde{B}$ 꼴이다. $B$가 $A$-대수라는 것은
+$\widetilde{A}$-가군 준동형
+\[
+  \widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}
+  \longrightarrow\widetilde{B}
+\]
+을 써서 $\mathscr{O}_X$-대수 구조를 특징짓는 것과
+(\hyperref[I.1.3.12-ko]{1.3.12})에서 따른다. $\mathscr{G}$가 준연접
+$\widetilde{B}$-가군이면 $\mathscr{G}$가 준연접
+$\widetilde{A}$-가군임을 보이기만 하면 같은 방식으로 결론을 얻는다.
+문제는 국소적이므로 $X$의 $D(f)$ 꼴 열린집합으로 제한하여
+$\mathscr{G}$가 $\widetilde{B}$-가군(따라서 특히
+$\widetilde{A}$-가군)의 준동형
+\[
+  \widetilde{B}^{(I)}\longrightarrow\widetilde{B}^{(J)}
+\]
+의 여핵이라고 가정할 수 있다. 이제 명제는
+(\hyperref[I.1.3.8-ko]{1.3.8})과
+(\hyperref[I.1.3.9-ko]{1.3.9})에서 따른다.
+
+\subsection{소 스펙트럼 위의 연접층}
+\label{subsection:I.1.5-ko}
+
+\begin{theorem}[1.5.1]
+\label{I.1.5.1-ko}
+$A$를 \emph{뇌터 환}, $X=\operatorname{Spec}(A)$를 그 소 스펙트럼,
+$V$를 $X$의 열린 부분집합, $\mathscr{F}$를
+$(\mathscr{O}_X|V)$-가군이라 하자. 다음 조건들은 서로 동치이다.
+\begin{enumerate}
+  \item[\textit{a})] $\mathscr{F}$는 연접이다.
+  \item[\textit{b})] $\mathscr{F}$는 유한 생성이고 준연접이다.
+  \item[\textit{c})] $\mathscr{F}$가 층 $\widetilde{M}|V$와 동형이
+  되는 유한 생성 $A$-가군 $M$이 존재한다.
+\end{enumerate}
+\end{theorem}
+
+\oldpage[I]{93}
+\textit{a})가 \textit{b})를 함의함은 자명하다. \textit{b})가
+\textit{c})를 함의함을 보이자. $V$는 준콤팩트이므로
+(\hyperref[0.2.2.3-ko]{0, 2.2.3}), 먼저 $\mathscr{F}$는 어떤
+$A$-가군 $N$에 대한 층 $\widetilde{N}|V$와 동형이다
+(\hyperref[I.1.4.1-ko]{1.4.1}). 그런데 $M_\lambda$가 $N$의 유한 생성
+부분-$A$-가군 전체를 달릴 때
+$N=\varinjlim M_\lambda$이므로, (\hyperref[I.1.3.9-ko]{1.3.9})에 따라
+\[
+  \mathscr{F}=\widetilde{N}|V
+  =\varinjlim\widetilde{M_\lambda}|V.
+\]
+한편 $\mathscr{F}$는 유한 생성이고 $V$는 준콤팩트이므로 어떤 지표
+$\lambda$에 대하여
+$\mathscr{F}=\widetilde{M_\lambda}|V$이다
+(\hyperref[0.5.2.3-ko]{0, 5.2.3}).
+
+끝으로 \textit{c})가 \textit{a})를 함의함을 보이자.
+$\mathscr{F}$가 유한 생성임은 분명하다
+(\hyperref[I.1.3.6-ko]{1.3.6} 및
+\hyperref[I.1.3.9-ko]{1.3.9}). 또한 문제는 국소적이므로
+$V=D(f)$($f\in A$)인 경우만 생각하면 된다. $A_f$는 뇌터 환이므로
+$A$를 $A_f$로 바꾸어, 결국 $M$이 $A$-가군일 때 준동형
+$\widetilde{A^n}\to\widetilde{M}$의 핵이 유한 생성임을 증명하면
+충분하다. 이러한 준동형은 어떤 준동형 $u:A^n\to M$에 대한
+$\widetilde{u}$ 꼴이다(\hyperref[I.1.3.8-ko]{1.3.8}).
+$P=\operatorname{Ker}u$라 놓으면
+\[
+  \widetilde{P}=\operatorname{Ker}\widetilde{u}
+\]
+이다(\hyperref[I.1.3.9-ko]{1.3.9}). $A$가 뇌터 환이므로 $P$는
+유한 생성이고, 이로써 증명이 끝난다.
+
+\begin{corollary}[1.5.2]
+\label{I.1.5.2-ko}
+(\hyperref[I.1.5.1-ko]{1.5.1})의 가정 아래에서 층
+$\mathscr{O}_X$는 연접인 환의 층이다.
+\end{corollary}
+
+\begin{corollary}[1.5.3]
+\label{I.1.5.3-ko}
+(\hyperref[I.1.5.1-ko]{1.5.1})의 가정 아래에서 $X$의 열린집합 위의
+모든 연접층은 $X$ 위의 어떤 연접층으로부터 유도된다.
+\end{corollary}
+
+\begin{corollary}[1.5.4]
+\label{I.1.5.4-ko}
+(\hyperref[I.1.5.1-ko]{1.5.1})의 가정 아래에서 모든 준연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$는 $\mathscr{F}$의 연접
+부분-$\mathscr{O}_X$-가군들의 귀납극한이다.
+\end{corollary}
+
+실제로 $\mathscr{F}=\widetilde{M}$인 $A$-가군 $M$이 존재하고,
+$M$은 그 유한 생성 부분가군들의 귀납극한이다. 이제
+(\hyperref[I.1.3.9-ko]{1.3.9})와
+(\hyperref[I.1.5.1-ko]{1.5.1})을 적용하면 된다.
+
+\subsection{소 스펙트럼 위의 준연접층의 함자적 성질}
+\label{subsection:I.1.6-ko}
+
+\begin{env}[1.6.1]
+\label{I.1.6.1-ko}
+$A$, $A'$을 두 환,
+\[
+  \varphi:A'\to A
+\]
+를 준동형,
+\[
+  {}^a\varphi:X=\operatorname{Spec}(A)\to
+  X'=\operatorname{Spec}(A')
+\]
+를 $\varphi$에 대응하는 연속사상이라 하자
+(\hyperref[I.1.2.1-ko]{1.2.1}). 환의 층의 \emph{표준 준동형}
+\[
+  \widetilde{\varphi}:\mathscr{O}_{X'}\to
+  {}^a\varphi_*(\mathscr{O}_X)
+\]
+을 정의하겠다. 모든 $f'\in A'$에 대하여 $f=\varphi(f')$로 놓자.
+그러면
+${}^a\varphi^{-1}(D(f'))=D(f)$이다
+(\hyperref[I.1.2.2.2-ko]{1.2.2.2}). 환
+$\Gamma(D(f'),\widetilde{A'})$와
+$\Gamma(D(f),\widetilde{A})$는 각각 $A'_{f'}$와 $A_f$와 동일시된다
+(\hyperref[I.1.3.6-ko]{1.3.6} 및
+\hyperref[I.1.3.7-ko]{1.3.7}). 한편 준동형 $\varphi$는 표준적으로
+준동형 $\varphi_{f'}:A'_{f'}\to A_f$를 정의한다
+(\hyperref[0.1.5.1-ko]{0, 1.5.1}). 다시 말해 환 준동형
+\[
+  \Gamma(D(f'),\widetilde{A'})\to
+  \Gamma({}^a\varphi^{-1}(D(f')),\widetilde{A})
+  =\Gamma(D(f'),{}^a\varphi_*(\widetilde{A}))
+\]
+이 존재한다.
+
+\oldpage[I]{94}
+또한 이 준동형들은 통상적인 양립 조건을 만족한다. 즉,
+$D(f')\supset D(g')$일 때 그림
+\[
+  \xymatrix{
+    \Gamma(D(f'),\widetilde{A'})\ar[r]\ar[d] &
+    \Gamma(D(f'),{}^a\varphi_*(\widetilde{A}))\ar[d]\\
+    \Gamma(D(g'),\widetilde{A'})\ar[r] &
+    \Gamma(D(g'),{}^a\varphi_*(\widetilde{A}))
+  }
+\]
+은 가환이다(\hyperref[0.1.5.1-ko]{0, 1.5.1}). $D(f')$들이
+$X'$의 위상의 기저를 이루므로
+(\hyperref[0.3.2.3-ko]{0, 3.2.3}), 이로써
+$\mathscr{O}_{X'}$-대수의 준동형을 정의하였다. 따라서 쌍
+$\Phi=({}^a\varphi,\widetilde{\varphi})$는 환 달린 공간의 사상
+\[
+  \Phi:(X,\mathscr{O}_X)\to(X',\mathscr{O}_{X'})
+\]
+이다(\hyperref[0.4.1.1-ko]{0, 4.1.1}).
+
+더욱이 $x'={}^a\varphi(x)$로 놓으면 준동형
+$\widetilde{\varphi}_x^\#$
+(\hyperref[0.3.7.1-ko]{0, 3.7.1})은 바로 $\varphi:A'\to A$에서
+표준적으로 유도되는 준동형
+\[
+  \varphi_x:A'_{x'}\to A_x
+\]
+이다(\hyperref[0.1.5.1-ko]{0, 1.5.1}). 실제로 모든
+$z'\in A'_{x'}$은 $f',g'\in A'$이고
+$f'\notin\mathfrak{j}_{x'}$인 $g'/f'$ 꼴로 쓸 수 있다. 따라서
+$D(f')$는 $X'$에서 $x'$의 근방이고, $\widetilde{\varphi}$에서
+유도되는 준동형
+$\Gamma(D(f'),\widetilde{A'})\to
+\Gamma({}^a\varphi^{-1}(D(f')),\widetilde{A})$은
+$\varphi_{f'}$와 같다. $g'/f'\in A'_{f'}$에 대응하는 절단
+$s'\in\Gamma(D(f'),\widetilde{A'})$을 생각하면 $A_x$에서
+$\widetilde{\varphi}_x^\#(z')=\varphi(g')/\varphi(f')$을 얻는다.
+\end{env}
+
+\begin{example}[1.6.2]
+\label{I.1.6.2-ko}
+$S$를 $A$의 곱셈적 부분집합, $\varphi$를 표준 준동형
+$A\to S^{-1}A$라 하자. 앞서
+(\hyperref[I.1.2.6-ko]{1.2.6})에서 ${}^a\varphi$가
+$Y=\operatorname{Spec}(S^{-1}A)$에서
+$X=\operatorname{Spec}(A)$의 부분공간
+\[
+  \{x\in X\mid\mathfrak{j}_x\cap S=\varnothing\}
+\]
+으로 가는 \emph{위상동형}임을 보았다. 또한 이 부분공간의 모든
+$x={}^a\varphi(y)$($y\in Y$)에 대하여 준동형
+$\widetilde{\varphi}_y^\#:\mathscr{O}_x\to\mathscr{O}_y$는
+\emph{전단사}이다(\hyperref[0.1.2.6-ko]{0, 1.2.6}). 다시 말해
+$\mathscr{O}_Y$는 $\mathscr{O}_X$가 $Y$ 위에 유도하는 층과
+동일시된다.
+\end{example}
+
+\begin{proposition}[1.6.3]
+\label{I.1.6.3-ko}
+모든 $A$-가군 $M$에 대하여 $\mathscr{O}_{X'}$-가군
+$(M_{[\varphi]})^{\sim}$에서 직상 $\Phi_*(\widetilde{M})$으로 가는
+함자적인 표준 동형이 존재한다.
+\end{proposition}
+
+간단히 $M'=M_{[\varphi]}$로 놓고, 모든 $f'\in A'$에 대하여 다시
+$f=\varphi(f')$로 놓자. 절단가군
+$\Gamma(D(f'),\widetilde{M'})$와
+$\Gamma(D(f),\widetilde{M})$는 각각 $A'_{f'}$-가군 $M'_{f'}$와
+$A_f$-가군 $M_f$와 동일시된다. 또한 $A'_{f'}$-가군
+$(M_f)_{[\varphi_{f'}]}$는 $M'_{f'}$와 표준적으로 동형이다
+(\hyperref[0.1.5.2-ko]{0, 1.5.2}). 따라서
+$\Gamma(D(f'),\widetilde{A'})$-가군의 함자적 동형
+\[
+  \Gamma(D(f'),\widetilde{M'})\xrightarrow{\sim}
+  \Gamma({}^a\varphi^{-1}(D(f')),\widetilde{M})_{[\varphi_{f'}]}
+\]
+이 존재한다. 이 동형들은 제한사상과의 통상적인 양립 조건을
+만족하므로(\hyperref[0.1.5.6-ko]{0, 1.5.6}) 앞에서 말한 함자적 동형을
+정의한다. 더 정확히, $u:M_1\to M_2$가 $A$-가군 준동형이면 이를
+$A'$-가군 준동형
+$(M_1)_{[\varphi]}\to(M_2)_{[\varphi]}$로 볼 수 있다. 이 준동형을
+$u_{[\varphi]}$라 하면 $\Phi_*(\widetilde{u})$는
+$(u_{[\varphi]})^{\sim}$와 동일시된다.
+
+이 증명은 모든 $A$-대수 $B$에 대하여 함자적인 표준 동형
+\oldpage[I]{95}
+\[
+  (B_{[\varphi]})^{\sim}\xrightarrow{\sim}\Phi_*(\widetilde{B})
+\]
+이 $\mathscr{O}_{X'}$-대수의 동형임도 보여 준다. $M$이
+$B$-가군이면 함자적인 표준 동형
+\[
+  (M_{[\varphi]})^{\sim}\xrightarrow{\sim}\Phi_*(\widetilde{M})
+\]
+은 $\Phi_*(\widetilde{B})$-가군의 동형이다.
+
+\begin{corollary}[1.6.4]
+\label{I.1.6.4-ko}
+직상함자 $\Phi_*$는 준연접 $\mathscr{O}_X$-가군의 범주에서
+완전하다.
+\end{corollary}
+
+실제로 $M_{[\varphi]}$는 $M$에 관한 완전 함자이고,
+$\widetilde{M'}$은 $M'$에 관한 완전 함자이다
+(\hyperref[I.1.3.5-ko]{1.3.5}).
+
+\begin{proposition}[1.6.5]
+\label{I.1.6.5-ko}
+$N'$을 $A'$-가군이라 하고 $N=N'\otimes_{A'}A_{[\varphi]}$를
+$A$-가군이라 하자. $\mathscr{O}_X$-가군
+$\Phi^*(\widetilde{N'})$에서 $\widetilde{N}$으로 가는 함자적인
+표준 동형이 존재한다.
+\end{proposition}
+
+먼저 $j:z'\mapsto z'\otimes1$이 $N'$에서 $N_{[\varphi]}$으로 가는
+$A'$-준동형임을 보자. 실제로 $f'\in A'$에 대하여 정의상
+$(f'z')\otimes1=z'\otimes\varphi(f')=\varphi(f')(z'\otimes1)$이다.
+따라서 (\hyperref[I.1.3.8-ko]{1.3.8})에 의해
+$\mathscr{O}_{X'}$-가군 준동형
+$\widetilde{j}:\widetilde{N'}\to(N_{[\varphi]})^{\sim}$을 얻는다.
+(\hyperref[I.1.6.3-ko]{1.6.3})에 따라 $\widetilde{j}$가
+$\widetilde{N'}$을 $\Phi_*(\widetilde{N})$으로 보낸다고 보아도 된다.
+이 준동형 $\widetilde{j}$에는 표준적으로 준동형
+$h=\widetilde{j}^{\#}:\Phi^*(\widetilde{N'})\to\widetilde{N}$이
+대응한다(\hyperref[0.4.4.3-ko]{0, 4.4.3}). 모든 줄기에서 $h_x$가
+\emph{전단사}임을 보이자. $x'={}^a\varphi(x)$로 놓고
+$x'\in D(f')$인 $f'\in A'$를 잡은 뒤 $f=\varphi(f')$로 놓자. 환
+$\Gamma(D(f),\widetilde{A})$는 $A_f$와, 가군
+$\Gamma(D(f),\widetilde{N})$와
+$\Gamma(D(f'),\widetilde{N'})$은 각각 $N_f$와 $N'_{f'}$와
+동일시된다. 절단 $s'\in\Gamma(D(f'),\widetilde{N'})$이
+$n'/{f'}^p$($n'\in N'$)와 동일시된다고 하고, $s$를
+$\widetilde{j}$에 의한 그 상이라 하자. 그러면 $s$는
+$(n'\otimes1)/f^p$와 동일시된다. 한편
+$t\in\Gamma(D(f),\widetilde{A})$가 $g/f^q$($g\in A$)와
+동일시된다고 하자. 정의에 따라
+\[
+  h_x(s'_{x'}\otimes t_x)=t_x\cdot s_x
+\]
+이다(\hyperref[0.4.4.3-ko]{0, 4.4.3}). 그런데
+$N_f$는 표준적으로
+\[
+  N'_{f'}\otimes_{A'_{f'}}(A_f)_{[\varphi_{f'}]}
+\]
+와 동일시된다(\hyperref[0.1.5.4-ko]{0, 1.5.4}). 이때 $s$는
+$(n'/{f'}^p)\otimes1$에 대응하고, 절단 $y\mapsto t_y\cdot s_y$는
+$(n'/{f'}^p)\otimes(g/f^q)$에 대응한다.
+(\hyperref[0.1.5.6-ko]{0, 1.5.6})의 양립 그림들은 $h_x$가 바로
+표준 동형
+\[
+  \label{I.1.6.5.1-ko}
+  N'_{x'}\otimes_{A'_{x'}}(A_x)_{[\varphi_x]}
+  \xrightarrow{\sim}N_x=(N'\otimes_{A'}A_{[\varphi]})_x
+  \tag{1.6.5.1}
+\]
+임을 보여 준다.
+
+또한 $v:N'_1\to N'_2$가 $A'$-가군 준동형이면 모든 $x'\in X'$에
+대하여 $\widetilde{v}_{x'}=v_{x'}$이다. 그러므로 앞의 결과에서 곧바로
+$\Phi^*(\widetilde{v})$가 $(v\otimes1)^{\sim}$와 표준적으로
+동일시됨을 얻으며, 이로써
+(\hyperref[I.1.6.5-ko]{1.6.5})의 증명이 끝난다.
+
+$B'$가 $A'$-대수이면 $\Phi^*(\widetilde{B'})$에서
+$(B'\otimes_{A'}A_{[\varphi]})^{\sim}$로 가는 표준 동형은
+$\mathscr{O}_X$-대수의 동형이다. 더욱이 $N'$이 $B'$-가군이면
+$\Phi^*(\widetilde{N'})$에서
+$(N'\otimes_{A'}A_{[\varphi]})^{\sim}$로 가는 표준 동형은
+$\Phi^*(\widetilde{B'})$-가군의 동형이다.
+
+\begin{corollary}[1.6.6]
+\label{I.1.6.6-ko}
+$s'$이 $A'$-가군 $\Gamma(\widetilde{N'})$을 달릴 때, 절단 $s'$의
+$\Phi^*(\widetilde{N'})$ 안의 표준 상들은 $A$-가군
+$\Gamma(X,\Phi^*(\widetilde{N'}))$을 생성한다.
+\end{corollary}
+
+실제로 $N'$과 $N$을 각각 $\Gamma(\widetilde{N'})$과
+$\Gamma(\widetilde{N})$와 동일시하면
+(\hyperref[I.1.3.7-ko]{1.3.7}), 이 상들은 $z'$이 $N'$을 달릴 때의
+$N$의 원소 $z'\otimes1$과 동일시된다.
+
+\begin{env}[1.6.7]
+\label{I.1.6.7-ko}
+(\hyperref[I.1.6.5-ko]{1.6.5})의 증명에서 표준 사상
+(\hyperref[0.4.4.3.2-ko]{0, 4.4.3.2})
+$\rho:\widetilde{N'}\to\Phi_*(\Phi^*(\widetilde{N'}))$이 바로
+준동형 $\widetilde{j}$임을 함께 증명하였다.
+\oldpage[I]{96}
+여기서 $j:N'\to N'\otimes_{A'}A_{[\varphi]}$는
+$z'\mapsto z'\otimes1$인 준동형이다. 마찬가지로 표준 사상
+(\hyperref[0.4.4.3.3-ko]{0, 4.4.3.3})
+$\sigma:\Phi^*(\Phi_*(\widetilde{M}))\to\widetilde{M}$은
+$\widetilde{p}$와 같다. 여기서
+$p:M_{[\varphi]}\otimes_{A'}A_{[\varphi]}\to M$은 모든 텐서곱
+$z\otimes a$($z\in M$, $a\in A$)에 $a\cdot z$를 대응시키는 표준
+준동형이다. 이는 정의
+(\hyperref[0.3.7.1-ko]{0, 3.7.1},
+\hyperref[0.4.4.3-ko]{0, 4.4.3} 및
+\hyperref[I.1.3.7-ko]{I, 1.3.7})에서 곧바로 따른다.
+
+따라서 (\hyperref[0.4.4.3-ko]{0, 4.4.3})과
+(\hyperref[0.3.5.4.4-ko]{3.5.4.4})에 의해
+$v:N'\to M_{[\varphi]}$가 $A'$-준동형이면
+$\widetilde{v}^{\#}=(v\otimes1)^{\sim}$이다.
+\end{env}
+
+\begin{env}[1.6.8]
+\label{I.1.6.8-ko}
+$N'_1$, $N'_2$를 두 $A'$-가군이라 하고 $N'_1$이 \emph{유한 표시}를
+갖는다고 하자. 그러면
+(\hyperref[I.1.6.7-ko]{1.6.7})과
+(\hyperref[I.1.3.12-ko]{1.3.12, (ii)})에 따라 표준 준동형
+(\hyperref[0.4.4.6-ko]{0, 4.4.6})
+\[
+  \Phi^*\bigl(\mathscr{H}\!om_{\widetilde{A'}}
+    (\widetilde{N'_1},\widetilde{N'_2})\bigr)
+  \longrightarrow
+  \mathscr{H}\!om_{\widetilde A}
+    \bigl(\Phi^*(\widetilde{N'_1}),\Phi^*(\widetilde{N'_2})\bigr)
+\]
+은 $\widetilde{\gamma}$와 같다. 여기서 $\gamma$는 $A$-가군의
+표준 준동형
+\[
+  \operatorname{Hom}_{A'}(N'_1,N'_2)\otimes_{A'}A
+  \longrightarrow
+  \operatorname{Hom}_A(N'_1\otimes_{A'}A,N'_2\otimes_{A'}A)
+\]
+이다.
+\end{env}
+
+\begin{env}[1.6.9]
+\label{I.1.6.9-ko}
+$\mathfrak{J}'$을 $A'$의 아이디얼, $M$을 $A$-가군이라 하자. 정의에
+따라 $\widetilde{\mathfrak{J}'}\widetilde M$은 표준 준동형
+$\Phi^*(\widetilde{\mathfrak{J}'})
+\otimes_{\widetilde A}\widetilde M\to\widetilde M$의 상이다. 따라서
+(\hyperref[I.1.6.5-ko]{1.6.5})와
+(\hyperref[I.1.3.12-ko]{1.3.12, (i)})에 의해
+$\widetilde{\mathfrak{J}'}\widetilde M$은
+$(\mathfrak{J}'M)^{\sim}$와 표준적으로 동일시된다. 특히
+$\Phi^*(\widetilde{\mathfrak{J}'})\widetilde A$는
+$(\mathfrak{J}'A)^{\sim}$와 동일시된다. 또한 함자 $\Phi^*$의 오른쪽
+완전성을 고려하면 $\widetilde A$-대수
+$\Phi^*((A'/\mathfrak{J}')^{\sim})$는
+$(A/\mathfrak{J}'A)^{\sim}$와 동일시된다.
+\end{env}
+
+\begin{env}[1.6.10]
+\label{I.1.6.10-ko}
+$A''$을 세 번째 환, $\varphi'$을 준동형 $A''\to A'$이라 하고
+$\varphi''=\varphi\circ\varphi'$로 놓자. 정의에서 곧바로
+\[
+  {}^a\varphi''=({}^a\varphi')\circ({}^a\varphi),
+  \qquad
+  \widetilde{\varphi''}=\widetilde\varphi\circ\widetilde{\varphi'}
+\]
+를 얻는다(\hyperref[0.1.5.7-ko]{0, 1.5.7}). 따라서
+$\Phi''=\Phi'\circ\Phi$이다. 다시 말해
+$(\operatorname{Spec}A,\widetilde A)$는 $A$에 관하여 환의 범주에서
+환 달린 공간의 범주로 가는 \emph{반변 함자}이다.
+\end{env}
+
+\subsection{아핀 스킴의 사상의 특징짓기}
+\label{subsection:I.1.7-ko}
+
+\begin{definition}[1.7.1]
+\label{I.1.7.1-ko}
+환 달린 공간 $(X,\mathscr{O}_X)$가 어떤 환 $A$에 대한
+$(\operatorname{Spec}(A),\widetilde A)$ 꼴의 환 달린 공간과 동형이면
+이를 \emph{아핀 스킴}이라 한다. 이때 $\Gamma(X,\mathscr{O}_X)$는
+환 $A$와 표준적으로 동일시되며
+(\hyperref[I.1.3.7-ko]{1.3.7}), 이를 아핀 스킴
+$(X,\mathscr{O}_X)$의 환이라 한다. 혼동의 염려가 없을 때에는
+$A(X)$로 쓴다.
+\end{definition}
+
+앞으로 \emph{아핀 스킴} $\operatorname{Spec}(A)$라고 하면 항상 환 달린
+공간 $(\operatorname{Spec}(A),\widetilde A)$를 뜻한다.
+
+\begin{env}[1.7.2]
+\label{I.1.7.2-ko}
+$A$, $B$를 두 환, $(X,\mathscr{O}_X)$와 $(Y,\mathscr{O}_Y)$를 각각
+소 스펙트럼 $X=\operatorname{Spec}(A)$와 $Y=\operatorname{Spec}(B)$에
+대응하는 아핀 스킴이라 하자. 앞서
+(\hyperref[I.1.6.1-ko]{1.6.1})에서 모든 환 준동형
+$\varphi:B\to A$에 사상
+\[
+  \Phi=({}^a\varphi,\widetilde\varphi)
+  =\operatorname{Spec}(\varphi):
+  (X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)
+\]
+이 대응함을 보았다. $\varphi$는 $\Phi$에 의해 완전히 결정된다. 실제로
+정의상
+\[
+  \varphi=\Gamma(\widetilde\varphi):
+  \Gamma(\widetilde B)\longrightarrow
+  \Gamma({}^a\varphi_*(\widetilde A))=\Gamma(\widetilde A)
+\]
+이다.
+\end{env}
+
+\begin{theorem}[1.7.3]
+\label{I.1.7.3-ko}
+$(X,\mathscr{O}_X)$와 $(Y,\mathscr{O}_Y)$를 두 아핀 스킴이라 하자.
+환 달린 공간의 사상
+$(\psi,\theta):(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)$가 어떤 환 준동형
+$\varphi:A(Y)\to A(X)$에 대하여
+$({}^a\varphi,\widetilde\varphi)$ 꼴이기 위한 필요충분조건은 모든
+$x\in X$에 대하여
+\[
+  \theta_x^{\#}:\mathscr{O}_{\psi(x)}\to\mathscr{O}_x
+\]
+가 국소 준동형인 것이다.
+\end{theorem}
+
+\oldpage[I]{97}
+$A=A(X)$, $B=A(Y)$로 놓자. 이 조건은 필요하다. 실제로
+(\hyperref[I.1.6.1-ko]{1.6.1})에서
+$\widetilde\varphi_x^{\#}$이 $\varphi$에서 표준적으로 유도되는 준동형
+$B_{{}^a\varphi(x)}\to A_x$임을 보았다. 정의상
+${}^a\varphi(x)=\varphi^{-1}(\mathfrak{j}_x)$이므로 이 준동형은 국소
+준동형이다.
+
+이제 조건이 충분함을 증명하자. 정의상 $\theta$는 준동형
+$\mathscr{O}_Y\to\psi_*(\mathscr{O}_X)$이고, 여기서 표준적으로 환 준동형
+\[
+  \varphi=\Gamma(\theta):
+  B=\Gamma(Y,\mathscr{O}_Y)
+  \longrightarrow
+  \Gamma(Y,\psi_*(\mathscr{O}_X))
+  =\Gamma(X,\mathscr{O}_X)=A
+\]
+을 얻는다.
+
+$\theta_x^{\#}$에 대한 가정으로부터 몫을 취하여 잉여체
+$k(\psi(x))$에서 잉여체 $k(x)$로 가는 단사 준동형 $\theta^x$를 얻는다.
+모든 절단 $f\in\Gamma(Y,\mathscr{O}_Y)=B$에 대하여
+$\theta^x(f(\psi(x)))=\varphi(f)(x)$이다. 따라서 관계
+$f(\psi(x))=0$과 $\varphi(f)(x)=0$은 동치이다. 이는
+$\mathfrak{j}_{\psi(x)}=\mathfrak{j}_{{}^a\varphi(x)}$라는 뜻이므로 모든
+$x\in X$에 대하여 $\psi(x)={}^a\varphi(x)$, 곧
+$\psi={}^a\varphi$이다. 또한 그림
+\phantomsection\label{I.1.7.3.diagram-ko}
+\[
+  \xymatrix{
+    B=\Gamma(Y,\mathscr{O}_Y)\ar[r]^\varphi\ar[d] &
+    \Gamma(X,\mathscr{O}_X)=A\ar[d]\\
+    B_{\psi(x)}\ar[r]_{\theta_x^{\#}} & A_x
+  }
+\]
+은 가환이다(\hyperref[0.3.7.2-ko]{0, 3.7.2}). 이는
+$\theta_x^{\#}$이 $\varphi$에서 표준적으로 유도되는 준동형
+$\varphi_x:B_{\psi(x)}\to A_x$와 같다는 뜻이다
+(\hyperref[0.1.5.1-ko]{0, 1.5.1}). $\theta_x^{\#}$들의 자료가
+$\theta^{\#}$, 따라서 $\theta$도 완전히 결정하므로
+(\hyperref[0.3.7.1-ko]{0, 3.7.1}),
+$\widetilde\varphi$의 정의
+(\hyperref[I.1.6.1-ko]{1.6.1})에 의해
+$\theta=\widetilde\varphi$이다.
+
+(\hyperref[I.1.7.3-ko]{1.7.3})의 조건을 만족하는 환 달린 공간의 사상
+$(\psi,\theta)$를 \emph{아핀 스킴의 사상}이라 하겠다.
+
+\begin{corollary}[1.7.4]
+\label{I.1.7.4-ko}
+$(X,\mathscr{O}_X)$와 $(Y,\mathscr{O}_Y)$가 두 아핀 스킴이면 아핀
+스킴의 사상들의 집합과
+$\operatorname{Hom}_{\mathrm{Ring}}(B,A)$ 사이에 표준 전단사가
+존재한다. 여기서 $A=\Gamma(\mathscr{O}_X)$이고
+$B=\Gamma(\mathscr{O}_Y)$이다.
+\end{corollary}
+
+달리 말하면, $A$에 관한 $(\operatorname{Spec}(A),\widetilde A)$와
+$(X,\mathscr{O}_X)$에 관한 $\Gamma(X,\mathscr{O}_X)$는 가환환의 범주와
+아핀 스킴의 범주의 반대 범주 사이의 \emph{동치}를 정의한다
+(T, I, 1.2).
+
+\begin{corollary}[1.7.5]
+\label{I.1.7.5-ko}
+$\varphi:B\to A$가 전사이면 이에 대응하는 사상
+$({}^a\varphi,\widetilde\varphi)$는 환 달린 공간의 단사사상이다
+\emph{(4.1.7 참조)}.
+\end{corollary}
+
+실제로 ${}^a\varphi$는 단사이다
+(\hyperref[I.1.2.5-ko]{1.2.5}). 또한 $\varphi$가 전사이므로 모든
+$x\in X$에 대하여 $\varphi$에서 분수환을 취하여 얻는
+$\varphi_x^{\#}:B_{{}^a\varphi(x)}\to A_x$도 전사이다
+(\hyperref[0.1.5.1-ko]{0, 1.5.1}). 따라서 결론은
+(\hyperref[0.4.1.1-ko]{0, 4.1.1})에서 따른다.

@@ -1,0 +1,1179 @@
+\section{준연접층에 관한 보충}
+\label{section:I.9-ko}
+
+\subsection{준연접층의 텐서곱}
+\label{subsection:I.9.1-ko}
+
+\begin{proposition}[9.1.1]
+\label{I.9.1.1-ko}
+$X$를 준스킴(각각 국소 뇌터 준스킴)이라 하자. $\mathscr{F}$와
+$\mathscr{G}$를 두 준연접(각각 연접) $\mathscr{O}_X$-가군이라 하자.
+그러면 $\mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{G}$는 준연접(각각
+연접)이고, $\mathscr{F}$와 $\mathscr{G}$가 유한 생성이면 이것도 유한
+생성이다. $\mathscr{F}$가 유한 표시를 갖고 $\mathscr{G}$가 준연접(각각
+연접)이면 $\mathscr{H}\!om_{\mathscr{O}_X}(\mathscr{F},\mathscr{G})$는
+준연접(각각 연접)이다.
+\end{proposition}
+
+문제가 국소적이므로 $X$가 아핀(각각 뇌터 아핀)이라고 가정할 수 있다.
+더욱이 $\mathscr{F}$가 연접이면 어떤 준동형
+$\mathscr{O}_X^m\to\mathscr{O}_X^n$의 여핵이라고 가정할 수 있다.
+그러면 준연접층에 관한 주장들은
+(\hyperref[I.1.3.12-ko]{1.3.12})와
+(\hyperref[I.1.3.9-ko]{1.3.9})에서 따르고, 연접층에 관한 주장들은
+(\hyperref[I.1.5.1-ko]{1.5.1})과 다음 사실에서 따른다. 뇌터 환 $A$
+위의 유한 생성 가군 $M$, $N$에 대하여 $M\otimes_A N$과
+$\operatorname{Hom}_A(M,N)$은 유한 생성 $A$-가군이다.
+
+\begin{definition}[9.1.2]
+\label{I.9.1.2-ko}
+$X$, $Y$를 두 $S$-준스킴, $p$, $q$를 $X\times_S Y$의 사영,
+$\mathscr{F}$(각각 $\mathscr{G}$)를 준연접 $\mathscr{O}_X$-가군(각각
+$\mathscr{O}_Y$-가군)이라 하자. $X\times_S Y$ 위의 텐서곱
+$p^*(\mathscr{F})\otimes_{\mathscr{O}_{X\times_S Y}}q^*(\mathscr{G})$을
+$\mathscr{F}$와 $\mathscr{G}$의 $\mathscr{O}_S$ 위의(또는 $S$
+위의) 텐서곱이라 하고
+$\mathscr{F}\otimes_{\mathscr{O}_S}\mathscr{G}$(또는
+$\mathscr{F}\otimes_S\mathscr{G}$)로 쓴다.
+\end{definition}
+
+$X_i$($1\leq i\leq n$)가 $S$-준스킴이고 $\mathscr{F}_i$가 준연접
+$\mathscr{O}_{X_i}$-가군($1\leq i\leq n$)이면, 같은 방식으로 준스킴
+$Z=X_1\times_S X_2\times_S\cdots\times_S X_n$ 위의 텐서곱
+$\mathscr{F}_1\otimes_S\mathscr{F}_2\otimes_S\cdots\otimes_S\mathscr{F}_n$
+을 정의한다. (\hyperref[I.9.1.1-ko]{9.1.1})과
+(\hyperref[0.5.1.4-ko]{0, 5.1.4})에 따라 이는
+\emph{준연접} $\mathscr{O}_Z$-가군이다. $\mathscr{F}_i$들이 연접이고
+$Z$가 \emph{국소 뇌터}이면 (\hyperref[I.9.1.1-ko]{9.1.1}),
+(\hyperref[0.5.3.11-ko]{0, 5.3.11}),
+(\hyperref[I.6.1.1-ko]{6.1.1})에 따라 이 가군은 \emph{연접}이다.
+
+$X=Y=S$로 두면 정의 (\hyperref[I.9.1.2-ko]{9.1.2})에서
+$\mathscr{O}_S$-가군의 텐서곱을 다시 얻는다. 또한
+$q^*(\mathscr{O}_Y)=\mathscr{O}_{X\times_S Y}$이므로
+(\hyperref[0.4.3.4-ko]{0, 4.3.4}),
+$\mathscr{F}\otimes_S\mathscr{O}_Y$는 $p^*(\mathscr{F})$와 표준적으로
+동형이고, 마찬가지로 $\mathscr{O}_X\otimes_S\mathscr{G}$는
+$q^*(\mathscr{G})$와 표준적으로 동형이다. 특히 $Y=S$로 두고
+$f:X\to Y$를 구조 사상이라 하면
+$\mathscr{O}_X\otimes_Y\mathscr{G}=f^*(\mathscr{G})$이다. 따라서 보통의
+텐서곱과 역상층은 일반적인 텐서곱의 특수한 경우로 나타난다.
+
+정의 (\hyperref[I.9.1.2-ko]{9.1.2})에서 곧바로, $X$와 $Y$를 고정하면
+$\mathscr{F}\otimes_S\mathscr{G}$가 $\mathscr{F}$와 $\mathscr{G}$ 각각에
+관하여 \emph{공변이고 가법적이며 오른쪽 완전한 쌍함자}임을 얻는다.
+
+\begin{proposition}[9.1.3]
+\label{I.9.1.3-ko}
+$S$, $X$, $Y$를 각각 환 $A$, $B$, $C$의 아핀 스킴이라 하고, $B$와
+$C$를 $A$-대수라 하자. $M$(각각 $N$)을 $B$-가군(각각 $C$-가군),
+$\mathscr{F}=\widetilde{M}$(각각 $\mathscr{G}=\widetilde{N}$)을 이에
+대응하는 준연접층이라 하자. 그러면 $\mathscr{F}\otimes_S\mathscr{G}$는
+$(B\otimes_A C)$-가군 $M\otimes_A N$에 대응하는 층과 표준적으로
+동형이다.
+\end{proposition}
+
+\begin{proof}
+\oldpage[I]{170}
+(\hyperref[I.1.6.5-ko]{1.6.5})에 따라
+$\mathscr{F}\otimes_S\mathscr{G}$는 $(B\otimes_A C)$-가군
+\[
+  \bigl(M\otimes_B(B\otimes_A C)\bigr)
+  \otimes_{B\otimes_A C}
+  \bigl((B\otimes_A C)\otimes_C N\bigr)
+\]
+에 대응하는 층과 표준적으로 동형이다. 텐서곱 사이의 표준 동형들에
+따라 이 가군은
+\[
+  M\otimes_B(B\otimes_A C)\otimes_C N
+  =(M\otimes_B B)\otimes_A(C\otimes_C N)=M\otimes_A N
+\]
+과 동형이다.
+\end{proof}
+
+\begin{proposition}[9.1.4]
+\label{I.9.1.4-ko}
+$f:T\to X$, $g:T\to Y$를 두 $S$-사상, $\mathscr{F}$(각각
+$\mathscr{G}$)를 준연접 $\mathscr{O}_X$-가군(각각
+$\mathscr{O}_Y$-가군)이라 하자. 그러면
+\[
+  (f,g)_S^*(\mathscr{F}\otimes_S\mathscr{G})
+  =f^*(\mathscr{F})\otimes_{\mathscr{O}_T}g^*(\mathscr{G}).
+\]
+\end{proposition}
+
+\begin{proof}
+$p$, $q$가 $X\times_S Y$의 사영이면, 이 공식은
+$(f,g)_S^*\circ p^*=f^*$, $(f,g)_S^*\circ q^*=g^*$
+(\hyperref[0.3.5.5-ko]{0, 3.5.5})와 대수적 층들의 텐서곱의 역상층이
+그 역상층들의 텐서곱이라는 사실
+(\hyperref[0.4.3.3-ko]{0, 4.3.3})에서 따른다.
+\end{proof}
+
+\begin{corollary}[9.1.5]
+\label{I.9.1.5-ko}
+$f:X\to X'$, $g:Y\to Y'$을 두 $S$-사상, $\mathscr{F}'$(각각
+$\mathscr{G}'$)을 준연접 $\mathscr{O}_{X'}$-가군(각각
+$\mathscr{O}_{Y'}$-가군)이라 하자. 그러면
+\[
+  (f\times_S g)^*(\mathscr{F}'\otimes_S\mathscr{G}')
+  =f^*(\mathscr{F}')\otimes_S g^*(\mathscr{G}').
+\]
+\end{corollary}
+
+\begin{proof}
+$p$, $q$를 $X\times_S Y$의 사영이라 하면
+$f\times_S g=(f\circ p,g\circ q)_S$이므로, 따름정리는
+(\hyperref[I.9.1.4-ko]{9.1.4})에서 따른다.
+\end{proof}
+
+\begin{corollary}[9.1.6]
+\label{I.9.1.6-ko}
+$X$, $Y$, $Z$를 세 $S$-준스킴, $\mathscr{F}$(각각 $\mathscr{G}$,
+$\mathscr{H}$)를 준연접 $\mathscr{O}_X$-가군(각각
+$\mathscr{O}_Y$-가군, $\mathscr{O}_Z$-가군)이라 하자. 층
+$\mathscr{F}\otimes_S\mathscr{G}\otimes_S\mathscr{H}$는
+$X\times_S Y\times_S Z$에서 $(X\times_S Y)\times_S Z$로 가는 표준
+동형사상에 의한
+$(\mathscr{F}\otimes_S\mathscr{G})\otimes_S\mathscr{H}$의 역상층이다.
+\end{corollary}
+
+\begin{proof}
+$p_1$, $p_2$, $p_3$을 $X\times_S Y\times_S Z$의 사영이라 하면 이
+동형사상은 $(p_1,p_2)_S\times_S p_3$으로 쓸 수 있다.
+
+마찬가지로 $X\times_S Y$에서 $Y\times_S X$로 가는 표준 동형사상에
+의한 $\mathscr{G}\otimes_S\mathscr{F}$의 역상층은
+$\mathscr{F}\otimes_S\mathscr{G}$이다.
+\end{proof}
+
+\begin{corollary}[9.1.7]
+\label{I.9.1.7-ko}
+$X$가 $S$-준스킴이면, 모든 준연접 $\mathscr{O}_X$-가군
+$\mathscr{F}$는 $X$에서 $X\times_S S$로 가는 표준 동형사상
+(\hyperref[I.3.3.3-ko]{3.3.3})에 의한
+$\mathscr{F}\otimes_S\mathscr{O}_S$의 역상층이다.
+\end{corollary}
+
+\begin{proof}
+$\varphi:X\to S$가 구조 사상이면 이 동형사상은 $(1_X,\varphi)_S$이다.
+따라서 따름정리는 (\hyperref[I.9.1.4-ko]{9.1.4})와
+$\varphi^*(\mathscr{O}_S)=\mathscr{O}_X$에서 따른다.
+\end{proof}
+
+\begin{env}[9.1.8]
+\label{I.9.1.8-ko}
+$X$를 $S$-준스킴, $\mathscr{F}$를 준연접 $\mathscr{O}_X$-가군,
+$\varphi:S'\to S$를 사상이라 하자. $X\times_S S'
+=X_{(\varphi)}=X_{(S')}$ 위의 준연접층
+$\mathscr{F}\otimes_S\mathscr{O}_{S'}$를
+$\mathscr{F}_{(\varphi)}$ 또는 $\mathscr{F}_{(S')}$로 쓴다. 따라서
+$p:X_{(S')}\to X$가 사영이면
+$\mathscr{F}_{(S')}=p^*(\mathscr{F})$이다.
+\end{env}
+
+\begin{proposition}[9.1.9]
+\label{I.9.1.9-ko}
+$\varphi':S''\to S'$을 사상이라 하자. $S$-준스킴 $X$ 위의 모든 준연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여
+$(\mathscr{F}_{(\varphi)})_{(\varphi')}$은 표준 동형사상
+$(X_{(\varphi)})_{(\varphi')}\xrightarrow{\sim}
+X_{(\varphi\circ\varphi')}$
+(\hyperref[I.3.3.9-ko]{3.3.9})에 의한
+$\mathscr{F}_{(\varphi\circ\varphi')}$의 역상층이다.
+\end{proposition}
+
+\begin{proof}
+이는 정의와 (\hyperref[I.3.3.9-ko]{3.3.9})에서 곧바로 따르며, 다음과
+같이 쓸 수도 있다.
+\[
+  (\mathscr{F}\otimes_S\mathscr{O}_{S'})
+  \otimes_{S'}\mathscr{O}_{S''}
+  =\mathscr{F}\otimes_S\mathscr{O}_{S''}.
+  \tag{9.1.9.1}\label{I.9.1.9.1-ko}
+\]
+\end{proof}
+
+\begin{proposition}[9.1.10]
+\label{I.9.1.10-ko}
+$Y$를 $S$-준스킴, $f:X\to Y$를 $S$-사상이라 하자. 모든 준연접
+$\mathscr{O}_Y$-가군 $\mathscr{G}$와 모든 사상 $S'\to S$에 대하여
+\[
+  (f_{(S')})^*(\mathscr{G}_{(S')})
+  =(f^*(\mathscr{G}))_{(S')}
+\]
+이다.
+\end{proposition}
+
+\begin{proof}
+이는 다음 그림의 가환성에서 곧바로 따른다.
+\oldpage[I]{171}
+\[
+  \xymatrix{
+    X_{(S')}\ar[r]^{f_{(S')}}\ar[d] &
+    Y_{(S')}\ar[d]\\
+    X\ar[r]_f &
+    Y
+  }
+\]
+\end{proof}
+
+\begin{corollary}[9.1.11]
+\label{I.9.1.11-ko}
+$X$, $Y$를 두 $S$-준스킴, $\mathscr{F}$(각각 $\mathscr{G}$)를 준연접
+$\mathscr{O}_X$-가군(각각 $\mathscr{O}_Y$-가군)이라 하자. 표준
+동형사상 $(X\times_S Y)_{(S')}\xrightarrow{\sim}
+(X_{(S')})\times_{S'}(Y_{(S')})$
+(\hyperref[I.3.3.10-ko]{3.3.10})에 의한
+$\mathscr{F}_{(S')}\otimes_{S'}\mathscr{G}_{(S')}$의 역상층은
+$(\mathscr{F}\otimes_S\mathscr{G})_{(S')}$과 같다.
+\end{corollary}
+
+\begin{proof}
+$p$, $q$가 $X\times_S Y$의 사영이면 위 동형사상은
+$(p_{(S')},q_{(S')})_{S'}$이다. 따라서 따름정리는
+(\hyperref[I.9.1.4-ko]{9.1.4})와
+(\hyperref[I.9.1.10-ko]{9.1.10})에서 따른다.
+\end{proof}
+
+\begin{proposition}[9.1.12]
+\label{I.9.1.12-ko}
+(\hyperref[I.9.1.2-ko]{9.1.2})의 표기 아래에서
+$z\in X\times_S Y$, $x=p(z)$, $y=q(z)$라 하자. 줄기
+$(\mathscr{F}\otimes_S\mathscr{G})_z$는
+$(\mathscr{F}_x\otimes_{\mathscr{O}_x}\mathscr{O}_z)
+\otimes_{\mathscr{O}_z}
+(\mathscr{G}_y\otimes_{\mathscr{O}_y}\mathscr{O}_z)
+=\mathscr{F}_x\otimes_{\mathscr{O}_x}\mathscr{O}_z
+\otimes_{\mathscr{O}_y}\mathscr{G}_y$와 동형이다.
+\end{proposition}
+
+\begin{proof}
+아핀인 경우로 귀착할 수 있으므로 명제는 공식
+(\hyperref[I.1.6.5.1-ko]{1.6.5.1})에서 따른다.
+\end{proof}
+
+\begin{corollary}[9.1.13]
+\label{I.9.1.13-ko}
+$\mathscr{F}$와 $\mathscr{G}$가 유한 생성이면
+\[
+  \operatorname{Supp}(\mathscr{F}\otimes_S\mathscr{G})
+  =p^{-1}(\operatorname{Supp}(\mathscr{F}))
+  \cap q^{-1}(\operatorname{Supp}(\mathscr{G})).
+\]
+\end{corollary}
+
+\begin{proof}
+$p^*(\mathscr{F})$와 $q^*(\mathscr{G})$는 유한 생성
+$\mathscr{O}_{X\times_S Y}$-가군이므로,
+(\hyperref[I.9.1.12-ko]{9.1.12})와
+(\hyperref[0.1.7.5-ko]{0, 1.7.5})에 따라
+$\mathscr{G}=\mathscr{O}_Y$인 경우, 다시 말해 다음 공식을 보이는
+경우로 귀착한다.
+\[
+  \operatorname{Supp}(p^*(\mathscr{F}))
+  =p^{-1}(\operatorname{Supp}(\mathscr{F})).
+  \tag{9.1.13.1}\label{I.9.1.13.1-ko}
+\]\footnote{\textbf{번역 주.} 인쇄 원문은 왼쪽에
+$\operatorname{Supp}(p^{-1}(\mathscr{F}))$를 쓴다. 그러나 바로 앞의
+귀착은 $\mathscr{F}\otimes_S\mathscr{O}_Y=p^*(\mathscr{F})$를 사용하고,
+이어지는 줄기 계산도 역상층 $p^*(\mathscr{F})$에 관한 것이다. 따라서
+형에 맞는 $p^*$를 사용하였다.}
+
+(\hyperref[0.1.7.5-ko]{0, 1.7.5})에서와 같은 논증으로, 모든
+$z\in X\times_S Y$에 대하여 $x=p(z)$라 할 때
+$\mathscr{O}_z/\mathfrak{m}_x\mathscr{O}_z\neq0$임을 확인하면 충분하다.
+이는 준동형 $\mathscr{O}_x\to\mathscr{O}_z$가 가정에 따라
+\emph{국소}라는 사실에서 따른다.
+\end{proof}
+
+이 항에서 두 인자의 곱에 대하여 증명한 결과들을 임의의 유한 개수의
+인자의 곱으로 확장하는 일은 독자에게 맡긴다.
+
+\subsection{준연접층의 직상}
+\label{subsection:I.9.2-ko}
+
+\begin{proposition}[9.2.1]
+\label{I.9.2.1-ko}
+$f:X\to Y$를 준스킴의 사상이라 하자. $Y$가 다음 성질을 갖는 아핀
+열린집합들의 덮개 $(Y_\alpha)$를 갖는다고 가정하자. 각
+$f^{-1}(Y_\alpha)$는 $f^{-1}(Y_\alpha)$ 안에 포함된 아핀 열린집합들의 유한 덮개
+$(X_{\alpha i})$를 가지며, 각 교집합
+$X_{\alpha i}\cap X_{\alpha j}$ 자체가 아핀 열린집합들의 유한
+합집합이다. 이 조건 아래에서 모든 준연접 $\mathscr{O}_X$-가군
+$\mathscr{F}$에 대하여 $f_*(\mathscr{F})$는 준연접
+$\mathscr{O}_Y$-가군이다.
+\end{proposition}
+
+\begin{proof}
+문제는 $Y$ 위에서 국소적이므로 $Y$가 $Y_\alpha$들 가운데 하나와
+같다고 가정하고 첨자 $\alpha$를 생략할 수 있다.
+
+\begin{enumerate}
+\item[a)] 먼저 $X_i\cap X_j$ 자체가 \emph{아핀} 열린집합이라고
+가정하자. $\mathscr{F}_i=\mathscr{F}|X_i$,
+$\mathscr{F}_{ij}=\mathscr{F}|(X_i\cap X_j)$라 두고,
+$\mathscr{F}'_i$와 $\mathscr{F}'_{ij}$를 각각 $f$를 $X_i$와
+$X_i\cap X_j$에 제한한 사상에 의한 $\mathscr{F}_i$와
+$\mathscr{F}_{ij}$의 직상이라 하자. $\mathscr{F}'_i$와
+$\mathscr{F}'_{ij}$는 준연접임이 알려져 있다
+(\hyperref[I.1.6.3-ko]{1.6.3}). 이제
+$\mathscr{G}=\bigoplus_i\mathscr{F}'_i$,
+$\mathscr{H}=\bigoplus_{i,j}\mathscr{F}'_{ij}$라 두자.
+$\mathscr{G}$와 $\mathscr{H}$는 준연접 $\mathscr{O}_Y$-가군이다.
+준동형 $u:\mathscr{G}\to\mathscr{H}$를 정의하여
+$f_*(\mathscr{F})$가 $u$의 \emph{핵}이 되게 할 것이다. 그러면
+(\hyperref[I.1.3.9-ko]{1.3.9})에 따라 $f_*(\mathscr{F})$가 준연접임이
+따른다. $u$를
+\oldpage[I]{172}
+준층의 준동형으로 정의하면 충분하다. 따라서 $\mathscr{G}$와
+$\mathscr{H}$의 정의를 고려하면, 모든 열린집합 $W\subset Y$에 대하여
+$W$가 변할 때 통상적 양립 조건들을 만족하는 준동형
+\[
+  u_W:\bigoplus_i\Gamma(f^{-1}(W)\cap X_i,\mathscr{F})
+  \longrightarrow
+  \bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j,\mathscr{F})
+\]
+을 정의하면 된다. 각 단면
+$s_i\in\Gamma(f^{-1}(W)\cap X_i,\mathscr{F})$에 대하여
+$f^{-1}(W)\cap X_i\cap X_j$로의 제한을 $s_{i|j}$로 나타내고
+\[
+  u_W((s_i))=(s_{i|j}-s_{j|i})
+\]
+라 두면 양립 조건들이 자명하게 성립한다. $u$의 핵 $\mathscr{R}$이
+$f_*(\mathscr{F})$임을 보이기 위하여, 모든 단면
+$s\in\Gamma(f^{-1}(W),\mathscr{F})$에 그 제한들로 이루어진 족
+$(s_i)$를 대응시켜 $f_*(\mathscr{F})$에서 $\mathscr{R}$로 가는
+준동형을 정의하자. 여기서 $s_i$는 $s$를
+$f^{-1}(W)\cap X_i$에 제한한 것이다. 층의 공리 (F 1)과 (F 2)
+(G, II, 1.1)에 따라 이 준동형은 \emph{전단사}이고, 이 경우의 증명이
+끝난다.
+
+\item[b)] 일반적인 경우에는 $\mathscr{F}'_{ij}$가 준연접임을 보인
+뒤에 같은 논증을 적용한다. 가정에 따라 $X_i\cap X_j$는 아핀
+열린집합 $X_{ijk}$들의 유한 합집합이다. 그런데 $X_{ijk}$들은
+\emph{어떤 스킴 안의} 아핀 열린집합들이므로 그 가운데 임의의 두
+열린집합의 교집합도 아핀 열린집합이다
+(\hyperref[I.5.5.6-ko]{5.5.6}). 따라서 첫째 경우로 귀착되고,
+(9.2.1)이 증명된다.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[9.2.2]
+\label{I.9.2.2-ko}
+(9.2.1)의 결론은 다음 각 경우에 성립한다.
+\begin{enumerate}
+\item[a)] $f$가 분리 사상이고 준콤팩트이다.
+\item[b)] $f$가 분리 사상이고 유한형이다.
+\item[c)] $f$가 준콤팩트이고 $X$의 바탕공간이 국소 뇌터이다.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+a)의 경우에는 $X_{\alpha i}\cap X_{\alpha j}$가 아핀이다
+(\hyperref[I.5.5.6-ko]{5.5.6}). b)는 a)의 특수한 경우이다
+(\hyperref[I.6.6.3-ko]{6.6.3}). 마지막으로 c)의 경우에는 $Y$가
+아핀이고 $X$의 바탕공간이 뇌터인 경우로 귀착할 수 있다. 이때 $X$는
+아핀 열린집합들의 유한 덮개 $(X_i)$를 갖고, $X_i\cap X_j$는
+준콤팩트이므로 아핀 열린집합들의 유한 합집합이다
+(\hyperref[I.2.1.3-ko]{2.1.3}).
+\end{proof}
+
+\subsection{준연접층의 단면 연장}
+\label{subsection:I.9.3-ko}
+
+\begin{theorem}[9.3.1]
+\label{I.9.3.1-ko}
+$X$를 바탕공간이 뇌터인 준스킴이거나 바탕공간이 준콤팩트인 스킴이라
+하자. $\mathscr{L}$을 가역 $\mathscr{O}_X$-가군
+(\hyperref[0.5.4.1-ko]{0, 5.4.1}), $f$를 $X$ 위의 $\mathscr{L}$의
+단면, $X_f$를 $f(x)\neq0$인 $x\in X$들의 열린집합
+(\hyperref[0.5.5.1-ko]{0, 5.5.1}), $\mathscr{F}$를 준연접
+$\mathscr{O}_X$-가군이라 하자.
+\begin{enumerate}
+\item[(i)] $s\in\Gamma(X,\mathscr{F})$이고 $s|X_f=0$이면,
+  $s\otimes f^{\otimes n}=0$인 정수 $n>0$이 존재한다.
+\item[(ii)] 모든 단면 $s\in\Gamma(X_f,\mathscr{F})$에 대하여,
+  $s\otimes f^{\otimes n}$이 $X$ 위의
+  $\mathscr{F}\otimes\mathscr{L}^{\otimes n}$의 단면으로 연장되는 정수
+  $n>0$이 존재한다.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] $X$의 바탕공간은 준콤팩트이므로,
+  $\mathscr{L}|U_i$가 $\mathscr{O}_X|U_i$와 동형인 아핀 열린집합
+  $U_i$들의 유한 합집합이다. 따라서 $X$가 아핀이고
+  $\mathscr{L}=\mathscr{O}_X$인 경우로 귀착된다. 이 경우 $f$는
+  $A(X)$의 한 원소와 동일시되고 $X_f=D(f)$이다. 또한 $s$는 어떤
+  $A(X)$-가군 $M$의 한 원소와 동일시되며, $s|X_f$는 $M_f$의 대응하는
+  원소와 동일시된다. 그러므로 결과는 분수가군의 정의에서 곧바로
+  따른다.
+\oldpage[I]{173}
+
+\item[(ii)] 다시 $X$는 $\mathscr{L}|U_i\simeq\mathscr{O}_X|U_i$인 아핀
+  열린집합 $U_i$들($1\leq i\leq r$)의 유한 합집합이다. 각 $i$에
+  대하여, 앞의 동형에 의해
+  $(s\otimes f^{\otimes n})|(U_i\cap X_f)$는
+  $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$와 동일시된다.
+  그러면 (\hyperref[I.1.4.1-ko]{1.4.1})에 따라 모든 $i$에 대하여
+  $(s\otimes f^{\otimes n})|(U_i\cap X_f)$가 $U_i$ 위의
+  $\mathscr{F}\otimes\mathscr{L}^{\otimes n}$의 단면 $s_i$로 연장되는
+  정수 $n>0$이 존재한다. $s_{i|j}$를 $s_i$의 $U_i\cap U_j$로의
+  제한이라 하자. 정의에 따라 $X_f\cap U_i\cap U_j$에서
+  $s_{i|j}-s_{j|i}=0$이다. 그런데 $X$의 바탕공간이 뇌터이면
+  $U_i\cap U_j$는 준콤팩트이고, $X$가 스킴이면 $U_i\cap U_j$는 아핀
+  열린집합이므로 (\hyperref[I.5.5.6-ko]{5.5.6}) 역시 준콤팩트이다.
+  따라서 (i)에 의해 $i$와 $j$에 무관한 정수 $m$이 존재하여
+  $(s_{i|j}-s_{j|i})\otimes f^{\otimes m}=0$이다. 이에 따라 $X$ 위의
+  $\mathscr{F}\otimes\mathscr{L}^{\otimes(n+m)}$의 단면 $s'$가 존재하여,
+  각 $U_i$ 위에서의 제한은 $s_i\otimes f^{\otimes m}$이고, 따라서
+  $X_f$ 위에서의 제한은 $s\otimes f^{\otimes(n+m)}$이다.
+\end{enumerate}
+\end{proof}
+
+다음 따름정리들은 정리 (9.3.1)을 더 대수적인 언어로 해석한다.
+
+\begin{corollary}[9.3.2]
+\label{I.9.3.2-ko}
+(9.3.1)의 가정 아래에서 등급환 $A_* = \Gamma_*(\mathscr{L})$과
+등급 $A_*$-가군 $M_* = \Gamma_*(\mathscr{L},\mathscr{F})$를 생각하자
+(\hyperref[0.5.4.6-ko]{0, 5.4.6}). $f\in A_n$이고
+$n\in\mathbb{Z}$이면 표준 동형
+\[
+  \Gamma(X_f,\mathscr{F})\xrightarrow{\sim}((M_*)_f)_0
+\]
+이 존재한다. 여기서 오른쪽은 분수가군 $(M_*)_f$의 차수 $0$인
+원소들로 이루어진 부분군이다.
+\end{corollary}
+
+\begin{corollary}[9.3.3]
+\label{I.9.3.3-ko}
+(9.3.1)의 가정에 더하여 $\mathscr{L}=\mathscr{O}_X$라고 하자. 이때
+$A=\Gamma(X,\mathscr{O}_X)$, $M=\Gamma(X,\mathscr{F})$로 놓으면,
+$A_f$-가군 $\Gamma(X_f,\mathscr{F})$는 $M_f$와 표준적으로 동형이다.
+\end{corollary}
+
+\begin{proposition}[9.3.4]
+\label{I.9.3.4-ko}
+$X$를 뇌터 준스킴, $\mathscr{F}$를 연접 $\mathscr{O}_X$-가군,
+$\mathscr{J}$를 $\mathscr{O}_X$의 연접 아이디얼층이라 하자.
+$\mathscr{F}$의 지지집합이 $\mathscr{O}_X/\mathscr{J}$의 지지집합에
+포함되면, $\mathscr{J}^n\mathscr{F}=0$인 정수 $n>0$이 존재한다.
+\end{proposition}
+
+\begin{proof}
+$X$는 환이 뇌터인 아핀 열린집합들의 유한 합집합이므로, $X$가 뇌터
+환 $A$의 아핀 스킴인 경우로 귀착할 수 있다. 그러면
+$\mathscr{F}=\widetilde M$이고, 여기서
+$M=\Gamma(X,\mathscr{F})$는 유한 생성 $A$-가군이다. 또한
+$\mathscr{J}=\widetilde{\mathfrak{J}}$이고, 여기서
+$\mathfrak{J}=\Gamma(X,\mathscr{J})$는 $A$의 아이디얼이다
+(\hyperref[I.1.4.1-ko]{1.4.1}과 \hyperref[I.1.5.1-ko]{1.5.1}).
+$A$가 뇌터이므로 $\mathfrak{J}$는 유한 생성계 $f_i$들
+($1\leq i\leq m$)을 갖는다. 가정에 따라 $X$ 위의 $\mathscr{F}$의 모든
+단면은 각 $D(f_i)$ 위에서 영단면이다. $s_j$들($1\leq j\leq q$)이
+$M$을 생성하는 $\mathscr{F}$의 단면들이면,
+(\hyperref[I.1.4.1-ko]{1.4.1})에 따라 $i$와 $j$에 무관한 정수 $h$가
+존재하여 $f_i^h s_j=0$이다. 따라서 모든 $s\in M$에 대하여
+$f_i^h s=0$이다. 그러므로 $n=mh$로 놓으면
+$\mathfrak{J}^nM=0$이고, 이에 대응하는 $\mathscr{O}_X$-가군
+$\mathscr{J}^n\mathscr{F}=\widetilde{\mathfrak{J}^nM}$
+(\hyperref[I.1.3.13-ko]{1.3.13})은 영가군이다.
+\end{proof}
+
+\begin{corollary}[9.3.5]
+\label{I.9.3.5-ko}
+(9.3.4)의 가정 아래에서, 바탕공간이
+$\mathscr{O}_X/\mathscr{J}$의 지지집합인 $X$의 닫힌 부분준스킴 $Y$가
+존재한다. 또한 $j:Y\to X$가 표준 포함 사상이면
+$\mathscr{F}=j_*(j^*(\mathscr{F}))$이다.
+\end{corollary}
+
+\begin{proof}
+먼저 $\mathscr{O}_X/\mathscr{J}$와
+$\mathscr{O}_X/\mathscr{J}^n$의 지지집합은 같다. 실제로
+$\mathscr{J}_x=\mathscr{O}_x$이면
+$\mathscr{J}_x^n=\mathscr{O}_x$이고, 한편 모든 $x\in X$에 대하여
+$\mathscr{J}_x^n\subset\mathscr{J}_x$이다. 따라서 (9.3.4)에 의해
+$\mathscr{J}\mathscr{F}=0$이라고 가정할 수 있다. 이제 $Y$를
+$\mathscr{J}$로 정의되는 $X$의 닫힌 부분준스킴으로 잡으면,
+$\mathscr{F}$가 $(\mathscr{O}_X/\mathscr{J})$-가군이므로 결론은
+곧바로 따른다.
+\end{proof}
+
+\oldpage[I]{174}
+
+\subsection{준연접층의 연장}
+\label{subsection:I.9.4-ko}
+
+\begin{env}[9.4.1]
+\label{I.9.4.1-ko}
+$X$를 위상공간, $\mathscr{F}$를 $X$ 위의 집합의 층(각각 군의 층,
+환의 층), $U$를 $X$의 열린부분집합, $\psi:U\to X$를 표준 포함 사상,
+$\mathscr{G}$를 $\mathscr{F}|U=\psi^*(\mathscr{F})$의 부분층이라 하자.
+$\psi_*$는 왼쪽 완전하므로 $\psi_*(\mathscr{G})$는
+$\psi_*(\psi^*(\mathscr{F}))$의 부분층이다. 표준 준동형
+$\rho:\mathscr{F}\to\psi_*(\psi^*(\mathscr{F}))$
+(\hyperref[0.3.5.3-ko]{0, 3.5.3})을 생각할 때,
+$\mathscr{F}$의 부분층
+$\rho^{-1}(\psi_*(\mathscr{G}))$를
+$\overline{\mathscr{G}}$로 나타내겠다. 정의로부터 곧바로, $X$의 모든
+열린집합 $V$에 대하여 $\Gamma(V,\overline{\mathscr{G}})$는
+$V\cap U$로의 제한이 $V\cap U$ 위의 $\mathscr{G}$의 단면인
+$s\in\Gamma(V,\mathscr{F})$들로 이루어짐을 알 수 있다. 따라서
+$\overline{\mathscr{G}}|U=\psi^*(\overline{\mathscr{G}})=\mathscr{G}$이고,
+$\overline{\mathscr{G}}$는 $U$ 위에 $\mathscr{G}$를 유도하는
+$\mathscr{F}$의 \emph{가장 큰} 부분층이다. 이
+$\overline{\mathscr{G}}$를 $\mathscr{F}|U$의 부분층
+$\mathscr{G}$를 $\mathscr{F}$의 부분층으로 만드는
+\emph{표준 연장}이라 하겠다.
+\end{env}
+
+\begin{proposition}[9.4.2]
+\label{I.9.4.2-ko}
+$X$를 준스킴, $U$를 표준 포함 사상 $j:U\to X$가 준콤팩트 사상인
+$X$의 열린부분집합이라 하자
+\emph{(이는 $X$의 바탕공간이 \emph{국소 뇌터}이면
+\emph{모든} $U$에 대하여 성립한다
+(\hyperref[I.6.6.4-ko]{6.6.4, (i)}))}. 그러면 다음이 성립한다.
+\begin{enumerate}
+\item[(i)] 모든 준연접 $(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여
+  $j_*(\mathscr{G})$는 준연접 $\mathscr{O}_X$-가군이고
+  $j_*(\mathscr{G})|U=j^*(j_*(\mathscr{G}))=\mathscr{G}$이다.
+\item[(ii)] 모든 준연접 $\mathscr{O}_X$-가군 $\mathscr{F}$와
+  그 제한의 모든 준연접 부분-$(\mathscr{O}_X|U)$-가군
+  $\mathscr{G}$에 대하여, $\mathscr{G}$의 표준 연장
+  $\overline{\mathscr{G}}$(9.4.1)는 $\mathscr{F}$의 준연접
+  부분-$\mathscr{O}_X$-가군이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+$j=(\psi,\theta)$라 하자. 여기서 $\psi$는 바탕공간의 포함 사상
+$U\to X$이다. 모든 $(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여
+정의상 $j_*(\mathscr{G})=\psi_*(\mathscr{G})$이고, 열린집합 위에 유도된
+준스킴의 정의에 따라 모든 $\mathscr{O}_X$-가군 $\mathscr{H}$에 대하여
+$j^*(\mathscr{H})=\psi^*(\mathscr{H})=\mathscr{H}|U$이다. 따라서 (i)는
+(\hyperref[I.9.2.2-ko]{9.2.2, a)})의 특수한 경우이다. 같은 이유로
+$j_*(j^*(\mathscr{F}))$는 준연접이고,
+$\overline{\mathscr{G}}$는 준동형
+$\rho:\mathscr{F}\to j_*(j^*(\mathscr{F}))$에 의한
+$j_*(\mathscr{G})$의 역상이므로 (ii)는
+(\hyperref[I.4.1.1-ko]{4.1.1})에서 따른다.
+\end{proof}
+
+사상 $j:U\to X$가 준콤팩트라는 가정은 열린집합 $U$가
+\emph{준콤팩트}이고 $X$가 \emph{스킴}일 때에도 성립한다. 실제로
+$U$는 유한개의 아핀 열린집합 $U_i$들의 합집합이고, $X$의 모든 아핀
+열린집합 $V$에 대하여 $V\cap U_i$는 아핀 열린집합
+(\hyperref[I.5.5.6-ko]{5.5.6})이므로 준콤팩트이다.
+
+\begin{corollary}[9.4.3]
+\label{I.9.4.3-ko}
+$X$를 준스킴, $U$를 포함 사상 $j:U\to X$가 준콤팩트인 $X$의
+준콤팩트 열린집합이라 하자. 또한 모든 준연접 $\mathscr{O}_X$-가군이
+그 유한 생성 준연접 부분-$\mathscr{O}_X$-가군들의 귀납극한이라고
+가정하자 \emph{(이는 $X$가 \emph{아핀 스킴}이면 성립한다)}.
+$\mathscr{F}$를 준연접 $\mathscr{O}_X$-가군,
+$\mathscr{G}$를 $\mathscr{F}|U$의 유한 생성 준연접
+부분-$(\mathscr{O}_X|U)$-가군이라 하자. 그러면 $\mathscr{F}$의
+유한 생성 준연접 부분-$\mathscr{O}_X$-가군 $\mathscr{G}'$이 존재하여
+$\mathscr{G}'|U=\mathscr{G}$이다.
+\end{corollary}
+
+\begin{proof}
+실제로 $\mathscr{G}=\overline{\mathscr{G}}|U$이고, (9.4.2)에 따라
+$\overline{\mathscr{G}}$는 준연접이므로 그 유한 생성 준연접
+부분-$\mathscr{O}_X$-가군 $\mathscr{H}_\lambda$들의 귀납극한이다.
+따라서 $\mathscr{G}$는 $\mathscr{H}_\lambda|U$들의 귀납극한이고,
+유한 생성이므로 (\hyperref[0.5.2.3-ko]{0, 5.2.3})에 따라 어떤
+$\mathscr{H}_\lambda|U$와 같다.
+\end{proof}
+
+\begin{remark}[9.4.4]
+\label{I.9.4.4-ko}
+\emph{모든} 아핀 열린집합 $U\subset X$에 대하여 포함 사상
+$U\to X$가 준콤팩트라고 가정하자. 모든 아핀 열린집합 $U$와
+$\mathscr{F}|U$의 모든 유한 생성 준연접
+부분-$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여 (9.4.3)의 결론이
+성립한다면,
+\oldpage[I]{175}
+$\mathscr{F}$는 그 유한 생성 준연접 부분-$\mathscr{O}_X$-가군들의
+귀납극한이다. 실제로 모든 아핀 열린집합 $U\subset X$에 대하여
+$\mathscr{F}|U=\widetilde{M}$이고, 여기서 $M$은 $A(U)$-가군이다.
+이 가군은 그 유한 생성 부분가군들의 귀납극한이므로,
+$\mathscr{F}|U$는 그 유한 생성 준연접 부분-$(\mathscr{O}_X|U)$-가군들의
+귀납극한이다(\hyperref[I.1.3.9-ko]{1.3.9}). 그런데 가정에 따라 이러한
+부분가군 각각은 $\mathscr{F}$의 유한 생성 준연접
+부분-$\mathscr{O}_X$-가군 $\mathscr{G}_{\lambda,U}$가 $U$ 위에 유도하는
+가군이다. $\mathscr{G}_{\lambda,U}$들의 유한합도 다시 유한 생성
+준연접 $\mathscr{O}_X$-가군이다. 실제로 이 문제는 국소적이고,
+$X$가 아핀인 경우는 (\hyperref[I.1.3.10-ko]{1.3.10})에서 다루었다.
+이제 $\mathscr{F}$가 이러한 유한합들의 귀납극한임은 분명하며,
+주장이 증명되었다.
+\end{remark}
+
+\begin{corollary}[9.4.5]
+\label{I.9.4.5-ko}
+(9.4.3)의 가정 아래에서 모든 유한 생성 준연접
+$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여 유한 생성 준연접
+$\mathscr{O}_X$-가군 $\mathscr{G}'$이 존재하여
+$\mathscr{G}'|U=\mathscr{G}$이다.
+\end{corollary}
+
+\begin{proof}
+$\mathscr{F}=j_*(\mathscr{G})$는 (9.4.2)에 따라 준연접이고
+$\mathscr{F}|U=\mathscr{G}$이므로, $\mathscr{F}$에 (9.4.3)을 적용하면
+된다.
+\end{proof}
+
+\begin{lemma}[9.4.6]
+\label{I.9.4.6-ko}
+$X$를 준스킴, $L$을 정렬집합,
+$(V_\lambda)_{\lambda\in L}$를 $X$의 아핀 열린집합들로 이루어진 덮개,
+$U$를 $X$의 열린집합이라 하자. 모든 $\lambda\in L$에 대하여
+$W_\lambda=\bigcup_{\mu<\lambda}V_\mu$로 놓고, 다음을 가정하자.
+\begin{enumerate}
+  \item[1\textsuperscript{o}] 모든 $\lambda\in L$에 대하여
+    $V_\lambda\cap W_\lambda$는 준콤팩트이다.
+  \item[2\textsuperscript{o}] 몰입 사상 $U\to X$는 준콤팩트이다.
+\end{enumerate}
+그러면 모든 준연접 $\mathscr{O}_X$-가군 $\mathscr{F}$와
+$\mathscr{F}|U$의 모든 유한 생성 준연접
+부분-$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여 $\mathscr{F}$의
+유한 생성 준연접 부분-$\mathscr{O}_X$-가군 $\mathscr{G}'$이 존재하여
+$\mathscr{G}'|U=\mathscr{G}$이다.
+\end{lemma}
+
+\begin{proof}
+$L$에 그 모든 원소보다 큰 새 원소 $\infty$를 덧붙인 정렬집합을
+$\widehat L=L\cup\{\infty\}$라 하고, $\lambda\in\widehat L$에 대하여
+$U_\lambda=U\cup\bigcup_{\substack{\mu\in L\\ \mu<\lambda}}V_\mu$로 놓자.
+초한 귀납법으로 족 $(\mathscr{G}'_\lambda)_{\lambda\in\widehat L}$를
+정의하겠다. 여기서
+$\mathscr{G}'_\lambda$는 $\mathscr{F}|U_\lambda$의 유한 생성 준연접
+부분-$(\mathscr{O}_X|U_\lambda)$-가군이고,
+$\mu<\lambda$이면
+$\mathscr{G}'_\lambda|U_\mu=\mathscr{G}'_\mu$이며
+$\mathscr{G}'_\lambda|U=\mathscr{G}$이다. 이 족은
+(\hyperref[0.3.3.1-ko]{0, 3.3.1})에 따라 서로 붙으며,
+$U_\infty=X$이므로 $\mathscr{G}'=\mathscr{G}'_\infty$가 결론을 준다.
+이제 $\widehat L$의 최소 원소 $\lambda_0$에 대해서는
+$U_{\lambda_0}=U$이고 $\mathscr{G}'_{\lambda_0}=\mathscr{G}$로 둔다.
+그 뒤
+$\mu<\lambda$인 $\mathscr{G}'_\mu$들이 정의되어 앞의 성질들을
+만족한다고 가정하자. $\lambda$가 최소 원소가 아닌 극한 원소이면,
+모든 $\mu<\lambda$에 대하여
+$\mathscr{G}'_\lambda|U_\mu=\mathscr{G}'_\mu$인
+$\mathscr{F}|U_\lambda$의 유일한 부분-$(\mathscr{O}_X|U_\lambda)$-가군을
+$\mathscr{G}'_\lambda$로 잡는다. $\mu<\lambda$인 $U_\mu$들이
+$U_\lambda$를 덮으므로 이렇게 할 수 있다. 반대로
+$\lambda=\mu+1$이면 $U_\lambda=U_\mu\cup V_\mu$이고,
+$\mathscr{F}|V_\mu$의 유한 생성 준연접
+부분-$(\mathscr{O}_X|V_\mu)$-가군 $\mathscr{G}''_\mu$를
+\[
+  \mathscr{G}''_\mu|(U_\mu\cap V_\mu)
+  =\mathscr{G}'_\mu|(U_\mu\cap V_\mu)~;
+\]
+가 되도록 정의하면 충분하다. 그런 다음
+$\mathscr{G}'_\lambda|U_\mu=\mathscr{G}'_\mu$이고
+$\mathscr{G}'_\lambda|V_\mu=\mathscr{G}''_\mu$인
+$\mathscr{F}|U_\lambda$의 부분-$(\mathscr{O}_X|U_\lambda)$-가군을
+$\mathscr{G}'_\lambda$로 잡는다
+(\hyperref[0.3.3.1-ko]{0, 3.3.1}). $V_\mu$가 아핀이므로,
+$U_\mu\cap V_\mu$가 준콤팩트임을 보이기만 하면
+$\mathscr{G}''_\mu$의 존재는 (9.4.3)에서 따른다. 그런데
+$U_\mu\cap V_\mu$는 $U\cap V_\mu$와 $W_\mu\cap V_\mu$의 합집합이고,
+둘 다 가정에 따라 준콤팩트이다.\footnote{\emph{[번역 주] 인쇄 원문의
+귀납 지표는 $L$뿐이어서
+$L$이 최대 원소를 가지면 $U_\lambda$들이 마지막 $V_\lambda$를 덮지
+못하고, 최소 원소 단계에서는 앞선 $U_\mu$들이 $U$를 덮는다는 주장도
+성립하지 않는다. 위에서는 새 종단 원소 $\infty$를 붙이고 최소 원소
+단계를 따로 정의하여 두 지표 결함을 바로잡았다.}}
+\end{proof}
+
+\begin{theorem}[9.4.7]
+\label{I.9.4.7-ko}
+$X$를 준스킴, $U$를 $X$의 열린집합이라 하자. 다음 조건 중 하나가
+성립한다고 가정하자.
+\begin{enumerate}
+  \item[(a)] $X$의 바탕공간은 국소 뇌터이다.
+  \item[(b)] $X$는 준콤팩트 스킴이고 $U$는 준콤팩트 열린집합이다.
+\end{enumerate}
+그러면 모든 준연접 $\mathscr{O}_X$-가군 $\mathscr{F}$와
+$\mathscr{F}|U$의 모든 유한 생성 준연접
+부분-$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여 $\mathscr{F}$의
+유한 생성 준연접 부분-$\mathscr{O}_X$-가군 $\mathscr{G}'$이 존재하여
+$\mathscr{G}'|U=\mathscr{G}$이다.
+\end{theorem}
+
+\oldpage[I]{176}
+
+\begin{proof}
+$(V_\lambda)_{\lambda\in L}$를 $X$의 아핀 열린집합들로 이루어진
+덮개라 하자. 경우 b)에서는 $L$이 유한하다고 가정한다. $L$에
+정렬 순서를 주면, 보조정리 (9.4.6)의 조건들이 성립함을 확인하면
+충분하다. 경우 a)에서는 공간 $V_\lambda$들이 뇌터이므로 이는
+명백하다. 경우 b)에서는 $V_\lambda\cap V_\mu$가 아핀
+(\hyperref[I.5.5.6-ko]{5.5.6})이므로 준콤팩트이고, $L$이 유한하므로
+$V_\lambda\cap W_\lambda$는 준콤팩트이다. 이로써 정리가 증명되었다.
+\end{proof}
+
+\begin{corollary}[9.4.8]
+\label{I.9.4.8-ko}
+(9.4.7)의 가정 아래에서 모든 유한 생성 준연접
+$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$에 대하여 유한 생성 준연접
+$\mathscr{O}_X$-가군 $\mathscr{G}'$이 존재하여
+$\mathscr{G}'|U=\mathscr{G}$이다.
+\end{corollary}
+
+\begin{proof}
+$\mathscr{F}=j_*(\mathscr{G})$에 (9.4.7)을 적용하면 된다. 이 가군은
+(9.4.2)에 따라 준연접이고 $\mathscr{F}|U=\mathscr{G}$이다.
+\end{proof}
+
+\begin{corollary}[9.4.9]
+\label{I.9.4.9-ko}
+$X$를 바탕공간이 국소 뇌터인 준스킴 또는 준콤팩트 스킴이라 하자.
+그러면 모든 준연접 $\mathscr{O}_X$-가군은 그 유한 생성 준연접
+부분-$\mathscr{O}_X$-가군들의 귀납극한이다.
+\end{corollary}
+
+\begin{proof}
+이는 (9.4.7)과 주 (9.4.4)에서 따른다.
+\end{proof}
+
+\begin{corollary}[9.4.10]
+\label{I.9.4.10-ko}
+(9.4.9)의 가정 아래에서 준연접 $\mathscr{O}_X$-가군
+$\mathscr{F}$를 생각하자. $\mathscr{F}$의 모든 유한 생성 준연접
+부분-$\mathscr{O}_X$-가군이 $X$ 위의 단면들로 생성된다고 가정하면,
+$\mathscr{F}$도 $X$ 위의 단면들로 생성된다.
+\end{corollary}
+
+\begin{proof}
+$U$를 점 $x\in X$의 아핀 열린 근방, $s$를 $U$ 위의
+$\mathscr{F}$의 단면이라 하자. $s$로 생성되는 $\mathscr{F}|U$의
+부분-$(\mathscr{O}_X|U)$-가군 $\mathscr{G}$는 준연접이고 유한 생성이므로,
+$\mathscr{F}$의 유한 생성 준연접 부분-$\mathscr{O}_X$-가군
+$\mathscr{G}'$이 존재하여 $\mathscr{G}'|U=\mathscr{G}$이다(9.4.7).
+가정에 따라 $X$ 위의 $\mathscr{G}'$의 유한개의 단면 $t_i$와
+$x$의 근방 $V\subset U$ 위의 $\mathscr{O}_X$의 단면 $a_i$들이 존재하여
+$s|V=\sum_i a_i\mathbin{\cdot}(t_i|V)$이다. 이로써 따름정리가
+증명되었다.
+\end{proof}
+
+\subsection{준스킴의 닫힌 상. 부분준스킴의 폐포.}
+\label{subsection:I.9.5-ko}
+
+\begin{proposition}[9.5.1]
+\label{I.9.5.1-ko}
+$f:X\to Y$를 $f_*(\mathscr{O}_X)$가 준연접
+$\mathscr{O}_Y$-가군인 준스킴의 사상이라 하자(이는 $f$가 준콤팩트이고,
+또한 $f$가 분리 사상이거나 $X$가 국소 뇌터이면 성립한다
+(\hyperref[I.9.2.2-ko]{9.2.2})). 그러면 $Y$의 가장 작은
+닫힌 부분준스킴\footnote{\textbf{번역 주.} 인쇄 원문은 ‘닫힌’ 없이
+단순히 “가장 작은 부분준스킴”이라고 쓴다.
+그러나 이어지는 (9.5.2)의 구성과 (9.5.3)의 정의는 닫힌
+부분준스킴 가운데의 최소성을 증명하고 정의한다. 실제로 조밀한
+준콤팩트 열린 몰입 $D(t)\to\operatorname{Spec}(k[t])$에서는 핵으로
+정의되는 닫힌 부분준스킴이 $\operatorname{Spec}(k[t])$ 전체인 반면,
+$f$는 진부분 열린 부분준스킴 $D(t)$를 통하여 인수분해된다. 따라서
+핵으로 정의된 대상이 모든 부분준스킴 가운데 최소라는 인쇄문과
+(9.5.2)의 결합된 주장은 성립하지 않으며, 여기서는 논증과 정의에
+필수적인 ‘닫힌’을 보충했다. 이는 공식 정오표가 아니라 뒤의
+구성·정의와 위 반례가 강제하는 편집 교정이다.}
+$Y'$이 존재하여, 표준 포함 사상 $j:Y'\to Y$를 통하여 $f$가
+인수분해된다(또는 동치로
+(\hyperref[I.4.4.1-ko]{4.4.1}), $X$의 부분준스킴
+$f^{-1}(Y')$이 $X$와 \emph{동일하다}).
+\end{proposition}
+
+좀 더 정확히 말하면 다음과 같다.
+
+\begin{corollary}[9.5.2]
+\label{I.9.5.2-ko}
+(9.5.1)의 가정 아래에서 $f=(\psi,\theta)$라 하고, 준동형
+$\theta:\mathscr{O}_Y\to f_*(\mathscr{O}_X)$의 준연접 핵을
+$\mathscr{J}$라 하자. 그러면 $\mathscr{J}$로 정의된 $Y$의 닫힌
+부분준스킴 $Y'$은 (9.5.1)의 조건을 만족한다.
+\end{corollary}
+
+\begin{proof}
+함자 $\psi^*$가 완전하므로, 표준 인수분해
+$\theta:\mathscr{O}_Y\to\mathscr{O}_Y/\mathscr{J}
+\xrightarrow{\theta'}\psi_*(\mathscr{O}_X)$는
+(\hyperref[0.3.5.4.3-ko]{0, 3.5.4.3})에 따라 다음 인수분해를 준다.
+\[
+  \theta^\sharp:\psi^*(\mathscr{O}_Y)
+  \to\psi^*(\mathscr{O}_Y)/\psi^*(\mathscr{J})
+  \xrightarrow{{\theta'}^\sharp}\mathscr{O}_X~;
+\]
+모든 $x\in X$에 대하여 $\theta_x^\sharp$가 국소 준동형이므로
+${\theta'_x}^\sharp$도 그러하다. 연속사상 $\psi$를 $X$에서
+$Y'$로 가는 사상으로 보아 $\psi_0$라 하고,\footnote{\textbf{번역 주.}
+인쇄 원문은 이 증명의 해당 구간에서
+$X'$, $X''$를 쓰지만, 출판된 EGA II 정오표는 이들을 전부
+$Y'$, $Y''$로 고치도록 지시한다. 여기서는 그 공식 교정을
+적용하였다.}
+$\theta_0$를 제한 사상
+$\theta'|Y':(\mathscr{O}_Y/\mathscr{J})|Y'
+\to\psi_*(\mathscr{O}_X)|Y'=(\psi_0)_*(\mathscr{O}_X)$라 하자.
+그러면 $f_0=(\psi_0,\theta_0)$는 준스킴의 사상 $X\to Y'$이고
+(\hyperref[I.2.2.1-ko]{2.2.1}), $f=j\circ f_0$이다. 이제
+$\mathscr{O}_Y$의 준연접 아이디얼층 $\mathscr{J}'$로 정의된
+$Y$의 두 번째 닫힌 부분준스킴을 $Y''$
+\oldpage[I]{177}
+라 하고, 표준 포함 사상 $j':Y''\to Y$를 통하여 $f$가
+인수분해된다고 하자. 우선 $Y''\supset\psi(X)$이어야 하므로,
+$Y''$가 닫혀 있다는 데서 $Y'\subset Y''$가 따른다. 또 모든
+$y\in Y''$에 대하여 $\theta$는
+$\mathscr{O}_y\to\mathscr{O}_y/\mathscr{J}'_y
+\to(\psi_*(\mathscr{O}_X))_y$로 인수분해되어야 한다.
+따라서 정의에 의해 $\mathscr{J}'_y\subset\mathscr{J}_y$이고,
+그러므로 $Y'$은 $Y''$의 닫힌 부분준스킴이다
+(\hyperref[I.4.1.10-ko]{4.1.10}).
+\end{proof}
+
+\begin{definition}[9.5.3]
+\label{I.9.5.3-ko}
+표준 포함 사상 $j:Y'\to Y$를 통하여 $f$가 인수분해되는 $Y$의
+가장 작은 닫힌 부분준스킴 $Y'$이 존재할 때, $Y'$을 사상 $f$에
+의한 $X$의 닫힌 상 준스킴이라고 한다.
+\end{definition}
+
+\begin{proposition}[9.5.4]
+\label{I.9.5.4-ko}
+$f_*(\mathscr{O}_X)$가 준연접 $\mathscr{O}_Y$-가군이면, $f$에 의한
+$X$의 닫힌 상의 바탕공간은 $Y$에서 집합론적 상의 폐포
+$\overline{f(X)}$이다.
+\end{proposition}
+
+\begin{proof}
+$f_*(\mathscr{O}_X)$의 지지집합은 $\overline{f(X)}$에 포함되므로,
+(\hyperref[I.9.5.2-ko]{9.5.2})의 표기에서
+$y\notin\overline{f(X)}$이면 $\mathscr{J}_y=\mathscr{O}_y$이다.
+따라서 $\mathscr{O}_Y/\mathscr{J}$의 지지집합은
+$\overline{f(X)}$에 포함된다. 한편 이 지지집합은 닫혀 있고
+$f(X)$를 포함한다. 실제로 $y\in f(X)$이면 환
+$(\psi_*(\mathscr{O}_X))_y$의 단위원은 영이 아닌데, 이는 단면
+\[
+  1\in\Gamma(X,\mathscr{O}_X)=\Gamma(Y,\psi_*(\mathscr{O}_X))~;
+\]
+의 $y$에서의 싹이기 때문이다. 이 단위원은 $\mathscr{O}_y$의
+단위원의 $\theta$에 의한 상이므로, 후자는 $\mathscr{J}_y$에 속하지
+않는다. 따라서 $\mathscr{O}_y/\mathscr{J}_y\neq0$이고, 이로써 증명이
+끝난다.
+\end{proof}
+
+\begin{proposition}[9.5.5]
+\label{I.9.5.5-ko}
+\emph{(닫힌 상의 추이성).} $f:X\to Y$와 $g:Y\to Z$를 준스킴의
+두 사상이라 하자. $f$에 의한 $X$의 닫힌 상 $Y'$이 존재하고,
+$g'$이 $g$를 $Y'$에 제한한 사상일 때 $g'$에 의한 $Y'$의 닫힌 상
+$Z'$이 존재한다고 가정하자. 그러면 $g\circ f$에 의한 $X$의 닫힌
+상이 존재하며 $Z'$과 같다.
+\end{proposition}
+
+\begin{proof}
+(\hyperref[I.9.5.1-ko]{9.5.1})에 따라, $Z'$이 다음 조건을 만족하는
+$Z$의 가장 작은 닫힌 부분준스킴 $Z_1$임을 보이면 충분하다. 그
+조건은 $X$의 닫힌 부분준스킴 $(g\circ f)^{-1}(Z_1)$이 $X$와 같다는
+것이며, 이 부분준스킴은 (\hyperref[I.4.4.2-ko]{4.4.2})에 따라
+$f^{-1}(g^{-1}(Z_1))$과 같다. 이는 $Z'$이 $f$가 포함 사상
+$g^{-1}(Z_1)\to Y$를 통하여 인수분해되게 하는 $Z$의 가장 작은
+닫힌 부분준스킴이라는 것과 동치이다
+(\hyperref[I.4.4.1-ko]{4.4.1}). 그런데 닫힌 상 $Y'$의 존재에 따라,
+이 조건을 만족하는 모든 $Z_1$에 대하여 $g^{-1}(Z_1)$은 $Y'$을
+부분준스킴으로 포함한다. $j$를 포함 사상 $Y'\to Y$라 하면, 이는
+$j^{-1}(g^{-1}(Z_1))=g'^{-1}(Z_1)=Y'$이라는 것과 동치이다. 이제
+$Z'$의 정의로부터 $Z'$이 앞의 조건을 만족하는 $Z$의 가장 작은
+닫힌 부분준스킴임이 따른다.
+\end{proof}
+
+\begin{corollary}[9.5.6]
+\label{I.9.5.6-ko}
+$f:X\to Y$를 $f$에 의한 $X$의 닫힌 상이 $Y$인 $S$-사상이라
+하자. $Z$를 $S$-스킴이라 하자. $Y$에서 $Z$로 가는 두 $S$-사상
+$g_1$, $g_2$가 $g_1\circ f=g_2\circ f$를 만족하면
+$g_1=g_2$이다.
+\end{corollary}
+
+\begin{proof}
+$h=(g_1,g_2)_S:Y\to Z\times_S Z$라 하자. 대각선
+$T=\Delta_Z(Z)$은 $Z\times_S Z$의 닫힌 부분준스킴이므로,
+$Y'=h^{-1}(T)$는 $Y$의 닫힌 부분준스킴이다
+(\hyperref[I.4.4.1-ko]{4.4.1}). $u=g_1\circ f=g_2\circ f$라 두면,
+곱의 정의에 따라 $h'=h\circ f=(u,u)_S$이고, 따라서
+$h\circ f=\Delta_Z\circ u$이다. $\Delta_Z^{-1}(T)=Z$이므로
+$h'^{-1}(T)=u^{-1}(Z)=X$이고, 따라서 $f^{-1}(Y')=X$이다. 이로부터
+(\hyperref[I.4.4.1-ko]{4.4.1})에 따라 표준 포함 사상 $Y'\to Y$를 통하여
+$f$가 인수분해되므로, 가정에 따라 $Y'=Y$이다. 따라서
+(\hyperref[I.4.4.1-ko]{4.4.1})에 따라 $h$는 $\Delta_Z\circ v$로
+인수분해된다. 여기서 $v$는 $Y\to Z$인 사상이며, 이로부터
+$g_1=g_2=v$가 따른다.
+\end{proof}
+
+\begin{remark}[9.5.7]
+\label{I.9.5.7-ko}
+$X$와 $Y$가 $S$-스킴이면, 명제
+(\hyperref[I.9.5.6-ko]{9.5.6})이 뜻하는 바는
+\oldpage[I]{178}
+$f$에 의한 $X$의 닫힌 상이 $Y$일 때 $f$가 $S$-스킴의 범주에서
+\emph{에피사상}이라는 것이다(T, 1.1). 제V장에서 역으로, $f$에
+의한 $X$의 닫힌 상 $Y'$이 존재하고 $f$가 $S$-스킴의 에피사상이면
+반드시 $Y'=Y$임을 증명할 것이다.
+\end{remark}
+
+\begin{proposition}[9.5.8]
+\label{I.9.5.8-ko}
+(\hyperref[I.9.5.1-ko]{9.5.1})의 가정들이 성립하고, $Y'$을 $f$에
+의한 $X$의 닫힌 상이라 하자. $Y$의 임의의 열린집합 $V$에 대하여,
+$f_V:f^{-1}(V)\to V$를 $f$의 제한이라 하자. 그러면 $f_V$에 의한
+$f^{-1}(V)$의 $V$ 안에서의 닫힌 상은 존재하며, $Y'$의 열린집합
+$V\cap Y'$ 위에 $Y'$로부터 유도된 준스킴과 같다. 다시 말해 이는
+$Y$의 부분준스킴 $\inf(V,Y')$와 같다
+(\hyperref[I.4.4.3-ko]{4.4.3}).
+\end{proposition}
+
+\begin{proof}
+$X'=f^{-1}(V)$라 하자. $f_V$에 의한 $\mathscr{O}_{X'}$의 직상은
+$f_*(\mathscr{O}_X)$를 $V$에 제한한 것과 같으므로, 준동형
+$\mathscr{O}_V\to(f_V)_*(\mathscr{O}_{X'})$의 핵
+$\mathscr{J}'$은 $\mathscr{J}$를 $V$에 제한한 것이다. 이로부터
+명제가 곧바로 따른다.
+\end{proof}
+
+이 결과는 닫힌 상을 만드는 것이 밑준스킴의 확장 $Y_1\to Y$가
+\emph{열린 몰입 사상}인 경우 그 확장과 가환한다는 뜻으로 해석할
+수 있다. 제IV장에서 $f$가 분리 사상이고 준콤팩트일 때에는
+$Y_1\to Y$가 \emph{평탄} 사상인 경우에도 마찬가지임을 볼 것이다.
+
+\begin{proposition}[9.5.9]
+\label{I.9.5.9-ko}
+$f:X\to Y$를 $f$에 의한 $X$의 닫힌 상 $Y'$이 존재하는 사상이라
+하자.
+\begin{enumerate}
+  \item[(i)] $X$가 축소 준스킴이면 $Y'$도 축소 준스킴이다.
+  \item[(ii)] (\hyperref[I.9.5.1-ko]{9.5.1})의 가정들이 성립하고
+    $X$가 기약이면(각각 정역 준스킴이면), $Y'$도 기약이다
+    (각각 정역 준스킴이다).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+가정에 따라 $f$는 $X\xrightarrow{g}Y'\xrightarrow{j}Y$로
+인수분해되며, 여기서 $j$는 표준 포함 사상이다. $X$가 축소이므로
+$g$는 $X\xrightarrow{h}Y'_{\mathrm{red}}\xrightarrow{j'}Y'$로
+인수분해된다. 여기서 $j'$은 표준 포함 사상이다
+(\hyperref[I.5.2.2-ko]{5.2.2}). 따라서 $Y'$의 정의로부터
+$Y'_{\mathrm{red}}=Y'$이 따른다. 또한
+(\hyperref[I.9.5.1-ko]{9.5.1})의 조건들이 성립하면,
+(\hyperref[I.9.5.4-ko]{9.5.4})에 따라 $f(X)$는 $Y'$에서 조밀하다.
+그러므로 $X$가 기약이면 $Y'$도 기약이다
+(\hyperref[0.2.1.5-ko]{0, 2.1.5}). 정역 준스킴에 관한 주장은
+앞의 두 주장을 함께 적용하여 얻는다.
+\end{proof}
+
+\begin{proposition}[9.5.10]
+\label{I.9.5.10-ko}
+$Y$를 준스킴 $X$의 부분준스킴이라 하고, 표준 포함 사상
+$i:Y\to X$가 준콤팩트 사상이라고 하자. 그러면 $Y$를 부분준스킴으로
+포함하는 $X$의 가장 작은 닫힌 부분준스킴 $\overline{Y}$이 존재한다.
+그 바탕공간은 $Y$의 바탕공간의 폐포이고, 후자는 이
+폐포에서 열려 있으며, 이 열린집합 위에서 $\overline{Y}$로부터
+유도된 준스킴은 $Y$이다.
+\end{proposition}
+
+\begin{proof}
+포함 사상 $i$에 (\hyperref[I.9.5.1-ko]{9.5.1})을 적용하면
+된다.\footnote{\textbf{번역 주.} 인쇄 원문은 이 증명에서 앞서 정의되지
+않은 $j$에 (9.5.1)을 적용한다고 쓰지만, 명제에서 정의된 표준 포함
+사상은 $i:Y\to X$이다. 여기서는 명제에서 정의된 표기에 맞게 $i$로
+바로잡았다.} 이 사상은
+분리 사상이고 (\hyperref[I.5.5.1-ko]{5.5.1}), 가정에 따라
+준콤팩트이다. 따라서 (\hyperref[I.9.5.1-ko]{9.5.1})은
+$\overline{Y}$의 존재를 보이고, (\hyperref[I.9.5.4-ko]{9.5.4})는
+그 바탕공간이 $X$에서 $Y$의 폐포임을 보인다. $Y$는 $X$에서 국소
+닫혀 있으므로 $\overline{Y}$에서 열려 있다. 마지막 주장은 $Y$가
+$X$의 어떤 열린집합 $V$ 안에서 닫혀 있도록 $V$를 택한 뒤
+(\hyperref[I.9.5.8-ko]{9.5.8})을 적용하면 얻는다.
+\end{proof}
+
+이 표기 아래에서, 포함 사상 $V\to X$가 준콤팩트이고
+$\mathscr{J}$가 $V$의 닫힌 부분준스킴 $Y$를 정의하는
+$\mathscr{O}_X|V$의 준연접 아이디얼층이면,
+(\hyperref[I.9.5.1-ko]{9.5.1})에 따라 $\overline{Y}$을 정의하는
+$\mathscr{O}_X$의 준연접 아이디얼층은 $\mathscr{J}$의 표준 연장
+(\hyperref[I.9.4.1-ko]{9.4.1}) $\overline{\mathscr{J}}$이다. 실제로
+이는 $V$ 위에 $\mathscr{J}$를 유도하는 $\mathscr{O}_X$의 준연접
+아이디얼 부분층 가운데 가장 큰 것이다.
+\oldpage[I]{179}
+\begin{corollary}[9.5.11]
+\label{I.9.5.11-ko}
+(\hyperref[I.9.5.10-ko]{9.5.10})의 가정 아래에서,
+$\overline{Y}$의 열린집합 $V$ 위의 $\mathscr{O}_{\overline{Y}}$의
+단면이 $V\cap Y$에서 영이면 그 단면은 영이다.
+\end{corollary}
+
+\begin{proof}
+(\hyperref[I.9.5.8-ko]{9.5.8})에 따라 $V=\overline{Y}$인 경우로
+환원할 수 있다. $\overline{Y}$ 위의 $\mathscr{O}_{\overline{Y}}$의
+단면들이 준스킴
+$\overline{Y}\otimes_{\mathbb{Z}}\mathbb{Z}[T]$의
+$\overline{Y}$-단면들과 표준적으로 대응하고
+(\hyperref[I.3.3.15-ko]{3.3.15}), 이 준스킴은 $\overline{Y}$ 위에서
+분리되어 있으므로, 이 따름정리는
+(\hyperref[I.9.5.6-ko]{9.5.6})의 특별한 경우이다.
+\end{proof}
+
+$X$의 부분준스킴 $Y$를 부분준스킴으로 포함하는 $X$의 가장 작은 닫힌
+부분준스킴 $\overline{Y}$이 존재할 때, 혼동할 우려가 없으면
+$\overline{Y}$을 $X$에서 $Y$의 \emph{폐포}라고 한다.
+
+\subsection{준연접 대수; 구조층의 변경.}
+\label{subsection:I.9.6-ko}
+
+\begin{proposition}[9.6.1]
+\label{I.9.6.1-ko}
+$X$를 준스킴, $\mathscr{B}$를 준연접 $\mathscr{O}_X$-대수라 하자
+(\hyperref[0.5.1.3-ko]{0, 5.1.3}). $\mathscr{B}$-가군 $\mathscr{F}$가
+(환 달린 공간 $(X,\mathscr{B})$ 위에서) 준연접일 필요충분조건은
+$\mathscr{F}$가 준연접 $\mathscr{O}_X$-가군인 것이다.
+\end{proposition}
+
+\begin{proof}
+문제가 국소적이므로 $X$가 환 $A$를 갖는 아핀 스킴이라고 해도 된다.
+그러면 $\mathscr{B}=\widetilde{B}$이고, 여기서 $B$는 $A$-대수이다
+(\hyperref[I.1.4.3-ko]{1.4.3}). $\mathscr{F}$가 환 달린 공간
+$(X,\mathscr{B})$ 위에서 준연접이면, $\mathscr{F}$가 어떤
+$\mathscr{B}$-준동형 $\mathscr{B}^{(I)}\to\mathscr{B}^{(J)}$의
+여핵이라고 해도 된다. 이 준동형은 $\mathscr{O}_X$-가군의
+$\mathscr{O}_X$-준동형이기도 하고, $\mathscr{B}^{(I)}$와
+$\mathscr{B}^{(J)}$는 준연접 $\mathscr{O}_X$-가군이므로
+(\hyperref[I.1.3.9-ko]{1.3.9, (ii)}), $\mathscr{F}$도 준연접
+$\mathscr{O}_X$-가군이다
+(\hyperref[I.1.3.9-ko]{1.3.9, (i)}).
+
+거꾸로 $\mathscr{F}$가 준연접 $\mathscr{O}_X$-가군이면
+$\mathscr{F}=\widetilde{M}$이고, 여기서 $M$은 $B$-가군이다
+(\hyperref[I.1.4.3-ko]{1.4.3}). $M$은 어떤 $B$-준동형
+$B^{(I)}\to B^{(J)}$의 여핵과 동형이므로, $\mathscr{F}$는 이에
+대응하는 준동형 $\mathscr{B}^{(I)}\to\mathscr{B}^{(J)}$의 여핵과
+동형인 $\mathscr{B}$-가군이다
+(\hyperref[I.1.3.13-ko]{1.3.13}). 이로써 증명이 끝난다.
+\end{proof}
+
+특히 $\mathscr{F}$와 $\mathscr{G}$가 두 준연접
+$\mathscr{B}$-가군이면 $\mathscr{F}\otimes_{\mathscr{B}}\mathscr{G}$는
+준연접 $\mathscr{B}$-가군이다. 더욱이 $\mathscr{F}$가 유한 표시를
+갖는다고 가정하면 $\mathscr{H}\!om_{\mathscr{B}}(\mathscr{F},\mathscr{G})$도
+그러하다(\hyperref[I.1.3.13-ko]{1.3.13}).
+
+\begin{env}[9.6.2]
+\label{I.9.6.2-ko}
+준스킴 $X$가 주어졌을 때, 준연접 $\mathscr{O}_X$-대수
+$\mathscr{B}$가 \emph{유한 생성}이라는 것은 모든 $x\in X$에 대하여
+$x$의 \emph{아핀} 열린 근방 $U$가 존재하여
+$\Gamma(U,\mathscr{B})=B$가 $\Gamma(U,\mathscr{O}_X)=A$ 위의 유한 생성
+대수라는 뜻이다. 이때 $\mathscr{B}|U=\widetilde{B}$이고, 모든 $f\in A$에
+대하여 그 원소에 대응하는 주 열린집합 위에 유도된
+$(\mathscr{O}_X|D(f))$-대수
+$\mathscr{B}|D(f)$도 유한 생성이다. 실제로 이는
+$\widetilde{B_f}$와 동형이고, $B_f=B\otimes_A A_f$는 분명히 $A_f$ 위의
+유한 생성 대수이다. $D(f)$들이 $U$의 위상의 기저를 이루므로, 준연접
+유한 생성 $\mathscr{O}_X$-대수 $\mathscr{B}$와 $X$의 모든 열린집합
+$V$에 대하여 $\mathscr{B}|V$는 준연접 유한 생성
+$(\mathscr{O}_X|V)$-대수이다.
+\end{env}
+
+\begin{proposition}[9.6.3]
+\label{I.9.6.3-ko}
+$X$를 국소 뇌터 준스킴이라 하자. 모든 준연접 유한 생성
+$\mathscr{O}_X$-대수 $\mathscr{B}$는 연접인 환의 층이다
+(\hyperref[0.5.3.7-ko]{0, 5.3.7}).
+\end{proposition}
+
+\begin{proof}
+다시 $X$가 뇌터 환 $A$를 갖는 아핀 스킴이고
+$\mathscr{B}=\widetilde{B}$이며 $B$가 $A$ 위의 유한 생성 대수인 경우로
+한정해도 된다. 그러면 $B$는 뇌터 환이다. 따라서
+$\mathscr{B}$-준동형 $\mathscr{B}^m\to\mathscr{B}$의 핵
+$\mathscr{N}$이 유한 생성 $\mathscr{B}$-
+\oldpage[I]{180}
+가군임을 보이면 된다. 그런데 이 핵은 이에 대응하는 $B$-가군의
+준동형 $B^m\to B$의 핵 $N$에 대응하는 층 $\widetilde{N}$과
+($\mathscr{B}$-가군으로서) 동형이다
+(\hyperref[I.1.3.13-ko]{1.3.13}). $B$가 뇌터이므로 $B^m$의 부분가군
+$N$은 유한 생성 $B$-가군이다. 따라서 상이 $N$인 준동형
+$B^p\to B^m$이 존재한다. 열 $B^p\to B^m\to B$이 완전이므로 이에
+대응하는 열 $\mathscr{B}^p\to\mathscr{B}^m\to\mathscr{B}$도 완전이고
+(\hyperref[I.1.3.5-ko]{1.3.5}), $\mathscr{N}$은
+$\mathscr{B}^p\to\mathscr{B}^m$의 상이므로
+(\hyperref[I.1.3.9-ko]{1.3.9, (i)}) 명제가 증명된다.
+\end{proof}
+
+\begin{corollary}[9.6.4]
+\label{I.9.6.4-ko}
+(\hyperref[I.9.6.3-ko]{9.6.3})의 가정 아래에서, $\mathscr{B}$-가군
+$\mathscr{F}$가 연접일 필요충분조건은 그 가군이 준연접
+$\mathscr{O}_X$-가군이면서 유한 생성 $\mathscr{B}$-가군인 것이다.
+이 조건들이 성립하고 $\mathscr{G}$가 $\mathscr{F}$의
+부분-$\mathscr{B}$-가군 또는 $\mathscr{B}$-몫가군이면,
+$\mathscr{G}$가 연접 $\mathscr{B}$-가군일 필요충분조건은
+$\mathscr{G}$가 준연접 $\mathscr{O}_X$-가군인 것이다.
+\end{corollary}
+
+\begin{proof}
+(\hyperref[I.9.6.1-ko]{9.6.1})을 고려하면 $\mathscr{F}$에 관한 조건들이
+필요함은 분명하다. 충분함을 보이자. $X$가 뇌터 환 $A$를 갖는
+아핀 스킴이고, $\mathscr{B}=\widetilde{B}$이며, $B$가 $A$ 위의 유한 생성
+대수이고, $\mathscr{F}=\widetilde{M}$이며, 여기서 $M$은 $B$-가군이고,
+전사 $\mathscr{B}$-준동형 $\mathscr{B}^m\to\mathscr{F}\to 0$이 존재하는
+경우로 한정해도 된다. 그러면 이에 대응하는 완전열
+$B^m\to M\to 0$이 있으므로 $M$은 유한 생성 $B$-가군이다. 또한
+$B^m\to M$의 핵 $P$도 $B$가 뇌터이므로 유한 생성 $B$-가군이다.
+따라서 (\hyperref[I.1.3.13-ko]{1.3.13})에 의해 $\mathscr{F}$는 어떤
+$\mathscr{B}$-준동형 $\mathscr{B}^n\to\mathscr{B}^m$의 여핵이고,
+$\mathscr{B}$가 연접인 환의 층이므로 연접이다
+(\hyperref[0.5.3.4-ko]{0, 5.3.4}). 같은 논증으로 $\mathscr{F}$의 준연접
+부분-$\mathscr{B}$-가군(각각 $\mathscr{B}$-몫가군)은 유한 생성임을
+알 수 있으며, 이로부터 따름정리의 두 번째 주장이 따른다.
+\end{proof}
+
+\begin{proposition}[9.6.5]
+\label{I.9.6.5-ko}
+$X$를 준콤팩트 스킴 또는 바탕공간이 뇌터인 준스킴이라 하자.
+모든 준연접 유한 생성 $\mathscr{O}_X$-대수 $\mathscr{B}$에 대하여,
+$\mathscr{B}$의 유한 생성 준연접 부분-$\mathscr{O}_X$-가군
+$\mathscr{E}$가 존재하여 $\mathscr{E}$가 $\mathscr{O}_X$-대수
+$\mathscr{B}$를 생성한다(\hyperref[0.4.1.4-ko]{0, 4.1.4}).
+\end{proposition}
+
+\begin{proof}
+실제로 가정에 따라 $X$는 아핀 열린집합 $(U_i)$의 유한 덮개를 가지며,
+$\Gamma(U_i,\mathscr{B})=B_i$는 $\Gamma(U_i,\mathscr{O}_X)=A_i$ 위의
+유한 생성 대수이다. $B_i$의 유한 생성 부분-$A_i$-가군 $E_i$를
+$A_i$-대수 $B_i$를 생성하도록 잡자. (\hyperref[I.9.4.7-ko]{9.4.7})에
+따르면, $\mathscr{B}$의 유한 생성 준연접 부분-$\mathscr{O}_X$-가군
+$\mathscr{E}_i$가 존재하여 $\mathscr{E}_i|U_i=\widetilde{E_i}$이다.
+$\mathscr{E}_i$들의 합 $\mathscr{E}$가 요구된 조건을 만족함은 분명하다.
+\end{proof}
+
+\begin{proposition}[9.6.6]
+\label{I.9.6.6-ko}
+$X$를 바탕공간이 국소 뇌터인 준스킴 또는 준콤팩트 스킴이라 하자.
+그러면 모든 준연접 $\mathscr{O}_X$-대수 $\mathscr{B}$는 그 준연접 유한
+생성 부분-$\mathscr{O}_X$-대수들의 귀납극한이다.
+\end{proposition}
+
+\begin{proof}
+(\hyperref[I.9.4.9-ko]{9.4.9})에 따라 $\mathscr{B}$는
+$\mathscr{O}_X$-가군으로서 그 유한 생성 준연접
+부분-$\mathscr{O}_X$-가군들의 귀납극한이다. 이 부분가군들은
+$\mathscr{B}$의 준연접 유한 생성 부분-$\mathscr{O}_X$-대수들을 생성하고
+(\hyperref[I.1.3.14-ko]{1.3.14}), 따라서 $\mathscr{B}$는
+\emph{특히} 이 부분대수들의 귀납극한이다.
+\end{proof}

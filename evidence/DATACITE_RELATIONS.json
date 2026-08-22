@@ -4,7 +4,7 @@
   "language": "ko",
   "global_concept_doi": "10.5281/zenodo.20414353",
   "language_concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.21921514",
+  "exact_version_doi": "10.5281/zenodo.22051764",
   "original_doi": "10.5281/zenodo.20414353",
   "relations": [
     {"from": "language_concept", "relationType": "IsTranslationOf", "to": "original"},

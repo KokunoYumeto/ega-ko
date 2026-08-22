@@ -1,0 +1,1259 @@
+\section{준스킴의 곱}
+\label{section:I.3-ko}
+
+\subsection{준스킴의 합}
+\label{subsection:I.3.1-ko}
+
+\phantomsection\label{I.3.1.1-ko}
+$(X_\alpha)$를 임의의 준스킴족이라 하고, $X$를 그 바탕공간
+$X_\alpha$들의 위상적 \emph{합}인 위상공간이라 하자. 그러면 $X$는
+서로소인 열린 부분공간들 $X'_\alpha$의 합집합이고, 각 $\alpha$에
+대하여 $X_\alpha$에서 $X'_\alpha$ 위로 가는 위상동형
+$\varphi_\alpha$가 존재한다. 각 $X'_\alpha$에 층
+$(\varphi_\alpha)_*(\mathscr{O}_{X_\alpha})$를 주면, $X$는 분명히
+준스킴이 된다. 이를 준스킴족 $(X_\alpha)$의 \emph{합}이라 하며
+$\bigsqcup_\alpha X_\alpha$로 표기한다. $Y$가 준스킴이면 사상
+$f\mapsto(f\circ\varphi_\alpha)$는 집합 $\operatorname{Hom}(X,Y)$에서
+곱집합 $\prod_\alpha\operatorname{Hom}(X_\alpha,Y)$ 위로 가는
+\emph{전단사}이다. 특히 $X_\alpha$들이 구조 사상
+$\psi_\alpha$를 가진 $S$-준스킴들이면, 모든 $\alpha$에 대하여
+$\psi\circ\varphi_\alpha=\psi_\alpha$를 만족하는 유일한 사상
+$\psi:X\to S$에 의해 $X$는 $S$-준스킴이 된다. 두 준스킴 $X$, $Y$의
+합은 $X\sqcup Y$로 표기한다. $X=\operatorname{Spec}(A)$,
+$Y=\operatorname{Spec}(B)$이면 $X\sqcup Y$가
+$\operatorname{Spec}(A\times B)$와 표준적으로 동일시됨은 자명하다.
+
+\subsection{준스킴의 곱}
+\label{subsection:I.3.2-ko}
+
+\begin{definition}[3.2.1]
+\label{I.3.2.1-ko}
+두 $S$-준스킴 $X$, $Y$가 주어졌다고 하자. $S$-준스킴 $Z$와 두
+$S$-사상 $p_1:Z\to X$, $p_2:Z\to Y$로 이루어진 삼중항
+$(Z,p_1,p_2)$가 다음 조건을 만족하면 이를 $S$-준스킴 $X$와 $Y$의
+곱이라 한다. 모든 $S$-준스킴 $T$에 대하여 사상
+\oldpage[I]{105}
+$f\mapsto(p_1\circ f,p_2\circ f)$는 $T$에서 $Z$로 가는 $S$-사상들의
+집합에서, $S$-사상 $T\to X$ 하나와 $S$-사상 $T\to Y$ 하나로
+이루어진 쌍들의 집합 위로 가는 전단사이다. 다시 말해 다음은
+전단사이다.
+\[
+  \operatorname{Hom}_S(T,Z)\xrightarrow{\sim}
+  \operatorname{Hom}_S(T,X)\times\operatorname{Hom}_S(T,Y).
+\]
+\end{definition}
+
+이는 범주의 두 대상의 \emph{곱}이라는 일반적인 개념을
+$S$-준스킴들의 범주에 적용한 것이다(T, I, 1.1). 특히 두
+$S$-준스킴의 곱은 유일한 $S$-동형까지 \emph{유일}하다. 이 유일성
+때문에 두 $S$-준스킴 $X$, $Y$의 곱은 보통 $X\times_S Y$로
+표기하고(혼동의 염려가 없으면 단순히 $X\times Y$로 표기한다),
+$X\times_S Y$에서 각각 $X$와 $Y$로 가는 사상 $p_1$, $p_2$는
+\emph{표준 사영}이라 부르되 표기에서는 생략한다. $g:T\to X$,
+$h:T\to Y$가 두 $S$-사상이면 $p_1\circ f=g$, $p_2\circ f=h$를
+만족하는 $S$-사상 $f:T\to X\times_S Y$를 $(g,h)_S$ 또는 단순히
+$(g,h)$로 나타내겠다. $X'$, $Y'$이 두 $S$-준스킴이고 $p'_1$,
+$p'_2$가 존재한다고 가정한 $X'\times_S Y'$의 표준 사영이며,
+$u:X'\to X$, $v:Y'\to Y$가 두 $S$-사상이면, $X'\times_S Y'$에서
+$X\times_S Y$로 가는 $S$-사상 $(u\circ p'_1,v\circ p'_2)_S$를
+$u\times_S v$ 또는 단순히 $u\times v$로 쓰겠다.
+
+$S$가 환 $A$의 아핀 스킴이면 앞의 표기에서 $S$를 $A$로 바꾸어
+쓰는 경우가 많다.
+
+\begin{proposition}[3.2.2]
+\label{I.3.2.2-ko}
+$X$, $Y$, $S$를 세 아핀 스킴이라 하고 각각의 환을 $B$, $C$, $A$라
+하자. $Z=\operatorname{Spec}(B\otimes_A C)$라 하고, $p_1$, $p_2$를
+$B$와 $C$에서 $B\otimes_A C$로 가는 표준 $A$-준동형
+$u:b\mapsto b\otimes1$, $v:c\mapsto1\otimes c$에 대응하는
+(\hyperref[I.2.2.4-ko]{2.2.4}) $S$-사상이라 하자. 그러면
+$(Z,p_1,p_2)$는 $X$와 $Y$의 곱이다.
+\end{proposition}
+
+(\hyperref[I.2.2.4-ko]{2.2.4})에 따라, 모든 $A$-준동형
+$f:B\otimes_A C\to L$($L$은 $A$-대수)에 쌍
+$(f\circ u,f\circ v)$를 대응시키는 사상이 전단사
+\[
+  \operatorname{Hom}_A(B\otimes_A C,L)\xrightarrow{\sim}
+  \operatorname{Hom}_A(B,L)\times\operatorname{Hom}_A(C,L)\footnotemark
+\]
+\footnotetext{여기서 표기 $\operatorname{Hom}_A$는 $A$-대수의
+준동형들의 집합을 뜻한다.}를 정의함을 확인하면 충분하다. 이는 정의와
+관계 $b\otimes c=(b\otimes1)(1\otimes c)$에서 곧바로 따른다.
+
+\begin{corollary}[3.2.3]
+\label{I.3.2.3-ko}
+$T$를 환 $D$의 아핀 스킴이라 하자.
+$\alpha=({}^a\rho,\widetilde{\rho})$
+(각각 $\beta=({}^a\sigma,\widetilde{\sigma})$)를 $S$-사상 $T\to X$
+(각각 $T\to Y$)라 하자. 여기서 $\rho$(각각 $\sigma$)는 $B$(각각
+$C$)에서 $D$로 가는 $A$-준동형이다. 그러면
+$(\alpha,\beta)_S=({}^a\tau,\widetilde{\tau})$이다. 여기서 $\tau$는
+$\tau(b\otimes c)=\rho(b)\sigma(c)$를 만족하는 준동형
+$B\otimes_A C\to D$이다.
+\end{corollary}
+
+\begin{proposition}[3.2.4]
+\label{I.3.2.4-ko}
+$f:S'\to S$를 준스킴의 단사사상이라 하고(T, I, 1.1), $X$, $Y$를
+$f$에 의해 $S$-준스킴으로도 간주하는 두 $S'$-준스킴이라 하자.
+$S$-준스킴 $X$, $Y$의 모든 곱은 $S'$-준스킴 $X$, $Y$의 곱이고,
+그 역도 성립한다.
+\end{proposition}
+
+$\varphi:X\to S'$, $\psi:Y\to S'$를 구조 사상이라 하자. $T$가
+$S$-준스킴이고 $u:T\to X$, $v:T\to Y$가 두 $S$-사상이면, 정의에
+따라 $f\circ\varphi\circ u=f\circ\psi\circ v=\theta$이다. 여기서
+$\theta$는 $T$의 구조 사상이다. $f$에 대한 가정으로부터
+$\varphi\circ u=\psi\circ v=\theta'$을 얻으며, $T$를 구조 사상
+$\theta'$을 가진 $S'$-준스킴으로, $u$와 $v$를 $S'$-사상으로 간주할
+수 있다. 그러므로 (\hyperref[I.3.2.1-ko]{3.2.1})을 고려하면 명제의
+결론이 곧바로 따른다.
+
+\begin{corollary}[3.2.5]
+\label{I.3.2.5-ko}
+$X$, $Y$를 구조 사상 $\varphi:X\to S$, $\psi:Y\to S$를 가진 두
+$S$-준스킴이라 하고, $S'$을 $\varphi(X)\subset S'$,
+$\psi(Y)\subset S'$을 만족하는 $S$의 열린 부분집합이라 하자.
+$S$-준스킴 $X$, $Y$의 모든 곱은 $S'$-준스킴 $X$, $Y$의 곱이고,
+그 역도 성립한다.
+\end{corollary}
+
+\oldpage[I]{106}
+표준 단사사상 $S'\to S$에 (\hyperref[I.3.2.4-ko]{3.2.4})를
+적용하면 충분하다.
+
+\begin{theorem}[3.2.6]
+\label{I.3.2.6-ko}
+두 $S$-준스킴 $X$, $Y$가 주어지면 곱 $X\times_S Y$가 존재한다.
+\end{theorem}
+
+여러 단계로 나누어 증명하겠다.
+
+\begin{lemma}[3.2.6.1]
+\label{I.3.2.6.1-ko}
+$(Z,p,q)$를 $X$와 $Y$의 곱이라 하고, $U$, $V$를 각각 $X$, $Y$의
+열린 부분집합이라 하자. $W=p^{-1}(U)\cap q^{-1}(V)$라 놓으면,
+$W$와 $p$, $q$의 $W$로의 제한(각각 사상 $W\to U$, $W\to V$로
+간주한다)로 이루어진 삼중항은 $U$와 $V$의 곱이다.
+\end{lemma}
+
+실제로 $T$가 $S$-준스킴이면, $S$-사상 $T\to W$를 $T$를 $W$ 안으로
+보내는 $S$-사상 $T\to Z$와 동일시할 수 있다. 이제 $g:T\to U$,
+$h:T\to V$가 임의의 두 $S$-사상이면, 이를 각각 $T$에서 $X$, $Y$로
+가는 $S$-사상으로 간주할 수 있다. 가정에 따라 $g=p\circ f$,
+$h=q\circ f$를 만족하는 유일한 $S$-사상 $f:T\to Z$가 존재한다.
+$p(f(T))\subset U$, $q(f(T))\subset V$이므로
+\[
+  f(T)\subset p^{-1}(U)\cap q^{-1}(V)=W,
+\]
+이고, 주장이 성립한다.
+
+\begin{lemma}[3.2.6.2]
+\label{I.3.2.6.2-ko}
+$Z$를 $S$-준스킴, $p:Z\to X$, $q:Z\to Y$를 두 $S$-사상,
+$(U_\alpha)$를 $X$의 열린 덮개, $(V_\lambda)$를 $Y$의 열린 덮개라
+하자. 모든 쌍 $(\alpha,\lambda)$에 대하여 $S$-준스킴
+$W_{\alpha\lambda}=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$와 $p$, $q$의
+$W_{\alpha\lambda}$로의 제한이 $U_\alpha$와 $V_\lambda$의 곱을
+이룬다고 가정하자. 그러면 $(Z,p,q)$는 $X$와 $Y$의 곱이다.
+\end{lemma}
+
+먼저 $f_1$, $f_2$가 두 $S$-사상 $T\to Z$일 때, 관계
+$p\circ f_1=p\circ f_2$, $q\circ f_1=q\circ f_2$로부터
+$f_1=f_2$가 따름을 보이자. 실제로 $Z$는 $W_{\alpha\lambda}$들의
+합집합이므로 $f_1^{-1}(W_{\alpha\lambda})$들은 $T$의 열린 덮개를
+이루며, $f_2^{-1}(W_{\alpha\lambda})$들도 마찬가지이다. 더 나아가
+가정에 따라
+\[
+\begin{aligned}
+  f_1^{-1}(W_{\alpha\lambda})
+  &=f_1^{-1}(p^{-1}(U_\alpha))\cap
+    f_1^{-1}(q^{-1}(V_\lambda)) \\
+  &=f_2^{-1}(p^{-1}(U_\alpha))\cap
+    f_2^{-1}(q^{-1}(V_\lambda))
+   =f_2^{-1}(W_{\alpha\lambda})
+\end{aligned}
+\]
+이다. 따라서 모든 지표쌍에 대하여 $f_1$과 $f_2$의
+$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$로의 제한이
+같음을 보이면 충분하다. 그런데 이 제한들은
+$f_1^{-1}(W_{\alpha\lambda})$에서 $W_{\alpha\lambda}$로 가는
+$S$-사상으로 간주할 수 있으므로, 가정과 정의
+(\hyperref[I.3.2.1-ko]{3.2.1})에서 주장이 따른다.
+
+이제 두 $S$-사상 $g:T\to X$, $h:T\to Y$가 주어졌다고 하자.
+$T_{\alpha\lambda}=g^{-1}(U_\alpha)\cap h^{-1}(V_\lambda)$라 놓으면
+$T_{\alpha\lambda}$들은 $T$의 열린 덮개를 이룬다. 가정에 따라
+$p\circ f_{\alpha\lambda}$와 $q\circ f_{\alpha\lambda}$가 각각
+$g$와 $h$의 $T_{\alpha\lambda}$로의 제한이 되는 $S$-사상
+$f_{\alpha\lambda}$가 존재한다. 또한 $f_{\alpha\lambda}$와
+$f_{\beta\mu}$의 $T_{\alpha\lambda}\cap T_{\beta\mu}$로의 제한이
+일치함을 보이자. 이것으로 (\hyperref[I.3.2.6.2-ko]{3.2.6.2})의
+증명이 끝난다. 정의에 따라 $f_{\alpha\lambda}$와
+$f_{\beta\mu}$에 의한 $T_{\alpha\lambda}\cap T_{\beta\mu}$의 상은
+$W_{\alpha\lambda}\cap W_{\beta\mu}$에 포함된다. 한편
+\[
+  W_{\alpha\lambda}\cap W_{\beta\mu}
+  =p^{-1}(U_\alpha\cap U_\beta)\cap
+   q^{-1}(V_\lambda\cap V_\mu)
+\]
+이므로, (\hyperref[I.3.2.6.1-ko]{3.2.6.1})에 따라
+$W_{\alpha\lambda}\cap W_{\beta\mu}$와 이 준스킴으로 제한한 $p$,
+$q$는 $U_\alpha\cap U_\beta$와 $V_\lambda\cap V_\mu$의 곱을
+이룬다. $p\circ f_{\alpha\lambda}$와 $p\circ f_{\beta\mu}$가
+$T_{\alpha\lambda}\cap T_{\beta\mu}$에서 일치하고,
+$q\circ f_{\alpha\lambda}$와 $q\circ f_{\beta\mu}$도 마찬가지이므로
+$f_{\alpha\lambda}$와 $f_{\beta\mu}$는
+$T_{\alpha\lambda}\cap T_{\beta\mu}$에서 일치한다. 증명이 끝났다.
+
+\oldpage[I]{107}
+\begin{lemma}[3.2.6.3]
+\label{I.3.2.6.3-ko}
+$(U_\alpha)$를 $X$의 열린 덮개, $(V_\lambda)$를 $Y$의 열린 덮개라
+하고, 모든 쌍 $(\alpha,\lambda)$에 대하여 $U_\alpha$와
+$V_\lambda$의 곱이 존재한다고 가정하자. 그러면 $X$와 $Y$의 곱이
+존재한다.
+\end{lemma}
+
+(\hyperref[I.3.2.6.1-ko]{3.2.6.1})을 열린집합
+$U_\alpha\cap U_\beta$와 $V_\lambda\cap V_\mu$에 적용하면 $X$와
+$Y$가 각각 이 열린집합들 위에 유도하는 $S$-준스킴들의 곱이
+존재함을 알 수 있다. 또한 곱의 유일성으로부터, $i=(\alpha,\lambda)$,
+$j=(\beta,\mu)$라 놓을 때 이 곱에서
+$U_\alpha\times_S V_\lambda$(각각 $U_\beta\times_S V_\mu$)가 한
+열린집합 위에 유도하는 $S$-준스킴 $W_{ij}$(각각 $W_{ji}$) 위로 가는
+표준 동형 $h_{ij}$(각각 $h_{ji}$)가 존재함을 알 수 있다. 따라서
+$f_{ij}=h_{ij}\circ h_{ji}^{-1}$은 $W_{ji}$에서 $W_{ij}$ 위로 가는
+동형이다. 더 나아가 세 번째 쌍 $k=(\gamma,\nu)$에 대하여
+$W_{ki}\cap W_{kj}$에서 $f_{ik}=f_{ij}\circ f_{jk}$이다. 이는
+(\hyperref[I.3.2.6.1-ko]{3.2.6.1})을 각각 $U_\beta$, $V_\mu$ 안의
+열린집합 $U_\alpha\cap U_\beta\cap U_\gamma$와
+$V_\lambda\cap V_\mu\cap V_\nu$에 적용하여 얻는다. 따라서 준스킴
+$Z$, 그 바탕공간의 열린 덮개 $(Z_i)$, 그리고 각 $i$에 대하여 유도
+준스킴 $Z_i$에서 준스킴 $U_\alpha\times_S V_\lambda$ 위로 가는
+동형 $g_i$가 존재하여 모든 쌍 $(i,j)$에 대하여
+$f_{ij}=g_i\circ g_j^{-1}$이 성립한다
+(\hyperref[I.2.3.1-ko]{2.3.1}). 또한
+$g_i(Z_i\cap Z_j)=W_{ij}$이다. $p_i$, $q_i$, $\theta_i$를
+$S$-준스킴 $U_\alpha\times_S V_\lambda$의 사영들과 구조 사상이라
+하면, $Z_i\cap Z_j$에서 $p_i\circ g_i=p_j\circ g_j$이고 나머지 두
+사상에 대해서도 마찬가지임을 곧바로 확인할 수 있다. 따라서 각
+$Z_i$에서 $p$(각각 $q$, $\theta$)가 $p_i\circ g_i$(각각
+$q_i\circ g_i$, $\theta_i\circ g_i$)와 일치한다는 조건으로 준스킴의
+사상 $p:Z\to X$(각각 $q:Z\to Y$, $\theta:Z\to S$)를 정의할 수
+있다. $\theta$를 갖춘 $Z$는 $S$-준스킴이다. 이제
+$Z'_i=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$가 $Z_i$와 같음을
+보이자. 모든 지표 $j=(\beta,\mu)$에 대하여
+$Z_j\cap Z'_i=g_j^{-1}(p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda))$이다.
+그런데
+\[
+  p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)
+  =p_j^{-1}(U_\alpha\cap U_\beta)\cap
+   q_j^{-1}(V_\lambda\cap V_\mu).
+\]
+(\hyperref[I.3.2.6.1-ko]{3.2.6.1})에 따라 $p_j$와 $q_j$의
+$p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)$로의 제한은 이
+$S$-준스킴에 $U_\alpha\cap U_\beta$와 $V_\lambda\cap V_\mu$의 곱
+구조를 준다. 그런데 곱의 유일성으로부터
+$p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)=W_{ji}$가 따른다.
+그러므로 모든 $j$에 대하여 $Z_j\cap Z'_i=Z_j\cap Z_i$이고,
+$Z'_i=Z_i$이다. 이제 (\hyperref[I.3.2.6.2-ko]{3.2.6.2})에 따라
+$(Z,p,q)$는 $X$와 $Y$의 곱이다.
+
+\begin{lemma}[3.2.6.4]
+\label{I.3.2.6.4-ko}
+$\varphi:X\to S$, $\psi:Y\to S$를 $X$, $Y$의 구조 사상이라 하고,
+$(S_i)$를 $S$의 열린 덮개라 하자. $X_i=\varphi^{-1}(S_i)$,
+$Y_i=\psi^{-1}(S_i)$라 놓자. 각 곱 $X_i\times_S Y_i$가 존재하면
+$X\times_S Y$가 존재한다.
+\end{lemma}
+
+(\hyperref[I.3.2.6.3-ko]{3.2.6.3})에 따라 모든 $i$, $j$에 대하여
+곱 $X_i\times_S Y_j$가 존재함을 보이면 충분하다.
+$X_{ij}=X_i\cap X_j=\varphi^{-1}(S_i\cap S_j)$,
+$Y_{ij}=Y_i\cap Y_j=\psi^{-1}(S_i\cap S_j)$라 놓자.
+(\hyperref[I.3.2.6.1-ko]{3.2.6.1})에 따라 곱
+$Z_{ij}=X_{ij}\times_S Y_{ij}$가 존재한다. 이제 $T$가 $S$-준스킴이고
+$g:T\to X_i$, $h:T\to Y_j$가 $S$-사상이면, $S$-사상의 정의에 따라
+반드시 $\varphi(g(T))=\psi(h(T))\subset S_i\cap S_j$이다. 따라서
+$g(T)\subset X_{ij}$, $h(T)\subset Y_{ij}$이고, $Z_{ij}$가 $X_i$와
+$Y_j$의 곱임은 자명하다.
+
+\begin{env}[3.2.6.5]
+\label{I.3.2.6.5-ko}
+이제 정리 (\hyperref[I.3.2.6-ko]{3.2.6})의 증명을 끝낼 수 있다.
+$S$가 \emph{아핀 스킴}이면, $X$와 $Y$에는 각각 아핀 열린집합들로
+이루어진 덮개 $(U_\alpha)$, $(V_\lambda)$가 존재한다.
+(\hyperref[I.3.2.2-ko]{3.2.2})에 따라
+$U_\alpha\times_S V_\lambda$가 존재하므로
+(\hyperref[I.3.2.6.3-ko]{3.2.6.3})에 따라 $X\times_S Y$도 존재한다.
+$S$가 임의의 준스킴이면 아핀 열린집합들로 이루어진 $S$의 덮개
+$(S_i)$가 존재한다. $\varphi:X\to S$, $\psi:Y\to S$가 구조 사상이고
+$X_i=\varphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$라 놓으면 앞에서 보인
+바에 따라 곱 $X_i\times_{S_i}Y_i$가 존재한다.
+\oldpage[I]{108}
+그러면 (\hyperref[I.3.2.5-ko]{3.2.5})에 따라 곱
+$X_i\times_S Y_i$도 존재하고, (\hyperref[I.3.2.6.4-ko]{3.2.6.4})에
+따라 $X\times_S Y$도 존재한다.
+\end{env}
+
+\begin{corollary}[3.2.7]
+\label{I.3.2.7-ko}
+$Z=X\times_S Y$를 두 $S$-준스킴의 곱, $p$, $q$를 $Z$에서 $X$, $Y$로
+가는 사영, $\varphi$(각각 $\psi$)를 $X$(각각 $Y$)의 구조 사상이라
+하자. $S'$을 $S$의 열린 부분집합, $U$(각각 $V$)를
+$\varphi^{-1}(S')$(각각 $\psi^{-1}(S')$)에 포함되는 $X$(각각
+$Y$)의 열린 부분집합이라 하자. 그러면 곱 $U\times_{S'}V$는
+$p^{-1}(U)\cap q^{-1}(V)$ 위에 $Z$가 유도하는 준스킴($S'$-준스킴으로
+간주한다)과 표준적으로 동일시된다. 또한 $f:T\to X$, $g:T\to Y$가
+$f(T)\subset U$, $g(T)\subset V$를 만족하는 $S$-사상이면,
+$S'$-사상 $(f,g)_{S'}$는 $(f,g)_S:T\to Z$의 공역을
+$p^{-1}(U)\cap q^{-1}(V)$로 제한하여 얻은 사상과 동일시된다.
+\end{corollary}
+
+이는 (\hyperref[I.3.2.5-ko]{3.2.5})와
+(\hyperref[I.3.2.6.1-ko]{3.2.6.1})에서 따른다.
+
+\begin{env}[3.2.8]
+\label{I.3.2.8-ko}
+$(X_\alpha)$, $(Y_\lambda)$를 두 $S$-준스킴족이라 하고, $X$(각각
+$Y$)를 족 $(X_\alpha)$(각각 $(Y_\lambda)$)의 합이라 하자
+(\hyperref[subsection:I.3.1-ko]{3.1}). 그러면 $X\times_S Y$는 족
+$(X_\alpha\times_S Y_\lambda)$의 \emph{합}과 동일시된다. 이는
+(\hyperref[I.3.2.6.3-ko]{3.2.6.3})에서 곧바로 따른다.
+\end{env}
+
+\subsection{곱의 형식적 성질~; 밑준스킴의 변경}
+\label{subsection:I.3.3-ko}
+
+\begin{env}[3.3.1]
+\label{I.3.3.1-ko}
+독자는 이 절에서 진술하는 모든 성질이
+(\hyperref[I.3.3.13-ko]{3.3.13})과
+(\hyperref[I.3.3.15-ko]{3.3.15})을 제외하면, 그 진술에 나오는
+곱들이 \emph{존재}할 때 \emph{임의의 범주}에서 아무 변경 없이
+성립함을 알 수 있을 것이다. 실제로 범주의 임의의 대상 $S$에
+대해서도 $S$-대상과 $S$-사상의 개념을
+(\hyperref[subsection:I.2.5-ko]{2.5})에서와 정확히 같은 방식으로
+정의할 수 있음은 분명하다.
+\end{env}
+
+\begin{env}[3.3.2]
+\label{I.3.3.2-ko}
+먼저 $X\times_S Y$는 $S$-준스킴의 범주에서 $X$와 $Y$에 관한
+\emph{공변 쌍함자}이다. 실제로 다음 그림식이 가환임을 확인하면
+충분하다.
+\[
+  \xymatrix{
+    X\times Y\ar[r]^{f\times 1}\ar[d] &
+    X'\times Y\ar[r]^{f'\times 1}\ar[d] &
+    X''\times Y\ar[d]\\
+    X\ar[r]_f & X'\ar[r]_{f'} & X''
+  }
+\]
+\end{env}
+
+\begin{proposition}[3.3.3]
+\label{I.3.3.3-ko}
+모든 $S$-준스킴 $X$에 대하여 $X\times_S S$(각각 $S\times_S X$)의
+첫째 사영(각각 둘째 사영)은 $X\times_S S$(각각 $S\times_S X$)에서
+$X$ 위로 가는 함자적 동형이고, 그 역동형은
+$(1_X,\varphi)_S$(각각 $(\varphi,1_X)_S$)이다. 여기서 $\varphi$는
+구조 사상 $X\to S$이다. 따라서 표준 동형까지
+\[
+  X\times_S S=S\times_S X=X
+\]
+라고 쓸 수 있다.
+\end{proposition}
+
+삼중항 $(X,1_X,\varphi)$가 $X$와 $S$의 곱임을 보이면 충분하다.
+그런데 $T$가 $S$-준스킴이면, $T$에서 $S$로 가는 유일한 $S$-사상은
+반드시 구조 사상 $\psi:T\to S$이다. $f$가 $T$에서 $X$로 가는
+$S$-사상이면 반드시 $\psi=\varphi\circ f$이므로 주장이 따른다.
+
+\begin{corollary}[3.3.4]
+\label{I.3.3.4-ko}
+$X$, $Y$를 두 $S$-준스킴, $\varphi:X\to S$, $\psi:Y\to S$를 그
+구조 사상이라 하자. $X$를 $X\times_S S$와, $Y$를 $S\times_S Y$와
+표준적으로 동일시하면, 사영 $X\times_S Y\to X$와
+$X\times_S Y\to Y$는 각각 $1_X\times\psi$와
+$\varphi\times1_Y$와 동일시된다.
+\end{corollary}
+
+확인은 즉시 되므로 독자에게 맡긴다.
+
+\begin{env}[3.3.5]
+\label{I.3.3.5-ko}
+임의의 유한개 $n$개의 $S$-준스킴의 곱도
+(\hyperref[subsection:I.3.2-ko]{3.2})에서와 같은 방식으로 정의할
+수 있다.
+\oldpage[I]{109}
+이러한 곱들의 존재는 $n$에 관한 귀납법으로
+(\hyperref[I.3.2.6-ko]{3.2.6})에서 따른다. 실제로
+$(X_1\times_S X_2\times_S\cdots\times_S X_{n-1})\times_S X_n$은
+곱의 정의를 만족한다. 곱의 유일성에서, 임의의 범주에서와 마찬가지로
+그 \emph{교환법칙}과 \emph{결합법칙}이 따른다. 예를 들어
+$p_1$, $p_2$, $p_3$가 $X_1\times_S X_2\times_S X_3$의 사영들이고
+이 준스킴을 $(X_1\times_S X_2)\times_S X_3$와 동일시하면,
+$X_1\times_S X_2$로 가는 사영은 $(p_1,p_2)_S$와 동일시된다.
+\end{env}
+
+\begin{env}[3.3.6]
+\label{I.3.3.6-ko}
+$S$, $S'$을 두 준스킴, $\varphi:S'\to S$를 $S'$에 $S$-준스킴
+구조를 주는 사상이라 하자. 모든 $S$-준스킴 $X$에 대하여 곱
+$X\times_S S'$을 생각하고, 각각 $X$와 $S'$로 가는 그 사영을
+$p$와 $\pi'$이라 하자. $\pi'$을 갖춘 이 곱은 $S'$-준스킴이다.
+이를 $S'$-준스킴으로 간주할 때 $X_{(S')}$ 또는
+$X_{(\varphi)}$로 나타내고, $\varphi$를 사용하여 밑준스킴을
+$S$에서 $S'$으로 \emph{확장하여 얻은 준스킴}, 또는 $\varphi$에
+의한 $X$의 \emph{역상}이라 한다. $\pi$가 $X$의 구조 사상이고,
+$\theta$가 $X\times_S S'$을 $S$-준스킴으로 간주했을 때의 구조
+사상이면, 다음 그림식이 가환임에 유의하자.
+\phantomsection\label{I.3.3.6.base-change-diagram-ko}
+\[
+  \xymatrix{
+    X\ar[d]_{\pi} &
+    X_{(S')}\ar[l]_{p}\ar[ld]_{\theta}\ar[d]^{\pi'}\\
+    S & S'\ar[l]^{\varphi}
+  }
+\]
+\end{env}
+
+\begin{env}[3.3.7]
+\label{I.3.3.7-ko}
+(\hyperref[I.3.3.6-ko]{3.3.6})의 표기를 사용하자. 모든 $S$-사상
+$f:X\to Y$에 대하여 $S'$-사상
+$f\times_S1:X_{(S')}\to Y_{(S')}$도 $f_{(S')}$로 나타내고,
+$\varphi$에 의한 사상 $f$의 \emph{역상}이라 한다. 따라서
+$X_{(S')}$은 $X$에 관한 \emph{공변 함자}이며, $S$-준스킴의
+범주에서 $S'$-준스킴의 범주로 간다.
+\end{env}
+
+\begin{env}[3.3.8]
+\label{I.3.3.8-ko}
+준스킴 $X_{(S')}$은 하나의 \emph{보편 사상 문제}의 해로도 볼 수
+있다. 모든 $S'$-준스킴 $T$는 $\varphi$를 통하여 $S$-준스킴이기도
+하다. 모든 $S$-사상 $g:T\to X$는 $g=p\circ f$라는 꼴로 유일하게
+쓰인다. 여기서 $f$는 $S'$-사상 $T\to X_{(S')}$이다. 이는 곱의
+정의를 $S$-사상 $g$와 $\psi:T\to S'$($T$의 구조 사상)에 적용하면
+따른다.
+\end{env}
+
+\begin{proposition}[3.3.9]
+\label{I.3.3.9-ko}
+\textup{(「밑준스킴 확장의 추이성」).} $S''$을 준스킴,
+$\varphi':S''\to S'$을 사상이라 하자. 모든 $S$-준스킴 $X$에
+대하여 $S''$-준스킴 $(X_{(\varphi)})_{(\varphi')}$에서
+$S''$-준스킴 $X_{(\varphi\circ\varphi')}$ 위로 가는 표준적이고
+함자적인 동형이 존재한다.
+\end{proposition}
+
+실제로 $T$를 $S''$-준스킴, $\psi$를 그 구조 사상, $g$를 $T$에서
+$X$로 가는 $S$-사상이라 하자. 여기서 $T$는 구조 사상이
+$\varphi\circ\varphi'\circ\psi$인 $S$-준스킴으로 간주한다.
+$T$는 구조 사상이 $\varphi'\circ\psi$인 $S'$-준스킴이기도 하므로
+$g=p\circ g'$으로 쓸 수 있다. 여기서 $g'$은
+$S'$-사상 $T\to X_{(\varphi)}$이다. 이어서
+$g'=p'\circ g''$으로 쓸 수 있다. 여기서 $g''$은
+$S''$-사상 $T\to(X_{(\varphi)})_{(\varphi')}$이다.
+\phantomsection\label{I.3.3.9.transitivity-diagram-ko}
+\[
+  \xymatrix{
+    X\ar[d]_{\pi} &
+    X_{(\varphi)}\ar[l]_{p}\ar[d]_{\pi'} &
+    (X_{(\varphi)})_{(\varphi')}\ar[l]_{p'}\ar[d]_{\pi''}\\
+    S & S'\ar[l]^{\varphi} & S''\ar[l]^{\varphi'}
+  }
+\]
+\oldpage[I]{110}
+그러므로 보편 사상 문제의 해의 유일성에 따라 명제가 성립한다.
+
+이 결과는 혼동의 염려가 없을 때 표준 동형까지
+$(X_{(S')})_{(S'')}=X_{(S'')}$라고 써도 되며, 다음과 같이 쓸
+수도 있다.
+\begin{equation}
+  (X\times_S S')\times_{S'}S''=X\times_S S''~;
+  \tag{3.3.9.1}\label{I.3.3.9.1-ko}
+\end{equation}
+(\hyperref[I.3.3.9-ko]{3.3.9})에서 정의한 동형의 함자성도 모든
+$S$-사상 $f:X\to Y$에 대하여 성립하는
+\emph{사상의 역상의 추이성} 공식
+\begin{equation}
+  (f_{(S')})_{(S'')}=f_{(S'')}
+  \tag{3.3.9.2}\label{I.3.3.9.2-ko}
+\end{equation}
+으로 나타난다.
+
+\begin{corollary}[3.3.10]
+\label{I.3.3.10-ko}
+$X$와 $Y$가 두 $S$-준스킴이면, $S'$-준스킴
+$X_{(S')}\times_{S'}Y_{(S')}$에서 $S'$-준스킴
+$(X\times_S Y)_{(S')}$ 위로 가는 표준적이고 함자적인 동형이
+존재한다.
+\end{corollary}
+
+실제로 표준 동형까지
+\[
+  (X\times_S S')\times_{S'}(Y\times_S S')
+  =X\times_S(Y\times_S S')=(X\times_S Y)\times_S S'
+\]
+이다. 이는 (\hyperref[I.3.3.9.1-ko]{3.3.9.1})과 $S$-준스킴의
+곱의 결합법칙에서 따른다.
+
+(\hyperref[I.3.3.10-ko]{3.3.10})에서 정의한 동형의 함자성은 모든
+$S$-사상쌍 $u:T\to X$, $v:T\to Y$에 대하여 성립하는 공식
+\begin{equation}
+  (u_{(S')},v_{(S')})_{S'}=((u,v)_S)_{(S')}
+  \tag{3.3.10.1}\label{I.3.3.10.1-ko}
+\end{equation}
+으로 나타난다.
+
+다시 말해 역상함자 $X_{(S')}$은 \emph{곱의 형성과 가환}한다.
+또한 합의 형성과도 가환한다(\hyperref[I.3.2.8-ko]{3.2.8}).
+
+\begin{corollary}[3.3.11]
+\label{I.3.3.11-ko}
+$Y$를 $S$-준스킴, $f:X\to Y$를 $X$에 $Y$-준스킴 구조를 주는
+사상이라 하자. 따라서 $X$는 $S$-준스킴이기도 하다. 그러면 준스킴
+$X_{(S')}$은 곱 $X\times_Y Y_{(S')}$와 동일시되고, 사영
+$X\times_Y Y_{(S')}\to Y_{(S')}$은 $f_{(S')}$와 동일시된다.
+\end{corollary}
+
+$\psi:Y\to S$를 $Y$의 구조 사상이라 하자. 다음 그림식은
+가환이다.
+\phantomsection\label{I.3.3.11.diagram-ko}
+\[
+  \xymatrix{
+    S'\ar[d] &
+    Y_{(S')}\ar[l]_{\psi_{(S')}}\ar[d] &
+    X_{(S')}\ar[l]_{f_{(S')}}\ar[d]\\
+    S & Y\ar[l]^{\psi} & X\ar[l]^{f}
+  }
+\]
+그런데 $Y_{(S')}$은 $S'_{(\psi)}$와, $X_{(S')}$은
+$S'_{(\psi\circ f)}$와 동일시된다.
+(\hyperref[I.3.3.9-ko]{3.3.9})와
+(\hyperref[I.3.3.4-ko]{3.3.4})를 고려하면 따름정리가 따른다.
+
+\begin{env}[3.3.12]
+\label{I.3.3.12-ko}
+$f:X\to X'$, $g:Y\to Y'$을 준스킴의 \emph{단사사상}인 두
+$S$-사상이라 하자(T, I, 1.1). 그러면 $f\times_S g$도
+\emph{단사사상}이다. 실제로 $p$, $q$를 $X\times_S Y$의 사영,
+$p'$, $q'$을 $X'\times_S Y'$의 사영, $u$, $v$를 두
+$S$-사상 $T\to X\times_S Y$라 하자. 관계
+$(f\times_S g)\circ u=(f\times_S g)\circ v$에서
+$p'\circ(f\times_S g)\circ u=p'\circ(f\times_S g)\circ v$, 즉
+$f\circ p\circ u=f\circ p\circ v$가 따른다. $f$가
+단사사상이므로 $p\circ u=p\circ v$이다. 마찬가지로 $g$가
+단사사상임을 사용하면 $q\circ u=q\circ v$를 얻으므로 $u=v$이다.
+\oldpage[I]{111}
+따라서 밑준스킴의 모든 확장 $S'\to S$에 대하여
+\phantomsection\label{I.3.3.12.base-change-monomorphism-ko}
+\[
+  f_{(S')}:X_{(S')}\to Y_{(S')}
+\]
+은 단사사상이다.
+\end{env}
+
+\begin{env}[3.3.13]
+\label{I.3.3.13-ko}
+$S$, $S'$을 각각 환 $A$, $A'$의 두 아핀 스킴이라 하자. 따라서
+사상 $S'\to S$은 환 준동형 $A\to A'$에 대응한다. $X$가
+$S$-준스킴이면 $S'$-준스킴 $X_{(S')}$을
+$X_{(A')}$ 또는 $X\otimes_A A'$로도 나타내겠다. $X$ 자체가 환
+$B$의 아핀 스킴이면, $X_{(A')}$은 환
+$B_{(A')}=B\otimes_A A'$의 아핀 스킴이다. 이 환은
+$A$-대수 $B$의 스칼라환을 $A'$으로 확장하여 얻는다.
+\end{env}
+
+\begin{env}[3.3.14]
+\label{I.3.3.14-ko}
+(\hyperref[I.3.3.6-ko]{3.3.6})의 표기를 사용하자. 모든
+\emph{$S$-사상} $f:S'\to X$에 대하여
+$f'=(f,1_{S'})_S$는 $p\circ f'=f$, $\pi'\circ f'=1_{S'}$을
+만족하는 $S'$-사상 $S'\to X'=X_{(S')}$이다. 다시 말해 $f'$은
+\emph{$X'$의 $S'$-단면}이다. 역으로 $f'$이 이러한 $S'$-단면이면
+$f=p\circ f'$은 $S$-사상 $S'\to X$이다. 이로써 표준적인
+\emph{전단사 대응}
+\phantomsection\label{I.3.3.14.correspondence-ko}
+\[
+  \operatorname{Hom}_S(S',X)\overset{\sim}{\longrightarrow}
+  \operatorname{Hom}_{S'}(S',X')
+\]
+을 정의한다. $f'$을 $f$의 \emph{그래프 사상}이라 하고
+$\Gamma_f$로 나타낸다.
+\end{env}
+
+\begin{env}[3.3.15]
+\label{I.3.3.15-ko}
+준스킴 $X$가 주어지면 언제나 이를 $\mathbf Z$-준스킴으로 간주할
+수 있다. 특히 (\hyperref[I.3.3.14-ko]{3.3.14})에 따라
+$X\otimes_{\mathbf Z}\mathbf Z[T]$의 $X$-단면들($T$는
+부정원)은 $\mathbf Z[T]$에서 $X$로 가는 \emph{사상}들과
+전단사로 대응한다. 이 $X$-단면들이
+\emph{$X$ 위의 구조층 $\mathcal O_X$의 단면들}과도 전단사로
+대응함을 보이자. $(U_\alpha)$를 아핀 열린집합들로 이루어진 $X$의
+덮개라 하자. $u:X\to X\otimes_{\mathbf Z}\mathbf Z[T]$를
+$X$-사상, $u_\alpha$를 그 $U_\alpha$로의 제한이라 하자.
+$A_\alpha$가 아핀 스킴 $U_\alpha$의 환이면
+$U_\alpha\otimes_{\mathbf Z}\mathbf Z[T]$는 환
+$A_\alpha[T]$의 아핀 스킴이고
+(\hyperref[I.3.2.2-ko]{3.2.2}), $u_\alpha$는 표준적으로
+$A_\alpha$-준동형 $A_\alpha[T]\to A_\alpha$에 대응한다(1.7.3).
+그런 준동형은 $T$의 $A_\alpha$에서의 상, 즉
+$s_\alpha\in A_\alpha=\Gamma(U_\alpha,\mathcal O_X)$를 주면
+완전히 결정된다. $u_\alpha$와 $u_\beta$의 제한이
+$V\subset U_\alpha\cap U_\beta$인 아핀 열린집합 $V$에서
+일치한다는 조건을 쓰면, $s_\alpha$와 $s_\beta$도 $V$에서
+일치함을 곧바로 알 수 있다. 따라서 족 $(s_\alpha)$은
+$X$ 위의 $\mathcal O_X$의 한 단면 $s$를 각 $U_\alpha$로 제한하여
+얻은 족이다. 역으로 이러한 단면은, 어떤 $X$-사상
+$X\to X\otimes_{\mathbf Z}\mathbf Z[T]$을 각 $U_\alpha$로
+제한하여 얻은 사상족 $(u_\alpha)$를 정의함이 분명하다. 이 결과는
+II, 1.7.12에서 일반화될 것이다.
+\end{env}
+
+\subsection{준스킴에 값을 갖는 준스킴의 점; 기하적 점}
+\label{subsection:I.3.4-ko}
+
+\begin{env}[3.4.1]
+\label{I.3.4.1-ko}
+$X$를 준스킴이라 하자. 모든 준스킴 $T$에 대하여 $X(T)$로
+사상 $T\to X$들의 집합 $\operatorname{Hom}(T,X)$도 나타내며, 이 집합의
+원소를 \emph{$T$에 값을 갖는 $X$의 점}이라고도 한다. 각 사상
+$f:T\to T'$에 $X(T')$에서 $X(T)$으로 가는 사상
+$u'\mapsto u'\circ f$를 대응시키면, $X$를 고정했을 때 $X(T)$가
+준스킴의 범주에서 집합의 범주로 가는 \emph{$T$에 관한 반변함자}임을
+알 수 있다. 또한 준스킴의 모든 사상 $g:X\to Y$는 $v\in X(T)$에
+$g\circ v$를 대응시키는 함자적 사상 $X(T)\to Y(T)$를 정의한다.
+\end{env}
+
+\begin{env}[3.4.2]
+\label{I.3.4.2-ko}
+세 집합 $P$, $Q$, $R$와 두 사상 $\varphi:P\to R$, $\psi:Q\to R$가
+주어졌다고 하자. $\varphi(p)=\psi(q)$를 만족하는 순서쌍 $(p,q)$들로
+이루어진 곱집합 $P\times Q$의 부분집합을 ($\varphi$와 $\psi$에 관한)
+\emph{$R$ 위에서의 $P$와 $Q$의 섬유곱}이라 하고
+\oldpage[I]{112}
+$P\times_R Q$로 나타낸다. $S$-준스킴의 곱의 정의
+(\hyperref[I.3.2.1-ko]{3.2.1})는
+(\hyperref[I.3.4.1-ko]{3.4.1})의 표기를 사용하면 다음 식으로도
+해석할 수 있다.
+\phantomsection\label{I.3.4.2.1-ko}
+\[
+  (X\times_S Y)(T)=X(T)\times_{S(T)}Y(T)
+  \tag{3.4.2.1}
+\]
+여기서 사상 $X(T)\to S(T)$와 $Y(T)\to S(T)$는 각각 구조 사상
+$X\to S$와 $Y\to S$에 대응한다.
+\end{env}
+
+\begin{env}[3.4.3]
+\label{I.3.4.3-ko}
+준스킴 $S$가 주어져 있고 $S$-준스킴과 $S$-사상만을 생각할 때,
+$S$-사상 $T\to X$들의 집합 $\operatorname{Hom}_S(T,X)$을
+$X(T)_S$로도 나타내며 혼동의 염려가 없으면 첨자 $S$를 생략한다.
+$X(T)_S$의 원소를 \emph{점}(혼동할 염려가 있으면 \emph{$S$-점})이라고도
+하며, 이는 \emph{$T$에 값을 갖는 $S$-준스킴 $X$의 점}이다. 특히 $X$의
+\emph{$S$-단면}은 다름 아닌 \emph{$S$에 값을 갖는 $X$의 점}이다.
+(\hyperref[I.3.4.2.1-ko]{3.4.2.1})의 식은 다음과 같이도 쓸 수 있다.
+\phantomsection\label{I.3.4.3.1-ko}
+\[
+  (X\times_S Y)(T)_S=X(T)_S\times Y(T)_S~;
+  \tag{3.4.3.1}
+\]
+더 일반적으로 $Z$가 $S$-준스킴이고 $X$, $Y$, $T$가
+$Z$-준스킴(따라서 \emph{그 자체로} $S$-준스킴)이면
+\phantomsection\label{I.3.4.3.2-ko}
+\[
+  (X\times_Z Y)(T)_S=X(T)_S\times_{Z(T)_S}Y(T)_S.
+  \tag{3.4.3.2}
+\]
+
+$S$-준스킴 $W$와 두 $S$-사상 $r:W\to X$, $s:W\to Y$로 이루어진
+삼중항 $(W,r,s)$가 ($Z$ 위에서) $X$와 $Y$의 곱임을 보이려면,
+정의에 따라 \emph{모든 $S$-준스킴 $T$}에 대하여 다음 그림에서
+\phantomsection\label{I.3.4.3.product-diagram-ko}
+\[
+  \xymatrix{
+    W(T)_S\ar[r]^{r'}\ar[d]_{s'} & X(T)_S\ar[d]^{\varphi'}\\
+    Y(T)_S\ar[r]_{\psi'} & Z(T)_S
+  }
+\]
+$W(T)_S$가 $Z(T)_S$ 위에서 $X(T)_S$와 $Y(T)_S$의 섬유곱임을
+확인하면 충분하다. 여기서 $r'$과 $s'$은 $r$과 $s$에,
+$\varphi'$과 $\psi'$은 구조 사상 $\varphi:X\to Z$와
+$\psi:Y\to Z$에 각각 대응한다.
+\end{env}
+
+\begin{env}[3.4.4]
+\label{I.3.4.4-ko}
+위에서 $T$(각각 $S$)가 환 $B$(각각 $A$)의 아핀 스킴이면 앞의
+표기에서 $T$(각각 $S$)를 $B$(각각 $A$)로 바꾼다. 이때 $X(B)$의
+원소를 \emph{환 $B$에 값을 갖는 $X$의 점}, $X(B)_A$의 원소를
+\emph{$A$-대수 $B$에 값을 갖는 $A$-준스킴 $X$의 점}이라고 한다.
+$X(B)$와 $X(B)_A$는 이제 \emph{$B$에 관한 공변함자}임에 유의하자.
+마찬가지로 $A$-준스킴 $T$에 값을 갖는 $A$-준스킴 $X$의 점들의
+집합을 $X(T)_A$로 쓴다.
+\end{env}
+
+\begin{env}[3.4.5]
+\label{I.3.4.5-ko}
+특히 $T=\operatorname{Spec}(A)$이고 $A$가 \emph{국소}환인 경우를
+생각하자. 그러면 $X(A)$의 원소들은 $x\in X$에 대한 \emph{국소}
+준동형 $\mathcal O_x\to A$들과 전단사로 대응한다
+(\hyperref[I.2.4.4-ko]{2.4.4}). 이때 $X$의 바탕공간의 점 $x$를
+그에 대응하는 $A$에 값을 갖는 $X$의 점의 \emph{소재점}이라 한다.
+
+더욱 특별히 준스킴 $X$의 \emph{기하적 점}이란
+\emph{어떤 체 $K$에 값을 갖는 $X$의 점}을 말한다. 따라서 이러한
+점 하나를 주는 것은 그 점의 $X$의 바탕공간에서의
+\oldpage[I]{113}
+소재점 $x$와 $k(x)$의 \emph{확대체} $K$를 주는 것과 같다. $K$를
+그 기하적 점의 \emph{값체}라고 하며, 이 기하적 점이
+\emph{$x$에 위치한다}고도 한다. 이로써 $K$에 값을 갖는 기하적 점을
+그 소재점에 대응시키는 사상 $X(K)\to X$를 정의한다.
+
+$S'=\operatorname{Spec}(K)$가 $S$-준스킴이고(다시 말해
+$s\in S$인 어떤 잉여체 $k(s)$의 확대체로 $K$를 보고 있고),
+$X$가 $S$-준스킴이라고 하자. $X(K)_S$의 원소, 즉
+\emph{$K$에 값을 갖고 $s$ 위에 있는 $X$의 기하적 점}은
+$s$ \emph{위에 있는} $X$의 점 $x$에 대하여 잉여체 $k(x)$에서
+$K$로 가는 $k(s)$-단사 준동형을 주는 것과 같다. 이때 $k(x)$는
+$k(s)$의 확대체이다.
+
+더욱 특별히 $S=\operatorname{Spec}(K)=\{\xi\}$이면
+\emph{$K$에 값을 갖는 $X$의 기하적 점들은 $k(x)=K$인 점
+$x\in X$와 동일시된다}. 이러한 점을 \emph{$K$ 위에서 유리적인
+$K$-준스킴 $X$의 점}, 곧 $K$-유리점이라고도 한다. $K'$이 $K$의
+확대체이면 $K'$에 값을 갖는 $X$의 기하적 점들은
+$K'$ 위에서 유리적인 $X'=X_{(K')}$의 점들과 전단사로 대응한다
+(\hyperref[I.3.3.14-ko]{3.3.14}).
+\end{env}
+
+\begin{lemma}[3.4.6]
+\label{I.3.4.6-ko}
+$X_i$ ($1\leq i\leq n$)를 $S$-준스킴들, $s$를 $S$의 한 점,
+$x_i$ ($1\leq i\leq n$)를 $s$ 위에 있는 $X_i$의 한 점이라 하자.
+그러면 $k(s)$의 확대체 $K$와, 곱
+$Y=X_1\times_S X_2\times_S\cdots\times_S X_n$의 $K$에 값을 갖는
+기하적 점이 존재하여 그 각 사영은 $x_i$에 위치한다.
+\end{lemma}
+
+실제로 어떤 하나의 $k(s)$의 확대체 $K$ 안에 $k(s)$-단사 준동형
+$k(x_i)\to K$들을 잡을 수 있다(Bourbaki, \emph{Alg.}, chap. V,
+\S~4, prop. 2). 합성 $k(s)\to k(x_i)\to K$들은 모두 같으므로
+$k(x_i)\to K$에 대응하는 사상 $\operatorname{Spec}(K)\to X_i$들은
+$S$-사상이다. 따라서 이들은 유일한 사상
+$\operatorname{Spec}(K)\to Y$를 정의한다. $y$를 이에 대응하는
+$Y$의 점이라 하면, $y$의 각 $X_i$로의 사영은 분명히 $x_i$이다.
+
+\begin{proposition}[3.4.7]
+\label{I.3.4.7-ko}
+$X_i$ ($1\leq i\leq n$)를 $S$-준스킴들이라 하고, 각 첨자 $i$에
+대하여 $x_i$를 $X_i$의 한 점이라 하자. $x_i$가
+$Y=X_1\times_S X_2\times_S\cdots\times_S X_n$의 어떤 점 $y$의
+$i$번째 사영이 될 필요충분조건은 모든 $x_i$가 $S$의 같은 한 점
+$s$ 위에 있는 것이다.
+\end{proposition}
+
+이 조건이 필요함은 자명하고, 보조정리
+(\hyperref[I.3.4.6-ko]{3.4.6})이 충분함을 보인다.
+
+\phantomsection\label{I.3.4.7.underlying-map-ko}
+다시 말해 $X$의 바탕집합을 $(X)$로 나타내면 표준적인 \emph{전사}
+사상 $(X\times_S Y)\to (X)\times_{(S)}(Y)$이 있음을 알 수 있다.
+이 사상은 일반적으로 \emph{단사이지 않음}에 유의해야 한다. 즉
+\emph{$X\times_S Y$에서 서로 다른 여러 점 $z$가 같은 사영
+$x\in X$, $y\in Y$를 가질 수 있다}. 실제로 $S$, $X$, $Y$가 각각
+체 $k$, $K$, $K'$의 소 스펙트럼인 경우에도 이를 볼 수 있는데,
+텐서곱 $K\otimes_k K'$은 일반적으로 서로 다른 여러 소 아이디얼을
+갖기 때문이다(\hyperref[I.3.4.9-ko]{3.4.9} 참조).
+
+\begin{corollary}[3.4.8]
+\label{I.3.4.8-ko}
+$f:X\to Y$를 $S$-사상, $f_{(S')}:X_{(S')}\to Y_{(S')}$를
+밑준스킴의 확장 $S'\to S$로 $f$에서 얻는 $S'$-사상이라 하자.
+$p$(각각 $q$)를 사영 $X_{(S')}\to X$(각각 $Y_{(S')}\to Y$)라
+하자. $X$의 모든 부분집합 $M$에 대하여
+\phantomsection\label{I.3.4.8.base-change-image-ko}
+\[
+  q^{-1}(f(M))=f_{(S')}(p^{-1}(M)).
+\]
+\end{corollary}
+
+\oldpage[I]{114}
+실제로 (\hyperref[I.3.3.11-ko]{3.3.11})에 따라 다음 가환 그림으로
+$X_{(S')}$을 곱 $X\times_Y Y_{(S')}$과 동일시한다.
+\phantomsection\label{I.3.4.8.proof-diagram-ko}
+\[
+  \xymatrix{
+    X\ar[d]_f & X_{(S')}\ar[l]_p\ar[d]^{f_{(S')}}\\
+    Y & Y_{(S')}\ar[l]^q
+  }
+\]
+
+(\hyperref[I.3.4.7-ko]{3.4.7})에 따라 $x\in M$,
+$y'\in Y_{(S')}$에 대한 관계 $q(y')=f(x)$은
+$p(x')=x$이고 $f_{(S')}(x')=y'$인 어떤 $x'\in X_{(S')}$가
+존재함과 동치이다. 이로부터 따름정리가 얻어진다.
+
+보조정리 (\hyperref[I.3.4.6-ko]{3.4.6})을 다음과 같이 정밀화할 수
+있다.
+
+\begin{proposition}[3.4.9]
+\label{I.3.4.9-ko}
+$X$, $Y$를 두 $S$-준스킴, $x$를 $X$의 점, $y$를 $Y$의 점이라
+하고, $x$와 $y$가 같은 점 $s\in S$ 위에 있다고 하자.
+$X\times_S Y$에서 $x$와 $y$를 사영으로 갖는 점들의 집합은
+$k(s)$의 확대체로 본 $k(x)$와 $k(y)$의 합성 확대체의 유형들의
+집합과 표준적으로 전단사 대응한다(Bourbaki, \emph{Alg.}, chap. VIII,
+\S~8, prop. 2).
+\end{proposition}
+
+$p$(각각 $q$)를 $X\times_S Y$에서 $X$(각각 $Y$)로 가는 사영이라
+하고, $E$를 $X\times_S Y$의 바탕공간의 부분공간
+$p^{-1}(x)\cap q^{-1}(y)$라 하자. 먼저 사상
+$\operatorname{Spec}(k(x))\to S$와 $\operatorname{Spec}(k(y))\to S$가
+$\operatorname{Spec}(k(x))\to\operatorname{Spec}(k(s))\to S$와
+$\operatorname{Spec}(k(y))\to\operatorname{Spec}(k(s))\to S$로
+각각 인수분해됨에 유의하자.
+$\operatorname{Spec}(k(s))\to S$는 단사사상이므로
+(\hyperref[I.2.4.7-ko]{2.4.7}),
+(\hyperref[I.3.2.4-ko]{3.2.4})에 따라
+\phantomsection\label{I.3.4.9.tensor-product-fibre-ko}
+\[
+  P=\operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(y))
+  =\operatorname{Spec}(k(x))\times_{\operatorname{Spec}(k(s))}
+   \operatorname{Spec}(k(y))
+  =\operatorname{Spec}\bigl(k(x)\otimes_{k(s)}k(y)\bigr).
+\]
+
+서로 역인 두 사상 $\alpha:P_0\to E$, $\beta:E\to P_0$를 정의하자.
+여기서 $P_0$는 준스킴 $P$의 바탕집합을 뜻한다.
+$i:\operatorname{Spec}(k(x))\to X$와
+$j:\operatorname{Spec}(k(y))\to Y$가 표준 사상들이면
+(\hyperref[I.2.4.5-ko]{2.4.5}), $\alpha$를 사상 $i\times_S j$에
+대응하는 바탕공간의 사상으로 잡는다. 한편 모든 $z\in E$는 가정에
+따라 두 $k(s)$-단사 준동형 $k(x)\to k(z)$와 $k(y)\to k(z)$를
+정의하고, 따라서 유도된 $k(s)$-대수 준동형
+$k(x)\otimes_{k(s)}k(y)\to k(z)$와 이어서 사상
+$\operatorname{Spec}(k(z))\to P$를 정의한다. $\beta(z)$는 이 사상에
+의해 $P_0$에 정해지는 점으로 둔다. $\alpha\circ\beta$와
+$\beta\circ\alpha$가 항등사상임은
+(\hyperref[I.2.4.5-ko]{2.4.5})와 곱의 정의
+(\hyperref[I.3.2.1-ko]{3.2.1})에서 따른다. 끝으로 $P_0$가
+$k(x)$와 $k(y)$의 합성 확대체의 유형들의 집합과 전단사 대응함은
+알려져 있다(Bourbaki, \emph{Alg.}, chap. VIII, \S~8, prop. 1).
+
+\subsection{전사와 단사}
+\label{subsection:I.3.5-ko}
+
+\begin{env}[3.5.1]
+\label{I.3.5.1-ko}
+일반적으로 준스킴의 사상들이 갖는 한 성질 $\mathbf{P}$를 생각하고,
+다음 두 명제를 생각하자.
+\begin{enumerate}
+  \item[(i)] $f:X\to X'$, $g:Y\to Y'$가 성질 $\mathbf{P}$를 갖는 두
+  $S$-사상이면 $f\times_S g$도 성질 $\mathbf{P}$를 갖는다.
+  \item[(ii)] $f:X\to Y$가 성질 $\mathbf{P}$를 갖는 $S$-사상이면,
+  밑준스킴의 확장으로 $f$에서 얻는 모든 $S'$-사상
+  $f_{(S')}:X_{(S')}\to Y_{(S')}$도 성질 $\mathbf{P}$를 갖는다.
+\end{enumerate}
+
+\oldpage[I]{115}
+$f_{(S')}=f\times_S 1_{S'}$이므로 모든 준스킴 $X$에 대하여
+\emph{항등사상} $1_X$가 성질 $\mathbf{P}$를 가지면 (i)이 (ii)를
+함의함을 알 수 있다. 한편 $f\times_S g$는 합성사상
+\phantomsection\label{I.3.5.1.product-composition-ko}
+\[
+  X\times_S Y\xrightarrow{f\times 1_Y}X'\times_S Y
+  \xrightarrow{1_{X'}\times g}X'\times_S Y'
+\]
+이므로 성질 $\mathbf{P}$를 갖는 두 사상의 \emph{합성}도 이 성질을
+가지면 (ii)가 (i)을 함의함을 알 수 있다.
+\end{env}
+
+이 관찰의 첫 응용은 다음 명제이다.
+
+\begin{proposition}[3.5.2]
+\label{I.3.5.2-ko}
+\begin{enumerate}
+  \item[(i)] $f:X\to X'$, $g:Y\to Y'$가 전사인 $S$-사상들이면
+  $f\times_S g$도 전사이다.
+  \item[(ii)] $f:X\to Y$가 전사인 $S$-사상이면 밑준스킴의 모든 확장
+  $S'$에 대하여 $f_{(S')}$도 전사이다.
+\end{enumerate}
+\end{proposition}
+
+두 전사의 합성은 전사이므로 (ii)만 증명하면 충분하다. 그런데 이
+명제는 $M=X$에 (\hyperref[I.3.4.8-ko]{3.4.8})을 적용하면 곧바로
+따른다.
+
+\begin{proposition}[3.5.3]
+\label{I.3.5.3-ko}
+사상 $f:X\to Y$가 전사일 필요충분조건은 모든 체 $K$와 모든 사상
+$\operatorname{Spec}(K)\to Y$에 대하여 $K$의 확대체 $K'$과 다음
+그림을 가환이게 하는 사상 $\operatorname{Spec}(K')\to X$가 존재하는
+것이다.
+\phantomsection\label{I.3.5.3.surjectivity-diagram-ko}
+\[
+  \xymatrix{
+    X\ar[d]_f & \operatorname{Spec}(K')\ar[l]\ar[d]\\
+    Y & \operatorname{Spec}(K)\ar[l]
+  }
+\]
+\end{proposition}
+
+이 조건은 충분하다. 실제로 모든 $y\in Y$에 대하여 $K$가 $k(y)$의
+확대체일 때 단사 준동형 $k(y)\to K$에 대응하는 사상
+$\operatorname{Spec}(K)\to Y$에 이 조건을 적용하면 된다
+(\hyperref[I.2.4.6-ko]{2.4.6}). 역으로 $f$가 전사라고 하고,
+$y\in Y$를 $\operatorname{Spec}(K)$의 유일한 점의 상이라 하자.
+$f(x)=y$인 $x\in X$가 존재한다. 이에 대응하는 단사 준동형
+$k(y)\to k(x)$를 생각하자(\hyperref[I.2.2.1-ko]{2.2.1}).
+$k(x)$와 $K$에서 $K'$으로 가는 $k(y)$-단사 준동형들이 존재하도록
+$K'$을 $k(y)$의 확대체로 잡으면 충분하다(Bourbaki, \emph{Alg.},
+chap. V, \S~4, prop. 2). 이때 $k(x)\to K'$에 대응하는 사상
+$\operatorname{Spec}(K')\to X$가 요구한 조건을 만족한다.
+
+(\hyperref[I.3.4.5-ko]{3.4.5})에서 도입한 말로 표현하면,
+\emph{$K$에 값을 갖는 $Y$의 모든 기하적 점은 $K$의 어떤 확대체에
+값을 갖는 $X$의 기하적 점에서 온다}.
+
+\begin{definition}[3.5.4]
+\label{I.3.5.4-ko}
+준스킴의 사상 $f:X\to Y$가 모든 체 $K$에 대하여 대응하는 사상
+$X(K)\to Y(K)$을 단사로 만들면, $f$를 \emph{보편적으로 단사}라고
+하거나 \emph{라디시엘 사상}이라고 한다.
+\end{definition}
+
+정의에서 곧바로 준스킴의 모든 \emph{단사사상}(T, 1.1)은 라디시엘
+사상임을 알 수 있다.
+
+\begin{env}[3.5.5]
+\label{I.3.5.5-ko}
+사상 $f:X\to Y$가 라디시엘 사상임을 보이려면 정의
+(\hyperref[I.3.5.4-ko]{3.5.4})의 조건을 모든 \emph{대수적으로
+닫힌} 체에 대하여 확인하는 것으로 충분하다. 실제로 $K$가 임의의
+체이고 $K'$이 $K$의 대수적으로 닫힌 확대체이면 그림
+\phantomsection\label{I.3.5.5.algebraic-closure-diagram-ko}
+\[
+  \xymatrix{
+    X(K)\ar[r]^\alpha\ar[d]_\varphi & Y(K)\ar[d]^{\varphi'}\\
+    X(K')\ar[r]_{\alpha'} & Y(K')
+  }
+\]
+
+\oldpage[I]{116}
+은 가환이다. 여기서 $\varphi$와 $\varphi'$은 사상
+$\operatorname{Spec}(K')\to\operatorname{Spec}(K)$에서 오고,
+$\alpha$와 $\alpha'$은 $f$에 대응한다. 그런데 $\varphi$는 단사이고
+가정에 따라 $\alpha'$도 단사이므로 $\alpha$도 반드시 단사이다.
+\end{env}
+
+\begin{proposition}[3.5.6]
+\label{I.3.5.6-ko}
+$f:X\to Y$, $g:Y\to Z$를 준스킴의 두 사상이라 하자.
+\begin{enumerate}
+  \item[(i)] $f$와 $g$가 라디시엘 사상이면 $g\circ f$도
+  라디시엘 사상이다.
+  \item[(ii)] 역으로 $g\circ f$가 라디시엘 사상이면 $f$도
+  라디시엘 사상이다.
+\end{enumerate}
+\end{proposition}
+
+정의 (\hyperref[I.3.5.4-ko]{3.5.4})를 고려하면 이 명제는 사상들
+$X(K)\to Y(K)\to Z(K)$에 대한 대응하는 자명한 명제들로 귀착된다.
+
+\begin{proposition}[3.5.7]
+\label{I.3.5.7-ko}
+\begin{enumerate}
+  \item[(i)] $S$-사상 $f:X\to X'$, $g:Y\to Y'$가 라디시엘
+  사상들이면 $f\times_S g$도 라디시엘 사상이다.
+  \item[(ii)] $S$-사상 $f:X\to Y$가 라디시엘 사상이면 밑준스킴의
+  모든 확장 $S'\to S$에 대하여
+  $f_{(S')}:X_{(S')}\to Y_{(S')}$도 라디시엘 사상이다.
+\end{enumerate}
+\end{proposition}
+
+(\hyperref[I.3.5.1-ko]{3.5.1})에 따라 (i)만 증명하면 충분하다.
+(\hyperref[I.3.4.2.1-ko]{3.4.2.1})에서
+\phantomsection\label{I.3.5.7.field-valued-product-ko}
+\[
+  (X\times_S Y)(K)=X(K)\times_{S(K)}Y(K),\qquad
+  (X'\times_S Y')(K)=X'(K)\times_{S(K)}Y'(K)
+\]
+임을 보았다. 이때 $f\times_S g$에 대응하는 사상
+$(X\times_S Y)(K)\to(X'\times_S Y')(K)$은
+$(u,v)\mapsto(f\circ u,g\circ v)$와 동일시되므로 명제가 곧바로
+따른다.
+
+\begin{proposition}[3.5.8]
+\label{I.3.5.8-ko}
+사상 $f=(\psi,\theta):X\to Y$가 라디시엘 사상일 필요충분조건은
+$\psi$가 단사이고, 모든 $x\in X$에 대하여 단사 준동형
+$\theta^x:k(\psi(x))\to k(x)$가 $k(x)$을 $k(\psi(x))$의 순수 비분리
+확대체로 만드는 것이다.
+\end{proposition}
+
+$f$가 라디시엘 사상이라고 하고, 먼저 관계
+$\psi(x_1)=\psi(x_2)=y$가 반드시 $x_1=x_2$를 함의함을 보이자.
+실제로 $k(y)$의 확대체인 어떤 체 $K$와 $k(y)$-단사 준동형
+$k(x_1)\to K$, $k(x_2)\to K$가 존재한다(Bourbaki, \emph{Alg.},
+chap. V, \S~4, prop. 2). 따라서 이에 대응하는 두 사상
+$u_1:\operatorname{Spec}(K)\to X$,
+$u_2:\operatorname{Spec}(K)\to X$는 $f\circ u_1=f\circ u_2$를
+만족한다. 가정에 따라 $u_1=u_2$이고, 특히 $x_1=x_2$이다. 이제
+$\theta^x$를 통하여 $k(x)$을 $k(\psi(x))$의 확대체로 보자. $k(x)$이
+$k(\psi(x))$의 순수 비분리 확대체가 아니면 $k(\psi(x))$의 어떤
+대수적으로 닫힌 확대체 $K$ 안으로 가는 서로 다른 두
+$k(\psi(x))$-단사 준동형 $k(x)\to K$가 존재하고, 이에 대응하는 두
+사상 $\operatorname{Spec}(K)\to X$는 가정에 모순된다. 역으로
+(\hyperref[I.2.4.6-ko]{2.4.6})을 고려하면 명제의 조건들이 $f$가
+라디시엘 사상일 충분조건임은 곧바로 알 수 있다.
+
+\begin{corollary}[3.5.9]
+\label{I.3.5.9-ko}
+$A$를 환, $S$를 $A$의 곱셈적 부분집합이라 하면 표준 사상
+$\operatorname{Spec}(S^{-1}A)\to\operatorname{Spec}(A)$는 라디시엘
+사상이다.
+\end{corollary}
+
+실제로 이 사상은 단사사상이다(\hyperref[I.1.6.2-ko]{1.6.2}).
+
+\begin{corollary}[3.5.10]
+\label{I.3.5.10-ko}
+$f:X\to Y$를 라디시엘 사상, $g:Y'\to Y$를 사상이라 하고
+$X'=X_{(Y')}=X\times_Y Y'$라 하자. 그러면 라디시엘 사상
+$f_{(Y')}$ (\hyperref[I.3.5.7-ko]{3.5.7 (ii)})은 $X'$의 바탕공간을
+$g^{-1}(f(X))$에 전단사로 대응시킨다. 또한 모든 체 $K$에 대하여
+$X'(K)$는 $g$에 대응하는 사상 $Y'(K)\to Y(K)$에 의한, $Y(K)$의
+부분집합 $X(K)$의 역상인 $Y'(K)$의 부분집합과 동일시된다.
+\end{corollary}
+
+첫째 명제는 (\hyperref[I.3.5.8-ko]{3.5.8})과
+(\hyperref[I.3.4.8-ko]{3.4.8})에서 곧바로 따르고, 둘째 명제는
+다음 그림의 가환성에서 따른다.
+\oldpage[I]{117}
+\phantomsection\label{I.3.5.10.base-change-points-diagram-ko}
+\[
+  \xymatrix{
+    X'(K)\ar[r]\ar[d] & Y'(K)\ar[d]\\
+    X(K)\ar[r] & Y(K)
+  }
+\]
+
+\begin{remark}[3.5.11]
+\label{I.3.5.11-ko}
+준스킴의 사상 $f=(\psi,\theta)$에서 바탕공간의 사상 $\psi$가
+단사이면 $f$를
+\emph{단사}라고 하겠다. 사상 $f=(\psi,\theta):X\to Y$가 라디시엘
+사상일 필요충분조건은 모든 사상 $Y'\to Y$에 대하여 사상
+$f_{(Y')}:X_{(Y')}\to Y'$가 단사인 것이다. 이것이 \emph{보편적으로
+단사인 사상}이라는 용어를 정당화한다. 실제로 조건의 필요성은
+(\hyperref[I.3.5.7-ko]{3.5.7, (ii)})와
+(\hyperref[I.3.5.8-ko]{3.5.8})에서 따른다. 역으로 이 조건은 먼저
+$\psi$가 단사임을 함의한다. 어떤 $x\in X$에 대하여 단사 준동형
+$\theta^x:k(\psi(x))\to k(x)$가 $k(x)$을 $k(\psi(x))$의 순수
+비분리 확대체로 만들지 않는다면
+$k(\psi(x))$의 어떤 확대체 $K$와 같은 사상
+$\operatorname{Spec}(K)\to Y$에 대응하는 서로 다른 두 사상
+$\operatorname{Spec}(K)\to X$가 존재할 것이다
+(\hyperref[I.3.5.8-ko]{3.5.8}). 그러나 $Y'=\operatorname{Spec}(K)$로
+두면 $X_{(Y')}$의 서로 다른 두 $Y'$-단면이 생긴다
+(\hyperref[I.3.3.14-ko]{3.3.14}). 이는 $f_{(Y')}$가 단사라는
+가정에 모순된다.
+\end{remark}
+
+\subsection{섬유}
+\label{subsection:I.3.6-ko}
+
+\begin{proposition}[3.6.1]
+\label{I.3.6.1-ko}
+$f:X\to Y$를 사상, $y$를 $Y$의 점, $\mathfrak{a}_y$를
+$\mathscr{O}_y$의 $\mathfrak{m}_y$-준아딕 위상에 대한 정의
+아이디얼이라 하자. 사영
+$p:X\times_Y\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)\to X$는
+준스킴 $X\times_Y\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)$의
+바탕공간을, $X$의 바탕공간 위상에서 유도된 위상을 준 섬유
+$f^{-1}(y)$ 위로 위상동형시킨다.
+\end{proposition}
+
+$\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)\to Y$는 라디시엘
+사상이고(\hyperref[I.3.5.4-ko]{3.5.4} 및
+\hyperref[I.2.4.7-ko]{2.4.7}), 아이디얼
+$\mathfrak{m}_y/\mathfrak{a}_y$가 가정에 따라 멱영이므로
+(\hyperref[I.1.1.12-ko]{1.1.12})
+$\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)$에는 점이 하나뿐이다.
+따라서 이미 (\hyperref[I.3.5.10-ko]{3.5.10} 및
+\hyperref[I.3.3.4-ko]{3.3.4})에서 $p$가
+$X\times_Y\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)$의
+바탕공간을 $f^{-1}(y)$와 \emph{집합으로서} 동일시함을 알고 있다.
+그러므로 $p$가 위상동형임을 보이면 충분하다.
+(\hyperref[I.3.2.7-ko]{3.2.7})에 따라 이 문제는 $X$와 $Y$ 위에서
+국소적이므로 $X=\operatorname{Spec}(B)$,
+$Y=\operatorname{Spec}(A)$이고 $B$가 $A$-대수라고 가정할 수 있다.
+이때 사상 $p$는 준동형
+$1\otimes\varphi:B\to B\otimes_A A'$에 대응한다. 여기서
+$A'=A_y/\mathfrak{a}_y$이고 $\varphi$는 $A$에서 $A'$으로 가는 표준
+사상이다. 그런데 $B\otimes_A A'$의 모든 원소는
+\phantomsection\label{I.3.6.1.localization-fraction-ko}
+\[
+  \sum_i b_i\otimes\varphi(a_i)/\varphi(s)
+  =\left(\sum_i(a_i b_i\otimes 1)\right)(1\otimes\varphi(s))^{-1}
+\]
+꼴로 쓸 수 있다. 여기서 $s\notin\mathfrak{j}_y$이며 명제
+(\hyperref[I.1.2.4-ko]{1.2.4})를 적용할 수 있다.
+
+\begin{env}[3.6.2]
+\label{I.3.6.2-ko}
+이 책의 앞으로의 모든 부분에서 사상의 섬유 $f^{-1}(y)$에
+$k(y)$-준스킴의 구조가 주어졌다고 할 때에는,
+\emph{언제나 $X\times_Y\operatorname{Spec}(k(y))$의 구조를 $X$로의
+사영을 통하여 옮겨 얻은 준스킴을 뜻한다}. 이 마지막 곱을
+$X\otimes_Y k(y)$ 또는 $X\otimes_{\mathscr{O}_Y}k(y)$라고도 쓰겠다.
+더 일반적으로 $B$가 $\mathscr{O}_y$-대수이면 곱
+$X\times_Y\operatorname{Spec}(B)$를 $X\otimes_Y B$ 또는
+$X\otimes_{\mathscr{O}_Y}B$로 나타내겠다.
+\end{env}
+
+앞의 규약 아래에서 (\hyperref[I.3.5.10-ko]{3.5.10})에 따라
+$k(y)$의 확대체 $K$에 값을 갖는 $X$의 점들은
+\emph{$K$에 값을 갖는 $f^{-1}(y)$의 점들}과 동일시된다.
+
+\begin{env}[3.6.3]
+\label{I.3.6.3-ko}
+$f:X\to Y$, $g:Y\to Z$를 두 사상, $h=g\circ f$를 그 합성이라 하자.
+모든 $z\in Z$에 대하여 섬유 $h^{-1}(z)$는 다음 준스킴과 동형이다.
+\phantomsection\label{I.3.6.3.fibre-composition-ko}
+\[
+  X\times_Z\operatorname{Spec}(k(z))
+  =(X\times_Y Y)\times_Z\operatorname{Spec}(k(z))
+  =X\times_Y g^{-1}(z)
+\]
+\oldpage[I]{118}
+특히 $U$가 $X$의 열린부분이면, 섬유 준스킴 $f^{-1}(y)$가
+$U\cap f^{-1}(y)$ 위에 유도하는 준스킴은 $f_U^{-1}(y)$와 동형이다.
+여기서 $f_U$는 $f$의 $U$로의 제한이다.
+\end{env}
+
+\begin{proposition}[3.6.4) (``섬유의 추이성'']
+\label{I.3.6.4-ko}
+$f:X\to Y$, $g:Y'\to Y$를 두 사상이라 하자. $X'=X\times_Y Y'
+=X_{(Y')}$, $f'=f_{(Y')}:X'\to Y'$로 놓자. 모든 $y'\in Y'$에
+대하여 $y=g(y')$로 놓으면 준스킴 $f'^{-1}(y')$는
+$f^{-1}(y)\otimes_{k(y)}k(y')$와 동형이다.
+\end{proposition}
+
+실제로 두 준스킴
+$(X\otimes_Y k(y))\otimes_{k(y)}k(y')$와
+$(X\times_Y Y')\otimes_{Y'}k(y')$가 모두
+(\hyperref[I.3.3.9.1-ko]{3.3.9.1})에 따라
+$X\times_Y\operatorname{Spec}(k(y'))$와 표준적으로 동형임을
+관찰하면 된다.
+
+특히 $V$가 $Y$에서 $y$의 열린 근방이고, $f_V$가 $f$를
+$f^{-1}(V)$ 위에 유도된 준스킴에 제한한 사상이라면 준스킴 $f^{-1}(y)$와
+$f_V^{-1}(y)$는 표준적으로 동일시된다.
+
+\begin{proposition}[3.6.5]
+\label{I.3.6.5-ko}
+$f:X\to Y$를 사상, $y$를 $Y$의 점,
+$Z=\operatorname{Spec}(\mathscr{O}_y)$를 국소 스킴,
+$p=(\psi,\theta):X\times_Y Z\to X$를 사영이라 하자. $Z$의
+바탕공간을 $Y$의 부분공간과 동일시하면
+(\hyperref[I.2.4.2-ko]{2.4.2}), $p$는 $X\times_Y Z$의 바탕공간을
+$X$의 부분공간 $f^{-1}(Z)$ 위로 위상동형시킨다. 또한 모든
+$t\in X\times_Y Z$에 대하여 $z=\psi(t)$로 놓으면
+$\theta_t^\sharp$은 $\mathscr{O}_z$에서 $\mathscr{O}_t$로 가는
+동형이다.
+\end{proposition}
+
+$Z$는 $Y$의 부분공간으로 동일시했을 때 $y$를 포함하는 모든 아핀
+열린집합에 포함되므로(\hyperref[I.2.4.2-ko]{2.4.2}),
+(\hyperref[I.3.6.1-ko]{3.6.1})에서와 같이
+$X=\operatorname{Spec}(A)$와 $Y=\operatorname{Spec}(B)$가 아핀
+스킴이고 $A$가 $B$-대수인 경우로 귀착시킬 수 있다. 그러면
+$X\times_Y Z$는 $A\otimes_B B_y$의 소 스펙트럼이고, 이 환은
+$S^{-1}A$와 표준적으로 동일시된다. 여기서 $S$는
+$B-\mathfrak{j}_y$의 $A$ 안에서의 상이다(0, 1.5.2). 이때 $p$는
+표준 준동형 $A\to S^{-1}A$에 대응하므로 명제는
+(\hyperref[I.1.6.2-ko]{1.6.2})에서 따른다.
+
+\subsection{응용: 준스킴의 mod.
+\texorpdfstring{$\mathfrak{J}$ 환원\protect\footnotemark}{J 환원}}
+\label{subsection:I.3.7-ko}
+\label{I.3.7-ko}
+\footnotetext{이 항은 제I장의 뒷부분과 제II장의 개념과 결과를 사용하지만
+뒤에서는 쓰지 않을 것이며, 고전 대수기하학에 익숙한 독자만을 위한 것이다.}
+
+\begin{env}[3.7.1]
+\label{I.3.7.1-ko}
+$A$를 환, $X$를 $A$-준스킴, $\mathfrak{J}$를 $A$의 아이디얼이라 하자.
+그러면 $X_0=X\otimes_A(A/\mathfrak{J})$는
+$(A/\mathfrak{J})$-준스킴이며, 때로는 $X$에서 mod. $\mathfrak{J}$
+\emph{환원}으로 얻어진다고 한다.
+\end{env}
+
+\begin{env}[3.7.2]
+\label{I.3.7.2-ko}
+이 용어는 주로 $A$가 \emph{국소환}이고 $\mathfrak{J}$가 그 극대
+아이디얼인 경우에 쓰인다. 이때 $X_0$는 $A$의 잉여체
+$k=A/\mathfrak{J}$ 위의 준스킴이다.
+
+더 나아가 $A$가 분수체 $K$를 갖는 정역이면 $K$-준스킴
+$X'=X\otimes_A K$도 생각할 수 있다. 우리가 사용하지 않을 용어의
+남용으로서, 종래에는 흔히 $X_0$가 mod. $\mathfrak{J}$ 환원으로
+\emph{$X'$에서 얻어진다}고 하였다. 이 말을 쓰던 경우에는 $A$가
+차원 1인 국소환이었고(대개 이산 값매김환이었다), 주어진
+$K$-준스킴 $X'$가 어떤 $K$-준스킴 $P'$의 닫힌 부분준스킴이라는
+사실을 다소 명시적으로 전제하였다. 실제로 $P'$은
+$\mathbf{P}_K^r$형의 사영공간이었고(II, 4.1.1 참조),
+$P'=P\otimes_A K$ 꼴이었다. 여기서 $P$는 주어진 $A$-준스킴,
+실제로는 II, 4.1.1의 표기에서 $A$-스킴 $\mathbf{P}_A^r$이었다.
+우리의 언어로 $X'$에서 $X_0$를 정의하는 방법은 다음과 같다.
+
+아핀 스킴 $Y=\operatorname{Spec}(A)$를 생각하자. 이는 유일한
+\oldpage[I]{119}
+닫힌점 $y=\mathfrak{J}$와 일반점 $(0)$의 두 점으로 이루어진다. 따라서 일반점
+하나로 이루어진 집합 $U$는 $Y$ 안의 열린집합
+$U=\operatorname{Spec}(K)$이다.
+$X$가 $A$-준스킴, 다시 말해 $Y$-준스킴이고 $\psi:X\to Y$가 구조
+사상이면 $X\otimes_A K=X'$은 $X$가 $\psi^{-1}(U)$ 위에 유도하는
+준스킴과 다름없다. 특히 $\varphi:P\to Y$가 구조 사상이면
+$P'=\varphi^{-1}(U)$의 닫힌 부분준스킴 $X'$은 $P$의 (국소 닫힌)
+부분준스킴이다. $P$가 뇌터이면(예를 들어 $A$가 뇌터이고 $P$가
+$A$ 위에서 유한형이면), $X'$을 포함하는 $P$의 가장 작은 닫힌
+부분준스킴 $X=\overline{X'}$가 존재한다(9.5.10). 또한 $X'$은
+$X$가 열린집합 $\varphi^{-1}(U)\cap X$ 위에 유도하는 준스킴이므로
+$X\otimes_A K$와 동형이다(9.5.10).
+\emph{따라서 $X'$의 $P'=P\otimes_A K$ 안으로의 몰입은 표준적인
+방식으로 $X'$를 $X'=X\otimes_A K$ 꼴로 볼 수 있게 한다. 여기서
+$X$는 $A$-준스킴이다.} 이제 mod. $\mathfrak{J}$로 환원한 준스킴
+$X_0=X\otimes_A k$를 생각할 수 있으며, 이는 닫힌점 $y$의 섬유
+$\psi^{-1}(y)$와 다름없다. 종래에는 적절한 용어가 없어서
+$A$-준스킴 $X$를 명시적으로 도입하기를 피하였다. 그러나 통상
+``mod. $\mathfrak{J}$로 환원한'' 준스킴 $X_0$에 관하여 말하는 모든
+명제는 $X$ 자체에 관한 더 완전한 명제들의 귀결로 보아야 하며,
+그렇게 해석해야만 만족스럽게 정식화하고 이해할 수 있다. 더구나
+가정들은 언제나 $X'$의 $\mathbf{P}_K^r$ 안으로의 몰입을 미리 주는
+일과는 무관하게 $X$ 자체에 관한 가정들로 귀착되는 듯하다. 이로써
+더 내재적인 명제들을 얻을 수 있다.
+\end{env}
+
+\begin{env}[3.7.3]
+\label{I.3.7.3-ko}
+끝으로 여기서 생각한 상황의 개념적 정리가 늦어진 까닭이 되었을 법한
+매우 특수한 사실을 지적하자. $A$가 이산 값매김환이고 $X$가
+\emph{$A$ 위에서 고유}이면($X$가 $\mathbf{P}_A^r$의 닫힌
+부분준스킴일 때에는 실제로 그러하다. II, 5.5.4 참조), $A$에 값을 갖는
+$X$의 점들과 $K$에 값을 갖는 $X'$의 점들은 전단사 대응한다
+(II, 7.3.8). 이 때문에 실제로는 $X$에 관한 명제들을 증명하면서도
+흔히 $X'$에 관한 결과를 증명한다고 여겨 왔다. 그 명제들은 이 형태로
+바탕 국소환의 차원이 1이라는 가정을 없애도 여전히 성립한다.
+\end{env}

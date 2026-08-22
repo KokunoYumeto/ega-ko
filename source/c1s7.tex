@@ -1,0 +1,776 @@
+\section{유리 사상}
+\label{section:I.7-ko}
+
+\subsection{유리 사상과 유리함수}
+\label{subsection:I.7.1-ko}
+
+\begin{env}[7.1.1]
+\label{I.7.1.1-ko}
+$X$, $Y$를 두 준스킴, $U$, $V$를 $X$의 두 조밀한 열린집합,
+$f$(각각 $g$)를 $U$(각각 $V$)에서 $Y$로 가는 사상이라 하자.
+$f$와 $g$가 $U\cap V$ 안의 어떤 조밀한 열린집합에서 일치하면
+이들을 \emph{동치}라고 하겠다. $X$의 조밀한 열린집합들의 유한
+교집합은 $X$의 조밀한 열린집합이므로 이 관계가
+\emph{동치관계}임은 자명하다.
+\end{env}
+
+\begin{definition}[7.1.2]
+\label{I.7.1.2-ko}
+두 준스킴 $X$, $Y$가 주어졌다고 하자.
+(\hyperref[I.7.1.1-ko]{7.1.1})에서 정의한 관계에 따른 $X$의 조밀한
+열린 부분집합에서 $Y$로 가는 사상들의 동치류를
+\emph{$X$에서 $Y$로 가는 유리 사상}이라 한다. $X$와 $Y$가
+$S$-준스킴일 때, 이 동치류의 어떤 대표가 $S$-사상이면 이를
+\emph{$S$-유리 사상}이라 한다. $S$에서 $X$로 가는 모든
+$S$-유리 사상을 \emph{$X$의 $S$-유리 단면}이라 한다. $X$-준스킴
+$X\otimes_{\mathbf{Z}}\mathbf{Z}[T]$($T$는 부정원)의 모든
+$X$-유리 단면을 \emph{준스킴 $X$ 위의 유리함수}라 한다.
+
+$S$-준스킴만을 다룰 때에는 혼동의 염려가 없으면 용어를 남용하여
+``$S$-유리 사상'' 대신 ``유리 사상''이라고 하겠다.
+
+$f$를 $X$에서 $Y$로 가는 유리 사상, $U$를 $X$의 열린집합이라 하자.
+$f$의 동치류에 속하는 사상 $f_1$, $f_2$가 각각 $X$의 조밀한
+열린집합 $V$, $W$ 위에서 정의되어 있으면, 그 제한
+$f_1|(U\cap V)$와 $f_2|(U\cap W)$는 $U\cap V\cap W$ 안의,
+$U$에서 조밀한 어떤 열린집합에서 일치하므로 동치이다. 따라서
+동치류 $f$는
+$U$에서 $Y$로 가는 유리 사상을 정의한다. 이를
+\emph{$f$의 $U$로의 제한}이라 하고 $f|U$로 쓴다.
+
+각 $S$-사상 $f:X\to Y$에 $S$-유리 사상 하나를 대응시킬 때 그 사상을
+\oldpage[I]{156}
+$f$가 속하는 동치류로 정하면,
+$\operatorname{Hom}_S(X,Y)$에서 $X$에서 $Y$로 가는 $S$-유리 사상들의
+집합으로 가는 표준 사상이 정의된다. $X$의 $Y$-유리 단면들의 집합을
+$\Gamma_{\mathrm{rat}}(X/Y)$로 나타내면 표준 사상
+$\Gamma(X/Y)\to\Gamma_{\mathrm{rat}}(X/Y)$를 얻는다. 또한 $X$와 $Y$가
+두 $S$-준스킴이면, $X$에서 $Y$로 가는 $S$-유리 사상들의 집합은
+$\Gamma_{\mathrm{rat}}((X\times_S Y)/X)$와 표준적으로 동일시됨이
+자명하다
+(\hyperref[I.3.3.14-ko]{3.3.14}).
+\end{definition}
+
+\begin{env}[7.1.3]
+\label{I.7.1.3-ko}
+(\hyperref[I.7.1.2-ko]{7.1.2})와
+(\hyperref[I.3.3.14-ko]{3.3.14})에서 곧바로 알 수 있듯이,
+$X$ 위의 유리함수들은 $X$의 모든 곳에서 조밀한 열린집합 위의
+\emph{구조층 $\mathscr{O}_X$의 단면들의 동치류}와 표준적으로
+동일시된다. 여기서 두 단면은 그 정의역들의 교집합에 포함된 모든
+곳에서 조밀한 열린집합 위에서 일치할 때 동치이다. 특히 $X$ 위의
+유리함수들은 \emph{환} $R(X)$을 이룬다.
+\end{env}
+
+\begin{env}[7.1.4]
+\label{I.7.1.4-ko}
+$X$가 \emph{기약} 준스킴이면 공집합이 아닌 모든 열린집합은 $X$에서
+조밀하다. 달리 말하면 $X$의 공집합이 아닌 열린집합들은 $X$의
+\emph{일반점 $x$의 열린 근방}들이다. 그러므로 이 경우 $X$의 공집합이
+아닌 열린 부분집합들에서 $Y$로 가는 두 사상이 동치라는 것은 두
+사상이 $x$에서 \emph{같은 싹}을 갖는다는 뜻이다. 다시 말해,
+$X\to Y$인 유리 사상(각각 $S$-유리 사상)들은 $X$의 일반점
+$x$에서, $X$의 공집합이 아닌 열린 부분집합들에서 $Y$로 가는
+\emph{사상의 싹}(각각 $S$-사상의 싹)들과 동일시된다. 특히 다음을
+얻는다.
+\end{env}
+
+\begin{proposition}[7.1.5]
+\label{I.7.1.5-ko}
+$X$가 기약 준스킴이면 $X$ 위의 유리함수환 $R(X)$은 $X$의 일반점
+$x$의 국소환 $\mathscr{O}_x$와 표준적으로 동일시된다. 이는 차원
+0의 국소환이며, 따라서 $X$가 뇌터 준스킴이면 아르틴 국소환이다.
+$X$가 정역 준스킴이면 이는 체이고, 나아가 $X$가 아핀 스킴이면 $A(X)$의
+분수체와 동일시된다.
+\end{proposition}
+
+앞의 내용과 유리함수를 모든 곳에서 조밀한 열린집합 위의
+$\mathscr{O}_X$의 단면과 동일시한 것을 생각하면, 첫째 주장은 한
+점에서 층의 줄기를 정의한 것에 지나지 않는다. 나머지 주장들은
+$X$가 환 $A$의 아핀 스킴인 경우만 생각하면 충분하다. 이때
+$\mathfrak{j}_x$는 $A$의 멱영근기이므로 $\mathscr{O}_x$는 차원
+0이다. $A$가 정역이면 $\mathfrak{j}_x=(0)$이므로 $\mathscr{O}_x$는
+$A$의 분수체이다. 끝으로 $A$가 뇌터이면 $\mathfrak{j}_x$가
+멱영이고(\cite{I-11}, p.~127, cor.~4),
+$\mathscr{O}_x=A_{\mathfrak{j}_x}$가 아르틴임이 알려져 있다.
+
+$X$가 \emph{정역 준스킴}이면 모든 $z\in X$에 대하여 환 $\mathscr{O}_z$는
+정역이다. $z$를 포함하는 모든 아핀 열린집합 $U$는 $x$도 포함하며,
+$A(U)$의 분수체인 $R(U)$는 따라서 $R(X)$와 동일시된다.
+그러므로 $R(X)$은 \emph{$\mathscr{O}_z$의 분수체}와도 동일시된다.
+$\mathscr{O}_z$를 $R(X)$의 부분환과 표준적으로 동일시하는 사상은
+단면의 모든 싹 $s\in\mathscr{O}_z$에, $z$에서 싹 $s$를 갖는
+$\mathscr{O}_X$의 단면(반드시 모든 곳에서 조밀한 열린집합 위에서
+정의된다)의 동치류인 $X$ 위의 유일한 유리함수를 대응시킨다.
+
+\begin{env}[7.1.6]
+\label{I.7.1.6-ko}
+이제 $X$가 \emph{유한} 개의 기약 성분 $X_i$($1\leq i\leq n$)를 갖는다고
+하자($X$의 바탕공간이 \emph{뇌터}이면 그러하다). $X'_i$를
+$X_i$에서 $j\neq i$인 $X_j\cap X_i$들의 합집합을 뺀 $X$의
+열린집합이라 하자. $X'_i$는 기약이고, 그 일반점 $x_i$는 $X_i$의
+일반점이며, $X'_i$들은 서로소이고 그 합집합은 $X$에서 조밀하다
+(\hyperref[0.2.1.6-ko]{0, 2.1.6}).
+\oldpage[I]{157}
+$X$의 모든 곳에서 조밀한 임의의 열린집합 $U$에 대하여
+$U_i=U\cap X'_i$는 $X'_i$의 공집합이
+아닌 조밀한 열린집합이고, $U_i$들은 서로소이므로
+$U'=\bigcup_i U_i$는 $X$에서 조밀하다. $U'$에서 $Y$로 가는 사상을
+주는 것은 각 $U_i$에서 $Y$로 가는 사상을 임의로 하나씩 주는 것과
+같다. 따라서 다음을 얻는다.
+\end{env}
+
+\begin{proposition}[7.1.7]
+\label{I.7.1.7-ko}
+$X$, $Y$를 두 준스킴(각각 $S$-준스킴)이라 하고, $X$가 일반점
+$x_i$를 갖는 유한 개의 기약 성분 $X_i$($1\leq i\leq n$)를 갖는다고
+하자. $R_i$를 $x_i$에서, $X$의 열린 부분집합에서 $Y$로 가는 사상
+(각각 $S$-사상)의 싹들의 집합이라 하면, $X$에서 $Y$로 가는
+유리 사상(각각 $S$-유리 사상)들의 집합은 $R_i$들의 곱
+($1\leq i\leq n$)과 동일시된다.
+\end{proposition}
+
+\begin{corollary}[7.1.8]
+\label{I.7.1.8-ko}
+$X$를 뇌터 준스킴이라 하자. $X$ 위의 유리함수환은 아르틴 환이고,
+그 국소환 성분들은 $X$의 기약 성분들의 일반점 $x_i$의 국소환
+$\mathscr{O}_{x_i}$이다.
+\end{corollary}
+
+\begin{corollary}[7.1.9]
+\label{I.7.1.9-ko}
+$A$를 뇌터 환, $X=\operatorname{Spec}(A)$라 하자. $Q$가 $A$의
+극소 소 아이디얼들의 합집합의 여집합이면 $X$ 위의 유리함수환은
+분수환 $Q^{-1}A$와 표준적으로 동일시된다.
+\end{corollary}
+
+이는 다음 보조정리에서 따른다.
+
+\begin{lemma}[7.1.9.1]
+\label{I.7.1.9.1-ko}
+$f\in A$에 대하여 $D(f)$가 $X$에서 모든 곳에서 조밀하기 위한
+필요충분조건은 $f\in Q$인 것이다. $X$의 모든 조밀한 열린집합은
+$f\in Q$인 $D(f)$ 꼴의 열린집합을 하나 포함한다.
+\end{lemma}
+
+실제로 이 보조정리가 증명되었다고 하자. 단면환
+$\Gamma(D(f),\mathscr{O}_X)$는 $A_f$와 동일시된다
+(\hyperref[I.1.3.6-ko]{1.3.6}과 \hyperref[I.1.3.7-ko]{1.3.7}).
+$f\in Q$인 $D(f)$들은 $\supset$에 관해 순서가 주어진 $X$의 조밀한
+열린집합들의 집합에서 공종집합을 이루므로, 정의
+(\hyperref[I.7.1.1-ko]{7.1.1})에 따라 $X$ 위의 유리함수환은
+$f\in Q$인 $A_f$들의 귀납극한과 동일시된다. 여기서 준순서관계는
+``$g$가 $f$의 배수이다''이고, 이 귀납극한은 곧 $Q^{-1}A$이다
+(\hyperref[0.1.4.5-ko]{0, 1.4.5}).
+
+(\hyperref[I.7.1.9.1-ko]{7.1.9.1})을 증명하기 위하여 $X$의 기약
+성분들도 $X_i$($1\leq i\leq n$)로 나타내자. $D(f)$가 $X$에서
+조밀하면 모든 $1\leq i\leq n$에 대하여
+$D(f)\cap X_i\neq\varnothing$이고 그 역도 성립한다. 그런데
+$\mathfrak{p}_i=\mathfrak{j}(X_i)$라 놓으면 이는 모든
+$1\leq i\leq n$에 대하여 $f\notin\mathfrak{p}_i$라는 뜻이다.
+$\mathfrak{p}_i$들은 $A$의 극소 소 아이디얼들이므로
+(\hyperref[I.1.1.14-ko]{1.1.14}), 관계들
+$f\notin\mathfrak{p}_i$($1\leq i\leq n$)는 $f\in Q$와 동치이다.
+이로써 보조정리의 첫째 주장이 증명되었다. 한편 $U$가 $X$의 조밀한
+열린집합이면 $U$의 여집합은 $V(\mathfrak{a})$ 꼴이고, 여기서
+$\mathfrak{a}$는 어느 $\mathfrak{p}_i$에도 포함되지 않는
+아이디얼이다. 따라서 이 아이디얼은 그 합집합에도 포함되지 않고
+(\cite{I-10}, p.~13), 어떤 $f\in\mathfrak{a}$는 $Q$에도 속한다.
+그러므로 $D(f)\subset U$이고 증명이 끝난다.
+
+\begin{env}[7.1.10]
+\label{I.7.1.10-ko}
+다시 $X$가 일반점 $x$를 갖는 기약 준스킴이라고 하자. $X$의
+공집합이 아닌 모든 열린집합 $U$는 $x$를 포함하므로
+$x\in\overline{\{z\}}$인 모든 $z\in X$도 포함한다. 따라서 모든
+사상 $U\to Y$는 표준 사상 $\operatorname{Spec}(\mathscr{O}_x)\to X$
+(\hyperref[I.2.4.1-ko]{2.4.1})와 합성할 수 있다. 또한 $X$의 공집합이
+아닌 두 열린 부분집합에서 $Y$로 가는 두 사상이 $X$의 공집합이 아닌
+어떤 열린 부분집합에서 일치하면, 이 두 사상을 각각 그 표준 사상과
+합성하여 얻는 두 사상
+$\operatorname{Spec}(\mathscr{O}_x)\to Y$는 같다. 다시 말해,
+$X$에서 $Y$로 가는 모든 유리 사상에는 잘 정해진 사상
+$\operatorname{Spec}(\mathscr{O}_x)\to Y$가 이렇게 대응한다.
+\end{env}
+
+\oldpage[I]{158}
+\begin{proposition}[7.1.11]
+\label{I.7.1.11-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하자. $X$는 일반점 $x$를 갖는
+기약 준스킴이고 $Y$는 $S$ 위에서 유한형이라고 하자. 같은
+$S$-사상 $\operatorname{Spec}(\mathscr{O}_x)\to Y$가 대응하는,
+$X$에서 $Y$로 가는 두 $S$-유리 사상은 같다. 나아가 $S$가 국소
+뇌터이면 $\operatorname{Spec}(\mathscr{O}_x)$에서 $Y$로 가는 모든
+$S$-사상에는 $X$에서 $Y$로 가는 유일한 $S$-유리 사상이 대응한다.
+\end{proposition}
+
+$X$의 공집합이 아닌 모든 열린집합이 모든 곳에서 조밀함을 고려하면
+이는 (\hyperref[I.6.5.1-ko]{6.5.1})에서 곧바로 따른다.
+
+\begin{corollary}[7.1.12]
+\label{I.7.1.12-ko}
+$S$가 국소 뇌터이고 (\hyperref[I.7.1.11-ko]{7.1.11})의 나머지
+가정들이 성립한다고 하자. 그러면 $X$에서 $Y$로 가는 $S$-유리
+사상들은 $S$-준스킴 $\operatorname{Spec}(\mathscr{O}_x)$에 값을 갖는
+$S$-준스킴 $Y$의 점들과 동일시된다.
+\end{corollary}
+
+이는 (\hyperref[I.7.1.11-ko]{7.1.11})을
+(\hyperref[I.3.4.1-ko]{3.4.1})에서 도입한 용어로 다시 쓴 것에
+지나지 않는다.
+
+\begin{corollary}[7.1.13]
+\label{I.7.1.13-ko}
+(\hyperref[I.7.1.12-ko]{7.1.12})의 조건들이 성립한다고 하자.
+$s$를 $S$에서 $x$의 상이라 하자. $X$에서 $Y$로 가는 $S$-유리
+사상을 주는 것은 $s$ 위에 있는 $Y$의 점 $y$와 국소
+$\mathscr{O}_s$-준동형
+$\mathscr{O}_y\to\mathscr{O}_x=R(X)$을 주는 것과 같다.
+\end{corollary}
+
+이는 (\hyperref[I.7.1.11-ko]{7.1.11})과
+(\hyperref[I.2.4.4-ko]{2.4.4})에서 따른다.
+
+특히 다음을 얻는다.
+
+\begin{corollary}[7.1.14]
+\label{I.7.1.14-ko}
+(\hyperref[I.7.1.12-ko]{7.1.12})의 조건 아래에서, $X$에서 $Y$로 가는
+$S$-유리 사상들은 ($Y$가 주어졌을 때) $S$-준스킴
+$\operatorname{Spec}(\mathscr{O}_x)$에만 의존한다. 특히 모든
+$z\in X$에 대하여 $X$를 $\operatorname{Spec}(\mathscr{O}_z)$로
+바꾸어도 이 유리 사상들은 변하지 않는다.
+\end{corollary}
+
+실제로 $z\in\overline{\{x\}}$이므로 $x$는
+$Z=\operatorname{Spec}(\mathscr{O}_z)$의 일반점이고
+$\mathscr{O}_{X,x}=\mathscr{O}_{Z,x}$이다.
+
+$X$가 정역 준스킴이면 $R(X)=\mathscr{O}_x=k(x)$는 체이다
+(\hyperref[I.7.1.5-ko]{7.1.5}). 따라서 앞의 따름정리들은 다음과 같이
+특수화된다.
+
+\begin{corollary}[7.1.15]
+\label{I.7.1.15-ko}
+(\hyperref[I.7.1.12-ko]{7.1.12})의 조건들이 성립하고, 나아가 $X$가
+정역 준스킴이라고 하자. $s$를 $S$에서 $x$의 상이라 하자. 그러면 $X$에서
+$Y$로 가는 $S$-유리 사상들은 $k(s)$의 확대체 $R(X)$에 값을 갖는
+$Y\otimes_S k(s)$의 기하적 점들과 동일시된다. 다시 말해, 이러한
+유리 사상 하나를 주는 것은 $s$ 위에 있는 점 $y\in Y$와
+$k(y)$에서 $k(x)=R(X)$로 가는 $k(s)$-단사 준동형을 주는 것과 같다.
+\end{corollary}
+
+실제로 $s$ 위에 있는 $Y$의 점들은 $Y\otimes_S k(s)$의 점들과
+동일시되고(\hyperref[I.3.6.3-ko]{3.6.3}), 국소
+$\mathscr{O}_s$-준동형 $\mathscr{O}_y\to R(X)$들은
+$k(s)$-단사 준동형 $k(y)\to R(X)$들과 동일시된다.
+
+더욱 특별히 다음을 얻는다.
+
+\begin{corollary}[7.1.16]
+\label{I.7.1.16-ko}
+$k$를 체, $X$, $Y$를 $k$ 위의 두 대수적 준스킴
+(\hyperref[I.6.4.1-ko]{6.4.1})이라 하고, 나아가 $X$가 정역
+준스킴이라고 하자. 그러면 $X$에서 $Y$로 가는 $k$-유리 사상들은 $k$의 확대체
+$R(X)$에 값을 갖는 $Y$의 기하적 점들과 동일시된다
+(\hyperref[I.3.4.4-ko]{3.4.4}).
+\end{corollary}
+
+\subsection{유리 사상의 정의역}
+\label{subsection:I.7.2-ko}
+
+\begin{env}[7.2.1]
+\label{I.7.2.1-ko}
+$X$, $Y$를 두 준스킴, $f$를 $X$에서 $Y$로 가는 유리 사상이라 하자.
+$x$를 포함하는 모든 곳에서 조밀한 열린집합 $U$와 동치류 $f$에 속하는
+사상 $U\to Y$가 존재하면 $f$가 \emph{점 $x\in X$에서 정의된다}고 한다.
+$f$가 정의되는 점 $x\in X$들의 집합을 \emph{$f$의 정의역}이라 한다.
+이는 $X$에서 모든 곳에서 조밀한 열린집합임이 자명하다.
+\end{env}
+
+\oldpage[I]{159}
+\begin{proposition}[7.2.2]
+\label{I.7.2.2-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하고, $X$는 축소 준스킴이며 $Y$는 $S$
+위에서 분리되어 있다고 하자. $f$를 $X$에서 $Y$로 가는 $S$-유리
+사상, $U_0$를 그 정의역이라 하자. 그러면 동치류 $f$에 속하는
+$S$-사상 $U_0\to Y$가 유일하게 존재한다.
+\end{proposition}
+
+동치류 $f$에 속하는 모든 사상 $U\to Y$에 대하여 반드시
+$U\subset U_0$이므로, 이 명제는 다음 보조정리에서 바로 따른다.
+
+\begin{lemma}[7.2.2.1]
+\label{I.7.2.2.1-ko}
+(\hyperref[I.7.2.2-ko]{7.2.2})의 가정 아래에서, $U_1$, $U_2$를 $X$의
+모든 곳에서 조밀한 두 열린집합, $f_i:U_i\to Y$($i=1,2$)를 두
+$S$-사상이라 하자. $X$에서 조밀한 열린집합
+$V\subset U_1\cap U_2$가 존재하여 $f_1$과 $f_2$가 그 위에서
+일치하면, $f_1$과 $f_2$는 $U_1\cap U_2$ 전체에서 일치한다.
+\end{lemma}
+
+$X=U_1=U_2$인 경우만 생각하면 충분함이 자명하다. $X$(따라서 $V$)가
+축소 준스킴이므로, $X$는 $V$를 포함하는 $X$의 가장 작은 닫힌 부분준스킴이다
+(\hyperref[I.5.2.2-ko]{5.2.2}).
+$g=(f_1,f_2)_S:X\to Y\times_S Y$라 하자. 가정에 따라 대각선
+$T=\Delta_Y(Y)$는 $Y\times_S Y$의 닫힌 부분준스킴이므로,
+$Z=g^{-1}(T)$는 $X$의 닫힌 부분준스킴이다
+(\hyperref[I.4.4.1-ko]{4.4.1}). $h:V\to Y$를 $f_1$과 $f_2$의 $V$로의
+공통 제한이라 하면, $g$의 $V$로의 제한은 $g'=(h,h)_S$이고, 이는
+$g'=\Delta_Y\circ h$로 인수분해된다. $\Delta_Y^{-1}(T)=Y$이므로
+$g'^{-1}(T)=V$이다. 따라서 $Z$는 $V$를 유도하는 $X$의 닫힌
+부분준스킴이고 $V$를 포함하므로 $Z=X$이다. 관계 $g^{-1}(T)=X$에서
+(\hyperref[I.4.4.1-ko]{4.4.1})에 따라
+$g$는 $\Delta_Y\circ f$로 인수분해되며, 여기서 $f$는 $X\to Y$인
+사상이다. 대각
+사상의 정의에 따라 $f_1=f_2=f$이다.
+
+(\hyperref[I.7.2.2-ko]{7.2.2})에서 정의한 사상 $U_0\to Y$는 $f$의
+동치류에 속하면서 $U_0$을 진정하게 포함하는 $X$의 열린 부분집합으로
+\emph{연장할 수 없는} 유일한 사상임이 자명하다.
+\emph{(\hyperref[I.7.2.2-ko]{7.2.2})의 가정 아래에서}, $X$에서 $Y$로
+가는 유리 사상들을 $X$의 모든 곳에서 조밀한 열린집합에서 $Y$로 가는,
+더 큰 열린집합으로 \emph{연장할 수 없는} 사상들과 \emph{동일시}할 수
+있다. 이 동일시 아래에서 명제
+(\hyperref[I.7.2.2-ko]{7.2.2})로부터 다음이 따른다.
+
+\begin{corollary}[7.2.3]
+\label{I.7.2.3-ko}
+$X$, $Y$에 대한 가정이 (\hyperref[I.7.2.2-ko]{7.2.2})와 같고,
+$U$를 $X$의 모든 곳에서 조밀한 열린집합이라 하자. $U$에서 $Y$로
+가는 $S$-사상들과 $U$의 모든 점에서 정의되는, $X$에서 $Y$로 가는
+$S$-유리 사상들 사이에는 표준 전단사 대응이 존재한다.
+\end{corollary}
+
+실제로 (\hyperref[I.7.2.2-ko]{7.2.2})에 따라, $U$에서 $Y$로 가는 모든
+$S$-사상 $f$에 대하여, $f$를 연장하는 $X$에서 $Y$로 가는 유일한 $S$-유리 사상
+$\overline f$가 존재한다.
+
+\begin{corollary}[7.2.4]
+\label{I.7.2.4-ko}
+$S$를 스킴, $X$를 축소 $S$-준스킴, $Y$를 $S$-스킴이라 하고,
+$f:U\to Y$를 $X$의 조밀한 열린집합 $U$에서 $Y$로 가는 $S$-사상이라
+하자. $\overline f$가 $f$를 연장하는, $X$에서 $Y$로 가는
+$\mathbf{Z}$-유리 사상이면, $\overline f$는 그 정의역 위에서
+$S$-사상이다. 따라서 이는 $f$를 연장하는, $X$에서 $Y$로 가는
+$S$-유리 사상이다.
+\end{corollary}
+
+$\varphi:X\to S$, $\psi:Y\to S$를 구조 사상, $U_0$을 $\overline f$의
+정의역, $j$를 포함 사상 $U_0\to X$라 하자. 그러면
+$\psi\circ\overline f=\varphi\circ j$임을 보이면 충분하다. 이는 $f$가
+$S$-사상이므로 (\hyperref[I.7.2.2.1-ko]{7.2.2.1})에서 바로 따른다.
+
+\begin{corollary}[7.2.5]
+\label{I.7.2.5-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하고, $X$는 축소 준스킴이며 $X$와 $Y$는
+$S$ 위에서 분리되어 있다고 하자. $p:Y\to X$를 $S$-사상($Y$를
+$X$-준스킴으로 만드는 사상), $U$를 $X$의 모든 곳에서 조밀한
+열린집합, $f$를 $Y$의 $U$-단면이라 하자. 그러면 $f$를 연장하는,
+$X$에서 $Y$로 가는 유리 사상 $\overline f$는 $Y$의 $X$-유리
+단면이다.
+\end{corollary}
+
+\oldpage[I]{160}
+$\overline f$의 정의역에서 $p\circ\overline f$가 항등사상임을 보이면
+된다. $X$가 $S$ 위에서 분리되어 있으므로, 이 역시
+(\hyperref[I.7.2.2.1-ko]{7.2.2.1})에서 따른다.
+
+\begin{corollary}[7.2.6]
+\label{I.7.2.6-ko}
+$X$를 축소 준스킴, $U$를 $X$의 모든 곳에서 조밀한 열린집합이라 하자.
+$U$ 위의 구조층 $\mathscr{O}_X$의 단면들과 $U$의 모든 점에서 정의되는
+$X$ 위의 유리함수 $f$들 사이에는 표준 전단사 대응이 존재한다.
+\end{corollary}
+
+(\hyperref[I.7.2.3-ko]{7.2.3}), (\hyperref[I.7.1.2-ko]{7.1.2}),
+(\hyperref[I.7.1.3-ko]{7.1.3})을 고려하면,
+$X$-준스킴 $X\otimes_{\mathbf Z}\mathbf Z[T]$가 $X$ 위에서 분리되어
+있음을 지적하면 충분하다(\hyperref[I.5.5.1-ko]{5.5.1, (iv)}).
+
+\begin{corollary}[7.2.7]
+\label{I.7.2.7-ko}
+$Y$를 축소 준스킴, $f:X\to Y$를 분리 사상, $U$를 $Y$의 모든 곳에서
+조밀한 열린집합, $g:U\to f^{-1}(U)$를 $f^{-1}(U)$의 $U$-단면이라
+하자. $Z$를 $\overline{g(U)}$를 바탕공간으로 갖는 $X$의 축소
+부분준스킴이라 하자(\hyperref[I.5.2.1-ko]{5.2.1}). $g$가 $X$의
+$Y$-단면의 제한이기 위한 필요충분조건, 다시 말해
+(\hyperref[I.7.2.5-ko]{7.2.5})에서 $g$를 연장하는 $Y$에서 $X$로 가는
+유리 사상이 모든 곳에서 정의되기 위한 필요충분조건은 $f$의 $Z$로의
+제한이 $Z$에서 $Y$로 가는 동형사상인 것이다.
+\end{corollary}
+
+$f$의 $f^{-1}(U)$로의 제한은 분리 사상이다
+(\hyperref[I.5.5.1-ko]{5.5.1, (i)}). 따라서 $g$는 닫힌 몰입 사상이고
+(\hyperref[I.5.4.6-ko]{5.4.6}),
+$g(U)=Z\cap f^{-1}(U)$이다. 또한 $Z$의 열린집합 $g(U)$ 위에 $Z$가
+유도하는 부분준스킴은 $g$에 대응하는 $f^{-1}(U)$의 닫힌 부분준스킴과
+동일하다(\hyperref[I.5.2.1-ko]{5.2.1}). 이제 명제의 조건이 충분함은
+자명하다. 실제로 그 조건이 성립하고 $f_Z:Z\to Y$가 $f$의 $Z$로의
+제한이며 $\overline g:Y\to Z$가 그 역동형사상이면, $\overline g$는
+$g$를 연장한다. 반대로 $g$가 $X$의 $Y$-단면 $h$의 $U$로의 제한이면,
+$h$는 닫힌 몰입 사상이다
+(\hyperref[I.5.4.6-ko]{5.4.6}). 따라서 $h(Y)$는 닫혀 있고 $Z$에
+포함되므로 $Z$와 같다. 그러므로 (\hyperref[I.5.2.1-ko]{5.2.1})에 따라
+$h$는 반드시 $Y$에서 $X$의 닫힌 부분준스킴 $Z$로 가는 동형사상이다.
+
+\begin{env}[7.2.8]
+\label{I.7.2.8-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하고, $X$는 축소 준스킴이며 $Y$는 $S$
+위에서 분리되어 있다고 하자. $f$를 $X$에서 $Y$로 가는 $S$-유리
+사상, $x$를 $X$의 점이라 하자. $f$를 표준 $S$-사상
+$\operatorname{Spec}(\mathscr{O}_x)\to X$ 뒤에 합성할 수 있다
+(\hyperref[I.2.4.1-ko]{2.4.1}). 다만 $\operatorname{Spec}(\mathscr{O}_x)$과
+$f$의 정의역의 교집합이 이 국소 스펙트럼에서 조밀해야 하며, 여기서
+$\operatorname{Spec}(\mathscr{O}_x)$는 $x\in\overline{\{z\}}$인 $z\in X$들의 집합과 동일시된다
+(\hyperref[I.2.4.2-ko]{2.4.2}). 이 조밀성은 다음 두 경우에 성립한다.
+\begin{enumerate}
+  \item[1\textsuperscript{o}] $X$가 기약이다. 이때 앞의 축소 가정과
+    함께 정역 준스킴이다. 실제로 $X$의 일반점 $\xi$는
+    $\operatorname{Spec}(\mathscr{O}_x)$의 일반점이기도 하다. $f$의
+    정의역 $U$가 $\xi$를 포함하므로
+    $U\cap\operatorname{Spec}(\mathscr{O}_x)$도 $\xi$를 포함하고,
+    따라서 $\operatorname{Spec}(\mathscr{O}_x)$에서 조밀하다.
+  \item[2\textsuperscript{o}] $X$가 국소 뇌터 준스킴이다. 이 경우의
+    주장은 다음 보조정리에서 따른다.
+\end{enumerate}
+\end{env}
+
+\begin{lemma}[7.2.8.1]
+\label{I.7.2.8.1-ko}
+$X$를 그 바탕공간이 국소 뇌터인 준스킴, $x$를 $X$의 점이라 하자.
+$\operatorname{Spec}(\mathscr{O}_x)$의 기약 성분들은 $x$를 포함하는
+$X$의 기약 성분들과 $\operatorname{Spec}(\mathscr{O}_x)$의
+교집합들이다. 열린집합 $U\subset X$에 대하여
+$U\cap\operatorname{Spec}(\mathscr{O}_x)$가
+$\operatorname{Spec}(\mathscr{O}_x)$에서 조밀하기 위한 필요충분조건은
+이 열린집합이 $X$의 기약 성분들 가운데 $x$를 포함하는 모든 성분과
+만나는 것이다. 특히
+$U$가 $X$에서 조밀하면 이 조건이 성립한다.
+\end{lemma}
+
+둘째 주장은 첫째 주장에서 자명하게 따르므로 첫째 주장만 증명하면
+된다. $\operatorname{Spec}(\mathscr{O}_x)$는 $x$를 포함하는 모든 아핀
+열린집합 $U$에 포함되고, $x$를 포함하는 $U$의 기약 성분들은 $x$를
+포함하는 $X$의 기약 성분들과 $U$의 교집합들이므로
+(\hyperref[0.2.1.6-ko]{0, 2.1.6}), $X$가 환 $A$의 아핀 스킴인 경우만
+생각하면 충분하다. $A_x$의 소 아이디얼들은
+\oldpage[I]{161}
+$A$의 소 아이디얼들 중 $\mathfrak{j}_x$에 포함되는 것들과 전단사로 대응하므로
+(\hyperref[0.1.2.6-ko]{0, 1.2.6}), $A_x$의 극소 소 아이디얼들은
+$\mathfrak{j}_x$에 포함되는 $A$의 극소 소 아이디얼들과 대응한다.
+이로써 보조정리가 따른다(\hyperref[I.1.1.14-ko]{1.1.14}).
+
+이제 앞의 두 경우 가운데 하나가 성립한다고 하자. $U$가 $S$-유리
+사상 $f$의 정의역이면, $U\cap\operatorname{Spec}(\mathscr{O}_x)$에서
+$f$와 일치하는(\hyperref[I.2.4.2-ko]{2.4.2})
+$\operatorname{Spec}(\mathscr{O}_x)$에서 $Y$로 가는 유리 사상을
+$f'$이라 하겠다. 이 유리 사상을 \emph{$f$가 유도한} 유리 사상이라
+한다.
+
+\begin{proposition}[7.2.9]
+\label{I.7.2.9-ko}
+$S$를 국소 뇌터 준스킴, $X$를 축소 $S$-준스킴, $Y$를 $S$ 위의
+유한형 스킴이라 하자. 나아가 $X$가 기약이거나 국소 뇌터라고 하자.
+$f$를 $X$에서 $Y$로 가는 $S$-유리 사상, $x$를 $X$의 점이라 하자.
+$f$가 점 $x$에서 정의되기 위한 필요충분조건은 $f$가 유도한
+(\hyperref[I.7.2.8-ko]{7.2.8})
+$\operatorname{Spec}(\mathscr{O}_x)$에서 $Y$로 가는 유리 사상 $f'$이
+사상인 것이다.
+\end{proposition}
+
+$\operatorname{Spec}(\mathscr{O}_x)$는 $x$를 포함하는 모든
+열린집합에 포함되므로 이 조건이 필요함은 자명하다. 충분함을 증명하자.
+(\hyperref[I.6.5.1-ko]{6.5.1})에 따라, $X$에서 $x$의 열린 근방 $U$와
+$S$-사상 $g$가 존재하며, 이 사상은 $U$에서 $Y$로 가고
+$\operatorname{Spec}(\mathscr{O}_x)$ 위에서 $f'$을 유도한다. $X$가 기약이면 $U$는 $X$에서
+조밀하므로, (\hyperref[I.7.2.3-ko]{7.2.3})에 따라 $g$가 정하는
+$S$-유리 사상으로 이를 보겠다. 또한 $X$의 일반점은
+$\operatorname{Spec}(\mathscr{O}_x)$와 $f$의 정의역에 모두 속한다.
+따라서 $f$와 $g$는 이 점에서 일치하고, 그러므로 $X$의 공집합이 아닌
+어떤 열린집합에서 일치한다(\hyperref[I.6.5.1-ko]{6.5.1}). 그런데
+$f$와 $g$는 $S$-유리 사상이므로 서로 같다
+(\hyperref[I.7.2.3-ko]{7.2.3}). 따라서 $f$는 $x$에서 정의된다.
+
+이제 $X$가 국소 뇌터라고 하자. $U$가 뇌터라고 가정할 수 있다.
+그러면 $x$를 포함하는 $X$의 기약 성분 $X_i$는 유한 개뿐이고
+(\hyperref[I.7.2.8.1-ko]{7.2.8.1}), 필요하면 $U$를 더 작은
+열린집합으로 바꾸어 이 성분들만 $U$와 만나게 할 수 있다. 실제로
+$U$가 뇌터이므로 $U$와 만나는 $X$의 기약 성분은 유한 개뿐이다.
+앞에서와 같이 $f$와 $g$는 각 $X_i$의 공집합이 아닌 열린집합에서
+일치한다. 각 $X_i$가 $\overline U$에 포함됨을 고려하여,
+$U\cup(X-\overline U)$의 조밀한 열린 부분집합 위에서 정의되고,
+$U$에서는 $g$와 같으며, $X-\overline U$와 $f$의 정의역의 교집합에서는
+$f$와 같은 사상 $f_1$을 생각하자. $U\cup(X-\overline U)$가 $X$에서
+조밀하므로 $f_1$과 $f$는 $X$의 조밀한 열린집합에서 일치한다.
+$f$가 유리 사상이므로, $f$는 $f_1$의 연장이다
+(\hyperref[I.7.2.3-ko]{7.2.3}). 따라서 원래 유리 사상은 점 $x$에서 정의된다.
+
+\subsection{유리함수층}
+\label{subsection:I.7.3-ko}
+
+\begin{env}[7.3.1]
+\label{I.7.3.1-ko}
+$X$를 준스킴이라 하자. 모든 열린집합 $U\subset X$에 대하여 $R(U)$를
+$U$ 위의 유리함수환이라 하자(\hyperref[I.7.1.3-ko]{7.1.3}). 이는
+$\Gamma(U,\mathscr{O}_X)$-대수이다. 또한 $V\subset U$가 $X$의 또 다른
+열린집합이면, $U$의 모든 곳에서 조밀한 열린 부분집합 위의
+$\mathscr{O}_X$의 단면은 $V$로 제한하여 $V$의 모든 곳에서 조밀한
+열린 부분집합 위의 단면을 주고, 두 단면이 $U$의 모든 곳에서 조밀한
+열린 부분집합 위에서 일치하면 그들의 $V$로의 제한은 $V$의 모든 곳에서 조밀한
+열린 부분집합 위에서 일치한다. 따라서 대수의 디-준동형
+$\rho_{V,U}:R(U)\to R(V)$가 정의된다. $U\supset V\supset W$가 $X$의
+세 열린집합이면
+$\rho_{W,U}=\rho_{W,V}\circ\rho_{V,U}$임이 자명하다. 그러므로
+$R(U)$들은 $X$ 위의 대수의 \emph{준층}을 정의한다.
+\end{env}
+
+\oldpage[I]{162}
+\begin{definition}[7.3.2]
+\label{I.7.3.2-ko}
+준스킴 $X$ 위의 \emph{유리함수층}이라 함은 $R(U)$들로 이루어진
+준층의 층화인 $\mathscr{O}_X$-대수를 말하며, 이를
+$\mathscr{R}(X)$로 나타낸다.
+\end{definition}
+
+모든 준스킴 $X$와 모든 열린집합 $U\subset X$에 대하여 유도된 층
+$\mathscr{R}(X)|U$는 바로 $\mathscr{R}(U)$이다.
+
+\begin{proposition}[7.3.3]
+\label{I.7.3.3-ko}
+$X$를 그 기약 성분들의 족 $(X_\lambda)$가 국소 유한인 준스킴이라
+하자. 특히 $X$의 바탕공간이 국소 뇌터이면 이 조건이 성립한다.
+그러면 $\mathscr{O}_X$-가군 $\mathscr{R}(X)$는 준연접이고,
+유한 개의 성분 $X_\lambda$만 만나는 $X$의 모든 열린집합 $U$에
+대하여 $R(U)$는 $\Gamma(U,\mathscr{R}(X))$와 같으며, 이 환은
+$U\cap X_\lambda\neq\varnothing$인 $X_\lambda$들의 일반점의
+국소환들의 직접곱과 표준적으로 동일시된다.
+\end{proposition}
+
+$X$가 유한 개의 기약 성분 $X_i$만 갖고 그 일반점을 $x_i$
+($1\leq i\leq n$)라 하는 경우만 생각하면 충분하다. 이때 $R(U)$가
+$U\cap X_i\neq\varnothing$인 $\mathscr{O}_{x_i}=R(X_i)$들의
+직접곱과 표준적으로 동일시된다는 것은
+(\hyperref[I.7.1.7-ko]{7.1.7})에서 따른다. 또한 준층
+$U\to R(U)$가 층의 공리를 만족함을 보이자. 그러면
+$R(U)=\Gamma(U,\mathscr{R}(X))$가 증명된다. 실제로 앞의 결과에 따라
+(F 1)이 성립한다. (F 2)를 보이기 위하여 $X$의 열린집합 $U$의
+열린집합 $V_\alpha\subset U$들로 이루어진 열린 덮개를 생각하자. $s_\alpha\in R(V_\alpha)$들이
+주어지고 모든 지표쌍에 대하여 $s_\alpha$와 $s_\beta$의
+$V_\alpha\cap V_\beta$로의 제한이 일치한다고 하자. 그러면
+$U\cap X_i\neq\varnothing$인 모든 지표 $i$에 대하여
+$V_\alpha\cap X_i\neq\varnothing$인 모든 $s_\alpha$의
+$R(X_i)$-성분은 같다. 이 성분을 $t_i$라 하면, $t_i$들을 성분으로
+갖는 $R(U)$의 원소는 각 $V_\alpha$로 제한하면 $s_\alpha$가 된다.
+마지막으로 $\mathscr{R}(X)$가 준연접임을 보이기 위해
+$X=\operatorname{Spec}(A)$가 아핀인 경우만 생각하면 된다.
+$f\in A$인 $D(f)$ 꼴의 아핀 열린집합을 $U$로 취하면 앞의 결과와
+정의 (\hyperref[I.1.3.4-ko]{1.3.4})에 따라
+$\mathscr{R}(X)=\widetilde M$이다. 여기서 $M$은 $A$-가군
+$A_{x_i}$들의 직합이다.
+
+\begin{corollary}[7.3.4]
+\label{I.7.3.4-ko}
+$X$를 유한 개의 기약 성분만 갖는 축소 준스킴이라 하고,
+$X_i$ ($1\leq i\leq n$)를 $X$의 기약 성분을 바탕공간으로 갖는
+$X$의 축소 닫힌 부분준스킴이라 하자
+(\hyperref[I.5.2.1-ko]{5.2.1}). $h_i$가 $X_i\to X$인 표준 포함
+사상이면 $\mathscr{R}(X)$는 $\mathscr{O}_X$-대수
+$(h_i)_*(\mathscr{R}(X_i))$들의 직접곱이다.
+\end{corollary}
+
+\begin{corollary}[7.3.5]
+\label{I.7.3.5-ko}
+$X$가 기약이면 모든 준연접 $\mathscr{R}(X)$-가군
+$\mathscr{F}$는 상수층이다.
+\end{corollary}
+
+모든 $x\in X$가 $\mathscr{F}|U$가 상수층이 되는 근방 $U$를
+가짐을 보이면 충분하다(\hyperref[0.3.6.2-ko]{0, 3.6.2}).
+다시 말해 $X$가 아핀인 경우로 환원된다. 더 나아가
+$\mathscr{F}$가 어떤 준동형
+$(\mathscr{R}(X))^{(I)}\to(\mathscr{R}(X))^{(J)}$의 여핵이라고
+가정할 수 있다(\hyperref[0.5.1.3-ko]{0, 5.1.3}). 따라서
+$\mathscr{R}(X)$가 상수층임만 보이면 된다. 그러나 $X$의 공집합이
+아닌 임의의 열린집합을 $U$라 하면 그 $U$는 일반점을 포함하므로
+$\Gamma(U,\mathscr{R}(X))=R(X)$이고, 이는 자명하다.
+
+\begin{corollary}[7.3.6]
+\label{I.7.3.6-ko}
+$X$가 기약이면 모든 준연접 $\mathscr{O}_X$-가군
+$\mathscr{F}$에 대하여
+$\mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{R}(X)$는 상수층이다.
+더 나아가 $X$가 축소 준스킴이면(따라서 정역 준스킴이다),
+$\mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{R}(X)$는
+$(\mathscr{R}(X))^{(I)}$ 꼴의 층과 동형이다.
+\end{corollary}
+
+두 번째 주장은 이 경우 $R(X)$가 체라는 사실에서 따른다.
+
+\begin{proposition}[7.3.7]
+\label{I.7.3.7-ko}
+준스킴 $X$가 국소 정역 준스킴이거나 국소
+\oldpage[I]{163}
+뇌터 준스킴이라고 하자. 그러면 $\mathscr{R}(X)$는 준연접
+$\mathscr{O}_X$-대수이다. 더 나아가 $X$가 축소 준스킴이면
+(특히 $X$가 국소 정역 준스킴이면 그러하다), 표준 준동형
+$\mathscr{O}_X\to\mathscr{R}(X)$는 단사이다.
+\end{proposition}
+
+이 문제는 국소적이므로 첫 번째 주장은
+(\hyperref[I.7.3.3-ko]{7.3.3})에서 따르고, 두 번째 주장은
+(\hyperref[I.7.2.3-ko]{7.2.3})에서 바로 따른다.
+
+\begin{env}[7.3.8]
+\label{I.7.3.8-ko}%
+\footnote{\emph{[번역 주] 인쇄된 이 문단은 EGA II의 정오표에서
+오류로 판정되어 전면 대체되었다. 여기서는 그 공식 대체문을 옮긴다.}}
+$X$와 $Y$를 두 \emph{정역} 준스킴이라 하자. 그러면
+$\mathscr{R}(X)$는 준연접 $\mathscr{O}_X$-가군이고,
+$\mathscr{R}(Y)$는 준연접 $\mathscr{O}_Y$-가군이다
+(\hyperref[I.7.3.3-ko]{7.3.3}). $f:X\to Y$를 \emph{우세} 사상이라
+하자. 그러면 표준 $\mathscr{O}_X$-가군 준동형
+\[
+  \tau:f^*(\mathscr{R}(Y))\longrightarrow\mathscr{R}(X)
+  \tag{7.3.8.1}\label{I.7.3.8.1-ko}
+\]
+이 존재한다.
+\end{env}
+
+먼저 $X=\operatorname{Spec}(A)$와 $Y=\operatorname{Spec}(B)$가
+정역 $A$, $B$로 주어진 아핀 준스킴이라고 하자. 그러면 $f$는
+단사 준동형 $B\to A$에 대응하고, 이 준동형은 $B$의 분수체
+$L$에서 $A$의 분수체 $K$로 가는 단사 준동형 $L\to K$로
+연장된다. 이때 (7.3.8.1)의 준동형은 표준 준동형
+$L\otimes_B A\to K$에 대응한다
+(\hyperref[I.1.6.5-ko]{1.6.5}).
+
+일반적인 경우에는 $f(U)\subset V$인 공집합이 아닌 아핀
+열린집합 $U\subset X$, $V\subset Y$의 각 쌍에 대하여 앞과 같이
+준동형 $\tau_{U,V}$를 정의한다. $U'\subset U$, $V'\subset V$이고
+$f(U')\subset V'$이면 $\tau_{U,V}$는 $\tau_{U',V'}$의 연장이다.
+따라서 이 준동형들을 붙이면 앞의 표준
+준동형을 얻는다. $x$, $y$가 각각 $X$, $Y$의 일반점이면
+$f(x)=y$이고,
+\[
+  (f^*(\mathscr{R}(Y)))_x
+  =\mathscr{O}_y\otimes_{\mathscr{O}_y}\mathscr{O}_x
+  =\mathscr{O}_x
+\]
+이다(\hyperref[0.4.3.1-ko]{0, 4.3.1}). 따라서 $\tau_x$는
+\emph{동형}이다.
+
+\subsection{꼬임층과 꼬임 없는 층}
+\label{subsection:I.7.4-ko}
+
+\begin{env}[7.4.1]
+\label{I.7.4.1-ko}
+$X$를 \emph{정역} 준스킴이라 하자. 임의의 $\mathscr{O}_X$-가군
+$\mathscr{F}$에 대하여 표준 준동형
+$\mathscr{O}_X\to\mathscr{R}(X)$은 텐서곱을 취함으로써 준동형
+(역시 \emph{표준}이라 한다)
+\[
+  \mathscr{F}\to
+  \mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{R}(X)
+\]
+을 정의한다. 각 줄기에서 이는 $\mathscr{F}_x$에서
+$\mathscr{F}_x\otimes_{\mathscr{O}_x}R(X)$로 가는 준동형
+$z\to z\otimes 1$이다. 이 준동형의 \emph{핵 $\mathscr{T}$}은
+$\mathscr{F}$의 $\mathscr{O}_X$-부분가군이며, 이를
+\emph{$\mathscr{F}$의 꼬임 부분층}이라 한다. $\mathscr{F}$가
+준연접이면 이 부분층도 준연접이다
+(\hyperref[I.4.1.1-ko]{4.1.1}과
+\hyperref[I.7.3.6-ko]{7.3.6}). $\mathscr{T}=0$이면
+$\mathscr{F}$에 \emph{꼬임이 없다}고 하고,
+$\mathscr{T}=\mathscr{F}$이면 $\mathscr{F}$를 \emph{꼬임층}이라 한다.
+임의의 $\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여
+$\mathscr{F}/\mathscr{T}$에는 꼬임이 없다.
+(\hyperref[I.7.3.5-ko]{7.3.5})에서 다음을 얻는다.
+\end{env}
+
+\begin{proposition}[7.4.2]
+\label{I.7.4.2-ko}
+$X$가 정역 준스킴이면, 꼬임이 없는 모든 준연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$는 $(\mathscr{R}(X))^{(I)}$ 꼴의
+상수층의 부분층 $\mathscr{G}$와 동형이다. 이 상수층은
+$\mathscr{G}$에 의해 $\mathscr{R}(X)$-가군으로 생성된다.
+\end{proposition}
+
+$I$의 기수를 \emph{$\mathscr{F}$의 계수}라 한다. $X$의
+공집합이 아닌 임의의 아핀 열린집합 $U$에 대하여 $\mathscr{F}$의
+계수는 $\Gamma(U,\mathscr{F})$의 $\Gamma(U,\mathscr{O}_X)$-가군으로서의
+계수와 같다. 이는 $U$에 들어 있는 $X$의 일반점을 고려하면 곧 알 수
+있다. 특히 다음을 얻는다.
+
+\begin{corollary}[7.4.3]
+\label{I.7.4.3-ko}
+정역 준스킴 $X$ 위에서 꼬임이 없고 계수가 $1$인 모든 준연접
+$\mathscr{O}_X$-가군(특히 모든 가역 $\mathscr{O}_X$-가군)은
+$\mathscr{R}(X)$의 $\mathscr{O}_X$-부분가군과 동형이며, 그 역도
+성립한다.
+\end{corollary}
+
+\begin{corollary}[7.4.4]
+\label{I.7.4.4-ko}
+$X$를 정역 준스킴, $\mathscr{L}$과 $\mathscr{L}'$을 꼬임이 없는 두
+$\mathscr{O}_X$-가군, $f$(각각 $f'$)를 $X$ 위의
+$\mathscr{L}$(각각 $\mathscr{L}'$)의 단면이라 하자.
+$f\otimes f'=0$일 필요충분조건은 두 단면 $f$, $f'$ 가운데 하나가
+영인 것이다.
+\end{corollary}
+
+$x$를 $X$의 일반점이라 하자. 가정에 따라
+$(f\otimes f')_x=f_x\otimes f'_x=0$이다. $\mathscr{L}_x$와
+$\mathscr{L}'_x$는 체 $\mathscr{O}_x$의 $\mathscr{O}_x$-부분가군으로
+동일시되므로, 앞의 관계에서 $f_x=0$ 또는 $f'_x=0$을 얻는다.
+$\mathscr{L}$과 $\mathscr{L}'$에는 꼬임이 없으므로
+(\hyperref[I.7.3.5-ko]{7.3.5}) 결국 $f=0$ 또는 $f'=0$이다.
+
+\begin{proposition}[7.4.5]
+\label{I.7.4.5-ko}
+$X$, $Y$를 두 정역 준스킴, $f:X\to Y$를 우세 사상이라 하자.
+꼬임이 없는 모든 준연접 $\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여
+$f_*(\mathscr{F})$는 꼬임이 없는 $\mathscr{O}_Y$-가군이다.
+\end{proposition}
+
+\oldpage[I]{164}
+\begin{proof}
+$f_*$는 왼쪽 완전하므로
+(\hyperref[0.4.2.1-ko]{0, 4.2.1}),
+(\hyperref[I.7.4.2-ko]{7.4.2})에 따라
+$\mathscr{F}=(\mathscr{R}(X))^{(I)}$인 경우에 명제를 증명하면 충분하다.
+그런데 $Y$의 공집합이 아닌 모든 열린집합 $U$는 $Y$의 일반점을
+포함하므로, $f^{-1}(U)$는 $X$의 일반점을 포함한다
+(\hyperref[0.2.1.5-ko]{0, 2.1.5}). 따라서
+\[
+  \Gamma(U,f_*(\mathscr{F}))
+  =\Gamma(f^{-1}(U),\mathscr{F})=(R(X))^{(I)}.
+\]
+다시 말해 $f_*(\mathscr{F})$는 $(R(X))^{(I)}$를 값으로 하는
+상수층이다. 이 층을 $\mathscr{R}(Y)$-가군으로 보면 명백히 꼬임이
+없다.
+\end{proof}
+
+\begin{proposition}[7.4.6]
+\label{I.7.4.6-ko}
+$X$를 정역 준스킴, $x$를 그 일반점이라 하자. 유한 생성인 임의의
+준연접 $\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여 다음 조건들은
+동치이다. a) $\mathscr{F}$는 꼬임층이다. b) $\mathscr{F}_x=0$이다.
+c) $\operatorname{Supp}(\mathscr{F})\neq X$이다.
+\end{proposition}
+
+(\hyperref[I.7.3.5-ko]{7.3.5})와
+(\hyperref[I.7.4.1-ko]{7.4.1})에 따라 관계 $\mathscr{F}_x=0$과
+$\mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{R}(X)=0$은 동치이므로
+a)와 b)는 동치이다. 한편 $\operatorname{Supp}(\mathscr{F})$는
+$X$에서 닫혀 있고(\hyperref[0.5.2.2-ko]{0, 5.2.2}), $X$의 공집합이
+아닌 모든 열린집합은 $x$를 포함하므로 b)와 c)는 동치이다.
+
+\begin{env}[7.4.7]
+\label{I.7.4.7-ko}
+$X$가 \emph{축소} 준스킴이고 기약성분을 \emph{유한}개만 갖는 경우에도
+용어를 남용하여 (\hyperref[I.7.4.1-ko]{7.4.1})의 정의들을 사용한다.
+그러면 (\hyperref[I.7.3.4-ko]{7.3.4})에 따라 이러한 준스킴에 대해서도
+(\hyperref[I.7.4.6-ko]{7.4.6})의 a)와 c)는 동치이다.
+\end{env}

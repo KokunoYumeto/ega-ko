@@ -1,0 +1,620 @@
+% Authority: EGA I ega1-2-fr.tex, whole-file SHA-256 AE6B128092ACBB8C1AFB4899EEA003FB966B6FF6669A264B59FD5F095AF4F029.
+% Sequential coverage in this file: authority lines 1-296, complete subsections 2.1-2.2.
+\section{준스킴과 준스킴의 사상}
+\label{section:I.2-ko}
+
+\subsection{준스킴의 정의}
+\label{subsection:I.2.1-ko}
+
+\begin{env}[2.1.1]
+\label{I.2.1.1-ko}
+환 달린 공간 $(X,\mathscr{O}_X)$가 주어졌을 때, $X$의 열린 부분집합
+$V$에 유도된 환 달린 공간 $(V,\mathscr{O}_X|V)$가 아핀 스킴이면
+$V$를 \emph{아핀 열린집합}이라 한다
+(\hyperref[I.1.7.1-ko]{1.7.1}).
+\end{env}
+
+\begin{definition}[2.1.2]
+\label{I.2.1.2-ko}
+모든 점이 아핀 열린 근방을 갖는 환 달린 공간 $(X,\mathscr{O}_X)$를
+\emph{준스킴}이라 한다.
+\end{definition}
+
+\oldpage[I]{98}
+
+\begin{proposition}[2.1.3]
+\label{I.2.1.3-ko}
+$(X,\mathscr{O}_X)$가 준스킴이면 아핀 열린집합들은 $X$의 위상의
+기저를 이룬다.
+\end{proposition}
+
+실제로 $V$가 $x\in X$의 임의의 열린 근방이면, 가정에 따라 $x$의
+어떤 열린 근방 $W$에 대하여 $(W,\mathscr{O}_X|W)$가 아핀 스킴이다.
+그 환을 $A$라 하자. 공간 $W$ 안에서 $V\cap W$는 $x$의 열린
+근방이므로, $x$의 열린 근방이고 $V\cap W$에 포함되는 $D(f)$가
+존재하도록 하는 $f\in A$가 있다
+(\hyperref[I.1.1.10-ko]{1.1.10 (i)}). 이때 환 달린 공간
+$(D(f),\mathscr{O}_X|D(f))$는 $A_f$와 동형인 환을 갖는 아핀
+스킴이므로(\hyperref[I.1.3.6-ko]{1.3.6}), 명제가 따른다.
+
+\begin{proposition}[2.1.4]
+\label{I.2.1.4-ko}
+준스킴의 바탕공간은 콜모고로프 공간이다.
+\end{proposition}
+
+실제로 준스킴 $X$의 서로 다른 두 점 $x,y$가 하나의 아핀
+열린집합에 함께 들어 있지 않으면, 두 점 가운데 하나를 포함하고
+다른 하나를 포함하지 않는 열린 근방이 존재함은 자명하다. 두 점이
+하나의 아핀 열린집합에 함께 들어 있으면
+(\hyperref[I.1.1.8-ko]{1.1.8})에서 결론이 따른다.
+
+\begin{proposition}[2.1.5]
+\label{I.2.1.5-ko}
+$(X,\mathscr{O}_X)$가 준스킴이면 $X$의 모든 기약 닫힌 부분집합은
+유일한 일반점을 갖는다. 따라서 사상
+\[
+  x\longmapsto\overline{\{x\}}
+\]
+은 $X$에서 그 기약 닫힌 부분집합들의 집합으로 가는 전단사이다.
+\end{proposition}
+
+실제로 $Y$를 $X$의 기약 닫힌 부분집합, $y\in Y$, $U$를 $X$에서
+$y$의 아핀 열린 근방이라 하자. $U\cap Y$는 $Y$에서 조밀하고
+기약이다
+(\hyperref[0.2.1.1-ko]{0, 2.1.1} 및
+\hyperref[0.2.1.4-ko]{2.1.4}). 따라서
+(\hyperref[I.1.1.14-ko]{1.1.14})에 의해 $U\cap Y$는 어떤 점 $x$의
+$U$ 안에서의 폐포이다. 그러므로 $Y\subset\overline U$는 $X$에서
+$x$의 폐포이다. $Y$의 일반점의 유일성은
+(\hyperref[I.2.1.4-ko]{2.1.4})와
+(\hyperref[0.2.1.3-ko]{0, 2.1.3})에서 따른다.
+
+\begin{env}[2.1.6]
+\label{I.2.1.6-ko}
+$Y$가 $X$의 기약 닫힌 부분집합이고 $y$가 그 일반점이면, 국소환
+$\mathscr{O}_y$를 $\mathscr{O}_{X/Y}$라고도 쓰며 이를
+\emph{$Y$를 따라 취한 $X$의 국소환}, 또는 \emph{$X$ 안의 $Y$의
+국소환}이라 한다.
+
+$X$ 자체가 기약이고 $x$가 그 일반점이면, $\mathscr{O}_x$를
+\emph{$X$ 위의 유리함수환}이라고도 한다(§~7 참조).
+\end{env}
+
+\begin{proposition}[2.1.7]
+\label{I.2.1.7-ko}
+$(X,\mathscr{O}_X)$가 준스킴이면 $X$의 모든 열린 부분집합 $U$에
+대하여 환 달린 공간 $(U,\mathscr{O}_X|U)$도 준스킴이다.
+\end{proposition}
+
+이는 정의 (\hyperref[I.2.1.2-ko]{2.1.2})와 명제
+(\hyperref[I.2.1.3-ko]{2.1.3})에서 곧바로 따른다.
+
+$(U,\mathscr{O}_X|U)$를 $(X,\mathscr{O}_X)$가 $U$ 위에
+\emph{유도하는} 준스킴, 또는 $(X,\mathscr{O}_X)$의 $U$에 대한
+\emph{제한}이라 한다.
+
+\begin{env}[2.1.8]
+\label{I.2.1.8-ko}
+준스킴 $(X,\mathscr{O}_X)$의 바탕공간 $X$가 기약(각각 연결)이면
+이 준스킴을 \emph{기약}(각각 \emph{연결})이라 한다. 준스킴이
+\emph{기약이고 축소}이면 이를 \emph{정역 준스킴}이라 한다
+\emph{(5.1.4 참조)}. 준스킴 $(X,\mathscr{O}_X)$의 모든 점
+$x\in X$가, 그 위에 유도된 준스킴이 정역 준스킴인 어떤 열린 근방
+$U$를 가지면 $(X,\mathscr{O}_X)$를 \emph{국소 정역 준스킴}이라
+한다.
+\end{env}
+
+\subsection{준스킴의 사상}
+\label{subsection:I.2.2-ko}
+\label{I.2.2-ko}
+
+\begin{definition}[2.2.1]
+\label{I.2.2.1-ko}
+두 준스킴 $(X,\mathscr{O}_X)$, $(Y,\mathscr{O}_Y)$가 주어졌다고 하자.
+$(X,\mathscr{O}_X)$에서 $(Y,\mathscr{O}_Y)$로 가는 환 달린 공간의
+사상 $(\psi,\theta)$ 가운데, 모든 $x\in X$에 대하여
+\[
+  \theta_x^\sharp:\mathscr{O}_{\psi(x)}\longrightarrow\mathscr{O}_x
+\]
+가 국소 준동형인 것을 \emph{준스킴의 사상}이라 한다.
+\end{definition}
+
+\oldpage[I]{99}
+
+따라서 몫을 취하면
+$\theta_x^\sharp:\mathscr{O}_{\psi(x)}\to\mathscr{O}_x$는 단사 준동형
+$\theta^x:k(\psi(x))\to k(x)$를 유도하며, 이에 따라 $k(x)$를 체
+$k(\psi(x))$의 \emph{확대체}로 볼 수 있다.
+
+\begin{env}[2.2.2]
+\label{I.2.2.2-ko}
+준스킴의 두 사상 $(\psi,\theta)$와 $(\psi',\theta')$의 합성
+$(\psi'',\theta'')$도 준스킴의 사상이다. 이는 공식
+${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$
+(\hyperref[0.3.5.5-ko]{0, 3.5.5})에서 따른다. 따라서 준스킴들은 하나의
+\emph{범주}를 이룬다. 일반 표기에 따라 준스킴 $X$에서 준스킴 $Y$로
+가는 사상들의 집합을 $\operatorname{Hom}(X,Y)$로 쓴다.
+\end{env}
+
+\begin{example}[2.2.3]
+\label{I.2.2.3-ko}
+$U$가 $X$의 열린 부분집합이면, 유도된 준스킴
+$(U,\mathscr{O}_X|U)$에서 $(X,\mathscr{O}_X)$로 가는 표준 단사사상
+(\hyperref[0.4.1.2-ko]{0, 4.1.2})은 준스킴의 사상이다. 더구나 이는
+환 달린 공간의 단사사상이며(따라서 특히 준스킴의 단사사상이며),
+이는 (\hyperref[0.4.1.1-ko]{0, 4.1.1})에서 곧바로 따른다.
+\end{example}
+
+\begin{proposition}[2.2.4]
+\label{I.2.2.4-ko}
+$(X,\mathscr{O}_X)$를 준스킴, $(S,\mathscr{O}_S)$를 환 $A$의 아핀
+스킴이라 하자. 준스킴 $(X,\mathscr{O}_X)$에서 준스킴
+$(S,\mathscr{O}_S)$로 가는 사상들과 $A$에서 환
+$\Gamma(X,\mathscr{O}_X)$로 가는 준동형들 사이에는 표준 전단사 대응이
+존재한다.
+\end{proposition}
+
+먼저 $(X,\mathscr{O}_X)$와 $(Y,\mathscr{O}_Y)$가 임의의 두 환 달린
+공간이면, $(X,\mathscr{O}_X)$에서 $(Y,\mathscr{O}_Y)$로 가는 사상
+$(\psi,\theta)$는 표준적으로 환 준동형
+\[
+  \Gamma(\theta):\Gamma(Y,\mathscr{O}_Y)\longrightarrow
+  \Gamma(Y,\psi_*(\mathscr{O}_X))=\Gamma(X,\mathscr{O}_X)
+\]
+을 정의함을 주목하자. 지금의 경우에는 임의의 준동형
+$\varphi:A\to\Gamma(X,\mathscr{O}_X)$가 유일한 $\theta$에 대하여
+$\Gamma(\theta)$ 꼴임을 보이면 충분하다. 가정에 따라 $X$는 아핀
+열린집합들 $(V_\alpha)$로 덮인다. $\varphi$를 제한 준동형
+\[
+  \Gamma(X,\mathscr{O}_X)\longrightarrow
+  \Gamma(V_\alpha,\mathscr{O}_X|V_\alpha)
+\]
+과 합성하면 준동형
+$\varphi_\alpha:A\to\Gamma(V_\alpha,\mathscr{O}_X|V_\alpha)$를 얻는다.
+(\hyperref[I.1.7.3-ko]{1.7.3})에 따라 이는 준스킴
+$(V_\alpha,\mathscr{O}_X|V_\alpha)$에서 $(S,\mathscr{O}_S)$로 가는
+유일한 사상 $(\psi_\alpha,\theta_\alpha)$에 대응한다. 또한 모든 지표쌍
+$(\alpha,\beta)$와 모든 점 $x\in V_\alpha\cap V_\beta$에 대하여,
+$x$를 포함하고 $V_\alpha\cap V_\beta$에 포함되는 아핀 열린집합 $W$가
+존재한다(\hyperref[I.2.1.3-ko]{2.1.3}). $\varphi_\alpha$와
+$\varphi_\beta$를 $W$로 가는 제한 준동형과 합성하면 같은 준동형
+\[
+  \Gamma(S,\mathscr{O}_S)\longrightarrow
+  \Gamma(W,\mathscr{O}_X|W)
+\]
+을 얻는다. 따라서 모든 $x\in V_\alpha$와 모든 $\alpha$에 대한 관계
+$(\theta_\alpha^\sharp)_x=(\varphi_\alpha)_x$
+(\hyperref[I.1.6.1-ko]{1.6.1})와 함께 보면,
+$(\psi_\alpha,\theta_\alpha)$와 $(\psi_\beta,\theta_\beta)$의 $W$로의
+제한은 일치한다. 그러므로 각 $V_\alpha$로의 제한이
+$(\psi_\alpha,\theta_\alpha)$인 환 달린 공간의 사상
+\[
+  (\psi,\theta):(X,\mathscr{O}_X)\longrightarrow(S,\mathscr{O}_S)
+\]
+이 유일하게 존재한다. 이 사상이 준스킴의 사상이며
+$\Gamma(\theta)=\varphi$임은 명백하다.
+
+$u:A\to\Gamma(X,\mathscr{O}_X)$를 환 준동형이라 하고,
+$v=(\psi,\theta)$를 이에 대응하는 사상
+$(X,\mathscr{O}_X)\to(S,\mathscr{O}_S)$라 하자. 모든 $f\in A$에 대하여
+\begin{equation}
+  \psi^{-1}(D(f))=X_{u(f)}
+  \tag{2.2.4.1}\label{I.2.2.4.1-ko}
+\end{equation}
+이다. 여기서 표기는 국소 자유층 $\mathscr{O}_X$에 관한
+(\hyperref[0.5.5.2-ko]{0, 5.5.2})의 것을 사용한다. 실제로 이 공식을
+$X$ 자체가 아핀인 경우에 확인하면 충분하며, 그때에는 바로
+(\hyperref[I.1.2.2.2-ko]{1.2.2.2})이다.
+
+\begin{proposition}[2.2.5]
+\label{I.2.2.5-ko}
+(\hyperref[I.2.2.4-ko]{2.2.4})의 가정 아래에서, 환 준동형
+$\varphi:A\to\Gamma(X,\mathscr{O}_X)$와 이에 대응하는 준스킴의 사상
+$f:(X,\mathscr{O}_X)\to(S,\mathscr{O}_S)$를 생각하자.
+$\mathscr{G}$를 준연접 $\mathscr{O}_X$-가군,
+$\mathscr{F}$를 준연접 $\mathscr{O}_S$-가군이라 하고
+$M=\Gamma(S,\mathscr{F})$로 놓자.
+\oldpage[I]{100}
+그러면 $f$-사상
+$\mathscr{F}\to\mathscr{G}$
+(\hyperref[0.4.4.1-ko]{0, 4.4.1})들과 $A$-가군 준동형
+\[
+  M\longrightarrow(\Gamma(X,\mathscr{G}))_{[\varphi]}
+\]
+들 사이에는 표준 전단사 대응이 존재한다.
+\end{proposition}
+
+실제로 (\hyperref[I.2.2.4-ko]{2.2.4})에서와 같이 논하면 곧 $X$가
+아핀인 경우로 환원되며, 그 경우 명제는
+(\hyperref[I.1.6.3-ko]{1.6.3})과
+(\hyperref[I.1.3.8-ko]{1.3.8})에서 따른다.
+
+\begin{env}[2.2.6]
+\label{I.2.2.6-ko}
+준스킴의 사상
+$(\psi,\theta):(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)$가 $X$의 모든
+열린 부분집합 $U$에 대하여 $\psi(U)$가 $Y$에서 열려 있으면 이 사상을
+\emph{열린 사상}이라 하고, $X$의 모든 닫힌 부분집합 $F$에 대하여
+$\psi(F)$가 $Y$에서 닫혀 있으면 \emph{닫힌 사상}이라 한다.
+$\psi(X)$가 $Y$에서 조밀하면 \emph{우세 사상}, $\psi$가 전사이면
+\emph{전사 사상}이라 한다. 이 조건들은 연속사상 $\psi$에만 관련됨을
+주목하자.
+\end{env}
+
+\begin{proposition}[2.2.7]
+\label{I.2.2.7-ko}
+준스킴의 두 사상
+\[
+  f=(\psi,\theta):(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y),
+  \qquad
+  g=(\psi',\theta'):(Y,\mathscr{O}_Y)\to(Z,\mathscr{O}_Z)
+\]
+를 생각하자.
+\begin{enumerate}
+  \item[\rm(i)] $f$와 $g$가 모두 열린(각각 닫힌, 우세, 전사) 사상이면
+    $g\circ f$도 그러하다.
+  \item[\rm(ii)] $f$가 전사이고 $g\circ f$가 닫힌 사상이면 $g$도 닫힌
+    사상이다.
+  \item[\rm(iii)] $g\circ f$가 전사이면 $g$도 전사이다.
+\end{enumerate}
+\end{proposition}
+
+(i)와 (iii)은 명백하다. $g\circ f=(\psi'',\theta'')$로 놓자. $F$가
+$Y$에서 닫혀 있으면 $\psi^{-1}(F)$는 $X$에서 닫혀 있으므로
+$\psi''(\psi^{-1}(F))$는 $Z$에서 닫혀 있다. 그런데 $\psi$가 전사이므로
+$\psi(\psi^{-1}(F))=F$이고, 따라서
+$\psi''(\psi^{-1}(F))=\psi'(F)$이다. 이로써 (ii)가 증명된다.
+
+\begin{proposition}[2.2.8]
+\label{I.2.2.8-ko}
+$f=(\psi,\theta)$를
+$(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)$인 사상이라 하고,
+$(U_\alpha)$를 $Y$의 열린 덮개라 하자. $f$가 열린(각각 닫힌, 전사,
+우세) 사상이기 위한 필요충분조건은, 각각의 유도된 준스킴
+$(\psi^{-1}(U_\alpha),\mathscr{O}_X|\psi^{-1}(U_\alpha))$에 대한 $f$의
+제한을 이 준스킴에서 유도된 준스킴
+$(U_\alpha,\mathscr{O}_Y|U_\alpha)$로 가는 사상으로 보았을 때, 그
+제한이 열린(각각 닫힌, 전사, 우세) 사상인 것이다.
+\end{proposition}
+
+이 명제는 정의에서 곧바로 따른다. 여기서는 $Y$의 부분집합 $F$가
+$Y$에서 닫힌(각각 열린, 조밀한) 부분집합이기 위한 필요충분조건이
+모든 $\alpha$에 대하여 $F\cap U_\alpha$가 $U_\alpha$에서 닫힌(각각
+열린, 조밀한) 부분집합인 것임을 사용한다.
+
+\begin{env}[2.2.9]
+\label{I.2.2.9-ko}
+$(X,\mathscr{O}_X)$와 $(Y,\mathscr{O}_Y)$를 두 준스킴이라 하고, $X$와
+$Y$가 같은 유한 개수의 기약 성분 $X_i$와 $Y_i$
+$(1\leq i\leq n)$를 갖는다고 하자. $X_i$와 $Y_i$의 일반점을 각각
+$\xi_i$와 $\eta_i$라 하자
+(\hyperref[I.2.1.5-ko]{2.1.5}). 사상
+\[
+  f=(\psi,\theta):(X,\mathscr{O}_X)\longrightarrow(Y,\mathscr{O}_Y)
+\]
+이 모든 $i$에 대하여 $\psi^{-1}(\eta_i)=\{\xi_i\}$를 만족하고
+\[
+  \theta_{\xi_i}^{\sharp}:\mathscr{O}_{\eta_i}\longrightarrow
+  \mathscr{O}_{\xi_i}
+\]
+가 동형이면 $f$를 \emph{쌍유리 사상}이라 한다. 쌍유리 사상이 우세
+사상임은 명백하다(\hyperref[0.2.1.8-ko]{0, 2.1.8}). 따라서 닫힌
+사상이기도 하면 전사이다.
+\end{env}
+
+\begin{notation}[2.2.10]
+\label{I.2.2.10-ko}
+이 책의 앞으로의 모든 부분에서는, 혼동의 염려가 없을 때 준스킴의
+표기에서는 구조층을, 사상의 표기에서는 구조층의 준동형을
+\emph{생략}한다. 준스킴 $X$의 바탕공간의 열린 부분집합 $U$를
+준스킴이라고 할 때에는 언제나 $U$ 위에 유도된 준스킴을 뜻한다.
+\end{notation}
+
+\subsection{준스킴의 붙이기}
+\label{subsection:I.2.3-ko}
+
+\begin{env}[2.3.1]
+\label{I.2.3.1-ko}
+\oldpage[I]{101}
+정의 (\hyperref[I.2.1.2-ko]{2.1.2})에 따라, 준스킴들을
+\emph{붙여서} 얻은 모든 환 달린 공간
+(\hyperref[0.4.1.6-ko]{0, 4.1.6})은 다시 준스킴이다. 특히 모든
+준스킴은 정의상 아핀 열린집합들로 이루어진 덮개를 가지므로, 모든
+준스킴은 \emph{아핀 스킴들을 붙여서} 얻을 수 있다.
+\end{env}
+
+\begin{example}[2.3.2]
+\label{I.2.3.2-ko}
+$K$를 체라 하고, $B=K[s]$, $C=K[t]$를 각각 $K$ 위의 하나의 부정원에
+대한 다항식환이라 하자. 또한 $X_1=\operatorname{Spec}(B)$,
+$X_2=\operatorname{Spec}(C)$라 하자. 이들은 서로 동형인 두 아핀
+스킴이다. $X_1$에서(각각 $X_2$에서) $U_{12}$를(각각 $U_{21}$을)
+아핀 열린집합 $D(s)$로(각각 $D(t)$로) 잡자. 그 환 $B_s$는(각각
+$C_t$는) $f\in B$인(각각 $g\in C$인) 유리분수 $f(s)/s^m$의
+꼴로(각각 $g(t)/t^n$의 꼴로) 이루어진다. $B_s$에서 $C_t$로 가며
+$f(s)/s^m$을 유리분수 $f(1/t)/(1/t^m)$에 대응시키는 동형에
+(\hyperref[I.2.2.4-ko]{2.2.4})에 따라 대응하는 준스킴의 동형
+\[
+  u_{12}:U_{21}\longrightarrow U_{12}
+\]
+를 생각하자. 붙이기 조건이 전혀 없음은 명백하므로, $u_{12}$를
+사용하여 $U_{12}$와 $U_{21}$을 따라 $X_1$과 $X_2$를 붙일 수 있다.
+이렇게 얻은 준스킴 $X$는 뒤에서 일반적인 구성법의 특수한 경우로
+다시 만나게 된다(II, 2.4.3). 여기서는 $X$가 \emph{아핀 스킴이
+아님}만을 보이자. 실제로 환 $\Gamma(X,\mathscr{O}_X)$는 $K$와
+\emph{동형}이므로 그 스펙트럼은 한 점으로 이루어진다. $X$ 위의
+$\mathscr{O}_X$의 한 단면을 $X$의 아핀 열린집합과 동일시되는
+$X_1$에(각각 $X_2$에) 제한하면 다항식 $f(s)$를(각각 $g(t)$를)
+얻는다. 정의에 따라 $g(t)=f(1/t)$이어야 하며, 이는
+$f=g\in K$일 때에만 가능하다.
+\end{example}
+
+\subsection{국소 스킴}
+\label{subsection:I.2.4-ko}
+
+\begin{env}[2.4.1]
+\label{I.2.4.1-ko}
+환 $A$가 국소환인 아핀 스킴을 \emph{국소 스킴}이라 한다. 그러면
+$X=\operatorname{Spec}(A)$에는 유일한 \emph{닫힌점} $a$가 존재하며,
+다른 모든 점 $b\in X$에 대하여
+$a\in\overline{\{b\}}$이다
+(\hyperref[I.1.1.7-ko]{1.1.7}).
+\end{env}
+
+준스킴 $Y$의 점 $y$마다 국소 스킴
+$\operatorname{Spec}(\mathscr{O}_y)$를 \emph{$Y$의 점 $y$에서의 국소
+스킴}이라 한다. $V$를 $y$를 포함하는 $Y$의 아핀 열린집합, $B$를 아핀
+스킴 $V$의 환이라 하자. $\mathscr{O}_y$는 $B_y$와 표준적으로
+동일시되고(\hyperref[I.1.3.4-ko]{1.3.4}), 따라서 표준 준동형
+$B\to B_y$는 (\hyperref[I.1.6.1-ko]{1.6.1})에 따라 준스킴의 사상
+$\operatorname{Spec}(\mathscr{O}_y)\to V$에 대응한다. 이 사상을 표준
+단사사상 $V\to Y$와 합성하면 사상
+$\operatorname{Spec}(\mathscr{O}_y)\to Y$를 얻으며, 이는 선택한
+$y$의 아핀 열린 근방 $V$에 \emph{무관하다}. 실제로 $V'$이 $y$를
+포함하는 또 다른 아핀 열린집합이면, $y$를 포함하고
+$W\subset V\cap V'$인 세 번째 아핀 열린집합 $W$가 존재한다
+(\hyperref[I.2.1.3-ko]{2.1.3}). 따라서 $V\subset V'$인 경우만
+생각하면 충분하다. $B'$을 $V'$의 환이라 하면, 이는 도식
+\phantomsection\label{I.2.4.1.diagram-ko}
+\[
+  \xymatrix{
+    B'\ar[rr]\ar[dr] & & B\ar[dl]\\
+    & \mathscr{O}_y
+  }
+\]
+이 가환임을 확인하는 것으로 귀착된다
+(\hyperref[0.1.5.1-ko]{0, 1.5.1}). 이렇게 정의한 사상
+\[
+  \operatorname{Spec}(\mathscr{O}_y)\longrightarrow Y
+\]
+을 \emph{표준 사상}이라 한다.
+
+\begin{proposition}[2.4.2]
+\label{I.2.4.2-ko}
+\oldpage[I]{102}
+$(Y,\mathscr{O}_Y)$를 준스킴이라 하자. 각 $y\in Y$에 대하여
+$(\psi,\theta)$를 표준 사상
+\[
+  (\operatorname{Spec}(\mathscr{O}_y),\widetilde{\mathscr{O}}_y)
+  \longrightarrow(Y,\mathscr{O}_Y)
+\]
+이라 하자. 그러면 $\psi$는 $\operatorname{Spec}(\mathscr{O}_y)$에서
+$y\in\overline{\{z\}}$를 만족하는 점 $z$들로 이루어진 $Y$의 부분공간
+$S_y$ 위로 가는 위상동형이다. 다시 말해 이 점들은 $y$의
+\emph{일반화들}이다(\hyperref[0.2.1.2-ko]{0, 2.1.2}). 또한
+$z=\psi(\mathfrak{p})$이면
+\[
+  \theta_z^{\sharp}:\mathscr{O}_z\longrightarrow
+  (\mathscr{O}_y)_{\mathfrak{p}}
+\]
+는 동형이다. 따라서 $(\psi,\theta)$는 환 달린 공간의 단사사상이다.
+\end{proposition}
+
+$\operatorname{Spec}(\mathscr{O}_y)$의 유일한 닫힌점 $a$는 이 공간의
+모든 점의 폐포에 속하고 $\psi(a)=y$이므로, 연속사상 $\psi$에 의한
+$\operatorname{Spec}(\mathscr{O}_y)$의 상은 $S_y$에 포함된다. 한편
+$S_y$는 $y$를 포함하는 모든 아핀 열린집합에 포함되므로, $Y$가 아핀
+스킴인 경우로 환원할 수 있다. 이 경우 명제는
+(\hyperref[I.1.6.2-ko]{1.6.2})에서 따른다.
+
+\emph{따라서 (\hyperref[I.2.1.5-ko]{2.1.5})에 의해
+$\operatorname{Spec}(\mathscr{O}_y)$와 $y$를 포함하는 $Y$의 기약
+닫힌 부분집합들의 집합 사이에는 전단사 대응이 있다.}
+
+\begin{corollary}[2.4.3]
+\label{I.2.4.3-ko}
+$y\in Y$가 $Y$의 한 기약 성분의 일반점이기 위한 필요충분조건은,
+국소환 $\mathscr{O}_y$의 유일한 소 아이디얼이 그 극대 아이디얼인
+것이다. 다시 말해 $\mathscr{O}_y$의 차원이 $0$인 것이다.
+\end{corollary}
+
+\begin{proposition}[2.4.4]
+\label{I.2.4.4-ko}
+$(X,\mathscr{O}_X)$를 환이 $A$인 국소 스킴, $a$를 그 유일한 닫힌점,
+$(Y,\mathscr{O}_Y)$를 준스킴이라 하자. 모든 사상
+$u=(\psi,\theta):(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)$는 유일하게
+\[
+  X\longrightarrow\operatorname{Spec}(\mathscr{O}_{\psi(a)})
+  \longrightarrow Y
+\]
+로 분해된다. 여기서 두 번째 화살표는 표준 사상이고, 첫 번째 화살표는
+국소 준동형 $\mathscr{O}_{\psi(a)}\to A$에 대응한다. 이로써 사상들의
+집합
+$\operatorname{Hom}((X,\mathscr{O}_X),(Y,\mathscr{O}_Y))$와 국소
+준동형 $\mathscr{O}_y\to A$들의 집합($y\in Y$) 사이에 표준 전단사
+대응이 주어진다.
+\end{proposition}
+
+실제로 모든 $x\in X$에 대하여 $a\in\overline{\{x\}}$이므로
+$\psi(a)\in\overline{\{\psi(x)\}}$이다. 따라서 $\psi(X)$는
+$\psi(a)$를 포함하는 모든 아핀 열린집합에 포함된다. 그러므로
+$(Y,\mathscr{O}_Y)$가 환 $B$의 아핀 스킴인 경우로 환원할 수 있다.
+이때 $\varphi\in\operatorname{Hom}(B,A)$에 대하여
+$u=({}^a\varphi,\widetilde{\varphi})$이다
+(\hyperref[I.1.7.3-ko]{1.7.3}). 또한
+$\varphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$이므로,
+$B-\mathfrak{j}_{\psi(a)}$의 모든 원소의 $\varphi$에 의한 상은
+국소환 $A$에서 가역이다. 따라서 명제의 분해는 분수환의 보편 성질
+(\hyperref[0.1.2.4-ko]{0, 1.2.4})에서 따른다. 역으로, 모든 국소
+준동형 $\mathscr{O}_y\to A$에는 $\psi(a)=y$인 유일한 사상
+$(\psi,\theta):X\to\operatorname{Spec}(\mathscr{O}_y)$가 대응한다
+(\hyperref[I.1.7.3-ko]{1.7.3}). 이를 표준 사상
+$\operatorname{Spec}(\mathscr{O}_y)\to Y$와 합성하면 사상 $X\to Y$를
+얻으며, 이로써 명제가 증명된다.
+
+\begin{env}[2.4.5]
+\label{I.2.4.5-ko}
+환이 \emph{체} $K$인 아핀 스킴의 바탕공간은 한 점으로 이루어진다. $A$가
+극대 아이디얼 $\mathfrak{m}$을 갖는 국소환이면, 모든 국소 준동형
+$A\to K$의 핵은 $\mathfrak{m}$과 같으므로
+\[
+  A\longrightarrow A/\mathfrak{m}\longrightarrow K
+\]
+로 분해된다. 여기서 두 번째 화살표는 단사 준동형이다. 따라서 사상
+$\operatorname{Spec}(K)\to\operatorname{Spec}(A)$들은 체의 단사
+준동형 $A/\mathfrak{m}\to K$들과 전단사 대응한다.
+\end{env}
+
+$(Y,\mathscr{O}_Y)$를 준스킴이라 하자. 모든 $y\in Y$와
+$\mathscr{O}_y$의 모든 아이디얼 $\mathfrak{a}_y$에 대하여 표준 준동형
+$\mathscr{O}_y\to\mathscr{O}_y/\mathfrak{a}_y$는 사상
+$\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)
+\to\operatorname{Spec}(\mathscr{O}_y)$를 정의한다. 이를 표준 사상
+$\operatorname{Spec}(\mathscr{O}_y)\to Y$와 합성하면 사상
+$\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)\to Y$를 얻으며,
+이 사상도 \emph{표준 사상}이라 한다. $\mathfrak{a}_y=\mathfrak{m}_y$,
+즉 $\mathscr{O}_y/\mathfrak{a}_y=k(y)$인 경우에는 명제
+(\hyperref[I.2.4.4-ko]{2.4.4})로부터 다음을 얻는다.
+
+\begin{corollary}[2.4.6]
+\label{I.2.4.6-ko}
+\oldpage[I]{103}
+$(X,\mathscr{O}_X)$를 그 환이 체 $K$인 국소 스킴, $\xi$를 $X$의
+유일한 점, $(Y,\mathscr{O}_Y)$를 준스킴이라 하자. 모든 사상
+$u=(\psi,\theta):(X,\mathscr{O}_X)\to(Y,\mathscr{O}_Y)$는 유일하게
+\[
+  X\longrightarrow\operatorname{Spec}(k(\psi(\xi)))
+  \longrightarrow Y
+\]
+로 분해된다. 여기서 두 번째 화살표는 표준 사상이고, 첫 번째 화살표는
+단사 준동형 $k(\psi(\xi))\to K$에 대응한다. 이로써 사상들의 집합
+$\operatorname{Hom}((X,\mathscr{O}_X),(Y,\mathscr{O}_Y))$와 체의 단사
+준동형 $k(y)\to K$들의 집합($y\in Y$) 사이에 표준 전단사 대응이
+주어진다.
+\end{corollary}
+
+\begin{corollary}[2.4.7]
+\label{I.2.4.7-ko}
+모든 $y\in Y$에 대하여, 모든 표준 사상
+$\operatorname{Spec}(\mathscr{O}_y/\mathfrak{a}_y)\to Y$는 환 달린
+공간의 단사사상이다.
+\end{corollary}
+
+$\mathfrak{a}_y=0$인 경우에는 이미 이를 보았으며
+(\hyperref[I.2.4.2-ko]{2.4.2}), 일반적인 경우에는
+(\hyperref[I.1.7.5-ko]{1.7.5})를 적용하면 충분하다.
+
+\begin{remark}[2.4.8]
+\label{I.2.4.8-ko}
+$X$를 국소 스킴, $a$를 그 유일한 닫힌점이라 하자. $a$를 포함하는
+모든 아핀 열린집합은 반드시 $X$ 전체이므로, 모든 \emph{가역}
+$\mathscr{O}_X$-가군(\hyperref[0.5.4.1-ko]{0, 5.4.1})은 반드시
+\emph{$\mathscr{O}_X$와 동형}이다. 다시
+말해 이 가군은 \emph{자명하다}. 이 성질은 임의의 아핀 스킴
+$\operatorname{Spec}(A)$에 대해서는 일반적으로 성립하지 않는다.
+$A$가 정규환일 때에는, $A$가 \emph{유일인수분해정역}이면 이 성질이
+성립함을 제V장에서 보게 된다.
+\end{remark}
+
+\subsection{준스킴 위의 준스킴}
+\label{subsection:I.2.5-ko}
+
+\begin{definition}[2.5.1]
+\label{I.2.5.1-ko}
+준스킴 $S$가 주어졌을 때, 준스킴 $X$와 준스킴의 사상
+$\varphi:X\to S$를 주는 것을
+\emph{준스킴 $S$ 위의} 준스킴 $X$, 또는 \emph{$S$-준스킴}을
+정의한다고 한다. 이때 $S$를 $S$-준스킴 $X$의 \emph{밑준스킴}이라
+한다. 사상 $\varphi$를 $S$-준스킴 $X$의 \emph{구조 사상}이라 한다.
+$S$가 환 $A$의 아핀 스킴이면, $\varphi$를 갖춘 $X$를 환 $A$ 위의
+준스킴(또는 $A$-준스킴)이라고도 한다.
+\end{definition}
+
+(\hyperref[I.2.2.4-ko]{2.2.4})에 따르면, 환 $A$ 위의 준스킴을 주는
+것은 구조층 $\mathscr{O}_X$가 $A$-\emph{대수들의 층}인 준스킴
+$(X,\mathscr{O}_X)$를 주는 것과 동치이다. \emph{따라서 임의의
+준스킴은 언제나 유일한 방식으로 $\mathbf{Z}$-준스킴으로 볼 수 있다.}
+
+$\varphi:X\to S$가 $S$-준스킴 $X$의 구조 사상이면, 점 $x\in X$가
+점 $s\in S$ \emph{위에 있다}는 것은 $\varphi(x)=s$라는 뜻이다.
+$\varphi$가 우세 사상이면(\hyperref[I.2.2.6-ko]{2.2.6}), $X$가
+$S$에 대해 \emph{우세하다}고 한다.
+
+\begin{env}[2.5.2]
+\label{I.2.5.2-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하자. 준스킴의 사상 $u:X\to Y$가
+\emph{$S$ 위의 준스킴의 사상}(또는 \emph{$S$-사상})이라는 것은 도식
+\phantomsection\label{I.2.5.2.diagram-ko}
+\[
+  \xymatrix{
+    X\ar[rr]^u\ar[dr] & & Y\ar[dl]\\
+    & S &
+  }
+\]
+이 가환이라는 뜻이다. 여기서 빗금 화살표들은 구조 사상이다. 이
+조건으로부터 모든 $s\in S$와 $s$ 위에 있는 모든 $x\in X$에 대하여
+$u(x)$도 $s$ 위에 있어야 함이 따른다.
+\end{env}
+
+이 정의에서 두 $S$-사상의 합성이 $S$-사상임이 곧바로 보인다.
+따라서 $S$-준스킴들은 하나의 \emph{범주}를 이룬다.
+
+$S$-준스킴 $X$에서 $S$-준스킴 $Y$로 가는 $S$-사상들의 집합을
+$\operatorname{Hom}_S(X,Y)$로 표기한다. $S$-준스킴 $X$의 항등사상은
+$1_X$로 나타낸다.
+
+$S$가 환 $A$의 아핀 스킴이면 $S$-사상을 $A$-\emph{사상}이라고도
+한다.
+
+\begin{env}[2.5.3]
+\label{I.2.5.3-ko}
+\oldpage[I]{104}
+$X$가 $S$-준스킴이고 $v:X'\to X$가 준스킴의 사상이면, 합성 사상
+$X'\xrightarrow{v}X\to S$는 $X'$를 $S$-준스킴으로 정의한다. 특히
+$X$의 열린집합 $U$ 위에 유도된 모든 준스킴은 표준 단사사상을
+통하여 $S$-준스킴으로 볼 수 있다.
+
+$u:X\to Y$가 $S$-준스킴들의 $S$-사상이면, $X$의 열린집합 $U$ 위에
+유도된 모든 준스킴에 대한 $u$의 제한은 $S$-사상 $U\to Y$이다.
+역으로 $(U_\alpha)$가 $X$의 열린 덮개이고, 각 $\alpha$에 대하여
+$u_\alpha:U_\alpha\to Y$가 $S$-사상이라고 하자. 모든 지표쌍
+$(\alpha,\beta)$에 대하여 $U_\alpha\cap U_\beta$에 대한
+$u_\alpha$와 $u_\beta$의 제한이 일치하면, 각 $U_\alpha$에 대한
+제한이 $u_\alpha$인 $S$-사상 $X\to Y$가 유일하게 존재한다.
+
+$u:X\to Y$가 $u(X)\subset V$를 만족하는 $S$-사상이고 $V$가 $Y$의
+열린 부분집합이면, $u$를 $X$에서 $V$로 가는 사상으로 보아도 여전히
+$S$-사상이다.
+\end{env}
+
+\begin{env}[2.5.4]
+\label{I.2.5.4-ko}
+$S'\to S$를 준스킴의 사상이라 하자. 모든 $S'$-준스킴 $X$에 대하여
+합성 사상 $X\to S'\to S$는 $X$를 $S$-준스킴으로 정의한다.
+
+역으로 $S'$이 $S$의 한 열린집합 위에 유도된 준스킴이라고 하자.
+$X$가 $S$-준스킴이고 그 구조 사상 $f:X\to S$가
+$f(X)\subset S'$을 만족하면, $X$를 $S'$-준스킴으로 볼 수 있다.
+이 후자의 경우, $Y$가 바탕공간을 $S'$ 안으로 보내는 구조 사상을
+가진 $S$-준스킴이면, $X$에서 $Y$로 가는 모든 $S$-사상은
+$S'$-사상이기도 하다.
+\end{env}
+
+\begin{env}[2.5.5]
+\label{I.2.5.5-ko}
+$X$가 $S$-준스킴이고 $\varphi:X\to S$가 그 구조 사상이면,
+$S$에서 $X$로 가는 $S$-사상, 즉 $\varphi\circ\psi$가 $S$의
+항등사상인 준스킴의 사상 $\psi:S\to X$를 $X$의
+\emph{$S$-단면}이라 한다. $X$의 $S$-단면들의 집합을
+$\Gamma(X/S)$로 나타낸다.
+\end{env}

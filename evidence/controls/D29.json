@@ -1,0 +1,430 @@
+{
+  "schema": "ega_individual_diagram_gate_d29",
+  "stable_id": "EGA-I-10.5.6-P188-D1-F-PRIME-LABEL-SIDE",
+  "inventory_id": "DIA:ega1/ega1-10-fr.tex:766",
+  "pass": true,
+  "locator": {
+    "authority_pdf": {
+      "path": "C:\\Users\\Floris\\Documents\\Papors\\OS\\NUMDAM\\EGA_I_PMIHES_1960_4.pdf",
+      "bytes": 31680717,
+      "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6",
+      "pdf_one_based_page": 187,
+      "printed_page": "I p.188"
+    },
+    "french_source": {
+      "relative_path": "ega1/ega1-10-fr.tex",
+      "diagram_line": 766,
+      "diagram_offset": 34410
+    },
+    "english_source": {
+      "relative_path": "ega1/ega1-10.tex",
+      "diagram_line": 356,
+      "diagram_offset": 31330
+    },
+    "french_reader": {
+      "physical_page": 127,
+      "pdf_bytes": 2004668,
+      "pdf_sha256": "94A63DE3081327E21ABD06F6C3999767F8773755D802BB433AC415EAD5846565",
+      "reader_control": "B37X"
+    },
+    "english_reader": {
+      "physical_page": 365,
+      "pdf_bytes": 14589660,
+      "pdf_sha256": "0CBDEB0D08FD4906CD0ECD82A23B0EE19B98D7A9DFE320940438409D9D98AEC5",
+      "reader_control": "B228"
+    }
+  },
+  "authority_witness": {
+    "path": "qa/ega1/P187d1c-5k.png",
+    "bytes": 96992,
+    "sha256": "BB1B1041AA049803CA9F5461F3D2AD08CF3FCBD195907702843492D3B5456826",
+    "pixels": [
+      8333,
+      3200
+    ],
+    "dpi_equivalent": 5000,
+    "finding": "complete direct-NUMDAM square; f above top edge and f-prime below bottom edge",
+    "relative_path": "qa/ega1/P187d1c-5k.png",
+    "unique_tightly_bounded_crop": true,
+    "result": "complete direct-authority square accepted"
+  },
+  "french_output_witness": {
+    "path": "qa/ega1/F127d1c-5k.png",
+    "bytes": 689059,
+    "sha256": "F45FD0DF5ABEFF356613BA856F6E0A70FA7DDFBDFB45F767D087111A2F619F04",
+    "pixels": [
+      10500,
+      4833
+    ],
+    "dpi_equivalent": 5000,
+    "finding": "accepted postimage: complete graph and f-prime label side match authority",
+    "relative_path": "qa/ega1/F127d1c-5k.png",
+    "unique_tightly_bounded_crop": true,
+    "result": "complete current diplomatic French graph matches authority after repair"
+  },
+  "english_output_witness": {
+    "path": "b228/p365d1-5k.png",
+    "bytes": 715729,
+    "sha256": "699301BD3C0ECC84EA800BB3ED589EEB5FF2A7F7ABE24688CE18E2E2B92D2C31",
+    "pixels": [
+      11667,
+      5000
+    ],
+    "dpi_equivalent": 5000,
+    "finding": "accepted postimage: complete graph and f-prime label side match authority",
+    "relative_path": "English b228/p365d1-5k.png",
+    "unique_tightly_bounded_crop": true,
+    "result": "complete current standalone English graph matches authority after repair"
+  },
+  "complete_directed_graph": {
+    "objects": [
+      {
+        "id": "TL",
+        "text": "(mathfrak X, O_mathfrak X)"
+      },
+      {
+        "id": "TR",
+        "text": "(mathfrak Y, O_mathfrak Y)"
+      },
+      {
+        "id": "BL",
+        "text": "(mathfrak X, O_mathfrak X / J)"
+      },
+      {
+        "id": "BR",
+        "text": "(mathfrak Y, O_mathfrak Y / K)"
+      }
+    ],
+    "edges": [
+      {
+        "from": "TL",
+        "to": "TR",
+        "direction": "right",
+        "label": "f",
+        "label_side": "above"
+      },
+      {
+        "from": "BL",
+        "to": "BR",
+        "direction": "right",
+        "label": "f-prime",
+        "label_side": "below"
+      },
+      {
+        "from": "BL",
+        "to": "TL",
+        "direction": "up",
+        "label": null
+      },
+      {
+        "from": "BR",
+        "to": "TR",
+        "direction": "up",
+        "label": null
+      }
+    ],
+    "verified_absences": [
+      "no diagonal, reverse, or additional edge",
+      "no hook or equality marker",
+      "no label on either vertical edge",
+      "no attached punctuation"
+    ]
+  },
+  "visual_comparison": {
+    "authority_to_french": "PASS after one-byte label-side repair: all objects, edges, directions, f and f-prime glyphs and sides, geometry, and absences match",
+    "authority_to_english": "PASS after independent one-byte repair and independently localized exact-5000-dpi output crop",
+    "preimage_failure": "both standalone readers placed f-prime above the lower edge while NUMDAM places it below",
+    "source_to_source": "macro spellings differ, but both one-byte label-side repairs yield the same complete graph"
+  },
+  "source_disposition": {
+    "french": {
+      "changed": true,
+      "before": {
+        "bytes": 159764,
+        "sha256": "9DD82C1E8ECF26F1785EA26FA72044F625411B1CF721A25F561654ADF3472AC0"
+      },
+      "after": {
+        "bytes": 159764,
+        "sha256": "C24494C8F11DD67746514F767CD94B360A6F243F7ABC247789BDB751822B5035"
+      },
+      "slice_offset": 34410,
+      "slice_bytes": 295,
+      "slice_pre_sha256": "A965E04B52FE118654A49D45507B9AAD05D16D9221F374D2CECA5996C2487272",
+      "slice_post_sha256": "30918D0F53B131494D97A953585368EC5883BCFF3A9AD6477F2C1804E37AD847",
+      "edit_byte_offset": 34615
+    },
+    "english": {
+      "changed": true,
+      "before": {
+        "bytes": 143891,
+        "sha256": "F6553DA9AD9D42F17DC81A3B56E688FA486CB46AAA3B06D09BDE3F51B98BF101"
+      },
+      "after": {
+        "bytes": 143891,
+        "sha256": "A6D326DBFA8D002FBE92B6A451566FAB172B4D70E05DA6DEAE9259F7BDB113EA"
+      },
+      "slice_offset": 31330,
+      "slice_bytes": 246,
+      "slice_pre_sha256": "8EF7B61E31FD7607C216EB2C80433A78804CE78F0B84374D86B071B61E2C3B48",
+      "slice_post_sha256": "A223CDCE48C2BE7CC8FB559CB462030A72413DF90053A55CCEB0D95402431503",
+      "edit_byte_offset": 31498
+    },
+    "exact_inverse": "restore ^ at French UTF-8 byte offset 34615 and English UTF-8 byte offset 31498; this reproduces F37Y and R237 source trees exactly"
+  },
+  "rejected_localization_witnesses": [
+    {
+      "path": "C:/tmp/EGA-d29/f128.png",
+      "reason": "wrong French physical page; contains the following diagram"
+    },
+    {
+      "path": "C:/tmp/EGA-d29/e366.png",
+      "reason": "wrong English physical page; contains the following diagram"
+    },
+    {
+      "path": "C:/tmp/EGA-d29/la.png",
+      "reason": "admitted neighboring authority prose"
+    },
+    {
+      "path": "C:/tmp/EGA-d29/lf.png",
+      "reason": "admitted neighboring French prose"
+    },
+    {
+      "path": "C:/tmp/EGA-d29/le.png",
+      "reason": "admitted neighboring English prose"
+    },
+    {
+      "path": "qa/ega1/P187d1-5k.png",
+      "reason": "exact-5000-dpi authority crop admitted neighboring ink at lower edge"
+    }
+  ],
+  "controls": {
+    "predecessor": {
+      "path": "controls/D28.json",
+      "bytes": 11937,
+      "sha256": "E9AB35A43C8C4DE9CDE14C1A56437860F03DE839B26A81A502BA4DF17EC7E20A"
+    },
+    "inventory_predecessor": {
+      "path": "controls/DIA28.json",
+      "bytes": 99789,
+      "sha256": "FF3D4F67316A1BCEFCB96FCC8E59BDD93693EF5CFECAF2D6A5D536DBA2214C12"
+    },
+    "quarantine_predecessor": {
+      "path": "controls/Q37BA.json",
+      "bytes": 5746,
+      "sha256": "71E18A1EA6FCD6A9695D3DF063C27D8301A84E881D347D2613D4BE2457A0CA7D"
+    },
+    "french_source_manifest": {
+      "path": "controls/F37Z.json",
+      "bytes": 45172,
+      "sha256": "E0C9682CF0332B3810A000730E5B84AAFAD5FD3D3092D41C9E1DB10095F85038"
+    },
+    "french_reader": {
+      "path": "controls/B37X.json",
+      "bytes": 7822,
+      "sha256": "1C3F0947F9EAB862940F1A9B981446A568E999D345B72D5A32B1C08747693F75"
+    },
+    "english_source_manifest": {
+      "path": "English controls/R238.json",
+      "bytes": 260121,
+      "sha256": "8B1360276AA9ABE8AD51568EF01758ED579F8F301AA0F4591F36999182CF08CB"
+    },
+    "english_reader": {
+      "path": "English controls/B228.json",
+      "bytes": 8563,
+      "sha256": "1F862012D2F5842AFA86B30049874E7702ED9B7832FC43372B952844DD9DF10F"
+    }
+  },
+  "pagination_replay": {
+    "french_physical_page": 127,
+    "english_physical_page": 365,
+    "changed": false,
+    "french_reader_rebuilt": true,
+    "english_reader_rebuilt": true
+  },
+  "temporary_locators": {
+    "path": "C:/tmp/EGA-d29",
+    "files": [
+      {
+        "name": "a187.png",
+        "bytes": 234559,
+        "sha256": "B0410D790EB29D7A60776D4557C0DF204491DB950D48F57663557422177708E0",
+        "purpose": "authority page localization",
+        "pixels": [
+          1257,
+          1571
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "a5k.png",
+        "bytes": 109807,
+        "sha256": "A0B03D751246EFDA1848CB39EDB65E5A949FC2F61983796F7C7E637AFD190A0F",
+        "purpose": "rejected exact-5000-dpi authority crop; neighboring ink at lower edge",
+        "pixels": [
+          8333,
+          3667
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "a5kc.png",
+        "bytes": 96992,
+        "sha256": "BB1B1041AA049803CA9F5461F3D2AD08CF3FCBD195907702843492D3B5456826",
+        "purpose": "accepted exact-5000-dpi authority crop; copied to qa/ega1/P187d1c-5k.png",
+        "pixels": [
+          8333,
+          3200
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "e365.png",
+        "bytes": 446638,
+        "sha256": "E3ADEF06DDC1B1C3972036BDEA793F52B12AF4AAB523BA9D20D270D28A928DB2",
+        "purpose": "accepted English target-page localization",
+        "pixels": [
+          1275,
+          1650
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "e366.png",
+        "bytes": 425009,
+        "sha256": "93E6BBF21D04DCC868323F0B23B7B3F85E73F7173CF2F071CE89E3DD61CD9EA9",
+        "purpose": "rejected wrong English page; contains the following diagram",
+        "pixels": [
+          1275,
+          1650
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "e5k.png",
+        "bytes": 715376,
+        "sha256": "FB4817B8181A0E5323BDF443E6E5FC446D4542A8150A34DAA2B0F4B95129BA7B",
+        "purpose": "exact-5000-dpi English preimage; copied to b227/p365d1-5k.png",
+        "pixels": [
+          11667,
+          5000
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "e5kc.png",
+        "bytes": 715729,
+        "sha256": "699301BD3C0ECC84EA800BB3ED589EEB5FF2A7F7ABE24688CE18E2E2B92D2C31",
+        "purpose": "accepted exact-5000-dpi English postimage; copied to b228/p365d1-5k.png",
+        "pixels": [
+          11667,
+          5000
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "f127.png",
+        "bytes": 320893,
+        "sha256": "6BBFD870F6E9D8BE04D721425333DA63D1F60304CA84C591BA82355226FB98D8",
+        "purpose": "accepted French target-page localization",
+        "pixels": [
+          1241,
+          1754
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "f128.png",
+        "bytes": 276652,
+        "sha256": "05939AB619687336F0584012898E49D1B049FA0B6A1503FAB72C082E4CF71C98",
+        "purpose": "rejected wrong French page; contains the following diagram",
+        "pixels": [
+          1241,
+          1754
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "f5k.png",
+        "bytes": 689278,
+        "sha256": "5E5CAFE5F019AA4E1A43B83AD879B2D9E1097BCE7E61836D480770A2732DFCED",
+        "purpose": "exact-5000-dpi French preimage; copied to qa/ega1/F127d1-5k.png",
+        "pixels": [
+          10500,
+          4833
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "f5kc.png",
+        "bytes": 689059,
+        "sha256": "F45FD0DF5ABEFF356613BA856F6E0A70FA7DDFBDFB45F767D087111A2F619F04",
+        "purpose": "accepted exact-5000-dpi French postimage; copied to qa/ega1/F127d1c-5k.png",
+        "pixels": [
+          10500,
+          4833
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "la.png",
+        "bytes": 4196,
+        "sha256": "237BE2983752900FD480A3D662ED1CC5D59AE829F04174A5A9CD950966C21A65",
+        "purpose": "low-resolution authority coordinate locator; admits neighboring prose and is not a witness",
+        "pixels": [
+          280,
+          130
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "le.png",
+        "bytes": 6350,
+        "sha256": "A26E65A7F7B067AA6543F2316174860740BB20A8A350DC4F43A9E7134269C8E2",
+        "purpose": "low-resolution English coordinate locator; admits neighboring prose and is not a witness",
+        "pixels": [
+          380,
+          180
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "lf.png",
+        "bytes": 5570,
+        "sha256": "C492E978DA6707169BB7A25225F67017B753F7B1AC5A1394656ABB3EC94EA015",
+        "purpose": "low-resolution French coordinate locator; admits neighboring prose and is not a witness",
+        "pixels": [
+          360,
+          175
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "mk.py",
+        "bytes": 32816,
+        "sha256": "C97D3B288F2B33F162FF79AD23302257DF331160D8F9FC2B31ECA97029F38667",
+        "purpose": "bounded deterministic control generator"
+      }
+    ],
+    "total_bytes": 4768924,
+    "disposition": "15 bounded localization, render, and generator files; exact inventory retained here and directory queued for verified removal"
+  },
+  "semantic_disposition": "the diplomatic French and standalone English readers now match direct authority in label side; no semantic scaffold was mutated",
+  "adverse_events": [
+    "two PowerShell wrappers contained an empty pipe and stopped at parse time before any filesystem action; corrected wrappers passed",
+    "French p.128 and English p.366 were rejected as wrong-page localization guesses",
+    "three broad low-resolution coordinate crops admitted neighboring prose and were retained only as rejected locator evidence",
+    "the first authority exact-5000-dpi crop admitted neighboring ink and was rejected before certification",
+    "pdftocairo reported familiar nonfatal missing display-font aliases while rendering authority; every accepted glyph was personally inspected"
+  ],
+  "resource_policy": {
+    "new_ocr": false,
+    "agents_used": 0,
+    "serialized_build_passes": 6,
+    "failed_pre_execution_wrappers": 2,
+    "low_resolution_locator_files": 8,
+    "high_resolution_crops": 6,
+    "rejected_high_resolution_crops": 1
+  },
+  "edition_separation": "French and English remain independent standalone editions; no bilingual artifact was created, built, or published",
+  "publication": "quarantined; the DIA29 successor must leave 54 retrospective items pending"
+}

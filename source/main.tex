@@ -31,9 +31,15 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\bibname}{참고문헌}
 \renewcommand{\contentsname}{목차}
+\makeatletter
+\renewcommand{\@pnumwidth}{2em}
+\renewcommand{\@tocrmarg}{3em}
+\makeatother
 \newcommand{\oldpage}[2][]{%
   \setcounter{footnote}{0}%
   \marginpar{\scriptsize\textbf{#1}~|~#2}\ignorespaces}
+\newcommand{\agref}[2]{%
+  \ifcsname r@#1\endcsname\hyperref[#1]{#2}\else#2\fi}
 \newenvironment{env}[1][]{\par\medskip\noindent\textbf{(#1)}\ }{\par}
 \newenvironment{definition}[1][]{%
   \par\medskip\noindent\itshape 정의 (#1). ---\ }{\par}
@@ -67,5 +73,16 @@
 \input{intro.tex}
 \clearpage
 \input{c0.tex}
+\input{c1front.tex}
+\input{c1s1.tex}
+\input{c1s2.tex}
+\input{c1s3.tex}
+\input{c1s4.tex}
+\input{c1s5.tex}
+\input{c1s6.tex}
+\input{c1s7.tex}
+\input{c1s8.tex}
+\input{c1s9.tex}
+\input{c1s10.tex}
 \input{bib.tex}
 \end{document}

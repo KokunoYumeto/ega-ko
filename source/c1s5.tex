@@ -1,0 +1,1138 @@
+\section{축소 준스킴; 분리 조건}
+\label{section:I.5-ko}
+
+\subsection{축소 준스킴}
+\label{subsection:I.5.1-ko}
+
+\begin{proposition}[5.1.1]
+\label{I.5.1.1-ko}
+$(X,\mathscr{O}_X)$를 준스킴, $\mathscr{B}$를 준연접
+$\mathscr{O}_X$-대수라 하자. 모든 $x\in X$에서 줄기 $\mathscr{N}_x$가
+환 $\mathscr{B}_x$의 멱영근기가 되는 유일한 준연접
+$\mathscr{O}_X$-가군 $\mathscr{N}$이 존재한다. $X$가 아핀이고 따라서
+$\mathscr{B}=\widetilde{B}$이며 $B$가 $A(X)$ 위의 대수이면,
+$\mathscr{N}=\widetilde{\mathfrak{N}}$이다. 여기서 $\mathfrak{N}$은
+$B$의 멱영근기이다.
+\end{proposition}
+
+\oldpage[I]{128}
+문제는 국소적이므로 마지막 주장만 증명하면 된다.
+$\widetilde{\mathfrak{N}}$은 준연접 $\mathscr{O}_X$-가군이고
+(\hyperref[I.1.4.1-ko]{1.4.1}), 점 $x\in X$에서 그 줄기는 분수환
+$B_x$의 아이디얼 $\mathfrak{N}_x$이다. 따라서 반대쪽 포함관계는
+자명하므로, $B_x$의 멱영근기가 $\mathfrak{N}_x$에 포함됨을 보이면
+충분하다. $z\in B$, $s\notin\mathfrak{j}_x$이고 $z/s$가 $B_x$의
+멱영원이라고 하자. 가정에 따라 $(z/s)^k=0$인 정수 $k$가 존재하고,
+이는 $tz^k=0$인 $t\notin\mathfrak{j}_x$가 존재한다는 뜻이다. 그러면
+$(tz)^k=0$이고, 따라서 $z/s=(tz)/(ts)$는 $\mathfrak{N}_x$에 속한다.
+
+이렇게 정의한 준연접 $\mathscr{O}_X$-가군 $\mathscr{N}$을
+$\mathscr{O}_X$-대수 $\mathscr{B}$의 \emph{멱영근기}라 부른다. 특히
+$\mathscr{O}_X$의 멱영근기를 $\mathscr{N}_X$로 쓴다.
+
+\begin{corollary}[5.1.2]
+\label{I.5.1.2-ko}
+$X$를 준스킴이라 하자. 아이디얼층 $\mathscr{N}_X$로 정의된 $X$의
+닫힌 부분준스킴은 $X$를 바탕공간으로 갖는 유일한 축소 부분준스킴
+(\hyperref[0.4.1.4-ko]{0, 4.1.4})이다. 또한 이는 $X$를 바탕공간으로
+갖는 $X$의 가장 작은 부분준스킴이다.
+\end{corollary}
+
+$\mathscr{N}_X$로 정의된 닫힌 부분준스킴 $Y$의 구조층은
+$\mathscr{O}_X/\mathscr{N}_X$이다. 모든 $x\in X$에 대하여
+$\mathscr{N}_x\ne\mathscr{O}_x$이므로 $Y$가 축소이고 $X$를
+바탕공간으로 갖는다는 것은 자명하다. 나머지 주장을 증명하기 위하여,
+$X$를 바탕공간으로 갖는 $X$의 부분준스킴 $Z$가 모든 $x\in X$에
+대하여 $\mathscr{J}_x\ne\mathscr{O}_x$인 아이디얼층 $\mathscr{J}$로
+정의됨을 주목하자(\hyperref[I.4.1.3-ko]{4.1.3}). $X$가 아핀인 경우로
+환원할 수 있다. $X=\operatorname{Spec}(A)$,
+$\mathscr{J}=\widetilde{\mathfrak{J}}$라 하고 $\mathfrak{J}$를 $A$의
+아이디얼이라 하자. 그러면 모든 $x\in X$에 대하여
+$\mathfrak{J}\subset\mathfrak{j}_x$이다. 따라서 $\mathfrak{J}$는
+$A$의 모든 소 아이디얼, 곧 그 교집합인 $A$의 멱영근기
+$\mathfrak{N}$에 포함된다. 이로부터 $Y$가 $X$를 바탕공간으로 갖는
+$X$의 가장 작은 부분준스킴임이 따른다
+(\hyperref[I.4.1.9-ko]{4.1.9}). 더욱이 $Z$가 $Y$와 다르면 적어도 한
+$x\in X$에 대하여 $\mathscr{J}_x\ne\mathscr{N}_x$이고, 따라서
+(\hyperref[I.5.1.1-ko]{5.1.1})에 의하여 $Z$는 축소가 아니다.
+
+\begin{definition}[5.1.3]
+\label{I.5.1.3-ko}
+준스킴 $X$에 대응하며 $X$를 바탕공간으로 갖는 유일한 축소
+부분준스킴을 $X$에 대응하는 축소 준스킴이라 하고
+$X_{\mathrm{red}}$로 쓴다.
+\end{definition}
+
+그러므로 준스킴 $X$가 축소라는 것은 $X=X_{\mathrm{red}}$임을 뜻한다.
+
+\begin{proposition}[5.1.4]
+\label{I.5.1.4-ko}
+환 $A$의 소 스펙트럼이 축소 준스킴(각각 정역 준스킴)
+(\hyperref[I.2.1.8-ko]{2.1.8})이기 위한 필요충분조건은 $A$가
+축소환(각각 정역)인 것이다.
+\end{proposition}
+
+실제로 (\hyperref[I.5.1.1-ko]{5.1.1})에서
+$X=\operatorname{Spec}(A)$가 축소이기 위한 필요충분조건이
+$\mathscr{N}=(0)$임을 곧바로 얻는다. 정역에 관한 주장은
+(\hyperref[I.1.1.13-ko]{1.1.13})에서 따른다.
+
+정역의 영환이 아닌 모든 분수환은 정역이므로,
+(\hyperref[I.5.1.4-ko]{5.1.4})에서 모든 \emph{국소 정역 준스킴}
+$X$와 모든 $x\in X$에 대하여 $\mathscr{O}_x$가 \emph{정역}임이
+따른다. $X$의 바탕공간이 \emph{국소 뇌터}이면 그 역도 성립한다.
+실제로 이때 $X$는 축소이다. $X$의 아핀 열린집합 $U$가 뇌터 공간이면
+$U$의 기약 성분은 유한개뿐이고, 따라서 그 환 $A$의 극소 소
+아이디얼도 유한개뿐이다(\hyperref[I.1.1.14-ko]{1.1.14}). 이 성분들
+$U_i$ 가운데 둘이 공통점 $x$를 가지면 $\mathscr{O}_x$는 서로 다른
+극소 소 아이디얼을 적어도 둘 가지므로 정역이 아니다. 따라서
+$U_i$들은 서로소인 열린집합이고, 각각 정역 준스킴이다.
+
+\begin{env}[5.1.5]
+\label{I.5.1.5-ko}
+$f=(\psi,\theta):X\to Y$를 준스킴의 사상이라 하자. 준동형
+\oldpage[I]{129}
+$\theta_x^\sharp:\mathscr{O}_{\psi(x)}\to\mathscr{O}_x$는
+$\mathscr{O}_{\psi(x)}$의 모든 멱영원을 $\mathscr{O}_x$의 멱영원으로
+보낸다. 그러므로 몫을 취하면 $\theta^\sharp$에서 준동형
+\[
+  \omega:\psi^*(\mathscr{O}_Y/\mathscr{N}_Y)
+  \longrightarrow \mathscr{O}_X/\mathscr{N}_X
+\]
+를 얻는다. 모든 $x\in X$에 대하여
+$\omega_x:\mathscr{O}_{\psi(x)}/\mathscr{N}_{\psi(x)}
+\to\mathscr{O}_x/\mathscr{N}_x$가 국소 준동형임은 명백하다. 따라서
+$(\psi,\omega^b)$는 준스킴의 사상
+$X_{\mathrm{red}}\to Y_{\mathrm{red}}$이다. 이를 $f_{\mathrm{red}}$로
+쓰고 $f$에 대응하는 \emph{축소} 사상이라 부른다. 두 사상
+$f:X\to Y$, $g:Y\to Z$에 대하여
+$(g\circ f)_{\mathrm{red}}=g_{\mathrm{red}}\circ f_{\mathrm{red}}$임은
+자명하다. 따라서 $X_{\mathrm{red}}$는 $X$에 관한 \emph{공변 함자}로
+정의되었다.
+
+앞의 정의에서 도식
+\[
+  \xymatrix{
+    X_{\mathrm{red}}\ar[r]^{f_{\mathrm{red}}}\ar[d] &
+    Y_{\mathrm{red}}\ar[d]\\
+    X\ar[r]_f & Y
+  }
+\]
+이 가환임이 따른다. 여기서 세로 화살표는 포함 사상이다. 다시 말해
+$X_{\mathrm{red}}\to X$는 \emph{함자적}인 사상이다. 특히 $X$가
+\emph{축소}이면 모든 사상 $f:X\to Y$는
+$X\xrightarrow{f_{\mathrm{red}}}Y_{\mathrm{red}}\to Y$로
+인수분해된다. 다시 말해 $f$는 포함 사상
+$Y_{\mathrm{red}}\to Y$를 통하여 \emph{인수분해된다}.
+\end{env}
+
+\begin{proposition}[5.1.6]
+\label{I.5.1.6-ko}
+$f:X\to Y$를 사상이라 하자. $f$가 전사(각각 라디시엘 사상, 몰입
+사상, 닫힌 몰입 사상, 열린 몰입 사상, 국소 몰입 사상, 국소
+동형사상)이면 $f_{\mathrm{red}}$도 그러하다. 역으로
+$f_{\mathrm{red}}$가 전사(각각 라디시엘 사상)이면 $f$도 그러하다.
+\end{proposition}
+
+$f$가 전사인 경우 명제는 자명하다. $f$가 라디시엘 사상이면, 모든
+$x\in X$에 대하여 체 $k(x)$가 준스킴 $X$와 $X_{\mathrm{red}}$에서
+동일하다는 사실에서 명제가 따른다
+(\hyperref[I.3.5.8-ko]{3.5.8}). 끝으로 $f=(\psi,\theta)$가 몰입 사상,
+닫힌 몰입 사상 또는 국소 몰입 사상(각각 열린 몰입 사상 또는 국소
+동형사상)이면, $\theta_x^\sharp$가 전사(각각 전단사)일 때
+$\mathscr{O}_{\psi(x)}$와 $\mathscr{O}_x$의 멱영근기로 몫을 취하여
+얻는 준동형도 전사(각각 전단사)라는 사실에서 명제가 따른다
+(\hyperref[I.5.1.2-ko]{5.1.2}와
+\hyperref[I.4.2.2-ko]{4.2.2}; 또한
+(\agref{I.5.5.12-ko}{5.5.12}) 참조).
+
+\begin{proposition}[5.1.7]
+\label{I.5.1.7-ko}
+$X$, $Y$가 두 $S$-준스킴이면, 준스킴
+$X_{\mathrm{red}}\times_{S_{\mathrm{red}}}Y_{\mathrm{red}}$와
+$X_{\mathrm{red}}\times_S Y_{\mathrm{red}}$는 동일하며,
+$X\times_S Y$와 같은 바탕공간을 갖는 $X\times_S Y$의 부분준스킴과 표준적으로
+동일시된다.
+\end{proposition}
+
+$X_{\mathrm{red}}\times_S Y_{\mathrm{red}}$가 $X\times_S Y$와 같은
+바탕공간을 갖는 $X\times_S Y$의 부분준스킴과 표준적으로 동일시되는 것은
+(\hyperref[I.4.3.1-ko]{4.3.1})에서 따른다. 한편 $\varphi$와 $\psi$가
+구조 사상 $X_{\mathrm{red}}\to S$, $Y_{\mathrm{red}}\to S$이면, 이들은
+$S_{\mathrm{red}}$를 통하여 인수분해된다
+(\hyperref[I.5.1.5-ko]{5.1.5}). $S_{\mathrm{red}}\to S$는
+단사사상이므로 첫째 주장은 (\hyperref[I.3.2.4-ko]{3.2.4})에서
+따른다.
+
+\begin{corollary}[5.1.8]
+\label{I.5.1.8-ko}
+준스킴 $(X\times_S Y)_{\mathrm{red}}$와
+$(X_{\mathrm{red}}\times_{S_{\mathrm{red}}}Y_{\mathrm{red}})_{\mathrm{red}}$는
+표준적으로 동일시된다.
+\end{corollary}
+
+이는 (\hyperref[I.5.1.2-ko]{5.1.2}와
+\hyperref[I.5.1.7-ko]{5.1.7})에서 따른다.
+
+$X$와 $Y$가 축소 준스킴이어도 $X\times_S Y$가 반드시 축소인 것은
+아니다. 두 축소 대수의 텐서곱에 멱영원이 있을 수 있기 때문이다.
+
+\begin{proposition}[5.1.9]
+\label{I.5.1.9-ko}
+\oldpage[I]{130}
+$X$를 준스킴, $\mathscr{J}$를 어떤 정수 $n>0$에 대하여
+$\mathscr{J}^n=0$인 $\mathscr{O}_X$의 준연접 아이디얼층이라 하자.
+$X_0$를 $X$의 닫힌 부분준스킴
+$(X,\mathscr{O}_X/\mathscr{J})$라 하자. $X$가 아핀 스킴이기 위한
+필요충분조건은 $X_0$가 아핀 스킴인 것이다.
+\end{proposition}
+
+조건이 필요하다는 것은 자명하므로 충분함을 증명하자.
+$X_k=(X,\mathscr{O}_X/\mathscr{J}^{k+1})$라 두면, $k$에 관한 귀납법으로
+각 $X_k$가 아핀임을 증명하면 충분하다. 따라서 $\mathscr{J}^2=0$인
+경우로 환원된다. 다음과 같이 놓자.
+\[
+  A=\Gamma(X,\mathscr{O}_X),\qquad
+  A_0=\Gamma(X_0,\mathscr{O}_{X_0})
+      =\Gamma(X,\mathscr{O}_X/\mathscr{J}).
+\]
+표준 준동형 $\mathscr{O}_X\to\mathscr{O}_X/\mathscr{J}$에서 환의
+준동형 $\varphi:A\to A_0$를 얻는다. 아래에서 $\varphi$가
+\emph{전사}임을 보일 것이다. 그러면 열
+\[
+  0\to\Gamma(X,\mathscr{J})\to\Gamma(X,\mathscr{O}_X)
+  \to\Gamma(X,\mathscr{O}_X/\mathscr{J})\to 0
+  \tag{5.1.9.1}\label{I.5.1.9.1-ko}
+\]
+은 \emph{완전}하다. 이 점을 안다고 하고, 그것이 명제를 함의함을
+보이자. $\mathfrak{K}=\Gamma(X,\mathscr{J})$는 $A$의 제곱영
+아이디얼이고, 따라서 $A_0=A/\mathfrak{K}$ 위의 가군이다. 가정에
+따라 $X_0=\operatorname{Spec}(A_0)$이고, 바탕 위상공간 $X_0$와 $X$는
+동일하므로 $\mathfrak{K}=\Gamma(X_0,\mathscr{J})$이다. 또한
+$\mathscr{J}^2=0$이므로 $\mathscr{J}$는 준연접
+$(\mathscr{O}_X/\mathscr{J})$-가군이다. 따라서
+$\mathscr{J}\simeq\widetilde{\mathfrak{K}}$이고, 모든 $x\in X_0$에
+대하여 $\mathfrak{K}_x=\mathscr{J}_x$이다
+(\hyperref[I.1.4.1-ko]{1.4.1}).
+
+이제 $X'=\operatorname{Spec}(A)$라 하고, 항등 사상
+$A\to\Gamma(X,\mathscr{O}_X)$에 대응하는 준스킴의 사상
+$f=(\psi,\theta):X\to X'$를 생각하자
+(\hyperref[I.2.2.4-ko]{2.2.4}). $X$의 모든 아핀 열린집합 $V$에 대하여
+도식
+\[
+  \xymatrix{
+    A\ar[r]\ar[d] & \Gamma(V,\mathscr{O}_X|V)\ar[d]\\
+    A_0=A/\mathfrak{K}\ar[r] & \Gamma(V,\mathscr{O}_{X_0}|V)
+  }
+\]
+은 가환이다. 따라서 도식
+\[
+  \xymatrix{
+    X' & X\ar[l]_f\\
+    X'_0\ar[u]^{j'} & X_0\ar[l]^{f_0}\ar[u]_j
+  }
+\]
+도 가환이다. 여기서 $X'_0$는 준연접 아이디얼층
+$\widetilde{\mathfrak{K}}$로 정의된 $X'$의 닫힌 부분준스킴이고,
+$j$, $j'$는 표준 포함 사상이다. $X_0$는 아핀이므로 $f_0$는
+동형사상이다. $j$와 $j'$의 바탕 연속사상은 항등사상이므로 먼저
+$\psi:X\to X'$가 위상동형사상임을 알 수 있다. 또한
+$\mathfrak{K}_x=\mathscr{J}_x$라는 관계에서
+$\theta^\sharp:\psi^*(\mathscr{O}_{X'})\to\mathscr{O}_X$의 제한이
+$\psi^*(\widetilde{\mathfrak{K}})$에서 $\mathscr{J}$ 위로 가는
+\emph{동형사상}임이 따른다. 한편 몫을 취하면 $f_0$가 동형사상이므로
+$\theta^\sharp$에서 \emph{동형사상}
+$\psi^*(\mathscr{O}_{X'}/\widetilde{\mathfrak{K}})
+\to\mathscr{O}_X/\mathscr{J}$를 얻는다. 따라서 5-보조정리
+$(\mathrm{M},\mathrm{I},1.1)$에서 $\theta^\sharp$ 자체가
+동형사상임이 곧바로 따른다. 그러므로 $f$는 \emph{동형사상}이고
+$X$는 아핀이다.
+
+이제 (\hyperref[I.5.1.9.1-ko]{5.1.9.1})의 완전성을 증명하면
+충분하다. 이는
+
+\oldpage[I]{131}
+$H^1(X,\mathscr{J})=0$에서 따른다. 그런데
+$H^1(X,\mathscr{J})=H^1(X_0,\mathscr{J})$이고, 앞에서
+$\mathscr{J}$가 준연접 $\mathscr{O}_{X_0}$-가군임을 보았다. 따라서
+우리의 주장은 다음 보조정리에서 따른다.
+
+\begin{lemma}[5.1.9.2]
+\label{I.5.1.9.2-ko}
+$Y$가 아핀 스킴이고 $\mathscr{F}$가 준연접
+$\mathscr{O}_Y$-가군이면 $H^1(Y,\mathscr{F})=0$이다.
+\end{lemma}
+
+이 보조정리는 제III장 §1에서, 모든 $i>0$에 대하여
+$H^i(Y,\mathscr{F})=0$이라는 더 일반적인 정리의 결과로 증명할
+것이다. 독립적인 증명을 주기 위하여, $H^1(Y,\mathscr{F})$가
+$\mathscr{F}$에 의한 $\mathscr{O}_Y$-가군 $\mathscr{O}_Y$의 확장류로
+이루어진 가군
+$\operatorname{Ext}^1_{\mathscr{O}_Y}
+(Y;\mathscr{O}_Y,\mathscr{F})$와 동일시됨을 주목하자
+$(\mathrm{T},4.2.3)$. 따라서 그러한 확장 $\mathscr{G}$가 자명함을
+보이면 충분하다. 모든 $y\in Y$에 대하여 $Y$에서 $y$의 근방 $V$가
+존재하여 $\mathscr{G}|V$가
+$\mathscr{F}|V\oplus\mathscr{O}_Y|V$와 동형이다
+(\hyperref[0.5.4.9-ko]{0, 5.4.9}). 따라서 $\mathscr{G}$는 준연접
+$\mathscr{O}_Y$-가군이다. $A$를 $Y$의 환이라 하면
+$\mathscr{F}=\widetilde{M}$, $\mathscr{G}=\widetilde{N}$이고, 여기서
+$M$, $N$은 $A$-가군이다. 가정에 따라 $N$은 $A$-가군 $M$에 의한
+$A$-가군 $A$의 확장이다(\hyperref[I.1.3.11-ko]{1.3.11}). 이 확장은
+반드시 자명하므로 보조정리가 증명되고, 따라서
+(\hyperref[I.5.1.9-ko]{5.1.9})도 증명된다.
+
+\begin{corollary}[5.1.10]
+\label{I.5.1.10-ko}
+$X$를 $\mathscr{N}_X$가 멱영인 준스킴이라 하자. $X$가 아핀 스킴이기
+위한 필요충분조건은 $X_{\mathrm{red}}$가 아핀 스킴인 것이다.
+\end{corollary}
+
+\subsection{주어진 바탕공간을 갖는 부분준스킴의 존재}
+\label{subsection:I.5.2-ko}
+
+\begin{proposition}[5.2.1]
+\label{I.5.2.1-ko}
+준스킴 $X$의 바탕공간의 모든 국소 닫힌 부분공간 $Y$에 대하여,
+$Y$를 바탕공간으로 갖는 $X$의 축소 부분준스킴이 유일하게 존재한다.
+\end{proposition}
+
+유일성은 (\hyperref[I.5.1.2-ko]{5.1.2})에서 따르므로, 문제의
+부분준스킴의 존재만 증명하면 된다.
+
+$X$가 환 $A$의 아핀 준스킴이고 $Y$가 $X$에서 닫혀 있으면 명제는
+곧바로 따른다. 실제로 $\mathfrak{j}(Y)$는
+$V(\mathfrak{a})=Y$를 만족하는 아이디얼 $\mathfrak{a}\subset A$ 가운데
+가장 큰 것이며 자기 근기와 같다
+(\hyperref[I.1.1.4-ko]{1.1.4 (i)}). 따라서
+$A/\mathfrak{j}(Y)$는 축소환이다.
+
+일반적인 경우, $U\cap Y$가 $U$에서 닫히도록 하는 모든 아핀
+열린집합 $U\subset X$에 대하여, $A(U)$의 아이디얼
+$\mathfrak{j}(U\cap Y)$에 대응하는 아이디얼층으로 정의된 $U$의 닫힌
+부분준스킴 $Y_U$를 생각하자. 이 부분준스킴은 축소이다. 이제 $V$가
+$U$에 포함되는 $X$의 아핀 열린집합이면, $Y_V$는 $V\cap Y$ 위에서
+$Y_U$에 의해 \emph{유도된} 부분준스킴임을 보이자. 그런데 이렇게
+유도된 준스킴은 $V$의 축소 닫힌 부분준스킴이고 $V\cap Y$를
+바탕공간으로 가지므로, $Y_V$의 유일성에 의해 주장이 따른다.
+
+\begin{proposition}[5.2.2]
+\label{I.5.2.2-ko}
+$X$를 축소 준스킴이라 하고, $f:X\to Y$를 사상, $Z$를
+$f(X)\subset Z$를 만족하는 $Y$의 닫힌 부분준스킴이라 하자. 그러면 $f$는
+$X\xrightarrow{g}Z\xrightarrow{j}Y$로 인수분해되며, 여기서 $j$는 포함
+사상이다.
+\end{proposition}
+
+가정에 따라 $X$의 닫힌 부분준스킴 $f^{-1}(Z)$의 바탕공간은 $X$
+전체이다 (\hyperref[I.4.4.1-ko]{4.4.1}). $X$가 축소이므로 이 닫힌
+부분준스킴은 $X$와 동일하다 (\hyperref[I.5.1.2-ko]{5.1.2}). 따라서
+명제는 (\hyperref[I.4.4.1-ko]{4.4.1})에서 따른다.
+
+\begin{corollary}[5.2.3]
+\label{I.5.2.3-ko}
+$X$를 준스킴 $Y$의 축소 부분준스킴이라 하자. $Z$가 $\overline{X}$를
+바탕공간으로 갖는 $Y$의 축소 닫힌 부분준스킴이면, $X$는 $Z$의 어떤
+열린집합 위에 유도된 부분준스킴이다.
+\end{corollary}
+
+\oldpage[I]{132}
+실제로 $Y$의 어떤 열린집합 $U$에 대하여, 바탕공간으로서
+$X=U\cap\overline{X}$이다. (\hyperref[I.5.2.2-ko]{5.2.2})에 따라 $X$는
+$Z$의 축소 부분준스킴이고, 유일성
+(\hyperref[I.5.2.1-ko]{5.2.1})에 따라 부분준스킴 $X$는 열린
+부분공간 $X$ 위에서 $Z$에 의해 유도된다.
+
+\begin{corollary}[5.2.4]
+\label{I.5.2.4-ko}
+$f:X\to Y$를 사상이라 하고, $X'$ (각각 $Y'$)를 $\mathscr{O}_X$의
+(각각 $\mathscr{O}_Y$의) 준연접 아이디얼층 $\mathscr{J}$
+(각각 $\mathscr{K}$)로 정의된 $X$의 (각각 $Y$의) 닫힌
+부분준스킴이라 하자. $X'$가 축소이고 $f(X')\subset Y'$라고 하자.
+그러면 $f^*(\mathscr{K})\mathscr{O}_X\subset\mathscr{J}$이다.
+\end{corollary}
+
+(\hyperref[I.5.2.2-ko]{5.2.2})에 따라 $f$를 $X'$에 제한한 사상이
+$X'\to Y'\to Y$로 인수분해되므로,
+(\hyperref[I.4.4.6-ko]{4.4.6})을 적용하면 충분하다.
+
+\subsection{대각선; 사상의 그래프}
+\label{subsection:I.5.3-ko}
+
+\begin{env}[5.3.1]
+\label{I.5.3.1-ko}
+$X$를 $S$-준스킴이라 하자. $X$에서 $X\times_S X$로 가는
+$S$-사상 $(1_X,1_X)_S$, 다시 말해
+\[
+  p_1\circ\Delta_X=p_2\circ\Delta_X=1_X
+  \tag{5.3.1.1}\label{I.5.3.1.1-ko}
+\]
+을 만족하는 유일한 $S$-사상 $\Delta_X$를 $X$의 \emph{대각 사상}이라
+하고 $\Delta_{X|S}$ 또는 $\Delta_X$, 혼동의 우려가 없으면 간단히
+$\Delta$로 쓴다. 여기서 $p_1$, $p_2$는 $X\times_S X$의 사영이다
+(정의 \hyperref[I.3.2.1-ko]{3.2.1}). $f:T\to X$, $g:T\to Y$가 두
+$S$-사상이면 곧바로
+\[
+  (f,g)_S=(f\times_S g)\circ\Delta_{T|S}
+  \tag{5.3.1.2}\label{I.5.3.1.2-ko}
+\]
+임을 확인할 수 있다.
+
+독자는 앞의 정의와 (\hyperref[I.5.3.1-ko]{5.3.1})부터 (5.3.8)까지
+서술한 결과가 어느 범주에서도
+\emph{그 안에 나타나는 곱들이 그 범주에 존재하기만 하면} 성립함을
+주목할 것이다.
+\end{env}
+
+\begin{proposition}[5.3.2]
+\label{I.5.3.2-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하자. 곱
+$(X\times Y)\times(X\times Y)$를
+$(X\times X)\times(Y\times Y)$와 표준적으로 동일시하면, 사상
+$\Delta_{X\times Y}$는 $\Delta_X\times\Delta_Y$와 동일시된다.
+\end{proposition}
+
+실제로 $p_1$, $q_1$이 각각 $X\times X\to X$,
+$Y\times Y\to Y$인 첫째 사영이면,
+$(X\times Y)\times(X\times Y)\to X\times Y$인 첫째 사영은
+$p_1\times q_1$과 동일시되고
+\[
+  (p_1\times q_1)\circ(\Delta_X\times\Delta_Y)
+  =(p_1\circ\Delta_X)\times(q_1\circ\Delta_Y)=1_{X\times Y}
+\]
+이다. 둘째 사영들에 대해서도 마찬가지이다.
+
+\begin{corollary}[5.3.4]
+\label{I.5.3.4-ko}
+밑준스킴의 모든 확장 $S'\to S$에 대하여,
+$\Delta_{X_{(S')}}$는 $(\Delta_X)_{(S')}$와 표준적으로 동일시된다.
+\end{corollary}
+
+실제로 $(X\times_S X)_{(S')}$가
+$X_{(S')}\times_{S'}X_{(S')}$와 표준적으로 동일시됨을 주목하면
+충분하다 (\hyperref[I.3.3.10-ko]{3.3.10}).
+
+\begin{proposition}[5.3.5]
+\label{I.5.3.5-ko}
+$X$, $Y$를 두 $S$-준스킴이라 하고, $\varphi:S\to T$를 모든
+$S$-준스킴에 $T$-준스킴의 구조를 주는 사상이라 하자. $f:X\to S$,
+$g:Y\to S$를 구조 사상, $p$, $q$를 $X\times_S Y$의 사영,
+$\pi=f\circ p=g\circ q$를 구조 사상 $X\times_S Y\to S$라 하자.
+그러면 그림
+\[
+  \xymatrix{
+    X\times_S Y\ar[r]^{(p,q)_T}\ar[d]_\pi &
+    X\times_T Y\ar[d]^{f\times_T g}\\
+    S\ar[r]_{\Delta_{S|T}} &
+    S\times_T S
+  }
+  \tag{5.3.5.1}\label{I.5.3.5.1-ko}
+\]
+\oldpage[I]{133}
+은 가환이고, $X\times_S Y$를 $(S\times_T S)$-준스킴 $S$와
+$X\times_T Y$의 곱과 동일시한다. 이때 사영들은 각각 $\pi$와
+$(p,q)_T$로 동일시된다.
+\end{proposition}
+
+(\hyperref[I.3.4.3-ko]{3.4.3})에 따라, $Z$를 임의의 $T$-준스킴이라
+하고 $X$, $Y$, $S$를 각각 $X(Z)_T$, $Y(Z)_T$, $S(Z)_T$로 바꾸어
+얻는 \emph{집합의 범주 안에서}의 대응하는 명제를 증명하면 된다.
+집합의 범주에서는 확인이 즉각적이므로 독자에게 맡긴다.
+
+\begin{corollary}[5.3.6]
+\label{I.5.3.6-ko}
+$P=S\times_T S$라 놓으면 사상 $(p,q)_T$는
+$1_{X\times_T Y}\times_P\Delta_S$와 동일시된다.
+\end{corollary}
+
+이는 (\hyperref[I.5.3.5-ko]{5.3.5})와
+(\hyperref[I.3.3.4-ko]{3.3.4})에서 따른다.
+
+\begin{corollary}[5.3.7]
+\label{I.5.3.7-ko}
+$f:X\to Y$가 $S$-사상이면 그림
+\[
+  \xymatrix{
+    X\ar[r]^{(1_X,f)_S}\ar[d]_f &
+    X\times_S Y\ar[d]^{f\times_S 1_Y}\\
+    Y\ar[r]_{\Delta_Y} &
+    Y\times_S Y
+  }
+\]
+은 가환이고, $X$를 $(Y\times_S Y)$-준스킴 $Y$와
+$X\times_S Y$의 곱과 동일시한다.
+\end{corollary}
+
+(\hyperref[I.5.3.5-ko]{5.3.5})에서 $S$를 $Y$로, $T$를 $S$로
+바꾸고 $X\times_Y Y=X$임을 주목하면 충분하다
+(\hyperref[I.3.3.3-ko]{3.3.3}).
+
+\begin{proposition}[5.3.8]
+\label{I.5.3.8-ko}
+$f:X\to Y$가 준스킴의 단사사상이기 위한 필요충분조건은
+$\Delta_{X|Y}$가 $X$에서 $X\times_Y X$ 위로 가는 동형사상인 것이다.
+\end{proposition}
+
+실제로 $f$가 단사사상이라는 것은 모든 $Y$-준스킴 $Z$에 대하여
+대응하는 사상 $f':X(Z)_Y\to Y(Z)_Y$가 단사라는 뜻이다.
+$Y(Z)_Y$에는 원소가 하나뿐이므로, 이는 $X(Z)_Y$의 원소가 많아야
+하나라는 뜻이다. 이는 다시 $X(Z)_Y\times X(Z)_Y$가
+$X(Z)_Y$와 표준적으로 동형이라는 말과 같다. 첫째 집합은
+(\hyperref[I.3.4.3.1-ko]{3.4.3.1})에 따라
+$(X\times_Y X)(Z)_Y$이므로, 이는 $\Delta_{X|Y}$가 동형사상이라는
+뜻이다.
+
+\begin{proposition}[5.3.9]
+\label{I.5.3.9-ko}
+대각 사상 $\Delta_X$는 $X$에서 $X\times_S X$ 안으로 가는 몰입
+사상이다.
+\end{proposition}
+
+(\hyperref[I.4.2.4-ko]{4.2.4 (a)})를 사용하면 충분하다. 실제로
+$X$의 모든 $x$와 $x$의 모든 아핀 근방 $U$에 대하여,
+$U\times_S U$는 $\Delta_X(x)$의 아핀 근방이다.
+(\hyperref[I.5.3.16-ko]{5.3.16})의 증명은 정의
+(\hyperref[I.5.3.1.1-ko]{5.3.1.1})만을 사용하므로, $S=\operatorname{Spec}(B)$,
+$X=\operatorname{Spec}(A)$가 아핀 스킴인 경우만 증명하면 된다. 이때
+(\hyperref[I.5.3.1.1-ko]{5.3.1.1})에서 $\Delta_X$가
+\[
+A\otimes_B A\longrightarrow A,\qquad x\otimes y\longmapsto xy
+\]
+인 표준 준동형에 대응함이 곧바로 따른다. 이 준동형은 전사이므로,
+$\Delta_X$는 이 경우 닫힌 몰입 사상이다
+(\hyperref[I.4.2.3-ko]{4.2.3}). 이것으로 증명이 끝난다.
+
+몰입 사상 $\Delta_X$에 대응하는 $X\times_S X$의 부분준스킴
+(\hyperref[I.4.2.1-ko]{4.2.1})을 $X\times_S X$의
+\emph{대각선}이라 한다.
+
+\begin{corollary}[5.3.10]
+\label{I.5.3.10-ko}
+(\hyperref[I.5.3.5-ko]{5.3.5})의 가정 아래에서 $(p,q)_T$는 몰입
+사상이다.
+\end{corollary}
+
+이는 (\hyperref[I.5.3.6-ko]{5.3.6})과
+(\hyperref[I.4.3.1-ko]{4.3.1})에서 따른다.
+
+(\hyperref[I.5.3.5-ko]{5.3.5})의 가정 아래에서 $(p,q)_T$를
+$X\times_S Y$에서 $X\times_T Y$ 안으로 가는 \emph{표준 몰입}이라
+한다.
+
+\begin{corollary}[5.3.11]
+\label{I.5.3.11-ko}
+$X$, $Y$를 두 $S$-준스킴, $f:X\to Y$를 $S$-사상이라 하자. 그러면
+$f$의 그래프 사상 $\Gamma_f=(1_X,f)_S$
+(\hyperref[I.3.3.14-ko]{3.3.14})는 $X$에서 $X\times_S Y$ 안으로 가는
+몰입 사상이다.
+\end{corollary}
+
+이는 (\hyperref[I.5.3.10-ko]{5.3.10})에서 $S$를 $Y$로, $T$를 $S$로
+바꾼 특별한 경우이다 (\hyperref[I.5.3.7-ko]{5.3.7} 참조).
+
+\oldpage[I]{134}
+몰입 사상 $\Gamma_f$에 대응하는 $X\times_S Y$의 부분준스킴
+(\hyperref[I.4.2.1-ko]{4.2.1})을 사상 $f$의 \emph{그래프}라 한다.
+사상 $X\to Y$의 그래프인 $X\times_S Y$의 부분준스킴들은 다음
+성질로 특징지어진다. 첫째 사영 $p_1:X\times_S Y\to X$를 그러한
+부분준스킴 $G$에 제한한 사상은 $G$에서 $X$ 위로 가는
+\emph{동형사상} $g$이고, 이때 $G$는 사상 $p_2\circ g^{-1}$의
+그래프이다. 여기서 $p_2$는 사영 $X\times_S Y\to Y$이다.
+
+특히 $X=S$로 취하면, $S$-사상 $S\to Y$, 곧 $Y$의 $S$-단면
+(\hyperref[I.2.5.5-ko]{2.5.5})은 자신의 그래프 사상과 같다.
+$S$-단면의 그래프인 $Y$의 부분준스킴들, 다시 말해 구조 사상
+$Y\to S$의 제한에 의해 $S$와 동형인 부분준스킴들을 이 단면들의
+\emph{상}, 또는 관용적으로 $Y$의 \emph{$S$-단면}이라고도 한다.
+
+\begin{corollary}[5.3.12]
+\label{I.5.3.12-ko}
+(\hyperref[I.5.3.11-ko]{5.3.11})의 가정과 표기를 사용하자. 모든 사상
+$g:S'\to S$에 대하여, $f'$을 $g$에 의한 $f$의 역상이라 하면
+(\hyperref[I.3.3.7-ko]{3.3.7}), $\Gamma_{f'}$은 $g$에 의한
+$\Gamma_f$의 역상이다.
+\end{corollary}
+
+이는 공식 (\hyperref[I.3.3.10.1-ko]{3.3.10.1})의 특별한 경우이다.
+
+\begin{corollary}[5.3.13]
+\label{I.5.3.13-ko}
+$f:X\to Y$, $g:Y\to Z$를 두 사상이라 하자. $g\circ f$가 몰입
+사상(각각 국소 몰입 사상)이면 $f$도 그러하다.
+\end{corollary}
+
+실제로 $f$는
+\[
+  X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y
+\]
+로 인수분해된다. 한편 $p_2$는 $(g\circ f)\times_Z 1_Y$와
+동일시된다 (\hyperref[I.3.3.4-ko]{3.3.4}). $g\circ f$가 몰입
+사상(각각 국소 몰입 사상)이면 $p_2$도 그러하다
+(\hyperref[I.4.3.1-ko]{4.3.1}과 \hyperref[I.4.5.5-ko]{4.5.5}). 또한
+$\Gamma_f$는 몰입 사상이므로 (\hyperref[I.5.3.11-ko]{5.3.11}),
+(\hyperref[I.4.2.5-ko]{4.2.5}) (각각
+\hyperref[I.4.5.5-ko]{4.5.5})에서 결론이 따른다.
+
+\begin{corollary}[5.3.14]
+\label{I.5.3.14-ko}
+$j:X\to Y$, $g:X\to Z$를 두 $S$-사상이라 하자. $j$가 몰입
+사상(각각 국소 몰입 사상)이면 $(j,g)_S$도 그러하다.
+\end{corollary}
+
+실제로 $p:Y\times_S Z\to Y$가 첫째 사영이면
+$j=p\circ(j,g)_S$이고, (\hyperref[I.5.3.13-ko]{5.3.13})을 적용하면
+충분하다.
+
+\begin{proposition}[5.3.15]
+\label{I.5.3.15-ko}
+$f:X\to Y$가 $S$-사상이면 그림
+\[
+  \xymatrix{
+    X\ar[r]^{\Delta_X}\ar[d]_f &
+    X\times_S X\ar[d]^{f\times_S f}\\
+    Y\ar[r]_{\Delta_Y} &
+    Y\times_S Y
+  }
+  \tag{5.3.15.1}\label{I.5.3.15.1-ko}
+\]
+은 가환이다. 다시 말해 $\Delta_X$는 준스킴의 범주에서 함자적
+사상이다.
+\end{proposition}
+
+확인은 즉각적이므로 독자에게 맡긴다.
+
+\begin{corollary}[5.3.16]
+\label{I.5.3.16-ko}
+$X$가 $Y$의 부분준스킴이면 대각선 $\Delta_X(X)$는
+$\Delta_Y(Y)$의 부분준스킴과 동일시되며, 그 바탕공간은
+\[
+  \Delta_Y(Y)\cap p_1^{-1}(X)=\Delta_Y(Y)\cap p_2^{-1}(X)
+\]
+와 동일시된다. 여기서 $p_1$, $p_2$는 $Y\times_S Y$의 사영이다.
+\end{corollary}
+
+포함 사상 $f:X\to Y$에 (\hyperref[I.5.3.15-ko]{5.3.15})를 적용하자.
+그러면 $f\times_S f$는 몰입 사상이고, $X\times_S X$의 바탕공간을
+$Y\times_S Y$의 부분공간
+$p_1^{-1}(X)\cap p_2^{-1}(X)$와 동일시한다
+(\hyperref[I.4.3.1-ko]{4.3.1}). 또한
+$z\in\Delta_Y(Y)\cap p_1^{-1}(X)$이면 $z=\Delta_Y(y)$이고
+
+\oldpage[I]{135}
+$y=p_1(z)\in X$이다. 따라서 포함 사상 아래에서 $y=f(y)$로
+동일시되며, 그림 (\hyperref[I.5.3.15.1-ko]{5.3.15.1})의 가환성에
+따라 $z=\Delta_Y(f(y))$는 $\Delta_X(X)$에 속한다.
+
+\begin{corollary}[5.3.17]
+\label{I.5.3.17-ko}
+$f_1:Y\to X$, $f_2:Y\to X$를 두 $S$-사상이라 하고, $y$를
+$f_1(y)=f_2(y)=x$이면서 $f_1$, $f_2$에 대응하는 준동형
+$k(x)\to k(y)$가 서로 같은 $Y$의 점이라 하자. 그러면
+$f=(f_1,f_2)_S$라 할 때, 점 $f(y)$는 대각선
+$\Delta_{X|S}(X)$에 속한다.
+\end{corollary}
+
+$f_i$ ($i=1,2$)에 대응하는 두 준동형 $k(x)\to k(y)$는 두
+$S$-사상
+$g_i:\operatorname{Spec}(k(y))\to\operatorname{Spec}(k(x))$를 정의하며,
+그림
+\[
+  \xymatrix{
+    \operatorname{Spec}(k(y))\ar[r]^{g_i}\ar[d] &
+    \operatorname{Spec}(k(x))\ar[d]\\
+    Y\ar[r]_{f_i} & X
+  }
+\]
+은 가환이다. 따라서 그림
+\[
+  \xymatrix{
+    \operatorname{Spec}(k(y))\ar[rr]^{(g_1,g_2)_S}\ar[d] & &
+    \operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(x))\ar[d]\\
+    Y\ar[rr]_{(f_1,f_2)_S} & & X\times_S X
+  }
+\]
+도 가환이다. 그런데 $g_1=g_2$이므로, $(g_1,g_2)_S$에 의한
+$\operatorname{Spec}(k(y))$의 유일한 점의 상은
+$\operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(x))$의 대각선에
+속한다. 따라서 결론은 (\hyperref[I.5.3.15-ko]{5.3.15})에서 따른다.
+
+\subsection{분리 사상과 분리 준스킴}
+\label{subsection:I.5.4-ko}
+
+\begin{definition}[5.4.1]
+\label{I.5.4.1-ko}
+준스킴의 사상 $f:X\to Y$에서 대각 사상
+$X\to X\times_Y X$가 \emph{닫힌 몰입 사상}이면 $f$를
+\emph{분리} 사상이라고 한다. 이때 $X$를 \emph{$Y$ 위에서 분리된
+준스킴} 또는 \emph{$Y$-스킴}이라고도 한다. 준스킴 $X$가
+$\operatorname{Spec}(\mathbf{Z})$ 위에서 분리되어 있으면 $X$를 분리
+준스킴이라 하고, 이때 $X$를 \emph{스킴}이라고도 한다
+(\agref{I.5.5.7-ko}{5.5.7} 참조).
+\end{definition}
+
+(\hyperref[I.5.3.9-ko]{5.3.9})에 따라 $X$가 $Y$ 위에서 분리되어 있기
+위한 필요충분조건은 $\Delta_X(X)$가 $X\times_Y X$의 바탕공간의
+\emph{닫힌 부분공간}인 것이다.
+
+\begin{proposition}[5.4.2]
+\label{I.5.4.2-ko}
+$S\to T$를 분리 사상이라 하자. $X$, $Y$가 두 $S$-준스킴이면 표준
+몰입 $X\times_S Y\to X\times_T Y$
+(\hyperref[I.5.3.10-ko]{5.3.10})는 닫힌 몰입 사상이다.
+\end{proposition}
+
+실제로 그림 (\hyperref[I.5.3.5.1-ko]{5.3.5.1})을 보면 $(p,q)_T$는
+$\Delta_{S|T}$에서, 사상
+$f\times_T g:X\times_T Y\to S\times_T S$에 의한 밑준스킴
+$S\times_T S$의 확장을 통해 얻어진 것으로 볼 수 있다. 따라서 명제는
+(\hyperref[I.4.3.2-ko]{4.3.2})에서 따른다.
+
+\begin{corollary}[5.4.3]
+\label{I.5.4.3-ko}
+$Y$를 $S$-스킴, $f:X\to Y$를 $S$-사상이라 하자. 그러면 $f$의
+그래프 사상 $\Gamma_f:X\to X\times_S Y$
+(\hyperref[I.5.3.11-ko]{5.3.11})는 닫힌 몰입 사상이다.
+\end{corollary}
+
+이는 (\hyperref[I.5.4.2-ko]{5.4.2})에서 $S$를 $Y$로, $T$를 $S$로
+바꾼 특별한 경우이다.
+
+\begin{corollary}[5.4.4]
+\label{I.5.4.4-ko}
+$f:X\to Y$, $g:Y\to Z$를 두 사상이라 하고 $g$가 분리 사상이라고
+하자. $g\circ f$가 닫힌 몰입 사상이면 $f$도 닫힌 몰입 사상이다.
+\end{corollary}
+
+(\hyperref[I.5.4.3-ko]{5.4.3})에서 출발하는 증명은
+(\hyperref[I.5.3.11-ko]{5.3.11})에서 출발하는
+(\hyperref[I.5.3.13-ko]{5.3.13})의 증명과 같다.
+
+\oldpage[I]{136}
+\begin{corollary}[5.4.5]
+\label{I.5.4.5-ko}
+$Z$를 $S$-스킴, $j:X\to Y$, $g:X\to Z$를 두 $S$-사상이라 하자.
+$j$가 닫힌 몰입 사상이면
+$(j,g)_S:X\to Y\times_S Z$도 닫힌 몰입 사상이다.
+\end{corollary}
+
+(\hyperref[I.5.4.4-ko]{5.4.4})에서 출발하는 증명은
+(\hyperref[I.5.3.13-ko]{5.3.13})에서 출발하는
+(\hyperref[I.5.3.14-ko]{5.3.14})의 증명과 같다.
+
+\begin{corollary}[5.4.6]
+\label{I.5.4.6-ko}
+$X$가 $S$-스킴이면 $X$의 모든 $S$-단면
+(\hyperref[I.2.5.5-ko]{2.5.5})은 닫힌 몰입 사상이다.
+\end{corollary}
+
+$\varphi:X\to S$가 구조 사상이고 $\psi:S\to X$가 $X$의
+$S$-단면이면, $\varphi\circ\psi=1_S$에
+(\hyperref[I.5.4.5-ko]{5.4.5})를 적용하면 충분하다.
+
+\begin{corollary}[5.4.7]
+\label{I.5.4.7-ko}
+$S$를 정역 준스킴, $s$를 그 일반점, $X$를 $S$-스킴이라 하자.
+$X$의 두 $S$-단면 $f$, $g$가 $f(s)=g(s)$를 만족하면 $f=g$이다.
+\end{corollary}
+
+실제로 $x=f(s)=g(s)$라 하면, $f$와 $g$에 대응하는 준동형
+$k(x)\to k(s)$는 반드시 서로 같다. $h=(f,g)_S$라 하면
+(\hyperref[I.5.3.17-ko]{5.3.17})에 따라 $h(s)$는 대각선
+$Z=\Delta_X(X)$에 속한다. 그런데 $S=\overline{\{s\}}$이고 가정에
+따라 $Z$가 닫혀 있으므로 $h(S)\subset Z$이다. 따라서
+(\hyperref[I.5.2.2-ko]{5.2.2})에 따라 $h$는
+$S\to Z\to X\times_S X$로 인수분해되고, 대각선의 정의에서
+$f=g$가 따른다.
+
+\begin{remark}[5.4.8]
+\label{I.5.4.8-ko}
+역으로 (\hyperref[I.5.4.3-ko]{5.4.3})의 결론이 $f=1_Y$일 때
+성립한다고 가정하면 $Y$가 $S$ 위에서 분리되어 있음을 얻는다.
+마찬가지로 (\hyperref[I.5.4.5-ko]{5.4.5})의 결론이 두 사상
+\[
+  Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y
+\]
+에 적용된다고 가정하면 $\Delta_Y$가 닫힌 몰입 사상이고, 따라서
+$Y$가 $Z$ 위에서 분리되어 있음을 얻는다. 마지막으로
+(\hyperref[I.5.4.6-ko]{5.4.6})의 결론이 $Y$-준스킴
+$Y\times_S Y\to Y$의 $Y$-단면 $\Delta_Y$에 대하여 성립하면,
+$Y$는 $S$ 위에서 분리되어 있다.
+\end{remark}
+
+\subsection{분리 판정법}
+\label{subsection:I.5.5-ko}
+
+\begin{proposition}[5.5.1]
+\label{I.5.5.1-ko}
+\begin{enumerate}
+  \item[\rm(i)] 준스킴의 모든 단사사상(특히 모든 몰입 사상)은 분리
+    사상이다.
+  \item[\rm(ii)] 두 분리 사상의 합성은 분리 사상이다.
+  \item[\rm(iii)] $f:X\to X'$, $g:Y\to Y'$가 두 분리 $S$-사상이면
+    $f\times_S g$도 분리 사상이다.
+  \item[\rm(iv)] $f:X\to Y$가 분리 $S$-사상이면, 밑준스킴의 모든 확장
+    $S'\to S$에 대하여 $S'$-사상 $f_{(S')}$도 분리 사상이다.
+  \item[\rm(v)] 두 사상의 합성 $g\circ f$가 분리 사상이면 $f$도 분리
+    사상이다.
+  \item[\rm(vi)] 사상 $f$가 분리 사상이기 위한 필요충분조건은
+    $f_{\mathrm{red}}$ (\hyperref[I.5.1.5-ko]{5.1.5})가 분리 사상인
+    것이다.
+\end{enumerate}
+\end{proposition}
+
+(i)는 (\hyperref[I.5.3.8-ko]{5.3.8})에서 곧바로 따른다. 두 사상
+$f:X\to Y$, $g:Y\to Z$에 대하여 그림
+\[
+  \xymatrix{
+    X\ar[rr]^{\Delta_{X|Z}}\ar[dr]_{\Delta_{X|Y}} & &
+    X\times_Z X\\
+    & X\times_Y X\ar[ur]_j
+  }
+  \tag{5.5.1.1}\label{I.5.5.1.1-ko}
+\]
+은 가환이다. 여기서 $j$는 표준 몰입 사상
+(\hyperref[I.5.3.10-ko]{5.3.10})이며, 가환성은 곧바로 확인된다.
+$f$와 $g$가 분리 사상이면 정의에 따라 $\Delta_{X|Y}$는 닫힌 몰입
+사상이고, (\hyperref[I.5.4.2-ko]{5.4.2})에 따라 $j$도 닫힌 몰입
+사상이다. 따라서 (\hyperref[I.4.2.5-ko]{4.2.5})에 따라
+$\Delta_{X|Z}$도 닫힌 몰입 사상이며, 이로써
+
+\oldpage[I]{137}
+(ii)가 증명된다. (i)와 (ii)를 고려하면 (iii)와 (iv)는 서로
+동치이고 (\hyperref[I.3.5.1-ko]{3.5.1}), 따라서 (iv)만 증명하면
+충분하다. 그런데 (\hyperref[I.3.3.11-ko]{3.3.11})과
+(\hyperref[I.3.3.9.1-ko]{3.3.9.1})에 따라
+$X_{(S')}\times_{Y_{(S')}}X_{(S')}$은
+$(X\times_Y X)\times_Y Y_{(S')}$과 표준적으로 동일시된다. 이때 대각
+사상 $\Delta_{X_{(S')}}$은
+$\Delta_X\times_Y 1_{Y_{(S')}}$과 동일시됨을 곧바로 확인할 수 있다.
+따라서 명제는 (\hyperref[I.4.3.1-ko]{4.3.1})에서 따른다.
+
+(v)를 증명하기 위하여 (\hyperref[I.5.3.13-ko]{5.3.13})에서와 같이
+$f$의 인수분해
+$X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$를 생각하자.
+여기서 $p_2=(g\circ f)\times_Z 1_Y$이다. $g\circ f$가 분리
+사상이라는 가정과 (iii), (i)에 따라 $p_2$는 분리 사상이다.
+$\Gamma_f$는 몰입 사상이므로 (i)에 따라 분리 사상이고, 따라서
+(ii)에 따라 $f$도 분리 사상이다. 마지막으로 (vi)를 증명하기 위해,
+준스킴 $X_{\mathrm{red}}\times_{Y_{\mathrm{red}}}X_{\mathrm{red}}$와
+$X_{\mathrm{red}}\times_Y X_{\mathrm{red}}$가 표준적으로 동일시됨을
+(\hyperref[I.5.1.7-ko]{5.1.7}) 상기하자. $j$를 포함 사상
+$X_{\mathrm{red}}\to X$라 하면 그림
+\[
+  \xymatrix{
+    X_{\mathrm{red}}\ar[r]^{\Delta_{X_{\mathrm{red}}}}\ar[d]_j &
+    X_{\mathrm{red}}\times_Y X_{\mathrm{red}}\ar[d]^{j\times_Y j}\\
+    X\ar[r]_{\Delta_X} & X\times_Y X
+  }
+\]
+은 가환이다 (\hyperref[I.5.3.15-ko]{5.3.15}). 수직 화살표들이
+바탕공간의 위상동형이라는 사실
+(\hyperref[I.4.3.1-ko]{4.3.1})에서 명제가 따른다.
+
+\begin{corollary}[5.5.2]
+\label{I.5.5.2-ko}
+$f:X\to Y$가 분리 사상이면, $X$의 모든 부분준스킴에 대한 $f$의
+제한도 분리 사상이다.
+\end{corollary}
+
+이는 (\hyperref[I.5.5.1-ko]{5.5.1, (i)와 (ii)})에서 따른다.
+
+\begin{corollary}[5.5.3]
+\label{I.5.5.3-ko}
+$X$, $Y$가 두 $S$-준스킴이고 $Y$가 $S$ 위에서 분리되어 있으면,
+$X\times_S Y$는 $X$ 위에서 분리되어 있다.
+\end{corollary}
+
+이는 (\hyperref[I.5.5.1-ko]{5.5.1, (iv)})의 특별한 경우이다.
+
+\begin{proposition}[5.5.4]
+\label{I.5.5.4-ko}
+$X$를 준스킴이라 하고, 그 바탕공간이 유한개의 닫힌 부분집합
+$X_k$ $(1\leq k\leq n)$의 합집합이라고 하자. 각 $k$에 대하여
+$X_k$를 바탕공간으로 갖는 $X$의 축소 부분준스킴
+(\hyperref[I.5.2.1-ko]{5.2.1})을 생각하고, 이 부분준스킴도 $X_k$로
+표시한다. $f:X\to Y$를 사상이라 하고, 각 $k$에 대하여
+$f(X_k)\subset Y_k$를 만족하는 $Y$의 닫힌 부분집합 $Y_k$를
+택하자. $Y_k$를 바탕공간으로 갖는 $Y$의 축소 부분준스킴도
+$Y_k$로 표시하면, $X_k$에 대한 $f$의 제한 $X_k\to Y$는
+$X_k\xrightarrow{f_k}Y_k\to Y$로 인수분해된다
+(\hyperref[I.5.2.2-ko]{5.2.2}). 이때 $f$가 분리 사상이기 위한
+필요충분조건은 모든 $f_k$가 분리 사상인 것이다.
+\end{proposition}
+
+필요성은 (\hyperref[I.5.5.1-ko]{5.5.1, (i), (ii), (v)})에서 따른다.
+역으로 명제의 조건이 성립한다고 하자. 그러면 $X_k$에 대한 $f$의
+각 제한 $X_k\to Y$는 분리 사상이다
+(\hyperref[I.5.5.1-ko]{5.5.1, (i)와 (ii)}). $p_1$, $p_2$를
+$X\times_Y X$의 사영이라 하면, 부분공간 $\Delta_{X_k}(X_k)$는
+$X\times_Y X$의 바탕공간의 부분공간
+$\Delta_X(X)\cap p_1^{-1}(X_k)$와 동일시된다
+(\hyperref[I.5.3.16-ko]{5.3.16}). 이 부분공간들은
+$X\times_Y X$에서 닫혀 있으므로, 그 합집합 $\Delta_X(X)$도 닫혀
+있다.
+
+특히 $X_k$들이 $X$의 \emph{기약 성분}이라고 하자. 그러면
+$Y_k$들도 $Y$의 기약 성분이라고 가정할 수 있다
+(\hyperref[0.2.1.5-ko]{0, 2.1.5}). 따라서 이 경우 명제
+(\hyperref[I.5.5.4-ko]{5.5.4})는 분리의 개념을 \emph{정역 준스킴}
+(\hyperref[I.2.1.8-ko]{2.1.8})의 경우로 환원한다.
+
+\oldpage[I]{138}
+
+\begin{proposition}[5.5.5]
+\label{I.5.5.5-ko}
+$(Y_\lambda)$를 준스킴 $Y$의 열린 덮개라 하자. 사상 $f:X\to Y$가
+분리 사상이기 위한 필요충분조건은 각 제한
+$f^{-1}(Y_\lambda)\to Y_\lambda$가 분리 사상인 것이다.
+\end{proposition}
+
+$X_\lambda=f^{-1}(Y_\lambda)$라 놓자. 곱
+$X_\lambda\times_Y X_\lambda$와
+$X_\lambda\times_{Y_\lambda}X_\lambda$가 동일하다는 사실
+(\hyperref[I.3.2.5-ko]{3.2.5})과
+(\hyperref[I.4.2.4-ko]{4.2.4, b)})를 고려하면, 모든 것은
+$X_\lambda\times_Y X_\lambda$들이 $X\times_Y X$의 덮개를 이룸을
+증명하는 것으로 귀착된다. 그런데
+$Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$,
+$X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$라 놓으면,
+$X_\lambda\times_Y X_\mu$는 곱
+$X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$와 동일시되고
+(\hyperref[I.3.2.6.4-ko]{3.2.6.4}), 따라서
+$X_{\lambda\mu}\times_Y X_{\lambda\mu}$와도 동일시된다
+(\hyperref[I.3.2.5-ko]{3.2.5}). 결국 이것은
+$X_\lambda\times_Y X_\lambda$의 열린집합과 동일시되므로, 우리의
+주장이 증명된다 (\hyperref[I.3.2.7-ko]{3.2.7}).
+
+명제 (\hyperref[I.5.5.5-ko]{5.5.5})에 따라 $Y$를 아핀 열린집합들로
+덮으면, 분리 사상의 연구를 아핀 스킴에 값을 갖는 분리 사상의
+연구로 환원할 수 있다.
+
+\begin{proposition}[5.5.6]
+\label{I.5.5.6-ko}
+$Y$를 아핀 스킴, $X$를 준스킴, $(U_\alpha)$를 $X$의 아핀 열린
+덮개라 하자. 사상 $f:X\to Y$가 분리 사상이기 위한 필요충분조건은
+모든 지표쌍 $(\alpha,\beta)$에 대하여 $U_\alpha\cap U_\beta$가 아핀
+열린집합이고, 환 $\Gamma(U_\alpha\cap U_\beta,\mathscr{O}_X)$가 두 환
+$\Gamma(U_\alpha,\mathscr{O}_X)$와
+$\Gamma(U_\beta,\mathscr{O}_X)$의 표준 상들의 합집합으로 생성되는
+것이다.
+\end{proposition}
+
+$U_\alpha\times_Y U_\beta$들은 $X\times_Y X$의 열린 덮개를 이룬다
+(\hyperref[I.3.2.7-ko]{3.2.7}). $p$, $q$를 $X\times_Y X$의 사영이라
+하면
+\[
+  \begin{aligned}
+    \Delta_X^{-1}(U_\alpha\times_Y U_\beta)
+      &=\Delta_X^{-1}\bigl(p^{-1}(U_\alpha)\cap q^{-1}(U_\beta)\bigr)\\
+      &=\Delta_X^{-1}\bigl(p^{-1}(U_\alpha)\bigr)
+        \cap\Delta_X^{-1}\bigl(q^{-1}(U_\beta)\bigr)
+        =U_\alpha\cap U_\beta.
+  \end{aligned}
+\]
+따라서 모든 것은 $U_\alpha\cap U_\beta$에 대한 $\Delta_X$의 제한이
+$U_\alpha\times_Y U_\beta$ 안의 닫힌 몰입 사상임을 표현하는 것으로
+귀착된다. 그런데 이 제한은 정의에 따라
+$(j_\alpha,j_\beta)_Y$와 다르지 않다. 여기서 $j_\alpha$ (각각
+$j_\beta$)는 $U_\alpha\cap U_\beta$에서 $U_\alpha$ (각각
+$U_\beta$)로 가는 포함 사상이다.
+$U_\alpha\times_Y U_\beta$는 그 환이
+$\Gamma(U_\alpha,\mathscr{O}_X)
+ \otimes_{\Gamma(Y,\mathscr{O}_Y)}
+ \Gamma(U_\beta,\mathscr{O}_X)$와 표준적으로 동형인 아핀 스킴이므로
+(\hyperref[I.3.2.2-ko]{3.2.2}), $U_\alpha\cap U_\beta$는 아핀
+스킴이어야 하고, 환 $A(U_\alpha\times_Y U_\beta)$에서
+$\Gamma(U_\alpha\cap U_\beta,\mathscr{O}_X)$로 가는 사상
+$h_\alpha\otimes h_\beta\to h_\alpha h_\beta$는 전사이어야 한다
+(\hyperref[I.4.2.3-ko]{4.2.3}). 이로써 증명이 끝난다.
+
+\begin{corollary}[5.5.7]
+\label{I.5.5.7-ko}
+아핀 스킴은 분리되어 있다(따라서 스킴이며, 이것이
+(\hyperref[I.5.4.1-ko]{5.4.1})의 용어법을 정당화한다).
+\end{corollary}
+
+\begin{corollary}[5.5.8]
+\label{I.5.5.8-ko}
+$Y$를 아핀 스킴이라 하자. 사상 $f:X\to Y$가 분리 사상이기 위한
+필요충분조건은 $X$가 분리되어 있는 것(다시 말해 $X$가 스킴인
+것)이다.
+\end{corollary}
+
+실제로 (\hyperref[I.5.5.6-ko]{5.5.6})의 판정법은 $f$에 의존하지
+않는다.
+
+\begin{corollary}[5.5.9]
+\label{I.5.5.9-ko}
+사상 $f:X\to Y$가 분리 사상이기 위한 필요조건은 $Y$가 분리
+준스킴을 유도하는 모든 열린집합 $U$에 대하여 유도 준스킴
+$f^{-1}(U)$가 분리되어 있는 것이다. 이것이 모든 아핀 열린집합
+$U\subset Y$에 대하여 성립하면 충분하다.
+\end{corollary}
+
+조건의 필요성은 (\hyperref[I.5.5.5-ko]{5.5.5})와
+(\hyperref[I.5.5.1-ko]{5.5.1, (ii)})에서 따른다. 충분성은 $Y$에 아핀
+열린 덮개가 존재한다는 사실을 고려하면
+(\hyperref[I.5.5.5-ko]{5.5.5})와
+(\hyperref[I.5.5.8-ko]{5.5.8})에서 따른다.
+
+특히 $X$와 $Y$가 아핀 스킴이면, \emph{모든} 사상 $X\to Y$는 분리
+사상이다.
+
+\begin{proposition}[5.5.10]
+\label{I.5.5.10-ko}
+$Y$를 스킴, $f:X\to Y$를 사상이라 하자. $X$의 모든 아핀 열린집합
+$U$와 $Y$의 모든 아핀 열린집합 $V$에 대하여
+$U\cap f^{-1}(V)$는 아핀이다.
+\end{proposition}
+
+$p_1$, $p_2$를 $X\times_{\mathbf{Z}}Y$의 사영이라 하자. 부분공간
+$U\cap f^{-1}(V)$는
+$\Gamma_f(X)\cap p_1^{-1}(U)\cap p_2^{-1}(V)$의 $p_1$에 의한
+상이다. 그런데 $p_1^{-1}(U)\cap p_2^{-1}(V)$는
+
+\oldpage[I]{139}
+준스킴 $U\times_{\mathbf{Z}}V$의 바탕공간과 동일시되므로
+(\hyperref[I.3.2.7-ko]{3.2.7}) 아핀 스킴이다
+(\hyperref[I.3.2.2-ko]{3.2.2}). 또한 $\Gamma_f(X)$는
+$X\times_{\mathbf{Z}}Y$에서 닫혀 있으므로
+(\hyperref[I.5.4.3-ko]{5.4.3}),
+$\Gamma_f(X)\cap p_1^{-1}(U)\cap p_2^{-1}(V)$는
+$U\times_{\mathbf{Z}}V$에서 닫혀 있다. 따라서 $\Gamma_f$에 대응하는
+$X\times_{\mathbf{Z}}Y$의 부분준스킴
+(\hyperref[I.4.2.1-ko]{4.2.1})이 그 바탕공간의 열린 부분집합
+$\Gamma_f(X)\cap p_1^{-1}(U)\cap p_2^{-1}(V)$ 위에 유도하는 준스킴은
+아핀 스킴의 닫힌 부분준스킴이고, 따라서 아핀 스킴이다
+(\hyperref[I.4.2.3-ko]{4.2.3}). 이제 $\Gamma_f$가 몰입 사상이라는
+사실에서 명제가 따른다.
+
+\begin{examples}[5.5.11]
+\label{I.5.5.11-ko}
+예 (\hyperref[I.2.3.2-ko]{2.3.2})의 준스킴(<<체 $K$ 위의 사영
+직선>>)은 \emph{분리되어 있다}. 실제로 $X$의 아핀 열린 덮개
+$(X_1,X_2)$에 대하여 $X_1\cap X_2=U_{12}$는 아핀이고,
+$\Gamma(U_{12},\mathscr{O}_X)$는 $f\in K[s]$인
+$f(s)/s^m$ 꼴의 유리함수들로 이루어진 환으로서 $K[s]$와 $1/s$로
+생성된다. 따라서 (\hyperref[I.5.5.6-ko]{5.5.6})의 조건들이
+성립한다.
+
+예 (\hyperref[I.2.3.2-ko]{2.3.2})에서와 같은 $X_1$, $X_2$,
+$U_{12}$, $U_{21}$을 택하되, 이번에는 $u_{12}$로서 $f(s)$를
+$f(t)$에 대응시키는 동형을 택하자. 그러면 붙이기로 \emph{분리되지
+않은 정역 준스킴} $X$를 얻는다. 실제로
+(\hyperref[I.5.5.6-ko]{5.5.6})의 첫째 조건은 성립하지만 둘째 조건은
+성립하지 않는다. 여기서
+$\Gamma(X,\mathscr{O}_X)\to\Gamma(X_1,\mathscr{O}_X)=K[s]$가
+동형임은 곧바로 알 수 있다. 그 역동형은 전사 사상
+$f:X\to\operatorname{Spec}(K[s])$를 정의한다. 또한
+$\mathfrak{j}_y\neq(s)$인 모든
+$y\in\operatorname{Spec}(K[s])$에 대하여 $f^{-1}(y)$는 한 점으로만
+이루어지지만, $\mathfrak{j}_y=(s)$이면 $f^{-1}(y)$는 서로 다른
+\emph{두} 점으로 이루어진다($X$를 <<점 $0$을 이중화한 $K$ 위의
+아핀 직선>>이라고 한다).
+
+(\hyperref[I.5.5.6-ko]{5.5.6})의 둘째 조건은 성립하지만
+\emph{첫째 조건은 성립하지 않는} 예도 줄 수 있다. 먼저 체 $K$ 위의 두 부정원 다항식환
+$A=K[s,t]$의 소 스펙트럼 $Y$에서 $D(s)$와 $D(t)$의 합집합인
+열린집합 $U$는 \emph{아핀 열린집합이 아니다}. 실제로 $z$가 $U$ 위의
+$\mathscr{O}_Y$의 단면이면, $s^m z$와 $t^n z$가 각각 $s$, $t$의
+다항식의 $U$에 대한 제한이 되는 두 정수 $m\geq0$, $n\geq0$이
+존재한다 (\hyperref[I.1.4.1-ko]{1.4.1}). 이는 단면 $z$가 $Y$ 전체
+위의 단면으로 연장되어 $s$, $t$의 다항식과 동일시되는 경우에만
+가능함이 분명하다. 만일 $U$가 아핀 열린집합이면 포함 사상
+$U\to Y$는 동형이어야 하는데 (\hyperref[I.1.7.3-ko]{1.7.3}), 이는
+$U\neq Y$이므로 모순이다.
+
+이제 두 아핀 스킴 $Y_1$, $Y_2$를 각각 환
+$A_1=K[s_1,t_1]$, $A_2=K[s_2,t_2]$의 소 스펙트럼이라 하자.
+$U_{12}=D(s_1)\cup D(t_1)$,
+$U_{21}=D(s_2)\cup D(t_2)$로 놓고, $u_{12}$로서
+$f(s_1,t_1)$을 $f(s_2,t_2)$에 대응시키는 환의 동형에 대응하는
+동형 $Y_2\to Y_1$의 $U_{21}$에 대한 제한을 택하자. 이렇게 하여
+(\hyperref[I.5.5.6-ko]{5.5.6})의 첫째 조건은 성립하지 않고 둘째
+조건은 성립하는 예를 얻는다(이렇게 얻은 정역 준스킴을 <<점 $0$을
+이중화한 $K$ 위의 아핀 평면>>이라고 한다).
+\end{examples}
+
+\begin{remark}[5.5.12]
+\label{I.5.5.12-ko}
+\normalfont 준스킴의 사상에 대한 성질 \textbf{P}가 주어졌다고 하고,
+다음 명제들을 생각하자.
+\begin{enumerate}
+  \item[\rm(i)] \emph{모든 닫힌 몰입 사상은 성질 \textbf{P}를 갖는다.}
+  \item[\rm(ii)] \emph{성질 \textbf{P}를 갖는 두 사상의 합성은 성질
+    \textbf{P}를 갖는다.}
+  \item[\rm(iii)] \emph{$f:X\to X'$, $g:Y\to Y'$가 성질 \textbf{P}를
+    갖는 두 $S$-사상이면, $f\times_S g$는 성질 \textbf{P}를 갖는다.}
+
+\oldpage[I]{140}
+  \item[\rm(iv)] \emph{$f:X\to Y$가 성질 \textbf{P}를 갖는
+    $S$-사상이면, 밑준스킴의 확장 $S'\to S$로부터 얻는 모든
+    $S'$-사상 $f_{(S')}$는 성질 \textbf{P}를 갖는다.}
+  \item[\rm(v)] \emph{두 사상 $f:X\to Y$, $g:Y\to Z$의 합성
+    $g\circ f$가 성질 \textbf{P}를 갖고 $g$가 분리 사상이면,
+    $f$는 성질 \textbf{P}를 갖는다.}
+  \item[\rm(vi)] \emph{사상 $f:X\to Y$가 성질 \textbf{P}를 가지면
+    $f_{\mathrm{red}}$ (\hyperref[I.5.1.5-ko]{5.1.5})도 성질
+    \textbf{P}를 갖는다.}
+\end{enumerate}
+
+이때 (i)와 (ii)가 성립한다고 가정하면 (iii)와 (iv)는
+\emph{동치}이고, (v)와 (vi)는 (i), (ii), (iii)의
+\emph{귀결}이다.
+
+첫째 주장은 이미 증명하였다 (\hyperref[I.3.5.1-ko]{3.5.1}).
+(\hyperref[I.5.3.13-ko]{5.3.13})의 $f$의 인수분해
+$X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$를 생각하자.
+관계식 $p_2=(g\circ f)\times_Z 1_Y$에 따라 $g\circ f$가 성질
+\textbf{P}를 가지면 (iii)에 의해 $p_2$도 성질 \textbf{P}를 갖는다.
+$g$가 분리 사상이면 $\Gamma_f$는 닫힌 몰입 사상이고
+(\hyperref[I.5.4.3-ko]{5.4.3}), 따라서 (i)에 의해 성질 \textbf{P}를
+갖는다. 마지막으로 (ii)에 의해 $f$도 성질 \textbf{P}를 갖는다.
+
+끝으로 가환 그림
+\[
+  \xymatrix{
+    X_{\mathrm{red}}\ar[r]^{f_{\mathrm{red}}}\ar[d] &
+    Y_{\mathrm{red}}\ar[d]\\
+    X\ar[r]_f &
+    Y
+  }
+\]
+을 생각하자. 수직 화살표들은 닫힌 몰입 사상이고
+(\hyperref[I.5.1.5-ko]{5.1.5}), 따라서 (i)에 의해 성질
+\textbf{P}를 갖는다. $f$가 성질 \textbf{P}를 갖는다는 가정과
+(ii)에 따라 합성
+$X_{\mathrm{red}}\xrightarrow{f_{\mathrm{red}}}Y_{\mathrm{red}}\to Y$가
+성질 \textbf{P}를 갖는다. 마지막으로 닫힌 몰입 사상은 분리
+사상이므로 (\hyperref[I.5.5.1-ko]{5.5.1, (i)}), (v)에 의해
+$f_{\mathrm{red}}$도 성질 \textbf{P}를 갖는다.
+
+다음 명제들을 생각하면
+\begin{enumerate}
+  \item[\rm(i')] \emph{모든 몰입 사상은 성질 \textbf{P}를 갖는다.}
+  \item[\rm(v')] \emph{$g\circ f$가 성질 \textbf{P}를 가지면 $f$도
+    성질 \textbf{P}를 갖는다.}
+\end{enumerate}
+위의 논증에서 (v')은 (i'), (ii), (iii)의 귀결임을 알 수 있다.
+\end{remark}
+
+\begin{env}[5.5.13]
+\label{I.5.5.13-ko}
+(v)와 (vi)는 (i), (iii), 그리고 다음 명제의 귀결이기도 하다.
+\begin{enumerate}
+  \item[\rm(ii')] \emph{$j:X\to Y$가 닫힌 몰입 사상이고 $g:Y\to Z$가
+    성질 \textbf{P}를 갖는 사상이면, $g\circ j$는 성질 \textbf{P}를
+    갖는다.}
+\end{enumerate}
+마찬가지로 (v')은 (i'), (iii), 그리고 다음 명제의 귀결이다.
+\begin{enumerate}
+  \item[\rm(ii'')] \emph{$j:X\to Y$가 몰입 사상이고 $g:Y\to Z$가
+    성질 \textbf{P}를 갖는 사상이면, $g\circ j$는 성질 \textbf{P}를
+    갖는다.}
+\end{enumerate}
+실제로 이는 (\hyperref[I.5.5.12-ko]{5.5.12})의 논증에서 곧바로
+따른다.
+\end{env}

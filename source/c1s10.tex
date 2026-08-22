@@ -1,0 +1,767 @@
+\section{형식적 스킴}
+\label{section:I.10-ko}
+
+\subsection{아핀 형식적 스킴.}
+\label{subsection:I.10.1-ko}
+
+\begin{env}[10.1.1]
+\label{I.10.1.1-ko}
+$A$를 위상환인 \emph{허용환}이라 하자
+(\hyperref[0.7.1.2-ko]{0, 7.1.2}). $A$의 모든 정의 아이디얼
+$\mathfrak{J}$에 대하여 $\operatorname{Spec}(A/\mathfrak{J})$는
+$\operatorname{Spec}(A)$의 닫힌 부분공간 $V(\mathfrak{J})$와
+동일시된다(\hyperref[I.1.1.11-ko]{1.1.11}). 이는 $A$의
+\emph{열린} 소 아이디얼들의 집합이다. 이 위상공간은 고려한
+\oldpage[I]{181}
+정의 아이디얼 $\mathfrak{J}$의 선택과 무관하며, 이를
+$\mathfrak{X}$로 나타내자. $(\mathfrak{J}_\lambda)$를 정의
+아이디얼들로 이루어진 $A$에서 0의 근방들의 기본계라 하고, 모든
+$\lambda$에 대하여 $\mathscr{O}_\lambda$를
+$\operatorname{Spec}(A/\mathfrak{J}_\lambda)$의 구조층이라 하자. 이 층은
+$\widetilde{A}/\widetilde{\mathfrak{J}}_\lambda$에 의해
+$\mathfrak{X}$ 위에 유도된다(이 몫층은 $\mathfrak{X}$ 밖에서 영이다).
+
+$\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$이면 표준 준동형
+$A/\mathfrak{J}_\mu\to A/\mathfrak{J}_\lambda$는 환의 층의 준동형
+$u_{\lambda\mu}:\mathscr{O}_\mu\to\mathscr{O}_\lambda$를 정의하므로
+(\hyperref[I.1.6.1-ko]{1.6.1}), $(\mathscr{O}_\lambda)$는 이 준동형들에
+관하여 \emph{환의 층들의 사영계}를 이룬다. $\mathfrak{X}$의 위상에는
+준콤팩트 열린집합들로 이루어진 기저가 있으므로, 각
+$\mathscr{O}_\lambda$에 그 바탕 환의 층(위상을 잊은 층)이
+$\mathscr{O}_\lambda$인 \emph{의사이산 위상환의 층}을 대응시킬 수
+있다(\hyperref[0.3.8.1-ko]{0, 3.8.1}). 이 층도 여전히
+$\mathscr{O}_\lambda$로 나타내겠다. 또한 $\mathscr{O}_\lambda$들은
+여전히 \emph{위상환의 층들의 사영계}를 이룬다
+(\hyperref[0.3.8.2-ko]{0, 3.8.2}). 이 계
+$(\mathscr{O}_\lambda)$의 사영극한인 $\mathfrak{X}$ 위의
+\emph{위상환의 층}을 $\mathscr{O}_{\mathfrak{X}}$로 나타내겠다. 따라서
+$\mathfrak{X}$의 모든 \emph{준콤팩트} 열린집합 $U$에 대하여
+$\Gamma(U,\mathscr{O}_{\mathfrak{X}})$는 \emph{이산}환들의 계
+$\Gamma(U,\mathscr{O}_\lambda)$의 사영극한인 위상환이다
+(\hyperref[0.3.2.6-ko]{0, 3.2.6}).
+\end{env}
+
+\begin{definition}[10.1.2]
+\label{I.10.1.2-ko}
+허용환 $A$가 주어졌을 때, $A$의 열린 소 아이디얼들로 이루어진
+$\operatorname{Spec}(A)$의 닫힌 부분공간 $\mathfrak{X}$를 $A$의
+형식적 스펙트럼이라 하고 $\operatorname{Spf}(A)$로 나타낸다. 위상환 달린
+공간이 형식적 스펙트럼 $\operatorname{Spf}(A)=\mathfrak{X}$에 다음의
+구조층을 갖춘 것과 동형이면 이를 아핀 형식적 스킴이라고 한다. 여기서
+$\mathfrak{J}_\lambda$가 $A$의 정의 아이디얼들의 여과집합을 달릴 때
+$\mathscr{O}_{\mathfrak{X}}$는
+의사이산 위상환의 층
+$(\widetilde{A}/\widetilde{\mathfrak{J}}_\lambda)|\mathfrak{X}$들의
+사영극한이다.
+\end{definition}
+
+\emph{형식적 스펙트럼} $\mathfrak{X}=\operatorname{Spf}(A)$를 아핀 형식적
+스킴으로 말할 때에는 언제나 위에서 정의한
+$\mathscr{O}_{\mathfrak{X}}$를 갖는 위상환 달린 공간
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$을 뜻한다.
+
+모든 \emph{아핀 스킴} $X=\operatorname{Spec}(A)$는 $A$를 이산
+위상환으로 보아 유일한 방식으로 아핀 형식적 스킴으로 볼 수 있다. 이때
+$U$가 준콤팩트이면 위상환 $\Gamma(U,\mathscr{O}_X)$는 이산이지만,
+$U$가 $X$의 임의의 열린집합일 때에는 일반적으로 그렇지 않다.
+
+\begin{proposition}[10.1.3]
+\label{I.10.1.3-ko}
+$A$가 허용환이고 $\mathfrak{X}=\operatorname{Spf}(A)$이면,
+$\Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$는 $A$와 위상적으로
+동형이다.
+\end{proposition}
+
+\begin{proof}
+실제로 $\mathfrak{X}$는 $\operatorname{Spec}(A)$에서 닫혀 있으므로
+준콤팩트이다. 따라서
+$\Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$는 이산환
+$\Gamma(\mathfrak{X},\mathscr{O}_\lambda)$들의 사영극한과 위상적으로
+동형이다. 그런데 $\Gamma(\mathfrak{X},\mathscr{O}_\lambda)$는
+$A/\mathfrak{J}_\lambda$와 동형이다
+(\hyperref[I.1.3.7-ko]{1.3.7}). $A$는 분리이고 완비이므로
+$\varprojlim A/\mathfrak{J}_\lambda$와 위상적으로 동형이다
+(\hyperref[0.7.2.1-ko]{0, 7.2.1}). 이로부터 명제가 따른다.
+\end{proof}
+
+\begin{proposition}[10.1.4]
+\label{I.10.1.4-ko}
+$A$를 허용환, $\mathfrak{X}=\operatorname{Spf}(A)$라 하고, 모든
+$f\in A$에 대하여 $\mathfrak{D}(f)=D(f)\cap\mathfrak{X}$라 하자. 그러면
+위상환 달린 공간
+$(\mathfrak{D}(f),\mathscr{O}_{\mathfrak{X}}|\mathfrak{D}(f))$는 아핀
+형식적 스펙트럼 $\operatorname{Spf}(A_{\{f\}})$와 동형이다
+(\hyperref[0.7.6.15-ko]{0, 7.6.15}).
+\end{proposition}
+
+\begin{proof}
+$A$의 모든 정의 아이디얼 $\mathfrak{J}$에 대하여 이산환
+$S_f^{-1}A/S_f^{-1}\mathfrak{J}$는
+$A_{\{f\}}/\mathfrak{J}_{\{f\}}$와 표준적으로 동일시된다
+(\hyperref[0.7.6.9-ko]{0, 7.6.9}). 따라서
+(\hyperref[I.1.2.5-ko]{1.2.5}와 \hyperref[I.1.2.6-ko]{1.2.6})에 따라 위상공간
+$\operatorname{Spf}(A_{\{f\}})$는 $\mathfrak{D}(f)$와 표준적으로
+동일시된다. 더 나아가 $\mathfrak{D}(f)$에 포함되는
+$\mathfrak{X}$의 모든 준콤팩트 열린집합 $U$에 대하여
+$\Gamma(U,\mathscr{O}_\lambda)$는
+$\operatorname{Spec}(S_f^{-1}A/S_f^{-1}\mathfrak{J}_\lambda)$의 구조층의
+$U$ 위의 단면가군과 동일시된다
+(\hyperref[I.1.3.6-ko]{1.3.6}). 따라서
+$\mathfrak{Y}=\operatorname{Spf}(A_{\{f\}})$로 놓으면
+$\Gamma(U,\mathscr{O}_{\mathfrak{X}})$는 단면가군
+$\Gamma(U,\mathscr{O}_{\mathfrak{Y}})$와 동일시된다. 이로써 명제가
+증명된다.
+\end{proof}
+
+\oldpage[I]{182}
+\begin{env}[10.1.5]
+\label{I.10.1.5-ko}
+\emph{위상을 잊은} 환의 층으로서 $\operatorname{Spf}(A)$의 구조층
+$\mathscr{O}_{\mathfrak{X}}$는 모든 $x\in\mathfrak{X}$에서
+(\hyperref[I.10.1.4-ko]{10.1.4})에 따라 귀납극한
+$\varinjlim_{f\notin\mathfrak{j}_x}A_{\{f\}}$와 동일시되는 줄기를 갖는다.
+따라서 (\hyperref[0.7.6.17-ko]{0, 7.6.17}과
+\hyperref[0.7.6.18-ko]{7.6.18}):
+\end{env}
+
+\begin{proposition}[10.1.6]
+\label{I.10.1.6-ko}
+모든 $x\in\mathfrak{X}=\operatorname{Spf}(A)$에 대하여 줄기
+$\mathscr{O}_x$는 국소환이고, 그 잉여체는
+$k(x)=A_x/\mathfrak{j}_xA_x$와 동형이다. 더 나아가 $A$가 아딕이고
+뇌터이면 $\mathscr{O}_x$는 뇌터 환이다.
+\end{proposition}
+
+$k(x)$가 영환이 아니므로, 이 결과로부터 환의 층
+$\mathscr{O}_{\mathfrak{X}}$의 \emph{지지집합}은
+\emph{$\mathfrak{X}$와 같다}는 결론을 얻는다.
+
+\subsection{아핀 형식적 스킴의 사상.}
+\label{subsection:I.10.2-ko}
+
+\begin{env}[10.2.1]
+\label{I.10.2.1-ko}
+$A$, $B$를 두 허용환이라 하고,
+$\varphi:B\to A$를 \emph{연속} 준동형이라 하자. 그러면 연속사상
+$ {}^a\varphi:\operatorname{Spec}(A)\to\operatorname{Spec}(B)$
+(\hyperref[I.1.2.1-ko]{1.2.1})은
+$\mathfrak{X}=\operatorname{Spf}(A)$를
+$\mathfrak{Y}=\operatorname{Spf}(B)$ 안으로 보낸다. 실제로 $A$의 열린
+소 아이디얼의 $\varphi$에 의한 역상은 $B$의 열린 소 아이디얼이다.
+한편 모든 $g\in B$에 대하여 $\varphi$는 연속 준동형
+\[
+  \Gamma(\mathfrak{D}(g),\mathscr{O}_{\mathfrak{Y}})
+  \longrightarrow
+  \Gamma(\mathfrak{D}(\varphi(g)),\mathscr{O}_{\mathfrak{X}})
+\]
+을 정의한다. 이는 (\hyperref[I.10.1.4-ko]{10.1.4}),
+(\hyperref[I.10.1.3-ko]{10.1.3}),
+(\hyperref[0.7.6.7-ko]{0, 7.6.7})에 따른다. 이 준동형들은 $g$를 $g$의
+배수로 바꿀 때의 제한사상들과 양립하고,
+$\mathfrak{D}(\varphi(g))={}^a\varphi^{-1}(\mathfrak{D}(g))$이므로,
+위상환의 층 사이의 \emph{연속} 준동형
+$\mathscr{O}_{\mathfrak{Y}}\to
+{}^a\varphi_*(\mathscr{O}_{\mathfrak{X}})$
+(\hyperref[0.3.2.5-ko]{0, 3.2.5})을 정의한다. 이를 다시
+$\widetilde{\varphi}$로 나타내겠다. 이렇게 하여 위상환 달린 공간의 사상
+$\Phi=({}^a\varphi,\widetilde{\varphi})$를
+$\mathfrak{X}\to\mathfrak{Y}$로 얻는다. 위상을 잊은 환의 층의
+준동형으로서 $\widetilde{\varphi}$는 모든 $x\in\mathfrak{X}$에서 줄기
+사이의 준동형
+$\widetilde{\varphi}_x^\sharp:
+\mathscr{O}_{{}^a\varphi(x)}\to\mathscr{O}_x$를 정의한다.
+\end{env}
+
+\begin{proposition}[10.2.2]
+\label{I.10.2.2-ko}
+$A$, $B$를 두 허용환이라 하고,
+$\mathfrak{X}=\operatorname{Spf}(A)$,
+$\mathfrak{Y}=\operatorname{Spf}(B)$라 하자. 위상환 달린 공간의 사상
+$u=(\psi,\theta):\mathfrak{X}\to\mathfrak{Y}$가 $B\to A$인 어떤 연속 환 준동형
+$\varphi$로부터 얻어지는
+$({}^a\varphi,\widetilde{\varphi})$ 꼴이기 위한 필요충분조건은 모든
+$x\in\mathfrak{X}$에 대하여 $\theta_x^\sharp$가 국소 준동형
+$\mathscr{O}_{\psi(x)}\to\mathscr{O}_x$인 것이다.
+\end{proposition}
+
+\begin{proof}
+이 조건은 필요하다. 실제로
+$\mathfrak{p}=\mathfrak{j}_x\in\operatorname{Spf}(A)$,
+$\mathfrak{q}=\varphi^{-1}(\mathfrak{j}_x)$라 하자.
+$g\notin\mathfrak{q}$이면 $\varphi(g)\notin\mathfrak{p}$이고,
+$\varphi$에서 얻어지는 준동형
+$B_{\{g\}}\to A_{\{\varphi(g)\}}$
+(\hyperref[0.7.6.7-ko]{0, 7.6.7})은
+$\mathfrak{q}_{\{g\}}$를
+$\mathfrak{p}_{\{\varphi(g)\}}$의 부분집합으로 보낸다. 따라서 귀납극한을
+취하고 (\hyperref[I.10.1.5-ko]{10.1.5})와
+(\hyperref[0.7.6.17-ko]{0, 7.6.17})을 고려하면
+$\widetilde{\varphi}_x^\sharp$가 국소 준동형임을 알 수 있다.
+
+역으로 $(\psi,\theta)$가 명제의 조건을 만족하는 사상이라고 하자.
+(\hyperref[I.10.1.3-ko]{10.1.3})에 따라 $\theta$는 다음 연속 환 준동형을
+정의한다:
+\[
+  \varphi=\Gamma(\theta):
+  B=\Gamma(\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}})
+  \longrightarrow
+  \Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})=A.
+\]
+$\theta$에 대한 가정에 의하여 $\mathfrak{X}$ 위의
+$\mathscr{O}_{\mathfrak{X}}$의 단면 $\varphi(g)$의 $x$에서의 싹이
+가역일 필요충분조건은 $g$의 $\psi(x)$에서의 싹이 가역인 것이다. 그런데
+(\hyperref[0.7.6.17-ko]{0, 7.6.17})에 따라
+$\mathfrak{X}$ 위의 $\mathscr{O}_{\mathfrak{X}}$의 단면(각각
+$\mathfrak{Y}$ 위의 $\mathscr{O}_{\mathfrak{Y}}$의 단면) 가운데
+$x$에서의 싹(각각 $\psi(x)$에서의 싹)이 가역이 아닌 것들은 정확히
+$\mathfrak{j}_x$
+\oldpage[I]{183}
+(각각 $\mathfrak{j}_{\psi(x)}$)의 원소들이다. 따라서 앞의 관찰로부터
+${}^a\varphi=\psi$를 얻는다. 마지막으로 모든 $g\in B$에 대하여 도식
+\[
+  \xymatrix{
+    B=\Gamma(\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}})
+      \ar[r]^\varphi\ar[d] &
+    \Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})=A\ar[d]\\
+    B_{\{g\}}=\Gamma(\mathfrak{D}(g),\mathscr{O}_{\mathfrak{Y}})
+      \ar[r]_{\Gamma(\theta_{\mathfrak{D}(g)})} &
+    \Gamma(\mathfrak{D}(\varphi(g)),\mathscr{O}_{\mathfrak{X}})
+      =A_{\{\varphi(g)\}}
+  }
+\]
+은 가환이다. 완비 분수환의 보편 성질
+(\hyperref[0.7.6.6-ko]{0, 7.6.6})에 따라 모든 $g\in B$에 대하여
+$\theta_{\mathfrak{D}(g)}$는
+$\widetilde{\varphi}_{\mathfrak{D}(g)}$와 같고, 따라서
+(\hyperref[0.3.2.5-ko]{0, 3.2.5})에 따라
+$\theta=\widetilde{\varphi}$이다.
+\end{proof}
+
+(\hyperref[I.10.2.2-ko]{10.2.2})의 조건을 만족하는 위상환 달린 공간의
+사상 $(\psi,\theta)$를 \emph{아핀 형식적 스킴의 사상}이라 하겠다.
+$A$에 $\operatorname{Spf}(A)$를 대응시키는 함자와 $\mathfrak{X}$에
+$\Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$를 대응시키는 함자는
+허용환의 범주와 아핀 형식적 스킴의 범주의 반대 범주 사이의
+\emph{동치}를 정의한다고 할 수 있다(T, I, 1.2).
+
+\begin{env}[10.2.3]
+\label{I.10.2.3-ko}
+(\hyperref[I.10.2.2-ko]{10.2.2})의 특수한 경우로서, $f\in A$에 대하여
+$\mathfrak{X}$가 $\mathfrak{D}(f)$ 위에 유도하는 아핀 형식적 스킴의
+표준 포함 사상은 표준 연속 준동형 $A\to A_{\{f\}}$에 대응한다. 이제
+(\hyperref[I.10.2.2-ko]{10.2.2})의 가정 아래에서 $h$를 $B$의 원소,
+$g$를 $\varphi(h)$의 배수인 $A$의 원소라 하자. 그러면
+$\psi(\mathfrak{D}(g))\subset\mathfrak{D}(h)$이다. $u$를
+$\mathfrak{D}(g)$에 제한한 사상을 $\mathfrak{D}(g)$에서
+$\mathfrak{D}(h)$로 가는 사상으로 보면, 이는 도식
+\[
+  \xymatrix{
+    \mathfrak{D}(g)\ar[r]^v\ar[d] &
+    \mathfrak{D}(h)\ar[d]\\
+    \mathfrak{X}\ar[r]_u &
+    \mathfrak{Y}
+  }
+\]
+을 가환이게 하는 유일한 사상 $v$이다. 이 사상은 도식
+\[
+  \xymatrix{
+    A\ar[d] &
+    B\ar[l]_\varphi\ar[d]\\
+    A_{\{g\}} &
+    B_{\{h\}}\ar[l]_{\varphi'}
+  }
+\]
+을 가환이게 하는 유일한 연속 준동형
+$\varphi':B_{\{h\}}\to A_{\{g\}}$
+(\hyperref[0.7.6.7-ko]{0, 7.6.7})에 대응한다.
+\end{env}
+
+\subsection{아핀 형식적 스킴의 정의 아이디얼.}
+\label{subsection:I.10.3-ko}
+
+\begin{env}[10.3.1]
+\label{I.10.3.1-ko}
+$A$를 허용환, $\mathfrak{J}$를 $A$의 열린 아이디얼,
+$\mathfrak{X}$를 아핀 형식적 스킴 $\operatorname{Spf}(A)$라 하자.
+$(\mathfrak{J}_\lambda)$를 $\mathfrak{J}$에 포함되는 $A$의 정의
+아이디얼들의 집합이라 하자. 그러면
+$\widetilde{\mathfrak{J}}/\widetilde{\mathfrak{J}}_\lambda$는
+$\widetilde{A}/\widetilde{\mathfrak{J}}_\lambda$의 아이디얼층이다.
+$\mathfrak{X}$ 위에
+$\widetilde{\mathfrak{J}}/\widetilde{\mathfrak{J}}_\lambda$가 유도하는
+층들의 사영극한을 $\mathfrak{J}^\Delta$로 나타내자. 이는
+$\mathscr{O}_{\mathfrak{X}}$의 \emph{아이디얼층}과 동일시된다
+(\hyperref[0.3.2.6-ko]{0, 3.2.6}). 모든 $f\in A$에 대하여
+$\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$는
+$S_f^{-1}\mathfrak{J}/S_f^{-1}\mathfrak{J}_\lambda$들의 사영극한, 즉
+환 $A_{\{f\}}$의 열린 아이디얼 $\mathfrak{J}_{\{f\}}$와 동일시된다
+(\hyperref[0.7.6.9-ko]{0, 7.6.9}). 특히
+$\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$이다.
+$\mathfrak{D}(f)$들이 $\mathfrak{X}$의 위상의 기저를 이루므로 이로부터
+다음을 얻는다:
+\[
+  \mathfrak{J}^\Delta|\mathfrak{D}(f)
+  =(\mathfrak{J}_{\{f\}})^\Delta.
+  \tag{10.3.1.1}\label{I.10.3.1.1-ko}
+\]
+\end{env}
+
+\oldpage[I]{184}
+\begin{env}[10.3.2]
+\label{I.10.3.2-ko}
+(\hyperref[I.10.3.1-ko]{10.3.1})의 표기 아래에서, 모든 $f\in A$에
+대하여
+$A_{\{f\}}=\Gamma(\mathfrak{D}(f),\mathscr{O}_{\mathfrak{X}})$에서
+$\Gamma\bigl(\mathfrak{D}(f),
+(\widetilde{A}/\widetilde{\mathfrak{J}})|\mathfrak{X}\bigr)
+=S_f^{-1}A/S_f^{-1}\mathfrak{J}$로 가는 표준 사상은 \emph{전사}이고,
+그 핵은
+$\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)=\mathfrak{J}_{\{f\}}$이다
+(\hyperref[0.7.6.9-ko]{0, 7.6.9}). 따라서 이 사상들은 위상환의 층
+$\mathscr{O}_{\mathfrak{X}}$에서 이산환의 층
+$(\widetilde{A}/\widetilde{\mathfrak{J}})|\mathfrak{X}$로 가는 연속
+\emph{전사} 준동형을 정의하며, 이를 \emph{표준}이라 한다. 그 핵은
+$\mathfrak{J}^\Delta$이다. 이 준동형은
+$\varphi$가 연속 준동형 $A\to A/\mathfrak{J}$일 때의
+$\widetilde{\varphi}$
+(\hyperref[I.10.2.1-ko]{10.2.1})와 다르지 않다. 아핀 형식적 스킴의 사상
+$({}^a\varphi,\widetilde{\varphi}):
+\operatorname{Spec}(A/\mathfrak{J})\to\mathfrak{X}$
+(여기서 ${}^a\varphi$는 닫힌 부분공간
+$V(\mathfrak{J})\subset\mathfrak{X}$로의 표준 위상동형사상에 그
+포함사상을 합성한 것이다)도 \emph{표준}이라 한다.\footnote{\textbf{번역 주.} 인쇄 원문은
+${}^a\varphi$가 $\mathfrak{X}$에서 자기 자신으로 가는 항등
+위상동형사상이라고 쓰지만, 이는 $\mathfrak{J}$가 임의의 열린 아이디얼일
+때 일반적으로 성립하지 않는다. 예를 들어 체 $k$에 대하여 이산 허용환
+$A=k\times k$와 열린 아이디얼 $\mathfrak{J}=k\times\{0\}$에 대하여
+$\operatorname{Spf}(A)$는 두 점이지만
+$\operatorname{Spec}(A/\mathfrak{J})$는 한 점이다. 올바른 상은
+$V(\mathfrak{J})\subset\mathfrak{X}$이며, $\mathfrak{J}$가 정의
+아이디얼일 때에는 이 상이 $\mathfrak{X}$ 전체이다. 이는 공식 정오표에
+실린 항목은 아니며, 위와 같이 형에 맞게 바로잡았다.} 따라서 앞의
+결과에 의하여 \emph{표준 동형사상}
+\[
+  \mathscr{O}_{\mathfrak{X}}/\mathfrak{J}^\Delta
+  \xrightarrow{\sim}
+  (\widetilde{A}/\widetilde{\mathfrak{J}})|\mathfrak{X}.
+  \tag{10.3.2.1}\label{I.10.3.2.1-ko}
+\]
+을 얻는다.
+
+$\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$이므로
+$\mathfrak{J}\to\mathfrak{J}^\Delta$가
+\emph{포함관계를 엄격히 보존한다}는 것은 명백하다. 앞의 결과에 따라
+$\mathfrak{J}\subset\mathfrak{J}'$이면 층
+${\mathfrak{J}'}^\Delta/\mathfrak{J}^\Delta$는
+$\widetilde{\mathfrak{J}'}/\widetilde{\mathfrak{J}}
+=\widetilde{\mathfrak{J}'/\mathfrak{J}}$와 표준적으로 동형이다.
+\end{env}
+
+\begin{env}[10.3.3]
+\label{I.10.3.3-ko}
+가정과 표기는 계속
+(\hyperref[I.10.3.1-ko]{10.3.1})의 것이라 하자.
+$\mathscr{O}_{\mathfrak{X}}$의 아이디얼층 $\mathscr{J}$가 다음 조건을
+만족할 때 이를 \emph{$\mathfrak{X}$의 정의 아이디얼층}(또는
+\emph{$\mathfrak{X}$의 정의 아이디얼})이라 하겠다. 모든
+$x\in\mathfrak{X}$에 대하여 $x$의 열린 근방 $\mathfrak{D}(f)$가
+존재하고, 여기서 $f\in A$이며,
+$\mathscr{J}|\mathfrak{D}(f)$는 $\mathfrak{H}^\Delta$ 꼴이다. 이때
+$\mathfrak{H}$는 $A_{\{f\}}$의 정의 아이디얼이다.
+\end{env}
+
+\begin{proposition}[10.3.4]
+\label{I.10.3.4-ko}
+모든 $f\in A$에 대하여 $\mathfrak{X}$의 모든 정의 아이디얼은
+$\mathfrak{D}(f)$의 정의 아이디얼을 유도한다.
+\end{proposition}
+
+\begin{proof}
+이는 (\hyperref[I.10.3.1.1-ko]{10.3.1.1})에서 따른다.
+\end{proof}
+
+\begin{proposition}[10.3.5]
+\label{I.10.3.5-ko}
+$A$가 허용환이면 $\mathfrak{X}=\operatorname{Spf}(A)$의 모든 정의
+아이디얼은 $A$의 유일하게 결정되는 정의 아이디얼 $\mathfrak{J}$에 대한
+$\mathfrak{J}^\Delta$ 꼴이다.
+\end{proposition}
+
+\begin{proof}
+실제로 $\mathscr{J}$를 $\mathfrak{X}$의 정의 아이디얼이라 하자.
+가정과 $\mathfrak{X}$의 준콤팩트성에 따라 유한 개의 원소
+$f_i\in A$가 존재하여 $\mathfrak{D}(f_i)$들이 $\mathfrak{X}$를 덮고,
+$\mathscr{J}|\mathfrak{D}(f_i)=\mathfrak{H}_i^\Delta$이다. 여기서
+$\mathfrak{H}_i$는 $A_{\{f_i\}}$의 정의 아이디얼이다. 모든 $i$에
+대하여 $(\mathfrak{K}_i)_{\{f_i\}}=\mathfrak{H}_i$인 $A$의 열린
+아이디얼 $\mathfrak{K}_i$가 존재한다
+(\hyperref[0.7.6.9-ko]{0, 7.6.9}). 모든 $\mathfrak{K}_i$에 포함되는
+$A$의 정의 아이디얼을 $\mathfrak{K}$라 하자.
+$\mathscr{J}/\mathfrak{K}^\Delta$의
+$\operatorname{Spec}(A/\mathfrak{K})$의 구조층
+$\widetilde{A/\mathfrak{K}}$ 안에서의 표준 상
+(\hyperref[I.10.3.2-ko]{10.3.2})은 $\mathfrak{D}(f_i)$ 위로 제한하면
+$\widetilde{\mathfrak{K}_i/\mathfrak{K}}$의 제한과 같다. 따라서 이
+표준 상은 $\operatorname{Spec}(A/\mathfrak{K})$ 위의 준연접층이고,
+$\mathfrak{K}$를 포함하는 $A$의 아이디얼 $\mathfrak{J}$에 대하여
+$\widetilde{\mathfrak{J}/\mathfrak{K}}$ 꼴이다
+(\hyperref[I.1.4.1-ko]{1.4.1}). 그러므로
+$\mathscr{J}=\mathfrak{J}^\Delta$이다
+(\hyperref[I.10.3.2-ko]{10.3.2}). 또한 모든 $i$에 대하여
+$\mathfrak{H}_i^{n_i}\subset\mathfrak{K}_{\{f_i\}}$인 정수 $n_i$가
+존재한다. $n$을 $n_i$들의 최댓값이라 하면
+$(\mathscr{J}/\mathfrak{K}^\Delta)^n=0$이고, 따라서
+(\hyperref[I.10.3.2-ko]{10.3.2})에 의하여
+$(\widetilde{\mathfrak{J}/\mathfrak{K}})^n=0$이다. 그러므로 마침내
+$(\mathfrak{J}/\mathfrak{K})^n=0$이고
+(\hyperref[I.1.3.13-ko]{1.3.13}), 이는 $\mathfrak{J}$가 $A$의 정의
+아이디얼임을 보인다 (\hyperref[0.7.1.4-ko]{0, 7.1.4}).
+\end{proof}
+
+\begin{proposition}[10.3.6]
+\label{I.10.3.6-ko}
+$A$를 아딕환, $\mathfrak{J}$를 $A$의 정의 아이디얼이라 하고,
+$\mathfrak{J}/\mathfrak{J}^2$가 유한 생성
+$A/\mathfrak{J}$-가군이라고 하자. 그러면 모든 정수 $n>0$에 대하여
+$(\mathfrak{J}^\Delta)^n=(\mathfrak{J}^n)^\Delta$이다.
+\end{proposition}
+
+\begin{proof}
+실제로 모든 $f\in A$에 대하여 $\mathfrak{J}^n$은 열린 아이디얼이므로
+\[
+  \bigl(\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)\bigr)^n
+  =(\mathfrak{J}_{\{f\}})^n
+  =(\mathfrak{J}^n)_{\{f\}}
+  =\Gamma\bigl(\mathfrak{D}(f^n),(\mathfrak{J}^n)^\Delta\bigr)
+\]
+\oldpage[I]{185}
+이다. 이는 (\hyperref[I.10.3.1.1-ko]{10.3.1.1})과
+(\hyperref[0.7.6.12-ko]{0, 7.6.12})에서 따른다.
+$(\mathfrak{J}^\Delta)^n$은 준층
+$U\mapsto(\Gamma(U,\mathfrak{J}^\Delta))^n$의 층화이므로
+(\hyperref[0.4.1.6-ko]{0, 4.1.6}), $\mathfrak{D}(f)$들이
+$\mathfrak{X}$의 위상의 기저를 이룬다는 사실로부터 결론이
+따른다.\footnote{\textbf{번역 주.} 인쇄 원문은 이 명제의 증명에서
+“따름정리가 따른다”라고 쓰지만, 이곳에는 따름정리가 없으므로 “결론이
+따른다”로 바로잡았다.}
+\end{proof}
+
+\begin{env}[10.3.7]
+\label{I.10.3.7-ko}
+$\mathfrak{X}$의 정의 아이디얼들의 족 $(\mathscr{J}_\lambda)$가 다음
+조건을 만족할 때 이를 \emph{정의 아이디얼들의 기본계}라고 한다.
+$\mathfrak{X}$의 모든 정의 아이디얼은 어떤 $\mathscr{J}_\lambda$를
+포함한다. $\mathscr{J}_\lambda=\mathfrak{J}_\lambda^\Delta$이므로 이는
+$\mathfrak{J}_\lambda$들이 $A$에서 \emph{0의 근방 기본계}를 이룬다는
+것과 같다. $\mathfrak{D}(f_\alpha)$들이 $\mathfrak{X}$를 덮도록
+$A$의 원소들의 족 $(f_\alpha)$를 잡자.
+$(\mathscr{J}_\lambda)$가 $\mathscr{O}_{\mathfrak{X}}$의 아이디얼들의
+감소 여과족이고, 모든 $\alpha$에 대하여
+$(\mathscr{J}_\lambda|\mathfrak{D}(f_\alpha))$가
+$\mathfrak{D}(f_\alpha)$의 정의 아이디얼들의 기본계를 이룬다면,
+$(\mathscr{J}_\lambda)$는 $\mathfrak{X}$의 정의 아이디얼들의 기본계이다.
+실제로 $\mathfrak{X}$의 모든 정의 아이디얼 $\mathscr{J}$에 대하여
+$\mathfrak{D}(f_i)$들로 이루어진 $\mathfrak{X}$의 유한 덮개가 존재하여,
+모든 $i$에 대하여
+$\mathscr{J}_{\lambda_i}|\mathfrak{D}(f_i)$는
+$\mathfrak{D}(f_i)$의 정의 아이디얼이고
+$\mathscr{J}|\mathfrak{D}(f_i)$에 포함된다. 모든 $i$에 대하여
+$\mathscr{J}_\mu\subset\mathscr{J}_{\lambda_i}$인 지표 $\mu$를 잡으면,
+(\hyperref[I.10.3.3-ko]{10.3.3})에 따라 $\mathscr{J}_\mu$는
+$\mathfrak{X}$의 정의 아이디얼이고, 명백히 $\mathscr{J}$에 포함된다.
+이로부터 주장이 따른다.
+\end{env}
+
+\subsection{형식적 준스킴과 형식적 준스킴의 사상.}
+\label{subsection:I.10.4-ko}
+
+\begin{env}[10.4.1]
+\label{I.10.4.1-ko}
+위상환 달린 공간 $\mathfrak{X}$가 주어졌다고 하자. 열린집합
+$U\subset\mathfrak{X}$ 위에 $\mathfrak{X}$가 유도하는 위상환 달린 공간이
+아핀 형식적 스킴(각각 그 환이 아딕인 아핀 형식적 스킴, 아딕이고 뇌터인
+아핀 형식적 스킴)일 때, $U$를 \emph{아핀 형식적 열린집합}(각각
+\emph{아딕 아핀 형식적 열린집합}, \emph{뇌터 아핀 형식적 열린집합})이라
+한다.
+\end{env}
+
+\begin{definition}[10.4.2]
+\label{I.10.4.2-ko}
+모든 점이 아핀 형식적 열린 근방을 갖는 위상환 달린 공간
+$\mathfrak{X}$를 형식적 준스킴이라 한다. 형식적 준스킴
+$\mathfrak{X}$가 아딕(각각 국소 뇌터)이라는 것은 $\mathfrak{X}$의 모든
+점이 아딕 아핀 형식적 열린 근방(각각 뇌터 아핀 형식적 열린 근방)을
+갖는다는 뜻이다.
+국소 뇌터인 $\mathfrak{X}$의 바탕공간이 준콤팩트일 때(따라서 그
+바탕공간은 뇌터이다) 이를 뇌터라 한다.
+\end{definition}
+
+\begin{proposition}[10.4.3]
+\label{I.10.4.3-ko}
+$\mathfrak{X}$가 형식적 준스킴(각각 국소 뇌터 형식적 준스킴)이면,
+아핀 형식적 열린집합들(각각 뇌터 아핀 형식적 열린집합들)은
+$\mathfrak{X}$의 위상의 기저를 이룬다.
+\end{proposition}
+
+\begin{proof}
+이는 (\hyperref[I.10.4.2-ko]{10.4.2})와
+(\hyperref[I.10.1.4-ko]{10.1.4})에서 따른다. 여기서 $A$가 뇌터
+아딕환이면 $A_{\{f\}}$도 모든 $f\in A$에 대하여 그러하다는 사실
+(\hyperref[0.7.6.11-ko]{0, 7.6.11})을 사용한다.
+\end{proof}
+
+\begin{corollary}[10.4.4]
+\label{I.10.4.4-ko}
+$\mathfrak{X}$가 형식적 준스킴(각각 국소 뇌터 형식적 준스킴, 뇌터
+형식적 준스킴)이면, $\mathfrak{X}$의 모든 열린집합 위에 유도된
+위상환 달린 공간도 형식적 준스킴(각각 국소 뇌터 형식적 준스킴,
+뇌터 형식적 준스킴)이다.
+\end{corollary}
+
+\begin{definition}[10.4.5]
+\label{I.10.4.5-ko}
+두 형식적 준스킴 $\mathfrak{X}$, $\mathfrak{Y}$가 주어졌다고 하자.
+$\mathfrak{X}$에서 $\mathfrak{Y}$로 가는 위상환 달린 공간의 사상
+$(\psi,\theta)$ 가운데 모든 $x\in\mathfrak{X}$에 대하여
+$\theta_x^\sharp$가 국소 준동형
+$\mathscr{O}_{\psi(x)}\to\mathscr{O}_x$인 것을 (형식적 준스킴의)
+사상이라 한다.
+\end{definition}
+
+두 형식적 준스킴의 사상의 합성도 형식적 준스킴의 사상임은 자명하다.
+따라서 형식적 준스킴들은 하나의 \emph{범주}를 이룬다.
+$\operatorname{Hom}(\mathfrak{X},\mathfrak{Y})$로 형식적 준스킴
+$\mathfrak{X}$에서 형식적 준스킴 $\mathfrak{Y}$로 가는 사상들의 집합을
+나타낸다.
+
+\oldpage[I]{186}
+$U$가 $\mathfrak{X}$의 열린부분이면, $U$ 위에 $\mathfrak{X}$가 유도하는
+형식적 준스킴에서 $\mathfrak{X}$로 가는 표준 포함 사상은 형식적
+준스킴의 사상이다(더 나아가 위상환 달린 공간의 \emph{단사사상}이다
+(\hyperref[0.4.1.1-ko]{0, 4.1.1})).
+
+\begin{proposition}[10.4.6]
+\label{I.10.4.6-ko}
+$\mathfrak{X}$를 형식적 준스킴이라 하고,
+$\mathfrak{S}=\operatorname{Spf}(A)$를 아핀 형식적 스킴이라 하자.
+형식적 준스킴 $\mathfrak{X}$에서 형식적 준스킴 $\mathfrak{S}$로 가는
+사상들과 환 $A$에서 위상환
+$\Gamma(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$로 가는 연속
+준동형들 사이에는 표준 전단사 대응이 존재한다.
+\end{proposition}
+
+증명은 (\hyperref[I.2.2.4-ko]{2.2.4})의 증명과 같다. 다만
+“준동형”을 “연속 준동형”으로, “아핀 열린집합”을 “아핀 형식적
+열린집합”으로 바꾸고, (\hyperref[I.10.2.2-ko]{10.2.2})를
+(\hyperref[I.1.7.3-ko]{1.7.3}) 대신 사용한다. 자세한 내용은 독자에게
+맡긴다.
+
+\begin{env}[10.4.7]
+\label{I.10.4.7-ko}
+형식적 준스킴 $\mathfrak{S}$가 주어졌다고 하자. 형식적 준스킴
+$\mathfrak{X}$와 사상 $\varphi:\mathfrak{X}\to\mathfrak{S}$의 자료가
+주어졌을 때, 형식적 준스킴 $\mathfrak{X}$를
+\emph{$\mathfrak{S}$ 위의 형식적 준스킴} 또는
+\emph{$\mathfrak{S}$-형식적 준스킴}이라 하고,
+$\varphi$를 $\mathfrak{S}$-형식적 준스킴 $\mathfrak{X}$의
+\emph{구조 사상}이라 한다. $\mathfrak{S}=\operatorname{Spf}(A)$이고
+$A$가 허용환이면, $\mathfrak{S}$-형식적 준스킴 $\mathfrak{X}$를
+\emph{$A$-형식적 준스킴} 또는 \emph{$A$ 위의 형식적 준스킴}이라고도
+한다. 모든 형식적 준스킴은 (이산 위상을 갖춘) $\mathbf{Z}$ 위의
+형식적 준스킴으로 볼 수 있다.
+
+$\mathfrak{X}$, $\mathfrak{Y}$를 두 $\mathfrak{S}$-형식적 준스킴이라
+하자. 사상 $u:\mathfrak{X}\to\mathfrak{Y}$에 대하여 도식
+\[
+  \xymatrix{
+    \mathfrak{X}\ar[rr]^u\ar[rd] & &
+    \mathfrak{Y}\ar[ld]\\
+    & \mathfrak{S}
+  }
+\]
+(빗금 화살표들은 구조 사상이다)이 가환일 때, 이 사상을
+\emph{$\mathfrak{S}$-사상}이라 한다. 이 정의에 따라 (고정된
+$\mathfrak{S}$에 대한) $\mathfrak{S}$-형식적 준스킴들은 하나의
+\emph{범주}를 이룬다.
+$\operatorname{Hom}_{\mathfrak{S}}(\mathfrak{X},\mathfrak{Y})$로
+$\mathfrak{S}$-형식적 준스킴 $\mathfrak{X}$에서
+$\mathfrak{S}$-형식적 준스킴 $\mathfrak{Y}$로 가는
+$\mathfrak{S}$-사상들의 집합을 나타낸다.
+$\mathfrak{S}=\operatorname{Spf}(A)$이면 \emph{$A$-사상}이라는 말도
+\emph{$\mathfrak{S}$-사상} 대신 사용한다.
+\end{env}
+
+\begin{env}[10.4.8]
+\label{I.10.4.8-ko}
+모든 아핀 스킴은 아핀 형식적 스킴으로 볼 수 있으므로
+(\hyperref[I.10.1.2-ko]{10.1.2}), 모든 (일반적인) 준스킴은 형식적
+준스킴으로 볼 수 있다. 또한 (\hyperref[I.10.4.5-ko]{10.4.5})에 따라
+\emph{일반적인} 준스킴에 대해서는 \emph{형식적} 준스킴의 사상(각각
+$S$-사상)이 §~\hyperref[section:I.2-ko]{2}에서 정의한 사상(각각
+$S$-사상)과 일치한다.
+\end{env}
+
+\subsection{형식적 준스킴의 정의 아이디얼.}
+\label{subsection:I.10.5-ko}
+
+\begin{env}[10.5.1]
+\label{I.10.5.1-ko}
+형식적 준스킴 $\mathfrak{X}$가 주어졌다고 하자.
+$\mathscr{O}_{\mathfrak{X}}$-아이디얼 $\mathscr{J}$가 다음 조건을 만족할
+때 이를 $\mathfrak{X}$의 \emph{정의 아이디얼층}(또는
+\emph{정의 아이디얼})이라 한다. 모든 $x\in\mathfrak{X}$에 대하여 아핀
+형식적 열린 근방 $U$가 존재하여, $\mathscr{J}|U$는 $U$ 위에
+$\mathfrak{X}$가 유도하는 아핀 형식적 스킴의 정의 아이디얼이다
+(\hyperref[I.10.3.3-ko]{10.3.3}). 이때
+(\hyperref[I.10.3.1.1-ko]{10.3.1.1})과
+(\hyperref[I.10.4.3-ko]{10.4.3})에 따라 모든 열린집합
+$V\subset\mathfrak{X}$에 대하여 $\mathscr{J}|V$는 $V$ 위에
+$\mathfrak{X}$가 유도하는 형식적 준스킴의 정의 아이디얼이다.
+
+$\mathfrak{X}$의 정의 아이디얼들로 이루어진 족
+$(\mathscr{J}_\lambda)$에 대하여, $\mathfrak{X}$의 아핀 형식적
+열린집합들로 이루어진 덮개 $(U_\alpha)$가 존재하여 모든 $\alpha$에
+대해 $\mathscr{J}_\lambda|U_\alpha$들로 이루어진 족이 $U_\alpha$ 위에
+$\mathfrak{X}$가 유도하는 아핀 형식적 스킴의 정의 아이디얼들의
+기본계를 이룰 때(\hyperref[I.10.3.6-ko]{10.3.6}), 이 족을
+\emph{정의 아이디얼들의}
+\oldpage[I]{187}
+\emph{기본계}라고 한다. (\hyperref[I.10.3.7-ko]{10.3.7})의 마지막
+주에 따라, $\mathfrak{X}$가 아핀 형식적 스킴이면 이 정의는
+(\hyperref[I.10.3.7-ko]{10.3.7})에서 주어진 정의와 일치한다. $V$를
+$\mathfrak{X}$의 임의의 열린집합이라 하면, $\mathscr{J}_\lambda|V$들은
+$V$ 위에 유도된 형식적 준스킴의 정의 아이디얼들의 기본계를 이룬다. 이는
+(\hyperref[I.10.3.1.1-ko]{10.3.1.1})에서 따른다. $\mathfrak{X}$가
+\emph{국소 뇌터} 형식적 준스킴이고 $\mathscr{J}$가 $\mathfrak{X}$의
+정의 아이디얼이면, (\hyperref[I.10.3.6-ko]{10.3.6})에 따라 거듭제곱들
+$\mathscr{J}^n$은 $\mathfrak{X}$의 정의 아이디얼들의 기본계를 이룬다.
+\end{env}
+
+\begin{env}[10.5.2]
+\label{I.10.5.2-ko}
+$\mathfrak{X}$를 형식적 준스킴이라 하고, $\mathscr{J}$를
+$\mathfrak{X}$의 정의 아이디얼이라 하자. 그러면 환 달린 공간
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})$는
+\emph{준스킴}(일반적인 의미에서)이다. $\mathfrak{X}$가 아핀 형식적
+스킴(각각 국소 뇌터 형식적 준스킴, 뇌터 형식적 준스킴)이면 이 준스킴은
+아핀(각각 국소 뇌터, 뇌터)이다. 실제로 곧바로 아핀인 경우로 환원되며,
+그 경우에는 (\hyperref[I.10.3.2-ko]{10.3.2})에서 이미 이 명제를
+증명했다. 또한
+$\theta:\mathscr{O}_{\mathfrak{X}}\to
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}$가 표준 준동형이면,
+$u=(1_{\mathfrak{X}},\theta)$는 형식적 준스킴의 \emph{사상}
+(\emph{표준 사상}이라 한다)
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})\to
+(\mathfrak{X},\mathscr{O}_{\mathfrak{X}})$이다. 이 사실도 곧바로 아핀인
+경우로 환원되며, 그 경우에는
+(\hyperref[I.10.3.2-ko]{10.3.2})에서 이미 확인했다.
+\end{env}
+
+\begin{proposition}[10.5.3]
+\label{I.10.5.3-ko}
+$\mathfrak{X}$를 형식적 준스킴이라 하고, $(\mathscr{J}_\lambda)$를
+$\mathfrak{X}$의 정의 아이디얼들의 기본계라 하자. 그러면 위상환의 층
+$\mathscr{O}_{\mathfrak{X}}$는 의사이산 위상환의 층들
+(\hyperref[0.3.8.1-ko]{0, 3.8.1})
+$\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\lambda$의 사영극한이다.
+\end{proposition}
+
+\begin{proof}
+$\mathfrak{X}$의 위상에는 준콤팩트 아핀 형식적 열린집합들로 이루어진
+기저가 있으므로(\hyperref[I.10.4.3-ko]{10.4.3}), 아핀인 경우로
+환원된다. 이 경우 명제는 (\hyperref[I.10.3.5-ko]{10.3.5}),
+(\hyperref[I.10.3.2-ko]{10.3.2})와
+(\hyperref[I.10.1.1-ko]{10.1.1})의 정의에서 따른다.
+\end{proof}
+
+모든 형식적 준스킴이 정의 아이디얼을 갖는지는 확실하지 않다. 그러나
+다음은 성립한다.
+
+\begin{proposition}[10.5.4]
+\label{I.10.5.4-ko}
+$\mathfrak{X}$를 국소 뇌터 형식적 준스킴이라 하자. 그러면
+정의 아이디얼 $\mathscr{T}$가 $\mathfrak{X}$의 가장 큰 정의
+아이디얼로서 존재한다. 이는 정의 아이디얼 $\mathscr{J}$ 가운데 준스킴
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})$가 축소인
+유일한 것이다. $\mathscr{J}$가
+$\mathfrak{X}$의 정의 아이디얼이면, $\mathscr{T}$는 표준 준동형
+$\mathscr{O}_{\mathfrak{X}}\to
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}$에 의한
+$\mathscr{O}_{\mathfrak{X}}/\mathscr{J}$의 멱영근기의 역상이다.
+\end{proposition}
+
+\begin{proof}
+먼저 $\mathfrak{X}=\operatorname{Spf}(A)$이고 $A$가 뇌터 아딕환이라고
+하자. $\mathscr{T}$의 존재성과 성질들은
+(\hyperref[I.10.3.5-ko]{10.3.5})\footnote{\textbf{번역 주.} 인쇄 원문은
+이곳에서 (10.3.4)를 참조하지만, 출판된 EGA II 정오표는 이를
+(10.3.5)로 고치도록 지시한다. 그 공식 교정을 적용했다.}와
+(\hyperref[I.5.1.1-ko]{5.1.1})에서 바로 따른다. 이때 $A$의 가장 큰
+정의 아이디얼의 존재성과 성질들
+(\hyperref[0.7.1.6-ko]{0, 7.1.6}과
+\hyperref[0.7.1.7-ko]{7.1.7})을 이용한다.
+
+일반적인 경우에 $\mathscr{T}$의 존재성과 성질들을 증명하려면,
+$U\supset V$를 $\mathfrak{X}$의 두 뇌터 아핀 형식적 열린집합이라 할 때
+$U$의 가장 큰 정의 아이디얼 $\mathscr{T}_U$가 $V$의 가장 큰 정의
+아이디얼 $\mathscr{T}_V$를 유도함을 보이면 충분하다. 그런데
+$(V,(\mathscr{O}_{\mathfrak{X}}|V)/(\mathscr{T}_U|V))$는 축소이므로,
+이는 앞에서 보인 결과에서 따른다.
+\end{proof}
+
+$\mathfrak{X}_{\mathrm{red}}$는 축소 준스킴(일반적인 의미에서)
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{T})$를 나타낸다.
+
+\begin{corollary}[10.5.5]
+\label{I.10.5.5-ko}
+$\mathfrak{X}$를 국소 뇌터 형식적 준스킴이라 하고, $\mathscr{T}$를
+$\mathfrak{X}$의 가장 큰 정의 아이디얼이라 하자. $V$가
+$\mathfrak{X}$의 임의의 열린집합이면, $\mathscr{T}|V$는
+$\mathfrak{X}$가 $V$ 위에 유도하는 형식적 준스킴의 가장 큰 정의
+아이디얼이다.
+\end{corollary}
+
+\oldpage[I]{188}
+
+\begin{proposition}[10.5.6]
+\label{I.10.5.6-ko}
+$\mathfrak{X}$, $\mathfrak{Y}$를 두 형식적 준스킴이라 하고,
+$\mathscr{J}$와 $\mathscr{K}$를 각각 $\mathfrak{X}$와
+$\mathfrak{Y}$의 정의 아이디얼이라 하며,
+$f:\mathfrak{X}\to\mathfrak{Y}$를 형식적 준스킴의 사상이라 하자.
+\begin{enumerate}
+  \item[{\upshape(i)}]
+    $f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$이면,
+    일반적인 의미에서 준스킴의 사상인
+    $f':(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})\to
+    (\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})$가 유일하게
+    존재하고 다음 도식을 가환이게 한다.
+    \[
+      \label{I.10.5.6.1-ko}
+      \xymatrix{
+        (\mathfrak{X},\mathscr{O}_{\mathfrak{X}})\ar[r]^f &
+        (\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}})\\
+        (\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})
+          \ar[r]_{f'}\ar[u] &
+        (\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})\ar[u]
+      }
+      \tag{10.5.6.1}
+    \]
+    여기서 세로 화살표들은 표준 사상이다.
+  \item[{\upshape(ii)}]
+    $\mathfrak{X}=\operatorname{Spf}(A)$,
+    $\mathfrak{Y}=\operatorname{Spf}(B)$가 아핀 형식적 스킴이고,
+    $\mathscr{J}=\mathfrak{J}^{\Delta}$,
+    $\mathscr{K}=\mathfrak{K}^{\Delta}$라 하자. 여기서
+    $\mathfrak{J}$와 $\mathfrak{K}$는 각각 $A$와 $B$의 정의
+    아이디얼이다. 또한
+    $f=({}^a\varphi,\widetilde{\varphi})$이고
+    $\varphi:B\to A$가 연속 준동형이라 하자. 이때
+    $f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$일
+    필요충분조건은
+    $\varphi(\mathfrak{K})\subset\mathfrak{J}$인 것이다. 이 경우
+    $f'$은 사상 $({}^a\varphi',\widetilde{\varphi'})$이며, 여기서
+    $\varphi':B/\mathfrak{K}\to A/\mathfrak{J}$은 $\varphi$에서
+    몫으로 내려가 얻은 준동형이다.
+\end{enumerate}
+\end{proposition}

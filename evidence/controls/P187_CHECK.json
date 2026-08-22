@@ -1,0 +1,362 @@
+{
+  "schema": "ega_i_printed_page_187_gate_v1",
+  "checked_date": "2026-08-05",
+  "printed_page": 187,
+  "pdf_one_based_page": 186,
+  "path_roots": {
+    "fr": "C:/Users/Floris/Documents/interlanguage/Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1",
+    "en": "C:/Users/Floris/Documents/interlanguage/03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1",
+    "interlanguage": "C:/Users/Floris/Documents/interlanguage"
+  },
+  "authority": {
+    "path": "C:/Users/Floris/Documents/Papors/OS/NUMDAM/EGA_I_PMIHES_1960_4.pdf",
+    "bytes": 31680717,
+    "pages": 227,
+    "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6"
+  },
+  "published_erratum": {
+    "path": "C:/Users/Floris/Documents/Papors/OS/NUMDAM/EGA_II_PMIHES_1961_8.pdf",
+    "bytes": 27414108,
+    "sha256": "111834EFFFE9E90D068389D418F08925A82B4A54AE2957F080712D4180E032EB",
+    "witness": {
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P187_ERR.txt",
+      "bytes": 1375,
+      "lines": 25,
+      "sha256": "14F33BE31998EB9C680EFC6A385C3A5FBA5B32FCC808A92354054EAB04802E75"
+    },
+    "instruction": "I.10.5.4: replace printed 10.3.4 by 10.3.5"
+  },
+  "predecessor_gate": {
+    "path": "controls/P186_CHECK.json",
+    "bytes": 14764,
+    "lines": 458,
+    "sha256": "68F12691A68F09687FCACE36AD97E9D365E71655061294B45F4728683BDA2493",
+    "pass": true
+  },
+  "scope": {
+    "path": "controls/SCOPE.json",
+    "bytes": 8897,
+    "lines": 139,
+    "sha256": "7F19B145EFD0E37FC24D47A40A01497A3AF2F639331CBCACAFACBD90C93C108A",
+    "french_and_english_separate": true,
+    "combined_reader_forbidden": true,
+    "production_agents_forbidden": true,
+    "semantic_scaffold_required": true
+  },
+  "witnesses": {
+    "root": "fr",
+    "text": {
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P187.txt",
+      "bytes": 3583,
+      "lines": 45,
+      "form_feeds": 1,
+      "sha256": "88BE85C168D23D1A9DB3EDC835ABADBA67E2E26E311F180A0A96E49E0436CC96"
+    },
+    "image": {
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P187.png",
+      "bytes": 254406,
+      "width": 1259,
+      "height": 1573,
+      "dpi": 150,
+      "sha256": "AE06936A0CFFFEC37C657FB89A7035BB63481CAA7EB8ADD86039929AAABC0924"
+    },
+    "new_ocr": false,
+    "crop_count": 0
+  },
+  "french": {
+    "root": "fr",
+    "source": {
+      "path": "source/ega1/ega1-10-fr.tex",
+      "bytes": 33744,
+      "lines": 747,
+      "sha256": "CABD7E341E565936D1B28982AD978C9DD961E066BBB1BF102893CB1B52482CCA",
+      "begin_count": 38,
+      "end_count": 38,
+      "i187_count": 1,
+      "i188_count": 0,
+      "temporary_suffix": null
+    },
+    "append": {
+      "offset": 28765,
+      "bytes": 4979,
+      "lines": 104,
+      "sha256": "1E9E963F3B1F9B31602EE76C1E7DA234562F14CA983F84AADE27D9C0213B38C6"
+    },
+    "inverse": {
+      "operation": "truncate at byte 28,765 and restore literal 10-byte \\end{env}\\n",
+      "reconstructed_bytes": 28775,
+      "reconstructed_lines": 644,
+      "reconstructed_sha256": "E7CE6770851AB0B8C2EA6D6C1996AB0B3E93A15095217E15536DBD2B056074DF",
+      "pass": true
+    },
+    "source_tree": {
+      "files": 11,
+      "bytes": 449170,
+      "sha256": "A0DF181775503E72835B2B693BA87017315343B810BF427B3132FC2CFFBB3E0E"
+    },
+    "printed_reference_disposition": {
+      "printed": "10.3.4",
+      "published_replacement": "10.3.5",
+      "diplomatic_source_retained": true,
+      "silent_correction": false
+    },
+    "ledger": {
+      "root": "fr",
+      "path": "controls/P187_FR.jsonl",
+      "bytes": 13036,
+      "lines": 20,
+      "sha256": "8CDDABA08229E2921386AA48480701F95AAF2D3A8FD11C509DA7C00851804FAF",
+      "stable_ids_unique": true,
+      "all_pass": true
+    },
+    "build": {
+      "root": "fr",
+      "wrapper": {
+        "path": "qa/ega1_chapter1_build/P187_FR.tex",
+        "bytes": 5235,
+        "lines": 148,
+        "sha256": "CBFB452137BB48A3F883B12A9847B2693332AA7606B939DF6F24FC96331C608F"
+      },
+      "pdf": {
+        "path": "qa/ega1_chapter1_build/P187_FR/P187_FR.pdf",
+        "bytes": 1082875,
+        "pages": 74,
+        "sha256": "3D0E88916F7AA753CDC758AA3419F25BA79FA6AE0FB11EB2D56CF391B8D14614"
+      },
+      "tree": {
+        "files": 6,
+        "bytes": 1400791,
+        "sha256": "6062FE8B75D21BECA52AE513879C66AA1ECAB4140EA7825C49C6926BC6B2DAA7"
+      },
+      "warnings": {
+        "latex": 9,
+        "hyper_reference": 7,
+        "overfull": 2,
+        "underfull": 0,
+        "fatal_or_error": 0
+      },
+      "visual_pass": true
+    }
+  },
+  "english": {
+    "source": {
+      "root": "en",
+      "path": "source/ega1/ega1-10.tex",
+      "bytes": 143365,
+      "lines": 1615,
+      "sha256": "5F1421F24AD70732AAA0BE9CD8F30C9E217128062FCE62687DEEFE8EF0F00212"
+    },
+    "page_slice": {
+      "start_offset": 26172,
+      "end_offset": 30750,
+      "bytes": 4578,
+      "lines": 47,
+      "sha256": "314C51BDFC2936F7DF9DD8C6ED3138BA63E5340233F32B86155531E56EBAFF20"
+    },
+    "repairs": [
+      "restore formal prescheme in both Noetherian branches of 10.5.2",
+      "insert I 188 after Corollary 10.5.5"
+    ],
+    "retained_erratum": "10.3.5 with visible Err II disclosure",
+    "inverse": {
+      "changed_fragments": 2,
+      "reconstructed_r138_bytes": 143341,
+      "reconstructed_r138_lines": 1613,
+      "reconstructed_r138_sha256": "D82E9471418F29B9F6B3E4C556256F15374D2EDF8B4C603701A52117D84D8169",
+      "pass": true
+    },
+    "manifest": {
+      "root": "en",
+      "path": "controls/R139.json",
+      "bytes": 72907,
+      "lines": 1468,
+      "sha256": "953F6D31DF696F36D943D2F7391678CAEADA11D6C449E664B12126365C2F0B18",
+      "files": 127,
+      "total_bytes": 7282694,
+      "tree_sha256": "5919B24DFF4D7AC02935ABF556EBB7B49CA3899317550E417FB3047F9483C107",
+      "predecessor_manifest_count": 137,
+      "changed_from_r138": [
+        "ega1/ega1-10.tex"
+      ],
+      "independent_replay": "127/127",
+      "spark_shards": [
+        "32/32",
+        "32/32",
+        "32/32",
+        "31/31"
+      ]
+    },
+    "ledger": {
+      "root": "fr",
+      "path": "controls/P187_EN.jsonl",
+      "bytes": 8922,
+      "lines": 15,
+      "sha256": "0CB1E19BE9AE0A06ADF89197E18129EE0C62A3D9663633F29AD09A9EF4985EEF",
+      "stable_ids_unique": true,
+      "all_pass": true
+    },
+    "build": {
+      "root": "en",
+      "wrapper": {
+        "path": "controls/P187_EN.tex",
+        "bytes": 1489,
+        "lines": 45,
+        "sha256": "2CAD1B6EB3D5BF39C56BCDAC028DEC882111625F24C78561B43B5E9B645EDECD"
+      },
+      "pdf": {
+        "path": "source/controls/P187_EN/P187_EN.pdf",
+        "bytes": 836826,
+        "pages": 66,
+        "sha256": "47D1E76D34E34A44CACD32802E37C3FCFCC7A15A63D64B34E7EAD0016EE68B42"
+      },
+      "tree": {
+        "files": 6,
+        "bytes": 1276112,
+        "sha256": "2A84084D3AB9E0EC39BF5A0FA8EF34B0BFEFE9ECF432B56D3D997D43652E7A09"
+      },
+      "warnings": {
+        "latex": 3,
+        "package_hyperref": 2,
+        "hyper_reference": 2,
+        "overfull": 1,
+        "underfull": 0,
+        "fatal_or_error": 0
+      },
+      "visual_pass": true
+    }
+  },
+  "semantic_scaffold": {
+    "root": "interlanguage",
+    "path": "03_projects/language_management/english_germanic/00_lane_control/EGA_PRESTACKS_MACHINE_READABLE_INDEXING_SCAFFOLD_20260802.md",
+    "bytes": 177701,
+    "lines": 3018,
+    "sha256": "B284C32B42351A8C10E3DA0DF4E54046DDF7FFB077134E63A5D174425D6CFBC5",
+    "append_bytes": 5247,
+    "append_lines": 88,
+    "append_sha256": "53EB639DB21C4FF82A44DBAF00F888DC144B009625C0889F64428DDFFA6C7A7C",
+    "pp144_176_backfill_open": true,
+    "combined_reader": false
+  },
+  "spark": {
+    "pre_gate_batch": "zzz-s41--zzz-s48",
+    "task_count": 8,
+    "all_archived": true,
+    "unexpected_files_created": 0,
+    "decision_authority": false,
+    "catalogue": {
+      "root": "interlanguage",
+      "path": "04_handoffs/SPARK.md",
+      "bytes": 32638,
+      "lines": 552,
+      "sha256": "A324BD5206AEE5BC79078CC96A377CC576F3D5A71DE88216484C109F224CCABF"
+    },
+    "post_gate_audit": {
+      "batch": "zzz-s49--zzz-s56",
+      "task_count": 8,
+      "task_ids": [
+        "019fd3aa-8e4c-7030-ab6e-3ccc2af31c0a",
+        "019fd3aa-9b05-75f2-b0ab-4dc50faa23b3",
+        "019fd3aa-a8fc-7371-b1d2-1071e787ac55",
+        "019fd3aa-b72a-7601-b4cf-99062cf6ccbc",
+        "019fd3aa-c8c9-7613-b22d-c4d400463320",
+        "019fd3aa-dbe5-7531-a746-b8fe3fbd4b55",
+        "019fd3aa-fa68-7be3-ab63-33dbac346f4c",
+        "019fd3ab-24b3-72d0-a407-bba9f127551f"
+      ],
+      "initial_capacity_failures": 5,
+      "replacement_tasks_created": 0,
+      "r139_shards": [
+        "32/32",
+        "32/32",
+        "32/32",
+        "31/31"
+      ],
+      "french_inverse": "pass",
+      "english_inverse": "pass",
+      "build_and_scaffold": "pass after explicit root mapping",
+      "gate_identity_audit": "pass after explicit root mapping",
+      "control_correction": "added path_roots and physical root-relative English/scaffold paths; no source, translation, semantic, build, or publication byte changed",
+      "unexpected_files_created": 0,
+      "all_archived": true
+    }
+  },
+  "durable_controls": [
+    {
+      "root": "fr",
+      "path": "README.md",
+      "bytes": 3183,
+      "lines": 62,
+      "sha256": "D01E93F7A1BE6E3F2DC28F2527616100614F5F569C00AA6F6FC356581C7BFAA8"
+    },
+    {
+      "root": "fr",
+      "path": "LOGBOOK.md",
+      "bytes": 617135,
+      "lines": 10070,
+      "sha256": "E154FC80CA435E9813CF77FE10DF64D4FB19B2FDDEC60923174D6E89397894DB"
+    },
+    {
+      "root": "fr",
+      "path": "STATUS.md",
+      "bytes": 319433,
+      "lines": 5883,
+      "sha256": "504BAAD53AD4D9815904FF28537E19D48FE1D580A1880EB0A85639B0785E0ED9"
+    },
+    {
+      "root": "fr",
+      "path": "CONTINUATION_HANDOFF.md",
+      "bytes": 202058,
+      "lines": 3809,
+      "sha256": "C4DD251497EB3BFC549884F384DCF1D06D1746FA544B73448D0E4011661634A4"
+    },
+    {
+      "root": "en",
+      "path": "LOGBOOK.md",
+      "bytes": 268736,
+      "lines": 4608,
+      "sha256": "7BD5963413401AD1DED2AB74942BD0976F0B16A5CE6C0D3533DFE0C1BC3D7385"
+    },
+    {
+      "root": "en",
+      "path": "STATUS.md",
+      "bytes": 147280,
+      "lines": 2825,
+      "sha256": "3D0116A657E5DD563D26A7E08B35361E778B927F11FB503A5403315E8CD0356E"
+    }
+  ],
+  "validator": {
+    "path": "controls/p187.py",
+    "bytes": 23281,
+    "lines": 387,
+    "sha256": "9913E87CF31516EA8E0C29F73948C310B72C2A9EFBF37881B7DE4FF753774A23",
+    "pre_gate_checks": 503,
+    "expected_post_gate_checks": 513,
+    "errors": [],
+    "pass": true
+  },
+  "edition_separation": {
+    "french_edition": "independent",
+    "english_edition": "independent",
+    "bilingual_master_created": false,
+    "bilingual_pdf_created": false,
+    "side_by_side_or_interleaved_created": false,
+    "semantic_links_only": true
+  },
+  "publication_disposition": {
+    "concept_doi": "10.5281/zenodo.20414353",
+    "public_record": "https://zenodo.org/records/21793469",
+    "release_ready_package_prepared": false,
+    "stable_release_fingerprint_changed": false,
+    "staged_upload": false,
+    "new_version_published": false,
+    "reason": "printed p.187 is a bounded working gate, not a changed cumulative standalone release package"
+  },
+  "next_cursor": {
+    "pdf_one_based_page": 187,
+    "printed_page": 188,
+    "continuation": "beginning Proposition 10.5.6",
+    "remove_french_suffix": false
+  },
+  "errors": [],
+  "pass": true
+}

@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "engine": "XeLaTeX / MiKTeX with SOURCE_DATE_EPOCH=1786633200 and FORCE_SOURCE_DATE=1",
-  "passes": 3,
+  "passes": 6,
   "repeat_comparison": "byte-identical",
   "pdf": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "pages": 30,
-  "bytes": 378163,
-  "sha256": "3A1878316D1A18D8995AC656D90F36067B12E98AF6F533E274F6CE9E4B210AB6",
-  "log_bytes": 41230,
-  "log_sha256": "0B848E405A75B81B928D55DF674FCF453AE4FA4BA0EC2079294BD5A6324D1713",
+  "pages": 134,
+  "bytes": 1177111,
+  "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C",
+  "log_bytes": 43247,
+  "log_sha256": "34D9612343A17B680965C561DE1E4B5FF8CD8C6C772B2D52BCABAF8D187207F1",
   "extraction_match_to_inspected_reader": true,
-  "render_match_to_inspected_reader": "30/30 byte-identical PNGs at 144 dpi",
+  "render_match_to_inspected_reader": "release-information page2 directly inspected at200dpi; final mathematical pages132-134 pixel-identical to directly inspected200dpi PNGs; prior sealed pages carried by the cumulative visual ledger",
   "diagnostic_hits": 0,
   "result": "PASS"
 }

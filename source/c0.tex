@@ -1794,3 +1794,4025 @@ $V_{\mu\nu}\cap V_{\mu\lambda}$,
 $V_{\nu\lambda}\cap V_{\nu\mu}$는 모두
 $X'_\lambda\cap X'_\mu\cap X'_\nu$와 동일시된다. 이제 $X_\lambda$의 환 달린 공간 구조를 $X'_\lambda$로 옮길 수 있다. $\mathcal A'_\lambda$가 $\mathcal A_\lambda$로부터 옮겨진 환의 층이면, $\mathcal A'_\lambda$들은 붙이기 조건 (3.3.1)을 만족하므로 $X$ 위의 환의 층 $\mathcal A$를 정의한다. 이때 $(X,\mathcal A)$를 $\varphi_{\lambda\mu}$들을 사용하여 $V_{\lambda\mu}$들을 따라 $(X_\lambda,\mathcal A_\lambda)$들을 \emph{붙여서 얻은 환 달린 공간}이라 한다.
 \end{env}
+
+\subsection{$\mathcal A$-가군의 직상}
+\label{subsection:0.4.2-ko}
+
+\begin{env}[4.2.1]
+\label{0.4.2.1-ko}
+$(X,\mathcal A)$와 $(Y,\mathcal B)$를 두 환 달린 공간이라 하고,
+$\Psi=(\psi,\theta)$를
+$(X,\mathcal A)$에서 $(Y,\mathcal B)$로 가는 사상이라 하자.
+그러면 $\psi_*(\mathcal A)$는 $Y$ 위의 환의 층이고,
+$\theta$는 환의 층의 준동형
+$\mathcal B\to\psi_*(\mathcal A)$이다.
+이제 $\mathcal F$를 $\mathcal A$-가군이라 하자. 그 직상
+$\psi_*(\mathcal F)$는 $Y$ 위의 아벨군의 층이다. 더 나아가 모든
+열린집합 $U\subset Y$에 대하여
+\[
+  \Gamma(U,\psi_*(\mathcal F))
+  =\Gamma(\psi^{-1}(U),\mathcal F)
+\]
+에는 환
+$\Gamma(U,\psi_*(\mathcal A))=\Gamma(\psi^{-1}(U),\mathcal A)$에
+관한 가군 구조가 주어진다. 이 구조들을 정의하는 쌍선형 사상들은
+제한연산과 양립하므로 $\psi_*(\mathcal F)$ 위에
+$\psi_*(\mathcal A)$-가군 구조를 정의한다. 따라서 준동형
+$\theta:\mathcal B\to\psi_*(\mathcal A)$를 통해
+$\psi_*(\mathcal F)$ 위에 $\mathcal B$-가군 구조도 정의할 수 있다.
+이 $\mathcal B$-가군을 
+\emph{사상 $\Psi$에 의한 $\mathcal F$의 직상}이라 하고
+$\Psi_*(\mathcal F)$로 나타낸다.
+
+$\mathcal F_1$, $\mathcal F_2$가 $X$ 위의 두 $\mathcal A$-가군이고
+$u:\mathcal F_1\to\mathcal F_2$가 $\mathcal A$-준동형이면,
+$Y$의 열린집합 위의 절단들을 생각함으로써 $\psi_*(u)$가
+$\psi_*(\mathcal A)$-준동형
+\[
+  \psi_*(\mathcal F_1)\longrightarrow\psi_*(\mathcal F_2)
+\]
+임을 곧바로 알 수 있다. 따라서 이는 특히 $\mathcal B$-준동형
+\[
+  \Psi_*(\mathcal F_1)\longrightarrow\Psi_*(\mathcal F_2)
+\]
+이며, $\mathcal B$-준동형으로 볼 때에도 이를 $\Psi_*(u)$로 나타낸다.
+따라서 $\Psi_*$는 $\mathcal A$-가군의 범주에서
+$\mathcal B$-가군의 범주로 가는 
+\emph{공변함자}이다. 또한 이 함자는 
+\emph{왼쪽 완전}함이 자명하다(G, II, 2.12).
+
+$\psi_*(\mathcal A)$ 위의 $\mathcal B$-가군 구조와 환의 층 구조는
+$\mathcal B$-대수 구조를 정의한다. 이 $\mathcal B$-대수를
+$\Psi_*(\mathcal A)$로 나타낸다.
+\end{env}
+
+\begin{env}[4.2.2]
+\label{0.4.2.2-ko}
+$\mathcal M$, $\mathcal N$을 두 $\mathcal A$-가군이라 하자.
+$Y$의 모든 열린집합 $U$에 대하여 표준 사상
+\[
+  \Gamma(\psi^{-1}(U),\mathcal M)
+  \times\Gamma(\psi^{-1}(U),\mathcal N)
+  \longrightarrow
+  \Gamma(\psi^{-1}(U),\mathcal M\otimes_{\mathcal A}\mathcal N)
+\]
+이 있다. 이 사상은 환
+$\Gamma(\psi^{-1}(U),\mathcal A)=\Gamma(U,\psi_*(\mathcal A))$
+위에서 쌍선형이고, 따라서 특히 $\Gamma(U,\mathcal B)$ 위에서
+쌍선형이다. 그러므로 이는 준동형
+\[
+  \Gamma(U,\Psi_*(\mathcal M))
+  \otimes_{\Gamma(U,\mathcal B)}
+  \Gamma(U,\Psi_*(\mathcal N))
+  \longrightarrow
+  \Gamma(U,\Psi_*(\mathcal M\otimes_{\mathcal A}\mathcal N))
+\]
+을 정의한다. 이 준동형들이 제한연산과 양립함을 곧바로 확인할 수
+있으므로, 이들은 $\mathcal B$-가군의 함자적인 표준 준동형
+\[
+  \Psi_*(\mathcal M)\otimes_{\mathcal B}\Psi_*(\mathcal N)
+  \longrightarrow
+  \Psi_*(\mathcal M\otimes_{\mathcal A}\mathcal N)
+  \tag{4.2.2.1}\label{0.4.2.2.1-ko}
+\]
+을 준다.
+
+\oldpage[0\textsubscript{I}]{40}
+이 준동형은 일반적으로 단사도 전사도 아니다. $\mathcal P$가 세 번째
+$\mathcal A$-가군이면 다음 도표가 가환함을 곧바로 확인할 수 있다.
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Psi_*(\mathcal M)\otimes_{\mathcal B}\Psi_*(\mathcal N)
+  \otimes_{\mathcal B}\Psi_*(\mathcal P)
+  \arrow[r]
+  \arrow[d]
+&
+\Psi_*(\mathcal M\otimes_{\mathcal A}\mathcal N)
+  \otimes_{\mathcal B}\Psi_*(\mathcal P)
+  \arrow[d]
+\\
+\Psi_*(\mathcal M)\otimes_{\mathcal B}
+  \Psi_*(\mathcal N\otimes_{\mathcal A}\mathcal P)
+  \arrow[r]
+&
+\Psi_*(\mathcal M\otimes_{\mathcal A}\mathcal N
+  \otimes_{\mathcal A}\mathcal P)
+\end{tikzcd}
+\tag{4.2.2.2}\label{0.4.2.2.2-ko}
+\]
+\end{env}
+
+\begin{env}[4.2.3]
+\label{0.4.2.3-ko}
+$\mathcal M$, $\mathcal N$을 두 $\mathcal A$-가군이라 하자.
+모든 열린집합 $U\subset Y$에 대하여 정의상
+\[
+  \Gamma\bigl(\psi^{-1}(U),
+    \mathcal H\!om_{\mathcal A}(\mathcal M,\mathcal N)\bigr)
+  =
+  \operatorname{Hom}_{\mathcal A|V}
+    (\mathcal M|V,\mathcal N|V)
+\]
+이다. 여기서 표기를 간단히 하려고 $V=\psi^{-1}(U)$로 놓았다.
+사상 $u\mapsto\Psi_*(u)$는 $\Gamma(U,\mathcal B)$-가군 구조에 관한
+준동형
+\[
+  \operatorname{Hom}_{\mathcal A|V}(\mathcal M|V,\mathcal N|V)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal B|U}
+    (\Psi_*(\mathcal M)|U,\Psi_*(\mathcal N)|U)
+\]
+이다. 이 준동형들은 제한연산과 양립하므로 $\mathcal B$-가군의
+함자적인 표준 준동형
+\[
+  \Psi_*\bigl(\mathcal H\!om_{\mathcal A}(\mathcal M,\mathcal N)\bigr)
+  \longrightarrow
+  \mathcal H\!om_{\mathcal B}
+    (\Psi_*(\mathcal M),\Psi_*(\mathcal N))
+  \tag{4.2.3.1}\label{0.4.2.3.1-ko}
+\]
+을 정의한다.
+\end{env}
+
+\begin{env}[4.2.4]
+\label{0.4.2.4-ko}
+$\mathcal C$가 $\mathcal A$-대수이면 합성 준동형
+\[
+  \Psi_*(\mathcal C)\otimes_{\mathcal B}\Psi_*(\mathcal C)
+  \longrightarrow
+  \Psi_*(\mathcal C\otimes_{\mathcal A}\mathcal C)
+  \longrightarrow
+  \Psi_*(\mathcal C)
+\]
+은 $\Psi_*(\mathcal C)$ 위에 $\mathcal B$-대수 구조를 정의한다.
+이는 (4.2.2.2)에서 곧바로 따른다. 마찬가지로 $\mathcal M$이
+$\mathcal C$-가군이면 $\Psi_*(\mathcal M)$에는 표준적으로
+$\Psi_*(\mathcal C)$-가군 구조가 주어짐을 알 수 있다.
+\end{env}
+
+\begin{env}[4.2.5]
+\label{0.4.2.5-ko}
+특히 $X$가 $Y$의 \emph{닫힌} 부분공간이고 $\psi$가 표준 단사사상
+$j:X\to Y$인 경우를 생각하자. 환의 층 $\mathcal B$의 $X$로의 제한을
+\[
+  \mathcal B'=\mathcal B|X=j^*(\mathcal B)
+\]
+로 놓으면, $\mathcal A$-가군 $\mathcal M$은 준동형
+$\theta^\sharp:\mathcal B'\to\mathcal A$를 통해
+$\mathcal B'$-가군으로 볼 수 있다. 이때 $\Psi_*(\mathcal M)$은
+$X$ 위에는 $\mathcal M$을, 그 밖에는 $0$을 유도하는
+$\mathcal B$-가군이다. $\mathcal N$이 두 번째 $\mathcal A$-가군이면
+\[
+  \Psi_*(\mathcal M)\otimes_{\mathcal B}\Psi_*(\mathcal N)
+\]
+은 $\Psi_*(\mathcal M\otimes_{\mathcal B'}\mathcal N)$과 동일시되고,
+\[
+  \mathcal H\!om_{\mathcal B}
+    (\Psi_*(\mathcal M),\Psi_*(\mathcal N))
+\]
+은
+\[
+  \Psi_*\bigl(
+    \mathcal H\!om_{\mathcal B'}(\mathcal M,\mathcal N)\bigr)
+\]
+과 동일시된다.
+\end{env}
+
+\begin{env}[4.2.6]
+\label{0.4.2.6-ko}
+$(Z,\mathcal C)$를 세 번째 환 달린 공간이라 하고,
+$\Psi'=(\psi',\theta')$를 $(Y,\mathcal B)$에서
+$(Z,\mathcal C)$로 가는 사상이라 하자. $\Psi''$이 합성사상
+$\Psi'\circ\Psi$이면
+\[
+  \Psi''_*=\Psi'_*\circ\Psi_*
+\]
+임은 자명하다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{41}
+\subsection{$\mathcal B$-가군의 역상}
+\label{subsection:0.4.3-ko}
+
+\begin{env}[4.3.1]
+\label{0.4.3.1-ko}
+(4.2.1)의 가정과 표기를 사용하자. $\mathcal G$를 $\mathcal B$-가군이라
+하고, 그 역상 $\psi^*(\mathcal G)$(3.7.1)를 생각하자. 이는 $X$ 위의
+아벨군의 층이다. $\psi^*(\mathcal G)$와
+$\psi^*(\mathcal B)$의 절단들의 정의(3.7.1)로부터
+$\psi^*(\mathcal G)$에는 표준적으로 $\psi^*(\mathcal B)$-가군 구조가
+주어짐을 알 수 있다. 한편 준동형
+\[
+  \theta^\sharp:\psi^*(\mathcal B)\longrightarrow\mathcal A
+\]
+는 $\mathcal A$에 $\psi^*(\mathcal B)$-가군 구조를 준다. 혼동을
+피할 필요가 있을 때에는 이 가군을 $\mathcal A_{[\theta]}$로 나타낸다.
+그러면 텐서곱
+\[
+  \psi^*(\mathcal G)
+  \otimes_{\psi^*(\mathcal B)}\mathcal A_{[\theta]}
+\]
+에는 $\mathcal A$-가군 구조가 주어진다. 이 $\mathcal A$-가군을
+사상 $\Psi$에 의한 $\mathcal G$의 \emph{역상}이라 하고
+$\Psi^*(\mathcal G)$로 나타낸다.
+
+$\mathcal G_1$, $\mathcal G_2$가 $Y$ 위의 두 $\mathcal B$-가군이고
+$v:\mathcal G_1\to\mathcal G_2$가 $\mathcal B$-준동형이면,
+$\psi^*(v)$는 $\psi^*(\mathcal G_1)$에서
+$\psi^*(\mathcal G_2)$로 가는 $\psi^*(\mathcal B)$-준동형이다.
+따라서 $\psi^*(v)\otimes1$은 $\mathcal A$-준동형
+\[
+  \Psi^*(\mathcal G_1)\longrightarrow\Psi^*(\mathcal G_2)
+\]
+이며 이를 $\Psi^*(v)$로 나타낸다. 이로써 $\Psi^*$를
+$\mathcal B$-가군의 범주에서 $\mathcal A$-가군의 범주로 가는
+\emph{공변함자}로 정의하였다. 여기서 이 함자는 $\psi^*$와 달리
+일반적으로 완전하지 않고 \emph{오른쪽 완전}할 뿐이다. 실제로
+$\mathcal A$와의 텐서곱은 $\psi^*(\mathcal B)$-가군의 범주에서
+오른쪽 완전함자이다.
+
+모든 $x\in X$에 대하여 (3.7.2)에 의해
+\[
+  (\Psi^*(\mathcal G))_x
+  =\mathcal G_{\psi(x)}
+   \otimes_{\mathcal B_{\psi(x)}}\mathcal A_x
+\]
+이다. 따라서 $\Psi^*(\mathcal G)$의 지지집합은
+$\psi^{-1}(\operatorname{Supp}\mathcal G)$에 포함된다.
+\end{env}
+
+\begin{env}[4.3.2]
+\label{0.4.3.2-ko}
+$(\mathcal G_\lambda)$를 $\mathcal B$-가군의 귀납계라 하고
+$\mathcal G=\varinjlim\mathcal G_\lambda$를 그 귀납극한이라 하자.
+표준 준동형 $\mathcal G_\lambda\to\mathcal G$는
+$\psi^*(\mathcal B)$-준동형
+$\psi^*(\mathcal G_\lambda)\to\psi^*(\mathcal G)$를 정의하며,
+따라서 표준 준동형
+\[
+  \varinjlim\psi^*(\mathcal G_\lambda)
+  \longrightarrow
+  \psi^*(\mathcal G)
+\]
+을 준다. 층의 귀납극한의 한 점에서의 줄기는 같은 점에서의 줄기들의
+귀납극한이므로(G, II, 1.11), 앞의 표준 준동형은
+\emph{전단사}이다(3.7.2). 또한 텐서곱은 층의 귀납극한과 가환하므로
+$\mathcal A$-가군의 \emph{함자적인 표준 동형}
+\[
+  \varinjlim\Psi^*(\mathcal G_\lambda)
+  \xrightarrow{\sim}
+  \Psi^*\bigl(\varinjlim\mathcal G_\lambda\bigr)
+\]
+을 얻는다.
+
+한편 $\mathcal B$-가군들의 유한 직합
+$\bigoplus_i\mathcal G_i$에 대하여
+\[
+  \psi^*\bigl(\bigoplus_i\mathcal G_i\bigr)
+  =\bigoplus_i\psi^*(\mathcal G_i)
+\]
+임은 자명하다. 따라서 $\mathcal A_{[\theta]}$와 텐서곱하면
+\[
+  \Psi^*\bigl(\bigoplus_i\mathcal G_i\bigr)
+  =\bigoplus_i\Psi^*(\mathcal G_i)
+  \tag{4.3.2.1}\label{0.4.3.2.1-ko}
+\]
+을 얻는다. 앞의 결과에 따라 귀납극한으로 넘어가면 이 등식은
+\emph{임의의} 직합에 대해서도 성립한다.
+\end{env}
+
+\begin{env}[4.3.3]
+\label{0.4.3.3-ko}
+$\mathcal G_1$, $\mathcal G_2$를 두 $\mathcal B$-가군이라 하자.
+아벨군의 층의 역상에 관한 정의(3.7.1)로부터
+$\psi^*(\mathcal B)$-가군의 표준 준동형
+\[
+  \psi^*(\mathcal G_1)
+  \otimes_{\psi^*(\mathcal B)}\psi^*(\mathcal G_2)
+  \longrightarrow
+  \psi^*(\mathcal G_1\otimes_{\mathcal B}\mathcal G_2)
+\]
+을 곧바로 얻는다. 층들의 텐서곱의 한 점에서의 줄기는 그 점에서의
+줄기들의 텐서곱이므로(G, II, 2.8), (3.7.2)에 따라 이 준동형은
+실제로 \emph{동형}이다. $\mathcal A$와 텐서곱하여
+\emph{함자적인 표준 동형}
+\[
+  \Psi^*(\mathcal G_1)\otimes_{\mathcal A}\Psi^*(\mathcal G_2)
+  \xrightarrow{\sim}
+  \Psi^*(\mathcal G_1\otimes_{\mathcal B}\mathcal G_2)
+  \tag{4.3.3.1}\label{0.4.3.3.1-ko}
+\]
+을 얻는다.
+\end{env}
+
+\begin{env}[4.3.4]
+\label{0.4.3.4-ko}
+$\mathcal C$를 $\mathcal B$-대수라 하자. $\mathcal C$ 위의 대수 구조를
+주는 것은 각 줄기에서 확인되는 결합법칙과 가환법칙을 만족하는
+$\mathcal B$-준동형
+\[
+  \mathcal C\otimes_{\mathcal B}\mathcal C
+  \longrightarrow\mathcal C
+\]
+을 주는 것과 같다. 앞의 동형을 사용하면 이 준동형을 같은 조건들을
+만족하는 $\mathcal A$-가군 준동형
+\[
+  \Psi^*(\mathcal C)\otimes_{\mathcal A}\Psi^*(\mathcal C)
+  \longrightarrow\Psi^*(\mathcal C)
+\]
+으로 옮길 수 있다. 따라서 $\Psi^*(\mathcal C)$에는
+$\mathcal A$-대수 구조가 주어진다. 특히 정의에서 곧바로
+$\mathcal A$-대수 $\Psi^*(\mathcal B)$가 표준 동형을 제외하면
+$\mathcal A$와 같음을 알 수 있다.
+
+마찬가지로 $\mathcal M$이 $\mathcal C$-가군이면, 이 가군 구조를
+주는 것은
+\oldpage[0\textsubscript{I}]{42}
+결합법칙을 만족하는 $\mathcal B$-준동형
+\[
+  \mathcal C\otimes_{\mathcal B}\mathcal M
+  \longrightarrow\mathcal M
+\]
+을 주는 것과 같다. 이를 옮겨서 $\Psi^*(\mathcal M)$ 위에
+$\Psi^*(\mathcal C)$-가군 구조를 얻는다.
+\end{env}
+
+\begin{env}[4.3.5]
+\label{0.4.3.5-ko}
+$\mathcal J$를 $\mathcal B$의 아이디얼층이라 하자. 함자 $\psi^*$가
+완전하므로 $\psi^*(\mathcal B)$-가군 $\psi^*(\mathcal J)$는
+$\psi^*(\mathcal B)$의 아이디얼층과 표준적으로 동일시된다.
+따라서 표준 단사사상
+$\psi^*(\mathcal J)\to\psi^*(\mathcal B)$는
+$\mathcal A$-가군 준동형
+\[
+  \Psi^*(\mathcal J)
+  =\psi^*(\mathcal J)
+   \otimes_{\psi^*(\mathcal B)}\mathcal A_{[\theta]}
+  \longrightarrow\mathcal A
+\]
+을 준다. 이 준동형에 의한 $\Psi^*(\mathcal J)$의 상을
+$\Psi^*(\mathcal J)\mathcal A$로 나타내며, 혼동의 우려가 없으면
+$\mathcal J\mathcal A$로도 나타낸다. 따라서 정의상
+\[
+  \mathcal J\mathcal A
+  =\theta^\sharp\bigl(\psi^*(\mathcal J)\bigr)\mathcal A
+\]
+이고, 특히 모든 $x\in X$에 대하여
+\[
+  (\mathcal J\mathcal A)_x
+  =\theta_x^\sharp(\mathcal J_{\psi(x)})\mathcal A_x
+\]
+이다. 여기서는 $\psi^*(\mathcal J)$의 줄기와
+$\mathcal J$의 대응하는 줄기의 표준적인 동일시(3.7.2)를 사용하였다.
+$\mathcal J_1$, $\mathcal J_2$가 $\mathcal B$의 두 아이디얼이면
+\[
+  (\mathcal J_1\mathcal J_2)\mathcal A
+  =\mathcal J_1(\mathcal J_2\mathcal A)
+  =(\mathcal J_1\mathcal A)(\mathcal J_2\mathcal A)
+\]
+이다. $\mathcal F$가 $\mathcal A$-가군이면
+$\mathcal J\mathcal F=(\mathcal J\mathcal A)\mathcal F$로 놓는다.
+\end{env}
+
+\begin{env}[4.3.6]
+\label{0.4.3.6-ko}
+$(Z,\mathcal C)$를 세 번째 환 달린 공간이라 하고,
+$\Psi'=(\psi',\theta')$를 $(Y,\mathcal B)$에서
+$(Z,\mathcal C)$로 가는 사상이라 하자. $\Psi''$이 합성사상
+$\Psi'\circ\Psi$이면, 정의 (4.3.1)와 (4.3.3.1)에 따라
+\[
+  {\Psi''}^*=\Psi^*\circ{\Psi'}^*
+\]
+이다.
+\end{env}
+
+\subsection{직상과 역상의 관계}
+\label{subsection:0.4.4-ko}
+
+\begin{env}[4.4.1]
+\label{0.4.4.1-ko}
+(4.2.1)의 가정과 표기를 사용하고, $\mathcal G$를 $\mathcal B$-가군이라
+하자. 정의상 $\mathcal B$-가군 준동형
+$u:\mathcal G\to\Psi_*(\mathcal F)$를 여전히 $\mathcal G$에서
+$\mathcal F$로 가는 \emph{$\Psi$-사상}이라 한다. 혼동의 우려가 없으면
+단순히 $\mathcal G$에서 $\mathcal F$로 가는 \emph{준동형}이라 하고
+$u:\mathcal G\to\mathcal F$로 쓴다.
+이와 같은 준동형을 주는 것은 $U$가 $X$의 열린집합이고 $V$가 $Y$의
+열린집합이며 $\psi(U)\subset V$인 모든 쌍 $(U,V)$에 대하여
+\emph{준동형}
+\[
+  u_{U,V}:\Gamma(V,\mathcal G)\longrightarrow\Gamma(U,\mathcal F)
+\]
+을 주는 것과 같다. 여기서 이는 \emph{$\Gamma(V,\mathcal B)$-가군의
+준동형}이고, $\Gamma(U,\mathcal F)$의 $\Gamma(V,\mathcal B)$-가군 구조는
+환 준동형
+$\theta_{U,V}:\Gamma(V,\mathcal B)\to\Gamma(U,\mathcal A)$를 통하여
+주어진다. 또한 $u_{U,V}$들은 도식 (3.5.1.1)을 가환하게 해야 한다.
+사실 $u$를 정의하려면 $U$와 $V$가 각각 $X$와 $Y$의 위상기저
+$\mathfrak B$와 $\mathfrak B'$를 달릴 때의 $u_{U,V}$만 주고,
+이러한 제한들에 대하여 (3.5.1.1)의 가환성을 확인하면 충분하다.
+\end{env}
+
+\begin{env}[4.4.2]
+\label{0.4.4.2-ko}
+(4.2.1)과 (4.2.6)의 가정 아래에서 $\mathcal H$를 $\mathcal C$-가군이라
+하고 $v:\mathcal H\to\Psi'_*(\mathcal G)$를 $\Psi'$-사상이라 하자.
+그러면
+\[
+  w:\mathcal H\xrightarrow{v}\Psi'_*(\mathcal G)
+  \xrightarrow{\Psi'_*(u)}\Psi'_*(\Psi_*(\mathcal F))
+\]
+는 $\Psi''$-사상이며, 이를 $u$와 $v$의 \emph{합성}이라 한다.
+\end{env}
+
+\begin{env}[4.4.3]
+\label{0.4.4.3-ko}
+이제 $\mathcal F$와 $\mathcal G$에 관한 \emph{쌍함자}들의 표준
+\emph{동형}
+\[
+  \operatorname{Hom}_{\mathcal A}(\Psi^*(\mathcal G),\mathcal F)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{\mathcal B}(\mathcal G,\Psi_*(\mathcal F))
+  \tag{4.4.3.1}\label{0.4.4.3.1-ko}
+\]
+을 정의할 수 있음을 보이자. 이 동형을
+$v\mapsto v_\theta^\flat$으로 나타내며, 혼동의 우려가 없으면
+$v\mapsto v^\flat$으로도 나타낸다. 그 역동형은
+$u\mapsto u_\theta^\sharp$, 또는 $u\mapsto u^\sharp$으로 나타낸다.
+정의는 다음과 같다. 준동형
+$v:\Psi^*(\mathcal G)\to\mathcal F$를 표준 사상
+$\psi^*(\mathcal G)\to\Psi^*(\mathcal G)$와 합성하면
+$\psi^*(\mathcal B)$-가군의 준동형이기도 한 아벨군의 층의 준동형
+$v':\psi^*(\mathcal G)\to\mathcal F$를 얻는다. 이에 따라 (3.7.1)에서
+준동형
+${v'}^\flat:\mathcal G\to\psi_*(\mathcal F)=\Psi_*(\mathcal F)$를
+얻으며, 쉽게 확인할 수 있듯이 이는 $\mathcal B$-가군의 준동형이다.
+\oldpage[0\textsubscript{I}]{43}
+$v_\theta^\flat={v'}^\flat$으로 놓는다. 마찬가지로
+$\mathcal B$-가군 준동형 $u:\mathcal G\to\Psi_*(\mathcal F)$로부터
+(3.7.1)에 의해 $\psi^*(\mathcal B)$-가군 준동형
+$u^\sharp:\psi^*(\mathcal G)\to\mathcal F$를 얻는다. 이를
+$\mathcal A$와 텐서곱하여 $\mathcal A$-가군 준동형
+$\Psi^*(\mathcal G)\to\mathcal F$를 얻고, 이를
+$u_\theta^\sharp$으로 나타낸다. 다음 등식들은 곧바로 확인된다.
+\[
+  (u_\theta^\sharp)_\theta^\flat=u,
+  \qquad
+  (v_\theta^\flat)_\theta^\sharp=v.
+\]
+또한 $v\mapsto v_\theta^\flat$은 $\mathcal F$에 관하여 함자적이다.
+$u\mapsto u_\theta^\sharp$이 $\mathcal G$에 관하여 함자적이라는 것은
+(3.5.4)에서와 같은 형식적인 논증으로부터 따른다. 이 논증은
+(4.3.1)에서 직접 증명한 $\Psi^*$의 함자성도 증명한다.
+
+$v$로 $\Psi^*(\mathcal G)$의 항등준동형을 취하면
+$v_\theta^\flat$은 준동형
+\[
+  \rho_{\mathcal G}:\mathcal G\longrightarrow
+  \Psi_*(\Psi^*(\mathcal G))
+  \tag{4.4.3.2}\label{0.4.4.3.2-ko}
+\]
+이 된다. $u$로 $\Psi_*(\mathcal F)$의 항등준동형을 취하면
+$u_\theta^\sharp$은 준동형
+\[
+  \sigma_{\mathcal F}:\Psi^*(\Psi_*(\mathcal F))
+  \longrightarrow\mathcal F
+  \tag{4.4.3.3}\label{0.4.4.3.3-ko}
+\]
+이 된다. 이들을 \emph{표준} 준동형이라 한다. 이들은 일반적으로
+단사도 전사도 아니다. (3.5.3.3)과 (3.5.4.4)에 대응하는 표준 분해도
+성립한다.
+
+$s$가 $Y$의 열린집합 $V$ 위에서 $\mathcal G$의 절단이면,
+$\rho_{\mathcal G}(s)$는 $\psi^{-1}(V)$ 위의 $\Psi^*(\mathcal G)$의
+절단 $s'\otimes1$이다. 여기서 모든 $x\in\psi^{-1}(V)$에 대하여
+$s'_x=s_{\psi(x)}$이다. 또한 준동형
+$u:\mathcal G\to\psi_*(\mathcal F)$는 모든 $x\in X$에 대하여 줄기
+위의 준동형 $u_x:\mathcal G_{\psi(x)}\to\mathcal F_x$를 정의한다.
+이는 $(u^\sharp)_x:(\Psi^*(\mathcal G))_x\to\mathcal F_x$와 표준
+준동형
+\[
+  \mathcal G_{\psi(x)}\longrightarrow(\Psi^*(\mathcal G))_x,
+  \qquad s_x\longmapsto s_x\otimes1
+\]
+을 합성하여 얻는다. 여기서
+\[
+  (\Psi^*(\mathcal G))_x
+  =\mathcal G_{\psi(x)}
+   \otimes_{\mathcal B_{\psi(x)}}\mathcal A_x.
+\]
+또한 $u_x$는 $V$가 $\psi(x)$의 근방들을 달릴 때 준동형
+\[
+  \Gamma(V,\mathcal G)\xrightarrow{u}
+  \Gamma(\psi^{-1}(V),\mathcal F)\longrightarrow\mathcal F_x
+\]
+의 귀납극한을 취하여 얻을 수도 있다.
+\end{env}
+
+\begin{env}[4.4.4]
+\label{0.4.4.4-ko}
+$\mathcal F_1$, $\mathcal F_2$를 $\mathcal A$-가군,
+$\mathcal G_1$, $\mathcal G_2$를 $\mathcal B$-가군이라 하고,
+$u_i$ $(i=1,2)$를 $\mathcal G_i$에서 $\mathcal F_i$로 가는
+준동형이라 하자. $u_1\otimes u_2$로 준동형
+\[
+  u:\mathcal G_1\otimes_{\mathcal B}\mathcal G_2
+  \longrightarrow
+  \mathcal F_1\otimes_{\mathcal A}\mathcal F_2
+\]
+중에서 (4.3.3.1)의 동일시 아래
+$u^\sharp=(u_1)^\sharp\otimes(u_2)^\sharp$을 만족하는 것을 나타낸다.
+또한 $u$는 합성
+\[
+  \mathcal G_1\otimes_{\mathcal B}\mathcal G_2
+  \longrightarrow
+  \Psi_*(\mathcal F_1)\otimes_{\mathcal B}\Psi_*(\mathcal F_2)
+  \longrightarrow
+  \Psi_*(\mathcal F_1\otimes_{\mathcal A}\mathcal F_2)
+\]
+과 같음을 확인할 수 있다. 여기서 첫째 화살표는 보통의 텐서곱
+$u_1\otimes_{\mathcal B}u_2$이고, 둘째 화살표는 (4.2.2.1)의 표준
+준동형이다.
+\end{env}
+
+\begin{env}[4.4.5]
+\label{0.4.4.5-ko}
+$(\mathcal G_\lambda)_{\lambda\in L}$를 $\mathcal B$-가군의 귀납계라
+하고, 모든 $\lambda\in L$에 대하여
+$u_\lambda:\mathcal G_\lambda\to\Psi_*(\mathcal F)$가 귀납계를 이루는
+준동형이라 하자. $\mathcal G=\varinjlim\mathcal G_\lambda$ 및
+$u=\varinjlim u_\lambda$로 놓는다. 그러면 $(u_\lambda)^\sharp$들은
+준동형 $\Psi^*(\mathcal G_\lambda)\to\mathcal F$의 귀납계를 이루고,
+이 계의 귀납극한은 바로 $u^\sharp$이다.
+\end{env}
+
+\begin{env}[4.4.6]
+\label{0.4.4.6-ko}
+$\mathcal M$, $\mathcal N$을 두 $\mathcal B$-가군이라 하고, $V$를
+$Y$의 열린집합, $U=\psi^{-1}(V)$라 하자. 사상
+$v\mapsto\Psi^*(v)$는 $\Gamma(V,\mathcal B)$-가군의 준동형
+\[
+  \operatorname{Hom}_{\mathcal B|V}(\mathcal M|V,\mathcal N|V)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal A|U}
+  (\Psi^*(\mathcal M)|U,\Psi^*(\mathcal N)|U)
+\]
+이다.
+\begin{sloppypar}
+실제로 $\operatorname{Hom}_{\mathcal A|U}
+(\Psi^*(\mathcal M)|U,\allowbreak\Psi^*(\mathcal N)|U)$에는 본래
+$\Gamma(U,\psi^*(\mathcal B))$-가군 구조가 주어지며, 표준 준동형
+\oldpage[0\textsubscript{I}]{44}
+$\Gamma(V,\mathcal B)\to\Gamma(U,\psi^*(\mathcal B))$(3.7.2)을 통하여
+$\Gamma(V,\mathcal B)$-가군이기도 하다.
+\end{sloppypar}
+이 준동형들은 제한사상과 양립함을 곧바로 알 수 있다. 따라서
+함자적인 표준 준동형
+\[
+  \gamma:\mathcal H\!om_{\mathcal B}(\mathcal M,\mathcal N)
+  \longrightarrow
+  \Psi_*\bigl(\mathcal H\!om_{\mathcal A}
+  (\Psi^*(\mathcal M),\Psi^*(\mathcal N))\bigr)
+\]
+을 정의한다. 이에 대응하여 준동형
+\[
+  \gamma^\sharp:
+  \Psi^*\bigl(\mathcal H\!om_{\mathcal B}(\mathcal M,\mathcal N)\bigr)
+  \longrightarrow
+  \mathcal H\!om_{\mathcal A}
+  (\Psi^*(\mathcal M),\Psi^*(\mathcal N))
+\]
+도 얻는다. 이 표준 준동형들은 $\mathcal M$과 $\mathcal N$에 관하여
+함자적이다.
+\end{env}
+
+\begin{env}[4.4.7]
+\label{0.4.4.7-ko}
+$\mathcal F$와 $\mathcal G$가 각각 $\mathcal A$-대수와
+$\mathcal B$-대수라고 하자. $u:\mathcal G\to\Psi_*(\mathcal F)$가
+$\mathcal B$-대수의 준동형이면
+$u^\sharp:\Psi^*(\mathcal G)\to\mathcal F$는 $\mathcal A$-대수의
+준동형이다. 이는 도식
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+\mathcal G\otimes_{\mathcal B}\mathcal G
+  \arrow[r] \arrow[d]
+  & \mathcal G \arrow[d,"u"] \\
+\Psi_*(\mathcal F\otimes_{\mathcal A}\mathcal F)
+  \arrow[r]
+  & \Psi_*(\mathcal F)
+\end{tikzcd}
+\]
+의 가환성과 (4.4.4)에서 따른다. 마찬가지로
+$v:\Psi^*(\mathcal G)\to\mathcal F$가 $\mathcal A$-대수의 준동형이면
+$v^\flat:\mathcal G\to\Psi_*(\mathcal F)$는 $\mathcal B$-대수의
+준동형이다.
+\end{env}
+
+\begin{env}[4.4.8]
+\label{0.4.4.8-ko}
+$(Z,\mathcal C)$를 세 번째 환 달린 공간이라 하고,
+$\Psi'=(\psi',\theta')$를 $(Y,\mathcal B)$에서 $(Z,\mathcal C)$로 가는
+사상, $\Psi'':(X,\mathcal A)\to(Z,\mathcal C)$를 합성사상
+$\Psi'\circ\Psi$라 하자. $\mathcal H$를 $\mathcal C$-가군이라 하고,
+$v'$를 $\mathcal H$에서 $\mathcal G$로 가는 준동형이라 하자. 정의상
+합성 $v''=v\circ v'$는 $\mathcal H$에서 $\mathcal F$로 가는 준동형
+\[
+  \mathcal H\xrightarrow{v'}\Psi'_*(\mathcal G)
+  \xrightarrow{\Psi'_*(v)}\Psi'_*(\Psi_*(\mathcal F))
+\]
+으로 주어진다. 그러면 ${v''}^\sharp$은 준동형
+\[
+  \Psi^*({\Psi'}^*(\mathcal H))
+  \xrightarrow{\Psi^*({v'}^\sharp)}
+  \Psi^*(\mathcal G)
+  \xrightarrow{v^\sharp}\mathcal F
+\]
+과 같음을 확인할 수 있다.
+\end{env}
+
+\section{준연접층과 연접층}
+\label{section:0.5-ko}
+
+\subsection{준연접층}
+\label{subsection:0.5.1-ko}
+
+\begin{env}[5.1.1]
+\label{0.5.1.1-ko}
+$(X,\mathcal O_X)$를 환 달린 공간이라 하고, $\mathcal F$를
+$\mathcal O_X$-가군이라 하자. $\mathcal O_X$-가군 준동형
+$u:\mathcal O_X\to\mathcal F$를 주는 것은 절단
+$s=u(1)\in\Gamma(X,\mathcal F)$를 주는 것과 같다. 실제로 $s$가
+주어졌을 때 모든 절단 $t\in\Gamma(U,\mathcal O_X)$에 대하여 반드시
+$u(t)=t\cdot(s|U)$이다. 이때 $u$가 \emph{절단 $s$에 의해 정의된다}고
+한다.
+
+이제 $I$를 임의의 지표집합이라 하고, 직합층
+$\mathcal O_X^{(I)}$를 생각하자. 모든 $i\in I$에 대하여 $h_i$를
+$i$번째 인자에서 $\mathcal O_X^{(I)}$로 가는 표준 단사사상이라 하자.
+그러면 $u\mapsto(u\circ h_i)$는
+$\operatorname{Hom}_{\mathcal O_X}(\mathcal O_X^{(I)},\mathcal F)$에서
+곱
+\[
+  \bigl(\operatorname{Hom}_{\mathcal O_X}
+  (\mathcal O_X,\mathcal F)\bigr)^I
+\]
+로 가는 동형이다. 따라서 준동형
+$u:\mathcal O_X^{(I)}\to\mathcal F$와 $X$ 위에서 $\mathcal F$의
+\emph{절단족 $(s_i)_{i\in I}$} 사이에는 표준적인 일대일 대응이 있다.
+$(s_i)$에 대응하는 준동형 $u$는
+$(a_i)\in(\Gamma(U,\mathcal O_X))^{(I)}$를
+\[
+  \sum_{i\in I}a_i\cdot(s_i|U)
+\]
+로 보낸다.
+
+$(s_i)$가 정의하는 준동형
+\oldpage[0\textsubscript{I}]{45}
+$\mathcal O_X^{(I)}\to\mathcal F$가 \emph{전사}이면
+$\mathcal F$가 \emph{족 $(s_i)$에 의해 생성된다}고 한다. 다시 말해,
+모든 $x\in X$에 대하여 $\mathcal F_x$가 $(s_i)_x$들로 생성되는
+$\mathcal O_x$-가군이라는 뜻이다. $\mathcal F$가 $X$ 위의 모든 절단의
+족, 또는 그 한 부분족에 의해 생성되면 $\mathcal F$가
+\emph{$X$ 위의 절단들에 의해 생성된다}고 한다. 즉, 알맞은 $I$에
+대하여 전사 준동형
+\[
+  \mathcal O_X^{(I)}\longrightarrow\mathcal F
+\]
+가 존재한다는 뜻이다.
+
+어떤 $\mathcal O_X$-가군 $\mathcal F$에는 점 $x_0\in X$가 있어서,
+$x_0$의 열린 근방 $U$를 \emph{어떻게} 택하더라도
+$\mathcal F|U$가 $U$ 위의 절단들로 생성되지 않을 수 있다.
+실제로 $X=\mathbb R$, $\mathcal O_X$를 상수층 $\mathbb Z$로 놓고,
+$\mathcal F_0=\{0\}$ 및 $x\ne0$일 때
+$\mathcal F_x=\mathbb Z$인 $\mathcal O_X$의 대수적 부분층
+$\mathcal F$를 취하며 $x_0=0$으로 놓으면 된다. $0$의 근방 $U$ 위에서
+$\mathcal F|U$의 절단은 $0$뿐이다.
+\end{env}
+
+\begin{env}[5.1.2]
+\label{0.5.1.2-ko}
+$f:X\to Y$를 환 달린 공간의 사상이라 하자. $\mathcal F$가 $X$ 위의
+절단들로 생성되는 $\mathcal O_X$-가군이면, 표준 준동형
+\[
+  f^*(f_*(\mathcal F))\longrightarrow\mathcal F
+\]
+(4.4.3.3)은 \emph{전사}이다. 실제로 (5.1.1)의 표기에서
+$s_i\otimes1$은 $X$ 위의 $f^*(f_*(\mathcal F))$의 절단이고,
+$\mathcal F$에서의 그 상은 $s_i$이다. (5.1.1)의 예에서 $f$를
+항등사상으로 취하면 이 명제의 역은 일반적으로 거짓임을 알 수 있다.
+\end{env}
+
+\begin{env}[5.1.3]
+\label{0.5.1.3-ko}
+$\mathcal O_X$-가군 $\mathcal F$가 다음 조건을 만족하면
+\emph{준연접}이라고 한다. 모든 $x\in X$에 대하여 $x$의 열린 근방
+$U$가 존재하여, $\mathcal F|U$가 임의의 지표집합 $I$, $J$에 대한
+꼴
+\[
+  \mathcal O_X^{(I)}|U\longrightarrow\mathcal O_X^{(J)}|U
+\]
+의 준동형의 \emph{여핵}과 동형이다. $\mathcal O_X$ 자체가 준연접
+$\mathcal O_X$-가군임은 자명하며, 준연접 $\mathcal O_X$-가군들의
+모든 직합도 준연접 $\mathcal O_X$-가군이다. $\mathcal O_X$-대수
+$\mathcal A$가 $\mathcal O_X$-가군으로서 준연접이면
+$\mathcal A$를 \emph{준연접}이라고 한다.
+\end{env}
+
+\begin{env}[5.1.4]
+\label{0.5.1.4-ko}
+$f:X\to Y$를 환 달린 공간의 사상이라 하자. $\mathcal G$가 준연접
+$\mathcal O_Y$-가군이면 $f^*(\mathcal G)$는 준연접
+$\mathcal O_X$-가군이다. 실제로 모든 $x\in X$에 대하여 $Y$에서
+$f(x)$의 열린 근방 $V$가 존재하여 $\mathcal G|V$가 준동형
+\[
+  \mathcal O_Y^{(I)}|V\longrightarrow\mathcal O_Y^{(J)}|V
+\]
+의 여핵이다. $U=f^{-1}(V)$라 하고 $f_U$를 $f$의 $U$로의 제한이라
+하면 $f^*(\mathcal G)|U=f_U^*(\mathcal G|V)$이다. $f_U^*$는 오른쪽
+완전하고 직합과 가환하므로 $f_U^*(\mathcal G|V)$는 준동형
+\[
+  \mathcal O_X^{(I)}|U\longrightarrow\mathcal O_X^{(J)}|U
+\]
+의 여핵이다.
+\end{env}
+
+\subsection{유한 생성층}
+\label{subsection:0.5.2-ko}
+
+\begin{env}[5.2.1]
+\label{0.5.2.1-ko}
+$\mathcal O_X$-가군 $\mathcal F$가 다음 조건을 만족하면
+\emph{유한 생성}이라고 한다. 모든 $x\in X$에 대하여 $x$의 열린
+근방 $U$가 존재하여 $\mathcal F|U$가 $U$ 위의 \emph{유한} 절단족에
+의해 생성된다. 동치로, 유한한 $p$에 대하여 $\mathcal F|U$가
+$(\mathcal O_X|U)^p$ 꼴의 층의 몫층과 동형이다. 유한 생성층의 모든
+몫층은 유한 생성이고, 유한 생성층들의 모든 유한 직합과 유한
+텐서곱도 유한 생성이다. 유한 생성 $\mathcal O_X$-가군이 반드시
+준연접인 것은 아니다. (5.1.1)의 예의 $\mathcal F$에 대하여
+$\mathcal O_X/\mathcal F$를 생각하면 이를 알 수 있다.
+$\mathcal F$가 유한 생성이면 모든 $x\in X$에 대하여
+$\mathcal F_x$는 유한 생성 $\mathcal O_x$-가군이지만, (5.1.1)의 예는
+이 필요조건이 일반적으로 충분하지 않음을 보여 준다.
+\end{env}
+
+\begin{env}[5.2.2]
+\label{0.5.2.2-ko}
+$\mathcal F$를 \emph{유한 생성} $\mathcal O_X$-가군이라 하자.
+$s_i$ $(1\leq i\leq n)$가 점 $x\in X$의 열린 근방 $U$ 위에서
+$\mathcal F$의 절단들이고 $(s_i)_x$들이 $\mathcal F_x$를 생성하면,
+$x$의 열린 근방 $V\subset U$가 존재하여 모든 $y\in V$에 대하여
+$(s_i)_y$들이 $\mathcal F_y$를 생성한다(FAC, I, 2, 12, 명제 1).
+특히 $\mathcal F$의 지지집합은 \emph{닫혀 있다}.
+
+\oldpage[0\textsubscript{I}]{46}
+
+마찬가지로 $u:\mathcal F\to\mathcal G$가 $u_x=0$인 준동형이면,
+$x$의 근방 $U$가 존재하여 모든 $y\in U$에 대하여 $u_y=0$이다.
+\end{env}
+
+\begin{env}[5.2.3]
+\label{0.5.2.3-ko}
+$X$가 \emph{준콤팩트}라고 하자. $\mathcal F$, $\mathcal G$를 두
+$\mathcal O_X$-가군, $\mathcal G$를 \emph{유한 생성} 가군이라 하고,
+$u:\mathcal F\to\mathcal G$를 \emph{전사} 준동형이라 하자. 또한
+$\mathcal F$가 $\mathcal O_X$-가군의 귀납계
+$(\mathcal F_\lambda)$의 귀납극한이라고 하자. 그러면 어떤 지표
+$\mu$가 존재하여 준동형 $\mathcal F_\mu\to\mathcal G$가
+\emph{전사}이다. 실제로 모든 $x\in X$에 대하여 $x$의 열린 근방
+$U(x)$ 위에 $\mathcal G$의 유한한 절단계 $s_i$가 존재하여, 모든
+$y\in U(x)$에 대하여 $(s_i)_y$들이 $\mathcal G_y$를 생성한다.
+따라서 $x$의 열린 근방 $V(x)\subset U(x)$와 $V(x)$ 위의
+$\mathcal F$의 절단 $t_i$들이 존재하여 모든 $i$에 대하여
+$s_i|V(x)=u(t_i)$이다. 또한 $t_i$들이 $V(x)$ 위의 같은 층
+$\mathcal F_{\lambda(x)}$의 절단들의 표준적인 상이라고 가정할 수
+있다. 이제 유한개의 근방 $V(x_k)$로 $X$를 덮고, 모든
+$\lambda(x_k)$보다 큰 지표 $\mu$를 택하면 이 $\mu$가 조건을
+만족함은 자명하다.
+
+여전히 $X$가 준콤팩트라고 하고, $\mathcal F$를 $X$ 위의 절단들에
+의해 생성되는 유한 생성 $\mathcal O_X$-가군이라 하자(5.1.1).
+그러면 $\mathcal F$는 이 절단들의 어떤 \emph{유한} 부분족에 의해
+생성된다. 실제로 유한개의 열린 근방 $U_k$로 $X$를 덮되, 각 $k$에
+대하여 $X$ 위의 $\mathcal F$의 유한개의 절단 $s_{ik}$의 $U_k$로의
+제한들이 $\mathcal F|U_k$를 생성하도록 하면 된다. 그러면
+$s_{ik}$들이 $\mathcal F$를 생성함은 자명하다.
+\end{env}
+
+\begin{env}[5.2.4]
+\label{0.5.2.4-ko}
+$f:X\to Y$를 환 달린 공간의 사상이라 하자. $\mathcal G$가 유한 생성
+$\mathcal O_Y$-가군이면 $f^*(\mathcal G)$는 유한 생성
+$\mathcal O_X$-가군이다. 실제로 모든 $x\in X$에 대하여 $Y$에서
+$f(x)$의 열린 근방 $V$와 전사 준동형
+$v:\mathcal O_Y^p|V\to\mathcal G|V$가 존재한다. $U=f^{-1}(V)$라 하고
+$f_U$를 $f$의 $U$로의 제한이라 하면
+$f^*(\mathcal G)|U=f_U^*(\mathcal G|V)$이다. $f_U^*$는 오른쪽
+완전하고(4.3.1) 직합과 가환하므로(4.3.2), $f_U^*(v)$는 전사 준동형
+\[
+  \mathcal O_X^p|U\longrightarrow f^*(\mathcal G)|U
+\]
+이다.
+\end{env}
+
+\begin{env}[5.2.5]
+\label{0.5.2.5-ko}
+$\mathcal O_X$-가군 $\mathcal F$가 다음 조건을 만족하면
+\emph{유한 표시를 갖는다}고 한다. 모든 $x\in X$에 대하여 $x$의
+열린 근방 $U$가 존재하여 $\mathcal F|U$가 양의 정수 $p$, $q$에 대한
+\emph{$(\mathcal O_X|U)$-준동형}
+\[
+  \mathcal O_X^p|U\longrightarrow\mathcal O_X^q|U
+\]
+의 \emph{여핵}과 동형이다. 이러한 $\mathcal O_X$-가군은 유한
+생성이고 준연접이다. $f:X\to Y$가 환 달린 공간의 사상이고
+$\mathcal G$가 유한 표시를 갖는 $\mathcal O_Y$-가군이면,
+(5.1.4)의 논증이 보여 주듯이 $f^*(\mathcal G)$도 유한 표시를 갖는다.
+\end{env}
+
+\begin{env}[5.2.6]
+\label{0.5.2.6-ko}
+$\mathcal F$를 유한 표시를 갖는 $\mathcal O_X$-가군이라 하자(5.2.5).
+그러면 모든 $\mathcal O_X$-가군 $\mathcal H$에 대하여 함자적인 표준
+준동형
+\[
+  \bigl(\mathcal H\!om_{\mathcal O_X}(\mathcal F,\mathcal H)\bigr)_x
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal O_x}(\mathcal F_x,\mathcal H_x)
+\]
+은 \emph{전단사}이다(T, 4.1.1).
+\end{env}
+
+\begin{env}[5.2.7]
+\label{0.5.2.7-ko}
+$\mathcal F$, $\mathcal G$를 유한 표시를 갖는 두
+$\mathcal O_X$-가군이라 하자. 어떤 $x\in X$에 대하여
+$\mathcal F_x$와 $\mathcal G_x$가 동형인 두 $\mathcal O_x$-가군이면,
+$x$의 열린 근방 $U$가 존재하여 $\mathcal F|U$와 $\mathcal G|U$는
+\emph{동형}이다. 실제로
+$\varphi:\mathcal F_x\to\mathcal G_x$와
+$\psi:\mathcal G_x\to\mathcal F_x$가 서로 역인 두 동형이라 하자.
+(5.2.6)에 따라 $x$의 열린 근방 $V$ 위에서
+$\mathcal H\!om_{\mathcal O_X}(\mathcal F,\mathcal G)$의 절단 $u$와
+$\mathcal H\!om_{\mathcal O_X}(\mathcal G,\mathcal F)$의 절단 $v$가
+존재하여
+
+\oldpage[0\textsubscript{I}]{47}
+
+$u_x=\varphi$ 및 $v_x=\psi$이다. $(u\circ v)_x$와
+$(v\circ u)_x$는 항등자동사상이므로, $x$의 열린 근방
+$U\subset V$가 존재하여 $(u\circ v)|U$와 $(v\circ u)|U$가
+항등자동사상이다. 이로부터 명제가 따른다.
+\end{env}
+
+\subsection{연접층}
+\label{subsection:0.5.3-ko}
+
+\begin{env}[5.3.1]
+\label{0.5.3.1-ko}
+$\mathcal O_X$-가군 $\mathcal F$가 다음 두 조건을 만족하면
+\emph{연접}이라고 한다.
+\begin{enumerate}
+  \item[$a)$] $\mathcal F$는 유한 생성이다.
+  \item[$b)$] 모든 열린집합 $U\subset X$, 모든 정수 $n>0$, 그리고
+    모든 준동형
+    $u:\mathcal O_X^n|U\to\mathcal F|U$에 대하여 $u$의 핵은 유한
+    생성이다.
+\end{enumerate}
+이 두 조건은 \emph{국소적} 성질임에 유의하자.
+
+이하에서 상기하는 연접층의 성질 대부분의 증명에 대해서는
+(FAC), I, 2를 보라.
+\end{env}
+
+\begin{env}[5.3.2]
+\label{0.5.3.2-ko}
+모든 연접 $\mathcal O_X$-가군은 유한 표시를 갖는다(5.2.5). 그 역은
+반드시 참인 것은 아니다. 실제로 $\mathcal O_X$ 자체가 반드시 연접
+$\mathcal O_X$-가군인 것은 아니다.
+
+연접 $\mathcal O_X$-가군의 \emph{유한 생성} 부분
+$\mathcal O_X$-가군은 모두 연접이고, 연접 $\mathcal O_X$-가군들의
+모든 \emph{유한} 직합도 연접 $\mathcal O_X$-가군이다.
+\end{env}
+
+\begin{env}[5.3.3]
+\label{0.5.3.3-ko}
+$0\to\mathcal F\to\mathcal G\to\mathcal H\to0$이
+$\mathcal O_X$-가군들의 완전열이고 이 세 $\mathcal O_X$-가군 가운데
+둘이 연접이면 나머지 하나도 연접이다.
+\end{env}
+
+\begin{env}[5.3.4]
+\label{0.5.3.4-ko}
+$\mathcal F$, $\mathcal G$가 두 연접 $\mathcal O_X$-가군이고
+$u:\mathcal F\to\mathcal G$가 준동형이면,
+$\operatorname{Im}(u)$, $\operatorname{Ker}(u)$,
+$\operatorname{Coker}(u)$는 연접 $\mathcal O_X$-가군이다. 특히
+$\mathcal F$, $\mathcal G$가 어떤 연접 $\mathcal O_X$-가군의 연접
+부분 $\mathcal O_X$-가군이면 $\mathcal F+\mathcal G$와
+$\mathcal F\cap\mathcal G$도 연접이다.
+\end{env}
+
+\begin{env}[5.3.5]
+\label{0.5.3.5-ko}
+$\mathcal F$, $\mathcal G$가 두 연접 $\mathcal O_X$-가군이면
+$\mathcal F\otimes_{\mathcal O_X}\mathcal G$와
+$\mathcal H\!om_{\mathcal O_X}(\mathcal F,\mathcal G)$도 연접이다.
+\end{env}
+
+\begin{env}[5.3.6]
+\label{0.5.3.6-ko}
+$\mathcal F$를 연접 $\mathcal O_X$-가군, $\mathcal J$를
+$\mathcal O_X$의 연접 아이디얼층이라 하자. 그러면
+$\mathcal O_X$-가군 $\mathcal J\mathcal F$는 표준 준동형
+\[
+  \mathcal J\otimes_{\mathcal O_X}\mathcal F\longrightarrow\mathcal F
+\]
+에 의한 $\mathcal J\otimes_{\mathcal O_X}\mathcal F$의 상이므로
+연접이다(5.3.4, 5.3.5).
+\end{env}
+
+\begin{env}[5.3.7]
+\label{0.5.3.7-ko}
+$\mathcal O_X$-대수 $\mathcal A$가 $\mathcal O_X$-가군으로서
+연접이면 $\mathcal A$를 \emph{연접}이라고 한다. 특히
+$\mathcal O_X$가 \emph{연접인 환의 층}일 필요충분조건은 모든
+열린집합 $U\subset X$와 모든 꼴의 준동형
+$u:\mathcal O_X^p|U\to\mathcal O_X|U$에 대하여 $u$의 핵이
+유한 생성 $(\mathcal O_X|U)$-가군인 것이다.
+
+$\mathcal O_X$가 연접인 환의 층이면, 유한 표시를 갖는 모든
+$\mathcal O_X$-가군 $\mathcal F$는 (5.3.4)에 따라 연접이다.
+
+$\mathcal O_X$-가군 $\mathcal F$의 \emph{소멸자}는 표준 준동형
+\[
+  \mathcal O_X\longrightarrow
+  \mathcal H\!om_{\mathcal O_X}(\mathcal F,\mathcal F)
+\]
+의 핵 $\mathcal J$이다. 이 준동형은 각 절단
+$s\in\Gamma(U,\mathcal O_X)$에
+$\operatorname{Hom}(\mathcal F|U,\mathcal F|U)$에서 $s$에 의한
+곱셈을 대응시킨다. $\mathcal O_X$가 연접이고 $\mathcal F$가 연접
+$\mathcal O_X$-가군이면 $\mathcal J$는 연접이며(5.3.4, 5.3.5),
+모든 $x\in X$에 대하여 $\mathcal J_x$는 $\mathcal F_x$의
+소멸자이다(5.2.6).
+\end{env}
+
+\oldpage[0\textsubscript{I}]{48}
+
+\begin{env}[5.3.8]
+\label{0.5.3.8-ko}
+$\mathcal O_X$가 연접이라고 하자. $\mathcal F$를 연접
+$\mathcal O_X$-가군, $x$를 $X$의 한 점, $M$을 $\mathcal F_x$의
+유한 생성 부분가군이라 하자. 그러면 $x$의 열린 근방 $U$와
+$\mathcal F|U$의 연접 부분 $(\mathcal O_X|U)$-가군 $\mathcal G$가
+존재하여 $\mathcal G_x=M$이다(T, 4.1, 보조정리 1).
+
+이 결과와 연접 $\mathcal O_X$-가군의 부분 $\mathcal O_X$-가군들에
+관한 성질을 함께 적용하면, $\mathcal O_X$가 연접이기 위하여 환
+$\mathcal O_x$들이 만족해야 할 필요조건을 얻는다. 예를 들어
+(5.3.4)에 따라 $\mathcal O_x$의 두 유한 생성 아이디얼의 교집합은
+다시 유한 생성 아이디얼이어야 한다.
+\end{env}
+
+\begin{env}[5.3.9]
+\label{0.5.3.9-ko}
+$\mathcal O_X$가 연접이고 $M$이 유한 표시를 갖는
+$\mathcal O_x$-가군이라고 하자. 따라서 $M$은 어떤 준동형
+$\varphi:\mathcal O_x^p\to\mathcal O_x^q$의 여핵과 동형이다. 그러면
+$x$의 열린 근방 $U$와 연접 $(\mathcal O_X|U)$-가군 $\mathcal F$가
+존재하여 $\mathcal F_x$는 $M$과 동형이다. 실제로 (5.2.6)에 따라
+$x$의 열린 근방 $U$ 위의
+$\mathcal H\!om_{\mathcal O_X}(\mathcal O_X^p,\mathcal O_X^q)$의
+절단 $u$가 존재하여 $u_x=\varphi$이다. 준동형
+\[
+  u:\mathcal O_X^p|U\longrightarrow\mathcal O_X^q|U
+\]
+의 여핵 $\mathcal F$가 조건을 만족한다(5.3.4).
+\end{env}
+
+\begin{env}[5.3.10]
+\label{0.5.3.10-ko}
+$\mathcal O_X$가 연접이고 $\mathcal J$가 $\mathcal O_X$의 연접
+아이디얼층이라고 하자. $(\mathcal O_X/\mathcal J)$-가군
+$\mathcal F$가 연접일 필요충분조건은 그것이 $\mathcal O_X$-가군으로서
+연접인 것이다. 특히 $\mathcal O_X/\mathcal J$는 연접인 환의 층이다.
+\end{env}
+
+\begin{env}[5.3.11]
+\label{0.5.3.11-ko}
+$f:X\to Y$를 환 달린 공간의 사상이라 하고 $\mathcal O_X$가
+연접이라고 하자. 그러면 모든 연접 $\mathcal O_Y$-가군
+$\mathcal G$에 대하여 $f^*(\mathcal G)$는 연접
+$\mathcal O_X$-가군이다. 실제로 (5.2.4)의 표기에서
+$\mathcal G|V$가 준동형
+$v:\mathcal O_Y^q|V\to\mathcal O_Y^p|V$의 여핵이라고 가정할 수 있다.
+$f_U^*$가 오른쪽 완전하므로
+$f^*(\mathcal G)|U=f_U^*(\mathcal G|V)$는 준동형
+\[
+  f_U^*(v):\mathcal O_X^q|U\longrightarrow\mathcal O_X^p|U
+\]
+의 여핵이고, 이로부터 주장이 따른다.
+\end{env}
+
+\begin{env}[5.3.12]
+\label{0.5.3.12-ko}
+$Y$를 $X$의 닫힌 부분집합, $j:Y\to X$를 표준 포함사상,
+$\mathcal O_Y$를 $Y$ 위의 환의 층이라 하고
+$\mathcal O_X=j_*(\mathcal O_Y)$로 놓자. $\mathcal O_Y$-가군
+$\mathcal G$가 유한 생성일(각각 준연접일, 연접일) 필요충분조건은
+$j_*(\mathcal G)$가 유한 생성(각각 준연접, 연접)
+$\mathcal O_X$-가군인 것이다.
+\end{env}
+
+\subsection{국소 자유층}
+\label{subsection:0.5.4-ko}
+
+\begin{env}[5.4.1]
+\label{0.5.4.1-ko}
+$X$를 환 달린 공간이라 하자. $\mathcal O_X$-가군 $\mathcal F$가
+\emph{국소 자유}라는 것은 모든 $x\in X$에 대하여 $x$의 열린 근방
+$U$가 존재하여 $\mathcal F|U$가
+$\mathcal O_X^{(I)}|U$ 꼴의 $(\mathcal O_X|U)$-가군과 동형이라는
+뜻이다. 여기서 $I$는 $U$에 따라 달라도 된다. 모든 $U$에서 $I$가
+유한이면 $\mathcal F$가 \emph{유한 계수}라고 하고, 모든 $U$에서
+$I$의 원소 수가 같은 유한수 $n$이면 $\mathcal F$가
+\emph{계수 $n$}이라고 한다. 계수 1인 국소 자유
+$\mathcal O_X$-가군을 \emph{가역}이라고도 한다((5.4.3) 참조).
+$\mathcal F$가 유한 계수의 국소 자유 $\mathcal O_X$-가군이면 모든
+$x\in X$에 대하여 $\mathcal F_x$는 유한 계수 $n(x)$의 자유
+$\mathcal O_x$-가군이고, $x$의 어떤 근방 $U$에서 $\mathcal F|U$는
+계수 $n(x)$이다. 따라서 $X$가 연결이면 $n(x)$는 \emph{상수}이다.
+
+모든 국소 자유층이 준연접임은 자명하다. 또한 $\mathcal O_X$가
+연접인 환의 층이면 유한 계수의 모든 국소 자유 $\mathcal O_X$-가군은
+연접이다.
+
+$\mathcal L$이 국소 자유이면 $\mathcal O_X$-가군의 범주에서
+$\mathcal F$에 관한 함자
+$\mathcal L\otimes_{\mathcal O_X}\mathcal F$는 \emph{완전}하다.
+
+우리는 주로 유한 계수의 국소 자유 $\mathcal O_X$-가군을 다룰 것이다.
+
+\oldpage[0\textsubscript{I}]{49}
+
+따라서 별도의 말이 없이 국소 자유층이라고 할 때에는
+\emph{유한 계수}임을 전제한다.
+\end{env}
+
+\begin{env}[5.4.2]
+\label{0.5.4.2-ko}
+$\mathcal L$, $\mathcal F$가 두 $\mathcal O_X$-가군이면 함자적인 표준
+준동형
+\[
+  \check{\mathcal L}\otimes_{\mathcal O_X}\mathcal F
+  =\mathcal H\!om_{\mathcal O_X}(\mathcal L,\mathcal O_X)
+   \otimes_{\mathcal O_X}\mathcal F
+  \longrightarrow
+  \mathcal H\!om_{\mathcal O_X}(\mathcal L,\mathcal F)
+  \tag{5.4.2.1}\label{0.5.4.2.1-ko}
+\]
+이 존재한다. 이는 다음과 같이 정의된다. 모든 열린집합 $U$와 모든 쌍
+$(u,t)$, 즉
+\[
+  u\in\Gamma\bigl(U,
+    \mathcal H\!om_{\mathcal O_X}(\mathcal L,\mathcal O_X)\bigr)
+  =\operatorname{Hom}(\mathcal L|U,\mathcal O_X|U),
+  \qquad
+  t\in\Gamma(U,\mathcal F)
+\]
+에 대하여, 모든 $x\in U$에서 $s_x\in\mathcal L_x$를
+$u_x(s_x)t_x\in\mathcal F_x$로 보내는
+$\operatorname{Hom}(\mathcal L|U,\mathcal F|U)$의 원소를 대응시킨다.
+$\mathcal L$이 \emph{유한 계수의 국소 자유}이면 이 준동형은
+\emph{전단사}이다. 이 성질은 국소적이므로
+$\mathcal L=\mathcal O_X^n$인 경우로 한정할 수 있다. 모든
+$\mathcal O_X$-가군 $\mathcal G$에 대하여
+$\mathcal H\!om_{\mathcal O_X}(\mathcal O_X^n,\mathcal G)$가
+$\mathcal G^n$과 표준적으로 동형이므로, 다시 자명한 경우
+$\mathcal L=\mathcal O_X$로 환원된다.
+\end{env}
+
+\begin{env}[5.4.3]
+\label{0.5.4.3-ko}
+$\mathcal L$이 가역이면 그 쌍대
+$\check{\mathcal L}=\mathcal H\!om_{\mathcal O_X}
+(\mathcal L,\mathcal O_X)$도 가역이다. 실제로 문제는 국소적이므로 곧
+$\mathcal L=\mathcal O_X$인 경우로 환원된다. 또한 표준 동형
+\[
+  \mathcal H\!om_{\mathcal O_X}(\mathcal L,\mathcal O_X)
+  \otimes_{\mathcal O_X}\mathcal L
+  \xrightarrow{\sim}
+  \mathcal O_X
+  \tag{5.4.3.1}\label{0.5.4.3.1-ko}
+\]
+이 존재한다. 실제로 (5.4.2)에 따라 표준 동형
+$\mathcal H\!om_{\mathcal O_X}(\mathcal L,\mathcal L)
+\xrightarrow{\sim}\mathcal O_X$를 정의하면 충분하다. 그런데 모든
+$\mathcal O_X$-가군 $\mathcal F$에 대하여 표준 준동형
+$\mathcal O_X\longrightarrow
+\mathcal H\!om_{\mathcal O_X}(\mathcal F,\mathcal F)$가 존재한다
+(5.3.7). $\mathcal F=\mathcal L$이 가역일 때 이 준동형이 전단사임을
+보이면 된다. 이 문제도 국소적이므로 자명한 경우
+$\mathcal L=\mathcal O_X$로 환원된다.
+
+이에 따라
+$\mathcal L^{-1}=\mathcal H\!om_{\mathcal O_X}
+(\mathcal L,\mathcal O_X)$로 놓고, $\mathcal L^{-1}$을
+$\mathcal L$의 \emph{역}이라고 한다. $X$가 한 점으로만 이루어지고
+$\mathcal O_X$가 극대 아이디얼 $\mathfrak m$을 갖는 \emph{국소환}
+$A$인 경우에는 ``가역층''이라는 용어를 다음과 같이 정당화할 수 있다.
+$M$, $M'$을 두 $A$-가군이라 하고($M$은 유한 생성),
+$M\otimes_A M'$이 $A$와 동형이라고 하자. 그러면
+$(A/\mathfrak m)\otimes_A(M\otimes_A M')$은
+$(M/\mathfrak mM)\otimes_{A/\mathfrak m}(M'/\mathfrak mM')$과
+동일시된다. 체 $A/\mathfrak m$ 위의 이 벡터공간 텐서곱이
+$A/\mathfrak m$과 동형이므로 $M/\mathfrak mM$과
+$M'/\mathfrak mM'$은 모두 1차원이어야 한다. 따라서
+$\mathfrak mM$에 속하지 않는 모든 $z\in M$에 대하여
+$M=Az+\mathfrak mM$이고, $M$이 유한 생성이므로 나카야마 보조정리에
+따라 $M=Az$이다. 더욱이 $z$의 소멸자는 $A$와 동형인
+$M\otimes_A M'$을 소멸시키므로 그 소멸자는 $\{0\}$이다. 따라서
+$M$은 \emph{$A$와 동형}이다. 일반적인 경우, 이는 $\mathcal L$이
+유한 생성 $\mathcal O_X$-가군이고 어떤 $\mathcal O_X$-가군
+$\mathcal F$에 대하여
+$\mathcal L\otimes_{\mathcal O_X}\mathcal F$가 $\mathcal O_X$와
+동형이며, 각 환 $\mathcal O_x$가 국소환이면 모든 $x\in X$에 대하여
+$\mathcal L_x$가 $\mathcal O_x$와 동형임을 보여 준다. 더 나아가
+$\mathcal O_X$와 $\mathcal L$이 \emph{연접}이면 (5.2.7)에 따라
+$\mathcal L$은 가역이다.
+\end{env}
+
+\begin{env}[5.4.4]
+\label{0.5.4.4-ko}
+$\mathcal L$, $\mathcal L'$이 두 가역 $\mathcal O_X$-가군이면
+$\mathcal L\otimes_{\mathcal O_X}\mathcal L'$도 가역이다. 실제로
+문제는 국소적이므로 $\mathcal L=\mathcal O_X$라고 가정할 수 있고,
+그 경우 결과는 자명하다. 모든 정수 $n\geq1$에 대하여
+$\mathcal L^{\otimes n}$은 $\mathcal L$과 같은 $n$개의 층의
+텐서곱을 뜻한다.
+
+\oldpage[0\textsubscript{I}]{50}
+
+관례상 $\mathcal L^{\otimes0}=\mathcal O_X$로 놓고, $n\geq1$일 때
+$\mathcal L^{\otimes(-n)}=(\mathcal L^{-1})^{\otimes n}$으로 놓는다.
+이 표기 아래 임의의 정수 $m,n$에 대하여 \emph{함자적인 표준 동형}
+\[
+  \mathcal L^{\otimes m}\otimes_{\mathcal O_X}\mathcal L^{\otimes n}
+  \xrightarrow{\sim}
+  \mathcal L^{\otimes(n+m)}
+  \tag{5.4.4.1}\label{0.5.4.4.1-ko}
+\]
+이 존재한다. 실제로 정의에 따라 곧 $m=-1$, $n=1$인 경우로
+환원되며, 이 경우의 동형은 (5.4.3)에서 정의하였다.
+\end{env}
+
+\begin{env}[5.4.5]
+\label{0.5.4.5-ko}
+$f:Y\to X$를 환 달린 공간의 사상이라 하자. $\mathcal L$이 국소 자유
+(각각 가역) $\mathcal O_X$-가군이면 $f^*(\mathcal L)$은 국소 자유
+(각각 가역) $\mathcal O_Y$-가군이다. 이는 국소적으로 동형인 두
+$\mathcal O_X$-가군의 역상들이 국소적으로 동형이라는 사실,
+$f^*$가 유한 직합과 가환한다는 사실, 그리고
+$f^*(\mathcal O_X)=\mathcal O_Y$라는 사실(4.3.4)에서 곧 따른다.
+또한 함자적인 표준 준동형
+\[
+  f^*(\check{\mathcal L})
+  \longrightarrow
+  \check{\bigl(f^*(\mathcal L)\bigr)}
+\]
+이 존재한다(4.4.6). $\mathcal L$이 국소 자유이면 이 준동형은
+\emph{전단사}이다. 실제로 다시 자명한 경우
+$\mathcal L=\mathcal O_X$로 환원된다. 따라서 $\mathcal L$이
+가역이면 모든 정수 $n$에 대하여 $f^*(\mathcal L^{\otimes n})$은
+$(f^*(\mathcal L))^{\otimes n}$과 표준적으로 동일시된다.
+\end{env}
+
+\begin{env}[5.4.6]
+\label{0.5.4.6-ko}
+$\mathcal L$을 가역 $\mathcal O_X$-가군이라 하자. 직합 아벨군
+\[
+  \Gamma_*(X,\mathcal L)=\Gamma_*(\mathcal L)
+  =\bigoplus_{n\in\mathbb Z}\Gamma(X,\mathcal L^{\otimes n})
+\]
+을 생각하자. $s_n\in\Gamma(X,\mathcal L^{\otimes n})$과
+$s_m\in\Gamma(X,\mathcal L^{\otimes m})$의 쌍 $(s_n,s_m)$에
+(5.4.4.1)에 따라 $s_n\otimes s_m$에 표준적으로 대응하는
+$X$ 위의 $\mathcal L^{\otimes(n+m)}$의 절단을 대응시켜 이 군에
+\emph{등급환}의 구조를 준다. 이 곱셈의 결합법칙은 곧 확인된다.
+$\Gamma_*(X,\mathcal L)$은 $\mathcal L$에 관한 공변함자로서
+등급환의 범주에 값을 갖는다.
+
+이제 $\mathcal F$가 임의의 $\mathcal O_X$-가군이면
+\[
+  \Gamma_*(\mathcal L,\mathcal F)
+  =\bigoplus_{n\in\mathbb Z}
+   \Gamma\bigl(X,
+     \mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes n}\bigr)
+\]
+로 놓는다. 이 아벨군에 등급환 $\Gamma_*(\mathcal L)$ 위의
+\emph{등급 가군} 구조를 다음과 같이 준다. 두 절단
+$s_n\in\Gamma(X,\mathcal L^{\otimes n})$과
+$u_m\in\Gamma(X,
+\mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes m})$의 쌍에
+(5.4.4.1)에 따라 $s_n\otimes u_m$에 표준적으로 대응하는
+$\mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes(m+n)}$의 절단을
+대응시킨다. 가군의 공리들은 곧 확인된다. $X$, $\mathcal L$을
+고정하면 $\Gamma_*(\mathcal L,\mathcal F)$는 $\mathcal F$에 관한
+공변함자로서 $\Gamma_*(\mathcal L)$-등급 가군의 범주에 값을 갖는다.
+$X$, $\mathcal F$를 고정하면 이는 $\mathcal L$에 관한 공변함자로서
+아벨군의 범주에 값을 갖는다.
+
+$f:Y\to X$를 환 달린 공간의 사상이라 하자. 표준 준동형 (4.4.3.2)
+\[
+  \rho:\mathcal L^{\otimes n}
+  \longrightarrow
+  f_*\bigl(f^*(\mathcal L^{\otimes n})\bigr)
+\]
+은 아벨군의 준동형
+\[
+  \Gamma(X,\mathcal L^{\otimes n})
+  \longrightarrow
+  \Gamma\bigl(Y,f^*(\mathcal L^{\otimes n})\bigr)
+\]
+을 정의한다. $f^*(\mathcal L^{\otimes n})
+=(f^*(\mathcal L))^{\otimes n}$이므로, 표준 준동형 (4.4.3.2)와
+(5.4.4.1)의 정의로부터 앞의 준동형들이 \emph{함자적인 등급환
+준동형}
+\[
+  \Gamma_*(\mathcal L)\longrightarrow
+  \Gamma_*(f^*(\mathcal L))
+\]
+을 정의함을 알 수 있다. 같은 표준 준동형 (4.4.3)은 아벨군의
+준동형
+\[
+  \Gamma\bigl(X,
+    \mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes n}\bigr)
+  \longrightarrow
+  \Gamma\bigl(Y,
+    f^*(\mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes n})\bigr)
+\]
+도 정의한다. 또한
+\[
+  f^*(\mathcal F\otimes_{\mathcal O_X}\mathcal L^{\otimes n})
+  =f^*(\mathcal F)\otimes_{\mathcal O_Y}
+   (f^*(\mathcal L))^{\otimes n}
+  \tag{4.3.3.1}
+\]
+이다.
+
+\oldpage[0\textsubscript{I}]{51}
+
+따라서 이 준동형들은 $n$이 변할 때 \emph{등급 가군의 쌍준동형}
+\[
+  \Gamma_*(\mathcal L,\mathcal F)
+  \longrightarrow
+  \Gamma_*(f^*(\mathcal L),f^*(\mathcal F))
+\]
+을 정의한다.
+\end{env}
+
+\begin{env}[5.4.7]
+\label{0.5.4.7-ko}
+모든 가역 $\mathcal O_X$-가군이 $\mathfrak M$의 정확히 한 원소와
+동형이 되도록 하는 가역 $\mathcal O_X$-가군들의 \emph{집합}
+$\mathfrak M$($\mathfrak M(X)$라고도 쓴다)이 존재함을 보일 수
+있다\footnote{서론에서 인용한 준비 중인 책을 보라.}. $\mathfrak M$의
+두 원소 $\mathcal L$, $\mathcal L'$에
+$\mathcal L\otimes_{\mathcal O_X}\mathcal L'$과 동형인
+$\mathfrak M$의 유일한 원소를 대응시켜 $\mathfrak M$ 위에 합성법칙을
+정의한다. 이 합성법칙에 관하여 $\mathfrak M$은 \emph{코호몰로지군}
+$H^1(X,\mathcal O_X^*)$과 동형인 군이다. 여기서 $\mathcal O_X^*$는
+모든 열린집합 $U\subset X$에 대하여
+$\Gamma(U,\mathcal O_X^*)$가 환 $\Gamma(U,\mathcal O_X)$의 가역원군이
+되는 $\mathcal O_X$의 부분층이다. 따라서 $\mathcal O_X^*$는
+\emph{곱셈적} 아벨군의 층이다.
+
+이를 위해 먼저 모든 열린집합 $U\subset X$에서 절단군
+$\Gamma(U,\mathcal O_X^*)$가 $(\mathcal O_X|U)$-가군
+$\mathcal O_X|U$의 \emph{자동사상군}과 표준적으로 동일시됨에
+유의하자. 이 동일시는 $U$ 위의 $\mathcal O_X^*$의 절단
+$\varepsilon$에, 모든 $x\in U$와 모든 $s_x\in\mathcal O_x$에 대하여
+$u_x(s_x)=\varepsilon_xs_x$인 $\mathcal O_X|U$의 자동사상 $u$를
+대응시킨다. 이제 $\mathfrak U=(U_\lambda)$를 $X$의 열린 덮개라 하자.
+모든 지표쌍 $(\lambda,\mu)$에 대하여
+$\mathcal O_X|(U_\lambda\cap U_\mu)$의 자동사상
+$\theta_{\lambda\mu}$를 주는 것은 $\mathcal O_X^*$에 값을 갖는 덮개
+$\mathfrak U$의 $1$-\emph{공사슬}을 주는 것과 같다. 이
+$\theta_{\lambda\mu}$들이 붙이기 조건(3.3.1)을 만족한다는 것은
+대응하는 공사슬이 \emph{공순환}이라는 뜻이다. 마찬가지로 모든
+$\lambda$에 대하여 $\mathcal O_X|U_\lambda$의 자동사상
+$\omega_\lambda$를 주는 것은 $\mathcal O_X^*$에 값을 갖는
+$\mathfrak U$의 $0$-공사슬을 주는 것과 같고, 그 \emph{공경계}는
+자동사상족
+\[
+  (\omega_\lambda|U_\lambda\cap U_\mu)\circ
+  (\omega_\mu|U_\lambda\cap U_\mu)^{-1}
+\]
+에 대응한다.
+
+$\mathcal O_X^*$에 값을 갖는 $\mathfrak U$의 각 1-공순환에, 그
+공순환에 대응하는 자동사상족 $(\theta_{\lambda\mu})$로부터 붙여서
+얻는 가역 $\mathcal O_X$-가군과 동형인 $\mathfrak M$의 원소를
+대응시킬 수 있다. 서로 코호몰로그인 두 공순환에는 같은
+$\mathfrak M$의 원소가 대응한다(3.3.2). 즉, 사상
+$\varphi_{\mathfrak U}:H^1(\mathfrak U,\mathcal O_X^*)\to\mathfrak M$을
+정의하였다. $\mathfrak B$가 $\mathfrak U$보다 세밀한 $X$의 두 번째
+열린 덮개이면 도식
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+H^1(\mathfrak U,\mathcal O_X^*)
+  \arrow[dd]
+  \arrow[rrd,"\varphi_{\mathfrak U}"] & & \\
+& & \mathfrak M \\
+H^1(\mathfrak B,\mathcal O_X^*)
+  \arrow[rru,swap,"\varphi_{\mathfrak B}"] & &
+\end{tikzcd}
+\]
+은 가환한다. 여기서 세로 화살표는 표준 준동형(G, II, 5.7)이며,
+가환성은 (3.3.3)에서 따른다. 귀납극한을 취하면 사상
+$H^1(X,\mathcal O_X^*)\to\mathfrak M$을 얻는다. 실제로 체흐
+코호몰로지군 $\check H^1(X,\mathcal O_X^*)$는 잘 알려진 대로 첫째
+코호몰로지군 $H^1(X,\mathcal O_X^*)$와 동일시된다(G, II, 5.9,
+정리 5.9.1의 따름정리). 이 사상은 \emph{전사}이다. 실제로 정의에
+따라 모든 가역 $\mathcal O_X$-가군 $\mathcal L$에 대하여 $X$의 열린
+덮개 $(U_\lambda)$가 존재하여 $\mathcal L$은 층들
+$\mathcal O_X|U_\lambda$를 붙여서 얻어진다(3.3.1). 또한 이 사상은
+\emph{단사}이다. 이를 보이기 위해서는 각 사상
+$H^1(\mathfrak U,\mathcal O_X^*)\to\mathfrak M$에 대하여 증명하면
+충분하고, 이는 (3.3.2)에서 따른다. 이제 이렇게 정의한 전단사가
+군 준동형임을 보이는 일만 남았다.
+
+\oldpage[0\textsubscript{I}]{52}
+
+두 가역 $\mathcal O_X$-가군 $\mathcal L$, $\mathcal L'$이 주어졌다고
+하자. 모든 $\lambda$에 대하여 $\mathcal L|U_\lambda$와
+$\mathcal L'|U_\lambda$가 $\mathcal O_X|U_\lambda$와 동형이 되게 하는
+열린 덮개 $(U_\lambda)$가 존재한다. 따라서 각 지표 $\lambda$마다
+$\Gamma(U_\lambda,\mathcal L)$의 원소 $a_\lambda$(각각
+$\Gamma(U_\lambda,\mathcal L')$의 원소 $a'_\lambda$)가 존재하여,
+$s_\lambda$가 $\Gamma(U_\lambda,\mathcal O_X)$를 달릴 때
+$\Gamma(U_\lambda,\mathcal L)$의 원소들은
+$s_\lambda a_\lambda$ 꼴이고, $\Gamma(U_\lambda,\mathcal L')$의
+원소들은 $s_\lambda a'_\lambda$ 꼴이다. 대응하는 두 공순환을
+$(\varepsilon_{\lambda\mu})$, $(\varepsilon'_{\lambda\mu})$라 하자.
+$U_\lambda\cap U_\mu$ 위에서
+$s_\lambda a_\lambda=s_\mu a_\mu$(각각
+$s_\lambda a'_\lambda=s_\mu a'_\mu$)인 것은
+$s_\lambda=\varepsilon_{\lambda\mu}s_\mu$(각각
+$s_\lambda=\varepsilon'_{\lambda\mu}s_\mu$)인 것과 동치이다.
+$U_\lambda$ 위의
+$\mathcal L\otimes_{\mathcal O_X}\mathcal L'$의 절단들은
+$s_\lambda$, $s'_\lambda$가 $\Gamma(U_\lambda,\mathcal O_X)$를 달릴
+때 $s_\lambda s'_\lambda(a_\lambda\otimes a'_\lambda)$들의 유한합이다.
+따라서 공순환
+$(\varepsilon_{\lambda\mu}\varepsilon'_{\lambda\mu})$가
+$\mathcal L\otimes_{\mathcal O_X}\mathcal L'$에 대응함은 자명하고,
+이로써 증명이 끝난다\footnote{이 결과의 일반형에 대해서는 51쪽의
+주에서 인용한 책을 보라.}.
+\end{env}
+
+\begin{env}[5.4.8]
+\label{0.5.4.8-ko}
+$f=(\psi,\omega)$를 환 달린 공간의 사상 $Y\to X$라 하자. 역상함자
+$f^*$는 집합 $\mathfrak M(X)$에서 집합 $\mathfrak M(Y)$로 가는
+사상을 정의한다. 이 사상도 언어의 남용으로 $f^*$라고 쓴다. 한편
+표준 준동형(T, 3.2.2)
+\[
+  H^1(X,\mathcal O_X^*)\longrightarrow H^1(Y,\mathcal O_Y^*)
+  \tag{5.4.8.1}\label{0.5.4.8.1-ko}
+\]
+이 존재한다. $\mathfrak M(X)$와 $H^1(X,\mathcal O_X^*)$(각각
+$\mathfrak M(Y)$와 $H^1(Y,\mathcal O_Y^*)$)를 (5.4.7)에 따라
+표준적으로 동일시하면, 준동형 (5.4.8.1)은 \emph{사상 $f^*$와
+동일시된다}. 실제로 $\mathcal L$이 $X$의 열린 덮개
+$(U_\lambda)$에 대응하는 공순환 $(\varepsilon_{\lambda\mu})$에서
+나왔다고 하자. $f^*(\mathcal L)$이
+$(\varepsilon_{\lambda\mu})$의 코호몰로지류의 (5.4.8.1)에 의한 상을
+코호몰로지류로 갖는 공순환에서 나옴을 보이면 충분하다. 이제
+$\theta_{\lambda\mu}$를 $\varepsilon_{\lambda\mu}$에 대응하는
+$\mathcal O_X|(U_\lambda\cap U_\mu)$의 자동사상이라 하자.
+$f^*(\mathcal L)$은 자동사상 $f^*(\theta_{\lambda\mu})$를 이용하여
+$\mathcal O_Y|\psi^{-1}(U_\lambda)$들을 붙여서 얻어진다. 따라서 이
+자동사상들이 공순환
+$(\omega^\#(\varepsilon_{\lambda\mu}))$에 대응함을 확인하면 충분하고,
+이는 정의에서 곧 따른다. 여기서 $\varepsilon_{\lambda\mu}$는
+$\rho$(3.7.2)에 의한 그 표준적인 상, 즉
+$\psi^{-1}(U_\lambda\cap U_\mu)$ 위의
+$\psi^*(\mathcal O_X^*)$의 절단과 동일시하였다.
+\end{env}
+
+\begin{env}[5.4.9]
+\label{0.5.4.9-ko}
+$\mathcal E$, $\mathcal F$를 두 $\mathcal O_X$-가군이라 하고
+$\mathcal F$가 \emph{국소 자유}라고 하자. $\mathcal G$가
+\emph{$\mathcal E$에 의한 $\mathcal F$의 확장}, 즉 완전열
+\[
+  0\longrightarrow\mathcal E\xrightarrow{i}\mathcal G
+  \xrightarrow{p}\mathcal F\longrightarrow0
+\]
+이 존재하는 $\mathcal O_X$-가군이라고 하자. 그러면 모든 $x\in X$에
+대하여 $x$의 열린 근방 $U$가 존재하여 $\mathcal G|U$는
+\emph{직합} $\mathcal E|U\oplus\mathcal F|U$와 동형이다. 실제로
+$\mathcal F=\mathcal O_X^n$인 경우로 한정할 수 있다.
+$e_i$ $(1\leq i\leq n)$를 $\mathcal O_X^n$의 표준 절단들(5.5.5)이라
+하자. 그러면 $x$의 열린 근방 $U$와 $U$ 위의 $\mathcal G$의 절단
+$s_i$ $(1\leq i\leq n)$가 존재하여 $p(s_i|U)=e_i|U$이다. 이제
+$f$를 절단 $s_i|U$들이 정의하는 준동형
+$\mathcal F|U\to\mathcal G|U$라 하자(5.1.1). 모든 열린집합
+$V\subset U$와 모든 절단 $s\in\Gamma(V,\mathcal G)$에 대하여
+$s-f(p(s))\in\Gamma(V,\mathcal E)$임은 곧 확인되고, 이로부터 주장이
+따른다.
+\end{env}
+
+\begin{env}[5.4.10]
+\label{0.5.4.10-ko}
+$f:X\to Y$를 환 달린 공간의 사상, $\mathcal F$를
+$\mathcal O_X$-가군, $\mathcal L$을 유한 계수의 국소 자유
+$\mathcal O_Y$-가군이라 하자. 그러면 표준 동형
+\[
+  f_*(\mathcal F)\otimes_{\mathcal O_Y}\mathcal L
+  \xrightarrow{\sim}
+  f_*\bigl(\mathcal F\otimes_{\mathcal O_X}f^*(\mathcal L)\bigr)
+  \tag{5.4.10.1}\label{0.5.4.10.1-ko}
+\]
+이 존재한다.
+
+\oldpage[0\textsubscript{I}]{53}
+
+실제로 임의의 $\mathcal O_Y$-가군 $\mathcal L$에 대하여 표준 준동형
+\[
+  f_*(\mathcal F)\otimes_{\mathcal O_Y}\mathcal L
+  \xrightarrow{1\otimes\rho}
+  f_*(\mathcal F)\otimes_{\mathcal O_Y}f_*(f^*(\mathcal L))
+  \xrightarrow{\alpha}
+  f_*\bigl(\mathcal F\otimes_{\mathcal O_X}f^*(\mathcal L)\bigr)
+\]
+이 있다. 여기서 $\rho$는 (4.4.3.2)의 준동형이고 $\alpha$는
+(4.2.2.1)의 준동형이다. $\mathcal L$이 국소 자유일 때 이 준동형이
+전단사임을 보이기 위해서는 문제가 $Y$ 위에서 국소적이므로
+$\mathcal L=\mathcal O_Y^n$인 경우만 생각하면 충분하다. 더 나아가
+$f_*$와 $f^*$는 유한 직합과 가환하므로 $n=1$이라고 가정할 수 있다.
+이 경우 명제는 정의와 관계식 $f^*(\mathcal O_Y)=\mathcal O_X$에서
+곧 따른다.
+\end{env}
+
+\subsection{국소환 달린 공간 위의 층}
+\label{subsection:0.5.5-ko}
+
+\begin{env}[5.5.1]
+\label{0.5.5.1-ko}
+환 달린 공간 $(X,\mathcal O_X)$가 \emph{국소환 달린 공간}이라는 것은
+모든 $x\in X$에 대하여 $\mathcal O_x$가 국소환이라는 뜻이다. 이
+논고에서 다룰 환 달린 공간은 거의 모두 이런 공간이다. 이때
+$\mathcal O_x$의 \emph{극대 아이디얼}을 $\mathfrak m_x$로,
+\emph{잉여체} $\mathcal O_x/\mathfrak m_x$를 $k(x)$로 쓴다. 모든
+$\mathcal O_X$-가군 $\mathcal F$, $X$의 모든 열린집합 $U$, 모든 점
+$x\in U$, 모든 절단 $f\in\Gamma(U,\mathcal F)$에 대하여 $f(x)$는
+싹 $f_x$의
+\[
+  \mathcal F_x/\mathfrak m_x\mathcal F_x
+\]
+에서의 류를 뜻하며, 이를 점 $x$에서 $f$의 \emph{값}이라고 한다.
+따라서 $f(x)=0$은
+$f_x\in\mathfrak m_x\mathcal F_x$라는 뜻이다. 이 관계가 성립하면
+언어의 남용으로 $f$가 \emph{$x$에서 소멸한다}고 한다. 이 관계와
+$f_x=0$을 혼동하지 않도록 주의해야 한다.
+\end{env}
+
+\begin{env}[5.5.2]
+\label{0.5.5.2-ko}
+$X$를 국소환 달린 공간, $\mathcal L$을 가역
+$\mathcal O_X$-가군, $f$를 $X$ 위의 $\mathcal L$의 절단이라 하자.
+점 $x\in X$에서 다음 세 조건은 \emph{서로 동치}이다.
+\begin{enumerate}
+  \item[$a)$] \emph{$f_x$는 $\mathcal L_x$의 생성원이다.}
+  \item[$b)$] \emph{$f_x\notin\mathfrak m_x\mathcal L_x$이다.} 다시
+    말해 $f(x)\neq0$이다.
+  \item[$c)$] $x$의 열린 근방 $V$ 위의 $\mathcal L^{-1}$의 절단
+    $g$가 존재하여, $f\otimes g$의
+    $\Gamma(V,\mathcal O_X)$에서의 표준적인 상(5.4.3)이
+    \emph{단위 절단}이다.
+\end{enumerate}
+
+실제로 문제는 국소적이므로 $\mathcal L=\mathcal O_X$인 경우로
+한정할 수 있다. 그러면 $a)$와 $b)$의 동치는 자명하고, $c)$가
+$b)$를 함의함도 자명하다. 한편
+$f_x\notin\mathfrak m_x$이면 $f_x$는 $\mathcal O_x$에서 가역이므로
+$f_xg_x=1_x$인 $g_x$가 존재한다. 절단의 싹의 정의에 따라 이는
+$x$의 근방 $V$와 $V$ 위의 $\mathcal O_X$의 절단 $g$가 존재하여
+$V$에서 $fg=1$이라는 뜻이고, 따라서 $c)$가 성립한다.
+
+조건 $c)$에서 곧, 동치인 조건 $a)$, $b)$, $c)$를 만족하는
+$x$들의 집합 $X_f$가 $X$에서 \emph{열린집합}임을 알 수 있다.
+(5.5.1)의 용어로 이는 $f$가 \emph{소멸하지 않는} 점들의 집합이다.
+\end{env}
+
+\begin{env}[5.5.3]
+\label{0.5.5.3-ko}
+(5.5.2)의 가정 아래 $\mathcal L'$을 두 번째 가역
+$\mathcal O_X$-가군이라 하자. 그러면
+$f\in\Gamma(X,\mathcal L)$, $g\in\Gamma(X,\mathcal L')$에 대하여
+\[
+  X_f\cap X_g=X_{f\otimes g}
+\]
+이다. 실제로 문제는 국소적이므로 곧
+$\mathcal L=\mathcal L'=\mathcal O_X$인 경우로 환원된다.
+이 경우 $f\otimes g$는 곱 $fg$와 표준적으로 동일시되므로 명제는
+자명하다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{54}
+
+\begin{env}[5.5.4]
+\label{0.5.5.4-ko}
+$\mathcal F$를 계수 $n$의 국소 자유 $\mathcal O_X$-가군이라 하자.
+$p\leq n$이면 $\bigwedge^p\mathcal F$는 계수
+$\binom{n}{p}$의 국소 자유 $\mathcal O_X$-가군이고, $p>n$이면
+영가군임은 곧 따른다. 실제로 문제는 국소적이므로
+$\mathcal F=\mathcal O_X^n$인 경우로 환원된다. 또한 모든 $x\in X$에
+대하여
+\[
+  (\bigwedge^p\mathcal F)_x/
+  \mathfrak m_x(\bigwedge^p\mathcal F)_x
+\]
+는 $k(x)$ 위의 차원 $\binom{n}{p}$인 벡터공간이며,
+\[
+  \bigwedge^p(\mathcal F_x/\mathfrak m_x\mathcal F_x)
+\]
+와 표준적으로 동일시된다. $s_1,\ldots,s_p$를 $X$의 열린집합 $U$
+위의 $\mathcal F$의 절단들이라 하고,
+$s=s_1\wedge\cdots\wedge s_p$라 하자. 이는 $U$ 위의
+$\bigwedge^p\mathcal F$의 절단이다(4.1.5). 이때
+$s(x)=s_1(x)\wedge\cdots\wedge s_p(x)$이므로,
+$s_1(x),\ldots,s_p(x)$가 \emph{선형 종속}이라는 것은 $s(x)=0$이라는
+뜻이다. 따라서 \emph{$s_1(x),\ldots,s_p(x)$가 선형 독립인
+$x\in U$들의 집합은 $X$에서 열린집합이다.} 실제로
+$\mathcal F=\mathcal O_X^n$인 경우로 환원한 뒤,
+\[
+  \bigwedge^p\mathcal F
+  =\mathcal O_X^{\binom{n}{p}}
+\]
+에서 $\binom{n}{p}$개의 성분으로 가는 사영 중 하나에 의한 $s$의
+상에 (5.5.2)를 적용하면 충분하다.
+
+특히 $s_1,\ldots,s_n$이 $U$ 위의 $\mathcal F$의 $n$개 절단이고 모든
+$x\in U$에서 $s_1(x),\ldots,s_n(x)$가 선형 독립이면, 이 절단들이
+정의하는 준동형(5.1.1)
+\[
+  u:\mathcal O_X^n|U\longrightarrow\mathcal F|U
+\]
+는 \emph{동형}이다. 실제로
+$\mathcal F=\mathcal O_X^n$이고
+$\bigwedge^n\mathcal F$를 $\mathcal O_X$와 표준적으로 동일시한
+경우로 한정할 수 있다. 그러면
+$s=s_1\wedge\cdots\wedge s_n$은 $U$ 위의 $\mathcal O_X$의
+\emph{가역 절단}이고, 크라메르 공식으로 $u$의 역준동형을 정의할 수
+있다.
+\end{env}
+
+\begin{env}[5.5.5]
+\label{0.5.5.5-ko}
+$\mathcal E$, $\mathcal F$를 유한 계수의 두 국소 자유
+$\mathcal O_X$-가군, $u:\mathcal E\to\mathcal F$를 준동형이라 하자.
+점 $x\in X$의 근방 $U$가 존재하여 $u|U$가 \emph{단사}이고
+$\mathcal F|U$가 $u(\mathcal E)|U$와 어떤 국소 자유
+$(\mathcal O_X|U)$-부분가군 $\mathcal G$의 \emph{직합}일
+필요충분조건은, $u_x:\mathcal E_x\to\mathcal F_x$가 몫을 취하여
+벡터공간의 \emph{단사} 준동형
+\[
+  \mathcal E_x/\mathfrak m_x\mathcal E_x
+  \longrightarrow
+  \mathcal F_x/\mathfrak m_x\mathcal F_x
+\]
+을 유도하는 것이다.
+
+이 조건은 \emph{필요}하다. 실제로 이때 $\mathcal F_x$는 자유
+$\mathcal O_x$-가군 $u_x(\mathcal E_x)$와 $\mathcal G_x$의 직합이고,
+따라서 $\mathcal F_x/\mathfrak m_x\mathcal F_x$는
+\[
+  u_x(\mathcal E_x)/\mathfrak m_xu_x(\mathcal E_x)
+  \quad\text{및}\quad
+  \mathcal G_x/\mathfrak m_x\mathcal G_x
+\]
+의 직합이다. 이 조건은 \emph{충분}하기도 하다. 실제로
+$\mathcal E=\mathcal O_X^m$인 경우로 한정할 수 있다.
+$e_i$를 모든 $y\in X$에서 $(e_i)_y$가 $\mathcal O_y^m$의 표준기저의
+$i$번째 원소가 되는 $\mathcal O_X^m$의 절단, 즉
+$\mathcal O_X^m$의 \emph{표준 절단}이라 하고,
+$s_1,\ldots,s_m$을 $u$에 의한 $e_i$들의 상이라 하자. 가정에 따라
+$s_1(x),\ldots,s_m(x)$는 선형 독립이다. $\mathcal F$의 계수가
+$n$이면 $x$의 어떤 근방 $V$ 위의 $\mathcal F$의 절단
+$s_{m+1},\ldots,s_n$이 존재하여 $s_i(x)$ $(1\leq i\leq n)$가
+$\mathcal F_x/\mathfrak m_x\mathcal F_x$의 기저를 이룬다. 그러면
+(5.5.4)에 따라 $x$의 근방 $U\subset V$가 존재하여 모든 $y\in U$에서
+$s_i(y)$ $(1\leq i\leq n)$가
+$\mathcal F_y/\mathfrak m_y\mathcal F_y$의 기저를 이룬다. 다시
+(5.5.4)에 따라 $s_i|U$ $(1\leq i\leq m)$를 $e_i|U$로 보내는 동형
+\[
+  \mathcal F|U\xrightarrow{\sim}\mathcal O_X^n|U
+\]
+이 존재하고, 이로써 증명이 끝난다.
+\end{env}
+
+\section{평탄성}
+\label{section:0.6-ko}
+
+\begin{env}[6.0]
+\label{0.6.0.0-ko}
+평탄성의 개념은 J.-P.~세르[16]에게서 비롯되었다. 이하에서는
+N.~부르바키의 \emph{가환대수}에 제시된 결과들의 증명을 생략하고
+독자를 그 책으로 보낸다. 모든 환은 가환이라고 가정한다.\footnote{그
+결과들의 대부분을 비가환인 경우로 일반화한 내용은 앞서 인용한
+N.~부르바키의 강연을 보라.}
+
+\oldpage[0\textsubscript{I}]{55}
+
+$M$, $N$을 두 $A$-가군, $M'$을 $M$의 부분가군, $N'$을 $N$의
+부분가군이라 하자. 표준 사상
+\[
+  M'\otimes_A N'\longrightarrow M\otimes_A N
+\]
+의 상인 $M\otimes_A N$의 부분가군을
+$\operatorname{Im}(M'\otimes_A N')$로 쓴다.
+\end{env}
+
+\subsection{평탄 가군}
+\label{subsection:0.6.1-ko}
+
+\begin{env}[6.1.1]
+\label{0.6.1.1-ko}
+$M$을 $A$-가군이라 하자. 다음 조건들은 서로 동치이다.
+\begin{enumerate}
+  \item[$a)$] $N$에 관한 함자 $M\otimes_A N$은 $A$-가군의 범주에서
+    완전하다.
+  \item[$b)$] 모든 $i>0$과 모든 $A$-가군 $N$에 대하여
+    $\operatorname{Tor}_i^A(M,N)=0$이다.
+  \item[$c)$] 모든 $A$-가군 $N$에 대하여
+    $\operatorname{Tor}_1^A(M,N)=0$이다.
+\end{enumerate}
+
+$M$이 이 조건들을 만족하면 $M$을 \emph{평탄 $A$-가군}이라 한다.
+모든 자유 $A$-가군은 평탄함이 자명하다.
+
+모든 유한 생성 아이디얼 $\mathfrak J$에 대하여 표준 사상
+\[
+  M\otimes_A\mathfrak J\longrightarrow M\otimes_A A=M
+\]
+이 \emph{단사}이면 $M$은 평탄 $A$-가군이다.
+\end{env}
+
+\begin{env}[6.1.2]
+\label{0.6.1.2-ko}
+평탄 $A$-가군들의 모든 귀납극한은 평탄 $A$-가군이다.
+$A$-가군들의 직합 $\bigoplus_{\lambda\in L}M_\lambda$가 평탄
+$A$-가군일 필요충분조건은 각 $A$-가군 $M_\lambda$가 평탄한
+것이다. 특히 모든 사영 $A$-가군은 평탄하다.
+
+$A$-가군들의 완전열
+\[
+  0\longrightarrow M'\longrightarrow M\longrightarrow M''
+  \longrightarrow 0
+\]
+에서 $M''$이 \emph{평탄}하다고 하자. 그러면 모든 $A$-가군 $N$에
+대하여 완전열
+\[
+  0\longrightarrow M'\otimes N\longrightarrow M\otimes N
+  \longrightarrow M''\otimes N\longrightarrow 0
+\]
+을 얻는다. 또한 이때 $M$이 평탄할 필요충분조건은 $M'$이 평탄한
+것이다. 다만 $M$과 $M'$이 평탄하지만 $M''=M/M'$은 평탄하지 않을
+수 있다.
+\end{env}
+
+\begin{env}[6.1.3]
+\label{0.6.1.3-ko}
+$M$을 평탄 $A$-가군, $N$을 임의의 $A$-가군이라 하자. $N$의 두
+부분가군 $N'$, $N''$에 대하여
+\[
+  \operatorname{Im}(M\otimes(N'+N''))
+  =\operatorname{Im}(M\otimes N')+\operatorname{Im}(M\otimes N''),
+\]
+\[
+  \operatorname{Im}(M\otimes(N'\cap N''))
+  =\operatorname{Im}(M\otimes N')\cap\operatorname{Im}(M\otimes N'')
+\]
+이다. 여기서 상들은 $M\otimes N$ 안에서 취한다.
+\end{env}
+
+\begin{env}[6.1.4]
+\label{0.6.1.4-ko}
+$M$, $N$을 두 $A$-가군, $M'$을 $M$의 부분가군, $N'$을 $N$의
+부분가군이라 하고, $M/M'$과 $N/N'$ 가운데 하나가 평탄하다고
+가정하자. 그러면
+\[
+  \operatorname{Im}(M'\otimes N')
+  =\operatorname{Im}(M'\otimes N)\cap
+   \operatorname{Im}(M\otimes N')
+\]
+이다. 여기서 상들은 $M\otimes N$ 안에서 취한다. 특히
+$\mathfrak J$가 $A$의 아이디얼이고 $M/M'$이 평탄하면
+$\mathfrak JM'=M'\cap\mathfrak JM$이다.
+\end{env}
+
+\subsection{환의 변경}
+\label{subsection:0.6.2-ko}
+
+가법군 $M$에 환 $A$, $B$, \ldots{}에 관한 여러 가군 구조가 주어진
+경우, $M$이 $A$-가군, $B$-가군, \ldots{}으로서 평탄하다고 하는 대신
+때로는 $M$이 각각 \emph{$A$-평탄}, \emph{$B$-평탄}, \ldots{}이라고도
+한다.
+
+\begin{env}[6.2.1]
+\label{0.6.2.1-ko}
+$A$, $B$를 두 환, $M$을 $A$-가군, $N$을 $(A,B)$-쌍가군이라 하자.
+$M$이 평탄하고 $N$이 $B$-평탄하면 $M\otimes_A N$은
+$B$-평탄하다. 특히 $M$, $N$이 두 평탄 $A$-가군이면
+$M\otimes_A N$은 평탄 $A$-가군이다. $B$가 $A$-대수이고 $M$이
+
+\oldpage[0\textsubscript{I}]{56}
+
+평탄 $A$-가군이면 $B$-가군 $M_{(B)}=M\otimes_A B$는 평탄하다.
+끝으로 $B$가 $A$-가군으로서 평탄한 $A$-대수이고 $N$이 평탄
+$B$-가군이면 $N$은 $A$-평탄이기도 하다.
+\end{env}
+
+\begin{env}[6.2.2]
+\label{0.6.2.2-ko}
+$A$를 환, $B$를 $A$-가군으로서 평탄한 $A$-대수라 하자.
+$M$, $N$을 두 $A$-가군이라 하고 $M$이 유한 표시를 갖는다고 하자.
+그러면 표준 준동형
+\[
+  \operatorname{Hom}_A(M,N)\otimes_A B
+  \longrightarrow
+  \operatorname{Hom}_B(M\otimes_A B,N\otimes_A B)
+  \tag{6.2.2.1}
+\]
+은 동형이다. 이 준동형은 $u\otimes b$를
+\[
+  m\otimes b'\longmapsto u(m)\otimes b'b
+\]
+인 준동형으로 보낸다.
+\end{env}
+
+\begin{env}[6.2.3]
+\label{0.6.2.3-ko}
+$(A_\lambda,\varphi_{\mu\lambda})$를 환들의 여과 귀납계라 하고
+$A=\varinjlim A_\lambda$라 하자. 또한 각 $\lambda$에 대하여
+$M_\lambda$를 $A_\lambda$-가군이라 하고, $\lambda\leq\mu$일 때
+$\theta_{\mu\lambda}:M_\lambda\to M_\mu$를
+$\varphi_{\mu\lambda}$-준동형이라 하되
+$(M_\lambda,\theta_{\mu\lambda})$가 귀납계를 이룬다고 하자.
+그러면 $M=\varinjlim M_\lambda$는 $A$-가군이다.
+
+이제 모든 $\lambda$에 대하여 $M_\lambda$가 평탄
+$A_\lambda$-가군이면 $M$은 평탄 $A$-가군이다. 실제로
+$\mathfrak J$를 $A$의 \emph{유한 생성} 아이디얼이라 하자.
+귀납극한의 정의에 따라 어떤 지표 $\lambda$와
+$A_\lambda$의 아이디얼 $\mathfrak J_\lambda$가 존재하여
+$\mathfrak J=\mathfrak J_\lambda A$이다.
+$\mu\geq\lambda$일 때
+$\mathfrak J'_\mu=\mathfrak J_\lambda A_\mu$로 놓으면
+$\mathfrak J=\varinjlim\mathfrak J'_\mu$이기도 하다. 여기서
+$\mu$는 $\lambda$ 이상인 지표들을 달린다. 귀납극한 함자가
+완전하고 텐서곱과 가환하므로
+\[
+  M\otimes_A\mathfrak J
+  =\varinjlim(M_\mu\otimes_{A_\mu}\mathfrak J'_\mu)
+  =\varinjlim\mathfrak J'_\mu M_\mu
+  =\mathfrak JM.
+\]
+\end{env}
+
+\subsection{평탄성의 국소화}
+\label{subsection:0.6.3-ko}
+
+\begin{env}[6.3.1]
+\label{0.6.3.1-ko}
+$A$를 환, $S$를 $A$의 곱셈적 부분집합이라 하면 $S^{-1}A$는
+\emph{평탄} $A$-가군이다. 실제로 모든 $A$-가군 $N$에 대하여
+$N\otimes_A S^{-1}A$는 $S^{-1}N$과 동일시되고(1.2.5),
+$N$에 관한 함자 $S^{-1}N$은 완전함을 안다(1.3.2).
+
+이제 $M$이 평탄 $A$-가군이면
+$S^{-1}M=M\otimes_A S^{-1}A$는 평탄 $S^{-1}A$-가군이고(6.2.1),
+앞의 결과와 (6.2.1)에 따라 $A$-평탄이기도 하다. 특히 $P$가
+$S^{-1}A$-가군이면 $P$를 $S^{-1}P$와 동형인 $A$-가군으로 볼 수
+있으며, $P$가 $A$-평탄일 필요충분조건은 $S^{-1}A$-평탄인 것이다.
+\end{env}
+
+\begin{env}[6.3.2]
+\label{0.6.3.2-ko}
+$A$를 환, $B$를 $A$-대수, $T$를 $B$의 곱셈적 부분집합이라 하자.
+$P$가 $A$-평탄인 $B$-가군이면 $T^{-1}P$는 $A$-평탄이다. 실제로
+모든 $A$-가군 $N$에 대하여
+\[
+  (T^{-1}P)\otimes_A N
+  =(T^{-1}B\otimes_B P)\otimes_A N
+  =T^{-1}B\otimes_B(P\otimes_A N)
+  =T^{-1}(P\otimes_A N).
+\]
+그런데 $T^{-1}(P\otimes_A N)$은 두 완전 함자, 즉 $N$에 관한
+$P\otimes_A N$과 $Q$에 관한 $T^{-1}Q$의 합성이므로 $N$에 관한
+완전 함자이다. $S$가 $A$의 곱셈적 부분집합이고 $B$에서의 그 상이
+\emph{$T$에 포함}되면
+$T^{-1}P=S^{-1}(T^{-1}P)$이므로 (6.3.1)에 따라
+$T^{-1}P$는 $S^{-1}A$-평탄이기도 하다.
+\end{env}
+
+\begin{env}[6.3.3]
+\label{0.6.3.3-ko}
+$\varphi:A\to B$를 환의 준동형, $M$을 $B$-가군이라 하자.
+다음 조건들은 서로 동치이다.
+\begin{enumerate}
+  \item[$a)$] $M$은 평탄 $A$-가군이다.
+  \item[$b)$] $B$의 모든 극대 아이디얼 $\mathfrak n$에 대하여
+    $M_\mathfrak n$은 평탄 $A$-가군이다.
+  \item[$c)$] $B$의 모든 극대 아이디얼 $\mathfrak n$에 대하여
+    $\mathfrak m=\varphi^{-1}(\mathfrak n)$으로 놓으면
+    $M_\mathfrak n$은 평탄 $A_\mathfrak m$-가군이다.
+\end{enumerate}
+
+$M_\mathfrak n=(M_\mathfrak n)_\mathfrak m$이므로 $b)$와 $c)$의
+동치는 (6.3.1)에서 따르고, $a)$가 $b)$를 함의하는 것은 (6.3.2)의
+특수한 경우이다. 이제 $b)$가 $a)$를 함의함을 보이면 된다. 즉
+
+\oldpage[0\textsubscript{I}]{57}
+
+$A$-가군의 모든 단사 준동형 $u:N'\to N$에 대하여 준동형
+\[
+  v=1\otimes u:M\otimes_A N'\longrightarrow M\otimes_A N
+\]
+이 단사임을 보이면 된다. $v$는 $B$-가군의 준동형이기도 하므로,
+모든 극대 아이디얼 $\mathfrak n$에 대하여
+\[
+  v_\mathfrak n:(M\otimes_A N')_\mathfrak n
+  \longrightarrow(M\otimes_A N)_\mathfrak n
+\]
+이 단사이면 $v$가 단사임을 안다. 그런데
+\[
+  (M\otimes_A N)_\mathfrak n
+  =B_\mathfrak n\otimes_B(M\otimes_A N)
+  =M_\mathfrak n\otimes_A N
+\]
+이므로 $v_\mathfrak n$은 바로
+\[
+  1\otimes u:M_\mathfrak n\otimes_A N'
+  \longrightarrow M_\mathfrak n\otimes_A N
+\]
+이고, $M_\mathfrak n$이 $A$-평탄이므로 이는 단사이다.
+
+특히 $B=A$로 놓으면, $A$-가군 $M$이 평탄일 필요충분조건은
+$A$의 모든 극대 아이디얼 $\mathfrak m$에 대하여
+$M_\mathfrak m$이 $A_\mathfrak m$-평탄인 것이다.
+\end{env}
+
+\begin{env}[6.3.4]
+\label{0.6.3.4-ko}
+$M$을 $A$-가군이라 하자. $M$이 평탄하고 $f\in A$가 $A$에서
+영인자가 아니면 $f$는 $M$의 영이 아닌 어떤 원소도 소멸시키지
+않는다. 실제로 준동형 $m\mapsto f\cdot m$은 $1\otimes u$로
+쓸 수 있다. 여기서 $u$는 $A$에서의 곱셈
+$a\mapsto f\cdot a$이고 $M$은 $M\otimes_A A$와 동일시한다.
+$u$가 단사이면 $M$의 평탄성에 따라 $1\otimes u$도 단사이다.
+특히 $A$가 \emph{정역}이면 $M$은 \emph{꼬임이 없다}.
+
+역으로 $A$가 정역이고 $M$에 꼬임이 없으며, $A$의 모든 극대
+아이디얼 $\mathfrak m$에 대하여 $A_\mathfrak m$이
+\emph{이산 값매김환}이라고 하자. 그러면 $M$은 $A$-평탄이다.
+실제로 (6.3.3)에 따라 $M_\mathfrak m$이
+$A_\mathfrak m$-평탄임을 보이면 충분하므로, $A$ 자체가 이미
+이산 값매김환이라고 가정할 수 있다. 또한 $M$은 그 유한 생성
+부분가군들의 귀납극한이고 이 부분가군들에도 꼬임이 없으므로,
+(6.1.2)에 따라 $M$이 유한 생성인 경우로 한정할 수 있다.
+이 경우 $M$이 자유 $A$-가군이므로 명제가 따른다.
+
+특히 $A$가 \emph{정역}이고 환의 준동형
+$\varphi:A\to B$가 $B$를 $0$이 아닌 평탄 $A$-가군으로 만들면,
+$\varphi$는 반드시 \emph{단사}이다. 역으로 $B$가 정역이고
+$A$가 $B$의 부분환이며, $A$의 모든 극대 아이디얼
+$\mathfrak m$에 대하여 $A_\mathfrak m$이 이산 값매김환이면
+$B$는 $A$-평탄이다.
+\end{env}
+
+\subsection{충실 평탄 가군}
+\label{subsection:0.6.4-ko}
+
+\begin{env}[6.4.1]
+\label{0.6.4.1-ko}
+$A$-가군 $M$에 관한 다음 네 조건은 서로 동치이다.
+\begin{enumerate}
+  \item[$a)$] $A$-가군의 열 $N'\to N\to N''$이 완전할 필요충분조건은
+    열
+    $M\otimes_A N'\to M\otimes_A N\to M\otimes_A N''$이 완전한 것이다.
+  \item[$b)$] $M$은 평탄하고, 모든 $A$-가군 $N$에 대하여
+    $M\otimes_A N=0$이면 $N=0$이다.
+  \item[$c)$] $M$은 평탄하고, $A$-가군의 모든 준동형 $v:N\to N'$에
+    대하여 $1_M\otimes v=0$이면 $v=0$이다. 여기서 $1_M$은 $M$의
+    항등 자기동형이다.
+  \item[$d)$] $M$은 평탄하고, $A$의 모든 극대 아이디얼
+    $\mathfrak m$에 대하여 $\mathfrak mM\neq M$이다.
+\end{enumerate}
+
+$M$이 이 조건들을 만족할 때 $M$을 \emph{충실 평탄} $A$-가군이라
+한다. 이때 $M$은 반드시 \emph{충실} 가군이다. 또한
+$u:N\to N'$이 $A$-가군의 준동형이면, $u$가 단사(각각 전사,
+전단사)일 필요충분조건은
+$1\otimes u:M\otimes_A N\to M\otimes_A N'$이 그러한 것이다.
+\end{env}
+
+\oldpage[0\textsubscript{I}]{58}
+
+\begin{env}[6.4.2]
+\label{0.6.4.2-ko}
+$0$이 아닌 자유 가군은 충실 평탄하다. 평탄 가군과 충실 평탄
+가군의 직합도 충실 평탄하다. $S$가 $A$의 곱셈적 부분집합이면,
+$S^{-1}A$가 충실 평탄 $A$-가군일 수 있는 것은 $S$가 가역원들로
+이루어진 경우뿐이다. 따라서 이 경우 $S^{-1}A=A$이다.
+\end{env}
+
+\begin{env}[6.4.3]
+\label{0.6.4.3-ko}
+$A$-가군의 완전열
+\[
+  0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow 0
+\]
+이 주어졌다고 하자. $M'$과 $M''$이 평탄하고 그 가운데 하나가
+충실 평탄이면 $M$은 충실 평탄이다.
+\end{env}
+
+\begin{env}[6.4.4]
+\label{0.6.4.4-ko}
+$A,B$를 두 환, $M$을 $A$-가군, $N$을 $(A,B)$-쌍가군이라 하자.
+$M$이 충실 평탄이고 $N$이 충실 평탄 $B$-가군이면
+$M\otimes_A N$은 충실 평탄 $B$-가군이다. 특히 $M,N$이 두 충실
+평탄 $A$-가군이면 $M\otimes_A N$도 충실 평탄하다. $B$가
+$A$-대수이고 $M$이 충실 평탄 $A$-가군이면 $B$-가군
+$M_{(B)}$는 충실 평탄하다.
+\end{env}
+
+\begin{env}[6.4.5]
+\label{0.6.4.5-ko}
+$M$이 충실 평탄 $A$-가군이고 $S$가 $A$의 곱셈적 부분집합이면,
+$S^{-1}M$은 충실 평탄 $S^{-1}A$-가군이다. 실제로
+$S^{-1}M=M\otimes_A(S^{-1}A)$이므로 이는 (6.4.4)에서 따른다.
+역으로 $A$의 모든 극대 아이디얼 $\mathfrak m$에 대하여
+$M_\mathfrak m$이 충실 평탄 $A_\mathfrak m$-가군이면 $M$은 충실
+평탄 $A$-가군이다. 실제로 $M$은 $A$-평탄이고(6.3.3),
+\[
+  M_\mathfrak m/\mathfrak mM_\mathfrak m
+  =(M\otimes_A A_\mathfrak m)
+  \otimes_{A_\mathfrak m}
+  (A_\mathfrak m/\mathfrak mA_\mathfrak m)
+  =M\otimes_A(A/\mathfrak m)
+  =M/\mathfrak mM.
+\]
+따라서 가정에 의해 $A$의 모든 극대 아이디얼 $\mathfrak m$에
+대하여 $M/\mathfrak mM\neq0$이고, 이로써 명제가 따른다(6.4.1).
+\end{env}
+
+\subsection{스칼라 제한}
+\label{subsection:0.6.5-ko}
+
+\begin{env}[6.5.1]
+\label{0.6.5.1-ko}
+$A$를 환, $\varphi:A\to B$를 $B$에 $A$-대수 구조를 주는 환의
+준동형이라 하자. 어떤 $B$-가군 $N$이 충실 평탄 $A$-가군이라고
+가정하자. 그러면 모든 $A$-가군 $M$에 대하여
+$x\mapsto1\otimes x$로 주어지는 $M$에서
+$B\otimes_A M=M_{(B)}$로의 준동형은
+\emph{단사}이다. 특히 $\varphi$는 단사이고, $A$의 모든 아이디얼
+$\mathfrak a$에 대하여
+$\varphi^{-1}(\mathfrak aB)=\mathfrak a$이다. 또한 $A$의 모든 극대
+아이디얼(각각 소 아이디얼) $\mathfrak m$에 대하여
+$\varphi^{-1}(\mathfrak n)=\mathfrak m$을 만족하는 $B$의 극대
+아이디얼(각각 소 아이디얼) $\mathfrak n$이 존재한다.
+\end{env}
+
+\begin{env}[6.5.2]
+\label{0.6.5.2-ko}
+(6.5.1)의 조건이 만족되면 $\varphi$를 통하여 $A$를 $B$의 부분환과
+동일시하고, 더 일반적으로 모든 $A$-가군 $M$을 $M_{(B)}$의
+$A$-부분가군과 동일시한다. 이때 $B$가 \emph{뇌터} 환이면 $A$도
+뇌터 환이다. 실제로 사상
+$\mathfrak a\mapsto\mathfrak aB$는 $A$의 아이디얼 전체에서
+$B$의 아이디얼 전체로 가는 순서 보존
+단사이다. 따라서 $A$의 아이디얼들로 이루어진 무한한 엄밀 증가열이
+존재하면 $B$의 아이디얼들로 이루어진 같은 종류의 증가열도
+존재하게 된다.
+\end{env}
+
+\subsection{충실 평탄환}
+\label{subsection:0.6.6-ko}
+
+\begin{env}[6.6.1]
+\label{0.6.6.1-ko}
+$\varphi:A\to B$를 $B$에 $A$-대수 구조를 주는 환의 준동형이라
+하자. 다음 다섯 조건은 서로 동치이다.
+\begin{enumerate}
+  \item[$a)$] $B$는 충실 평탄 $A$-가군이다. 다시 말해 $M$에 관한
+    함자 $M_{(B)}$는 완전하고 충실하다.
+  \item[$b)$] 준동형 $\varphi$는 단사이고 $A$-가군
+    $B/\varphi(A)$는 평탄하다.
+
+\oldpage[0\textsubscript{I}]{59}
+
+  \item[$c)$] $A$-가군 $B$는 평탄하다. 다시 말해 함자 $M_{(B)}$는
+    완전하다. 또한 모든 $A$-가군 $M$에 대하여 $M$에서
+    $M_{(B)}$로 가는 준동형 $x\mapsto1\otimes x$는 단사이다.
+  \item[$d)$] $A$-가군 $B$는 평탄하고, $A$의 모든 아이디얼
+    $\mathfrak a$에 대하여
+    $\varphi^{-1}(\mathfrak aB)=\mathfrak a$이다.
+  \item[$e)$] $A$-가군 $B$는 평탄하고, $A$의 모든 극대 아이디얼
+    $\mathfrak m$에 대하여
+    $\varphi^{-1}(\mathfrak n)=\mathfrak m$을 만족하는 $B$의 극대
+    아이디얼 $\mathfrak n$이 존재한다.
+\end{enumerate}
+
+이 조건들이 만족되면 $A$를 $B$의 부분환과 동일시한다.
+\end{env}
+
+\begin{env}[6.6.2]
+\label{0.6.6.2-ko}
+$A$를 국소환, $\mathfrak m$을 그 극대 아이디얼, $B$를
+$\mathfrak mB\neq B$인 $A$-대수라 하자. 예를 들어 $B$가
+국소환이고 구조 준동형 $\varphi:A\to B$가 국소 준동형이면 이
+조건이 성립한다. $B$가 평탄 $A$-가군이면 $B$는 충실 평탄
+$A$-가군이다. 실제로 $\mathfrak mB\neq B$이므로
+$\mathfrak mB$를 포함하는 $B$의 극대 아이디얼 $\mathfrak n$이
+존재한다. $\varphi^{-1}(\mathfrak n)\cap A$는 $\mathfrak m$을
+포함하고 $1$을 포함하지 않으므로
+$\varphi^{-1}(\mathfrak n)=\mathfrak m$이다. 따라서 (6.6.1)의
+조건 $e)$를 적용할 수 있다. 이 조건들 아래에서 $B$가 뇌터 환이면
+$A$도 뇌터 환임을 알 수 있다(6.5.2).
+\end{env}
+
+\begin{env}[6.6.3]
+\label{0.6.6.3-ko}
+$B$를 충실 평탄 $A$-가군인 $A$-대수라 하자. 모든 $A$-가군 $M$과
+그 $A$-부분가군 $M'$에 대하여, $M$을 $M_{(B)}$의
+$A$-부분가군과 동일시하면 $M'=M\cap M'_{(B)}$이다.
+$M$이 평탄(각각 충실 평탄) $A$-가군일 필요충분조건은
+$M_{(B)}$가 평탄(각각 충실 평탄) $B$-가군인 것이다.
+\end{env}
+
+\begin{env}[6.6.4]
+\label{0.6.6.4-ko}
+$B$를 $A$-대수, $N$을 충실 평탄 $B$-가군이라 하자. $B$가
+평탄(각각 충실 평탄) $A$-가군일 필요충분조건은 $N$이
+평탄(각각 충실 평탄) $A$-가군인 것이다.
+
+특히 $C$를 $B$-대수라 하자. $C$가 $B$ 위에서 충실 평탄이고
+$B$가 $A$ 위에서 충실 평탄이면 $C$는 $A$ 위에서 충실 평탄이다.
+또한 $C$가 $B$ 위와 $A$ 위에서 모두 충실 평탄이면 $B$는 $A$
+위에서 충실 평탄이다.
+\end{env}
+
+\subsection{환 달린 공간의 평탄 사상}
+\label{subsection:0.6.7-ko}
+
+\begin{env}[6.7.1]
+\label{0.6.7.1-ko}
+$f:X\to Y$를 환 달린 공간의 사상, $\mathcal F$를
+$\mathcal O_X$-가군이라 하자. 점 $x\in X$에서 $\mathcal F_x$가
+평탄 $\mathcal O_{f(x)}$-가군이면 $\mathcal F$가 $x$에서
+\emph{$f$-평탄}이라고 한다. $f$에 관해 혼동할 염려가 없을 때에는
+$Y$-평탄이라고도 한다. $y\in Y$ 위에서 $\mathcal F$가
+$f$-평탄하다는 것은 모든 $x\in f^{-1}(y)$에서 $f$-평탄하다는
+뜻이고, $\mathcal F$가 $f$-평탄하다는 것은 $X$의 모든 점에서
+$f$-평탄하다는 뜻이다. $\mathcal O_X$가 각각 $x\in X$에서
+$f$-평탄, $y\in Y$ 위에서 $f$-평탄, 또는 $f$-평탄일 때 사상
+$f$가 각각 $x$에서 평탄, $y$ 위에서 평탄, 또는 평탄하다고 한다.
+\end{env}
+
+\begin{env}[6.7.2]
+\label{0.6.7.2-ko}
+(6.7.1)의 표기를 사용하자. $\mathcal F$가 $x$에서 $f$-평탄이면,
+$y=f(x)$의 모든 열린 근방 $U$에 대하여 $\mathcal G$에 관한 함자
+$\bigl(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F\bigr)_x$는
+$(\mathcal O_Y|U)$-가군의 범주에서 완전하다. 실제로 이 줄기는
+$\mathcal G_y\otimes_{\mathcal O_y}\mathcal F_x$와 표준적으로
+동일시되므로 이는 정의에서 바로 따른다. 특히
+$f$가 평탄 사상이면 역상함자 $f^*$는 $\mathcal O_Y$-가군의
+범주에서 완전하다.
+\end{env}
+
+\begin{env}[6.7.3]
+\label{0.6.7.3-ko}
+역으로 환층 $\mathcal O_Y$가 연접이라고 가정하고, $y$의 모든 열린
+근방 $U$에 대하여 $\mathcal G$에 관한 함자
+$\bigl(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F\bigr)_x$가
+연접 $(\mathcal O_Y|U)$-가군의 범주에서 완전하다고 가정하자.
+그러면 $\mathcal F$는 $x$에서 $f$-평탄이다. 실제로
+$\mathcal O_y$의 모든 유한 생성 아이디얼 $\mathfrak J$에 대하여
+표준 준동형
+$\mathfrak J\otimes_{\mathcal O_y}\mathcal F_x\to\mathcal F_x$가
+단사임을 보이면 충분하다(6.1.1). 그런데 (5.3.8)에 따라
+
+\oldpage[0\textsubscript{I}]{60}
+
+$y$의 어떤 열린 근방 $U$와 $\mathcal O_Y|U$의 연접 아이디얼층
+$\mathcal J$가 존재하여 $\mathcal J_y=\mathfrak J$이므로 결론이
+따른다.
+\end{env}
+
+\begin{env}[6.7.4]
+\label{0.6.7.4-ko}
+평탄 가군에 관한 (6.1)의 결과들은 한 점에서 $f$-평탄한 층들에
+관한 명제로 곧바로 옮겨진다.
+
+$\mathcal O_X$-가군의 완전열
+$0\to\mathcal F'\to\mathcal F\to\mathcal F''\to0$이 주어지고
+$\mathcal F''$가 점 $x\in X$에서 $f$-평탄이라고 하자.
+그러면 $y=f(x)$의 모든 열린 근방 $U$와 모든
+$(\mathcal O_Y|U)$-가군 $\mathcal G$에 대하여 열
+\[
+  0\longrightarrow
+  \bigl(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F'\bigr)_x
+  \longrightarrow
+  \bigl(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F\bigr)_x
+  \longrightarrow
+  \bigl(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F''\bigr)_x
+  \longrightarrow0
+\]
+은 완전하다. 이때 $\mathcal F$가 $x$에서 $f$-평탄일
+필요충분조건은 $\mathcal F'$가 그러한 것이다. $y\in Y$ 위에서
+$f$-평탄한 $\mathcal O_X$-가군과 전역적으로 $f$-평탄한
+$\mathcal O_X$-가군에 대해서도 각각 같은 명제가 성립한다.
+\end{env}
+
+\begin{env}[6.7.5]
+\label{0.6.7.5-ko}
+$f:X\to Y$와 $g:Y\to Z$를 환 달린 공간의 두 사상이라 하고,
+$x\in X$, $y=f(x)$라 하자. $\mathcal F$를 $\mathcal O_X$-가군이라
+하자. $\mathcal F$가 점 $x$에서 $f$-평탄이고 사상 $g$가 점
+$y$에서 평탄이면 $\mathcal F$는 $x$에서 $(g\circ f)$-평탄이다
+(6.2.1). 특히 $f$와 $g$가 평탄 사상이면 $g\circ f$도 평탄하다.
+\end{env}
+
+\begin{env}[6.7.6]
+\label{0.6.7.6-ko}
+$X,Y$를 환 달린 두 공간, $f:X\to Y$를 평탄 사상이라 하자.
+쌍함자들의 표준 준동형(4.4.6)
+\[
+  f^*(\mathcal{H}om_{\mathcal O_Y}(\mathcal F,\mathcal G))
+  \longrightarrow
+  \mathcal{H}om_{\mathcal O_X}(f^*(\mathcal F),f^*(\mathcal G))
+  \tag{6.7.6.1}
+  \label{0.6.7.6.1-ko}
+\]
+은 $\mathcal F$가 유한 표시를 가지면 동형이다(5.2.5).
+
+실제로 문제는 국소적이므로 완전열
+$\mathcal O_Y^m\to\mathcal O_Y^n\to\mathcal F\to0$이 존재한다고
+가정할 수 있다. $f$에 관한 가정에 따라 (6.7.6.1)의 양변은
+$\mathcal F$에 관한 왼쪽 완전 함자이다. 따라서
+$\mathcal F=\mathcal O_Y$인 경우로 귀착되며, 이 경우 명제는
+자명하다.
+\end{env}
+
+\begin{env}[6.7.8]
+\label{0.6.7.8-ko}
+환 달린 공간의 사상 $f:X\to Y$가 전사이고, 모든 $x\in X$에
+대하여 $\mathcal O_x$가 충실 평탄 $\mathcal O_{f(x)}$-가군이면
+$f$를 \emph{충실 평탄} 사상이라고 한다. $X,Y$가 국소환 달린
+공간이면 이는 $f$가 전사이고 평탄하다는 것과 동치이다(6.6.2).
+$f$가 충실 평탄이면 $f^*$는 $\mathcal O_Y$-가군의 범주에서
+완전하고 충실한 함자이고(6.6.1, $a)$), $\mathcal O_Y$-가군
+$\mathcal G$가 $Y$-평탄일 필요충분조건은 $f^*(\mathcal G)$가
+$X$-평탄인 것이다(6.6.3).
+\end{env}
+
+\section{아딕환}
+\label{section:0.7-ko}
+
+\subsection{허용환}
+\label{subsection:0.7.1-ko}
+
+\begin{env}[7.1.1]
+\label{0.7.1.1-ko}
+위상환 $A$(반드시 분리일 필요는 없다)에서 수열
+$(x^n)_{n\geq0}$이 $0$을 극한으로 가지면 원소 $x$가
+\emph{위상적으로 멱영}이라고 한다. $A$에서 $0$의 근방 기본계
+가운데 아이디얼들(따라서 열린 아이디얼들)로 이루어진 것이 있으면
+위상환 $A$를 \emph{선형 위상환}이라고 한다.
+\end{env}
+
+\begin{definition}[7.1.2]
+\label{0.7.1.2-ko}
+선형 위상환 $A$에서 아이디얼 $\mathfrak J$가 열려 있고, $0$의
+모든 근방 $V$에 대하여 어떤 정수 $n>0$가 존재하여
+
+\oldpage[0\textsubscript{I}]{61}
+
+$\mathfrak J^n\subset V$이면 $\mathfrak J$를 \emph{정의 아이디얼}이라고
+한다. 이를 흔히 수열 $(\mathfrak J^n)$이 $0$으로 간다고 표현한다.
+$A$에 정의 아이디얼이 존재하면 선형 위상환 $A$를
+\emph{준허용환}이라고 한다. $A$가 준허용환이고 더 나아가 분리이며
+완비이면 $A$를 \emph{허용환}이라고 한다.
+\end{definition}
+
+$\mathfrak J$가 정의 아이디얼이고 $\mathfrak L$이 $A$의 열린
+아이디얼이면 $\mathfrak J\cap\mathfrak L$도 정의 아이디얼임은
+명백하다. 따라서 준허용환 $A$의 정의 아이디얼들은 $0$의 근방
+기본계를 이룬다.
+
+\begin{lemma}[7.1.3]
+\label{0.7.1.3-ko}
+$A$를 선형 위상환이라 하자.
+\begin{enumerate}
+  \item[{\upshape(i)}] $x\in A$가 위상적으로 멱영일 필요충분조건은
+    $A$의 모든 열린 아이디얼 $\mathfrak J$에 대하여 $x$의
+    $A/\mathfrak J$에서의 표준상이 멱영인 것이다. $A$의 위상적으로
+    멱영인 원소 전체의 집합 $\mathfrak T$는 아이디얼이다.
+  \item[{\upshape(ii)}] 더 나아가 $A$가 준허용환이고 $\mathfrak J$가
+    $A$의 정의 아이디얼이라고 하자. $x\in A$가 위상적으로 멱영일
+    필요충분조건은 그 표준상이 $A/\mathfrak J$에서 멱영인 것이다.
+    아이디얼 $\mathfrak T$는 $A/\mathfrak J$의 멱영근기의 역상이고,
+    따라서 열린 아이디얼이다.
+\end{enumerate}
+\end{lemma}
+
+(i)은 정의에서 바로 따른다. (ii)를 보이기 위해서는 $A$에서 $0$의
+모든 근방 $V$에 대하여 $\mathfrak J^n\subset V$인 $n>0$가 존재함을
+주목하면 충분하다. $x^m\in\mathfrak J$이면 $q\geq n$에 대하여
+$x^{mq}\in V$이므로 $x$는 위상적으로 멱영이다.
+
+\begin{proposition}[7.1.4]
+\label{0.7.1.4-ko}
+$A$를 준허용환, $\mathfrak J$를 $A$의 정의 아이디얼이라 하자.
+\begin{enumerate}
+  \item[{\upshape(i)}] $A$의 아이디얼 $\mathfrak J'$이 어떤 정의
+    아이디얼에 포함될 필요충분조건은 어떤 정수 $n>0$에 대하여
+    ${\mathfrak J'}^n\subset\mathfrak J$인 것이다.
+  \item[{\upshape(ii)}] $x\in A$가 어떤 정의 아이디얼에 포함될
+    필요충분조건은 $x$가 위상적으로 멱영인 것이다.
+\end{enumerate}
+\end{proposition}
+
+(i) ${\mathfrak J'}^n\subset\mathfrak J$이라고 하자. $A$에서 $0$의
+모든 열린 근방 $V$에 대하여 $\mathfrak J^m\subset V$인 $m$이
+존재하므로 ${\mathfrak J'}^{mn}\subset V$이다.
+
+(ii) 이 조건이 필요함은 명백하다. 역으로 이 조건이 성립하면
+$x^n\in\mathfrak J$인 $n$이 존재한다. 따라서
+$\mathfrak J'=\mathfrak J+Ax$는 열린 아이디얼이고
+${\mathfrak J'}^n\subset\mathfrak J$이므로 정의 아이디얼이다.
+
+\begin{corollary}[7.1.5]
+\label{0.7.1.5-ko}
+준허용환 $A$에서 열린 소 아이디얼은 모든 정의 아이디얼을 포함한다.
+\end{corollary}
+
+\begin{corollary}[7.1.6]
+\label{0.7.1.6-ko}
+(7.1.4)의 표기와 가정 아래에서 $A$의 아이디얼 $\mathfrak J_0$에
+관한 다음 성질들은 동치이다.
+\begin{enumerate}
+  \item[$a)$] $\mathfrak J_0$는 $A$의 가장 큰 정의 아이디얼이다.
+  \item[$b)$] $\mathfrak J_0$는 극대 정의 아이디얼이다.
+  \item[$c)$] $\mathfrak J_0$는 정의 아이디얼이고
+    $A/\mathfrak J_0$는 축소환이다.
+\end{enumerate}
+이 성질들을 갖는 아이디얼 $\mathfrak J_0$가 존재할 필요충분조건은
+$A/\mathfrak J$의 멱영근기가 멱영인 것이다. 이때
+$\mathfrak J_0$는 $A$의 위상적으로 멱영인 원소들의 아이디얼
+$\mathfrak T$와 같다.
+\end{corollary}
+
+$a)$가 $b)$를 함의함은 명백하고, (7.1.4, (ii))와 (7.1.3, (ii))에
+따라 $b)$는 $c)$를 함의한다. 같은 이유로 $c)$는 $a)$를 함의한다.
+마지막 명제는 (7.1.4, (i))와 (7.1.3, (ii))에서 따른다.
+
+$A/\mathfrak J$의 멱영근기 $\mathfrak T/\mathfrak J$가 멱영이면
+축소 몫환 $A/\mathfrak T$를 $A_{\mathrm{red}}$로 쓴다.
+
+\oldpage[0\textsubscript{I}]{62}
+
+\begin{corollary}[7.1.7]
+\label{0.7.1.7-ko}
+뇌터 준허용환에는 가장 큰 정의 아이디얼이 존재한다.
+\end{corollary}
+
+\begin{corollary}[7.1.8]
+\label{0.7.1.8-ko}
+준허용환 $A$에서 어떤 정의 아이디얼 $\mathfrak J$의 거듭제곱
+$\mathfrak J^n$ ($n>0$)들이 $0$의 근방 기본계를 이룬다면, 모든
+정의 아이디얼 $\mathfrak J'$의 거듭제곱 ${\mathfrak J'}^n$들도
+$0$의 근방 기본계를 이룬다.
+\end{corollary}
+
+\begin{definition}[7.1.9]
+\label{0.7.1.9-ko}
+준허용환 $A$에서 어떤 정의 아이디얼 $\mathfrak J$의 거듭제곱
+$\mathfrak J^n$들이 $A$에서 $0$의 근방 기본계를 이루면(동치로,
+$\mathfrak J^n$들이 열린 아이디얼이면) $A$를 \emph{준아딕환}이라고
+한다. 분리이고 완비인 준아딕환을 \emph{아딕환}이라고 한다.
+\end{definition}
+
+$\mathfrak J$가 준아딕환(각각 아딕환) $A$의 정의 아이디얼이면
+$A$를 \emph{$\mathfrak J$-준아딕환}(각각
+\emph{$\mathfrak J$-아딕환})이라고도 하고, 그 위상을
+\emph{$\mathfrak J$-준아딕 위상}(각각
+\emph{$\mathfrak J$-아딕 위상})이라고 한다. 더 일반적으로 $M$이
+$A$-가군이면 부분가군 $\mathfrak J^nM$들을 $0$의 근방 기본계로
+갖는 $M$의 위상을 \emph{$\mathfrak J$-준아딕 위상}(각각
+\emph{$\mathfrak J$-아딕 위상})이라고 한다. (7.1.8)에 따라 이
+위상들은 정의 아이디얼 $\mathfrak J$의 선택과 무관하다.
+
+\begin{proposition}[7.1.10]
+\label{0.7.1.10-ko}
+$A$를 허용환, $\mathfrak J$를 $A$의 정의 아이디얼이라 하자. 그러면
+$\mathfrak J$는 환 $A$의 근기에 포함된다.
+\end{proposition}
+
+이 명제는 다음 따름정리들 가운데 어느 것과도 동치이다.
+
+\begin{corollary}[7.1.11]
+\label{0.7.1.11-ko}
+모든 $x\in\mathfrak J$에 대하여 $1+x$는 $A$에서 가역이다.
+\end{corollary}
+
+\begin{corollary}[7.1.12]
+\label{0.7.1.12-ko}
+$f\in A$가 $A$에서 가역일 필요충분조건은 그 표준상이
+$A/\mathfrak J$에서 가역인 것이다.
+\end{corollary}
+
+\begin{corollary}[7.1.13]
+\label{0.7.1.13-ko}
+모든 유한형 $A$-가군 $M$에 대하여 관계 $M=\mathfrak JM$(동치로
+$M\otimes_A(A/\mathfrak J)=0$)는 $M=0$을 함의한다.
+\end{corollary}
+
+\begin{corollary}[7.1.14]
+\label{0.7.1.14-ko}
+$u:M\to N$을 $A$-가군의 준동형이라 하고 $N$은 유한형이라고 하자.
+$u$가 전사일 필요충분조건은
+$u\otimes1:M\otimes_A(A/\mathfrak J)\to
+N\otimes_A(A/\mathfrak J)$가 전사인 것이다.
+\end{corollary}
+
+실제로 (7.1.10)과 (7.1.11)의 동치는 Bourbaki, \emph{Alg.},
+chap.~VIII, \textsection6, n\textsuperscript{o}~3, th.~1에서 따르고,
+(7.1.10)과 (7.1.13)의 동치는 \emph{loc. cit.}, th.~2에서 따른다.
+(7.1.10)이 (7.1.14)를 함의한다는 것은 \emph{loc. cit.}, prop.~6의
+cor.~4에서 따른다. 한편 영 준동형에 (7.1.14)를 적용하면
+(7.1.14)가 (7.1.13)을 함의함을 알 수 있다. 마지막으로 (7.1.10)에
+따르면 $f$가 $A/\mathfrak J$에서 가역일 때 $f$는 $A$의 어떤 극대
+아이디얼에도 속하지 않으므로 $A$에서 가역이다. 즉 (7.1.10)은
+(7.1.12)를 함의한다. 역으로 (7.1.12)는 (7.1.11)을 함의한다.
+
+따라서 (7.1.11)을 증명하면 충분하다. $A$는 분리이고 완비이며
+수열 $(\mathfrak J^n)$은 $0$으로 가므로 급수
+$\sum_{n=0}^{\infty}(-1)^n x^n$은 $A$에서 수렴한다. 그 합을 $y$라
+하면 $y(1+x)=1$이다.
+
+\subsection{아딕환과 사영극한}
+\label{subsection:0.7.2-ko}
+
+\begin{env}[7.2.1]
+\label{0.7.2.1-ko}
+이산환들의 모든 사영극한은 자명하게 선형 위상환이며 분리이고
+완비이다. 역으로 $A$를 선형 위상환이라 하고, 아이디얼들로 이루어진
+$A$의 $0$의 열린 근방 기본계를 $(\mathfrak J_\lambda)$라 하자.
+표준 사상
+$\varphi_\lambda:A\to A/\mathfrak J_\lambda$들은 연속 준동형의
+사영계를 이루므로 연속 준동형
+$\varphi:A\to\varprojlim A/\mathfrak J_\lambda$를 정의한다. $A$가
+분리이면 $\varphi$는 $A$에서
+$\varprojlim A/\mathfrak J_\lambda$의 조밀한 부분환으로 가는
+위상동형이다. 더 나아가 $A$가 완비이면 $\varphi$는 $A$에서
+$\varprojlim A/\mathfrak J_\lambda$로 가는 위상동형이다.
+\end{env}
+
+\begin{lemma}[7.2.2]
+\label{0.7.2.2-ko}
+선형 위상환이 허용환일 필요충분조건은 이산환들의 사영계
+$(A_\lambda,u_{\lambda\mu})$의 사영극한
+$A=\varprojlim A_\lambda$와 동형인 것이다. 여기서 지표집합은
+$\leq$에 관한 여과 순서집합 $L$이고, $L$은 $0$으로 쓰는 최소원을
+가지며 다음 조건들을 만족한다.
+1\textsuperscript{o} 사상 $u_\lambda:A\to A_\lambda$는 전사이다.
+2\textsuperscript{o} 준동형
+$u_{0\lambda}:A_\lambda\to A_0$의 핵 $\mathfrak J_\lambda$는
+멱영이다. 이때 준동형 $u_0:A\to A_0$의 핵 $\mathfrak J$는
+$\varprojlim\mathfrak J_\lambda$와 같다.
+\end{lemma}
+
+이 조건의 필요성은 (7.2.1)에서 어떤 정의 아이디얼
+$\mathfrak J_0$에 포함되는 정의 아이디얼들로 이루어진 $0$의 근방
+기본계 $(\mathfrak J_\lambda)$를 취하고 (7.1.4, (i))를 적용하면
+따른다. 충분성은 사영극한의 정의와 (7.1.2)에서 따르고, 마지막
+명제는 자명하다.
+
+\begin{env}[7.2.3]
+\label{0.7.2.3-ko}
+$A$를 허용 위상환이라 하고, $\mathfrak J$를 $A$의 어떤 정의
+아이디얼에 포함되는 아이디얼, 다시 말해 (7.1.4)에 따라 수열
+$(\mathfrak J^n)$이 $0$으로 가는 아이디얼이라 하자. $0$의 근방
+기본계가 거듭제곱 $\mathfrak J^n$ ($n>0$)들인 환 위상을 $A$에
+줄 수 있으며, 이를 다시 \emph{$\mathfrak J$-준아딕 위상}이라고
+하겠다. $A$가 허용환이라는 가정에 따라
+$\bigcap_n\mathfrak J^n=0$이므로 $A$의 $\mathfrak J$-준아딕
+위상은 분리이다. 이 위상에 관한 $A$의 완비화를
+$\widehat A=\varprojlim A/\mathfrak J^n$이라 하자. 여기서
+$A/\mathfrak J^n$에는 이산 위상을 준다. 또한 준동형들의 열
+$u_n:A\to A/\mathfrak J^n$의 사영극한인 환 준동형
+$u:A\to\widehat A$를 생각하자. 이 준동형은 반드시 연속일 필요는
+없다. 한편 $A$의 $\mathfrak J$-준아딕 위상은 주어진 위상
+$\mathcal T$보다 세밀하다. $A$는 $\mathcal T$에 관하여 분리이고
+완비이므로, $\mathfrak J$-준아딕 위상을 준 $A$에서
+$\mathcal T$를 준 $A$로 가는 항등사상을 연속적으로 확장할 수 있다.
+따라서 연속 준동형 $v:\widehat A\to A$를 얻는다.
+\end{env}
+
+\begin{proposition}[7.2.4]
+\label{0.7.2.4-ko}
+$A$가 허용환이고 $\mathfrak J$가 $A$의 어떤 정의 아이디얼에
+포함되면, $A$는 $\mathfrak J$-준아딕 위상에 관하여 분리이고
+완비이다.
+\end{proposition}
+
+실제로 (7.2.3)의 표기를 사용하면 $v\circ u$가 $A$의 항등사상임은
+바로 알 수 있다. 한편
+$u_n\circ v:\widehat A\to A/\mathfrak J^n$은
+$A$의 $\mathfrak J$-준아딕 위상과 $A/\mathfrak J^n$의 이산
+위상에 관하여 표준 사상 $u_n$을 연속적으로 확장한 것이다. 다시
+말해 이는
+$\widehat A=\varprojlim_k A/\mathfrak J^k$에서
+$A/\mathfrak J^n$으로 가는 표준 사상이다. 따라서 $u\circ v$는 이
+사상열의 사영극한, 즉 정의에 따라 $\widehat A$의 항등사상이다.
+이로써 명제가 증명된다.
+
+\begin{corollary}[7.2.5]
+\label{0.7.2.5-ko}
+(7.2.3)의 가정 아래에서 다음 조건들은 동치이다.
+\begin{enumerate}
+  \item[$a)$] 준동형 $u$는 연속이다.
+
+\oldpage[0\textsubscript{I}]{64}
+
+  \item[$b)$] 준동형 $v$는 쌍연속이다.
+  \item[$c)$] $A$는 $\mathfrak J$-아딕환이다.
+\end{enumerate}
+\end{corollary}
+
+\begin{corollary}[7.2.6]
+\label{0.7.2.6-ko}
+$A$를 허용환, $\mathfrak J$를 $A$의 정의 아이디얼이라 하자.
+$A$가 뇌터 환일 필요충분조건은 $A/\mathfrak J$가 뇌터 환이고
+$\mathfrak J/\mathfrak J^2$가 유한형
+$(A/\mathfrak J)$-가군인 것이다.
+\end{corollary}
+
+이 조건들이 필요함은 자명하다. 역으로 이 조건들이 성립한다고 하자.
+(7.2.4)에 따라 $A$는 $\mathfrak J$-준아딕 위상에 관하여
+완비이므로, $A$가 뇌터 환일 필요충분조건은 $\mathfrak J^n$의
+여과에 관한 연관 등급환 $\operatorname{grad}(A)$가 뇌터 환인
+것이다([I], p.~18-07, th.~4). $\mathfrak J$의 원소
+$a_1,\ldots,a_n$의 $\mathfrak J^2$에 대한 유들이
+$\mathfrak J/\mathfrak J^2$를 $(A/\mathfrak J)$-가군으로서
+생성한다고 하자. 귀납법으로, $a_i$들($1\leq i\leq n$)에 관한
+전체 차수 $m$인 단항식들의 $\mathfrak J^{m+1}$에 대한 유들이
+$(A/\mathfrak J)$-가군
+$\mathfrak J^m/\mathfrak J^{m+1}$의 생성계를 이룸을 바로 알 수
+있다. 따라서 $\operatorname{grad}(A)$는 다항식환
+$(A/\mathfrak J)[T_1,\ldots,T_n]$의 몫환과 동형이다. 여기서
+$T_i$들은 부정원이다. 이로써 증명이 끝난다.
+
+\begin{proposition}[7.2.7]
+\label{0.7.2.7-ko}
+$(A_i,u_{ij})$를 이산환들의 사영계($i\in\mathbf N$)라 하고, 모든
+정수 $i$에 대하여 $\mathfrak J_i$를 준동형
+$u_{0i}:A_i\to A_0$의 $A_i$에서의 핵이라 하자. 다음을 가정한다.
+\begin{enumerate}
+  \item[$a)$] $i\leq j$이면 $u_{ij}$는 전사이고 그 핵은
+    $\mathfrak J_j^{i+1}$이다. 따라서 $A_i$는
+    $A_j/\mathfrak J_j^{i+1}$과 동형이다.
+  \item[$b)$] $\mathfrak J_1/\mathfrak J_1^2$
+    $(=\mathfrak J_1)$은 $A_0=A_1/\mathfrak J_1$ 위의 유한형
+    가군이다.
+\end{enumerate}
+$A=\varprojlim_i A_i$라 하고, 모든 정수 $n\geq0$에 대하여
+$u_n:A\to A_n$을 표준 준동형, $\mathfrak J^{(n+1)}\subset A$를
+그 핵이라 하자. 그러면 다음이 성립한다.
+\begin{enumerate}
+  \item[(i)] $A$는 $\mathfrak J=\mathfrak J^{(1)}$을 정의
+    아이디얼로 갖는 아딕환이다.
+  \item[(ii)] 모든 $n\geq1$에 대하여
+    $\mathfrak J^{(n)}=\mathfrak J^n$이다.
+  \item[(iii)] $\mathfrak J/\mathfrak J^2$는
+    $\mathfrak J_1=\mathfrak J_1/\mathfrak J_1^2$과 동형이고,
+    따라서 $A_0=A/\mathfrak J$ 위의 유한형 가군이다.
+\end{enumerate}
+\end{proposition}
+
+$u_{ij}$들이 전사라는 가정에 따라 $u_n$은 전사이다. 또한 가정
+$a)$에 따라 $\mathfrak J_j^{j+1}=0$이므로 $A$는 허용환이다
+(7.2.2). 정의상 $\mathfrak J^{(n)}$들은 $A$의 $0$의 근방
+기본계를 이루므로 (ii)는 (i)을 함의한다. 더 나아가
+$\mathfrak J=\varprojlim_i\mathfrak J_i$이고 사상
+$\mathfrak J\to\mathfrak J_i$들은 전사이므로 (ii)는 (iii)을
+함의한다. 따라서 (ii)를 증명하면 충분하다.
+
+정의에 따라 $\mathfrak J^{(n)}$은 $k<n$일 때 $x_k=0$인 $A$의
+원소 $(x_k)_{k\geq0}$들로 이루어진다. 그러므로
+$\mathfrak J^{(n)}\mathfrak J^{(m)}\subset
+\mathfrak J^{(n+m)}$이고, 다시 말해 $\mathfrak J^{(n)}$들은
+$A$의 \emph{여과}를 이룬다. 한편
+$\mathfrak J^{(n)}/\mathfrak J^{(n+1)}$은
+$\mathfrak J^{(n)}$의 $A_n$ 위로의 사영과 동형이다.
+$\mathfrak J^{(n)}=\varprojlim_{i>n}\mathfrak J_i^n$이므로 이
+사영은 $\mathfrak J_n^n$이고, 이는
+$A_0=A_n/\mathfrak J_n$ 위의 가군이다.
+
+$a_j=(a_{jk})_{k\geq0}$ ($1\leq j\leq r$)를
+$\mathfrak J=\mathfrak J^{(1)}$의 원소들이라 하고,
+$a_{11},\ldots,a_{r1}$이 $A_0$ 위에서 $\mathfrak J_1$의 생성계를
+이룬다고 하자. $a_j$들에 관한 전체 차수 $n$인 단항식들의 집합
+$S_n$이 $A$의 아이디얼 $\mathfrak J^{(n)}$을 생성함을 보이겠다.
+$\mathfrak J_i^{i+1}=0$이므로 우선
+$S_n\subset\mathfrak J^{(n)}$임은 명백하다. $A$는 여과
+$(\mathfrak J^{(m)})$에 관하여 완비이므로, $S_n$의 원소들의
+$\mathfrak J^{(n+1)}$에 대한 유들의 집합 $\overline S_n$이 앞의
+여과에 관한 등급환 $\operatorname{grad}(A)$ 위에서 등급가군
+$\operatorname{grad}(\mathfrak J^{(n)})$을 생성함을 보이면
+충분하다([I], p.~18-06, lemme). $\operatorname{grad}(A)$의 곱셈
+정의에 따라
+
+\oldpage[0\textsubscript{I}]{65}
+
+모든 $m$에 대하여 $\overline S_m$이 $A_0$-가군
+$\mathfrak J^{(m)}/\mathfrak J^{(m+1)}$의 생성계임을 보이면
+충분하다. 동치로 $\mathfrak J_m^m$이 $a_{jm}$들
+($1\leq j\leq r$)에 관한 차수 $m$인 단항식들로 생성됨을 보이면
+된다. 이를 위해서는 $\mathfrak J_m$이 $A_m$-가군으로서
+$a_{jm}$들에 관한 차수 $\leq m$인 단항식들로 생성됨을 보이면
+된다. $m=1$에서는 정의에 따라 자명하므로 $m$에 관하여 귀납하자.
+$\mathfrak J'_m$을 이 단항식들이 생성하는
+$\mathfrak J_m$의 $A_m$-부분가군이라 하자. 관계
+$\mathfrak J_{m-1}=\mathfrak J_m/\mathfrak J_m^m$과 귀납가정에
+따라 $\mathfrak J_m=\mathfrak J'_m+\mathfrak J_m^m$이다.
+$\mathfrak J_m^{m+1}=0$이므로 여기서
+$\mathfrak J_m^m={\mathfrak J'_m}^{\,m}$을 얻고, 마침내
+$\mathfrak J_m=\mathfrak J'_m$을 얻는다.
+
+\begin{corollary}[7.2.8]
+\label{0.7.2.8-ko}
+(7.2.7)의 조건 아래에서 $A$가 뇌터 환일 필요충분조건은 $A_0$가
+뇌터 환인 것이다.
+\end{corollary}
+
+이는 (7.2.6)에서 바로 따른다.
+
+\begin{proposition}[7.2.9]
+\label{0.7.2.9-ko}
+(7.2.7)의 가정들이 성립한다고 하자. 모든 정수 $i$에 대하여
+$M_i$를 $A_i$-가군이라 하고, $i\leq j$일 때
+$v_{ij}:M_j\to M_i$를 $u_{ij}$-준동형이라 하여
+$(M_i,v_{ij})$가 사영계를 이룬다고 하자. 더 나아가 $M_0$가 유한형
+$A_0$-가군이고 $v_{ij}$가 전사이며 그 핵이
+$\mathfrak J_j^{i+1}M_j$라고 하자. 그러면
+$M=\varprojlim M_i$는 유한형 $A$-가군이고, 전사
+$u_n$-준동형 $v_n:M\to M_n$의 핵은
+$\mathfrak J^{n+1}M$이다. 따라서 $M_n$은
+$M/\mathfrak J^{n+1}M=M\otimes_A(A/\mathfrak J^{n+1})$과
+동일시된다.
+\end{proposition}
+
+$z_h=(z_{hk})_{k\geq0}$ ($1\leq h\leq s$)를 $M$의 원소들이라
+하고, $z_{h0}$들이 $M_0$의 생성계를 이룬다고 하자. $z_h$들이
+$A$-가군 $M$을 생성함을 보이겠다. $M^{(n)}$을 $k<n$일 때
+$y_k=0$인 $M$의 원소 $y=(y_k)_{k\geq0}$ 전체의 집합이라 하자.
+$A$-가군 $M$은 $M^{(n)}$들이 이루는 여과에 관하여 분리이고
+완비이다. 또한
+$\mathfrak J^{(n)}M\subset M^{(n)}$이고
+$M^{(n)}/M^{(n+1)}=\mathfrak J_n^nM_n$임은 명백하다.
+
+따라서 $z_h$들의 $M^{(1)}$에 대한 유들이 앞의 여과에 관한
+등급환 $\operatorname{grad}(A)$ 위에서 등급가군
+$\operatorname{grad}(M)$을 생성함을 보이면 충분하다
+([I], p.~18-06, lemme). 이를 위해서는 $z_{hn}$들
+($1\leq h\leq s$)이 $A_n$-가군 $M_n$을 생성함을 보이면 충분함을
+쉽게 알 수 있다. $n=0$에서는 정의에 따라 자명하므로 다시 $n$에
+관하여 귀납하자. 관계
+$M_{n-1}=M_n/\mathfrak J_n^nM_n$과 귀납가정에 따라, $M'_n$을
+$z_{hn}$들이 생성하는 $M_n$의 부분가군이라 하면
+$M_n=M'_n+\mathfrak J_n^nM_n$이다. $\mathfrak J_n$은 멱영이므로
+여기서 $M_n=M'_n$을 얻는다. 연관 등급가군으로 넘어가는 같은
+논법에 따라 $\mathfrak J^{(n)}M$에서 $M^{(n)}$으로 가는 표준
+사상은 전사이고, 따라서 전단사이다. 다시 말해
+$\mathfrak J^{(n)}M=\mathfrak J^nM$은 $M\to M_n$의 핵이다.
+
+\begin{corollary}[7.2.10]
+\label{0.7.2.10-ko}
+$(N_i,w_{ij})$를 (7.2.9)의 조건을 만족하는 두 번째
+$A_i$-가군의 사영계라 하고 $N=\varprojlim N_i$라 하자.
+$A_i$-준동형 $h_i:M_i\to N_i$의 사영계 $(h_i)$와
+$A$-가군 준동형 $h:M\to N$ 사이에는 전단사 대응이 있다. 이
+$h$들은 반드시 $\mathfrak J$-아딕 위상에 관하여 연속이다.
+\end{corollary}
+
+$h:M\to N$이 $A$-준동형이면
+$h(\mathfrak J^nM)\subset\mathfrak J^nN$이므로 $h$는 연속이다.
+몫으로 내려가면 $h$에는 $A_i$-준동형 $h_i:M_i\to N_i$의 사영계가
+대응하고 $h$는 그 사영극한이다. 따라서 따름정리가 성립한다.
+
+\begin{remark}[7.2.11]
+\label{0.7.2.11-ko}
+$A$를 아딕환, $\mathfrak J$를
+$\mathfrak J/\mathfrak J^2$가 유한형
+$(A/\mathfrak J)$-가군인 정의 아이디얼이라 하자.
+$A_i=A/\mathfrak J^{i+1}$들이 (7.2.7)의 조건을 만족함은 명백하다.
+
+\oldpage[0\textsubscript{I}]{66}
+
+$A$는 $A_i$들의 사영극한이므로 명제 (7.2.7)은 이러한 종류의
+\emph{모든} 아딕환, 특히 모든 \emph{뇌터 아딕환}을 기술한다.
+\end{remark}
+
+\begin{example}[7.2.12]
+\label{0.7.2.12-ko}
+$B$를 환, $\mathfrak J$를 $B$의 아이디얼이라 하고,
+$\mathfrak J/\mathfrak J^2$가 $B/\mathfrak J$ 위의 유한형
+가군이라고 하자. 이는 $B$ 위의 유한형 가군이라는 것과 동치이다.
+$A=\varprojlim_n B/\mathfrak J^{n+1}$로 놓자. $A$는
+$\mathfrak J$-준아딕 위상을 준 $B$의 분리 완비화이다.
+$A_n=B/\mathfrak J^{n+1}$로 놓으면 $A_n$들이 (7.2.7)의 조건을
+만족함은 바로 알 수 있다. 따라서 $A$는 아딕환이다.
+$\overline{\mathfrak J}$를 $\mathfrak J$의 표준상의 $A$에서의
+폐포라 하면 $\overline{\mathfrak J}$는 $A$의 정의 아이디얼이고,
+$\overline{\mathfrak J^n}$은 $\mathfrak J^n$의 표준상의 폐포이며,
+$A/\overline{\mathfrak J^n}$은 $B/\mathfrak J^n$과 동일시된다.
+또한 $\overline{\mathfrak J}/\overline{\mathfrak J^2}$은
+$(A/\overline{\mathfrak J})$-가군으로서
+$\mathfrak J/\mathfrak J^2$과 동형이다.
+
+마찬가지로 $N/\mathfrak JN$이 유한형 $B$-가군이고
+$M_i=N/\mathfrak J^{i+1}N$, $M=\varprojlim M_i$로 놓으면 $M$은
+유한형 $A$-가군이고 $\mathfrak J$-준아딕 위상에 관한 $N$의 분리
+완비화와 동형이다. $\overline{\mathfrak J^n}M$은
+$\mathfrak J^nN$의 표준상의 폐포와 동일시되고,
+$M/\overline{\mathfrak J^n}M$은 $N/\mathfrak J^nN$과
+동일시된다.
+\end{example}
+
+\subsection{뇌터 준아딕환}
+\label{subsection:0.7.3-ko}
+
+\begin{env}[7.3.1]
+\label{0.7.3.1-ko}
+$A$를 환, $\mathfrak J$를 $A$의 아이디얼, $M$을 $A$-가군이라
+하자. $\mathfrak J$-준아딕 위상에 관한 $A$(각각 $M$)의 분리
+완비화를
+$\widehat A=\varprojlim_n A/\mathfrak J^n$(각각
+$\widehat M=\varprojlim_n M/\mathfrak J^nM$)으로 쓰겠다.
+$A$-가군의 완전열
+\[
+  M'\xrightarrow{u}M\xrightarrow{v}M''\to0
+\]
+이 주어졌다고 하자. 등식
+$M/\mathfrak J^nM=M\otimes_A(A/\mathfrak J^n)$에 따라 모든
+$n$에 대하여 열
+\[
+  M'/\mathfrak J^nM'\xrightarrow{u_n}
+  M/\mathfrak J^nM\xrightarrow{v_n}
+  M''/\mathfrak J^nM''\to0
+\]
+은 완전하다. 또한
+$v(\mathfrak J^nM)=\mathfrak J^nv(M)=\mathfrak J^nM''$이므로
+$\widehat v=\varprojlim v_n$은 전사이다(Bourbaki,
+\emph{Top. gén.}, chap.~IX, 2\textsuperscript{e} éd., p.~60,
+cor.~2). 한편 $z=(z_k)$가 $\widehat v$의 핵의 원소이면 모든 정수
+$k$에 대하여 $u_k(z'_k)=z_k$인
+$z'_k\in M'/\mathfrak J^kM'$가 존재한다. 따라서
+$z'=(z'_n)\in\widehat{M'}$가 존재하여 $\widehat u(z')$의 처음
+$k$개 성분이 $z$의 처음 $k$개 성분과 일치한다. 다시 말해
+$\widehat u$에 의한 $\widehat{M'}$의 상은 $\widehat v$의 핵에
+\emph{조밀}하다.
+
+$A$가 \emph{뇌터 환}이라고 가정하면
+$\mathfrak J/\mathfrak J^2$가 유한형 $A$-가군이므로 (7.2.12)에
+따라 $\widehat A$도 뇌터 환이다. 더 나아가 다음이 성립한다.
+\end{env}
+
+\begin{namedtheorem}[7.3.2]{크룰 정리}
+\label{0.7.3.2-ko}
+$A$를 뇌터 환, $\mathfrak J$를 $A$의 아이디얼, $M$을 유한형
+$A$-가군, $M'$을 $M$의 부분가군이라 하자. $M$의
+$\mathfrak J$-준아딕 위상이 $M'$에 유도하는 위상은 $M'$의
+$\mathfrak J$-준아딕 위상과 같다.
+\end{namedtheorem}
+
+이는 다음 보조정리에서 바로 따른다.
+
+\begin{namedlemma}[7.3.2.1]{아르틴--리스 보조정리}
+\label{0.7.3.2.1-ko}
+(7.3.2)의 가정 아래에서 어떤 정수 $p$가 존재하여 $n\geq p$이면
+\[
+  M'\cap\mathfrak J^nM=\mathfrak J^{n-p}
+  (M'\cap\mathfrak J^pM)
+\]
+이다.
+\end{namedlemma}
+
+증명은 ([I], p.~2-04)를 보라.
+
+\oldpage[0\textsubscript{I}]{67}
+
+\begin{corollary}[7.3.3]
+\label{0.7.3.3-ko}
+(7.3.2)의 가정 아래에서 표준 사상
+$M\otimes_A\widehat A\to\widehat M$은 전단사이고, 유한형
+$A$-가군의 범주에서 $M$에 관한 함자
+$M\mapsto M\otimes_A\widehat A$는 완전하다. 따라서
+$\mathfrak J$-아딕 분리 완비화 $\widehat A$는 평탄 $A$-가군이다
+(6.1.1).
+\end{corollary}
+
+먼저 유한형 $A$-가군의 범주에서 $\widehat M$이 $M$에 관한
+\emph{완전} 함자임을 주목하자. 실제로 완전열
+\[
+  0\to M'\xrightarrow{u}M\xrightarrow{v}M''\to0
+\]
+이 주어졌다고 하자. $\widehat v:\widehat M\to\widehat{M''}$가
+전사임은 이미 알고 있다(7.3.1). 한편 $i$를 표준 준동형
+$M\to\widehat M$이라 하면 크룰 정리에 따라 $\widehat M$에서
+$i(u(M'))$의 폐포는 $M'$의 $\mathfrak J$-준아딕 분리 완비화와
+동일시된다. 따라서 $\widehat u$는 단사이고, (7.3.1)에 따라
+$\widehat u$의 상은 $\widehat v$의 핵과 같다.
+
+이제 표준 사상 $M\otimes_A\widehat A\to\widehat M$은 사상들
+\[
+  M\otimes_A\widehat A\to
+  M\otimes_A(A/\mathfrak J^n)=M/\mathfrak J^nM
+\]
+의 사영극한을 취하여 얻는다. $M=A^p$ 꼴일 때 이 사상이
+전단사임은 명백하다. $M$이 유한형 $A$-가군이면 완전열
+$A^p\to A^q\to M\to0$이 존재한다. 유한형 $A$-가군의 범주에서
+$M$에 관한 두 함자 $M\otimes_A\widehat A$와 $\widehat M$은
+\emph{오른쪽 완전}이므로 다음 가환 그림을 얻는다.
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  A^p\otimes_A\widehat A \arrow[r] \arrow[d] &
+  A^q\otimes_A\widehat A \arrow[r] \arrow[d] &
+  M\otimes_A\widehat A \arrow[r] \arrow[d] &
+  0 \\
+  \widehat A^{\,p} \arrow[r] &
+  \widehat A^{\,q} \arrow[r] &
+  \widehat M \arrow[r] &
+  0
+\end{tikzcd}
+\]
+두 행은 완전하고 처음 두 수직 화살표는 동형이므로 결론이 바로
+따른다.
+
+\begin{corollary}[7.3.4]
+\label{0.7.3.4-ko}
+$A$를 뇌터 환, $\mathfrak J$를 $A$의 아이디얼, $M,N$을 두 유한형
+$A$-가군이라 하자. 다음과 같은 함자적 표준 동형들이 있다.
+\[
+  (M\otimes_A N)^\wedge
+  \xrightarrow{\sim}
+  \widehat M\otimes_{\widehat A}\widehat N,
+  \qquad
+  \bigl(\operatorname{Hom}_A(M,N)\bigr)^\wedge
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{\widehat A}(\widehat M,\widehat N).
+\]
+\end{corollary}
+
+이는 (7.3.3), (6.2.1), (6.2.2)에서 따른다.
+
+\begin{corollary}[7.3.5]
+\label{0.7.3.5-ko}
+$A$를 뇌터 환, $\mathfrak J$를 $A$의 아이디얼이라 하자. 다음
+조건들은 동치이다.
+\begin{enumerate}
+  \item[$a)$] $\mathfrak J$는 $A$의 근기에 포함된다.
+  \item[$b)$] $\widehat A$는 충실 평탄 $A$-가군이다(6.4.1).
+  \item[$c)$] 모든 유한형 $A$-가군은 $\mathfrak J$-준아딕 위상에
+    관하여 분리이다.
+  \item[$d)$] 유한형 $A$-가군의 모든 부분가군은
+    $\mathfrak J$-준아딕 위상에 관하여 닫혀 있다.
+\end{enumerate}
+\end{corollary}
+
+$\widehat A$는 평탄 $A$-가군이므로 조건 $b)$와 $c)$는 동치이다.
+실제로 $b)$는 모든 유한형 $A$-가군 $M$에 대하여 표준 사상
+$M\to\widehat M=M\otimes_A\widehat A$가 단사라는 것과 동치이다
+(6.6.1, $c)$). $c)$가 $d)$를 함의함은 바로 알 수 있다. 유한형
+$A$-가군 $M$의 부분가군이 $N$이면 $M/N$은
+$\mathfrak J$-준아딕 위상에 관하여 분리이므로 $N$은 $M$에서
+닫혀 있기 때문이다.
+
+$d)$가 $a)$를 함의함을 보이자. $\mathfrak m$이 $A$의 극대
+아이디얼이면 $\mathfrak m$은 $A$의 $\mathfrak J$-준아딕 위상에
+관하여 닫혀 있으므로
+\[
+  \mathfrak m=\bigcap_{p\geq0}(\mathfrak m+\mathfrak J^p)
+\]
+이다. $\mathfrak m+\mathfrak J^p$는 반드시 $A$ 또는
+$\mathfrak m$과 같으므로 충분히 큰 $p$에 대하여
+$\mathfrak m+\mathfrak J^p=\mathfrak m$이다.
+
+\oldpage[0\textsubscript{I}]{68}
+
+따라서 $\mathfrak J^p\subset\mathfrak m$이고, $\mathfrak m$은
+소 아이디얼이므로 $\mathfrak J\subset\mathfrak m$이다.
+
+마지막으로 $a)$가 $b)$를 함의함을 보이자. 유한형 $A$-가군
+$M$에서 $\mathfrak J$-준아딕 위상에 관한 $\{0\}$의 폐포를 $P$라
+하자. 크룰 정리 (7.3.2)에 따라 $M$의
+$\mathfrak J$-준아딕 위상이 $P$에 유도하는 위상은 $P$의
+$\mathfrak J$-준아딕 위상이므로 $\mathfrak JP=P$이다. $P$는
+유한형이고 $\mathfrak J$는 $A$의 근기에 포함되므로 나카야마
+보조정리에 따라 $P=0$이다.
+
+$A$가 \emph{뇌터 국소환}이고 $\mathfrak J\neq A$가 $A$의 임의의
+아이디얼이면 (7.3.5)의 조건들이 만족된다는 점에 주의하자.
+
+\begin{corollary}[7.3.6]
+\label{0.7.3.6-ko}
+$A$가 뇌터 $\mathfrak J$-아딕환이면 모든 유한형 $A$-가군은
+$\mathfrak J$-준아딕 위상에 관하여 분리이고 완비이다.
+\end{corollary}
+
+이때 $\widehat A=A$이므로 이는 (7.3.3)에서 바로 따른다.
+
+따라서 명제 (7.2.9)는 뇌터 아딕환 위의 \emph{모든} 유한형
+가군을 기술한다.
+
+\begin{corollary}[7.3.7]
+\label{0.7.3.7-ko}
+(7.3.2)의 가정 아래에서 표준 사상
+$M\to\widehat M=M\otimes_A\widehat A$의 핵은
+$1+\mathfrak J$의 어떤 원소에 의하여 소거되는 $x\in M$ 전체의
+집합이다.
+\end{corollary}
+
+실제로 $x\in M$이 이 핵에 속할 필요충분조건은 (7.3.2)에 따라
+부분가군 $Ax$의 분리 완비화가 $0$인 것이다. 이는
+$x\in\mathfrak J(Ax)$와 동치이다.
+
+\subsection{국소환 위의 준유한 가군}
+\label{subsection:0.7.4-ko}
+
+\begin{definition}[7.4.1]
+\label{0.7.4.1-ko}
+국소환 $A$의 극대 아이디얼을 $\mathfrak m$이라 하자. $A$-가군
+$M$에 대하여 $M/\mathfrak mM$이 잉여체 $k=A/\mathfrak m$ 위의
+유한 차원 벡터공간이면 $M$을 ($A$ 위의) \emph{준유한} 가군이라고
+한다.
+\end{definition}
+
+$A$가 뇌터 환이면 $\mathfrak m$-준아딕 위상에 관한 $M$의 분리
+완비화 $\widehat M$은 유한형 $\widehat A$-가군이다. 실제로
+$\mathfrak m/\mathfrak m^2$가 유한형 $A$-가군이므로 이는
+(7.2.12)와 $M/\mathfrak mM$에 관한 가정에서 따른다.
+
+특히 $A$가 $\mathfrak m$-준아딕 위상에 관하여 \emph{완비}이고
+$M$이 \emph{분리}라고 더 가정하면, 다시 말해
+$\bigcap_n\mathfrak m^nM=0$이면 $M$ 자체가 유한형 $A$-가군이다.
+실제로 $\widehat M$은 유한형 $A$-가군이고 $M$은 $\widehat M$의
+부분가군과 동일시되므로 $M$도 유한형이다(더욱이 (7.3.6)에 따라
+$M$은 자신의 완비화와 같다).
+
+\begin{proposition}[7.4.2]
+\label{0.7.4.2-ko}
+$A,B$를 두 국소환, $\mathfrak m,\mathfrak n$을 각각의 극대
+아이디얼이라 하고 $B$가 뇌터 환이라고 가정하자. 국소 준동형
+$\varphi:A\to B$와 유한형 $B$-가군 $M$이 주어졌다고 하자. $M$이
+준유한 $A$-가군이면 $M$ 위의 $\mathfrak m$-준아딕 위상과
+$\mathfrak n$-준아딕 위상은 같고, 따라서 분리이다.
+\end{proposition}
+
+가정에 따라 $M/\mathfrak mM$은 $A$-가군으로서 \emph{유한 길이}이고,
+따라서 더더욱 $B$-가군으로서도 유한 길이이다. 그러므로
+$M/\mathfrak mM$의 소멸자를 포함하는 $B$의 소 아이디얼은
+$\mathfrak n$ 하나뿐이다. 실제로 (I.7.4)와 (I.7.2)에 따라 곧바로
+$M/\mathfrak mM$이 \emph{단순}인 경우로 환원되며, 이 경우에는
+반드시 $B/\mathfrak n$과 동형이므로 주장은 명백하다.
+
+한편 $M$은 유한형 $B$-가군이므로 $M/\mathfrak mM$의 소멸자를
+포함하는 소 아이디얼들은 $\mathfrak mB+\mathfrak b$를 포함하는
+것들이다. 여기서 $\mathfrak b$는 $B$-가군 $M$의 소멸자이다
+(I.7.5). $B$가 뇌터 환이므로 ([III], p.~127, cor.~4)에 따라
+$\mathfrak mB+\mathfrak b$는 $B$의 정의 아이디얼이다.
+
+\oldpage[0\textsubscript{I}]{69}
+
+다시 말해 어떤 $k>0$에 대하여
+$\mathfrak n^k\subset\mathfrak mB+\mathfrak b\subset\mathfrak n$이다.
+따라서 모든 $h>0$에 대하여
+\[
+  \mathfrak n^{hk}M
+  \subset(\mathfrak mB+\mathfrak b)^hM
+  =\mathfrak m^hM
+  \subset\mathfrak n^hM
+\]
+이고, 이는 $M$ 위의 $\mathfrak m$-준아딕 위상과
+$\mathfrak n$-준아딕 위상이 같음을 보인다. 후자는 (7.3.5)에 따라
+분리이기도 하다.
+
+\begin{corollary}[7.4.3]
+\label{0.7.4.3-ko}
+(7.4.2)의 가정 아래에서 $A$가 뇌터 환이고 $\mathfrak m$-준아딕
+위상에 관하여 완비이면 $M$은 유한형 $A$-가군이다.
+\end{corollary}
+
+실제로 이때 $M$은 $\mathfrak m$-준아딕 위상에 관하여 분리이고,
+주장은 (7.4.1)의 주의에서 따른다.
+
+\begin{env}[7.4.4]
+\label{0.7.4.4-ko}
+(7.4.2)의 가장 중요한 적용은 $B$ 자체가 준유한 $A$-가군인
+경우이다. 이는 $B/\mathfrak mB$가 $k=A/\mathfrak m$ 위의
+\emph{유한 차원 대수}라는 것과 동치이다. 앞에서 본 바에 따라 이
+조건은 다음 두 조건의 논리곱으로 분해된다.
+\begin{enumerate}
+  \item[(i)] $\mathfrak mB$는 $B$의 \emph{정의 아이디얼이다}.
+  \item[(ii)] $B/\mathfrak n$은 체 $A/\mathfrak m$의
+    \emph{유한 차원 확대체이다}.
+\end{enumerate}
+이 조건들이 성립하면 모든 유한형 $B$-가군은 명백히 준유한
+$A$-가군이다.
+\end{env}
+
+\begin{corollary}[7.4.5]
+\label{0.7.4.5-ko}
+(7.4.2)의 가정 아래에서 $\mathfrak b$가 $B$-가군 $M$의
+소멸자이면 $B/\mathfrak b$는 준유한 $A$-가군이다.
+\end{corollary}
+
+$M\neq0$이라고 가정하자(그렇지 않으면 따름정리는 명백하다).
+$M$을 뇌터 국소환 $B/\mathfrak b$ 위의 가군으로 볼 수 있다. 이때
+그 소멸자는 $0$이므로 (7.4.2)의 증명에 따라
+$\mathfrak m(B/\mathfrak b)$는 $B/\mathfrak b$의 정의 아이디얼이다.
+
+한편 $M/\mathfrak nM$은 $M/\mathfrak mM$의 몫이므로
+$A/\mathfrak m$ 위의 유한 차원 벡터공간이다. $M\neq0$이므로
+나카야마 보조정리에 따라 $M\neq\mathfrak nM$이다. 따라서
+$M/\mathfrak nM$은 $B/\mathfrak n$ 위의 영이 아닌 벡터공간이고,
+그것이 $A/\mathfrak m$ 위에서 유한 차원이라는 사실로부터
+$B/\mathfrak n$도 $A/\mathfrak m$ 위에서 유한 차원임이 따른다.
+그러므로 $B/\mathfrak b$에 (7.4.4)를 적용하면 결론을 얻는다.
+
+\subsection{제한 형식적 멱급수환}
+\label{subsection:0.7.5-ko}
+
+\begin{env}[7.5.1]
+\label{0.7.5.1-ko}
+$A$를 선형 위상을 갖는 분리 완비 위상환이라 하고,
+$(\mathfrak J_\lambda)$를 (열린) 아이디얼들로 이루어진 $A$의 $0$의
+근방 기본계라 하자. 그러면 $A$는
+$\varprojlim A/\mathfrak J_\lambda$와 표준적으로 동일시된다
+(7.2.1). 각 $\lambda$에 대하여
+\[
+  B_\lambda=(A/\mathfrak J_\lambda)[T_1,\ldots,T_r]
+\]
+라 하자. 여기서 $T_i$들은 부정원이다. $B_\lambda$들이 이산환의
+사영계를 이룸은 명백하다. 이제
+\[
+  \varprojlim B_\lambda=A\{T_1,\ldots,T_r\}
+\]
+로 놓겠다. 이 위상환이 선택한 아이디얼 기본계
+$(\mathfrak J_\lambda)$와 무관함을 보이자.
+
+정확히 말해 $A'$를 형식적 멱급수환
+$A[\![T_1,\ldots,T_r]\!]$의 부분환 가운데, 형식적 멱급수
+$\sum_\alpha c_\alpha T^\alpha$로서
+$\alpha=(\alpha_1,\ldots,\alpha_r)\in\mathbf N^r$이고
+\[
+  \lim_\alpha c_\alpha=0
+\]
+인 것들로 이루어진 부분환이라 하자. 여기서 극한은 $\mathbf N^r$의
+유한 부분집합들의 여집합이 이루는 필터에 관한 것이다. 이러한
+급수들을 $A$에 계수를 갖는 $T_i$들에 관한 \emph{제한 형식적
+멱급수}라고 하겠다.
+
+\oldpage[0\textsubscript{I}]{70}
+
+$A$의 $0$의 각 근방 $V$에 대하여 $V'$을, 모든 $\alpha$에 대하여
+$c_\alpha\in V$인
+$x=\sum_\alpha c_\alpha T^\alpha\in A'$ 전체의 집합이라 하자.
+$V'$들이 $A'$ 위에 \emph{분리} 환위상을 정의하는 $0$의 근방
+기본계를 이룸은 곧 확인된다. 이제 환 $A\{T_1,\ldots,T_r\}$에서
+$A'$로 가는 표준적인 \emph{위상동형}을 정의하겠다.
+
+각 $\alpha\in\mathbf N^r$와 각 $\lambda$에 대하여
+$\varphi_{\lambda,\alpha}$를
+$(A/\mathfrak J_\lambda)[T_1,\ldots,T_r]$에서
+$A/\mathfrak J_\lambda$로 가는 사상 가운데, 첫째 환의 각
+다항식에 그 다항식에서 $T^\alpha$의 계수를 대응시키는 사상이라
+하자. $\varphi_{\lambda,\alpha}$들은
+$(A/\mathfrak J_\lambda)$-가군 준동형들의 사영계를 이루며, 그
+사영극한은 연속 준동형
+\[
+  \varphi_\alpha:A\{T_1,\ldots,T_r\}\longrightarrow A
+\]
+이다.
+
+모든 $y\in A\{T_1,\ldots,T_r\}$에 대하여 형식적 멱급수
+$\sum_\alpha\varphi_\alpha(y)T^\alpha$가 제한됨을 보이자.
+$y_\lambda$를 $B_\lambda$에서 $y$의 성분이라 하고,
+$H_\lambda$를 다항식 $y_\lambda$의 계수가 영이 아닌
+$\alpha\in\mathbf N^r$ 전체의 유한집합이라 하자.
+$\mathfrak J_\mu\subset\mathfrak J_\lambda$이고
+$\alpha\notin H_\lambda$이면
+$\varphi_{\lambda,\alpha}(y_\mu)\in\mathfrak J_\lambda$이고, 극한으로
+넘기면 $\alpha\notin H_\lambda$에 대하여
+$\varphi_\alpha(y)\in\mathfrak J_\lambda$이다.
+
+따라서
+\[
+  \varphi(y)=\sum_\alpha\varphi_\alpha(y)T^\alpha
+\]
+로 놓아 환 준동형
+$\varphi:A\{T_1,\ldots,T_r\}\to A'$를 정의할 수 있고,
+$\varphi$가 연속임은 바로 알 수 있다. 역으로
+$\theta_\lambda:A\to A/\mathfrak J_\lambda$를 표준 준동형이라 하자.
+각 $z=\sum_\alpha c_\alpha T^\alpha\in A'$와 각 $\lambda$에 대하여
+$\theta_\lambda(c_\alpha)\neq0$인 지표 $\alpha$는 유한 개뿐이므로
+\[
+  \psi_\lambda(z)=
+  \sum_\alpha\theta_\lambda(c_\alpha)T^\alpha
+  \in B_\lambda.
+\]
+$\psi_\lambda$들은 연속이고 준동형들의 사영계를 이루므로 그
+사영극한은 연속 준동형
+$\psi:A'\to A\{T_1,\ldots,T_r\}$이다. 끝으로
+$\varphi\circ\psi$와 $\psi\circ\varphi$가 항등 자기동형임을 확인하면
+되는데, 이는 명백하다.
+\end{env}
+
+\begin{env}[7.5.2]
+\label{0.7.5.2-ko}
+(7.5.1)에서 정의한 동형을 통하여 $A\{T_1,\ldots,T_r\}$를 제한
+형식적 멱급수환 $A'$와 동일시하겠다. 표준 동형
+\[
+  ((A/\mathfrak J_\lambda)[T_1,\ldots,T_r])
+  [T_{r+1},\ldots,T_s]
+  \xrightarrow{\sim}
+  (A/\mathfrak J_\lambda)[T_1,\ldots,T_s]
+\]
+들은 사영극한으로 넘겨 표준 동형
+\[
+  (A\{T_1,\ldots,T_r\})\{T_{r+1},\ldots,T_s\}
+  \xrightarrow{\sim}
+  A\{T_1,\ldots,T_s\}
+\]
+을 정의한다.
+\end{env}
+
+\begin{env}[7.5.3]
+\label{0.7.5.3-ko}
+$A$에서 선형 위상을 갖는 분리 완비환 $B$로 가는 임의의 연속
+준동형 $u:A\to B$와 $B$의 $r$개 원소로 이루어진 임의의 계
+$(b_1,\ldots,b_r)$에 대하여, 모든 $a\in A$와 $1\leq j\leq r$에
+대해
+\[
+  \overline u(a)=u(a),\qquad \overline u(T_j)=b_j
+\]
+를 만족하는 연속 준동형
+\[
+  \overline u:A\{T_1,\ldots,T_r\}\longrightarrow B
+\]
+가 \emph{유일하게} 존재한다. 실제로
+\[
+  \overline u\Bigl(\sum_\alpha c_\alpha T^\alpha\Bigr)
+  =\sum_\alpha u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r}
+\]
+로 잡으면 충분하다. 족
+$(u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r})$가 $B$에서
+가합이고 $\overline u$가 연속임을 확인하는 일은 즉시 되므로
+독자에게 맡긴다. $B$와 $b_j$들이 임의라는 이 성질은 위상환
+$A\{T_1,\ldots,T_r\}$를 유일한 동형을 제외하고
+\emph{특징짓는다}는 점에 주의하자.
+\end{env}
+
+\begin{proposition}[7.5.4]
+\label{0.7.5.4-ko}
+\begin{enumerate}
+  \item[(i)] $A$가 허용환이면
+    $A'=A\{T_1,\ldots,T_r\}$도 허용환이다.
+  \item[(ii)] $A$를 아딕환이라 하고, $\mathfrak J$를 $A$의 정의
+    아이디얼로서 $\mathfrak J/\mathfrak J^2$가
+    $A/\mathfrak J$ 위에서 유한형인 것이라 하자.
+
+\oldpage[0\textsubscript{I}]{71}
+
+    $\mathfrak J'=\mathfrak JA'$로 놓으면 $A'$는
+    $\mathfrak J'$-아딕환이고
+    $\mathfrak J'/\mathfrak J'^{\,2}$는
+    $A'/\mathfrak J'$ 위에서 유한형이다. 더 나아가 $A$가 뇌터
+    환이면 $A'$도 뇌터 환이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{enumerate}
+  \item[(i)] $\mathfrak J$가 $A$의 아이디얼일 때, 모든
+    $\alpha$에 대하여 $c_\alpha\in\mathfrak J$인
+    $\sum_\alpha c_\alpha T^\alpha$들로 이루어진 $A'$의
+    아이디얼을 $\mathfrak J'$라 하자. 그러면
+    $(\mathfrak J')^n\subset(\mathfrak J^n)'$이다. 따라서
+    $\mathfrak J$가 $A$의 정의 아이디얼이면 $\mathfrak J'$도
+    $A'$의 정의 아이디얼이다.
+
+  \item[(ii)] $A_i=A/\mathfrak J^{i+1}$로 놓고, $i\leq j$일 때
+    $u_{ij}$를 표준 준동형
+    $A/\mathfrak J^{j+1}\to A/\mathfrak J^{i+1}$이라 하자. 또한
+    $A'_i=A_i[T_1,\ldots,T_r]$로 놓고, $u'_{ij}:A'_j\to A'_i$를
+    $A'_j$의 다항식 계수들에 $u_{ij}$를 적용하여 얻는 준동형이라
+    하자.
+
+    사영계 $(A'_i,u'_{ij})$가 (7.2.7)의 조건들을 만족함을 보이자.
+    $\mathfrak J'$는 $A'\to A'_0$의 핵이므로, 이 사실은 (ii)의 첫째
+    주장을 증명할 것이다. $u'_{ij}$들이 전사임은 명백하다.
+    $u'_{0i}$의 핵 $\mathfrak J'_i$는
+    $A_i[T_1,\ldots,T_r]$의 다항식 가운데 그 계수들이
+    $\mathfrak J/\mathfrak J^{i+1}$에 속하는 것들 전체이다. 특히
+    $\mathfrak J'_1$은 $A_1[T_1,\ldots,T_r]$의 다항식 가운데
+    계수들이 $\mathfrak J/\mathfrak J^2$에 속하는 것들 전체이다.
+    $\mathfrak J/\mathfrak J^2$가
+    $A_1=A/\mathfrak J^2$ 위에서 유한형이므로
+    $\mathfrak J'_1/\mathfrak J_1'^{\,2}$는 $A'_1$ 위에서 유한형
+    가군이다(동치로 $A'_0=A'_1/\mathfrak J'_1$ 위에서 유한형이다).
+
+    $u'_{ij}$의 핵이 $\mathfrak J_j'^{\,i+1}$임을 보이자.
+    $\mathfrak J_j'^{\,i+1}$가 이 핵에 포함됨은 명백하다. 한편
+    $a_1,\ldots,a_m$을 $\mathfrak J$의 원소들 가운데
+    $\mathfrak J^2$을 법으로 한 유들이
+    $\mathfrak J/\mathfrak J^2$를 생성하는 것들이라 하자.
+    $a_k$들($1\leq k\leq m$)로 이루어진 차수 $\leq j$인 단항식들의
+    $\mathfrak J^{j+1}$을 법으로 한 유들이
+    $\mathfrak J/\mathfrak J^{j+1}$을 생성함은 바로 확인된다.
+    따라서 차수가 $>i$이고 $\leq j$인 단항식들의 유들은
+    $\mathfrak J^{i+1}/\mathfrak J^{j+1}$을 생성한다. 그러한 원소를
+    계수로 갖는 $T_k$들에 관한 단항식은
+    $\mathfrak J'_j$의 $i+1$개 원소의 곱이고, 이것으로 주장이
+    증명된다.
+
+    끝으로 $A$가 뇌터 환이면
+    $A'/\mathfrak J'=(A/\mathfrak J)[T_1,\ldots,T_r]$도 뇌터
+    환이므로 $A'$가 뇌터 환이다(7.2.8).
+\end{enumerate}
+
+\begin{proposition}[7.5.5]
+\label{0.7.5.5-ko}
+$A$를 뇌터 $\mathfrak J$-아딕환, $B$를 허용 위상환이라 하고,
+$\varphi:A\to B$를 $B$에 $A$-대수 구조를 주는 연속 준동형이라
+하자. 다음 조건들은 동치이다.
+\begin{enumerate}
+  \item[a)] $B$는 뇌터 $\mathfrak JB$-아딕환이고,
+    $B/\mathfrak JB$는 $A/\mathfrak J$ 위의 유한형 대수이다.
+
+  \item[b)] $B$는 $\varprojlim B_n$과 위상적으로 $A$-동형이다.
+    여기서 $m\geq n$에 대하여
+    $B_n=B_m/\mathfrak J^{n+1}B_m$이고, $B_1$은
+    $A_1=A/\mathfrak J^2$ 위의 유한형 대수이다.
+
+  \item[c)] $B$는 $A\{T_1,\ldots,T_r\}$ 꼴의 대수를 어떤
+    아이디얼로 나눈 몫과 위상적으로 $A$-동형이다. 이 아이디얼은
+    (7.3.6)과 (7.5.4 (ii))에 따라 반드시 닫혀 있다.
+\end{enumerate}
+\end{proposition}
+
+$A$가 뇌터 환이므로 $A'=A\{T_1,\ldots,T_r\}$도 뇌터 환이다
+(7.5.4). 따라서 c)는 $B$가 뇌터 환임을 함의한다. 또한
+$\mathfrak J'=\mathfrak JA'$는 $A'$의 $0$의 열린 근방이고
+$\mathfrak J'^{n}$들이 $0$의 근방 기본계를 이룬다. 그 상들인
+$\mathfrak J^nB$들이 $B$에서 $0$의 근방 기본계를 이루며, $B$가
+분리 완비임을 알고 있으므로 $B$는 $\mathfrak JB$-아딕환이다.
+끝으로 $B/\mathfrak JB$는
+\[
+  A'/\mathfrak JA'=(A/\mathfrak J)[T_1,\ldots,T_r]
+\]
+의 몫인 $A/\mathfrak J$-대수이므로 유한형이다. 이로써 c)가 a)를
+함의함을 모두 증명하였다.
+
+$B$가 뇌터 $\mathfrak JB$-아딕환이면
+\[
+  B\simeq\varprojlim B_n,
+  \qquad B_n=B/\mathfrak J^{n+1}B
+\]
+이다(7.2.11). 또한
+$\mathfrak JB/\mathfrak J^2B$는 $B/\mathfrak JB$ 위의 유한형
+가군이다. $(a_j)_{1\leq j\leq s}$를
+$B/\mathfrak JB$-가군 $\mathfrak JB/\mathfrak J^2B$의 생성계라
+하고, $(c_i)_{1\leq i\leq r}$를 $B/\mathfrak J^2B$의 원소들
+가운데 그 유들이 $\mathfrak JB/\mathfrak J^2B$를 법으로 하여
+$A/\mathfrak J$-대수 $B/\mathfrak JB$를 생성하는 것들이라 하자.
+
+\oldpage[0\textsubscript{I}]{72}
+
+곱 $c_i a_j$들은 $A/\mathfrak J^2$-대수
+$B/\mathfrak J^2B$의 생성계를 이룸을 곧 알 수 있다. 따라서 a)는
+b)를 함의한다.
+
+b)가 c)를 함의함을 보이는 일만 남았다. 가정에 따라 $B_1$은 뇌터
+환이다. $B_1=B_2/\mathfrak J^2B_2$이므로
+$\mathfrak J^2B_1=0$이고, 따라서
+\[
+  \mathfrak JB_1
+  =\mathfrak JB_1/\mathfrak J^2B_1
+\]
+은 유한형 $B_0$-가군이다. 그러므로 사영계 $(B_n)$은 (7.2.7)의
+조건들을 만족하고 $B$는 $\mathfrak JB$-아딕환이다.
+
+$(c_i)_{1\leq i\leq r}$를 $B$의 원소들의 유한계로서, 그
+$\mathfrak JB$를 법으로 한 유들이 $A/\mathfrak J$-대수
+$B/\mathfrak JB$를 생성하고, 그 원소들의 $\mathfrak J$-계수
+선형결합들의 $\mathfrak J^2B$를 법으로 한 유들이
+$B_0$-가군 $\mathfrak JB/\mathfrak J^2B$를 생성하도록 잡자.
+(7.5.3)에 따라 $A$에서는 $\varphi$로 제한되고
+$1\leq i\leq r$에 대하여 $u(T_i)=c_i$인 연속 $A$-준동형
+\[
+  u:A'=A\{T_1,\ldots,T_r\}\longrightarrow B
+\]
+가 존재한다.
+
+$u$가 \emph{전사}임을 보이면 c)가 증명된다. 실제로
+$u(A')=B$에서 $u(\mathfrak J^nA')=\mathfrak J^nB$가 따르므로 $u$는
+위상환의 엄밀 사상이고, 따라서 $B$는 $A'$를 어떤 닫힌 아이디얼로
+나눈 몫과 동형이다. $B$는 $\mathfrak JB$-아딕 위상에 관하여
+완비이므로, $\mathfrak J$-아딕 여과를 준 $A'$와 $B$에 대하여
+$u$에서 표준적으로 유도되는 준동형
+\[
+  \operatorname{grad}(A')\longrightarrow\operatorname{grad}(B)
+\]
+가 전사임을 보이면 충분하다([I], p.~18-07).
+
+정의에 따라 $u$에서 유도되는 준동형
+\[
+  A'/\mathfrak JA'\longrightarrow B/\mathfrak JB,
+  \qquad
+  \mathfrak JA'/\mathfrak J^2A'\longrightarrow
+  \mathfrak JB/\mathfrak J^2B
+\]
+들은 전사이다. $n$에 관한 귀납법으로
+\[
+  \mathfrak JA'/\mathfrak J^nA'\longrightarrow
+  \mathfrak JB/\mathfrak J^nB
+\]
+도 전사임을 곧 얻고, 따라서 더더욱
+\[
+  \mathfrak J^nA'/\mathfrak J^{n+1}A'\longrightarrow
+  \mathfrak J^nB/\mathfrak J^{n+1}B
+\]
+도 전사이다. 이것으로 증명이 끝난다.
+
+\subsection{완비 분수환}
+\label{subsection:0.7.6-ko}
+
+\begin{env}[7.6.1]
+\label{0.7.6.1-ko}
+$A$를 선형 위상을 갖는 환, $(\mathfrak J_\lambda)$를 아이디얼들로
+이루어진 $A$의 $0$의 근방 기본계, $S$를 $A$의 곱셈적 부분집합이라
+하자. $u_\lambda$를 표준 준동형
+$A\to A_\lambda=A/\mathfrak J_\lambda$라 하고,
+$\mathfrak J_\mu\subset\mathfrak J_\lambda$일 때 $u_{\lambda\mu}$를
+표준 준동형 $A_\mu\to A_\lambda$라 하자. 또한
+$S_\lambda=u_\lambda(S)$로 놓으면
+$u_{\lambda\mu}(S_\mu)=S_\lambda$이다. $u_{\lambda\mu}$들은 표준적으로
+전사 준동형
+\[
+  S_\mu^{-1}A_\mu\longrightarrow S_\lambda^{-1}A_\lambda
+\]
+를 주며, 이 환들은 그 준동형들에 관하여 사영계를 이룬다. 이 계의
+사영극한을 $A\{S^{-1}\}$로 나타내겠다. 이 정의는 선택한 근방
+기본계 $(\mathfrak J_\lambda)$에 의존하지 않는다. 실제로 다음이
+성립한다.
+\end{env}
+
+\begin{proposition}[7.6.2]
+\label{0.7.6.2-ko}
+환 $A\{S^{-1}\}$는 $S^{-1}\mathfrak J_\lambda$들이 $0$의 근방
+기본계를 이루는 위상을 준 환 $S^{-1}A$의 분리 완비화와 위상적으로
+동형이다.
+\end{proposition}
+
+실제로 $v_\lambda$를 $u_\lambda$에서 유도되는 표준 준동형
+$S^{-1}A\to S_\lambda^{-1}A_\lambda$라 하면, $v_\lambda$의 핵은
+$S^{-1}\mathfrak J_\lambda$이고 $v_\lambda$는 전사이다. 따라서
+명제는 (7.2.1)에서 따른다.
+
+\begin{corollary}[7.6.3]
+\label{0.7.6.3-ko}
+$S'$을 $A$의 분리 완비화 $\widehat A$에서 $S$의 표준상이라 하면
+$A\{S^{-1}\}$는 $\widehat A\{{S'}^{-1}\}$와 표준적으로
+동일시된다.
+\end{corollary}
+
+$A$가 분리 완비환이어도 $S^{-1}A$는
+$S^{-1}\mathfrak J_\lambda$들이 정의하는 위상에 관하여 분리
+완비환일 필요가 없다. 예를 들어 $f$가 위상적 멱영이지만 멱영은 아닌
+원소이고, $S$가 $f^n$들($n\geq0$)의 집합인 경우를 생각하자.
+$S^{-1}A$는 영환이 아니다. 한편 각 $\lambda$에 대하여
+$f^n\in\mathfrak J_\lambda$인 $n$이 존재하므로
+\[
+  1=\frac{f^n}{f^n}\in S^{-1}\mathfrak J_\lambda,
+  \qquad S^{-1}\mathfrak J_\lambda=S^{-1}A.
+\]
+
+\oldpage[0\textsubscript{I}]{73}
+
+\begin{corollary}[7.6.4]
+\label{0.7.6.4-ko}
+$A$에서 $0$이 $S$의 폐포에 속하지 않으면 환 $A\{S^{-1}\}$는
+영환이 아니다.
+\end{corollary}
+
+실제로 환 $S^{-1}A$에서 $0$은 $\{1\}$의 폐포에 속하지 않는다.
+그렇지 않으면 $A$의 모든 열린 아이디얼 $\mathfrak J_\lambda$에
+대하여 $1\in S^{-1}\mathfrak J_\lambda$일 것이고, 따라서 모든
+$\lambda$에 대하여
+$\mathfrak J_\lambda\cap S\neq\varnothing$가 되어 가정에 모순이다.
+
+\begin{env}[7.6.5]
+\label{0.7.6.5-ko}
+$A\{S^{-1}\}$를 $S$에 분모를 갖는 $A$의 \emph{완비 분수환}이라
+하겠다. 앞의 표기에서 $A$에서 $S^{-1}\mathfrak J_\lambda$의
+역상은 $\mathfrak J_\lambda$를 포함함이 명백하므로 표준 사상
+$A\to S^{-1}A$는 연속이다. 이를 표준 사상
+$S^{-1}A\to A\{S^{-1}\}$와 합성하면 표준 연속 준동형
+\[
+  A\longrightarrow A\{S^{-1}\}
+\]
+를 얻는데, 이는 준동형 $A\to S_\lambda^{-1}A_\lambda$들의
+사영극한이다.
+\end{env}
+
+\begin{env}[7.6.6]
+\label{0.7.6.6-ko}
+$A\{S^{-1}\}$와 표준 사상 $A\to A\{S^{-1}\}$의 쌍은 다음
+\emph{보편 성질}로 특징지어진다. $A$에서 선형 위상을 갖는 분리
+완비환 $B$로 가는 연속 준동형 $u$가 $u(S)$의 원소들을 $B$의
+가역원으로 보내면, $u$는 유일한 방식으로
+\[
+  A\longrightarrow A\{S^{-1}\}\xrightarrow{u'}B
+\]
+로 분해된다. 여기서 $u'$은 연속이다.
+
+실제로 $u$는 유일한 방식으로
+$A\to S^{-1}A\xrightarrow{v'}B$로 분해된다. $B$의 각 열린
+아이디얼 $\mathfrak K$에 대하여 $u^{-1}(\mathfrak K)$는 어떤
+$\mathfrak J_\lambda$를 포함하므로
+${v'}^{-1}(\mathfrak K)$는 반드시
+$S^{-1}\mathfrak J_\lambda$를 포함한다. 따라서 $v'$은 연속이다.
+$B$가 분리 완비환이므로 $v'$은 유일한 방식으로
+\[
+  S^{-1}A\longrightarrow A\{S^{-1}\}\xrightarrow{u'}B
+\]
+로 분해되며 $u'$은 연속이다. 이로써 주장이 증명된다.
+\end{env}
+
+\begin{env}[7.6.7]
+\label{0.7.6.7-ko}
+$B$를 또 하나의 선형 위상환, $T$를 $B$의 곱셈적 부분집합,
+$\varphi:A\to B$를 $\varphi(S)\subset T$를 만족하는 연속
+준동형이라 하자. 앞의 결과에 따라 연속 준동형
+\[
+  A\xrightarrow{\varphi}B\longrightarrow B\{T^{-1}\}
+\]
+은 유일한 방식으로
+\[
+  A\longrightarrow A\{S^{-1}\}
+  \xrightarrow{\varphi'}B\{T^{-1}\}
+\]
+로 분해되며 $\varphi'$은 연속이다. 특히 $B=A$이고 $\varphi$가
+항등사상일 때, $S\subset T$이면
+$S^{-1}A\to T^{-1}A$를 분리 완비화하여 얻는 연속 준동형
+\[
+  \rho^{T,S}:A\{S^{-1}\}\longrightarrow A\{T^{-1}\}
+\]
+가 존재한다. $S\subset T\subset U$인 세 번째 곱셈적 부분집합
+$U$에 대하여
+\[
+  \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}
+\]
+이다.
+\end{env}
+
+\begin{env}[7.6.8]
+\label{0.7.6.8-ko}
+$S_1,S_2$를 $A$의 두 곱셈적 부분집합, $S_2'$을
+$A\{S_1^{-1}\}$에서 $S_2$의 표준상이라 하자. 그러면 표준
+위상동형
+\[
+  A\{(S_1S_2)^{-1}\}
+  \xrightarrow{\sim}
+  A\{S_1^{-1}\}\{{S_2'}^{-1}\}
+\]
+이 존재한다. 실제로 $S_2''$을 $S_1^{-1}A$에서 $S_2$의 표준상이라
+하면 표준 동형
+\[
+  (S_1S_2)^{-1}A\xrightarrow{\sim}{S_2''}^{-1}(S_1^{-1}A)
+\]
+은 양방향 연속이고, 이 동형에서 결론이 따른다.
+\end{env}
+
+\begin{env}[7.6.9]
+\label{0.7.6.9-ko}
+$\mathfrak a$를 $A$의 \emph{열린} 아이디얼이라 하자. 모든
+$\lambda$에 대하여
+$\mathfrak J_\lambda\subset\mathfrak a$라고 가정해도 된다. 따라서
+$S^{-1}A$에서
+$S^{-1}\mathfrak J_\lambda\subset S^{-1}\mathfrak a$이고,
+$S^{-1}\mathfrak a$는 $S^{-1}A$의 \emph{열린} 아이디얼이다. 그
+분리 완비화를
+\[
+  \mathfrak a\{S^{-1}\}
+  =\varprojlim
+  (S^{-1}\mathfrak a/S^{-1}\mathfrak J_\lambda)
+\]
+로 나타내겠다. 이는 $A\{S^{-1}\}$의 열린 아이디얼이며
+$S^{-1}\mathfrak a$의 표준상의 폐포와 동형이다. 더 나아가
+\emph{이산환 $A\{S^{-1}\}/\mathfrak a\{S^{-1}\}$은
+$S^{-1}A/S^{-1}\mathfrak a=S^{-1}(A/\mathfrak a)$와 표준적으로
+동형이다.}
+
+역으로 $\mathfrak a'$이 $A\{S^{-1}\}$의 열린 아이디얼이면
+$\mathfrak a'$은 $\mathfrak J_\lambda\{S^{-1}\}$ 꼴의 아이디얼을
+포함한다. 따라서 $\mathfrak a'$은
+$S^{-1}A/S^{-1}\mathfrak J_\lambda$의 어떤 아이디얼의 역상이고,
+그 아이디얼은 반드시 (1.2.6)에 따라
+$\mathfrak a\supset\mathfrak J_\lambda$인 어떤 $\mathfrak a$에 대한
+$S^{-1}\mathfrak a$ 꼴이다. 그러므로
+$\mathfrak a'=\mathfrak a\{S^{-1}\}$이다. 특히 (1.2.6)에 따라
+다음이 성립한다.
+\end{env}
+
+\begin{proposition}[7.6.10]
+\label{0.7.6.10-ko}
+대응
+\[
+  \mathfrak p\longmapsto\mathfrak p\{S^{-1}\}
+\]
+은 $\mathfrak p\cap S=\varnothing$인 $A$의 열린 소 아이디얼
+$\mathfrak p$들의 집합에서 $A\{S^{-1}\}$의 열린 소 아이디얼들의
+집합으로 가는 포함관계를 보존하는 전단사이다. 더 나아가
+
+\oldpage[0\textsubscript{I}]{74}
+
+$A\{S^{-1}\}/\mathfrak p\{S^{-1}\}$의 분수체는
+$A/\mathfrak p$의 분수체와 표준적으로 동형이다.
+\end{proposition}
+
+\begin{proposition}[7.6.11]
+\label{0.7.6.11-ko}
+\begin{enumerate}
+  \item[(i)] $A$가 허용환이면 $A'=A\{S^{-1}\}$도 허용환이고,
+    $A$의 모든 정의 아이디얼 $\mathfrak J$에 대하여
+    $\mathfrak J'=\mathfrak J\{S^{-1}\}$은 $A'$의 정의
+    아이디얼이다.
+  \item[(ii)] $A$를 아딕환, $\mathfrak J$를 $A$의 정의
+    아이디얼로서 $\mathfrak J/\mathfrak J^2$가
+    $A/\mathfrak J$ 위에서 유한형인 것이라 하자. 그러면 $A'$는
+    $\mathfrak J'$-아딕환이고
+    $\mathfrak J'/\mathfrak J'^2$는 $A'/\mathfrak J'$ 위에서
+    유한형이다. 더 나아가 $A$가 뇌터 환이면 $A'$도 뇌터 환이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{enumerate}
+  \item[(i)] $\mathfrak J$가 $A$의 정의 아이디얼이면
+    \[
+      (S^{-1}\mathfrak J)^n=S^{-1}\mathfrak J^n
+    \]
+    이므로 $S^{-1}\mathfrak J$는 위상환 $S^{-1}A$의 정의
+    아이디얼임이 명백하다. $A''$을 $S^{-1}A$에 연관된 분리환,
+    $\mathfrak J''$을 $A''$에서 $S^{-1}\mathfrak J$의 상이라 하자.
+    $S^{-1}\mathfrak J^n$의 상은 $\mathfrak J''^n$이므로
+    $\mathfrak J''^n$은 $A''$에서 $0$으로 수렴한다.
+    $\mathfrak J'$은 $A'$에서 $\mathfrak J''$의 폐포이므로
+    $\mathfrak J'^n$은 $\mathfrak J''^n$의 폐포에 포함되고, 따라서
+    $A'$에서 $0$으로 수렴한다.
+
+  \item[(ii)] $A_i=A/\mathfrak J^{i+1}$로 놓고, $i\leq j$일 때
+    $u_{ij}$를 표준 준동형
+    $A/\mathfrak J^{j+1}\to A/\mathfrak J^{i+1}$이라 하자. $S_i$를
+    $A_i$에서 $S$의 표준상이라 하고 $A_i'=S_i^{-1}A_i$로 놓자.
+    끝으로 $u_{ij}':A_j'\to A_i'$을 $u_{ij}$에서 표준적으로
+    유도되는 준동형이라 하자.
+
+    사영계 $(A_i',u_{ij}')$가 명제 (7.2.7)의 조건들을 만족함을
+    보이자. $u_{ij}'$들이 전사임은 명백하다. 한편 $u_{ij}'$의 핵은
+    (1.3.2)에 따라
+    \[
+      S_j^{-1}(\mathfrak J^{i+1}/\mathfrak J^{j+1})
+      =\mathfrak J_j'^{\,i+1}
+    \]
+    이다. 여기서
+    \[
+      \mathfrak J_j'=S_j^{-1}(\mathfrak J/\mathfrak J^{j+1}).
+    \]
+    또한
+    \[
+      \mathfrak J_1'/\mathfrak J_1'^2
+      =S_1^{-1}(\mathfrak J/\mathfrak J^2).
+    \]
+    $\mathfrak J/\mathfrak J^2$가 $A/\mathfrak J^2$ 위에서
+    유한형이므로 $\mathfrak J_1'/\mathfrak J_1'^2$는 $A_1'$ 위에서
+    유한형이다. 끝으로 $A$가 뇌터 환이면
+    $A_0'=S_0^{-1}(A/\mathfrak J)$도 뇌터 환이다. 이로써 명제가
+    증명된다(7.2.8).
+\end{enumerate}
+
+\begin{corollary}[7.6.12]
+\label{0.7.6.12-ko}
+(7.6.11 (ii))의 가정 아래에서
+\[
+  (\mathfrak J\{S^{-1}\})^n=\mathfrak J^n\{S^{-1}\}
+\]
+이다.
+\end{corollary}
+
+실제로 이는 (7.2.7)과 (7.6.11)의 증명에서 따른다.
+
+\begin{proposition}[7.6.13]
+\label{0.7.6.13-ko}
+$A$를 뇌터 아딕환, $S$를 $A$의 곱셈적 부분집합이라 하자. 그러면
+$A\{S^{-1}\}$는 평탄 $A$-가군이다.
+\end{proposition}
+
+실제로 $\mathfrak J$가 $A$의 정의 아이디얼이면
+$A\{S^{-1}\}$는 $S^{-1}\mathfrak J$-준아딕 위상을 준 뇌터 환
+$S^{-1}A$의 분리 완비화이다. 따라서 (7.3.3)에 따라
+$A\{S^{-1}\}$는 평탄 $S^{-1}A$-가군이다. $S^{-1}A$는 평탄
+$A$-가군이므로(6.3.1), 명제는 평탄성의 추이성에서 따른다(6.2.1).
+
+\begin{corollary}[7.6.14]
+\label{0.7.6.14-ko}
+(7.6.13)의 가정 아래에서 $S'\subset S$인 $A$의 또 하나의 곱셈적
+부분집합 $S'$을 잡자. 그러면 $A\{S^{-1}\}$는 평탄
+$A\{{S'}^{-1}\}$-가군이다.
+\end{corollary}
+
+실제로 (7.6.8)에 따라 $A\{S^{-1}\}$는
+$A\{{S'}^{-1}\}\{S_0^{-1}\}$와 표준적으로 동일시된다. 여기서
+$S_0$은 $A\{{S'}^{-1}\}$에서 $S$의 표준상이고,
+$A\{{S'}^{-1}\}$는 뇌터 환이다(7.6.11).
+
+\begin{env}[7.6.15]
+\label{0.7.6.15-ko}
+선형 위상환 $A$의 각 원소 $f$에 대하여 $S_f$를
+$f^n$들($n\geq0$)의 곱셈적 집합이라 하고, 완비 분수환
+$A\{S_f^{-1}\}$를 $A_{\{f\}}$로 나타내겠다. $A$의 각 열린
+아이디얼 $\mathfrak a$에 대하여
+$\mathfrak a\{S_f^{-1}\}$ 대신 $\mathfrak a_{\{f\}}$라고 쓰겠다.
+$g$가 $A$의 또 하나의 원소이면 표준 연속 준동형
+\[
+  A_{\{f\}}\longrightarrow A_{\{fg\}}
+\]
+이 존재한다(7.6.7). $f$가 $A$의 곱셈적 부분집합 $S$를 움직일 때
+$A_{\{f\}}$들은 이 준동형들에 관한 환들의 여과 귀납계를 이룬다.
+다음과 같이 놓자.
+\[
+  A_{\{S\}}=\varinjlim_{f\in S}A_{\{f\}}.
+\]
+각 $f\in S$에 대하여 준동형
+$A_{\{f\}}\to A\{S^{-1}\}$가 있고(7.6.7), 이 준동형들은
+
+\oldpage[0\textsubscript{I}]{75}
+
+귀납계를 이룬다. 따라서 귀납극한으로 넘기면 표준 준동형
+\[
+  A_{\{S\}}\longrightarrow A\{S^{-1}\}
+\]
+을 얻는다.
+\end{env}
+
+\begin{proposition}[7.6.16]
+\label{0.7.6.16-ko}
+$A$가 뇌터 환이면 $A\{S^{-1}\}$는 평탄 $A_{\{S\}}$-가군이다.
+\end{proposition}
+
+실제로 (7.6.14)에 따라 $A\{S^{-1}\}$는 각 $f\in S$에 대하여
+평탄 $A_{\{f\}}$-가군이고, 결론은 (6.2.3)에서 따른다.
+
+\begin{proposition}[7.6.17]
+\label{0.7.6.17-ko}
+$\mathfrak p$를 허용환 $A$의 열린 소 아이디얼이라 하고
+$S=A-\mathfrak p$로 놓자. 그러면 환 $A\{S^{-1}\}$와
+$A_{\{S\}}$는 국소환이고, 표준 준동형
+\[
+  A_{\{S\}}\longrightarrow A\{S^{-1}\}
+\]
+은 국소 준동형이며, $A_{\{S\}}$와 $A\{S^{-1}\}$의 잉여체들은
+$A/\mathfrak p$의 분수체와 표준적으로 동형이다.
+\end{proposition}
+
+실제로 $\mathfrak J\subset\mathfrak p$인 $A$의 정의 아이디얼
+$\mathfrak J$를 잡자. 그러면
+\[
+  S^{-1}\mathfrak J
+  \subset S^{-1}\mathfrak p
+  =\mathfrak pA_\mathfrak p
+\]
+이므로 $A_\mathfrak p/S^{-1}\mathfrak J$는 국소환이다.
+(7.1.12), (7.6.9), (7.6.11 (i))에 따라 $A\{S^{-1}\}$가
+국소환임이 따른다.
+
+\[
+  \mathfrak m=\varinjlim_{f\in S}\mathfrak p_{\{f\}}
+\]
+로 놓자. 이는 $A_{\{S\}}$의 아이디얼이다. $\mathfrak m$에 속하지
+않는 $A_{\{S\}}$의 모든 원소가 가역임을 보이겠다. 그러한 원소는
+어떤 $f\in S$에 대하여
+$\mathfrak p_{\{f\}}$에 속하지 않는 $z\in A_{\{f\}}$의
+$A_{\{S\}}$에서의 상이다. $z$의
+\[
+  A_{\{f\}}/\mathfrak J_{\{f\}}
+  =S_f^{-1}(A/\mathfrak J)
+\]
+에서의 표준상 $z_0$는
+$S_f^{-1}(\mathfrak p/\mathfrak J)$에 속하지 않는다(7.6.9).
+따라서
+\[
+  z_0=\frac{\overline x}{\overline f^{\,k}},
+  \qquad x\notin\mathfrak p,
+\]
+이다. 여기서 $\overline x,\overline f$는 $\mathfrak J$를 법으로 한
+$x,f$의 유이다. $x\in S$이므로 $g=xf\in S$이다. $S_g^{-1}A$에서
+\[
+  y_0=\frac{x^{k+1}}{g^k},
+\]
+즉 $x/f^k\in S_f^{-1}A$의 표준상은
+\[
+  \frac{x^{k-1}f^{2k}}{g^k}
+\]
+를 역원으로 갖는다. 따라서 더더욱 $S_g^{-1}A/S_g^{-1}\mathfrak J$에서
+$y_0$의 상은 가역이고, (7.6.9)와 (7.1.12)에 따라
+$A_{\{g\}}$에서 $z$의 표준상 $y$도 가역이다. 그러므로
+$A_{\{S\}}$에서 $z$의 상, 즉 $y$의 상은 가역이다.
+
+따라서 $A_{\{S\}}$는 극대 아이디얼 $\mathfrak m$을 갖는
+국소환이다. 더 나아가 $A\{S^{-1}\}$에서
+$\mathfrak p_{\{f\}}$의 상은 이 환의 극대 아이디얼
+$\mathfrak p\{S^{-1}\}$에 포함된다. 따라서
+$A\{S^{-1}\}$에서 $\mathfrak m$의 상도
+$\mathfrak p\{S^{-1}\}$에 포함되고, 표준 준동형
+$A_{\{S\}}\to A\{S^{-1}\}$는 국소 준동형이다.
+
+끝으로 $A\{S^{-1}\}/\mathfrak p\{S^{-1}\}$의 모든 원소는 적당한
+$f\in S$에 대한 환 $S_f^{-1}A$의 어떤 원소의 상이다. 따라서
+준동형
+\[
+  A_{\{S\}}\longrightarrow
+  A\{S^{-1}\}/\mathfrak p\{S^{-1}\}
+\]
+은 전사이고, 몫으로 내려가면 잉여체들의 동형을 준다.
+
+\begin{corollary}[7.6.18]
+\label{0.7.6.18-ko}
+(7.6.17)의 가정에 더하여 $A$가 뇌터 아딕환이라고 하자. 그러면
+국소환 $A\{S^{-1}\}$와 $A_{\{S\}}$는 뇌터 환이고,
+$A\{S^{-1}\}$는 충실 평탄 $A_{\{S\}}$-가군이다.
+\end{corollary}
+
+$A\{S^{-1}\}$가 뇌터 환임은 이미 (7.6.11 (ii))에서 알고 있고,
+이는 $A_{\{S\}}$-평탄이다(7.6.16). 준동형
+$A_{\{S\}}\to A\{S^{-1}\}$가 국소 준동형이므로
+$A\{S^{-1}\}$는 충실 평탄 $A_{\{S\}}$-가군이고(6.6.2), 따라서
+$A_{\{S\}}$는 뇌터 환이다(6.5.2).
+
+\subsection{완비 텐서곱}
+\label{subsection:0.7.7-ko}
+
+\begin{env}[7.7.1]
+\label{0.7.7.1-ko}
+$A$를 선형 위상을 갖는 환, $M,N$을 선형 위상을 갖는 두
+$A$-가군이라 하자. $\mathfrak J,V,W$를 각각 $A,M,N$에서 $0$의
+열린 근방으로서 $A$-부분가군이고
+$\mathfrak JM\subset V$, $\mathfrak JN\subset W$를 만족하는 것이라
+하자. 그러면 $M/V$와 $N/W$를 $(A/\mathfrak J)$-가군으로 볼 수 있다.
+$\mathfrak J,V,W$가 앞의 조건들을 만족하는 열린 근방들을
+움직일 때, 가군
+\[
+  (M/V)\otimes_{A/\mathfrak J}(N/W)
+\]
+
+\oldpage[0\textsubscript{I}]{76}
+
+들은 환들의 사영계 $A/\mathfrak J$ 위의 가군들의 사영계를 이룸이
+명백하다. 따라서 사영극한을 취하면 $A$의 분리 완비화
+$\widehat A$ 위의 가군을 얻는다. 이를 $M$과 $N$의
+\emph{완비 텐서곱}이라 하고 $(M\otimes_A N)^\wedge$로 쓴다.
+$M/V$는 $\widehat M/\overline V$와 표준적으로 동형이다. 여기서
+$\widehat M$은 $M$의 분리 완비화이고 $\overline V$는 $\widehat M$에서
+$V$의 상의 폐포이다. 따라서 완비 텐서곱
+$(M\otimes_A N)^\wedge$는
+$(\widehat M\otimes_{\widehat A}\widehat N)^\wedge$와 표준적으로
+동일시되며, 이를
+$\widehat M\widehat\otimes_{\widehat A}\widehat N$으로도 쓴다.
+\end{env}
+
+\begin{env}[7.7.2]
+\label{0.7.7.2-ko}
+앞의 표기 아래에서 텐서곱
+$(M/V)\otimes_A(N/W)$와
+$(M/V)\otimes_{A/\mathfrak J}(N/W)$는 표준적으로 동일시된다. 따라서
+이들은 또한
+\[
+  (M\otimes_A N)/
+  \bigl(\Im(V\otimes_A N)+\Im(M\otimes_A W)\bigr)
+\]
+와 동일시된다. 그러므로 $(M\otimes_A N)^\wedge$는
+\emph{$A$-가군 $M\otimes_A N$에 다음 위상을 주었을 때의 분리
+완비화이다. 즉 부분가군}
+\[
+  \Im(V\otimes_A N)+\Im(M\otimes_A W)
+\]
+\emph{들이 $0$의 근방 기본계를 이룬다}. 여기서 $V$와 $W$는 각각
+$M$과 $N$의 열린 부분가군 전체를 움직인다. 줄여서 이 위상을
+$M$과 $N$에 주어진 위상들의 \emph{텐서곱}이라 하겠다.
+\end{env}
+
+\begin{env}[7.7.3]
+\label{0.7.7.3-ko}
+$M',N'$을 선형 위상을 갖는 두 $A$-가군,
+$u:M\to M'$, $v:N\to N'$을 두 연속 준동형이라 하자. $M\otimes_A N$과
+$M'\otimes_A N'$에 각각 텐서곱 위상을 주면 $u\otimes v$가 연속임은
+명백하다. 분리 완비화로 옮겨 가면 연속 준동형
+\[
+  (M\otimes_A N)^\wedge\longrightarrow
+  (M'\otimes_A N')^\wedge
+\]
+을 얻으며, 이를 $u\widehat\otimes v$로 쓰겠다. 따라서
+$(M\otimes_A N)^\wedge$는 선형 위상을 갖는 $A$-가군들의 범주에서
+$M$과 $N$에 관한 \emph{쌍함자}이다.
+\end{env}
+
+\begin{env}[7.7.4]
+\label{0.7.7.4-ko}
+선형 위상을 갖는 유한 개의 $A$-가군들의 완비 텐서곱도 같은 방식으로
+정의한다. 이 텐서곱이 보통의 결합법칙과 교환법칙을 만족함은
+명백하다.
+\end{env}
+
+\begin{env}[7.7.5]
+\label{0.7.7.5-ko}
+$B,C$가 선형 위상을 갖는 두 위상 $A$-대수이면, $B\otimes_A C$의
+텐서곱 위상에서 $0$의 근방 기본계는 $B\otimes_A C$의 아이디얼
+\[
+  \Im(\mathfrak K\otimes_A C)+
+  \Im(B\otimes_A\mathfrak L)
+\]
+들로 이루어진다. 여기서 $\mathfrak K$와 $\mathfrak L$은 각각
+$B$와 $C$의 열린 아이디얼 전체를 움직인다. 따라서
+$(B\otimes_A C)^\wedge$는 $(A/\mathfrak J)$-대수들의 사영계
+\[
+  (B/\mathfrak K)\otimes_{A/\mathfrak J}(C/\mathfrak L)
+\]
+의 사영극한으로서 \emph{$\widehat A$ 위의 위상대수} 구조를 갖는다.
+여기서 $\mathfrak J$는
+$\mathfrak J B\subset\mathfrak K$,
+$\mathfrak J C\subset\mathfrak L$을 만족하는 $A$의 열린 아이디얼이며,
+그러한 아이디얼은 언제나 존재한다. 이 대수를 $B$와 $C$의
+\emph{완비 텐서곱}이라 한다.
+\end{env}
+
+\begin{env}[7.7.6]
+\label{0.7.7.6-ko}
+$B$와 $C$에서 $B\otimes_A C$로 가는 $A$-대수 준동형
+\[
+  b\longmapsto b\otimes1,
+  \qquad
+  c\longmapsto1\otimes c
+\]
+는 뒤의 대수에 텐서곱 위상을 주면 연속이다. 따라서 이를
+$B\otimes_A C$에서 그 분리 완비화로 가는 표준 준동형과 합성하면
+\emph{표준 준동형}
+\[
+  \rho:B\longrightarrow(B\otimes_A C)^\wedge,
+  \qquad
+  \sigma:C\longrightarrow(B\otimes_A C)^\wedge
+\]
+를 얻는다. 더 나아가 대수 $(B\otimes_A C)^\wedge$와 준동형
+$\rho,\sigma$는 다음 \emph{보편 성질}을 갖는다. 선형 위상을 갖고
+분리이며 완비인 임의의 $A$-대수 $D$와 두 연속 $A$-준동형
+$u:B\to D$, $v:C\to D$에 대하여
+\[
+  w:(B\otimes_A C)^\wedge\longrightarrow D
+\]
+인 유일한 연속 $A$-준동형 $w$가 존재하여
+$u=w\circ\rho$, $v=w\circ\sigma$를 만족한다.
+
+실제로 이미 $u(b)=w_0(b\otimes1)$,
+$v(c)=w_0(1\otimes c)$를 만족하는 유일한 $A$-준동형
+$w_0:B\otimes_A C\to D$가 존재한다. 따라서 $w_0$가 연속임을
+보이면 충분하다. 그러면 분리 완비화로 옮겨 가서 연속 준동형 $w$를
+얻기 때문이다.
+
+\oldpage[0\textsubscript{I}]{77}
+
+이제 $\mathfrak M$이 $D$의 열린 아이디얼이면, 가정에
+따라
+\[
+  u(\mathfrak K)\subset\mathfrak M,
+  \qquad
+  v(\mathfrak L)\subset\mathfrak M
+\]
+을 만족하는 열린 아이디얼
+$\mathfrak K\subset B$, $\mathfrak L\subset C$가 존재한다. 그러면
+\[
+  \Im(\mathfrak K\otimes_A C)+
+  \Im(B\otimes_A\mathfrak L)
+\]
+의 $w_0$에 의한 상도 $\mathfrak M$에 포함되므로 주장이 따른다.
+\end{env}
+
+\begin{proposition}[7.7.7]
+\label{0.7.7.7-ko}
+$B$와 $C$가 두 준허용 $A$-대수이면
+$(B\otimes_A C)^\wedge$는 허용환이다. 또한 $\mathfrak K$와
+$\mathfrak L$이 각각 $B$와 $C$의 정의 아이디얼이면,
+$(B\otimes_A C)^\wedge$에서
+\[
+  \mathfrak H=
+  \Im(\mathfrak K\otimes_A C)+
+  \Im(B\otimes_A\mathfrak L)
+\]
+의 표준상의 폐포는 정의 아이디얼이다.
+\end{proposition}
+
+텐서곱 위상에 관하여 $\mathfrak H^n$이 $0$으로 수렴함을 보이면
+충분하다. 이는 포함관계
+\[
+  \mathfrak H^{2n}\subset
+  \Im(\mathfrak K^n\otimes_A C)+
+  \Im(B\otimes_A\mathfrak L^n)
+\]
+에서 곧바로 따른다.
+
+\begin{proposition}[7.7.8]
+\label{0.7.7.8-ko}
+$A$를 준아딕환, $\mathfrak J$를 $A$의 정의 아이디얼,
+$M$을 $\mathfrak J$-준아딕 위상을 준 \emph{유한형} $A$-가군이라
+하자. 임의의 아딕이고 뇌터인 위상 $A$-대수 $B$에 대하여
+$B\otimes_A M$은 완비 텐서곱
+$(B\otimes_A M)^\wedge$와 동일시된다.
+\end{proposition}
+
+$\mathfrak K$가 $B$의 정의 아이디얼이면, 가정에 따라
+$\mathfrak J^mB\subset\mathfrak K$를 만족하는 정수 $m$이 존재한다.
+따라서
+\[
+  \Im(B\otimes_A\mathfrak J^{nm}M)
+  =\Im(\mathfrak J^{nm}B\otimes_A M)
+  \subset\Im(\mathfrak K^nB\otimes_A M)
+  =\mathfrak K^n(B\otimes_A M).
+\]
+그러므로 $B\otimes_A M$ 위에서 $B$와 $M$의 위상들의 텐서곱은
+$\mathfrak K$-준아딕 위상이다. $B\otimes_A M$은 유한형
+$B$-가군이므로 명제는 (7.3.6)에서 곧바로 따른다.
+
+\subsection{준동형 가군의 위상}
+\label{subsection:0.7.8-ko}
+
+\begin{env}[7.8.1]
+\label{0.7.8.1-ko}
+$A$를 뇌터 $\mathfrak J$-아딕환, $M,N$을 $\mathfrak J$-준아딕 위상을
+준 두 유한형 $A$-가군이라 하자. 이들은 분리이며 완비임을 알고
+있다(7.3.6). 더 나아가 모든 $A$-준동형 $M\to N$은 자동으로
+연속이고, $A$-가군 $\operatorname{Hom}_A(M,N)$은 유한형이다.
+각 정수 $i\geq0$에 대하여
+\[
+  A_i=A/\mathfrak J^{i+1},
+  \qquad
+  M_i=M/\mathfrak J^{i+1}M,
+  \qquad
+  N_i=N/\mathfrak J^{i+1}N
+\]
+으로 놓자. $i\leq j$일 때 모든 준동형 $u_j:M_j\to N_j$는
+$\mathfrak J^{i+1}M_j$를 $\mathfrak J^{i+1}N_j$ 안으로 보내므로,
+몫으로 내려가면 준동형 $u_i:M_i\to N_i$를 준다. 이로부터 표준
+준동형
+\[
+  \operatorname{Hom}_{A_j}(M_j,N_j)
+  \longrightarrow
+  \operatorname{Hom}_{A_i}(M_i,N_i)
+\]
+이 정의된다. 이 준동형들에 관하여
+$\operatorname{Hom}_{A_i}(M_i,N_i)$들은 \emph{사영계}를 이루며,
+(7.2.10)에 따라 표준 동형
+\[
+  \varphi:\operatorname{Hom}_A(M,N)
+  \longrightarrow
+  \varprojlim_i\operatorname{Hom}_{A_i}(M_i,N_i)
+\]
+이 존재한다. 더 나아가 다음이 성립한다.
+\end{env}
+
+\begin{proposition}[7.8.2]
+\label{0.7.8.2-ko}
+$M,N$이 뇌터 $\mathfrak J$-아딕환 $A$ 위의 유한형 가군이면,
+부분가군
+\[
+  \operatorname{Hom}_A(M,\mathfrak J^{i+1}N)
+\]
+들은 $\operatorname{Hom}_A(M,N)$의 $\mathfrak J$-아딕 위상에서
+$0$의 근방 기본계를 이루며, 표준 준동형
+\[
+  \varphi:\operatorname{Hom}_A(M,N)
+  \longrightarrow
+  \varprojlim_i\operatorname{Hom}_{A_i}(M_i,N_i)
+\]
+은 위상동형이다.
+\end{proposition}
+
+실제로 $M$을 유한형 자유 $A$-가군 $L$의 몫으로 볼 수 있고, 따라서
+$\operatorname{Hom}_A(M,N)$을 $\operatorname{Hom}_A(L,N)$의
+부분가군과 동일시할 수 있다. 이 동일시에서
+$\operatorname{Hom}_A(M,\mathfrak J^{i+1}N)$은
+$\operatorname{Hom}_A(M,N)$과
+$\operatorname{Hom}_A(L,\mathfrak J^{i+1}N)$의 교집합이다.
+$\operatorname{Hom}_A(L,N)$의 $\mathfrak J$-아딕 위상이
+$\operatorname{Hom}_A(M,N)$에 유도하는 위상은
+$\mathfrak J$-아딕 위상이므로(7.3.2), 첫째 주장은 $M=L=A^m$인 경우로
+귀착된다.
+
+\oldpage[0\textsubscript{I}]{78}
+
+그런데 이 경우
+\[
+  \operatorname{Hom}_A(L,N)=N^m,
+  \qquad
+  \operatorname{Hom}_A(L,\mathfrak J^{i+1}N)
+  =(\mathfrak J^{i+1}N)^m
+  =\mathfrak J^{i+1}N^m,
+\]
+이므로 결과는 명백하다. 둘째 주장을 보이기 위하여
+$\operatorname{Hom}_A(M,\mathfrak J^{i+1}N)$의
+$\operatorname{Hom}_{A_j}(M_j,N_j)$에서의 상은 $j\leq i$일 때
+$0$임을 주목하자. 따라서 $\varphi$는 연속이다. 역으로
+$\operatorname{Hom}_{A_i}(M_i,N_i)$의 $0$의
+$\operatorname{Hom}_A(M,N)$에서의 역상은
+$\operatorname{Hom}_A(M,\mathfrak J^{i+1}N)$이므로
+$\varphi$는 쌍연속이다.
+
+$A$가 뇌터 $\mathfrak J$-준아딕환이고 $M,N$이
+$\mathfrak J$-준아딕 위상에 관하여 분리인 두 유한형 $A$-가군이라고만
+가정해도, 앞의 증명은 (7.8.2)의 첫째 주장이 그대로 성립하며
+$\varphi$가 $\operatorname{Hom}_A(M,N)$에서
+\[
+  \varprojlim_i\operatorname{Hom}_{A_i}(M_i,N_i)
+\]
+의 한 부분가군 위로 가는 위상동형임을 보인다.
+
+\begin{proposition}[7.8.3]
+\label{0.7.8.3-ko}
+(7.8.2)의 가정 아래에서 $M$에서 $N$으로 가는 단사 준동형들의 집합은
+$\operatorname{Hom}_A(M,N)$의 열린 부분집합이다. 전사 준동형들과
+전단사 준동형들의 집합도 마찬가지이다.
+\end{proposition}
+
+실제로 (7.3.5)와 (7.1.14)에 따라 $u$가 전사일 필요충분조건은 대응하는
+준동형
+\[
+  u_0:M/\mathfrak JM\longrightarrow N/\mathfrak JN
+\]
+이 전사인 것이다. 따라서 $M$에서 $N$으로 가는 전사 준동형들의
+집합은 연속 사상
+\[
+  \operatorname{Hom}_A(M,N)
+  \longrightarrow
+  \operatorname{Hom}_{A_0}(M_0,N_0)
+\]
+에 의한 이산공간의 한 부분집합의 역상이다.
+
+이제 단사 준동형들의 집합이 열림을 보이자. 그러한 준동형 $v$를 잡고
+$M'=v(M)$으로 놓자. 아르틴--리스 보조정리(7.3.2.1)에 따라 모든
+$m>0$에 대하여
+\[
+  M'\cap\mathfrak J^{m+k}N\subset\mathfrak J^mM'
+\]
+를 만족하는 정수 $k\geq0$이 존재한다. 이제
+$w\in\mathfrak J^{k+1}\operatorname{Hom}_A(M,N)$이면
+$u=v+w$가 단사임을 보이겠다. 그러면 증명이 끝난다.
+
+실제로 $u(x)=0$인 $x\in M$을 잡자. 모든 $i\geq0$에 대하여
+$x\in\mathfrak J^iM$이면 $x\in\mathfrak J^{i+1}M$임을 보이겠다.
+그러면
+\[
+  x\in\bigcap_{i\geq0}\mathfrak J^iM=(0)
+\]
+이 되어 충분하다. 그런데
+$w(x)\in\mathfrak J^{i+k+1}N$이고 다른 한편
+$w(x)=-v(x)\in M'$이다. 따라서
+\[
+  v(x)\in
+  M'\cap\mathfrak J^{i+k+1}N
+  \subset\mathfrak J^{i+1}M'.
+\]
+$v$는 $M$에서 $M'$ 위로 가는 동형이므로
+$x\in\mathfrak J^{i+1}M$이다. 증명이 끝났다.
+
+\begin{flushright}
+\emph{(계속.)}
+\end{flushright}

@@ -1,0 +1,697 @@
+% Authority: EGA I ega1-4-fr.tex, whole-file SHA-256 A5F5CDAC81E654E9ABA75BBFEAD24F3010B122452C689B9EBAB5A7711B454EC1.
+% Sequential coverage in this file: authority lines 1-395, complete subsections 4.1-4.2.
+\section{부분준스킴과 몰입 사상}
+\label{section:I.4-ko}
+
+\subsection{부분준스킴}
+\label{subsection:I.4.1-ko}
+
+\begin{env}[4.1.1]
+\label{I.4.1.1-ko}
+준연접층이라는 개념은 국소적이므로
+(\hyperref[0.5.1.3-ko]{0, 5.1.3}), 준스킴 $X$ 위의 준연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$는 다음 조건으로 정의할 수 있다.
+$X$의 모든 아핀 열린집합 $V$에 대하여 $\mathscr{F}|V$는 어떤
+$\Gamma(V,\mathscr{O}_X)$-가군에 대응하는 층과 동형이다
+(\hyperref[I.1.4.1-ko]{1.4.1}). 준스킴 $X$ 위에서 구조층
+$\mathscr{O}_X$가 준연접이고, 준연접 $\mathscr{O}_X$-가군 사이의
+준동형의 핵, 여핵, 상과 준연접 $\mathscr{O}_X$-가군들의 귀납극한과
+직합이 모두 준연접임은 자명하다
+(\hyperref[I.1.3.7-ko]{1.3.7} 및
+\hyperref[I.1.3.9-ko]{1.3.9}).
+\end{env}
+
+\begin{proposition}[4.1.2]
+\label{I.4.1.2-ko}
+$X$를 준스킴, $\mathscr{I}$를 $\mathscr{O}_X$의 준연접 아이디얼층이라
+하자. 그러면 층 $\mathscr{O}_X/\mathscr{I}$의 지지집합 $Y$는 닫혀
+있다. $\mathscr{O}_Y$를 $\mathscr{O}_X/\mathscr{I}$의 $Y$로의
+제한이라 하면 $(Y,\mathscr{O}_Y)$는 준스킴이다.
+\end{proposition}
+
+\oldpage[I]{120}
+(\hyperref[I.2.1.3-ko]{2.1.3})에 따라 $X$가 아핀 스킴인 경우만
+생각하고, 이 경우 $Y$가 $X$에서 닫혀 있으며 \emph{아핀 스킴}임을
+보이면 충분하다. 실제로 $X=\operatorname{Spec}(A)$이면
+$\mathscr{O}_X=\widetilde{A}$이고
+$\mathscr{I}=\widetilde{\mathfrak{I}}$이다. 여기서 $\mathfrak{I}$는
+$A$의 아이디얼이다(\hyperref[I.1.4.1-ko]{1.4.1}). 이때 $Y$는
+$X$의 닫힌 부분집합 $V(\mathfrak{I})$와 같고, 환
+$B=A/\mathfrak{I}$의 소 스펙트럼과 동일시된다
+(\hyperref[I.1.1.11-ko]{1.1.11}). 또한 $\varphi$가 표준 준동형
+$A\to B=A/\mathfrak{I}$이면, 직상
+${}^a\varphi_*(\widetilde{B})$는 층
+$\widetilde{A}/\widetilde{\mathfrak{I}}
+=\mathscr{O}_X/\mathscr{I}$와 표준적으로 동일시된다
+(\hyperref[I.1.6.3-ko]{1.6.3} 및
+\hyperref[I.1.3.9-ko]{1.3.9}). 이로써 증명이 끝난다.
+
+$(Y,\mathscr{O}_Y)$를 \emph{아이디얼층 $\mathscr{I}$에 의해 정의되는}
+$(X,\mathscr{O}_X)$의 \emph{부분준스킴}이라 한다. 이는 다음과 같은
+일반적인 \emph{부분준스킴} 개념의 특수한 경우이다.
+
+\begin{definition}[4.1.3]
+\label{I.4.1.3-ko}
+환 달린 공간 $(Y,\mathscr{O}_Y)$가 다음 조건들을 만족하면 이를
+준스킴 $(X,\mathscr{O}_X)$의 \emph{부분준스킴}이라 한다.
+\begin{enumerate}
+  \item[$1^\circ$] $Y$는 $X$의 국소 닫힌 부분공간이다.
+  \item[$2^\circ$] $U$를 $Y$를 포함하며 그 안에서 $Y$가 닫혀 있는
+  $X$의 가장 큰 열린집합이라 하자. 다시 말해 $U$는 $X$에서
+  $\overline{Y}$ 안에서의 $Y$의 경계를 뺀 집합이다. 그러면
+  $(Y,\mathscr{O}_Y)$는 $\mathscr{O}_X|U$의 어떤 준연접 아이디얼층에
+  의해 정의되는 $(U,\mathscr{O}_X|U)$의 닫힌 부분준스킴이다.
+\end{enumerate}
+$X$의 부분준스킴 $(Y,\mathscr{O}_Y)$에서 $Y$가 $X$ 안에서 닫혀
+있으면 $(Y,\mathscr{O}_Y)$를 $X$의 \emph{닫힌} 부분준스킴이라 한다.
+이 경우 $U=X$이다.
+\end{definition}
+
+이 정의와 (\hyperref[I.4.1.2-ko]{4.1.2})에서 $X$의 닫힌
+부분준스킴들과 $\mathscr{O}_X$의 준연접 아이디얼층
+$\mathscr{J}$들 사이에 \emph{표준적인 전단사 대응}이 있음을 곧바로
+알 수 있다. 실제로 그러한 두 층 $\mathscr{J}$, $\mathscr{J}'$의
+지지집합이 같은 닫힌집합 $Y$이고, $\mathscr{O}_X/\mathscr{J}$와
+$\mathscr{O}_X/\mathscr{J}'$의 $Y$로의 제한이 서로 같으면 곧
+$\mathscr{J}'=\mathscr{J}$이다.
+
+\begin{env}[4.1.4]
+\label{I.4.1.4-ko}
+$(Y,\mathscr{O}_Y)$를 $X$의 부분준스킴, $U$를 $Y$를 포함하며 그
+안에서 $Y$가 닫혀 있는 $X$의 가장 큰 열린집합, $V$를 $U$에
+포함되는 $X$의 열린집합이라 하자. 그러면 $V\cap Y$는 $V$ 안에서
+닫혀 있다. 또한 $Y$가 $\mathscr{O}_X|U$의 준연접 아이디얼층
+$\mathscr{J}$에 의해 정의되면, $\mathscr{J}|V$는
+$\mathscr{O}_X|V$의 준연접 아이디얼층이고, $Y$가 $Y\cap V$ 위에
+유도하는 준스킴은 아이디얼층 $\mathscr{J}|V$에 의해 정의되는
+$V$의 닫힌 부분준스킴임이 자명하다. 역으로 다음이 성립한다.
+\end{env}
+
+\begin{proposition}[4.1.5]
+\label{I.4.1.5-ko}
+$(Y,\mathscr{O}_Y)$를 환 달린 공간이라 하자. $Y$가 $X$의 부분공간이고,
+$Y$를 덮는 $X$의 열린집합족 $(V_\alpha)$가 존재하여 모든
+$\alpha$에 대하여 $Y\cap V_\alpha$가 $V_\alpha$ 안에서 닫혀 있으며
+환 달린 공간
+$(Y\cap V_\alpha,\mathscr{O}_Y|(Y\cap V_\alpha))$가 $X$가
+$V_\alpha$ 위에 유도하는 준스킴의 닫힌 부분준스킴이라고 하자.
+그러면 $(Y,\mathscr{O}_Y)$는 $X$의 부분준스킴이다.
+\end{proposition}
+
+가정에 따라 $Y$는 $X$ 안에서 국소 닫혀 있다. 또한 $Y$를 포함하며
+그 안에서 $Y$가 닫혀 있는 가장 큰 열린집합 $U$는 모든
+$V_\alpha$를 포함한다. 따라서 $U=X$이고 $Y$가 $X$ 안에서 닫힌
+경우로 귀착할 수 있다. 이제 $\mathscr{O}_X$의 준연접 아이디얼층
+$\mathscr{J}$를 다음과 같이 정의한다. $\mathscr{J}|V_\alpha$는 닫힌
+부분준스킴
+$(Y\cap V_\alpha,\mathscr{O}_Y|(Y\cap V_\alpha))$를 정의하는
+$\mathscr{O}_X|V_\alpha$의 아이디얼층으로 잡고, $Y$와 만나지 않는
+$X$의 모든 열린집합 $W$에 대해서는
+$\mathscr{J}|W=\mathscr{O}_X|W$로 잡는다.
+(\hyperref[I.4.1.3-ko]{4.1.3})과
+(\hyperref[I.4.1.4-ko]{4.1.4})에 따라 이 조건들을 만족하는
+아이디얼층 $\mathscr{J}$가 하나뿐임을 곧바로 확인할 수 있으며, 이
+층은 닫힌 부분준스킴 $(Y,\mathscr{O}_Y)$를 정의한다.
+
+특히 $X$가 $X$의 어떤 \emph{열린집합} 위에 \emph{유도하는}
+준스킴은 $X$의 \emph{부분준스킴}이다.
+
+\begin{proposition}[4.1.6]
+\label{I.4.1.6-ko}
+$X$의 부분\oldpage[I]{121}준스킴(각각 닫힌 부분준스킴)의
+부분준스킴(각각 닫힌 부분준스킴)은 $X$의 부분준스킴(각각 닫힌
+부분준스킴)과 표준적으로 동일시된다.
+\end{proposition}
+
+$X$의 국소 닫힌 부분공간의 국소 닫힌 부분집합은 $X$의 국소 닫힌
+부분공간이므로, 문제가 국소적임은 자명하다
+(\hyperref[I.4.1.5-ko]{4.1.5}). 따라서 $X$가 아핀이라고 가정해도
+된다. 이제 명제는 환 $A$의 두 아이디얼 $\mathfrak{J}$,
+$\mathfrak{J}'$가 $\mathfrak{J}\subset\mathfrak{J}'$을 만족할 때
+$A/\mathfrak{J}'$와
+$(A/\mathfrak{J})/(\mathfrak{J}'/\mathfrak{J})$를 표준적으로
+동일시할 수 있다는 사실에서 따른다.
+
+이후에는 언제나 앞의 동일시를 사용한다.
+
+\begin{env}[4.1.7]
+\label{I.4.1.7-ko}
+$Y$를 준스킴 $X$의 부분준스킴이라 하고, $Y$의 \emph{바탕공간}에서
+$X$의 바탕공간으로 가는 표준 단사사상을 $\psi:Y\to X$라 하자.
+역상 $\psi^*(\mathscr{O}_X)$는 제한 $\mathscr{O}_X|Y$임이 알려져
+있다(\hyperref[0.3.7.1-ko]{0, 3.7.1}). 모든 $y\in Y$에 대하여
+$\omega_y$를 표준 준동형
+$(\mathscr{O}_X)_y\to(\mathscr{O}_Y)_y$라 하자. 이 준동형들은 환의
+층 사이의 \emph{전사} 준동형
+$\omega:\mathscr{O}_X|Y\to\mathscr{O}_Y$가 줄기들에 유도하는
+준동형들이다. 실제로 이를 $Y$ 위에서 국소적으로 확인하면 충분하므로,
+$X$가 아핀이고 부분준스킴 $Y$가 닫힌 경우만 생각해도 된다. 이 경우
+$\mathscr{I}$가 $Y$를 정의하는 $\mathscr{O}_X$의 아이디얼층이면,
+$\omega_y$들은 준동형
+$\mathscr{O}_X|Y\to(\mathscr{O}_X/\mathscr{I})|Y$가 줄기들에
+유도하는 준동형들이다.
+
+따라서 \emph{환 달린 공간의 단사사상}
+$j=(\psi,\omega^b)$를 정의하였다
+(\hyperref[0.4.1.1-ko]{0, 4.1.1}). 이는 준스킴의 사상
+$Y\to X$임이 자명하며(\hyperref[I.2.2.1-ko]{2.2.1}), 이를
+\emph{표준 포함 사상}이라 한다.
+
+$f:X\to Z$가 사상이면 합성사상
+$Y\xrightarrow{j}X\xrightarrow{f}Z$도 부분준스킴 $Y$에 대한
+$f$의 \emph{제한}이라 한다.
+\end{env}
+
+\begin{env}[4.1.8]
+\label{I.4.1.8-ko}
+일반적인 정의(T, I, 1.1)에 따라, 준스킴의 사상 $f:Z\to X$가
+$X$의 부분준스킴 $Y$의 포함 사상 $j:Y\to X$를 \emph{통하여
+인수분해된다}고 함은
+$f$가 $Z\xrightarrow{g}Y\xrightarrow{j}X$로 인수분해된다는 뜻이다.
+여기서 $g$는 준스킴의 사상이며, $j$가 단사사상이므로 $g$는 반드시
+\emph{유일}하다.
+\end{env}
+
+\begin{proposition}[4.1.9]
+\label{I.4.1.9-ko}
+사상 $f:Z\to X$가 \emph{포함 사상 $j:Y\to X$를 통하여
+인수분해되기} 위한 필요충분조건은 다음과 같다. $f(Z)\subset Y$이고,
+모든 $z\in Z$에 대하여 $y=f(z)$로 놓으면 $f$에 대응하는 준동형
+$(\mathscr{O}_X)_y\to\mathscr{O}_z$가
+$(\mathscr{O}_X)_y\to(\mathscr{O}_Y)_y\to\mathscr{O}_z$로
+인수분해된다. 동치로, $(\mathscr{O}_X)_y\to\mathscr{O}_z$의 핵은
+$(\mathscr{O}_X)_y\to(\mathscr{O}_Y)_y$의 핵을 포함한다.
+\end{proposition}
+
+이 조건들이 필요함은 자명하다. 충분함을 보이기 위해, 필요하다면
+$X$를 $Y$가 그 안에서 닫히는 열린집합 $U$로 바꾸어
+(\hyperref[I.4.1.3-ko]{4.1.3}) $Y$가 $X$의 \emph{닫힌}
+부분준스킴인 경우로 귀착할 수 있다. 이때 $Y$는
+$\mathscr{O}_X$의 준연접 아이디얼층 $\mathscr{I}$에 의해 정의된다.
+$f=(\psi,\theta)$로 놓고, $\mathscr{J}$를
+$\theta^\sharp:\psi^*(\mathscr{O}_X)\to\mathscr{O}_Z$의 핵인
+$\psi^*(\mathscr{O}_X)$의 아이디얼층이라 하자. 함자 $\psi^*$의
+성질(\hyperref[0.3.7.2-ko]{0, 3.7.2})을 고려하면, 가정에 따라 모든
+$z\in Z$에 대하여
+$(\psi^*(\mathscr{I}))_z\subset\mathscr{J}_z$이고, 따라서
+$\psi^*(\mathscr{I})\subset\mathscr{J}$이다. 그러므로
+$\theta^\sharp$은 다음과 같이 인수분해된다.
+\[
+  \psi^*(\mathscr{O}_X)\longrightarrow
+  \psi^*(\mathscr{O}_X)/\psi^*(\mathscr{I})
+  =\psi^*(\mathscr{O}_X/\mathscr{I})
+  \xrightarrow{\omega}\mathscr{O}_Z.
+\]
+여기서 첫째 화살표는 표준 준동형이다. $\psi'$을 $Y$의 $X$ 안으로의
+포함과 합성하면 $\psi$가 되는 연속사상 $Z\to Y$라 하자. 그러면
+${\psi'}^*(\mathscr{O}_Y)=\psi^*(\mathscr{O}_X/\mathscr{I})$임은
+자명하다. 한편 $\omega$는 국소 준동형임이 자명하므로
+$g=(\psi',\omega^b)$는 준스킴의 사상 $Z\to Y$이다
+\oldpage[I]{122}
+(\hyperref[I.2.2.1-ko]{2.2.1}). 앞에서 본 바에 따라 $f=j\circ g$이므로
+명제가 증명되었다.
+
+\begin{corollary}[4.1.10]
+\label{I.4.1.10-ko}
+포함 사상 $Z\to X$가 \emph{포함 사상 $Y\to X$를 통하여
+인수분해되기} 위한 필요충분조건은 $Z$가 $Y$의 부분준스킴인 것이다.
+\end{corollary}
+
+이때 $Z\leq Y$라고 쓰며, 이 관계는 $X$의 부분준스킴들의 집합 위의
+\emph{순서관계}임이 자명하다.
+
+\subsection{몰입 사상}
+\label{subsection:I.4.2-ko}
+
+\begin{definition}[4.2.1]
+\label{I.4.2.1-ko}
+사상 $f:Y\to X$가
+$Y\xrightarrow{g}Z\xrightarrow{j}X$로 인수분해되고, 여기서 $g$가
+동형사상, $Z$가 $X$의 부분준스킴(각각 닫힌 부분준스킴, 열린집합 위에
+유도된 부분준스킴), $j$가 포함 사상이면 $f$를 \emph{몰입 사상}(각각
+\emph{닫힌 몰입 사상}, \emph{열린 몰입 사상})이라 한다.
+\end{definition}
+
+이때 부분준스킴 $Z$와 동형사상 $g$는 \emph{유일하게} 결정된다. 실제로
+$Z'$이 $X$의 또 다른 부분준스킴이고, $j'$이 포함 사상 $Z'\to X$이며,
+$g'$이 $j\circ g=j'\circ g'$을 만족하는 동형사상 $Y\to Z'$이라고 하자.
+그러면 $j'=j\circ g\circ {g'}^{-1}$이므로
+$Z'\leq Z$이고(\hyperref[I.4.1.10-ko]{4.1.10}), 같은 방법으로
+$Z\leq Z'$를 보일 수 있다. 따라서 $Z'=Z$이고, $j$가 준스킴의
+단사사상이므로 $g'=g$이다.
+
+$f=j\circ g$를 몰입 사상 $f$의 \emph{표준 인수분해}라 하고,
+부분준스킴 $Z$와 동형사상 $g$를 \emph{$f$에 대응하는 것들}이라 한다.
+
+몰입 사상은 준스킴의 \emph{단사사상}이고
+(\hyperref[I.4.1.7-ko]{4.1.7}), \emph{따라서 특히} \emph{라디시엘 사상}임은
+자명하다(\hyperref[I.3.5.4-ko]{3.5.4}).
+
+\begin{proposition}[4.2.2]
+\label{I.4.2.2-ko}
+\begin{enumerate}
+  \item[a)] 사상 $f=(\psi,\theta):Y\to X$가 \emph{열린 몰입 사상}이기
+  위한 필요충분조건은, $\psi$가 $Y$에서 $X$의 열린 부분집합으로 가는
+  위상동형이고 모든 $y\in Y$에 대하여 준동형
+  $\theta_y^\sharp:\mathscr{O}_{\psi(y)}\to\mathscr{O}_y$가
+  전단사인 것이다.
+  \item[b)] 사상 $f=(\psi,\theta):Y\to X$가 \emph{몰입 사상}(각각
+  \emph{닫힌 몰입 사상})이기 위한 필요충분조건은, $\psi$가 $Y$에서
+  $X$의 국소 닫힌(각각 닫힌) 부분집합으로 가는 위상동형이고 모든
+  $y\in Y$에 대하여 준동형
+  $\theta_y^\sharp:\mathscr{O}_{\psi(y)}\to\mathscr{O}_y$가 전사인
+  것이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{enumerate}
+  \item[a)] 조건들이 필요함은 자명하다. 역으로 이 조건들이 성립하면
+  $\theta^\sharp:\psi^*(\mathscr{O}_X)\to\mathscr{O}_Y$가 동형임이
+  분명하다. 또한 $\psi^*(\mathscr{O}_X)$는
+  $\mathscr{O}_X|\psi(Y)$에서 $\psi^{-1}$을 써서 구조를 옮겨 얻은
+  층이므로 결론이 따른다.
+  \item[b)] 조건들이 필요함은 자명하므로, 이제 충분함을 증명하자.
+  먼저 $X$가 아핀 스킴이고 $Z=\psi(Y)$가 $X$ 안에서 \emph{닫혀}
+  있다고 가정하는 특수한 경우를 생각하자.
+  (\hyperref[0.3.4.6-ko]{0, 3.4.6})에 따라
+  $\psi_*(\mathscr{O}_Y)$의 지지집합은 $Z$이고, 이 층의 $Z$로의
+  제한을 $\mathscr{O}'_Z$라 하면 환 달린 공간
+  $(Z,\mathscr{O}'_Z)$는 $Y$에서 $Z$로 가는 위상동형으로 본 $\psi$를
+  써서 $(Y,\mathscr{O}_Y)$의 구조를 옮겨 얻는다.
+
+  이제 $f_*(\mathscr{O}_Y)=\psi_*(\mathscr{O}_Y)$가 \emph{준연접}
+  $\mathscr{O}_X$-가군임을 보이자. 실제로 $x\notin Z$이면
+  $\psi_*(\mathscr{O}_Y)$는 $x$의 적당한 근방에 제한했을 때 영이다.
+  반대로 $x\in Z$이면 유일하게 정해지는 $y\in Y$에 대하여
+  $x=\psi(y)$이다. $V$를 $Y$에서 $y$의 아핀 열린 근방이라 하자.
+  그러면 $\psi(V)$는 $Z$에서 열려 있으므로, $X$의 어떤 열린집합
+  $U$와 $Z$의 교집합이다. $\psi_*(\mathscr{O}_Y)$의 $U$로의 제한은
+  직\oldpage[I]{123}상 $(\psi_V)_*(\mathscr{O}_Y|V)$의 $U$로의 제한과 같다. 여기서
+  $\psi_V$는 $\psi$의 $V$로의 제한이다.
+  한편 사상 $(\psi,\theta)$의 $(V,\mathscr{O}_Y|V)$로의 제한은 이
+  준스킴에서 $(X,\mathscr{O}_X)$로 가는 사상이므로
+  $({}^a\varphi,\widetilde{\varphi})$ 꼴이다. 여기서 $\varphi$는 환
+  $A=\Gamma(X,\mathscr{O}_X)$에서 환
+  $\Gamma(V,\mathscr{O}_Y)$로 가는 준동형이다
+  (\hyperref[I.1.7.3-ko]{1.7.3}). 따라서
+  $(\psi_V)_*(\mathscr{O}_Y|V)$는 준연접 $\mathscr{O}_X$-가군이고
+  (\hyperref[I.1.6.3-ko]{1.6.3}), 준연접층이라는 조건이 국소적이므로
+  앞의 주장이 증명된다.
+
+  더 나아가 $\psi$가 위상동형이라는 가정에서 모든 $y\in Y$에 대하여
+  $\psi_y:(\psi_*(\mathscr{O}_Y))_{\psi(y)}\to\mathscr{O}_y$가
+  동형임이 따른다(\hyperref[0.3.4.5-ko]{0, 3.4.5}). 도표
+  \phantomsection\label{I.4.2.2.theta-diagram-ko}
+  \[
+    \xymatrix{
+      \mathscr{O}_{\psi(y)}\ar[r]^{\theta_{\psi(y)}}
+        \ar[d]_{\psi_y\circ\rho_{\psi(y)}} &
+      (\psi_*(\mathscr{O}_Y))_{\psi(y)}\ar[d]^{\psi_y}\\
+      (\psi^*(\mathscr{O}_X))_y\ar[r]^{\theta_y^\sharp} &
+      \mathscr{O}_y
+    }
+  \]
+  는 가환하고 두 세로 화살표는 동형이므로
+  (\hyperref[0.3.7.2-ko]{0, 3.7.2}), $\theta_y^\sharp$이 전사라는
+  가정에서 $\theta_{\psi(y)}$도 전사임이 따른다. 한편
+  $\psi_*(\mathscr{O}_Y)$의 지지집합이 $Z=\psi(Y)$이므로,
+  $\theta$는 $\mathscr{O}_X=\widetilde{A}$에서 준연접
+  $\mathscr{O}_X$-가군 $f_*(\mathscr{O}_Y)$로 가는 \emph{전사}
+  준동형이다. 따라서 어떤 $A$의 아이디얼 $\mathfrak{J}$와 유일한
+  동형 $\omega:\widetilde{A}/\widetilde{\mathfrak{J}}
+  \to f_*(\mathscr{O}_Y)$이 존재하여, $\omega$를 표준 준동형
+  $\widetilde{A}\to\widetilde{A}/\widetilde{\mathfrak{J}}$와 합성하면
+  $\theta$가 된다(\hyperref[I.1.3.8-ko]{1.3.8}).
+  $\mathscr{O}_Z$를
+  $\widetilde{A}/\widetilde{\mathfrak{J}}$의 $Z$로의 제한이라 하면
+  $(Z,\mathscr{O}_Z)$는 $(X,\mathscr{O}_X)$의 부분준스킴이다.
+  또한 $f$는 이 부분준스킴의 $X$ 안으로의 표준 포함 사상과 동형사상
+  $(\psi_0,\omega_0)$을 거쳐 인수분해된다. 여기서 $\psi_0$는
+  $Y$에서 $Z$로 가는 사상으로 본 $\psi$이고, $\omega_0$은
+  $\omega$의 $\mathscr{O}_Z$로의 제한이다.
+
+  이제 일반적인 경우를 생각하자. $U$를 $X$의 아핀 열린집합으로서
+  $U\cap\psi(Y)$가 $U$ 안에서 닫혀 있고 공집합이 아닌 것으로 잡자.
+  $f$를 열린집합 $\psi^{-1}(U)$ 위에서 $Y$가 유도하는 준스킴으로
+  제한하고, 이를 $U$ 위에서 $X$가 유도하는 준스킴으로 가는 사상으로
+  보면 첫째 경우로 귀착된다. 따라서 $f$의 $\psi^{-1}(U)$로의 제한은
+  닫힌 몰입 사상 $\psi^{-1}(U)\to U$이고, 표준적으로
+  $j_U\circ g_U$로 인수분해된다. 여기서 $g_U$는
+  $\psi^{-1}(U)$에서 $U$의 부분준스킴 $Z_U$로 가는 동형사상이고,
+  $j_U$는 표준 포함 사상 $Z_U\to U$이다.
+
+  $V\subset U$인 $X$의 또 다른 아핀 열린집합 $V$를 잡자. $Z_U$의
+  $V$로의 제한 $Z'_V$는 준스킴 $V$의 부분준스킴이므로, $f$의
+  $\psi^{-1}(V)$로의 제한은 $j'_V\circ g'_V$로 인수분해된다. 여기서
+  $j'_V$는 표준 포함 사상 $Z'_V\to V$이고, $g'_V$는
+  $\psi^{-1}(V)$에서 $Z'_V$로 가는 동형사상이다. 몰입 사상의 표준
+  인수분해가 유일하므로(\hyperref[I.4.2.1-ko]{4.2.1}) 반드시
+  $Z'_V=Z_V$이고 $g'_V=g_V$이다. 따라서
+  (\hyperref[I.4.1.5-ko]{4.1.5})에 따라 바탕공간이 $\psi(Y)$이고
+  모든 $U\cap\psi(Y)$로의 제한이 $Z_U$인 $X$의 부분준스킴 $Z$가
+  존재한다. 이때 $g_U$들은 각 $\psi^{-1}(U)$ 위에서 어떤 동형사상
+  $g:Y\to Z$의 제한이고, $f=j\circ g$이다. 여기서 $j$는 표준 포함
+  사상 $Z\to X$이다.
+\end{enumerate}
+
+\begin{corollary}[4.2.3]
+\label{I.4.2.3-ko}
+$X$를 아핀 스킴이라 하자. 사상 $f=(\psi,\theta):Y\to X$가 닫힌
+몰입 사상이기 위한 필요충분조건은 $Y$가 아핀 스킴이고 준동형
+$\Gamma(\theta):\Gamma(\mathscr{O}_X)\to\Gamma(\mathscr{O}_Y)$가
+전사인 것이다.
+\end{corollary}
+
+\begin{corollary}[4.2.4]
+\label{I.4.2.4-ko}
+\begin{enumerate}
+  \item[a)] $f:Y\to X$를 사상, $(V_\lambda)$를 $X$의 열린집합들로
+  이루어진 $f(Y)$의 덮개라 하자. $f$가 몰입 사상(각각 열린 몰입
+  사상)이기 위한 필요충분조건은
+  \oldpage[I]{124}
+  각 유도 준스킴
+  $f^{-1}(V_\lambda)$로의 제한이 $V_\lambda$ 안으로의 몰입 사상
+  (각각 열린 몰입 사상)인 것이다.
+  \item[b)] $f:Y\to X$를 사상, $(V_\lambda)$를 $X$의 열린덮개라
+  하자. $f$가 닫힌 몰입 사상이기 위한 필요충분조건은 각 유도
+  준스킴 $f^{-1}(V_\lambda)$로의 제한이 $V_\lambda$ 안으로의 닫힌
+  몰입 사상인 것이다.
+\end{enumerate}
+\end{corollary}
+
+$f=(\psi,\theta)$라 하자. a)의 경우 모든 $y\in Y$에 대하여
+$\theta_y^\sharp$은 전사(각각 전단사)이고, b)의 경우 모든 $y\in Y$에
+대하여 $\theta_y^\sharp$은 전사이다. 따라서 a)의 경우 $\psi$가
+$Y$에서 $X$의 국소 닫힌(각각 열린) 부분집합으로 가는 위상동형이고,
+b)의 경우 $Y$에서 $X$의 닫힌 부분집합으로 가는 위상동형임만 확인하면
+충분하다. 그런데 가정에 따라 $\psi$는 자명하게 단사이고, 모든
+$y\in Y$에 대하여 $Y$에서 $y$의 모든 근방을 $\psi(Y)$에서
+$\psi(y)$의 근방으로 보낸다. a)의 경우
+$\psi(Y)\cap V_\lambda$는 $V_\lambda$에서 국소 닫혀(각각 열려)
+있으므로 $\psi(Y)$는 $V_\lambda$들의 합집합에서 국소 닫혀(각각 열려)
+있고, \emph{따라서 특히} $X$에서도 그러하다. b)의 경우
+$\psi(Y)\cap V_\lambda$는 $V_\lambda$에서 닫혀 있으므로
+$X=\bigcup_\lambda V_\lambda$에서 $\psi(Y)$는 닫혀 있다.
+
+\begin{proposition}[4.2.5]
+\label{I.4.2.5-ko}
+두 몰입 사상(각각 두 열린 몰입 사상, 두 닫힌 몰입 사상)의 합성은
+몰입 사상(각각 열린 몰입 사상, 닫힌 몰입 사상)이다.
+\end{proposition}
+
+이는 (\hyperref[I.4.1.6-ko]{4.1.6})에서 곧바로 따른다.
+
+\subsection{몰입 사상의 곱}
+\label{subsection:I.4.3-ko}
+
+\begin{proposition}[4.3.1]
+\label{I.4.3.1-ko}
+$\alpha:X'\to X$, $\beta:Y'\to Y$를 두 $S$-사상이라 하자. $\alpha$와
+$\beta$가 몰입 사상(각각 열린 몰입 사상, 닫힌 몰입 사상)이면
+$\alpha\times_S\beta$도 몰입 사상(각각 열린 몰입 사상, 닫힌 몰입
+사상)이다. 더욱이 $\alpha$(각각 $\beta$)가 $X'$(각각 $Y'$)를
+$X$(각각 $Y$)의 부분준스킴 $X''$(각각 $Y''$)와 동일시한다면,
+$\alpha\times_S\beta$는 $X'\times_S Y'$의 바탕공간을
+$X\times_S Y$의 바탕공간의 부분공간
+$p^{-1}(X'')\cap q^{-1}(Y'')$와 동일시한다. 여기서 $p$와 $q$는 각각
+$X\times_S Y$에서 $X$와 $Y$로 가는 사영이다.
+\end{proposition}
+
+정의 (\hyperref[I.4.2.1-ko]{4.2.1})을 고려하면 $X'$와 $Y'$가
+부분준스킴이고 $\alpha$와 $\beta$가 포함 사상인 경우로 한정할 수
+있다. 열린집합 위에 유도된 부분준스킴에 대해서는 이 명제가 이미
+(\hyperref[I.3.2.7-ko]{3.2.7})에서 증명되었다. 모든 부분준스킴은 어떤
+열린집합 위에 유도된 준스킴의 닫힌 부분준스킴이므로
+(\hyperref[I.4.1.3-ko]{4.1.3}), $X'$와 $Y'$가 \emph{닫힌}
+부분준스킴인 경우로 귀착된다.
+
+먼저 $S$가 \emph{아핀}이라고 가정할 수 있음을 보이자. 실제로
+$(S_\lambda)$를 아핀 열린집합들로 이루어진 $S$의 덮개라 하고,
+$\varphi$와 $\psi$를 $X$와 $Y$의 구조 사상이라 하자. 또
+$X_\lambda=\varphi^{-1}(S_\lambda)$,
+$Y_\lambda=\psi^{-1}(S_\lambda)$라 하자. $X'$의
+$X_\lambda\cap X'$로의 제한 $X'_\lambda$(각각 $Y'$의
+$Y_\lambda\cap Y'$로의 제한 $Y'_\lambda$)은 $X_\lambda$(각각
+$Y_\lambda$)의 닫힌 부분준스킴이다. 준스킴 $X_\lambda$,
+$Y_\lambda$, $X'_\lambda$, $Y'_\lambda$는 $S_\lambda$-준스킴으로
+볼 수 있고, 곱 $X_\lambda\times_S Y_\lambda$와
+$X_\lambda\times_{S_\lambda}Y_\lambda$(각각
+$X'_\lambda\times_S Y'_\lambda$와
+$X'_\lambda\times_{S_\lambda}Y'_\lambda$)는 동일하다
+(\hyperref[I.3.2.5-ko]{3.2.5}). $S$가 아핀일 때 명제가 참이라면,
+$\alpha\times_S\beta$를 각 $X'_\lambda\times_S Y'_\lambda$에
+제한한 사상은 몰입 사상이다(\hyperref[I.3.2.7-ko]{3.2.7}). 또한 곱
+$X'_\lambda\times_S Y'_\mu$(각각 $X_\lambda\times_S Y_\mu$)는
+$(X'_\lambda\cap X'_\mu)\times_S
+(Y'_\lambda\cap Y'_\mu)$(각각
+$(X_\lambda\cap X_\mu)\times_S(Y_\lambda\cap Y_\mu)$)와
+동일시되므로(\hyperref[I.3.2.6.4-ko]{3.2.6.4}),
+$\alpha\times_S\beta$
+\oldpage[I]{125}
+를 각 $X'_\lambda\times_S Y'_\mu$에 제한한 사상도 몰입 사상이다.
+따라서 (\hyperref[I.4.2.4-ko]{4.2.4})에 의해
+$\alpha\times_S\beta$ 자체도 몰입 사상이다.
+
+다음으로 $X$와 $Y$도 \emph{아핀}이라고 가정할 수 있음을 증명하자.
+실제로 $(U_i)$(각각 $(V_j)$)를 아핀 열린집합들로 이루어진 $X$(각각
+$Y$)의 덮개라 하고, $X'_i$(각각 $Y'_j$)를 $X'$의
+$X'\cap U_i$로의 제한(각각 $Y'$의 $Y'\cap V_j$로의 제한)이라 하자.
+이는 $U_i$(각각 $V_j$)의 닫힌 부분준스킴이다.
+$U_i\times_S V_j$는 $X\times_S Y$를
+$p^{-1}(U_i)\cap q^{-1}(V_j)$에 제한하여 얻은 준스킴과 동일시된다
+(\hyperref[I.3.2.7-ko]{3.2.7}). 마찬가지로 $p'$, $q'$가
+$X'\times_S Y'$의 사영이면 $X'_i\times_S Y'_j$는
+$X'\times_S Y'$를
+${p'}^{-1}(X'_i)\cap{q'}^{-1}(Y'_j)$에 제한하여 얻은 준스킴과
+동일시된다. $\gamma=\alpha\times_S\beta$라 놓자. 정의에 따라
+$p\circ\gamma=\alpha\circ p'$, $q\circ\gamma=\beta\circ q'$이고,
+$X'_i=\alpha^{-1}(U_i)$, $Y'_j=\beta^{-1}(V_j)$이므로
+${p'}^{-1}(X'_i)=\gamma^{-1}(p^{-1}(U_i))$,
+${q'}^{-1}(Y'_j)=\gamma^{-1}(q^{-1}(V_j))$도 성립한다. 따라서
+\[
+  {p'}^{-1}(X'_i)\cap{q'}^{-1}(Y'_j)
+  =\gamma^{-1}\bigl(p^{-1}(U_i)\cap q^{-1}(V_j)\bigr)
+  =\gamma^{-1}(U_i\times_S V_j).
+\]
+이제 첫째 부분의 논증과 같이 결론을 얻는다.
+
+그러므로 $X$, $Y$, $S$가 아핀이라고 가정하고, 그 환을 각각 $B$,
+$C$, $A$라 하자. 이때 $B$와 $C$는 $A$-대수이고, $X'$와 $Y'$는
+각각 $B$와 $C$의 몫대수 $B'$, $C'$를 환으로 갖는 아핀 스킴이다.
+또한 $\alpha=({}^a\rho,\widetilde{\rho})$,
+$\beta=({}^a\sigma,\widetilde{\sigma})$이고, 여기서 $\rho$와
+$\sigma$는 각각 표준 준동형 $B\to B'$, $C\to C'$이다
+(\hyperref[I.1.7.3-ko]{1.7.3}). 한편 $X\times_S Y$(각각
+$X'\times_S Y'$)는 $B\otimes_A C$(각각 $B'\otimes_A C'$)를 환으로
+갖는 아핀 스킴이고,
+$\alpha\times_S\beta=({}^a\tau,\widetilde{\tau})$이다. 여기서 $\tau$는
+$B\otimes_A C$에서 $B'\otimes_A C'$로 가는 준동형
+$\rho\otimes\sigma$이다(\hyperref[I.3.2.2-ko]{3.2.2}와
+\hyperref[I.3.2.3-ko]{3.2.3}). 이 준동형은 전사이므로
+$\alpha\times_S\beta$는 실제로 몰입 사상이다. 더욱이
+$\mathfrak{b}$(각각 $\mathfrak{c}$)가 $\rho$(각각 $\sigma$)의
+핵이면 $\tau$의 핵은
+$\operatorname{Im}(\mathfrak{b}\otimes_A C\to B\otimes_A C)
++\operatorname{Im}(B\otimes_A\mathfrak{c}\to B\otimes_A C)$이며, 이는
+$u(\mathfrak{b})$와 $v(\mathfrak{c})$가 생성하는 아이디얼들의 합과
+같다. 여기서 $u$(각각 $v$)는 준동형 $b\mapsto b\otimes1$(각각
+$c\mapsto1\otimes c$)이다. $p=({}^a u,\widetilde{u})$이고
+$q=({}^a v,\widetilde{v})$이므로, 이 핵은 $B\otimes_A C$의 소
+스펙트럼에서 닫힌집합 $p^{-1}(X')\cap q^{-1}(Y')$에 대응한다
+(\hyperref[I.1.2.2.1-ko]{1.2.2.1}과
+\hyperref[I.1.1.2-ko]{1.1.2 (iii)}). 이로써 증명이 끝난다.
+
+\begin{corollary}[4.3.2]
+\label{I.4.3.2-ko}
+$f:X\to Y$가 몰입 사상(각각 열린 몰입 사상, 닫힌 몰입 사상)이면서
+$S$-사상이면, 밑준스킴의 임의의 확장 $S'\to S$에 대하여
+$f_{(S')}$는 몰입 사상(각각 열린 몰입 사상, 닫힌 몰입 사상)이다.
+\end{corollary}
+
+\subsection{부분준스킴의 역상}
+\label{subsection:I.4.4-ko}
+
+\begin{proposition}[4.4.1]
+\label{I.4.4.1-ko}
+$f:X\to Y$를 사상, $Y'$를 $Y$의 부분준스킴(각각 닫힌 부분준스킴,
+열린집합 위에 유도된 준스킴), $j:Y'\to Y$를 포함 사상이라 하자.
+그러면 사영 $p:X\times_Y Y'\to X$는 몰입 사상(각각 닫힌 몰입 사상,
+열린 몰입 사상)이다. $p$에 대응하는 $X$의 부분준스킴은
+$f^{-1}(Y')$를 바탕공간으로 갖는다. 더욱이 $j'$를 이 부분준스킴에서
+$X$로 가는 포함 사상이라 하면, 사상 $h:Z\to X$에 대하여
+$f\circ h:Z\to Y$가 $j$를 통하여 인수분해되기 위한 필요충분조건은
+$h$가 $j'$를 통하여 인수분해되는 것이다.
+\end{proposition}
+
+$p=1_X\times_Y j$이므로(\hyperref[I.3.3.4-ko]{3.3.4}), 첫째 주장은
+(\hyperref[I.4.3.1-ko]{4.3.1})에서 따른다. 둘째 주장은
+(\hyperref[I.3.5.10-ko]{3.5.10})의 특수한 경우이다(여기서는 $X$와
+$Y'$의 역할을 서로 바꾸어야 한다). 끝으로 $h':Z\to Y'$인 사상
+$h'$에 대하여 $f\circ h=j\circ h'$이라면, 곱의 정의에서 어떤 사상
+$u:Z\to X\times_Y Y'$에 대하여 $h=p\circ u$임이 따른다. 따라서
+마지막 주장도 얻는다.
+
+이렇게 정의한 $X$의 부분준스킴을 사상 $f$에 의한 $Y'$의
+\emph{역상}이라 부른다. 이 용어는 앞서
+\oldpage[I]{126}
+(\hyperref[I.3.3.6-ko]{3.3.6})에서 더 일반적으로 도입한 용어와
+일치한다. $f^{-1}(Y')$를 $X$의 부분준스킴으로 말할 때에는 언제나 이
+부분준스킴을 뜻한다.
+
+준스킴 $f^{-1}(Y')$와 $X$가 동일하면 $j'$는 항등사상이고, 따라서
+모든 사상 $h:Z\to X$가 $j'$를 통하여 인수분해된다. 그러므로
+\emph{사상 $f:X\to Y$는 이때 다음과 같이 인수분해된다}:
+$X\xrightarrow{g}Y'\xrightarrow{j}Y$.
+
+$y$가 $Y$의 \emph{닫힌} 점이고
+$Y'=\operatorname{Spec}(k(y))$가 $\{y\}$를 바탕공간으로 갖는 $Y$의
+가장 작은 닫힌 부분준스킴이면(\hyperref[I.4.1.9-ko]{4.1.9}), 닫힌
+부분준스킴 $f^{-1}(Y')$는
+(\hyperref[I.3.6.2-ko]{3.6.2})에서 정의한 \emph{섬유} $f^{-1}(y)$와
+표준적으로 동형이며, 앞으로 둘을 동일시한다.
+
+\begin{corollary}[4.4.2]
+\label{I.4.4.2-ko}
+$f:X\to Y$, $g:Y\to Z$를 두 사상, $h=g\circ f$를 그 합성이라 하자.
+$Z$의 모든 부분준스킴 $Z'$에 대하여 $X$의 부분준스킴
+$f^{-1}(g^{-1}(Z'))$와 $h^{-1}(Z')$는 동일하다.
+\end{corollary}
+
+이는 표준 동형사상
+$X\times_Y(Y\times_Z Z')\xrightarrow{\sim}X\times_Z Z'$의 존재에서
+따른다(\hyperref[I.3.3.9.1-ko]{3.3.9.1}).
+
+\begin{corollary}[4.4.3]
+\label{I.4.4.3-ko}
+$X'$, $X''$를 $X$의 두 부분준스킴,
+$j':X'\to X$, $j'':X''\to X$를 포함 사상이라 하자. 그러면
+${j'}^{-1}(X'')$와 ${j''}^{-1}(X')$는 둘 다 부분준스킴 사이의
+순서관계에 관한 $X'$와 $X''$의 하한 $\inf(X',X'')$과 같고, 이
+하한은 $X'\times_X X''$와 표준적으로 동형이다.
+\end{corollary}
+
+이는 (\hyperref[I.4.4.1-ko]{4.4.1})과
+(\hyperref[I.4.1.10-ko]{4.1.10})에서 곧바로 따른다.
+
+\begin{corollary}[4.4.4]
+\label{I.4.4.4-ko}
+$f:X\to Y$를 사상, $Y'$, $Y''$를 $Y$의 두 부분준스킴이라 하자.
+그러면
+\[
+  f^{-1}(\inf(Y',Y''))=\inf(f^{-1}(Y'),f^{-1}(Y'')).
+\]
+\end{corollary}
+
+이는 $(X\times_Y Y')\times_X(X\times_Y Y'')$와
+$X\times_Y(Y'\times_Y Y'')$ 사이의 표준 동형사상이 존재함에서
+따른다(\hyperref[I.3.3.9.1-ko]{3.3.9.1}).
+
+\begin{proposition}[4.4.5]
+\label{I.4.4.5-ko}
+$f:X\to Y$를 사상, $Y'$를 $\mathscr{O}_Y$의 준연접 아이디얼층
+$\mathscr{K}$로 정의된 $Y$의 닫힌 부분준스킴이라 하자
+(\hyperref[I.4.1.3-ko]{4.1.3}). 그러면 $X$의 닫힌 부분준스킴
+$f^{-1}(Y')$는 $\mathscr{O}_X$의 준연접 아이디얼층
+$f^*(\mathscr{K})\mathscr{O}_X$로 정의된다.
+\end{proposition}
+
+{\raggedright
+문제는 $X$와 $Y$ 위에서 자명하게 국소적이다. 따라서 $A$가
+$B$-대수이고 $\mathfrak{K}$가 $B$의 아이디얼이면
+$A\otimes_B(B/\mathfrak{K})=A/\mathfrak{K}A$임을 관찰하고
+(\hyperref[I.1.6.9-ko]{1.6.9})를 적용하면 충분하다.\par}
+
+\begin{corollary}[4.4.6]
+\label{I.4.4.6-ko}
+$X'$를 $\mathscr{O}_X$의 준연접 아이디얼층 $\mathscr{J}$로 정의된
+$X$의 닫힌 부분준스킴, $i:X'\to X$를 포함 사상이라 하자. $f$를
+$X'$에 제한한 사상 $f\circ i$가 포함 사상 $j:Y'\to Y$를 통하여
+인수분해되기 위한(다시 말해 어떤 사상 $g:X'\to Y'$에 대하여
+$j\circ g$로 인수분해되기 위한) 필요충분조건은
+$f^*(\mathscr{K})\mathscr{O}_X\subset\mathscr{J}$인 것이다.
+\end{corollary}
+
+이는 명제 (\hyperref[I.4.4.1-ko]{4.4.1})을 $i$에 적용하되
+(\hyperref[I.4.4.5-ko]{4.4.5})를 고려하면 된다.
+
+\subsection{국소 몰입 사상과 국소 동형사상}
+\label{subsection:I.4.5-ko}
+
+\begin{definition}[4.5.1]
+\label{I.4.5.1-ko}
+준스킴의 사상 $f:X\to Y$가 \emph{점 $x\in X$에서 국소 몰입
+사상}이라는 것은 $X$에서 $x$의 열린 근방 $U$와 $Y$에서 $f(x)$의
+열린 근방 $V$가 존재하여, $U$ 위에 유도된 준스킴으로 $f$를 제한한
+사상이 $U$에서 $V$ 위에 유도된 준스킴으로 가는 닫힌 몰입 사상인
+것을 뜻한다. $f$가 $X$의 모든 점에서 국소 몰입 사상이면 $f$를 국소
+몰입 사상이라 한다.
+\end{definition}
+
+\begin{definition}[4.5.2]
+\label{I.4.5.2-ko}
+사상 $f:X\to Y$가
+\oldpage[I]{127}
+점 $x\in X$에서 국소 동형사상이라는 것은 $X$에서 $x$의 열린 근방
+$U$가 존재하여, $U$ 위에 유도된 준스킴으로 $f$를 제한한 사상이
+$U$에서 $Y$로 가는 열린 몰입 사상인 것을 뜻한다. $f$가 $X$의 모든
+점에서 국소 동형사상이면 $f$를 국소 동형사상이라 한다.
+\end{definition}
+
+\begin{env}[4.5.3]
+\label{I.4.5.3-ko}
+따라서 몰입 사상(각각 닫힌 몰입 사상) $f:X\to Y$는 국소 몰입
+사상이면서 $X$의 바탕공간에서 $Y$의 한 부분집합(각각 닫힌
+부분집합) 위로 가는 위상동형사상인 사상으로 특징지을 수 있다. 열린
+몰입 사상 $f$는 바탕사상이 \emph{단사인} 국소 동형사상으로 특징지을
+수 있다.
+\end{env}
+
+\begin{proposition}[4.5.4]
+\label{I.4.5.4-ko}
+$X$를 기약 준스킴, $f:X\to Y$를 바탕사상이 단사인 우세 사상이라
+하자. $f$가 국소 몰입 사상이면 $f$는 몰입 사상이고 $f(X)$는 $Y$에서
+열려 있다.
+\end{proposition}
+
+실제로 $x\in X$라 하고, $U$를 $x$의 열린 근방, $V$를 $Y$에서
+$f(x)$의 열린 근방이라 하여 $f$의 $U$로의 제한이 $V$ 안으로의 닫힌
+몰입 사상이 되게 하자. $U$는 $X$에서 조밀하고 가정에 따라 $f(U)$는
+$Y$에서 조밀하므로 $f(U)=V$이며, $f$는 $U$에서 $V$ 위로 가는
+위상동형사상이다. $f$의 바탕사상이 단사라는 가정에서
+$f^{-1}(V)=U$가 따르므로 명제를 곧바로 얻는다.
+
+\begin{proposition}[4.5.5]
+\label{I.4.5.5-ko}
+\begin{enumerate}
+  \item[\rm(i)] 두 국소 몰입 사상(각각 두 국소 동형사상)의 합성은
+    국소 몰입 사상(각각 국소 동형사상)이다.
+  \item[\rm(ii)] $f:X\to X'$, $g:Y\to Y'$를 두 $S$-사상이라 하자.
+    $f$와 $g$가 국소 몰입 사상(각각 국소 동형사상)이면
+    $f\times_S g$도 그러하다.
+  \item[\rm(iii)] $S$-사상 $f$가 국소 몰입 사상(각각 국소
+    동형사상)이면, 밑준스킴의 모든 확장 $S'\to S$에 대하여
+    $f_{(S')}$도 그러하다.
+\end{enumerate}
+\end{proposition}
+
+(\hyperref[I.3.5.1-ko]{3.5.1})에 따라 (i)와 (ii)만 증명하면 충분하다.
+
+(i)는 닫힌 몰입 사상(각각 열린 몰입 사상)의 추이성
+(\hyperref[I.4.2.5-ko]{4.2.5})과 다음 사실에서 곧바로 따른다. $f$가
+$X$에서 $Y$의 닫힌 부분집합 위로 가는 위상동형사상이면, 모든
+열린집합 $U\subset X$에 대하여 $f(U)$는 $f(X)$에서 열려 있으므로
+$f(U)=V\cap f(X)$가 되는 $Y$의 열린 부분집합 $V$가 존재하고, 따라서
+$f(U)$는 $V$에서 닫혀 있다.
+
+(ii)를 증명하자. $z\in X\times_S Y$를 임의의 점으로 택하고
+$z'=(f\times_S g)(z)\in X'\times_S Y'$라 하자. $p$, $q$를
+$X\times_S Y$의 사영, $p'$, $q'$를 $X'\times_S Y'$의 사영이라 하자.
+가정에 따라 $x=p(z)$, $x'=p'(z')$, $y=q(z)$, $y'=q'(z')$의 열린
+근방 $U$, $U'$, $V$, $V'$가 각각 존재하여, $f$와 $g$를 각각 $U$와
+$V$로 제한한 사상이 각각 $U'$와 $V'$ 안으로의 닫힌 몰입 사상(각각
+열린 몰입 사상)이 된다. $U\times_S V$와 $U'\times_S V'$의
+바탕공간은 각각 $z$와 $z'$의 열린 근방
+$p^{-1}(U)\cap q^{-1}(V)$와
+${p'}^{-1}(U')\cap{q'}^{-1}(V')$로 동일시되므로
+(\hyperref[I.3.2.7-ko]{3.2.7}), 명제는
+(\hyperref[I.4.3.1-ko]{4.3.1})에서 따른다.

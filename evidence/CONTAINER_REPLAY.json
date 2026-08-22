@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "release_reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1177111,
+    "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C"
+  },
+  "working_tree_reader": {
+    "path": "build/ega1/r137/main.pdf",
+    "bytes": 1177108,
+    "sha256": "CECF2B79F628CFC1EF522DA2BECE312F6DE6C43FEBE1E92DA3FF2C2E5F40FF7A"
+  },
+  "source_files_exact": true,
+  "comparison": {
+    "pages": 134,
+    "pypdf_text_exact_on_all_pages": true,
+    "pdftotext_extraction_exact": true,
+    "hangul_syllables_each": 121882,
+    "replacement_characters_each": 0,
+    "page2_200dpi_pixel_exact": true,
+    "pages132_to_134_200dpi_pixel_exact": true
+  },
+  "disposition": "The public-tree standalone replay is the canonical release container. The three-byte container-level difference from the working-tree build is confined to a compressed font stream; no text, page, inspected pixel, source, metadata claim or QA status differs."
+}
