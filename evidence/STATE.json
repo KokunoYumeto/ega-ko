@@ -15,6 +15,8 @@
   "exact_version_doi": "10.5281/zenodo.22051764",
   "exact_version_scope": "immutable release through proposition10.5.6; main working head is ahead and is not a new Zenodo version",
   "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "github_main_artifact_commit": "ded37140440fd0a585c0526e27b70ae5b4ff4d9f",
+  "artifact_commit_readback": "PASS: six direct raw files and complete anonymous111-row commit-archive manifest replay",
   "full_corpus_complete": false,
   "lean_used": false
 }

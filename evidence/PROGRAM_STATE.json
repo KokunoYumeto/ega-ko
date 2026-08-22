@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-state-v1",
-  "updated": "2026-08-22T06:21:21+02:00",
+  "updated": "2026-08-22T06:44:33+02:00",
   "owner_task": "019f757c-a43b-7ed0-b810-b8effdc5d904",
   "goal": "Complete and maintain a source-synchronized Korean translation programme in this strict order: first finish EGA I from the current canonical cursor through the end of the volume; second complete EGA II; third complete FGA. Do not begin SGA in this task. Korean SGA work is certain future work, but Floris will coordinate its structure and execution separately. Do not allow old summaries or previous broad goals to reintroduce SGA, Stacks, Emmy Noether, Lean, or unrelated corpora into this lane.\n\nTreat EGA III and every later EGA volume as conditionally queued, not presently authorized production. A later volume becomes eligible only when its complete project-canonical French transcription is demonstrably source-accurate: every page and structural unit is present, the canonical validation gate passes, material ambiguities and corrections are resolved or explicitly bounded, and no source span remains missing or provisional. Recheck readiness at the scheduled seven-day follow-up. Translate only the contiguous ready sequence beginning with EGA III. If III alone is ready, do III alone. If III and following volumes are ready, take them in canonical order and stop before the first incomplete volume. Never fill gaps from OCR, draft English, memory, inference, or another edition, and never start a volume merely because fragments exist.\n\nFor every admitted unit, preserve exact authority and target identities with stable paths, locators, byte counts, and SHA-256; preserve formulas, labels, references, citations, page markers, notes, hypotheses, quantifiers, map directions, object types, and source corrections. Keep French authority read-only. Correct genuine source defects only in the Korean downstream layer, classify their status accurately, and disclose substantive repairs without promoting an inference to an official erratum. Govern Korean terminology by mathematical sense and type, with Hangul-first South Korean register, direct math-particle attachment, stable spacing, and explicit distinctions between similarly named objects.\n\nCompletion requires editable Korean TeX in canonical source order, deterministic serial builds, stable late passes, zero critical diagnostics, usable extraction, font and ToUnicode integrity where applicable, and proportional rendered-page inspection. Keep source binding, translation/formula fidelity, build, extraction, visual QA, provenance, and publication state separate. Preserve immutable evidence and accepted checkpoints. Rebuild or re-audit only when bytes changed, a concrete defect was found, a required invariant was never covered, or publication readback demands it. Do not confuse repeated checking with rigor.\n\nAim hard at perfection: fidelity, mathematical typing, Korean clarity, reproducibility, provenance, and visual legibility should be as close to flawless as evidence permits. Also guard hard against perfectionism. Do not reopen sealed correct work for stylistic restlessness, rerun equivalent audits, generate speculative side projects, create pilots instead of completing the corpus, or delay validated progress for an unattainable feeling of certainty. Use proportional risk: inspect deeply where source meaning, formulas, corrections, page boundaries, typography, or publication bytes can fail; otherwise carry accepted evidence forward and advance once. Never manufacture work or claim completion without exact evidence, and never let a balanced but misordered or mistyped result pass.\n\nMaintain one external Korean EGA lineage rather than duplicate deposits. The public repository is https://github.com/KokunoYumeto/ega-ko. The Korean EGA concept DOI is https://doi.org/10.5281/zenodo.21921513 and the current published checkpoint is https://doi.org/10.5281/zenodo.22051764. Use these links as the outward continuity point in handoffs and future release metadata. Publish only substantively ready, validated checkpoints into the existing lineage, then perform public-byte and metadata readback. Do not imply that the private working head is public, and do not create a competing concept DOI or repository.\n\nThe immediate cursor remains EGA I. The task is complete only when EGA I, EGA II, and FGA have complete source-synchronized Korean editions satisfying these gates, plus any later EGA volumes admitted by the readiness rule. SGA remains out of scope until Floris supplies a separate coordination plan.",
   "mode": "full_production_no_pilot",
   "hardening": {
     "directive": "raw/u005.txt 2271 bytes / 2D69CEB50C5873FA89DA782337200FF3892525B9C8B49EE8A34F91F8ABA87A3C",
-    "workflow": "HARDENED.md 74713 bytes / 7D3F003F297EF8EB15CF6F94F1FA5F1A2D68B0B80B273982BDED7315FA76E491",
+    "workflow": "HARDENED.md 77253 bytes / EFEDA6C5166A43893D06F38E772A394691B67D08295505ADC49B75F4B3DB4F34",
     "rule": "ignore session compactions and summaries; reconstruct only from raw directive, hardened workflow, cursor/state/authority, append-only ledgers, and rehashed artifacts"
   },
   "active_corpus": "EGA",
@@ -81,15 +81,29 @@
     "text": "render/ega1/text.txt 599126 bytes / 21B762A06E384321DCD1F6C2D1BA97107E3A2E939A8878A39F2D40BFFBBB6098; pdftotext LF-normalized318904 characters / 123746 Hangul; render/ega1/text-pypdf.txt 567386 bytes / F3982E49DD373C32DF40996F473C46E3993C6FAD9B2553AA24913F937268EBB1; pypdf135 pages /306408 page-text characters /306542 serialized characters /123746 Hangul; replacement characters0"
   },
   "working_head": {
-    "state": "validated_local_pending_github_sync",
+    "state": "published_github_main_artifact_readback_pass",
     "coverage": "EGA I through complete proof of proposition10.6.3; next source line1047 corollary10.6.4",
     "pdf": "build/ega1/r140/main.pdf",
     "pages": 135,
     "bytes": 1190247,
     "sha256": "8E4159291995A08C7672E39834465CDDB466A54EBD25D55AE311A030F9904650",
     "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "decision": "AGKO-D110",
-    "evidence": "AGKO-E110",
+    "github_main_artifact_commit": "ded37140440fd0a585c0526e27b70ae5b4ff4d9f",
+    "public_reader": {
+      "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 135,
+      "bytes": 1190237,
+      "sha256": "EAE475AD613C2F80D62162D2A7DFC4A544E08391B0906A8BDFE32049B80D51B8"
+    },
+    "artifact_manifest": {
+      "path": "pub/ega-ko/evidence/ARTIFACT_SHA256.tsv",
+      "rows": 111,
+      "artifact_commit_bytes": 10701,
+      "artifact_commit_sha256": "4815D011469D18525DD13BCE16FDF5E7113143266A7B248877C94A80B5D758BF"
+    },
+    "readback": "PASS: artifact commit direct anonymous raw files6/6 and complete anonymous archive manifest replay111/111 at31091432 bytes / EBE1B1AD8FB418741E907F57365B895D8CC18A5F85D545E37C7333B0129C10CB",
+    "decision": "AGKO-D111",
+    "evidence": "AGKO-E111",
     "publication_policy": "push preservation-ready working files to the existing repository; reserve a new Zenodo exact version for a substantive non-spam cumulative checkpoint"
   },
   "previous_public_head": {
