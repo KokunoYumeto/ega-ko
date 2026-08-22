@@ -1,12 +1,12 @@
 {
   "schema": "ag-ko-cursor-v1",
-  "updated": "2026-08-22T02:44:03+02:00",
+  "updated": "2026-08-22T03:49:38+02:00",
   "corpus": "EGA",
   "volume": "I",
   "source": "source/ega1/ega1-10-fr.tex",
   "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "complete chapter1 sections1-9 and section10 heading plus subsections10.1-10.5.6 statement; source/ega1/ega1-10-fr.tex lines1-792 35616 bytes / 0418CB9047F44A3DA65F8C534049B7891B347998C395713EF6A4F35E87C1C32A; target ega/I/c1s10.tex lines1-767 EOF 37223 bytes / 2C86B0C1EDFE35DB59D8D7B44A40EED91F1DFFCBBB791639C7D4BF7789498A6D; deterministic134-page r137 head 1177108 bytes / CECF2B79F628CFC1EF522DA2BECE312F6DE6C43FEBE1E92DA3FF2C2E5F40FF7A; H127-H128, D104 and E104 provenance retained; exact DOI22051764 reserved in the existing lineage pending publication readback",
-  "next": "source/ega1/ega1-10-fr.tex line793 proof of proposition10.5.6; continue in canonical driver order after the release-candidate publication and public-byte readback gate",
-  "target": "continue the existing editable ega/I/c1s10.tex from source line793 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening subsections10.1-10.5.6 statement",
+  "completed_through": "complete chapter1 sections1-9 and section10 heading plus proposition10.5.6 proof, subsection10.6.1 and proposition10.6.2 statement; source/ega1/ega1-10-fr.tex lines1-889 39726 bytes / 0F0541884AE0AD3ACD3742618B1138F8E6C6C530F408F9867176142E2E6ECACE; target ega/I/c1s10.tex lines1-854 EOF 41268 bytes / 7714CE0324999C1BDE653A1C9EF8D02E3BAC9DC3818ECC3DEC4C7486E6B9D8EA; deterministic134-page working head1180911 bytes / B355E4F8CA24FA61FAB8682A7BD8675A18A73C7750A529C521E5F5EC327BA82E; H129-H130 and D106-E106 provenance retained; latest public exact DOI10.5281/zenodo.22051764 remains the proposition10.5.6 checkpoint",
+  "next": "source/ega1/ega1-10-fr.tex line890 proof of proposition10.6.2; continue once in canonical driver order",
+  "target": "continue the existing editable ega/I/c1s10.tex from source line890 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-889",
   "policy": "advance once; never reopen unchanged completed units"
 }

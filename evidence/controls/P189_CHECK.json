@@ -1,0 +1,381 @@
+{
+  "schema": "ega_i_printed_page_189_gate_v1",
+  "checked_date": "2026-08-06",
+  "printed_page": 189,
+  "pdf_one_based_page": 188,
+  "path_roots": {
+    "fr": "C:/Users/Floris/Documents/interlanguage/Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1",
+    "en": "C:/Users/Floris/Documents/interlanguage/03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1",
+    "interlanguage": "C:/Users/Floris/Documents/interlanguage"
+  },
+  "authority": {
+    "path": "C:/Users/Floris/Documents/Papors/OS/NUMDAM/EGA_I_PMIHES_1960_4.pdf",
+    "bytes": 31680717,
+    "pages": 227,
+    "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6"
+  },
+  "published_erratum": {
+    "path": "C:/Users/Floris/Documents/Papors/OS/NUMDAM/EGA_II_PMIHES_1961_8.pdf",
+    "pdf_one_based_page": 219,
+    "printed_page": 222,
+    "bytes": 27414108,
+    "sha256": "111834EFFFE9E90D068389D418F08925A82B4A54AE2957F080712D4180E032EB",
+    "witness": {
+      "root": "fr",
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P187_ERR.txt",
+      "bytes": 1375,
+      "lines": 25,
+      "sha256": "14F33BE31998EB9C680EFC6A385C3A5FBA5B32FCC808A92354054EAB04802E75"
+    },
+    "locus": "I.10.6.3(b), printed p.189 line 3 from bottom",
+    "instruction": "replace roman X by fraktur X",
+    "french_diplomatic_disposition": "preserve printed roman X and bind this erratum",
+    "english_disposition": "retain corrected fraktur X with visible Err II disclosure",
+    "temporary_visual_render_removed": true
+  },
+  "predecessor_gate": {
+    "root": "fr",
+    "path": "controls/P188_CHECK.json",
+    "bytes": 13216,
+    "lines": 398,
+    "sha256": "63F1BDFEF422BEF87C92D7EC057295A9A22428F212BB21B93E019FB5B9163D7F",
+    "pass": true
+  },
+  "scope": {
+    "root": "fr",
+    "path": "controls/SCOPE.json",
+    "bytes": 8897,
+    "lines": 139,
+    "sha256": "7F19B145EFD0E37FC24D47A40A01497A3AF2F639331CBCACAFACBD90C93C108A",
+    "french_and_english_separate": true,
+    "combined_reader_forbidden": true,
+    "production_agents_forbidden": true,
+    "semantic_scaffold_required": true
+  },
+  "witnesses": {
+    "root": "fr",
+    "text": {
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P189.txt",
+      "bytes": 3053,
+      "lines": 43,
+      "form_feeds": 1,
+      "sha256": "98A043A2571B8B62828D85185FE09F1251356B5D05189422C2C00445418B2ECD"
+    },
+    "image": {
+      "path": "qa/authority_reuse/ega1_chapter1_opening/P189.png",
+      "bytes": 220099,
+      "width": 1280,
+      "height": 1588,
+      "dpi": 150,
+      "sha256": "D2477970E4C1FAD7A36E2F21DC072371F5ECFB36A38BE2BCA9E4F6A4CC8DD4C7"
+    },
+    "new_ocr": false,
+    "crop_count": 0
+  },
+  "french": {
+    "root": "fr",
+    "source": {
+      "path": "source/ega1/ega1-10-fr.tex",
+      "bytes": 42916,
+      "lines": 962,
+      "sha256": "E6BD33A5B4D85B6803B9A023BC9E3E3BC8697268C8A7F193254685EF1FC9B65B",
+      "begin_count": 47,
+      "end_count": 47,
+      "i189_count": 1,
+      "i190_count": 0,
+      "temporary_suffix": {
+        "literal": "\\end{proposition}\n",
+        "bytes": 18,
+        "remove_before_next_page": true
+      }
+    },
+    "coverage": "completion of 10.6.1; Proposition 10.6.2, diagram 10.6.2.1 and complete proof; Proposition 10.6.3 through conditions (a)-(c)",
+    "append": {
+      "offset": 38881,
+      "bytes": 4035,
+      "lines": 97,
+      "sha256": "195B08DE022AAE7CBC3F0A866E0A50D5505CA35316D415635A4A90DB358AB8D7",
+      "starts_with_separator_lf": true
+    },
+    "page_inverse": {
+      "operation": "truncate at byte 38,881 and append the literal 10-byte p.188 environment close",
+      "reconstructed_bytes": 38891,
+      "reconstructed_lines": 866,
+      "reconstructed_sha256": "698531F98D81E99A52CC03B56A980F5F2180B8E6B12751614182A4731E40498A",
+      "pass": true
+    },
+    "open_continuation": {
+      "operation": "remove final literal 18-byte proposition close",
+      "bytes": 42898,
+      "lines": 961,
+      "sha256": "B135041DC7F758163785133B14502F6AD7A834FE877D3E4B764C79EB27F7CE57"
+    },
+    "source_tree": {
+      "files": 11,
+      "bytes": 458342,
+      "sha256": "EAAFF9B489BF07198B601E0C1A6FBFE9D916CC8F6F5688E12575787877B63173"
+    },
+    "authorial_defects": [
+      {
+        "locus": "I.10.6.3(b)",
+        "printed": "roman X",
+        "published_correction": "fraktur X",
+        "diplomatic_source_retained": true
+      },
+      {
+        "locus": "proof of I.10.6.2",
+        "printed": "rendant commutatif les diagrammes",
+        "classification": "singular/plural agreement",
+        "diplomatic_source_retained": true
+      }
+    ],
+    "ledger": {
+      "root": "fr",
+      "path": "controls/P189_FR.jsonl",
+      "bytes": 13216,
+      "lines": 21,
+      "sha256": "9C10164FE31090A36C10D49022A2E77ADBF9408B656E14C1669DBA5BD6ECD245",
+      "stable_ids_unique": true,
+      "all_pass": true
+    },
+    "build": {
+      "root": "fr",
+      "wrapper": {
+        "path": "qa/ega1_chapter1_build/P189_FR.tex",
+        "bytes": 5235,
+        "lines": 148,
+        "sha256": "6E34861CC5B0D212DDD8CEAD01AEFCE380E1452283BA09BAB281081776D711D1"
+      },
+      "pdf": {
+        "path": "qa/ega1_chapter1_build/P189_FR/P189_FR.pdf",
+        "bytes": 1095724,
+        "pages": 76,
+        "sha256": "086825AE5927BE7B4D12BCDAB2477408FBAB6EC9DD4A354BCADF08E8C76CFC27"
+      },
+      "tree": {
+        "files": 6,
+        "bytes": 1247649,
+        "sha256": "C0FF7111C8C0E5935592B1B1705BF9E3D4A821947261D01E127A0574B4523EBC"
+      },
+      "warnings": {
+        "latex": 10,
+        "hyper_reference": 8,
+        "overfull": 2,
+        "underfull": 0,
+        "fatal_or_error": 0
+      },
+      "visual_pass": true
+    }
+  },
+  "english": {
+    "source": {
+      "root": "en",
+      "path": "source/ega1/ega1-10.tex",
+      "bytes": 143359,
+      "lines": 1615,
+      "sha256": "A74E6A44E37876A732AC70A93DFE5B8935B70E038A845A553C18771DBA1D6FCE"
+    },
+    "page_slice": {
+      "start_offset": 35184,
+      "end_offset": 38795,
+      "bytes": 3611,
+      "lines": 44,
+      "sha256": "5A86F3CD7BE247229D02550DBCB42E6931793F6881D31C8368DD98484C5E69CA"
+    },
+    "retained_choices": [
+      "published fraktur-X correction with visible Err II disclosure",
+      "grammatical making the diagrams commutative",
+      "omega-flat as established English notation for printed omega-b",
+      "existing I 190 physical-page boundary"
+    ],
+    "source_mutated": false,
+    "inverse": "identity/no-op to R140 source",
+    "manifest": {
+      "root": "en",
+      "path": "controls/R141.json",
+      "bytes": 73660,
+      "lines": 1480,
+      "sha256": "EF4097E3C14B3ACE078343AB06C64773ECEEB0FAD3EF9E09F15B67E0C379E0F6",
+      "generator_path": "controls/r141.py",
+      "generator_bytes": 3020,
+      "generator_lines": 81,
+      "generator_sha256": "12695EFB8E4406AB60BDC9F690A3C56F337110EE56EC76304F3377B62C0F30F4",
+      "files": 127,
+      "total_bytes": 7282688,
+      "tree_sha256": "17F63DF8DDD5F32093C7A24F883021E0E214D441574EC0D098856818259695F0",
+      "predecessor_manifest_count": 139,
+      "changed_from_r140": [],
+      "independent_replay": "127/127 files plus all 139 preserved predecessor manifests"
+    },
+    "ledger": {
+      "root": "fr",
+      "path": "controls/P189_EN.jsonl",
+      "bytes": 7682,
+      "lines": 16,
+      "sha256": "36C2EFD4BB9D4B2FE77F61E47442D7289176C705190AB8D42D54AFE6F9AFAD64",
+      "stable_ids_unique": true,
+      "all_pass": true
+    },
+    "build": {
+      "root": "en",
+      "wrapper": {
+        "path": "controls/P189_EN.tex",
+        "bytes": 1510,
+        "lines": 46,
+        "sha256": "89939631EE90201C78BA4EEA09FE8E151E4AAB15F3F944FAD8A1BDABF56FF85E"
+      },
+      "wrapper_boundary": "stop at I 190 with one wrapper-only proposition close",
+      "pdf": {
+        "path": "source/controls/P189_EN/P189_EN.pdf",
+        "bytes": 851712,
+        "pages": 68,
+        "sha256": "5A18493C929BD8D2CD2120AE3C6FD4811ABC9A8B2AE0322AB51384E63CCBD459"
+      },
+      "tree": {
+        "files": 6,
+        "bytes": 1096543,
+        "sha256": "12AE5EE5C03C73C983AA709EF552FA3EA72BEA0E5C10356C672C62D55B1DEFBD"
+      },
+      "warnings": {
+        "latex": 3,
+        "package_hyperref": 2,
+        "hyper_reference": 2,
+        "overfull": 1,
+        "underfull": 0,
+        "fatal_or_error": 0
+      },
+      "visual_pass": true
+    }
+  },
+  "semantic_scaffold": {
+    "root": "interlanguage",
+    "path": "03_projects/language_management/english_germanic/00_lane_control/EGA_PRESTACKS_MACHINE_READABLE_INDEXING_SCAFFOLD_20260802.md",
+    "bytes": 189264,
+    "lines": 3216,
+    "sha256": "D78EF4EDA0C389BC6117EA31FBA6E44C47F0EF984754BBF9DFBB1AE73355B625",
+    "predecessor_bytes": 184365,
+    "predecessor_lines": 3133,
+    "predecessor_sha256": "38E01657A585A92E406992E1DF70A9734E622F356B19732373A6507187978F3B",
+    "append_bytes": 4899,
+    "append_lines": 83,
+    "append_sha256": "C164C5C4832579CD68044C6FE10312178CCFDBB5E31764ECD6FA66DF721971DC",
+    "pp144_176_backfill_open": true,
+    "combined_reader": false
+  },
+  "durable_controls": [
+    {
+      "root": "fr",
+      "path": "README.md",
+      "bytes": 3183,
+      "lines": 62,
+      "sha256": "D01E93F7A1BE6E3F2DC28F2527616100614F5F569C00AA6F6FC356581C7BFAA8"
+    },
+    {
+      "root": "fr",
+      "path": "LOGBOOK.md",
+      "bytes": 630290,
+      "lines": 10303,
+      "sha256": "414398AED73F327A83AD37F2F33E19D07014C81EE784B4B60872A4F7ECC06EEC"
+    },
+    {
+      "root": "fr",
+      "path": "STATUS.md",
+      "bytes": 322401,
+      "lines": 5936,
+      "sha256": "C6377385C86823A11CA6CD52AF01E2C33E2C743C140EC41ABCD5E3507DC41511"
+    },
+    {
+      "root": "fr",
+      "path": "CONTINUATION_HANDOFF.md",
+      "bytes": 205874,
+      "lines": 3878,
+      "sha256": "E0CC64A60FE7DF947DA86FB2E11E37E1EE1836A62EFC5AA226785C694BD2BA02"
+    },
+    {
+      "root": "fr",
+      "path": "controls/WORKFLOW.md",
+      "bytes": 4475,
+      "lines": 57,
+      "sha256": "4EB1F844B862C04203C2B3281E1BCCD019661EC53262EA6E020AA6E2687AE840"
+    },
+    {
+      "root": "fr",
+      "path": "controls/SCOPE.json",
+      "bytes": 8897,
+      "lines": 139,
+      "sha256": "7F19B145EFD0E37FC24D47A40A01497A3AF2F639331CBCACAFACBD90C93C108A"
+    },
+    {
+      "root": "fr",
+      "path": "controls/SCOPE6_CHECK.json",
+      "bytes": 1728,
+      "lines": 43,
+      "sha256": "7466EF18E62ABA78C32DD40C15A03C0C23A2167E0D2449DF5D1A875A5AB90734"
+    },
+    {
+      "root": "en",
+      "path": "LOGBOOK.md",
+      "bytes": 274286,
+      "lines": 4706,
+      "sha256": "729E96EAD0E16E007267FF813DD1E23FB869AB42089FCB71B91A91639131DFD6"
+    },
+    {
+      "root": "en",
+      "path": "STATUS.md",
+      "bytes": 148933,
+      "lines": 2855,
+      "sha256": "E1E2133D9AC2EF65674B322EAC79858D53E9A42AF7DAC0F09D9BC01829F154A8"
+    },
+    {
+      "root": "interlanguage",
+      "path": "04_handoffs/SPARK.md",
+      "bytes": 33238,
+      "lines": 562,
+      "sha256": "B081FE28A214D2B4D752FC37E319498E639D86A0CAEBC3C47AE33349BF5ADAA0"
+    },
+    {
+      "root": "interlanguage",
+      "path": "03_projects/language_management/english_germanic/00_lane_control/EGA_PRESTACKS_MACHINE_READABLE_INDEXING_SCAFFOLD_20260802.md",
+      "bytes": 189264,
+      "lines": 3216,
+      "sha256": "D78EF4EDA0C389BC6117EA31FBA6E44C47F0EF984754BBF9DFBB1AE73355B625"
+    }
+  ],
+  "validator": {
+    "root": "fr",
+    "path": "controls/p189.py",
+    "bytes": 21761,
+    "lines": 361,
+    "sha256": "53AB004CEE7D21A3FAD31C98C1234980769B867716425D5D6032607079013A0A",
+    "pre_gate_checks": 1031,
+    "expected_post_gate_checks": 1042,
+    "errors": [],
+    "pass": true
+  },
+  "edition_separation": {
+    "french_edition": "independent",
+    "english_edition": "independent",
+    "bilingual_master_created": false,
+    "bilingual_pdf_created": false,
+    "side_by_side_or_interleaved_created": false,
+    "semantic_links_only": true
+  },
+  "publication_disposition": {
+    "concept_doi": "10.5281/zenodo.20414353",
+    "public_record": "https://zenodo.org/records/21793469",
+    "release_ready_package_prepared": false,
+    "stable_release_fingerprint_changed": false,
+    "staged_upload": false,
+    "unpublished_target_draft": false,
+    "new_version_published": false,
+    "reason": "printed p.189 is a bounded working gate, not a changed cumulative standalone release package"
+  },
+  "next_cursor": {
+    "pdf_one_based_page": 189,
+    "printed_page": 190,
+    "continuation": "Proposition 10.6.3 immediately after condition (c)",
+    "remove_french_suffix": true
+  },
+  "errors": [],
+  "pass": true
+}

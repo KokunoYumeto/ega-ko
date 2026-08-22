@@ -1,0 +1,412 @@
+{
+  "schema": "ega_individual_diagram_gate_d30",
+  "stable_id": "EGA-I-10.5.6-P188-D2-PHI-PRIME-LABEL-SIDE",
+  "inventory_id": "DIA:ega1/ega1-10-fr.tex:826",
+  "pass": true,
+  "locator": {
+    "authority_pdf": {
+      "path": "C:\\Users\\Floris\\Documents\\Papors\\OS\\NUMDAM\\EGA_I_PMIHES_1960_4.pdf",
+      "bytes": 31680717,
+      "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6",
+      "pdf_one_based_page": 187,
+      "printed_page": "I p.188"
+    },
+    "french_source": {
+      "relative_path": "ega1/ega1-10-fr.tex",
+      "diagram_line": 826,
+      "diagram_offset": 37136
+    },
+    "english_source": {
+      "relative_path": "ega1/ega1-10.tex",
+      "diagram_line": 383,
+      "diagram_offset": 33658
+    },
+    "french_reader": {
+      "physical_page": 128,
+      "pdf_bytes": 2004687,
+      "pdf_sha256": "3E35480BA62ED0A31E55482FCD49E702C120C87AAB9250C075B850F56499780A",
+      "reader_control": "B37Y"
+    },
+    "english_reader": {
+      "physical_page": 366,
+      "pdf_bytes": 14589680,
+      "pdf_sha256": "E1ECEE3AC04E068474A6701715A21DA1CDED6FC5A495704A6FAFCDB6289EE8C0",
+      "reader_control": "B229"
+    }
+  },
+  "authority_witness": {
+    "relative_path": "qa/ega1/P187d2c-5k.png",
+    "bytes": 83481,
+    "sha256": "93DF9530714B314E0F6F335DF8515D2A2B829FCCC9FBF3844C494A34DF4B10B4",
+    "pixels": [
+      6200,
+      3800
+    ],
+    "dpi_equivalent": 5000,
+    "unique_tightly_bounded_crop": true,
+    "result": "complete direct-authority square accepted; phi-prime below"
+  },
+  "french_output_witness": {
+    "relative_path": "qa/ega1/F128d1c-5k.png",
+    "bytes": 303228,
+    "sha256": "691A071AD5EAF293D3AD649ED716C3386C03CCB8FCD438A2B71708A739D95922",
+    "pixels": [
+      7500,
+      4667
+    ],
+    "dpi_equivalent": 5000,
+    "unique_tightly_bounded_crop": true,
+    "result": "complete current diplomatic French graph matches authority after repair"
+  },
+  "english_output_witness": {
+    "relative_path": "English b229/p366d1-5k.png",
+    "bytes": 303541,
+    "sha256": "67FAE743F64F655A94A3DACDF232BC2AF3176E8504D6AB8AB5C113397D36A8CB",
+    "pixels": [
+      7167,
+      4500
+    ],
+    "dpi_equivalent": 5000,
+    "unique_tightly_bounded_crop": true,
+    "result": "complete current standalone English graph matches authority after repair"
+  },
+  "preimage_witnesses": {
+    "french": {
+      "path": "qa/ega1/F128d1-5k.png",
+      "bytes": 303146,
+      "sha256": "D40B223F8EC5E1BF0467F84700BF22884A3058221287D04CCB02F05F057808F8",
+      "pixels": [
+        7500,
+        4667
+      ],
+      "dpi_equivalent": 5000,
+      "finding": "phi-prime above"
+    },
+    "english": {
+      "path": "English b228/p366d1-5k.png",
+      "bytes": 303707,
+      "sha256": "E8DE93346F3B4B540E5D8CB9C8ECCF311B5F108947F339A8E10801A21ACBDAD9",
+      "pixels": [
+        7167,
+        4500
+      ],
+      "dpi_equivalent": 5000,
+      "finding": "phi-prime above"
+    }
+  },
+  "rejected_authority_witness": {
+    "path": "qa/ega1/P187d2-5k.png",
+    "bytes": 102494,
+    "sha256": "CAFE4480C890D45B24BC0A1E8AFB696DD032E329FA00DEEF82E2847BDDDC066E",
+    "pixels": [
+      7000,
+      4167
+    ],
+    "dpi_equivalent": 5000,
+    "finding": "neighboring ink entered crop; rejected before certification"
+  },
+  "complete_directed_graph": {
+    "objects": [
+      {
+        "id": "TL",
+        "text": "B"
+      },
+      {
+        "id": "TR",
+        "text": "A"
+      },
+      {
+        "id": "BL",
+        "text": "B/mathfrak K"
+      },
+      {
+        "id": "BR",
+        "text": "A/mathfrak J"
+      }
+    ],
+    "edges": [
+      {
+        "from": "TL",
+        "to": "TR",
+        "direction": "right",
+        "label": "phi",
+        "label_side": "above"
+      },
+      {
+        "from": "TL",
+        "to": "BL",
+        "direction": "down",
+        "label": null
+      },
+      {
+        "from": "TR",
+        "to": "BR",
+        "direction": "down",
+        "label": null
+      },
+      {
+        "from": "BL",
+        "to": "BR",
+        "direction": "right",
+        "label": "phi-prime",
+        "label_side": "below"
+      }
+    ],
+    "verified_absences": [
+      "no reverse or diagonal edge",
+      "no extra object or edge",
+      "no hook or equality marker",
+      "no label on either vertical edge",
+      "no punctuation attached to the diagram"
+    ]
+  },
+  "visual_comparison": {
+    "authority_to_french": "PASS after exact label-side repair",
+    "authority_to_english": "PASS after exact source-grounded label-side repair",
+    "objects_edges_absences_directions_labels_punctuation_geometry": "personally compared at exact 5000 dpi-equivalent"
+  },
+  "source_disposition": {
+    "french": {
+      "changed": true,
+      "before": {
+        "bytes": 159764,
+        "sha256": "C24494C8F11DD67746514F767CD94B360A6F243F7ABC247789BDB751822B5035"
+      },
+      "after": {
+        "bytes": 159764,
+        "sha256": "11971DCBCDE403F96B285C125DC2F79FE0CFE5A423F4DA43B5E08128485021FA"
+      },
+      "slice_offset": 37136,
+      "slice_bytes": 145,
+      "slice_pre_sha256": "0437E27ABF7FCF1E0134536A527EB02623493A5B287AC9F9A72A7500AC184CF7",
+      "slice_post_sha256": "6A8AB80A01389A0FF1732C8D6753C7C1D570234DC731EDEB0839760E00FC7A7D",
+      "edit_byte_offset": 37223
+    },
+    "english": {
+      "changed": true,
+      "before": {
+        "bytes": 143891,
+        "sha256": "A6D326DBFA8D002FBE92B6A451566FAB172B4D70E05DA6DEAE9259F7BDB113EA"
+      },
+      "after": {
+        "bytes": 143891,
+        "sha256": "E06496832D6D0000F9CD86BE44146B8684B0BB37CE8CAE9B374B5914420BA737"
+      },
+      "slice_offset": 33658,
+      "slice_bytes": 157,
+      "slice_pre_sha256": "B90CA63AF369AAE0CE0FB46D1C54BBCF3A39EA98A7E68C924D9EE6296AD080D1",
+      "slice_post_sha256": "DEFB4ACA2FB42668E4B1CB03F0F2D66C6E0AF298558DE97CF5F140AC58968703",
+      "edit_byte_offset": 33751
+    },
+    "exact_inverse": "restore ^ at French UTF-8 byte offset 37223 and English UTF-8 byte offset 33751; this reproduces F37Z and R238 source trees exactly"
+  },
+  "controls": {
+    "predecessor": {
+      "path": "controls/D29.json",
+      "bytes": 14383,
+      "sha256": "04A5F36F8C132EB6FB5B6CF69E428C15D3B0CE9D89B958B2B34054DCB6229350"
+    },
+    "inventory_predecessor": {
+      "path": "controls/DIA29.json",
+      "bytes": 101337,
+      "sha256": "E7055958D08CAD5306A4A28A25CF6995281973DF67B1B3F117DCC5CA383512BF"
+    },
+    "quarantine_predecessor": {
+      "path": "controls/Q37BC.json",
+      "bytes": 6410,
+      "sha256": "0701358D629101169C0194065A94E2971B98685E5E087F3382FF1A39EF23FFDE"
+    },
+    "french_source_manifest": {
+      "path": "controls/F37ZA.json",
+      "bytes": 48976,
+      "sha256": "749A3B22FE2056D63EFEBBEEB215D3F49AED5B69E8D30649EDCA4E9AC5582B87"
+    },
+    "french_reader": {
+      "path": "controls/B37Y.json",
+      "bytes": 7672,
+      "sha256": "26034229778D456349021C878A7AE597394E5D942F631FB5D2068B2DA0B53A2C"
+    },
+    "english_source_manifest": {
+      "path": "English controls/R239.json",
+      "bytes": 263711,
+      "sha256": "C85947D5F1CF0E31C1FA787F799A4DE8D8099AFAC5FE72BB8CD4421B6BFDE43B"
+    },
+    "english_reader": {
+      "path": "English controls/B229.json",
+      "bytes": 6165,
+      "sha256": "F8D21E5260B2703509B2EA8CB71CA4195DB092162F73F164DA3B4BB53134200D"
+    }
+  },
+  "pagination_replay": {
+    "french_physical_page": 128,
+    "english_physical_page": 366,
+    "changed": false,
+    "french_reader_rebuilt": true,
+    "english_reader_rebuilt": true
+  },
+  "temporary_locators": {
+    "path": "C:/tmp/EGA-d30",
+    "files": [
+      {
+        "name": "a187-loc.png",
+        "bytes": 234559,
+        "sha256": "B0410D790EB29D7A60776D4557C0DF204491DB950D48F57663557422177708E0",
+        "purpose": "authority page localization",
+        "pixels": [
+          1257,
+          1571
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "a187.txt",
+        "bytes": 2908,
+        "sha256": "16AAD427648812DEA0825F96ECD01A72088FE8400307530748A5555A0199C40A",
+        "purpose": "bounded native authority text extraction; not OCR"
+      },
+      {
+        "name": "a5k.png",
+        "bytes": 102494,
+        "sha256": "CAFE4480C890D45B24BC0A1E8AFB696DD032E329FA00DEEF82E2847BDDDC066E",
+        "purpose": "rejected exact-5000-dpi authority crop; neighboring ink",
+        "pixels": [
+          7000,
+          4167
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "a5kc.png",
+        "bytes": 83481,
+        "sha256": "93DF9530714B314E0F6F335DF8515D2A2B829FCCC9FBF3844C494A34DF4B10B4",
+        "purpose": "accepted exact-5000-dpi authority crop",
+        "pixels": [
+          6200,
+          3800
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "e366-loc.png",
+        "bytes": 425009,
+        "sha256": "93E6BBF21D04DCC868323F0B23B7B3F85E73F7173CF2F071CE89E3DD61CD9EA9",
+        "purpose": "English preimage page localization",
+        "pixels": [
+          1275,
+          1650
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "e366-post-loc.png",
+        "bytes": 422716,
+        "sha256": "30C3A2C6D8C1C31636DFF2A09BDCC20DE22A60A4E2FD9D434E317D5052DA0953",
+        "purpose": "independent current-English page relocalization",
+        "pixels": [
+          1275,
+          1650
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "e366.txt",
+        "bytes": 4529,
+        "sha256": "73C0C5B852488C72B75609FC1945050248557415EC4C3917EC566B1DB0829CC7",
+        "purpose": "bounded native English text extraction"
+      },
+      {
+        "name": "e5k.png",
+        "bytes": 303707,
+        "sha256": "E8DE93346F3B4B540E5D8CB9C8ECCF311B5F108947F339A8E10801A21ACBDAD9",
+        "purpose": "exact-5000-dpi English preimage",
+        "pixels": [
+          7167,
+          4500
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "e5kc.png",
+        "bytes": 303541,
+        "sha256": "67FAE743F64F655A94A3DACDF232BC2AF3176E8504D6AB8AB5C113397D36A8CB",
+        "purpose": "accepted exact-5000-dpi current-English crop",
+        "pixels": [
+          7167,
+          4500
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "f128-loc.png",
+        "bytes": 276652,
+        "sha256": "05939AB619687336F0584012898E49D1B049FA0B6A1503FAB72C082E4CF71C98",
+        "purpose": "French preimage page localization",
+        "pixels": [
+          1241,
+          1754
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "f128-post-loc.png",
+        "bytes": 275568,
+        "sha256": "465AFD071ED0702D4B54D9C290E4A070BD326E0CE8909E50604BB86E374DF316",
+        "purpose": "independent current-French page relocalization",
+        "pixels": [
+          1241,
+          1754
+        ],
+        "dpi_equivalent": 150
+      },
+      {
+        "name": "f128.txt",
+        "bytes": 6679,
+        "sha256": "6E68D7A61E75E805E3F4A12E20C9A2E4B7D200E1710EB3570FDCB8E79A037EC0",
+        "purpose": "bounded native French text extraction"
+      },
+      {
+        "name": "f5k.png",
+        "bytes": 303146,
+        "sha256": "D40B223F8EC5E1BF0467F84700BF22884A3058221287D04CCB02F05F057808F8",
+        "purpose": "exact-5000-dpi French preimage",
+        "pixels": [
+          7500,
+          4667
+        ],
+        "dpi_equivalent": 5000
+      },
+      {
+        "name": "f5kc.png",
+        "bytes": 303228,
+        "sha256": "691A071AD5EAF293D3AD649ED716C3386C03CCB8FCD438A2B71708A739D95922",
+        "purpose": "accepted exact-5000-dpi current-French crop",
+        "pixels": [
+          7500,
+          4667
+        ],
+        "dpi_equivalent": 5000
+      }
+    ],
+    "total_bytes": 3048217,
+    "disposition": "fourteen bounded localization, extraction, and render files; exact inventory retained here and directory queued for verified removal"
+  },
+  "semantic_disposition": "source and both standalone readers corrected; semantic scaffold unchanged because mathematical content and graph incidence are unchanged",
+  "adverse_events": [
+    "three read-only PowerShell wrappers contained an empty pipe and stopped at parse time before action",
+    "the first exact-5000-dpi authority crop admitted neighboring ink and was rejected",
+    "the first three French passes wrote to a literal $out output directory; all rejected bytes were copied and hash-read back before exact loose-spill removal",
+    "the bundled pdfinfo.cmd runtime path was absent; the exact installed MiKTeX pdfinfo.exe verified 168 and 1345 pages",
+    "pdftocairo reported familiar nonfatal missing display-font aliases while rendering direct authority; every accepted glyph was personally inspected"
+  ],
+  "resource_policy": {
+    "new_ocr": false,
+    "agents_used": 0,
+    "accepted_serialized_build_passes": 6,
+    "rejected_serialized_build_passes": 3,
+    "low_resolution_locator_or_text_files": 6,
+    "accepted_high_resolution_crops": 3,
+    "rejected_high_resolution_crops": 3
+  },
+  "edition_separation": "French and English remain independent standalone editions and were rebuilt serially; no bilingual artifact was created, built, or published",
+  "publication": "quarantined; the DIA30 successor leaves 53 retrospective items pending"
+}

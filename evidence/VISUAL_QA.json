@@ -1,16 +1,18 @@
 {
   "schema_version": 1,
-  "reader_sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C",
-  "render_count": 4,
+  "reader_sha256": "5D150B295646CD32B9868F54C71F6CCAB5BF0023C9F59F7E6494D38FB8BFE6AB",
+  "render_count": 6,
   "render_dimensions": "1654x2339",
   "dpi": 200,
   "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit and release metadata; final release pages132-134 reproduce the inspected mathematical and bibliography PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
+  "inspection": "direct inspection of every page changed by the newest mathematical unit and working-head metadata; standalone public-tree pages1,2,6,132-134 reproduce the inspected working-build PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
   "checked": [
-    "release-information page with exact coverage, DOI and contributor",
-    "proposition10.5.4, official-erratum note, X_red and corollary10.5.5",
-    "complete proposition10.5.6 and direct-authority quotient diagram",
-    "shifted complete bibliography and footer-only pixel delta"
+    "title page with exact working-head coverage",
+    "information page distinguishing working head from immutable exact DOI release",
+    "contents entry for subsection10.6",
+    "proof10.5.6, D30 quotient square, environment10.6.1, marker189 and proposition10.6.2 statement",
+    "pixel-exact sealed predecessor page132",
+    "pixel-exact complete bibliography page134"
   ],
   "defects": 0,
   "result": "PASS"

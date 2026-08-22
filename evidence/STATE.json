@@ -2,17 +2,18 @@
   "schema_version": 1,
   "language": "ko-KR",
   "corpus": "EGA",
-  "version": "2026-08-22-r1",
-  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through the full proposition10.5.6 statement; bibliography",
-  "next_translation_cursor": "source/ega1/ega1-10-fr.tex line793, proof of proposition10.5.6",
+  "version": "2026-08-22-main-working-head",
+  "exact_coverage": "EGA I front matter and complete introduction; EGA 0_I complete; Chapter I programme and sections1-9 complete; section10 through proposition10.5.6 proof, environment10.6.1 and proposition10.6.2 statement; bibliography",
+  "next_translation_cursor": "source/ega1/ega1-10-fr.tex line890, proof of proposition10.6.2",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
     "pages": 134,
-    "bytes": 1177111,
-    "sha256": "6875162EA6539FFE70FB2D19ACB7DB9762D9233A4C9C4CE322BB6FC585ABE49C"
+    "bytes": 1180897,
+    "sha256": "5D150B295646CD32B9868F54C71F6CCAB5BF0023C9F59F7E6494D38FB8BFE6AB"
   },
   "language_concept_doi": "10.5281/zenodo.21921513",
   "exact_version_doi": "10.5281/zenodo.22051764",
+  "exact_version_scope": "immutable release through proposition10.5.6; main working head is ahead and is not a new Zenodo version",
   "repository": "https://github.com/KokunoYumeto/ega-ko",
   "full_corpus_complete": false,
   "lean_used": false

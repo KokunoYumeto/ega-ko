@@ -765,3 +765,90 @@ $f:\mathfrak{X}\to\mathfrak{Y}$를 형식적 준스킴의 사상이라 하자.
     몫으로 내려가 얻은 준동형이다.
 \end{enumerate}
 \end{proposition}
+
+\begin{proof}
+\medskip\noindent
+\begin{enumerate}
+  \item[{\upshape(i)}] $f=(\psi,\theta)$라 하면, 가정에 따라 준동형
+    $\theta^\sharp:\psi^*(\mathscr{O}_{\mathfrak{Y}})\to
+    \mathscr{O}_{\mathfrak{X}}$에 의한
+    $\psi^*(\mathscr{O}_{\mathfrak{Y}})$의 아이디얼층
+    $\psi^*(\mathscr{K})$의 상은 $\mathscr{J}$에 포함된다
+    (\hyperref[0.4.3.5-ko]{0, 4.3.5}). 따라서 몫으로 내려가면
+    $\theta^\sharp$에서 환의 층의 준동형
+    \[
+      \omega:\psi^*(\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})
+      =\psi^*(\mathscr{O}_{\mathfrak{Y}})/\psi^*(\mathscr{K})
+      \to\mathscr{O}_{\mathfrak{X}}/\mathscr{J}~;
+    \]
+    을 얻는다. 또한 모든 $x\in\mathfrak{X}$에 대하여
+    $\theta_x^\sharp$가 \emph{국소} 준동형이므로 $\omega_x$도 그러하다.
+    따라서 환 달린 공간의 사상 $(\psi,\omega^b)$는
+    (\hyperref[I.2.2.1-ko]{2.2.1}) 문제의 요구를 만족하는 환 달린 공간의
+    유일한 사상 $f'$이다.
+  \item[{\upshape(ii)}] 아핀 형식적 스킴의 사상들과 환의 연속 준동형들
+    사이의 표준적이고 함자적인 대응
+    (\hyperref[I.10.2.2-ko]{10.2.2})에 따르면, 지금의 경우 관계
+    $f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$로부터
+    $f'=({}^a\varphi',\widetilde{\varphi'})$를 얻는다. 여기서
+    $\varphi':B/\mathfrak{K}\to A/\mathfrak{J}$은 다음 도식을 가환이게
+    하는 유일한 준동형이다.
+    \[
+      \label{I.10.5.6.2-ko}
+      \xymatrix{
+        B\ar[r]^\varphi\ar[d] & A\ar[d]\\
+        B/\mathfrak{K}\ar[r]_{\varphi'} & A/\mathfrak{J}
+      }
+      \tag{10.5.6.2}
+    \]
+    따라서 $\varphi'$이 존재하면
+    $\varphi(\mathfrak{K})\subset\mathfrak{J}$이다. 역으로 이 조건이
+    성립한다고 하자. $\varphi'$을 도식
+    (\hyperref[I.10.5.6.2-ko]{10.5.6.2})을 가환이게 하는 유일한
+    준동형이라 하고 $f'=({}^a\varphi',\widetilde{\varphi'})$로 놓으면,
+    도식 (\hyperref[I.10.5.6.1-ko]{10.5.6.1})이 가환임은 명백하다. 이제
+    각각 $f$와 $f'$에 대응하는 준동형
+    ${}^a\varphi^*(\mathscr{O}_{\mathfrak{Y}})\to
+    \mathscr{O}_{\mathfrak{X}}$와
+    ${}^a{\varphi'}^*(\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})\to
+    \mathscr{O}_{\mathfrak{X}}/\mathscr{J}$을 고려하면, 이 가환성으로부터
+    $f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$가
+    따름을 알 수 있다.
+\end{enumerate}
+\end{proof}
+
+위에서 정의한 대응 $f\mapsto f'$이 \emph{함자적}임은 명백하다.
+
+\subsection{준스킴들의 귀납극한으로서의 형식적 준스킴.}
+\label{subsection:I.10.6-ko}
+
+\begin{env}[10.6.1]
+\label{I.10.6.1-ko}
+$\mathfrak{X}$를 형식적 준스킴이라 하고,
+$(\mathscr{J}_\lambda)$를 $\mathfrak{X}$의 정의 아이디얼들의 기본계라
+하자. 각 $\lambda$에 대하여 $f_\lambda$를 표준 사상
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\lambda)
+\to\mathfrak{X}$라 하자(\hyperref[I.10.5.2-ko]{10.5.2}).
+$\mathscr{J}_\mu\subset\mathscr{J}_\lambda$이면 표준 준동형
+$\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\mu\to
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\lambda$는 보통 의미의 준스킴
+사이의 표준 사상
+
+\oldpage[I]{189}
+
+$f_{\mu\lambda}:(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\lambda)\to
+(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\mu)$를 정의하며,
+$f_\lambda=f_\mu\circ f_{\mu\lambda}$가 성립한다. 따라서 준스킴들
+$X_\lambda=(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}_\lambda)$와 사상들
+$f_{\mu\lambda}$는 (\hyperref[I.10.4.8-ko]{10.4.8})에 따라 형식적
+준스킴의 범주에서 하나의 \emph{귀납계}를 이룬다.
+\end{env}
+
+\begin{proposition}[10.6.2]
+\label{I.10.6.2-ko}
+(\hyperref[I.10.6.1-ko]{10.6.1})의 표기 아래에서 형식적 준스킴
+$\mathfrak{X}$와 사상들 $f_\lambda$는 형식적 준스킴의 범주에서 계
+$(X_\lambda,f_{\mu\lambda})$의 귀납극한(T, I, 1.8)을 이룬다.
+\end{proposition}
