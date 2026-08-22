@@ -1,0 +1,39 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "created": "2026-08-22T23:20:29+02:00",
+  "publication": {
+    "host": "GitHub",
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "branch": "main",
+    "artifact_commit": "0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "parent": "410352f19e1b126ac2869ffeb07155ef8c28bad2",
+    "committed": "2026-08-22T21:19:16Z",
+    "message": "Publish Korean EGA r7 through environment 10.8.1",
+    "files_changed": 46
+  },
+  "release": {
+    "path": "release/2026-08-22-r7",
+    "zenodo_exact_doi": "10.5281/zenodo.22062160",
+    "figshare_exact_doi": "10.6084/m9.figshare.33314679.v3",
+    "files": [
+      {"name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1212194, "sha256": "E652F121559C855F7C13619518EECC9A40223944A5E68F69B5A0DC2A2B58F349"},
+      {"name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 210693, "sha256": "663DB55E81F70207045093033D9B0B20290B171EFCA6E94D9BB436E0548F8853"},
+      {"name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 30307742, "sha256": "63642BB6A3927BFBAB1E383475A6AC8F7D7452A0032B7C8E10FEBC65B3497587"},
+      {"name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 342, "sha256": "397E6743293C6D7A88CF4736BC5969FD2A7E2B0AAE3929EC193F99FEF381087F"}
+    ]
+  },
+  "anonymous_readback": {
+    "commit_api": "https://api.github.com/repos/KokunoYumeto/ega-ko/commits/0848b6df0f4408168dbc7b749e0c4ae44d8b0b90",
+    "commit_json": "288641 bytes / 3ECE8BFD1F9DE7A261C87C9EF4B978986577973DDE7C85B6CBE1C70E84AFC7F8",
+    "commit_archive": "103837140 bytes / 956DB76715D5AFDCE74CF19C14775F078C7E2FDEAF5F1B0688976E07B3EBAB18",
+    "artifact_manifest_rows_replayed": "144/144",
+    "frozen_release_files_replayed": "4/4",
+    "result": "PASS"
+  },
+  "continuity": {
+    "previous_main_commit": "410352f19e1b126ac2869ffeb07155ef8c28bad2",
+    "policy": "Future validated cumulative checkpoints update this repository narrowly; Zenodo and Figshare remain independent preservation endpoints."
+  },
+  "credential_material": "NONE"
+}
