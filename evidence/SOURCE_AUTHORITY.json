@@ -8,24 +8,30 @@
   "source_artifact_bytes": 159763,
   "source_artifact_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "translated_prefix": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1-1046 with terminal LF; complete proof of proposition10.6.3 and separator",
-    "bytes": 47563,
-    "sha256": "E3442801713A008D3C5AE1D14EC5A6DB84182506A048BD04A7A9D6490D7BE85A"
+    "locator": "source/ega1/ega1-10-fr.tex lines1-1401 with terminal LF; subsection10.7 through Proposition10.7.3, both proofs, attached formal-product-properties paragraph and separator",
+    "bytes": 62060,
+    "sha256": "D6D35C18B93AF8EA7561094BCD62223497AE2FAAE867D6C1E0541D25390F8C84"
+  },
+  "newest_closed_unit": {
+    "locator": "source/ega1/ega1-10-fr.tex lines1339-1400",
+    "characters": 2326,
+    "bytes": 2365,
+    "sha256": "3F508D0BD9779DA7EDD46D195666D9868A591E9670A7684F7CB5C1A5031ABCBE"
   },
   "additional_complete_components": [
     "EGA I front matter",
     "EGA I complete introduction",
     "EGA 0_I complete source file, sections1-7",
     "EGA I Chapter I programme and sections1-9 complete",
-    "EGA I Chapter I section10 through the complete proof of proposition10.6.3",
-    "EGA I bibliography with 22 items"
+    "EGA I Chapter I section10 through subsection10.7, Proposition10.7.3, both proofs and the attached formal-product-properties paragraph",
+    "EGA I bibliography with22 items"
   ],
   "authority_hierarchy": [
     "NUMDAM-based canonical French TeX, read-only",
     "English witnesses only for sense checking; never source authority"
   ],
   "excluded_scope": [
-    "EGA I Chapter I section10 from corollary10.6.4 onward",
+    "EGA I Chapter I section10 from environment10.7.4 onward",
     "remaining EGA I chapters and later EGA volumes"
   ],
   "subwork_doi_policy": "EGA volumes are reader files within this single Korean EGA language DOI lineage, not separate DOI lineages"

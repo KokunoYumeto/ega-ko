@@ -6,7 +6,7 @@
   "required": ["id", "kind", "parent", "order", "authority", "target", "language", "state"],
   "properties": {
     "id": {"type": "string"},
-    "kind": {"enum": ["frontmatter", "legal", "section", "subsection", "prose", "enumeration", "environment", "display", "footnote", "bibliography"]},
+    "kind": {"enum": ["frontmatter", "legal", "chapter", "section", "subsection", "section_state_update", "prose", "enumeration", "environment", "definition", "definition_prose", "theorem", "proposition", "proposition_prose", "lemma", "corollary", "corollary_prose", "remark", "remark_prose", "example", "example_prose", "note", "note_prose", "proof", "proof_prose", "proof_part", "proof_transition", "display", "equation", "diagram", "footnote", "original_page_marker", "source_page_note", "bibliography"]},
     "parent": {"type": ["string", "null"]},
     "order": {"type": "integer", "minimum": 1},
     "authority": {
@@ -33,7 +33,7 @@
       "type": "object",
       "required": ["translation", "build", "visual", "publication"],
       "properties": {
-        "translation": {"enum": ["complete", "partial", "pending"]},
+        "translation": {"enum": ["complete", "complete_with_logged_source_debt", "complete_with_editorial_inference", "complete_with_logged_source_editorial_inference", "partial", "in_progress", "active", "preserved", "pending", "not_applicable"]},
         "build": {"enum": ["pass", "pending", "not_applicable"]},
         "visual": {"enum": ["pass", "pending", "not_applicable"]},
         "publication": {"enum": ["private_working", "release_ready", "published"]}

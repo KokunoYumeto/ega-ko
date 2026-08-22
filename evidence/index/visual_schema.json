@@ -5,7 +5,7 @@
   "required": ["id", "kind", "path", "sha256", "dimensions", "dpi", "linked", "qa", "rights", "disposition"],
   "properties": {
     "id": {"type": "string"},
-    "kind": {"enum": ["target_render", "source_crop", "diagram", "contact_sheet", "segmentation", "overlay"]},
+    "kind": {"enum": ["target_render", "target_render_adverse_before", "source_crop", "diagram", "contact_sheet", "segmentation", "overlay"]},
     "path": {"type": "string"},
     "sha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
     "dimensions": {"type": "string"},

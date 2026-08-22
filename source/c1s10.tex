@@ -1006,3 +1006,356 @@ $\mathscr{O}_{X_0}=\mathscr{O}_{X_i}/\mathscr{J}_i$임에 유의하자.
 기본계를 이루며, $\mathscr{J}^{(0)}|U$는
 $\mathscr{J}_i|U$들의 사영극한이다. 이로써 결론을 얻는다.
 \end{proof}
+
+\begin{corollary}[10.6.4]
+\label{I.10.6.4-ko}
+$i\geq j$일 때 $u_{ji}$의 핵이
+$\mathscr{J}_i^{j+1}$이고 $\mathscr{J}_1/\mathscr{J}_1^2$가
+
+\oldpage[I]{191}
+
+$\mathscr{O}_0=\mathscr{O}_1/\mathscr{J}_1$-가군으로서 유한
+생성이라고 가정하자. 그러면 $\mathfrak{X}$는 아딕 형식적 준스킴이다.
+또한 $\mathscr{J}^{(n)}$을
+$\mathscr{O}_{\mathfrak{X}}\to\mathscr{O}_n$의 핵이라 하면
+$\mathscr{J}^{(n)}=\mathscr{J}^{n+1}$이고
+$\mathscr{J}/\mathscr{J}^2$는 $\mathscr{J}_1$과 동형이다. 더욱이
+$X_0$가 국소 뇌터(각각 뇌터)이면 $\mathfrak{X}$도 국소 뇌터(각각
+뇌터)이다.
+\end{corollary}
+
+\begin{proof}
+$\mathfrak{X}$와 $X_0$의 바탕공간은 같으므로 문제는 국소적이고, 모든
+$X_i$가 아핀이라 해도 된다. 관계
+$\mathscr{J}_{ij}=\widetilde{\mathfrak{J}_{ji}}$
+((\hyperref[I.10.6.3-ko]{10.6.3})의 표기)를 고려하면
+(\hyperref[0.7.2.7-ko]{0, 7.2.7}과
+\hyperref[0.7.2.8-ko]{7.2.8})의 대응하는 주장들로 곧바로 환원된다.
+여기서 $\mathfrak{J}_1/\mathfrak{J}_1^2$는 유한 생성
+$A_0$-가군임에 유의한다
+(\hyperref[I.1.3.9-ko]{1.3.9}).
+\end{proof}
+
+특히 \emph{모든 국소 뇌터 형식적 준스킴
+$\mathfrak{X}$}는
+(\hyperref[I.10.6.3-ko]{10.6.3})과
+(\hyperref[I.10.6.4-ko]{10.6.4})의 조건을 만족하는 (보통 의미의)
+국소 뇌터 준스킴들의 수열 $(X_n)$의 귀납극한이다. 실제로
+$\mathscr{J}$를 $\mathfrak{X}$의 정의 아이디얼로 택하고
+(\hyperref[I.10.5.4-ko]{10.5.4})
+$X_n=(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}^{n+1})$
+로 두면 충분하다
+((\hyperref[I.10.5.1-ko]{10.5.1})과
+(\hyperref[I.10.6.2-ko]{10.6.2})).
+
+\begin{corollary}[10.6.5]
+\label{I.10.6.5-ko}
+$A$를 허용환이라 하자. 아핀 형식적 스킴
+$\mathfrak{X}=\operatorname{Spf}(A)$가 뇌터이기 위한 필요충분조건은
+$A$가 아딕이고 뇌터인 것이다.
+\end{corollary}
+
+\begin{proof}
+그 조건이 충분함은 명백하다. 역으로 $\mathfrak{X}$가 뇌터라고
+가정하고, $\mathfrak{J}$를 $A$의 정의 아이디얼로,
+$\mathscr{J}=\mathfrak{J}^\Delta$를 이에 대응하는
+$\mathfrak{X}$의 정의 아이디얼로 택하자. 그러면 (보통 의미의) 준스킴
+$X_n=(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}^{n+1})$은 아핀이고 뇌터이다.
+따라서 환 $A_n=A/\mathfrak{J}^{n+1}$도 뇌터이고
+(\hyperref[I.6.1.3-ko]{6.1.3}), 이로부터
+$\mathfrak{J}/\mathfrak{J}^2$가 유한 생성
+$A/\mathfrak{J}$-가군임을 알 수 있다. $\mathscr{J}^n$들이
+$\mathfrak{X}$의 정의 아이디얼들의 기본계를 이루므로
+(\hyperref[I.10.5.1-ko]{10.5.1}),
+$\mathscr{O}_{\mathfrak{X}}
+=\varprojlim(\mathscr{O}_{\mathfrak{X}}/\mathscr{J}^n)$이다
+(\hyperref[I.10.5.3-ko]{10.5.3}). 따라서
+(\hyperref[I.10.1.3-ko]{10.1.3})에 의하여 $A$는
+$\varprojlim A/\mathfrak{J}^n$과 위상적으로 동형이고, 그러므로
+아딕이고 뇌터이다
+(\hyperref[0.7.2.8-ko]{0, 7.2.8}).
+\end{proof}
+
+\begin{remark}[10.6.6]
+\label{I.10.6.6-ko}
+(\hyperref[I.10.6.3-ko]{10.6.3})의 표기에서
+$\mathscr{F}_i$를 $\mathscr{O}_i$-가군이라 하자. 또한
+$i\geq j$에 대하여 $v_{ij}$-사상
+$\theta_{ji}:\mathscr{F}_i\to\mathscr{F}_j$가 주어졌고,
+$\theta_{kj}\circ\theta_{ji}=\theta_{ki}$가
+$k\leq j\leq i$에 대하여 성립한다고 하자. $v_{ij}$의 바탕 연속사상은
+항등사상이므로, $\theta_{ji}$는 공간 $\mathfrak{X}$ 위의 아벨군의
+층의 준동형이다. 또한 $\mathscr{F}$가 아벨군의 층들의 사영계
+$(\mathscr{F}_i)$의 사영극한이면, $\theta_{ji}$들이
+$v_{ij}$-사상이라는 사실로부터 사영극한을 취하여 $\mathscr{F}$에
+$\mathscr{O}_{\mathfrak{X}}$-가군 구조를 정의할 수 있다. 이 구조를
+갖춘 $\mathscr{F}$를, $\theta_{ji}$들에 관한
+$\mathscr{O}_i$-가군들의 계 $(\mathscr{F}_i)$의
+\emph{사영극한}이라 하겠다. 특별히
+$v_{ij}^*(\mathscr{F}_i)=\mathscr{F}_j$이고 $\theta_{ji}$가
+\emph{항등사상}인 경우에는, 줄여서 $\mathscr{F}$를 계
+$(\mathscr{F}_i)$의 사영극한이라 하겠다. 이때
+$v_{ij}^*(\mathscr{F}_i)=\mathscr{F}_j$는 $j\leq i$에 대하여
+성립하며, $\theta_{ji}$들은 언급하지 않는다.
+\end{remark}
+
+\begin{env}[10.6.7]
+\label{I.10.6.7-ko}
+$\mathfrak{X}$와 $\mathfrak{Y}$를 두 형식적 준스킴이라 하고,
+$\mathscr{J}$와 $\mathscr{K}$를 각각 $\mathfrak{X}$와
+$\mathfrak{Y}$의 정의 아이디얼이라 하자. 또한
+$f:\mathfrak{X}\to\mathfrak{Y}$를
+$f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$를
+만족하는 형식적 준스킴의 사상이라 하자. 그러면 모든 정수 $n>0$에 대하여
+$f^*(\mathscr{K}^n)\mathscr{O}_{\mathfrak{X}}
+=(f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}})^n
+\subset\mathscr{J}^n$이다. 따라서
+(\hyperref[I.10.5.6-ko]{10.5.6})에 의하여 $f$로부터 (보통 의미의)
+준스킴의 사상 $f_n:X_n\to Y_n$을 유도할 수 있다. 여기서
+$X_n=(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{J}^{n+1})$,
+$Y_n=(\mathfrak{Y},
+\mathscr{O}_{\mathfrak{Y}}/\mathscr{K}^{n+1})$로 둔다. 정의로부터
+곧바로 다음 도식들이
+\[
+  \label{I.10.6.7.1-ko}
+  \xymatrix{
+    X_m\ar[r]^{f_m}\ar[d] &
+    Y_m\ar[d]\\
+    X_n\ar[r]_{f_n} &
+    Y_n
+  }
+  \tag{10.6.7.1}
+\]
+
+\oldpage[I]{192}
+
+$m\leq n$일 때 가환함을 알 수 있다. 다시 말해, $(f_n)$은 사상들의
+\emph{귀납계}이다.
+\end{env}
+
+\begin{env}[10.6.8]
+\label{I.10.6.8-ko}
+역으로, $(X_n)$과 $(Y_n)$을 각각
+(\hyperref[I.10.6.3-ko]{10.6.3})의 조건 b)와 c)를 만족하는 (보통
+의미의) 준스킴들의 귀납계라 하고, $\mathfrak{X}$와
+$\mathfrak{Y}$를 각각 그 귀납극한이라 하자. 귀납극한의 정의에 따라,
+임의의 수열 $(f_n)$이 $X_n\to Y_n$인 사상들로 이루어진 귀납계이면 그
+\emph{귀납극한} $f:\mathfrak{X}\to\mathfrak{Y}$가 존재한다. 이 사상은
+다음 도식들을 가환이게 하는 유일한 형식적 준스킴의 사상이다.
+\[
+  \xymatrix{
+    X_n\ar[r]^{f_n}\ar[d] &
+    Y_n\ar[d]\\
+    \mathfrak{X}\ar[r]_f &
+    \mathfrak{Y}
+  }
+\]
+\end{env}
+
+\begin{proposition}[10.6.9]
+\label{I.10.6.9-ko}
+$\mathfrak{X}$와 $\mathfrak{Y}$를 두 국소 뇌터 형식적 준스킴이라
+하고, $\mathscr{J}$와 $\mathscr{K}$를 각각 $\mathfrak{X}$와
+$\mathfrak{Y}$의 정의 아이디얼이라 하자.
+(\hyperref[I.10.6.7-ko]{10.6.7})에서 정의한 대응
+$f\mapsto(f_n)$은
+사상 $f:\mathfrak{X}\to\mathfrak{Y}$ 가운데
+$f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$를
+만족하는 것들의 집합과, 도식들
+(\hyperref[I.10.6.7.1-ko]{10.6.7.1})을 가환이게 하는 사상들의 수열
+$(f_n)$의 집합 사이의 전단사 대응이다.
+\end{proposition}
+
+\begin{proof}
+$f$가 그러한 사상 수열의 귀납극한이면
+$f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$임을
+보여야 한다. 문제는 $\mathfrak{X}$와 $\mathfrak{Y}$ 위에서
+국소적이므로, $\mathfrak{X}=\operatorname{Spf}(A)$,
+$\mathfrak{Y}=\operatorname{Spf}(B)$인 아핀 경우로 한정해도 된다.
+이때 $A$와 $B$는 아딕이고 뇌터이다. 또한
+$\mathscr{J}=\mathfrak{J}^\Delta$,
+$\mathscr{K}=\mathfrak{K}^\Delta$이다. 여기서 $\mathfrak{J}$와
+$\mathfrak{K}$는 각각 $A$와 $B$의 정의 아이디얼이다. 그러면
+$X_n=\operatorname{Spec}(A_n)$,
+$Y_n=\operatorname{Spec}(B_n)$이고, 여기서
+$A_n=A/\mathfrak{J}^{n+1}$,
+$B_n=B/\mathfrak{K}^{n+1}$이며, 이는
+(\hyperref[I.10.3.6-ko]{10.3.6})과
+(\hyperref[I.10.3.2-ko]{10.3.2})에 따른다. 또한
+$f_n=({}^a\varphi_n,\widetilde{\varphi_n})$이며, 환 준동형
+$\varphi_n:B_n\to A_n$들은 사영계를 이룬다. 따라서
+$f=({}^a\varphi,\widetilde{\varphi})$이고,
+$\varphi=\varprojlim\varphi_n$이다. 이제 $m=0$일 때 도식
+(\hyperref[I.10.6.7.1-ko]{10.6.7.1})의 가환성으로부터 조건
+$\varphi_n(\mathfrak{K}/\mathfrak{K}^{n+1})
+\subset\mathfrak{J}/\mathfrak{J}^{n+1}$이 모든 $n$에 대하여
+성립한다. 따라서 사영극한을 취하면
+$\varphi(\mathfrak{K})\subset
+\mathfrak{J}$이고, 이로부터
+$f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{J}$가
+따른다
+(\hyperref[I.10.5.6-ko]{10.5.6, (ii)}).
+\end{proof}
+
+\begin{corollary}[10.6.10]
+\label{I.10.6.10-ko}
+$\mathfrak{X}$와 $\mathfrak{Y}$를 두 국소 뇌터 형식적 준스킴이라 하고,
+$\mathscr{T}$를 $\mathfrak{X}$의 가장 큰 정의 아이디얼이라 하자
+(\hyperref[I.10.5.4-ko]{10.5.4}).
+\begin{enumerate}
+  \item[{\upshape(i)}] $\mathfrak{Y}$의 임의의 정의 아이디얼
+    $\mathscr{K}$와 임의의 사상
+    $f:\mathfrak{X}\to\mathfrak{Y}$에 대하여,
+    $f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{T}$이다.
+  \item[{\upshape(ii)}]
+    $\operatorname{Hom}(\mathfrak{X},\mathfrak{Y})$과 사상 수열
+    $(f_n)$ 가운데 도식들
+    (\hyperref[I.10.6.7.1-ko]{10.6.7.1})을 가환이게 하는 것들의 집합
+    사이에는 표준 전단사 대응이 있다. 여기서
+    $X_n=(\mathfrak{X},
+    \mathscr{O}_{\mathfrak{X}}/\mathscr{T}^{n+1})$,
+    $Y_n=(\mathfrak{Y},
+    \mathscr{O}_{\mathfrak{Y}}/\mathscr{K}^{n+1})$이다.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(ii)는 (i)와 (\hyperref[I.10.6.9-ko]{10.6.9})에서 곧바로 따른다.
+(i)를 보이기 위해서는 $\mathfrak{X}=\operatorname{Spf}(A)$,
+$\mathfrak{Y}=\operatorname{Spf}(B)$이고 $A$와 $B$가 뇌터이며,
+$\mathscr{T}=\mathfrak{T}^\Delta$,
+$\mathscr{K}=\mathfrak{K}^\Delta$인 경우로 한정해도 된다. 여기서
+$\mathfrak{T}$는 $A$의 가장 큰 정의 아이디얼이고
+$\mathfrak{K}$는 $B$의 정의 아이디얼이다.
+$f=({}^a\varphi,\widetilde{\varphi})$라 하자. 여기서
+$\varphi:B\to A$는 연속 준동형이다. $\mathfrak{K}$의 원소들은
+위상적으로 멱영이고
+(\hyperref[0.7.1.4-ko]{0, 7.1.4, (ii)}), 따라서
+$\varphi(\mathfrak{K})$의 원소들도 위상적으로 멱영이다. 그러므로
+$\mathfrak{T}$가 $A$의 위상적으로 멱영인 원소들의 집합이므로
+(\hyperref[0.7.1.6-ko]{0, 7.1.6}),
+$\varphi(\mathfrak{K})\subset\mathfrak{T}$이다. 따라서
+(\hyperref[I.10.5.6-ko]{10.5.6, (ii)})에 의해 결론이 따른다.
+\end{proof}
+
+\begin{corollary}[10.6.11]
+\label{I.10.6.11-ko}
+$\mathfrak{S}$, $\mathfrak{X}$, $\mathfrak{Y}$를 세 국소 뇌터
+형식적 준스킴이라 하고,
+$f:\mathfrak{X}\to\mathfrak{S}$,
+$g:\mathfrak{Y}\to\mathfrak{S}$를 $\mathfrak{X}$와
+$\mathfrak{Y}$를 $\mathfrak{S}$-형식적 준스킴으로 만드는 사상이라 하자.
+$\mathscr{J}$ (각각 $\mathscr{K}$, $\mathscr{L}$)를
+$\mathfrak{S}$ (각각 $\mathfrak{X}$, $\mathfrak{Y}$)의 정의 아이디얼이라 하고,
+$f^*(\mathscr{J})\mathscr{O}_{\mathfrak{X}}\subset\mathscr{K}$,
+$g^*(\mathscr{J})\mathscr{O}_{\mathfrak{Y}}=\mathscr{L}$이라 가정하자.
+다음과 같이 둔다.
+$S_n=(\mathfrak{S},
+\mathscr{O}_{\mathfrak{S}}/\mathscr{J}^{n+1})$,
+$X_n=(\mathfrak{X},
+\mathscr{O}_{\mathfrak{X}}/\mathscr{K}^{n+1})$,
+$Y_n=(\mathfrak{Y},
+\mathscr{O}_{\mathfrak{Y}}/\mathscr{L}^{n+1})$.
+그러면
+
+\oldpage[I]{193}
+
+$\operatorname{Hom}_{\mathfrak{S}}(\mathfrak{X},\mathfrak{Y})$과 수열
+$(u_n)$ 가운데 각 항이 $S_n$-사상
+$u_n:X_n\to Y_n$이고 도식들
+(\hyperref[I.10.6.7.1-ko]{10.6.7.1})을 가환이게 하는 것들의 집합
+사이에는 표준 전단사 대응이 있다.
+\end{corollary}
+
+\begin{proof}
+임의의 $\mathfrak{S}$-사상
+$u:\mathfrak{X}\to\mathfrak{Y}$에 대하여, 정의에 의해
+$f=g\circ u$이므로
+\[
+  u^*(\mathscr{L})\mathscr{O}_{\mathfrak{X}}
+  =u^*(g^*(\mathscr{J})\mathscr{O}_{\mathfrak{Y}})
+    \mathscr{O}_{\mathfrak{X}}
+  =f^*(\mathscr{J})\mathscr{O}_{\mathfrak{X}}
+  \subset\mathscr{K}
+\]
+이다. 따라서 이 따름정리는
+(\hyperref[I.10.6.9-ko]{10.6.9})에서 따른다.
+\end{proof}
+
+$m\leq n$일 때, 사상 $f_n:X_n\to Y_n$ 하나가 주어지면
+도식 (\hyperref[I.10.6.7.1-ko]{10.6.7.1})을 가환이게 하는 사상
+$f_m:X_m\to Y_m$가 유일하게 정해진다. 이는 아핀 경우로 환원하면
+곧바로 알 수 있다. 이로써 사상
+$\varphi_{mn}:\operatorname{Hom}_{S_n}(X_n,Y_n)
+\to\operatorname{Hom}_{S_m}(X_m,Y_m)$가 정의되고,
+$\operatorname{Hom}_{S_n}(X_n,Y_n)$들은 $\varphi_{mn}$들에 관하여
+\emph{집합들의 사영계}를 이룬다.
+(\hyperref[I.10.6.11-ko]{10.6.11})은 또한 다음과 같은 표준 전단사 사상이
+존재한다고 진술할 수도 있다.
+\[
+  \operatorname{Hom}_{\mathfrak{S}}(\mathfrak{X},\mathfrak{Y})
+  \xrightarrow{\sim}
+  \varprojlim_n\operatorname{Hom}_{S_n}(X_n,Y_n)
+\]
+
+\subsection{형식적 준스킴의 곱.}
+\label{subsection:I.10.7-ko}
+
+\begin{env}[10.7.1]
+\label{I.10.7.1-ko}
+$\mathfrak{S}$를 형식적 준스킴이라 하자.
+$\mathfrak{S}$-형식적 준스킴들은 하나의 범주를 이루므로,
+$\mathfrak{S}$-형식적 준스킴의 \emph{곱}이라는 개념을 정의할 수 있다.
+\end{env}
+
+\begin{proposition}[10.7.2]
+\label{I.10.7.2-ko}
+$\mathfrak{X}=\operatorname{Spf}(B)$,
+$\mathfrak{Y}=\operatorname{Spf}(C)$를 아핀 형식적 스킴
+$\mathfrak{S}=\operatorname{Spf}(A)$ 위의 두 아핀 형식적 스킴이라 하자.
+$\mathfrak{Z}=\operatorname{Spf}(B\widehat{\otimes}_A C)$라 하고,
+$p_1$, $p_2$를 $B$와 $C$에서
+$B\widehat{\otimes}_A C$로 가는 표준 연속 $A$-준동형
+$\rho$, $\sigma$에 각각 대응하는
+(\hyperref[I.10.2.2-ko]{10.2.2}) $\mathfrak{S}$-사상이라 하자.
+그러면 $(\mathfrak{Z},p_1,p_2)$는 $\mathfrak{S}$ 위의 아핀 형식적 스킴
+$\mathfrak{X}$와 $\mathfrak{Y}$의 곱이다.
+\end{proposition}
+
+\begin{proof}
+(\hyperref[I.10.4.6-ko]{10.4.6})에 따라, 위상 $A$-대수인 허용환 $D$와
+임의의 연속 $A$-준동형
+$\varphi:B\widehat{\otimes}_A C\to D$에 대하여, 쌍
+$(\varphi\circ\rho,\varphi\circ\sigma)$를 대응시키는 사상
+\[
+  \operatorname{Hom}_A(B\widehat{\otimes}_A C,D)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_A(B,D)\times\operatorname{Hom}_A(C,D)
+\]
+이 전단사임을 확인하면 충분하다. 이는 다름 아닌 완비 텐서곱의 보편 성질
+(\hyperref[0.7.7.6-ko]{0, 7.7.6})이다.
+\end{proof}
+
+\begin{proposition}[10.7.3]
+\label{I.10.7.3-ko}
+두 $\mathfrak{S}$-형식적 준스킴 $\mathfrak{X}$,
+$\mathfrak{Y}$가 주어지면, 곱
+$\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{Y}$가 존재한다.
+\end{proposition}
+
+\begin{proof}
+증명은 (\hyperref[I.3.2.6-ko]{3.2.6})의 증명에서 아핀 스킴(각각
+아핀 열린집합)을 아핀 형식적 스킴(각각 아핀 형식적 열린집합)으로
+바꾸고, 명제 (\hyperref[I.3.2.2-ko]{3.2.2})를
+(\hyperref[I.10.7.2-ko]{10.7.2})로 바꾸면 그대로 얻어진다.
+\end{proof}
+
+준스킴의 곱에 관한 모든 형식적 성질
+(\hyperref[I.3.2.7-ko]{3.2.7}과
+\hyperref[I.3.2.8-ko]{3.2.8},
+\hyperref[I.3.3.1-ko]{3.3.1}부터
+\hyperref[I.3.3.12-ko]{3.3.12}까지)은
+형식적 준스킴의 곱에도 아무 변경 없이 성립한다.
