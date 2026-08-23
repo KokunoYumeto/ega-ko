@@ -6,8 +6,12 @@
     "record_id": 22063585,
     "record_url": "https://zenodo.org/records/22063585",
     "doi": "10.5281/zenodo.22063585",
+    "doi_url": "https://doi.org/10.5281/zenodo.22063585",
     "concept_doi": "10.5281/zenodo.21921513",
     "version": "2026-08-23-r11",
+    "publication_date": "2026-08-23",
+    "resource_type": "book",
+    "language": "kor",
     "access": "public",
     "submitted": true,
     "state": "done",
@@ -20,7 +24,7 @@
       "Dieudonné, Jean"
     ],
     "project_contribution": "AI typesetting & translation",
-    "license": "CC BY 4.0 bounded to rights-held Korean translation/typesetting/project-authored metadata, indexes, decisions and QA evidence",
+    "license": "CC BY 4.0 applies only to the rights-held Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; the underlying mathematical work, historical French edition and third-party bibliographic material retain their own rights and attribution",
     "non_endorsement": "Historical authors, NUMDAM and original publisher do not endorse; no human external certification or critical-edition status claimed"
   },
   "files": [

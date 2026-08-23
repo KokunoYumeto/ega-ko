@@ -1,0 +1,75 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "created": "2026-08-23T20:26:00+02:00",
+  "repository": {
+    "url": "https://github.com/KokunoYumeto/ega-ko",
+    "branch": "main",
+    "artifact_commit": "0cb8e11a9355e5d55bada8948165aa821751984b",
+    "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/0cb8e11a9355e5d55bada8948165aa821751984b",
+    "remote_ref_readback": "git ls-remote origin refs/heads/main returned 0cb8e11a9355e5d55bada8948165aa821751984b"
+  },
+  "release": {
+    "version": "2026-08-23-r11",
+    "scope": "EGA I front matter/introduction, all EGA 0_I, Chapter I programme and §§1–9, and §10 through Corollary 10.8.13 with attached argument, ending immediately before Corollary 10.8.14",
+    "files": [
+      {
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1233833,
+        "sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D"
+      },
+      {
+        "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+        "bytes": 215358,
+        "sha256": "0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81"
+      },
+      {
+        "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+        "bytes": 42521096,
+        "sha256": "C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6"
+      },
+      {
+        "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+        "bytes": 302,
+        "sha256": "AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570"
+      }
+    ]
+  },
+  "artifact_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "rows": 181,
+    "bytes_total": 50368351,
+    "sha256": "DBF02F55EE3193B4D765CF7C2C20842E037B85A3F477654A3DB90EEB08E59A29",
+    "replay": "181/181 anonymous raw paths exact in byte count and SHA-256"
+  },
+  "auxiliary": {
+    "figshare_pending": {
+      "path": "figshare-pending-v7.json",
+      "sha256": "CAFAB87D0E32399B280DAD5C1178AE1C3DDDA4CAA41F75B973687A89656DE603",
+      "status": "sanitized account-blocker receipt; not a publication claim"
+    },
+    "zenodo_receipts": {
+      "paths": ["receipt-r11.json", "receipt.json"],
+      "sha256": "DC19C3F7CC70909932B91FC7EC8506F6B1502DEE27EAE1DB13E5C83126380FE0",
+      "replay": "both anonymous raw receipts exact and byte-identical"
+    }
+  },
+  "readback": {
+    "method": "anonymous raw.githubusercontent.com URLs pinned to the artifact commit; no GitHub API credential used",
+    "paths_checked": 188,
+    "paths_exact": 188,
+    "result": "PASS",
+    "line_ending_control": "Evidence text was staged as raw blobs to prevent the repository's text=eol=lf clean filter from changing the recorded CRLF bytes; the 181-row manifest and all 188 raw paths replay exactly",
+    "release_replay": "4/4 release files exact; source ZIP 24/24 entries and evidence ZIP 163/163 entries were already independently verified before push"
+  },
+  "metadata_and_rights": {
+    "historical_creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "project_contribution": "AI typesetting & translation",
+    "license": "CC BY 4.0 applies only to the rights-held Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; the underlying mathematical work, historical French edition and third-party bibliographic material retain their own rights and attribution",
+    "non_endorsement": "Historical authors, NUMDAM and the original publisher do not endorse; no human external certification or critical-edition status is claimed"
+  },
+  "cross_repository": {
+    "zenodo": "10.5281/zenodo.22063585 public and anonymously replayed 4/4",
+    "figshare": "additive v7 not published because the authenticated account is inactive/disabled; no duplicate article or DOI was created; retry receipt is figshare-pending-v7.json"
+  },
+  "credential_material": "NONE"
+}
