@@ -1,0 +1,34 @@
+{
+  "schema": "ag-ko-github-receipt-v2",
+  "release": "2026-08-23-r13",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "3ba4c1ab1aecf9212dea4fd4a9c5190249894f6d",
+  "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/3ba4c1ab1aecf9212dea4fd4a9c5190249894f6d",
+  "zenodo_exact_doi": "10.5281/zenodo.22071933",
+  "anonymous_raw_replay": {
+    "artifact_manifest_data_paths": 200,
+    "artifact_manifest_control_paths": 1,
+    "frozen_release_paths": 4,
+    "zenodo_receipt_paths": 2,
+    "combined_paths": 207,
+    "combined_bytes": 100836120,
+    "byte_and_sha256_exact": 207,
+    "mismatches": 0,
+    "result": "PASS"
+  },
+  "raw_blob_staging": {
+    "explicit_paths_checked": 207,
+    "staged_index_oid_equals_unfiltered_local_oid": "207/207 PASS",
+    "artifact_commit_changed_paths": 44,
+    "unexpected_paths": 0
+  },
+  "release_artifacts": {
+    "reader": "1245522 bytes / 69E3D3BC2A34C8F669B00F0F42D6946D8B54F919D35AC00FE222D08266504393",
+    "source_zip": "214883 bytes / 32D3FF555A2195B0C96BE3493CF3DD70C97F8346BB6A9BADBBD82B1AAF5FF48B",
+    "evidence_zip": "44514956 bytes / 8BC1D6ABFD2F3137A8F3B45E92F59B9D597B746CD38FD07337FD69C662A5C129",
+    "outer_manifest": "299 bytes / E50C0BB85B4D265E27B5B19993FC4F150735B424551C3F22E2C2C2216EB920DF"
+  },
+  "credential_material": "none",
+  "result": "PASS"
+}
