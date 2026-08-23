@@ -4,9 +4,11 @@
   "repository": {
     "url": "https://github.com/KokunoYumeto/ega-ko",
     "branch": "main",
-    "artifact_commit": "0cb8e11a9355e5d55bada8948165aa821751984b",
-    "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/0cb8e11a9355e5d55bada8948165aa821751984b",
-    "remote_ref_readback": "git ls-remote origin refs/heads/main returned 0cb8e11a9355e5d55bada8948165aa821751984b"
+    "artifact_commit": "dc80850af6e8c5cb730ff454af651a620a787216",
+    "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/dc80850af6e8c5cb730ff454af651a620a787216",
+    "artifact_parent": "719b2f9e4838658d6002810f4822214458d13902",
+    "artifact_correction": "The self-excluded manifest was corrected in dc80850 after the initial content commit; its 181 current rows are the binding artifact index.",
+    "remote_ref_readback": "git ls-remote origin refs/heads/main returned dc80850af6e8c5cb730ff454af651a620a787216 before this receipt commit"
   },
   "release": {
     "version": "2026-08-23-r11",
@@ -39,7 +41,7 @@
     "rows": 181,
     "bytes_total": 50368351,
     "sha256": "DBF02F55EE3193B4D765CF7C2C20842E037B85A3F477654A3DB90EEB08E59A29",
-    "replay": "181/181 anonymous raw paths exact in byte count and SHA-256"
+    "replay": "181/181 anonymous raw paths exact in byte count and SHA-256 at artifact commit dc80850af6e8c5cb730ff454af651a620a787216"
   },
   "auxiliary": {
     "figshare_pending": {
@@ -54,7 +56,7 @@
     }
   },
   "readback": {
-    "method": "anonymous raw.githubusercontent.com URLs pinned to the artifact commit; no GitHub API credential used",
+    "method": "anonymous raw.githubusercontent.com URLs pinned to artifact commit dc80850af6e8c5cb730ff454af651a620a787216 and the final receipt commit; no GitHub API credential used",
     "paths_checked": 188,
     "paths_exact": 188,
     "result": "PASS",
