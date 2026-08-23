@@ -580,3 +580,37 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   complete evidence tree, build each ZIP twice with the fixed packager, require
   A/B byte identity and member replay, and create the outer three-row manifest
   last.
+
+## 53. r14 subsection 10.9 closure, typed repair and clean-build recovery
+
+- The only admitted r14 source unit is canonical French lines 2070–2150,
+  Proposition 10.9.7 through Remark 10.9.10. It completes subsection 10.9
+  and stops before the subsection 10.10 heading at line 2152. The exact
+  LF-terminal source identity is 3,643 bytes /
+  `F52ED7EF09E8D29D8FF5132CA310AD5299D6065A9CBD12B4880DD67CADAF08E7`;
+  the Korean unit is lines 2018–2106, 4,077 bytes /
+  `6DAD8C8AEE4BC03535177D6EF5175B004A01AD5B37B870EDC0EDC2D509BC11B5`.
+- Printed Corollary 10.9.9 calls the formal completion merely
+  `le préschéma X_{/X'}`. The scan confirms that print, but the definition
+  and the same sentence's formal-product type force the missing `formel`.
+  Korean therefore says 형식적 준스킴 and carries an explicit translator
+  note; the diplomatic French source is unchanged and the authority task has
+  the exact line/page evidence. Do not alter the following deliberate
+  substitution: both `S,S'` become `Y`, and both `X,X'` become `X`.
+- A bare repeated `\end{env}` is never a valid append anchor. The first r14
+  edit repeated the H139 failure and was rejected immediately. Admission
+  required the exact r13 prefix to replay as 95,765 bytes /
+  `E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533`,
+  the new label to occur once at the tail, and both working/public sources to
+  be byte-identical.
+- If XeLaTeX is interrupted, generated auxiliaries may be syntactically
+  truncated even when every source byte is sound. Inspect the exact log,
+  remove only the explicit task-local generated build cache, and restart the
+  complete fixed-metadata cycle. Never resume a deterministic evidence build
+  from a partial auxiliary file.
+- r14 local gates are complete: independent structural/type audit, two
+  byte-identical working three-pass cycles, a fresh byte-identical public
+  six-pass cycle, exact dual extractions, and direct 200 dpi inspection of
+  pages 1, 2, 6 and 139–142. The reserved exact DOI is
+  `10.5281/zenodo.22072378`; freeze the evidence controls before packaging,
+  then require anonymous endpoint replay before public closure.

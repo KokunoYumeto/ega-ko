@@ -1,13 +1,13 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-23T22:17:51+02:00",
+  "updated": "2026-08-23T23:13:00+02:00",
   "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2070",
-  "next_label": "Proposition10.9.7",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2152",
+  "next_label": "subsection10.10",
   "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-2016",
-  "package_target_sha256": "E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533",
-  "reserved_zenodo": "10.5281/zenodo.22071933",
-  "current_public": "10.5281/zenodo.22071490",
-  "status": "r13 package/readback pending"
+  "package_target_locator": "lines1-2106",
+  "package_target_sha256": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
+  "reserved_zenodo": "10.5281/zenodo.22072378",
+  "current_public": "10.5281/zenodo.22071933",
+  "status": "r14 package/readback pending"
 }

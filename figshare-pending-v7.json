@@ -1,49 +1,81 @@
 {
   "schema": "ag-ko-figshare-publication-attempt-v1",
-  "created": "2026-08-23T19:04:00+02:00",
+  "created": "2026-08-23T23:32:12+02:00",
   "publication": {
     "host": "Figshare",
     "article_id": 33314679,
     "article_doi": "10.6084/m9.figshare.33314679",
     "requested_version": 7,
     "requested_doi": "10.6084/m9.figshare.33314679.v7",
-    "requested_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/7"
+    "requested_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/7",
+    "duplicate_article_created": false
   },
   "package": {
-    "reader": "1233833 bytes / 8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
-    "source_zip": "215358 bytes / 0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81",
-    "evidence_zip": "42521096 bytes / C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6",
-    "manifest": "302 bytes / AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570",
-    "source_entries": 24,
-    "evidence_entries": 163
+    "release": "2026-08-23-r14",
+    "zenodo_exact_doi": "10.5281/zenodo.22072378",
+    "files": [
+      {
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1251918,
+        "md5": "0db829f29466f28912f49e691fc2dd56",
+        "sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732"
+      },
+      {
+        "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+        "bytes": 215908,
+        "md5": "b368bca183afbed7fd984f191581a3dd",
+        "sha256": "DAA7A13518831A4D849298F81ED9C86C446E1B815459D01CAFDE2B16471EA44B"
+      },
+      {
+        "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+        "bytes": 47088431,
+        "md5": "1eba772a37252eb2cc68581f4572d69c",
+        "sha256": "0D86B9686E8E9D5D1F25EFF286088FCE6C23BFF38C4A31FE60D802D3BE51A3D6"
+      },
+      {
+        "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+        "bytes": 342,
+        "md5": "87e066639ce936b707ff70da3ff82e75",
+        "sha256": "4B36DACB5259107A1D68305574B8F1FA2C1A1E3DEBA4365E39F401D4FE3C2DA8"
+      }
+    ],
+    "outer_manifest_rows_replayed": "3/3",
+    "source_zip_entries": 24,
+    "source_zip_file_entries": 22,
+    "evidence_zip_entries": 194,
+    "evidence_zip_file_entries": 186
   },
   "attempts": [
     {
       "method": "authenticated API account lookup",
       "endpoint": "https://api.figshare.com/v2/account",
+      "http_status": 403,
       "result": "blocked",
       "error": "Inactive/disabled account"
     },
     {
-      "method": "authenticated article lookup",
+      "method": "authenticated existing-article lookup",
       "endpoint": "https://api.figshare.com/v2/account/articles/33314679",
+      "http_status": 403,
       "result": "blocked",
       "error": "Inactive/disabled account"
     },
     {
-      "method": "anonymous article/version lookup",
-      "endpoint": "https://api.figshare.com/v2/articles/33314679/versions",
-      "result": "no visible versions",
-      "error": "HTTP 200 empty list"
+      "method": "anonymous article lookup",
+      "endpoint": "https://api.figshare.com/v2/articles/33314679",
+      "http_status": 404,
+      "result": "not visible",
+      "error": "Entity not found: ArticleVersion"
     },
     {
-      "method": "public URL check",
-      "endpoint": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/6",
-      "result": "not found in current web session",
-      "error": "page cannot be found"
+      "method": "anonymous article-version lookup",
+      "endpoint": "https://api.figshare.com/v2/articles/33314679/versions",
+      "http_status": 200,
+      "result": "no visible versions",
+      "version_count": 0
     }
   ],
-  "status": "not published; no Figshare mutation occurred",
-  "next": "Retry the same additive version7 on account reactivation without creating a duplicate article or DOI lineage",
+  "status": "not published; the existing Figshare account and article lineage are not operational, and no Figshare mutation occurred",
+  "next": "Retry this exact r14 package as additive version 7 on account reactivation without creating a duplicate article or DOI lineage",
   "credential_material": "NONE"
 }

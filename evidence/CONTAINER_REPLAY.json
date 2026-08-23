@@ -2,23 +2,23 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1245522,
-    "sha256": "69E3D3BC2A34C8F669B00F0F42D6946D8B54F919D35AC00FE222D08266504393"
+    "bytes": 1251918,
+    "sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r161/main.pdf",
-    "bytes": 1245527,
-    "sha256": "FC5B707D0606F2D8C672BAF27F5B29DB90D3C710292E17E5070272B374D8CFD8"
+    "path": "build/ega1/r162/main.pdf",
+    "bytes": 1251919,
+    "sha256": "995A6E09F7C4B95D4A536B5DD127C5090305CCFA80317F2E2CB68A31CDE365A3"
   },
-  "source_target_hash": "E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533",
+  "source_target_hash": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
   "comparison": {
-    "pages": 141,
+    "pages": 142,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "hangul_syllables_each": 130225,
+    "hangul_syllables_each": 130831,
     "replacement_characters_each": 0,
-    "public_working_pages_200dpi_pixel_exact": "1,2,140",
-    "public_pages_unchanged_from_r12": "6,139,141"
+    "public_working_pages_200dpi_pixel_exact": "1,2,141",
+    "public_pages_unchanged_from_r13": "6,139"
   },
-  "disposition": "The standalone public-tree reader and retained r161 working bind differ at container-byte level but have exact full Poppler and pypdf text extractions. Public/working pages1,2,140 are pixel-exact at200dpi; public pages6,139,141 are pixel-exact to r12. No all-page pixel identity or broader certification is inferred."
+  "disposition": "The standalone public-tree reader and retained r162 working bind differ at container-byte level but have exact full Poppler and pypdf text extractions. Public/working pages1,2,141 are pixel-exact at200dpi; public pages6,139 are pixel-exact to r13. No all-page pixel identity or broader certification is inferred."
 }

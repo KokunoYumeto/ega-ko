@@ -2014,3 +2014,93 @@ $\mathfrak{Z}$와 $\mathscr{O}_{\mathfrak{Z}}$-가군 $\mathscr{H}$로
 후자의 범주에서 사상은 형식적 준스킴의 사상 $g$와 $g$-사상으로
 이루어진 쌍이다.
 \end{env}
+
+\begin{proposition}[10.9.7]
+\label{I.10.9.7-ko}
+$S$, $X$, $Y$를 세 국소 뇌터 준스킴,
+$g:X\to S$, $h:Y\to S$를 두 사상, $S'$을 $S$의 닫힌 부분집합,
+$X'$ (각각 $Y'$)을 $g(X')\subset S'$ (각각
+$h(Y')\subset S'$)을 만족하는 $X$ (각각 $Y$)의 닫힌 부분집합이라
+하자~; $Z=X\times_S Y$라 하고, $Z$가 국소 뇌터라고 가정하며,
+$Z'=p^{-1}(X')\cap q^{-1}(Y')$라 하자. 여기서 $p$와 $q$는
+$X\times_S Y$의 사영이다. 이 조건에서 완비화 $Z_{/Z'}$는
+$S_{/S'}$-형식적 준스킴들의 곱
+$(X_{/X'})\times_{S_{/S'}}(Y_{/Y'})$와 동일시된다. 구조 사상들은
+각각 $\widehat g$, $\widehat h$와 동일시되고, 사영들은 각각
+$\widehat p$, $\widehat q$와 동일시된다.
+\end{proposition}
+
+문제가 $S$, $X$, $Y$에 관하여 국소적임은 명백하므로,
+$S=\operatorname{Spec}(A)$,
+$X=\operatorname{Spec}(B)$, $Y=\operatorname{Spec}(C)$,
+$S'=V(\mathfrak{J})$, $X'=V(\mathfrak{K})$,
+$Y'=V(\mathfrak{L})$인 경우로 환원된다. 여기서
+$\mathfrak{J}$, $\mathfrak{K}$, $\mathfrak{L}$은
+$\varphi(\mathfrak{J})\subset\mathfrak{K}$ 및
+$\psi(\mathfrak{J})\subset\mathfrak{L}$을 만족하는 세 아이디얼이고,
+$\varphi:A\to B$와 $\psi:A\to C$는 각각 $g$와 $h$에 대응하는
+준동형이다. 이때 $Z=\operatorname{Spec}(B\otimes_A C)$이고
+$Z'=V(\mathfrak{M})$임을 알고 있다. 여기서 $\mathfrak{M}$은
+아이디얼
+$\operatorname{Im}(\mathfrak{K}\otimes_A C)
++\operatorname{Im}(B\otimes_A\mathfrak{L})$이다.
+(\hyperref[I.10.7.2-ko]{10.7.2})에 의해, 결론은 완비 텐서곱
+$(\widehat B\otimes_{\widehat A}\widehat C)^\wedge$
+(여기서 $\widehat A$, $\widehat B$, $\widehat C$는 각각
+$A$, $B$, $C$에 $\mathfrak{J}$-, $\mathfrak{K}$-,
+$\mathfrak{L}$-준아딕 위상을 주어 얻는 분리 완비화이다)이
+텐서곱 $B\otimes_A C$의 $\mathfrak{M}$-준아딕 위상에 관한
+분리 완비화라는 사실에서 따른다
+(\hyperref[0.7.7.2-ko]{0, 7.7.2}).
+
+또한 $T$가 국소 뇌터 $S$-준스킴이고,
+$u:T\to X$, $v:T\to Y$가 두 $S$-사상이며, $T'$이
+$u(T')\subset X'$, $v(T')\subset Y'$을 만족하는 $T$의 닫힌
+부분집합이면, 완비화한 것들 사이로의 연장
+$((u,v)_S)^\wedge$는
+$(\widehat u,\widehat v)_{S_{/S'}}$와 동일시됨을 유의하자.
+
+\begin{corollary}[10.9.8]
+\label{I.10.9.8-ko}
+$X$, $Y$를 두 국소 뇌터 $S$-준스킴이라 하고,
+$X\times_S Y$도 국소 뇌터라고 하자~; $S'$을 $S$의 닫힌
+부분집합이라 하고, $X'$ (각각 $Y'$)을 $X$ (각각 $Y$)의 닫힌
+부분집합이라 하되 그 구조 사상에 의한 상이 $S'$에 포함된다고 하자.
+$f(X')\subset Y'$을 만족하는 모든 $S$-사상 $f:X\to Y$에 대하여,
+그래프 사상 $\Gamma_{\widehat f}$는 $f$의 그래프 사상의 연장
+$(\Gamma_f)^\wedge$와 동일시된다.
+\end{corollary}
+
+\begin{corollary}[10.9.9]
+\label{I.10.9.9-ko}
+$X$, $Y$를 두 국소 뇌터 준스킴, $f:X\to Y$를 사상,
+$Y'$을 $Y$의 닫힌 부분집합이라 하고, $X'=f^{-1}(Y')$라 하자.
+그러면 형식적 준스킴\footnote{\textbf{번역 주.} 인쇄 원문은 여기서
+\emph{préschéma}라고 쓰지만, $X_{/X'}$는 정의상 형식적 준스킴이고
+우변도 형식적 준스킴들의 곱이므로 \emph{préschéma formel}에서
+\emph{formel}이 빠진 것으로 보아 바로잡았다.} $X_{/X'}$는 다음 가환도식
+\[
+  \label{I.10.9.9.1-ko}
+  \xymatrix{
+    X\ar[d]_f &
+    X_{/X'}\ar[l]\ar[d]^{\widehat f}\\
+    Y &
+    Y_{/Y'}\ar[l]
+  }
+\]
+에 의해 형식적 준스킴들의 곱
+$X\times_Y(Y_{/Y'})$와 동일시된다.
+\end{corollary}
+
+$S$와 $S'$을 모두 $Y$로, $X$와 $X'$을 모두 $X$로 바꾸어
+(\hyperref[I.10.9.7-ko]{10.9.7})을 적용하면 충분하다.
+\oldpage[I]{201}
+
+\begin{remark}[10.9.10]
+\label{I.10.9.10-ko}
+$X$가 합 $X_1\amalg X_2$
+(\hyperref[subsection:I.3.1-ko]{3.1})이고, $X'$이 합집합
+$X'_1\cup X'_2$이며, 여기서 $X'_i$가 $X_i$의 닫힌 부분집합이면
+($i=1,2$), 곧바로
+$X_{/X'}={X_1}_{/X'_1}\amalg {X_2}_{/X'_2}$임을 알 수 있다.
+\end{remark}

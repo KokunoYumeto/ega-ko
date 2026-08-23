@@ -1,0 +1,67 @@
+{
+  "schema": "ag-ko-zenodo-receipt-v2",
+  "release": "2026-08-23-r14",
+  "published_at": "2026-08-23T23:28:12.635694+02:00",
+  "record_id": 22072378,
+  "doi": "10.5281/zenodo.22072378",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22072378",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-08-23-r14",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributors": ["AI typesetting & translation"],
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "related_identifiers": ["10.5281/zenodo.20414353|isPartOf"],
+    "figshare_exact_identity_claim": false
+  },
+  "scope": "EGA I through Remark10.9.10, ending immediately before subsection10.10",
+  "files": [
+    {
+      "filename": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1251918,
+      "md5": "0db829f29466f28912f49e691fc2dd56",
+      "sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732"
+    },
+    {
+      "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 215908,
+      "md5": "b368bca183afbed7fd984f191581a3dd",
+      "sha256": "DAA7A13518831A4D849298F81ED9C86C446E1B815459D01CAFDE2B16471EA44B"
+    },
+    {
+      "filename": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 47088431,
+      "md5": "1eba772a37252eb2cc68581f4572d69c",
+      "sha256": "0D86B9686E8E9D5D1F25EFF286088FCE6C23BFF38C4A31FE60D802D3BE51A3D6"
+    },
+    {
+      "filename": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 342,
+      "md5": "87e066639ce936b707ff70da3ff82e75",
+      "sha256": "4B36DACB5259107A1D68305574B8F1FA2C1A1E3DEBA4365E39F401D4FE3C2DA8"
+    }
+  ],
+  "package_verification": {
+    "internal_artifact_manifest": "209/209 PASS",
+    "deterministic_source_zip_cycles": "2/2 byte-identical",
+    "deterministic_evidence_zip_cycles": "2/2 byte-identical",
+    "source_zip_entries": 24,
+    "source_zip_files": 22,
+    "evidence_zip_entries": 194,
+    "evidence_zip_files": 186,
+    "outer_manifest": "3/3 PASS",
+    "zip_crc": "2/2 PASS",
+    "public_profile_privacy_scan": "PASS"
+  },
+  "anonymous_readback": {
+    "metadata": "PASS",
+    "files": "4/4 byte, MD5 and SHA-256 exact",
+    "outer_manifest": "3/3 PASS",
+    "zip_crc_and_inventory": "2/2 PASS",
+    "doi_resolution": "https://zenodo.org/records/22072378"
+  },
+  "figshare": "No r14 mutation was made as part of this Zenodo publication transaction; no duplicate article or false exact-identity relation is claimed.",
+  "result": "PASS"
+}
