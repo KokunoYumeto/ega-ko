@@ -17,7 +17,10 @@
   },
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
     "contributor": "AI typesetting & translation (Other)",
     "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Proposition 10.8.5 with proof, Corollary 10.8.6 and its attached proof, and environment 10.8.7, ending immediately before Proposition 10.8.8",
     "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
@@ -28,10 +31,34 @@
     "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
   },
   "files": [
-    {"name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1224625, "md5": "fbf810a9852c3d4533e2b28596d174d2", "sha256": "C36FEDCDBB795413A30458795219F2732845313D361E7C551E47555E2233F8BF", "pages": 139},
-    {"name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 210234, "md5": "1fdae6b3764bb99ff5f282158d56831e", "sha256": "D9130A14269A3012022D83E7B721E70AA1CB28594A49C4C1C35BFFD16879E217", "entries": 24},
-    {"name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 36023744, "md5": "097113992a46ca5450b1c7fe60efca7d", "sha256": "1970C53C7563A763EFB72D43FBA2489412B9C21E7562199A653C418C78CDEFFA", "entries": 146},
-    {"name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 299, "md5": "e09740c730aeab2f6bf9ccbe0195641c", "sha256": "2E3096A5EC8EE14731A4ABCFC9D4982B0B73E0A4537336BDA119D3BC201D850E", "rows": 3}
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1224625,
+      "md5": "fbf810a9852c3d4533e2b28596d174d2",
+      "sha256": "C36FEDCDBB795413A30458795219F2732845313D361E7C551E47555E2233F8BF",
+      "pages": 139
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 210234,
+      "md5": "1fdae6b3764bb99ff5f282158d56831e",
+      "sha256": "D9130A14269A3012022D83E7B721E70AA1CB28594A49C4C1C35BFFD16879E217",
+      "entries": 24
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 36023744,
+      "md5": "097113992a46ca5450b1c7fe60efca7d",
+      "sha256": "1970C53C7563A763EFB72D43FBA2489412B9C21E7562199A653C418C78CDEFFA",
+      "entries": 146
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 299,
+      "md5": "e09740c730aeab2f6bf9ccbe0195641c",
+      "sha256": "2E3096A5EC8EE14731A4ABCFC9D4982B0B73E0A4537336BDA119D3BC201D850E",
+      "rows": 3
+    }
   ],
   "anonymous_readback": {
     "record_api": "https://zenodo.org/api/records/22062866",
