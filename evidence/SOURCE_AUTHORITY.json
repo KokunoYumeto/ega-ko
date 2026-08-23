@@ -8,31 +8,31 @@
   "source_artifact_bytes": 159763,
   "source_artifact_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "translated_prefix": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1-1682 with terminal LF; Proposition10.8.5 with proof, completion naming and open restriction, Corollary10.8.6 with attached proof, environment10.8.7 and separator",
-    "characters": 74414,
-    "bytes": 75448,
-    "sha256": "6D9048BA4D55812EB26FE90477AC3EBD86BC15EA10109AEC526793BD630FAFA9"
+    "locator": "source/ega1/ega1-10-fr.tex lines1-1778 with terminal LF; Proposition10.8.8 with its complete two-part proof and diagram10.8.8.1, Corollary10.8.9 with attached justification and separator",
+    "characters": 78268,
+    "bytes": 79329,
+    "sha256": "C595936DB7E88231B222444C61E45CD65A933A16B9BB1E756EDF11168DFEE6A6"
   },
   "newest_closed_unit": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1587-1681",
-    "characters": 4512,
-    "bytes": 4590,
-    "sha256": "664F2B2A5312BCFCE83BCBF2366FD36A0622C47A67B269ACD95931DBEE1279D6",
-    "closure_through_separator_bytes": 4591,
-    "closure_through_separator_sha256": "F0576F82EB271CEA495E4DED5DEDEDFEA2444718ACAED9616475CF483E22F3BC"
+    "locator": "source/ega1/ega1-10-fr.tex lines1683-1777",
+    "characters": 3853,
+    "bytes": 3880,
+    "sha256": "89A344F3FFF8B49F63451F52BE1594D17EAB922D4719B79AD3BD55A84E884AEE",
+    "closure_through_separator_bytes": 3881,
+    "closure_through_separator_sha256": "0CF7A5E22435729C161E94DD16DCABED03DFFE968BA2B33585420A9CB61CEE19"
   },
   "translated_target": {
     "path": "source/c1s10.tex",
-    "lines": 1633,
-    "bytes": 77821,
-    "sha256": "89780EFE59C27C44DE8F949F4DF9D7D5BCBFB9B8EAE7D3B700B1D8529E987281"
+    "lines": 1729,
+    "bytes": 81805,
+    "sha256": "47CD3B8D8B9705D388DCA27FC25FC09166D6E7D0333B8E6FDD895662EE1D0BE6"
   },
   "additional_complete_components": [
     "EGA I front matter",
     "EGA I complete introduction",
     "EGA 0_I complete source file, sections1-7",
     "EGA I Chapter I programme and sections1-9 complete",
-    "EGA I Chapter I section10 through environment10.8.7 immediately before Proposition10.8.8",
+    "EGA I Chapter I section10 through Corollary10.8.9 with attached justification immediately before Corollary10.8.10",
     "EGA I bibliography with22 items"
   ],
   "authority_hierarchy": [
@@ -40,7 +40,7 @@
     "English witnesses only for sense checking; never source authority"
   ],
   "excluded_scope": [
-    "EGA I Chapter I section10 from Proposition10.8.8 onward",
+    "EGA I Chapter I section10 from Corollary10.8.10 onward",
     "remaining EGA I chapters and later EGA volumes"
   ],
   "subwork_doi_policy": "EGA volumes are reader files within this single Korean EGA language DOI lineage, not separate DOI lineages"

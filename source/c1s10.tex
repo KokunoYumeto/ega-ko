@@ -1631,3 +1631,99 @@ $\mathscr{F}\to
 $\mathscr{O}_X$-가군 준동형
 $\gamma:\mathscr{F}\to\psi_*(\mathscr{F}_{/X'})$를 얻는다.
 \end{env}
+
+\begin{proposition}[10.8.8]
+\label{I.10.8.8-ko}
+\medskip\noindent
+\begin{enumerate}
+  \item[\rm{(i)}] 함자 $\mathscr{F}_{/X'}$는
+    ($\mathscr{F}$에 관하여) 완전하다.
+  \item[\rm{(ii)}] 함자적인 준동형
+    $\gamma^\sharp:i^*(\mathscr{F})\to\mathscr{F}_{/X'}$는
+    $(\mathscr{O}_X)_{/X'}$-가군의 동형이다.
+\end{enumerate}
+\end{proposition}
+
+\medskip\noindent
+\begin{enumerate}
+  \item[\rm{(i)}] 다음을 증명하면 충분하다.
+    $0\to\mathscr{F}'\to\mathscr{F}\to\mathscr{F}''\to0$이 연접
+    $\mathscr{O}_X$-가군의 완전열이고, $U$가 $X$의 아핀 열린집합이며
+    그 환이 뇌터 환 $A$이면, 다음 열은 완전하다.
+    \[
+      0\to\Gamma(U\cap X',\mathscr{F}'_{/X'})
+      \to\Gamma(U\cap X',\mathscr{F}_{/X'})
+      \to\Gamma(U\cap X',\mathscr{F}''_{/X'})\to0
+    \]
+    이때 $\mathscr{F}|U=\widetilde M$,
+    $\mathscr{F}'|U=\widetilde{M'}$, $\mathscr{F}''|U=\widetilde{M''}$이고,
+    여기서 $M$, $M'$, $M''$는 세 유한 생성 $A$-가군이며 열
+    $0\to M'\to M\to M''\to0$은 완전하다
+    (\hyperref[I.1.5.1-ko]{1.5.1}과
+    \hyperref[I.1.3.11-ko]{1.3.11})~; $\mathscr{J}\in\Phi$라 하고,
+    $\mathfrak{J}$를 $A$의 아이디얼로서
+    $\mathscr{J}|U=\widetilde{\mathfrak{J}}$인 것으로 택하자. 그러면
+    \[
+      \Gamma(U\cap X',
+      \mathscr{F}\otimes_{\mathscr{O}_X}(\mathscr{O}_X/\mathscr{J}^n))
+      =M\otimes_A(A/\mathfrak{J}^n)
+    \]
+    이다(\hyperref[I.1.3.12-ko]{1.3.12})~; 따라서 사영극한의 정의에 의해
+    \[
+      \Gamma(U\cap X',\mathscr{F}_{/X'})
+      =\varprojlim_n(M\otimes_A(A/\mathfrak{J}^n))=\widehat M
+    \]
+    이고, 이는 $M$의 $\mathfrak{J}$-준아딕 위상에 관한 분리
+    완비화이다. 마찬가지로
+    \[
+      \Gamma(U\cap X',\mathscr{F}'_{/X'})=\widehat{M'},\qquad
+      \Gamma(U\cap X',\mathscr{F}''_{/X'})=\widehat{M''}~;
+    \]
+    이제 $A$가 뇌터이면 함자 $\widehat M$이 $M$에 관하여 유한 생성
+    $A$-가군의 범주에서 완전하다는 사실에서 우리의 주장이 따른다
+    (\hyperref[0.7.3.3-ko]{0, 7.3.3}).
+
+\oldpage[I]{197}
+  \item[\rm{(ii)}] 문제는 국소적이므로 완전열
+    $\mathscr{O}_X^m\to\mathscr{O}_X^n\to\mathscr{F}\to0$이
+    있다고 가정할 수 있다
+    (\hyperref[0.5.3.2-ko]{0, 5.3.2})~; $\gamma^\sharp$가 함자적이고,
+    함자 $i^*(\mathscr{F})$와 $\mathscr{F}_{/X'}$가 각각
+    (\hyperref[0.4.3.1-ko]{0, 4.3.1})과 (i)에 의해 오른쪽 완전하므로
+    다음 가환도를 얻는다.
+    \[
+      \xymatrix{
+        i^*(\mathscr{O}_X^m)\ar[r]\ar[d]_{\gamma^\sharp} &
+        i^*(\mathscr{O}_X^n)\ar[r]\ar[d]_{\gamma^\sharp} &
+        i^*(\mathscr{F})\ar[r]\ar[d]_{\gamma^\sharp} &
+        0\\
+        (\mathscr{O}_X^m)_{/X'}\ar[r] &
+        (\mathscr{O}_X^n)_{/X'}\ar[r] &
+        \mathscr{F}_{/X'}\ar[r] &
+        0
+      }
+      \tag{10.8.8.1}\label{I.10.8.8.1-ko}
+    \]
+    이 가환도의 두 행은 완전하다. 또한 두 함자
+    $i^*(\mathscr{F})$와 $\mathscr{F}_{/X'}$는 유한 직합과 가환하므로
+    (\hyperref[0.3.2.6-ko]{0, 3.2.6}과
+    \hyperref[0.4.3.2-ko]{4.3.2}), 우리의 주장을
+    $\mathscr{F}=\mathscr{O}_X$인 경우에 증명하는 것으로 환원된다.
+    이때
+    $i^*(\mathscr{O}_X)=(\mathscr{O}_X)_{/X'}=
+    \mathscr{O}_{\widehat X}$
+    이고(\hyperref[0.4.3.4-ko]{0, 4.3.4}), $\gamma^\sharp$는
+    $\mathscr{O}_{\widehat X}$-가군 준동형이다. 따라서
+    $\gamma^\sharp$가 $\mathscr{O}_{\widehat X}$의 단위원 단면을
+    $X'$의 한 열린집합 위에서 자기 자신으로 보내는지 확인하면 충분하다.
+    이는 명백하며, 따라서 이 경우 $\gamma^\sharp$는 항등준동형이다.
+\end{enumerate}
+
+\begin{corollary}[10.8.9]
+\label{I.10.8.9-ko}
+환 달린 공간의 사상 $i:X_{/X'}\to X$는 평탄하다.
+\end{corollary}
+
+이는 실제로 (\hyperref[0.6.7.3-ko]{0, 6.7.3})과
+(\hyperref[I.10.8.8-ko]{10.8.8, (i)})에서 따른다.
+

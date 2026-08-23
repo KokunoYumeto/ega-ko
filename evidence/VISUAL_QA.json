@@ -1,20 +1,18 @@
 {
   "schema_version": 1,
-  "reader_sha256": "C36FEDCDBB795413A30458795219F2732845313D361E7C551E47555E2233F8BF",
-  "render_count": 7,
+  "reader_sha256": "75DECDC669B4D89F5BB965652BBA3964BB7577225C83C91DCC88BE5B265C643E",
+  "render_count": 5,
   "render_dimensions": "1654x2339",
   "dpi": 200,
   "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit, TOC and final exact-DOI metadata; seven immutable V484-V490 records retained, and standalone public-tree pages1,2,6,136-139 reproduce all seven accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
+  "inspection": "direct inspection of every page changed by the newest mathematical unit and final exact-DOI metadata; five immutable V491-V495 records retained, and standalone public-tree pages1,2,137-139 reproduce all five accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
   "checked": [
     "title page with exact working-head coverage",
-    "information page with exact DOI22062866, bounded rights, stable concept, Figshare and GitHub continuity",
-    "TOC page6 exact-stability control",
-    "sealed predecessor page136",
-    "Proposition10.8.5, proof, completion naming and open restriction on page137",
-    "Corollary10.8.6, attached proof and environment10.8.7 on page138",
+    "information page with exact DOI22063256, bounded rights, stable concept, Figshare and GitHub continuity",
+    "sealed predecessor and section10 opening on page137",
+    "Proposition10.8.8 with its complete two-part proof and diagram10.8.8.1, followed by Corollary10.8.9 and its attached justification on page138",
     "complete bibliography page139",
-    "standalone public-tree render replay exact7/7"
+    "standalone public-tree render replay exact5/5"
   ],
   "defects": 0,
   "result": "PASS"
