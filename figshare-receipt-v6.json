@@ -1,37 +1,50 @@
 {
-  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "schema": "ag-ko-figshare-publication-receipt-v1",
   "created": "2026-08-23T03:12:47.2916459+02:00",
   "publication": {
-    "host": "Zenodo",
-    "record_id": 22063256,
-    "record_url": "https://zenodo.org/records/22063256",
-    "doi": "10.5281/zenodo.22063256",
-    "doi_url": "https://doi.org/10.5281/zenodo.22063256",
-    "concept_doi": "10.5281/zenodo.21921513",
-    "version": "2026-08-23-r10",
-    "published": "2026-08-23T01:02:47.954352+00:00",
-    "access": "open",
-    "resource_type": "publication/book",
-    "language": "kor",
+    "host": "Figshare",
+    "article_id": 33314679,
+    "article_doi": "10.6084/m9.figshare.33314679",
+    "article_doi_url": "https://doi.org/10.6084/m9.figshare.33314679",
+    "version": 6,
+    "version_doi": "10.6084/m9.figshare.33314679.v6",
+    "version_doi_url": "https://doi.org/10.6084/m9.figshare.33314679.v6",
+    "version_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/6",
+    "published": "2026-08-23T01:07:31Z",
+    "access": "public",
+    "resource_type": "book",
     "license": "CC BY 4.0"
   },
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-    "creators": [
+    "authors": [
       "Grothendieck, Alexander",
       "Dieudonné, Jean"
     ],
-    "contributor": "AI typesetting & translation (Other)",
+    "author_ids": [
+      24613959,
+      24613962
+    ],
+    "project_contribution": "AI typesetting & translation",
+    "project_contribution_placement": "Description, exactly once; the author list contains only the historical work authors.",
     "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Proposition 10.8.8 with its complete two-part proof and diagram 10.8.8.1, and Corollary 10.8.9 with its attached justification, ending immediately before Corollary 10.8.10",
     "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
-    "source_relation": "IsPartOf https://doi.org/10.5281/zenodo.20414353",
-    "mirror_relation": "IsIdenticalTo https://doi.org/10.6084/m9.figshare.33314679",
-    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "categories": [
+      29365,
+      29383,
+      29830
+    ],
+    "references": [
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://doi.org/10.5281/zenodo.20414353",
+      "https://doi.org/10.5281/zenodo.22063256"
+    ],
     "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; underlying and third-party materials retain their own rights and attribution.",
     "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
   },
   "files": [
     {
+      "id": 67762365,
       "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
       "bytes": 1228609,
       "md5": "3d5bc198670c2a2d30ec108c32711b0e",
@@ -39,6 +52,7 @@
       "pages": 139
     },
     {
+      "id": 67762368,
       "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
       "bytes": 211214,
       "md5": "d13037e63208ec552a968ab1309b8399",
@@ -46,6 +60,7 @@
       "entries": 24
     },
     {
+      "id": 67762371,
       "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
       "bytes": 38110886,
       "md5": "fd2a5031a5602af46cd4dfc3125050b3",
@@ -53,6 +68,7 @@
       "entries": 151
     },
     {
+      "id": 67762374,
       "name": "03_EGA_ko_SHA256_MANIFEST.txt",
       "bytes": 299,
       "md5": "9abdee88967cc8f5ea20e7d9ce4f79a0",
@@ -61,11 +77,12 @@
     }
   ],
   "anonymous_readback": {
-    "record_api": "https://zenodo.org/api/records/22063256",
-    "record_json": "7684 bytes / 34208850B904A289AAD2E35B6CBF25F8BC42B332D0AF085EBFFC927B10D9E1A3",
-    "download_root": "build/out/readback-r10/zenodo (excluded build scratch)",
+    "article_api": "https://api.figshare.com/v2/articles/33314679",
+    "version_api": "https://api.figshare.com/v2/articles/33314679/versions/6",
+    "version_json": "6898 bytes / 1270A379D2D8C06E25A0F32ACD5EEBACF737B86B5F9803D8CCF8AD659F2828CB",
+    "download_root": "build/out/readback-r10/figshare (excluded build scratch)",
     "files_byte_md5_and_sha256_exact": "4/4",
-    "identical_to_figshare_v6_files": "4/4",
+    "identical_to_zenodo_r10_files": "4/4",
     "identical_to_github_artifact_commit_files": "4/4",
     "manifest_rows_replayed": "3/3",
     "source_zip_entries_replayed": "24/24",
