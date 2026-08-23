@@ -1,0 +1,19 @@
+{
+  "schema": "ag-ko-r12-check-v1",
+  "version": "2026-08-23-r12",
+  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+  "canonical_source_bytes": 159763,
+  "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "source_unit": "lines1876-1962 plus line1963 separator",
+  "source_unit_sha256": "BD2C042DB3FE08F9303B848ADE24266DDF0AE54C193D45CC53E36C88C5338AB4",
+  "target": "source/c1s10.tex lines1826-1909",
+  "target_unit_sha256": "92D6FFCF09DE9408DB954FCC4149FDE6389A8EEECEE1DAB0674256F4DAB2D076",
+  "whole_target_bytes": 90534,
+  "whole_target_sha256": "9C7449A08334C23CAAFC812F8917E3937B188E7B3E9210E33EA05F3C30D2383B",
+  "structure": "PASS: Corollary10.8.14, attached proof, subsection10.9 and complete environment10.9.1 in canonical order",
+  "formula_and_reference_binding": "PASS",
+  "korean_fidelity": "PASS after final underlying-space sentence correction",
+  "terminology_workflow": "Primary arXiv usage witnesses retained and logged; Korean forms remain definition-bound to canonical French",
+  "next_source": "line1964 environment10.9.2",
+  "result": "PASS"
+}

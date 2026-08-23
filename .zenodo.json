@@ -7,19 +7,14 @@
     {"name": "AI typesetting & translation", "type": "Other"}
   ],
   "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-  "version": "2026-08-23-r11",
+  "version": "2026-08-23-r12",
   "access_right": "open",
-  "description": "<p><strong>읽기 / Read first:</strong> open <code>00_EGA_ko_CUMULATIVE_READER.pdf</code>. This exact cumulative release covers EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and §§1–9, and §10 through Corollary 10.8.13 with its attached argument, ending immediately before Corollary 10.8.14. It does not claim that the full EGA corpus is complete.</p><p>This Korean edition remains in one Zenodo language lineage. A continuing Figshare article is retained as a possible additive preservation lineage; the r11 v7 upload is currently blocked by an inactive/disabled account, so no current Figshare r11 mirror is claimed. It is a translation of and part of the stable global/source EGA object at https://doi.org/10.5281/zenodo.20414353. The public repository is https://github.com/KokunoYumeto/ega-ko. Editable TeX, exact source identities, decisions, corrections, build evidence, extraction checks, visual QA and SHA-256 manifests are included. Production contribution: <em>AI typesetting &amp; translation</em>.</p><p>CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence. The underlying mathematical work, historical French edition and third-party bibliographic material retain their own rights and attribution. The historical authors, NUMDAM and original publisher do not endorse this independently maintained translation; no human external certification or critical-edition status is claimed.</p>",
+  "description": "<p><strong>읽기 / Read first:</strong> open <code>00_EGA_ko_CUMULATIVE_READER.pdf</code>. This exact cumulative release covers EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and §§1–9, and §10 through Corollary 10.8.14 with its attached proof, plus the complete 10.9.1 environment, ending immediately before 10.9.2. It does not claim that the full EGA corpus is complete.</p><p>This Korean edition remains in one Zenodo language lineage. A continuing Figshare article is retained as a possible additive preservation lineage; the v7 upload is currently blocked by an inactive/disabled account, so no current Figshare r12 mirror is claimed. It is a translation of and part of the stable global/source EGA object at https://doi.org/10.5281/zenodo.20414353. The public repository is https://github.com/KokunoYumeto/ega-ko. Editable TeX, exact source identities, decisions, corrections, build evidence, extraction checks, visual QA and SHA-256 manifests are included. Production contribution: <em>AI typesetting &amp; translation</em>.</p><p>CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence. The underlying mathematical work, historical French edition and third-party bibliographic material retain their own rights and attribution. The historical authors, NUMDAM and original publisher do not endorse this independently maintained translation; no human external certification or critical-edition status is claimed.</p>",
   "related_identifiers": [
     {
       "identifier": "https://doi.org/10.5281/zenodo.20414353",
       "relation": "isPartOf",
       "resource_type": "publication-other"
-    },
-    {
-      "identifier": "https://doi.org/10.6084/m9.figshare.33314679",
-      "relation": "isIdenticalTo",
-      "resource_type": "publication-book"
     }
   ],
   "keywords": [

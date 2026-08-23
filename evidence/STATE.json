@@ -1,16 +1,16 @@
 {
   "schema": "ag-ko-public-state-v2",
-  "version": "2026-08-23-r11",
+  "version": "2026-08-23-r12",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_pages": 140,
-  "reader_bytes": 1233833,
-  "reader_sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
-  "working_build": "build/ega1/r157/main.pdf",
-  "working_bytes": 1233824,
-  "working_sha256": "A40D0F45A9BFC5AAEF0F9E380470AA81F86C9E8FDFC3C9E20619CF02C3DF33C2",
-  "coverage": "EGA I through Corollary10.8.13 and Proposition10.8.11 proof, immediately before Corollary10.8.14",
-  "next": "line1876 Corollary10.8.14",
-  "zenodo_reserved_doi": "10.5281/zenodo.22063585",
-  "current_public_checkpoint": "10.5281/zenodo.22063256",
-  "result": "local QA PASS; publication pending"
+  "reader_pages": 141,
+  "reader_bytes": 1238771,
+  "reader_sha256": "03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C",
+  "working_build": "build/ega1/r160/main.pdf",
+  "working_bytes": 1238771,
+  "working_sha256": "03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C",
+  "coverage": "EGA I through Corollary10.8.14 with attached proof and complete environment10.9.1, immediately before environment10.9.2",
+  "next": "line1964 environment10.9.2",
+  "zenodo_reserved_doi": "10.5281/zenodo.22071490",
+  "current_public_checkpoint": "10.5281/zenodo.22063585",
+  "result": "local translation, formula, structure, build, extraction and visual QA PASS; publication pending"
 }

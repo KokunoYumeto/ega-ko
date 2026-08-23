@@ -1,77 +1,64 @@
 {
-  "schema": "ag-ko-zenodo-publication-receipt-v1",
-  "created": "2026-08-23T19:02:00+02:00",
-  "publication": {
-    "host": "Zenodo",
-    "record_id": 22063585,
-    "record_url": "https://zenodo.org/records/22063585",
-    "doi": "10.5281/zenodo.22063585",
-    "doi_url": "https://doi.org/10.5281/zenodo.22063585",
-    "concept_doi": "10.5281/zenodo.21921513",
-    "version": "2026-08-23-r11",
-    "publication_date": "2026-08-23",
-    "resource_type": "book",
-    "language": "kor",
-    "access": "public",
-    "submitted": true,
-    "state": "done",
-    "scope": "EGA I front matter/introduction, all EGA 0_I, Chapter I programme and §§1–9, and §10 through Corollary 10.8.13 with attached argument, ending immediately before Corollary 10.8.14"
-  },
+  "schema": "ag-ko-zenodo-receipt-v2",
+  "release": "2026-08-23-r12",
+  "published_at": "2026-08-23T22:24:00+02:00",
+  "record_id": 22071490,
+  "doi": "10.5281/zenodo.22071490",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22071490",
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-    "creators": [
-      "Grothendieck, Alexander",
-      "Dieudonné, Jean"
-    ],
-    "project_contribution": "AI typesetting & translation",
-    "license": "CC BY 4.0 applies only to the rights-held Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; the underlying mathematical work, historical French edition and third-party bibliographic material retain their own rights and attribution",
-    "non_endorsement": "Historical authors, NUMDAM and original publisher do not endorse; no human external certification or critical-edition status claimed"
+    "version": "2026-08-23-r12",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributors": ["AI typesetting & translation"],
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "related_identifiers": ["10.5281/zenodo.20414353|isPartOf"],
+    "figshare_exact_identity_claim": false
   },
+  "scope": "EGA I through Corollary10.8.14 with attached proof and complete environment10.9.1, ending immediately before environment10.9.2",
   "files": [
     {
-      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1233833,
-      "sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
-      "md5": "9604cc668089cc93cbb373d4c9dbc7d6",
-      "pages": 140
+      "filename": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1238771,
+      "md5": "315c586d0fd5ac3a0611941df0596675",
+      "sha256": "03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C"
     },
     {
-      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 215358,
-      "sha256": "0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81",
-      "md5": "8344e46652d0e65bda716d1a12a1ee8e",
-      "entries": 24
+      "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 213472,
+      "md5": "6f9443d2d1fb10ef0f026dc638763f0d",
+      "sha256": "238B2CB59D95D8971F83D37E5E1EBCCC2465391DF7ABCF3828CEC0B7ADAC3E33"
     },
     {
-      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 42521096,
-      "sha256": "C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6",
-      "md5": "5dcfd3754a6b727e380d9fa5703a5769",
-      "entries": 163
+      "filename": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 42315208,
+      "md5": "13d55cb9382ddca7bd7a566f8c82b306",
+      "sha256": "B8C45E1A1028109569737334B722CBE607EB5D54CB4FD0C5C53784170DC877AB"
     },
     {
-      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
-      "bytes": 302,
-      "sha256": "AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570",
-      "md5": "f5a3472910ee30610e0d9768de2646b9",
-      "rows": 3
+      "filename": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 299,
+      "md5": "fa92aec2f6e55bba6eb2962afce227cf",
+      "sha256": "DDA354907D01274560A8C9D06D35FFD6F5E5F18ACCA02ED7BFB474B908C37B62"
     }
   ],
-  "checks": {
-    "anonymous_file_replay": "4/4 size, MD5 and SHA-256 exact",
-    "manifest": "3/3 rows exact",
-    "source_zip": "24/24 entries exact",
-    "evidence_zip": "163/163 entries exact",
+  "package_verification": {
+    "deterministic_source_zip_cycles": "2/2 byte-identical",
+    "deterministic_evidence_zip_cycles": "2/2 byte-identical",
+    "source_zip_entries": 24,
+    "source_zip_files": 22,
+    "evidence_zip_entries": 176,
+    "evidence_zip_files": 168,
+    "outer_manifest": "3/3 PASS",
+    "zip_crc": "2/2 PASS"
+  },
+  "anonymous_readback": {
     "metadata": "PASS",
-    "privacy": "no credential/profile literals in release text",
-    "container_note": "public reader is canonical release container; working r157 container differs by 9 bytes while text/extraction/render checks pass"
+    "files": "4/4 byte and SHA-256 exact",
+    "outer_manifest": "3/3 PASS",
+    "zip_crc": "2/2 PASS"
   },
-  "post_publication_metadata_edit": {
-    "record_id": 22063585,
-    "action": "metadata-only correction after publication",
-    "result": "done; same DOI/version and same four file bytes",
-    "correction": "The description now states that Figshare additive v7 is blocked by an inactive/disabled account and makes no current r11 Figshare mirror claim; title, creators, sole contributor, rights boundary, non-endorsement and related identifiers remain unchanged",
-    "anonymous_file_replay_after_edit": "4/4 exact"
-  },
-  "credential_material": "NONE"
+  "figshare": "No r12 mutation: additive v7 remains blocked by the inactive/disabled account; no duplicate article and no false exact-identity relation in Zenodo metadata.",
+  "result": "PASS"
 }

@@ -1822,3 +1822,88 @@ $i^*(\mathscr{H})=\mathscr{H}_{/X'}$의 $X'$ 위의 단면이며 앞서 본
 (\hyperref[0.4.4.6-ko]{0, 4.4.6})). 그러므로 연접
 $\mathscr{O}_X$-가군 $\mathscr{H}$에
 (\hyperref[I.10.8.11-ko]{10.8.11})을 적용하면 충분하다.
+
+\begin{corollary}[10.8.14]
+\label{I.10.8.14-ko}
+$u:\mathscr{F}\to\mathscr{G}$를 연접 $\mathscr{O}_X$-가군 사이의
+준동형이라 하자. $u_{/X'}$가 단사(각각 전사)이기 위한 필요충분조건은
+$u$가 $X'$의 어떤 근방에서 단사(각각 전사)인 것이다.
+\end{corollary}
+
+$\mathscr{P}$와 $\mathscr{N}$을 각각 $u$의 여핵과 핵이라 하자.
+그러면 다음 완전열이 성립한다.
+\[
+  0\to\mathscr{N}\xrightarrow{v}\mathscr{F}\xrightarrow{u}
+  \mathscr{G}\xrightarrow{w}\mathscr{P}\to0,
+\]
+따라서 (\hyperref[I.10.8.8-ko]{10.8.8, (i)})에 의해 다음 완전열이
+성립한다.
+\[
+  0\to\mathscr{N}_{/X'}\xrightarrow{v_{/X'}}
+  \mathscr{F}_{/X'}\xrightarrow{u_{/X'}}
+  \mathscr{G}_{/X'}\xrightarrow{w_{/X'}}
+  \mathscr{P}_{/X'}\to0.
+\]
+$u_{/X'}$가 단사(각각 전사)이면 $v_{/X'}=0$ (각각
+$w_{/X'}=0$)이다. 따라서 (\hyperref[I.10.8.13-ko]{10.8.13})에 의해
+$X'$의 어떤 근방에서는 $v=0$ (각각 $w=0$)이다.
+
+\subsection{완비화로의 사상의 연장.}
+\label{subsection:I.10.9-ko}
+
+\begin{env}[10.9.1]
+\label{I.10.9.1-ko}
+$X$, $Y$를 (보통 의미의) 국소 뇌터 준스킴이라 하고, $f:X\to Y$를
+사상이라 하며, $X'$ (각각 $Y'$)를 $X$ (각각 $Y$)의 바탕공간의 닫힌
+부분집합이라 하자. $f(X')\subset Y'$라고 가정한다. $\mathscr{J}$
+(각각 $\mathscr{K}$)를 $\mathscr{O}_X$ (각각 $\mathscr{O}_Y$)의
+아이디얼층이라 하고, $\mathscr{O}_X/\mathscr{J}$ (각각
+$\mathscr{O}_Y/\mathscr{K}$)의 지지집합은 $X'$ (각각 $Y'$)이며
+$f^*(\mathscr{K})\mathscr{O}_X\subset\mathscr{J}$라고 하자. 이러한
+아이디얼층은 항상 존재한다는 점을 지적해 두자. 예를 들어 $\mathscr{J}$로
+$\mathscr{O}_X$의 아이디얼층 가운데 $X$의 부분준스킴을 정의하고
+$X'$을 바탕공간으로 갖는 가장 큰 것을 택할 수 있고
+(\hyperref[I.5.2.1-ko]{5.2.1}),
+$f(X')\subset Y'$라는 가정에서
+$f^*(\mathscr{K})\mathscr{O}_X\subset\mathscr{J}$가 따른다
+(\hyperref[I.5.2.4-ko]{5.2.4}). 따라서 모든 정수 $n>0$에 대하여
+$f^*(\mathscr{K}^n)\mathscr{O}_X\subset\mathscr{J}^n$
+(\hyperref[0.4.3.5-ko]{0, 4.3.5})이고, 따라서
+(\hyperref[I.4.4.6-ko]{4.4.6})에 의해 다음과 같이 놓으면
+\[
+  X'_n=(X',\mathscr{O}_X/\mathscr{J}^{n+1}),\qquad
+  Y'_n=(Y',\mathscr{O}_Y/\mathscr{K}^{n+1}),
+\]
+$f$로부터 사상 $f_n:X'_n\to Y'_n$을 얻는다. 또한 $f_n$들은
+귀납계를 이룬다. 그 귀납극한
+(\hyperref[I.10.6.8-ko]{10.6.8})을
+$\widehat f:X_{/X'}\to Y_{/Y'}$로 나타내고, (표현을 다소 남용하여)
+$\widehat f$를 $f$의, $X$와 $Y$를 각각 $X'$와 $Y'$를 따라 완비화한
+것들 사이로의 연장이라 부르겠다. 이 사상이 위 조건을
+만족하는 아이디얼층 $\mathscr{J}$, $\mathscr{K}$의 선택에 의존하지
+않음은 즉시 확인할 수 있다. 실제로 이를 확인하기 위해서는 $X$, $Y$가
+각각 환 $A$, $B$의 아핀 뇌터 준스킴인 경우만 보면 충분하다. 이때
+$\mathscr{J}=\widetilde{\mathfrak{J}}$,
+$\mathscr{K}=\widetilde{\mathfrak{K}}$이고, $\mathfrak{J}$ (각각
+$\mathfrak{K}$)는 $A$ (각각 $B$)의 아이디얼이며, $f$는
+$\varphi:B\to A$라는 환 준동형에 대응하고
+$\varphi(\mathfrak{K})\subset\mathfrak{J}$이다
+(\hyperref[I.4.4.6-ko]{4.4.6} 및
+\hyperref[I.1.7.4-ko]{1.7.4}). 이때
+\emph{$\widehat f$는 (\hyperref[I.10.2.2-ko]{10.2.2})에 따라 연속
+준동형 $\widehat\varphi:\widehat B\to\widehat A$에 대응하는
+사상이다}. 여기서 $\widehat A$ (각각 $\widehat B$)는 $A$ (각각
+$B$)에 $\mathfrak{J}$-준아딕 (각각 $\mathfrak{K}$-준아딕) 위상을
+주어 얻는 분리 완비화이다
+(\hyperref[I.10.6.8-ko]{10.6.8}). 또한
+$\mathscr{J}$를 다른
+\oldpage[I]{199}
+아이디얼층 $\mathscr{J}'=\widetilde{\mathfrak{J}'}$로 바꾸어도,
+$\mathscr{O}_X/\mathscr{J}'$의 지지집합이 여전히 $X'$이면,
+$\mathfrak{J}$-준아딕 위상과 $\mathfrak{J}'$-준아딕 위상은 $A$ 위에서
+같음을 알고 있다
+(\hyperref[I.10.8.2-ko]{10.8.2}).
+이 정의에 따르면, $X_{/X'}$와 $Y_{/Y'}$의 바탕공간 사이의
+연속사상 $X'\to Y'$는 $\widehat f$에 대응하며, 다름 아닌 $X'$에 대한
+$f$의 제한임을 지적하자.
+\end{env}
