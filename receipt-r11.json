@@ -66,5 +66,12 @@
     "privacy": "no credential/profile literals in release text",
     "container_note": "public reader is canonical release container; working r157 container differs by 9 bytes while text/extraction/render checks pass"
   },
+  "post_publication_metadata_edit": {
+    "record_id": 22063585,
+    "action": "metadata-only correction after publication",
+    "result": "done; same DOI/version and same four file bytes",
+    "correction": "The description now states that Figshare additive v7 is blocked by an inactive/disabled account and makes no current r11 Figshare mirror claim; title, creators, sole contributor, rights boundary, non-endorsement and related identifiers remain unchanged",
+    "anonymous_file_replay_after_edit": "4/4 exact"
+  },
   "credential_material": "NONE"
 }
