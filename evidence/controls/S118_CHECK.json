@@ -1,0 +1,30 @@
+{
+  "schema": "ag-ko-s118-check-v1",
+  "id": "AGKO-S118-CHECK",
+  "source": {
+    "path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+    "substantive_sha256": "63DBC58ACEF2968DD8530F93D33D5802738D721C390E59624EC979845D0D5B1E",
+    "sha256": "4A6D47161FFE1BF0C7BE08808190DA11FB13749CF42CA2B2C54C349C1A5E9125",
+    "bytes": 4204,
+    "locator": "lines1779-1875"
+  },
+  "target": {
+    "path": "source/c1s10.tex",
+    "whole_sha256": "C24CA1D610AFC496129305B10F4895F0C0E35C2677A6DB2592BC9073B5DFBBF2",
+    "whole_bytes": 86269,
+    "locator": "lines1730-1824",
+    "bytes": 4464,
+    "sha256": "3F521F5A5FC5318CC253339BF3C72A9FE5A05011AAA318CC9F0FE65E7E947207"
+  },
+  "checks": {
+    "math": "exact multiset and order",
+    "environments": "4/4",
+    "hyperrefs": "13/13",
+    "meaning": "PASS",
+    "encoding": "UTF-8 no BOM, NFC, LF, terminal LF",
+    "boundary": "no 10.8.14 content",
+    "labels": "6/6",
+    "displays": "2/2"
+  },
+  "result": "PASS"
+}

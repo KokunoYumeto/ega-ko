@@ -1,74 +1,10 @@
 {
-  "schema_version": "DataCite-4.7-intent",
-  "resource_scope": "one continuously maintained Korean edition of the complete EGA corpus; exact version coverage is enumerated independently",
-  "language": "ko",
-  "global_concept_doi": "10.5281/zenodo.20414353",
-  "language_concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22063256",
-  "previous_exact_version_doi": "10.5281/zenodo.22062866",
-  "figshare_mirror_doi": "10.6084/m9.figshare.33314679",
-  "figshare_exact_version_doi": null,
-  "figshare_status": "continuing mirror version assignment pending publication and anonymous readback",
-  "original_doi": "10.5281/zenodo.20414353",
-  "relations": [
-    {
-      "from": "language_concept",
-      "relationType": "IsTranslationOf",
-      "to": "original"
-    },
-    {
-      "from": "language_concept",
-      "relationType": "IsPartOf",
-      "to": "global_hub"
-    },
-    {
-      "from": "exact_version",
-      "relationType": "IsVersionOf",
-      "to": "language_concept"
-    },
-    {
-      "from": "exact_version",
-      "relationType": "IsNewVersionOf",
-      "to": "previous_exact_version"
-    },
-    {
-      "from": "exact_version",
-      "relationType": "IsIdenticalTo",
-      "to": "figshare_mirror"
-    }
-  ],
-  "reciprocal_relations_required": [
-    {
-      "from": "original",
-      "relationType": "HasTranslation",
-      "to": "language_concept"
-    },
-    {
-      "from": "global_hub",
-      "relationType": "HasPart",
-      "to": "language_concept"
-    },
-    {
-      "from": "language_concept",
-      "relationType": "HasVersion",
-      "to": "exact_version"
-    },
-    {
-      "from": "previous_exact_version",
-      "relationType": "IsPreviousVersionOf",
-      "to": "exact_version"
-    },
-    {
-      "from": "figshare_mirror",
-      "relationType": "IsIdenticalTo",
-      "to": "exact_version"
-    }
-  ],
-  "zenodo_compatibility_2026_08_23": {
-    "translation_relation_values_exposed": false,
-    "translator_contributor_role_exposed": false,
-    "temporary_machine_readable_collection_relation": "IsPartOf/HasPart",
-    "translation_relation_preserved_in_description_and_evidence": true
-  },
-  "volume_policy": "Completed EGA volume readers remain parts/files of this Korean EGA language lineage; no separate volume DOI lineages"
+  "schema_version": 1,
+  "version": "2026-08-23-r11",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "exact_version_doi": "10.5281/zenodo.22063585",
+  "previous_exact_version_doi": "10.5281/zenodo.22063256",
+  "global_ega_concept_doi": "10.5281/zenodo.20414353",
+  "relation_policy": "isVersionOf concept DOI; isNewVersionOf previous exact release; source authority remains attributed and read-only",
+  "publication_status": "reserved draft; pending endpoint publication"
 }

@@ -4,18 +4,18 @@
   "printed_page": 187,
   "pdf_one_based_page": 186,
   "path_roots": {
-    "fr": "C:/Users/[USERPROFILE]/Documents/interlanguage/Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1",
-    "en": "C:/Users/[USERPROFILE]/Documents/interlanguage/03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1",
-    "interlanguage": "C:/Users/[USERPROFILE]/Documents/interlanguage"
+    "fr": "[USERPROFILE]/Documents/interlanguage/Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1",
+    "en": "[USERPROFILE]/Documents/interlanguage/03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1",
+    "interlanguage": "[USERPROFILE]/Documents/interlanguage"
   },
   "authority": {
-    "path": "C:/Users/[USERPROFILE]/Documents/Papors/OS/NUMDAM/EGA_I_PMIHES_1960_4.pdf",
+    "path": "[USERPROFILE]/Documents/Papors/OS/NUMDAM/EGA_I_PMIHES_1960_4.pdf",
     "bytes": 31680717,
     "pages": 227,
     "sha256": "9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6"
   },
   "published_erratum": {
-    "path": "C:/Users/[USERPROFILE]/Documents/Papors/OS/NUMDAM/EGA_II_PMIHES_1961_8.pdf",
+    "path": "[USERPROFILE]/Documents/Papors/OS/NUMDAM/EGA_II_PMIHES_1961_8.pdf",
     "bytes": 27414108,
     "sha256": "111834EFFFE9E90D068389D418F08925A82B4A54AE2957F080712D4180E032EB",
     "witness": {

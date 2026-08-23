@@ -1,0 +1,23 @@
+{
+  "schema": "ag-ko-r11-check-v1",
+  "version": "2026-08-23-r11",
+  "reader": {
+    "sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 140,
+    "bytes": 1233833
+  },
+  "working_bind": {
+    "path": "build/ega1/r157/main.pdf",
+    "sha256": "A40D0F45A9BFC5AAEF0F9E380470AA81F86C9E8FDFC3C9E20619CF02C3DF33C2",
+    "source_target_sha256": "C24CA1D610AFC496129305B10F4895F0C0E35C2677A6DB2592BC9073B5DFBBF2",
+    "bytes": 1233824
+  },
+  "scope": "EGA I through Corollary10.8.13 and Proposition10.8.11 proof, before Corollary10.8.14",
+  "exact_doi": "10.5281/zenodo.22063585",
+  "local_result": "PASS",
+  "publication": "pending",
+  "source_zip": "frozen 24-entry deterministic archive; exact bytes/SHA in release/2026-08-23-r11/03_EGA_ko_SHA256_MANIFEST.txt and final credential-free receipt",
+  "evidence_zip": "frozen 163-entry deterministic archive; exact bytes/SHA in release/2026-08-23-r11/03_EGA_ko_SHA256_MANIFEST.txt and final credential-free receipt",
+  "manifest": "frozen 3-row outer manifest; exact bytes/SHA in final credential-free receipt"
+}

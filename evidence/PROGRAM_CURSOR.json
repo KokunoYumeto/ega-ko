@@ -1,15 +1,13 @@
 {
-  "schema": "ag-ko-cursor-v1",
-  "updated": "2026-08-23T02:41:06+02:00",
-  "corpus": "EGA",
-  "volume": "I",
-  "source": "source/ega1/ega1-10-fr.tex",
-  "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "completed_through": "complete chapter1 sections1-9 and section10 through Proposition10.8.8 with both complete attached proof items and diagram10.8.8.1, and Corollary10.8.9 with attached justification; source/ega1/ega1-10-fr.tex lines1-1778 78268 characters /79329 bytes /C595936DB7E88231B222444C61E45CD65A933A16B9BB1E756EDF11168DFEE6A6; target ega/I/c1s10.tex lines1-1729 EOF 81805 bytes /47CD3B8D8B9705D388DCA27FC25FC09166D6E7D0333B8E6FDD895662EE1D0BE6; D127/E127/V491-V495 local gates PASS; r10 exact DOI10.5281/zenodo.22063256 reserved but not yet public; r9 remains the triple-endpoint public head under D126/E126",
-  "later_ega_status": "EGA III is candidate-ready on the user's direct report and is no longer a waiting blocker. It remains sequenced after EGA I, EGA II and FGA and must pass exact project-canonical source-authority packet validation before admission. Once those sequence and validation gates pass, admit EGA III without any scheduled, elapsed-time or conversational wait; thereafter translate only the contiguous ready sequence and stop before the first incomplete later volume.",
-  "next": "source/ega1/ega1-10-fr.tex line1779 Corollary10.8.10; after r10 publication closure continue once in canonical driver order with the next natural approximately4000-character complete source-bounded closed unit",
-  "public_checkpoint": "Current public checkpoint is Zenodo exact DOI10.5281/zenodo.22062866, Figshare exact DOI10.6084/m9.figshare.33314679.v5 and GitHub artifact commitc1259d61c3a4b534a83b3039de91454518d33767 plus byte-exact correctionddd956109a5360cfb1548079ca2556d5a210d944 and final receipt commitd6dcd7a9baa0c91691b23ca69849dd860d76d515 through environment10.8.7; DOI files4/4, manifest3/3, ZIP24/146, GitHub artifact manifest164/164 and receipts4/4 exact; earlier versions immutable",
-  "reserved_next_checkpoint": "Zenodo draft22063256 / DOI10.5281/zenodo.22063256 is reserved in the existing concept lineage for validated r10 through Corollary10.8.9; package, publish to Zenodo/Figshare/GitHub and anonymously replay before calling it public",
-  "target": "publish the validated r10 checkpoint, then continue the editable ega/I/c1s10.tex from source line1779 and append the next natural approximately4000-character complete source-bounded closed unit once without reopening lines1-1778",
-  "policy": "advance once; never reopen unchanged completed units"
+  "schema": "ag-ko-program-cursor-public-v2",
+  "updated": "2026-08-23T18:34:36+02:00",
+  "volume": "EGA I",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line1876",
+  "next_label": "Corollary10.8.14",
+  "package_target": "source/c1s10.tex",
+  "package_target_locator": "lines1-1824",
+  "package_target_sha256": "C24CA1D610AFC496129305B10F4895F0C0E35C2677A6DB2592BC9073B5DFBBF2",
+  "reserved_zenodo": "10.5281/zenodo.22063585",
+  "current_public": "10.5281/zenodo.22063256",
+  "status": "r11 package/readback pending"
 }

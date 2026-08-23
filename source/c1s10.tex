@@ -1727,3 +1727,98 @@ $\gamma:\mathscr{F}\to\psi_*(\mathscr{F}_{/X'})$를 얻는다.
 이는 실제로 (\hyperref[0.6.7.3-ko]{0, 6.7.3})과
 (\hyperref[I.10.8.8-ko]{10.8.8, (i)})에서 따른다.
 
+\begin{corollary}[10.8.10]
+\label{I.10.8.10-ko}
+$\mathscr{F}$와 $\mathscr{G}$가 연접 $\mathscr{O}_X$-가군이면, 다음
+표준 동형사상들이 존재하며 $\mathscr{F}$와 $\mathscr{G}$에 관하여 함자적이다.
+\[
+  (\mathscr{F}_{/X'})\otimes_{(\mathscr{O}_X)_{/X'}}
+  (\mathscr{G}_{/X'})
+  \xrightarrow{\sim}
+  (\mathscr{F}\otimes_{\mathscr{O}_X}\mathscr{G})_{/X'}
+  \tag{10.8.10.1}\label{I.10.8.10.1-ko}
+\]
+\[
+  (\mathscr{H}\!om_{\mathscr{O}_X}(\mathscr{F},\mathscr{G}))_{/X'}
+  \xrightarrow{\sim}
+  \mathscr{H}\!om_{(\mathscr{O}_X)_{/X'}}
+  (\mathscr{F}_{/X'},\mathscr{G}_{/X'})
+  \tag{10.8.10.2}\label{I.10.8.10.2-ko}
+\]
+\end{corollary}
+
+이는 $i^*(\mathscr{F})$와 $\mathscr{F}_{/X'}$의 표준 동일시에서 따른다~;
+이때 첫 번째 동형의 존재는 모든 환 달린 공간의 사상에 대하여 성립하는
+결과이고 (\hyperref[0.4.3.3.1-ko]{0, 4.3.3.1}), 두 번째 동형의 존재는
+모든 평탄 사상에 대하여 성립하는 결과이므로
+(\hyperref[0.6.7.6-ko]{0, 6.7.6}),
+(\hyperref[I.10.8.9-ko]{10.8.9})에서 따른다.
+
+\begin{proposition}[10.8.11]
+\label{I.10.8.11-ko}
+모든 연접 $\mathscr{O}_X$-가군 $\mathscr{F}$에 대하여, 표준 준동형
+$\Gamma(X,\mathscr{F})\to\Gamma(X',\mathscr{F}_{/X'})$는
+$\mathscr{F}\to\mathscr{F}_{/X'}$에서 유도되며, 그 핵은 $X'$의 어떤
+근방에서 영인 단면들로 이루어진다.
+\end{proposition}
+
+그러한 단면의 표준 상이 영임은 $\mathscr{F}_{/X'}$의 정의에서 따른다.
+역으로 $s\in\Gamma(X,\mathscr{F})$의 상이
+$\Gamma(X',\mathscr{F}_{/X'})$에서 영이라고 하자. 모든 $x\in X'$가
+$X$ 안에 하나의 근방을 가져 그곳에서 $s$가 영임을 보이면 충분하고, 따라서
+$X=\operatorname{Spec}(A)$가 아핀 스킴이고 $A$가 뇌터 환이며,
+$X'=V(\mathfrak{J})$이고 $\mathfrak{J}$가 $A$의 아이디얼이며,
+$\mathscr{F}=\widetilde M$이고 $M$이 유한 생성 $A$-가군인 경우로
+환원할 수 있다. 이때 $\Gamma(X',\mathscr{F}_{/X'})$는
+분리 완비화 $\widehat M$이고, 이는 $M$을 $\mathfrak{J}$-준아딕 위상에
+관하여 분리 완비화한 것이다. 또한
+준동형 $\Gamma(X,\mathscr{F})\to\Gamma(X',\mathscr{F}_{/X'})$는
+표준 준동형 $M\to\widehat M$이다. 이 준동형의 핵은
+$z\in M$ 가운데 $1+\mathfrak{J}$의 한 원소에 의해 소멸되는 것들의 집합임이
+알려져 있다 (\hyperref[0.7.3.7-ko]{0, 7.3.7}). 따라서
+$(1+f)s=0$인 어떤 $f\in\mathfrak{J}$가 존재한다~; 모든 $x\in X'$에
+대하여 이로부터 $(1_x+f_x)s_x=0$을 얻고,
+$1_x+f_x$는 $\mathscr{O}_x$에서 가역인데(실제로
+$\mathfrak{J}_x\mathscr{O}_x$는 $\mathscr{O}_x$의 극대 아이디얼에
+포함된다). 따라서
+$s_x=0$이고, 이는 명제를 증명한다.
+
+\begin{corollary}[10.8.12]
+\label{I.10.8.12-ko}
+$\mathscr{F}_{/X'}$의 지지집합은
+$\operatorname{Supp}(\mathscr{F})\cap X'$과 같다.
+\end{corollary}
+
+$\mathscr{F}_{/X'}$가 유한 생성 $(\mathscr{O}_X)_{/X'}$-가군임은
+(\hyperref[I.10.8.8-ko]{10.8.8, (ii)})와
+(\hyperref[0.5.2.4-ko]{0, 5.2.4})에서 명백하므로,
+
+\oldpage[I]{198}
+
+그 지지집합은 닫혀 있고
+(\hyperref[0.5.2.2-ko]{0, 5.2.2}), 명백히
+$\operatorname{Supp}(\mathscr{F})\cap X'$에 포함된다. 이 마지막
+집합과 같음을 보이기 위해서는 등식
+$\Gamma(X',\mathscr{F}_{/X'})=0$이
+$\operatorname{Supp}(\mathscr{F})\cap X'=\varnothing$을 함의함을
+증명하는 것으로 즉시 환원된다~; 그런데 이는
+(\hyperref[I.10.8.11-ko]{10.8.11})과
+(\hyperref[I.1.4.1-ko]{1.4.1})에서 따른다.
+
+\begin{corollary}[10.8.13]
+\label{I.10.8.13-ko}
+$u:\mathscr{F}\to\mathscr{G}$를 연접 $\mathscr{O}_X$-가군 사이의 준동형이라
+하자. $u_{/X'}:\mathscr{F}_{/X'}\to\mathscr{G}_{/X'}$가 영이기 위한
+필요충분조건은 $u$가 $X'$의 어떤 근방에서 영 준동형인 것이다.
+\end{corollary}
+
+실제로 (\hyperref[I.10.8.8-ko]{10.8.8, (ii)})에 따라 $u_{/X'}$는
+$i^*(u)$와 동일시된다. 따라서 $u$를 $X$ 위에서 층
+$\mathscr{H}=\mathscr{H}\!om_{\mathscr{O}_X}(\mathscr{F},\mathscr{G})$의
+단면으로 보면, $u_{/X'}$는
+$i^*(\mathscr{H})=\mathscr{H}_{/X'}$의 $X'$ 위의 단면이며 앞서 본
+단면에 표준적으로 대응한다
+((\hyperref[I.10.8.10.2-ko]{10.8.10.2})와
+(\hyperref[0.4.4.6-ko]{0, 4.4.6})). 그러므로 연접
+$\mathscr{O}_X$-가군 $\mathscr{H}$에
+(\hyperref[I.10.8.11-ko]{10.8.11})을 적용하면 충분하다.

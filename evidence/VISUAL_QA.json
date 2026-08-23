@@ -1,19 +1,22 @@
 {
   "schema_version": 1,
-  "reader_sha256": "75DECDC669B4D89F5BB965652BBA3964BB7577225C83C91DCC88BE5B265C643E",
-  "render_count": 5,
-  "render_dimensions": "1654x2339",
+  "version": "2026-08-23-r11",
+  "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+  "reader_bytes": 1233833,
+  "reader_sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
+  "render_count": 7,
   "dpi": 200,
-  "rotation": 0,
-  "inspection": "direct inspection of every page changed by the newest mathematical unit and final exact-DOI metadata; five immutable V491-V495 records retained, and standalone public-tree pages1,2,137-139 reproduce all five accepted final PNGs pixel-for-pixel; prior sealed visual evidence remains in visual.jsonl",
-  "checked": [
-    "title page with exact working-head coverage",
-    "information page with exact DOI22063256, bounded rights, stable concept, Figshare and GitHub continuity",
-    "sealed predecessor and section10 opening on page137",
-    "Proposition10.8.8 with its complete two-part proof and diagram10.8.8.1, followed by Corollary10.8.9 and its attached justification on page138",
-    "complete bibliography page139",
-    "standalone public-tree render replay exact5/5"
-  ],
-  "defects": 0,
-  "result": "PASS"
+  "dimensions": "1654x2339",
+  "pages": "1,2,6,137,138,139,140",
+  "render_hashes": {
+    "page1": "28CDF80655E5F08B221E2670980931CAE45D93B6FA8F499186FED5B3ED5DDD22",
+    "page2": "590BA930A20EA6A2935A31C27F746321CEFCF512CA1C7AAC467C2D75E4EAF8E8",
+    "page6": "2ABAF9FB4017BD16566F50A5ABD220BDD634DF0F19E66ECD7AE3206011B8D524",
+    "page137": "3F0FD4B517387887B0357508398AFD40CCC33D13729BA24F73B822D2143C6B3D",
+    "page138": "BDEA33693522BEB41265FCFEA4D2220009A4BC1E3F59C549C5ED58800BB72573",
+    "page139": "25FB1D66CB3E54987EC58595553DC1CEC27371D079526DD3F50EF9DAAD7DE6AF",
+    "page140": "B51FB1904A6B14C81F4AE9A82C55780B43E11EA0369B47A0CD9D2BDE419F0B81"
+  },
+  "result": "PASS",
+  "disposition": "Public and working selected renders are pixel-identical; page138 and139 directly cover new mathematics and closure; page140 covers bibliography."
 }

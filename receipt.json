@@ -1,19 +1,17 @@
 {
   "schema": "ag-ko-zenodo-publication-receipt-v1",
-  "created": "2026-08-23T03:12:47.2916459+02:00",
+  "created": "2026-08-23T19:02:00+02:00",
   "publication": {
     "host": "Zenodo",
-    "record_id": 22063256,
-    "record_url": "https://zenodo.org/records/22063256",
-    "doi": "10.5281/zenodo.22063256",
-    "doi_url": "https://doi.org/10.5281/zenodo.22063256",
+    "record_id": 22063585,
+    "record_url": "https://zenodo.org/records/22063585",
+    "doi": "10.5281/zenodo.22063585",
     "concept_doi": "10.5281/zenodo.21921513",
-    "version": "2026-08-23-r10",
-    "published": "2026-08-23T01:02:47.954352+00:00",
-    "access": "open",
-    "resource_type": "publication/book",
-    "language": "kor",
-    "license": "CC BY 4.0"
+    "version": "2026-08-23-r11",
+    "access": "public",
+    "submitted": true,
+    "state": "done",
+    "scope": "EGA I front matter/introduction, all EGA 0_I, Chapter I programme and §§1–9, and §10 through Corollary 10.8.13 with attached argument, ending immediately before Corollary 10.8.14"
   },
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
@@ -21,61 +19,48 @@
       "Grothendieck, Alexander",
       "Dieudonné, Jean"
     ],
-    "contributor": "AI typesetting & translation (Other)",
-    "coverage": "EGA I front matter and introduction, all of EGA 0_I, the Chapter I programme and sections 1–9, and section 10 through Proposition 10.8.8 with its complete two-part proof and diagram 10.8.8.1, and Corollary 10.8.9 with its attached justification, ending immediately before Corollary 10.8.10",
-    "completion_limit": "This cumulative checkpoint does not claim that the full EGA corpus is complete.",
-    "source_relation": "IsPartOf https://doi.org/10.5281/zenodo.20414353",
-    "mirror_relation": "IsIdenticalTo https://doi.org/10.6084/m9.figshare.33314679",
-    "repository": "https://github.com/KokunoYumeto/ega-ko",
-    "rights_scope": "CC BY 4.0 applies only, to the extent rights are held, to the Korean translation, Korean typesetting, and project-authored metadata, indexes, decisions and QA evidence; underlying and third-party materials retain their own rights and attribution.",
-    "non_endorsement": "Not endorsed by the historical authors, NUMDAM, or the original publisher; no claim of human external certification or critical-edition status."
+    "project_contribution": "AI typesetting & translation",
+    "license": "CC BY 4.0 bounded to rights-held Korean translation/typesetting/project-authored metadata, indexes, decisions and QA evidence",
+    "non_endorsement": "Historical authors, NUMDAM and original publisher do not endorse; no human external certification or critical-edition status claimed"
   },
   "files": [
     {
       "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1228609,
-      "md5": "3d5bc198670c2a2d30ec108c32711b0e",
-      "sha256": "75DECDC669B4D89F5BB965652BBA3964BB7577225C83C91DCC88BE5B265C643E",
-      "pages": 139
+      "bytes": 1233833,
+      "sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D",
+      "md5": "9604cc668089cc93cbb373d4c9dbc7d6",
+      "pages": 140
     },
     {
       "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 211214,
-      "md5": "d13037e63208ec552a968ab1309b8399",
-      "sha256": "48AF76D93EB1FAF18C3A13B054FB5A375771A90BC460F42F25D8FAFDF7CCA8F6",
+      "bytes": 215358,
+      "sha256": "0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81",
+      "md5": "8344e46652d0e65bda716d1a12a1ee8e",
       "entries": 24
     },
     {
       "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 38110886,
-      "md5": "fd2a5031a5602af46cd4dfc3125050b3",
-      "sha256": "A76EA841C25E8509C30E5F1EFD9F47056F3C4DC659D9EB13C4D7395B529C4984",
-      "entries": 151
+      "bytes": 42521096,
+      "sha256": "C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6",
+      "md5": "5dcfd3754a6b727e380d9fa5703a5769",
+      "entries": 163
     },
     {
       "name": "03_EGA_ko_SHA256_MANIFEST.txt",
-      "bytes": 299,
-      "md5": "9abdee88967cc8f5ea20e7d9ce4f79a0",
-      "sha256": "C0339DFB9515BDA8CF7F847FA3FC3932DEDFFF6A0C8F21D891084487DEC4EDD6",
+      "bytes": 302,
+      "sha256": "AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570",
+      "md5": "f5a3472910ee30610e0d9768de2646b9",
       "rows": 3
     }
   ],
-  "anonymous_readback": {
-    "record_api": "https://zenodo.org/api/records/22063256",
-    "record_json": "7684 bytes / 34208850B904A289AAD2E35B6CBF25F8BC42B332D0AF085EBFFC927B10D9E1A3",
-    "download_root": "build/out/readback-r10/zenodo (excluded build scratch)",
-    "files_byte_md5_and_sha256_exact": "4/4",
-    "identical_to_figshare_v6_files": "4/4",
-    "identical_to_github_artifact_commit_files": "4/4",
-    "manifest_rows_replayed": "3/3",
-    "source_zip_entries_replayed": "24/24",
-    "evidence_zip_entries_replayed": "151/151",
-    "artifact_manifest_rows_replayed_from_release": "168/169",
-    "artifact_manifest_rows_replayed_with_github_gitignore": "169/169",
-    "artifact_manifest_caveat": "The .gitignore row is intentionally absent from both release ZIPs; it was independently replayed from the public GitHub artifact commit.",
-    "metadata_checks": "PASS",
-    "doi_resolution": "PASS",
-    "result": "PASS"
+  "checks": {
+    "anonymous_file_replay": "4/4 size, MD5 and SHA-256 exact",
+    "manifest": "3/3 rows exact",
+    "source_zip": "24/24 entries exact",
+    "evidence_zip": "163/163 entries exact",
+    "metadata": "PASS",
+    "privacy": "no credential/profile literals in release text",
+    "container_note": "public reader is canonical release container; working r157 container differs by 9 bytes while text/extraction/render checks pass"
   },
   "credential_material": "NONE"
 }

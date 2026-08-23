@@ -1,47 +1,12 @@
 {
-  "schema_version": 1,
-  "declared_object_scope": "one continuously maintained Korean edition of the complete EGA corpus; this exact cumulative release covers only the enumerated current frontier",
-  "original_or_source_title": "Éléments de géométrie algébrique I and EGA 0_I",
-  "original_or_source_edition": "NUMDAM-based canonical French TeX working authority observed 2026-08-23",
-  "original_or_source_identifier": "https://doi.org/10.5281/zenodo.20414353",
-  "source_artifact_path_or_public_url": "source/ega1/ega1-10-fr.tex in the canonical French EGA corpus",
-  "source_artifact_bytes": 159763,
-  "source_artifact_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "translated_prefix": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1-1778 with terminal LF; Proposition10.8.8 with its complete two-part proof and diagram10.8.8.1, Corollary10.8.9 with attached justification and separator",
-    "characters": 78268,
-    "bytes": 79329,
-    "sha256": "C595936DB7E88231B222444C61E45CD65A933A16B9BB1E756EDF11168DFEE6A6"
-  },
-  "newest_closed_unit": {
-    "locator": "source/ega1/ega1-10-fr.tex lines1683-1777",
-    "characters": 3853,
-    "bytes": 3880,
-    "sha256": "89A344F3FFF8B49F63451F52BE1594D17EAB922D4719B79AD3BD55A84E884AEE",
-    "closure_through_separator_bytes": 3881,
-    "closure_through_separator_sha256": "0CF7A5E22435729C161E94DD16DCABED03DFFE968BA2B33585420A9CB61CEE19"
-  },
-  "translated_target": {
-    "path": "source/c1s10.tex",
-    "lines": 1729,
-    "bytes": 81805,
-    "sha256": "47CD3B8D8B9705D388DCA27FC25FC09166D6E7D0333B8E6FDD895662EE1D0BE6"
-  },
-  "additional_complete_components": [
-    "EGA I front matter",
-    "EGA I complete introduction",
-    "EGA 0_I complete source file, sections1-7",
-    "EGA I Chapter I programme and sections1-9 complete",
-    "EGA I Chapter I section10 through Corollary10.8.9 with attached justification immediately before Corollary10.8.10",
-    "EGA I bibliography with22 items"
-  ],
-  "authority_hierarchy": [
-    "NUMDAM-based canonical French TeX, read-only",
-    "English witnesses only for sense checking; never source authority"
-  ],
-  "excluded_scope": [
-    "EGA I Chapter I section10 from Corollary10.8.10 onward",
-    "remaining EGA I chapters and later EGA volumes"
-  ],
-  "subwork_doi_policy": "EGA volumes are reader files within this single Korean EGA language DOI lineage, not separate DOI lineages"
+  "schema": "ag-ko-public-source-authority-v2",
+  "canonical_path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+  "canonical_bytes": 159763,
+  "canonical_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "admission": "read-only canonical French authority; S118 closure lines1779-1875; no applicable official erratum",
+  "target_path": "source/c1s10.tex",
+  "target_bytes": 86269,
+  "target_sha256": "C24CA1D610AFC496129305B10F4895F0C0E35C2677A6DB2592BC9073B5DFBBF2",
+  "next_source_line": 1876,
+  "next_label": "Corollary10.8.14"
 }

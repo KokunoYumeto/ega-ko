@@ -2,22 +2,23 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1228609,
-    "sha256": "75DECDC669B4D89F5BB965652BBA3964BB7577225C83C91DCC88BE5B265C643E"
+    "bytes": 1233833,
+    "sha256": "8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r155/main.pdf",
-    "bytes": 1228625,
-    "sha256": "A445E7003E78D8C234E16B214DB6391E89CEA56D3738EB9829F58D7F29ED20EA"
+    "path": "build/ega1/r157/main.pdf",
+    "bytes": 1233824,
+    "sha256": "A40D0F45A9BFC5AAEF0F9E380470AA81F86C9E8FDFC3C9E20619CF02C3DF33C2"
   },
-  "source_files_exact": true,
+  "source_target_hash": "C24CA1D610AFC496129305B10F4895F0C0E35C2677A6DB2592BC9073B5DFBBF2",
   "comparison": {
-    "pages": 139,
+    "pages": 140,
     "pypdf_text_exact_on_all_pages": true,
-    "pdftotext_extraction_exact_after_lf_normalization": true,
-    "hangul_syllables_each": 128167,
+    "pdftotext_extraction_exact": true,
+    "hangul_syllables_each": 128782,
     "replacement_characters_each": 0,
-    "pages1_2_137_138_139_200dpi_pixel_exact": true
+    "selected_pages_200dpi_pixel_exact": "1,2,6,137,138,139,140",
+    "all_pages_72dpi_pixel_exact": true
   },
-  "disposition": "The standalone repository build is the canonical exact-version container. Its sixteen-byte size difference from working-tree r155 is retained as a bounded container-level delta: all139 pypdf page texts, full LF-normalized Poppler extraction and inspected200dpi pages1,2,137-139 are exact. No content or status inference is drawn from the container difference."
+  "disposition": "The standalone public-tree reader is the canonical release container. The 9-byte size difference from fresh working r157 is retained as a bounded container-level delta; text, extraction and rendered content are exact where checked. No content or status inference is drawn from container bytes."
 }
