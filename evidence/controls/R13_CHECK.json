@@ -1,0 +1,22 @@
+{
+  "schema": "ag-ko-r13-check-v1",
+  "version": "2026-08-23-r13",
+  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+  "canonical_source_bytes": 159763,
+  "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "source_unit": "lines1964-2068 plus line2069 separator",
+  "source_unit_bytes": 4842,
+  "source_unit_sha256": "20A1745B2B6E178877DC0E22E6811E4639F6E3AADE4C92A520B15E62589B3C14",
+  "target": "source/c1s10.tex lines1911-2016",
+  "target_unit_bytes": 5230,
+  "target_unit_sha256": "8A2ADC73348858314E824EE5E71DF316FD185F719E8FE009BB3C1632F89E4678",
+  "whole_target_bytes": 95765,
+  "whole_target_sha256": "E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533",
+  "structure": "PASS: environments10.9.2-10.9.3, Proposition10.9.4 with proof, Proposition10.9.5 with proof, and complete environment10.9.6 in canonical order",
+  "formula_and_reference_binding": "PASS: math107/107 exact multiset; references10/10 ordered; labels6/6 ordered; environment begins/ends5/5; oldpage I|200 exact",
+  "korean_fidelity": "PASS after correcting the printed Proposition10.9.4 type defect h in Gamma(Y,O_X) to h in Gamma(X,O_X) with an explicit translator note and authority-task notice",
+  "terminology_workflow": "Primary arXiv usage witnesses retained and logged; Korean forms remain definition-bound to canonical French; AGKO-T152 locks f-, f-hat- and g-morphism forms plus the typed adjunction direction",
+  "build_extraction_visual": "PASS: deterministic r161 working/public builds, exact full extractions, and direct 200dpi inspection of pages1,2,6,139-141",
+  "next_source": "line2070 Proposition10.9.7",
+  "result": "PASS"
+}

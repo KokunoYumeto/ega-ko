@@ -1907,3 +1907,110 @@ $\mathfrak{J}$-준아딕 위상과 $\mathfrak{J}'$-준아딕 위상은 $A$ 위�
 연속사상 $X'\to Y'$는 $\widehat f$에 대응하며, 다름 아닌 $X'$에 대한
 $f$의 제한임을 지적하자.
 \end{env}
+
+\begin{env}[10.9.2]
+\label{I.10.9.2-ko}
+앞의 정의로부터 환 달린 공간의 사상들로 이루어진 도식
+\[
+  \label{I.10.9.2.1-ko}
+  \xymatrix{
+    \widehat X\ar[r]^{\widehat f}\ar[d]_{i_X} &
+    \widehat Y\ar[d]^{i_Y}\\
+    X\ar[r]_f &
+    Y
+  }
+\]
+이 가환이고, 세로 화살표들은 표준 사상
+(\hyperref[I.10.8.7-ko]{10.8.7})임이 곧바로 따른다.
+\end{env}
+
+\begin{env}[10.9.3]
+\label{I.10.9.3-ko}
+$Z$를 세 번째 준스킴, $g:Y\to Z$를 사상, $Z'$을
+$g(Y')\subset Z'$인 $Z$의 닫힌 부분집합이라 하자. $Y'$과 $Z'$을
+따른 사상 $g$의 완비화를 $\widehat g$로 나타내면,
+(\hyperref[I.10.9.1-ko]{10.9.1})로부터
+$\widehat{(g\circ f)}=\widehat g\circ\widehat f$임이 곧바로 따른다.
+\end{env}
+
+\begin{proposition}[10.9.4]
+\label{I.10.9.4-ko}
+$X$, $Y$를 두 국소 뇌터 $S$-준스킴이라 하고, $Y$가 $S$ 위의
+유한형이라고 하자. $f$, $g$를 $X$에서 $Y$로 가는 두 $S$-사상이라
+하고, $f(X')\subset Y'$, $g(X')\subset Y'$라고 하자.
+$\widehat f=\widehat g$일 필요충분조건은 $f$와 $g$가 $X'$의 어떤
+근방에서 일치하는 것이다.
+\end{proposition}
+
+$Y$에 대한 유한성 가정 없이도 이 조건은 자명하게 충분하다.
+필요성을 보기 위해, 먼저 가정 $\widehat f=\widehat g$에서 모든
+$x\in X'$에 대하여 $f(x)=g(x)$가 따름을 지적하자. 한편 문제는
+국소적이므로, $X$와 $Y$가 각각 $x$와 $y=f(x)=g(x)$의 아핀 열린
+근방이고 그 좌표환들이 뇌터이며, $S$가 아핀이고
+$\Gamma(Y,\mathscr{O}_Y)$가 $\Gamma(S,\mathscr{O}_S)$ 위의 유한 생성
+대수라고 가정할 수 있다
+(\hyperref[I.6.3.3-ko]{6.3.3}). 이때 $f$와 $g$는
+$\Gamma(Y,\mathscr{O}_Y)$에서 $\Gamma(X,\mathscr{O}_X)$로 가는 두
+$\Gamma(S,\mathscr{O}_S)$-대수 준동형 $\rho$, $\sigma$에 대응한다
+(\hyperref[I.1.7.3-ko]{1.7.3}). 또한 가정에 따라 이 준동형들을
+$\Gamma(Y,\mathscr{O}_Y)$의 분리 완비화에 연속적으로 연장한
+준동형들은 서로 같다. 따라서 (\hyperref[I.10.8.11-ko]{10.8.11})에서
+모든 단면 $s\in\Gamma(Y,\mathscr{O}_Y)$에 대하여 단면 $\rho(s)$와
+$\sigma(s)$가 $X'$의 어떤 근방에서 일치한다는 결론을 얻는다(이
+근방은 $s$에 의존한다)~; $\Gamma(Y,\mathscr{O}_Y)$가
+$\Gamma(S,\mathscr{O}_S)$ 위의 유한 생성 대수이므로, $X'$의 한 근방
+$V$가 존재하여 \emph{모든} 단면 $s\in\Gamma(Y,\mathscr{O}_Y)$에
+대하여 $\rho(s)$와 $\sigma(s)$가 $V$에서 일치함이 곧바로 따른다.
+$D(h)$가 $V$에 포함되는 $x$의 근방이 되도록
+$h\in\Gamma(X,\mathscr{O}_X)$를 택하면, 앞의 결론과
+(\hyperref[I.1.4.1-ko]{1.4.1, d)})에서 $f$와 $g$가 $D(h)$에서
+일치함을 얻는다.\footnote{\textbf{번역 주.} 인쇄 원문은 여기서 형에
+맞지 않는 $h\in\Gamma(Y,\mathscr{O}_X)$라고 쓴다. 그러나
+$\mathscr{O}_X$는 $X$ 위의 층이고 이어지는 $D(h)$는 $X$ 안에서
+$x$의 근방이므로, $h\in\Gamma(X,\mathscr{O}_X)$로 바로잡았다.}
+
+\begin{proposition}[10.9.5]
+\label{I.10.9.5-ko}
+(\hyperref[I.10.9.1-ko]{10.9.1})의 가정 아래에서, 모든 연접
+$\mathscr{O}_Y$-가군 $\mathscr{G}$에 대하여 다음과 같은
+$(\mathscr{O}_X)_{/X'}$-가군의 함자적인 표준 동형이 존재한다.
+\[
+  (f^*(\mathscr{G}))_{/X'}\xrightarrow{\sim}
+  \widehat f^*(\mathscr{G}_{/Y'})
+\]
+\end{proposition}
+
+$(f^*(\mathscr{G}))_{/X'}$를 $i_X^*(f^*(\mathscr{G}))$와,
+$\widehat f^*(\mathscr{G}_{/Y'})$를
+$\widehat f^*(i_Y^*(\mathscr{G}))$와 표준적으로 동일시하면
+(\hyperref[I.10.8.8-ko]{10.8.8}), 명제는
+(\hyperref[I.10.9.2-ko]{10.9.2})의 도식이 가환이라는 사실에서 곧바로
+따른다.
+
+\begin{env}[10.9.6]
+\label{I.10.9.6-ko}
+이제 $\mathscr{F}$를 연접 $\mathscr{O}_X$-가군,
+$\mathscr{G}$를 연접 $\mathscr{O}_Y$-가군이라 하자.
+$u:\mathscr{G}\to\mathscr{F}$가 $\mathscr{G}$에서 $\mathscr{F}$로
+가는 $f$-사상이면, 이에 대응하는 $\mathscr{O}_X$-준동형
+$u^\sharp:f^*(\mathscr{G})\to\mathscr{F}$가 있다. 따라서 이 준동형을
+완비화하면 연속 $(\mathscr{O}_X)_{/X'}$-준동형
+$(u^\sharp)_{/X'}:(f^*(\mathscr{G}))_{/X'}\to\mathscr{F}_{/X'}$를
+얻고, (\hyperref[I.10.9.5-ko]{10.9.5})에 의해
+$\widehat f$-사상 $v:\mathscr{G}_{/Y'}\to\mathscr{F}_{/X'}$가 존재하고,
+\oldpage[I]{200}
+
+유일하며, $v^\sharp=(u^\sharp)_{/X'}$를 만족한다. 삼중항
+$(\mathscr{F},X,X')$들($\mathscr{F}$는 연접 $\mathscr{O}_X$-가군이고
+$X'$은 $X$의 닫힌 부분집합이다)을 하나의 \emph{범주}의 대상으로
+생각하고, 사상
+$(\mathscr{F},X,X')\to(\mathscr{G},Y,Y')$들이
+$f(X')\subset Y'$인 준스킴의 사상 $f:X\to Y$와
+$f$-사상 $u:\mathscr{G}\to\mathscr{F}$로 이루어진다고 하자. 그러면
+$(X_{/X'},\mathscr{F}_{/X'})$는 $(\mathscr{F},X,X')$에 관한
+\emph{함자}라고 말할 수 있다. 이 함자는 국소 뇌터 형식적 준스킴
+$\mathfrak{Z}$와 $\mathscr{O}_{\mathfrak{Z}}$-가군 $\mathscr{H}$로
+이루어진 쌍 $(\mathfrak{Z},\mathscr{H})$들의 범주에 값을 갖는다.
+후자의 범주에서 사상은 형식적 준스킴의 사상 $g$와 $g$-사상으로
+이루어진 쌍이다.
+\end{env}

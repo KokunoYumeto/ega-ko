@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "version": "2026-08-23-r12",
+  "version": "2026-08-23-r13",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1238771,
-  "reader_sha256": "03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C",
+  "reader_bytes": 1245522,
+  "reader_sha256": "69E3D3BC2A34C8F669B00F0F42D6946D8B54F919D35AC00FE222D08266504393",
   "render_count": 6,
   "dpi": 200,
   "dimensions": "1654x2339",
   "pages": "1,2,6,139,140,141",
   "render_hashes": {
-    "page1": "3E89ABEFED8A0F5574293AED38C8CC77C1CD32010C25197B877B1BB459770D9E",
-    "page2": "D527C65485C7FCC6A353C3D6E06C99BA4B7932A2F918CD440360229081CC794B",
+    "page1": "952DA6E5D6EF44182675B4612CA7849199325AF0E8F4B573D1D36331CB6438C2",
+    "page2": "3DB20BEAAD3E713120D68D5C40921FC0EE6AE3ADA21D64901EDF4BFFBFBABF94",
     "page6": "07FE2158488F4D0C4E31A1CCABBFBB47C2F5B7612AD31C7D94CDD8CC2EC3D473",
     "page139": "9E830D0D7A246BEB4CEFCAD3476285F53F22A4D8658C6B32991246646C98E833",
-    "page140": "B67F1FEB08AB768FE509555647239AED35DDDA923C3EA74018B3F182F9C1C123",
+    "page140": "C5061C85DF0F4D071CD3F6D3260B5917B9DB52C93A48CD911207596A000FF6AC",
     "page141": "3DADDBE1C65E748CC3F3F2C907B1C042DA1BFA7D409652C1D3D470EFD408646D"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify current r12 scope, exact DOI, rights and non-endorsement; page6 verifies the table of contents; pages139-140 cover the new mathematics and closure; page141 covers the bibliography."
+  "disposition": "Pages1-2 verify current r13 scope, exact DOI, rights and non-endorsement; page6 verifies the table of contents; pages139-140 cover the new mathematics, typed source correction note and closure; page141 covers the bibliography."
 }

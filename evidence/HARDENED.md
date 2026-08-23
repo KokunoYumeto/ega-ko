@@ -298,7 +298,7 @@ Zenodo는 기존 한국어 EGA 개념 DOI [10.5281/zenodo.21921513](https://doi.
 
 고정 메타데이터의 세 번 연속 XeLaTeX 빌드를 두 주기씩 수행했다. 작업 범위 빌드 r145는 두 주기가 바이트 동일한 137쪽, 1,203,804바이트, SHA-256 `088887BAB0F64CAEEEFB1A9345E136A68EFEE1DBB47119AACB747D819433A842`이다. 정확 DOI와 GitHub 접근 상태를 반영한 r146도 두 주기가 바이트 동일한 137쪽, 1,204,302바이트, SHA-256 `DBF165BCBF6AF5DAEAA9290C82A45CD4FF3CEE0B90F9ACDD8676AA76E4E3FC1B`이며 치명 진단은 0이다. 최종 Poppler와 pypdf 추출은 각각 607,178바이트 / `B95109BA1BFB50017B45C3EB956E834DD5CFC54CBE99888478A3192AF3CF82AD`, 575,082바이트 / `8FDFFE03FE684E5B45FA2758C34003D905624319A188565EF8D4CC590B2C60BE`이고 한글 음절 125,392개와 대체문자 0개가 일치한다. V452-V457의 200dpi 직접 검사는 제목, 앞쪽 안정 페이지134, 새 수학 페이지135-136, 이동한 참고문헌137, 정확 DOI·저장소 상태 정보면을 통과했다.
 
-GitHub가 계정 정지로 현재 접근 불가능하다는 Floris의 직접 사실에 따라, 최종 정보면은 역사적 주소를 보존하되 `일시 접근 불가`라고 정확히 표시하고 공공 보존소들의 연속성을 명시한다. 기존 Zenodo 개념 DOI는 [10.5281/zenodo.21921513](https://doi.org/10.5281/zenodo.21921513)이고, 새 정확 DOI [10.5281/zenodo.22059890](https://doi.org/10.5281/zenodo.22059890)은 같은 계보 안에서 예약됐지만 아직 공개됐다고 주장하지 않는다. 현 공개판은 익명 재검증이 끝난 [10.5281/zenodo.22059444](https://doi.org/10.5281/zenodo.22059444)이다. r5의 네 파일을 Zenodo에 공개하고 익명 바이트를 재검증한 뒤 같은 네 바이트를 하나의 Figshare 판 계보에 거울 보존한다. 다음 유일한 번역 커서는 1339행, 10.7절 머리이다. SGA는 시작하지 않는다.
+GitHub가 계정 정지로 현재 접근 불가능하다는 [USER]의 직접 사실에 따라, 최종 정보면은 역사적 주소를 보존하되 `일시 접근 불가`라고 정확히 표시하고 공공 보존소들의 연속성을 명시한다. 기존 Zenodo 개념 DOI는 [10.5281/zenodo.21921513](https://doi.org/10.5281/zenodo.21921513)이고, 새 정확 DOI [10.5281/zenodo.22059890](https://doi.org/10.5281/zenodo.22059890)은 같은 계보 안에서 예약됐지만 아직 공개됐다고 주장하지 않는다. 현 공개판은 익명 재검증이 끝난 [10.5281/zenodo.22059444](https://doi.org/10.5281/zenodo.22059444)이다. r5의 네 파일을 Zenodo에 공개하고 익명 바이트를 재검증한 뒤 같은 네 바이트를 하나의 Figshare 판 계보에 거울 보존한다. 다음 유일한 번역 커서는 1339행, 10.7절 머리이다. SGA는 시작하지 않는다.
 
 ## 34. 2026-08-22 따름정리 10.6.11 뒤 사영극한 재진술의 r5 이중 공공 보존
 
@@ -326,7 +326,7 @@ CC BY 4.0은 권리를 가진 범위의 한국어 번역·한국어 조판과 �
 
 최종 Poppler 추출은 608,761바이트 / \`376FD439E7015DC7811BF80BE2431AEE2511BFA670C23B0C9A0756F19FDBA539\`, pypdf 추출은 576,583바이트 / \`F6F1F32A39D72DEF7DF1E8A0C3523DBE94AD9323FF66C431171200ED7C737CA0\`이다. 둘 다 한글 음절125,708개와 대체문자0개이고, r148의 실질 본문 물리3-137쪽은 수락 r147과 두 추출에서 전부 같다. V458-V463의 200dpi 직접 검사는 최종 제목1, 정보면2, 변경 목차6, 마지막 안정 선행면135, 새 수학136, 참고문헌137을 통과했다. 페이지135와137은 직전 수락 렌더와 전 화소가 같고, 새 단위·수식·링크·범위·DOI·저자 관계·유일한 표준 프로젝트 기여자·비보증 어디에도 잘림·겹침·두부·깨진 글리프가 없다.
 
-Floris가 GitHub 계정 복구를 직접 알렸으므로 최종 정보면은 저장소를 다시 현재 접근 가능한 외부 연속성으로 표시한다. 다만 이 S113 바이트는 좁은 범위의 푸시와 익명 되읽기가 끝나기 전까지 GitHub에 공개됐다고 주장하지 않는다. Zenodo 정확 DOI [10.5281/zenodo.22060640](https://doi.org/10.5281/zenodo.22060640)은 같은 개념 계보 안에 예약됐으나 아직 비공개 초안이다. 현재 공식 공개 체크포인트는 [Zenodo r5](https://doi.org/10.5281/zenodo.22059890)와 그 바이트 동일 [Figshare v1](https://doi.org/10.6084/m9.figshare.33314679.v1)이다. r6을 Zenodo에 공개하고 같은 네 바이트를 계속되는 Figshare 글의 v2와 복구된 [GitHub 저장소](https://github.com/KokunoYumeto/ega-ko)에 보존한 뒤 각각 공개 바이트를 되읽는다.
+[USER]가 GitHub 계정 복구를 직접 알렸으므로 최종 정보면은 저장소를 다시 현재 접근 가능한 외부 연속성으로 표시한다. 다만 이 S113 바이트는 좁은 범위의 푸시와 익명 되읽기가 끝나기 전까지 GitHub에 공개됐다고 주장하지 않는다. Zenodo 정확 DOI [10.5281/zenodo.22060640](https://doi.org/10.5281/zenodo.22060640)은 같은 개념 계보 안에 예약됐으나 아직 비공개 초안이다. 현재 공식 공개 체크포인트는 [Zenodo r5](https://doi.org/10.5281/zenodo.22059890)와 그 바이트 동일 [Figshare v1](https://doi.org/10.6084/m9.figshare.33314679.v1)이다. r6을 Zenodo에 공개하고 같은 네 바이트를 계속되는 Figshare 글의 v2와 복구된 [GitHub 저장소](https://github.com/KokunoYumeto/ega-ko)에 보존한 뒤 각각 공개 바이트를 되읽는다.
 
 다음 유일한 번역 커서는 원문 1402행 \`\begin{env}[10.7.4]\`이다. 완료된 1-1401행을 다시 열지 않고 다음 자연스러운 약 4,000자 닫힌 단위로 한 번 전진한다. 생산 순서는 EGA I, EGA II, FGA이며 SGA는 별도 조정 전까지 시작하지 않는다.
 
@@ -463,3 +463,120 @@ S117의 봉인된 한국어 원본과 정확 DOI 정보를 공개 트리에 동�
 신선한 r157 작업 빌드는 140쪽, 1233824바이트, SHA-256 `A40D0F45A9BFC5AAEF0F9E380470AA81F86C9E8FDFC3C9E20619CF02C3DF33C2`, 로그 43389바이트(`C2213FFA1A4B88882880E79FBF39B1664C97599531C04EAFBDCF0B16A946F2EA`)이고 두 사이클이 동일하다. Poppler 추출은 725053바이트(`AB5D73E1BDFCAE2660550FE4BBAB38CC209B540695C50B4B2F0CB72F49D35C6B`), pypdf 추출은 591091바이트(`0E310A28B711B989B973FE1B2B01C8290ECE27DD2E4E9D7FC02C19CF2DA8DA97`)이며 각각 한글 128782개·대체문자 0개·정확 DOI 1회이다. 독립 공개 트리 빌드는 독자 PDF 140쪽, 1233833바이트(`8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D`)를 만들었고, 선택한 1·2·6·137–140쪽의 200dpi 렌더는 작업 렌더와 픽셀 동일하다. 컨테이너 바이트는 빌드 디렉터리에 따라 달라질 수 있으므로 r157 작업 PDF와 공개 독자 PDF를 별도 해시로 보존한다(AGKO-H134).
 
 다음 실행 가능 커서는 정본 1876행의 따름정리 10.8.14이다. r11은 Zenodo 초안 22063585 / `10.5281/zenodo.22063585`로 예약되어 있으며, 네 파일 패키지와 Zenodo·Figshare·GitHub 익명 되읽기를 끝낸 뒤에만 공개 머리로 승격한다. EGA III는 사용자의 직접 보고상 후보 준비 상태지만 EGA I → EGA II → FGA 뒤 정확한 권위 패킷 검증을 거쳐야 하며, SGA는 이 작업 범위 밖이다.
+
+## 46. 2026-08-23 r11의 Zenodo·GitHub 보존과 Figshare 외부 차단
+
+r11 네 산출물은 기존 한국어 Zenodo 개념 계보의 정확 DOI `10.5281/zenodo.22063585`에 공개되었다. 독자 PDF는 140쪽, 1,233,833바이트 / `8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D`, 편집 원본 ZIP은 215,358바이트·24항목 / `0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81`, 증거 ZIP은 42,521,096바이트·163항목 / `C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6`, 외부 목록은 302바이트·3행 / `AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570`이다. Zenodo 익명 되읽기는 파일 4/4, 원본 항목 24/24, 증거 항목 163/163, 외부 목록 3/3과 역사적 저자·유일한 `AI typesetting & translation` 기여·제한된 권리·비보증 메타데이터에서 PASS했다. Zenodo의 공개 네 바이트는 이후 수정하지 않는다.
+
+기존 GitHub 저장소의 r11 작업 머리는 교정된 산출물 커밋 `dc80850af6e8c5cb730ff454af651a620a787216`과 최종 영수증 커밋 `0f1ef934cdde1ac1f92ba792b7825c8b7daa053c`이다. 처음 산출물 커밋 뒤 자기 행을 제외하는 내부 매니페스트가 이전 170행으로 남은 것을 발견해, `evidence/ARTIFACT_SHA256.tsv`를 181행, 18,193바이트 / `DBF02F55EE3193B4D765CF7C2C20842E037B85A3F477654A3DB90EEB08E59A29`로 별도 교정했다. 최종 pinned raw 되읽기는 매니페스트 181/181, 매니페스트가 가리키는 공개 payload 188/188, 최종 영수증 1/1, 합계 189/189이며, 릴리스 네 파일 4/4도 위 Zenodo 해시와 같다. `text=eol=lf` 규칙이 의도한 CRLF 증거를 바꾸지 않도록 알려진 경로만 raw Git blob으로 올렸다. 이 교정과 최초의 누락은 AGKO-H136에 남긴다.
+
+Figshare는 중복 글을 만들지 않고 기존 article `33314679`의 additive v7만 시도했다. 인증 API는 `Inactive/disabled account`를 반환했고 익명 versions API는 HTTP 200 빈 목록이며 현재 v7 공개 바이트는 없다. `pub/ega-ko/figshare-pending-v7.json` (2,085바이트 / `CAFAB87D0E32399B280DAD5C1178AE1C3DDDA4CAA41F75B973687A89656DE603`)은 자격증명 없는 차단 영수증이다. 따라서 r11을 Figshare에 공개했다고 주장하지 않으며, 계정/API가 복구될 때 같은 네 파일을 v7로 추가하고 익명 되읽기한 뒤에만 상태를 갱신한다.
+
+Zenodo에 이미 공개된 증거 ZIP은 공개 시점의 고정 스냅샷이므로 그 안의 README와 프로그램 상태는 package-time 문구를 보존한다. 계정 차단을 반영한 최신 README와 181행 매니페스트는 후속 GitHub 작업 머리와 라이브 외부 원장에만 있으며, 이 차이는 Zenodo 네 바이트의 결함이나 재작성 권한이 아니다. 다음 실행 가능 번역 커서는 정본 프랑스어 `source/ega1/ega1-10-fr.tex` 1876행의 따름정리 10.8.14이다. EGA III는 후보 준비 상태지만 EGA I → EGA II → FGA 뒤 정확한 권위 패킷 게이트를 통과하기 전에는 입장시키지 않고, SGA는 범위 밖이다.
+
+## 47. 2026-08-23 Zenodo 메타데이터 위생 교정과 최종 원장 동기화
+
+Zenodo 제출본 22063585의 edit action으로 파일을 건드리지 않는 메타데이터 교정을 적용했다. 설명은 이제 Figshare 계속 항목을 가능한 additive 보존 계보로만 설명하고, 비활성/비활성화된 계정 때문에 v7이 막혀 있어 현재 r11 Figshare 미러를 주장하지 않는다고 명시한다. 제목, 판 식별자, 역사적 저자 둘, 유일한 `AI typesetting & translation` 기여, 제한된 CC BY 4.0 권리, 비보증과 두 관련 식별자는 그대로다. `isRelatedTo`라는 새 관계값은 Zenodo 열거형이 거부했으므로 적용하지 않았고, 역사적 `isIdenticalTo` 관계는 출처 계보 보존을 위해 유지했다.
+
+편집 후 Zenodo API는 `state=done`, `submitted=true`, `version=2026-08-23-r11`, 파일 4개를 반환했다. 익명 되읽기에서 PDF 1,233,833바이트 / `8B7B41BD84B0B5BA698D6CE52719E341E3C82417FB3DF2537A8B2337855B2F0D`, 원본 ZIP 215,358바이트 / `0AFDC2DA635B81550A2D01E75A885844C05685A31CA21B34A4EC5CA13C943E81`, 증거 ZIP 42,521,096바이트 / `C8C9285077805D91E64E35E57DE1E16D4C91AE659B9E29BE3DAAEC1B7C87DEA6`, 외부 목록 302바이트 / `AF4F4EDCF20D1E7B3C271FCB8859D2240AC98B9BB8CCDBAB595C396011DCD570`이 모두 이전과 정확히 같았다.
+
+로컬 `.zenodo.json`은 2,602바이트 / `0D5EEB37F59BF586A057B75A4CABDA4BE1845A1CCEBB5B640763EC398FB502E0`으로 갱신했고, GitHub 산출물 커밋 `124a8cf99efbdd0beb66715d1ae05aa6ff283b26`은 181행 매니페스트 6AEF9157…을 포함한다. 최종 영수증 커밋 `512fd34157e15a874a41d133141cda3e9c3d77d1`의 `github-receipt-r11.json`은 4,235바이트 / `F8E4CFD26FD816377F14A0D3F4FD7CBF30A03B0C21F5801218C3D980877F4AAC`이고, 최종 GitHub raw 되읽기는 181행 + 4 릴리스 + 3 보조 파일 + 최종 영수증 = 189/189이다. Figshare v7은 여전히 공개되지 않았고, 다음 번역 커서는 원문 1876행이다.
+
+## 48. 2026-08-23 아카이브된 arXiv 용어 증거와 순서 해석
+
+사용자의 요청에 따라 `terminology/arxiv/2026-08-23/`에 세 편의 1차
+arXiv 논문 PDF와 UTF-8 추출본을 내려받아 보존했다. `1505.01307v4`,
+`0706.0493v3`, `math/0307189v2`는 준콤팩트·준분리·준분리(반분리)·뇌터·
+준연접, 형식적 스킴, 정의 아이디얼, 바탕공간, 아딕, 지지, 사상, 제한과
+완비화를 서로 다른 타입으로 반복해서 사용한다. 이 논문들은 한국어 표기의
+권위가 아니므로, 기존 한국어 잠금어를 유지하고 새 단어마다 정본 프랑스어
+정의와 해당 1차 문맥을 함께 점검한다. 상세 해시와 재사용 규칙은
+`terminology/arxiv/2026-08-23/README.md`와
+`WORKFLOW_RECORD.jsonl`에 있다.
+
+최신 사용자 범위 문장은 음성 인식상 후반 순서가 모호하므로, 실행 가능한
+해석은 EGA I → EGA II → FGA를 계속 진행하고, EGA III는 정본 원문 권위
+패킷이 봉인된 뒤에만 입장시키며, SGA는 같은 엄격한 정본·용어·빌드·시각
+검사를 통과할 때만 이후에 다루는 것으로 기록한다. 이 해석은 모호한 후반
+목록을 새 권위 순서로 발명하지 않는다.
+
+## 49. 2026-08-23 r12 정본 단위, DOI 결합 빌드와 두 공개 종점 되읽기
+
+정본 프랑스어 `source/ega1/ega1-10-fr.tex` 1876–1962행(4,140바이트 / `BD2C042DB3FE08F9303B848ADE24266DDF0AE54C193D45CC53E36C88C5338AB4`)을 따름정리 10.8.14와 붙은 증명, 제10.9절 머리와 완전한 환경 10.9.1의 닫힌 단위로 입장시켰다. 한국어 대상은 `ega/I/c1s10.tex` 1–1909행, 90,534바이트 / `9C7449A08334C23CAAFC812F8917E3937B188E7B3E9210E33EA05F3C30D2383B`이며, 새 단위 1826–1909행은 4,264바이트 / `92D6FFCF09DE9408DB954FCC4149FDE6389A8EEECEE1DAB0674256F4DAB2D076`이다. 환경·수식·참조 순서와 의미를 정본에 대조했고, 마지막 바탕공간 문장을 교정한 뒤 다음 원문 1964행 환경 10.9.2가 침범되지 않았음을 확인했다.
+
+정확 DOI `10.5281/zenodo.22071490`와 판 식별자 r12를 앞면에 결합한 뒤 고정 메타데이터 XeLaTeX 6회가 바이트 동일한 141쪽 PDF, 1,238,771바이트 / `03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C`를 만들었다. Poppler 추출은 627,466바이트 / `6392F5FF87FBF6ECF258D4C23C768FEF53D5DF16C426C439A5B331EAB8946D92`, pypdf 추출은 594,379바이트 / `87D7610DEF2695B3190AF88F7E18E6B633F22BEEC032475C0F6AC475BD87E956`이고, 둘 다 한글 129,429개·대체문자 0개·새 DOI 1회·이전 DOI 0회이다. 1·2·6·139–141쪽 200dpi 렌더를 직접 검사했으며 범위·DOI·권리·비보증, 목차, 새 수학 단위와 참고문헌 모두 잘림·겹침·두부·깨진 수식 없이 PASS했다.
+
+결정론적 원본 ZIP 두 사이클은 각각 213,472바이트·24항목 / `238B2CB59D95D8971F83D37E5E1EBCCC2465391DF7ABCF3828CEC0B7ADAC3E33`, 증거 ZIP 두 사이클은 각각 42,315,208바이트·176항목 / `B8C45E1A1028109569737334B722CBE607EB5D54CB4FD0C5C53784170DC877AB`로 동일했다. 외부 SHA-256 목록은 299바이트 / `DDA354907D01274560A8C9D06D35FFD6F5E5F18ACCA02ED7BFB474B908C37B62`이며 3/3이다. r12 Zenodo 메타데이터는 역사적 저자 둘과 유일한 `AI typesetting & translation` 기여, 실제 범위, 제한된 CC BY 4.0 권리와 비보증을 보존한다. 현재 Figshare r12 바이트가 없으므로 오해를 부르는 `isIdenticalTo` 관계를 제거하고, 비활성 계정으로 v7이 막혔다는 사실만 설명에 남겼다.
+
+Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이터와 파일 4/4, MD5·SHA-256, 외부 목록 3/3, 두 ZIP CRC에서 PASS했다. GitHub 산출물 커밋 `3e5814426e109234f29682d24a31fbd90089cb9a`은 매니페스트 191경로 + 고정 릴리스 4경로 + Zenodo 영수증 2경로, 합계 197/197 raw 바이트와 SHA-256이 정확하다. 최종 영수증 커밋 `bb8059afe196855967bdb1467c54b99e99dea720`의 `github-receipt-r12.json`도 1/1 정확하다. Figshare v7에는 어떤 변이도 가하지 않았고 중복 항목도 만들지 않았다.
+
+다음 실행 가능 번역 커서는 정본 1964행 환경 10.9.2이다. 새 용어를 입장시키기 전에는 `terminology/arxiv/2026-08-23/`의 1차 논문 문맥과 프랑스어 정의를 함께 대조하되, 영어 논문만으로 한국어 표기를 권위화하지 않는다. 실행 순서는 계속 EGA I → EGA II → FGA이며, 뒤 EGA는 완전하고 원문 정확한 EGA III 권위 패킷부터 연속 순서로만 입장시키고 SGA는 별도 조정한다.
+## 50. S119 — EGA I 10.9.2–10.9.6, typed p.199 repair, and r13 admission
+
+- The admitted canonical unit is exactly `source/ega1/ega1-10-fr.tex` lines
+  1964–2068: 4,842 LF-terminal UTF-8 bytes,
+  SHA-256 `20A1745B2B6E178877DC0E22E6811E4639F6E3AADE4C92A520B15E62589B3C14`.
+  It contains complete environments 10.9.2–10.9.3, Proposition 10.9.4 with
+  its proof, Proposition 10.9.5 with its proof, and complete environment
+  10.9.6. The next substantive source line is 2070, Proposition 10.9.7.
+- The Korean unit is `ega/I/c1s10.tex` lines 1911–2016: 5,230 bytes,
+  SHA-256 `8A2ADC73348858314E824EE5E71DF316FD185F719E8FE009BB3C1632F89E4678`.
+  The complete file is 95,765 bytes,
+  SHA-256 `E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533`.
+  Its sealed r12 prefix through line 1909 remains byte-identical.
+- The first-edition NUMDAM scan, PDF page 198 / printed page 199, really
+  prints the ill-typed `h∈Γ(Y,O_X)`. The diplomatic French source therefore
+  remains unchanged. The Korean text uses the forced typed reading
+  `h∈Γ(X,O_X)` and discloses the print and correction in a translator note.
+  The exact scan identity and finding were sent to the EGA authority task.
+  This is an editorial target correction, not a transcription repair.
+- `AGKO-T152` locks `f-morphisme`, completed `f-morphisme`, and
+  `g-morphisme` as `$f$-사상`, `$\widehat f$-사상`, and `$g$-사상`.
+  Their variance is controlled by the typed adjunction
+  `G→f_*F` iff `f^*G→F`; never replace them with a same-space
+  `f-준동형` or reverse the sheaf arrow.
+- Primary arXiv papers remain bounded English mathematical-usage witnesses.
+  They may confirm the type of a completion morphism or pullback construction,
+  but they do not authorize Korean lexical forms and never supersede the
+  canonical French definition or locked Korean register.
+- The generic first `\end{env}` patch anchor temporarily placed this block
+  after 10.1.1. It was detected before any accepted build, moved to the unique
+  tail after 10.9.1, and proved by the exact sealed-prefix hash. Every future
+  append must anchor on the exact numbered predecessor plus EOF and assert
+  label order before build; balanced TeX is not an order proof.
+- After note removal and the single disclosed typed correction, the source and
+  target have an exact 107/107 math multiset, references 10/10, labels 6/6,
+  environment begins/ends 5/5, and page marker `I|200`.
+- The DOI-bound public reader is 141 pages, 1,245,522 bytes,
+  SHA-256 `69E3D3BC2A34C8F669B00F0F42D6946D8B54F919D35AC00FE222D08266504393`.
+  Six fixed-metadata passes reproduce it exactly. Poppler and pypdf extractions
+  contain 130,225 Hangul syllables each, no replacement characters, and exact
+  DOI `10.5281/zenodo.22071933` once. Direct 200 dpi inspection of pages
+  1, 2, 139–141 passes; pages 6, 139, and 141 remain pixel-identical to r12.
+- Zenodo draft 22071933 is the reserved next version in concept 21921513.
+  Publication is complete only after the deterministic four-file package,
+  authenticated publish action, anonymous file/metadata replay, and the narrow
+  existing GitHub update all pass. Figshare remains a blocked additive mirror;
+  do not create a duplicate article or claim byte identity that does not exist.
+
+## 51. r13 public-evidence identity and privacy gate
+
+- Public build logs and ledger copies must not expose a local account name or
+  profile path. Preserve private raw logs, but replace the complete profile
+  prefix with `[USERPROFILE]` and standalone account-name references with
+  `[USER]` only in public/staging copies, then hash those exact sanitized bytes.
+- `build.log` and the current numbered public-build log must be byte-identical.
+  A separately named sanitized working-build log may coexist, but receipts must
+  distinguish public, working, raw-private and sanitized-public identities.
+- JSONL syntax is not enough: every explicit `id` must be unique over its whole
+  index. Printed-page markers use section-qualified IDs so they cannot collide
+  with proof IDs derived from numbered mathematical environments.
+- Before packaging, the structural index must reach the active cursor. For r13
+  it includes Corollary 10.8.14 through environment 10.9.6, both printed-page
+  markers 199–200, the disclosed typed correction, and six inspected r13
+  renders. Historical records remain; no earlier release directory is rewritten.
+- Generate `evidence/ARTIFACT_SHA256.tsv` only after all sanitization, current
+  controls, ledgers, indexes, extracts, logs and renders are final. Mirror the
+  complete evidence tree, build each ZIP twice with the fixed packager, require
+  A/B byte identity and member replay, and create the outer three-row manifest
+  last.

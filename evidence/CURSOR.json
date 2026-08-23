@@ -1,8 +1,8 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-23-r12",
-  "coverage": "EGA I through Corollary10.8.14 with attached proof and complete environment10.9.1; source closure line1963 separator",
-  "next": "source/ega1/ega1-10-fr.tex line1964 environment10.9.2",
-  "target": "source/c1s10.tex lines1-1909 / 90534 bytes / 9C7449A08334C23CAAFC812F8917E3937B188E7B3E9210E33EA05F3C30D2383B",
-  "public_status": "r12 package prepared for reserved Zenodo DOI10.5281/zenodo.22071490; publication and anonymous readback pending"
+  "version": "2026-08-23-r13",
+  "coverage": "EGA I through environments10.9.2-10.9.3, Proposition10.9.4 with proof, Proposition10.9.5 with proof, and complete environment10.9.6; source closure line2069 separator",
+  "next": "source/ega1/ega1-10-fr.tex line2070 Proposition10.9.7",
+  "target": "source/c1s10.tex lines1-2016 / 95765 bytes / E1293545F95D6B987414D8DD9B6BB0D5A9E38A45ADE7BB34D042DE6CBB38F533",
+  "public_status": "r13 package prepared for reserved Zenodo DOI10.5281/zenodo.22071933; publication and anonymous readback pending; r12 DOI10.5281/zenodo.22071490 remains public"
 }

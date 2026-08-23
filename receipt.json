@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-zenodo-receipt-v2",
-  "release": "2026-08-23-r12",
-  "published_at": "2026-08-23T22:24:00+02:00",
-  "record_id": 22071490,
-  "doi": "10.5281/zenodo.22071490",
+  "release": "2026-08-23-r13",
+  "published_at": "2026-08-23T22:37:16+02:00",
+  "record_id": 22071933,
+  "doi": "10.5281/zenodo.22071933",
   "concept_doi": "10.5281/zenodo.21921513",
-  "record_url": "https://zenodo.org/records/22071490",
+  "record_url": "https://zenodo.org/records/22071933",
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-    "version": "2026-08-23-r12",
+    "version": "2026-08-23-r13",
     "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
     "contributors": ["AI typesetting & translation"],
     "language": "kor",
@@ -16,49 +16,52 @@
     "related_identifiers": ["10.5281/zenodo.20414353|isPartOf"],
     "figshare_exact_identity_claim": false
   },
-  "scope": "EGA I through Corollary10.8.14 with attached proof and complete environment10.9.1, ending immediately before environment10.9.2",
+  "scope": "EGA I through environments10.9.2-10.9.3, Proposition10.9.4 with proof, Proposition10.9.5 with proof, and complete environment10.9.6, ending immediately before Proposition10.9.7",
   "files": [
     {
       "filename": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1238771,
-      "md5": "315c586d0fd5ac3a0611941df0596675",
-      "sha256": "03871C403DAFE6D32895E7D13ED2E5B978414AA2FF4F255F637DDFB2B74D936C"
+      "bytes": 1245522,
+      "md5": "cd8b53b5fa8c22177b6d91e69d504c9e",
+      "sha256": "69E3D3BC2A34C8F669B00F0F42D6946D8B54F919D35AC00FE222D08266504393"
     },
     {
       "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 213472,
-      "md5": "6f9443d2d1fb10ef0f026dc638763f0d",
-      "sha256": "238B2CB59D95D8971F83D37E5E1EBCCC2465391DF7ABCF3828CEC0B7ADAC3E33"
+      "bytes": 214883,
+      "md5": "26c53f3084bd8f72d87ce040869a6fa2",
+      "sha256": "32D3FF555A2195B0C96BE3493CF3DD70C97F8346BB6A9BADBBD82B1AAF5FF48B"
     },
     {
       "filename": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 42315208,
-      "md5": "13d55cb9382ddca7bd7a566f8c82b306",
-      "sha256": "B8C45E1A1028109569737334B722CBE607EB5D54CB4FD0C5C53784170DC877AB"
+      "bytes": 44514956,
+      "md5": "0881b6312b2e31adf4e3dc06a56709a4",
+      "sha256": "8BC1D6ABFD2F3137A8F3B45E92F59B9D597B746CD38FD07337FD69C662A5C129"
     },
     {
       "filename": "03_EGA_ko_SHA256_MANIFEST.txt",
       "bytes": 299,
-      "md5": "fa92aec2f6e55bba6eb2962afce227cf",
-      "sha256": "DDA354907D01274560A8C9D06D35FFD6F5E5F18ACCA02ED7BFB474B908C37B62"
+      "md5": "f4d58f2eb281171321fca58bad003b08",
+      "sha256": "E50C0BB85B4D265E27B5B19993FC4F150735B424551C3F22E2C2C2216EB920DF"
     }
   ],
   "package_verification": {
+    "internal_artifact_manifest": "200/200 PASS",
     "deterministic_source_zip_cycles": "2/2 byte-identical",
     "deterministic_evidence_zip_cycles": "2/2 byte-identical",
     "source_zip_entries": 24,
     "source_zip_files": 22,
-    "evidence_zip_entries": 176,
-    "evidence_zip_files": 168,
+    "evidence_zip_entries": 185,
+    "evidence_zip_files": 177,
     "outer_manifest": "3/3 PASS",
-    "zip_crc": "2/2 PASS"
+    "zip_crc": "2/2 PASS",
+    "public_profile_privacy_scan": "PASS"
   },
   "anonymous_readback": {
     "metadata": "PASS",
-    "files": "4/4 byte and SHA-256 exact",
+    "files": "4/4 byte, MD5 and SHA-256 exact",
     "outer_manifest": "3/3 PASS",
-    "zip_crc": "2/2 PASS"
+    "zip_crc_and_inventory": "2/2 PASS",
+    "doi_resolution": "https://zenodo.org/records/22071933"
   },
-  "figshare": "No r12 mutation: additive v7 remains blocked by the inactive/disabled account; no duplicate article and no false exact-identity relation in Zenodo metadata.",
+  "figshare": "No r13 mutation: additive v7 remains blocked by the inactive/disabled account; no duplicate article and no false exact-identity relation in Zenodo metadata.",
   "result": "PASS"
 }
