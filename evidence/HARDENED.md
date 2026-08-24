@@ -700,7 +700,7 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   `12E588328F1F01CEA6C4CE724B1D4ECA6E45BE78EF1DFFAFAB2BACCD83DF2DE2`.
   No translation or terminology decision changed, and the linked EGA
   authority task received the exact correction.
-+- A sealing audit also found that the frozen r14 evidence ZIP omitted the
+- A sealing audit also found that the frozen r14 evidence ZIP omitted the
   otherwise expected per-release `controls/R14_CHECK.json`; r14's
   `QA_STATE`, source authority, D136/E136 and D137/E137 already preserved the
   exact identities. r15 retrospectively adds `R14_CHECK.json` to the live
@@ -721,3 +721,83 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   four-file r15 package, publish it only inside the existing Korean EGA
   concept at reserved exact DOI `10.5281/zenodo.22073895`, and require
   anonymous metadata/file/ZIP/DOI readback before advancing to line 2260.
+
+## 56. r15 deterministic public preservation closure
+
+- The frozen r15 package is exactly the 143-page reader (1,257,594 bytes /
+  `057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB`),
+  the 24-entry source ZIP (217,109 bytes /
+  `C2F96BDD53DEBADFCA2F08F9738016DCD32451CFE138EBE32C6D919661FB954E`),
+  the 207-entry evidence ZIP (50,101,041 bytes /
+  `69CE66F07C0EE1F799C798D31253A21ABEFD6195991BF2A4778CEF099FE86BE9`),
+  and the three-row outer manifest (342 bytes /
+  `A7DE6A0DB73D6FDCE63F60FF6B91CFFD1E83E8B67BDCD2B4E16C2AFD8F109E8B`).
+  Both deterministic ZIP cycles, all CRC checks, the 222-row internal manifest,
+  and the outer manifest replay pass.
+- Zenodo record `10.5281/zenodo.22073895` in concept
+  `10.5281/zenodo.21921513` anonymously replays all four frozen files,
+  metadata, ZIP inventories, checksums, and DOI resolution exactly. The work
+  title is unmangled; the historical authors are creators; the sole project
+  contributor is `AI typesetting & translation`; no umbrella term appears
+  in title or prose metadata.
+- GitHub artifact commit
+  `1360a970d519fde09992df0118f4b833d6ab10c3` replays all 230 explicit
+  unfiltered paths and 112,733,951 bytes exactly. Receipt commit
+  `fe5a69e2018755e67fc1634092e42148947845f7` independently replays the
+  1,694-byte sanitized GitHub receipt with SHA-256
+  `9583756026C1306E7D30CF0B486140010BA93EDD84D7EAF759754BE4493BB22D`.
+- Figshare was retried only against the existing article. Authenticated account
+  and article calls return HTTP 403 `Inactive/disabled account`; anonymous
+  article lookup returns 404 and its versions list is empty. Therefore no r15
+  Figshare mutation, duplicate article, or false exact-identity assertion
+  exists. Retain the sanitized attempt and retry additive version 7 only if
+  that same account and lineage become operational.
+- Publication closure does not reopen the admitted mathematics or rebuild the
+  frozen r15 package. The next production action is canonical source line 2260,
+  Proposition 10.10.3, under the durable definition-first arXiv terminology
+  workflow and the same source, formula, build, extraction and visual gates.
+
+## 57. r16 ring-sheaf coherence, affine thickenings, and future rank repair
+
+- The admitted r16 source unit is canonical French lines 2260–2296,
+  Proposition 10.10.3 with its complete proof and environment 10.10.4. It is
+  1,731 LF-terminal UTF-8 bytes /
+  `E7CA02BE4E2AB31956C6E8E7C93284E65EBF0F4469EA322975BF1FE7C248961F`;
+  line 2297 is the closing separator and line 2298 begins Proposition 10.10.5.
+  The short unit is the nearest complete natural boundary: do not split the
+  proof or import an incomplete portion of the next long proposition merely
+  to reach a nominal character count.
+- The Korean unit is `c1s10.tex` lines 2211–2245, 1,720 bytes /
+  `284578D58D4E1B861FC2999DE25EE4952968776272CC7827066EC218FC9B2DDE`;
+  the cumulative target is 106,466 bytes /
+  `E774545DA3BFF3DBBD1C172ED554D765E62B16F8335A1939FAE2A6426EC5B47D`.
+  Independent audits pass for 28 ordered math spans, two environments, two
+  labels, six references, nine arrows, both exact sequences, every Delta
+  exponent, the frak-J/script-J distinction and the contravariant bindings
+  `A_n -> A_m` versus `X_m -> X_n`.
+- `AGKO-T154` fixes `faisceau cohérent d'anneaux` as `연접인 환의 층`.
+  The wording deliberately keeps ring-sheaf coherence distinct from coherent
+  module sheaves. `AGKO-TERM-E140` retains bounded contexts from the three
+  fixed primary arXiv witnesses; their English usage helps type objects and
+  limits but never overrides the French definition or authorizes Korean
+  spelling. This check remains mandatory before every new EGA, EGA II or FGA
+  unit and lives outside conversational state.
+- The DOI-bound r165 working reader completes two byte-identical three-pass
+  cycles: 143 pages / 1,259,563 bytes /
+  `9F19EBC5ACBCD61BC3BE62AECB5C20074BB303FCAB8C904D565DC9586FEBBAFE`.
+  The standalone public build completes six passes: 1,259,569 bytes /
+  `9BBF03AC8A5D09D7BC629D182E01E540ADB30AAFDB3C96860A51BBF5B709986B`.
+  The six-byte container delta is path-sensitive only; full Poppler and pypdf
+  extractions are exact, all eight selected 200 dpi renders are pixel-identical
+  between builds, diagnostics are zero, and direct page-142 QA passes.
+- A bounded look-ahead proved a printed source defect at canonical lines
+  2377–2381, outside r16: the sheaf map has ranks `p,q`, but its purported
+  inducing module map is printed with `m,n`. Section 10.10.2(iii) and
+  `(A^r)^Delta=O_Xfrak^r` force `v:A^p -> A^q`. Keep the French transcription
+  diplomatic; when translating that future unit, use the forced `p,q` map and
+  add an explicit translator note. `AGKO-H144`, the retained NUMDAM page render
+  and `controls/NEXT_R17_PQ_MN_DEFECT.json` are the non-optional admission gate.
+- Reserved exact DOI `10.5281/zenodo.22074416` belongs to the existing Korean
+  EGA concept. Freeze the current public evidence tree, build both deterministic
+  ZIP cycles, publish exactly four files, and require anonymous metadata,
+  file, ZIP and DOI readback before advancing to line 2298.

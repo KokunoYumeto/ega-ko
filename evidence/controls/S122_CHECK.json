@@ -1,0 +1,32 @@
+{
+  "schema": "ag-ko-s122-check-v1",
+  "id": "AGKO-S122-CHECK",
+  "source": {
+    "path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+    "locator": "lines2260-2296",
+    "bytes": 1731,
+    "sha256": "E7CA02BE4E2AB31956C6E8E7C93284E65EBF0F4469EA322975BF1FE7C248961F"
+  },
+  "target": {
+    "path": "source/c1s10.tex",
+    "whole_bytes": 106466,
+    "whole_sha256": "E774545DA3BFF3DBBD1C172ED554D765E62B16F8335A1939FAE2A6426EC5B47D",
+    "locator": "lines2211-2245",
+    "bytes": 1720,
+    "sha256": "284578D58D4E1B861FC2999DE25EE4952968776272CC7827066EC218FC9B2DDE"
+  },
+  "checks": {
+    "math": "28/28 exact and ordered",
+    "environments": "2/2",
+    "labels": "2/2",
+    "hyperrefs": "6/6",
+    "arrows": "9/9",
+    "exact_sequences": "2/2",
+    "meaning": "PASS independent mathematical and Korean-register audits",
+    "terminology": "PASS definition-first French authority plus bounded primary arXiv usage witnesses; AGKO-T154",
+    "encoding": "UTF-8, LF, terminal LF, replacement characters0",
+    "boundary": "ends before source line2298 Proposition10.10.5"
+  },
+  "future_control": "AGKO-H144 and NEXT_R17_PQ_MN_DEFECT apply at source lines2377-2381 and do not affect r16",
+  "result": "PASS"
+}
