@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-figshare-publication-attempt-v1",
-  "created": "2026-08-23T23:32:12+02:00",
+  "created": "2026-08-24T04:15:00+02:00",
   "publication": {
     "host": "Figshare",
     "article_id": 33314679,
@@ -11,39 +11,39 @@
     "duplicate_article_created": false
   },
   "package": {
-    "release": "2026-08-23-r14",
-    "zenodo_exact_doi": "10.5281/zenodo.22072378",
+    "release": "2026-08-24-r15",
+    "zenodo_exact_doi": "10.5281/zenodo.22073895",
     "files": [
       {
         "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-        "bytes": 1251918,
-        "md5": "0db829f29466f28912f49e691fc2dd56",
-        "sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732"
+        "bytes": 1257594,
+        "md5": "2a39cc847a63a6230bec3450f0ab2dc7",
+        "sha256": "057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB"
       },
       {
         "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
-        "bytes": 215908,
-        "md5": "b368bca183afbed7fd984f191581a3dd",
-        "sha256": "DAA7A13518831A4D849298F81ED9C86C446E1B815459D01CAFDE2B16471EA44B"
+        "bytes": 217109,
+        "md5": "5f3a598fd30d8d2ec0f87343fb312b8d",
+        "sha256": "C2F96BDD53DEBADFCA2F08F9738016DCD32451CFE138EBE32C6D919661FB954E"
       },
       {
         "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-        "bytes": 47088431,
-        "md5": "1eba772a37252eb2cc68581f4572d69c",
-        "sha256": "0D86B9686E8E9D5D1F25EFF286088FCE6C23BFF38C4A31FE60D802D3BE51A3D6"
+        "bytes": 50101041,
+        "md5": "ebb89a4bd5fe425b04f7de661926db82",
+        "sha256": "69CE66F07C0EE1F799C798D31253A21ABEFD6195991BF2A4778CEF099FE86BE9"
       },
       {
         "name": "03_EGA_ko_SHA256_MANIFEST.txt",
         "bytes": 342,
-        "md5": "87e066639ce936b707ff70da3ff82e75",
-        "sha256": "4B36DACB5259107A1D68305574B8F1FA2C1A1E3DEBA4365E39F401D4FE3C2DA8"
+        "md5": "96c39986fc2536ff05b68a806b5cd525",
+        "sha256": "A7DE6A0DB73D6FDCE63F60FF6B91CFFD1E83E8B67BDCD2B4E16C2AFD8F109E8B"
       }
     ],
     "outer_manifest_rows_replayed": "3/3",
     "source_zip_entries": 24,
     "source_zip_file_entries": 22,
-    "evidence_zip_entries": 194,
-    "evidence_zip_file_entries": 186
+    "evidence_zip_entries": 207,
+    "evidence_zip_file_entries": 199
   },
   "attempts": [
     {
@@ -76,6 +76,6 @@
     }
   ],
   "status": "not published; the existing Figshare account and article lineage are not operational, and no Figshare mutation occurred",
-  "next": "Retry this exact r14 package as additive version 7 on account reactivation without creating a duplicate article or DOI lineage",
+  "next": "Retry this exact r15 package as additive version 7 on account reactivation without creating a duplicate article or DOI lineage",
   "credential_material": "NONE"
 }

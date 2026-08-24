@@ -1,0 +1,31 @@
+{
+  "schema": "ag-ko-s121-check-v1",
+  "id": "AGKO-S121-CHECK",
+  "source": {
+    "path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+    "locator": "lines2152-2258",
+    "bytes": 4786,
+    "sha256": "B02EBE4FB607FEBE4BFFDF774A1085853AA4D70F1416FD9811B04F42DA4834D3"
+  },
+  "target": {
+    "path": "source/c1s10.tex",
+    "whole_bytes": 104745,
+    "whole_sha256": "28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B",
+    "locator": "lines2108-2209",
+    "bytes": 4901,
+    "sha256": "03EC5D81B128CE67A14587AB12CDF1823B493D53A4427E440E40825EB68570ED"
+  },
+  "checks": {
+    "math": "63/63 exact and ordered",
+    "environments": "3/3",
+    "labels": "6/6",
+    "hyperrefs": "20/20",
+    "displays_and_tags": "3/3",
+    "enumerate_items": "3/3",
+    "meaning": "PASS independent mathematical and Korean-register audits",
+    "terminology": "PASS definition-first French authority plus bounded primary arXiv usage witnesses; AGKO-T153",
+    "encoding": "UTF-8, LF, terminal LF, replacement characters0",
+    "boundary": "ends before source line2260 Proposition10.10.3"
+  },
+  "result": "PASS"
+}

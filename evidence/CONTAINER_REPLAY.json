@@ -2,23 +2,23 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1251918,
-    "sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732"
+    "bytes": 1257594,
+    "sha256": "057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r162/main.pdf",
-    "bytes": 1251919,
-    "sha256": "995A6E09F7C4B95D4A536B5DD127C5090305CCFA80317F2E2CB68A31CDE365A3"
+    "path": "build/ega1/r164/main.pdf",
+    "bytes": 1257601,
+    "sha256": "BF83D70D28845DCCE83A7713C994363EA4CAB94187D455A7AD5358324F61D52D"
   },
-  "source_target_hash": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
+  "source_target_hash": "28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B",
   "comparison": {
-    "pages": 142,
+    "pages": 143,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "hangul_syllables_each": 130831,
+    "hangul_syllables_each": 131504,
     "replacement_characters_each": 0,
-    "public_working_pages_200dpi_pixel_exact": "1,2,141",
-    "public_pages_unchanged_from_r13": "6,139"
+    "public_working_pages_200dpi_pixel_exact": "1,2,6,139,140,141,142,143",
+    "public_pages_unchanged_from_r14": "139,140"
   },
-  "disposition": "The standalone public-tree reader and retained r162 working bind differ at container-byte level but have exact full Poppler and pypdf text extractions. Public/working pages1,2,141 are pixel-exact at200dpi; public pages6,139 are pixel-exact to r13. No all-page pixel identity or broader certification is inferred."
+  "disposition": "The standalone public-tree reader and retained r164 working bind differ by seven path-sensitive container bytes but have exact full Poppler and pypdf text extractions. All eight inspected public/working pages are pixel-exact at200dpi; public pages139-140 remain pixel-exact to r14. No all-page pixel identity or broader certification is inferred."
 }

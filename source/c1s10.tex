@@ -2104,3 +2104,106 @@ $X'_1\cup X'_2$이며, 여기서 $X'_i$가 $X_i$의 닫힌 부분집합이면
 ($i=1,2$), 곧바로
 $X_{/X'}={X_1}_{/X'_1}\amalg {X_2}_{/X'_2}$임을 알 수 있다.
 \end{remark}
+
+\subsection{아핀 형식적 스킴 위의 연접층에 대한 응용.}
+\label{subsection:I.10.10-ko}
+
+\begin{env}[10.10.1]
+\label{I.10.10.1-ko}
+이 절 전체에서 $A$는 \emph{뇌터 아딕환}, $\mathfrak{J}$는 $A$의
+정의 아이디얼을 나타낸다. $X=\operatorname{Spec}(A)$,
+$\mathfrak{X}=\operatorname{Spf}(A)$라 하자. 후자의 바탕공간은
+$V(\mathfrak{J})$와 동일시되며, 이는 $X$의 닫힌 부분집합이다
+(\hyperref[I.10.1.2-ko]{10.1.2}). 또한 정의
+(\hyperref[I.10.1.2-ko]{10.1.2})와 정의
+(\hyperref[I.10.8.4-ko]{10.8.4})에서 \emph{아핀 형식적 스킴
+$\mathfrak{X}$}는 \emph{완비화 $X_{/\mathfrak{X}}$}, 곧 아핀 스킴
+$X$를 그 바탕공간의 닫힌 부분집합 $\mathfrak{X}$을 따라 완비화한
+것과 동일함을 알 수 있다. 따라서 각 연접 $\mathscr{O}_X$-가군 $\mathscr{F}$에는
+유한 생성 $\mathscr{O}_{\mathfrak{X}}$-가군
+$\mathscr{F}_{/\mathfrak{X}}$가 대응하며, 이는 또한 위상환의 층
+$\mathscr{O}_{\mathfrak{X}}$ 위의 위상 가군의 층이다. 한편 모든 연접
+$\mathscr{O}_X$-가군 $\mathscr{F}$는 $\widetilde M$ 꼴이다. 여기서
+$M$은 유한 생성 $A$-가군이다
+(\hyperref[I.1.5.1-ko]{1.5.1})~; 우리는
+$(\widetilde M)_{/\mathfrak{X}}=M^\Delta$로 두겠다. 또한
+$u:M\to N$이 유한 생성 $A$-가군 사이의 $A$-준동형이면, 이에
+준동형 $\widetilde u:\widetilde M\to\widetilde N$이 대응하고, 따라서
+연속 준동형
+$\widetilde u_{/\mathfrak{X}}:(\widetilde M)_{/\mathfrak{X}}\to
+(\widetilde N)_{/\mathfrak{X}}$도 대응한다. 이를 $u^\Delta$로
+나타내겠다. 곧바로
+$(v\circ u)^\Delta=v^\Delta\circ u^\Delta$임을 알 수 있다~; 이로써
+\emph{$M^\Delta$를 주는 가법적 공변 함자}를 정의하였다. 이 함자는
+유한 생성 $A$-가군의 범주에서 유한 생성
+$\mathscr{O}_{\mathfrak{X}}$-가군의 범주로 간다. $A$가 \emph{이산}환이면
+$M^\Delta=\widetilde M$이다.
+\end{env}
+
+\begin{proposition}[10.10.2]
+\label{I.10.10.2-ko}
+\medskip\noindent
+\begin{enumerate}
+  \item[\rm{(i)}] $M^\Delta$는 $M$에 관한 완전 함자이고, $A$-가군의
+    함자적인 표준 동형
+    $\Gamma(\mathfrak{X},M^\Delta)\xrightarrow{\sim}M$이 존재한다.
+  \item[\rm{(ii)}] $M$과 $N$이 두 유한 생성 $A$-가군이면, 다음
+    함자적인 표준 동형들이 존재한다.
+    \[
+      (M\otimes_A N)^\Delta
+      \xrightarrow{\sim}
+      M^\Delta\otimes_{\mathscr{O}_{\mathfrak{X}}}N^\Delta
+      \tag{10.10.2.1}\label{I.10.10.2.1-ko}
+    \]
+    \[
+      (\operatorname{Hom}_A(M,N))^\Delta
+      \xrightarrow{\sim}
+      \mathscr{H}\!om_{\mathscr{O}_{\mathfrak{X}}}
+      (M^\Delta,N^\Delta)
+      \tag{10.10.2.2}\label{I.10.10.2.2-ko}
+    \]
+  \item[\rm{(iii)}] 사상 $u\to u^\Delta$는 다음 함자적인 동형이다.
+    \[
+      \operatorname{Hom}_A(M,N)
+      \xrightarrow{\sim}
+      \operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+      (M^\Delta,N^\Delta)
+      \tag{10.10.2.3}\label{I.10.10.2.3-ko}
+    \]
+\end{enumerate}
+\end{proposition}
+
+$M^\Delta$를 주는 함자의 완전성은 $\widetilde M$을 주는 함자
+(\hyperref[I.1.3.5-ko]{1.3.5})와 $\mathscr{F}_{/\mathfrak{X}}$
+(\hyperref[I.10.8.8-ko]{10.8.8})의 완전성에서 따른다. 정의에 따라
+$\Gamma(\mathfrak{X},M^\Delta)$는 $A$-가군
+$\Gamma(X,\widetilde M)=M$의 $\mathfrak{J}$-준아딕 위상에 관한 분리
+완비화이다~; 그러나 $A$가 완비이고 $M$이 유한 생성인 까닭에,
+$M$이 분리이고 완비임을 알고 있다
+(\hyperref[0.7.3.6-ko]{0, 7.3.6}). 이로써 (i)의 증명이 끝난다. 동형
+(\hyperref[I.10.10.2.1-ko]{10.10.2.1}) (각각
+\hyperref[I.10.10.2.2-ko]{10.10.2.2})는 동형
+(\hyperref[I.1.3.12-ko]{1.3.12, (i)})와
+(\hyperref[I.10.8.10.1-ko]{10.8.10.1}) (각각
+(\hyperref[I.1.3.12-ko]{1.3.12, (ii)})와
+(\hyperref[I.10.8.10.2-ko]{10.8.10.2}))의 합성에서 얻어진다. 끝으로
+$\operatorname{Hom}_A(M,N)$은 유한 생성 $A$-가군이므로 여기에 (i)를
+적용할 수 있다. 그러면
+$\Gamma(\mathfrak{X},(\operatorname{Hom}_A(M,N))^\Delta)$가
+$\operatorname{Hom}_A(M,N)$과 동일시되고,
+(\hyperref[I.10.10.2.2-ko]{10.10.2.2})를 이용하면 준동형
+(\hyperref[I.10.10.2.3-ko]{10.10.2.3})이 동형임을 알 수 있다.
+
+(\hyperref[I.10.10.2-ko]{10.10.2})에서
+(\hyperref[I.1.3.7-ko]{1.3.7})과
+(\hyperref[I.1.3.12-ko]{1.3.12})에서 얻은 것들과 유사한 일련의
+귀결들을 얻으며, 그 정식화는 독자에게 맡긴다.
+\oldpage[I]{202}
+
+$M^\Delta$의 완전성을 완전열
+$0\to\mathfrak{J}\to A\to A/\mathfrak{J}\to0$에 적용하면, 여기서
+$\mathscr{O}_{\mathfrak{X}}$의 아이디얼층 중
+$\mathfrak{J}^\Delta$로 나타낸 것이
+(\hyperref[I.10.3.1-ko]{10.3.1})에서 같은 기호로 나타낸
+아이디얼층과 일치함을 알 수 있다는 점에 유의하자. 이는
+(\hyperref[I.10.3.2-ko]{10.3.2})에 따른다.

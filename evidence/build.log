@@ -995,7 +995,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 
-] [1] [2
+]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 48.
+
+ ([USERPROFILE]\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[1] [2
 
 ])
 ([USERPROFILE]\Documents\interlanguage\03_projects\language_management\cjk\03
@@ -1003,22 +1009,16 @@ _working_translations\ag_ko\pub\ega-ko\build\out\main.toc [3
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 71.
-
-
-([USERPROFILE]\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
 LaTeX Font Info:    Font shape `TU/MalgunGothic(0)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `TU/MalgunGothic(0)/m/it' tried instead on input
  line 111.
-
-[4])
+ [4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5] (intro.tex [6
+ [5]
+(intro.tex [6
 
 ] [7]) [8] (c0.tex [9
 
@@ -1098,12 +1098,12 @@ LaTeX Warning: Marginpar on page 61 moved.
 168> <xymatrix 2x2 168> [129] <xymatrix 3x2 131> [130] <xymatrix 2x2 168>
 [131] <xymatrix 2x2 168> <xymatrix 3x2 145> [132] [133] <xymatrix 2x2 168>
 <xymatrix 2x2 168> [134] [135] [136] <xymatrix 4x2 361> [137] [138] <xymatrix
-2x2 182> [139] <xymatrix 2x2 168>) (bib.tex [140]
+2x2 182> [139] <xymatrix 2x2 168> [140]) (bib.tex [141]
 
 LaTeX Font Warning: Font shape `TU/MalgunGothic(0)/m/sc' undefined
 (Font)              using `TU/MalgunGothic(0)/m/n' instead on input line 6.
 
-) [141
+) [142
 
 ]
 ([USERPROFILE]\Documents\interlanguage\03_projects\language_management\cjk\03
@@ -1117,17 +1117,17 @@ L3 programming layer <2026-03-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 42A08ED1995A9C9ED597E82F707BB9D8;16054.
+(rerunfilecheck)             Checksum: EE2F99A87EDFA4A27C6DBA7652B6AB8D;16306.
  ) 
 Here is how much of TeX's memory you used:
- 27877 strings out of 402807
- 551818 string characters out of 5444928
- 1086365 words of memory out of 5000000
- 56293 multiletter control sequences out of 15000+600000
+ 27883 strings out of 402807
+ 551917 string characters out of 5444928
+ 1086967 words of memory out of 5000000
+ 56299 multiletter control sequences out of 15000+600000
  638519 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,16n,121p,796b,1015s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on [USERPROFILE]\Documents\interlanguage\03_projects\language_
-management\cjk\03_working_translations\ag_ko\pub\ega-ko\build\out\main.pdf (142
+management\cjk\03_working_translations\ag_ko\pub\ega-ko\build\out\main.pdf (143
  pages).

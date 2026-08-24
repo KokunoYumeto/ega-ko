@@ -1,8 +1,8 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-23-r14",
-  "coverage": "EGA I through complete subsection10.9, ending with Remark10.9.10 at source line2150",
-  "next": "source/ega1/ega1-10-fr.tex line2152 subsection10.10",
-  "target": "source/c1s10.tex lines1-2106 / 99843 bytes / 87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
-  "public_status": "r14 package prepared for reserved Zenodo DOI10.5281/zenodo.22072378; publication and anonymous readback pending; r13 DOI10.5281/zenodo.22071933 remains public"
+  "version": "2026-08-24-r15",
+  "coverage": "EGA I through environment10.10.1, Proposition10.10.2, its proof and the immediately following J^Delta ideal-sheaf consequence at source line2258, ending before Proposition10.10.3",
+  "next": "source/ega1/ega1-10-fr.tex line2260 Proposition10.10.3",
+  "target": "source/c1s10.tex lines1-2209 / 104745 bytes / 28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B",
+  "public_status": "r15 exact-DOI reader passes local and standalone-tree gates for reserved Zenodo DOI10.5281/zenodo.22073895; packaging, publication and anonymous readback pending; r14 DOI10.5281/zenodo.22072378 remains public"
 }

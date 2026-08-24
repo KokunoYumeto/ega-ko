@@ -1,22 +1,25 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-23T23:13:00+02:00",
+  "updated": "2026-08-24T04:05:00+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_source_bytes": 159763,
   "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "package_mapping": {
-    "target_section10_bytes": 99843,
+    "target_section10_bytes": 104745,
     "source_front": "source/front.tex",
     "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097"
+    "target_section10_sha256": "28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B"
   },
-  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through complete subsection10.9 ending with Remark10.9.10, before subsection10.10",
+  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through environment10.10.1, Proposition10.10.2, its proof and the following J^Delta ideal-sheaf consequence, before Proposition10.10.3",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r14 locally validated; publication pending",
-    "current_public_doi": "10.5281/zenodo.22071933",
+    "status": "r15 reserved and locally release-ready after deterministic build, dual extraction and visual QA; r14 remains public and anonymously replayed on Zenodo and GitHub; existing Figshare article remains unavailable because the account is inactive/disabled",
+    "current_public_doi": "10.5281/zenodo.22072378",
     "concept_doi": "10.5281/zenodo.21921513",
-    "reserved_exact_doi": "10.5281/zenodo.22072378",
-    "figshare_article": "10.6084/m9.figshare.33314679"
+    "exact_doi": "10.5281/zenodo.22073895",
+    "github_artifact_commit": "62305f44a9446d6d82122c78b05e6dad9e951ce0",
+    "github_receipt_commit": "3c8760876bf5bf51b2d090d7dc88ad9f09019fdd",
+    "figshare_article": "10.6084/m9.figshare.33314679",
+    "figshare_status": "r14 not mutated; inactive/disabled account; no duplicate article"
   }
 }

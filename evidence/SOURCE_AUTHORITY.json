@@ -3,12 +3,12 @@
   "canonical_path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_bytes": 159763,
   "canonical_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "admission": "read-only canonical French authority; r14 unit lines2070-2150; printed Corollary10.9.9 omits formel from the type of X_/X', corrected in Korean to 형식적 준스킴 with an explicit translator note and authority-task notice",
-  "unit_bytes": 3643,
-  "unit_sha256": "F52ED7EF09E8D29D8FF5132CA310AD5299D6065A9CBD12B4880DD67CADAF08E7",
+  "admission": "read-only canonical French authority; r15 unit lines2152-2258; exact NUMDAM scan checked across printed pages201-202; no source or transcription defect found; primary arXiv papers are usage witnesses only and do not override the French authority",
+  "unit_bytes": 4786,
+  "unit_sha256": "B02EBE4FB607FEBE4BFFDF774A1085853AA4D70F1416FD9811B04F42DA4834D3",
   "target_path": "source/c1s10.tex",
-  "target_bytes": 99843,
-  "target_sha256": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
-  "next_source_line": 2152,
-  "next_label": "subsection10.10"
+  "target_bytes": 104745,
+  "target_sha256": "28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B",
+  "next_source_line": 2260,
+  "next_label": "Proposition10.10.3"
 }

@@ -1,22 +1,23 @@
 {
   "schema_version": 1,
-  "version": "2026-08-23-r14",
+  "version": "2026-08-24-r15",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1251918,
-  "reader_sha256": "5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732",
-  "render_count": 7,
+  "reader_bytes": 1257594,
+  "reader_sha256": "057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB",
+  "render_count": 8,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,139,140,141,142",
+  "pages": "1,2,6,139,140,141,142,143",
   "render_hashes": {
-    "page1": "EDD46E2F1A8F389A27C0E3898A6339A9866AB71C12AD223CAF08EDBA79B4CA4D",
-    "page2": "54404684C1F4BEAD11916DA06CA444309A0D1499868AB988C52A3727E2D5E415",
-    "page6": "07FE2158488F4D0C4E31A1CCABBFBB47C2F5B7612AD31C7D94CDD8CC2EC3D473",
+    "page1": "454C1B3775E9E4F729AAAF05D0962845C0DD9CBFFF53CEBE26E360C5FA89135B",
+    "page2": "E539ABD862E37FA24956C050AF21782A4AB4952CF77ED2954DAAC5A101B41956",
+    "page6": "28F7D55460775B353D2A8561987C3BB5EC208A73BB7C9ADB35A799B9A33FE1E6",
     "page139": "9E830D0D7A246BEB4CEFCAD3476285F53F22A4D8658C6B32991246646C98E833",
     "page140": "A80DBC914DC0521D20A04144E22ED077BE1D2387BFBD009C9D888E66F818AFFF",
-    "page141": "8C25B208C105DB31774C8831AD807B4DE2184704E5D3A73BF4A6F8FCD0162362",
-    "page142": "5A7B6620CBF41212B6945266C17B1B3F46FF48D017508D1E2923E5289DFCFBD8"
+    "page141": "4B075580EA12033013319D9442D8E23E93446DEBCFB3C41D0F1D1F7191B91AC9",
+    "page142": "9B84A01F726A27EFD63DC3CBA49FBA04DA2F688002BE6695756E10E8028AE8C0",
+    "page143": "E8538559A61CBAA4D7A566D622994713FC1B2CFE9731F62ADCD9E6538CD08EBD"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify current r14 scope, exact DOI, rights and non-endorsement; page6 verifies the table of contents; pages139-141 cover the transition, complete new mathematics and missing-formel translator note; page142 covers the bibliography."
+  "disposition": "Pages1-2 verify current r15 scope, exact DOI, rights and non-endorsement; page6 verifies the table of contents; pages139-142 cover the stable transition and complete new mathematics through the J^Delta consequence; page143 covers the bibliography. No clipping, overlap, tofu, malformed formula, broken arrow or margin collision was found."
 }

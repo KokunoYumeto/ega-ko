@@ -1,0 +1,22 @@
+{
+  "schema": "ag-ko-r14-check-v1",
+  "version": "2026-08-23-r14",
+  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+  "canonical_source_bytes": 159763,
+  "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "source_unit": "lines2070-2150; line2151 is the following separator and is not included in this identity",
+  "source_unit_bytes": 3643,
+  "source_unit_sha256": "F52ED7EF09E8D29D8FF5132CA310AD5299D6065A9CBD12B4880DD67CADAF08E7",
+  "target": "source/c1s10.tex lines2018-2106",
+  "target_unit_bytes": 4077,
+  "target_unit_sha256": "6DAD8C8AEE4BC03535177D6EF5175B004A01AD5B37B870EDC0EDC2D509BC11B5",
+  "whole_target_bytes": 99843,
+  "whole_target_sha256": "87394AEBAB53376F5D94504BC09493FD09ADA0A258B4780076460A0EAD24E097",
+  "structure": "PASS: Proposition10.9.7 with proof and compatibility observation, Corollaries10.9.8-10.9.9 with proof, page201 marker and Remark10.9.10 in canonical order",
+  "formula_and_reference_binding": "PASS",
+  "korean_fidelity": "PASS with printed missing-formel type repaired and explicitly disclosed under AGKO-H142",
+  "build_extraction_visual": "PASS: deterministic r162 working/public builds, exact dual extractions and direct 200dpi inspection of pages1,2,6,139-142",
+  "publication": "PASS: Zenodo exact DOI10.5281/zenodo.22072378 and GitHub artifact commit62305f44a9446d6d82122c78b05e6dad9e951ce0 plus receipt commit3c8760876bf5bf51b2d090d7dc88ad9f09019fdd anonymously replayed; Figshare unchanged and unavailable",
+  "next_source": "line2152 subsection10.10",
+  "result": "PASS"
+}

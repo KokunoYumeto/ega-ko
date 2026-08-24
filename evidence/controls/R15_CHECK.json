@@ -1,0 +1,23 @@
+{
+  "schema": "ag-ko-r15-check-v1",
+  "version": "2026-08-24-r15",
+  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
+  "canonical_source_bytes": 159763,
+  "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "source_unit": "lines2152-2258; line2259 is the following separator and is not included in this identity",
+  "source_unit_bytes": 4786,
+  "source_unit_sha256": "B02EBE4FB607FEBE4BFFDF774A1085853AA4D70F1416FD9811B04F42DA4834D3",
+  "target": "source/c1s10.tex lines2108-2209",
+  "target_unit_bytes": 4901,
+  "target_unit_sha256": "03EC5D81B128CE67A14587AB12CDF1823B493D53A4427E440E40825EB68570ED",
+  "whole_target_bytes": 104745,
+  "whole_target_sha256": "28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B",
+  "structure": "PASS: subsection10.10, environment10.10.1, Proposition10.10.2, three enumerated assertions and displays, attached proof, page202 marker and final J^Delta consequence in canonical order",
+  "formula_and_reference_binding": "PASS: ordered math63/63; labels6/6; references20/20; environments3/3; items3/3; displays/tags3/3; oldpage I|202 exact",
+  "korean_fidelity": "PASS: canonical French remains authoritative; arXiv primary usage witnesses are definition-typed evidence only; AGKO-T153 locks M^Delta and the three Hom constructions",
+  "build_extraction_visual": "PASS: deterministic r164 working and standalone public six-pass builds; full Poppler and pypdf extractions exact; pages1,2,6,139-143 pixel-exact between builds and directly inspected",
+  "reserved_exact_doi": "10.5281/zenodo.22073895",
+  "publication": "pending deterministic package and anonymous endpoint readback",
+  "next_source": "line2260 Proposition10.10.3",
+  "result": "PASS local release gates"
+}

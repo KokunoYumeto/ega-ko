@@ -581,6 +581,27 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   A/B byte identity and member replay, and create the outer three-row manifest
   last.
 
+## 52. r13 public closure and next executable cursor
+
+- r13 exact DOI `10.5281/zenodo.22071933` is public in concept
+  `10.5281/zenodo.21921513`. Anonymous replay proves metadata, four files,
+  MD5/SHA-256 identities, the three-row outer manifest, both ZIP inventories
+  and CRCs, and DOI resolution. `receipt-r13.json` is the sanitized endpoint
+  receipt and is byte-identical to `receipt.json`.
+- GitHub artifact commit
+  `3ba4c1ab1aecf9212dea4fd4a9c5190249894f6d` was built with unfiltered raw
+  blob insertion. Its 200 manifest data paths, manifest control, four frozen
+  release files and two Zenodo receipt paths replay 207/207 exact. Receipt
+  commit `e914bdc5877bd6f4525ea041bdaf60e74782bf19` replays its one receipt
+  exactly.
+- r12 and earlier releases remain immutable history. Figshare v7 remains
+  blocked externally; do not create a duplicate article or claim a current
+  exact mirror.
+- The only executable translation cursor is canonical French line 2070,
+  Proposition 10.9.7. Apply the external definition-first arXiv witness rule,
+  then source/formula/reference/label/environment, Korean fidelity, build,
+  extraction and visual gates before advancing once.
+
 ## 53. r14 subsection 10.9 closure, typed repair and clean-build recovery
 
 - The only admitted r14 source unit is canonical French lines 2070–2150,
@@ -614,3 +635,89 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   pages 1, 2, 6 and 139–142. The reserved exact DOI is
   `10.5281/zenodo.22072378`; freeze the evidence controls before packaging,
   then require anonymous endpoint replay before public closure.
+
+## 54. r14 deterministic packaging and public closure
+
+- The immutable r14 package is the 142-page reader (1,251,918 bytes /
+  `5EDDD09A198B33379103BBDF502EEC22F5782E0197D0E4444B80CD4C9B422732`),
+  the 24-entry source ZIP (215,908 bytes /
+  `DAA7A13518831A4D849298F81ED9C86C446E1B815459D01CAFDE2B16471EA44B`),
+  the 194-entry evidence ZIP (47,088,431 bytes /
+  `0D86B9686E8E9D5D1F25EFF286088FCE6C23BFF38C4A31FE60D802D3BE51A3D6`),
+  and the three-row outer manifest (342 bytes /
+  `4B36DACB5259107A1D68305574B8F1FA2C1A1E3DEBA4365E39F401D4FE3C2DA8`).
+  Both deterministic ZIP cycles, all CRC checks, the 209-row internal manifest,
+  and the outer manifest replay pass.
+- Zenodo record `10.5281/zenodo.22072378` in concept
+  `10.5281/zenodo.21921513` anonymously replays all four frozen files,
+  metadata, ZIP inventories, checksums, and DOI resolution exactly. The work
+  title is unmangled; the historical authors are creators; the sole project
+  contributor is `AI typesetting & translation`; no umbrella term appears
+  in title or prose metadata.
+- GitHub artifact commit
+  `62305f44a9446d6d82122c78b05e6dad9e951ce0` replays all 217 explicit
+  unfiltered paths and 106,374,382 bytes exactly. Receipt commit
+  `3c8760876bf5bf51b2d090d7dc88ad9f09019fdd` independently replays the
+  sanitized GitHub receipt.
+- Figshare was retried only against the existing article. Both authenticated
+  account and article calls return HTTP 403 `Inactive/disabled account`;
+  the anonymous article is unavailable and the versions list is empty.
+  Therefore no r14 Figshare mutation, duplicate article, or false exact-identity
+  assertion exists. Retain the sanitized attempt and retry the same additive
+  v7 only if that account becomes active.
+- Publication closure does not reopen the admitted mathematics or rebuild the
+  frozen r14 package. Durable ledgers may record the completed transactions
+  after the freeze; the next production action is canonical source line 2152,
+  subsection 10.10.
+## 55. r15 source admission, terminology evidence repair, and exact-DOI build
+
+- The next closed EGA I unit is canonical French lines 2152–2258, with line
+  2259 as its separator: 4,736 characters / 4,786 LF-terminal UTF-8 bytes /
+  `B02EBE4FB607FEBE4BFFDF774A1085853AA4D70F1416FD9811B04F42DA4834D3`.
+  It contains the subsection 10.10 heading, environment 10.10.1,
+  Proposition 10.10.2 with its three assertions and attached proof, the
+  printed page-202 marker, and the immediately following identification of
+  the ideal sheaf denoted `J^Delta`. The next substantive source line is 2260,
+  Proposition 10.10.3. No source or transcription defect was found in the
+  exact NUMDAM scan.
+- The admitted Korean unit is `c1s10.tex` lines 2108–2209, 4,901 bytes /
+  `03EC5D81B128CE67A14587AB12CDF1823B493D53A4427E440E40825EB68570ED`;
+  the whole target is 104,745 bytes /
+  `28B6876B07AE52C77068F1CD4582DAD6C59E3F1E07624E312455CD9ED47C160B`.
+  Independent mathematical, Korean-register and mechanical audits pass:
+  ordered mathematical spans 63/63, labels 6/6, references 20/20,
+  environments 3/3, enumerated items 3/3, displays and tags 3/3, and the
+  page-202 marker exact. `M^Delta`, the ordinary A-linear Hom module, the
+  internal Hom sheaf, and the global module-morphism set remain separately
+  typed under `AGKO-T153`.
+- Before admission, the fixed primary arXiv witnesses were checked under the
+  definition-first workflow. Their English usage never overrides the French
+  authority or authorizes Korean spelling. An audit found that the two first
+  extracted-text hashes had been transposed in the durable witness table;
+  `AGKO-TERM-E139` repairs the identities to 1505.01307.txt = 112,066 bytes /
+  `494F25C6967139F4335AFE19865745537922FDD81CB5C5CE932D533F42516CFB`
+  and 0706.0493.txt = 98,818 bytes /
+  `12E588328F1F01CEA6C4CE724B1D4ECA6E45BE78EF1DFFAFAB2BACCD83DF2DE2`.
+  No translation or terminology decision changed, and the linked EGA
+  authority task received the exact correction.
++- A sealing audit also found that the frozen r14 evidence ZIP omitted the
+  otherwise expected per-release `controls/R14_CHECK.json`; r14's
+  `QA_STATE`, source authority, D136/E136 and D137/E137 already preserved the
+  exact identities. r15 retrospectively adds `R14_CHECK.json` to the live
+  evidence tree without rewriting the immutable r14 package, and adds both
+  `R15_CHECK.json` and `S121_CHECK.json` before the r15 manifest freeze.
+
+- The DOI-bound r164 working reader completes two byte-identical independent
+  three-pass cycles: 143 pages / 1,257,601 bytes /
+  `BF83D70D28845DCCE83A7713C994363EA4CAB94187D455A7AD5358324F61D52D`.
+  The standalone public tree completes its own six-pass cycle: 1,257,594
+  bytes / `057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB`.
+  The seven-byte container delta is path-sensitive only: full Poppler and
+  pypdf extractions and all inspected 200 dpi pages 1, 2, 6 and 139–143 are
+  byte-identical. Both extractors contain 131,504 Hangul syllables, zero
+  replacement characters, exact DOI 22073895 once, and prior DOI 22072378
+  zero times; compiler diagnostics are zero and direct visual QA passes.
+- Freeze the corrected evidence tree, generate and replay the deterministic
+  four-file r15 package, publish it only inside the existing Korean EGA
+  concept at reserved exact DOI `10.5281/zenodo.22073895`, and require
+  anonymous metadata/file/ZIP/DOI readback before advancing to line 2260.

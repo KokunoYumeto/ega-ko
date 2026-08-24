@@ -9,8 +9,8 @@ for the canonical French EGA source.
 
 | arXiv | title | local PDF | PDF SHA-256 | extracted text SHA-256 |
 |---|---|---|---|---|
-| [1505.01307](https://arxiv.org/abs/1505.01307) | *On Noetherian schemes over (C, tensor, 1) and the category of quasi-coherent sheaves* (Abhishek Banerjee, v4) | `1505.01307.pdf` (337,447 bytes) | `8A74E70E4A787EB6008570C633026E87E7B8DA19D93A3BAA61424AB12D74F1B6` | `12E588328F1F01CEA6C4CE724B1D4ECA6E45BE78EF1DFFAFAB2BACCD83DF2DE2` |
-| [0706.0493](https://arxiv.org/abs/0706.0493) | *The derived category of quasi-coherent sheaves and axiomatic stable homotopy* (Alonso, Jeremias, Perez, Vale, v3) | `0706.0493.pdf` (312,459 bytes) | `71314400E6175A4A69B064909C3B4EF5CEB16C9F03716CD5703762D2B357A3E9` | `494F25C6967139F4335AFE19865745537922FDD81CB5C5CE932D533F42516CFB` |
+| [1505.01307](https://arxiv.org/abs/1505.01307) | *On Noetherian schemes over (C, tensor, 1) and the category of quasi-coherent sheaves* (Abhishek Banerjee, v4) | `1505.01307.pdf` (337,447 bytes) | `8A74E70E4A787EB6008570C633026E87E7B8DA19D93A3BAA61424AB12D74F1B6` | `494F25C6967139F4335AFE19865745537922FDD81CB5C5CE932D533F42516CFB` |
+| [0706.0493](https://arxiv.org/abs/0706.0493) | *The derived category of quasi-coherent sheaves and axiomatic stable homotopy* (Alonso, Jeremias, Perez, Vale, v3) | `0706.0493.pdf` (312,459 bytes) | `71314400E6175A4A69B064909C3B4EF5CEB16C9F03716CD5703762D2B357A3E9` | `12E588328F1F01CEA6C4CE724B1D4ECA6E45BE78EF1DFFAFAB2BACCD83DF2DE2` |
 | [math/0307189](https://arxiv.org/abs/math/0307189) | *Bousfield localization on formal schemes* (Alonso, Jeremias, Souto, v2) | `math-0307189.pdf` (265,424 bytes) | `E71FDA5D3348E83D8C955A7AA226CB8815C16B4402BDBBBBCC979F4412663DD1` | `003AEBF9CCD292263BD0FF1EE89FA5F3C54E80069E79E04B7DAA3DEDBBF25EF9` |
 
 The extracted `.txt` files were produced with UTF-8 Poppler extraction and

@@ -1,0 +1,67 @@
+{
+  "schema": "ag-ko-zenodo-receipt-v2",
+  "release": "2026-08-24-r15",
+  "published_at": "2026-08-24T04:12:09.993405+02:00",
+  "record_id": 22073895,
+  "doi": "10.5281/zenodo.22073895",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22073895",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-08-24-r15",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributors": ["AI typesetting & translation"],
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "related_identifiers": ["10.5281/zenodo.20414353|isPartOf"],
+    "figshare_exact_identity_claim": false
+  },
+  "scope": "EGA I through the ideal-sheaf consequence following Proposition10.10.2, ending immediately before Proposition10.10.3",
+  "files": [
+    {
+      "filename": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1257594,
+      "md5": "2a39cc847a63a6230bec3450f0ab2dc7",
+      "sha256": "057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB"
+    },
+    {
+      "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 217109,
+      "md5": "5f3a598fd30d8d2ec0f87343fb312b8d",
+      "sha256": "C2F96BDD53DEBADFCA2F08F9738016DCD32451CFE138EBE32C6D919661FB954E"
+    },
+    {
+      "filename": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 50101041,
+      "md5": "ebb89a4bd5fe425b04f7de661926db82",
+      "sha256": "69CE66F07C0EE1F799C798D31253A21ABEFD6195991BF2A4778CEF099FE86BE9"
+    },
+    {
+      "filename": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 342,
+      "md5": "96c39986fc2536ff05b68a806b5cd525",
+      "sha256": "A7DE6A0DB73D6FDCE63F60FF6B91CFFD1E83E8B67BDCD2B4E16C2AFD8F109E8B"
+    }
+  ],
+  "package_verification": {
+    "internal_artifact_manifest": "222/222 PASS",
+    "deterministic_source_zip_cycles": "2/2 byte-identical",
+    "deterministic_evidence_zip_cycles": "2/2 byte-identical",
+    "source_zip_entries": 24,
+    "source_zip_files": 22,
+    "evidence_zip_entries": 207,
+    "evidence_zip_files": 199,
+    "outer_manifest": "3/3 PASS",
+    "zip_crc": "2/2 PASS",
+    "public_profile_privacy_scan": "PASS"
+  },
+  "anonymous_readback": {
+    "metadata": "PASS",
+    "files": "4/4 byte, MD5 and SHA-256 exact",
+    "outer_manifest": "3/3 PASS",
+    "zip_crc_and_inventory": "2/2 PASS",
+    "doi_resolution": "https://zenodo.org/records/22073895"
+  },
+  "figshare": "No r15 mutation was made as part of this Zenodo publication transaction; no duplicate article or false exact-identity relation is claimed.",
+  "result": "PASS"
+}
