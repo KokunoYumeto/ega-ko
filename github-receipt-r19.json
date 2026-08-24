@@ -1,0 +1,40 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-24-r19",
+  "created": "2026-08-24T22:49:52+02:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "898414dd15ae92e41d41a5a53b069790f99ec441",
+  "url": "https://github.com/KokunoYumeto/ega-ko/tree/898414dd15ae92e41d41a5a53b069790f99ec441",
+  "parent": "4a04931f313932a79a772dacd31aa1bd411ed99e",
+  "tree": "b4e0e13b66507f0863271a7fdd86b632ddc7834d",
+  "candidate": {
+    "paths": 283,
+    "bytes": 142022284,
+    "composition": "275 frozen internal-manifest rows; the self-excluded internal manifest; four dated r19 release files; receipt-r19.json; receipt.json; figshare-pending-v9.json",
+    "internal_manifest": "evidence/ARTIFACT_SHA256.tsv; 275 rows / 27579 bytes / C53D640F9173F50076FB5F397EDBB35CA430F8D426B1AB02E67742E308CF1920; 275/275 replay PASS",
+    "raw_staging": "283/283 SHA-256, byte count and no-filter Git blob identity PASS",
+    "working_index": "untouched; artifact tree built from an empty task-local temporary index"
+  },
+  "push": {
+    "remote_before": "4a04931f313932a79a772dacd31aa1bd411ed99e",
+    "remote_after": "898414dd15ae92e41d41a5a53b069790f99ec441",
+    "fast_forward": true,
+    "result": "PASS"
+  },
+  "anonymous_readback": {
+    "url": "https://codeload.github.com/KokunoYumeto/ega-ko/zip/898414dd15ae92e41d41a5a53b069790f99ec441",
+    "http_status": 200,
+    "archive_bytes": 130653119,
+    "archive_sha256": "CBCB7A87647190BD42DDCD1D6CBE33F07280D1B556366C2EB8461E14B1CF9190",
+    "paths": 283,
+    "bytes": 142022284,
+    "inventory_size_and_sha256_exact": "283/283",
+    "failures": [],
+    "result": "PASS"
+  },
+  "zenodo_exact_doi": "10.5281/zenodo.22086602",
+  "figshare": "figshare-pending-v9.json; existing account remains inactive/disabled; no duplicate article or mutation",
+  "credential_material": "NONE",
+  "result": "PASS"
+}
