@@ -1,0 +1,81 @@
+{
+  "schema": "ag-ko-figshare-publication-attempt-v1",
+  "created": "2026-08-24T22:38:00+02:00",
+  "publication": {
+    "host": "Figshare",
+    "article_id": 33314679,
+    "article_doi": "10.6084/m9.figshare.33314679",
+    "requested_version": 7,
+    "requested_doi": "10.6084/m9.figshare.33314679.v7",
+    "requested_url": "https://figshare.com/articles/book/__EGA__l_ments_de_g_om_trie_alg_brique_Korean_Cumulative_Edition/33314679/7",
+    "duplicate_article_created": false
+  },
+  "package": {
+    "release": "2026-08-24-r19",
+    "zenodo_exact_doi": "10.5281/zenodo.22086602",
+    "files": [
+      {
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1277365,
+        "md5": "5095e33340274e503516e42e57edfd35",
+        "sha256": "4CA61ED04BE1996D4852D2CF7427FA016432A49409FF2CDC608A552549DD2C89"
+      },
+      {
+        "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+        "bytes": 220785,
+        "md5": "9e8436d7963d79316a4981e3b438ad71",
+        "sha256": "5E86661D3F8B54551A3947F439F9A3F06D66E7BCF92720A8949C55FE1778080A"
+      },
+      {
+        "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+        "bytes": 63845371,
+        "md5": "33d0c8683b3748404fc2e9583e552d26",
+        "sha256": "5F9170EF9D9EF618DC641C5794156B04EA5A6C2D73BC0574CE04202713FFAF70"
+      },
+      {
+        "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+        "bytes": 342,
+        "md5": "7455b6493f5f0a08b0f81539162b0b26",
+        "sha256": "9E7E26EB5961C6EE2BAF120FE7AAECAD25988CB42DE9A21308D8A48099C22B33"
+      }
+    ],
+    "outer_manifest_rows_replayed": "3/3",
+    "source_zip_entries": 24,
+    "source_zip_file_entries": 22,
+    "evidence_zip_entries": 261,
+    "evidence_zip_file_entries": 252
+  },
+  "attempts": [
+    {
+      "method": "authenticated API account lookup",
+      "endpoint": "https://api.figshare.com/v2/account",
+      "http_status": 403,
+      "result": "blocked",
+      "error": "Inactive/disabled account"
+    },
+    {
+      "method": "authenticated existing-article lookup",
+      "endpoint": "https://api.figshare.com/v2/account/articles/33314679",
+      "http_status": 403,
+      "result": "blocked",
+      "error": "Inactive/disabled account"
+    },
+    {
+      "method": "anonymous article lookup",
+      "endpoint": "https://api.figshare.com/v2/articles/33314679",
+      "http_status": 404,
+      "result": "not visible",
+      "error": "Article not found"
+    },
+    {
+      "method": "anonymous article-version lookup",
+      "endpoint": "https://api.figshare.com/v2/articles/33314679/versions",
+      "http_status": 200,
+      "result": "no visible versions",
+      "version_count": 0
+    }
+  ],
+  "status": "not published; the existing Figshare account and article lineage remain non-operational, and no Figshare mutation occurred",
+  "next": "Retry this exact r19 package as additive version 7 on account reactivation without creating a duplicate article or DOI lineage",
+  "credential_material": "NONE"
+}

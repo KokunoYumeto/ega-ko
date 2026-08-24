@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-24-r18",
-  "coverage": "EGA I through Theorem10.11.3 with complete proof and its following equivalence statement at source line2514 and separator2515, ending before Corollary10.11.4",
-  "next": "source/ega1/ega1-10-fr.tex line2516 Corollary10.11.4",
-  "target": "source/c1s10.tex lines1-2455 / 116734 bytes / 2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
-  "reserved_exact_doi": "10.5281/zenodo.22076207",
-  "current_public_checkpoint": "10.5281/zenodo.22074926",
-  "public_status": "r18 local release gates PASS and Zenodo draft22076207 is reserved but unsubmitted; r17 remains the current public Zenodo/GitHub checkpoint with anonymous replay PASS; Figshare existing-article mirror remains unavailable without mutation or duplicate"
+  "version": "2026-08-24-r19",
+  "coverage": "EGA I through environment10.11.6 at source line2602 and separator2603, ending before Proposition10.11.7",
+  "next": "source/ega1/ega1-10-fr.tex line2604 Proposition10.11.7",
+  "target": "source/c1s10.tex lines1-2540 / 120481 bytes / A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0",
+  "reserved_exact_doi": "10.5281/zenodo.22086602",
+  "current_public_checkpoint": "10.5281/zenodo.22076207",
+  "public_status": "r19 local unit, build, extraction, visual and portable-source gates PASS in reserved unsubmitted Zenodo draft22086602; r18 remains the current public Zenodo/GitHub checkpoint; Figshare existing-article mirror remains unavailable without mutation or duplicate"
 }

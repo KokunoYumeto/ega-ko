@@ -1,0 +1,84 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S125_CHECK",
+  "version": "2026-08-24-r19",
+  "scope": "EGA I Corollary10.11.4 and explanation, Corollary10.11.5 and proof, and environment10.11.6",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2516-2602",
+    "characters": 3628,
+    "bytes": 3666,
+    "sha256": "3BEA8B5CA9D1C799EA12830D00B361223A62CD57C87EA1A8567BC15E49C67F00"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2457-2540",
+    "characters": 2832,
+    "bytes": 3746,
+    "sha256": "B98614A1BAA624010B6A264A184A5DFEEE1A12627D98670132969643A07141AD",
+    "whole_bytes": 120481,
+    "whole_sha256": "A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0",
+    "sealed_prefix_bytes": 116734,
+    "sealed_prefix_sha256": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823"
+  },
+  "formula_gate": {
+    "source_math_nodes": 51,
+    "target_math_nodes": 51,
+    "ordered_math_identity": "51/51",
+    "references": "11/11",
+    "labels": "4/4",
+    "environments": "3/3",
+    "tag": "1/1",
+    "printed_page_marker": "1/1",
+    "emphasis": "5/5",
+    "items_subsections_qed_footnotes": "0/0",
+    "controlled_differences": 0,
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E146",
+    "retained_primary_arxiv_papers": 3,
+    "supplemental_primary_arxiv_papers": 1,
+    "new_term_lock": null,
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "hom": "global Hom groups remain distinct from internal Hom sheaves and module Hom",
+    "transition": "theta_n maps to u_mn-star(theta_n), from the X_n Hom group to the X_m Hom group for m<=n",
+    "surjectivity": "theta iff u, theta_0 iff u_0, and u iff u_0; the exact u tensor 1 formula is preserved",
+    "topology": "pseudo-discrete sheaves, automatic continuity and sectionwise closed subgroup only; no quotient-section isomorphism or arbitrary closed-subsheaf claim",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "145 pages / 1277374 bytes / 8ED31D0EA2DCB06AEFCBBC0CD5151D03A9594D187E61194219F973A5F0AC05E0",
+    "public": "145 pages / 1277365 bytes / 4CA61ED04BE1996D4852D2CF7427FA016432A49409FF2CDC608A552549DD2C89",
+    "deterministic_cycles": "PASS in both trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "648913 bytes / 78785D3D5622F552091026C095AB0CC851C9CAEA394C33B147B9D19107B9936A pairwise exact",
+    "pypdf": "614730 bytes / 57B5BDBB4C77DD005823DA339BBE43A12BCAC3DCCDA871B67F417266DEEE18AD pairwise exact",
+    "hangul": 133654,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "previous_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 142, 143, 144, 145],
+    "dpi": 200,
+    "working_public_pairwise_exact": true,
+    "direct_inspection": "PASS",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22086602",
+    "version": "2026-08-24-r19",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "sole_project_contributor": "AI typesetting & translation",
+    "title_description_umbrella_mentions": 0,
+    "result": "PASS"
+  },
+  "next_source_line": 2604,
+  "next_label": "Proposition10.11.7",
+  "result": "PASS"
+}

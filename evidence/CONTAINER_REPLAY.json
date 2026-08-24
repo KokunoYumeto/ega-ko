@@ -2,29 +2,30 @@
   "schema_version": 1,
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1273445,
-    "sha256": "8EF3BFB1D12DF39AC15A01F8A62434648261F67D0020E90CA442ABC45F11E36A"
+    "bytes": 1277365,
+    "sha256": "4CA61ED04BE1996D4852D2CF7427FA016432A49409FF2CDC608A552549DD2C89"
   },
   "working_tree_reader": {
-    "path": "build/ega1/r167/main.pdf",
-    "bytes": 1273454,
-    "sha256": "C20B2A3FCAB2389D2B0EF232C64623185684B75087B74937C4930774385CA82F"
+    "path": "build/ega1/s125-r19/main.pdf",
+    "bytes": 1277374,
+    "sha256": "8ED31D0EA2DCB06AEFCBBC0CD5151D03A9594D187E61194219F973A5F0AC05E0"
   },
   "clean_extracted_source_archive_reader": {
-    "bytes": 1273465,
-    "sha256": "A1E613E1C6C2E9B760F201A40E11B74D3A559C19F758D31F41247969927D6928",
+    "bytes": 1277382,
+    "sha256": "A0536FB046A3CF929C332F4CE1A81F93FE7BE2207198E90050B35DF91B4FBDA6",
     "full_poppler_extraction_exact": true,
-    "pages_1_143_144_200dpi_pixel_exact": true
+    "full_pypdf_extraction_exact": true,
+    "pages_1_2_6_142_143_144_145_200dpi_pixel_exact": true
   },
-  "source_target_hash": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
+  "source_target_hash": "A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0",
   "comparison": {
-    "pages": 144,
+    "pages": 145,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "hangul_syllables_each": 133178,
+    "hangul_syllables_each": 133654,
     "replacement_characters_each": 0,
-    "public_working_pages_200dpi_pixel_exact": "1,2,6,139,140,141,142,143,144",
-    "public_pages_unchanged_from_r17": "139,140,141"
+    "public_working_pages_200dpi_pixel_exact": "1,2,6,142,143,144,145",
+    "public_pages_unchanged_from_r18": "6,142"
   },
-  "disposition": "The standalone public-tree reader, retained r167 working bind and clean-extraction source-archive build differ at the path-sensitive container level. The first pair has exact full Poppler and pypdf text extractions; the clean-extraction build has exact full Poppler extraction. All nine inspected public/working pages are pixel-exact at200dpi; clean-extraction pages1,143,144 are also exact; public pages139-141 remain pixel-exact to r17. No all-page pixel identity or broader certification is inferred."
+  "disposition": "The standalone public-tree reader, retained s125-r19 working bind and clean-extraction source-archive build differ at the path-sensitive container level. All three have exact full Poppler and pypdf text extractions. The seven inspected pages are pixel-exact across public, working and clean-extraction builds at200dpi; public pages6 and142 also remain pixel-exact to r18. No all-page pixel identity or broader certification is inferred."
 }

@@ -1,0 +1,64 @@
+{
+  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "version": "2026-08-24-r19",
+  "verified_at": "2026-08-24T22:36:44.0410895+02:00",
+  "record_id": 22086602,
+  "concept_record_id": 21921513,
+  "doi": "10.5281/zenodo.22086602",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22086602",
+  "doi_url": "https://doi.org/10.5281/zenodo.22086602",
+  "state": "published",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributors": ["AI typesetting & translation"],
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "relation": "10.5281/zenodo.20414353|isPartOf",
+    "coverage_end": "environment10.11.6, immediately before Proposition10.11.7",
+    "title_description_umbrella_mentions": 0,
+    "result": "PASS"
+  },
+  "files": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1277365,
+      "md5": "5095e33340274e503516e42e57edfd35",
+      "sha256": "4CA61ED04BE1996D4852D2CF7427FA016432A49409FF2CDC608A552549DD2C89"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 220785,
+      "md5": "9e8436d7963d79316a4981e3b438ad71",
+      "sha256": "5E86661D3F8B54551A3947F439F9A3F06D66E7BCF92720A8949C55FE1778080A",
+      "entries": 24,
+      "files": 22
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 63845371,
+      "md5": "33d0c8683b3748404fc2e9583e552d26",
+      "sha256": "5F9170EF9D9EF618DC641C5794156B04EA5A6C2D73BC0574CE04202713FFAF70",
+      "entries": 261,
+      "files": 252
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 342,
+      "md5": "7455b6493f5f0a08b0f81539162b0b26",
+      "sha256": "9E7E26EB5961C6EE2BAF120FE7AAECAD25988CB42DE9A21308D8A48099C22B33"
+    }
+  ],
+  "verification": {
+    "anonymous_api_metadata": "PASS",
+    "anonymous_files_byte_md5_sha256": "4/4 PASS",
+    "outer_manifest_replay": "3/3 PASS",
+    "internal_manifest": "275 rows / 275 replayed / 27579 bytes / C53D640F9173F50076FB5F397EDBB35CA430F8D426B1AB02E67742E308CF1920",
+    "source_zip_ab_identity": "PASS",
+    "evidence_zip_ab_identity": "PASS",
+    "doi_resolution": "HTTP 200 to https://zenodo.org/records/22086602",
+    "credential_material_present": false,
+    "result": "PASS"
+  }
+}
