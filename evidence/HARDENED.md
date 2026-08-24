@@ -801,3 +801,36 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   EGA concept. Freeze the current public evidence tree, build both deterministic
   ZIP cycles, publish exactly four files, and require anonymous metadata,
   file, ZIP and DOI readback before advancing to line 2298.
+
+## 58. r16 deterministic public preservation closure
+
+- The immutable r16 package is the 143-page reader (1,259,569 bytes /
+  `9BBF03AC8A5D09D7BC629D182E01E540ADB30AAFDB3C96860A51BBF5B709986B`),
+  the 24-entry source ZIP (217,511 bytes /
+  `992FE92E81D2632C8E4BD0F9024F608CECFFA7D0191787CF264BC352A9EE5B05`),
+  the 222-entry evidence ZIP (53,597,880 bytes /
+  `D5A1BD4677657EF0010C88EBA92A6823E47E3820155449B7C12E8BAA40990241`),
+  and the three-row outer manifest (342 bytes /
+  `123E244D5D7965ECFE82FF142D1BC14925BD529D01EF3C1EA2F394AF1E6A55FA`).
+  Both ZIP cycles, full entry reads, the 236-row internal manifest and the
+  outer manifest replay pass.
+- Zenodo record `10.5281/zenodo.22074416` in concept
+  `10.5281/zenodo.21921513` anonymously replays all four files, exact metadata,
+  ZIP inventories and DOI resolution. The title is unmangled; historical
+  authors are creators; `AI typesetting & translation` is the sole project
+  contributor; umbrella text occurs zero times in title or prose metadata.
+- GitHub artifact commit
+  `b24475a4689fc678744786a07551870f73ad977d` replays all 244 explicit
+  unfiltered paths and 120,162,593 bytes exactly. Receipt commit
+  `83dad41786e550ada95e140bae4549d992ed72b3` independently replays the
+  1,719-byte receipt with SHA-256
+  `95020B5599258F166E52B6A3E8FD98F92240DD79DA655B2BA4481F2E160DCBD5`.
+- Figshare was retried only against article 33314679. Authenticated account
+  and article calls still return HTTP 403 `Inactive/disabled account`; the
+  anonymous article is 404 and its versions list is empty. No mutation,
+  duplicate article or false r16 mirror claim was made.
+- Publication closure does not rewrite the frozen package. The next unit is
+  canonical lines 2298–2399: Proposition 10.10.5 with its complete proof and
+  attached Corollary 10.10.6. `AGKO-H144` requires the Korean text to correct
+  printed `v:A^m->A^n` to the type-forced `v:A^p->A^q` and disclose that
+  correction explicitly while the French authority remains diplomatic.

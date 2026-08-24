@@ -1,0 +1,72 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S123_CHECK",
+  "version": "2026-08-24-r17",
+  "scope": "EGA I Proposition10.10.5 with complete proof and Corollary10.10.6",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2298-2399",
+    "bytes": 4885,
+    "sha256": "427616981EEAAA43560F339FE707FBD223516DEAAF0293A3293F50F8E2519C6E"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2247-2347",
+    "bytes": 5439,
+    "sha256": "DD3326B6F3F3F764F14724613F4B8C34CE626ED8BF0F864EB414A3239281EF9D",
+    "whole_bytes": 111906,
+    "whole_sha256": "ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4",
+    "sealed_prefix_bytes": 106466,
+    "sealed_prefix_sha256": "E774545DA3BFF3DBBD1C172ED554D765E62B16F8335A1939FAE2A6426EC5B47D"
+  },
+  "formula_gate": {
+    "source_math_spans": 80,
+    "target_math_spans_excluding_translator_note": 80,
+    "controlled_differences": 1,
+    "controlled_difference": "span67: printed A^m->A^n replaced by type-forced A^p->A^q under AGKO-H144/H145",
+    "references": "16/16",
+    "labels": "2/2",
+    "environments": "3/3",
+    "items": "3/3",
+    "printed_page_marker": "1/1",
+    "qed": "1/1",
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E142",
+    "retained_primary_arxiv_papers": 3,
+    "new_term_lock": null,
+    "result": "PASS"
+  },
+  "source_repair_gate": {
+    "control": "NEXT_R17_PQ_MN_DEFECT",
+    "hard_records": ["AGKO-H144", "AGKO-H145"],
+    "french_authority_changed": false,
+    "korean_note_present": true,
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "143 pages / 1267710 bytes / 9790D280C18C6004FB6356863E72FFCBFC501DCBC48506BEBFDBD1C9CEF2FAAC",
+    "public": "143 pages / 1267689 bytes / A9600413BD1B23D09E26A2175CFB197EE740A9C195661C533402FD9736A7E676",
+    "deterministic_cycles": "PASS in both trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "643019 bytes / 8D5D3CB36DD83CED534234D11A4841FFBC30F4AB89D3D56C40D9D4CF417D338A pairwise exact",
+    "pypdf": "609384 bytes / EB0EB2852AFEA118A49C4935612CAFB74C9EE79B3DB256E4F206A6E41FC32FEB pairwise exact",
+    "hangul": 132484,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "prior_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 139, 140, 141, 142, 143],
+    "dpi": 200,
+    "working_public_pairwise_exact": true,
+    "direct_inspection": "PASS after correcting one stale title-page scope line and repeating all build, extraction and render checks",
+    "result": "PASS"
+  },
+  "next_source_line": 2401,
+  "next_label": "environment10.10.7",
+  "result": "PASS"
+}

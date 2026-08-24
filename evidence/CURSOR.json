@@ -1,8 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-24-r16",
-  "coverage": "EGA I through Proposition10.10.3 with complete proof and environment10.10.4 at source line2296, ending before Proposition10.10.5",
-  "next": "source/ega1/ega1-10-fr.tex line2298 Proposition10.10.5; apply AGKO-H144 at lines2377-2381",
-  "target": "source/c1s10.tex lines1-2245 / 106466 bytes / E774545DA3BFF3DBBD1C172ED554D765E62B16F8335A1939FAE2A6426EC5B47D",
-  "public_status": "r16 is locally admitted and reserved at Zenodo DOI10.5281/zenodo.22074416 pending deterministic package publication and anonymous replay; r15 remains the current public checkpoint"
+  "version": "2026-08-24-r17",
+  "coverage": "EGA I through Proposition10.10.5 with complete proof and attached Corollary10.10.6 at source line2399 and separator2400, ending before environment10.10.7",
+  "next": "source/ega1/ega1-10-fr.tex line2401 environment10.10.7",
+  "target": "source/c1s10.tex lines1-2347 / 111906 bytes / ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4",
+  "reserved_exact_doi": "10.5281/zenodo.22074926",
+  "current_public_checkpoint": "10.5281/zenodo.22074416",
+  "public_status": "r17 is validated and reserved unsubmitted at Zenodo DOI10.5281/zenodo.22074926 pending deterministic packaging and public readback; r16 remains public at Zenodo DOI10.5281/zenodo.22074416 and GitHub artifact commitb24475a4689fc678744786a07551870f73ad977d with receipt commit83dad41786e550ada95e140bae4549d992ed72b3; Figshare existing-article mirror remains unavailable without mutation or duplicate"
 }

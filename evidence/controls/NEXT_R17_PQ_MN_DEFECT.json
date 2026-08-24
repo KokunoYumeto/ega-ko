@@ -1,8 +1,8 @@
 {
   "schema": "ag-ko-future-source-defect-control-v1",
   "id": "NEXT_R17_PQ_MN_DEFECT",
-  "status": "verified_not_yet_applied",
-  "scope": "EGA I Proposition10.10.5 proof; canonical source/ega1/ega1-10-fr.tex lines2377-2381; outside r16",
+  "status": "applied_and_validated_in_r17",
+  "scope": "EGA I Proposition10.10.5 proof; canonical source/ega1/ega1-10-fr.tex lines2377-2381; Korean target source/c1s10.tex lines2320-2328",
   "canonical_source": {
     "path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
     "bytes": 159763,
@@ -25,10 +25,11 @@
     "render_sha256": "396CF6BA767B04B02B20BE4C6F9BEFF13E59A8334E11300015A114C2BC56446C"
   },
   "typed_finding": "The Delta correspondence preserves finite free ranks, so the stated sheaf map can only be induced by v:A^p -> A^q; printed m,n is a source-level rank mismatch.",
-  "future_translation_rule": "Preserve the French transcription diplomatically; in the Korean target use v:A^p -> A^q and add an explicit translator note naming the printed m,n mismatch.",
-  "admission_gate": "Before admitting the affected Korean unit, verify the corrected p,q formula, note, source citation, full formula ordering, deterministic build, extraction and visual render.",
+  "translation_rule": "Preserve the French transcription diplomatically; in the Korean target use v:A^p -> A^q and add an explicit translator note naming the printed m,n mismatch.",
+  "admission_gate": "PASS: corrected p,q formula, explicit note, scan identity, formula ordering80/80 with exactly one controlled substitution, deterministic build, dual extraction and direct visual render all verified.",
   "authority_task": "01a01efd-1650-7940-8e57-ca2d77ab7bab",
-  "authority_notification": "delivery retried; app endpoint did not return confirmation as of 2026-08-24T05:00:57+02:00",
+  "authority_notification": "Delivery attempted repeatedly to linked task01a01efd-1650-7940-8e57-ca2d77ab7bab; the local app endpoint returned No Codex thread found and no delivery confirmation as of 2026-08-24T05:46:00+02:00. Exact evidence remains durable here for later relay without blocking mathematical admission.",
   "r16_effect": "none",
-  "result": "PASS source defect proved and durably controlled"
+  "r17_effect": "Korean target uses v:A^p -> A^q with one explicit translator footnote; target unit lines2247-2347 5439 bytes / DD3326B6F3F3F764F14724613F4B8C34CE626ED8BF0F864EB414A3239281EF9D; French authority unchanged",
+  "result": "PASS source defect proved, applied, disclosed and validated"
 }

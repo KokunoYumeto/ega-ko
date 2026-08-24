@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "version": "2026-08-24-r16",
+  "version": "2026-08-24-r17",
   "concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22074416",
-  "previous_exact_version_doi": "10.5281/zenodo.22073895",
+  "exact_version_doi": "10.5281/zenodo.22074926",
+  "previous_exact_version_doi": "10.5281/zenodo.22074416",
   "global_ega_concept_doi": "10.5281/zenodo.20414353",
   "relation_policy": "isVersionOf concept DOI; isNewVersionOf previous exact release; source authority remains attributed and read-only",
-  "publication_status": "reserved draft; pending endpoint publication"
+  "publication_status": "reserved unsubmitted; local gates PASS; deterministic package, publication and public readback pending"
 }

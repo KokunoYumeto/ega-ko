@@ -1,85 +1,79 @@
 {
   "schema": "ag-ko-zenodo-publication-receipt-v1",
-  "version": "2026-08-24-r16",
-  "published_at": "2026-08-24T05:24:33+02:00",
-  "record_id": 22074416,
-  "doi": "10.5281/zenodo.22074416",
+  "release": "2026-08-24-r17",
+  "record_id": 22074926,
+  "exact_version_doi": "10.5281/zenodo.22074926",
   "concept_doi": "10.5281/zenodo.21921513",
-  "record_url": "https://zenodo.org/records/22074416",
-  "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-  "creators": [
-    "Grothendieck, Alexander",
-    "Dieudonné, Jean"
-  ],
-  "contributors": [
-    "AI typesetting & translation"
-  ],
-  "language": "kor",
-  "license": "cc-by-4.0",
-  "related_identifiers": [
-    {
-      "identifier": "10.5281/zenodo.20414353",
-      "relation": "isPartOf",
-      "resource_type": "publication-other"
-    }
-  ],
-  "metadata_checks": {
-    "unmangled_work_title": "PASS",
-    "creators_exact": "PASS",
-    "sole_standardized_project_contributor": "PASS",
-    "umbrella_title_or_prose_hits": 0,
-    "rights_and_non_endorsement": "PASS",
-    "incomplete_corpus_disclosure": "PASS"
+  "global_ega_concept_doi": "10.5281/zenodo.20414353",
+  "publication_created": "2026-08-24T07:17:32.541439+02:00",
+  "publication_updated": "2026-08-24T07:17:32.798280+02:00",
+  "record_url": "https://zenodo.org/records/22074926",
+  "doi_url": "https://doi.org/10.5281/zenodo.22074926",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-08-24-r17",
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "contributors": [
+      "AI typesetting & translation"
+    ],
+    "related_identifiers": 1,
+    "publication_date": "2026-08-24",
+    "clean_title_and_description": true
   },
   "files": [
     {
       "filename": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1259569,
-      "md5": "04572ced941f0542e70a0d855a272aa9",
-      "sha256": "9BBF03AC8A5D09D7BC629D182E01E540ADB30AAFDB3C96860A51BBF5B709986B",
-      "anonymous_readback": "PASS"
+      "bytes": 1267689,
+      "md5": "07ce89880982f6d2dd69a1e83bae8500",
+      "sha256": "A9600413BD1B23D09E26A2175CFB197EE740A9C195661C533402FD9736A7E676"
     },
     {
       "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 217511,
-      "md5": "d42a6b89155acacd3fb1ad4777930ded",
-      "sha256": "992FE92E81D2632C8E4BD0F9024F608CECFFA7D0191787CF264BC352A9EE5B05",
-      "entries": 24,
-      "files": 22,
-      "crc_and_stream_read": "PASS",
-      "anonymous_readback": "PASS"
+      "bytes": 218736,
+      "md5": "77265e944f487cb5e342303aea913c2e",
+      "sha256": "C4BE1E816CB3234CC9DA5F517CE94BB2D6B72151448E677DD3510232B8FAA96E",
+      "inventory": "24 entries / 22 files",
+      "crc_and_full_stream": "PASS"
     },
     {
       "filename": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 53597880,
-      "md5": "325aa373bc3d1e60aef9ba56d18c39ed",
-      "sha256": "D5A1BD4677657EF0010C88EBA92A6823E47E3820155449B7C12E8BAA40990241",
-      "entries": 222,
-      "files": 213,
-      "crc_and_stream_read": "PASS",
-      "anonymous_readback": "PASS"
+      "bytes": 57258051,
+      "md5": "5a2b910c6a9d662556fc55291f38232b",
+      "sha256": "C096FCA314300BEB4A44BB19BDACF46C9483F2785B00C111F18F415F24E7A28C",
+      "inventory": "234 entries / 225 files",
+      "crc_and_full_stream": "PASS"
     },
     {
       "filename": "03_EGA_ko_SHA256_MANIFEST.txt",
       "bytes": 342,
-      "md5": "a3fa4b63656b85c92b93571697804d88",
-      "sha256": "123E244D5D7965ECFE82FF142D1BC14925BD529D01EF3C1EA2F394AF1E6A55FA",
-      "rows": 3,
-      "replay": "PASS",
-      "anonymous_readback": "PASS"
+      "md5": "d44839757f5b3ab60fa3bc47d5df2e28",
+      "sha256": "FB0A4B84CCE94408F3A97BA76C65FF32A0BBBF58644A0EFA17A5B1EE9484B780"
     }
   ],
-  "freeze": {
-    "artifact_manifest": "evidence/ARTIFACT_SHA256.tsv 236 rows / 23644 bytes / 0A207AB0F9AD1D065B30DCACB7AE7F79CE11D4266B361A2C22072808C51409D1; replay236/236",
-    "source_zip_cycles": "A/B byte-identical 217511 bytes / 992FE92E81D2632C8E4BD0F9024F608CECFFA7D0191787CF264BC352A9EE5B05",
-    "evidence_zip_cycles": "A/B byte-identical 53597880 bytes / D5A1BD4677657EF0010C88EBA92A6823E47E3820155449B7C12E8BAA40990241",
-    "frozen_release": "release/2026-08-24-r16"
+  "internal_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "rows": 248,
+    "bytes": 24847,
+    "sha256": "A0DC2AB9AB6DF934E8EF834FBCE8C3313207354B94C76EA25A4F3BE2F64B2C8A",
+    "replay": "248/248 PASS"
   },
-  "doi_resolution": {
-    "status": 200,
-    "final_url": "https://zenodo.org/records/22074416",
-    "result": "PASS"
+  "outer_manifest": {
+    "rows": 3,
+    "replay": "3/3 PASS"
   },
-  "result": "PASS: published in the existing concept and anonymously replayed without credential material"
+  "anonymous_readback": {
+    "metadata": "PASS",
+    "files": "4/4 filename, byte, MD5 and SHA-256 exact",
+    "local_byte_comparison": "4/4 exact",
+    "source_zip": "24 entries / 22 files; CRC and full-stream read PASS",
+    "evidence_zip": "234 entries / 225 files; CRC and full-stream read PASS",
+    "doi_resolution": "https://doi.org/10.5281/zenodo.22074926 -> https://zenodo.org/records/22074926; HTTP 200"
+  },
+  "credential_material_included": false,
+  "result": "PASS: published in the existing concept and anonymously replayed"
 }
-

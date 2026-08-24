@@ -3,12 +3,12 @@
   "canonical_path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_bytes": 159763,
   "canonical_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "admission": "read-only canonical French authority; r16 unit lines2260-2296; exact NUMDAM scan checked and no defect found in this unit; the later printed p,q versus m,n mismatch at lines2377-2381 is controlled under AGKO-H144 without altering the French authority; primary arXiv papers are usage witnesses only",
-  "unit_bytes": 1731,
-  "unit_sha256": "E7CA02BE4E2AB31956C6E8E7C93284E65EBF0F4469EA322975BF1FE7C248961F",
+  "admission": "read-only canonical French authority; r17 unit lines2298-2399; exact NUMDAM scan physical page202/printed203 confirms the printed p,q versus m,n mismatch at lines2377-2381; canonical French remains diplomatic while the Korean target applies the type-forced p,q map with an explicit translator note under AGKO-H144/H145; no other defect found; primary arXiv papers are usage witnesses only",
+  "unit_bytes": 4885,
+  "unit_sha256": "427616981EEAAA43560F339FE707FBD223516DEAAF0293A3293F50F8E2519C6E",
   "target_path": "source/c1s10.tex",
-  "target_bytes": 106466,
-  "target_sha256": "E774545DA3BFF3DBBD1C172ED554D765E62B16F8335A1939FAE2A6426EC5B47D",
-  "next_source_line": 2298,
-  "next_label": "Proposition10.10.5"
+  "target_bytes": 111906,
+  "target_sha256": "ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4",
+  "next_source_line": 2401,
+  "next_label": "environment10.10.7"
 }

@@ -2243,3 +2243,105 @@ $u_{mn}$이라 하자~; 형식적 스킴 $\mathfrak{X}$는 $u_{mn}$들에 관한
 $X_n$들의 귀납극한이다
 (\hyperref[I.10.6.3-ko]{10.6.3}).
 \end{env}
+
+\begin{proposition}[10.10.5]
+\label{I.10.10.5-ko}
+(\hyperref[I.10.10.1-ko]{10.10.1})의 가정 아래에서
+$\mathscr{F}$를 $\mathscr{O}_{\mathfrak{X}}$-가군이라 하자. 다음 조건들은
+서로 동치이다~:
+\begin{enumerate}
+  \item[a)] $\mathscr{F}$는 연접 $\mathscr{O}_{\mathfrak{X}}$-가군이다.
+  \item[b)] $\mathscr{F}$는 열 $(\mathscr{F}_n)$의 사영극한
+    (\hyperref[I.10.6.6-ko]{10.6.6})과 동형이다. 이 열은 연접
+    $\mathscr{O}_{X_n}$-가군들로 이루어지고
+    $u_{mn}^*(\mathscr{F}_n)=\mathscr{F}_m$을 만족한다.
+  \item[c)] 유한 생성 $A$-가군 $M$이 존재한다. 그 가군은
+    (\hyperref[I.10.10.2-ko]{10.10.2, (i)})에 의해 표준 동형을
+    제외하고 결정되며, $\mathscr{F}$는 $M^\Delta$와 동형이다.
+\end{enumerate}
+\end{proposition}
+
+먼저 b)가 c)를 함의함을 보이자. $\mathscr{F}_n=\widetilde{M_n}$이고,
+여기서 $M_n$은 유한 생성 $A_n$-가군이다. 가정에 의해
+$M_m=M_n\otimes_{A_n}A_m$이 $m\leq n$일 때 성립한다
+(\hyperref[I.1.6.5-ko]{1.6.5})~; 따라서 $M_n$들은 표준 디-준동형
+$M_n\to M_m$ ($m\leq n$)에 관하여 사영계를 이룬다. $A_n$들의
+정의로부터 이 사영계가
+(\hyperref[0.7.2.9-ko]{0, 7.2.9})의 조건들을 만족함이 곧바로 따른다~;
+그러므로 그 사영극한 $M$은 유한 생성 $A$-가군이고,
+$M_n=M\otimes_A A_n$이 모든 $n$에 대하여 성립한다. 따라서
+$\mathscr{F}_n$은 $X_n$ 위에서
+$\widetilde M\otimes_{\mathscr{O}_X}
+(\mathscr{O}_X/\widetilde{\mathfrak{J}}^{n+1})$에 의해 유도되는
+가군이고, 정의 (\hyperref[I.10.8.4-ko]{10.8.4})에 의해
+$\mathscr{F}=M^\Delta$이다.
+
+역으로 c)는 b)를 함의한다. 실제로 $u_n$이 몰입 사상 $X_n\to X$이면,
+$u_n^*(\widetilde M)=(M\otimes_A A_n)^{\sim}$은 $X_n$ 위에서
+$\widetilde M\otimes_{\mathscr{O}_X}
+(\mathscr{O}_X/\widetilde{\mathfrak{J}}^{n+1})$에 의해 유도되는
+가군이고, 정의 (\hyperref[I.10.8.4-ko]{10.8.4})에 의해
+$M^\Delta=\varprojlim u_n^*(\widetilde M)$이다~;
+$u_m=u_n\circ u_{mn}$이 $m\leq n$일 때 성립하므로,
+$\mathscr{F}_n=u_n^*(\widetilde M)$들은 b)의 조건들을 만족한다. 이로써
+주장이 따른다.
+
+이제 c)가 a)를 함의함을 보이자. 정의에 의해
+$\mathscr{O}_{\mathfrak{X}}=A^\Delta$이다~; $M$은 어떤 준동형
+$A^m\to A^n$의 여핵이므로, (\hyperref[I.10.10.2-ko]{10.10.2})에 의해
+$M^\Delta$는 준동형
+$\mathscr{O}_{\mathfrak{X}}^m\to\mathscr{O}_{\mathfrak{X}}^n$의
+여핵이다. $\mathscr{O}_{\mathfrak{X}}$가 연접인 환의 층이므로
+(\hyperref[I.10.10.3-ko]{10.10.3}), $M^\Delta$도 연접이다
+(\hyperref[0.5.3.4-ko]{0, 5.3.4}).
+\oldpage[I]{203}
+
+끝으로 a)는 b)를 함의한다. $\mathscr{O}_{\mathfrak{X}}$-가군으로
+보면,
+$\mathscr{O}_{X_n}=\mathscr{O}_{\mathfrak{X}}/
+\mathscr{J}^{n+1}=A_n^\Delta$이다~; $\mathscr{F}_n=\mathscr{F}
+\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{O}_{X_n}$은 연접
+$\mathscr{O}_{\mathfrak{X}}$-가군이다
+(\hyperref[0.5.3.5-ko]{0, 5.3.5}). 또한 이것은
+$\mathscr{O}_{X_n}$-가군이고 $\mathscr{J}^{n+1}$이 연접이므로,
+$\mathscr{F}_n$은 연접 $\mathscr{O}_{X_n}$-가군이다
+(\hyperref[0.5.3.10-ko]{0, 5.3.10}).
+$u_{mn}^*(\mathscr{F}_n)=\mathscr{F}_m$이 $m\leq n$일 때 성립함도
+곧바로 알 수 있다
+($X_m\to X_n$에서 얻는 바탕공간 사이의 연속사상은
+$\mathfrak{X}$의 항등사상임을 기억하면 된다). 따라서 층
+$\mathscr{G}=\varprojlim\mathscr{F}_n$은 연접
+$\mathscr{O}_{\mathfrak{X}}$-가군이다. 이는 b)가 a)를 함의함을 이미
+보였기 때문이다. 표준 준동형 $\mathscr{F}\to\mathscr{F}_n$들은
+사영계를 이루며, 사영극한을 취하면 표준 준동형
+$w:\mathscr{F}\to\mathscr{G}$를 얻는다. 이제 남은 것은 $w$가 전단사임을
+보이는 일뿐이다. 이 문제는 국소적이므로 $\mathscr{F}$가 어떤 준동형
+$\mathscr{O}_{\mathfrak{X}}^p\to\mathscr{O}_{\mathfrak{X}}^q$의
+여핵인 경우로 국한할 수 있다~; 이 준동형은 $v^\Delta$ 꼴이고, 여기서
+$v$는 준동형 $A^p\to A^q$이다\footnote{\textbf{번역 주.} 인쇄 원문은
+앞의 층 준동형을
+$\mathscr{O}_{\mathfrak{X}}^p\to\mathscr{O}_{\mathfrak{X}}^q$로
+둔 뒤, 이를 유도하는 $v$를 $A^m\to A^n$으로 쓴다. 그러나
+$\Delta$ 대응에서는 $(A^r)^\Delta=\mathscr{O}_{\mathfrak{X}}^r$이므로
+유한 자유 가군의 계수(階數)가 보존된다. 따라서 $v:A^p\to A^q$로
+바로잡았다.}
+(\hyperref[I.10.10.2-ko]{10.10.2}). 그러므로 $\mathscr{F}$는
+$M^\Delta$와 동형이다. 여기서 $M=\operatorname{Coker}v$이다
+(\hyperref[I.10.10.2-ko]{10.10.2}). 이제
+(\hyperref[I.10.10.2-ko]{10.10.2})에 의해
+$\mathscr{F}_n=M^\Delta\otimes_{\mathscr{O}_{\mathfrak{X}}}A_n^\Delta
+=(M\otimes_A A_n)^\Delta$이다. 또한 $\mathfrak{J}$-아딕 위상은
+$M\otimes_A A_n$ 위에서 이산이므로,
+$(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)^{\sim}$이다
+($\mathscr{O}_{X_n}$-가군으로서). 위에서
+$M^\Delta=\varprojlim\mathscr{F}_n$임을 보았으므로, 이 경우 $w$는
+실제로 항등사상이다.
+\par\hfill C.Q.F.D.\par
+
+\begin{corollary}[10.10.6]
+\label{I.10.10.6-ko}
+$\mathscr{F}$가 (\hyperref[I.10.10.5-ko]{10.10.5})의 조건 b)를
+만족하면, 사영계 $(\mathscr{F}_n)$은
+$\mathscr{F}\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{O}_{X_n}$들로
+이루어진 계와 동형이다.
+\end{corollary}
