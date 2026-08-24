@@ -1,0 +1,37 @@
+{
+  "schema": "ag-ko-github-receipt-v2",
+  "release": "2026-08-24-r15",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "1360a970d519fde09992df0118f4b833d6ab10c3",
+  "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/1360a970d519fde09992df0118f4b833d6ab10c3",
+  "zenodo_exact_doi": "10.5281/zenodo.22073895",
+  "zenodo_receipt": "receipt-r15.json 2639 bytes / 83FA0155C1AB6278642DE374826D5FD4BDF773F301761A75DDF921B9B3023678",
+  "anonymous_raw_replay": {
+    "artifact_manifest_data_paths": 222,
+    "artifact_manifest_control_paths": 1,
+    "frozen_release_paths": 4,
+    "zenodo_receipt_paths": 2,
+    "figshare_attempt_paths": 1,
+    "combined_paths": 230,
+    "combined_bytes": 112733951,
+    "byte_and_sha256_exact": 230,
+    "mismatches": 0,
+    "result": "PASS"
+  },
+  "raw_blob_staging": {
+    "explicit_paths_checked": 230,
+    "staged_index_oid_equals_unfiltered_local_oid": "230/230 PASS",
+    "artifact_commit_changed_paths": 49,
+    "unexpected_paths": 0
+  },
+  "release_artifacts": {
+    "reader": "1257594 bytes / 057E4B1B8BEF60C90E9C8D276C78B13E2BC144534320BA5405149FD8BB047EBB",
+    "source_zip": "217109 bytes / C2F96BDD53DEBADFCA2F08F9738016DCD32451CFE138EBE32C6D919661FB954E",
+    "evidence_zip": "50101041 bytes / 69CE66F07C0EE1F799C798D31253A21ABEFD6195991BF2A4778CEF099FE86BE9",
+    "outer_manifest": "342 bytes / A7DE6A0DB73D6FDCE63F60FF6B91CFFD1E83E8B67BDCD2B4E16C2AFD8F109E8B"
+  },
+  "figshare": "No r15 mutation: authenticated access to the existing article remains blocked by an inactive/disabled account; no duplicate article was created.",
+  "credential_material": "none",
+  "result": "PASS"
+}
