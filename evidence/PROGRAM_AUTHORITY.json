@@ -1,26 +1,26 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-24T07:06:54+02:00",
+  "updated": "2026-08-24T08:25:00+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_source_bytes": 159763,
   "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "package_mapping": {
-    "target_section10_bytes": 111906,
+    "target_section10_bytes": 116734,
     "source_front": "source/front.tex",
     "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4"
+    "target_section10_sha256": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823"
   },
-  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through Proposition10.10.5 with complete proof and attached Corollary10.10.6, before environment10.10.7",
+  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through the equivalence following Theorem10.11.3, before Corollary10.11.4",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r17 is validated and reserved unsubmitted at exact DOI10.5281/zenodo.22074926 pending deterministic packaging and public readback; r16 remains public and anonymously replayed on Zenodo and GitHub; the existing Figshare article remains unavailable because the account is inactive/disabled, with no mutation or duplicate",
-    "current_public_doi": "10.5281/zenodo.22074416",
+    "status": "r18 local release gates PASS with reserved unsubmitted Zenodo draft22076207; r17 is the current public and anonymously replayed Zenodo/GitHub checkpoint; the existing Figshare article remains unavailable because the account is inactive/disabled, with no mutation or duplicate",
+    "current_public_doi": "10.5281/zenodo.22074926",
     "concept_doi": "10.5281/zenodo.21921513",
-    "exact_doi": "10.5281/zenodo.22074926",
-    "reserved_exact_doi": "10.5281/zenodo.22074926",
-    "github_artifact_commit": "b24475a4689fc678744786a07551870f73ad977d",
-    "github_receipt_commit": "83dad41786e550ada95e140bae4549d992ed72b3",
+    "exact_doi": "10.5281/zenodo.22076207",
+    "reserved_exact_doi": "10.5281/zenodo.22076207",
+    "github_artifact_commit": "1a467bbf7249a7b156eb8d7a3b81fe368c94ff08",
+    "github_receipt_commit": "3d11107f453429831fa2fbc12645b5d553877c9b",
     "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "prior r16 v7 attempt not mutated because the account was inactive/disabled; r17 existing-article-only retry pending; no duplicate article"
+    "figshare_status": "existing v7 target remains unmutated because the account is inactive/disabled; anonymous article404 and versions200 empty; no duplicate article"
   }
 }

@@ -1,13 +1,13 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-24T07:06:54+02:00",
+  "updated": "2026-08-24T08:25:00+02:00",
   "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2401",
-  "next_label": "environment10.10.7",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2516",
+  "next_label": "Corollary10.11.4",
   "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-2347",
-  "package_target_sha256": "ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4",
-  "current_exact_zenodo": "10.5281/zenodo.22074926",
-  "current_public": "10.5281/zenodo.22074416",
-  "status": "r17 is validated and reserved unsubmitted pending deterministic packaging and public replay; r16 remains public on Zenodo and GitHub with anonymous byte and metadata replay PASS; next source line2401 environment10.10.7"
+  "package_target_locator": "lines1-2455",
+  "package_target_sha256": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
+  "current_exact_zenodo": "10.5281/zenodo.22076207",
+  "current_public": "10.5281/zenodo.22074926",
+  "status": "r18 local gates PASS in reserved unsubmitted Zenodo draft22076207; r17 remains public with anonymous replay PASS; next source line2516 Corollary10.11.4"
 }

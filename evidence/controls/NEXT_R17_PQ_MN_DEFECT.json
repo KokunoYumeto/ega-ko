@@ -28,7 +28,7 @@
   "translation_rule": "Preserve the French transcription diplomatically; in the Korean target use v:A^p -> A^q and add an explicit translator note naming the printed m,n mismatch.",
   "admission_gate": "PASS: corrected p,q formula, explicit note, scan identity, formula ordering80/80 with exactly one controlled substitution, deterministic build, dual extraction and direct visual render all verified.",
   "authority_task": "01a01efd-1650-7940-8e57-ca2d77ab7bab",
-  "authority_notification": "Delivery attempted repeatedly to linked task01a01efd-1650-7940-8e57-ca2d77ab7bab; the local app endpoint returned No Codex thread found and no delivery confirmation as of 2026-08-24T05:46:00+02:00. Exact evidence remains durable here for later relay without blocking mathematical admission.",
+  "authority_notification": "Delivery confirmed to linked task01a01efd-1650-7940-8e57-ca2d77ab7bab on 2026-08-24T07:30:00+02:00 after r17 publication. The relay included the canonical slice, scan and retained-render identities, page locator, type argument, diplomatic-source rule, explicit Korean correction rule and exact public r17 DOI. Earlier endpoint failures remain historical evidence under AGKO-H145; AGKO-H146 records successful closure.",
   "r16_effect": "none",
   "r17_effect": "Korean target uses v:A^p -> A^q with one explicit translator footnote; target unit lines2247-2347 5439 bytes / DD3326B6F3F3F764F14724613F4B8C34CE626ED8BF0F864EB414A3239281EF9D; French authority unchanged",
   "result": "PASS source defect proved, applied, disclosed and validated"

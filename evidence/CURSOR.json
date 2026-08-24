@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-24-r17",
-  "coverage": "EGA I through Proposition10.10.5 with complete proof and attached Corollary10.10.6 at source line2399 and separator2400, ending before environment10.10.7",
-  "next": "source/ega1/ega1-10-fr.tex line2401 environment10.10.7",
-  "target": "source/c1s10.tex lines1-2347 / 111906 bytes / ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4",
-  "reserved_exact_doi": "10.5281/zenodo.22074926",
-  "current_public_checkpoint": "10.5281/zenodo.22074416",
-  "public_status": "r17 is validated and reserved unsubmitted at Zenodo DOI10.5281/zenodo.22074926 pending deterministic packaging and public readback; r16 remains public at Zenodo DOI10.5281/zenodo.22074416 and GitHub artifact commitb24475a4689fc678744786a07551870f73ad977d with receipt commit83dad41786e550ada95e140bae4549d992ed72b3; Figshare existing-article mirror remains unavailable without mutation or duplicate"
+  "version": "2026-08-24-r18",
+  "coverage": "EGA I through Theorem10.11.3 with complete proof and its following equivalence statement at source line2514 and separator2515, ending before Corollary10.11.4",
+  "next": "source/ega1/ega1-10-fr.tex line2516 Corollary10.11.4",
+  "target": "source/c1s10.tex lines1-2455 / 116734 bytes / 2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
+  "reserved_exact_doi": "10.5281/zenodo.22076207",
+  "current_public_checkpoint": "10.5281/zenodo.22074926",
+  "public_status": "r18 local release gates PASS and Zenodo draft22076207 is reserved but unsubmitted; r17 remains the current public Zenodo/GitHub checkpoint with anonymous replay PASS; Figshare existing-article mirror remains unavailable without mutation or duplicate"
 }

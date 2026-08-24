@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
-  "version": "2026-08-24-r17",
+  "version": "2026-08-24-r18",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1267689,
-  "reader_sha256": "A9600413BD1B23D09E26A2175CFB197EE740A9C195661C533402FD9736A7E676",
-  "render_count": 8,
+  "reader_bytes": 1273445,
+  "reader_sha256": "8EF3BFB1D12DF39AC15A01F8A62434648261F67D0020E90CA442ABC45F11E36A",
+  "render_count": 9,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,139,140,141,142,143",
+  "pages": "1,2,6,139,140,141,142,143,144",
   "render_hashes": {
-    "page1": "9217D0A6D246F6ABBB1A01C94F6B7123A6CB1FDECE9049A0587691BDCBAE7118",
-    "page2": "CF5BCF56DEBDD962619491E80054BBC5E8C98DF458C4E1AEAF2D317501E43482",
-    "page6": "28F7D55460775B353D2A8561987C3BB5EC208A73BB7C9ADB35A799B9A33FE1E6",
+    "page1": "12481139FE700D114C60407D2200F63AF36B0EA9891500CEF34DC4797A024B81",
+    "page2": "B58B63BD4074459ACC9DD7CF86052BC8F64D4881736EC92C228E4981A23C54CF",
+    "page6": "F481EEEE2420697258AE9EF9FE9513E94636528E39A6D9F7CE21C884DEA88AF9",
     "page139": "9E830D0D7A246BEB4CEFCAD3476285F53F22A4D8658C6B32991246646C98E833",
     "page140": "A80DBC914DC0521D20A04144E22ED077BE1D2387BFBD009C9D888E66F818AFFF",
     "page141": "4B075580EA12033013319D9442D8E23E93446DEBCFB3C41D0F1D1F7191B91AC9",
-    "page142": "3FC0FA25FF2A9C2ACB17C08DF5E14BD69754B4BDC13E612AF66498330E9E2BA5",
-    "page143": "E8538559A61CBAA4D7A566D622994713FC1B2CFE9731F62ADCD9E6538CD08EBD"
+    "page142": "1DB6921DAF68876C5D7C494652F3A9C0B638E5744957113B92643271D62AC4AD",
+    "page143": "FFA14B591CC83EE01DE37BF57ECB35631FD6F69DBB60F81A17D5DFAED39E943D",
+    "page144": "67361BA16B17CB8C43C2B33901EC1B14F99F91158B123D9A25301937A21A90A8"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify current r17 scope through Corollary10.10.6, exact DOI22074926, rights and non-endorsement; page6 verifies the table of contents; pages139-141 cover the stable transition; page142 contains Proposition10.10.5, its complete proof, the explicit p,q correction note and Corollary10.10.6; page143 covers the bibliography. No clipping, overlap, tofu, malformed formula, broken arrow or margin collision was found."
+  "disposition": "Pages1-2 verify current r18 scope through Theorem10.11.3 and its following equivalence statement, exact DOI22076207, rights and non-endorsement; page6 verifies the new10.11 table-of-contents entry; pages139-141 are unchanged stable context; page142 preserves Proposition10.10.5, its complete proof and explicit p,q correction note without clipping; page143 contains the complete new source-bounded unit from environment10.10.7 through the equivalence after Theorem10.11.3; page144 covers the bibliography. Working and public renders are pairwise pixel-exact. No clipping, overlap, tofu, malformed formula, broken arrow or margin collision was found."
 }

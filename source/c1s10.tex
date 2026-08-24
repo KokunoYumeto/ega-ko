@@ -2345,3 +2345,111 @@ $\mathscr{F}$가 (\hyperref[I.10.10.5-ko]{10.10.5})의 조건 b)를
 $\mathscr{F}\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{O}_{X_n}$들로
 이루어진 계와 동형이다.
 \end{corollary}
+
+\begin{env}[10.10.7]
+\label{I.10.10.7-ko}
+이제 $A$, $B$를 두 뇌터 아딕환이라 하고,
+$\varphi:B\to A$를 연속 준동형이라 하자. $\mathfrak{J}$ (각각
+$\mathfrak{K}$)를 $A$ (각각 $B$)의 정의 아이디얼이라 하되
+$\varphi(\mathfrak{K})\subset\mathfrak{J}$라고 하고,
+$X=\operatorname{Spec}(A)$, $Y=\operatorname{Spec}(B)$,
+$\mathfrak{X}=\operatorname{Spf}(A)$,
+$\mathfrak{Y}=\operatorname{Spf}(B)$라 하자. $f:X\to Y$를
+$\varphi$에 대응하는 준스킴의 사상이라 하고
+(\hyperref[I.1.6.1-ko]{1.6.1}), 완비화한 것들 사이로의 연장을
+$\widehat f:\mathfrak{X}\to\mathfrak{Y}$라 하자
+(\hyperref[I.10.9.1-ko]{10.9.1}). 이는 또한 $\varphi$에 대응하는
+형식적 준스킴의 사상이다 (\hyperref[I.10.2.2-ko]{10.2.2}).
+\end{env}
+
+\begin{proposition}[10.10.8]
+\label{I.10.10.8-ko}
+모든 유한 생성 $B$-가군 $N$에 대하여 다음과 같은
+$\mathscr{O}_{\mathfrak{X}}$-가군의 함자적인 표준 동형이 존재한다~:
+\[
+  \widehat f^*(N^\Delta)
+  \xrightarrow{\sim}
+  (N\otimes_B A)^\Delta.
+\]
+\end{proposition}
+
+실제로 표준 사상들을 $i_X:\mathfrak{X}\to X$와
+$i_Y:\mathfrak{Y}\to Y$로 나타내면, 함자적인 표준 동형을 통해
+동일시할 때 (\hyperref[I.10.8.8-ko]{10.8.8})
+$N^\Delta=i_Y^*(\widetilde N)$이고
+\[
+  (N\otimes_B A)^\Delta
+  =i_X^*((N\otimes_B A)^{\sim})
+  =i_X^*(f^*(\widetilde N))
+\]
+이다 (\hyperref[I.1.6.5-ko]{1.6.5})~; 따라서 명제는 도표
+(\hyperref[I.10.9.2-ko]{10.9.2})의 가환성에서 따른다.
+
+\begin{corollary}[10.10.9]
+\label{I.10.10.9-ko}
+$\mathfrak b$를 $B$의 임의의 아이디얼이라 하면,
+$\widehat f^*(\mathfrak b^\Delta)\mathscr{O}_{\mathfrak{X}}
+=(\mathfrak bA)^\Delta$이다.
+\end{corollary}
+
+실제로 $j$를 표준 단사 준동형 $\mathfrak b\to B$라 하자. 이에 대응하는
+$j^\Delta:\mathfrak b^\Delta\to\mathscr{O}_{\mathfrak{Y}}$는
+$\mathscr{O}_{\mathfrak{Y}}$-가군의 표준 단사 준동형이다~;
+정의에 따라
+$\widehat f^*(\mathfrak b^\Delta)\mathscr{O}_{\mathfrak{X}}$는 준동형
+$\widehat f^*(j^\Delta):\widehat f^*(\mathfrak b^\Delta)\to
+\mathscr{O}_{\mathfrak{X}}=\widehat f^*(\mathscr{O}_{\mathfrak{Y}})$의
+상이다~; 그런데 (\hyperref[I.10.10.8-ko]{10.10.8})에 의해 이 준동형은
+$(j\otimes1)^\Delta:(\mathfrak b\otimes_B A)^\Delta\to
+\mathscr{O}_{\mathfrak{X}}=(B\otimes_B A)^\Delta$와 동일시된다.
+$j\otimes1$의 상은 아이디얼 $\mathfrak bA$이고 이는 $A$의 아이디얼이므로,
+(\hyperref[I.10.10.2-ko]{10.10.2})에 따라 $(j\otimes1)^\Delta$의 상은
+$(\mathfrak bA)^\Delta$이다. 이로써 결론이 따른다.
+\oldpage[I]{204}
+
+\subsection{형식적 준스킴 위의 연접층.}
+\label{subsection:I.10.11-ko}
+
+\begin{proposition}[10.11.1]
+\label{I.10.11.1-ko}
+$\mathfrak{X}$가 국소 뇌터 형식적 준스킴이면,
+$\mathscr{O}_{\mathfrak{X}}$는 연접인 환의 층이고 $\mathfrak{X}$의
+모든 정의 아이디얼층은 연접이다.
+\end{proposition}
+
+문제는 국소적이므로 뇌터 아핀 형식적 스킴인 경우로 환원되며, 따라서
+명제는 (\hyperref[I.10.10.3-ko]{10.10.3})과
+(\hyperref[I.10.10.5-ko]{10.10.5})에서 따른다.
+
+\begin{env}[10.11.2]
+\label{I.10.11.2-ko}
+$\mathfrak{X}$를 국소 뇌터 형식적 준스킴,
+$\mathscr{J}$를 $\mathfrak{X}$의 정의 아이디얼층이라 하자. $X_n$을
+(보통 의미의) 국소 뇌터 준스킴
+$(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J}^{n+1})$이라 하자.
+그러면 $\mathfrak{X}$는 열 $(X_n)$의 귀납극한이고, 그 전이사상들은
+표준 사상 $u_{mn}:X_m\to X_n$이다
+(\hyperref[I.10.6.3-ko]{10.6.3}). 이 표기 아래에서 다음이 성립한다~:
+\end{env}
+
+\begin{theorem}[10.11.3]
+\label{I.10.11.3-ko}
+$\mathscr{O}_{\mathfrak{X}}$-가군 $\mathscr{F}$가 연접이기 위한
+필요충분조건은 그것이 열 $(\mathscr{F}_n)$의 사영극한과 동형인 것이다.
+여기서 각 $\mathscr{F}_n$은 연접
+$\mathscr{O}_{X_n}$-가군이며,
+$u_{mn}^*(\mathscr{F}_n)=\mathscr{F}_m$이 $m\leq n$일 때 성립한다
+(\hyperref[I.10.6.6-ko]{10.6.6}). 이때 사영계 $(\mathscr{F}_n)$은
+$u_n^*(\mathscr{F})=\mathscr{F}
+\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{O}_{X_n}$들로 이루어진
+계와 동형이다. 여기서 $u_n$은 표준 사상 $X_n\to\mathfrak{X}$이다.
+\end{theorem}
+
+문제는 국소적이므로 $\mathfrak{X}$가 뇌터 아핀 형식적 스킴인 경우로
+환원되며, 이 경우 정리는 (\hyperref[I.10.10.5-ko]{10.10.5})와
+(\hyperref[I.10.10.6-ko]{10.10.6})의 귀결이다.
+
+따라서 \emph{연접 $\mathscr{O}_{\mathfrak{X}}$-가군을 주는 것은
+사영계 $(\mathscr{F}_n)$를 주는 것과 동치이다. 여기서 각 항은 연접
+$\mathscr{O}_{X_n}$-가군이고,
+$u_{mn}^*(\mathscr{F}_n)=\mathscr{F}_m$이 $m\leq n$일 때 성립한다}.

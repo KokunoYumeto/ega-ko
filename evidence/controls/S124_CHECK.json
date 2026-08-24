@@ -1,0 +1,83 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S124_CHECK",
+  "version": "2026-08-24-r18",
+  "scope": "EGA I environment10.10.7, Proposition10.10.8 with proof, Corollary10.10.9 with proof, Proposition10.11.1 with proof, environment10.11.2, Theorem10.11.3 with proof and the following equivalence statement",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2401-2514",
+    "characters": 4661,
+    "bytes": 4729,
+    "sha256": "EDB7D08703526C52EB96199AB583F88FB1477F9051AF6FD962BE95854B6BDC16"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2349-2455",
+    "characters": 3581,
+    "bytes": 4827,
+    "sha256": "5FFC3C229AEEB7A8255607EF875C37B6AE0FDF90E23CE49800A658D5C60B8950",
+    "whole_bytes": 116734,
+    "whole_sha256": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
+    "sealed_prefix_bytes": 111906,
+    "sealed_prefix_sha256": "ED7CDE2D703863E8169FAE70863196A30BFB6D4BA8D48DEF346E9ED699CF8FA4"
+  },
+  "formula_gate": {
+    "source_math_nodes": 67,
+    "target_math_nodes": 67,
+    "ordered_math_identity": "67/67",
+    "references": "14/14",
+    "labels": "7/7",
+    "environments": "6/6",
+    "printed_page_marker": "1/1",
+    "subsection": "1/1",
+    "emphasis": "1/1",
+    "items_tags_qed_footnotes": "0/0",
+    "controlled_differences": 0,
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E144",
+    "retained_primary_arxiv_papers": 3,
+    "new_term_lock": null,
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "contravariance": "B-to-A induces X-to-Y",
+    "pullback": "fhat-star maps Yhat modules to Xhat modules",
+    "image_ideal": "the Corollary10.10.9 left side is the image ideal; neither the pullback map nor j tensor 1 is asserted injective",
+    "limits": "X_m-to-X_n for m<=n; Xhat is an inductive limit; F_n is a projective system",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "144 pages / 1273454 bytes / C20B2A3FCAB2389D2B0EF232C64623185684B75087B74937C4930774385CA82F",
+    "public": "144 pages / 1273445 bytes / 8EF3BFB1D12DF39AC15A01F8A62434648261F67D0020E90CA442ABC45F11E36A",
+    "deterministic_cycles": "PASS in both trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "646510 bytes / 9CE72168B4ED66E9ABEC4D08331ECAB17947792DA057E768EA83759D20E51B55 pairwise exact",
+    "pypdf": "621400 bytes / 4AA08046533931621C146C2CC61609FB15575CCC8E22FD5D715C621DE049187C pairwise exact",
+    "hangul": 133178,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "prior_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 139, 140, 141, 142, 143, 144],
+    "dpi": 200,
+    "working_public_pairwise_exact": true,
+    "direct_inspection": "PASS",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22076207",
+    "version": "2026-08-24-r18",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "sole_project_contributor": "AI typesetting & translation",
+    "title_description_umbrella_mentions": 0,
+    "result": "PASS"
+  },
+  "next_source_line": 2516,
+  "next_label": "Corollary10.11.4",
+  "result": "PASS"
+}

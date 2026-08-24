@@ -9,6 +9,7 @@ $log = Join-Path $out 'main.log'
 $reference = Join-Path $out 'main.reference.pdf'
 
 New-Item -ItemType Directory -Force -Path $out | Out-Null
+New-Item -ItemType Directory -Force -Path (Split-Path -Parent $reader) | Out-Null
 Get-Command xelatex -ErrorAction Stop | Out-Null
 
 # Freeze PDF creation metadata so clean builds are byte-reproducible.

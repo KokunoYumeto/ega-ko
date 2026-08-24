@@ -1,0 +1,20 @@
+{
+  "schema": "ag-ko-r18-portable-build-v1",
+  "version": "2026-08-24-r18",
+  "source_archive": "release/2026-08-24-r18/01_EGA_ko_EDITABLE_SOURCES.zip",
+  "source_archive_bytes": 219864,
+  "source_archive_sha256": "9050A5279FBCC62BD28C603B8A471DA87D57803CAFE4E87F3DF0479B8E2040FB",
+  "build_script": "build/BUILD.ps1",
+  "build_script_bytes": 2898,
+  "build_script_sha256": "339FD5A18242632253E5FDA06B46378EE19B51FD85C1E2DF8AE0E60915D05B3A",
+  "clean_extraction": "PASS: the archive was expanded into a new task-local directory containing no reader directory; BUILD.ps1 created the missing output parent and completed two converged three-pass cycles",
+  "portable_pdf": "144 pages; 1273465 bytes / A1E613E1C6C2E9B760F201A40E11B74D3A559C19F758D31F41247969927D6928",
+  "container_comparison": "The clean-extraction PDF differs from the repository reader only at the path-sensitive container level, including font-subset prefixes and trailer ID; no byte-identity claim is made across build paths.",
+  "poppler_extraction": "646510 bytes / 9CE72168B4ED66E9ABEC4D08331ECAB17947792DA057E768EA83759D20E51B55; exact to the release reader",
+  "render_replay_200dpi": {
+    "page1": "12481139FE700D114C60407D2200F63AF36B0EA9891500CEF34DC4797A024B81; exact",
+    "page143": "FFA14B591CC83EE01DE37BF57ECB35631FD6F69DBB60F81A17D5DFAED39E943D; exact",
+    "page144": "67361BA16B17CB8C43C2B33901EC1B14F99F91158B123D9A25301937A21A90A8; exact"
+  },
+  "result": "PASS: the editable-source archive builds independently after clean extraction, with exact full text extraction and exact inspected renders"
+}
