@@ -1,13 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-24T22:18:29+02:00",
+  "updated": "2026-08-25T00:01:08+02:00",
   "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2604",
-  "next_label": "Proposition10.11.7",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2717",
+  "next_label": "oldpage I|206, then subsection10.12 and environment10.12.1",
   "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-2540",
-  "package_target_sha256": "A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0",
+  "package_target_locator": "lines1-2643",
+  "package_target_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
   "current_exact_zenodo": "10.5281/zenodo.22086602",
-  "current_public": "10.5281/zenodo.22076207",
-  "status": "r19 local unit, build, extraction, visual and portable-source gates PASS in reserved draft22086602; r18 remains public with anonymous Zenodo/GitHub replay PASS; next source line2604 Proposition10.11.7"
+  "current_public": "10.5281/zenodo.22086602",
+  "reserved_exact_zenodo": "10.5281/zenodo.22087366",
+  "status": "r20 local release gates PASS in reserved draft; complete-to-date cumulative reader is file00; next source line2717 before subsection10.12"
 }

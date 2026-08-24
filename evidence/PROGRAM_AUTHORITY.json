@@ -1,26 +1,26 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-24T22:18:29+02:00",
+  "updated": "2026-08-25T00:01:08+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_source_bytes": 159763,
   "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "package_mapping": {
-    "target_section10_bytes": 120481,
+    "target_section10_bytes": 125122,
     "source_front": "source/front.tex",
     "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0"
+    "target_section10_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1"
   },
-  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through environment10.11.6, before Proposition10.11.7",
+  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through Proposition10.11.9 and proof, before subsection10.12",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r19 local unit, build, extraction, visual and portable-source gates PASS with reserved unsubmitted Zenodo draft22086602; r18 remains the current public and anonymously replayed Zenodo/GitHub checkpoint; the existing Figshare article remains unavailable because the account is inactive/disabled, with no mutation or duplicate",
-    "current_public_doi": "10.5281/zenodo.22076207",
+    "status": "r20 local release gates pass in reserved Zenodo draft; r19 remains current public until r20 publication and anonymous replay; file00 is the complete-to-date cumulative Korean reader and includes every translated EGA I component; no duplicate lineages",
+    "current_public_doi": "10.5281/zenodo.22086602",
     "concept_doi": "10.5281/zenodo.21921513",
     "exact_doi": "10.5281/zenodo.22086602",
-    "reserved_exact_doi": "10.5281/zenodo.22086602",
-    "github_artifact_commit": "914fcc18ad81d55af82045f4a88c5343017c4e3c",
-    "github_receipt_commit": "4a04931f313932a79a772dacd31aa1bd411ed99e",
+    "reserved_exact_doi": "10.5281/zenodo.22087366",
+    "github_artifact_commit": "898414dd15ae92e41d41a5a53b069790f99ec441",
+    "github_receipt_commit": "c37b894d1ac6fae779d7a97bf538266830c79a65",
     "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "existing v7 target remains unmutated because the account is inactive/disabled; anonymous article404 and versions200 empty; no duplicate article"
+    "figshare_status": "existing v7 target remains unmutated because the account is inactive/disabled; r19 retry receipt figshare-pending-v9.json records authenticated403, anonymous article404 and versions200 empty; no duplicate article"
   }
 }

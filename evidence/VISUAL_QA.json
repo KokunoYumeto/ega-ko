@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "version": "2026-08-24-r19",
+  "version": "2026-08-24-r20",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1277365,
-  "reader_sha256": "4CA61ED04BE1996D4852D2CF7427FA016432A49409FF2CDC608A552549DD2C89",
+  "reader_bytes": 1285244,
+  "reader_sha256": "EF5BB775B0C1468088F97664F6D0CF889D5968043C890C32D2547CAEB40B0934",
   "render_count": 7,
   "dpi": 200,
   "dimensions": "1654x2339",
   "pages": "1,2,6,142,143,144,145",
   "render_hashes": {
-    "page1": "ABBD79DCEABBE24DC4FECE288ABAD96A2372D9FAD97FF6FB4BCD6B57571A7655",
-    "page2": "70A974D8CCAC8857DE50B21D7447054DB91F8370325433E1A2A0B056D348A6AE",
+    "page1": "461A1DB0E7D1C3A7676B64E9AD6045328AB8CDADDFD606B5090B40A127F59D10",
+    "page2": "4713ED9572154811A98B1D873BDBE448A5DAF220F29D85AF8B9D4F1F08A32307",
     "page6": "F481EEEE2420697258AE9EF9FE9513E94636528E39A6D9F7CE21C884DEA88AF9",
     "page142": "1DB6921DAF68876C5D7C494652F3A9C0B638E5744957113B92643271D62AC4AD",
     "page143": "F20843123A94A072A3B53B4DF2200B9DE0845CD59C0C42A0EA60697E58853F1A",
-    "page144": "F8EDFADEB03C9F76C0CFBCDFDD107F9951DF30CE8EE1DDE8D5FA364625EB7FB5",
+    "page144": "4DB89B9DC0B5104B6CBB637F16AC4A4B694341614C0C45757EC74226CF8DCAC9",
     "page145": "FC509BF58CADB54AB0CF11E91BF82BA3F20542E078B6A55C7509AC8EFF5F9990"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify the r19 scope through environment10.11.6, exact DOI22086602, rights and non-endorsement; page6 verifies the10.11 table-of-contents entry; page142 preserves unchanged stable context; page143 contains Corollaries10.11.4 and10.11.5 and the start of environment10.11.6; page144 contains the exact conclusion of environment10.11.6; page145 is the bibliography. Working and public renders are pairwise pixel-exact. Direct inspection found no clipping, overlap, tofu, malformed formula, broken arrow or margin collision."
+  "disposition": "Pages1-2 verify the r20 complete-to-date cumulative-reader statement, scope through Proposition10.11.9, exact DOI22087366, rights and non-endorsement; page6 verifies the10.11 table-of-contents entry; pages142-143 preserve stable context; page144 contains Proposition10.11.7, environment10.11.8, Proposition10.11.9 and the complete proof, ending before subsection10.12; page145 is the bibliography. Working, public and clean-extracted portable renders are pixel-exact. Direct inspection found no clipping, overlap, tofu, malformed formula, broken arrow or margin collision."
 }

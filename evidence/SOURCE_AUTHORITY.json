@@ -3,12 +3,12 @@
   "canonical_path": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_bytes": 159763,
   "canonical_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
-  "admission": "read-only canonical French authority; r18 unit lines2401-2514; no source anomaly or correction indicated; contravariance, pullback and image-ideal typing, coherence categories, inductive/projective limits and transition directions are exact; primary arXiv papers are bounded usage witnesses only",
-  "unit_bytes": 4729,
-  "unit_sha256": "EDB7D08703526C52EB96199AB583F88FB1477F9051AF6FD962BE95854B6BDC16",
+  "admission": "read-only canonical French authority; r20 unit lines2604-2715; no source anomaly or correction indicated; ordinary tensor product, internal/global Hom distinction, inverse-limit topology, bicontinuity, open loci and finite formal-affine restriction cover are exact; primary arXiv papers are bounded usage witnesses only",
+  "unit_bytes": 4698,
+  "unit_sha256": "CF51B2AD975C08EAF7F612B0A9D62EE3246BF774553CFE99DBE86237CCEFD7F9",
   "target_path": "source/c1s10.tex",
-  "target_bytes": 116734,
-  "target_sha256": "2ADA5BD92261E6BF493E11BF5C665FC802944E951C158D852A9F3FA6CF101823",
-  "next_source_line": 2516,
-  "next_label": "Corollary10.11.4"
+  "target_bytes": 125122,
+  "target_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
+  "next_source_line": 2717,
+  "next_label": "oldpage I|206, then subsection10.12 and environment10.12.1"
 }

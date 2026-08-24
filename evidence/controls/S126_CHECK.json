@@ -1,0 +1,94 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S126_CHECK",
+  "version": "2026-08-24-r20",
+  "scope": "EGA I Proposition10.11.7 with proof, environment10.11.8, and Proposition10.11.9 with proof",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2604-2715",
+    "characters": 4656,
+    "bytes": 4698,
+    "sha256": "CF51B2AD975C08EAF7F612B0A9D62EE3246BF774553CFE99DBE86237CCEFD7F9"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2542-2643",
+    "characters": 3680,
+    "bytes": 4640,
+    "sha256": "42F7CAA1BDE892B7947436E593DB24036CA955F2113410AE95899B5A0C915A45",
+    "whole_bytes": 125122,
+    "whole_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
+    "sealed_prefix_bytes": 120481,
+    "sealed_prefix_sha256": "A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0"
+  },
+  "formula_gate": {
+    "source_math_nodes": 38,
+    "target_math_nodes": 38,
+    "ordered_math_identity": "38/38 after whitespace normalization and one declared TeX line-break control",
+    "internal_hom_tokens": "5/5",
+    "global_hom_tokens": "12/12",
+    "tensor_tokens": "10/10",
+    "references": "15/15",
+    "labels": "5/5",
+    "environments": "3/3",
+    "tags": "2/2",
+    "emphasis": "1/1",
+    "printed_page_marker": "0/0",
+    "items_subsections_qed_footnotes": "0/0",
+    "controlled_differences": 1,
+    "controlled_difference": "target line2629 has \\to\\allowbreak where the canonical formula has \\to; this permits a line break only and changes no mathematical content",
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E148",
+    "workflow_record_bytes": 17595,
+    "workflow_record_sha256": "CCB79020F2BADC0BB920C032294146082B693CD2F3C37143C04B661B129064FC",
+    "retained_primary_arxiv_papers": 3,
+    "supplemental_primary_arxiv_papers": 1,
+    "new_term_lock": null,
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "tensor": "10.11.7.1 remains the ordinary tensor product, not a completed tensor product",
+    "hom": "internal sheaf Hom remains distinct from global Hom",
+    "variance": "contravariant in F and covariant in G",
+    "topology": "adic inverse-limit topology; zero-neighborhood basis is exactly Hom(F,J^nG)",
+    "open_loci": "surjective, injective and bijective morphisms form open subsets, not open subgroups",
+    "finite_cover": "finite noetherian affine-formal open cover retained",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "145 pages / 1285245 bytes / B2055C7D657DDE9120F1FE0967EF0E2EBF0795B244C1DEA21F5DAFE552C31497",
+    "public": "145 pages / 1285244 bytes / EF5BB775B0C1468088F97664F6D0CF889D5968043C890C32D2547CAEB40B0934",
+    "portable": "145 pages / 1285238 bytes / D8BA5D00475E9278A8E102AD3D43FFA7E700481F67A703D8270DA6FFF7959E76",
+    "deterministic_cycles": "PASS in working, public and clean-extracted portable trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "651187 bytes / 744AAFC2593F3FF4FBB1F8D12CC2D13E6746B8CE49B24EB87D79C23FE111F7C3 exact across all three builds",
+    "pypdf": "616868 bytes / 7B4AAEA6C48D6EA85B9EE5D1574D62D277998F6219C14FD3DAEF4607F4165F32 exact across all three builds",
+    "hangul": 134090,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "previous_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 142, 143, 144, 145],
+    "dpi": 200,
+    "working_public_portable_pairwise_exact": true,
+    "direct_inspection": "PASS",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22087366",
+    "version": "2026-08-24-r20",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "sole_project_contributor": "AI typesetting & translation",
+    "title_description_umbrella_mentions": 0,
+    "cumulative_front_artifact": "00_EGA_ko_CUMULATIVE_READER.pdf contains every Korean EGA component produced to date",
+    "result": "PASS"
+  },
+  "next_source_line": 2717,
+  "next_label": "printed page marker I|206, then subsection10.12 and environment10.12.1",
+  "result": "PASS"
+}

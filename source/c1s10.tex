@@ -2538,3 +2538,106 @@ $\mathscr{F}/\mathscr{H}$가 연접이기 때문이다
 $\Gamma(U,\mathscr{F}/\mathscr{H})$가 분리 위상군이라는 사실에서
 따른다.
 \end{env}
+
+\begin{proposition}[10.11.7]
+\label{I.10.11.7-ko}
+$\mathscr{F}$와 $\mathscr{G}$를 두 연접
+$\mathscr{O}_{\mathfrak{X}}$-가군이라 하자.
+(\hyperref[I.10.11.3-ko]{10.11.3})의 표기를 쓰면 다음 위상
+$\mathscr{O}_{\mathfrak{X}}$-가군의 함자적인 표준 동형들을 정의할 수 있다
+(\hyperref[I.10.11.6-ko]{10.11.6})~:
+\[
+  \label{I.10.11.7.1-ko}
+  \mathscr{F}\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{G}
+  \xrightarrow{\sim}
+  \varprojlim_n
+  (\mathscr{F}_n\otimes_{\mathscr{O}_{X_n}}\mathscr{G}_n)
+  \tag{10.11.7.1}
+\]
+\[
+  \label{I.10.11.7.2-ko}
+  \mathscr{H}\!om_{\mathscr{O}_{\mathfrak{X}}}
+  (\mathscr{F},\mathscr{G})
+  \xrightarrow{\sim}
+  \varprojlim_n
+  \mathscr{H}\!om_{\mathscr{O}_{X_n}}(\mathscr{F}_n,\mathscr{G}_n)
+  \tag{10.11.7.2}
+\]
+\end{proposition}
+
+동형 (\hyperref[I.10.11.7.1-ko]{10.11.7.1})의 존재는 공식
+\[
+  \mathscr{F}_n\otimes_{\mathscr{O}_{X_n}}\mathscr{G}_n
+  =
+  (\mathscr{F}\otimes_{\mathscr{O}_{\mathfrak{X}}}
+  \mathscr{O}_{X_n})
+  \otimes_{\mathscr{O}_{X_n}}
+  (\mathscr{G}\otimes_{\mathscr{O}_{\mathfrak{X}}}
+  \mathscr{O}_{X_n})
+  =
+  (\mathscr{F}\otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{G})
+  \otimes_{\mathscr{O}_{\mathfrak{X}}}\mathscr{O}_{X_n}
+\]
+과 (\hyperref[I.10.11.3-ko]{10.11.3})에서 따른다. 두 변을 위상을
+고려하지 않은 가군의 층으로 보았을 때, 동형
+(\hyperref[I.10.11.7.2-ko]{10.11.7.2})은
+$\mathscr{H}\!om_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$와
+$\mathscr{H}\!om_{\mathscr{O}_{X_n}}(\mathscr{F}_n,\mathscr{G}_n)$의
+단면의 정의와 $\mathfrak{X}$의 임의의 뇌터 아핀 형식적 열린집합 위에
+유도된 준스킴에 (\hyperref[I.10.11.4.1-ko]{10.11.4.1})을 적용하여 얻는
+동형의 존재에서 따른다. 이제 준콤팩트 집합 위에서 동형
+(\hyperref[I.10.11.7.2-ko]{10.11.7.2})이 쌍연속임을 보이는 것만 남는다.
+따라서 $\mathfrak{X}=\operatorname{Spf}(A)$이고 $A$가 뇌터 아딕환인
+경우로 환원되며, 이때 (\hyperref[I.10.10.5-ko]{10.10.5})에 따라
+$\mathscr{F}=M^\Delta$, $\mathscr{G}=N^\Delta$이고 $M$, $N$은 유한 생성
+$A$-가군이다~; (\hyperref[I.10.10.2.1-ko]{10.10.2.1}),
+(\hyperref[I.10.10.2.3-ko]{10.10.2.3}) 및
+(\hyperref[I.1.3.12-ko]{1.3.12, (ii)})을 고려하면, 표준 동형
+$\operatorname{Hom}_A(M,N)\xrightarrow{\sim}
+\varprojlim_n\operatorname{Hom}_{A_n}(M_n,N_n)$
+($M_n=M\otimes_A A_n$, $N_n=N\otimes_A A_n$)이 연속임을 보이는 문제로
+환원되는데, 이는 (\hyperref[0.7.8.2-ko]{0, 7.8.2})에서 증명되었다.
+
+\begin{env}[10.11.8]
+\label{I.10.11.8-ko}
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$는 위상군의 층
+$\mathscr{H}\!om_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$의 단면군이므로 군 위상을 갖는다.
+$\mathfrak{X}$가 \emph{뇌터}이면,
+(\hyperref[I.10.11.7.2-ko]{10.11.7.2})에 따라 이 군에서 $0$의 근방들의
+기본계는 부분군
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{J}^n\mathscr{G})$ ($n$은 임의)을 취하여 얻는다.
+\end{env}
+
+\begin{proposition}[10.11.9]
+\label{I.10.11.9-ko}
+$\mathfrak{X}$를 뇌터 형식적 준스킴,
+$\mathscr{F}$와 $\mathscr{G}$를 두 연접
+$\mathscr{O}_{\mathfrak{X}}$-가군이라 하자. 위상군
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$에서 전사인 준동형들(각각 단사인 준동형들,
+전단사인 준동형들)은 열린 부분집합을 이룬다.
+\end{proposition}
+
+(\hyperref[I.10.11.5-ko]{10.11.5})에 따라
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$ 안의 전사 준동형들의 집합은 다음 연속사상
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})\to\allowbreak
+\operatorname{Hom}_{\mathscr{O}_{X_0}}(\mathscr{F}_0,\mathscr{G}_0)$에
+의한 이산군
+$\operatorname{Hom}_{\mathscr{O}_{X_0}}(\mathscr{F}_0,\mathscr{G}_0)$의
+어떤 부분집합의 역상이므로 첫 번째 주장이 따른다. 두 번째 주장을
+증명하기 위해 $\mathfrak{X}$를 유한 개의 뇌터 아핀 형식적 열린집합
+$U_i$로 덮자. $\theta\in
+\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})$가 단사일 필요충분조건은 각 연속 제한사상
+$\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}}
+(\mathscr{F},\mathscr{G})\to
+\operatorname{Hom}_{\mathscr{O}_{\mathfrak{X}}|U_i}
+(\mathscr{F}|U_i,\mathscr{G}|U_i)$ 아래에서 얻는 상이 모두 단사인 것이다~;
+따라서 아핀인 경우로 환원되며, 이 경우에는 이미
+(\hyperref[0.7.8.3-ko]{0, 7.8.3})에서 증명되었다.

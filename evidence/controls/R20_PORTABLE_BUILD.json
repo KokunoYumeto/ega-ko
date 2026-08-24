@@ -1,0 +1,19 @@
+{
+  "schema": "ag-ko-portable-source-build-v1",
+  "version": "2026-08-24-r20",
+  "source_zip": "01_EGA_ko_EDITABLE_SOURCES.zip candidate",
+  "source_zip_bytes": 221596,
+  "source_zip_sha256": "F674A94F728C4A4C22B71EDECB139478B5EC2CF53DD05D5E7F02E5E455C9FB44",
+  "source_zip_entries": 24,
+  "source_zip_files": 22,
+  "deterministic_zip_replay": "source-a.zip and source-b.zip byte-identical; CRC and member bytes verified",
+  "preexisting_reader_directory": false,
+  "build": "two independent three-pass XeLaTeX cycles with fixed metadata; byte-identical; zero critical diagnostics",
+  "reader_pages": 145,
+  "reader_bytes": 1285238,
+  "reader_sha256": "D8BA5D00475E9278A8E102AD3D43FFA7E700481F67A703D8270DA6FFF7959E76",
+  "poppler_extraction": "651187 bytes / 744AAFC2593F3FF4FBB1F8D12CC2D13E6746B8CE49B24EB87D79C23FE111F7C3; exact with live working and public builds",
+  "pypdf_extraction": "616868 bytes / 7B4AAEA6C48D6EA85B9EE5D1574D62D277998F6219C14FD3DAEF4607F4165F32; exact with live working and public builds",
+  "pixel_replay": "pages1,2,6,142,143,144,145 at200dpi exact with live working and public builds",
+  "result": "PASS"
+}

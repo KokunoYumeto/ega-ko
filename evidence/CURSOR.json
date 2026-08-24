@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-24-r19",
-  "coverage": "EGA I through environment10.11.6 at source line2602 and separator2603, ending before Proposition10.11.7",
-  "next": "source/ega1/ega1-10-fr.tex line2604 Proposition10.11.7",
-  "target": "source/c1s10.tex lines1-2540 / 120481 bytes / A4F581B3BC2DEC7A8AE4BA23C256153085D2A99917EE286F4714D88C3B06C7F0",
-  "reserved_exact_doi": "10.5281/zenodo.22086602",
-  "current_public_checkpoint": "10.5281/zenodo.22076207",
-  "public_status": "r19 local unit, build, extraction, visual and portable-source gates PASS in reserved unsubmitted Zenodo draft22086602; r18 remains the current public Zenodo/GitHub checkpoint; Figshare existing-article mirror remains unavailable without mutation or duplicate"
+  "version": "2026-08-24-r20",
+  "coverage": "EGA I through Proposition10.11.9 proof at source line2715 and separator2716, ending before oldpage I|206 and subsection10.12",
+  "next": "source/ega1/ega1-10-fr.tex line2717 oldpage I|206, then subsection10.12",
+  "target": "source/c1s10.tex lines1-2643 / 125122 bytes / 954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
+  "reserved_exact_doi": "10.5281/zenodo.22087366",
+  "current_public_checkpoint": "10.5281/zenodo.22086602",
+  "public_status": "r20 local release gates pass in the reserved Zenodo draft; r19 remains current public until r20 publication and anonymous replay; file00 is the complete-to-date145-page Korean EGA cumulative reader and omits no translated EGA I component"
 }
