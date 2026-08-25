@@ -1,0 +1,36 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-25-r21",
+  "verified_at": "2026-08-25T22:40:17+02:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "a7143d9a1a1a7f6ec0d74105248e1b0c45a693c0",
+  "artifact_tree": "694d25cbf7ddf12145aa4a7812ed3d69461d87e4",
+  "artifact_parent": "fc26bd2300d778026d37242813f090e21255d95b",
+  "candidate": {
+    "paths": 308,
+    "bytes": 154202405,
+    "construction": "empty isolated index; all blobs written with --no-filters and exact cacheinfo; no workspace-wide Git scan",
+    "cumulative_front_artifact": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "cumulative_front_pages": 146,
+    "cumulative_front_sha256": "5A11465B96EE6F3551F5F6D1EF9BB14EF9C89DC4E4AF057A0EEF183A8B1A7C49",
+    "release_directory": "release/2026-08-25-r21"
+  },
+  "anonymous_replay": {
+    "archive_url": "https://codeload.github.com/KokunoYumeto/ega-ko/zip/a7143d9a1a1a7f6ec0d74105248e1b0c45a693c0",
+    "archive_bytes": 141907726,
+    "archive_sha256": "B2AFD9D3390E18AEDD836DA12AEAAAB7C947BD5353F6CA915BA48CE3B9FF560F",
+    "paths_replayed": "308/308",
+    "bytes_replayed": 154202405,
+    "sha256_replayed": "308/308",
+    "result": "PASS"
+  },
+  "normalization_control": {
+    "method": "every candidate blob was written with git hash-object --no-filters into an empty isolated index",
+    "automatic_line_ending_filters_applied": false,
+    "result": "PASS"
+  },
+  "zenodo_exact_doi": "10.5281/zenodo.22101727",
+  "credential_material_present": false,
+  "result": "PASS"
+}
