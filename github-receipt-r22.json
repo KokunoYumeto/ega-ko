@@ -1,0 +1,47 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-25-r22",
+  "verified_at": "2026-08-26T00:06:50+02:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "b4b9910b0189e8c6064fe917023d18c989c2f16f",
+  "artifact_tree": "060f5be00a439e41c75655f5d157aca2af1d8f2c",
+  "artifact_parent": "685c9f55000e5998bdeebbf00c799b93d67acbe4",
+  "candidate": {
+    "paths": 322,
+    "bytes": 162034183,
+    "inventory_sha256": "9DE57786ABECC5D3FBF9A76A401E4D1272E000CD441285F8AC9947D3D2FFCC5E",
+    "inventory_encoding": "UTF-8 ordinal relative_path<TAB>bytes<TAB>sha256<LF>",
+    "construction": "empty isolated index; all blobs written with --no-filters and exact cacheinfo; no workspace-wide Git scan",
+    "selection": "314 live manifest-declared paths plus manifest self1, frozen r22 release4, Zenodo receipts2 and bounded Figshare attempt1; rolling release aliases excluded",
+    "cumulative_front_artifact": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "cumulative_front_pages": 147,
+    "cumulative_front_sha256": "73A15CCE02FBC61793201DB6445587DC024DB9FCA6C8102E59ED8C8E2FBDE9CF",
+    "release_directory": "release/2026-08-25-r22"
+  },
+  "anonymous_replay": {
+    "archive_url": "https://codeload.github.com/KokunoYumeto/ega-ko/zip/b4b9910b0189e8c6064fe917023d18c989c2f16f",
+    "archive_bytes": 149331021,
+    "archive_sha256": "CAB382AE676D527CF434BA949AE1EFFE2BFE126055173C1DE7F1D1D404C8ED6F",
+    "paths_replayed": "322/322",
+    "bytes_replayed": 162034183,
+    "sha256_replayed": "322/322",
+    "missing_paths": 0,
+    "extra_paths": 0,
+    "result": "PASS"
+  },
+  "correction_history": {
+    "superseded_artifact_commit": "3cce58f9c3f4189124e2aeed8e469c721b69b855",
+    "superseded_receipt_commit": "685c9f55000e5998bdeebbf00c799b93d67acbe4",
+    "reason": "The superseded artifact replayed every selected byte exactly but substituted rolling release aliases for the established manifest/receipts/Figshare auxiliary preservation set. The corrected commit preserves history and restores the established bounded selection invariant.",
+    "history_rewritten": false
+  },
+  "normalization_control": {
+    "method": "every candidate blob was written with git hash-object --no-filters into an empty isolated index",
+    "automatic_line_ending_filters_applied": false,
+    "result": "PASS"
+  },
+  "zenodo_exact_doi": "10.5281/zenodo.22102429",
+  "credential_material_present": false,
+  "result": "PASS"
+}
