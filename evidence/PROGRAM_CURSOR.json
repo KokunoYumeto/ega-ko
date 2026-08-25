@@ -10,5 +10,5 @@
   "current_exact_zenodo": "10.5281/zenodo.22102429",
   "current_public": "10.5281/zenodo.22102429",
   "reserved_exact_zenodo": null,
-  "status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; complete-to-date147-page cumulative reader is file00 and source/CUMULATIVE_INPUTS.json binds all15 inputs; GitHub remains at r21 pending the exact r22 push; next source line3084 subsection10.14"
+  "status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; GitHub file00 is correct and commit3cce58f9 replays322/322, but its auxiliary preservation set requires a corrective fast-forward under AGKO-D155/E155; source/CUMULATIVE_INPUTS.json binds all15 inputs; next source line3084 subsection10.14"
 }

@@ -12,6 +12,6 @@
   "coverage_end": "source line3082 Corollary10.13.6 and separator3083 before subsection10.14",
   "next": "line3084 subsection10.14 Immersions ouvertes",
   "local_gates": "translation/formula/structure/terminology/cumulative-input/build/extraction/visual/metadata/portable-source PASS",
-  "publication": "r22 is public at exact DOI10.5281/zenodo.22102429 in the existing Zenodo lineage with anonymous4/4 byte, checksum, manifest and metadata replay PASS; GitHub currently remains at r21 pending the exact r22 push; file00 is the complete-to-date147-page public reader; Figshare remains unavailable without mutation",
+  "publication": "r22 is public at exact DOI10.5281/zenodo.22102429 with anonymous4/4 replay PASS; GitHub commit3cce58f9 replays322/322 exact and contains the correct file00 reader, but a bounded auxiliary preservation-set correction is pending under AGKO-D155/E155; Figshare remains unavailable without mutation",
   "rights": "bounded per-work rights and non-endorsement retained"
 }

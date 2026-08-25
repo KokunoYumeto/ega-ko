@@ -13,7 +13,7 @@
   "zenodo_reserved_doi": "10.5281/zenodo.22102429",
   "zenodo_exact_doi": "10.5281/zenodo.22102429",
   "current_public_checkpoint": "10.5281/zenodo.22102429",
-  "github_artifact_commit": "a7143d9a1a1a7f6ec0d74105248e1b0c45a693c0",
-  "github_receipt_commit": "96ef9e1b593488ebfd6c7e3f17ee8f3df9373ef4",
-  "result": "r22 translation, formula, structure, terminology, independent audits, cumulative-input manifest, deterministic builds, extraction, visual QA, metadata, portable-source, publication and anonymous readback gates PASS; the147-page file00 reader is the complete-to-date public r22 artifact at exact DOI10.5281/zenodo.22102429; GitHub remains at r21 pending the exact r22 push; Figshare remains unavailable without mutation"
+  "github_artifact_commit": "3cce58f9c3f4189124e2aeed8e469c721b69b855",
+  "github_receipt_commit": "685c9f55000e5998bdeebbf00c799b93d67acbe4",
+  "result": "r22 translation, formula, structure, terminology, independent audits, cumulative-input manifest, deterministic builds, extraction, visual QA, metadata, portable-source and Zenodo publication gates PASS; GitHub artifact commit3cce58f9 and receipt commit685c9f55 replay exact but the auxiliary preservation-set composition requires a transparent corrective fast-forward under AGKO-D155/E155; the147-page file00 reader remains correct and public; Figshare remains unavailable without mutation"
 }

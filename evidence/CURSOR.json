@@ -6,5 +6,5 @@
   "target": "source/c1s10.tex lines1-3011 / 143518 bytes / D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
   "reserved_exact_doi": null,
   "current_public_checkpoint": "10.5281/zenodo.22102429",
-  "public_status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; GitHub remains at r21 pending the exact r22 push; file00 is the complete-to-date147-page Korean EGA reader, with exact inclusion bound by source/CUMULATIVE_INPUTS.json"
+  "public_status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; GitHub commit3cce58f9 replays322/322 exact and contains the correct file00 reader, but a bounded auxiliary preservation-set correction is pending under AGKO-D155/E155; source/CUMULATIVE_INPUTS.json binds all15 reader inputs"
 }

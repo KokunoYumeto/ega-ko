@@ -14,13 +14,13 @@
   "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1-9 and §10 through subsection10.13 and Corollary10.13.6, before subsection10.14",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r22 is public on Zenodo through subsection10.13 with anonymous4/4 byte and metadata replay PASS; file00 is the complete-to-date147-page cumulative Korean reader and includes every admitted component; GitHub remains at r21 pending the exact r22 push; Figshare remains unavailable without mutation or duplicate",
+    "status": "r22 is public on Zenodo through subsection10.13 with anonymous4/4 replay PASS; GitHub commit3cce58f9 contains the correct147-page file00 and replays322/322 exact, but its auxiliary preservation set requires a transparent corrective fast-forward under AGKO-D155/E155; Figshare remains unavailable without mutation or duplicate",
     "current_public_doi": "10.5281/zenodo.22102429",
     "concept_doi": "10.5281/zenodo.21921513",
     "exact_doi": "10.5281/zenodo.22102429",
     "reserved_exact_doi": null,
-    "github_artifact_commit": "a7143d9a1a1a7f6ec0d74105248e1b0c45a693c0",
-    "github_receipt_commit": "96ef9e1b593488ebfd6c7e3f17ee8f3df9373ef4",
+    "github_artifact_commit": "3cce58f9c3f4189124e2aeed8e469c721b69b855",
+    "github_receipt_commit": "685c9f55000e5998bdeebbf00c799b93d67acbe4",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing target remains unmutated because the account is inactive/disabled; no duplicate article"
   }
