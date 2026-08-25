@@ -1,0 +1,95 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S127_CHECK",
+  "version": "2026-08-25-r21",
+  "scope": "EGA I subsection10.12 in full: adic morphisms, adic inductive systems, canonical equivalence, Proposition10.12.3.1 with proof, and environment10.12.3.2",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2717-2888",
+    "characters": 8091,
+    "bytes": 8224,
+    "sha256": "9E4C4CEBFDDA0B68E1E0E17226D1A8713EBF90F1DF8BB1DF9D578401B08AB0A1"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2645-2820",
+    "characters": 6146,
+    "bytes": 8704,
+    "sha256": "CA876FA6AF2327079486962803A6116C838A2A5ADA3610348598984C91EBBE92",
+    "whole_bytes": 133827,
+    "whole_sha256": "4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1",
+    "sealed_prefix_bytes": 125122,
+    "sealed_prefix_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1"
+  },
+  "formula_gate": {
+    "source_math_nodes": 152,
+    "target_math_nodes": 152,
+    "ordered_math_identity": "152/152 after whitespace normalization and -fr to -ko reference normalization",
+    "references": "12/12",
+    "labels": "7/7",
+    "environments": "5/5",
+    "tags": "1/1",
+    "emphasis": "13/13",
+    "printed_page_markers": "2/2",
+    "diagram_arrows": "4/4 with directions unchanged",
+    "controlled_differences": 0,
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E150",
+    "workflow_record_bytes": 19462,
+    "workflow_record_sha256": "56A1C88F8E7A99FBAB9F609B7946A97BE93A68943D329EEDE0C3141C1D17CD87",
+    "retained_primary_arxiv_papers": 3,
+    "new_term_lock": "AGKO-T155",
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "adic_morphism": "the pullback of a definition ideal generates a definition ideal, independently of the chosen definition ideal",
+    "relative_object": "the specified base and adic structure morphism remain explicit",
+    "inductive_system": "structural squares commute and X_m is identified with X_n times over S_n S_m for m<=n",
+    "limits": "inductive limits and projective limits retain their distinct variance",
+    "finite_generation": "A_1, B_1 and B_0 module claims remain finite generation, not geometric finite type",
+    "hom": "the final Hom objects are global relative morphism sets, not internal Hom sheaves",
+    "result": "PASS"
+  },
+  "independent_audits": {
+    "semantic": "PASS after two applied Korean-register corrections",
+    "mathematical": "PASS; formula, structure, inequalities, diagram, variance, proof logic and TeX syntax",
+    "terminology": "PASS; canonical French decisive and retained arXiv papers used only as typed usage witnesses",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "146 pages / 1295158 bytes / 4CF7CDE3D0B1CFEFDE49B37F152135C89491B5CB006089689D60FB1CF7DE8583",
+    "public": "146 pages / 1295144 bytes / 5A11465B96EE6F3551F5F6D1EF9BB14EF9C89DC4E4AF057A0EEF183A8B1A7C49",
+    "portable": "146 pages / 1295145 bytes / 2CBF9804F167F4679FE2DC4D757BA38A316AF024BB566542DB0D245D3078F03C",
+    "deterministic_cycles": "PASS in working, public and clean-extracted portable trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "764005 bytes / 7015E4C9A9F478F4D0A62D3899DE3EEEE9411FF4CA7DD3E4C3D021C6EBA8FD3B exact across all three builds",
+    "pypdf": "622931 bytes / C400148492DC2D48B5E9A2D0EA30497B2A6C4C36BDCBC656BF1DFC882A6F65A5 exact across all three builds",
+    "hangul": 135378,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "previous_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 143, 144, 145, 146],
+    "dpi": 200,
+    "working_public_portable_pairwise_exact": true,
+    "direct_inspection": "PASS",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22101727",
+    "version": "2026-08-25-r21",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "sole_project_contributor": "AI typesetting & translation",
+    "title_description_umbrella_mentions": 0,
+    "cumulative_front_artifact": "00_EGA_ko_CUMULATIVE_READER.pdf contains every Korean EGA component produced to date",
+    "result": "PASS"
+  },
+  "next_source_line": 2890,
+  "next_label": "subsection10.13 Morphismes de type fini, then Proposition10.13.1",
+  "result": "PASS"
+}

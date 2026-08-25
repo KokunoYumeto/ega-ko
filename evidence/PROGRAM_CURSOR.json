@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-25T00:01:08+02:00",
+  "updated": "2026-08-25T22:21:04+02:00",
   "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2717",
-  "next_label": "oldpage I|206, then subsection10.12 and environment10.12.1",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line2890",
+  "next_label": "subsection10.13 Morphismes de type fini, then Proposition10.13.1",
   "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-2643",
-  "package_target_sha256": "954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
-  "current_exact_zenodo": "10.5281/zenodo.22086602",
-  "current_public": "10.5281/zenodo.22086602",
-  "reserved_exact_zenodo": "10.5281/zenodo.22087366",
-  "status": "r20 local release gates PASS in reserved draft; complete-to-date cumulative reader is file00; next source line2717 before subsection10.12"
+  "package_target_locator": "lines1-2820",
+  "package_target_sha256": "4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1",
+  "current_exact_zenodo": "10.5281/zenodo.22087366",
+  "current_public": "10.5281/zenodo.22087366",
+  "reserved_exact_zenodo": "10.5281/zenodo.22101727",
+  "status": "r21 validated candidate awaiting deterministic package publication; r20 remains current public; complete-to-date146-page cumulative reader is file00; next source line2890 subsection10.13"
 }

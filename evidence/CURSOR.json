@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-24-r20",
-  "coverage": "EGA I through Proposition10.11.9 proof at source line2715 and separator2716, ending before oldpage I|206 and subsection10.12",
-  "next": "source/ega1/ega1-10-fr.tex line2717 oldpage I|206, then subsection10.12",
-  "target": "source/c1s10.tex lines1-2643 / 125122 bytes / 954A81614EB98F248C5B0EAA357232E6A001B817BE24F1013B549936E17346A1",
-  "reserved_exact_doi": "10.5281/zenodo.22087366",
-  "current_public_checkpoint": "10.5281/zenodo.22086602",
-  "public_status": "r20 local release gates pass in the reserved Zenodo draft; r19 remains current public until r20 publication and anonymous replay; file00 is the complete-to-date145-page Korean EGA cumulative reader and omits no translated EGA I component"
+  "version": "2026-08-25-r21-candidate",
+  "coverage": "EGA I through subsection10.12 and environment10.12.3.2 at source line2888 and separator2889, ending before subsection10.13",
+  "next": "source/ega1/ega1-10-fr.tex line2890 subsection10.13 Morphismes de type fini",
+  "target": "source/c1s10.tex lines1-2820 / 133827 bytes / 4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1",
+  "reserved_exact_doi": "10.5281/zenodo.22101727",
+  "current_public_checkpoint": "10.5281/zenodo.22087366",
+  "public_status": "r21 validated candidate awaits existing-lineage publication while r20 remains current public; file00 is the complete-to-date146-page Korean EGA cumulative reader and omits no translated EGA I component"
 }

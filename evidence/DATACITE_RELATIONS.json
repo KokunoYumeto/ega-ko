@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "version": "2026-08-24-r20",
+  "version": "2026-08-25-r21-candidate",
   "concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22087366",
-  "previous_exact_version_doi": "10.5281/zenodo.22086602",
+  "exact_version_doi": "10.5281/zenodo.22101727",
+  "previous_exact_version_doi": "10.5281/zenodo.22087366",
   "global_ega_concept_doi": "10.5281/zenodo.20414353",
   "relation_policy": "isVersionOf concept DOI; isNewVersionOf previous exact release; source authority remains attributed and read-only",
-  "publication_status": "reserved unsubmitted draft; unit, build, extraction, visual and portable-source gates PASS; deterministic evidence package and anonymous public readback pending"
+  "publication_status": "validated unsubmitted r21 candidate in the existing Zenodo lineage; r20 remains current public pending r21 deterministic package publication and anonymous replay; Figshare retry is bounded to the existing article without duplicate creation"
 }
