@@ -1,22 +1,23 @@
 {
   "schema_version": 1,
-  "version": "2026-08-25-r21",
+  "version": "2026-08-25-r22",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1295144,
-  "reader_sha256": "5A11465B96EE6F3551F5F6D1EF9BB14EF9C89DC4E4AF057A0EEF183A8B1A7C49",
-  "render_count": 7,
+  "reader_bytes": 1305032,
+  "reader_sha256": "73A15CCE02FBC61793201DB6445587DC024DB9FCA6C8102E59ED8C8E2FBDE9CF",
+  "render_count": 8,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,143,144,145,146",
+  "pages": "1,2,6,143,144,145,146,147",
   "render_hashes": {
-    "page1": "E14F01E533055BA656338BFC497A23C4AD13610BE2D45870C88186256087813D",
-    "page2": "894CABF11493C526338FD05281313AAB7219C3E47F312FDCFE26955CA050A7B0",
-    "page6": "07E24D6E8ECF48B8E67676D1F1F451A876A15F69109AA8E1CFCB1B2B2FCBB141",
+    "page1": "69FF25D06D707D20DF5D58FE6551A840F50EDFD042FE3C280E543E5727C3AA60",
+    "page2": "DF33EB2163C6759689B4CB4DFA9A6D21324EBE9BEE3965D2CBE03A8A824223F9",
+    "page6": "D25D3D1929EEA2D94FC8A0EC203E01915BBDB4BB7228678FFBC789760DB44954",
     "page143": "F20843123A94A072A3B53B4DF2200B9DE0845CD59C0C42A0EA60697E58853F1A",
     "page144": "FA1DA1F631CEF7810B6340B0ED871F0BC72AB7272CB92AAC505D0B3734748DB5",
-    "page145": "70F12E773E588B8D0722E3F65525DEA1FD4881EA84CAC0E62D1B5BD9C094EA0E",
-    "page146": "BD03765198D6352A51BF25868BD859A3BA0AFDF162008C24C8C645477FDB8808"
+    "page145": "24FAB0BE628AEE2D48848A8384D067C82CC502D75EBEADEFD26E7792FA0184D0",
+    "page146": "83EC16A60C3CBFDE22300DAEABF06C8507E4AB6AD511152B4D7B4F9F87434E75",
+    "page147": "2376F0035081C224A9DFA6FEF6898C5145B219FCF853CC0E54F8BF35193C93D9"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify the r21 complete-to-date cumulative-reader statement, scope through subsection10.12, exact DOI22101727, rights and non-endorsement; page6 verifies the subsection10.12 table-of-contents entry; pages143-145 preserve stable context and contain the complete new unit; page146 is the bibliography. Working, public and clean-extracted portable renders are pixel-exact. Direct inspection found no clipping, overlap, tofu, malformed formula, broken arrow or margin collision."
+  "disposition": "Pages1-2 verify the r22 complete-to-date cumulative-reader statement, scope through subsection10.13, exact DOI22102429, rights and non-endorsement; page6 verifies the subsection10.13 table-of-contents entry; pages143-144 preserve stable context; pages145-146 contain the complete new unit; page147 is the bibliography. Working, public and clean-extracted portable renders are pixel-exact. Direct inspection found no clipping, overlap, tofu, malformed formula, broken arrow or margin collision."
 }

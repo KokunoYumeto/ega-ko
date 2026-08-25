@@ -7,6 +7,46 @@ $reader = Join-Path $root 'reader\00_EGA_ko_CUMULATIVE_READER.pdf'
 $pdf = Join-Path $out 'main.pdf'
 $log = Join-Path $out 'main.log'
 $reference = Join-Path $out 'main.reference.pdf'
+$inputManifestPath = Join-Path $src 'CUMULATIVE_INPUTS.json'
+
+if (-not (Test-Path -LiteralPath $inputManifestPath -PathType Leaf)) {
+  throw 'Cumulative input manifest is missing.'
+}
+$inputManifest = Get-Content -LiteralPath $inputManifestPath -Raw | ConvertFrom-Json
+if ($inputManifest.schema -cne 'ega-ko-cumulative-inputs-v1') {
+  throw 'Unsupported cumulative input manifest schema.'
+}
+if ($inputManifest.entrypoint -cne 'main.tex') {
+  throw 'Cumulative input manifest must bind source/main.tex.'
+}
+$declaredInputs = @($inputManifest.ordered_inputs | ForEach-Object { [string]$_.path })
+if ($declaredInputs.Count -eq 0) { throw 'Cumulative input manifest declares no reader inputs.' }
+if (@($declaredInputs | Sort-Object -Unique).Count -ne $declaredInputs.Count) {
+  throw 'Cumulative input manifest contains duplicate paths.'
+}
+foreach ($relativePath in $declaredInputs) {
+  if ([IO.Path]::IsPathRooted($relativePath) -or $relativePath -match '(^|[\\/])\.\.([\\/]|$)') {
+    throw "Unsafe cumulative input path: $relativePath"
+  }
+  if (-not (Test-Path -LiteralPath (Join-Path $src $relativePath) -PathType Leaf)) {
+    throw "Declared cumulative input is missing: $relativePath"
+  }
+}
+$mainPath = Join-Path $src 'main.tex'
+if (-not (Test-Path -LiteralPath $mainPath -PathType Leaf)) { throw 'source/main.tex is missing.' }
+$mainText = Get-Content -LiteralPath $mainPath -Raw
+$compiledInputs = @([regex]::Matches($mainText, '\\input\{([^}]+)\}') | ForEach-Object { $_.Groups[1].Value })
+if (($compiledInputs -join "`n") -cne ($declaredInputs -join "`n")) {
+  throw 'source/main.tex input order does not exactly match CUMULATIVE_INPUTS.json.'
+}
+$knownTex = @('main.tex') + $declaredInputs
+$presentTex = @(Get-ChildItem -LiteralPath $src -Recurse -File -Filter '*.tex' | ForEach-Object {
+  [IO.Path]::GetRelativePath($src, $_.FullName).Replace('\\', '/')
+} | Sort-Object)
+$knownTex = @($knownTex | ForEach-Object { $_.Replace('\\', '/') } | Sort-Object)
+if (($presentTex -join "`n") -cne ($knownTex -join "`n")) {
+  throw 'The source tree contains undeclared or absent TeX files; cumulative inclusion is not proven.'
+}
 
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $reader) | Out-Null

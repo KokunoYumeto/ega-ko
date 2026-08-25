@@ -1,26 +1,27 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-25T22:21:04+02:00",
+  "updated": "2026-08-25T23:16:48+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_source_bytes": 159763,
   "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "package_mapping": {
-    "target_section10_bytes": 133827,
+    "target_section10_bytes": 143518,
     "source_front": "source/front.tex",
     "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1"
+    "target_section10_sha256": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
+    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 1620 bytes / A2D3E1DD5C5C0E93C40332B8789549B84388DBB70A153CCB881F9C0F41ADA2AD"
   },
-  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1–9 and §10 through subsection10.12 and environment10.12.3.2, before subsection10.13",
+  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1-9 and §10 through subsection10.13 and Corollary10.13.6, before subsection10.14",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r21 is a validated existing-lineage candidate reserved at DOI22101727; r20 remains public and anonymously replayed; file00 is the complete-to-date146-page cumulative Korean reader and includes every translated EGA I component",
-    "current_public_doi": "10.5281/zenodo.22087366",
+    "status": "r22 is public on Zenodo through subsection10.13 with anonymous4/4 byte and metadata replay PASS; file00 is the complete-to-date147-page cumulative Korean reader and includes every admitted component; GitHub remains at r21 pending the exact r22 push; Figshare remains unavailable without mutation or duplicate",
+    "current_public_doi": "10.5281/zenodo.22102429",
     "concept_doi": "10.5281/zenodo.21921513",
-    "exact_doi": "10.5281/zenodo.22087366",
-    "reserved_exact_doi": "10.5281/zenodo.22101727",
-    "github_artifact_commit": "12708d91ee425d9fb9be6826292fab5b41b36c53",
-    "github_receipt_commit": "fc26bd2300d778026d37242813f090e21255d95b",
+    "exact_doi": "10.5281/zenodo.22102429",
+    "reserved_exact_doi": null,
+    "github_artifact_commit": "a7143d9a1a1a7f6ec0d74105248e1b0c45a693c0",
+    "github_receipt_commit": "96ef9e1b593488ebfd6c7e3f17ee8f3df9373ef4",
     "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "existing v7 target remains unmutated because the account is inactive/disabled; r20 retry receipt figshare-pending-v10.json records authenticated403, anonymous article404 and versions200 empty; no duplicate article"
+    "figshare_status": "existing target remains unmutated because the account is inactive/disabled; no duplicate article"
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema": "ag-ko-portable-build-check-v1",
+  "id": "R22_PORTABLE_BUILD",
+  "version": "2026-08-25-r22",
+  "source_archive": {
+    "path": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 227067,
+    "sha256": "39BE596EE73B364AC031B053CA945D3B756477EC724421210047CE91FE4F4E50",
+    "deterministic_copies": "A/B byte-identical",
+    "entries": 25,
+    "files": 23,
+    "uncompressed_bytes": 886139,
+    "crc_and_member_replay": "PASS"
+  },
+  "clean_extraction": {
+    "path": "tmp/r22-portable-source-22102429",
+    "preexisting_reader": false,
+    "manifest_enforced": true
+  },
+  "build": {
+    "passes": 6,
+    "repeat": "two fixed-metadata three-pass cycles byte-identical",
+    "pages": 147,
+    "bytes": 1305029,
+    "sha256": "9A75259D945CAB99A601405D0C70B699F38058E59E7F1A00ECBFE38B6EF073DB",
+    "critical_diagnostics": 0
+  },
+  "comparison": {
+    "poppler_extraction": "exact to working/public C69ACBEFDBA8410D34DDFCA9AE4EB64CE827738851398DEA8433E60F3376BC02",
+    "pypdf_extraction": "exact to working/public 353E6CCDCA13BE254D1C40C1E16EABE90FECF5A1E3C2F53C3798AA4B72AD294E",
+    "renders": "pages1,2,6,143-147 pixel-exact to public at200dpi"
+  },
+  "result": "PASS"
+}

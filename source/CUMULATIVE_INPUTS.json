@@ -1,0 +1,32 @@
+{
+  "schema": "ega-ko-cumulative-inputs-v1",
+  "reader": "00_EGA_ko_CUMULATIVE_READER.pdf",
+  "entrypoint": "main.tex",
+  "language": "ko",
+  "scope": {
+    "corpus": "EGA",
+    "included_volumes": [
+      "EGA 0_I",
+      "EGA I"
+    ],
+    "terminal_coverage": "EGA I Chapter I through subsection 10.13 and Corollary 10.13.6; ends before subsection 10.14",
+    "completeness_claim": "complete Korean translation available in this lineage at this release boundary; not a claim that EGA I or the EGA corpus is complete"
+  },
+  "ordered_inputs": [
+    { "path": "front.tex", "role": "edition front matter" },
+    { "path": "intro.tex", "role": "EGA I introduction" },
+    { "path": "c0.tex", "role": "complete EGA 0_I" },
+    { "path": "c1front.tex", "role": "EGA I Chapter I programme and front matter" },
+    { "path": "c1s1.tex", "role": "EGA I Chapter I section 1 complete" },
+    { "path": "c1s2.tex", "role": "EGA I Chapter I section 2 complete" },
+    { "path": "c1s3.tex", "role": "EGA I Chapter I section 3 complete" },
+    { "path": "c1s4.tex", "role": "EGA I Chapter I section 4 complete" },
+    { "path": "c1s5.tex", "role": "EGA I Chapter I section 5 complete" },
+    { "path": "c1s6.tex", "role": "EGA I Chapter I section 6 complete" },
+    { "path": "c1s7.tex", "role": "EGA I Chapter I section 7 complete" },
+    { "path": "c1s8.tex", "role": "EGA I Chapter I section 8 complete" },
+    { "path": "c1s9.tex", "role": "EGA I Chapter I section 9 complete" },
+    { "path": "c1s10.tex", "role": "EGA I Chapter I section 10 through subsection 10.13" },
+    { "path": "bib.tex", "role": "bibliography" }
+  ]
+}

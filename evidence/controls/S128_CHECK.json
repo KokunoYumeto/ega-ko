@@ -1,0 +1,123 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S128_CHECK",
+  "version": "2026-08-25-r22",
+  "scope": "EGA I subsection10.13 in full: finite-type morphisms of formal preschemes, equivalent criteria, affine restricted-formal-series criterion, stability under composition/base change/products, and extension to completions; ends before subsection10.14",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines2890-3082",
+    "characters": 9421,
+    "bytes": 9576,
+    "sha256": "7539D2C335502F4AE3B6BE5A7EDEF99AC3E4D8097A9B99DB1CE54CF6DFDDF33B",
+    "unit_plus_separator_bytes": 9577,
+    "unit_plus_separator_sha256": "B5EDC0A7A2372FF4CD751C1B1CC370498ABFA56B148C8E2FB313982468A96F6E",
+    "cumulative_through_separator_bytes": 138464,
+    "cumulative_through_separator_sha256": "988F6199760D52C7469858EE7F57A14D305C318502165554BC4CB9E264240A29"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines2822-3011",
+    "characters": 6858,
+    "bytes": 9690,
+    "sha256": "51F5B3DCBFED93036980B8A6AA646603AA9DDA9C1DCCBA40912B8DCCB2B0243A",
+    "whole_bytes": 143518,
+    "whole_sha256": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
+    "sealed_prefix_bytes": 133827,
+    "sealed_prefix_sha256": "4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1"
+  },
+  "formula_gate": {
+    "source_math_nodes": 149,
+    "target_math_nodes": 149,
+    "ordered_math_identity": "149/149 exact after whitespace normalization; no controlled differences",
+    "references": "31/31",
+    "labels": "7/7",
+    "environments": "9/9",
+    "items": "7/7",
+    "emphasis": "5/5",
+    "printed_page_markers": "2/2",
+    "display_pairs": "1/1",
+    "diagram_commands": "0/0",
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E152",
+    "workflow_record_bytes": 22043,
+    "workflow_record_sha256": "A3EAC4AEB94BDC38E32F33FFE251C0E3B4DCE99FD8CF666CADA82DADDF813409",
+    "retained_primary_arxiv_papers": 3,
+    "new_term_lock": "AGKO-T156",
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "finite_type": "유한형 is used for geometric morphisms/formal preschemes; ordinary algebras remain 유한 생성 대수",
+    "formal_preschemes": "relative base and formal-prescheme type stay explicit",
+    "restricted_series": "restricted formal-power-series algebra and quotient by an introduced necessarily closed ideal remain exact",
+    "topology": "topological isomorphism appears only where the French source states it",
+    "quantifiers": "every definition ideal, every f_n, every member of the finite affine cover and every m<=n remain explicit",
+    "base_change": "composition, base change, products, local/noetherian alternatives and the product morphism retain their types",
+    "completion": "widehat f is the extension between completions, not an algebra completion",
+    "result": "PASS"
+  },
+  "independent_audits": {
+    "semantic": "PASS after four exact fidelity corrections",
+    "mathematical": "PASS; formula, structure, ideals, variance, universal scope, proof logic and TeX syntax",
+    "terminology": "PASS after two exact register corrections; canonical French decisive and retained arXiv papers used only as typed usage witnesses",
+    "result": "PASS"
+  },
+  "cumulative_input_gate": {
+    "manifest": "source/CUMULATIVE_INPUTS.json",
+    "manifest_bytes": 1620,
+    "manifest_sha256": "A2D3E1DD5C5C0E93C40332B8789549B84388DBB70A153CCB881F9C0F41ADA2AD",
+    "declared_inputs": 15,
+    "declared_volumes": [
+      "EGA 0_I",
+      "EGA I"
+    ],
+    "build_behavior": "fail closed if the manifest is absent, unsafe, duplicated, missing, out of main.tex order, or if any undeclared TeX file exists",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "147 pages / 1305020 bytes / 8818828CE794693DD578908D8CECD2EE031DC6BEB8EAD8A1BD522B5856F54204",
+    "public": "147 pages / 1305032 bytes / 73A15CCE02FBC61793201DB6445587DC024DB9FCA6C8102E59ED8C8E2FBDE9CF",
+    "portable": "147 pages / 1305029 bytes / 9A75259D945CAB99A601405D0C70B699F38058E59E7F1A00ECBFE38B6EF073DB",
+    "deterministic_cycles": "PASS in working, public and clean-extracted portable trees",
+    "critical_diagnostics": 0,
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "poppler": "652252 bytes / C69ACBEFDBA8410D34DDFCA9AE4EB64CE827738851398DEA8433E60F3376BC02 exact across working/public/portable builds",
+    "pypdf": "629086 bytes / 353E6CCDCA13BE254D1C40C1E16EABE90FECF5A1E3C2F53C3798AA4B72AD294E exact across working/public/portable builds",
+    "hangul": 136819,
+    "replacement_characters": 0,
+    "new_exact_doi_occurrences": 1,
+    "previous_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [
+      1,
+      2,
+      6,
+      143,
+      144,
+      145,
+      146,
+      147
+    ],
+    "dpi": 200,
+    "working_public_portable_pairwise_exact": true,
+    "direct_inspection": "PASS: scope/DOI, cumulative contents, new subsection, all formulas and bibliography are legible with no clipping, overlap, tofu, malformed arrow or margin collision",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22102429",
+    "version": "2026-08-25-r22",
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "sole_project_contributor": "AI typesetting & translation",
+    "cumulative_front_artifact": "00_EGA_ko_CUMULATIVE_READER.pdf contains every admitted Korean EGA component in this lineage through subsection10.13",
+    "result": "PASS"
+  },
+  "next_source_line": 3084,
+  "next_label": "subsection10.14 Immersions ouvertes, then Proposition10.14.1",
+  "result": "PASS"
+}

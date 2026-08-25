@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "version": "2026-08-25-r21",
+  "version": "2026-08-25-r22",
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1295144,
-    "sha256": "5A11465B96EE6F3551F5F6D1EF9BB14EF9C89DC4E4AF057A0EEF183A8B1A7C49"
+    "bytes": 1305032,
+    "sha256": "73A15CCE02FBC61793201DB6445587DC024DB9FCA6C8102E59ED8C8E2FBDE9CF"
   },
   "working_tree_reader": {
-    "path": "build/ega1/s127-r21/main.pdf",
-    "bytes": 1295158,
-    "sha256": "4CF7CDE3D0B1CFEFDE49B37F152135C89491B5CB006089689D60FB1CF7DE8583"
+    "path": "build/ega1/s128-r22/main.pdf",
+    "bytes": 1305020,
+    "sha256": "8818828CE794693DD578908D8CECD2EE031DC6BEB8EAD8A1BD522B5856F54204"
   },
   "clean_extracted_source_archive_reader": {
-    "bytes": 1295145,
-    "sha256": "2CBF9804F167F4679FE2DC4D757BA38A316AF024BB566542DB0D245D3078F03C",
+    "bytes": 1305029,
+    "sha256": "9A75259D945CAB99A601405D0C70B699F38058E59E7F1A00ECBFE38B6EF073DB",
     "full_poppler_extraction_exact": true,
     "full_pypdf_extraction_exact": true,
-    "pages_1_2_6_143_144_145_146_200dpi_pixel_exact": true
+    "pages_1_2_6_143_144_145_146_147_200dpi_pixel_exact": true
   },
-  "source_target_hash": "4AABC23D594ABC6A4D0F70EEF9CDF9C21C91E8299683CA98BFE7C086E9286EC1",
+  "source_target_hash": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
   "comparison": {
-    "pages": 146,
+    "pages": 147,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "poppler_bytes_each": 764005,
-    "poppler_sha256_each": "7015E4C9A9F478F4D0A62D3899DE3EEEE9411FF4CA7DD3E4C3D021C6EBA8FD3B",
-    "pypdf_bytes_each": 622931,
-    "pypdf_sha256_each": "C400148492DC2D48B5E9A2D0EA30497B2A6C4C36BDCBC656BF1DFC882A6F65A5",
-    "hangul_syllables_each": 135378,
+    "poppler_bytes_each": 652252,
+    "poppler_sha256_each": "C69ACBEFDBA8410D34DDFCA9AE4EB64CE827738851398DEA8433E60F3376BC02",
+    "pypdf_bytes_each": 629086,
+    "pypdf_sha256_each": "353E6CCDCA13BE254D1C40C1E16EABE90FECF5A1E3C2F53C3798AA4B72AD294E",
+    "hangul_syllables_each": 136819,
     "replacement_characters_each": 0,
-    "public_working_portable_pages_200dpi_pixel_exact": "1,2,6,143,144,145,146"
+    "public_working_portable_pages_200dpi_pixel_exact": "1,2,6,143,144,145,146,147"
   },
-  "disposition": "The standalone public-tree reader, retained s127-r21 working bind and clean-extraction source-archive build differ at the path-sensitive container level. All three have exact full Poppler and pypdf text extractions. The seven inspected pages are pixel-exact across public, working and clean-extraction builds at200dpi. No all-page pixel identity or broader certification is inferred."
+  "disposition": "The standalone public-tree reader, retained s128-r22 working bind and clean-extraction source-archive build differ at the path-sensitive container level. All three have exact full Poppler and pypdf text extractions. The eight inspected pages are pixel-exact across public, working and clean-extraction builds at 200 dpi. No all-page pixel identity or broader certification is inferred."
 }

@@ -2818,3 +2818,194 @@ $\mathfrak{X}$, $\mathfrak{Y}$에 대하여 다음 \emph{표준 전단사}를 �
 여기서 사영극한은 사상 $u_n\to(u_n)_{(S_m)}$들에 관하여 취하며,
 $m\leq n$이다.
 \end{env}
+
+\subsection{유한형 사상.}
+\label{subsection:I.10.13-ko}
+
+\begin{proposition}[10.13.1]
+\label{I.10.13.1-ko}
+$\mathfrak{Y}$를 국소 뇌터 형식적 준스킴,
+$\mathscr{K}$를 $\mathfrak{Y}$의 정의 아이디얼,
+$f:\mathfrak{X}\to\mathfrak{Y}$를 형식적 준스킴의 사상이라 하자. 다음
+조건들은 동치이다~:
+\begin{enumerate}
+  \item[a)] $\mathfrak{X}$는 국소 뇌터이고, $f$는 아딕 사상이며
+    (\hyperref[I.10.12.1-ko]{10.12.1}),
+    $\mathscr{J}=f^*(\mathscr{K})\mathscr{O}_{\mathfrak{X}}$라 놓을 때
+    사상 $f_0:(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})
+    \to(\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})$는 $f$로부터
+    유도되며 유한형이다.
+  \item[b)] $\mathfrak{X}$는 국소 뇌터이고, 아딕
+    $(Y_n)$-귀납계 $(X_n)$의 귀납극한이며, 사상 $X_0\to Y_0$는
+    유한형이다.
+
+\oldpage[I]{208}
+
+  \item[c)] $\mathfrak{Y}$의 모든 점은 다음 성질을 갖는 뇌터 아핀
+    형식적 열린집합인 근방 $V$를 가진다~:
+    \begin{enumerate}
+      \item[(\textbf{Q})] $f^{-1}(V)$는 뇌터 아핀 형식적 열린집합
+        $U_i$들의 유한 합집합이고, 각각에 대하여 뇌터 아딕환
+        $\Gamma(U_i,\mathscr{O}_{\mathfrak{X}})$는
+        $\Gamma(V,\mathscr{O}_{\mathfrak{Y}})$ 위의 제한 형식적 멱급수
+        대수를 어떤 (필연적으로 닫힌) 아이디얼로 나눈 몫과 위상적으로
+        동형이다 (\hyperref[0.7.5.1-ko]{0, 7.5.1}).
+    \end{enumerate}
+\end{enumerate}
+\end{proposition}
+
+a)가 b)를 함의하는 것은 (\hyperref[I.10.12.3-ko]{10.12.3})에 따라
+명백하다. b)가 c)를 함의함을 보이기 위해, 문제는 $\mathfrak{Y}$ 위에서
+국소적이므로 $\mathfrak{Y}=\operatorname{Spf}(B)$이고 $B$가 뇌터
+아딕환이라고 가정할 수 있다. $\mathscr{K}=\mathfrak{K}^\Delta$라
+하되, $\mathfrak{K}$는 $B$의 정의 아이디얼이라 하자. 가정에 의해 $X_0$는
+$Y_0$ 위에서 유한형이므로, $X_0$는 아핀 열린집합 $U_i$들의 유한
+합집합이고, 환 $A_{i0}$, 즉 $X_0$가 $U_i$ 위에 유도하는 아핀
+스킴의 환은 $B/\mathfrak{K}$, 즉 $Y_0$의 환 위의 유한 생성 대수이다
+(\hyperref[I.6.3.2-ko]{6.3.2}).
+(\hyperref[I.5.1.9-ko]{5.1.9})에 따라 $U_i$는 각 뇌터 준스킴
+$X_n$에서도 아핀 열린집합이며, 환 $A_{in}$을 $X_n$이 $U_i$ 위에
+유도하는 아핀 스킴의 환이라 하면 가정 b)에 의해 $m\leq n$일 때
+$A_{im}$은 $A_{in}/\mathfrak{K}^{m+1}A_{in}$과 동형이다. 따라서
+$U_i$ 위에서 $\mathfrak{X}$가 유도하는 형식적 준스킴은
+$\operatorname{Spf}(A_i)$와 동형이며, 여기서
+$A_i=\varprojlim_n A_{in}$이다 (\hyperref[I.10.6.4-ko]{10.6.4}).
+$A_i$는 $\mathfrak{K}A_i$-아딕환이고, $A_i/\mathfrak{K}A_i$는
+$A_{i0}$과 동형이며 $B/\mathfrak{K}$ 위의 유한 생성 대수이다.
+그러므로 (\hyperref[0.7.5.5-ko]{0, 7.5.5})에 따라 $A_i$는 $B$ 위의
+제한 형식적 멱급수 대수를 어떤 아이디얼로 나눈 몫과 위상적으로
+동형이다. 이 아이디얼은 반드시 닫혀 있는데, 그러한 대수는 뇌터이기 때문이다
+(\hyperref[0.7.5.4-ko]{0, 7.5.4}).
+
+c)가 a)를 함의함을 증명하기 위해, $\mathfrak{X}=\operatorname{Spf}(A)$
+도 아핀인 경우로 한정할 수 있다. 여기서 $A$는 뇌터 아딕환이고, $B$
+위의 제한 형식적 멱급수 대수를 어떤 닫힌 아이디얼로 나눈 몫과
+동형이다. 그러면 (\hyperref[0.7.5.5-ko]{0, 7.5.5})에 따라
+$A/\mathfrak{K}A$는 $B/\mathfrak{K}$ 위의 유한 생성 대수이고,
+$\mathfrak{K}A=\mathfrak{J}$는 $A$의 정의 아이디얼이다. 따라서
+(\hyperref[I.10.10.9-ko]{10.10.9})에 의해 a)의 조건들이 성립한다.
+
+명제 (\hyperref[I.10.13.1-ko]{10.13.1})의 조건들이 성립하면, a)는
+\emph{모든 정의 아이디얼 $\mathscr{K}$}에 대하여 성립한다. 여기서
+정의 아이디얼은 $\mathfrak{Y}$의 것이며, 이는 c)에 따른다. 따라서
+b)에서는 \emph{모든 $f_n$이 유한형 사상}임에 유의하자.
+
+\begin{corollary}[10.13.2]
+\label{I.10.13.2-ko}
+(\hyperref[I.10.13.1-ko]{10.13.1})의 조건들이 성립하면, 모든 뇌터
+아핀 형식적 열린집합 $V$는 $\mathfrak{Y}$ 안에서 성질
+(\textbf{Q})를 가지며, $\mathfrak{Y}$가 뇌터이면 $\mathfrak{X}$도
+뇌터이다.
+\end{corollary}
+
+이는 (\hyperref[I.10.13.1-ko]{10.13.1})과
+(\hyperref[I.6.3.2-ko]{6.3.2})에서 곧바로 따른다.
+
+\begin{definition}[10.13.3]
+\label{I.10.13.3-ko}
+(\hyperref[I.10.13.1-ko]{10.13.1})의 동치인 성질 a), b), c)가
+성립하면, 사상 $f$를 \emph{유한형}이라고 하거나 $\mathfrak{X}$를
+\emph{유한형 $\mathfrak{Y}$-형식적 준스킴} 또는
+\emph{$\mathfrak{Y}$ 위의 유한형 형식적 준스킴}이라고 한다.
+\end{definition}
+
+\begin{corollary}[10.13.4]
+\label{I.10.13.4-ko}
+$\mathfrak{X}=\operatorname{Spf}(A)$,
+$\mathfrak{Y}=\operatorname{Spf}(B)$를 두 뇌터 아핀 형식적 스킴이라
+하자. $\mathfrak{X}$가 $\mathfrak{Y}$ 위에서 유한형이기 위한
+필요충분조건은 뇌터 아딕환 $A$가 $B$ 위의 제한 형식적 멱급수 대수를
+어떤 닫힌 아이디얼로 나눈 몫과 동형인 것이다.
+\end{corollary}
+
+실제로 (\hyperref[I.10.13.1-ko]{10.13.1})의 표기를 사용하자.
+$\mathfrak{X}$가 $\mathfrak{Y}$ 위에서 유한형이면
+(\hyperref[I.6.3.3-ko]{6.3.3})에 따라 $A/\mathfrak{K}A$는
+$(B/\mathfrak{K})$ 위의 유한 생성 대수이고,
+$\mathfrak{K}A$는 $A$의 정의 아이디얼이다
+(\hyperref[I.10.10.9-ko]{10.10.9}). 그러므로
+(\hyperref[0.7.5.5-ko]{0, 7.5.5})에서 결론이 따른다.
+
+\begin{proposition}[10.13.5]
+\label{I.10.13.5-ko}
+\medskip\noindent
+\begin{enumerate}
+  \item[\rm{(i)}] 형식적 준스킴의 두 유한형 사상의 합성은
+    유한형이다.
+
+\oldpage[I]{209}
+
+  \item[\rm{(ii)}] $\mathfrak{X}$, $\mathfrak{S}$,
+    $\mathfrak{S}'$을 세 국소 뇌터(각각 뇌터) 형식적 준스킴이라 하고,
+    $f:\mathfrak{X}\to\mathfrak{S}$,
+    $g:\mathfrak{S}'\to\mathfrak{S}$를 두 사상이라 하자. $f$가
+    유한형이면 $\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{S}'$은
+    국소 뇌터(각각 뇌터)이고 $\mathfrak{S}'$ 위에서 유한형이다.
+  \item[\rm{(iii)}] $\mathfrak{S}$를 국소 뇌터 형식적 준스킴,
+    $\mathfrak{X}'$, $\mathfrak{Y}'$을 두 국소 뇌터
+    $\mathfrak{S}$-형식적 준스킴이라 하되,
+    $\mathfrak{X}'\times_{\mathfrak{S}}\mathfrak{Y}'$은 국소 뇌터라
+    하자.
+    $\mathfrak{X}$, $\mathfrak{Y}$가 국소 뇌터
+    $\mathfrak{S}$-형식적 준스킴이고,
+    $f:\mathfrak{X}\to\mathfrak{X}'$,
+    $g:\mathfrak{Y}\to\mathfrak{Y}'$이 두 유한형
+    $\mathfrak{S}$-사상이면,
+    $\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{Y}$은 국소 뇌터이고
+    $f\times_{\mathfrak{S}}g$는 유한형 $\mathfrak{S}$-사상이다.
+\end{enumerate}
+\end{proposition}
+
+(iii)은 (\hyperref[I.3.5.1-ko]{3.5.1})의 형식적 논증에 의해 (i)과
+(ii)에서 따르므로, (i)과 (ii)만 증명하면 충분하다.
+
+$\mathfrak{X}$, $\mathfrak{Y}$, $\mathfrak{Z}$를 세 국소 뇌터 형식적
+준스킴이라 하고, $f:\mathfrak{X}\to\mathfrak{Y}$,
+$g:\mathfrak{Y}\to\mathfrak{Z}$를 두 유한형 사상이라 하자.
+$\mathscr{L}$이 $\mathfrak{Z}$의 정의 아이디얼이면,
+$\mathscr{K}=g^*(\mathscr{L})\mathscr{O}_{\mathfrak{Y}}$는
+$\mathfrak{Y}$의 정의 아이디얼이고,
+$\mathscr{J}=f^*(g^*(\mathscr{L}))\mathscr{O}_{\mathfrak{X}}$는
+$\mathfrak{X}$의 정의 아이디얼이다. 다음과 같이 놓자~:
+$X_0=(\mathfrak{X},\mathscr{O}_{\mathfrak{X}}/\mathscr{J})$,
+$Y_0=(\mathfrak{Y},\mathscr{O}_{\mathfrak{Y}}/\mathscr{K})$,
+$Z_0=(\mathfrak{Z},\mathscr{O}_{\mathfrak{Z}}/\mathscr{L})$.
+또 $f_0:X_0\to Y_0$, $g_0:Y_0\to Z_0$를 각각 $f$, $g$에 대응하는
+사상이라 하자. 가정에 의해 $f_0$와 $g_0$가 유한형이므로,
+$g_0\circ f_0$도 유한형이다 (\hyperref[I.6.3.4-ko]{6.3.4}). 이
+사상은 $g\circ f$에 대응하므로, (\hyperref[I.10.13.1-ko]{10.13.1})에
+따라 $g\circ f$는 유한형이다.
+
+(ii)의 조건 아래에서 $\mathfrak{S}$ (각각 $\mathfrak{X}$,
+$\mathfrak{S}'$)는 국소 뇌터 준스킴들의 열 $(S_n)$ (각각 $(X_n)$,
+$(S'_n)$)의 귀납극한이고, (\hyperref[I.10.13.1-ko]{10.13.1})에 따라
+$X_m=X_n\times_{S_n}S_m$라고 가정할 수 있으며, 이는 모든
+$m\leq n$에 대해 성립한다. 그러면
+형식적 준스킴
+$\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{S}'$은 준스킴
+$X_n\times_{S_n}S'_n$들의 귀납극한이고
+(\hyperref[I.10.7.4-ko]{10.7.4}), 다음이 성립한다~:
+\[
+  X_m\times_{S_m}S'_m
+  =(X_n\times_{S_n}S_m)\times_{S_m}S'_m
+  =(X_n\times_{S_n}S'_n)\times_{S'_n}S'_m.
+\]
+또한 $X_0\times_{S_0}S'_0$은 $X_0$가 $S_0$ 위에서 유한형이므로
+국소 뇌터이다
+(\hyperref[I.6.3.8-ko]{6.3.8}). 따라서 먼저
+(\hyperref[I.10.12.3.1-ko]{10.12.3.1})에 의해
+$\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{S}'$은 국소 뇌터이다.
+더 나아가 $X_0\times_{S_0}S'_0$은 $S'_0$ 위에서 유한형이므로
+(\hyperref[I.6.3.8-ko]{6.3.8}),
+(\hyperref[I.10.12.3.1-ko]{10.12.3.1})과
+(\hyperref[I.10.13.1-ko]{10.13.1})에 따라
+$\mathfrak{X}\times_{\mathfrak{S}}\mathfrak{S}'$은
+$\mathfrak{S}'$ 위에서 유한형이다. 이것으로 (ii)의 증명이 끝난다.
+뇌터 준스킴에 관한 주장은 (\hyperref[I.6.3.8-ko]{6.3.8})의 즉각적인
+귀결이다.
+
+\begin{corollary}[10.13.6]
+\label{I.10.13.6-ko}
+(\hyperref[I.10.9.9-ko]{10.9.9})의 가정 아래에서 $f$가 유한형
+사상이면, 완비화한 것들 사이로의 연장 $\widehat f$도 유한형이다.
+\end{corollary}
