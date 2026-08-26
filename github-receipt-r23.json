@@ -1,0 +1,27 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-26-r23",
+  "verified_at": "2026-08-26T02:01:00+02:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "52b349c3192d96c38a5ff876de4f5ab48e1bc6e4",
+  "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/52b349c3192d96c38a5ff876de4f5ab48e1bc6e4",
+  "parent_commit": "3955e1c135dace802d5816c89413600e9462377b",
+  "tree": "621f0b074ae9484376606af61cfe66b1cfb87c8d",
+  "selection": {
+    "tree_paths": 333,
+    "tree_bytes": 241026359,
+    "changed_paths_replayed": 33,
+    "changed_paths_byte_sha256": "33/33 PASS",
+    "front_artifact": "release/2026-08-26-r23/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "front_artifact_bytes": 1319998,
+    "front_artifact_sha256": "0F178A2D7184E0A90020A7CA050A545940DE2D8981F66FBAFBE4C813FC70C022"
+  },
+  "replay": {
+    "anonymous_tree_api": "HTTP 200; 333 blobs; truncated=false",
+    "anonymous_raw_changed_paths": "33/33 exact byte count and SHA-256",
+    "release_payloads": "PDF, source ZIP, evidence ZIP and outer manifest exact",
+    "credential_material_present": false,
+    "result": "PASS"
+  }
+}
