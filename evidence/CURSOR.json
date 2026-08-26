@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-25-r22",
-  "coverage": "EGA I through subsection10.13 and Corollary10.13.6 at source line3082 and separator3083, ending before subsection10.14",
-  "next": "source/ega1/ega1-10-fr.tex line3084 subsection10.14 Immersions ouvertes",
-  "target": "source/c1s10.tex lines1-3011 / 143518 bytes / D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
-  "reserved_exact_doi": null,
-  "current_public_checkpoint": "10.5281/zenodo.22102429",
-  "public_status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; GitHub commit3cce58f9 replays322/322 exact and contains the correct file00 reader, but a bounded auxiliary preservation-set correction is pending under AGKO-D155/E155; source/CUMULATIVE_INPUTS.json binds all15 reader inputs"
+  "version": "2026-08-26-r23",
+  "coverage": "EGA I through subsection10.14 and Corollary10.14.7 at source line3341 and separator3342, ending before subsection10.15",
+  "next": "source/ega1/ega1-10-fr.tex line3343 subsection10.15 Préschémas formels séparés",
+  "target": "source/c1s10.tex lines1-3283 / 157787 bytes / 69139CFF0E938AA1F5C8FD7BCBBBA31FA14847C89068BF6418E02C4F90CAF8B6",
+  "reserved_exact_doi": "10.5281/zenodo.22102982",
+  "current_public_checkpoint": "10.5281/zenodo.22102982",
+  "public_status": "r23 cumulative candidate is source-admitted and package-verified; the149-page file00 reader is selected as the front artifact; Zenodo draft replacement and GitHub bounded snapshot remain the next publication transactions; source/CUMULATIVE_INPUTS.json binds all15 reader inputs"
 }

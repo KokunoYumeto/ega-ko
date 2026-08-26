@@ -1,0 +1,129 @@
+{
+  "schema": "ag-ko-unit-admission-check-v1",
+  "id": "S129_CHECK",
+  "version": "2026-08-26-r23",
+  "scope": "EGA I subsection10.14 in full: closed formal subpreschemes, canonical inclusions, closed immersions, their composition, base change and product stability, and Corollary10.14.7; ends before subsection10.15",
+  "source": {
+    "locator": "source/ega1/ega1-10-fr.tex lines3084-3341",
+    "characters": 12493,
+    "bytes": 12696,
+    "sha256": "D4D1718A6D3BA5CC4EA4E724F3BF5783F7F272ADC39FFB8CA720300141F6422C",
+    "unit_plus_separator_bytes": 12697,
+    "unit_plus_separator_sha256": "791235E9C141DC9A47E3EDE901E9D63A9C66100C238B842C68C81B53EAA0BB4F",
+    "cumulative_through_separator_bytes": 151161,
+    "cumulative_through_separator_sha256": "F9C6729BE0E28B9E2A1AFC886CB96A95893619950D2CBF824672C10E8F966FF4",
+    "next_source_line": 3343,
+    "next_label": "subsection10.15 Préschémas formels séparés"
+  },
+  "target": {
+    "locator": "source/c1s10.tex lines3013-3283",
+    "characters": 10106,
+    "bytes": 14268,
+    "sha256": "82B486804821D8423B20CCD32E62DFCE15E885FF90A1B49DB0ADFCDD043A8323",
+    "whole_bytes": 157787,
+    "whole_sha256": "69139CFF0E938AA1F5C8FD7BCBBBA31FA14847C89068BF6418E02C4F90CAF8B6",
+    "sealed_prefix_bytes": 143518,
+    "sealed_prefix_sha256": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644"
+  },
+  "formula_gate": {
+    "source_math_nodes": 204,
+    "target_math_nodes": 204,
+    "ordered_math_identity": "204/204 exact after whitespace normalization; two controlled substitutions are disclosed in translator notes: quotient-support wording and f=j composed with g",
+    "references": "28/28",
+    "labels": "9/9",
+    "environments": "16/16",
+    "items": "3/3",
+    "emphasis": "5/5",
+    "printed_page_markers": "3/3",
+    "display_pairs": "3/3",
+    "diagram_commands": "0/0",
+    "result": "PASS"
+  },
+  "source_defect_gate": {
+    "official_scan": "evidence/source-checks/EGAI-physical209-printed210.png; 417665 bytes / 09F841705D99E72FD4BE3B4609E13353E49685A602E448758B73AFB75C676573",
+    "scan_pdf": "official NUMDAM PDF; 31680717 bytes / 9ABA23020217535977E279BDD06A0413F48DA703086865BA4C00766C85DF4AE6",
+    "defects": [
+      "coherent modules corrected to coherent ideal sheaves",
+      "zero ideal off the chosen cover corrected to the unit ideal",
+      "support of the quotient corrected from the printed kernel-ideal reading",
+      "ill-typed f=g composed with j corrected to f=j composed with g"
+    ],
+    "disclosure": "Four explicit Korean translator notes preserve every diplomatic French reading and explain the type-forced correction; an additional note expands the adjunction shorthand",
+    "authority_relay": "Exact defect packet delivered to task01a01efd-1650-7940-8e57-ca2d77ab7bab; French authority remains read-only",
+    "result": "PASS"
+  },
+  "terminology_gate": {
+    "workflow": "AGKO-TERM-E157",
+    "workflow_record_bytes": 25063,
+    "workflow_record_sha256": "9FE3BEAFED7D24D800BF133EF8F2CE01E898EF69EADC3776483BAD84408C4223",
+    "retained_primary_arxiv_papers": 3,
+    "new_term_lock": "AGKO-T157",
+    "result": "PASS"
+  },
+  "typing_gate": {
+    "closed_subprescheme": "coherent ideal sheaf, quotient structure sheaf and its support remain explicit",
+    "canonical_inclusion": "standard inclusion morphism is distinguished from categorical monomorphism",
+    "closed_immersion": "isomorphism onto a closed formal subprescheme followed by its canonical inclusion",
+    "operations": "composition, base change and products retain all source types and variance",
+    "result": "PASS"
+  },
+  "independent_audits": {
+    "semantic": "PASS",
+    "mathematical": "PASS",
+    "terminology": "PASS",
+    "encoding": "PASS UTF-8/NFC/LF/terminal LF",
+    "result": "PASS"
+  },
+  "cumulative_input_gate": {
+    "manifest": "source/CUMULATIVE_INPUTS.json",
+    "manifest_bytes": 1620,
+    "manifest_sha256": "DA65BBCEC0BD34FC35C1B7B66A79E1C6EA396317788DBE7BAF81F35579EFAF35",
+    "declared_inputs": 15,
+    "compiled_tex_files": 16,
+    "declared_volumes": ["EGA 0_I", "EGA I"],
+    "terminal_coverage": "EGA I through subsection10.14 and Corollary10.14.7; before10.15",
+    "build_behavior": "fail closed if manifest is absent, unsafe, duplicated, missing, out of main.tex order, or if any undeclared TeX file exists",
+    "result": "PASS"
+  },
+  "build_gate": {
+    "working": "149 pages / 1319987 bytes / 1427707211E77D503CA12F83BA96582B7215EE52D66573BE021B6B5075A91B51",
+    "public": "149 pages / 1319998 bytes / 0F178A2D7184E0A90020A7CA050A545940DE2D8981F66FBAFBE4C813FC70C022",
+    "portable_a": "149 pages / 1319984 bytes / E642D132215D4F929F4EE20CCC0DFDFD0DF0B40BE7CD300ACCF82420BD30486C",
+    "portable_b": "149 pages / 1319998 bytes / 7B0CC0BB96EA40DA03D11DF1C8D1A67C27362028212E689BD25A43A187EEB50F",
+    "deterministic_cycles": "PASS in working, public, portable-A and portable-B trees; each BUILD.ps1 performs two independent three-pass cycles",
+    "critical_diagnostics": 0,
+    "path_sensitive_pdf_delta": "A/B/public PDF containers are not required to be byte-identical across absolute extraction paths; full text and inspected renders are the identity gates",
+    "result": "PASS"
+  },
+  "extraction_gate": {
+    "public_poppler": "782096 bytes / 2A6DF229A2BE37F3C063AADA6502DF91ED5A1FCA233C80FEF0C0DDC9DAA97738",
+    "public_pypdf": "638449 bytes / 4425B42B17F1598508265115E2D6466E84BC7E46C6482019F68CC75D9EBC5100",
+    "portable_a_poppler": "782096 bytes / 2A6DF229A2BE37F3C063AADA6502DF91ED5A1FCA233C80FEF0C0DDC9DAA97738",
+    "portable_a_pypdf": "638449 bytes / 29ED3E772851C0FFBFA0F7A7580CCEAF261B56359930CBFB670B3664610A3153",
+    "portable_b_pypdf": "638449 bytes / 4425B42B17F1598508265115E2D6466E84BC7E46C6482019F68CC75D9EBC5100",
+    "hangul_each": 138938,
+    "replacement_characters_each": 0,
+    "new_exact_doi_occurrences": 1,
+    "previous_exact_doi_occurrences": 0,
+    "result": "PASS"
+  },
+  "visual_gate": {
+    "pages": [1, 2, 6, 145, 146, 147, 148, 149],
+    "dpi": 200,
+    "public_portable_a_pixel_exact": true,
+    "direct_inspection": "PASS: front/DOI, cumulative contents, subsection10.14 transition, formulas, notes, final page and bibliography are legible with no clipping, overlap, tofu, malformed arrow or margin collision",
+    "result": "PASS"
+  },
+  "metadata_gate": {
+    "reserved_exact_doi": "10.5281/zenodo.22102982",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "version": "2026-08-26-r23",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "sole_project_contributor": "AI typesetting & translation",
+    "cumulative_front_artifact": "00_EGA_ko_CUMULATIVE_READER.pdf contains every admitted Korean EGA component in this lineage through subsection10.14",
+    "result": "PASS"
+  },
+  "next_source_line": 3343,
+  "next_label": "subsection10.15 Préschémas formels séparés",
+  "result": "PASS"
+}

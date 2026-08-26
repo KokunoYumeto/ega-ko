@@ -1,26 +1,26 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-25T23:16:48+02:00",
+  "updated": "2026-08-26T01:14:12+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
   "canonical_source_bytes": 159763,
   "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
   "package_mapping": {
-    "target_section10_bytes": 143518,
+    "target_section10_bytes": 157787,
     "source_front": "source/front.tex",
     "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
+    "target_section10_sha256": "69139CFF0E938AA1F5C8FD7BCBBBA31FA14847C89068BF6418E02C4F90CAF8B6",
     "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 1620 bytes / A2D3E1DD5C5C0E93C40332B8789549B84388DBB70A153CCB881F9C0F41ADA2AD"
   },
-  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1-9 and §10 through subsection10.13 and Corollary10.13.6, before subsection10.14",
+  "scope": "EGA I front matter/introduction, EGA 0_I, Chapter I §§1-9 and §10 through subsection10.14 and Corollary10.14.7, before subsection10.15",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r22 is public on Zenodo through subsection10.13 with anonymous4/4 replay PASS; GitHub commit3cce58f9 contains the correct147-page file00 and replays322/322 exact, but its auxiliary preservation set requires a transparent corrective fast-forward under AGKO-D155/E155; Figshare remains unavailable without mutation or duplicate",
-    "current_public_doi": "10.5281/zenodo.22102429",
+    "status": "r23 is source-admitted and package-verified through subsection10.14; the149-page file00 cumulative reader is selected as the first/public front artifact in the existing lineage; Zenodo and GitHub publication transactions follow the frozen package; Figshare remains unavailable without mutation or duplicate",
+    "current_public_doi": "10.5281/zenodo.22102982",
     "concept_doi": "10.5281/zenodo.21921513",
-    "exact_doi": "10.5281/zenodo.22102429",
-    "reserved_exact_doi": null,
-    "github_artifact_commit": "3cce58f9c3f4189124e2aeed8e469c721b69b855",
-    "github_receipt_commit": "685c9f55000e5998bdeebbf00c799b93d67acbe4",
+    "exact_doi": "10.5281/zenodo.22102982",
+    "reserved_exact_doi": "10.5281/zenodo.22102982",
+    "github_artifact_commit": "b4b9910b0189e8c6064fe917023d18c989c2f16f",
+    "github_receipt_commit": "3955e1c135dace802d5816c89413600e9462377b",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing target remains unmutated because the account is inactive/disabled; no duplicate article"
   }

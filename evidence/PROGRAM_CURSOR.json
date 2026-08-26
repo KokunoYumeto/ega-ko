@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-25T23:16:48+02:00",
+  "updated": "2026-08-26T01:14:12+02:00",
   "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line3084",
-  "next_label": "subsection10.14 Immersions ouvertes, then Proposition10.14.1",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line3343",
+  "next_label": "subsection10.15 Préschémas formels séparés, then Definition10.15.1",
   "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-3011",
-  "package_target_sha256": "D9BF767DB6412C3FBFB380AEDE74B27DC666B1413835C4698263B5BD7033C644",
-  "current_exact_zenodo": "10.5281/zenodo.22102429",
-  "current_public": "10.5281/zenodo.22102429",
-  "reserved_exact_zenodo": null,
-  "status": "r22 is public on Zenodo with anonymous4/4 byte readback PASS; GitHub file00 is correct and commit3cce58f9 replays322/322, but its auxiliary preservation set requires a corrective fast-forward under AGKO-D155/E155; source/CUMULATIVE_INPUTS.json binds all15 inputs; next source line3084 subsection10.14"
+  "package_target_locator": "lines1-3283",
+  "package_target_sha256": "69139CFF0E938AA1F5C8FD7BCBBBA31FA14847C89068BF6418E02C4F90CAF8B6",
+  "current_exact_zenodo": "10.5281/zenodo.22102982",
+  "current_public": "10.5281/zenodo.22102982",
+  "reserved_exact_zenodo": "10.5281/zenodo.22102982",
+  "status": "r23 is source-admitted and package-verified; the149-page file00 cumulative reader includes every admitted component through subsection10.14; source/CUMULATIVE_INPUTS.json binds all15 inputs; next source line3343 subsection10.15"
 }
