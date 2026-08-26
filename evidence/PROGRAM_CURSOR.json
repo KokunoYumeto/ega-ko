@@ -8,7 +8,7 @@
   "package_target_locator": "lines1-3453 EOF",
   "package_target_sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
   "current_exact_zenodo": "10.5281/zenodo.22103931",
-  "current_public": "10.5281/zenodo.22102982",
+  "current_public": "10.5281/zenodo.22103931",
   "reserved_exact_zenodo": "10.5281/zenodo.22103931",
-  "status": "r24 is source-admitted and build-verified; the150-page file00 cumulative reader contains all15 canonical EGA I inputs and completes EGA I; package freeze/public replay precede the EGA II cursor"
+  "status": "r24 is published and anonymously replayed; the150-page file00 cumulative reader contains all15 canonical EGA I inputs and completes EGA I; next is the first canonical EGA II input"
 }

@@ -14,13 +14,13 @@
   "scope": "Complete EGA I: front matter, introduction, EGA 0_I, Chapter I programme, Chapter I §§1-9, §10 through subsection10.15 EOF, and bibliography; canonical driver15/15 closure; full EGA corpus incomplete",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
   "publication": {
-    "status": "r24 is source-admitted and build-verified as complete EGA I; the150-page file00 cumulative reader is selected as the first/public front artifact in the existing lineage; package freeze and Zenodo/GitHub publication transactions are next; Figshare remains unavailable without mutation or duplicate",
-    "current_public_doi": "10.5281/zenodo.22102982",
+    "status": "r24 complete EGA I is public and anonymously replayed on Zenodo and GitHub; the150-page file00 cumulative reader is the first/public front artifact in the existing lineage; Figshare remains unavailable without mutation or duplicate",
+    "current_public_doi": "10.5281/zenodo.22103931",
     "concept_doi": "10.5281/zenodo.21921513",
     "exact_doi": "10.5281/zenodo.22103931",
     "reserved_exact_doi": "10.5281/zenodo.22103931",
-    "github_artifact_commit": "52b349c3192d96c38a5ff876de4f5ab48e1bc6e4",
-    "github_receipt_commit": "69b519f8bfceddd5ce5ad7f230452adfe4138eb8",
+    "github_artifact_commit": "5a1829abce5bb6e84221645d01db783814b21668",
+    "github_receipt_commit": "753b63cab055168224252ea59dda649e5589ab85",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing target remains unmutated because the account is inactive/disabled; no duplicate article"
   }

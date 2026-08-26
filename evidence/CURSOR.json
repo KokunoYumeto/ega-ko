@@ -5,6 +5,6 @@
   "next": "freeze, publish and anonymously replay r24; then first canonical EGA II input",
   "target": "source/c1s10.tex lines1-3453 / 166856 bytes / 1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
   "reserved_exact_doi": "10.5281/zenodo.22103931",
-  "current_public_checkpoint": "10.5281/zenodo.22102982",
-  "public_status": "r24 complete-EGA-I candidate is source-admitted and build-verified; the150-page file00 reader is selected as the front artifact; source/evidence package freeze, Zenodo publication and GitHub bounded snapshot remain the next transactions; current immutable public checkpoint is r23"
+  "current_public_checkpoint": "10.5281/zenodo.22103931",
+  "public_status": "r24 complete EGA I is public at Zenodo exact DOI10.5281/zenodo.22103931 and byte-replayed on Zenodo4/4 and GitHub357/357; the150-page file00 reader is the front artifact; cursor advances to the first canonical EGA II input without reopening unchanged EGA I"
 }
