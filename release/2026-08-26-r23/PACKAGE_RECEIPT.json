@@ -77,5 +77,5 @@
   "published_doi": "10.5281/zenodo.22102982",
   "published_record": "https://zenodo.org/records/22102982",
   "publication_receipt": "pub/ega-ko/receipt-r23.json",
-  "next": "Zenodo r23 is published and anonymously replayed; push this same frozen snapshot to the bounded GitHub repository, then resume source line3343 subsection10.15 without reopening lines1-3342."
+  "next": "Zenodo r23 and the identical bounded GitHub r23 snapshot are published and anonymously replayed; resume source line3343 subsection10.15 without reopening lines1-3342."
 }
