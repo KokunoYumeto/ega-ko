@@ -1,0 +1,33 @@
+{
+  "schema": "ag-ko-live-source-regression-control-v1",
+  "version": "2026-08-26-r24",
+  "scope": "EGA I completion freeze",
+  "published_canonical_source_archive": {
+    "path": "[CANONICAL_SOURCE_ROOT]/rel/doi-fr-21921589/01_EGA_FR_EDITABLE_SOURCES.zip",
+    "bytes": 267952,
+    "sha256": "44A6FC2DEA2F4FE93F61C87C5C506E43F2C5DC30670FA7C340CE570DE7A33656"
+  },
+  "regressions": [
+    {
+      "path": "source/ega1/ega1-3-fr.tex",
+      "line": 1251,
+      "published_file": "59766 bytes / A267955CFFC5942F6EC5255ABAD85E68C5F5C266F1A6B68611AF11FD875B16AE",
+      "live_file": "59765 bytes / 7806048E6DBE8DB8EE1EE808117FCA076A4BC647C1C6F061BDF0D3F2B727E249",
+      "published_line": "78 bytes / D2D3B425C7BA7C63EC50A68BC162CFFBC7799F6EEEC7C232EB4C3C9C834F1DF8 / qui majore $X'$",
+      "live_line": "77 bytes / B4E9F574E8B6A325FCB53602FAB09C64B18D702E90CA28711C1AB138D9688AB7 / qui majore $X$",
+      "adjudication": "live one-token mathematical regression; X=overline{X'} must majorize X'; Korean target lines1231-1232 already preserve the published and typed reading"
+    },
+    {
+      "path": "source/ega1/ega1-4-fr.tex",
+      "line": 555,
+      "published_file": "34792 bytes / A5F5CDAC81E654E9ABA75BBFEAD24F3010B122452C689B9EBAB5A7711B454EC1",
+      "live_file": "34792 bytes / E0CCD57F8932AE2A3580299AEC7CBEA2C03641D9B4B43822B0F66ED9FD1560C1",
+      "published_line": "63 bytes / 350F8CD24278F4945E16D358DBA8C3AC7529AC098BE28D1590B32BF442EBC699 / borne inférieure",
+      "live_line": "63 bytes / 1D4A64952DE5D146E8FCDB2A9A48D75558051B075EA8693F9060C761FC5B6E44 / borne inférieurs",
+      "adjudication": "live one-token grammatical regression; Korean target lines568-570 already preserve the published correct reading"
+    }
+  ],
+  "authority_binding": "Use the preceding published canonical bytes at these two exact loci and the current live canonical tree everywhere else; do not propagate either regression into Korean.",
+  "authority_task_report": "sent to Codex task 01a01efd-1650-7940-8e57-ca2d77ab7bab with exact paths, lines, hashes and diffs",
+  "result": "PASS_WITH_TWO_DISCLOSED_BOUNDED_LIVE_SOURCE_REGRESSIONS"
+}

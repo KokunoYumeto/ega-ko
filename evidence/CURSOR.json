@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-26-r23",
-  "coverage": "EGA I through subsection10.14 and Corollary10.14.7 at source line3341 and separator3342, ending before subsection10.15",
-  "next": "source/ega1/ega1-10-fr.tex line3343 subsection10.15 Préschémas formels séparés",
-  "target": "source/c1s10.tex lines1-3283 / 157787 bytes / 69139CFF0E938AA1F5C8FD7BCBBBA31FA14847C89068BF6418E02C4F90CAF8B6",
-  "reserved_exact_doi": "10.5281/zenodo.22102982",
+  "version": "2026-08-26-r24",
+  "coverage": "EGA I complete through subsection10.15 at source line3516 EOF; canonical driver closure15/15",
+  "next": "freeze, publish and anonymously replay r24; then first canonical EGA II input",
+  "target": "source/c1s10.tex lines1-3453 / 166856 bytes / 1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
+  "reserved_exact_doi": "10.5281/zenodo.22103931",
   "current_public_checkpoint": "10.5281/zenodo.22102982",
-  "public_status": "r23 cumulative candidate is source-admitted and package-verified; the149-page file00 reader is selected as the front artifact; Zenodo draft replacement and GitHub bounded snapshot remain the next publication transactions; source/CUMULATIVE_INPUTS.json binds all15 reader inputs"
+  "public_status": "r24 complete-EGA-I candidate is source-admitted and build-verified; the150-page file00 reader is selected as the front artifact; source/evidence package freeze, Zenodo publication and GitHub bounded snapshot remain the next transactions; current immutable public checkpoint is r23"
 }

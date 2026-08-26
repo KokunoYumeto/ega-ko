@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
-  "version": "2026-08-26-r23",
+  "version": "2026-08-26-r24",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1319998,
-  "reader_sha256": "0F178A2D7184E0A90020A7CA050A545940DE2D8981F66FBAFBE4C813FC70C022",
-  "render_count": 8,
+  "reader_bytes": 1328403,
+  "reader_sha256": "86D62EF0A987DAF879807B54F292B0ACEEB9135EA1470524B782AE21B693C551",
+  "render_count": 9,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,145,146,147,148,149",
+  "pages": "1,2,6,145,146,147,148,149,150",
   "render_hashes": {
-    "page1": "69FF25D06D707D20DF5D58FE6551A840F50EDFD042FE3C280E543E5727C3AA60",
-    "page2": "DF33EB2163C6759689B4CB4DFA9A6D21324EBE9BEE3965D2CBE03A8A824223F9",
-    "page6": "D25D3D1929EEA2D94FC8A0EC203E01915BBDB4BB7228678FFBC789760DB44954",
-    "page145": "24FAB0BE628AEE2D48848A8384D067C82CC502D75EBEADEFD26E7792FA0184D0",
-    "page146": "91320BD7EE6E175B1AB7B79B66D736BA3F9CD69A323BA0F04052596B8189DB9F",
-    "page147": "F121501705D9471269E1B626E66702B068386F72C486C5171A11220732EE5323",
-    "page148": "0BE4593D7420F5AB1856321F52800068AE1151751E84AE2CB14606E7EDE67AC3",
-    "page149": "80BCA62DFAE2F0746D382423F57F6C73F08B630F0A35E40AE737D2EC674DEE37"
+    "page1": "5D5A28F1BBF9707F83AB1C0D50BC71805A0B8795B1CE4E793DF63A873B7366FB",
+    "page2": "9B70FC7C45D9205ADDF6D374683BB7CC80CE975E00CE6E001867C1721069E777",
+    "page6": "19C2134966198E5A87AF741A1B037ADFC5B28347B0CDCB2CB889ACB79496C1B2",
+    "page145": "FF93A6457F9D1402377EECD9EC5670704EF809CDBFE5962B5C2FD58B186F1251",
+    "page146": "A375D50B8F3522FE575DB417863E74A5E199540F71CD0F7924567BED8B73C30F",
+    "page147": "FA63403F26783A2D8BD9DC8BE039873106BEFDF3ED80F27C9EF234F8D5743186",
+    "page148": "36853C5A867700B0754F253687BA17597C9D7587BE467B99E814A95E85171AFB",
+    "page149": "7938BBA2EED1F1A8AC652958C573640BDD26360996285F7BF0AC9AFDE6E9B855",
+    "page150": "4D2AF21F2576680B8F604CF387AD5001C1D59C7BBD774437F8C2A9724E6FD950"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify the r23 complete-to-date cumulative-reader statement, scope through subsection10.14, exact DOI22102982, rights and non-endorsement; page6 verifies the cumulative table of contents; pages145-148 contain the complete new unit and its source-defect notes; page149 is the bibliography. Public and portable-A renders are pixel-exact. Direct inspection found no clipping, overlap, tofu, malformed formula, broken arrow or margin collision."
+  "disposition": "Pages1-2 verify the EGA I completion statement, exact DOI22103931, stable concept/source links, bounded rights and non-endorsement; page6 verifies a complete table of contents through10.15; pages145-146 retain the prior transition; pages147-149 contain complete subsection10.15 with no clipping, overlap, tofu, malformed formula, broken arrow or margin collision; page150 is the bibliography. A stale table-of-contents running header found during r24 QA was removed from the body before the final build. Public and clean portable-A renders are pixel-exact on all nine inspected pages."
 }

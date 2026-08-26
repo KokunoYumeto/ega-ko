@@ -1,0 +1,16 @@
+{
+  "schema": "ag-ko-portable-build-control-v1",
+  "version": "2026-08-26-r24",
+  "source_archive": "01_EGA_ko_EDITABLE_SOURCES.zip 233851 bytes / 5CB218D72ECE92CB43BCAE12C90B71C632D9D86DA00138E7FF2540C8C70E6EC7; 25 entries, 23 files, 2 directories, 913704 uncompressed file bytes; deterministic A/B ZIP identity and member replay PASS",
+  "public_reader": "150 pages / 1328403 bytes / 86D62EF0A987DAF879807B54F292B0ACEEB9135EA1470524B782AE21B693C551",
+  "working_reader": "150 pages / 1328394 bytes / 8D0CD160E0592953F679EBAF0358343C4C24DEC6B3BD75396C991489A230CA60",
+  "portable_A": "150 pages / 1328410 bytes / 6EAADF17D31FCFF1E3D97422B77393746A7B7E88701AE6C303EEA8ED186A3304",
+  "portable_B": "150 pages / 1328406 bytes / 28C4B57F43A85982866BE9B1FBBDDB5FB5E0E415FB07EF017DBE0062EC4D540B",
+  "build_cycles": "public, working, portable-A and portable-B each PASS two successive fixed-metadata three-pass XeLaTeX cycles; critical diagnostics0",
+  "poppler_extraction": "public, working, portable-A and portable-B exact-identical: 778811 bytes / 51E529482F9B0D27E3569174E7F52C47F016B6CECE2F2119329FAB48D81124AB",
+  "pypdf_extraction": "public, working, portable-A and portable-B exact-identical: 643846 bytes / 0C244BFC20E01FC1336CD4A009589508D147CFF2A15486F7C7ECFAB9C85A6988",
+  "text": "140171 Hangul syllables, zero U+FFFD, exact DOI22103931 once and prior DOI22102982 zero in each extraction",
+  "visual_replay": "public and portable-A pages1,2,6,145,146,147,148,149,150 at200dpi are pixel-exact; direct inspection PASS",
+  "source_regression_control": "R24_LIVE_SOURCE_REGRESSIONS.json; two bounded live French one-token regressions are disclosed and not propagated",
+  "result": "PASS"
+}

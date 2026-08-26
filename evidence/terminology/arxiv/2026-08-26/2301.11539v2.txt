@@ -1,0 +1,920 @@
+                                                             RATIONAL CURVES IN A QUADRIC THREEFOLD
+                                                                  VIA AN SL(2, C)-REPRESENTATION
+
+                                                              KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+
+                                                 A BSTRACT. In this paper, we regard the smooth quadric threefold Q3 as Lagrangian Grass-
+                                                 mannian and search for fixed rational curves of low degree in Q3 with respect to a torus
+arXiv:2301.11539v2 [math.AG] 6 Jul 2025
+
+
+
+
+                                                 action, which is the maximal subgroup of the special linear group SL(2, C). Most of them
+                                                 are confirmations of very well-known facts. If the degree of a rational curve is 3, it is con-
+                                                 firmed using the Lagrangian’s geometric properties that the moduli space of twisted cubic
+                                                 curves in Q3 has a specific projective bundle structure. From this, we can immediately ob-
+                                                 tain the cohomology ring of the moduli space.
+
+
+
+
+                                                                                      1. I NTRODUCTION
+
+                                          1.1. Motivation and results. By definition, a Fano threefold X is a smooth projective va-
+                                          riety whose anti-canonical divisor −KX is ample. Such threefolds X with Picard number
+                                          one and second Betti number b2 (X) = 1 are classified to be one of the following:
+
+                                                                               P3 ,    Q3 ,   V5 ,   and    V22 .
+
+                                          It is well known that the first three P3 , Q3 and V5 are rigid but the last one V22 forms a
+                                          6-dimensional family; see the excellent paper [Don08, Section 5.3]. All of these varieties
+                                          have the same cohomology groups as P3 does. Furthermore, the SL(2, C)-orbit descrip-
+                                          tions of these Fano threefolds are well studied in the papers [MU83, AF93].
+                                             The reason for writing this paper is to fill in the missing list for the space of ratio-
+                                          nal curves. The moduli space of rational curves of degree 3 or less in the Fano variety
+                                          has been studied very diversely ([MU83, PS85, EPS87, Ili94, Sch01, VX02, KS04, CK11,
+                                          CHK12, San14]). In the case of P3 , starting from the analysis of the Hilbert scheme [PS85],
+                                          it served as a key example of enumerative geometry in the 80s and 90s ([ES96]) and cre-
+                                          ated many variant spaces related with birational geometry ([VX02, EPS87]). In the case of
+                                          quintic del Pezzo threefold, the description of the space of rational curves was possible
+                                          from the Grassmannian geometry of lines ([Ili94, San14, CHL18]). Lastly, in the case of
+                                          Mukai variety, its construction is very fantastic ([MU83, Sch01]), and it plays a very deci-
+                                          sive role in relation to the existence of the Kähler-Einstein metric on Fano manifold. For
+                                          specific conclusions, refer to the papers [Don08] and [CS18]. In this paper, we examine
+
+                                            2020 Mathematics Subject Classification. 14E05, 14E15, 14M15.
+                                            Key words and phrases. Rational curves, Torus invariant curve, Lagrangian Grassmannian, Projective
+                                          bundle.
+
+                                                                                                1
+2                    KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+the moduli space of twisted cubic curves in a quadric threefold. The authors think that a
+description of its moduli space is just not written down in the literature because it is well-
+known and easy to experts. However, it seems necessary to record global geometry and
+cohomological ring in order to serve as concrete examples required by enumerative ge-
+ometry ([Cao19a, CMT18, CLW21]). Now let us introduce the main contents of this paper.
+Let X be a projective variety with a fixed embedding X ⊂ Pr .
+
+     • Let Sd (X) be the moduli space of stable sheaves F on X with Hilbert polynomial
+       χ(F (m)) = dm + 1.
+     • Let Hd (X) be the Hilbert scheme of curves C in X with χ(OC (m)) = dm + 1.
+
+In this paper, we focus on the case that X = Q3 is a quadric threefold. Q3 is homogeneous
+and thus one can apply the main results of [CK11, CHK12]. Specially, Sd (Q3 ) is smooth
+for d ≤ 3. Also the quadric threefold Q3 does not contain any plane and so S3 (Q3 ) is
+isomorphic to H3 (Q3 ). We find the torus invariant rational curves of the lower degrees
+and extend it into the cubic curve case. It turns out that the torus fixed loci are isolated
+until degree 2, but not in degree 3.
+
+Proposition 1.1 (Proposition 3.11 and Proposition 3.15). The torus invariant cubic curves in
+Q3 consist of isolated ones (32) and two connected components (isomorphic to P1 ).
+
+  Through the computation of torus invariant cubic curves, one realizes that the cubic
+curves in the hyperplane section of Q3 need to be ordered depending on its linear class.
+By using the universal family of the Fano scheme of lines in Q3 , we obtain a global de-
+scription of S3 (Q3 ) as follows.
+
+Theorem 1.2 (Proposition 4.4). The moduli space S3 (Q3 ) of stable sheaves on Q3 is isomorphic
+to a projectivized rank 6 bundle over Gr(2, 4).
+
+   The key point of the proof of Theorem 1.2 is to give the algebraic meaning of the ruling
+line of the hyperplane section of Q3 . From Theorem 1.2, one can easily obtain the coho-
+mology ring of S3 (Q3 ) (Corollary 4.6).
+   The method of the proof of Theorem 1.2 is a very natural approach to study the space of
+curves in Fano threefolds. For example, the moduli space of rational quartic curves in Q3
+is birational to the space of cubic curves in P3 by using Gauss map or tangent developable
+surfaces ([FGP19, the proof of Proposition 4.17]). The first named author is willing to
+study of birational relations among these moduli spaces in the following paper.
+
+1.2. Organization of the paper. In Section 2, we collect the well-known facts for finding
+torus invariant curves. In Section 3, we apply the Białynicki-Birula theorem to the moduli
+space Sd (Q3 ) for d ≤ 3. Lastly, in Section 4, we describe the moduli space S3 (Q3 ) as a
+projective bundle.
+                           RATIONAL CURVES VIA REPRESENTATION                             3
+
+Notations and conventions.
+     • Let us denote by Gr(k, n) the Grassmannian variety parameterizing k-dimensional
+       subspaces in a fixed vector space V with dim V = n.
+     • When no confusion can arise, we do not distinguish the moduli point [x] ∈ M
+       from the object x parameterized by [x].
+                                                     ∗
+     • The set of fixed points of X is denoted by X C under the C∗ -action.
+
+Acknowledgements. The authors gratefully acknowledge the many helpful suggestions
+and comments of Jeong-Seop Kim, Yeongrak Kim, Wanseok Lee, Kyeong-Dong Park,
+Joonyeong Won during the preparation of the paper. A part of the paper has been initiated
+in the workshop (held in Jinju, Korea, Feb. 2022) aimed for finding research topics through
+arXiv preprint survey. K. Chung was supported by the National Research Foundation of
+Korea (NRF-2021R1I1A3045360, NRF-2022M3C1C8094326 and NRF-2022M3H3A1098237).
+S. Huh was supported by the National Research Foundation of Korea (NRF) grant funded
+by the Korea government (MSIT) (No. RS-2023-00208874). S.-B. Yoo was supported by the
+National Research Foundation of Korea(NRF) grant funded by the Korea government
+(MSIT) (No. 2021R1F1A1062436).
+
+                                     2. P RELIMINARY
+
+  In this section, we introduce a general theory about a geometric structure of a smooth
+projective variety with a torus action. Also we collect the well-known facts about the
+multiple structure on Cohen-Macaulay curves.
+
+2.1. Białynicki-Birula (BB) Theorem. Let X be a smooth projective variety with a C∗ -
+action. Then the C∗ -fixed locus of X decomposes into
+                                          ∗
+                                             G
+                                        XC =    Yi
+                                                 i
+
+such that each component Yi is connected. Note that Yi is smooth ([Ive72]). For each Yi ,
+the C∗ -action on the tangent bundle T X|Yi provides a decomposition as
+                                  T X|Yi = T + ⊕ T 0 ⊕ T −
+where T + , T 0 and T − are the subbundles of T X|Yi such that the group C∗ acts with posi-
+tive, zero and negative weights respectively. Under the local linearization, T 0 ∼
+                                                                                 = T Yi and
+                          T + ⊕ T − = NYi /X = N + (Yi ) ⊕ N − (Yi )
+is the decomposition of the normal bundle NYi /X of Yi in X.
+  A fundamental result in a theory of C∗ -action on X has been provided by A. Białynicki-
+Birula. Let
+                n                       o                  n                     o
+     X + (Yi ) = x ∈ X | lim t · x ∈ Yi    and X − (Yi ) = x ∈ X | lim t · x ∈ Yi .
+                          t→0                                          t→∞
+4                       KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+Theorem 2.1 ([Bir73]). Under the above assumptions and notations,
+  (1) X = X ± (Yi );
+          F
+                i
+      (2) for each connected component Yi , there are C∗ -equivariant isomorphism X ± (Yi ) ∼
+                                                                                            = N ± (Yi )
+          over Yi where N ± (Yi ) → Yi is a Zariski locally trivial fiberation with the affine space
+             ±
+          Cµ (Yi ) of dimension µ± (Yi ) := rank N ± (Yi ).
+
+     Throughout this article, we denote a smooth quadric threefold simply by Q3 = Q.
+
+Proposition 2.2. The moduli space Sd (Q)(∼
+                                         = Hd (Q)) is smooth for d ≤ 3.
+
+Proof. The case d = 1 is easily verified by the normal bundle sequence of L ⊂ Q ⊂ P4 .
+The cases d = 2 and d = 3 have been proved in [CHK12, Theorem 3.7 and Proposition
+4.13].                                                                             □
+
+2.2. Non-reduced cubic curves in a quadric threefold. Note that Q is defined by a qua-
+dratic polynomial and does not contain any plane. Hence each curve C with Hilbert poly-
+nomial χ(OC (m)) = 3m + 1 is Cohen-Macaulay (CM). Let us start by recalling the list of
+the non-reduced CM curve C in a quadric threefold Q; see [EH82] and [Chu22, Lemma
+2.1]. Let pa (C) := dim H1 (C, OC ) be the arithmetic genus of the curve C.
+    (i) (Triple thickness) The structure sheaf OC with [C] = 3[L] fits into the non-split ex-
+        tension
+                           0 → OL (−1) ⊕ OL (−1) → OC → OL → 0.
+       Moreover, such C’s are parameterized by the GIT-quotient:
+(1)        P(Ext1Q (OL , OL (−1) ⊕ OL (−1)))s //SL(2) ∼
+                                                      = Gr(2, dimExt1Q (OL , OL (−1))).
+    (ii) (Triple line lying on a quadric cone) The structure sheaf OC with [C] = 3[L] fits into
+         the non-split extension
+                                  0 → OL (−1) → OC → OL2 → 0,
+      where pa (L2 ) = 0.
+(iii) (Pair of lines) The structure sheaf OC with [C] = 2[L] + [L′ ] fits into the non-split
+      extension
+                              0 → OL (−1) → OC → OL∪L′ → 0,
+       where pa (L2 ) = 0 or −1.
+
+Remark 2.3. More generally, let G be a stable sheaf on a projective space Pn with χ(G(m)) =
+(d − 1)m + 1 and L be a line. Then every sheaf F fitting into the non-split short exact se-
+quence
+                               0 → OL (−1) → F → G → 0
+is stable; see [CCM14, Lemma 4.7].
+                               RATIONAL CURVES VIA REPRESENTATION                                      5
+
+2.3. Deformation theory. We address an exact sequence which we will use later.
+                         i
+Lemma 2.4. Let Y ,→ X be a smooth, closed subvariety of the smooth variety X. If F and
+G ∈ Coh(Y ), then there is an exact sequence
+             0 → Ext1Y (F, G) → Ext1X (i∗ F, i∗ G) → HomY (F, G ⊗ NY /X )
+(2)
+                                                       → Ext2Y (F, G) → Ext2X (i∗ F, i∗ G).
+
+Proof. This is the base change spectral sequence in [MCC00, Theorem 12.1].                            □
+
+            3. A PPLICATION OF THE BB- THEOREM ON A QUADRIC THREEFOLD
+
+  In this section we find the fixed rational curves and its weights in Q under the C∗ -action
+which inherits from the SL2 := SL(2, C)-representation. We will use the notation sl2 for
+the associated Lie algebra to SL2 . Let us regard the quadric threefold Q as a hyperplane
+section of Gr(2, 4). The C∗ -actions on Q and curves in there come from an action on its
+related vector space.
+  Let Vd = Symd (C2 ) with the SL2 -action induced from the left multiplication of SL2 on
+C2 . Then the maximal torus {diag(t−1 , t) | t ∈ C∗ } ∼
+                                                      = C∗ acts on the basis vectors
+                 vd = xd , vd−2 = xd−1 y, . . . , v−1 = xy 2−d , v−d = y d
+               
+
+with weights (d, d − 2, . . . , 2 − d, −d). The infinitesimal sl2 -action on Vd is given by
+                               e = x∂y ,     f = y∂x ,     h = x∂x − y∂y
+for the standard basis ⟨e, f, h⟩ for sl2 . Indeed, we have the following equations for 0 ≤ i ≤
+d:                                
+                                   e·vd−2i = ivd−2(i−1) ,
+                                  
+                                  
+                                      f ·vd−2i = (d − i)vd−2(i+1) ,
+                                  
+                                  
+                                   h·v        = (d − 2i)v
+                                            d−2i              . d−2i
+
+Now fix d = 3 and set V = V3 . Setting va,b := va∗ ∧ vb∗ ∈ ∧2 V ∗ and W := ∧2 V , we get the
+Plücker coordinates for i : Gr(2, V ) ,→ P(W )
+                                v3,1 , v3,−1 , v3,−3 , v1,−1 , v1,−3 , v−1,−3
+with weights (4, 2, 0, 0, −2, −4) and the defining equation of Gr(2, V ) is given by the Klein
+relation:
+(3)                           v3,1 v−1,−3 − v3,−1 v1,−3 + v3,−3 v1,−1 = 0.
+Note that for g ∈ sl2 , g(vi,j ) = (g·vi∗ ) ∧ vj∗ + vi∗ ∧ (g·vj∗ ) for i ̸= j. For example, g = e acts on
+the basis of W by
+           e·v3,1 = 0,                e·v3,−1 = 2v3,1 ,                          e·v3,−3 = 3v3,−1
+          e·v1,−1 = v3,−1 ,           e·v1,−3 = v3,−3 + 3v1,−1 ,                e·v−1,−3 = 2v1,−3 .
+6                         KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+By the action of h ∈ sl2 , each vi is an eigenvector of V so that we get a decomposition
+
+                                  V = V (3) ⊕ V (1) ⊕ V (−1) ⊕ V (−3)
+
+such that V (i) = ⟨vi ⟩ for each i ∈ {3, 1, −1, −3}. Similarly we get a decomposition for W :
+
+                           W = W (4) ⊕ W (2) ⊕ W (0) ⊕ W (−2) ⊕ W (−4),
+                    ∗              ∗                 ∗       ∗                     ∗
+where W (4) = ⟨v3,1   ⟩, W (2) = ⟨v3,−1 ⟩, W (0) = ⟨v3,−3 , v1,−1 ⟩ and W (−2) = ⟨v1,−3 ⟩ and
+           ∗
+W (−4) = ⟨v−1,−3 ⟩.
+
+Remark 3.1. Let H = P(W1 ) ∼    = P4 be the SL2 -invariant hyperplane of P(W ) for a five-
+dimensional subspace W1 ⊂ W . Then it must be defined by an equation av3,−3 + bv1,−1 = 0
+for some a, b ∈ C. In particular, we have
+
+                                 e·(av3,−3 + bv1,−1 ) = (3a + b)v3,−1 = 0.
+
+Thus H is defined by an linear equation v3,−3 − 3v1,−1 = 0.
+
+  Unless otherwise stated, let us define the smooth quadric threefold Q by Q = Gr(2, V )∩
+H for the hyperplane H in Remark 3.1.
+
+                                                                     ∗
+3.1. Fixed points and lines in Q. The fixed points QC of Q are the following four points:
+                        p3,1 = [1 : 0 : 0 : 0 : 0 : 0],   p3,−1 = [0 : 1 : 0 : 0 : 0 : 0],
+(4)
+                      p1,−3 = [0 : 0 : 0 : 0 : 1 : 0],    p−1,−3 = [0 : 0 : 0 : 0 : 0 : 1].
+                                     ∗                                              ∗
+Note that the fixed points H C consist of 5 points, including QC . From the defining equa-
+tion of H, the fifth fixed point must be
+
+(5)                                       q0 = [0 : 0 : 3 : 1 : 0 : 0].
+
+Therefore one can get a decomposition W = W1 ⊕ W1⊥ so that
+
+                                  P(W1 ) = ⟨p3,1 , p3,−1 , p1,−3 , p−1,−3 , q0 ⟩,
+
+where ⟨S⟩ denotes the linear span for a subset S ⊂ P(W ).
+
+Lemma 3.2. There exist exactly four lines on Q, fixed by the action of C∗ :
+
+      (a) p3,1 p3,−1 = [s : t : 0 : 0 : 0 : 0],
+      (b) p3,1 p1,−3 = [s : 0 : 0 : 0 : t : 0],
+      (c) p3,−1 p−1,−3 = [0 : s : 0 : 0 : 0 : t], and
+      (d) p1,−3 p−1,−3 = [0 : 0 : 0 : 0 : s : t].
+
+Proof. Let L(∼
+             = P1 ) be a line in Q fixed by the C∗ -action. Then one can regard that the torus
+C∗ acts on L. But χ(L) = 2 and thus two points on L are fixed. So we obtain the four lines
+as listed.                                                                                  □
+                                 RATIONAL CURVES VIA REPRESENTATION                              7
+
+       Type          Weights of        Weights of Number of negative weights of
+                    T[L] Gr(2, W1 )    H0 (OL (2))         T[L] S1 (Q)
+         (a)    −8, −6, −6, −4, −4, −2 −8, −6, −4               3
+         (b)     −8, −4, −2, −2, 2, 4  −8, −2, 4                2
+         (c)       −4, −2, 2, 2, 4, 8   −4, 2, 8                1
+         (d)         2, 4, 4, 6, 6, 8    4, 6, 8                0
+
+                                    TABLE 1. Weights of T[L] S1 (Q)
+
+  From the inclusion L ⊂ Q ⊂ P(W1 ) and Lemma 2.4, we have an exact sequence:
+(6)                        0 → T[L] S1 (Q) → T[L] Gr(2, W1 ) → H0 (OL (2)) → 0
+for each line L ⊂ Q. The second term to the last in (2) is zero since S1 (Q) is smooth with
+dim S1 (Q) = 3.
+
+Remark 3.3 (Table 1). Let us denote δ(L) by the number of negative weights of the tangent
+space of the moduli space S1 (Q) at the closed point [L]. One can compute the number δ(L)
+for each case in Lemma 3.2.
+(a) The weights of the fixed line L = P(C2 ) are (4, 2). From the isomorphism
+                      T[L] Gr(2, W1 ) ∼
+                                      = Hom(C2 , W1 /C2 ) = (C2 )∨ ⊗ (W1 /C2 )
+we get that the weight of T[L] Gr(2, W1 ) is given by (−8, −6, −6, −4, −4, −2). Since H0 (OL (2)) ∼
+                                                                                                  =
+     2  2 ∨
+Sym (C ) has the weight (−8, −6, −4), the weight of T[L] S1 (Q) is (−6, −4, −2). In partic-
+ular, we get δ(L) = 3.
+(b) Similarly as in (a), we get that the weight of the fixed line L = P(C2 ) is (4, −2) and so
+the weight of T[L] S1 (Q) is (−4, −2, 2) and so δ(L) = 2.
+(c) and (d): Again as in the above, we get δ(L) = 1 (resp. 0) for the case (c) (resp. (d)).
+
+                      PX
+                   2 dim
+  Let P (X, t) =            hi (X, C)ti be the Poincaré polynomial of a smooth projective variety
+                     i=0
+X.
+
+Corollary 3.4. The Poincaré polynomial of S1 (Q) is
+                                     P (S1 (Q), t) = 1 + t2 + t4 + t6 .
+
+Proof. The proof is straightforward by Theorem 2.1 and the result of Table 1.                   □
+
+3.2. Fixed conics in Q and its weights.
+
+Lemma 3.5. There exist exactly 10 conics on Q, fixed under the action of C∗ . Furthermore, the
+defining equation of fixed conics are given by
+ (1-a) ⟨v1,−3 , v−1,−3 , v3,−3 − 3v1,−1 , v3,−3 v1,−1 ⟩,
+8                          KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+
+
+
+                                        F IGURE 1. Fixed conics in Q
+
+
+    (1-b) ⟨v3,−1 , v−1,−3 , v3,−3 − 3v1,−1 , v3,−3 v1,−1 ⟩,
+    (1-c) ⟨v3,1 , v1,−3 , v3,−3 − 3v1,−1 , v3,−3 v1,−1 ⟩,
+    (1-d) ⟨v3,1 , v3,−1 , v3,−3 − 3v1,−1 , v3,−3 v1,−1 ⟩,
+    (2-a) ⟨v−1,−3 , v3,−3 , v1,−1 , v3,−1 v1,−3 ⟩,
+    (2-b) ⟨v1,−3 , v3,−3 , v1,−1 , v3,1 v−1,−3 ⟩,
+    (2-c) ⟨v3,−1 , v3,−3 , v1,−1 , v3,1 v−1,−3 ⟩,
+    (2-d) ⟨v3,1 , v3,−3 , v1,−1 , v3,−1 v1,−3 ⟩,
+    (3-a) ⟨v3,1 , v−1,−3 , v3,−3 − 3v1,−1 , v3,−1 v1,−3 − v3,−3 v1,−1 ⟩, and
+    (3-b) ⟨v3,−1 , v1,−3 , v3,−3 − 3v1,−1 , v3,1 v−1,−3 + v3,−3 v1,−1 ⟩.
+
+Proof. Let [C] ∈ S2 (Q) be a fixed conic. Then the linear span ⟨C⟩ ∼   = P2 is also invariant
+under C∗ -action. The C∗ -fixed planes are generated by the point q0 in equation (5) and two
+                      ∗                                 ∗
+different points in QC , or three different points in QC . From these planes, one obtains the
+list.                                                                                      □
+
+   (1-a), (1-b), (1-c) and (1-d) of the list of Lemma 3.5 are the unique double lines supported
+on (a), (b), (c) and (d) respectively in Lemma 3.2. Also (2-a), (2-b), (2-c) and (2-d) in Lemma
+3.5 are pairs of two lines supported on the fixed lines in Lemma 3.2. Lastly, (3-a) (resp. (3-
+b)) in Lemma 3.5 are smooth conics passing through the points p3,−1 and p1,−3 (resp. p3,1
+and p−1,−3 ). As combining these ones, we obtain its configuration (Figure 1).
+  Note that H2 (W1 ) is isomorphic to P(Sym2 (U ∨ )) where U is the universal subbundle of
+Gr(3, W1 ). Hence one can apply Lemma 2.4 to get an exact sequence
+
+(7)                      0 → T[C] S2 (Q) → T[C] P(Sym2 (U ∨ )) → H0 (OC (2)) → 0
+
+for any conic C ⊂ Q. In equation (7), the last term is zero since S2 (Q) is smooth and
+dim S2 (Q) = 6.
+                             RATIONAL CURVES VIA REPRESENTATION                                   9
+
+      Type              Weights of              Weights of Number of negative weights of
+                                 2   ∨
+                     T[C] P(Sym (U ))           H0 (OC (2))         T[C] S2 (Q)
+      (1-a)   -8,-6,-6,-4,-4,-2,-8,-6,-4,-4,-2 -8,-6,-4,-4,-2            6
+      (1-b)     -8,-4,-2,-2,2,4,-8,-4,-2,2,4    -8,-4,-2,2,4             4
+      (1-c)       -4,-2,2,2,4,8,-4,-2,2,4,8     -4,-2,2,4,8              2
+      (1-d)         2,4,4,6,6,8,2,4,4,6,8         2,4,4,6,8              0
+      (2-a)    -8,-6,-4,-2,-2,2,-8,-6,-4,-2,4 -8,-6,-4,-2,4              5
+      (2-b)     -6,-4,-4,-2,2,4,-8,-6,-4,2,8    -8,-6,-4,2,8             4
+      (2-c)       -4,-2,2,4,4,6,-8,-2,4,6,8     -8,-2,4,6,8              2
+      (2-d)        -2,2,2,4,6,8,-4,2,4,6,8       -4,2,4,6,8              1
+      (3-a)      -6,-4,-2,2,4,6,-4,-2,0,2,4     -4,-2,0,2,4              3
+      (3-b)      -6,-2,-2,2,2,6,-8,-4,0,4,8     -8,-4,0,4,8              3
+
+                                TABLE 2. Weights of T[C] S2 (Q)
+
+Remark 3.6. The case (3-a) of Lemma 3.5: UC = ⟨v3,−1 , 3v3,−3 + v1,−1 , v1,−3 ⟩ has weights
+(2, 0, −2) and
+(8)                 T[C] P(Sym2 (U ∨ )) = Hom(UC , W1 /UC ) ⊕ (Sym2 (UC∨ )/C).
+The first (resp. second) term in equation (8) has weights (−6, −4, −2, 2, 4, 6) (resp. (−4, −2, 0, 2, 4)).
+On the other hand, from the short exact sequence 0 → OP(UC ) → OP(UC ) (2) → OC (2) → 0,
+we have an exact sequence
+                     0 → H0 (OP(UC ) ) → H0 (OP(UC ) (2)) → H0 (OC (2)) → 0.
+Since H0 (OP(UC ) (2)) = Sym2 H0 (UC∗ ), H0 (OC (2)) has weights (−4, −2, 0, 2, 4). Therefore T[C] S2 (Q)
+has weights (−6, −4, −2, 2, 4, 6). The other cases are presented in Table 2.
+
+Corollary 3.7. The Poincaré polynomial of S2 (Q) is
+                       P (S2 (Q), t) = 1 + t2 + 2t4 + 2t6 + 2t8 + t10 + t12 .
+
+Proof. The proof is straightforward by Theorem 2.1 and the result of Table 2.                    □
+
+3.3. Fixed components of S3 (Q): Degenerated case. In this subsection, the fixed degen-
+erate cubic curve is found using the fixed lines and conics (Lemma 3.2 and Lemma 3.5).
+Furthermore, we also find fixed smooth cubics component by analyzing cubic curves ly-
+ing in the quadric cone (Proposition 3.15).
+
+Lemma 3.8. Every Cohen-Macaulay curve C ∈ S3 (Q) with [C] = 3[L] is a triple line lying on a
+quadric cone (Subsection 2.2).
+
+Proof. Since dimExt1Q (OL , OL (−1)) = dimH0 (NL|Q (−1)) = 1 for any line L in Q by Lemma
+2.4, the GIT-quotient in equation (1) is an empty set and so the assertion follows.     □
+10                    KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+Lemma 3.9. Let L be a C∗ -invariant line and L2 be the unique planar double line in Q supporting
+L. Then we have
+                                dim Ext1Q (OL2 , OL (−1)) = 2.
+Furthermore, the induced action on the extension space is non-trivial.
+
+Proof. The dimension of the extension space can be easily checked by using Macaulay2
+([M2]). By taking Ext•Q (−, OL (−1)) into the short exact sequence 0 → OL (−1) → OL2 →
+OL → 0, we have a long exact sequence
+                                                                  ∼
+        0∼
+                                                                  =
+         = HomQ (OL2 , OL (−1)) → HomQ (OL (−1), OL (−1)) → Ext1Q (OL , OL (−1))
+(9)
+          → Ext1Q (OL2 , OL (−1)) → Ext1Q (OL (−1), OL (−1)) → · · · .
+The equality of the first term in (9) holds due to the stability. Also the second isomor-
+phism in (9) holds by the dimension counting. But the last term in (9) is isomorphic to
+the tangent space T[L] S1 (Q). By Table 1, there does not exist the reduplication in the space
+Ext1Q (OL (−1), OL (−1)) and thus the induced action is non-trivial.                        □
+
+Lemma 3.10. Let C = L1 ∪ L2 be a fixed conic in Q. Then we have
+                                 dim Ext1Q (OC , OL2 (−1)) = 2.
+Furthermore, the induced action on the extension space is non-trivial.
+
+Proof. One can prove the claim by the same method in the proof of Lemma 3.9.                   □
+
+   From this discussion, one can present all of the C∗ -invariant degenerated cubic curves
+in S3 (Q) as follows.
+
+Proposition 3.11. The number of the C∗ -invariant, degenerated cubic curves in S3 (Q) is 36.
+
+Proof. We read the invariant cubics from Figure 1. The reduced cubic cases are a tree of
+three lines or a conic attached a line. From Figure 1, one can read such cases are 4+23 = 12.
+When the support of cubic is a pair of lines, then our choice is 4 × 2 = 8. For each case,
+by Lemma 3.10, there are two cases. Hence the possible case is 16. Lastly, the support of
+triple line lying on a quadric cone has 4 cases and by Lemma 3.9, we have two cases for
+each of them. After of all, we have 12 + 16 + 8 = 36.                                      □
+
+3.4. Fixed components of S3 (Q): Smooth case. To find the smooth invariant cubic curves,
+we consider the enveloping map
+                                     ξ : S3 (Q) → Gr(4, W1 )
+defined by [C] 7→ ⟨C⟩ ∼= P3 ⊂ P(W1 ) = H. As did in the case of S2 (Q), we can use the
+                    ∗
+five fixed points QC ∪ {q0 } to obtain the C∗ -fixed points in Gr(4, W1 ). The result is the
+second row of the Table 3. Let us find the fixed twisted cubics in ξ −1 (H0 ) ⊂ S3 (Q) for
+a C∗ -invariant element [H0 ] ∈ Gr(4, W1 ). That is, we seek the C∗ -invariant cubics in the
+                               RATIONAL CURVES VIA REPRESENTATION                                    11
+
+           (i)                 (ii)          (iii)         (iv)          (v)
+    v3,−3 = v1,−1 = 0   v−1,−3 = H = 0 v1,−3 = H = 0 v3,−1 = H = 0 v3,1 = H = 0
+ Smooth quadric surface                Quadric cone
+
+                              TABLE 3. Fixed hyperplane section.
+
+quadric surface S0 := Q ∩ H0 . Since the cases (ii) and (iii) are symmetric to (iv) and (v) in
+Table 3, we treat the first two cases only.
+
+
+  • Case (i) in the Table 3
+
+Proposition 3.12. Under the notations in the above, the C∗ -fixed cubics with S0 smooth, are
+always reducible.
+
+Proof. We fall into the case (i) of Table 3, in which we can let
+                                     [v3,1 : v3,−1 : v1,−3 : v−1,−3 ]
+be the homogenous coordinates of P3 . Then the smooth quadric surface S0 ⊂ P3 is defined
+by v3,1 v−1,−3 − v3,−1 v1,−3 = 0 induced from the Klein relation of Gr(2, V ). Set
+                   P1 × P1 → S0 ⊂ P3 ,       [s : t] × [v : w] 7→ [sv : sw : tv : tw]
+be the C∗ -equivariant map where C∗ acts on P1 ×P1 diagonally with weights (1, −1, 3, −3).
+Then we get S3 (S0 ) ∼ = |OS0 (1, 2)| ⊔ |OS0 (2, 1)|. The first component of the latter space is
+isomorphic to the projective space PH0 (OP1 (1) ⊠ OP1 (2)), and by the Künneth formula we
+get
+            H0 (OP1 (1) ⊠ OP1 (2)) ∼
+                                   = H0 (OP1 (1)) ⊗ H0 (OP1 (2)) = Cs,t ⊗ Sym2 Cv,w .
+Hence the weights for |OS0 (1, 2)| are (±7, ±5, ±1) and thus the fixed points are coordinate
+points; we get a similar description for the second component.
+  On the other hand, let {sv 2 , svw, sw2 , tv 2 , tvw, tw2 } be a basis for H0 (OS0 (1, 2)) and its
+dual basis by {h0 , h1 , · · · , h5 }. Then each element in the system |OS0 (1, 2)| is written as
+                    F := h0 sv 2 + h1 svw + h2 sw2 + h3 tv 2 + h4 tvw + h5 tw2 .
+Using the homogenous coordinates of P3
+                           v3,1 = sv, v3,−1 = sw, v1−3 = tv, v−1,−3 = tw,
+we can write
+     sF = h0 (sv)2 + h1 s2 vw + h2 (sw)2 + h3 (sv)(tv) + h4 stvw + h5 (sw)(tw)
+               2                         2
+         = h0 v3,1 + h1 v3,1 v3,−1 + h2 v3,−1 + h3 v3,1 v1−3 + h4 v3,−1 v1−3 + h5 v3,−1 v−1,−3 ;
+      tF = h0 (sv)(tv) + h1 tsvw + h2 (sw)(tw) + h3 (tv)2 + h4 t2 vw + h5 (tw)2
+                                                                2                          2
+         = h0 v3,1 v1−3 + h1 v3,−1 v1−3 + h2 v3,−1 v−1,−3 + h3 v1−3 + h4 v1−3 v−1,−3 + h5 v−1,−3 .
+12                      KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+Thus the defining equation of a cubic curve in S0 is given by ⟨sF, tF ⟩. In particular, one
+can read that C∗ -fixed cubics are not irreducible.                                      □
+
+     • Case (ii) and (iii) in the Table 3
+   In these cases, the quadric surface S0 is singular. By taking the C∗ -orbit of the point
+[1 : a : 3 : 1 : 3a−1 : 0] with a ̸= 0, there is one-parameter family of twisted cubics
+
+          Ca := [u3 : au2 v : 3uv 2 : uv 2 : 3a−1 v 3 : 0] × (a) | [u : v] ∈ P1 , a ∈ C∗ ⊂ P5 × C∗a
+                  
+(10)
+
+parameterized by a ∈ C∗a . Clearly, the family in (10) is invariant under the C∗ -action. In
+                                                               ∗
+fact, such a family gives a connected component in S3 (Q)C . Note that C∗a is compactified
+as P1 ⊂ S3 (Q) by adding the two flat limits: A triple line lying on quadric cone and a conic
+attached a line.
+
+Example 3.13. One can easily see that the family Ca in equation (10) lies in the case (ii) (i.e.,
+S0 = Q ∩ {v−1,−3 = 0}) of Table 3. We compute the number of zero-weights of T[C] S3 (Q)
+at C := C |a=1 . Let us denote the number of zero-weights of the global section H0 (F ) of a
+locally free sheaf F by w0 (F ). Let f : P1 → Q ⊂ P(W1 ) ⊂ P(W ) be a morphism defined by
+
+                             [u : v] 7→ [u3 : u2 v : 3uv 2 : uv 2 : 3v 3 : 0].
+
+If we put the weights (1, −1) of the coordinate of the domain curve and shift the weights
+of the codomain by −1, then the map f is a C∗ -equivariant one. We compute w0 (f ∗ TQ ) of
+the space H0 (f ∗ TQ ) which is the first deformation space of the graph space Map(P1 , Q).
+Since the map f is an embedding, we have a short exact sequence
+
+(11)                           0 → f ∗ TQ → f ∗ TP4 → f ∗ NQ|P4 → 0.
+
+But we also have an exact sequence
+
+                       0 → f ∗ OP4 → f ∗ OP4 (1) ⊗ H0 (OP4 (1))∗ → f ∗ TP4 → 0
+
+by pulling back the Euler sequence along the map f . Therefore the number of zero-
+weights of f ∗ TP4 is w0 (f ∗ TP4 ) = 3. Also w0 (f ∗ NQ|P4 ) = w0 (OP1 (6)) = 1. By plugging
+into equation (11), we have w0 (f ∗ TQ ) = 2. Finally our space is the quotient space by
+SL2 = Aut(P1 ). Since w0 (TP1 ) = 1, the number of zero-weights of T[C] S3 (Q) is one.
+
+  We prove now that smooth cubic curves fixed by C∗ -action are only the given one
+in equation (10). Our strategy is to find all of the fixed curves in the resolved surface
+where the resolution map is C∗ -equivariant. Then one can find the fixed cubics in singular
+quadric S0 . The following contents before the end of this section are well studied in [Rei95,
+Section 2], [Hos90, Section 1] and [Cos06, Section 2]. The resolution of the quadric cone
+S0 at the cone point p is isomorphic to the Hirzebruch surface F2 := P(OP1 ⊕ OP1 (2)). Let
+C0 (resp. F ) be the canonical section class (resp. fiber class) in the divisor class Div(F2 ) =
+⟨C0 , F ⟩. Then S0 is given by the image of the complete linear system |C0 + 2F |(∼ = P3 ). Also
+                               RATIONAL CURVES VIA REPRESENTATION                                                 13
+
+the surface F2 embeds in the complete linear system |C0 + 3F |(∼
+                                                               = P5 ). That is, we have a
+commutative diagram:
+
+                                                        |C0 +3F |
+(12)                                      F2                                 / P5
+                                                            |C0 +2F |
+                                                                                     π
+                                                                        '        
+                                                                            S0 ⊂ P3 .
+
+Furthermore, the right vertical map π in (12) is a linear projection.
+
+Remark 3.14 (cf. [CPS19, Lemma 4.12]). Let [C] ∈ S3 (S0 ). Note that C is a CM-curve. Let
+p be the cone point of S0 . Let multp (C) = 1. Then by the projection formula, the strict
+transform C̃ of C along the map πF2 : F2 → S0 lies in the linear system [C̃] ∈ |C0 + 3F |.
+In fact, C̃ · (C0 + 2F ) = C · HP3 = 3 by the projection formula. Also, C̃ · C0 = 1. Hence
+C̃ = C0 + 3F . Let multp (C) > 1 and C̃ = πF−1    2
+                                                    (C) be the scheme theoretic inverse image of
+C along the map πF2 . Then [C̃] = [C0 ] + [C̃s ] where C̃s is the strict transform of C such that
+[C̃s ] = 3[F ]. Therefore C̃ lies in the linear system |C0 + 3F |.
+
+  We interpret F2 and S0 as scrolls to make all relevant maps of the diagram (12) a C∗ -
+equivariant one. By definition, the rational normal scroll S(p, q) is the join variety of the
+rational normal curves of degree p and q; here, we allow p or q to be zero. In our case,
+   = S(1, 3) and S0 ∼
+F2 ∼                = S(0, 2). Then it is well-known that the map π in (12) is a successive
+projection from a point on the ruling line and cubic curve. Let us present π in (12) as
+homogeneous coordinates. To do this, let us define S(1, 3) and S(0, 2) as the closure of the
+image of 4-dimensional complex torus (C∗ )4 as below.
+                                (t0 ,t1 ,u0 ,u1 )7→[t30 u0 :t20 t1 u0 :t0 t21 u0 :t31 u0 :t0 u1 :t1 u1 ]
+(13)                  (C∗ )4                                                                               / P5
+                                            (t0 ,t1 ,u0 ,u1 )7→[t30 u0 :t20 t1 u0 :t0 t21 u0 :t0 u1 ]
+
+                                                                                                              
+                                                                                                           , P3
+
+
+  Then the scroll S(1, 3) (resp. S(0, 2)) is defined by the maximal minors of the catalecticant
+matrix
+                             "                 #         "       #
+                               z0 z1 z2 z4                 z0 z1
+(14)                                              (resp.           ).
+                               z1 z2 z3 z5                 z1 z2
+
+Under this setting, the map π in (13) is
+
+                          π([z0 : z1 : z2 : z3 : z4 : z5 ]) = [z0 : z1 : z2 : z4 ].
+
+Now we are ready to state our main proposition.
+
+Proposition 3.15. In the case (ii) and (iii) (and thus (iv) and (v)) of Table 3, the fixed cubic curves
+are classified by the following.
+14                     KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+     (1) If S0 = Q ∩ {v−1,−3 = 0}, then the C∗ -fixed, irreducible cubic curve in a quadric cone S0
+         is defined by the family Ca in equation (10).
+     (2) If S0 = Q ∩ {v1,−3 = 0}, then every C∗ -fixed cubic curve in a quadric cone S0 is isolated
+         and degenerated one.
+
+                                                           2
+Proof. Case (1): Since S0 is defined by v3,−1 v1,−3 − 3v1,−1    = 0, we may assume that the
+weights of z0 , z1 , z2 and z4 are 2, 0, −2 and 4 (after rescaling the coordinate z1 ). If we let
+the weights z3 and z5 by −4 and 2 to be invariant of equations (14), then the map π is a C∗ -
+equivariant one. This induces a C∗ -action on the complete linear system |C0 + 3F | which
+is regarded as the space of quartic curves in F2 . Hence the repeat of the weight 2 gives us
+one-parameter family of quartic curves in F2 and thus rational cubic curves in S0 (Remark
+3.14). Note that the other case is isolated and the corresponding curve is a degenerated
+one by substituting in equation (14). Obviously, the family Ca in (10) is invariant under
+C∗ -action and thus we proved the claim.
+    Case (2): The similar computation as in the case (1) shows that if we let the weights of
+z0 , · · · , z4 and z5 by 4, 0, −4, −8, 2 and −2, then π is C∗ -equivariant. Thus C∗ -fixed curves
+in F2 are isolated and degenerated one. Thus the same thing holds on S0 .                       □
+
+  It seems possible to compute the weights by using the result in [ES96] and Lemma 2.4.
+Since we explicitly describe the moduli space S3 (Q) in terms of a projective bundle in the
+following section, we omit it.
+
+
+                     4. C UBIC CURVES SPACE AS A PROJECTIVE BUNDLE
+
+  In this section, we describe the moduli space S3 (Q) as a projective bundle over a Grass-
+mannian (Proposition 4.4). As a corollary, we give the cohomology ring structure of S3 (Q)
+(Corollary 4.6).
+
+
+4.1. Sheaf theoretic description of S1 (Q). Let us recall the global description of S1 (Q).
+Let L be a line in Q. It is known that the locally free resolution of the ideal sheaf IL,Q is
+given by
+
+(15)                            0 → OQ (−1) → UQ → IL,Q → 0,
+
+where UQ is the restriction of the universal subbundle of Grassmannian Gr(2, 4); see
+[Fae14, Section 2.1.1]. Also, every line in Q arises in this fashion, so called the Hartshorne-
+Serre correspondence ([Arr07]). Thus we get the following.
+
+Proposition 4.1. Let H1 (Q) be the Hilbert scheme of lines in Q. Then,
+
+                              = PHom(OQ (−1), UQ ) ∼
+                       H1 (Q) ∼                    = PH0 (UQ (1)) ∼
+                                                                  = P3 .
+                             RATIONAL CURVES VIA REPRESENTATION                                   15
+
+4.2. Proof of Theorem 1.2. The moduli space of representations of a Kronecker quiver
+parametrizes the isomorphism classes of stable sheaf homomorphisms
+                                                ⊕2
+(16)                                           OQ  −→ UQ (1)
+
+up to the natural action of the automorphism group C∗ × GL2 /C∗ ∼    = GL2 . For two vector
+                                                            ∗      0
+spaces E and F of dimension 2 and 1 respectively and V := H (Q, UQ (1)), the moduli
+space is constructed as G := Hom(E, V ∗ ⊗ F )//GL2 ∼  = V ∗ ⊗ F ⊗ E ∗ //GL2 with an appro-
+priate linearization; see [Kin94]. Note that since the GL2 acts as a row operation on the
+space of (2 × 4)-matrices, and thus G ∼= Gr(2, 4).
+    Let p1 : G × Q → G and p2 : G × Q → Q be the natural projections, and write A ⊠ B :=
+p∗1 A ⊗ p∗2 B for A ∈ Coh(G) and B ∈ Coh(Q). If UG is the universal subbundle over G, then
+there is a universal morphism
+
+(17)                               ϕ : UG ⊠ OQ −→ OG ⊠ UQ (1) ;
+
+see [Kin94]. Set J := coker(ϕ) and denote Js := J |{s}×Q for each point s ∈ G.
+
+Proposition 4.2. For the cokernel sheaf J of the map in (17), we have the following.
+
+   (1) For each point s ∈ G, the restriction Js is isomorphic to a twisted ideal sheaf Js ∼
+                                                                                          = IL,S (2)
+       for some hyperplane section S := Q ∩ H and a line L ⊂ S.
+   (2) J is flat over G and thus the universal morphism ϕ in (17) is injective.
+
+Proof. If K := ker(ϕs ) is non-zero, then it is a reflexive sheaf of rank one on {s}×Q ∼
+                                                                                       = Q. By
+                        ⊕2                                                            ∼
+the semistability of OQ and UQ (1), the sheaf K is isomorphic to a line bundle K = OQ (k)
+for some k ∈ Z and the slope condition of Im(ϕs ) gives 0 ≤ −k ≤ 21 . Thus we get k = 0
+and so ϕs is not stable, i.e., rank(H0 (ϕs )) = 1. Therefore ϕs is injective.
+                                    ⊕2
+  Now, for the inclusion i1 : OQ → OQ  into the first component, we have a commutative
+diagram:
+
+(18)                         0O                 0O
+
+                                       ϕs
+                            OQ              / IL,Q (1)
+                              O                   O
+
+                                       ϕs
+                   0       / O ⊕2           / UQ (1)     / coker(ϕs ) ∼
+                                                                      = Js   / 0
+                              Q
+                               O                 O
+                                  i1                 ξ
+
+                            OQ                 OQ
+                              O                  O
+
+
+                             0                  0.
+16                    KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+Here, ξ := ϕs ◦ i1 : OQ → UQ (1) is the composition map. Then we get coker(ξ) ∼
+                                                                              = IL,Q (1)
+                                                                           ϕ          i
+for some line L ⊂ Q by Proposition 4.1. The composite map i◦ϕs : OQ → IL,Q (1) ,→ OQ (1)
+is not a zero-map and thus it is injective. Hence we get coker(i ◦ ϕs ) ∼
+                                                                        = OQ∩H (1) for some
+                  4
+hyperplane H ⊂ P . Let S := Q ∩ H. Then the top row in the diagram (18) becomes
+                                           ϕs
+                        0 → OQ ∼
+                               = IS,Q (1) −→ IL,Q (1) → IL,S (1) → 0
+and so we get Js = IL,S (1), proving the assertion (1). Now Js has a constant Hilbert
+polynomial by the result of (1) and thus J is flat over G, which confirms (2).     □
+
+Remark 4.3. By the proof of (1) of Proposition 4.2, each hyperplane section Q ∩ H is
+parameterized by G. Hence one can consider the universal family of hyperplane sections
+in G × Q. Furthermore, G ∼   = Gr(2, 4) is the space of lines in PH0 (UQ (1)) = P3 . On the
+other hand, the latter space P3 is the Fano scheme of lines in Q; see Proposition 4.1. Let
+C ⊂ P3 × Q be the universal lines over P3 with p : C → P3 and q : C → Q the projection
+maps. Then it can be easily checked that the transform p(q −1 (S ∩ H)) of the hyperplane
+section Q ∩ H becomes a line L ⊂ P3 , i.e., [L] ∈ G.
+
+     From the proof of Proposition 4.2, we obtain the exact sequence
+
+(19)                       0 → UG ⊠ OQ → OG ⊠ UQ (1) → J → 0.
+
+By applying the functor R• p1,∗ ((−) ⊠ OQ (1)) to the exact sequence (19), we have
+
+(20)          0 → UG ⊗ H0 (OQ (1)) → OG ⊗ H0 (UQ (2)) → p1,∗ (J ⊠ OQ (1)) → 0,
+
+since H1 (OQ (1)) = 0. Since h0 (OQ (1)) = 5 and h0 (UQ (2)) = 16, we see that the direct image
+sheaf p1,∗ (J ⊠ OQ (1)) in (20) is a vector bundle of rank 6 on G.
+
+Proposition 4.4. The moduli space S3 (Q) is isomorphic to the projective bundle P(p1,∗ (J ⊠
+OQ (1))).
+
+Proof. Let G := p1,∗ (J ⊠ OQ (1)) and π : P(G) → G be the bundle morphism. Then, there
+exists a commutative diagram:
+                                                 π×i
+                                    G×Q o              P(G) × Q
+                                            p1                p1
+                                                         
+                                       Go        π
+                                                        P(G),
+
+where p1 : P(G) × Q → P(G) is the projection map. Let
+
+                           c : p∗1 OP(G) (−1) → (π × i)∗ (J ⊠ OQ (1))
+
+be the composition of the pullback of the tautological map
+
+(21)                     OP(G) (−1) → π ∗ G ∼
+                                            = p1,∗ (π × i)∗ (J ⊠ OQ (1))
+                           RATIONAL CURVES VIA REPRESENTATION                                   17
+
+and the natural map
+
+                    p∗1 p1,∗ (π × i)∗ (J ⊠ OQ (1)) → (π × i)∗ (J ⊠ OQ (1)).
+
+Let Z := (π ×i)∗ Z be the pull-back of the universal hyperplane section Z ⊂ G×Q param-
+eterized by G; see Remark 4.3. We claim that the local extension space Ext1Z (coker(c), OZ )
+is a flat family of stable sheaves over P(G) with Hilbert polynomial 3m + 1. Note that it is
+enough to check the claim fiberwise. Over a point x ∈ P(G), the exact sequence
+
+                    0 → Im(c) → (π × i)∗ (J ⊠ OQ (1)) → coker(c) → 0
+
+becomes a short exact sequence
+
+                               0 → OS → IL,S (2) → T → 0,
+
+where T := coker(c)x . By applying the dual functor HomS (−, OS ) to the exact sequence,
+we have
+   0∼= HomS (T , OS ) → HomS (IL,S (2), OS ) → HomS (OS , OS ) ∼
+                                                               = OS
+                                               → Ext1S (T , OS ) → Ext1S (IL,S (2), OS ) ∼
+                                                                                         = 0.
+
+The first term vanishes because T is one-dimensional. Also, the last vanishing is a special
+case of a more general vanishing ExtSi≥1 (IL,S (2), OS ) ∼
+                                                         = 0, which is obvious when S is
+smooth. If S is not smooth, one can check this by using Macaulay2 ([M2]). By computing
+the Hilbert polynomial of HomS (IL,S (2), OS ) and OS , we conclude that Ext1S (T , OS ) = OC
+for some twisted cubic curve C ⊂ Q. Hence by the universal property of moduli space
+S3 (Q), there exists a morphism
+
+(22)                                 Φ : P(G) −→ S3 (Q)
+                              1
+induced by the flat family ExtZ (coker(c), OZ ) over P(G).
+   Lastly, we prove that the induced map Φ in (22) is an isomorphism. By Lemma 4.5 below
+and Zariski main theorem, it is enough to check that the map Φ is generically one-to-one.
+Let us choose a smooth twisted cubic C ⊂ Q such that, for the linear span H0 := ⟨C⟩ ∼  = P3 ,
+the hyperplane section Q ∩ H0 =: S0 is a smooth quadric surface. In C ⊂ S0 , the curve
+class [C] in S0 is automatically determined. Hence the inverse image Φ−1 ([OC ]) is a unique
+point in P(G).                                                                             □
+
+Lemma 4.5. The rank of the Picard group Pic(S3 (Q)) is 2.
+
+Proof. Following the blowing-up/down diagram in [CHK12], we know that the rank of
+Picard group of S3 (Q) is the same as that of M3 (Q). Here M3 (Q) is the moduli space of
+stable maps of degree 3 in Q. But the Picard group of M3 (Q) is generated by the boundary
+divisor of reducible curves and the locus of stable maps whose images meet a fixed line
+in Q (compare with the result in [Opr05]).                                             □
+18                       KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+Corollary 4.6. The cohomology ring of S3 (Q) is given by
+
+                                    H∗ (S3 (Q), Q) ∼
+                                                   = Q[c1 , c2 , h]/I,
+      I = ⟨c31 − 2c1 c2 , c41 − 3c1 2 c2 + c22 , h6 − 5c1 h5 + (15c21 − 5c2 )h4 − 40c1 c2 h3 + 50c22 h2 ⟩
+
+where c1 = c1 (UG ), c2 = c2 (UG ) and h = c1 (OP (1)) is the hyperplane class of the projective
+bundle in Proposition 4.4.
+
+Proof. By the exact sequence (20) and the presentation of the cohomology ring of Gr(2, 4)
+in [EH16, Theorem 5.26], one can obtain the result.                                    □
+
+
+                                                R EFERENCES
+[AF93] Paolo Aluffi and Carel Faber, Linear orbits of d-tuples of points in P1 , J. Reine Angew. Math. 445 (1993),
+        205–220. 1
+[Arr07] Enrique Arrondo, A home-made Hartshorne-Serre correspondence, Rev. Mat. Complut. 20 (2007), no. 2,
+        423–443. 14
+[Bir73] A. Białynicki-Birula, Some theorems on actions of algebraic groups, Ann. of Math. (2) 98 (1973), 480–497.
+        4
+[Cao19a] Yalong Cao, Counting conics on sextic 4-folds, Math. Res. Lett. 26 (2019), no. 5, 1343–1357. 2
+[CMT18] Yalong Cao, Davesh Maulik, and Yukinobu Toda, Genus zero Gopakumar-Vafa type invariants for
+        Calabi-Yau 4-folds, Adv. Math. 338 (2018), 41–92. 2
+[CS18] Ivan Cheltsov and Constanti Shramov, Kähler-Einstein Fano threefolds of degree 22, J. Algebraic Geom.
+        32 (2023), no. 3, 385–428. 1
+[CCM14] Jinwon Choi, Kiryong Chung, and Mario Maican, Moduli of sheaves supported on quartic space
+        curves, Michigan Math. J. 65 (2016), no. 3, 637–671. 4
+[Chu22] Kiryong Chung, Desingularization of Kontsevich’s compactification of twisted cubics in V5 , Manuscripta
+        Math. 171 (2023), no. 1-2, 347–367. 4
+[CHK12] Kiryong Chung, Jaehyun Hong, and Young-Hoon Kiem, Compactified moduli spaces of rational
+        curves in projective homogeneous varieties, J. Math. Soc. Japan, 64 (2012), no. 4, 1211–1248. 1, 2, 4, 17
+[CHL18] Kiryong Chung, Jaehyun Hong, and SangHyeon Lee, Geometry of moduli spaces of rational curves in
+        linear sections of Grassmannian Gr(2, 5), J. Pure Appl. Algebra 222 (2018), no. 4, 868–888. 1
+[CK11] Kiryong Chung and Young-Hoon Kiem, Hilbert scheme of rational cubic curves via stable maps, Amer.
+        J. Math. 133 (2011), no. 3, 797–834. 1, 2
+[CLW21] Kiryong Chung, Sanghyeon Lee, and Joonyeong Won, Correspondence of Donaldson-Thomas and
+        Gopakumar-Vafa invariants on local Calabi-Yau 4-folds over V5 and V22 , J. Geom. Phys. 197 (2024), Paper
+        No. 105082, 15 pp. 2
+[Cos06] Izzet Coskun, Degenerations of surface scrolls and the Gromov-Witten invariants of Grassmannians, J.
+        Algebraic Geom. 15 (2006), no. 2, 223–284. 12
+[Don08] Simon K. Donaldson, Kähler geometry on toric manifolds, and some other manifolds with large symmetry,
+        Adv. Lect. Math. (ALM) 7 (2008), Handbook of geometric analysis, no. 1, 29–75. 1
+[EH82] David Eisenbud and Joe Harris, Curves in Projective Space, Presses de L’Université de Montréal,
+        1982. 4
+[EH16] David Eisenbud and Joe Harris, 3264 and All That: A Second Course in Algebraic Geometry, Cambridge
+        University Press, Cambridge, 2016. 18
+                                  RATIONAL CURVES VIA REPRESENTATION                                              19
+
+[EPS87] Geir Ellingsrud, Ragni Piene, and Stein Arild Strømme, On the variety of nets of quadrics defining
+        twisted cubics, In Space curves (Rocca di Papa, 1985), volume 1266 of Lecture Notes in Math., pages
+        84–96. Springer, Berlin, 1987. 1
+[ES96] Geir Ellingsrud and Stein Arild Strømme, Bott’s formula and enumerative geometry, J. Amer. Math.
+        Soc. 9 (1996), no. 1, 175–193. 1, 14
+[Fae14] Daniele Faenzi, Even and odd instanton bundles on Fano threefolds of Picard number one, Manuscripta
+        Math. 144 (2014), no. 1-2, 199–239. 14
+[FGP19] Andrea Fanelli, Laurent Gruson, and Nicolas Perrin, Rational curves on V5 and rational simple con-
+        nectedness, https://arxiv.org/abs/1901.06930, 2019. 2
+[M2] Daniel R. Grayson and Michael E. Stillman, Macaulay2, a software system for research in algebraic ge-
+        ometry, Available at http://www2.macaulay2.com. 10, 17
+[Hos90] Toshio Hosoh, Stable sheaves of rank 2 on a 3-dimensional rational scroll, Tokyo J. Math. 13 (1990), no.
+        2, 301–326. 12
+[Ili94] Atanas Iliev, The Fano surface of the Gushel’ threefold, Compos. Math. 94 (1994), no. 1, 81–107. 1
+[Ive72] Birger Iversen, A fixed point formula for action of tori on algebraic varieties, Invent. Math. 16 (1972), no.
+        3, 229–236. 3
+[Kin94] Alastair D. King, Moduli of representations of finite-dimensional algebras, Q. J. Math. Oxford Ser. (2), 45
+        (1994), no. 180, 515–530. 15
+[KS04] János Kollár and Frank-Olaf Schreyer, Real Fano 3-folds of type V22 , Dipartimento di Matematica
+        dell’Università di Torino, v 62, 2004. 1
+[MCC00] John McCleary, A User’s Guide to Spectral Sequences, Cambridge Stud. Adv. Math. 58, Cambridge
+        University Press, 2 edition, 2000. 5
+[MU83] Shigeru Mukai and Hiroshi Umemura, Minimal rational threefolds, Algebraic geometry
+        (Tokyo/Kyoto, 1982), 490–518. Lecture Notes in Math., 1016 Springer-Verlag, Berlin, 1983. 1
+[Opr05] Dragos Oprea, Divisors on the moduli spaces of stable maps to flag varieties and reconstruction, J. Reine
+        Angew. Math. 586 (2005), 169–205. 17
+[PS85] Ragni Piene and Michael Schlessinger, On the Hilbert scheme compactification of the space of twisted
+        cubics, Amer. J. Math. 107 (1985), no. 4, 761–774. 1
+[CPS19] Victor Przyjalkowski, Ivan Cheltsov, and Constantin Shramov, Fano threefolds with infinite automor-
+        phism groups, Izv. Math. 83 (2019), no. 4, 860–907. 13
+[Rei95] Miles Reid Chapters on algebraic surfaces, Complex algebraic geometry (Park City, UT, 1993), 3–159.
+        IAS/Park City Math. Ser., 3, American Mathematical Society, Providence, RI, 1997. 12
+[San14] Giangiacomo Sanna, Rational curves and instantons on the Fano threefold Y5 , https://arxiv.org/
+        abs/1411.7994, 2014. 1
+[Sch01] Frank-Olaf Schreyer, Geometry and algebra of prime Fano 3-folds of genus 12, Compos. Math. 127 (2001),
+        no. 3, 297–319. 1
+[VX02] Israel Vainsencher and Fernando Xavier, A compactification of the space of twisted cubics, Math. Scand.
+        91 (2002), no. 2, 221–243. 1
+20                       KIRYONG CHUNG, SUKMOON HUH, AND SANG-BUM YOO
+
+   D EPARTMENT OF M ATHEMATICS E DUCATION , K YUNGPOOK N ATIONAL U NIVERSITY, 80 D AEHAKRO ,
+B UKGU , D AEGU , 41566, R EPUBLIC OF K OREA
+     Email address: krchung@knu.ac.kr
+
+  D EPARTMENT OF M ATHEMATICS , S UNGKYUNKWAN U NIVERSITY, 2066 S EOBU - RO , S UWON , 16419, R E -
+PUBLIC OF K OREA
+
+     Email address: sukmoonh@skku.edu
+
+   D EPARTMENT OF M ATHEMATICS E DUCATION , G ONGJU N ATIONAL U NIVERSITY OF E DUCATION , 27
+U NGJIN - RO , G ONGJU - SI , C HUNGCHEONGNAM - DO , 32553, R EPUBLIC OF K OREA
+     Email address: sbyoo@gjue.ac.kr
+

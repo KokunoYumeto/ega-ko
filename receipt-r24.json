@@ -1,0 +1,72 @@
+{
+  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "version": "2026-08-26-r24",
+  "verified_at": "2026-08-26T07:02:56+02:00",
+  "record_id": 22103931,
+  "concept_record_id": 21921513,
+  "doi": "10.5281/zenodo.22103931",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22103931",
+  "doi_url": "https://doi.org/10.5281/zenodo.22103931",
+  "state": "published",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-08-26-r24",
+    "creators": ["Grothendieck, Alexander", "Dieudonné, Jean"],
+    "contributors": ["AI typesetting & translation"],
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "resource_type": "publication/book",
+    "relation": "10.5281/zenodo.20414353|isPartOf",
+    "description_characters": 4246,
+    "coverage_end": "complete EGA I through subsection10.15 at canonical source EOF and canonical driver15/15 closure; full EGA corpus incomplete",
+    "cumulative_front_artifact": "00_EGA_ko_CUMULATIVE_READER.pdf is the front reader and contains every canonical EGA I component in Korean",
+    "title_description_forbidden_project_label_hits": 0,
+    "result": "PASS"
+  },
+  "files": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1328403,
+      "md5": "5a88596dd9addf626f6eeb3d6c8a8213",
+      "sha256": "86D62EF0A987DAF879807B54F292B0ACEEB9135EA1470524B782AE21B693C551",
+      "pages": 150
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 233851,
+      "md5": "bac75ad9f558d3c92187f4401fdcf0f1",
+      "sha256": "5CB218D72ECE92CB43BCAE12C90B71C632D9D86DA00138E7FF2540C8C70E6EC7",
+      "entries": 25,
+      "files": 23
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 82530843,
+      "md5": "3c6b8e3bd84061f2436e03ac9898ae62",
+      "sha256": "21B80F887AA3F5F0A8DA4D724BC55D68D3C458363B3A42625E63E0D93772C9AB",
+      "entries": 334,
+      "files": 325
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 342,
+      "md5": "c5b3a91a547000e4265d6062a2e99d26",
+      "sha256": "7EE6E8CB95B39E75FD31E699241540651A36DB634AB0C7E00A26A714D0F44061"
+    }
+  ],
+  "verification": {
+    "authenticated_draft_readback": "metadata exact; four completed files4/4 exact size and MD5 PASS before publish",
+    "draft_metadata_schema_recovery": "An initial reversible PUT to the modern record-draft endpoint retained only overlapping legacy fields; before upload or publication, the complete metadata was restored through the documented deposition endpoint and revalidated through both authenticated representations. No incomplete metadata was published.",
+    "anonymous_api_metadata": "PASS; published record22103931; title/version/creators/sole contributor/language/license/resource type/relation/description exact",
+    "anonymous_files_byte_md5_sha256": "4/4 PASS after fresh unauthenticated downloads",
+    "outer_manifest_replay": "3/3 PASS",
+    "internal_manifest": "349 rows /349 replayed /35322 bytes /15D62749A2E703D2F50ECF2703E7114AA1DABC4AFDF58E2B0057BF5762ABD29B",
+    "cumulative_input_manifest": "15/15 ordered EGA I inputs; missing, undeclared, duplicate, unsafe or reordered TeX inputs fail closed",
+    "source_zip_ab_identity": "PASS",
+    "evidence_zip_ab_identity": "PASS",
+    "doi_resolution": "HTTP200 to https://zenodo.org/records/22103931",
+    "credential_material_present": false,
+    "result": "PASS"
+  }
+}

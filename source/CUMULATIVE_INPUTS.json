@@ -9,8 +9,8 @@
       "EGA 0_I",
       "EGA I"
     ],
-    "terminal_coverage": "EGA I Chapter I through subsection 10.13 and Corollary 10.13.6; ends before subsection 10.14",
-    "completeness_claim": "complete Korean translation available in this lineage at this release boundary; not a claim that EGA I or the EGA corpus is complete"
+    "terminal_coverage": "EGA I Chapter I through subsection 10.15 to the canonical source EOF of ega1-10-fr.tex",
+    "completeness_claim": "complete Korean translation of every EGA I input enumerated by the canonical source/EGA_FR.tex driver; not a claim that the full EGA corpus is complete"
   },
   "ordered_inputs": [
     { "path": "front.tex", "role": "edition front matter" },
@@ -26,7 +26,7 @@
     { "path": "c1s7.tex", "role": "EGA I Chapter I section 7 complete" },
     { "path": "c1s8.tex", "role": "EGA I Chapter I section 8 complete" },
     { "path": "c1s9.tex", "role": "EGA I Chapter I section 9 complete" },
-    { "path": "c1s10.tex", "role": "EGA I Chapter I section 10 through subsection 10.13" },
+    { "path": "c1s10.tex", "role": "EGA I Chapter I section 10 through subsection 10.15 and source EOF" },
     { "path": "bib.tex", "role": "bibliography" }
   ]
 }

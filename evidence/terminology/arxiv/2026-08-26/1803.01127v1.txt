@@ -1,0 +1,588 @@
+                                                   CLASSIFICATION AND SYZYGIES OF SMOOTH PROJECTIVE
+                                                       VARIETIES WITH 2-REGULAR STRUCTURE SHEAF
+
+                                                                            SIJONG KWAK AND JINHYUNG PARK
+
+                                                   Abstract. The geometric and algebraic properties of smooth projective varieties with 1-
+                                                   regular structure sheaf are well understood, and the complete classification of these varieties
+arXiv:1803.01127v1 [math.AG] 3 Mar 2018
+
+
+
+
+                                                   is a classical result. The aim of this paper is to study the next case: smooth projective va-
+                                                   rieties with 2-regular structure sheaf. First, we give a classification of such varieties using
+                                                   adjunction mappings. Next, under suitable conditions, we study the syzygies of section rings
+                                                   of those varieties to understand the structure of the Betti tables, and show a sharp bound for
+                                                   Castelnuovo-Mumford regularity.
+
+
+
+                                                                                       1. Introduction
+                                             Throughout the paper, we work over the field C of complex numbers. We begin by recalling
+                                          the definition of Castelnuovo-Mumford regularity. A coherent sheaf F on a projective variety
+                                          X with a very ample line bundle L is said to be m-regular in the sense of Castelnuovo-Mumford
+                                          if H i (X, F ⊗ Lm−i ) = 0 for all i > 0. By [19, Theorem 1.8.5], if F is m-regular, then F is
+                                          (m + 1)-regular. An embedded projective variety X ( Pr is said to be m-regular if the ideal
+                                          sheaf IX|Pr is m-regular, i.e., H i (Pr , IX|Pr (m − i)) = 0 for i > 0. Note that X ( Pr is m-regular
+                                          if and only if
+                                                      r
+                                             • X ( P is (m − 1)-normal, i.e., the natural restriction map
+
+                                                                         H 0 (Pr , OPr (m − 1)) → H 0 (X, OX (m − 1))
+                                                is surjective, and
+                                                                            i
+                                            • OX is (m − 1)-regular, i.e., H (X, OX (m − 1 − i)) = 0 for i > 0.
+
+                                          The Castelnuovo-Mumford regularity reg(X) is the least integer m such that X ( Pr is m-
+                                          regular. We also denote by reg(OX ) the least integer m such that OX is m-regular. For more
+                                          detail, we refer to [19, Section 1.8].
+                                            Now, let X ( Pr be a non-degenerate smooth projective variety of dimension n, and H
+                                          be its general hyperplane section. We always assume that X ( Pr . Then reg(X) ≥ 2 and
+                                          reg(OX ) ≥ 1. It is a classical fact due to Eisenbud-Goto [7] that
+                                          (∗)               reg(X) = 2 if and only if X ( Pr is a variety of minimal degree
+                                          (for a generalization to algebraic sets, see [8]). Recall that a variety of minimal degree is either
+                                          a rational normal scroll, a quadric hypersurface Qn ⊂ Pn+1 , or the second Veronese surface
+                                          v2 (P2 ) ⊂ P5 (see e.g., [9]). To motivate our first result and approach, we give a quick geometric
+                                          proof of the classical fact (∗) based on adjunction theory.
+                                            Date: March 6, 2018.
+                                            2010 Mathematics Subject Classification. 14N05, 14N30, 13D02.
+                                            Key words and phrases. Castelnuovo-Mumford regularity, adjunction mapping, syzygy, Koszul cohomology.
+                                            S. Kwak was supported by Basic Science Research Program through the National Research Foundation of
+                                          Korea (NRF) funded by the Ministry of Science and ICT (2015R1A2A2A01004545).
+                                                                                                 1
+2                                 SIJONG KWAK AND JINHYUNG PARK
+
+Proof of the Fact (∗). The direction (⇐) is trivial. For the converse direction (⇒), we divide
+into two steps.
+Step 1. Here we classify smooth projective varieties X ( Pr with reg(OX ) = 1. Note that
+reg(OX ) = 1 implies H 0 (X, OX (KX + (n − 1)H)) = H n (X, OX (−(n − 1)))∗ = 0. Thus KX +
+(n − 1)H is not base point free. By a classification result in adjunction theory [14, Theorem
+1.4], we see that (X, H) is either
+                 (Pn , OPn (1)), (Qn , OPn+1 (1)|Qn ), (P2 , OP2 (2)), or (P(E), OP(E) (1))
+where Q ⊂ Pn+1 is a quadric hypersurface and E is a very ample vector bundle of rank n on
+a smooth projective curve. Since we also have H 1 (X, OX ) = 0, it follows that X ( Pr is a
+quadric hypersurface, a (possibly projected) second Veronese surface, or a rational scroll.
+Step 2. reg(X) = 2 implies that reg(OX ) = 1 and X ( Pr is linearly normal. So, it follows
+immediately that X ( Pr is a quadric hypersurface, the second Veronese surface v2 (P2 ) ⊂ P5 ,
+or a rational normal scroll embedded by the linear system |OP(E) (1)|. All of these varieties are
+of minimal degree.                                                                             
+   Along this line, it is natural to consider the classification problem of smooth projective
+varieties X ( Pr with reg(X) = 3. The first step would also be a classification of smooth
+projective varieties X ( Pr with reg(OX ) = 2 using adjunction theory. Note that OX -regularity
+with respect to a very ample divisor H is an intrinsic property not depending on the embedding
+of X given by H. Recall that
+        reg(OX ) = 1 if and only if (Qn , OPn+1 (1)|Qn ), (P2 , OP2 (2)), or (P(E), OP(E) (1)),
+where Q ⊂ Pn+1 is a quadric hypersurface and E is a very ample vector bundle of rank n on a
+projective line P1 .
+  The first main theorem of this paper completes the first step classifying smooth projective
+varieties with reg(OX ) = 2 .
+Theorem 1.1. Let X ( Pr be a non-degenerate smooth projective variety of dimension n, and
+H be its general hyperplane section. Then reg(OX ) = 2 if and only if (X, H) is one of the
+following:
+(1) n = 1: X = C is a smooth projective curve of genus g ≥ 1, and H is a non-special very
+     ample divisor (H 1 (C, OC (H)) = 0).
+(2) n = 2: X = S is a smooth projective surface with pg (S) = h0 (S, OS (KS )) = 0, and H is a
+     very ample divisor with H 1 (S, OS (H)) = 0, but (S, H) 6= (P2 , OP2 (2)).
+(3) n ≥ 3: X = P(E), where E is a very ample vector bundle of rank n on a smooth projective
+     curve C of genus g ≥ 1 such that H 1 (C, E) = 0, and H is the tautological divisor of P(E).
+(4) n ≥ 3: X is a del Pezzo manifold, and H is a very ample divisor such that −KX = (n−1)H.
+(5) n ≥ 3: X is a smooth member of |2L + π ∗ D|, and H := L|X , where L is the tautological
+     divisor of P(E) with a natural projection π : P(E) → C such that E is a globally generated
+     vector bundle of rank n + 1 on a smooth projective curve C with H 1 (C, E) = 0, and D is a
+     divisor on C. In this case, X has a hyperquadric fibration over C.
+(6) n ≥ 3: X = P(E), where E is a very ample vector bundle of rank n − 1 on a smooth
+     projective surface S with pg (S) = 0 such that H 1 (S, E) = 0, and H is the tautological
+     divisor of P(E).
+(7) n = 3, 4: The first reduction (X, H) is either (P3 , OP3 (3)), (P4 , OP4 (2)), (Q3 , OP4 (2)|Q3 ), or
+     (Y, L), where Q3 ⊂ P4 is a three-dimensional quadric hypersurface, Y is a three-dimensional
+             SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                           3
+
+    scroll over a smooth projective curve C, and L is a very ample divisor on Y such that
+    H 1 (Y, L) = 0 and it induces OP2 (2) on each fiber. In this case, |KX + (n − 1)H| induces
+    a morphism ϕ : X → X, which is a blow-up of X at finitely many distinct points, and
+    KX + (n − 1)H = ϕ∗ (KX + (n − 1)H).
+   Note that del Pezzo manifolds were completely classified by Fujita [10], [11]. For the cases
+(3), (5), (6), one may want to further classify vector bundles E with H 1 (E) = 0, but the
+complete solution to this problem seems to be out of reach.
+   For the next step of the classification of smooth projective varieties X ( Pr with reg(X) = 3,
+one needs to show the 2-normality of projective varieties in Theorem 1.1. It is already a very
+difficult problem even in the curve or the scroll case because we should consider projected
+varieties. There have been some studies of the k-normality of projected varieties (see e.g., [2],
+[16]).
+  We now turn to syzygetic properties of smooth projective varieties X ( Pr with reg(OX ) =
+2. To study syzygies of projective varieties, it is often natural to impose the condition that
+H 1 (X, OX ) = 0 (for instance, when we apply Green’s duality theorem ([12, Theorem (2.c.6)]).
+Remark 1.2. Among all seven cases in Theorem 1.1, the varieties X with H 1 (X, OX ) = 0 can
+occur in all cases except (1) and (3). Actually, if a curve C in (5), (7) is rational or a surface
+S in (2), (6) is regular (i.e., pg (S) = q(S) = 0), then we have H 1 (X, OX ) = 0.
+  It would be very interesting to investigate the Koszul cohomology groups Kp,q (X, V ) and the
+Betti table of the section module R(X, H) as a graded Sym• (V )-module. Under the assumption
+that reg(OX ) = 2 and H 1 (X, OX ) =L   0, we have H i (X, OX (k)) = 0 for 0 < i < n and k ∈ Z, and
+thus, the section ring R(X, H) := m≥0 H 0 (X, OX (mH)) is Cohen-Macaulay. Furthermore,
+the syzygies of R(X, H) is the same as those of the section ring R(C, H|C ) of a general curve
+section C of X ( Pr = P(V ). We remark that reg(R(X, H)) = reg(OX ) = 2 so that the Betti
+table has height 3, i.e., Kp,q (X, V ) = 0 for q ≥ 3. For the basic notation of syzygies and Koszul
+cohomologies, see Subsection 3.1.
+  There are several related results. It is easy to see that if reg(OX ) = 1, then one can cal-
+culate all graded Betti numbers kp,q (X, V ) from the Hilbert polynomial. Ahn-Han [1] studied
+syzygies of homogeneous coordinate rings of projective schemes X ( Pr with reg(X) = 3.
+Ein-Lazarsfeld [5] gave a general picture of the asymptotic behavior of the Koszul cohomology
+groups Kp,q (X, V ) when V = H 0 (X, OX (1)) and OX (1) is sufficiently positive. In this case,
+X ( Pr = P(V ) satisfies Nk -property for some integer k > 0. Recall that X ( P(V ) satisfies
+N0 -property if it is projectively normal, and so the section ring R(X, H) is the same as the
+homogeneous coordinate ring of X ( P(V ). We say that X ( P(V ) satisfies Nk -property for
+some integer k > 0 if it satisfies N0 -property and Kp,q (X, V ) = 0 for 1 ≤ p ≤ k and q ≥ 2, i.e.,
+the syzygy modules of R(X, H) have only linear relations starting from quadrics up to k-step.
+  It is also an interesting problem to study the case when X ( P(V ) is not linearly normal, i.e.,
+V ( H 0 (X, OX (1)). The most promising case is when X is a curve because Ein-Lazarsfeld’s
+gonality theorem [6] (see also [24]) completely determines the vanishing and nonvanishing of
+the Koszul cohomology groups Kp,q (X, V ) for a complete embedding curve. The second main
+result of the paper is the following:
+Theorem 1.3. Let X ( Pr = P(V ) be a non-degenerate smooth projective variety of dimen-
+sion n, codimension e, and degree d, and H be its general hyperplane section. Suppose that
+reg(OX ) = 2 and we further assume H 1 (X, OX ) = 0 when n ≥ 2. Let C be its general curve
+section of genus g = h0 (X, OX (KX + (n − 1)H)) and gonality gon(C).
+4                                       SIJONG KWAK AND JINHYUNG PARK
+
+(1) Suppose that V = H 0 (X, OX (1)), i.e., X ( Pr is linearly normal. If e ≥ g + k for some
+    k ≥ 0, then X ( Pr satisfies Nk -property, i.e., K0,1 (X, V ) = Kp,q (X, V ) = 0 for p ≤ k and
+    q ≥ 2.
+(2) Suppose that V ( H 0 (X, OX (1)) is of codimension t ≥ 1 and OX (1) is sufficiently positive.
+    For simplicity, we further assume that e ≥ g + 1. Then we have the following:
+      (i) Kp,q (X, V ) = 0 unless 0 ≤ p ≤ e and q = 0, 1, 2.
+     (ii) Kp,0 (X, V ) 6= 0 if and only if p = 0.
+    (iii) Kp,1 (X, V ) 6= 0 for 0 ≤ p ≤ e+1−gon(C) and Kp,1 (X, V ) = 0 for e+2−gon(C)+t ≤
+          p ≤ e.
+     (iv) Kp,2 (X, V ) = 0 for 0 ≤ p ≤ e − 1 − g and Kp,2 (X, V ) 6= 0 for e − g + t ≤ p ≤ e.
+    The Betti table of the variety in Theorem 1.3 (2) is as follows:
+        0   1   ···   e−g−1       ···        e−g+t   ···   e + 1 − gon(C)       ···       e + 2 − gon(C) + t   ···   e
+    0   1   −   ···     −     −   ···    −     −     ···          −         −   ···   −            −           ···   −
+    1   t   ∗   ···     ∗     ∗   ···    ∗     ∗     ···          ∗         ?   ···   ?            −           ···   −
+    2   −   −   ···     −     ?   ···    ?     ∗     ···          ∗         ∗   ···   ∗            ∗           ···   ∗
+
+ Here −, ∗, and ? mean vanishing, non-vanishing, and undetermined, respectively.
+  In Remark 3.10, we explain how to determine the undetermined Koszul cohomology groups
+Kp,1 (X, V ) and Kp0 ,2 (X, V ) for the ranges e + 2 − gon(C) ≤ p ≤ e + 1 − gon(C) + t and
+e − g ≤ p0 ≤ e − g + t − 1. They heavily depend on the choice of V ⊂ H 0 (X, OX (1)) and
+syzygies of X ( Pr .
+   Finally, we consider the Castelnuovo-Mumford regularity of a non-degenerate projective va-
+riety X ( Pr of degree d and codimension e. Eisenbud-Goto [7] conjectured that
+                                              reg(X) ≤ d − e + 1.
+This conjecture was verified for the curve case [13] and the smooth surface case [23], [18].
+Recently, McCullough-Peeva [20] constructed counterexamples to Eisenbud-Goto conjecture.
+However, many people still believe that the conjecture holds for smooth varieties (or mildly
+singular varieties). There are some partial results; see [17] and the references therein.
+   In the case that X ( Pr is a non-degenerate smooth projective variety with reg(OX ) ≤ 2
+and H 1 (X, OX ) = 0, we can show a sharp bound for reg(X). In [22], Noma proved a refined
+bound for reg(C), where C ⊂ Pr is a non-degenerate projective curve of degree d, codimension
+e, and arithmetic genus g. More precisely, [22, Theorem 1] says that if C ⊂ Pr is not linearly
+normal and e ≥ g + 1, then
+                                    reg(C) ≤ d − e + 1 − g.
+The last main result of this paper is a generalization of the above result of Noma.
+Theorem 1.4. Let X ( Pr be a non-degenerate smooth projective variety of dimension n,
+codimension e, and degree d, and H be its general hyperplane section. Suppose that OX
+is 2-regular and we further assume that H 1 (X, OX ) = 0 when n ≥ 2. Denote by g :=
+h0 (X, OX (KX + (n − 1)H)) the sectional genus of X ( Pr . If X ( Pr is not linearly nor-
+mal and e ≥ g + 1, then
+                                 reg(X) ≤ d − e + 1 − g.
+  Note that when X ( Pr is linearly normal and e ≥ g, it is projectively normal by Theorem
+1.3. Thus reg(X) = 3 > d − e + 1 − g = 2.
+  We give a simple proof of Theorem 1.4 using basic properties of syzygies of section rings in
+[12] and Gruson-Lazarsfeld-Peskine technique in [13]. The key point is that partial information
+             SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                           5
+
+of minimal free resolution of the section ring controls the Castelnuovo-Mumford regularity,
+which is an invariant of the homogeneous coordinate ring.
+  If reg(OX ) = 1, then g = 0 and our regularity bound is exactly the conjectured one. This
+statement was previously shown in [16, Theorem 5.2], [21, Theorem 1.1]. There are many
+rational scrolls X ( Pr with reg(X) = d − e + 1.
+  It is worth noting that a sharp upper bound for reg(OX ) of a smooth projective variety
+X ⊂ Pr of arbitrary dimension was shown in [17]. More precisely, if X ( Pr is a non-degenerate
+smooth projective variety of degree d and codimension e, then
+                                      1 ≤ reg(OX ) ≤ d − e.
+Furthermore, we have the classification of the extremal and next to extremal cases for both
+inequalities (see [17, Theorem A] for the upper bound cases). We note that McCullough-Peeva
+[20] constructed infinitely many singular projective varieties X ( Pr such that reg(OX ) >
+d − e. Although reg(X) has not been well understood yet in general, we have a fairly good
+understanding of reg(OX )
+  The organization of the remaining of the paper is as follows. Section 2 is devoted to the
+proof of Theorem 1.1, a classification of smooth projective varieties with 2-regular structure
+sheaf using adjunction mappings. In Section 3, we study the syzygy of such varieties, and we
+show Theorem 1.3. Finally, in Section 4, we give the proof of Theorem 1.4.
+                       2. Classification via adjunction mapping
+  In this section, we prove the first main result, Theorem 1.1, using adjunction mappings. For
+basics of adjunction theory, we refer to [4], [14].
+  First, we need the following.
+Lemma 2.1. Let X be a smooth projective variety, and ϕ : X → X be a blow-up X at k
+distinct points with the exceptional divisors E1 , . . . , Ek . Let H be a very ample divisor on X.
+Suppose that H = ϕ∗ H − E1 − · · · − Ek is also very ample. Then we have H 1 (X, OX (H)) =
+H 1 (X, OX (H)).
+Proof. It is sufficient to show the assertion for k = 1. Thus we assume that ϕ : X → X is a
+blow-up at a point x with the exceptional divisor E = E1 . We denote by Ix the ideal sheaf of
+x in X. It is a well-known fact that ϕ∗ OX (−E) = Ix and Ri ϕ∗ OX (−E) = 0 for i > 0. By the
+projection formula, we have
+                   ϕ∗ OX (H) = OX (H) ⊗ Ix and Ri ϕ∗ OX (H) = 0 for i > 0.
+Then the Leray spectral sequence yields
+                      H i (X, OX (H)) = H i (X, OX (H) ⊗ Ix ) for any i ≥ 0.
+In particular, H 1 (X, OX (H)) = H 1 (X, OX (H) ⊗ Ix ). Now consider the following short exact
+sequence
+                         0 −→ OX (H) ⊗ Ix −→ OX (H) −→ Ox −→ 0.
+Since H is very ample, H 0 (X, OX (H)) → H 0 (X, Ox ) is surjective. Note that H 1 (X, Ox ) = 0.
+Thus
+                            H 1 (X, OX (H) ⊗ Ix ) = H 1 (X, OX (H)).
+Hence we are done.                                                                            
+  We now give the proof of Theorem 1.1.
+6                                SIJONG KWAK AND JINHYUNG PARK
+
+Proof of Theorem 1.1. Recall the setting: X ( Pr is a non-degenerate smooth projective variety
+of dimension n, and H is its general hyperplane section. If n = 1, then OX is 2-regular if and
+only if H 1 (X, OX (1)) = 0. If n ≥ 2, then by Kodaira vanishing theorem and Serre duality, OX
+is 2-regular if and only if
+               H 1 (X, OX (1)) = H 2 (X, OX ) = H 0 (X, OX (KX + (n − 2)H)) = 0.
+   The direction (⇐) is trivial except for (7). If X is a variety in (7), we only have to check
+that H 1 (X, OX (1)) = 0. This vanishing follows from Lemma 2.1.
+   Now, we show the direction (⇒), so we assume that reg(OX ) = 2. If n = 1 or 2, then we
+immediately get (1) or (2), respectively. Thus, from now on, we assume that n ≥ 3. Suppose
+first that KX + (n − 1)H is not base point free. Then by [14, Theorem 1.4],
+          (X, H) = (Pn , OPn (1)), (Qn , OPn+1 (1)|Qn ), (P2 , OP2 (2)), or (P(E), OP(E) (1)),
+where Q ⊂ Pn+1 is a quadric hypersurface and E is a very ample vector bundle of rank n on a
+smooth projective curve C. In this case, reg(OX ) = 2 implies that X is a scroll over a smooth
+projective curve C of genus g ≥ 1 and H 1 (C, E) = 0. Thus we get (3).
+  Suppose now that KX + (n − 1)H is base point free. We can define the adjunction mapping
+                                             ϕ: X → B
+given by |KX + (n − 1)H|. By [14, Proposition 1.11], one of the following holds:
+   (a) dim B = 0: X is a del Pezzo manifold and −KX = (n − 1)H.
+   (b) dim B = 1: ϕ gives a hyperquadric fibration over a smooth projective curve B.
+   (c) dim B = 2: ϕ gives a linear fibration over a smooth projective surface B.
+   (d) dim B = n: ϕ is a birational morphism.
+In cases (b), (c), ϕ has connected fibers by [4, Theorem 11.2.4]. The cases (a), (b), (c) correspond
+to the cases (4), (5), (6), respectively. For the case (b), we need to use [15, Lemma 6].
+   It only remains to consider the case that the adjunction mapping ϕ : X → B is a birational
+contraction. Let X := B and H be a divisor on X such that OX (H) = (ϕ∗ OX (H))∗∗ . In this
+case, (X, H) is called the first reduction of (X, H), and the adjunction mapping ϕ : X → X
+is a blow-up of X at finitely many distinct points (see [4, Definition 7.3.3]). By [4, Corollary
+7.4.2], H is a very ample divisor. Note that
+                              KX + (n − 1)H = ϕ∗ (KX + (n − 1)H)
+(see [4, Theorem 7.3.2]). If E1 , . . . , Ek are exceptional divisors of the blow-up ϕ : X → X at k
+distinct points, then
+                                  1
+                   H = ϕ∗ H −        (KX − ϕ∗ KX ) = ϕ∗ H − E1 − · · · − Ek .
+                                 n−1
+By [4, Proposition 7.6.1], we also have
+                H 0 (X, OX (KX + (n − 2)H)) = H 0 (X, OX (KX + (n − 2)H) = 0.
+By [4, Theorem 11.7.1], either
+     (i) (X, H) = (P3 , OP3 (3)), (P4 , OP4 (2)), (Q3 , OP4 (2)|Q3 ), or (Y, L), where Y is a three-
+         dimensional scroll over a smooth projective curve such that L induces OP2 (2) on each
+         fiber, or
+    (ii) KX + (n − 2)H is semiample.
+                SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                          7
+
+In the case (i), we get (7) by considering Lemma 2.1. In the case (ii), we have
+                                 h0 (X, OX (KX + (n − 2)H) > 0
+by [4, Theorem 7.2.6] (alternatively, we can apply [4, Proposition 13.2.4] to directly see that
+h0 (X, OX (KX + (n − 2)H)) > 0). Thus the case (ii) cannot occur when OX is 2-regular.
+Therefore, we finish the proof.                                                              
+
+                                3. Syzygies of section rings
+   In this section, we study syzygies of section rings of smooth projective varieties with 2-regular
+structure sheaf, and we show Theorem 1.3.
+
+3.1. Koszul cohomology. In this subsection, we recall notation of Koszul cohomology, and
+then show Theorem 1.3 (1). For more details on Koszul cohomology and syzygy, we refer to
+[3], [E], [5], [12], [19, Section 1.8].
+   Let X ( Pr = P(V ) be a smooth projective variety, and H be its general hyperplane section.
+Fix a divisor B on X, and define a section module
+                                              M
+                            R = R(X, B, H) :=   H 0 (X, OX (B + mH)).
+                                               m∈Z
+                                          •
+Then R is naturally a graded S = Sym (V )-module so that it has a minimal free resolution
+         M                                          M
+   ··· →     Kp,q (X, B, V ) ⊗k S(−p − q) → · · · →   K0,q (X, B, V ) ⊗k S(−q) → R → 0,
+            q                                            q
+
+in which the vector space Kp,q (X, B, V ) is the Koszul cohomology group associated to B with
+respect to H. It is well known that Kp,q (X, B, V ) is the cohomology of the Koszul-type complex
+ Λp+1 V ⊗ H 0 (X, B + (q − 1)H) → Λp V ⊗ H 0 (X, B + qH) → Λp−1 V ⊗ H 0 (X, B + (q + 1)H).
+We put kp,q (X, B, V ) := dimC Kp,q (X, B, V ). If B = 0, we simply write Kp,q (X, V ) = Kp,q (X, 0, V ).
+If V = H 0 (X, OX (H)), then we write Kp,q (X, V ) = Kp,q (X, H).
+   The following is immediate from the definition.
+Proposition 3.1. When B = 0, we have k0,0 (X, V ) = 1 and kp,0 (X, V ) = 0 for p ≥ 1.
+Furthermore, kp,q (X, V ) = 0 unless 0 ≤ p ≤ pr . dim R(X, H) and 0 ≤ q ≤ reg(OX ).
+   We say that a smooth projective variety X ( Pr = P(V ) satisfies N0 -property if k0,q (X, V ) =
+0 for q ≥ 1 and it satisfies Nk -property for some integer k > 0 if it satisfies N0 -property and
+kp,q (X, V ) = 0 for 1 ≤ p ≤ k and q ≥ 2. Note that X ( Pr satisfies N0 -property if and only if
+projectively normal and it satisfies N1 -property if and only if it is projectively normal and its
+defining ideal is generated by quadrics.
+  Now, we recall the setting of Theorem 1.3: X ( Pr = P(V ) is a smooth projective variety of
+dimension n, codimension e, and degree d such that reg(OX ) = 2 and we further assume that
+H 1 (X, OX ) = 0 when n ≥ 2. We suppose that X ( Pr is possibly obtained by an isomorphic
+projection from X ( PN = P(H 0 (X, OX (1))). Let H be a general hyperplane section, and C
+be a general curve section whose genus is denoted by g. We first show the following.
+Proposition 3.2. Under the above notations, we have g = h0 (X, OX (KX + (n − 1)H)).
+8                              SIJONG KWAK AND JINHYUNG PARK
+
+Proof. By the assumption and Kodaira vanishing theorem,
+           H 0 (X, OX (KX + (n − 2)H)) = H 1 (X, OX (KX + (n − 2)H)) = 0 if n ≥ 2.
+Note that H 1 (H, OH ) = 0 and reg(OH ) = reg(OX ) = 2. (In general, we only have reg(OH ) ≤
+reg(OX ) but in our case the equality holds.) Thus we obtain
+    H 0 (X, OX (KX + (n − 1)H)) = H 0 (H, OH (KH + (n − 2)H)) = · · · = H 0 (C, OC (KC )),
+so the assertion follows.                                                                        
+  Since reg(OX ) = 2 and H 1 (X, OX ) = 0 if n ≥ 2, itLfollows that H i (X, OX (m)) = 0 for 1 ≤ i ≤
+n−1 and m ∈ Z. Then the section ring R(X, H) = m≥0 H 0 (X, OX (mH)) is Cohen-Macaulay.
+Let Y ∈ |H| be an irreducible smooth variety (when n ≥ 2). Then H i (Y, OY (mH|Y )) = 0 for
+1 ≤ i ≤ n − 2 and m ∈ Z. Thus R(Y, H|Y ) is also Cohen-Macaulay. As a consequence,
+the section ring R(C, H|C ) of a general curve section C of X ( Pr is also Cohen-Macaulay.
+Furthermore, we have the following.
+Proposition 3.3. Under the above notations, we have Kp,q (X, H) = Kp,q (Y, H|Y ) for all p, q.
+In particular, Kp,q (X, H) = Kp,q (C, H|C ) for all p, q.
+Proof. Since H 1 (X, OX (m)) = 0 for m ∈ Z, the assertion follows from [12, Theorem (3.b.7)]
+(see also [3, Theorem 2.21]).                                                             
+  Note that the projective dimension of R(X, H) is e, i.e., Kp,q (X, H) = 0 for p ≥ e + 1. We
+can also apply Green’s duality theorem ([12, Theorem (2.c.6)]).
+  We now give the proof of Theorem 1.3 (1).
+Proof of Theorem 1.3 (1). For this case, we assume that V = H 0 (X, OX (1)), i.e., X ( Pr is
+linearly normal. Since H 1 (OX ) = 0, a general hyperplane section Y := X ∩ H ( Pr−1 is
+also linearly normal and H 1 (Y, OY ) = 0 if dim Y ≥ 2. Therefore, we conclude that a general
+curve section C ⊂ Pe+1 is also linearly normal. In particular, it is elementary to check that
+reg(OX∩H ) ≤ reg(OX ) = 2, and thus, H 1 (C, OC (1)) = 0. By Riemann-Roch formula,
+                               e + 2 = h0 (C, OC (1)) = d − g + 1,
+so d = e + g + 1. If e ≥ g + k, then d ≥ 2g + 1 + k. By Green’s (2g + 1 + k)-Theorem ([12,
+Theorem (4.a.1)]), C ⊂ Pe+1 satisfies Nk -property, and so does X ( Pr .                
+
+3.2. Koszul cohomology under projection. In this subsection, we discuss about the effect
+of projection on Koszul cohomology (see [3, Section 2.2] for more details), and then we prove
+Theorem 1.3 (2).
+   Let X ( P(V ) be a smooth projective variety, and H be its general hyperplane section.
+Consider an isomorphic projection from X ( P(V ) to P(W ) at one point P ∈ P(V ). Then
+W ⊂ V is a subspace of codimension 1, and we still have an embedding X ( P(W ). We can
+take a vector v ∈ V ∗ which defines the point P = [v] ∈ P(V ). Then evv = hv, ·i induces an
+exact sequence
+                                                evv
+                                0 −→ W −→ V −−→     C −→ 0.
+From the short exact sequence
+                     0 −→ Λp W ⊗ R −→ Λp V ⊗ R −→ Λp−1 W ⊗ R −→ 0,
+we obtain the following.
+               SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                                    9
+
+Proposition 3.4 ([3, Lemma 2.9]). We have the following long exact sequence
+                                               v  pr
+           Kp,q (X, B, W ) → Kp,q (X, B, V ) −−→ Kp−1,q (X, B, W ) → Kp−1,q+1 (X, B, W ).
+Corollary 3.5. Suppose that Ki,j (X, B, W ) = 0 for i ≥ p − 1 and j ≤ q − 1.
+(1) If Kp,q (X, B, V ) 6= 0, then Kp−1,q (X, B, W ) 6= 0.
+(2) If Kp,q (X, B, V ) = 0, then Kp,q (X, B, W ) = 0.
+Proof. By Proposition 3.4 and the assumption, we have an exact sequence
+                     0 → Kp,q (X, B, W ) → Kp,q (X, B, V ) → Kp−1,q (X, B, W ).
+The assertion (2) immediately follows. For (1), suppose that Kp−1,q (X, B, W ) = 0. By the
+assumption, Kp,q (X, B, W ) = 0. Then we get a contradiction to Kp,q (X, B, V ) 6= 0.   
+  On the other hand, we have a factorization
+                                              ι
+                                     Λp V −  → v
+                                                 Λp−1 W ,→ Λp−1 V,
+where ιv is explicitly given as ιv (v1 ∧ · · · ∧ vp ) = i (−1)i v1 ∧ · · · ∧ v̂i ∧ · · · ∧ vp ⊗ evv (vi ). Then
+                                                       P
+we obtain a commutative diagram
+                                                       prv
+(3.1)                             Kp,q (X, B, V )            / Kp−1,q (X, B, W )
+
+                                                       evv
+                                                                 )    
+                                                             Kp−1,q (X, B, V ).
+As v varies, the maps evv glue together to a homomorphism of vector bundles on P(V ). Thus
+we obtain a map
+                     ev : OP(V ) ⊗ Kp,q (X, B, V ) → OP(V ) (1) ⊗ Kp−1,q (X, B, V ),
+and so we get a natural map
+                           H 0 (ev) : Kp,q (X, B, V ) → V ⊗ Kp−1,q (X, B, V ).
+Let x0 , . . . , xr be homogeneous coordinates of P(V ) = Pr . Then H 0 (ev) can be regarded as a
+kp,q (X, B, V ) × kp−1,q (X, B, V ) matrix whose entries are linear forms in x0 , . . . , xr .
+Proposition 3.6 ([3, Proposition 2.11]). If H 0 (X, OX (B − H)) = 0 and Kp,0 (X, B, V ) = 0 for
+p ≥ 1, then
+                           H 0 (ev) : Kp,1 (X, B, V ) → V ⊗ Kp−1,q (X, B, V )
+is injective for all p ≥ 2
+Corollary 3.7. Under the same assumptions in Proposition 3.6, we have the following:
+(1) For p ≥ 2, if kp−1,1 (X, B, V ) < kp,1 (X, B, V ), then Kp,1 (X, B, W ) 6= 0.
+(2) For p ≥ 2, if kp−1,1 (X, B, V ) ≥ kp,1 (X, B, V ) > 0 and W ⊂ V is general, then Kp,1 (X, B, W ) =
+    0.
+Proof. By Proposition 3.4 and the assumption, we have an exact sequence
+                                                             v       pr
+                     0 → Kp,q (X, B, W ) → Kp,q (X, B, V ) −−→ Kp−1,q (X, B, W ).
+We see that
+        Kp,1 (X, B, W ) = 0 if and only if prv : Kp,q (X, B, V ) → Kp−1,q (X, B, W ) is injective.
+10                                   SIJONG KWAK AND JINHYUNG PARK
+
+Note that Kp−1,q (X, B, W ) → Kp−1,q (X, B, V ) is injective. By considering the diagram (3.1),
+we see that
+        Kp,1 (X, B, W ) = 0 if and only if evv : Kp,q (X, B, V ) → Kp−1,q (X, B, V ) is injective.
+The assertion (1) then immediately follows. For the assertion (2), we regard H 0 (ev) as a
+kp,q (X, B, V ) × kp−1,q (X, B, V ) matrix. By Proposition 3.6, the maximal minors of H 0 (ev)
+defines a proper closed subset of P(V ). Since W ⊂ V is general, we can assume that [v] = P ∈
+P(V ) is a general point. Thus evv is also injective, and this shows (2).                   
+     We also have the following.
+Proposition 3.8. If H 0 (X, OX (B − H)) = 0, then
+                            H 0 (ev) : Kp,0 (X, B, V ) → V ⊗ Kp−1,0 (X, B, V )
+is injective for all p ≥ 1.
+Proof. We have a natural injective map ι : Λp V → V ⊗ Λp−1 V which is the dual of the wedge
+product map Λp−1 V ∗ ⊗ V ∗ → Λp V ∗ . Explicitly,
+              ι(v1 ∧ · · · ∧ vp ) = (v 7→ ιv (v1 ∧ · · · vp )) ∈ Hom(V ∗ , Λp−1 V ) = V ⊗ Λp−1 V.
+Note that Kp,0 (X, B, V ) is the kernel of the map
+                              Λp V ⊗ H 0 (X, B) → Λp−1 V ⊗ H 0 (X, B + H).
+From the following diagram
+                                                  
+                              Kp,0 (X, B, V )                 / Λp V ⊗ H 0 (X, B)
+                                                                         _
+                               H 0 (ev)                                     ι⊗id
+                                                                       
+                                                       
+                          V ⊗ Kp−1,0 (X, B, V )           / V ⊗ Λp−1 V ⊗ H 0 (X, B),
+
+we see that H 0 (ev) is injective.                                                                   
+Corollary 3.9. Under the same assumptions in Proposition 3.8, we have the following:
+(1) For p ≥ 1, if kp−1,0 (X, B, V ) < kp,0 (X, B, V ), then Kp,0 (X, B, W ) 6= 0.
+(2) For p ≥ 1, if kp−1,0 (X, B, V ) ≥ kp,0 (X, B, V ) > 0 and W ⊂ V is general, then Kp,0 (X, B, W ) =
+    0.
+Proof. The proof is identical to that of Corollary 3.7, so we omit the detail.                       
+   We now turn to the proof of Theorem 1.3 (2). By our assumptions, the syzygies of R(X, H)
+is the same to those of the section ring R(C, H|C ). Thus we assume that X = C is a curve. By
+Theorem 1.3 (1) and Ein-Lazarsfeld’s gonality theorem [6] (see also [24]), if V = H 0 (C, OC (1)),
+then
+   (1) Kp,0 (C, V ) 6= 0 if and only if p = 0.
+   (2) Kp,1 (C, V ) 6= 0 if and only if 1 ≤ p ≤ h0 (C, OC (1)) − 1 − gon(C).
+   (3) Kp,2 (C, V ) 6= 0 if and only if h0 (C, OC (1)) − 1 − g ≤ p ≤ h0 (C, OC (1)) − 2.
+Thus the Betti table of C ⊂ PN , where N = h0 (C, OC (1)) − 1 is as follows:
+            0 1       ··· N − g − 1 N − g             · · · N − gon(C) N − gon(C) + 1    ··· N − 1
+          0 1 −       ···    −       −                ···       −            −           ···  −
+          1 − ∗       ···    ∗        ∗               ···       ∗            −           ···  −
+          2 − −       ···    −        ∗               ···       ∗            ∗           ···   ∗
+               SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                                 11
+
+
+
+
+  Here − and ∗ mean vanishing and non-vanishing, respectively.
+Remark 3.10. We explain how to determine vanishing or nonvanishing of Koszul cohomology
+groups in the setting of Theorem 1.3. We only have to consider Kp,1 and Kp,2 . Note that we
+know the Betti table of X ( P(H 0 (X, OX (1)). Thus it is enough to determine the Betti table
+of X ( P(W ) = Pn+e , where W ⊂ V is a subspace of codimension 1, under the assumption
+that the Betti table of X ( P(V ) = Pn+e+1 is given.
+   First, we consider Kp,1 . There exists an integer k > 0 such that
+            Kp,1 (X, V ) 6= 0 for 1 ≤ p ≤ k and Kp,1 (X, V ) = 0 for k + 1 ≤ p ≤ e + 1.
+If V 6= H 0 (X, OX (1)), then K0,1 (X, V ) 6= 0. It follows from Corollary 3.5 that
+            Kp,1 (X, W ) 6= 0 for 0 ≤ p ≤ k − 1 and Kp,1 (X, W ) = 0 for k + 1 ≤ p ≤ e.
+For determining Kk,1 (X, W ), we apply Corollary 3.7. If kk−1,1 (X, V ) < kk,1 (X, V ), then
+Kk,1 (X, W ) 6= 0. If kk−1,1 (X, V ) ≥ kk,1 (X, V ) and W ⊂ V is furthermore general, then
+Kk,1 (X, W ) = 0.
+  For Kp,2 , we first apply Green’s duality theorem ([12, Theorem (2.c.6)]) to the curve section
+C ⊂ P(V |C ), so we get Kp,2 (C, V |C ) = Ke+1−p,0 (C, KC , V |C )∗ . We also have Kp,2 (C, W |C ) =
+Ke−p,0 (C, KC , W |C )∗ . Then we can similarly argue as in the Kp,1 case using Corollaries 3.5 and
+3.9.
+Remark 3.11. We see in Remark 3.10 that if V ( H 0 (X, OX (1)) a general subspace of codi-
+mension 1 and
+            kh0 (C,OC (1))−1−g,2 (X, H 0 (X, OX (1))) ≤ kh0 (C,OC (1))−g,2 (X, H 0 (X, OX (1))),
+then Ke−g,2 (X, V ) = 0. On the other hand, if there exists a section s ∈ H 0 (C, H|C − KC ) such
+that f1 · s, . . . , fg · s ∈ V |C , where f1 , . . . , fg are linearly independent sections of H 0 (C, KC ),
+then the argument in [5, Proof of Proposition 5.1] shows that Ke−g,2 (X, V ) 6= 0
+  We are ready to prove Theorem 1.3 (2).
+Proof of Theorem 1.3 (2). We assume that V ( H 0 (X, OX (1)) is of codimension t ≥ 1.
+(i), (ii) These assertions follow from Proposition 3.1.
+(iii), (iv) The assertions follow from the arguments in Remark 3.10.                                      
+
+                            4. Castelnuovo-Mumford regularity
+  In this section, we give a proof of Theorem 1.4. Recall the setting of Theorem 1.4: X ( Pr is
+a non-degenerate smooth projective variety of dimension n, codimension e, and degree d, and
+H is its general hyperplane section. We assume that OX is 2-regular and we further assume
+that H 1 (X, OX ) = 0 when n ≥ 2. Denote by g := h0 (X, OX (KX + (n − 1)H)) the sectional
+genus of X ( Pr (see Proposition 3.2).
+  For the proof, we apply Green’s vanishing theorem ([12, Theorem (3.a.1)]) and Gruson-
+Lazarsfeld-Peskine technique in [13].
+Proof of Theorem 1.4. We suppose that X ( Pr is not linearly normal and e ≥ g + 1. Then
+                               g = h0 (X, OX (KX + (n − 1)H)) ≤ e − k
+12                                      SIJONG KWAK AND JINHYUNG PARK
+
+for k = 0, 1. By Green’s vanishing theorem ([12, Theorem (3.a.1)]), we obtain Kk,2 (X, V ) = 0
+for k = 0, 1. We can easily check that k0,1 (X, V ) = d − e − g − 1. Thus the sheafification of a
+minimal free resolution of R(X, H) is of the form
+                    · · · −→ OPr (−2)l −→ OPr (−1)d−e−g−1 ⊕ OPr −→ OX −→ 0.
+As in [13, Proof of Theorem 2.1], we apply snake lemma to obtain the following commutative
+diagram
+                                                                    0
+
+                                                                        
+                       0                                           OPr              / OX       /0
+
+
+                                                                     
+            0         /K              / OPr (−2)l        / OPr (−1)d−e−g−1 ⊕ OPr    / OX       /0
+
+
+                                                                    
+            0         /N              / OPr (−2)l    u      / OPr (−1)d−e−g−1          /0
+
+
+                                                                   
+                     IX|Pr                                          0
+
+                        
+                    0
+in which all horizontal and vertical sequences are exact. Note that
+                                H 1 (Pr , K(m)) = H 2 (Pr , K(m)) = 0 for all m ∈ Z.
+Thus we have
+                         H 1 (Pr , N (m)) = H 1 (Pr , IX|Pr (m)) for all m ∈ Z.
+By considering the Eagon-Northcott complex associated to u, we see that N is (d − e − g + 1)-
+regular (see e.g., [22, Lemma 5]). Therefore, H 1 (Pr , IX|Pr (d − e − g)) = 0, so we finally obtain
+reg(X) ≤ d − e + 1 − g.                                                                           
+
+
+                                                    References
+ [1] J. Ahn and K. Han, Linear normality of general linear sections and some graded Betti numbers of 3-regular
+     projective schemes, J. Algebra 440 (2015), 642-667.
+ [2] A. Alzati and F. Russo, On the k-normality of projected algebraic varieties, Bull. Braz. Math. Soc. (N.S.)
+     33 (2002), 27-48.
+ [3] M. Aprodu and J. Nagel, Koszul cohomology and algebraic geometry, University Lecture Series 52 (2010),
+     American Mathematical Society, Providence, RI.
+ [4] M. C. Beltrametti and A. J. Sommese, The adjunction theory of complex projective varieties, de Gruyter
+     Expositions in Mathematics 16 Walter de Gruyter and Co., Berlin, (1995).
+ [5] L. Ein and R. Lazarsfeld, Asymptotic syzygies of algebraic varieties, Invent. Math. 190 (2012), 603-646.
+ [6] L. Ein and R. Lazarsfeld, The gonality conjecture on syzygies of algebraic curves of large degree, Publ.
+     Math. Inst. Hautes Etudes Sci. 122 (2015), 301-313.
+[E] D. Eisenbud, The geometry of syzygies. A second course in commutative algebra and algebraic geometry.
+     Graduate Texts in Mathematics 229 (2005), Springer-Verlag, Berlin.
+ [7] D. Eisenbud and S. Goto, Linear free resolutions and minimal multiplicity, J. Algebra 88 (1984), 89-133.
+                SMOOTH PROJECTIVE VARIETIES WITH 2-REGULAR STRUCTURE SHEAF                                      13
+
+ [8] D. Eisenbud, M. Green, K. Hulek, and S. Popescu, Small schemes and varieties of minimal degree, Amer.
+     J. Math. 128 (2006), 1363-1389.
+ [9] D. Eisenbud and J. Harris, On varieties of minimal degree (a centennial account), Algebraic Geometry,
+     Bowdoin 1985 (Brunswick, Maine, 1985), Proc. Sympos. Pure Math. 46 (1987), Amer. Math. Soc., Provi-
+     dence, RI, 3-13.
+[10] T. Fujita, On the structure of polarized manifolds with total deficiency one I, J. Math. Soc. Japan 32
+     (1980), 709-725.
+[11] T. Fujita, On the structure of polarized manifolds with total deficiency one II, J. Math. Soc. Japan 33
+     (1981), 415-434.
+[12] M. Green, Koszul cohomology and the geometry of projective varieties, J. Differential Geom. 19 (1984),
+     125-171.
+[13] L. Gruson, R. Lazarsfeld and C. Peskine, On a theorem of Castelnuovo, and the equations defining space
+     curves, Invent. Math. 72 (1983), 491-506.
+[14] P. Ionescu, Embedded projective varieties of small invariants, in Algebraic Geometry (Bucharest 1982),
+     Lecture Notes in Math., 1056, Springer-Verlag, Berlin (1984), 142-186.
+[15] P. Ionescu, On manifolds of small degree, Commet. Math. Helv. 83 (2008), 927-940.
+[16] S. Kwak and E. Park, Some effects of property Np on the higher normality and defining equations of
+     nonlinearly normal varieties, J. Reine Angew. Math. 582 (2005), 87-105.
+[17] S. Kwak and J. Park, A bound for Castelnuovo-Mumford regularity by double point divisors, preprint (2014),
+     arXiv:1406.7404.
+[18] R. Lazarsfeld, A sharp Castelnuovo bound for smooth surfaces, Duke Math. J. 55 (1987), 423-429.
+[19] R. Lazarsfeld, Positivity in algebraic geometry I. Classical Setting: line bundles and linear series, A Series
+     of Modern Surveys in Math. 48, Springer-Verlag, Berlin, (2004).
+[20] J. McCullough and I. Peeva, Counterexamples to the Eisenbud-Goto regularity conjecture, to appear in J.
+     Amer. Math. Soc.
+[21] W. Niu and J. Park, A Castelnuovo-Mumford bound for scrolls, J. Algebra. 488 (2017), 388-402.
+[22] A. Noma, A bound on the Castelnuovo-Mumford regularity for curves, Math. Ann. 322 (2002), 69-74.
+[23] H. Pinkham, A Castelnuovo bound for smooth surfaces, Invent. Math. 83 (1986), 321-332.
+[24] J. Rathmann, An effective bound for the gonality conjecture, preprint (2016), arXiv:1604.06072.
+
+  Department of Mathematical Sciences, KAIST, Daejeon, Korea
+  E-mail address: sjkwak@kaist.ac.kr
+
+  School of Mathematics, Korea Institute for Advanced Study, Seoul, Korea
+  E-mail address: parkjh13@kias.re.kr
+

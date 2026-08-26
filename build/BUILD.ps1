@@ -40,8 +40,13 @@ if (($compiledInputs -join "`n") -cne ($declaredInputs -join "`n")) {
   throw 'source/main.tex input order does not exactly match CUMULATIVE_INPUTS.json.'
 }
 $knownTex = @('main.tex') + $declaredInputs
+$normalizedSrc = [IO.Path]::GetFullPath($src).TrimEnd([char[]]@('\', '/'))
 $presentTex = @(Get-ChildItem -LiteralPath $src -Recurse -File -Filter '*.tex' | ForEach-Object {
-  [IO.Path]::GetRelativePath($src, $_.FullName).Replace('\\', '/')
+  $fullName = [IO.Path]::GetFullPath($_.FullName)
+  if (-not $fullName.StartsWith($normalizedSrc + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) {
+    throw "TeX input escaped the source tree: $fullName"
+  }
+  $fullName.Substring($normalizedSrc.Length + 1).Replace('\\', '/')
 } | Sort-Object)
 $knownTex = @($knownTex | ForEach-Object { $_.Replace('\\', '/') } | Sort-Object)
 if (($presentTex -join "`n") -cne ($knownTex -join "`n")) {

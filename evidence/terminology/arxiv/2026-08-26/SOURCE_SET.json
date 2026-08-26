@@ -1,0 +1,45 @@
+{
+  "schema": "ag-ko-terminology-source-set-v1",
+  "date": "2026-08-26",
+  "purpose": "Standing semantic and lexical controls for EGA II onward",
+  "arxiv": [
+    {
+      "id": "1803.01127v1",
+      "title": "Classification and syzygies of smooth projective varieties with 2-regular structure sheaf",
+      "authors": ["Sijong Kwak", "Jinhyung Park"],
+      "url": "https://arxiv.org/abs/1803.01127v1",
+      "pdf": "1803.01127v1.pdf 400724 bytes / B95550E965A49EF14ACE28ABCE1FBB212C35E8B421805878F815250BCB370253",
+      "text": "1803.01127v1.txt 45003 bytes / 85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "pages": 13,
+      "role": "English semantic/type control only"
+    },
+    {
+      "id": "2301.11539v2",
+      "title": "Rational curves in a quadric threefold via an SL(2,C)-representation",
+      "authors": ["Kiryong Chung", "Sukmoon Huh", "Sang-Bum Yoo"],
+      "url": "https://arxiv.org/abs/2301.11539v2",
+      "pdf": "2301.11539v2.pdf 473616 bytes / F32F83DBD9620B8130F38ABAAF1B685BD765337064C096BB9C88D7AFDE1B0178",
+      "text": "2301.11539v2.txt 57909 bytes / 9C01568ADD6DCE842FDBBAD0DB7DF3EC0E2BDC4478938AC687374A628933B1CC",
+      "pages": 20,
+      "role": "English semantic/type control only"
+    },
+    {
+      "id": "1603.00618v2",
+      "title": "Okounkov bodies and Zariski decompositions on surfaces",
+      "authors": ["Sung Rak Choi", "Jinhyung Park", "Joonyeong Won"],
+      "url": "https://arxiv.org/abs/1603.00618v2",
+      "pdf": "1603.00618v2.pdf 251533 bytes / EAEB4025416C327B5FF54DF4C5972826CF5DE199C1622D8538AA8323924F9C77",
+      "text": "1603.00618v2.txt 64085 bytes / 6E0381663F1E71AE4F4C1D4051BB311A9F32CDD91CAECC75EF86D76134BEFB4F",
+      "pages": 16,
+      "role": "English semantic/type control only"
+    }
+  ],
+  "korean_lexical_sources": [
+    "https://mathsci.kaist.ac.kr/home/research/field/",
+    "https://koasas.kaist.ac.kr/handle/10203/198130",
+    "https://koasas.kaist.ac.kr/handle/10203/42213",
+    "https://www.kms.or.kr/mathdict/list.html?key=ename&keyword=sheaf"
+  ],
+  "scarcity_finding": "No qualifying Korean-language algebraic-geometry paper surfaced in the bounded arXiv searches. This does not prove nonexistence.",
+  "admission_rule": "Every nontrivial term must bind the exact French source sense, an exact English arXiv semantic locus, and attested Korean professional usage. ArXiv does not authorize Korean spelling. Missing Korean attestation remains an explicit candidate rather than a silent lock."
+}

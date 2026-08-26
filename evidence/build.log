@@ -1099,12 +1099,12 @@ LaTeX Warning: Marginpar on page 61 moved.
 [131] <xymatrix 2x2 168> <xymatrix 3x2 145> [132] [133] <xymatrix 2x2 168>
 <xymatrix 2x2 168> [134] [135] [136] <xymatrix 4x2 361> [137] [138] <xymatrix
 2x2 182> [139] <xymatrix 2x2 168> [140] [141] [142] <xymatrix 2x2 168> [143]
-[144] [145] [146] <xymatrix 2x2 182>) (bib.tex [147]
+[144] [145] [146] <xymatrix 2x2 182> [147]) (bib.tex [148]
 
 LaTeX Font Warning: Font shape `TU/MalgunGothic(0)/m/sc' undefined
 (Font)              using `TU/MalgunGothic(0)/m/n' instead on input line 6.
 
-) [148
+) [149
 
 ]
 ([USER_PROFILE]\Documents\interlanguage\03_projects\language_management\cjk\03
@@ -1118,17 +1118,17 @@ L3 programming layer <2026-03-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 20860FBA2CA5795E916D0CA592BF3C34;16986.
+(rerunfilecheck)             Checksum: 24B418E408F9329378ABA79C0D3779EC;17142.
  ) 
 Here is how much of TeX's memory you used:
- 27929 strings out of 402807
- 552621 string characters out of 5444928
- 1089678 words of memory out of 5000000
- 56343 multiletter control sequences out of 15000+600000
+ 27937 strings out of 402807
+ 552742 string characters out of 5444928
+ 1090209 words of memory out of 5000000
+ 56351 multiletter control sequences out of 15000+600000
  638527 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,16n,121p,796b,1015s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on [USER_PROFILE]\Documents\interlanguage\03_projects\language_
-management\cjk\03_working_translations\ag_ko\pub\ega-ko\build\out\main.pdf (149
+management\cjk\03_working_translations\ag_ko\pub\ega-ko\build\out\main.pdf (150
  pages).

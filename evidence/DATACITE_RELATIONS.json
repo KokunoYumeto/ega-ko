@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "version": "2026-08-26-r23",
+  "version": "2026-08-26-r24",
   "concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22102982",
-  "previous_exact_version_doi": "10.5281/zenodo.22101727",
+  "exact_version_doi": "10.5281/zenodo.22103931",
+  "previous_exact_version_doi": "10.5281/zenodo.22102982",
   "global_ega_concept_doi": "10.5281/zenodo.20414353",
   "relation_policy": "isVersionOf concept DOI; isNewVersionOf previous exact release; source authority remains attributed and read-only",
-  "publication_status": "r23 is source-admitted and package-verified in the existing Zenodo lineage; the149-page cumulative reader is selected as the sole PDF/front artifact; publication and anonymous replay are the next frozen transaction; r22 remains immutable public history"
+  "publication_status": "r24 is source-admitted and build-verified in the existing Zenodo lineage; the150-page complete EGA I cumulative reader is selected as the sole PDF/front artifact; package freeze, publication and anonymous replay are next; r23 remains immutable public history"
 }
