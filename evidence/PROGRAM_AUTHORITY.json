@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-27T21:04:52+02:00",
+  "updated": "2026-08-27T21:07:57+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
   "canonical_source_bytes": 820505,
   "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
@@ -14,13 +14,15 @@
   "scope": "Complete EGA I; complete EGA II Chapter II programme; EGA II main text through 1.1.3 / canonical lines1-90; full EGA II and full EGA corpus incomplete",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
   "publication": {
-    "status": "r25 is public and anonymously replayed at Zenodo exact DOI10.5281/zenodo.22132582 and bounded GitHub artifact commit880b203fade938b90937fe47c39a3480e99f30a7; final live-state receipt commit pending",
+    "status": "r25 is public and anonymously replayed at Zenodo4/4 and GitHub370/370; continue EGA II at canonical line91",
     "current_public_doi": "10.5281/zenodo.22132582",
     "concept_doi": "10.5281/zenodo.21921513",
     "reserved_exact_doi": "10.5281/zenodo.22132582",
     "github_artifact_commit": "880b203fade938b90937fe47c39a3480e99f30a7",
     "github_artifact_tree": "eb635b73e2b0749d63b66c75489ee11624aba7d6",
-    "github_receipt_status": "artifact codeload replay PASS370/370; final live-state receipt commit pending",
+    "github_state_commit": "c2a0df18c2cbb72cf50deb51882320d6bcf3f31f",
+    "github_receipt_commit": "24352c5a084b9c3d90e6909704925ac0def32edc",
+    "github_receipt_status": "state codeload replay PASS370/370 and final receipt raw replay PASS",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing Korean EGA target remains unmutated while its account is inactive; no duplicate article"
   }

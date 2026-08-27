@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-27T21:04:52+02:00",
+  "updated": "2026-08-27T21:07:57+02:00",
   "volume": "EGA II",
   "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-90; Chapter II programme in front-fr.tex complete",
   "next_label": "subsection II.1.2 at canonical line91",
@@ -10,5 +10,5 @@
   "current_exact_zenodo": "10.5281/zenodo.22132582",
   "current_public": "10.5281/zenodo.22132582",
   "reserved_exact_zenodo": "10.5281/zenodo.22132582",
-  "status": "r25 is public and anonymously replayed at Zenodo and GitHub artifact commit880b203fade938b90937fe47c39a3480e99f30a7; finalize the live-state receipt commit, then continue from canonical line91 without reopening completed units"
+  "status": "r25 is public and anonymously replayed at Zenodo4/4 and GitHub370/370 with final receipt commit24352c5a084b9c3d90e6909704925ac0def32edc; continue from canonical line91 without reopening completed units"
 }
