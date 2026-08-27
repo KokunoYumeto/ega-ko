@@ -1,0 +1,47 @@
+{
+  "schema": "ag-ko-portable-build-control-v1",
+  "version": "2026-08-27-r25",
+  "source_archive": {
+    "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 240661,
+    "sha256": "C32D186F8EBF09CD801D35F07F7D091758C8050540F70EA052CF9AFFC29601D7",
+    "entries": 27,
+    "files": 25,
+    "directories": 2,
+    "uncompressed_file_bytes": 920544,
+    "inventory_sha256": "E254113BB854A21D4F255435E06F27449E62BDE34C7773C3B731F7782C0D558D",
+    "A_B_byte_identical": true,
+    "member_name_size_crc_sha256_and_bytes_match_frozen_tree": true
+  },
+  "public_reader": {
+    "pages": 152,
+    "bytes": 1336706,
+    "sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
+    "build_cycles": "PASS"
+  },
+  "portable_A": {
+    "fresh_empty_extraction": true,
+    "prebuild_reader_absent": true,
+    "prebuild_output_absent": true,
+    "pages": 152,
+    "bytes": 1336713,
+    "sha256": "5B03DD456B45EE47777075A869DE9E8B6FF716E42F60C1B1B4DF38C4B1BE606A",
+    "build_cycles": "PASS"
+  },
+  "portable_B": {
+    "fresh_empty_extraction": true,
+    "prebuild_reader_absent": true,
+    "prebuild_output_absent": true,
+    "pages": 152,
+    "bytes": 1336685,
+    "sha256": "6F4059B839A12A8C83ABC4D449867EC8FC0D2C681659B3B4806C1D8DC2B832A9",
+    "build_cycles": "PASS"
+  },
+  "build_cycles": "PASS: two successive three-pass XeLaTeX cycles are byte-identical within each public, portable-A and portable-B tree; critical diagnostics0",
+  "poppler_extraction": "PASS: public/A/B exact-identical, 793376 bytes / 3A5670E4D99F77AA6B46D63832A01D2B8C9BDAF1FB840FE09B492E3DBEC2E2DD",
+  "pypdf_extraction": "PASS: public/A/B exact-identical, 647656 bytes / 3DB5C523E08A9B29FB16FB28EA8F84757FB91C19895A463AB1CD39C38193750F",
+  "text": "PASS: 140992 Hangul syllables and zero U+FFFD in each extraction; exact DOI22132582 once and prior DOI22103931 zero times",
+  "visual_replay": "PASS: public/A/B page renders1,2,6,149,150,151,152 are pixel-identical at200dpi and 1654x2339",
+  "source_regression_control": "R24_LIVE_SOURCE_REGRESSIONS.json retained for two inherited bounded EGA I source loci; no EGA II regression inferred",
+  "result": "PASS"
+}

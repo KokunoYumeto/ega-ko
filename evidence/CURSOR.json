@@ -1,10 +1,10 @@
 {
   "schema": "ag-ko-public-cursor-v2",
-  "version": "2026-08-26-r24",
-  "coverage": "EGA I complete through subsection10.15 at source line3516 EOF; canonical driver closure15/15",
-  "next": "freeze, publish and anonymously replay r24; then first canonical EGA II input",
-  "target": "source/c1s10.tex lines1-3453 / 166856 bytes / 1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
-  "reserved_exact_doi": "10.5281/zenodo.22103931",
-  "current_public_checkpoint": "10.5281/zenodo.22103931",
-  "public_status": "r24 complete EGA I is public at Zenodo exact DOI10.5281/zenodo.22103931 and byte-replayed on Zenodo4/4 and GitHub357/357; the150-page file00 reader is the front artifact; cursor advances to the first canonical EGA II input without reopening unchanged EGA I"
+  "version": "2026-08-27-r25",
+  "coverage": "EGA I complete; EGA II Chapter II programme complete; EGA II main text contiguous through 1.1.3 at canonical ega2-1-fr.tex lines1-90; EGA II incomplete",
+  "next": "continue EGA II at canonical ega2-1-fr.tex line91, subsection II.1.2; do not reopen unchanged completed units",
+  "target": "source/c2s1.tex 3845 bytes / 894632C0C829BD859E8B4AE5675CEE1D8B9EFA860BF56E90698A1E10ED90B7E5",
+  "reserved_exact_doi": "10.5281/zenodo.22132582",
+  "current_public_checkpoint": "10.5281/zenodo.22132582",
+  "public_status": "r25 is public with open access at Zenodo exact DOI10.5281/zenodo.22132582 and anonymously replayed4/4; bounded GitHub publication is pending"
 }

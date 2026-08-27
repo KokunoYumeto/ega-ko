@@ -7,10 +7,11 @@
     "corpus": "EGA",
     "included_volumes": [
       "EGA 0_I",
-      "EGA I"
+      "EGA I",
+      "EGA II (front matter/programme and Section 1 through 1.1.3)"
     ],
-    "terminal_coverage": "EGA I Chapter I through subsection 10.15 to the canonical source EOF of ega1-10-fr.tex",
-    "completeness_claim": "complete Korean translation of every EGA I input enumerated by the canonical source/EGA_FR.tex driver; not a claim that the full EGA corpus is complete"
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by source/ega2/ega2-1-fr.tex lines 1-90 through 1.1.3",
+    "completeness_claim": "complete Korean translation of every EGA I input enumerated by the canonical source/EGA_FR.tex driver, followed by the complete EGA II front input and the contiguous beginning of its main input through 1.1.3; not a claim that EGA II or the full EGA corpus is complete"
   },
   "ordered_inputs": [
     { "path": "front.tex", "role": "edition front matter" },
@@ -27,6 +28,8 @@
     { "path": "c1s8.tex", "role": "EGA I Chapter I section 8 complete" },
     { "path": "c1s9.tex", "role": "EGA I Chapter I section 9 complete" },
     { "path": "c1s10.tex", "role": "EGA I Chapter I section 10 through subsection 10.15 and source EOF" },
-    { "path": "bib.tex", "role": "bibliography" }
+    { "path": "bib.tex", "role": "EGA I bibliography" },
+    { "path": "c2front.tex", "role": "EGA II Chapter II programme and front matter; source/ega2/front-fr.tex complete" },
+    { "path": "c2s1.tex", "role": "EGA II Chapter II section 1, contiguous through 1.1.3; source/ega2/ega2-1-fr.tex lines 1-90" }
   ]
 }

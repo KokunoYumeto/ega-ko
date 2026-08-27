@@ -1,27 +1,26 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-26T06:45:38+02:00",
-  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex",
-  "canonical_source_bytes": 159763,
-  "canonical_source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+  "updated": "2026-08-27T20:58:23+02:00",
+  "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
+  "canonical_source_bytes": 820505,
+  "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
   "package_mapping": {
-    "target_section10_bytes": 166856,
-    "source_front": "source/front.tex",
-    "source_section10": "source/c1s10.tex",
-    "target_section10_sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
-    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 1648 bytes / AEA168E88243B3B468C0F094CA62D0382DF35B2EFC81680D93742E4037A6B7AD"
+    "canonical_front": "source/ega2/front-fr.tex 1423 bytes / F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
+    "target_front": "source/c2front.tex 1500 bytes / 6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
+    "canonical_main_unit": "source/ega2/ega2-1-fr.tex lines1-90 3765 LF bytes / 01561A6EB7B1D711BB3AFBD392CC7762553D20778226BB9D495ED555D26B529D",
+    "target_main": "source/c2s1.tex 3845 bytes / 894632C0C829BD859E8B4AE5675CEE1D8B9EFA860BF56E90698A1E10ED90B7E5",
+    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 2129 bytes / 0C93A6E54A0AE58BB951FA980681229FB030304E6B0AB06136B59D27C9FDA308; 17 ordered inputs"
   },
-  "scope": "Complete EGA I: front matter, introduction, EGA 0_I, Chapter I programme, Chapter I §§1-9, §10 through subsection10.15 EOF, and bibliography; canonical driver15/15 closure; full EGA corpus incomplete",
-  "sequence": "EGA I then EGA II then FGA; later EGA volumes require a complete source-accurate authority packet beginning with EGA III; SGA is coordinated separately and is not current scope",
+  "scope": "Complete EGA I; complete EGA II Chapter II programme; EGA II main text through 1.1.3 / canonical lines1-90; full EGA II and full EGA corpus incomplete",
+  "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
   "publication": {
-    "status": "r24 complete EGA I is public and anonymously replayed on Zenodo and GitHub; the150-page file00 cumulative reader is the first/public front artifact in the existing lineage; Figshare remains unavailable without mutation or duplicate",
-    "current_public_doi": "10.5281/zenodo.22103931",
+    "status": "r25 is public with open access at exact DOI10.5281/zenodo.22132582 and anonymously replayed4/4; bounded GitHub publication is pending",
+    "current_public_doi": "10.5281/zenodo.22132582",
     "concept_doi": "10.5281/zenodo.21921513",
-    "exact_doi": "10.5281/zenodo.22103931",
-    "reserved_exact_doi": "10.5281/zenodo.22103931",
-    "github_artifact_commit": "5a1829abce5bb6e84221645d01db783814b21668",
-    "github_receipt_commit": "753b63cab055168224252ea59dda649e5589ab85",
+    "reserved_exact_doi": "10.5281/zenodo.22132582",
+    "r24_github_artifact_commit": "5a1829abce5bb6e84221645d01db783814b21668",
+    "r24_github_receipt_commit": "753b63cab055168224252ea59dda649e5589ab85",
     "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "existing target remains unmutated because the account is inactive/disabled; no duplicate article"
+    "figshare_status": "existing Korean EGA target remains unmutated while its account is inactive; no duplicate article"
   }
 }

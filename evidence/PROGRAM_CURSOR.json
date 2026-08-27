@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-26T06:45:38+02:00",
-  "volume": "EGA I",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega1/ega1-10-fr.tex line3516 EOF; canonical source/EGA_FR.tex lines61-82 driver closure",
-  "next_label": "publish/replay r24, then first canonical EGA II input",
-  "package_target": "source/c1s10.tex",
-  "package_target_locator": "lines1-3453 EOF",
-  "package_target_sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
-  "current_exact_zenodo": "10.5281/zenodo.22103931",
-  "current_public": "10.5281/zenodo.22103931",
-  "reserved_exact_zenodo": "10.5281/zenodo.22103931",
-  "status": "r24 is published and anonymously replayed; the150-page file00 cumulative reader contains all15 canonical EGA I inputs and completes EGA I; next is the first canonical EGA II input"
+  "updated": "2026-08-27T20:58:23+02:00",
+  "volume": "EGA II",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-90; Chapter II programme in front-fr.tex complete",
+  "next_label": "subsection II.1.2 at canonical line91",
+  "package_target": "source/c2s1.tex",
+  "package_target_locator": "target synchronized to source lines1-90 through 1.1.3",
+  "package_target_sha256": "894632C0C829BD859E8B4AE5675CEE1D8B9EFA860BF56E90698A1E10ED90B7E5",
+  "current_exact_zenodo": "10.5281/zenodo.22132582",
+  "current_public": "10.5281/zenodo.22132582",
+  "reserved_exact_zenodo": "10.5281/zenodo.22132582",
+  "status": "r25 is public with open access at Zenodo and anonymously replayed4/4; publish the bounded GitHub snapshot, then continue from canonical line91 without reopening completed units"
 }

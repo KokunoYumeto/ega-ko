@@ -1,24 +1,22 @@
 {
   "schema_version": 1,
-  "version": "2026-08-26-r24",
+  "version": "2026-08-27-r25",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1328403,
-  "reader_sha256": "86D62EF0A987DAF879807B54F292B0ACEEB9135EA1470524B782AE21B693C551",
-  "render_count": 9,
+  "reader_bytes": 1336706,
+  "reader_sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
+  "render_count": 7,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,145,146,147,148,149,150",
+  "pages": "1,2,6,149,150,151,152",
   "render_hashes": {
-    "page1": "5D5A28F1BBF9707F83AB1C0D50BC71805A0B8795B1CE4E793DF63A873B7366FB",
-    "page2": "9B70FC7C45D9205ADDF6D374683BB7CC80CE975E00CE6E001867C1721069E777",
-    "page6": "19C2134966198E5A87AF741A1B037ADFC5B28347B0CDCB2CB889ACB79496C1B2",
-    "page145": "FF93A6457F9D1402377EECD9EC5670704EF809CDBFE5962B5C2FD58B186F1251",
-    "page146": "A375D50B8F3522FE575DB417863E74A5E199540F71CD0F7924567BED8B73C30F",
-    "page147": "FA63403F26783A2D8BD9DC8BE039873106BEFDF3ED80F27C9EF234F8D5743186",
-    "page148": "36853C5A867700B0754F253687BA17597C9D7587BE467B99E814A95E85171AFB",
+    "page1": "2A75BF3EC543CF1144D3ED194AF6708C8DAE682503FAFCD37903DE963EEABF66",
+    "page2": "10F8F8FD7D620696B3A8DAFCBAB57CF917BA8D0FBAC6896A8D299AFEAFA72162",
+    "page6": "EA1AF6D5299A2B6BCED4521B4C0A9E8EA99B9F5FB837A2E98DF64D769859C554",
     "page149": "7938BBA2EED1F1A8AC652958C573640BDD26360996285F7BF0AC9AFDE6E9B855",
-    "page150": "4D2AF21F2576680B8F604CF387AD5001C1D59C7BBD774437F8C2A9724E6FD950"
+    "page150": "4D2AF21F2576680B8F604CF387AD5001C1D59C7BBD774437F8C2A9724E6FD950",
+    "page151": "ABA2CA08E2D3F1F5F933EEE759A3A8D44FFA4B6A7EC316F727F2313E2BD92FA7",
+    "page152": "CDB777CF1940E441473139E4E42A2CAB43D61FA46346CD01BD49C7D1120E494F"
   },
   "result": "PASS",
-  "disposition": "Pages1-2 verify the EGA I completion statement, exact DOI22103931, stable concept/source links, bounded rights and non-endorsement; page6 verifies a complete table of contents through10.15; pages145-146 retain the prior transition; pages147-149 contain complete subsection10.15 with no clipping, overlap, tofu, malformed formula, broken arrow or margin collision; page150 is the bibliography. A stale table-of-contents running header found during r24 QA was removed from the body before the final build. Public and clean portable-A renders are pixel-exact on all nine inspected pages."
+  "disposition": "Pages1-2 verify the cumulative scope, exact DOI, links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; page151 contains the complete Chapter II programme and opening main text; page152 completes 1.1.3. No clipping, overlap, tofu, malformed diagram or layout defect was found. Public and clean portable-A/B renders are pixel-exact on all seven pages."
 }
