@@ -1,0 +1,36 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-27-r25",
+  "verified_at": "2026-08-27T21:04:52+02:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "branch": "main",
+  "artifact_commit": "880b203fade938b90937fe47c39a3480e99f30a7",
+  "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/880b203fade938b90937fe47c39a3480e99f30a7",
+  "parent_commit": "47ab8808b6a221bf0711ccaef872fe66013a0c60",
+  "tree": "eb635b73e2b0749d63b66c75489ee11624aba7d6",
+  "selection": {
+    "manifest_declared_paths": 361,
+    "manifest_self_paths": 1,
+    "frozen_r25_release_payloads": 4,
+    "zenodo_receipts": 2,
+    "retained_bounded_figshare_attempt": 1,
+    "prior_github_receipt": 1,
+    "tree_paths": 370,
+    "tree_bytes": 190297008,
+    "inventory_sha256": "B3A26AFAAE1DDCD7DF562C6BB1EE82ABE63A66AD51396D5D9F3109E815BC5C00",
+    "front_artifact": "release/2026-08-27-r25/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "front_artifact_pages": 152,
+    "front_artifact_bytes": 1336706,
+    "front_artifact_sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
+    "historical_policy": "Older releases and receipts remain in immutable Git history and DOI versions; the r25 head is the bounded current Korean EGA snapshot rather than an accumulating duplicate archive."
+  },
+  "replay": {
+    "remote_main_after_artifact_push": "880b203fade938b90937fe47c39a3480e99f30a7",
+    "anonymous_codeload": "175743300 bytes / 2916F087738CCD56BD36CF148F1C2FE7DE457969C1BCF5F764338AD8F2FA86CE",
+    "anonymous_codeload_inventory": "370/370 paths,190297008 bytes and inventory SHA-256 B3A26AFAAE1DDCD7DF562C6BB1EE82ABE63A66AD51396D5D9F3109E815BC5C00 exact; zero missing, extra or mismatched",
+    "release_payloads": "PDF, source ZIP, evidence ZIP and outer manifest exact",
+    "repository_public": true,
+    "credential_material_present": false,
+    "result": "PASS_ARTIFACT_COMMIT"
+  }
+}
