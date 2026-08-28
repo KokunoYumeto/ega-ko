@@ -12,8 +12,8 @@
   "current_public_checkpoint": "10.5281/zenodo.22134988",
   "github_artifact_commit": "f97cbba7a4cb8fbb20e91116a723a745c45cc527",
   "github_artifact_tree": "868754170a782c93b199f8ea96948d72503f27bd",
-  "github_state_commit": "pending",
-  "github_receipt_commit": "pending",
-  "github_receipt_status": "r26 artifact snapshot is public and anonymously replayed387/387; post-publication state/receipt closure commit remains pending",
-  "result": "PASS_PUBLIC: r26 cumulative reader and corrected clean-extracted portable-A/B replay PASS through EGA II 1.5.4 / canonical lines1-712; exact DOI10.5281/zenodo.22134988 is openly published and anonymously replayed4/4; fresh anonymous reader Poppler, pypdf and selected-page pixel replay are exact; GitHub r26 artifact snapshot is public and replayed while its state closure remains pending"
+  "github_state_commit": "2c33dee4b413ec0efe6b4ef8dee51bf20ee6d3e3",
+  "github_receipt_commit": "22b07b42ef1669570253c291b1d0b66a36ec0576",
+  "github_receipt_status": "PASS_GITHUB: artifact commit f97cbba7a4cb8fbb20e91116a723a745c45cc527, state commit 2c33dee4b413ec0efe6b4ef8dee51bf20ee6d3e3 and receipt commit 22b07b42ef1669570253c291b1d0b66a36ec0576 are public; receipt raw replay is exact at2845 bytes / C301EA2B4F0A14AC986D658ACB06FA891D9A552F57ACCEE75D061D4C941AFB6F; receipt codeload replays387/387 paths /211316162 bytes / inventory443D99D94DA6F982ACD0BD2B5F1ABA95063577B2B9065BDFC3A2E03865F62FD8; this file is the terminal non-self-referential public closure state",
+  "result": "PASS_GITHUB: r26 cumulative reader and corrected clean-extracted portable-A/B replay PASS through EGA II1.5.4 / canonical lines1-712; exact DOI10.5281/zenodo.22134988 is openly published and anonymously replayed4/4; fresh anonymous reader Poppler, pypdf and selected-page pixel replay are exact; GitHub artifact, state and receipt checkpoints are public and anonymously replayed; continue at canonical line714 / Corollary II.1.5.5"
 }

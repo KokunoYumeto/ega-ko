@@ -14,15 +14,15 @@
   "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through 1.5.4 / canonical lines1-712; full EGA II and full EGA corpus incomplete",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
   "publication": {
-    "status": "PASS_PUBLIC: r26 exact DOI is open and authenticated/anonymous replay4/4 passes; fresh anonymous reader Poppler, pypdf and selected-page pixel replay match the frozen reader; GitHub r26 artifact snapshot is public and replayed387/387 while its post-publication state commit remains pending; continue EGA II at canonical line714 / Corollary II.1.5.5",
+    "status": "PASS_GITHUB: r26 exact DOI is open and authenticated/anonymous replay4/4 passes; fresh anonymous reader Poppler, pypdf and selected-page pixel replay match the frozen reader; GitHub artifact, state and receipt checkpoints are public and anonymously replayed; receipt raw and full387-path codeload are exact; this is the terminal non-self-referential public closure state; continue EGA II at canonical line714 / Corollary II.1.5.5",
     "current_public_doi": "10.5281/zenodo.22134988",
     "concept_doi": "10.5281/zenodo.21921513",
     "reserved_exact_doi": "10.5281/zenodo.22134988",
     "github_artifact_commit": "f97cbba7a4cb8fbb20e91116a723a745c45cc527",
     "github_artifact_tree": "868754170a782c93b199f8ea96948d72503f27bd",
-    "github_state_commit": "pending",
-    "github_receipt_commit": "pending",
-    "github_receipt_status": "r26 artifact codeload195577211 bytes /808C02421B1B4A43E2A8D3E26E9D1F87D674DB4FA7C75EC039C7B84A791BA01F;387 paths /211307672 bytes /inventory C4BFCC0E1345168788EAB94C4D35CC2A9F5204AD6229C7614C4E5F4593DDDAF6 exact; post-publication state closure pending",
+    "github_state_commit": "2c33dee4b413ec0efe6b4ef8dee51bf20ee6d3e3",
+    "github_receipt_commit": "22b07b42ef1669570253c291b1d0b66a36ec0576",
+    "github_receipt_status": "artifact codeload195577211 bytes /808C02421B1B4A43E2A8D3E26E9D1F87D674DB4FA7C75EC039C7B84A791BA01F /387 paths /211307672 bytes /inventoryC4BFCC0E1345168788EAB94C4D35CC2A9F5204AD6229C7614C4E5F4593DDDAF6 exact; state codeload195579611 bytes /8CB828EEE95B6D14CEA8717ECA2332E589541A89063A370CAA37869F5FB68E73 /387 paths /211315587 bytes /inventoryF80772C4FCC5EBEDF924136490C8B876136B3157054C918B88828194CE8A3A2F exact; receipt raw2845 bytes /C301EA2B4F0A14AC986D658ACB06FA891D9A552F57ACCEE75D061D4C941AFB6F exact; receipt codeload195579823 bytes /C96C4BAC8F52C480795A9CC3910D01DC9B6AD7F026C7396495A1425DA6341AAA /387 paths /211316162 bytes /inventory443D99D94DA6F982ACD0BD2B5F1ABA95063577B2B9065BDFC3A2E03865F62FD8 exact",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing Korean EGA target remains unmutated; no duplicate article"
   }
