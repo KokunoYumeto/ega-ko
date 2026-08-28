@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-public-cursor-v2",
   "version": "2026-08-28-r27",
-  "release_state": "published_zenodo_github_pending",
+  "release_state": "published_zenodo_github_replayed",
   "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main text contiguous through1.5.4 at canonical ega2-1-fr.tex lines1-712; EGA II incomplete",
-  "next": "complete r27 GitHub artifact/state/receipt publication and anonymous replay, then continue EGA II at canonical line714, Corollary II.1.5.5; line713 is blank",
+  "next": "continue EGA II at canonical line714, Corollary II.1.5.5; line713 is blank",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf 228 pages /1424078 bytes /1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
   "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;23 rows=16/1/6;217 historical markers",
   "current_exact_doi": "10.5281/zenodo.22141753",
   "current_public_checkpoint": "10.5281/zenodo.22141753",
   "zenodo_status": "PASS_PUBLIC: record22141753 open; anonymous metadata, DOI resolution and four-file replay exact; receipt-r27.json2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
-  "github_status": "PENDING_R27; do not treat the r26 terminal commit as the r27 artifact",
-  "status": "PASS_ZENODO_R27_GITHUB_PENDING"
+  "github_status": "PASS_PUBLIC: artifact ed322beac325953c203ca520e39cf530f9b27ae8 and receipt 591809896ce8afc9dfcae1059f63e66d6fbe5135 anonymously replayed; terminal commit identity/readback externally recorded, not self-claimed",
+  "status": "PASS_ZENODO_AND_GITHUB_R27"
 }

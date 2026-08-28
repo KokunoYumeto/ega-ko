@@ -1,7 +1,7 @@
 {
   "schema": "ag-ko-public-state-v2",
   "version": "2026-08-28-r27",
-  "release_state": "published_zenodo_github_pending",
+  "release_state": "published_zenodo_github_replayed",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
   "reader_pages": 228,
   "reader_bytes": 1424078,
@@ -10,7 +10,7 @@
   "coverage": "EGA0_I and EGA I complete; EGA II programme complete; EGA II main text contiguous through1.5.4 / canonical ega2-1-fr.tex lines1-712; EGA II and full EGA corpus incomplete",
   "coverage_matrix": "source/CUMULATIVE_INPUTS.json v2 16223 bytes / D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;23 rows=16 complete/1 partial/6 explicitly untranslated;17 ordered inputs;217 historical markers",
   "pagination_correction": "PASS: marker63 restored and each historical page marker begins an output-page rhythm; r27 reader228 pages; translation boundary unchanged",
-  "next": "complete the r27 GitHub artifact/state/receipt transaction, then continue EGA II at canonical line714 / Corollary II.1.5.5; line713 is blank",
+  "next": "continue EGA II at canonical line714 / Corollary II.1.5.5; line713 is blank",
   "zenodo_exact_doi": "10.5281/zenodo.22141753",
   "zenodo_record_id": 22141753,
   "concept_doi": "10.5281/zenodo.21921513",
@@ -18,6 +18,6 @@
   "zenodo_status": "PASS_PUBLIC: open access; authenticated metadata/files PASS; anonymous metadata, DOI resolution and four-file replay PASS",
   "publication_receipt": "receipt-r27.json and receipt.json each2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
   "published_files": "reader1424078/1D9F072B; source ZIP249541/3CC011CE; evidence ZIP98680606/28E9C4BE; outer manifest342/D4DC6350; anonymous replay4/4 PASS",
-  "github_status": "PENDING_R27: prior r26 terminal commit5c8ce866d3af642ad182e3c3c71c0abb19caa2d6 remains current until the r27 artifact/state/receipt commits and anonymous replay pass",
-  "result": "PASS_ZENODO_R27_GITHUB_PENDING"
+  "github_status": "PASS_PUBLIC: artifact commit ed322beac325953c203ca520e39cf530f9b27ae8 and receipt commit 591809896ce8afc9dfcae1059f63e66d6fbe5135 are anonymously replayed; remote main is the receipt commit; terminal commit identity/readback is to be recorded externally and is not self-claimed here",
+  "result": "PASS_ZENODO_AND_GITHUB_R27"
 }

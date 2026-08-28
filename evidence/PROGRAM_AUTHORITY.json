@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-28T11:53:08+02:00",
+  "updated": "2026-08-28T12:04:59+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
   "canonical_source_bytes": 820505,
   "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
@@ -15,13 +15,13 @@
   "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through1.5.4 / canonical lines1-712; full EGA II and full EGA corpus incomplete",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
   "publication": {
-    "status": "PASS_ZENODO_GITHUB_PENDING: local/archive gates PASS; exact DOI10.5281/zenodo.22141753 open and anonymous metadata/DOI/download replay4/4 PASS; GitHub r27 artifact/state/receipt closure pending",
+    "status": "PASS_ZENODO_AND_GITHUB: local/archive gates PASS; exact DOI10.5281/zenodo.22141753 open and replay4/4 PASS; GitHub artifact and receipt checkpoints anonymously replayed; terminal commit identity/readback externally recorded, not self-claimed",
     "current_public_doi": "10.5281/zenodo.22141753",
     "record_id": 22141753,
     "concept_doi": "10.5281/zenodo.21921513",
     "receipt": "receipt-r27.json and receipt.json each2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
     "public_files": "reader1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3; source3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E; evidence28E9C4BE1F6843901DBEEE7BA352C89B7E8C8686F4180B9ED5995DBFD0418A40; manifestD4DC6350E72FD59893BA1BC9EAB1A4E1DF33BDAF1E53A7853A10E8FB2E145F08",
-    "github_status": "PENDING_R27; prior r26 terminal commit5c8ce866d3af642ad182e3c3c71c0abb19caa2d6 remains immutable history",
+    "github_status": "PASS_PUBLIC: artifact ed322beac325953c203ca520e39cf530f9b27ae8 /tree e7db90e1473c3ae0e856924cc644b6c3f670160c; receipt and remote main 591809896ce8afc9dfcae1059f63e66d6fbe5135 /tree d1e866ee9c84e95a8b91cc664cbc6c9b13ab400a; anonymous raw receipt and both codeload replays PASS",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing Korean EGA target remains unmutated; no duplicate article"
   }
