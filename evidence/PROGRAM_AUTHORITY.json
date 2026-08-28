@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-28T02:22:57+02:00",
+  "updated": "2026-08-28T02:39:25+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
   "canonical_source_bytes": 820505,
   "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
@@ -11,18 +11,18 @@
     "target_main": "source/c2s1.tex 32338 bytes / B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F",
     "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 2131 bytes / 0B65FA7FBA8B8E075130D7DAE45BAED8545D5A8410CD6557894EDBCC3395BC07; 17 ordered inputs"
   },
-  "scope": "Complete EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through 1.5.4 / canonical lines1-712; full EGA II and full EGA corpus incomplete",
+  "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through 1.5.4 / canonical lines1-712; full EGA II and full EGA corpus incomplete",
   "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
   "publication": {
-    "status": "r26 exact DOI is reserved and the local reader/extraction/visual/corrected clean-extracted portable-A/B replay gates pass; r26 is release-ready, but publication and anonymous public-byte readback are not yet claimed; continue EGA II at canonical line714 / Corollary II.1.5.5",
-    "current_public_doi": "10.5281/zenodo.22132582",
+    "status": "PASS_PUBLIC: r26 exact DOI is open and authenticated/anonymous replay4/4 passes; fresh anonymous reader Poppler, pypdf and selected-page pixel replay match the frozen reader; GitHub r26 artifact snapshot is public and replayed387/387 while its post-publication state commit remains pending; continue EGA II at canonical line714 / Corollary II.1.5.5",
+    "current_public_doi": "10.5281/zenodo.22134988",
     "concept_doi": "10.5281/zenodo.21921513",
     "reserved_exact_doi": "10.5281/zenodo.22134988",
-    "github_artifact_commit": "880b203fade938b90937fe47c39a3480e99f30a7",
-    "github_artifact_tree": "eb635b73e2b0749d63b66c75489ee11624aba7d6",
-    "github_state_commit": "c2a0df18c2cbb72cf50deb51882320d6bcf3f31f",
-    "github_receipt_commit": "24352c5a084b9c3d90e6909704925ac0def32edc",
-    "github_receipt_status": "prior r25 state codeload replay PASS370/370 and final receipt raw replay PASS; no r26 GitHub state is claimed",
+    "github_artifact_commit": "f97cbba7a4cb8fbb20e91116a723a745c45cc527",
+    "github_artifact_tree": "868754170a782c93b199f8ea96948d72503f27bd",
+    "github_state_commit": "pending",
+    "github_receipt_commit": "pending",
+    "github_receipt_status": "r26 artifact codeload195577211 bytes /808C02421B1B4A43E2A8D3E26E9D1F87D674DB4FA7C75EC039C7B84A791BA01F;387 paths /211307672 bytes /inventory C4BFCC0E1345168788EAB94C4D35CC2A9F5204AD6229C7614C4E5F4593DDDAF6 exact; post-publication state closure pending",
     "figshare_article": "10.6084/m9.figshare.33314679",
     "figshare_status": "existing Korean EGA target remains unmutated; no duplicate article"
   }

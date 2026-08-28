@@ -1,15 +1,15 @@
 {
   "schema": "ag-ko-program-state-public-v2",
-  "updated": "2026-08-28T02:22:57+02:00",
+  "updated": "2026-08-28T02:39:25+02:00",
   "release": "2026-08-28-r26",
   "package_reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
   "package_reader_pages": 156,
   "package_reader_bytes": 1369169,
   "package_reader_sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
   "source_binding": "complete source/ega2/front-fr.tex 1423 bytes / F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198 -> source/c2front.tex 1500 bytes / 6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F; canonical ega2-1-fr.tex lines1-712 31454 LF bytes / E9889D7490233716939E3F0D2270116927A91B5DF1467469116648DA6A819A72 -> source/c2s1.tex 32338 bytes / B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F",
-  "coverage_end": "EGA I complete; EGA II programme complete; EGA II main text contiguous through 1.5.4 / canonical lines1-712",
+  "coverage_end": "EGA0_I and EGA I complete; EGA II programme complete; EGA II main text contiguous through 1.5.4 / canonical lines1-712",
   "next": "EGA II Corollary II.1.5.5 beginning at canonical line714; line713 is blank",
   "local_gates": "translation/formula/structure/terminology/independent bilingual audit/cumulative-input/current-tree deterministic build/extraction/visual/corrected clean-extracted portable-A/B replay PASS",
-  "publication": "r26 exact DOI10.5281/zenodo.22134988 is reserved and release-ready but not yet claimed public or anonymously replayed; r25 exact DOI10.5281/zenodo.22132582 remains the last anonymously replayed public checkpoint",
+  "publication": "PASS_PUBLIC: r26 exact DOI10.5281/zenodo.22134988 is openly published in concept DOI10.5281/zenodo.21921513; authenticated metadata/files and anonymous metadata/download replay4/4 PASS; fresh anonymous reader dual extraction and pages1,2,6,149-156 pixel replay exact; GitHub artifact commit f97cbba7a4cb8fbb20e91116a723a745c45cc527 is public and anonymously replayed387/387, with its post-publication state closure pending",
   "rights": "bounded per-work rights, exact source provenance and non-endorsement retained; no blanket public-domain or open-license claim"
 }

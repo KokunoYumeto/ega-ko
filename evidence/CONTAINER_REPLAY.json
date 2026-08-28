@@ -41,5 +41,14 @@
     "pypdf_exact_to_public": true,
     "visual_exact_pages": "1,2,6,149,150,151,152,153,154,155,156"
   },
-  "disposition": "PASS_RELEASE_READY_UNPUBLISHED: the current repository reader and corrected clean-extracted portable-A/B builds are each internally deterministic. Their Poppler and pypdf extractions are exact-identical on all156 pages, and pages1,2,6,149-156 are pixel-identical at200dpi. Different PDF container byte identities are retained without content inference. Public-download replay remains a post-publication gate."
+  "public_download": {
+    "doi": "10.5281/zenodo.22134988",
+    "bytes": 1369169,
+    "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+    "poppler_exact_to_repository": true,
+    "pypdf_exact_to_repository": true,
+    "visual_exact_pages": "1,2,6,149,150,151,152,153,154,155,156",
+    "result": "PASS"
+  },
+  "disposition": "PASS_PUBLIC: the repository reader and corrected clean-extracted portable-A/B builds are each internally deterministic. Their Poppler and pypdf extractions are exact-identical on all156 pages, and pages1,2,6,149-156 are pixel-identical at200dpi. The fresh anonymous Zenodo download is byte-identical to the frozen reader and matches both extractions and all selected-page pixels. Different portable PDF container identities are retained without content inference."
 }

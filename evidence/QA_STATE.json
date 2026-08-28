@@ -20,5 +20,5 @@
   "visual": "PASS pages1,2,6,149-156 at200dpi; no clipping, overlap, tofu, malformed diagram or layout defect; all11 selected pages are pixel-identical across public/A/B",
   "external_human_certification": "not claimed or required",
   "next_source": "EGA II ega2-1-fr.tex line714, Corollary II.1.5.5; line713 is blank",
-  "result": "PASS_RELEASE_READY_UNPUBLISHED; corrected r26 portable replay passes; publication and anonymous public-byte readback are not yet claimed"
+  "result": "PASS_PUBLIC; corrected r26 portable replay, open Zenodo publication, anonymous four-file replay and fresh public-reader Poppler/pypdf/selected-page pixel identity all pass"
 }

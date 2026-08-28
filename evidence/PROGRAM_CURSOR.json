@@ -1,6 +1,6 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-28T02:22:57+02:00",
+  "updated": "2026-08-28T02:39:25+02:00",
   "volume": "EGA II",
   "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-712; Chapter II programme in front-fr.tex complete",
   "next_label": "Corollary II.1.5.5 at canonical line714; line713 is blank",
@@ -8,7 +8,7 @@
   "package_target_locator": "target synchronized to source lines1-712 through 1.5.4",
   "package_target_sha256": "B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F",
   "current_exact_zenodo": "10.5281/zenodo.22134988",
-  "current_public": "10.5281/zenodo.22132582",
+  "current_public": "10.5281/zenodo.22134988",
   "reserved_exact_zenodo": "10.5281/zenodo.22134988",
-  "status": "r26 local QA and corrected clean-extracted portable-A/B replay pass, and exact DOI10.5281/zenodo.22134988 is reserved; r26 is release-ready, but publication and anonymous public-byte readback are not yet claimed; r25 remains the public checkpoint; continue from canonical line714 without reopening completed units"
+  "status": "r26 exact DOI10.5281/zenodo.22134988 is openly published and anonymously replayed4/4; fresh anonymous reader dual extraction and selected-page pixel replay match the frozen reader; GitHub artifact commit f97cbba7a4cb8fbb20e91116a723a745c45cc527 is public and replayed387/387, with state closure pending; continue from canonical line714 without reopening completed units"
 }

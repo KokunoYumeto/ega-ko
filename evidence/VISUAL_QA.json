@@ -21,6 +21,6 @@
     "page155": "2EF23BD894C5D25720E0D5A877CB2B9FCF255A1FB8146B877FE4D03FD3DA1E15",
     "page156": "64DC4F04B22D4335577808AA39E445B4621F4C6669D19A5D7DC3C59C492BDB32"
   },
-  "result": "PASS_RELEASE_READY_UNPUBLISHED",
-  "disposition": "Pages1-2 verify cumulative scope through EGA II 1.5.4, exact reserved DOI, external links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; pages151-156 show the complete Chapter II programme and contiguous main text through 1.5.4. All eleven 200 dpi renders are 1654x2339 and show no clipping, overlap, tofu, malformed diagram or layout defect. The same eleven pages are pixel-identical across the current repository reader and corrected clean-extracted portable-A/B readers; public-download comparison remains a post-publication gate."
+  "result": "PASS_PUBLIC",
+  "disposition": "Pages1-2 verify cumulative scope through EGA II 1.5.4, exact DOI, external links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; pages151-156 show the complete Chapter II programme and contiguous main text through 1.5.4. All eleven 200 dpi renders are 1654x2339 and show no clipping, overlap, tofu, malformed diagram or layout defect. The same eleven pages are pixel-identical across the repository reader, corrected clean-extracted portable-A/B readers and fresh anonymous Zenodo download."
 }

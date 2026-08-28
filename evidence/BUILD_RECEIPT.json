@@ -3,7 +3,7 @@
   "version": "2026-08-28-r26",
   "engine": "XeLaTeX / MiKTeX with SOURCE_DATE_EPOCH=1786633200, FORCE_SOURCE_DATE=1 and TZ=UTC",
   "passes": 6,
-  "repeat_comparison": "two successive three-pass cycles are byte-identical within the current repository tree and within each corrected clean-extracted portable-A/B tree; public-download replay remains a post-publication gate",
+  "repeat_comparison": "two successive three-pass cycles are byte-identical within the current repository tree and within each corrected clean-extracted portable-A/B tree; fresh anonymous public-download replay matches the frozen reader bytes, both engine extractions and all selected-page pixels",
   "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json 2131 bytes / 0B65FA7FBA8B8E075130D7DAE45BAED8545D5A8410CD6557894EDBCC3395BC07; 17 ordered inputs and 18 compiled TeX files; fail-closed source-tree coverage PASS",
   "main_driver": "source/main.tex 2782 bytes / 8EE40B0C76B5CE3157CD5D47DEFD68EB49FE01BE11529546E9D77B9749358506",
   "pdf": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
@@ -20,6 +20,6 @@
   "portable_A_pdf": "156 pages /1369161 bytes / A438523E9987BB3B95F3261B83B79C654AA051750FE3C24446AE209A20BAE308; fresh extraction; prebuild reader/output absent; two-cycle build PASS",
   "portable_B_pdf": "156 pages /1369173 bytes / 63D1B994186581D09B94BAD973CDBD56D2E93FE5DE57A3F2B3A8A4E2BB6FABAB; fresh extraction; prebuild reader/output absent; two-cycle build PASS",
   "content_identity": "public/A/B Poppler are exact-identical at816981 bytes / EB1227E2BC600A5E1E806C59D2047AB30364DBC318D9E03074B23C8017CED9A4 and pypdf are exact-identical at667495 bytes / 6BC86698415EF9772FEF2690DDFA06D2B8C9ED9D9BBE99E930A143193D860890; each extraction contains145140 Hangul syllables, zero replacement characters, exact DOI22134988 once and prior DOI22132582 zero times; selected pages1,2,6,149-156 are pixel-identical across public/A/B at200dpi",
-  "result": "PASS_RELEASE_READY_UNPUBLISHED: EGA I is complete; EGA II programme is complete and its main text is contiguous through 1.5.4 / canonical lines1-712; EGA II is not claimed complete; corrected r26 portable replay passes, while publication and anonymous public-byte readback remain unproven",
+  "result": "PASS_PUBLIC: EGA0_I and EGA I are complete; EGA II programme is complete and its main text is contiguous through 1.5.4 / canonical lines1-712; EGA II is not claimed complete; corrected r26 portable replay, open Zenodo publication, anonymous four-file readback, fresh reader dual extraction and selected-page pixel replay all pass",
   "public_build_log": "evidence/build.log and evidence/build-r26.log are byte-identical sanitized copies, each 45354 bytes / 899143D0561137445964F9DEE2E840FA171BFE54174C1B29E0B2C743D02CAF52; critical diagnostics0; two marginpar-moved warnings and noncritical hyperref/font warnings remain visible"
 }
