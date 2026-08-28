@@ -3,8 +3,11 @@
   "version": "2026-08-28-r27",
   "repository": "https://github.com/KokunoYumeto/ega-ko",
   "branch": "main",
-  "phase": "pre-artifact publication receipt; exact commit and anonymous codeload replay pending",
+  "phase": "artifact commit published and anonymously replayed; receipt commit pending",
   "base_commit": "5c8ce866d3af642ad182e3c3c71c0abb19caa2d6",
+  "artifact_commit": "ed322beac325953c203ca520e39cf530f9b27ae8",
+  "artifact_tree": "e7db90e1473c3ae0e856924cc644b6c3f670160c",
+  "artifact_commit_url": "https://github.com/KokunoYumeto/ega-ko/commit/ed322beac325953c203ca520e39cf530f9b27ae8",
   "zenodo": {
     "exact_doi": "10.5281/zenodo.22141753",
     "concept_doi": "10.5281/zenodo.21921513",
@@ -18,23 +21,26 @@
     "sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3"
   },
   "selection": {
-    "manifest_declared_paths": "pending regenerated r27 manifest",
+    "manifest_declared_paths": 394,
     "supplemental_paths": 9,
-    "tree_paths": "pending",
-    "tree_bytes": "pending",
-    "inventory_sha256": "pending"
+    "tree_paths": 403,
+    "tree_bytes": 216860977,
+    "inventory_sha256": "83171D0CC9ED994491BE866E2B354DAB3C088B203C9E56C19344300CE2687A5F"
   },
   "commits": {
-    "artifact": "pending",
+    "artifact": "ed322beac325953c203ca520e39cf530f9b27ae8",
     "receipt": "pending",
     "terminal": "recorded externally after terminal codeload replay"
   },
   "verification": {
     "repository_public": true,
-    "artifact_codeload": "pending",
+    "remote_main_after_artifact_push": "ed322beac325953c203ca520e39cf530f9b27ae8",
+    "artifact_codeload": "PASS 403/403 paths, 216860977 bytes, inventory 83171D0CC9ED994491BE866E2B354DAB3C088B203C9E56C19344300CE2687A5F",
+    "artifact_codeload_container": "200617215 bytes / 08AC63F092E1D66BB785EC130088EB1BC3C9986E7FABEE32F495595AA7180257",
+    "release_payloads": "PASS reader, source ZIP, evidence ZIP and outer manifest exact",
     "receipt_codeload": "pending",
     "terminal_codeload": "pending",
     "credential_material_present": false,
-    "result": "PENDING_GITHUB_PUBLICATION"
+    "result": "PASS_ARTIFACT_RECEIPT_COMMIT_PENDING"
   }
 }
