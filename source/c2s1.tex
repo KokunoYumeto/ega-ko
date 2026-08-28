@@ -91,3 +91,647 @@ $\mathcal{O}_S$-대수와 그 대수 위의 가군으로 이루어진 쌍들을
 대상으로 하고 디-준동형들을 사상으로 하는 범주에 값을 갖는
 \emph{반변 함자}라고 할 수 있다.
 \end{env}
+
+\subsection{준스킴 위에서 아핀인 준스킴}
+\label{subsection:II.1.2-ko}
+
+\begin{env}[1.2.1]
+\label{II.1.2.1-ko}
+$X$를 $S$-준스킴, $f:X\to S$를 그 구조 사상이라 하자.
+$S$의 아핀 열린집합들로 이루어진 덮개 $(S_\alpha)$가 존재하여,
+모든 $\alpha$에 대하여 열린집합 $f^{-1}(S_\alpha)$ 위에 $X$가
+유도하는 준스킴이 아핀이면, $X$가 \emph{$S$ 위에서 아핀}이라고
+한다.
+\end{env}
+
+\begin{env}[1.2.2]
+\label{II.1.2.2-ko}
+$S$의 모든 닫힌 부분준스킴은 $S$ 위에서 아핀인
+$S$-준스킴이다
+(\hyperref[I.4.2.3-ko]{I, 4.2.3}과
+\hyperref[I.4.2.4-ko]{4.2.4}).
+\end{env}
+
+\begin{env}[1.2.3]
+\label{II.1.2.3-ko}
+$S$ 위에서 아핀인 준스킴 $X$가 반드시 아핀 스킴인 것은 아니다. 예
+$X=S$가 이를 보여 준다(\hyperref[II.1.2.2-ko]{1.2.2}). 한편 아핀 스킴
+$X$가 $S$-준스킴이라 해도, $X$가 반드시 $S$ 위에서 아핀인
+\oldpage[II]{7}
+것은 아니다(\hyperref[II.1.3.3-ko]{1.3.3} 참조). 그러나 $S$가
+\emph{스킴}이면, 아핀 스킴인 모든 $S$-준스킴은 $S$ 위에서 아핀임을
+상기하자(\hyperref[I.5.5.10-ko]{I, 5.5.10}).
+\end{env}
+
+\begin{env}[1.2.4]
+\label{II.1.2.4-ko}
+$S$ 위에서 아핀인 모든 $S$-준스킴은 $S$ 위에서 분리되어 있다
+(다시 말해 $S$-스킴이다).
+\end{env}
+
+이는 (\hyperref[I.5.5.5-ko]{I, 5.5.5})와
+(\hyperref[I.5.5.8-ko]{I, 5.5.8})에서 곧바로 따른다.
+
+\begin{env}[1.2.5]
+\label{II.1.2.5-ko}
+$X$를 $S$ 위에서 아핀인 $S$-스킴, $f:X\to S$를 그 구조 사상이라
+하자. 모든 열린집합 $U\subset S$에 대하여, $f^{-1}(U)$는 $U$ 위에서
+아핀이다.
+\end{env}
+
+정의 (\hyperref[II.1.2.1-ko]{1.2.1})에 따라,
+$S=\operatorname{Spec}(A)$와 $X=\operatorname{Spec}(B)$가 아핀인
+경우로 환원된다. 이때 $f=({}^a\varphi,\widetilde{\varphi})$이고,
+여기서 $\varphi:A\to B$는 환 준동형이다. $g\in A$인 $D(g)$들이
+$S$의 기저를 이루므로, $U=D(g)$인 경우로 환원된다. 그런데 이때
+$f^{-1}(U)=D(\varphi(g))$임을 알고 있으므로
+(\hyperref[I.1.2.2.2-ko]{I, 1.2.2.2}), 명제가 따른다.
+
+\begin{env}[1.2.6]
+\label{II.1.2.6-ko}
+$X$를 $S$ 위에서 아핀인 $S$-스킴, $f:X\to S$를 그 구조 사상이라
+하자. 임의의 준연접 $\mathcal{O}_X$-가군 $\mathcal{F}$에 대하여,
+$f_*(\mathcal{F})$는 준연접 $\mathcal{O}_S$-가군이다.
+\end{env}
+
+(\hyperref[II.1.2.4-ko]{1.2.4})를 고려하면, 이는
+(\hyperref[I.9.2.2-ko]{I, 9.2.2, a)})에서 따른다.
+
+특히 $\mathcal{O}_S$-대수
+$\mathcal{A}(X)=f_*(\mathcal{O}_X)$는 \emph{준연접}이다.
+
+\begin{env}[1.2.7]
+\label{II.1.2.7-ko}
+$X$를 $S$ 위에서 아핀인 $S$-스킴이라 하자. 임의의 $S$-준스킴
+$Y$에 대하여, 집합 $\operatorname{Hom}_S(Y,X)$에서 집합
+$\operatorname{Hom}(\mathcal{A}(X),\mathcal{A}(Y))$로 가는 사상
+$h\mapsto\mathcal{A}(h)$
+(\hyperref[II.1.1.2-ko]{1.1.2})은 전단사이다.
+\end{env}
+
+$f:X\to S$와 $g:Y\to S$를 구조 사상이라 하자. 먼저
+$S=\operatorname{Spec}(A)$와 $X=\operatorname{Spec}(B)$가
+아핀이라고 하자. 임의의 $\mathcal{O}_S$-대수 준동형
+$\omega:f_*(\mathcal{O}_X)\to g_*(\mathcal{O}_Y)$에 대하여,
+$\mathcal{A}(h)=\omega$인 $S$-사상 $h:Y\to X$가 유일하게 존재함을
+보여야 한다. 정의에 따라, 모든 열린집합 $U\subset S$에 대하여
+$\omega$는 다음 $\Gamma(U,\mathcal{O}_S)$-대수 준동형을 정한다.
+\[
+  \omega_U=\Gamma(U,\omega):
+  \Gamma(f^{-1}(U),\mathcal{O}_X)\to
+  \Gamma(g^{-1}(U),\mathcal{O}_Y)
+\]
+특히 $U=S$일 때, 이는 $\Gamma(S,\mathcal{O}_S)$-대수 준동형
+$\varphi:\Gamma(X,\mathcal{O}_X)\to\Gamma(Y,\mathcal{O}_Y)$를
+준다. $X$가 아핀이므로, 이 준동형에는 유일하게 정해지는
+$S$-사상 $h:Y\to X$가 대응한다
+(\hyperref[I.2.2.4-ko]{I, 2.2.4}). 이제
+$\mathcal{A}(h)=\omega$임을 보여야 한다. 다시 말해, $S$의 한 기저에
+속하는 모든 열린집합 $U$에 대하여 $\omega_U$가 $h$의 제한인
+$S$-사상 $g^{-1}(U)\to f^{-1}(U)$에 대응하는 대수 준동형
+$\varphi_U$와 일치함을 보이면 된다. $\lambda\in A$인
+$U=D(\lambda)$의 경우만 살피면 충분하다.\footnote{\textbf{번역 주.}
+인쇄 원문은 $\lambda\in S$라고 쓰지만, $S=\operatorname{Spec}(A)$이고
+$\rho:A\to B$이며 뒤에서 $\rho(\lambda)$를 사용하므로
+EGA2-CANON-DISP-0001에 따라 $\lambda\in A$로 교정했다.} 이때
+$f=({}^a\rho,\widetilde{\rho})$이고 $\rho:A\to B$가 환 준동형이면,
+$f^{-1}(U)=D(\mu)$이며 여기서 $\mu=\rho(\lambda)$이다. 또한
+$\Gamma(f^{-1}(U),\mathcal{O}_X)$는 분수환 $B_\mu$이다. 그런데 다음
+도식은 가환한다.
+\[
+  \xymatrix{
+    B\ar[r]^\varphi\ar[d] & \Gamma(Y,\mathcal{O}_Y)\ar[d]\\
+    B_\mu\ar[r]_{\varphi_U} & \Gamma(g^{-1}(U),\mathcal{O}_Y)
+  }
+\]
+$\varphi_U$를 $\omega_U$로 바꾼 유사한 도식도 가환한다. 따라서
+분수환의 보편 성질
+(\hyperref[0.1.2.4-ko]{0, 1.2.4})에 의해
+$\varphi_U=\omega_U$이다.
+
+이제 일반적인 경우를 보자. $(S_\alpha)$를 $S$의 아핀 열린집합들로
+이루어진 덮개라 하자.
+\oldpage[II]{8}
+여기서 각 $f^{-1}(S_\alpha)$는 아핀이라고 하자. 그러면 임의의
+$\mathcal{O}_S$-대수 준동형
+$\omega:\mathcal{A}(X)\to\mathcal{A}(Y)$는 제한에 의해 다음
+$\mathcal{O}_{S_\alpha}$-대수 준동형들의 족을 정한다.
+\[
+  \omega_\alpha:
+  \mathcal{A}(f^{-1}(S_\alpha))\to
+  \mathcal{A}(g^{-1}(S_\alpha))
+\]
+따라서 앞에서 보인 바에 의해 $S_\alpha$-사상들의 족
+$h_\alpha:g^{-1}(S_\alpha)\to f^{-1}(S_\alpha)$가 정해진다. 이제
+$S_\alpha\cap S_\beta$의 한 기저에 속하는 모든 아핀 열린집합 $U$에
+대하여, $h_\alpha$와 $h_\beta$를 $g^{-1}(U)$에 제한한 것들이
+일치함을 보이면 된다. 이는 명백하다. 실제로 앞에서 보인 바에 의해
+이 두 제한은 모두 $\omega$의 제한인 준동형
+$\mathcal{A}(X)|U\to\mathcal{A}(Y)|U$에 대응한다.
+
+\begin{env}[1.2.8]
+\label{II.1.2.8-ko}
+$X$와 $Y$를 $S$ 위에서 아핀인 두 $S$-스킴이라 하자. $S$-사상
+$h:Y\to X$가 동형사상이기 위한 필요충분조건은
+$\mathcal{A}(h):\mathcal{A}(X)\to\mathcal{A}(Y)$가 동형사상인 것이다.
+\end{env}
+
+이는 (\hyperref[II.1.2.7-ko]{1.2.7})과 $\mathcal{A}(X)$의 함자성에서
+곧바로 따른다.
+
+\subsection{$\mathcal{O}_S$-대수에 대응하는 $S$ 위에서 아핀인 준스킴}
+\label{subsection:II.1.3-ko}
+
+\begin{env}[1.3.1]
+\label{II.1.3.1-ko}
+$S$를 준스킴이라 하자. 임의의 준연접 $\mathcal{O}_S$-대수
+$\mathcal{B}$에 대하여, $\mathcal{A}(X)=\mathcal{B}$를 만족하는
+$S$ 위에서 아핀인 준스킴 $X$가 존재하며, $X$는 유일한
+$S$-동형까지 유일하게 결정된다.
+\end{env}
+
+유일성은 (\hyperref[II.1.2.8-ko]{1.2.8})에서 곧바로 따른다.
+$X$의 존재를 증명하자. 임의의 아핀 열린집합 $U\subset S$에 대하여
+$X_U$를 준스킴
+$\operatorname{Spec}(\Gamma(U,\mathcal{B}))$라 하자.
+$\Gamma(U,\mathcal{B})$는 $\Gamma(U,\mathcal{O}_S)$-대수이므로
+$X_U$는 $S$-준스킴이다
+(\hyperref[I.1.6.1-ko]{I, 1.6.1}). 또한 $\mathcal{B}$가
+준연접이므로 $\mathcal{O}_S$-대수 $\mathcal{A}(X_U)$는
+$\mathcal{B}|U$와 표준적으로 동일시된다
+(\hyperref[I.1.3.7-ko]{I, 1.3.7},
+\hyperref[I.1.3.13-ko]{1.3.13}과
+\hyperref[I.1.6.3-ko]{1.6.3}).
+
+$V$를 $S$의 두 번째 아핀 열린집합이라 하고, $f_U$가 구조 사상
+$X_U\to S$를 나타낼 때 $X_{U,V}$를 $X_U$가
+$f_U^{-1}(U\cap V)$ 위에 유도하는 준스킴이라 하자.
+$X_{U,V}$와 $X_{V,U}$는 $U\cap V$ 위에서 아핀이고
+(\hyperref[II.1.2.5-ko]{1.2.5}), 정의에 따라
+$\mathcal{A}(X_{U,V})$와 $\mathcal{A}(X_{V,U})$는
+$\mathcal{B}|(U\cap V)$와 표준적으로 동일시된다. 그러므로
+(\hyperref[II.1.2.8-ko]{1.2.8})에 따라 표준 $S$-동형사상
+$\theta_{U,V}:X_{V,U}\to X_{U,V}$가 존재한다. 더욱이 $W$를
+$S$의 세 번째 아핀 열린집합이라 하고, 구조 사상들에 의해
+$X_V$, $X_W$, $X_W$ 안에서 각각 얻는 $U\cap V\cap W$의
+역상들로 $\theta_{U,V}$, $\theta_{V,W}$, $\theta_{U,W}$를
+제한한 사상을 차례로 $\theta'_{U,V}$, $\theta'_{V,W}$,
+$\theta'_{U,W}$라 하면
+$\theta'_{U,V}\circ\theta'_{V,W}=\theta'_{U,W}$이다.
+
+따라서 준스킴 $X$, 아핀 열린집합들로 이루어진 $X$의 덮개
+$(T_U)$, 그리고 각 $U$에 대한 동형사상
+$\varphi_U:X_U\to T_U$가 존재하여, $\varphi_U$는
+$f_U^{-1}(U\cap V)$를 $T_U\cap T_V$ 위로 보내고
+$\theta_{U,V}=\varphi_U^{-1}\circ\varphi_V$가 성립한다
+(\hyperref[I.2.3.1-ko]{I, 2.3.1}). 사상
+$g_U=f_U\circ\varphi_U^{-1}$는 $T_U$에 $S$-준스킴 구조를 주며,
+$g_U$와 $g_V$는 $T_U\cap T_V$에서 일치한다. 따라서 $X$는
+$S$-준스킴이다. 또한 정의상 $X$가 $S$ 위에서 아핀이고
+$\mathcal{A}(T_U)=\mathcal{B}|U$임은 명백하므로
+$\mathcal{A}(X)=\mathcal{B}$이다.
+
+이렇게 정의한 $S$-스킴 $X$가
+\emph{$\mathcal{O}_S$-대수 $\mathcal{B}$에 대응한다}고 하거나
+$X$를 \emph{$\mathcal{B}$의 스펙트럼}이라 하며, 이를
+$\operatorname{Spec}(\mathcal{B})$로 나타낸다.
+
+\begin{env}[1.3.2]
+\label{II.1.3.2-ko}
+$X$를 $S$ 위에서 아핀인 준스킴, $f:X\to S$를 그 구조 사상이라
+하자. 임의의 아핀 열린집합 $U\subset S$에 대하여
+$f^{-1}(U)$ 위에 유도된 준스킴은 환
+$\Gamma(U,\mathcal{A}(X))$의 아핀 스킴이다.
+\end{env}
+
+\oldpage[II]{9}
+(\hyperref[II.1.2.6-ko]{1.2.6})과
+(\hyperref[II.1.3.1-ko]{1.3.1})에 따라 $X$가 어떤
+$\mathcal{O}_S$-대수에 대응한다고 가정해도 되므로, 이 따름정리는
+(\hyperref[II.1.3.1-ko]{1.3.1})에서 서술한 $X$의 구성에서 따른다.
+
+\begin{env}[1.3.3]
+\label{II.1.3.3-ko}
+$S$를 점 $0$을 이중화한 체 $K$ 위의 아핀 평면이라 하자
+(\hyperref[I.5.5.11-ko]{I, 5.5.11}). 그 표기에서 $S$는 두 아핀
+열린집합 $Y_1$, $Y_2$의 합집합이다
+(\hyperref[I.5.5.11-ko]{I, 5.5.11}). $f$가 열린 몰입 사상
+$Y_1\to S$이면
+$f^{-1}(Y_2)=Y_1\cap Y_2$는 $Y_1$ 안의 아핀 열린집합이 아니다
+(\emph{loc. cit.}). 따라서 이로써 아핀 스킴이지만 $S$ 위에서
+아핀이 아닌 예를 얻는다.
+\end{env}
+
+\begin{env}[1.3.4]
+\label{II.1.3.4-ko}
+$S$를 아핀 스킴이라 하자. $S$-준스킴 $X$가 $S$ 위에서
+아핀이기 위한 필요충분조건은 $X$가 아핀 스킴인 것이다.
+\end{env}
+
+\begin{env}[1.3.5]
+\label{II.1.3.5-ko}
+$S$를 준스킴, $X$를 $S$ 위에서 아핀인 준스킴, $Y$를
+$X$-준스킴이라 하자. $Y$가 $S$ 위에서 아핀이기 위한
+필요충분조건은 $Y$가 $X$ 위에서 아핀인 것이다.
+\end{env}
+
+곧바로 $S$가 아핀 스킴인 경우로 환원된다. 그러면 $X$도 아핀
+스킴이다(\hyperref[II.1.3.4-ko]{1.3.4}). 이때 명제의 두 조건은
+모두 $Y$가 아핀 스킴이라는 것을 나타낸다
+(\hyperref[II.1.3.4-ko]{1.3.4}).
+
+\begin{env}[1.3.6]
+\label{II.1.3.6-ko}
+$X$를 $S$ 위에서 아핀인 준스킴이라 하자.
+(\hyperref[II.1.3.5-ko]{1.3.5})에 따라, $X$ 위에서 아핀인
+준스킴 $Y$를 정하는 것은 $S$ 위에서 아핀인 준스킴 $Y$와
+$S$-사상 $g:Y\to X$를 정하는 것과 같다. 다시 말해
+(\hyperref[II.1.3.1-ko]{1.3.1}과
+\hyperref[II.1.2.7-ko]{1.2.7}), 이는 준연접
+$\mathcal{O}_S$-대수 $\mathcal{B}$와 $\mathcal{O}_S$-대수 준동형
+$\mathcal{A}(X)\to\mathcal{B}$를 정하는 것과 같다(이를
+$\mathcal{B}$에 $\mathcal{A}(X)$-대수 구조를 정하는 것으로 볼 수
+있다). $f:X\to S$가 구조 사상이면, 이때
+$\mathcal{B}=f_*(g_*(\mathcal{O}_Y))$이다.
+\end{env}
+
+\begin{env}[1.3.7]
+\label{II.1.3.7-ko}
+$X$를 $S$ 위에서 아핀인 준스킴이라 하자. $X$가 $S$ 위에서
+유한형이기 위한 필요충분조건은 준연접 $\mathcal{O}_S$-대수
+$\mathcal{A}(X)$가 유한 생성인 것이다
+(\hyperref[I.9.6.2-ko]{I, 9.6.2}).
+\end{env}
+
+정의 (\hyperref[I.9.6.2-ko]{I, 9.6.2})에 따라 $S$가 아핀인
+경우로 환원된다. 그러면 $X$는 아핀 스킴이고
+(\hyperref[II.1.3.4-ko]{1.3.4}), $S=\operatorname{Spec}(A)$,
+$X=\operatorname{Spec}(B)$이면 $\mathcal{A}(X)$는
+$\mathcal{O}_S$-대수 $\widetilde{B}$이다. 그런데
+$\Gamma(S,\widetilde{B})=B$이므로,\footnote{\textbf{번역 주.} 인쇄
+원문은 이 증명에서 정의되지 않은 $U$를 쓰지만,
+EGA2-CANON-DISP-0030에 따라 $S$로 교정했다.} 이 따름정리는
+(\hyperref[I.9.6.2-ko]{I, 9.6.2})와
+(\hyperref[I.6.3.3-ko]{I, 6.3.3})에서 따른다.
+
+\begin{env}[1.3.8]
+\label{II.1.3.8-ko}
+$X$를 $S$ 위에서 아핀인 준스킴이라 하자. $X$가 축소이기 위한
+필요충분조건은 준연접 $\mathcal{O}_S$-대수 $\mathcal{A}(X)$가
+축소인 것이다
+(\hyperref[0.4.1.4-ko]{0, 4.1.4}).
+\end{env}
+
+실제로 이 문제는 명백히 $S$ 위에서 국소적이다.
+(\hyperref[II.1.3.2-ko]{1.3.2})에 따라, 이 따름정리는
+(\hyperref[I.5.1.1-ko]{I, 5.1.1})과
+(\hyperref[I.5.1.4-ko]{I, 5.1.4})에서 따른다.
+
+\subsection{$S$ 위에서 아핀인 준스킴 위의 준연접층}
+\label{subsection:II.1.4-ko}
+
+\begin{env}[1.4.1]
+\label{II.1.4.1-ko}
+$X$를 $S$ 위에서 아핀인 준스킴, $Y$를 $S$-준스킴,
+$\mathcal{F}$(각각 $\mathcal{G}$)를 준연접
+$\mathcal{O}_X$-가군(각각 $\mathcal{O}_Y$-가군)이라 하자. 그러면
+$(h,u)\mapsto(\mathcal{A}(h),\mathcal{A}(u))$로 주어지는, 쌍
+$(Y,\mathcal{G})$에서 $(X,\mathcal{F})$로 가는 사상들의 집합에서 쌍
+$(\mathcal{A}(X),\mathcal{A}(\mathcal{F}))$에서
+$(\mathcal{A}(Y),\mathcal{A}(\mathcal{G}))$로 가는 디-준동형들의
+집합으로 가는 사상
+(\hyperref[II.1.1.2-ko]{1.1.2}와
+\hyperref[II.1.1.3-ko]{1.1.3})은 전단사이다.
+\end{env}
+
+증명은 (\hyperref[I.2.2.5-ko]{I, 2.2.5})와
+(\hyperref[I.2.2.4-ko]{I, 2.2.4})를 사용하여
+(\hyperref[II.1.2.7-ko]{1.2.7})의 증명과 정확히 같은 절차를 따르며,
+세부사항은 독자에게 맡긴다.
+
+\begin{env}[1.4.2]
+\label{II.1.4.2-ko}
+(\hyperref[II.1.4.1-ko]{1.4.1})의 가정들에 더하여 $Y$가 $S$ 위에서
+아핀이라고 가정하면, $(h,u)$가 동형이기 위한 필요충분조건은
+$(\mathcal{A}(h),\mathcal{A}(u))$가 디-동형인 것이다.
+\end{env}
+
+\oldpage[II]{10}
+\begin{env}[1.4.3]
+\label{II.1.4.3-ko}
+준연접 $\mathcal{O}_S$-대수 $\mathcal{B}$와 준연접
+$\mathcal{B}$-가군 $\mathcal{M}$으로 이루어진 모든 쌍
+$(\mathcal{B},\mathcal{M})$에 대하여
+($\mathcal{M}$을 $\mathcal{O}_S$-가군으로 보든
+$\mathcal{B}$-가군으로 보든 준연접성은 같은 조건이다
+(\hyperref[I.9.6.1-ko]{I, 9.6.1})), $S$ 위에서 아핀인 준스킴 $X$와
+준연접 $\mathcal{O}_X$-가군 $\mathcal{F}$로 이루어진 쌍
+$(X,\mathcal{F})$가 존재하여
+$\mathcal{A}(X)=\mathcal{B}$이고
+$\mathcal{A}(\mathcal{F})=\mathcal{M}$이다. 더욱이 이 쌍은 유일한
+동형까지 유일하게 결정된다.
+\end{env}
+
+유일성은 (\hyperref[II.1.4.1-ko]{1.4.1})과
+(\hyperref[II.1.4.2-ko]{1.4.2})에서 따른다. 존재성은
+(\hyperref[II.1.3.1-ko]{1.3.1})에서와 같이 증명되며, 여기서도
+세부사항은 독자에게 맡긴다. $\mathcal{O}_X$-가군 $\mathcal{F}$를
+$\widetilde{\mathcal{M}}$로 나타내고, 이 가군을 준연접
+$\mathcal{B}$-가군 $\mathcal{M}$에 \emph{대응하는} 가군이라고 한다.
+모든 아핀 열린집합 $U\subset S$에 대하여
+$\widetilde{\mathcal{M}}|p^{-1}(U)$는
+($p$가 구조 사상 $X\to S$를 나타낼 때)
+$(\Gamma(U,\mathcal{M}))^{\sim}$와 표준적으로 동형이다.
+
+\begin{env}[1.4.4]
+\label{II.1.4.4-ko}
+준연접 $\mathcal{B}$-가군들의 범주에서
+$\widetilde{\mathcal{M}}$는 $\mathcal{M}$에 관한 공변 가법 완전
+함자이고, 귀납극한과 직합과 가환한다.
+\end{env}
+
+실제로 곧 $S$가 아핀인 경우로 환원되며, 그 경우 따름정리는
+(\hyperref[I.1.3.5-ko]{I, 1.3.5}),
+(\hyperref[I.1.3.9-ko]{I, 1.3.9})와
+(\hyperref[I.1.3.11-ko]{I, 1.3.11})에서 따른다.
+
+\begin{env}[1.4.5]
+\label{II.1.4.5-ko}
+(\hyperref[II.1.4.3-ko]{1.4.3})의 가정 아래에서
+$\widetilde{\mathcal{M}}$가 유한 생성 $\mathcal{O}_X$-가군이기 위한
+필요충분조건은 $\mathcal{M}$이 유한 생성 $\mathcal{B}$-가군인 것이다.
+\end{env}
+
+곧 $S=\operatorname{Spec}(A)$가 아핀 스킴인 경우로 환원된다. 이때
+$\mathcal{B}=\widetilde{B}$이고, 여기서 $B$는 $A$-대수이다.\footnote{
+\textbf{번역 주.} 인쇄 원문은 여기서 $B$가 유한 생성 $A$-대수라고
+하고 (I, 9.6.2)를 인용하지만, 이는 명제의 가정에 없으므로
+EGA2-CANON-DISP-0031에 따라 그 구절과 인용을 삭제했다.} 또한
+$\mathcal{M}=\widetilde{M}$이고, 여기서 $M$은 $B$-가군이다
+(\hyperref[I.1.3.13-ko]{I, 1.3.13}). \emph{준스킴 $X$ 위에서}
+$\mathcal{O}_X$는 환 $B$에 대응하고
+$\widetilde{\mathcal{M}}$는 $B$-가군 $M$에 대응한다. 따라서
+$\widetilde{\mathcal{M}}$가 유한 생성이기 위한 필요충분조건은 $M$이
+유한 생성인 것이다(\hyperref[I.1.3.13-ko]{I, 1.3.13}). 이로써
+주장이 증명된다.
+
+\begin{env}[1.4.6]
+\label{II.1.4.6-ko}
+$Y$를 $S$ 위에서 아핀인 준스킴, $X$와 $X'$을 $Y$ 위에서 아핀인
+두 준스킴이라 하자(따라서 이들은 $S$ 위에서도 아핀이다
+(\hyperref[II.1.3.5-ko]{1.3.5})). 다음과 같이 놓자.
+$\mathcal{B}=\mathcal{A}(Y)$, $\mathcal{A}=\mathcal{A}(X)$,
+$\mathcal{A}'=\mathcal{A}(X')$. 그러면 $X\times_Y X'$은 $Y$ 위에서
+아핀이고(따라서 $S$ 위에서도 아핀이다),
+$\mathcal{A}(X\times_Y X')$는
+$\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$과 표준적으로
+동일시된다.
+\end{env}
+
+실제로 (\hyperref[I.9.6.1-ko]{I, 9.6.1})에 따라
+$\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$은 준연접
+$\mathcal{B}$-대수이고, 따라서 준연접 $\mathcal{O}_S$-대수이기도
+하다(\hyperref[I.9.6.1-ko]{I, 9.6.1}).
+$Z$를 $\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$의 스펙트럼이라
+하자(\hyperref[II.1.3.1-ko]{1.3.1}). 표준
+$\mathcal{B}$-대수 준동형
+$\mathcal{A}\to\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$과
+$\mathcal{A}'\to\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$은
+(\hyperref[II.1.2.7-ko]{1.2.7})에 따라 $Y$-사상 $p:Z\to X$와
+$p':Z\to X'$에 대응한다. 삼중항 $(Z,p,p')$가 곱
+$X\times_Y X'$임을 보이기 위해, $S$가 환 $C$의 아핀 스킴인
+경우로 환원할 수 있다(\hyperref[I.3.2.6.4-ko]{I, 3.2.6.4}).
+그러면 $Y$, $X$, $X'$은 아핀 스킴이고
+(\hyperref[II.1.3.4-ko]{1.3.4}), 그 환 $B$, $A$, $A'$은
+$C$-대수이며
+$\mathcal{B}=\widetilde{B}$, $\mathcal{A}=\widetilde{A}$,
+$\mathcal{A}'=\widetilde{A'}$이다.
+(\hyperref[I.1.3.13-ko]{I, 1.3.13})에 따라
+$\mathcal{A}\otimes_{\mathcal{B}}\mathcal{A}'$은
+$\mathcal{O}_S$-대수 $\widetilde{A\otimes_B A'}$와 표준적으로
+동일시된다. 따라서 환 $A(Z)$는 $A\otimes_B A'$과 동일시되고,
+사상 $p$, $p'$은 표준 준동형
+$A\to A\otimes_B A'$, $A'\to A\otimes_B A'$에 대응한다.
+이제 명제는 (\hyperref[I.3.2.2-ko]{I, 3.2.2})에서 따른다.
+
+\begin{env}[1.4.7]
+\label{II.1.4.7-ko}
+$\mathcal{F}$(각각 $\mathcal{F}'$)를 준연접
+$\mathcal{O}_X$-가군(각각 $\mathcal{O}_{X'}$-가군)이라 하자. 그러면
+$\mathcal{A}(\mathcal{F}\otimes_Y\mathcal{F}')$는
+$\mathcal{A}(\mathcal{F})\otimes_{\mathcal{A}(Y)}
+\mathcal{A}(\mathcal{F}')$과 표준적으로 동일시된다.
+\end{env}
+
+$\mathcal{F}\otimes_Y\mathcal{F}'$은 $X\times_Y X'$ 위에서
+준연접이다(\hyperref[I.9.1.2-ko]{I, 9.1.2}).
+$g:Y\to S$, $f:X\to Y$, $f':X'\to Y$를 구조 사상이라 하자.
+그러면 구조 사상
+\oldpage[II]{11}
+$h:Z\to S$는 $g\circ f\circ p$ 및 $g\circ f'\circ p'$과 같다.
+표준 준동형
+\[
+  \mathcal{A}(\mathcal{F})\otimes_{\mathcal{A}(Y)}\mathcal{A}(\mathcal{F}')
+  \longrightarrow \mathcal{A}(\mathcal{F}\otimes_Y\mathcal{F}')
+\]
+을 다음과 같이 정의한다. 임의의 열린집합 $U\subset S$에 대하여
+표준 준동형
+\[
+  \begin{aligned}
+  \Gamma(f^{-1}(g^{-1}(U)),\mathcal{F})
+  &\longrightarrow \Gamma(h^{-1}(U),p^*(\mathcal{F}))\quad\text{및}\quad
+  \Gamma(f^{\prime-1}(g^{-1}(U)),\mathcal{F}')
+  \longrightarrow \Gamma(h^{-1}(U),p^{\prime*}(\mathcal{F}'))
+  \end{aligned}
+\]
+들이 있다(\hyperref[0.4.4.3-ko]{0, 4.4.3}). 따라서 표준 준동형
+\[
+  \begin{aligned}
+  &\Gamma(f^{-1}(g^{-1}(U)),\mathcal{F})
+    \otimes_{\Gamma(g^{-1}(U),\mathcal{O}_Y)}
+    \Gamma(f^{\prime-1}(g^{-1}(U)),\mathcal{F}')\longrightarrow\\
+  &\hspace{17em}
+    \Gamma(h^{-1}(U),p^*(\mathcal{F}))
+    \otimes_{\Gamma(h^{-1}(U),\mathcal{O}_Z)}
+    \Gamma(h^{-1}(U),p^{\prime*}(\mathcal{F}'))
+  \end{aligned}
+\]
+을 얻는다.
+
+이것이 실제로 $\mathcal{A}(Z)$-가군의 동형임을 보이기 위해,
+$S$(따라서 $X$, $X'$, $Y$, $X\times_Y X'$도)가 아핀 스킴인
+경우로 환원할 수 있다. 이때
+(\hyperref[II.1.4.6-ko]{1.4.6})의 표기를 사용하여
+$\mathcal{F}=\widetilde{M}$, $\mathcal{F}'=\widetilde{M'}$라 쓸 수
+있으며, $M$(각각 $M'$)은 $A$-가군(각각 $A'$-가군)이다. 그러면
+$\mathcal{F}\otimes_Y\mathcal{F}'$은 $X\times_Y X'$ 위에서
+$(A\otimes_B A')$-가군 $M\otimes_B M'$에 대응하는 층과
+동일시된다(\hyperref[I.9.1.3-ko]{I, 9.1.3}). 따라서 따름정리는
+$\mathcal{O}_S$-가군 $\widetilde{M\otimes_B M'}$와
+$\widetilde{M}\otimes_{\widetilde{B}}\widetilde{M'}$의 표준적
+동일시에서 따른다. 여기서 $M$, $M'$, $B$는 $C$-가군으로 본다
+(\hyperref[I.1.3.13-ko]{I, 1.3.13}과
+\hyperref[I.1.6.3-ko]{I, 1.6.3}).
+
+특히 (\hyperref[II.1.4.7-ko]{1.4.7})을 $X=Y$이고
+$\mathcal{F}'=\mathcal{O}_{X'}$인 경우에 적용하면,
+$\mathcal{A}'$-가군 $\mathcal{A}(f^{\prime*}(\mathcal{F}))$가
+$\mathcal{A}(\mathcal{F})\otimes_{\mathcal{B}}\mathcal{A}'$과
+동일시됨을 알 수 있다.
+
+\begin{env}[1.4.8]
+\label{II.1.4.8-ko}
+특히 $X=X'=Y$일 때($X$는 $S$ 위에서 아핀이다),
+$\mathcal{F}$와 $\mathcal{G}$가 두 준연접
+$\mathcal{O}_X$-가군이면
+\[
+  \mathcal{A}(\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G})
+  =\mathcal{A}(\mathcal{F})\otimes_{\mathcal{A}(X)}\mathcal{A}(\mathcal{G})
+  \tag{1.4.8.1}\label{II.1.4.8.1-ko}
+\]
+이라는 표준적이고 함자적인 동형이 있다. 더욱이 $\mathcal{F}$가
+유한 표시를 가지면
+(\hyperref[I.1.6.3-ko]{I, 1.6.3}과
+\hyperref[I.1.3.12-ko]{I, 1.3.12})에 따라
+\[
+  \mathcal{A}(\mathcal{H}om_X(\mathcal{F},\mathcal{G}))
+  =\mathcal{H}om_{\mathcal{A}(X)}
+    (\mathcal{A}(\mathcal{F}),\mathcal{A}(\mathcal{G}))
+  \tag{1.4.8.2}\label{II.1.4.8.2-ko}
+\]
+이라는 표준적 동형이 있다.
+\end{env}
+
+\begin{env}[1.4.9]
+\label{II.1.4.9-ko}
+$X$, $X'$가 $S$ 위에서 아핀인 두 준스킴이면, 합
+$X\sqcup X'$도 $S$ 위에서 아핀이다. 두 아핀 스킴의 합은 아핀
+스킴이기 때문이다.
+\end{env}
+
+\begin{env}[1.4.10]
+\label{II.1.4.10-ko}
+$S$를 준스킴, $\mathcal{B}$를 준연접 $\mathcal{O}_S$-대수라 하고,
+$X=\operatorname{Spec}(\mathcal{B})$라 하자. $\mathcal{J}$를
+$\mathcal{B}$의 임의의 준연접 아이디얼층이라 하자. 그러면
+$\widetilde{\mathcal{J}}$는 $\mathcal{O}_X$의 준연접 아이디얼층이다.
+$Y$를 $X$에서 $\widetilde{\mathcal{J}}$로 정의되는 닫힌 부분준스킴이라
+하면, 이는 $\operatorname{Spec}(\mathcal{B}/\mathcal{J})$와 표준적으로
+동형이다.
+\end{env}
+
+실제로 (\hyperref[I.4.2.3-ko]{I, 4.2.3})에서 $Y$가 $S$ 위에서
+아핀임이 곧바로 따른다. 따라서 (\hyperref[II.1.3.1-ko]{1.3.1})에 의해
+$S$가 아핀인 경우로 환원되고, 이 경우 명제는
+(\hyperref[I.4.1.2-ko]{I, 4.1.2})에서 곧바로 따른다.
+
+(\hyperref[II.1.4.10-ko]{1.4.10})의 결과는 다음과 같이도 표현할 수
+있다. $h:\mathcal{B}\to\mathcal{B}'$가 준연접 $\mathcal{O}_S$-대수들의
+\emph{전사} 준동형이면,
+${}^a h:\operatorname{Spec}(\mathcal{B}')\to
+\operatorname{Spec}(\mathcal{B})$는 \emph{닫힌 몰입 사상}이다.
+
+\oldpage[II]{12}
+\begin{env}[1.4.11]
+\label{II.1.4.11-ko}
+$S$를 준스킴, $\mathcal{B}$를 준연접 $\mathcal{O}_S$-대수라 하고,
+$X=\operatorname{Spec}(\mathcal{B})$라 하자. $\mathcal{K}$를
+$\mathcal{O}_S$의 임의의 준연접 아이디얼층이라 하자. 그러면
+($f$가 구조 사상 $X\to S$를 나타낼 때)
+$f^*(\mathcal{K})\mathcal{O}_X=\widetilde{\mathcal{K}\mathcal{B}}$가
+표준 동형까지 성립한다.
+\end{env}
+
+이 문제는 $S$ 위에서 국소적이므로 $S=\operatorname{Spec}(A)$가 아핀인
+경우로 환원된다. 이 경우 명제는
+(\hyperref[I.1.6.9-ko]{I, 1.6.9})에 다름 아니다.
+
+\subsection{밑준스킴의 변경}
+\label{II.1.5-ko}
+
+\begin{env}[1.5.1]
+\label{II.1.5.1-ko}
+$X$를 $S$ 위에서 아핀인 준스킴이라 하자. 밑준스킴의 임의의 확장
+$g:S'\to S$에 대하여 $X'=X_{(S')}=X\times_S S'$은 $S'$ 위에서
+아핀이다.
+\end{env}
+
+$f'$을 사영 $X'\to S'$이라 하자. $g(U')$가 $S$의 어떤 아핀
+열린집합 $U$에 포함되는 $S'$의 모든 아핀 열린집합 $U'$에 대하여
+$f^{\prime-1}(U')$가 아핀 열린집합임을 보이면 충분하다
+(\hyperref[II.1.2.1-ko]{1.2.1}). 따라서 $S$와 $S'$가 아핀인 경우로
+한정할 수 있고, 이 경우 $X'$이 아핀 스킴임을 보이면 충분하다
+(\hyperref[II.1.3.4-ko]{1.3.4}). 그런데 이때
+(\hyperref[II.1.3.4-ko]{1.3.4}) $X$는 아핀 스킴이다. $S$, $S'$, $X$의
+환을 각각 $A$, $A'$, $B$라 하면, $X'$은 환 $A'\otimes_A B$의 아핀
+스킴임을 안다(\hyperref[I.3.2.2-ko]{I, 3.2.2}).
+
+\begin{env}[1.5.2]
+\label{II.1.5.2-ko}
+(\hyperref[II.1.5.1-ko]{1.5.1})의 가정 아래에서 $f:X\to S$를 구조
+사상, $f':X'\to S'$과 $g':X'\to X$를 사영이라 하자. 그러면 다음
+도식은 가환한다.
+\[
+  \xymatrix{
+    X\ar[d] & X'\ar[l]_{g'}\ar[d]^{f'}\\
+    S & S'\ar[l]_g
+  }
+\]
+모든 준연접 $\mathcal{O}_X$-가군 $\mathcal{F}$에 대하여 다음 표준
+$\mathcal{O}_{S'}$-가군 동형이 존재한다.
+\[
+  u:g^*(f_*(\mathcal{F}))\xrightarrow{\sim}
+  f'_*(g^{\prime*}(\mathcal{F})).
+  \tag{1.5.2.1}\label{II.1.5.2.1-ko}
+\]
+특히 $\mathcal{A}(X')$에서 $g^*(\mathcal{A}(X))$로 가는 표준 동형이
+존재한다.
+\end{env}
+
+$u$를 정의하려면 준동형
+\[
+  v:f_*(\mathcal{F})\longrightarrow
+  g_*(f'_*(g^{\prime*}(\mathcal{F})))
+  =f_*(g'_*(g^{\prime*}(\mathcal{F})))
+\]
+를 정의하고 $u=v^\sharp$로 두면 충분하다
+(\hyperref[0.4.4.3-ko]{0, 4.4.3}). $v=f_*(\rho)$로 두겠다. 여기서
+$\rho$는 표준 준동형
+$\mathcal{F}\to g'_*(g^{\prime*}(\mathcal{F}))$이다
+(\hyperref[0.4.4.3-ko]{0, 4.4.3}). $u$가 동형임을 보이기 위해서는
+$S$와 $S'$, 따라서 $X$와 $X'$도 아핀인 경우로 한정할 수 있다.
+(\hyperref[II.1.5.1-ko]{1.5.1})의 표기를 사용하면 이때
+$\mathcal{F}=\widetilde{M}$이고, 여기서 $M$은 $B$-가군이다. 그러면
+$g^*(f_*(\mathcal{F}))$와 $f'_*(g^{\prime*}(\mathcal{F}))$는 둘 다
+$A'$-가군 $A'\otimes_A M$에 대응하는 $\mathcal{O}_{S'}$-가군과 같다
+(여기서 $M$은 $A$-가군으로 본다). 또한 $u$는 항등사상에 대응하는
+준동형임을 곧바로 알 수 있다
+(\hyperref[I.1.6.3-ko]{I, 1.6.3},
+\hyperref[I.1.6.5-ko]{1.6.5}와 \hyperref[I.1.6.7-ko]{1.6.7}).
+
+\begin{env}[1.5.3]
+\label{II.1.5.3-ko}
+$X$가 더 이상 $S$ 위에서 아핀이라고 가정되지 않을 때에는
+(\hyperref[II.1.5.2-ko]{1.5.2})가 여전히 성립한다고 생각해서는 안
+된다. 이는 심지어 $S'=\operatorname{Spec}(k(s))$ ($s\in S$)이고
+$S'\to S$가 표준 사상인 경우에도 마찬가지이다
+(\hyperref[I.2.4.5-ko]{I, 2.4.5}) --- 이 경우 $X'$은 바로
+\emph{섬유} $f^{-1}(s)$이다(\hyperref[I.3.6.2-ko]{I, 3.6.2}). 다시
+말해 $X$가 $S$ 위에서 아핀이 아닐 때에는
+\oldpage[II]{13}
+``준연접층의 직상'' 연산은 ``섬유 취하기'' 연산과 교환하지 않는다.
+그러나 제III장(\agref{III.4.2.4-ko}{III, 4.2.4})에서 $f$가 고유
+사상이고(\agref{II.5.4-ko}{5.4}) $S$가 뇌터일 때 $X$ 위의
+\emph{연접층}에 대하여 성립하는, 이 방향의 ``점근적'' 성격의 결과를
+보게 될 것이다.
+\end{env}
+
+\begin{env}[1.5.4]
+\label{II.1.5.4-ko}
+$S$ 위에서 아핀인 모든 준스킴 $X$와 모든 $s\in S$에 대하여, 섬유
+$f^{-1}(s)$는 아핀 스킴이다(여기서 $f$는 구조 사상 $X\to S$를
+나타낸다).
+\end{env}
+
+(\hyperref[II.1.5.1-ko]{1.5.1})을 $S'=\operatorname{Spec}(k(s))$에
+적용하고 (\hyperref[II.1.3.4-ko]{1.3.4})을 사용하면 충분하다.

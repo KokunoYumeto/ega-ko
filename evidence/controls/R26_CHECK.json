@@ -1,0 +1,161 @@
+{
+  "schema": "ag-ko-release-check-v1",
+  "id": "AGKO-R26-CHECK",
+  "version": "2026-08-28-r26",
+  "scope": {
+    "included": [
+      "EGA 0_I complete",
+      "EGA I complete",
+      "EGA II Chapter II front matter and programme complete",
+      "EGA II main text contiguous through 1.5.4 / canonical ega2-1-fr.tex lines 1-712"
+    ],
+    "not_claimed": [
+      "EGA II complete",
+      "full EGA corpus complete"
+    ],
+    "next_source": "canonical ega2-1-fr.tex line 714, Corollary II.1.5.5; line 713 is blank"
+  },
+  "source_authority": {
+    "status": "PASS",
+    "front_source": {
+      "path": "source/ega2/front-fr.tex",
+      "coverage": "complete",
+      "bytes": 1423,
+      "sha256": "F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198"
+    },
+    "main_source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "coverage": "lines 1-712 through 1.5.4",
+      "lf_bytes": 31454,
+      "sha256": "E9889D7490233716939E3F0D2270116927A91B5DF1467469116648DA6A819A72"
+    },
+    "policy": "The canonical French remains diplomatic. Accepted R13 corrections are applied in Korean with explicit notes; the rejected-no-source-error locus remains unchanged."
+  },
+  "korean_targets": {
+    "front": {
+      "path": "source/c2front.tex",
+      "bytes": 1500,
+      "sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F"
+    },
+    "main": {
+      "path": "source/c2s1.tex",
+      "bytes": 32338,
+      "sha256": "B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F"
+    }
+  },
+  "formula_structure_gate": {
+    "status": "PASS",
+    "source_target_counts": {
+      "labels": "44/44",
+      "environment_pairs": "36/36",
+      "display_pairs": "15/15",
+      "xymatrix_diagrams": "3/3",
+      "arrows": "11/11",
+      "tags": "4/4",
+      "old_page_markers": "8/8"
+    },
+    "references": "The source has 103 references. The Korean target has 102: 100 hyperref links plus 2 non-destructive agref future-label fallbacks. The sole deletion is the R13-adjudicated stray citation."
+  },
+  "cumulative_input_gate": {
+    "status": "PASS",
+    "manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 2131,
+      "sha256": "0B65FA7FBA8B8E075130D7DAE45BAED8545D5A8410CD6557894EDBCC3395BC07"
+    },
+    "entrypoint": {
+      "path": "source/main.tex",
+      "bytes": 2782,
+      "sha256": "8EE40B0C76B5CE3157CD5D47DEFD68EB49FE01BE11529546E9D77B9749358506"
+    },
+    "ordered_inputs": [
+      "front.tex",
+      "intro.tex",
+      "c0.tex",
+      "c1front.tex",
+      "c1s1.tex",
+      "c1s2.tex",
+      "c1s3.tex",
+      "c1s4.tex",
+      "c1s5.tex",
+      "c1s6.tex",
+      "c1s7.tex",
+      "c1s8.tex",
+      "c1s9.tex",
+      "c1s10.tex",
+      "bib.tex",
+      "c2front.tex",
+      "c2s1.tex"
+    ],
+    "ordered_input_count": 17,
+    "ordered_input_file_bytes": 923722,
+    "compiled_tex_file_count_including_main": 18,
+    "ordered_inputs_unique": true,
+    "main_order_exact": true,
+    "source_tree_has_no_missing_or_undeclared_tex": true,
+    "fail_closed_build_check": true
+  },
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 156,
+    "bytes": 1369169,
+    "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+    "build_cycles": "PASS: two successive fixed-metadata three-pass XeLaTeX cycles are byte-identical; critical diagnostics 0"
+  },
+  "extraction_gate": {
+    "status": "PASS",
+    "poppler": {
+      "bytes": 816981,
+      "sha256": "EB1227E2BC600A5E1E806C59D2047AB30364DBC318D9E03074B23C8017CED9A4"
+    },
+    "pypdf": {
+      "bytes": 667495,
+      "sha256": "6BC86698415EF9772FEF2690DDFA06D2B8C9ED9D9BBE99E930A143193D860890"
+    },
+    "hangul_syllables_each": 145140,
+    "replacement_character_count_each": 0,
+    "exact_doi_22134988_occurrences_each": 1,
+    "prior_doi_22132582_occurrences_each": 0
+  },
+  "visual_gate": {
+    "status": "PASS",
+    "dpi": 200,
+    "inspected_pages": [1, 2, 6, 149, 150, 151, 152, 153, 154, 155, 156],
+    "inspection": "No clipping, overlap, broken glyph, black-square substitution, or layout defect was found."
+  },
+  "metadata_gate": {
+    "status": "PASS",
+    "path": ".zenodo.json",
+    "bytes": 8537,
+    "sha256": "886D2542D0F6F31965BCF5085627D95D16D7AF5422C42E825C229C4928B9872A",
+    "json_valid": true,
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "description_characters": 4286,
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "sole_contributor": {
+      "name": "AI typesetting & translation",
+      "type": "Other"
+    },
+    "language": "kor",
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "upload_type": "publication",
+    "publication_type": "book",
+    "forbidden_project_labels": {
+      "acronym_occurrences": 0,
+      "expansion_occurrences": 0
+    },
+    "redundant_vendor_or_model_contributor_labels": 0,
+    "bounded_rights_and_non_endorsement_disclosure_present": true
+  },
+  "publication": {
+    "exact_doi": "10.5281/zenodo.22134988",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "status_at_control_freeze": "reserved and unsubmitted",
+    "remaining_transaction": "publish and perform anonymous four-file public-byte replay"
+  },
+  "result": "PASS_RELEASE_READY"
+}

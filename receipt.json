@@ -1,17 +1,17 @@
 {
   "schema": "ag-ko-zenodo-publication-receipt-v1",
-  "version": "2026-08-27-r25",
-  "verified_at": "2026-08-27T20:58:23+02:00",
-  "record_id": 22132582,
+  "version": "2026-08-28-r26",
+  "verified_at": "2026-08-28T02:31:05+02:00",
+  "record_id": 22134988,
   "concept_record_id": 21921513,
-  "doi": "10.5281/zenodo.22132582",
+  "doi": "10.5281/zenodo.22134988",
   "concept_doi": "10.5281/zenodo.21921513",
-  "record_url": "https://zenodo.org/records/22132582",
-  "doi_url": "https://doi.org/10.5281/zenodo.22132582",
+  "record_url": "https://zenodo.org/records/22134988",
+  "doi_url": "https://doi.org/10.5281/zenodo.22134988",
   "state": "done",
   "metadata": {
     "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
-    "version": "2026-08-27-r25",
+    "version": "2026-08-28-r26",
     "creators": [
       "Grothendieck, Alexander",
       "Dieudonné, Jean"
@@ -24,53 +24,70 @@
     "upload_type": "publication",
     "publication_type": "book",
     "access_right": "open",
-    "description_characters": 3995,
+    "description_characters": 4286,
     "global_ega_relation": "10.5281/zenodo.20414353|isPartOf|publication-other"
+  },
+  "coverage": {
+    "complete": [
+      "EGA 0_I",
+      "EGA I",
+      "EGA II Chapter II programme"
+    ],
+    "contiguous_partial": "EGA II main text through 1.5.4 / canonical ega2-1-fr.tex lines1-712",
+    "not_claimed": [
+      "EGA II complete",
+      "full EGA corpus complete"
+    ],
+    "next": "canonical ega2-1-fr.tex line714 / Corollary II.1.5.5; line713 is blank"
   },
   "files": [
     {
       "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-      "bytes": 1336706,
-      "md5": "68cdca4fd3390f73660420d71f6fefa6",
-      "sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
-      "pages": 152
+      "bytes": 1369169,
+      "md5": "3da95aa836ca49eec92a464e5cddb645",
+      "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+      "pages": 156
     },
     {
       "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
-      "bytes": 240661,
-      "md5": "e864ecc12c7416823669beb682e8019c",
-      "sha256": "C32D186F8EBF09CD801D35F07F7D091758C8050540F70EA052CF9AFFC29601D7",
+      "bytes": 244189,
+      "md5": "da60a6e6f82051b7b4df9ef577d9b2ea",
+      "sha256": "B6CD1DB39DFB531508FC07F976E9DFA529D92ABF1B6A7D984F306A149991FBD0",
       "entries": 27,
-      "files": 25
+      "files": 25,
+      "directories": 2,
+      "uncompressed_file_bytes": 949660
     },
     {
       "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
-      "bytes": 88236351,
-      "md5": "3a7656b6b87d219c6f3b82d764770bbd",
-      "sha256": "3EE31F4477039BCC51591072F4B3E724798C9DD054855F103BEAAE218296B876",
-      "entries": 345,
-      "files": 335
+      "bytes": 96212250,
+      "md5": "58f960d20f361d25f613618c9fc8dc0e",
+      "sha256": "3A1F86BB1E9DA3962774C21D5D3D3669B11C2CEC6CBCE2D32E3845F3A4F1B06A",
+      "entries": 361,
+      "files": 352,
+      "directories": 9,
+      "uncompressed_file_bytes": 111149167
     },
     {
       "name": "03_EGA_ko_SHA256_MANIFEST.txt",
       "bytes": 342,
-      "md5": "6a79507dff6806ad8d8b5302612d2cfb",
-      "sha256": "D65A0C5B0C971F6D8F5EA1AD7D971A7C4E97B7CC9869C08D1B61D8C7C040EF65"
+      "md5": "7cafbba18ded5e5d6a029e67e9273652",
+      "sha256": "795989BF81EF067AD7C38D2D09E870B372A216337DCABBECCDE4758A7854FF4C"
     }
   ],
   "verification": {
     "authenticated_legacy_draft_metadata": "PASS",
     "authenticated_modern_draft_metadata": "PASS",
-    "authenticated_draft_files": "PASS 4/4",
-    "metadata_schema_recovery": "legacy deposition wrapper preserved creators, contributor, language, license and publication type in both authenticated views",
-    "anonymous_public_metadata": "PASS; record and concept identities, title, version, creators, contributor, Korean language, CC BY 4.0 bounded rights, open access and global EGA relation exact",
-    "anonymous_public_file_replay": "PASS 4/4; fresh downloads exact by filename, bytes, API MD5 and local SHA-256",
+    "authenticated_draft_files": "PASS 4/4 by filename, bytes and MD5 before publication",
+    "anonymous_public_metadata": "PASS; record and concept identities, preserved work title, version, historical creators, sole standardized contributor, Korean language, bounded CC BY 4.0 rights, open access and global EGA relation exact",
+    "anonymous_public_file_replay": "PASS 4/4; fresh unauthenticated downloads exact by filename, bytes, API MD5 and local SHA-256",
     "outer_manifest_replay": "PASS 3/3; header plus reader/source/evidence rows and no self-row",
-    "internal_manifest_replay": "PASS; evidence/ARTIFACT_SHA256.tsv 36505 bytes / 297468A4067E1BEC8C976D4894265F49A73D46C44BB679D1F81EDEB630BD30C3",
-    "cumulative_input_binding": "PASS 17 ordered inputs / 18 compiled TeX files",
-    "source_zip_A_B_identity": "PASS; 240661 bytes / C32D186F8EBF09CD801D35F07F7D091758C8050540F70EA052CF9AFFC29601D7",
-    "evidence_zip_A_B_identity": "PASS; 88236351 bytes / 3EE31F4477039BCC51591072F4B3E724798C9DD054855F103BEAAE218296B876",
-    "doi_resolution": "PASS to https://zenodo.org/records/22132582",
+    "internal_manifest_replay": "PASS; evidence/ARTIFACT_SHA256.tsv 38257 bytes / B9246F61911CEBDBD4BB732A1BDFA4B898B63D11AA11E978402D1EA86DDF639F; 378/378 exact",
+    "cumulative_input_binding": "PASS 17 ordered inputs / 18 compiled TeX files; complete EGA I plus EGA II through 1.5.4",
+    "source_zip_A_B_identity": "PASS; 244189 bytes / B6CD1DB39DFB531508FC07F976E9DFA529D92ABF1B6A7D984F306A149991FBD0",
+    "evidence_zip_A_B_identity": "PASS; 96212250 bytes / 3A1F86BB1E9DA3962774C21D5D3D3669B11C2CEC6CBCE2D32E3845F3A4F1B06A",
+    "portable_source_replay": "PASS; public/A/B Poppler and pypdf extractions exact on all156 pages and selected pages1,2,6,149-156 pixel-exact",
+    "doi_resolution": "PASS to https://zenodo.org/records/22134988",
     "public_access": "PASS; open metadata and all four downloads available anonymously",
     "credentials_absent": true,
     "result": "PASS"

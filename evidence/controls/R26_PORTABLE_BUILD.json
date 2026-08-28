@@ -1,0 +1,85 @@
+{
+  "schema": "ag-ko-portable-build-control-v1",
+  "version": "2026-08-28-r26",
+  "source_archive": {
+    "filename": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 244189,
+    "sha256": "B6CD1DB39DFB531508FC07F976E9DFA529D92ABF1B6A7D984F306A149991FBD0",
+    "entries": 27,
+    "files": 25,
+    "directories": 2,
+    "uncompressed_file_bytes": 949660,
+    "A_B_byte_identical": true,
+    "member_order_name_type_size_crc_sha256_and_bytes_match_frozen_tree": true,
+    "frozen_metadata": {
+      "path": ".zenodo.json",
+      "bytes": 8537,
+      "sha256": "886D2542D0F6F31965BCF5085627D95D16D7AF5422C42E825C229C4928B9872A"
+    }
+  },
+  "public_reader": {
+    "pages": 156,
+    "bytes": 1369169,
+    "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+    "build_cycles": "PASS"
+  },
+  "portable_A": {
+    "staging_tree": "release-staging/r26/portable-A-final",
+    "fresh_empty_extraction": true,
+    "prebuild_reader_absent": true,
+    "prebuild_output_absent": true,
+    "all_25_frozen_source_files_match_archive": true,
+    "pages": 156,
+    "bytes": 1369161,
+    "sha256": "A438523E9987BB3B95F3261B83B79C654AA051750FE3C24446AE209A20BAE308",
+    "build_cycles": "PASS"
+  },
+  "portable_B": {
+    "staging_tree": "release-staging/r26/portable-B-final",
+    "fresh_empty_extraction": true,
+    "prebuild_reader_absent": true,
+    "prebuild_output_absent": true,
+    "all_25_frozen_source_files_match_archive": true,
+    "pages": 156,
+    "bytes": 1369173,
+    "sha256": "63D1B994186581D09B94BAD973CDBD56D2E93FE5DE57A3F2B3A8A4E2BB6FABAB",
+    "build_cycles": "PASS"
+  },
+  "build_cycles": "PASS: BUILD.ps1 completed two successive fixed-metadata three-pass XeLaTeX cycles in each public and portable tree; the two cycles are byte-identical within each tree; critical diagnostics 0",
+  "container_identity": "The public, portable-A, and portable-B PDF container bytes differ. This is an unadjudicated path/container-level delta only; semantic and rendered content are exact across all three builds.",
+  "poppler_extraction": {
+    "status": "PASS: public/A/B exact-identical",
+    "bytes": 816981,
+    "sha256": "EB1227E2BC600A5E1E806C59D2047AB30364DBC318D9E03074B23C8017CED9A4"
+  },
+  "pypdf_extraction": {
+    "status": "PASS: public/A/B exact-identical",
+    "bytes": 667495,
+    "sha256": "6BC86698415EF9772FEF2690DDFA06D2B8C9ED9D9BBE99E930A143193D860890"
+  },
+  "text": {
+    "status": "PASS",
+    "hangul_syllables_each": 145140,
+    "replacement_character_count_each": 0,
+    "exact_doi_22134988_occurrences_each": 1,
+    "prior_doi_22132582_occurrences_each": 0
+  },
+  "visual_replay": {
+    "status": "PASS",
+    "dpi": 200,
+    "pages": [1, 2, 6, 149, 150, 151, 152, 153, 154, 155, 156],
+    "comparisons": 22,
+    "public_A_B_png_bytes_exact": true
+  },
+  "cumulative_input_replay": {
+    "status": "PASS",
+    "manifest_bytes": 2131,
+    "manifest_sha256": "0B65FA7FBA8B8E075130D7DAE45BAED8545D5A8410CD6557894EDBCC3395BC07",
+    "ordered_inputs": 17,
+    "compiled_tex_files_including_main": 18,
+    "main_order_exact": true,
+    "source_tree_has_no_missing_or_undeclared_tex": true
+  },
+  "source_regression_control": "R24_LIVE_SOURCE_REGRESSIONS.json remains the bounded control for the two inherited EGA I source loci; no EGA II regression is inferred.",
+  "result": "PASS"
+}

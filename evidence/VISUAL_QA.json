@@ -1,22 +1,26 @@
 {
   "schema_version": 1,
-  "version": "2026-08-27-r25",
+  "version": "2026-08-28-r26",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1336706,
-  "reader_sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
-  "render_count": 7,
+  "reader_bytes": 1369169,
+  "reader_sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+  "render_count": 11,
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,149,150,151,152",
+  "pages": "1,2,6,149,150,151,152,153,154,155,156",
   "render_hashes": {
-    "page1": "2A75BF3EC543CF1144D3ED194AF6708C8DAE682503FAFCD37903DE963EEABF66",
-    "page2": "10F8F8FD7D620696B3A8DAFCBAB57CF917BA8D0FBAC6896A8D299AFEAFA72162",
-    "page6": "EA1AF6D5299A2B6BCED4521B4C0A9E8EA99B9F5FB837A2E98DF64D769859C554",
+    "page1": "4996A94A595D90D0C949422319296E57D27406C21AE03DAE6E32F2193273E114",
+    "page2": "C070EF2CEB1CD0A1992A27C45C1FCEF547A5016C52EED51E78369AEEB8F91448",
+    "page6": "06D530AE336C313BBAF3D2068AC176FD28B3883EEC6F72A50FDB71CA4EEB8BED",
     "page149": "7938BBA2EED1F1A8AC652958C573640BDD26360996285F7BF0AC9AFDE6E9B855",
     "page150": "4D2AF21F2576680B8F604CF387AD5001C1D59C7BBD774437F8C2A9724E6FD950",
     "page151": "ABA2CA08E2D3F1F5F933EEE759A3A8D44FFA4B6A7EC316F727F2313E2BD92FA7",
-    "page152": "CDB777CF1940E441473139E4E42A2CAB43D61FA46346CD01BD49C7D1120E494F"
+    "page152": "F869C1DF0E2FCCEE88548B368FBD2BB6FCB8AB28949630AC479EC5C29C3C6C99",
+    "page153": "2D45F986448A362470012A4B2754E858BDB7100D9F4E947D9FE787CF8EA4E0DB",
+    "page154": "2563F46FAA2C8D5734F67A0083747E53972C771A643EEAC2335670AEEF7621D5",
+    "page155": "2EF23BD894C5D25720E0D5A877CB2B9FCF255A1FB8146B877FE4D03FD3DA1E15",
+    "page156": "64DC4F04B22D4335577808AA39E445B4621F4C6669D19A5D7DC3C59C492BDB32"
   },
-  "result": "PASS",
-  "disposition": "Pages1-2 verify the cumulative scope, exact DOI, links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; page151 contains the complete Chapter II programme and opening main text; page152 completes 1.1.3. No clipping, overlap, tofu, malformed diagram or layout defect was found. Public and clean portable-A/B renders are pixel-exact on all seven pages."
+  "result": "PASS_RELEASE_READY_UNPUBLISHED",
+  "disposition": "Pages1-2 verify cumulative scope through EGA II 1.5.4, exact reserved DOI, external links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; pages151-156 show the complete Chapter II programme and contiguous main text through 1.5.4. All eleven 200 dpi renders are 1654x2339 and show no clipping, overlap, tofu, malformed diagram or layout defect. The same eleven pages are pixel-identical across the current repository reader and corrected clean-extracted portable-A/B readers; public-download comparison remains a post-publication gate."
 }

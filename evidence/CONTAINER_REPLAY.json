@@ -1,45 +1,45 @@
 {
   "schema_version": 1,
-  "version": "2026-08-27-r25",
+  "version": "2026-08-28-r26",
   "standalone_repository_reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1336706,
-    "sha256": "1E2BE770B21F5E115C8DABC10FE2A825984B27F0CFB33EECEC611FC6E6E3B0BB",
-    "pages": 152,
+    "bytes": 1369169,
+    "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+    "pages": 156,
     "build_cycles": "PASS"
   },
-  "source_target_hash": "894632C0C829BD859E8B4AE5675CEE1D8B9EFA860BF56E90698A1E10ED90B7E5",
+  "source_target_hash": "B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F",
   "comparison": {
-    "pages": 152,
+    "pages": 156,
     "pypdf_text_exact_on_all_pages": true,
     "pdftotext_extraction_exact": true,
-    "poppler_bytes_each": 793376,
-    "poppler_sha256_each": "3A5670E4D99F77AA6B46D63832A01D2B8C9BDAF1FB840FE09B492E3DBEC2E2DD",
-    "pypdf_bytes_each": 647656,
-    "pypdf_sha256_each": "3DB5C523E08A9B29FB16FB28EA8F84757FB91C19895A463AB1CD39C38193750F",
-    "hangul_syllables_each": 140992,
+    "poppler_bytes_each": 816981,
+    "poppler_sha256_each": "EB1227E2BC600A5E1E806C59D2047AB30364DBC318D9E03074B23C8017CED9A4",
+    "pypdf_bytes_each": 667495,
+    "pypdf_sha256_each": "6BC86698415EF9772FEF2690DDFA06D2B8C9ED9D9BBE99E930A143193D860890",
+    "hangul_syllables_each": 145140,
     "replacement_characters_each": 0,
-    "exact_doi_22132582_each": 1,
-    "prior_doi_22103931_each": 0,
-    "public_portable_a_portable_b_pages_200dpi_pixel_exact": "1,2,6,149,150,151,152"
+    "exact_doi_22134988_each": 1,
+    "prior_doi_22132582_each": 0,
+    "public_portable_a_portable_b_pages_200dpi_pixel_exact": "PASS: pages1,2,6,149-156; 11/11 in each tree; 1654x2339"
   },
   "portable_a": {
-    "bytes": 1336713,
-    "sha256": "5B03DD456B45EE47777075A869DE9E8B6FF716E42F60C1B1B4DF38C4B1BE606A",
-    "pages": 152,
+    "bytes": 1369161,
+    "sha256": "A438523E9987BB3B95F3261B83B79C654AA051750FE3C24446AE209A20BAE308",
+    "pages": 156,
     "build_cycles": "PASS",
     "poppler_exact_to_public": true,
     "pypdf_exact_to_public": true,
-    "visual_exact_pages": "1,2,6,149,150,151,152"
+    "visual_exact_pages": "1,2,6,149,150,151,152,153,154,155,156"
   },
   "portable_b": {
-    "bytes": 1336685,
-    "sha256": "6F4059B839A12A8C83ABC4D449867EC8FC0D2C681659B3B4806C1D8DC2B832A9",
-    "pages": 152,
+    "bytes": 1369173,
+    "sha256": "63D1B994186581D09B94BAD973CDBD56D2E93FE5DE57A3F2B3A8A4E2BB6FABAB",
+    "pages": 156,
     "build_cycles": "PASS",
     "poppler_exact_to_public": true,
     "pypdf_exact_to_public": true,
-    "visual_exact_pages": "1,2,6,149,150,151,152"
+    "visual_exact_pages": "1,2,6,149,150,151,152,153,154,155,156"
   },
-  "disposition": "The public-tree and clean-extraction source-archive A/B readers differ only at the path-sensitive container level. All three have exact full Poppler and pypdf extractions, and the seven inspected pages are pixel-exact at 200 dpi. No broader container-identity inference is made."
+  "disposition": "PASS_RELEASE_READY_UNPUBLISHED: the current repository reader and corrected clean-extracted portable-A/B builds are each internally deterministic. Their Poppler and pypdf extractions are exact-identical on all156 pages, and pages1,2,6,149-156 are pixel-identical at200dpi. Different PDF container byte identities are retained without content inference. Public-download replay remains a post-publication gate."
 }
