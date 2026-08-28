@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-800, LF UTF-8 SHA-256 89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-1047, 46406 LF UTF-8 bytes, SHA-256 82B4E167D4B03EF093E674071C2BD5DA5632789EF123634ABEFDD15832D4C362.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -996,3 +996,73 @@ $\mathbf{S}_{\mathcal{A}}(\mathcal{A})$는
 $\mathcal{A}[T]=\mathcal{A}\otimes_{\mathbf{Z}}\mathbf{Z}[T]$와
 동일시된다($T$는 부정원이고, $\mathbf{Z}$는 상수층으로 본다).
 \end{env}
+
+\begin{env}[1.7.5]
+\label{II.1.7.5-ko}
+$(T,\mathcal{B})$를 또 하나의 환 달린 공간,
+$f:(S,\mathcal{A})\to(T,\mathcal{B})$를 환 달린 공간의 사상이라 하자.
+$\mathcal{F}$가 $\mathcal{B}$-가군이면
+$\mathbf{S}(f^*(\mathcal{F}))$는
+$f^*(\mathbf{S}(\mathcal{F}))$와 표준적으로 동일시된다. 실제로
+$f=(\psi,\theta)$이면 정의상
+(\hyperref[0.4.3.1-ko]{0, 4.3.1})
+\[
+  \mathbf{S}(f^*(\mathcal{F}))
+  =\mathbf{S}(\psi^*(\mathcal{F})
+    \otimes_{\psi^*(\mathcal{B})}\mathcal{A})
+  =\mathbf{S}(\psi^*(\mathcal{F}))
+    \otimes_{\psi^*(\mathcal{B})}\mathcal{A}
+\]
+이다(\hyperref[II.1.7.2-ko]{1.7.2}). $S$의 임의의 열린집합 $U$와
+$U$ 위의 $\mathbf{S}(\psi^*(\mathcal{F}))$의 임의의 단면 $h$에
+대하여, 각 점 $s\in U$의 어떤 근방 $V$에서 $h$는
+$\mathbf{S}(\Gamma(V,\psi^*(\mathcal{F})))$의 한 원소와 일치한다.
+$\psi^*(\mathcal{F})$의 정의
+(\hyperref[0.3.7.1-ko]{0, 3.7.1})를 참조하고, 가군 $E$에 대한
+$\mathbf{S}(E)$의 모든 원소가 $E$의 원소들의 곱을 유한 개만 사용한
+선형 결합임을 고려하면, $T$에서 $\psi(s)$의 어떤 근방 $W$,
+$W$ 위의 $\mathbf{S}(\mathcal{F})$의 어떤 단면 $h'$, 그리고 $s$의
+어떤 근방 $V'\subset V\cap\psi^{-1}(W)$가 존재하여 $V'$ 위에서
+$h$는 $t\mapsto h'(\psi(t))$와 일치함을 알 수 있다. 따라서 주장이
+따른다.
+\end{env}
+
+\begin{proposition}[1.7.6]
+\label{II.1.7.6-ko}
+$A$를 환, $S=\operatorname{Spec}(A)$를 그 소 스펙트럼,
+$\mathcal{E}=\widetilde{M}$을 $A$-가군 $M$에 대응하는
+$\mathcal{O}_S$-가군이라 하자. 그러면 $\mathcal{O}_S$-대수
+$\mathbf{S}(\mathcal{E})$는 $A$-대수 $\mathbf{S}(M)$에 대응하는
+$\mathcal{O}_S$-대수이다.
+\end{proposition}
+
+\begin{proof}
+실제로 모든 $f\in A$에 대하여
+$\mathbf{S}(M_f)=(\mathbf{S}(M))_f$이다
+(\hyperref[II.1.7.3-ko]{1.7.3}). 따라서 명제는 정의들
+(\hyperref[I.1.3.4-ko]{I, 1.3.4})에서 따른다.
+\end{proof}
+
+\begin{corollary}[1.7.7]
+\label{II.1.7.7-ko}
+$S$가 준스킴이고 $\mathcal{E}$가 준연접 $\mathcal{O}_S$-가군이면,
+$\mathcal{O}_S$-대수 $\mathbf{S}(\mathcal{E})$는 준연접이다. 또한
+$\mathcal{E}$가 유한 생성 $\mathcal{O}_S$-가군이면, 각
+$\mathcal{O}_S$-가군 $\mathbf{S}_n(\mathcal{E})$도 유한 생성이다.
+\end{corollary}
+
+\begin{proof}
+첫째 주장은 (\hyperref[II.1.7.6-ko]{1.7.6})과
+(\hyperref[I.1.4.1-ko]{I, 1.4.1})에서 곧바로 따른다. 둘째 주장은
+$E$가 유한 생성 $A$-가군이면 $\mathbf{S}_n(E)$도 유한 생성
+$A$-가군이라는 사실에서 따른다. 이제
+(\hyperref[I.1.3.13-ko]{I, 1.3.13})을 적용하면 된다.
+\end{proof}
+
+\begin{definition}[1.7.8]
+\label{II.1.7.8-ko}
+$\mathcal{E}$를 준연접 $\mathcal{O}_S$-가군이라 하자. 준연접
+$\mathcal{O}_S$-대수 $\mathbf{S}(\mathcal{E})$의 스펙트럼
+(\hyperref[II.1.3.1-ko]{1.3.1})을 $\mathbf{V}(\mathcal{E})$로 나타내고,
+이를 $\mathcal{E}$로 정의되는 $S$ 위의 \emph{벡터 다발}이라 한다.
+\end{definition}

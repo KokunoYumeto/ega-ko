@@ -834,3 +834,31 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   attached Corollary 10.10.6. `AGKO-H144` requires the Korean text to correct
   printed `v:A^m->A^n` to the type-forced `v:A^p->A^q` and disclose that
   correction explicitly while the French authority remains diplomatic.
+
+## 59. r30 EGA II 1.7.5--1.7.8 admission and local QA
+
+- The r30 increment is the exact closed canonical slice
+  `ega2-1-fr.tex` lines 980--1047, 2,937 LF-terminal UTF-8 bytes /
+  `3F9BB1CFA4F0F73227BD179C2B00827C766233C03F8F395B9D69AA3342B92060`.
+  It contains environment 1.7.5, Proposition 1.7.6 and proof, Corollary 1.7.7
+  and proof, and Definition 1.7.8. Line 1048 is blank; line 1049 begins the
+  next representability paragraph leading to 1.7.9.
+- The Korean increment is `source/c2s1.tex` lines 1000--1068, 3,052 LF bytes /
+  `34187146DD99C864116239C1FF86FD9B01985E57773880712EA4F5005BBD0447`.
+  Its working and public mirrors are exact at 47,178 bytes /
+  `5BF8FADDBC91829564E91C790BF1D6456945EBFD34937E02FDC8CDDDC0EEC4E4`.
+  Independent semantic, Korean-register and mechanical reviews pass. The
+  historical construction `V(E)=Spec_S(S(E))` was not modernized by inserting
+  a dual, local-freeness, rank or atlas hypothesis.
+- The strict live-authority build completes two byte-identical three-pass
+  cycles. The cumulative reader is 231 pages / 1,442,048 bytes /
+  `B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0`.
+  Poppler and pypdf extractions each contain 147,309 Hangul syllables and zero
+  replacement characters; all 267 unique internal references resolve against
+  556 named destinations; twelve selected 200 dpi pages pass direct visual QA.
+- This is a rigorous reproducible checkpoint, not a claim of perfection,
+  infallibility, finality, full EGA completion, endorsement, or human
+  certification. The exact r30 DOI is `10.5281/zenodo.22151007` in the stable
+  Korean EGA concept `10.5281/zenodo.21921513`; publication and anonymous
+  replay remain separate gates until their receipts exist. After closure,
+  continue contiguously at canonical line 1049 without reopening sealed units.

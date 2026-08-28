@@ -1,0 +1,100 @@
+{
+  "schema": "ag-ko-package-receipt-v2",
+  "version": "2026-08-29-r30",
+  "exact_doi": "10.5281/zenodo.22151007",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "corpus": "EGA",
+    "included_volumes": [
+      "EGA 0_I",
+      "EGA I",
+      "EGA II (front matter/programme and Section 1 through1.7.8)"
+    ],
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1047 through1.7.8",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
+    "historical_source_pages": 220,
+    "historical_page_ranges": [
+      "EGA I introduction5-8",
+      "EGA 0_I11-78",
+      "EGA I Chapter I79-214",
+      "EGA II5-16"
+    ]
+  },
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1442048,
+      "sha256": "B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0",
+      "role": "front cumulative reader artifact",
+      "pages": 231
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 253084,
+      "sha256": "79D75306465E190C365FF248333F3CD03F21C9A0B136375B7A8CB6C738059113",
+      "role": "deterministic editable-source archive",
+      "entries": 27,
+      "files": 25,
+      "directories": 2,
+      "uncompressed_file_bytes": 985442,
+      "verification": "PASS names, sizes, CRC and decompressed SHA-256 in independent A/B cycles",
+      "inventory_sha256": "9FFBA555C066A5182A50AD244971DAF4C6FA406EF0D577056D1D5E930E619713"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 107895895,
+      "sha256": "65921E8D84FABAD570B6C96C31549624DF51EEB795CC75F98E1633E1A9E0131D",
+      "role": "deterministic evidence archive",
+      "entries": 419,
+      "files": 410,
+      "directories": 9,
+      "uncompressed_file_bytes": 124562584,
+      "verification": "PASS names, sizes, CRC and decompressed SHA-256 in independent A/B cycles",
+      "inventory_sha256": "3985370C2040517C1BBC4E7A2BC9F6FABBFAD2A55B222882F870FD256F2061C6"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 345,
+      "sha256": "2553676581BDB632FF3EB09B1BBE9619BAEDCFB05D4129DDB312E406DFE911F2",
+      "role": "outer SHA-256 manifest",
+      "listed_artifacts": 3,
+      "verification": "PASS"
+    }
+  ],
+  "total_publication_bytes": 109591372,
+  "source_archive_A_B_byte_identical": true,
+  "evidence_archive_A_B_byte_identical": true,
+  "reader_qa": {
+    "strict_build": "two live-authority three-pass cycles byte-identical PASS",
+    "portable_source_archive_build": "PASS: clean extraction builds231 pages /1442036 bytes /213CCB4814A2E9C2D8052B36607184957BE399F9C3C41EF055DB32964E163E67;12-byte path-sensitive container delta bounded by exact semantic extraction",
+    "portable_extraction": "PASS: Poppler715437/E27BB5C1042483F944DFE26F3AA490B58840C65898ABA6F8B36C5928AD9C058B and pypdf678121/010DDFD54DCEDB60D0881CA50C49CA05F1072AC201169A686D54AC9CE5ABC196 are byte-identical to the strict release build",
+    "links": "1618 internal GoTo annotations and all267 unique references resolve",
+    "visual": "12 selected pages at200dpi PASS"
+  },
+  "internal_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "bytes": 44167,
+    "sha256": "8DFD07ED9B640ED0BE87304E163DC8552C5052FC30B230E3F05B4F3E60694D17",
+    "entries": 436,
+    "verification": "PASS"
+  },
+  "metadata": {
+    "bytes": 7498,
+    "sha256": "99CEB88AFD6C4C5A7CB8B80541C0B0F102F0C5D2367C175ADB4DAA5F1F6ADE7C",
+    "description_characters": 4073,
+    "forbidden_umbrella_mentions": 0,
+    "external_links": [
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://github.com/KokunoYumeto/ega-ko"
+    ]
+  },
+  "source_inventory_sha256": "9FFBA555C066A5182A50AD244971DAF4C6FA406EF0D577056D1D5E930E619713",
+  "evidence_inventory_sha256": "3985370C2040517C1BBC4E7A2BC9F6FABBFAD2A55B222882F870FD256F2061C6",
+  "top_level_release_aliases": "PASS exact for all four publication files",
+  "publication_status": "local package only; Zenodo draft and GitHub are not publication claims",
+  "result": "PASS_LOCAL_PACKAGE"
+}

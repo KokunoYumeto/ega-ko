@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R30-COVERAGE",
+  "time": "2026-08-29T00:00:00+02:00",
+  "scope": "Korean EGA II environments 1.7.5-1.7.8 / canonical lines980-1047",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1047",
+    "admitted_lf_bytes": 46406,
+    "admitted_sha256": "82B4E167D4B03EF093E674071C2BD5DA5632789EF123634ABEFDD15832D4C362",
+    "new_lines": "980-1047",
+    "new_lf_bytes": 2937,
+    "new_sha256": "3F9BB1CFA4F0F73227BD179C2B00827C766233C03F8F395B9D69AA3342B92060",
+    "closed_slices": [
+      "lines980-1007 environment1.7.5: 1368 LF bytes / D7D6525D7D629C877386CD02346CC747D3CDF827637864BC47B071F4CB903BFD",
+      "lines1009-1022 proposition1.7.6 and proof: 540 LF bytes / 4EAE1F8C07083BA1E87212BB2CF8D16FCBCA8F17E8245A555FFF4AD8CCBF5559",
+      "lines1024-1038 corollary1.7.7 and proof: 677 LF bytes / 9A41F89EC2CD8DF7407DC6295E2ABC172CC084775B6DEA3952B687652585B76B",
+      "lines1040-1047 definition1.7.8: 349 LF bytes / ED7D391826A8628F22E31243C7FAC44CD3BDB4D2B16BBF4328C82B2797FFF4BB"
+    ],
+    "next": "line1049 representability paragraph leading into environment1.7.9; line1048 blank"
+  },
+  "target": {
+    "working_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 47178,
+    "lf_lines": 1068,
+    "sha256": "5BF8FADDBC91829564E91C790BF1D6456945EBFD34937E02FDC8CDDDC0EEC4E4",
+    "new_target_lines": "1000-1068",
+    "new_target_lf_bytes": 3052,
+    "new_target_sha256": "34187146DD99C864116239C1FF86FD9B01985E57773880712EA4F5005BBD0447",
+    "environment_1_7_5": "lines1000-1028 1403 LF bytes / 14908A87E557B94B9F161A1F00EF88E126490AE52DCFC038239CE3B186170495",
+    "proposition_1_7_6": "lines1030-1044 585 LF bytes / 596C071F8CC44BCA9F7B0B14E2497684C86892A05DFA61646B496710F2B82BA4",
+    "corollary_1_7_7": "lines1046-1060 698 LF bytes / BE362A736FE23146A5A53AB378CC9042CFAB4D2017A9719F8BD0721DB7805794",
+    "definition_1_7_8": "lines1062-1068 363 LF bytes / 0E965B90A6926C73721750034A281A0B0B2CC2525BFC9547B3D2EA74D0F1EE2D",
+    "mirrors_exact": true
+  },
+  "coverage": [
+    "Environment 1.7.5 symmetric algebra and inverse image",
+    "Proposition 1.7.6 associated symmetric algebra on an affine spectrum",
+    "Corollary 1.7.7 quasi-coherence and finite generation of each graded piece",
+    "Definition 1.7.8 historical vector-bundle construction"
+  ],
+  "source_parity": {
+    "environments": "6/6 in exact order: env, proposition, proof, corollary, proof, definition",
+    "labels": "4/4 in exact transformed order",
+    "references": "9/9 in exact transformed order",
+    "displays": "1/1 untagged",
+    "oldpages": "0/0",
+    "tags": "0/0",
+    "braces_and_math_delimiters": "PASS balanced",
+    "formula_objects_and_arrow_directions": "PASS",
+    "accidental_duplication": "PASS none"
+  },
+  "terminology": {
+    "bindings": [
+      "AGKO-T024",
+      "AGKO-T029",
+      "AGKO-T032",
+      "AGKO-T039",
+      "AGKO-T085",
+      "AGKO-T089",
+      "AGKO-T130",
+      "AGKO-T166",
+      "AGKO-T167"
+    ],
+    "typed_checks": [
+      "f-star remains distinct from topological inverse-image notation psi-star and set preimage psi-inverse",
+      "tensor base is psi-star B and local domains U, V, V-prime and W preserve their spaces",
+      "associated tilde algebra is not general sheafification",
+      "finite type for modules is rendered as finite generation and applies to each S_n(E), not the infinite direct sum as a whole",
+      "V(E) is relative Spec S(E) with no inserted dual, local-freeness, rank or atlas hypothesis"
+    ],
+    "arxiv_role": "retained local arXiv witnesses constrain modern mathematical types only; they do not authorize Korean spelling or override the historical definition",
+    "result": "PASS"
+  },
+  "resolved_prebuild_issues": [
+    {
+      "symptom": "The first append patch matched the first generic end-of-environment and temporarily placed the unit after1.1.1.",
+      "resolution": "The single block was removed and reinserted after the unique terminal formula of1.7.4 in both mirrors; occurrence and repeated-window checks prove no duplicate remains.",
+      "recurrence": "Use a unique terminal multi-line anchor for every append and verify subsection line order immediately."
+    },
+    {
+      "symptom": "Initial Korean prose used an awkward finite-linear-combination phrase and left the associated O_S-algebra grammatically implicit.",
+      "resolution": "Independent Korean review supplied exact clarity edits; both mirrors now explicitly say finitely many products and type the associated object as an O_S-algebra.",
+      "recurrence": "Audit French quantifier scope and object type separately from structural parity."
+    }
+  ],
+  "canon": {
+    "r13": "All accepted and rejected R13 loci precede this unit and remain preserved.",
+    "new_dispositions_in_lines_980_1047": 0,
+    "result": "PASS"
+  },
+  "reviews": {
+    "source_semantic": "PASS independent",
+    "korean_terminology_style": "PASS independent after two exact clarity edits",
+    "mechanical_structure": "PASS independent with correct target boundary through line1068"
+  },
+  "gates": {
+    "translation": "PASS",
+    "source_structure": "PASS",
+    "terminology_and_korean_review": "PASS",
+    "pdf_build": "PASS: strict live-authority dual three-pass cycles are byte-identical; reader231 pages /1442048 bytes /B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0; hard diagnostics0",
+    "extraction_links_visual": "PASS: Poppler and pypdf each147309 Hangul/U+FFFD0; all267 unique internal references resolve;12 selected pages at200dpi inspected without defect",
+    "archives": "PENDING",
+    "publication_and_public_replay": "PENDING"
+  },
+  "result": "PASS_R30_LOCAL_TRANSLATION_SOURCE_STRUCTURE_TERMINOLOGY_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING"
+}
