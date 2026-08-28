@@ -35,7 +35,21 @@
 \renewcommand{\@pnumwidth}{2em}
 \renewcommand{\@tocrmarg}{3em}
 \makeatother
+% Preserve the historical printed-page rhythm in the cumulative reader.  The
+% first marker anchors the opening page; every later marker forces the line
+% carrying it onto a fresh output page without splitting the source paragraph.
+\newif\ifagoldpageseen
+\agoldpageseenfalse
 \newcommand{\oldpage}[2][]{%
+  \ifagoldpageseen
+    \ifhmode
+      \vadjust pre{\penalty -10000}%
+    \else
+      \ifvmode\penalty -10000\fi
+    \fi
+  \else
+    \global\agoldpageseentrue
+  \fi
   \setcounter{footnote}{0}%
   \marginpar{\scriptsize\textbf{#1}~|~#2}\ignorespaces}
 \newcommand{\agref}[2]{%

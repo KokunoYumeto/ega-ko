@@ -13,11 +13,143 @@ if (-not (Test-Path -LiteralPath $inputManifestPath -PathType Leaf)) {
   throw 'Cumulative input manifest is missing.'
 }
 $inputManifest = Get-Content -LiteralPath $inputManifestPath -Raw | ConvertFrom-Json
-if ($inputManifest.schema -cne 'ega-ko-cumulative-inputs-v1') {
+if ($inputManifest.schema -cne 'ega-ko-cumulative-inputs-v2') {
   throw 'Unsupported cumulative input manifest schema.'
 }
 if ($inputManifest.entrypoint -cne 'main.tex') {
   throw 'Cumulative input manifest must bind source/main.tex.'
+}
+$coverageRows = @($inputManifest.coverage_matrix)
+if ($coverageRows.Count -ne [int]$inputManifest.authority_driver.content_input_count) {
+  throw 'Coverage matrix does not contain every canonical driver input.'
+}
+if (@($coverageRows.source_path | Sort-Object -Unique).Count -ne $coverageRows.Count) {
+  throw 'Coverage matrix contains duplicate canonical source paths.'
+}
+if (@($coverageRows.driver_line | Sort-Object -Unique).Count -ne $coverageRows.Count) {
+  throw 'Coverage matrix contains duplicate canonical driver lines.'
+}
+$allowedCoverageStates = @('complete', 'partial', 'not_translated')
+foreach ($row in $coverageRows) {
+  if ($allowedCoverageStates -cnotcontains [string]$row.status) {
+    throw "Unsupported coverage state for $($row.source_path): $($row.status)"
+  }
+  if ($row.status -ceq 'not_translated') {
+    if ($null -ne $row.target_path -or $null -ne $row.target_sha256) {
+      throw "Untranslated driver row improperly claims a target: $($row.source_path)"
+    }
+    continue
+  }
+  if ([string]::IsNullOrWhiteSpace([string]$row.target_path)) {
+    throw "Translated driver row lacks a target: $($row.source_path)"
+  }
+  $targetPath = Join-Path $src ([string]$row.target_path)
+  if (-not (Test-Path -LiteralPath $targetPath -PathType Leaf)) {
+    throw "Coverage target is missing: $($row.target_path)"
+  }
+  $targetItem = Get-Item -LiteralPath $targetPath
+  if ($targetItem.Length -ne [int64]$row.target_bytes) {
+    throw "Coverage target byte mismatch: $($row.target_path)"
+  }
+  $targetHash = (Get-FileHash -LiteralPath $targetPath -Algorithm SHA256).Hash
+  if ($targetHash -cne [string]$row.target_sha256) {
+    throw "Coverage target hash mismatch: $($row.target_path)"
+  }
+  $targetText = Get-Content -LiteralPath $targetPath -Raw
+  $targetLfLines = ([regex]::Matches($targetText, "`n")).Count
+  if ($targetLfLines -ne [int]$row.target_lf_lines) {
+    throw "Coverage target LF-line mismatch: $($row.target_path)"
+  }
+  $targetMarkers = ([regex]::Matches($targetText, '\\oldpage')).Count
+  if ($targetMarkers -ne [int]$row.historical_page_markers) {
+    throw "Coverage target historical-page-marker mismatch: $($row.target_path)"
+  }
+}
+$translatedTargets = @($coverageRows | Where-Object { $_.status -cne 'not_translated' } | ForEach-Object { [string]$_.target_path })
+$declaredTargets = @($inputManifest.ordered_inputs | ForEach-Object { [string]$_.path })
+if (($translatedTargets -join "`n") -cne ($declaredTargets -join "`n")) {
+  throw 'Ordered reader inputs do not exactly equal the translated canonical coverage rows.'
+}
+$manifestMarkerCount = ($coverageRows | Measure-Object -Property historical_page_markers -Sum).Sum
+if ($manifestMarkerCount -ne [int]$inputManifest.scope.historical_source_pages) {
+  throw 'Historical source-page count does not equal the coverage-matrix marker sum.'
+}
+
+# A controlled release build can additionally bind the portable package to the
+# live canonical driver and private Korean inventory.  Portable replays omit
+# these environment variables but still enforce every internal target byte.
+$canonicalRoot = $env:AGKO_CANONICAL_ROOT
+$privateRoot = $env:AGKO_PRIVATE_ROOT
+$requireLiveCoverage = ($env:AGKO_REQUIRE_LIVE_COVERAGE -ceq '1')
+if (-not [string]::IsNullOrWhiteSpace($canonicalRoot)) {
+  $driverPath = Join-Path $canonicalRoot ([string]$inputManifest.authority_driver.path)
+  if (-not (Test-Path -LiteralPath $driverPath -PathType Leaf)) { throw 'Live canonical EGA driver is missing.' }
+  $driverItem = Get-Item -LiteralPath $driverPath
+  $driverHash = (Get-FileHash -LiteralPath $driverPath -Algorithm SHA256).Hash
+  if ($driverItem.Length -ne [int64]$inputManifest.authority_driver.bytes -or
+      $driverHash -cne [string]$inputManifest.authority_driver.sha256) {
+    throw 'Live canonical EGA driver identity drifted from the coverage matrix.'
+  }
+  $driverLines = @(Get-Content -LiteralPath $driverPath)
+  $liveRows = @()
+  for ($lineIndex = 60; $lineIndex -lt $driverLines.Count; $lineIndex++) {
+    $line = $driverLines[$lineIndex]
+    if ($line.StartsWith('\input{')) {
+      $liveRows += [pscustomobject]@{
+        driver_line = $lineIndex + 1
+        source_path = $line.Substring(7, $line.Length - 8)
+      }
+    }
+  }
+  if ($liveRows.Count -ne $coverageRows.Count) { throw 'Live canonical driver input count drifted.' }
+  for ($i = 0; $i -lt $coverageRows.Count; $i++) {
+    $row = $coverageRows[$i]
+    if ($liveRows[$i].driver_line -ne [int]$row.driver_line -or
+        $liveRows[$i].source_path -cne [string]$row.source_path) {
+      throw "Live canonical driver order drifted at coverage row $i."
+    }
+    $authorityPath = Join-Path (Split-Path -Parent $driverPath) ([string]$row.source_path)
+    if (-not (Test-Path -LiteralPath $authorityPath -PathType Leaf)) {
+      throw "Live canonical input is missing: $($row.source_path)"
+    }
+    $authorityItem = Get-Item -LiteralPath $authorityPath
+    $authorityHash = (Get-FileHash -LiteralPath $authorityPath -Algorithm SHA256).Hash
+    if ($authorityItem.Length -ne [int64]$row.source_bytes -or
+        $authorityHash -cne [string]$row.source_sha256) {
+      throw "Live canonical input identity drifted: $($row.source_path)"
+    }
+  }
+} elseif ($requireLiveCoverage) {
+  throw 'Strict release build requires AGKO_CANONICAL_ROOT.'
+}
+if (-not [string]::IsNullOrWhiteSpace($privateRoot)) {
+  foreach ($row in $coverageRows | Where-Object { $_.status -cne 'not_translated' -and $_.target_path -cne 'front.tex' }) {
+    $workingPath = Join-Path $privateRoot ([string]$row.working_path)
+    if (-not (Test-Path -LiteralPath $workingPath -PathType Leaf)) {
+      throw "Private Korean working target is missing: $($row.working_path)"
+    }
+    $workingItem = Get-Item -LiteralPath $workingPath
+    $workingHash = (Get-FileHash -LiteralPath $workingPath -Algorithm SHA256).Hash
+    if ($workingItem.Length -ne [int64]$row.target_bytes -or
+        $workingHash -cne [string]$row.target_sha256) {
+      throw "Public/private Korean target drift: $($row.target_path)"
+    }
+  }
+  $unitIndexPath = Join-Path $privateRoot ([string]$inputManifest.reconciliation.private_inventory)
+  if (-not (Test-Path -LiteralPath $unitIndexPath -PathType Leaf)) { throw 'Private Korean unit index is missing.' }
+  $unitIds = @{}
+  foreach ($line in Get-Content -LiteralPath $unitIndexPath) {
+    if ([string]::IsNullOrWhiteSpace($line)) { continue }
+    $record = $line | ConvertFrom-Json
+    $unitIds[[string]$record.id] = $true
+  }
+  foreach ($requiredId in @($inputManifest.reconciliation.required_latest_records)) {
+    if (-not $unitIds.ContainsKey([string]$requiredId)) {
+      throw "Required private coverage record is missing: $requiredId"
+    }
+  }
+} elseif ($requireLiveCoverage) {
+  throw 'Strict release build requires AGKO_PRIVATE_ROOT.'
 }
 $declaredInputs = @($inputManifest.ordered_inputs | ForEach-Object { [string]$_.path })
 if ($declaredInputs.Count -eq 0) { throw 'Cumulative input manifest declares no reader inputs.' }

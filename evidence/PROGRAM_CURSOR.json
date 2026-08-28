@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-28T02:39:25+02:00",
+  "updated": "2026-08-28T11:53:08+02:00",
   "volume": "EGA II",
   "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-712; Chapter II programme in front-fr.tex complete",
   "next_label": "Corollary II.1.5.5 at canonical line714; line713 is blank",
   "package_target": "source/c2s1.tex",
-  "package_target_locator": "target synchronized to source lines1-712 through 1.5.4",
-  "package_target_sha256": "B453089646B680E96899F4A709227A3AA082B2B40F1416F10DBA401A7899D10F",
-  "current_exact_zenodo": "10.5281/zenodo.22134988",
-  "current_public": "10.5281/zenodo.22134988",
-  "reserved_exact_zenodo": "10.5281/zenodo.22134988",
-  "status": "PASS_GITHUB: r26 exact DOI10.5281/zenodo.22134988 is openly published and anonymously replayed4/4; fresh anonymous reader dual extraction and selected-page pixel replay match the frozen reader; GitHub artifact f97cbba7a4cb8fbb20e91116a723a745c45cc527, state2c33dee4b413ec0efe6b4ef8dee51bf20ee6d3e3 and receipt22b07b42ef1669570253c291b1d0b66a36ec0576 checkpoints are public and anonymously replayed; terminal public closure is non-self-referential; continue from canonical line714 without reopening completed units"
+  "package_target_locator": "translation synchronized to source lines1-712 through1.5.4; r27 reader applies pagination-only correction",
+  "reader": "228 pages /1424078 bytes /1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
+  "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;23 rows=16/1/6 and217 markers",
+  "current_exact_zenodo": "10.5281/zenodo.22141753",
+  "current_public": "10.5281/zenodo.22141753",
+  "status": "PASS_ZENODO: r27 exact DOI open and anonymously replayed4/4; GitHub r27 artifact/state/receipt closure pending; after GitHub closure continue from canonical line714 without reopening completed units"
 }

@@ -1,0 +1,74 @@
+{
+  "schema": "ag-ko-zenodo-publication-receipt-v1",
+  "version": "2026-08-28-r27",
+  "record_id": 22141753,
+  "concept_record_id": 21921513,
+  "doi": "10.5281/zenodo.22141753",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22141753",
+  "doi_url": "https://doi.org/10.5281/zenodo.22141753",
+  "state": "done",
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-08-28-r27",
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "contributors": [
+      "AI typesetting & translation"
+    ],
+    "language": "kor",
+    "access_right": "open",
+    "description_characters": 4193
+  },
+  "coverage": {
+    "reader_pages": 228,
+    "historical_source_page_markers": 217,
+    "canonical_driver_rows": 23,
+    "complete_rows": 16,
+    "partial_rows": 1,
+    "explicit_untranslated_rows": 6,
+    "contiguous_partial": "EGA II main text through 1.5.4 / canonical ega2-1-fr.tex lines1-712",
+    "next": "canonical ega2-1-fr.tex line714 / Corollary II.1.5.5"
+  },
+  "files": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1424078,
+      "md5": "dc787b0e400814e85a3ec293052f5acd",
+      "sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 249541,
+      "md5": "8658640086cf06fc33e941baf866bab0",
+      "sha256": "3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E",
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 98680606,
+      "md5": "4fefc4599cc9bd186621f259cfe2eeff",
+      "sha256": "28E9C4BE1F6843901DBEEE7BA352C89B7E8C8686F4180B9ED5995DBFD0418A40",
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 342,
+      "md5": "c3e6cbc0754ee6bcc1ab735372017e14",
+      "sha256": "D4DC6350E72FD59893BA1BC9EAB1A4E1DF33BDAF1E53A7853A10E8FB2E145F08",
+      "anonymous_download": "PASS"
+    }
+  ],
+  "verification": {
+    "authenticated_draft_metadata_and_files": "PASS before publication",
+    "anonymous_public_metadata": "PASS",
+    "anonymous_public_file_replay": "PASS 4/4 by filename, bytes, API MD5 and local SHA-256",
+    "doi_resolution": "PASS to https://zenodo.org/records/22141753",
+    "public_access": "PASS",
+    "credentials_absent": true,
+    "result": "PASS"
+  }
+}

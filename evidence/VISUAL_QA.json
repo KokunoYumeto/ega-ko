@@ -1,26 +1,61 @@
 {
   "schema_version": 1,
-  "version": "2026-08-28-r26",
+  "version": "2026-08-28-r27",
+  "release_state": "published_zenodo_github_pending",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_bytes": 1369169,
-  "reader_sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
-  "render_count": 11,
+  "reader_pages": 228,
+  "reader_bytes": 1424078,
+  "reader_sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
   "dpi": 200,
   "dimensions": "1654x2339",
-  "pages": "1,2,6,149,150,151,152,153,154,155,156",
+  "render_count": 10,
+  "pages": "1,2,7,13,114,218,219,220,224,228",
   "render_hashes": {
     "page1": "4996A94A595D90D0C949422319296E57D27406C21AE03DAE6E32F2193273E114",
-    "page2": "C070EF2CEB1CD0A1992A27C45C1FCEF547A5016C52EED51E78369AEEB8F91448",
-    "page6": "06D530AE336C313BBAF3D2068AC176FD28B3883EEC6F72A50FDB71CA4EEB8BED",
-    "page149": "7938BBA2EED1F1A8AC652958C573640BDD26360996285F7BF0AC9AFDE6E9B855",
-    "page150": "4D2AF21F2576680B8F604CF387AD5001C1D59C7BBD774437F8C2A9724E6FD950",
-    "page151": "ABA2CA08E2D3F1F5F933EEE759A3A8D44FFA4B6A7EC316F727F2313E2BD92FA7",
-    "page152": "F869C1DF0E2FCCEE88548B368FBD2BB6FCB8AB28949630AC479EC5C29C3C6C99",
-    "page153": "2D45F986448A362470012A4B2754E858BDB7100D9F4E947D9FE787CF8EA4E0DB",
-    "page154": "2563F46FAA2C8D5734F67A0083747E53972C771A643EEAC2335670AEEF7621D5",
-    "page155": "2EF23BD894C5D25720E0D5A877CB2B9FCF255A1FB8146B877FE4D03FD3DA1E15",
-    "page156": "64DC4F04B22D4335577808AA39E445B4621F4C6669D19A5D7DC3C59C492BDB32"
+    "page2": "4BFAB8654E3D119CB34F09018FD28B87551B648B114B668C79C96B4118D0074A",
+    "page7": "02FEC9B6C45C9043A28BD32BDF734A2CE0FEAFF791F67E1E1B404596D082FD13",
+    "page13": "A0CAAB3F1B33F72D54CD2BE941F8F7A65F6E3B1DA133028ACB4BD72CAD5B465D",
+    "page114": "C2C856C4399BA194CB1BC29062C28418DEFF56A27C685EE06553D895040D58B6",
+    "page218": "8AA0B7DBD391400BE3360B470B73FE648FC8431BFCB3A0700F2658C05DD5B8DA",
+    "page219": "A62D82369DA5A2C521DBE4C63669FA9125127BFF9F8FCA29CB123F1DBE3A1FEE",
+    "page220": "5EC2820D1256AE3F73C113F908B022C8CE7881E435F2F3F548B9124DCA54A7DB",
+    "page224": "EF937596B9EA26B7DE9C9241F46E3588E6A142E1AB8220C5C00FA4DFA36E7FDA",
+    "page228": "DB134CFDD6C9360DCFB573EA816BD5D33C6BBDF3DFD1FDEBDDAC70D83B1ADE15"
   },
-  "result": "PASS_PUBLIC",
-  "disposition": "Pages1-2 verify cumulative scope through EGA II 1.5.4, exact DOI, external links, bounded rights and non-endorsement; page6 verifies the expanded contents; pages149-150 preserve the EGA I ending and bibliography; pages151-156 show the complete Chapter II programme and contiguous main text through 1.5.4. All eleven 200 dpi renders are 1654x2339 and show no clipping, overlap, tofu, malformed diagram or layout defect. The same eleven pages are pixel-identical across the repository reader, corrected clean-extracted portable-A/B readers and fresh anonymous Zenodo download."
+  "visual_result": "PASS: no clipping, overlap, tofu, malformed diagram, broken formula, displaced page marker or other visible layout defect on the ten selected front, boundary, marker63, transition and terminal pages",
+  "historical_marker_runs": {
+    "EGA_I_introduction": "5-8;4 markers",
+    "EGA_0_I": "11-78;68 markers",
+    "EGA_I_Chapter_I": "79-214;136 markers",
+    "EGA_II": "5-13;9 markers",
+    "total": 217,
+    "result": "PASS exact sequence and counts"
+  },
+  "semantic_pagination_only_check": {
+    "r26_normalized_body_characters": 256107,
+    "r27_normalized_body_characters": 256107,
+    "normalized_body_multiset_sha256": "0AB5FA9635CBAEFE6A24C15FD24BDAC8FF02A19C08B06A081B1754DFD9681B41",
+    "numbered_reference_identifiers_each": 2157,
+    "text_identifiers": "exact",
+    "forbidden_labels": 0,
+    "result": "PASS: r27 pagination correction preserves the admitted semantic body and numbered-reference inventory"
+  },
+  "link_structure": {
+    "annotations": 1589,
+    "internal_goto": 1584,
+    "unique_internal_references": 263,
+    "named_destinations": 549,
+    "resolved_unique_internal_references": 263,
+    "external_uri_links": 5,
+    "result": "PASS internal structure; all external URIs well formed"
+  },
+  "external_resolution_snapshot": {
+    "exact_doi_10.5281_zenodo.22141753": "PASS HTTP200 to public record22141753",
+    "stable_concept_and_global_doi": "HTTP200",
+    "github": "HTTP200",
+    "figshare": "HTTP202"
+  },
+  "prior_public_visual_evidence": "r26 selected-page PASS remains immutable historical evidence for the156-page public reader and is not substituted for this independent r27 audit",
+  "result": "PASS_R27_VISUAL_PAGINATION_SEMANTIC_LINK_AND_ZENODO_REPLAY; GITHUB_PENDING",
+  "disposition": "The corrected228-page reader is visually and structurally sound; exact DOI resolution and anonymous Zenodo replay4/4 PASS. GitHub r27 artifact/state/receipt replay remains pending."
 }

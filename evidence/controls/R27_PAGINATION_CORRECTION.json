@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA0-R27-PAGE63",
+  "time": "2026-08-28T11:17:08+02:00",
+  "scope": "Corrected cumulative Korean EGA front reader through EGA II 1.5.4 / canonical lines1-712",
+  "trigger": "The r26 front reader contained the admitted cumulative text but compressed 217 historical source-page boundaries into 156 output pages, making the cumulative artifact appear substantially shorter than the historical page sequence it represents.",
+  "resolution": "The r27 candidate restores historical printed-page marker63 in the EGA0_I target binding and enforces one output-page rhythm per historical oldpage marker. The corrected reader has 228 physical pages and preserves 217 historical source-page markers. Translation scope and the EGA II terminal source boundary are unchanged.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 228,
+    "bytes": 1424078,
+    "sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
+    "page_size": "595.28 x 841.89 pts (A4)",
+    "identity_gate": "PASS: independently recomputed with Get-FileHash and pdfinfo"
+  },
+  "prior_reader": {
+    "version": "2026-08-28-r26",
+    "pages": 156,
+    "bytes": 1369169,
+    "sha256": "36E8488D181C47F5290E929CB19467DCF14F4F4EBA572E0D71D275BD2391AC72",
+    "status": "immutable prior public checkpoint"
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "schema": "ega-ko-cumulative-inputs-v2",
+    "bytes": 16223,
+    "sha256": "D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete_rows": 16,
+    "partial_rows": 1,
+    "explicit_untranslated_rows": 6,
+    "historical_source_page_markers": 217,
+    "gate": "PASS: strict JSON parse and independent aggregation"
+  },
+  "coverage": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; contiguous EGA II main text through1.5.4 / canonical ega2-1-fr.tex lines1-712. EGA II and the full EGA corpus remain incomplete.",
+  "coherence_inputs": [
+    ".zenodo.json 8450 bytes / B6F27DC82A709F97201EE2590D181FF07B24F24125E71B47AA758F7658E94BC9",
+    "README.md 5365 bytes / 6829C389E2CF0719772D9DA649D73411D8AC8D5B057D81A1B6123534A04687F7",
+    "CITATION.cff 967 bytes / E216BB3595E27F764E0386FAE9F2655CFFFC9CD3B3ED671CB693701F6A76C041",
+    "candidate exact DOI10.5281/zenodo.22141753; current public checkpoint remains r26 DOI10.5281/zenodo.22134988"
+  ],
+  "gate_status": {
+    "reader_identity_and_page_count": "PASS",
+    "coverage_matrix_and_marker_sum": "PASS",
+    "metadata_scope_coherence": "PASS",
+    "deterministic_dual_build": "PASS: evidence/build-r27.log and evidence/build.log byte-identical at51698 bytes /852F1F7505BBAB55F410313DCC95F5407B68EB6834B856DBD2E045387FC10B83; terminal output228 pages; critical diagnostics0",
+    "dual_extraction": "PASS: Poppler824319 bytes /FC92CF50D3A23B4A1EA4820A29261BA0C3F6C1F8942E365EDA42ED7B72E18444 and pypdf668051 bytes /453B9E702691B5519E396492EA5E29C5782F4D183EBD857CB36B43748C24FCA6; each145216 Hangul and U+FFFD0",
+    "internal_links": "PASS:1589 annotations;1584 internal GoTo;263/263 unique references resolve against549 named destinations;5 well-formed URI links",
+    "semantic_pagination_only": "PASS: r26/r27 normalized bodies each256107 characters; multiset SHA-256 0AB5FA9635CBAEFE6A24C15FD24BDAC8FF02A19C08B06A081B1754DFD9681B41; all2157 numbered-reference identifiers identical; forbidden labels0",
+    "visual_render_qa": "PASS: ten pages1,2,7,13,114,218,219,220,224,228 at200dpi /1654x2339; exact hashes in evidence/VISUAL_QA.json; no observed defects",
+    "archive_replay": "PENDING",
+    "public_metadata_and_byte_readback": "PENDING"
+  },
+  "result": "PASS_R27_LOCAL_PAGINATION_IDENTITY_SCOPE_BUILD_EXTRACTION_VISUAL_SEMANTIC_LINKS; archive and public-replay gates remain pending"
+}

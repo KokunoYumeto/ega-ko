@@ -1,35 +1,465 @@
 {
-  "schema": "ega-ko-cumulative-inputs-v1",
+  "schema": "ega-ko-cumulative-inputs-v2",
   "reader": "00_EGA_ko_CUMULATIVE_READER.pdf",
   "entrypoint": "main.tex",
   "language": "ko",
+  "authority_driver": {
+    "path": "source/EGA_FR.tex",
+    "bytes": 3313,
+    "lf_lines": 99,
+    "sha256": "D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086",
+    "content_input_count": 23,
+    "content_driver_lines": "61-98"
+  },
   "scope": {
     "corpus": "EGA",
     "included_volumes": [
       "EGA 0_I",
       "EGA I",
-      "EGA II (front matter/programme and Section 1 through 1.5.4)"
+      "EGA II (front matter/programme and Section 1 through1.5.4)"
     ],
-    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by source/ega2/ega2-1-fr.tex lines 1-712 through 1.5.4",
-    "completeness_claim": "complete Korean translation of every EGA I input enumerated by the canonical source/EGA_FR.tex driver, followed by the complete EGA II front input and the contiguous beginning of its main input through 1.5.4; not a claim that EGA II or the full EGA corpus is complete"
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-712 through1.5.4",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
+    "historical_source_pages": 217,
+    "historical_page_ranges": [
+      "EGA I introduction5-8",
+      "EGA 0_I11-78",
+      "EGA I Chapter I79-214",
+      "EGA II5-13"
+    ],
+    "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
   "ordered_inputs": [
-    { "path": "front.tex", "role": "edition front matter" },
-    { "path": "intro.tex", "role": "EGA I introduction" },
-    { "path": "c0.tex", "role": "complete EGA 0_I" },
-    { "path": "c1front.tex", "role": "EGA I Chapter I programme and front matter" },
-    { "path": "c1s1.tex", "role": "EGA I Chapter I section 1 complete" },
-    { "path": "c1s2.tex", "role": "EGA I Chapter I section 2 complete" },
-    { "path": "c1s3.tex", "role": "EGA I Chapter I section 3 complete" },
-    { "path": "c1s4.tex", "role": "EGA I Chapter I section 4 complete" },
-    { "path": "c1s5.tex", "role": "EGA I Chapter I section 5 complete" },
-    { "path": "c1s6.tex", "role": "EGA I Chapter I section 6 complete" },
-    { "path": "c1s7.tex", "role": "EGA I Chapter I section 7 complete" },
-    { "path": "c1s8.tex", "role": "EGA I Chapter I section 8 complete" },
-    { "path": "c1s9.tex", "role": "EGA I Chapter I section 9 complete" },
-    { "path": "c1s10.tex", "role": "EGA I Chapter I section 10 through subsection 10.15 and source EOF" },
-    { "path": "bib.tex", "role": "EGA I bibliography" },
-    { "path": "c2front.tex", "role": "EGA II Chapter II programme and front matter; source/ega2/front-fr.tex complete" },
-    { "path": "c2s1.tex", "role": "EGA II Chapter II section 1, contiguous through 1.5.4; source/ega2/ega2-1-fr.tex lines 1-712" }
-  ]
+    {
+      "path": "front.tex",
+      "role": "edition front matter"
+    },
+    {
+      "path": "intro.tex",
+      "role": "EGA I introduction"
+    },
+    {
+      "path": "c0.tex",
+      "role": "complete EGA 0_I"
+    },
+    {
+      "path": "c1front.tex",
+      "role": "EGA I Chapter I programme and front matter"
+    },
+    {
+      "path": "c1s1.tex",
+      "role": "EGA I Chapter I section 1 complete"
+    },
+    {
+      "path": "c1s2.tex",
+      "role": "EGA I Chapter I section 2 complete"
+    },
+    {
+      "path": "c1s3.tex",
+      "role": "EGA I Chapter I section 3 complete"
+    },
+    {
+      "path": "c1s4.tex",
+      "role": "EGA I Chapter I section 4 complete"
+    },
+    {
+      "path": "c1s5.tex",
+      "role": "EGA I Chapter I section 5 complete"
+    },
+    {
+      "path": "c1s6.tex",
+      "role": "EGA I Chapter I section 6 complete"
+    },
+    {
+      "path": "c1s7.tex",
+      "role": "EGA I Chapter I section 7 complete"
+    },
+    {
+      "path": "c1s8.tex",
+      "role": "EGA I Chapter I section 8 complete"
+    },
+    {
+      "path": "c1s9.tex",
+      "role": "EGA I Chapter I section 9 complete"
+    },
+    {
+      "path": "c1s10.tex",
+      "role": "EGA I Chapter I section 10 through subsection 10.15.7 and source EOF"
+    },
+    {
+      "path": "bib.tex",
+      "role": "EGA I bibliography"
+    },
+    {
+      "path": "c2front.tex",
+      "role": "EGA II Chapter II programme and front matter complete"
+    },
+    {
+      "path": "c2s1.tex",
+      "role": "EGA II main text contiguous through1.5.4 / canonical lines1-712"
+    }
+  ],
+  "coverage_matrix": [
+    {
+      "driver_line": 61,
+      "source_path": "ega1/frontmatter-fr.tex",
+      "source_bytes": 1120,
+      "source_lf_lines": 55,
+      "source_sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9",
+      "target_path": "front.tex",
+      "working_path": "ega/I/front.tex",
+      "target_bytes": 4284,
+      "target_lf_lines": 123,
+      "target_sha256": "1FAA3D46F405E992BF4C685BCA74E128610D01193E3513BFCF0B774EA0F0B086",
+      "historical_page_markers": 0,
+      "status": "complete",
+      "coverage": "full source EOF; public target adds cumulative-edition metadata"
+    },
+    {
+      "driver_line": 62,
+      "source_path": "ega1/intro-fr.tex",
+      "source_bytes": 16433,
+      "source_lf_lines": 132,
+      "source_sha256": "CE78400CD9DBC36A4D11CC933B7BE18BEAC0C69AE6A04FBA3ECFA86053572980",
+      "target_path": "intro.tex",
+      "working_path": "ega/I/intro.tex",
+      "target_bytes": 15165,
+      "target_lf_lines": 127,
+      "target_sha256": "295CAD065AE37B6FF5556D0F5F0468F57B6FFF3D021FCA26802D51B370E1C246",
+      "historical_page_markers": 4,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 63,
+      "source_path": "ega1/ega0-1-fr.tex",
+      "source_bytes": 282505,
+      "source_lf_lines": 5978,
+      "source_sha256": "F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16",
+      "target_path": "c0.tex",
+      "working_path": "ega/I/c0.tex",
+      "target_bytes": 279433,
+      "target_lf_lines": 5819,
+      "target_sha256": "8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D",
+      "historical_page_markers": 68,
+      "status": "complete",
+      "coverage": "full source EOF; printed-page marker 63 restored from canonical lines4609-4615"
+    },
+    {
+      "driver_line": 71,
+      "source_path": "ega1/chapter1-frontmatter-fr.tex",
+      "source_bytes": 2057,
+      "source_lf_lines": 47,
+      "source_sha256": "7B2D0F8F812EBA3121202F0AE6415FFC6C281B8428DA8F0F72D89DF1CEC01708",
+      "target_path": "c1front.tex",
+      "working_path": "ega/I/c1front.tex",
+      "target_bytes": 2069,
+      "target_lf_lines": 46,
+      "target_sha256": "4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
+      "historical_page_markers": 1,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 72,
+      "source_path": "ega1/ega1-1-fr.tex",
+      "source_bytes": 71381,
+      "source_lf_lines": 1624,
+      "source_sha256": "25840D1D77C5284A158CDC78D622A458221DA3FE9ECAECC5EA9382A5C4EC595B",
+      "target_path": "c1s1.tex",
+      "working_path": "ega/I/c1s1.tex",
+      "target_bytes": 71250,
+      "target_lf_lines": 1733,
+      "target_sha256": "E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
+      "historical_page_markers": 18,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 73,
+      "source_path": "ega1/ega1-2-fr.tex",
+      "source_bytes": 27463,
+      "source_lf_lines": 592,
+      "source_sha256": "AE6B128092ACBB8C1AFB4899EEA003FB966B6FF6669A264B59FD5F095AF4F029",
+      "target_path": "c1s2.tex",
+      "working_path": "ega/I/c1s2.tex",
+      "target_bytes": 27982,
+      "target_lf_lines": 620,
+      "target_sha256": "C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
+      "historical_page_markers": 7,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 74,
+      "source_path": "ega1/ega1-3-fr.tex",
+      "source_bytes": 59766,
+      "source_lf_lines": 1282,
+      "source_sha256": "A267955CFFC5942F6EC5255ABAD85E68C5F5C266F1A6B68611AF11FD875B16AE",
+      "target_path": "c1s3.tex",
+      "working_path": "ega/I/c1s3.tex",
+      "target_bytes": 58821,
+      "target_lf_lines": 1259,
+      "target_sha256": "7054D98152E57F17B2CDE69D08A00905FCE21B1C3602192B037BC70BC21971BF",
+      "historical_page_markers": 15,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 75,
+      "source_path": "ega1/ega1-4-fr.tex",
+      "source_bytes": 34792,
+      "source_lf_lines": 682,
+      "source_sha256": "A5F5CDAC81E654E9ABA75BBFEAD24F3010B122452C689B9EBAB5A7711B454EC1",
+      "target_path": "c1s4.tex",
+      "working_path": "ega/I/c1s4.tex",
+      "target_bytes": 35822,
+      "target_lf_lines": 697,
+      "target_sha256": "24E916362C2F54A1D479447F07EEF949DED309DD3E8E7207E9B187A6ED2E0E92",
+      "historical_page_markers": 8,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 76,
+      "source_path": "ega1/ega1-5-fr.tex",
+      "source_bytes": 50232,
+      "source_lf_lines": 1149,
+      "source_sha256": "7A33D1D68D87C7DDB3BFD23938B77F60EEABC2C44045968B5069CD3F48212BD8",
+      "target_path": "c1s5.tex",
+      "working_path": "ega/I/c1s5.tex",
+      "target_bytes": 50638,
+      "target_lf_lines": 1138,
+      "target_sha256": "0CA37A6089AB8744ABDF4764E3BCEB7CC19FC72140567D20DD32213D8988C24B",
+      "historical_page_markers": 13,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 77,
+      "source_path": "ega1/ega1-6-fr.tex",
+      "source_bytes": 57781,
+      "source_lf_lines": 1206,
+      "source_sha256": "F95D2C43C1074A1CC6485D74E24F02BF8C5F098ADB571AA024B4B499F5CDE3FE",
+      "target_path": "c1s6.tex",
+      "working_path": "ega/I/c1s6.tex",
+      "target_bytes": 57728,
+      "target_lf_lines": 1155,
+      "target_sha256": "C09AF6BE49A44F05B9A505FDF034B8445E6046998874B2030A6310A7EC75EC25",
+      "historical_page_markers": 15,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 78,
+      "source_path": "ega1/ega1-7-fr.tex",
+      "source_bytes": 38226,
+      "source_lf_lines": 786,
+      "source_sha256": "73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522",
+      "target_path": "c1s7.tex",
+      "working_path": "ega/I/c1s7.tex",
+      "target_bytes": 39742,
+      "target_lf_lines": 776,
+      "target_sha256": "FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8",
+      "historical_page_markers": 9,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 79,
+      "source_path": "ega1/ega1-8-fr.tex",
+      "source_bytes": 20600,
+      "source_lf_lines": 410,
+      "source_sha256": "188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825",
+      "target_path": "c1s8.tex",
+      "working_path": "ega/I/c1s8.tex",
+      "target_bytes": 21278,
+      "target_lf_lines": 410,
+      "target_sha256": "183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1",
+      "historical_page_markers": 5,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 80,
+      "source_path": "ega1/ega1-9-fr.tex",
+      "source_bytes": 53127,
+      "source_lf_lines": 1183,
+      "source_sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091",
+      "target_path": "c1s9.tex",
+      "working_path": "ega/I/c1s9.tex",
+      "target_bytes": 55580,
+      "target_lf_lines": 1179,
+      "target_sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D",
+      "historical_page_markers": 11,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 81,
+      "source_path": "ega1/ega1-10-fr.tex",
+      "source_bytes": 159763,
+      "source_lf_lines": 3516,
+      "source_sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+      "target_path": "c1s10.tex",
+      "working_path": "ega/I/c1s10.tex",
+      "target_bytes": 166856,
+      "target_lf_lines": 3453,
+      "target_sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
+      "historical_page_markers": 33,
+      "status": "complete",
+      "coverage": "full source EOF through subsection10.15.7"
+    },
+    {
+      "driver_line": 82,
+      "source_path": "ega1/bib-fr.tex",
+      "source_bytes": 3430,
+      "source_lf_lines": 106,
+      "source_sha256": "E69C28D9B0E54F14E11FBA2A59F66037CE9E5286BD9FACE9D64CEFB56875CF75",
+      "target_path": "bib.tex",
+      "working_path": "ega/I/bib.tex",
+      "target_bytes": 3505,
+      "target_lf_lines": 107,
+      "target_sha256": "FB3D3E90F595ACAF5E5AC71C8BED1C9407F5C892DE3612461CA19C63D71CAA1E",
+      "historical_page_markers": 1,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 83,
+      "source_path": "ega2/front-fr.tex",
+      "source_bytes": 1423,
+      "source_lf_lines": 38,
+      "source_sha256": "F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
+      "target_path": "c2front.tex",
+      "working_path": "ega/II/c2front.tex",
+      "target_bytes": 1500,
+      "target_lf_lines": 37,
+      "target_sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
+      "historical_page_markers": 1,
+      "status": "complete",
+      "coverage": "full source EOF"
+    },
+    {
+      "driver_line": 84,
+      "source_path": "ega2/ega2-1-fr.tex",
+      "source_bytes": 820505,
+      "source_lf_lines": 18087,
+      "source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "target_path": "c2s1.tex",
+      "working_path": "ega/II/c2s1.tex",
+      "target_bytes": 32348,
+      "target_lf_lines": 737,
+      "target_sha256": "92823FD522EC5C280C3FDD8B135C1687FAB5D7003B8181A92A4422DC62F08405",
+      "historical_page_markers": 8,
+      "status": "partial",
+      "coverage": "canonical lines1-712 of18087 through1.5.4; next line714 Corollary1.5.5",
+      "admitted_source_slice": {
+        "lines": "1-712",
+        "lf_bytes": 31454,
+        "sha256": "E9889D7490233716939E3F0D2270116927A91B5DF1467469116648DA6A819A72"
+      }
+    },
+    {
+      "driver_line": 85,
+      "source_path": "ega2/ega2-bibliography-fr.tex",
+      "source_bytes": 784,
+      "source_lf_lines": 28,
+      "source_sha256": "56DE1F13088E6451D2A7BF7FAF7C575AB3E82C7FB20A736A75E3FD19B0595F7A",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    },
+    {
+      "driver_line": 86,
+      "source_path": "ega2/ega2-indexes-and-contents-fr.tex",
+      "source_bytes": 27454,
+      "source_lf_lines": 462,
+      "source_sha256": "2CEC53C734543C30ED2FE2FD01B462E5C51DE4D303CEAA7F8001316BB78EDBB1",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    },
+    {
+      "driver_line": 87,
+      "source_path": "ega2/ega2-errata-addenda-fr.tex",
+      "source_bytes": 19746,
+      "source_lf_lines": 522,
+      "source_sha256": "EC20D329248B99CF0533CB868DBDF8135D5BDAFA233133814DB67F8CD4F09643",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    },
+    {
+      "driver_line": 88,
+      "source_path": "ega3/ega3-1-fr.tex",
+      "source_bytes": 627913,
+      "source_lf_lines": 14616,
+      "source_sha256": "B052E2ABC77C786FCEA730D61F8E4588CAC486F460A4037A769E15E501FDA0F4",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    },
+    {
+      "driver_line": 97,
+      "source_path": "ega3/ega3-6-fr.tex",
+      "source_bytes": 168782,
+      "source_lf_lines": 4070,
+      "source_sha256": "D16C4CCCAA12525A35FE71DD915AF9A5360B27A847E1571503473F8A294E6FC8",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    },
+    {
+      "driver_line": 98,
+      "source_path": "ega3/ega3-7-fr.tex",
+      "source_bytes": 172424,
+      "source_lf_lines": 4479,
+      "source_sha256": "20A61BA348909E4309A3CDA89FD6DDAF8C0FC5BA346FD44232458CDFEA2A2972",
+      "target_path": null,
+      "working_path": null,
+      "target_bytes": null,
+      "target_lf_lines": null,
+      "target_sha256": null,
+      "historical_page_markers": 0,
+      "status": "not_translated",
+      "coverage": "not translated; excluded from the reader"
+    }
+  ],
+  "reconciliation": {
+    "private_inventory": "index/units.jsonl",
+    "required_latest_records": [
+      "AGKO-EGA0-R27-PAGE63",
+      "AGKO-EGA1-R24-COMPLETE",
+      "AGKO-EGA2-S1-R27-COVERAGE"
+    ],
+    "external_korean_handoffs_admitted": 0,
+    "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
+    "next": "continue EGA II at canonical line714 / Corollary1.5.5, then FGA; SGA remains separate"
+  }
 }

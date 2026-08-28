@@ -1,10 +1,12 @@
 {
   "schema_version": 1,
-  "version": "2026-08-28-r26",
+  "version": "2026-08-28-r27",
+  "release_state": "published_zenodo_github_pending",
   "concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22134988",
-  "previous_exact_version_doi": "10.5281/zenodo.22132582",
+  "exact_version_doi": "10.5281/zenodo.22141753",
+  "record_id": 22141753,
+  "previous_exact_version_doi": "10.5281/zenodo.22134988",
   "global_ega_concept_doi": "10.5281/zenodo.20414353",
-  "relation_policy": "isVersionOf the existing Korean EGA concept DOI; isNewVersionOf the previous Korean EGA exact release; isPartOf the global EGA concept; no other corpus or language lineage is reused",
-  "publication_status": "r26 exact DOI10.5281/zenodo.22134988 is openly published in the existing Korean EGA concept; authenticated relation metadata and anonymous metadata/download replay4/4 PASS; r25 exact DOI10.5281/zenodo.22132582 remains immutable prior-version history"
+  "relation_policy": "isVersionOf the existing Korean EGA concept DOI; isNewVersionOf the prior Korean EGA exact release; isPartOf the global EGA concept; no other corpus or language lineage is reused",
+  "publication_status": "PASS_PUBLIC: exact DOI10.5281/zenodo.22141753 open; authenticated relation metadata and anonymous metadata/DOI/download replay4/4 PASS; r26 exact DOI10.5281/zenodo.22134988 remains immutable prior-version history; GitHub r27 closure pending"
 }
