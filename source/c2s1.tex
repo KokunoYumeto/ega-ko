@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-712, LF UTF-8 SHA-256 E9889D7490233716939E3F0D2270116927A91B5DF1467469116648DA6A819A72.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-800, LF UTF-8 SHA-256 89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -735,3 +735,264 @@ $f^{-1}(s)$는 아핀 스킴이다(여기서 $f$는 구조 사상 $X\to S$를
 
 (\hyperref[II.1.5.1-ko]{1.5.1})을 $S'=\operatorname{Spec}(k(s))$에
 적용하고 (\hyperref[II.1.3.4-ko]{1.3.4})을 사용하면 충분하다.
+
+\begin{corollary}[1.5.5]
+\label{II.1.5.5-ko}
+$X$를 $S$-준스킴, $S'$을 $S$ 위에서 아핀인 준스킴이라 하자. 그러면
+$X'=X_{(S')}$은 $X$ 위에서 아핀인 준스킴이다. 또한 $f:X\to S$가
+구조 사상이면 다음 표준 $\mathcal{O}_X$-대수 동형이 존재한다.
+$\mathcal{A}(X')\xrightarrow{\sim}f^*(\mathcal{A}(S'))$.
+그리고 모든 준연접 $\mathcal{A}(S')$-가군 $\mathcal{M}$에 대하여 다음
+표준 디-동형이 존재한다.
+$f^*(\mathcal{M})\xrightarrow{\sim}
+\mathcal{A}(f^{\prime*}(\widetilde{\mathcal{M}}))$.
+여기서 $f'=f_{(S')}$은 구조 사상 $X'\to S'$을 나타낸다.
+\end{corollary}
+
+(\hyperref[II.1.5.1-ko]{1.5.1})과
+(\hyperref[II.1.5.2-ko]{1.5.2})에서 $X$와 $S'$의 역할을 서로 바꾸면
+충분하다.
+
+\begin{env}[1.5.6]
+\label{II.1.5.6-ko}
+이제 $S$, $S'$을 두 준스킴, $q:S'\to S$를 사상,
+$\mathcal{B}$(각각 $\mathcal{B}'$)를 준연접
+$\mathcal{O}_S$-대수(각각 준연접 $\mathcal{O}_{S'}$-대수),
+$u:\mathcal{B}\to\mathcal{B}'$를 $q$-사상, 즉 $\mathcal{O}_S$-대수
+준동형 $\mathcal{B}\to q_*(\mathcal{B}')$이라 하자.
+$X=\operatorname{Spec}(\mathcal{B})$,
+$X'=\operatorname{Spec}(\mathcal{B}')$라 하면, 다음 사상을 표준적으로
+얻는다.
+\[
+  v=\operatorname{Spec}(u):X'\to X
+\]
+이때 도식
+\[
+  \xymatrix{
+    X'\ar[r]^v\ar[d] & X\ar[d]\\
+    S'\ar[r]_q & S
+  }
+  \tag{1.5.6.1}\label{II.1.5.6.1-ko}
+\]
+은 가환한다(수직 화살표들은 구조 사상이다). 실제로 $u$를 주는 것은
+준연접 $\mathcal{O}_{S'}$-대수들의 준동형
+$u^\sharp:q^*(\mathcal{B})\to\mathcal{B}'$를 주는 것과 동치이다
+(\hyperref[0.4.4.3-ko]{0, 4.4.3}). 따라서 이는
+$\mathcal{A}(w)=u^\sharp$인 표준 $S'$-사상
+\[
+  w:\operatorname{Spec}(\mathcal{B}')\to
+  \operatorname{Spec}(q^*(\mathcal{B}))
+\]
+을 정의한다(\hyperref[II.1.2.7-ko]{1.2.7}). 한편
+(\hyperref[II.1.5.2-ko]{1.5.2})에 따라
+$\operatorname{Spec}(q^*(\mathcal{B}))$는 $X\times_S S'$과 표준적으로
+동일시된다. 사상 $v$는 $w$에 이어 첫째 사영을 취한 합성
+$X'\xrightarrow{w}X\times_S S'\xrightarrow{p_1}X$이고,
+(\hyperref[II.1.5.6.1-ko]{1.5.6.1})의 가환성은 정의에서 따른다.
+$U$(각각 $U'$)를 $q(U')\subset U$인 $S$(각각 $S'$)의 아핀
+열린집합이라 하고,
+$A=\Gamma(U,\mathcal{O}_S)$,
+$A'=\Gamma(U',\mathcal{O}_{S'})$를 그 환들,
+$B=\Gamma(U,\mathcal{B})$,
+$B'=\Gamma(U',\mathcal{B}')$라 하자. $u$의 제한인
+$(q|U')$-사상 $\mathcal{B}|U\to\mathcal{B}'|U'$은 대수의
+디-준동형 $B\to B'$에 대응한다. $V$와 $V'$을 각각 구조 사상
+$X\to S$와 $X'\to S'$에 의한 $U$와 $U'$의 역상이라 하면, $v$의 제한인 사상
+$V'\to V$는 (\hyperref[I.1.7.3-ko]{I, 1.7.3})에 따라 앞의
+디-준동형에 대응한다.
+\end{env}
+
+\begin{env}[1.5.7]
+\label{II.1.5.7-ko}
+(\hyperref[II.1.5.6-ko]{1.5.6})과 같은 가정 아래에서 $\mathcal{M}$을
+준연접 $\mathcal{B}$-가군이라 하자. 그러면 다음 표준
+$\mathcal{O}_{X'}$-가군 동형이 존재한다.
+\[
+  v^*(\widetilde{\mathcal{M}})\xrightarrow{\sim}
+  \bigl(q^*(\mathcal{M})\otimes_{q^*(\mathcal{B})}\mathcal{B}'\bigr)^{\sim}
+  \tag{1.5.7.1}\label{II.1.5.7.1-ko}
+\]
+
+\oldpage[II]{14}
+실제로 (\hyperref[II.1.5.2.1-ko]{1.5.2.1})의 표준 동형은
+$p_1^*(\widetilde{\mathcal{M}})$에서
+$\operatorname{Spec}(q^*(\mathcal{B}))$ 위의
+$q^*(\mathcal{B})$-가군 $q^*(\mathcal{M})$에 대응하는 층으로 가는
+표준 동형을 준다. 이제 (\hyperref[II.1.4.7-ko]{1.4.7})을 적용하면
+충분하다.
+\end{env}
+
+\subsection{아핀 사상}
+\label{II.1.6-ko}
+
+\begin{env}[1.6.1]
+\label{II.1.6.1-ko}
+준스킴의 사상 $f:X\to Y$를 구조 사상으로 보았을 때 $X$가 $Y$ 위에서
+아핀인 준스킴이면, $f$를 \emph{아핀} 사상이라 한다. 한 준스킴 위에서
+아핀인 준스킴들의 성질은 이 용어로 다음과 같이 표현된다.
+\end{env}
+
+\begin{proposition}[1.6.2]
+\label{II.1.6.2-ko}
+\begin{enumerate}
+  \item[\rm(i)] 닫힌 몰입 사상은 아핀 사상이다.
+  \item[\rm(ii)] 두 아핀 사상의 합성은 아핀 사상이다.
+  \item[\rm(iii)] $f:X\to Y$가 아핀 $S$-사상이면, 밑준스킴의 모든 확장
+    $S'\to S$에 대하여 $f_{(S')}:X_{(S')}\to Y_{(S')}$도 아핀 사상이다.
+  \item[\rm(iv)] $f:X\to Y$와 $f':X'\to Y'$이 두 아핀 $S$-사상이면,
+    \[
+      f\times_S f':X\times_S X'\to Y\times_S Y'
+    \]
+    도 아핀 사상이다.
+  \item[\rm(v)] $f:X\to Y$와 $g:Y\to Z$가 두 사상이고 $g\circ f$가
+    아핀 사상이며 $g$가 분리 사상이면, $f$는 아핀 사상이다.
+  \item[\rm(vi)] $f$가 아핀 사상이면 $f_{\mathrm{red}}$도 아핀 사상이다.
+\end{enumerate}
+\end{proposition}
+
+(\hyperref[I.5.5.12-ko]{I, 5.5.12})에 따라 (i), (ii), (iii)만 증명하면
+충분하다. 그런데 (i)는 (\hyperref[II.1.2.2-ko]{1.2.2})의 예이고,
+(ii)는 (\hyperref[II.1.3.5-ko]{1.3.5})이며, 마지막으로 (iii)은
+$X_{(S')}$이 곱 $X\times_Y Y_{(S')}$과 동일시되므로
+(\hyperref[II.1.5.1-ko]{1.5.1})에서 따른다
+(\hyperref[I.3.3.11-ko]{I, 3.3.11}).
+
+\begin{corollary}[1.6.3]
+\label{II.1.6.3-ko}
+$X$가 아핀 스킴이고 $Y$가 스킴이면, 모든 사상 $X\to Y$는 아핀
+사상이다.
+\end{corollary}
+
+\begin{proposition}[1.6.4]
+\label{II.1.6.4-ko}
+$Y$를 국소 뇌터 준스킴, $f:X\to Y$를 유한형 사상이라 하자. $f$가
+아핀 사상이기 위한 필요충분조건은 $f_{\mathrm{red}}$가 아핀 사상인
+것이다.
+\end{proposition}
+
+(\hyperref[II.1.6.2-ko]{1.6.2, (vi)})에 따라 조건의 충분성만 증명하면
+된다. $Y$가 아핀이고 뇌터일 때 $X$가 아핀임을 보이면 충분하다. 이때
+$Y_{\mathrm{red}}$는 아핀이므로, 가정에 따라 $X_{\mathrm{red}}$도
+아핀이다. 한편 $X$는 뇌터이므로, 결론은
+(\hyperref[I.6.1.7-ko]{I, 6.1.7})에서 따른다.
+
+\subsection{가군의 층에 대응하는 벡터 다발}
+\label{II.1.7-ko}
+
+\begin{env}[1.7.1]
+\label{II.1.7.1-ko}
+$A$를 환, $E$를 $A$-가군이라 하자. $E$의 \emph{대칭 대수}라 하고
+$\mathbf{S}(E)$(또는 $\mathbf{S}_A(E)$)로 나타내는 것은 텐서 대수
+$\mathbf{T}(E)$를 $x,y\in E$에 대한 원소
+$x\otimes y-y\otimes x$들이 생성하는 양쪽 아이디얼로 나눈 몫대수임을
+상기하자. 대수 $\mathbf{S}(E)$는 다음 보편 성질로 특징지어진다.
+$\sigma$를 표준 사상 $E\to\mathbf{S}(E)$, 즉
+$E\to\mathbf{T}(E)$와 표준 사상
+$\mathbf{T}(E)\to\mathbf{S}(E)$의 합성이라 하자. $B$가 가환
+$A$-대수이면, 모든 $A$-선형 사상 $E\to B$는 유일하게
+$E\xrightarrow{\sigma}\mathbf{S}(E)\xrightarrow{g}B$로 인수분해된다. 여기서
+$g$는 $A$-대수 준동형이다. 이 특징지음에서 두 $A$-가군 $E$, $F$에
+대하여
+\[
+  \mathbf{S}(E\oplus F)=\mathbf{S}(E)\otimes\mathbf{S}(F)
+\]
+
+\oldpage[II]{15}
+가 표준 동형을 제외하면 성립함이 곧바로 따른다. 또한
+$E\mapsto\mathbf{S}(E)$는 $A$-가군의 범주에서 가환 $A$-대수의 범주로
+가는 공변 함자이다. 마지막으로 앞의 특징지음에 따라
+$E=\varinjlim E_\lambda$이면
+$\mathbf{S}(E)=\varinjlim\mathbf{S}(E_\lambda)$가 표준 동형을 제외하면
+성립한다. 말의 남용으로 $x_i\in E$일 때의 곱
+$\sigma(x_1)\sigma(x_2)\cdots\sigma(x_n)$을 혼동의 우려가 없으면 흔히
+$x_1x_2\cdots x_n$으로 나타낸다. 대수 $\mathbf{S}(E)$는
+\emph{등급} 대수이며, $\mathbf{S}_n(E)$는 $E$의 $n$개 원소의 곱들의
+$A$-선형 결합 전체이다($n\geq 0$). 대수 $\mathbf{S}(A)$는 한 부정원의
+다항식 대수 $A[T]$와 표준적으로 동형이고, 대수 $\mathbf{S}(A^n)$은
+$n$개 부정원의 다항식 대수 $A[T_1,\ldots,T_n]$과 표준적으로 동형이다.
+\end{env}
+
+\begin{env}[1.7.2]
+\label{II.1.7.2-ko}
+$\varphi:A\to B$를 환 준동형이라 하자. $F$가 $B$-가군이면, 표준 사상
+$F\to\mathbf{S}(F)$는 표준 사상
+$F_{[\varphi]}\to\mathbf{S}(F)_{[\varphi]}$를 주고, 따라서 이 사상은
+$F_{[\varphi]}\to\mathbf{S}(F_{[\varphi]})\to
+\mathbf{S}(F)_{[\varphi]}$로 인수분해된다. 표준 $A$-대수 준동형
+$\mathbf{S}(F_{[\varphi]})\to\mathbf{S}(F)_{[\varphi]}$는 전사이지만
+반드시 전단사인 것은 아니다. $E$가 $A$-가군이면, 모든 디-준동형
+$E\to F$, 즉 모든 $A$-가군 준동형 $E\to F_{[\varphi]}$는 따라서
+표준적으로 $A$-대수 준동형
+$\mathbf{S}(E)\to\mathbf{S}(F_{[\varphi]})\to
+\mathbf{S}(F)_{[\varphi]}$를 준다.
+이는 곧 대수의 디-준동형 $\mathbf{S}(E)\to\mathbf{S}(F)$이다.
+
+같은 표기 아래에서 모든 $A$-가군 $E$에 대하여
+$\mathbf{S}(E\otimes_A B)$는 대수
+$\mathbf{S}(E)\otimes_A B$와 표준적으로 동일시된다. 이는
+$\mathbf{S}(E)$의 보편 성질에서 곧바로 따른다
+(\hyperref[II.1.7.1-ko]{1.7.1}).
+\end{env}
+
+\begin{env}[1.7.3]
+\label{II.1.7.3-ko}
+$R$을 환 $A$의 곱셈적 부분집합이라 하자.
+(\hyperref[II.1.7.2-ko]{1.7.2})를 환 $B=R^{-1}A$에 적용하고
+$R^{-1}E=E\otimes_A R^{-1}A$임을 상기하면,
+$\mathbf{S}(R^{-1}E)=R^{-1}\mathbf{S}(E)$가 표준 동형을 제외하면
+성립함을 알 수 있다. 또한 $R'\supset R$이 $A$의 또 하나의 곱셈적
+부분집합이면 도식
+\[
+  \xymatrix{
+    R^{-1}E\ar[r]\ar[d] & {R'}^{-1}E\ar[d]\\
+    \mathbf{S}(R^{-1}E)\ar[r] & \mathbf{S}({R'}^{-1}E)
+  }
+\]
+은 가환한다.
+\end{env}
+
+\begin{env}[1.7.4]
+\label{II.1.7.4-ko}
+이제 $(S,\mathcal{A})$를 환 달린 공간, $\mathcal{E}$를 $S$ 위의
+$\mathcal{A}$-가군이라 하자. 모든 열린집합 $U\subset S$에
+$\Gamma(U,\mathcal{A})$-가군
+$\mathbf{S}(\Gamma(U,\mathcal{E}))$을 대응시키면,
+$\mathbf{S}(E)$의 함자성에 따라 대수의 준층이 정의된다
+(\hyperref[II.1.7.2-ko]{1.7.2}). 이 준층의 층화를
+$\mathbf{S}(\mathcal{E})$ 또는
+$\mathbf{S}_{\mathcal{A}}(\mathcal{E})$로 나타내고,
+$\mathcal{A}$-가군 $\mathcal{E}$의 \emph{대칭 대수}라 한다.
+(\hyperref[II.1.7.1-ko]{1.7.1})에서
+$\mathbf{S}(\mathcal{E})$가 보편 문제의 해임이 곧바로 따른다.
+$\mathcal{B}$가 $\mathcal{A}$-대수일 때 모든 $\mathcal{A}$-가군
+준동형 $\mathcal{E}\to\mathcal{B}$는 유일하게
+$\mathcal{E}\to\mathbf{S}(\mathcal{E})\to\mathcal{B}$로 인수분해되며,
+둘째 화살표는 $\mathcal{A}$-대수 준동형이다. 따라서
+$\mathcal{A}$-가군 준동형 $\mathcal{E}\to\mathcal{B}$들과
+$\mathcal{A}$-대수 준동형
+$\mathbf{S}(\mathcal{E})\to\mathcal{B}$들 사이에는 전단사 대응이
+있다. 특히 모든 $\mathcal{A}$-가군 준동형
+$u:\mathcal{E}\to\mathcal{F}$는 $\mathcal{A}$-대수 준동형
+$\mathbf{S}(u):\mathbf{S}(\mathcal{E})\to
+\mathbf{S}(\mathcal{F})$를 정의하며, 따라서
+$\mathcal{E}\mapsto\mathbf{S}(\mathcal{E})$는 공변 함자이다.
+
+\oldpage[II]{16}
+(\hyperref[II.1.7.2-ko]{1.7.2})와 $\mathbf{S}$가 귀납극한과 가환한다는
+사실에 따라, 모든 점 $s\in S$에 대하여
+$(\mathbf{S}(\mathcal{E}))_s=\mathbf{S}(\mathcal{E}_s)$이다.
+$\mathcal{E}$, $\mathcal{F}$가 두 $\mathcal{A}$-가군이면
+$\mathbf{S}(\mathcal{E}\oplus\mathcal{F})$는
+$\mathbf{S}(\mathcal{E})\otimes_{\mathcal{A}}
+\mathbf{S}(\mathcal{F})$와 표준적으로 동일시된다. 이는 대응하는
+준층들에서 확인된다.
+
+또한 $\mathbf{S}(\mathcal{E})$는 $\mathbf{S}_n(\mathcal{E})$들의 무한
+직합인 등급 $\mathcal{A}$-대수이다. 여기서 $\mathcal{A}$-가군
+$\mathbf{S}_n(\mathcal{E})$는 준층
+$U\mapsto\mathbf{S}_n(\Gamma(U,\mathcal{E}))$의 층화이다. 특히
+$\mathcal{E}=\mathcal{A}$로 두면
+$\mathbf{S}_{\mathcal{A}}(\mathcal{A})$는
+$\mathcal{A}[T]=\mathcal{A}\otimes_{\mathbf{Z}}\mathbf{Z}[T]$와
+동일시된다($T$는 부정원이고, $\mathbf{Z}$는 상수층으로 본다).
+\end{env}

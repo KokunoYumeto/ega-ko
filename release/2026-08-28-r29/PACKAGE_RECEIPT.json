@@ -1,0 +1,95 @@
+{
+  "schema": "ag-ko-package-receipt-v2",
+  "version": "2026-08-28-r29",
+  "exact_doi": "10.5281/zenodo.22143603",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "corpus": "EGA",
+    "included_volumes": [
+      "EGA 0_I",
+      "EGA I",
+      "EGA II (front matter/programme and Section 1 through1.7.4)"
+    ],
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-978 through1.7.4",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
+    "historical_source_pages": 220,
+    "historical_page_ranges": [
+      "EGA I introduction5-8",
+      "EGA 0_I11-78",
+      "EGA I Chapter I79-214",
+      "EGA II5-16"
+    ]
+  },
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1439881,
+      "sha256": "0369E5EAB332907B90987F24F7FCE62EF8F15D7E5C4CBA2B1C3882306085FD0B",
+      "role": "front cumulative reader artifact",
+      "pages": 231
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 256228,
+      "sha256": "67EBDAE4CA10C35C282C281CEF984931D72847589BEEBB15AABC5DB276D05F3B",
+      "role": "deterministic editable-source archive",
+      "entries": 27,
+      "files": 25,
+      "directories": 2,
+      "uncompressed_file_bytes": 982618,
+      "verification": "PASS names, sizes and decompressed SHA-256",
+      "inventory_sha256": "5EF5A73CCAD5EB26F840CAC92B984ED4D1E6182F839B0748D4C3C7096E87B420"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 109128379,
+      "sha256": "A58D12A109F93B478041C088D03AAAE327A0E4F3D39C2F25B7B12177BBFD765C",
+      "role": "deterministic evidence archive",
+      "entries": 405,
+      "files": 396,
+      "directories": 9,
+      "uncompressed_file_bytes": 120716100,
+      "verification": "PASS names, sizes and decompressed SHA-256",
+      "inventory_sha256": "488EEFBCC61103AC1E7C9F4489428BE0640243C2238E2284FCEC241AAAF7D3CE"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 345,
+      "sha256": "BE2A7ABACBD87416A8E91AADE4300508A303E334E9C88516F5B1229ECF882EFF",
+      "role": "outer SHA-256 manifest",
+      "listed_artifacts": 3,
+      "verification": "PASS"
+    }
+  ],
+  "total_publication_bytes": 110824833,
+  "source_archive_A_B_byte_identical": true,
+  "evidence_archive_A_B_byte_identical": true,
+  "reader_qa": {
+    "build": "strict dual three-pass byte-identical PASS",
+    "extraction": "Poppler and pypdf each146913 Hangul and U+FFFD0",
+    "links": "1609/1609 internal GoTo links resolve",
+    "visual": "12 selected pages at200dpi PASS"
+  },
+  "internal_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "bytes": 42744,
+    "sha256": "20442A9E3969E594AA41E50F1881D4122DFEF33122F8F9D9339545A7A5401BB7",
+    "entries": 422,
+    "verification": "PASS"
+  },
+  "metadata": {
+    "bytes": 7737,
+    "sha256": "045AD25FFE777C1696FDC2C21B0F5EE68AE55F29C5556952BD294C7B4341B123",
+    "description_characters": 4350,
+    "forbidden_umbrella_mentions": 0
+  },
+  "source_inventory_sha256": "5EF5A73CCAD5EB26F840CAC92B984ED4D1E6182F839B0748D4C3C7096E87B420",
+  "evidence_inventory_sha256": "488EEFBCC61103AC1E7C9F4489428BE0640243C2238E2284FCEC241AAAF7D3CE",
+  "top_level_release_aliases": "PASS exact for all four publication files",
+  "publication_status": "local package only; Zenodo draft and GitHub are not publication claims",
+  "result": "PASS_LOCAL_PACKAGE"
+}

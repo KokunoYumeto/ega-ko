@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R29-COVERAGE",
+  "time": "2026-08-28T13:34:00+02:00",
+  "scope": "Korean EGA II subsection 1.6 plus subsection 1.7 through environment 1.7.4 / canonical lines 802-978",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-978",
+    "admitted_lf_bytes": 43468,
+    "admitted_sha256": "97325696DB50B0096313B278C3BA26313D42633E3F9E10EBC1B5E8DE116FE612",
+    "new_lines": "802-978",
+    "new_lf_bytes": 8370,
+    "new_sha256": "2919873B02D05D0D9C37B1A1442C955F7DB65FEC0A25CFF09D95A79875116399",
+    "closed_slices": [
+      "lines802-858 subsection1.6: 2230 LF bytes / 66F3ED4826B88695F24D032813B4CDE6F71198C9D5ED5CF85B6928D3C72321C7",
+      "lines860-978 subsection1.7 through1.7.4: 6139 LF bytes / 7A4E2C98FC68F86A2887B66129E982B3FDE013141181E4C2D4FCD69918988004"
+    ],
+    "next": "line980, environment 1.7.5; line979 blank"
+  },
+  "target": {
+    "working_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 44111,
+    "lf_lines": 998,
+    "sha256": "76DA731E04053875B73D2E92B59EF019D8E90D01A2183846AB13C434480444B4",
+    "new_target_lines": "825-998",
+    "new_target_lf_bytes": 8200,
+    "new_target_sha256": "B6B95140262FA1EA9E5FCF7CCD32C61D506CC5398B36865FA7A2B0D0447EF947",
+    "subsection_1_6": "lines825-877 2311 LF bytes / 575B54D503B7B97B93EB877DF56FCAFC67605744C2121C67A885D14631BC6290",
+    "subsection_1_7_part": "lines879-998 5888 LF bytes / BD57993DE0B6645A8EA4AEE9C46A437685C4794C5CD08B68EF14C43833806933",
+    "mirrors_exact": true
+  },
+  "coverage": [
+    "Subsection 1.6 Morphismes affines complete",
+    "Subsection 1.7 heading and environments 1.7.1-1.7.4",
+    "Historical printed-page markers II/15 and II/16"
+  ],
+  "source_parity": {
+    "numbered_environments": "8/8 with exact generic, proposition and corollary classifications",
+    "labels": "10/10 in exact transformed order",
+    "references": "12/12 in exact transformed order",
+    "displays": "3/3",
+    "enumerate_items": "6/6",
+    "xymatrix": "1/1 with exact localization arrow directions",
+    "oldpages": "2/2: II/15 and II/16",
+    "tags": "0/0",
+    "formulas_objects_and_arrow_directions": "PASS",
+    "target_math_delimiters": "PASS balanced; subsection1.7 has236 dollar delimiters"
+  },
+  "terminology": {
+    "bindings": [
+      "AGKO-T005",
+      "AGKO-T007",
+      "AGKO-T008",
+      "AGKO-T015",
+      "AGKO-T016",
+      "AGKO-T026",
+      "AGKO-T027",
+      "AGKO-T029",
+      "AGKO-T032",
+      "AGKO-T035",
+      "AGKO-T072",
+      "AGKO-T121",
+      "AGKO-T125",
+      "AGKO-T127",
+      "AGKO-T130",
+      "AGKO-T158",
+      "AGKO-T160",
+      "AGKO-T165",
+      "AGKO-T166",
+      "AGKO-T167"
+    ],
+    "typed_checks": [
+      "morphisme affine remains 아핀 사상 and relative affine wording uses Y 위에서 아핀인 준스킴",
+      "symmetric algebra is the quotient of the tensor algebra by the two-sided commutator ideal",
+      "universal factorization targets a commutative A-algebra and preserves arrow direction",
+      "covariance is not reversed",
+      "restriction of scalars F_[phi] remains distinct from scalar extension",
+      "surjective but not necessarily bijective is explicit",
+      "localization arrows follow R subset R-prime",
+      "associated sheaf is sheafification 층화, not the tilde module-associated construction",
+      "historical faisceau simple is 상수층"
+    ],
+    "arxiv_role": "retained local arXiv witnesses constrain mathematical object and arrow types only; they do not authorize Korean spelling",
+    "result": "PASS"
+  },
+  "resolved_prebuild_issues": [
+    {
+      "symptom": "The first append patch matched the first end-of-environment and temporarily placed subsection1.6 between1.1.1 and1.1.2.",
+      "resolution": "The single block was moved, not duplicated, to immediately after1.5.7 in both mirrors; subsection1.6 now starts at target line825.",
+      "recurrence": "Anchor append patches to a unique terminal context and verify subsection order before build."
+    },
+    {
+      "symptom": "A draft edit left one extra dollar delimiter in the1.7.2 di-homomorphism chain.",
+      "resolution": "Removed exactly the surplus opener in both mirrors; the1.7 slice now has236 balanced delimiters.",
+      "recurrence": "Count math delimiters and compile after every inline/display conversion."
+    }
+  ],
+  "canon": {
+    "r13": "All accepted and rejected R13 loci precede this unit and remain preserved.",
+    "new_dispositions_in_lines_802_978": 0,
+    "result": "PASS"
+  },
+  "gates": {
+    "translation": "PASS",
+    "source_structure": "PASS",
+    "terminology_and_korean_review": "PASS",
+    "pdf_build": "PASS: strict live-authority dual three-pass build; 231 pages / 1439881 bytes / 0369E5EAB332907B90987F24F7FCE62EF8F15D7E5C4CBA2B1C3882306085FD0B",
+    "extraction_links_visual": "PASS: Poppler and pypdf each146913 Hangul/U+FFFD0; 1609 internal GoTo links and267 unique references resolve; selected r29 renders PASS",
+    "archives": "PENDING",
+    "publication_and_public_replay": "PENDING"
+  },
+  "result": "PASS_TRANSLATION_SOURCE_STRUCTURE_TERMINOLOGY_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_GATES_PENDING"
+}

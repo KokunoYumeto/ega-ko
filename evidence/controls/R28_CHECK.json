@@ -1,0 +1,46 @@
+{
+  "schema": "ag-ko-r28-check-v1",
+  "version": "2026-08-28-r28",
+  "scope": "Complete EGA0_I and EGA I; complete EGA II programme; contiguous EGA II main text through 1.5.7 / canonical lines 1-800",
+  "authority": {
+    "whole_source": "source/ega2/ega2-1-fr.tex 820505 bytes / 84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_slice": "lines1-800 35097 LF bytes / 89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5",
+    "new_slice": "lines714-800 3642 LF bytes / BE45F88456957B3EBB7D73438848F9518452E20EDCB80B847E7183010EC288E7",
+    "next": "line802 subsection1.6 Morphismes affines; line801 blank"
+  },
+  "target": {
+    "mirrors": "ega/II/c2s1.tex and source/c2s1.tex",
+    "bytes": 35910,
+    "lf_lines": 823,
+    "sha256": "C7BD6E6FF32D60B9E4C5AAC952F564CEB814677269A56BCFDF39534B5ACDDF98",
+    "new_target": "lines739-823 3561 LF bytes / FE699580640D3673B126DBC2E5EC537F00B2CE13922A1B38F987FC067C07716F"
+  },
+  "source_structure": "PASS: numbered environments3/3 with exact corollary type; labels5/5; references10/10 in exact transformed order; displays4/4; xymatrix1/1; tags2/2; xrightarrow5/5; oldpage14 1/1; formulas, objects and arrow directions exact",
+  "terminology_and_korean": "PASS: q-morphism and di-morphism typing, first projection, typed inverse images, associated sheaf and composition order independently reviewed against locked register and retained local arXiv type witnesses",
+  "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16270 bytes / E4B8AFF13F239365036AB5F215710099A459D24A481A60F1E1D0A0A68A710DE3;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;218 historical markers",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 229,
+    "bytes": 1429287,
+    "sha256": "709349FD26736DE7E3FA64B7F9ACF6B0959F58E9E47F12301795A57230A788C3",
+    "page_size": "A4",
+    "verification": "pdfinfo and pypdf exact"
+  },
+  "build": "PASS: strict live-authority BUILD.ps1; two independent three-pass cycles byte-identical; build-r28.log and build.log each51770 bytes / C6B4CA4BFD718B0F57D4AF60DBFF1E271445D4B43D4997DC0BD74B21668C610F; critical diagnostics0",
+  "extraction": {
+    "poppler": "827677 bytes / DC9F22B6F5CD97611C0BD008F105FAC5B89D2FF87DF116F772FF4FB9A5C61ABD;229 form feeds;145659 Hangul;U+FFFD0;exact DOI once",
+    "pypdf": "670441 bytes / 9DABC4DA542EEFA4FAB6F7421E78A7036FA2552D653B3CEF4D098E5E216E328F;228 separators;145659 Hangul;U+FFFD0;exact DOI once",
+    "result": "PASS"
+  },
+  "links": "PASS:1600 annotations;1595 internal GoTo;265/265 unique internal references resolve against552 named destinations;5 well-formed URI links",
+  "visual": {
+    "dpi": 200,
+    "dimensions": "1654x2339",
+    "pages": [1, 2, 7, 13, 114, 218, 219, 220, 224, 228, 229],
+    "result": "PASS: no clipping, overlap, tofu, malformed diagram, broken formula, displaced marker or other observed defect"
+  },
+  "metadata": ".zenodo.json 4321-character description; exact title, historical creators, sole project contributor AI typesetting & translation, language, bounded rights/provenance, non-endorsement and explicit no-perfection claim; forbidden umbrella mentions0",
+  "publication": "PENDING: exact DOI10.5281/zenodo.22142960 reserved in unsubmitted record22142960; no public-resolution or download claim",
+  "result": "PASS_R28_LOCAL_TRANSLATION_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVES_AND_PUBLIC_REPLAY_PENDING"
+}
+

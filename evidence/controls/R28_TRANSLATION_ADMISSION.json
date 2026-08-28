@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R28-COVERAGE",
+  "time": "2026-08-28T12:40:25+02:00",
+  "scope": "Korean EGA II subsection 1.5 completion through canonical line 800",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-800",
+    "admitted_lf_bytes": 35097,
+    "admitted_sha256": "89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5",
+    "new_lines": "714-800",
+    "new_lf_bytes": 3642,
+    "new_sha256": "BE45F88456957B3EBB7D73438848F9518452E20EDCB80B847E7183010EC288E7",
+    "next": "line 802, subsection 1.6 Morphismes affines"
+  },
+  "target": {
+    "working_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 35910,
+    "lf_lines": 823,
+    "sha256": "C7BD6E6FF32D60B9E4C5AAC952F564CEB814677269A56BCFDF39534B5ACDDF98",
+    "new_target_lines": "739-823",
+    "new_target_lf_bytes": 3561,
+    "new_target_sha256": "FE699580640D3673B126DBC2E5EC537F00B2CE13922A1B38F987FC067C07716F",
+    "mirrors_exact": true
+  },
+  "coverage": [
+    "Corollary 1.5.5 and proof",
+    "Environment 1.5.6",
+    "Environment 1.5.7"
+  ],
+  "source_parity": {
+    "numbered_environments": "3/3 with exact corollary classification for 1.5.5",
+    "labels": "5/5 in exact transformed order",
+    "references": "10/10 in exact transformed order and all Korean targets resolve",
+    "displays": "4/4",
+    "xymatrix": "1/1",
+    "tags": "2/2",
+    "xrightarrow": "5/5",
+    "oldpage_II_14": "1/1",
+    "formulas_objects_and_arrow_directions": "PASS"
+  },
+  "terminology": {
+    "bindings": [
+      "AGKO-T007",
+      "AGKO-T024",
+      "AGKO-T032",
+      "AGKO-T039",
+      "AGKO-T088",
+      "AGKO-T089",
+      "AGKO-T096",
+      "AGKO-T099",
+      "AGKO-T101",
+      "AGKO-T152",
+      "AGKO-T165"
+    ],
+    "typed_checks": [
+      "q-morphism remains q-사상 with the defining O_S-algebra homomorphism exposed",
+      "di-homomorphism and di-isomorphism remain 디-준동형 and 디-동형",
+      "v = p_1 composed after w is explicit",
+      "topological inverse-image pairings X to S and X' to S' are explicit",
+      "associated-sheaf construction and all pullback directions are preserved"
+    ],
+    "arxiv_role": "retained local arXiv witnesses constrain mathematical object and arrow types only; they do not authorize Korean spelling",
+    "result": "PASS"
+  },
+  "resolved_prebuild_issue": {
+    "symptom": "The first draft used a generic env wrapper for canonical Corollary 1.5.5.",
+    "resolution": "Both Korean mirrors now use the corollary environment exactly; the rendered theorem class is preserved.",
+    "recurrence": "Compare theorem-like environment types, not only counts, before every admission."
+  },
+  "canon": {
+    "r13": "All accepted and rejected R13 loci precede this unit and remain preserved.",
+    "new_dispositions_in_lines_714_800": 0,
+    "result": "PASS"
+  },
+  "gates": {
+    "translation": "PASS",
+    "source_structure": "PASS",
+    "terminology_and_korean_review": "PASS",
+    "pdf_build": "PASS: strict dual three-pass live-authority build; 229 pages / 1429287 bytes / 709349FD26736DE7E3FA64B7F9ACF6B0959F58E9E47F12301795A57230A788C3",
+    "visual": "PASS: 11 selected pages at 200 dpi, including the new diagram and terminal marker page",
+    "archives": "PENDING",
+    "publication_and_public_replay": "PENDING"
+  },
+  "result": "PASS_TRANSLATION_SOURCE_STRUCTURE_TERMINOLOGY_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLIC_REPLAY_PENDING"
+}

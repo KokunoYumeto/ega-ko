@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "version": "2026-08-28-r27",
-  "release_state": "published_zenodo_github_pending",
+  "version": "2026-08-28-r29",
+  "release_state": "local_qa_pass_zenodo_draft_github_pending",
   "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_pages": 228,
-  "reader_bytes": 1424078,
-  "reader_sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
+  "reader_pages": 231,
+  "reader_bytes": 1439881,
+  "reader_sha256": "0369E5EAB332907B90987F24F7FCE62EF8F15D7E5C4CBA2B1C3882306085FD0B",
   "dpi": 200,
   "dimensions": "1654x2339",
-  "render_count": 10,
-  "pages": "1,2,7,13,114,218,219,220,224,228",
+  "render_count": 12,
+  "pages": "1,2,7,13,114,218,219,220,224,229,230,231",
   "render_hashes": {
-    "page1": "4996A94A595D90D0C949422319296E57D27406C21AE03DAE6E32F2193273E114",
-    "page2": "4BFAB8654E3D119CB34F09018FD28B87551B648B114B668C79C96B4118D0074A",
+    "page1": "C5B1E3D581B2A57C2ED63ACC056EB34B4552459699FC0A53EA94A890FC1D1CF0",
+    "page2": "467E990F67BFBE4C3BD983486514D1DAD4BC82FCB7557D448B46F8B782EFDC5A",
     "page7": "02FEC9B6C45C9043A28BD32BDF734A2CE0FEAFF791F67E1E1B404596D082FD13",
     "page13": "A0CAAB3F1B33F72D54CD2BE941F8F7A65F6E3B1DA133028ACB4BD72CAD5B465D",
     "page114": "C2C856C4399BA194CB1BC29062C28418DEFF56A27C685EE06553D895040D58B6",
@@ -20,42 +20,44 @@
     "page219": "A62D82369DA5A2C521DBE4C63669FA9125127BFF9F8FCA29CB123F1DBE3A1FEE",
     "page220": "5EC2820D1256AE3F73C113F908B022C8CE7881E435F2F3F548B9124DCA54A7DB",
     "page224": "EF937596B9EA26B7DE9C9241F46E3588E6A142E1AB8220C5C00FA4DFA36E7FDA",
-    "page228": "DB134CFDD6C9360DCFB573EA816BD5D33C6BBDF3DFD1FDEBDDAC70D83B1ADE15"
+    "page229": "1BE5A1CBF5F7CD6A6E2599BFFEFF02C59BF859E09AF25D23C3DCE152EE999D68",
+    "page230": "7F806086F75D5581D5455B7A3170648ED1E382B08C5C6E580014F4C4A202724B",
+    "page231": "22DDDF6AA7A2101EAB1C3CC4FA90F3AB3A47DA340BB33BEB551271B660F98D2C"
   },
-  "visual_result": "PASS: no clipping, overlap, tofu, malformed diagram, broken formula, displaced page marker or other visible layout defect on the ten selected front, boundary, marker63, transition and terminal pages",
+  "visual_result": "PASS: no clipping, overlap, tofu, malformed diagram, broken formula, displaced page marker or other visible layout defect on the twelve selected front, boundary, marker63, transition and terminal pages; sparse terminal page231 is natural",
   "historical_marker_runs": {
     "EGA_I_introduction": "5-8;4 markers",
     "EGA_0_I": "11-78;68 markers",
     "EGA_I_Chapter_I": "79-214;136 markers",
-    "EGA_II": "5-13;9 markers",
-    "total": 217,
+    "EGA_II": "5-16;12 markers",
+    "total": 220,
     "result": "PASS exact sequence and counts"
   },
-  "semantic_pagination_only_check": {
-    "r26_normalized_body_characters": 256107,
-    "r27_normalized_body_characters": 256107,
-    "normalized_body_multiset_sha256": "0AB5FA9635CBAEFE6A24C15FD24BDAC8FF02A19C08B06A081B1754DFD9681B41",
-    "numbered_reference_identifiers_each": 2157,
-    "text_identifiers": "exact",
-    "forbidden_labels": 0,
-    "result": "PASS: r27 pagination correction preserves the admitted semantic body and numbered-reference inventory"
+  "semantic_extension_check": {
+    "source_lines": "canonical ega2-1-fr.tex 802-978",
+    "source_lf_bytes": 8370,
+    "source_sha256": "2919873B02D05D0D9C37B1A1442C955F7DB65FEC0A25CFF09D95A79875116399",
+    "target_lines": "source/c2s1.tex 825-998",
+    "target_lf_bytes": 8200,
+    "target_sha256": "B6B95140262FA1EA9E5FCF7CCD32C61D506CC5398B36865FA7A2B0D0447EF947",
+    "structure": "numbered environments8/8; labels10/10; references12/12; displays3/3; enumerate items6/6; xymatrix1/1; oldpages15-16 2/2",
+    "result": "PASS: r29 adds exactly subsection1.6 and1.7.1-1.7.4 and stops before line980 environment1.7.5"
   },
   "link_structure": {
-    "annotations": 1589,
-    "internal_goto": 1584,
-    "unique_internal_references": 263,
-    "named_destinations": 549,
-    "resolved_unique_internal_references": 263,
+    "annotations": 1614,
+    "internal_goto": 1609,
+    "unique_internal_references": 267,
+    "named_destinations": 556,
+    "resolved_unique_internal_references": 267,
     "external_uri_links": 5,
-    "result": "PASS internal structure; all external URIs well formed"
+    "result": "PASS internal structure; all external URIs are well-formed HTTPS links"
   },
   "external_resolution_snapshot": {
-    "exact_doi_10.5281_zenodo.22141753": "PASS HTTP200 to public record22141753",
-    "stable_concept_and_global_doi": "HTTP200",
-    "github": "HTTP200",
-    "figshare": "HTTP202"
+    "candidate_exact_doi": "10.5281/zenodo.22143603; draft unsubmitted and not claimed public",
+    "stable_concept_doi": "10.5281/zenodo.21921513",
+    "github_repository": "https://github.com/KokunoYumeto/ega-ko",
+    "figshare_lineage": "10.6084/m9.figshare.33314679"
   },
-  "prior_public_visual_evidence": "r26 selected-page PASS remains immutable historical evidence for the156-page public reader and is not substituted for this independent r27 audit",
-  "result": "PASS_R27_VISUAL_PAGINATION_SEMANTIC_LINK_AND_ZENODO_REPLAY; GITHUB_PENDING",
-  "disposition": "The corrected228-page reader is visually and structurally sound; exact DOI resolution and anonymous Zenodo replay4/4 PASS. GitHub r27 artifact/state/receipt replay remains pending."
+  "result": "PASS_R29_LOCAL_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING",
+  "disposition": "The 231-page r29 cumulative reader is visually and structurally sound through EGA II1.7.4. Draft status is not publication evidence."
 }

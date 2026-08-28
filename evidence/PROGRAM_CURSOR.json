@@ -1,14 +1,14 @@
 {
   "schema": "ag-ko-program-cursor-public-v2",
-  "updated": "2026-08-28T12:04:59+02:00",
+  "updated": "2026-08-28T13:06:56+02:00",
   "volume": "EGA II",
-  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-712; Chapter II programme in front-fr.tex complete",
-  "next_label": "Corollary II.1.5.5 at canonical line714; line713 is blank",
+  "source_locator": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex lines1-800; Chapter II programme in front-fr.tex complete",
+  "next_label": "subsection II.1.6 Morphismes affines at canonical line802; line801 blank",
   "package_target": "source/c2s1.tex",
-  "package_target_locator": "translation synchronized to source lines1-712 through1.5.4; r27 reader applies pagination-only correction",
-  "reader": "228 pages /1424078 bytes /1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
-  "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;23 rows=16/1/6 and217 markers",
-  "current_exact_zenodo": "10.5281/zenodo.22141753",
-  "current_public": "10.5281/zenodo.22141753",
-  "status": "PASS_ZENODO_AND_GITHUB: exact DOI open and replayed4/4; GitHub artifact and receipt checkpoints anonymously replayed with remote main at receipt commit; terminal commit identity/readback externally recorded, not self-claimed; continue from canonical line714 without reopening completed units"
+  "package_target_locator": "translation synchronized to source lines1-800 through1.5.7",
+  "reader": "229 pages /1429287 bytes /709349FD26736DE7E3FA64B7F9ACF6B0959F58E9E47F12301795A57230A788C3",
+  "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16270 bytes /E4B8AFF13F239365036AB5F215710099A459D24A481A60F1E1D0A0A68A710DE3;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;218 historical markers",
+  "candidate_exact_zenodo": "10.5281/zenodo.22142960",
+  "current_public": "10.5281/zenodo.22142960",
+  "status": "PASS_R28_ZENODO_PUBLIC_REPLAY; GitHub r28 mirror pending; next source remains canonical line802"
 }

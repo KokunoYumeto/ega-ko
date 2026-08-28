@@ -1,28 +1,27 @@
 {
   "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-28T12:04:59+02:00",
+  "updated": "2026-08-28T13:06:56+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
   "canonical_source_bytes": 820505,
   "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
   "package_mapping": {
     "canonical_front": "source/ega2/front-fr.tex 1423 bytes /F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
     "target_front": "source/c2front.tex 1500 bytes /6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
-    "canonical_main_unit": "source/ega2/ega2-1-fr.tex lines1-712 31454 LF bytes /E9889D7490233716939E3F0D2270116927A91B5DF1467469116648DA6A819A72",
-    "r27_target_main": "source/c2s1.tex 32348 bytes /92823FD522EC5C280C3FDD8B135C1687FAB5D7003B8181A92A4422DC62F08405",
-    "r27_restored_marker_target": "source/c0.tex 279433 bytes /8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D; printed-page marker63 restored",
-    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;217 markers"
+    "canonical_main_unit": "source/ega2/ega2-1-fr.tex lines1-800 35097 LF bytes /89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5",
+    "r28_target_main": "source/c2s1.tex 35910 bytes /C7BD6E6FF32D60B9E4C5AAC952F564CEB814677269A56BCFDF39534B5ACDDF98",
+    "restored_marker_target": "source/c0.tex 279433 bytes /8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D; printed-page marker63 restored",
+    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json v2 16270 bytes /E4B8AFF13F239365036AB5F215710099A459D24A481A60F1E1D0A0A68A710DE3;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;218 historical markers"
   },
-  "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through1.5.4 / canonical lines1-712; full EGA II and full EGA corpus incomplete",
-  "sequence": "EGA I then EGA II then FGA; later EGA volumes require complete source-accurate authority beginning with EGA III; SGA is a separate Korean corpus lineage and is not current scope",
+  "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through1.5.7 / canonical lines1-800; full EGA II and full EGA corpus incomplete",
+  "sequence": "EGA I then EGA II then FGA; later EGA begins with EGA III only after sequence and exact source validation; SGA is separate and inactive",
   "publication": {
-    "status": "PASS_ZENODO_AND_GITHUB: local/archive gates PASS; exact DOI10.5281/zenodo.22141753 open and replay4/4 PASS; GitHub artifact and receipt checkpoints anonymously replayed; terminal commit identity/readback externally recorded, not self-claimed",
-    "current_public_doi": "10.5281/zenodo.22141753",
-    "record_id": 22141753,
+    "status": "R28_ZENODO_PUBLIC_REPLAY_PASS; GitHub mirror pending",
+    "candidate_exact_doi": "10.5281/zenodo.22142960",
+    "record_id": 22142960,
     "concept_doi": "10.5281/zenodo.21921513",
-    "receipt": "receipt-r27.json and receipt.json each2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
-    "public_files": "reader1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3; source3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E; evidence28E9C4BE1F6843901DBEEE7BA352C89B7E8C8686F4180B9ED5995DBFD0418A40; manifestD4DC6350E72FD59893BA1BC9EAB1A4E1DF33BDAF1E53A7853A10E8FB2E145F08",
-    "github_status": "PASS_PUBLIC: artifact ed322beac325953c203ca520e39cf530f9b27ae8 /tree e7db90e1473c3ae0e856924cc644b6c3f670160c; receipt and remote main 591809896ce8afc9dfcae1059f63e66d6fbe5135 /tree d1e866ee9c84e95a8b91cc664cbc6c9b13ab400a; anonymous raw receipt and both codeload replays PASS",
+    "prior_public_doi": "10.5281/zenodo.22141753",
+    "github_status": "r28 pending; r27 terminal checkpoint remains public",
     "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "existing Korean EGA target remains unmutated; no duplicate article"
+    "figshare_status": "existing Korean EGA target retained; no duplicate article"
   }
 }
