@@ -1,0 +1,21 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-29-r30",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-29-r30",
+  "tag": "ega-ko-2026-08-29-r30",
+  "tag_kind": "lightweight",
+  "release_commit": "a83d2aa5207643c809313a4ef84e14b61922528f",
+  "release_tree": "ec9b94c4a764896e0d4c7e7e98b3aed5fa54a856",
+  "tree_paths": 455,
+  "zenodo_exact_doi": "10.5281/zenodo.22151007",
+  "release_assets": [
+    {"name": "00_EGA_ko_CUMULATIVE_READER.pdf", "bytes": 1442048, "sha256": "B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0", "anonymous_download": "PASS"},
+    {"name": "01_EGA_ko_EDITABLE_SOURCES.zip", "bytes": 253084, "sha256": "79D75306465E190C365FF248333F3CD03F21C9A0B136375B7A8CB6C738059113", "anonymous_download": "PASS"},
+    {"name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip", "bytes": 107895895, "sha256": "65921E8D84FABAD570B6C96C31549624DF51EEB795CC75F98E1633E1A9E0131D", "anonymous_download": "PASS", "git_blob": false},
+    {"name": "03_EGA_ko_SHA256_MANIFEST.txt", "bytes": 345, "sha256": "2553676581BDB632FF3EB09B1BBE9619BAEDCFB05D4129DDB312E406DFE911F2", "anonymous_download": "PASS"}
+  ],
+  "verification": {"tag_resolves_to_release_commit": true, "asset_identity": "PASS filename, byte count and SHA-256 for all four assets", "public_access": "PASS"},
+  "credentials_present": false,
+  "result": "PASS"
+}
