@@ -1,0 +1,77 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v3",
+  "version": "2026-08-31-r33",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-31-r33",
+  "tag": "ega-ko-2026-08-31-r33",
+  "tag_kind": "lightweight",
+  "release_commit": "a2427c1ee3ca0fcdef9668071b0fee72ddd4238c",
+  "release_tree": "b378754ecbd779ff58fb25f0920ac97a5c21ff56",
+  "parent_commit": "1e445012d9eea7638a6d63468070fb09d96a8998",
+  "tree_paths_verified": 479,
+  "archive_member_files_verified": 467,
+  "zenodo_exact_doi": "10.5281/zenodo.22208685",
+  "zenodo_concept_doi": "10.5281/zenodo.21921513",
+  "zenodo_publication_status": "PASS public publication and anonymous four-artifact replay",
+  "immutable_receipts": {
+    "PACKAGE_RECEIPT.json": {
+      "bytes": 7011,
+      "sha256": "32CE7ED3676A6F5CB6A4DFEAEC033689198C242C605FC0C9E5B0FEA47098AE65"
+    },
+    "PORTABLE_BUILD_REPLAY.json": {
+      "bytes": 5086,
+      "sha256": "890ACCB458C952347F20F42B1D35776D2D43BBC49EB88C9C45697375BEACA1E9"
+    },
+    "receipt-r33.json": {
+      "bytes": 5071,
+      "sha256": "D005CA385F4D600E56081332620A98AE044602693F586FE8A2D5B24E9F997F00"
+    }
+  },
+  "release_assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1457536,
+      "sha256": "1115FEBE4B30752A1D86D0C4C5336E05927BFF289333C5D7077E714BE12A4103",
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 254677,
+      "sha256": "04F2E526A8CE29EBDD6FA1FC271FBB58647BC676FC66B1401A21F7CBD1F9E7EB",
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 113530361,
+      "sha256": "ABC94A03488294DC3584780B3CBAA8C8AF90F4F93710A53E3452F84A9570DDF6",
+      "anonymous_download": "PASS",
+      "git_blob": false
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "7179E604A860CE14C92FBC5CB9B10F4737221584041DC1B75F31FA934E3EF60F",
+      "anonymous_download": "PASS"
+    }
+  ],
+  "verification": {
+    "method": "credential-disabled public smart-HTTP refs and fresh filtered shallow commit/tree fetch; anonymous release/expanded-assets HTML and direct downloads; no anonymous GitHub API calls",
+    "tag_resolves_to_release_commit": true,
+    "packet_member_git_blobs": "PASS exact frozen source/evidence bytes bound by Git object identities; no newline normalization",
+    "release_page_http": 200,
+    "asset_inventory_http": 200,
+    "asset_count": 4,
+    "asset_identity": "PASS filename, byte count and SHA-256 for all four freshly downloaded assets",
+    "public_access": "PASS",
+    "evidence_archive_is_release_asset_not_git_blob": true,
+    "public_text_scan": {
+      "decodable_archive_members": 162,
+      "binary_members": 305,
+      "extension_filter": false,
+      "local_account_token_matches": 0,
+      "result": "PASS"
+    }
+  },
+  "credentials_present": false,
+  "result": "PASS"
+}
