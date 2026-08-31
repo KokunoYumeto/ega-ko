@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "control_id": "PUBLIC_PATH_SANITIZATION_R32",
+  "release": "2026-08-31-r32",
+  "scope": "Eight exact live public evidence copies; no source or mathematical content changed.",
+  "operation": "Mechanical replacement of the local user-account name by [USER], preserving all other text and line endings. Original names are intentionally not repeated in this public control.",
+  "preservation": "Original historical build logs remain hash-bound in immutable prior-release evidence ZIPs; original decisions, hard cases and evidence journals remain in the private task logbooks. Historical frozen releases are untouched.",
+  "files": [
+    {
+      "path": "evidence/build-r27.log",
+      "before_bytes": 51698,
+      "before_sha256": "852F1F7505BBAB55F410313DCC95F5407B68EB6834B856DBD2E045387FC10B83",
+      "replaced_occurrences": 150,
+      "after_bytes": 51698,
+      "after_sha256": "19202A1EB905091D7DAD2F0DE9DB885D8ABD7CEF57DE3B9FF823F7D9CC5ECEAB"
+    },
+    {
+      "path": "evidence/build-r28.log",
+      "before_bytes": 51770,
+      "before_sha256": "C6B4CA4BFD718B0F57D4AF60DBFF1E271445D4B43D4997DC0BD74B21668C610F",
+      "replaced_occurrences": 150,
+      "after_bytes": 51770,
+      "after_sha256": "1F62BF221E3D9C41D7CA8EF92D260214C5A100D139C259108590CCA30CEAD776"
+    },
+    {
+      "path": "evidence/build-r29.log",
+      "before_bytes": 51893,
+      "before_sha256": "D3643261C80D9841606916A620E2424E277CB5E3DAD087C39BB9DF262B5240BA",
+      "replaced_occurrences": 150,
+      "after_bytes": 51893,
+      "after_sha256": "1C848F6BDC28963BE3A3B959FFD49210B5A97AB65E23801CB8F077A7CE151CB3"
+    },
+    {
+      "path": "evidence/build-r30.log",
+      "before_bytes": 51893,
+      "before_sha256": "19AF97DCD87DB96341C31C4CFDA13B11A02E5E7FB851DF0A064657BB7BDF97D3",
+      "replaced_occurrences": 150,
+      "after_bytes": 51893,
+      "after_sha256": "4A9F62D3C3B0081E219F038536286E8403B1246572EFA774F7AC9F80B5F94EB8"
+    },
+    {
+      "path": "evidence/build-r31.log",
+      "before_bytes": 51945,
+      "before_sha256": "0323818B453807591C0220FA6F55B70B94853496E969EFBAD15AF20AAC6B2290",
+      "replaced_occurrences": 150,
+      "after_bytes": 51945,
+      "after_sha256": "F9D35CE00E466F5043C69263470F1B1E3C056112A9D5B273020FE68527D977E8"
+    },
+    {
+      "path": "evidence/decisions.jsonl",
+      "before_bytes": 693125,
+      "before_sha256": "8295556835A8677A1B69FDD2E2B77B9AB694D2DEEA811C8A5DDD47C72DA3D89B",
+      "replaced_occurrences": 1,
+      "after_bytes": 693125,
+      "after_sha256": "BD63F89C2CD3788B14890A6E46DD1F8639AAE153D728DD8ACF8AD2CE5B60CAAE"
+    },
+    {
+      "path": "evidence/hard.jsonl",
+      "before_bytes": 293188,
+      "before_sha256": "1A57D0F99397A21A36A84E8CFE2DD612E47D87D786BBC96F9CAB7C80F98684C4",
+      "replaced_occurrences": 1,
+      "after_bytes": 293188,
+      "after_sha256": "8C6AABC81AE96AC616614DB0B4B048DB05A63092C803FCB653895BF22488E844"
+    },
+    {
+      "path": "evidence/evidence.jsonl",
+      "before_bytes": 519300,
+      "before_sha256": "69960EDBFBB316ECC756B30D49DF7CA514D419E267AFFE7FE28D78B151178C34",
+      "replaced_occurrences": 2,
+      "after_bytes": 519300,
+      "after_sha256": "3588290E225608A48DC88F6A1CC474BB34D75600F1A3B88362FEFD9F40113A61"
+    }
+  ],
+  "manifest_rule": "ARTIFACT_SHA256.tsv is regenerated against these current sanitized bytes. Historical hash references identify historical originals, not these sanitized derivatives."
+}

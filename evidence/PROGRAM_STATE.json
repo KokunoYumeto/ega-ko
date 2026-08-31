@@ -1,19 +1,82 @@
 {
-  "schema": "ag-ko-program-state-public-v2",
-  "updated": "2026-08-28T13:06:56+02:00",
-  "release": "2026-08-28-r28",
-  "release_state": "zenodo_public_github_pending",
-  "package_reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "package_reader_pages": 229,
-  "package_reader_bytes": 1429287,
-  "package_reader_sha256": "709349FD26736DE7E3FA64B7F9ACF6B0959F58E9E47F12301795A57230A788C3",
-  "historical_source_page_markers": 218,
-  "source_binding": "canonical EGA driver23 rows in source/CUMULATIVE_INPUTS.json v2:16 complete,1 partial through ega2-1-fr.tex lines1-800 /1.5.7,6 explicitly untranslated; EGA II front/programme complete",
-  "coverage_end": "EGA0_I and EGA I complete; EGA II programme complete; EGA II main text contiguous through1.5.7 / canonical lines1-800",
-  "local_gates": "PASS reader identity, coverage matrix, translation/source/terminology review, strict dual build, dual extraction, internal links and11-page visual QA",
-  "zenodo_publication": "PASS_PUBLIC: exact DOI10.5281/zenodo.22142960 /record22142960 in concept DOI10.5281/zenodo.21921513; open metadata, DOI resolution and anonymous replay4/4 PASS",
-  "published_payloads": "Zenodo4 files /107558754 total bytes:229-page reader, editable sources, evidence/provenance and SHA-256 manifest; receipt-r28.json2587/FEEB72DA",
-  "github": "r28 pending; r27 terminal checkpoint remains public",
-  "next": "continue EGA II subsection II.1.6 beginning at canonical line802 after r28 preservation gates close",
-  "rights": "bounded per-work rights, exact source provenance and non-endorsement retained; no blanket public-domain or open-license claim"
+  "schema_version": 3,
+  "version": "2026-08-31-r32",
+  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.12 at canonical lines1-1193. Full EGA II and EGA corpus remain incomplete.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16234,
+    "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 222
+  },
+  "exact_doi": "10.5281/zenodo.22207983",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "prior_public_checkpoint": "r31 /10.5281/zenodo.22151448; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1195 environment1.7.13;1194 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r32/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r32.json and github-receipt-r32.json, never inferred from this snapshot.",
+  "sequence": [
+    "EGA I complete",
+    "EGA II active and incomplete",
+    "FGA next",
+    "EGA III+ only after ordered predecessors and exact source admission"
+  ],
+  "sga": "outside active scope",
+  "qa": {
+    "translation": "PASS independent source, Korean register, formula and structural review",
+    "build": "PASS strict live canonical BUILD.ps1; two three-pass cycles byte-identical; hard diagnostics0",
+    "extraction": {
+      "poppler": {
+        "path": "evidence/extract.txt",
+        "bytes": 707740,
+        "sha256": "05F3DDE4EDE78DECEDD30DC482936CBE67559590D330826EBDF694230729D04E"
+      },
+      "pypdf": {
+        "path": "evidence/extract-pypdf.txt",
+        "bytes": 683085,
+        "sha256": "F2FBB6414649791E1DCE5C0A26867C77C9FF68C0A133C469C6666478178C7151"
+      },
+      "each_hangul": 148304,
+      "each_replacement_characters": 0,
+      "current_exact_doi_each": 1,
+      "prior_exact_doi_each": 0,
+      "limitations": "Legacy Type1 mathematical fonts do not all contain ToUnicode mappings; extracted mathematical text is not lossless. Editable TeX and rendered formulas are authoritative."
+    },
+    "links": {
+      "annotations": 1641,
+      "internal": 1637,
+      "resolved_internal": 1637,
+      "external_uris": 4,
+      "named_destinations": 559,
+      "bookmarks": 130,
+      "result": "PASS"
+    },
+    "visual": "PASS selected pages1,2,6,231,232,233 at200dpi; root independently inspected231-233",
+    "detailed_control": "evidence/controls/R32_PDF_QA.json",
+    "human_certification": "not claimed or required"
+  },
+  "source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1193",
+    "admitted_bytes": 53487,
+    "admitted_sha256": "7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718"
+  },
+  "target": {
+    "path": "source/c2s1.tex",
+    "bytes": 54304,
+    "sha256": "C149B382E1F49565B74C0C2D72FE81F51A8B8D7F1168189BCB3DB6CF7854C47F",
+    "lf_lines": 1206
+  }
 }

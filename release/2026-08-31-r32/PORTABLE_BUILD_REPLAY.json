@@ -1,0 +1,129 @@
+{
+  "schema": "ag-ko-portable-replay-v1",
+  "version": "2026-08-31-r32",
+  "exact_doi": "10.5281/zenodo.22207983",
+  "source_archive": {
+    "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 253664,
+    "sha256": "506A79B93B798F0718F8E18EF59C1789CC9E398583EA0DADCC9D66EC58677A4B",
+    "entries_verified": 27
+  },
+  "build": {
+    "invocations": 1,
+    "internal_xelatex_passes": 6,
+    "live_authority_environment": "omitted; all portable target hashes and declared inputs enforced",
+    "returncode": 0,
+    "stdout": {
+      "bytes": 93,
+      "sha256": "0B37EBDEC341FB3BB04A203B46357A62D8867F0A6792D733F56F54B9C8488904"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "log": {
+      "bytes": 52171,
+      "sha256": "D718FC6AFE647537E86A8AE1983EC9A0FA6B167AA4C9F72069D4A8037C00CCA4"
+    },
+    "result": "PASS"
+  },
+  "strict_reader": {
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F",
+    "pages": 233
+  },
+  "portable_reader": {
+    "bytes": 1451531,
+    "sha256": "9488EE6E1AE6DAA5B465C3D6241AB60D7BDA305DC797C3CD6EFBB5A7B8C288B8",
+    "pages": 233
+  },
+  "pdf_byte_identical": false,
+  "trailer_id_normalized_byte_identical": false,
+  "container_delta": "Strict and portable PDF containers differ beyond trailer /ID normalization. The delta remains unadjudicated; exact extraction equality is proven, but no PDF byte-equality or path-only-delta claim is made.",
+  "extraction": {
+    "poppler": {
+      "bytes": 707740,
+      "sha256": "05F3DDE4EDE78DECEDD30DC482936CBE67559590D330826EBDF694230729D04E",
+      "strict_portable_byte_identical": true,
+      "hangul": 148304,
+      "replacement_characters": 0
+    },
+    "pypdf": {
+      "bytes": 683084,
+      "sha256": "153FC164576027D7239300131083D16C1682A71BB92009F290632DF3348AEDDA",
+      "strict_portable_byte_identical": true,
+      "hangul": 148304,
+      "replacement_characters": 0,
+      "relation_to_frozen_qa": {
+        "method": "The freshly compared strict/portable pypdf serialization plus exactly one terminal LF equals the frozen QA extraction byte-for-byte.",
+        "frozen_bytes": 683085,
+        "frozen_sha256": "F2FBB6414649791E1DCE5C0A26867C77C9FF68C0A133C469C6666478178C7151",
+        "result": "PASS"
+      }
+    }
+  },
+  "extraction_runtime": {
+    "python_version": "3.12.13",
+    "pypdf_version": "6.10.0",
+    "pypdf_page_join": "\\n\\f\\n",
+    "poppler_executable": {
+      "bytes": 406016,
+      "sha256": "6F1F7D8DB783BD2FAC74043DCA400A53F42D0A03C4E7F81B2C51ED436C13FAEB"
+    },
+    "poppler_options": [
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "input.pdf",
+      "-"
+    ],
+    "method": "Both frozen strict reader and portable reader freshly extracted by identical runtimes/options; no comparison across engines or pre-existing extraction conventions."
+  },
+  "visual_qa": "Portable raster bytes on pages1,232,233 exactly reproduce their already visually inspected strict-reader counterparts in the immutable evidence archive. No new full-document visual rereview is claimed.",
+  "result": "PASS_PORTABLE_BUILD_EXACT_TEXT_AND_SELECTED_RENDER_REPLAY",
+  "render_replay": {
+    "comparisons": 3,
+    "dpi": 200,
+    "renderer": {
+      "bytes": 50176,
+      "sha256": "742CBBD9A00931AD16C6618410BC40471375D639A45C61C1D86F3DCFC54B6388"
+    },
+    "command": "pdftoppm -f N -l N -singlefile -r 200 -png portable-reader.pdf portable-render-r32-pNNN",
+    "reference": {
+      "archive": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 111972255,
+      "sha256": "C3F05EF021B7DE1C5AA3F31922D23EB825210513FEE3933F985E7BEA41D52805",
+      "qa_control_entry": "controls/R32_PDF_QA.json",
+      "qa_control_bytes": 9492,
+      "qa_control_sha256": "2DB6B51B7B1E34333CC74A20B82DBA52657F4DEFD58976998B3636B2AC6BD746"
+    },
+    "pages": [
+      {
+        "physical_page": 1,
+        "portable_stage_artifact": "portable-render-r32-p001.png",
+        "frozen_evidence_entry": "render/r32-p001.png",
+        "bytes": 91298,
+        "sha256": "0777CEA7BE974D0F02FA57C31B8AE5B69653F4A56A0E717F7EA1FE3557617E32",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 232,
+        "portable_stage_artifact": "portable-render-r32-p232.png",
+        "frozen_evidence_entry": "render/r32-p232.png",
+        "bytes": 478887,
+        "sha256": "D45F938139013F34C53622988198FD42F858F605719DDDD672B56FB72D2F9310",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 233,
+        "portable_stage_artifact": "portable-render-r32-p233.png",
+        "frozen_evidence_entry": "render/r32-p233.png",
+        "bytes": 106127,
+        "sha256": "E24AA136785297E4F635274498DEFE5A88680449BFD1CB6A9D7DC13B28F9F239",
+        "byte_identical": true
+      }
+    ],
+    "result": "PASS_EXACT_PORTABLE_FROZEN_RASTER_IDENTITY_3_OF_3"
+  }
+}

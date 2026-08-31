@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-1116, 49912 LF UTF-8 bytes, SHA-256 B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-1193, 53487 LF UTF-8 bytes, SHA-256 7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -1128,4 +1128,79 @@ $\mathcal{E}^s$ 또는 $K$가 $k(s)$ 위에서 유한 차원이면 이 쌍대는
 $(\mathcal{E}^s)^\vee\otimes_{k(s)}K$와도 동일시된다. 여기서
 $(\mathcal{E}^s)^\vee$는 $k(s)$-벡터 공간 $\mathcal{E}^s$의 쌍대를
 나타낸다.
+\end{env}
+
+\begin{proposition}[1.7.11]
+\label{II.1.7.11-ko}
+\begin{enumerate}
+  \item[\rm(i)] $\mathbf{V}(\mathcal{E})$는 준연접
+    $\mathcal{O}_S$-가군의 범주에서 아핀 $S$-스킴의 범주로 가는,
+    $\mathcal{E}$에 관한 반변 함자이다.
+  \item[\rm(ii)] $\mathcal{E}$가 유한 생성 $\mathcal{O}_S$-가군이면,
+    $\mathbf{V}(\mathcal{E})$는 $S$ 위에서 유한형이다.
+  \item[\rm(iii)] $\mathcal{E}$와 $\mathcal{F}$가 두 준연접
+    $\mathcal{O}_S$-가군이면,
+    $\mathbf{V}(\mathcal{E}\oplus\mathcal{F})$는
+    $\mathbf{V}(\mathcal{E})\times_S\mathbf{V}(\mathcal{F})$와
+    표준적으로 동일시된다.
+  \item[\rm(iv)] $g:S'\to S$를 사상이라 하자. 임의의 준연접
+    $\mathcal{O}_S$-가군 $\mathcal{E}$에 대하여,
+    $\mathbf{V}(g^*(\mathcal{E}))$는
+    $\mathbf{V}(\mathcal{E})_{(S')}
+    =\mathbf{V}(\mathcal{E})\times_S S'$와 표준적으로 동일시된다.
+  \item[\rm(v)] 준연접 $\mathcal{O}_S$-가군의 전사 준동형
+    $\mathcal{E}\to\mathcal{F}$에는 닫힌 몰입 사상
+    $\mathbf{V}(\mathcal{F})\to\mathbf{V}(\mathcal{E})$가 대응한다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+임의의 $\mathcal{O}_S$-가군 준동형 $\mathcal{E}\to\mathcal{F}$가
+$\mathcal{O}_S$-대수 준동형
+$\mathbf{S}(\mathcal{E})\to\mathbf{S}(\mathcal{F})$를 표준적으로
+정한다는 점을 고려하면, (i)는 (\hyperref[II.1.2.7-ko]{1.2.7})의
+직접적인 귀결이다. (ii)는 정의들
+(\hyperref[I.6.3.1-ko]{I, 6.3.1})과, $E$가 유한 생성 $A$-가군이면
+$\mathbf{S}(E)$가 유한 생성 $A$-대수라는 사실에서 곧바로 따른다.
+(iii)를 증명하려면 표준 동형
+$\mathbf{S}(\mathcal{E}\oplus\mathcal{F})
+\simeq\mathbf{S}(\mathcal{E})
+\otimes_{\mathcal{O}_S}\mathbf{S}(\mathcal{F})$
+(\hyperref[II.1.7.4-ko]{1.7.4})에서 출발하여
+(\hyperref[II.1.4.6-ko]{1.4.6})을 적용하면 충분하다. 마찬가지로
+(iv)를 증명하려면 표준 동형
+$\mathbf{S}(g^*(\mathcal{E}))
+\simeq g^*(\mathbf{S}(\mathcal{E}))$
+(\hyperref[II.1.7.5-ko]{1.7.5})에서 출발하여
+(\hyperref[II.1.5.2-ko]{1.5.2})를 적용하면 충분하다. 끝으로 (v)를
+보이려면 준동형 $\mathcal{E}\to\mathcal{F}$가 전사일 때 이에 대응하는
+$\mathcal{O}_S$-대수 준동형
+$\mathbf{S}(\mathcal{E})\to\mathbf{S}(\mathcal{F})$도 전사임을
+관찰하면 충분하며, 결론은 (\hyperref[II.1.4.10-ko]{1.4.10})에서
+따른다.
+\end{proof}
+
+\begin{env}[1.7.12]
+\label{II.1.7.12-ko}
+특히 $\mathcal{E}=\mathcal{O}_S$로 잡자. 준스킴
+$\mathbf{V}(\mathcal{O}_S)$는 $\mathcal{O}_S$-대수
+$\mathbf{S}(\mathcal{O}_S)$의 스펙트럼인 아핀 $S$-스킴이며, 이
+대수는 $\mathcal{O}_S$-대수
+$\mathcal{O}_S[T]=\mathcal{O}_S\otimes_{\mathbf{Z}}\mathbf{Z}[T]$와
+\oldpage[II]{18}
+동일시된다($T$는 부정원이다). $S=\operatorname{Spec}(\mathbf{Z})$일
+때에는 (\hyperref[II.1.7.6-ko]{1.7.6})에 따라 자명하며, 구조 사상
+$S\to\operatorname{Spec}(\mathbf{Z})$를 고려하고
+(\hyperref[II.1.7.11-ko]{1.7.11, (iv)})를 사용하면 여기서 일반적인
+경우로 넘어갈 수 있다. 이 결과에 따라
+$\mathbf{V}(\mathcal{O}_S)=S[T]$로도 쓰며, 따라서 다음 공식을 얻는다.
+\[
+  S[T]=S\otimes_{\mathbf{Z}}\mathbf{Z}[T].
+  \tag{1.7.12.1}\label{II.1.7.12.1-ko}
+\]
+
+(\hyperref[I.3.3.15-ko]{I, 3.3.15})에서 이미 본, $S[T]$의
+$S$-단면의 싹으로 이루어진 층과 $\mathcal{O}_S$의 동일시는 여기에서
+(\hyperref[II.1.7.9-ko]{1.7.9})의 특수한 경우로서 더 일반적인 맥락
+안에서 다시 얻어진다.
 \end{env}

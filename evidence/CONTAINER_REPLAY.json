@@ -1,73 +1,46 @@
 {
-  "schema_version": 1,
-  "version": "2026-08-28-r27",
-  "release_state": "published_zenodo_github_pending",
-  "prepare_authority": "release-staging/r27/R27_PREPARE_RECEIPT.json 20099 bytes / D2830B36E863DFF8584AA76FAAF100F27603E6750A0639258F80590A968BF2C2; PASS_PREPARED_FOR_EVIDENCE_FINALIZATION",
-  "portable_control": "evidence/controls/R27_PORTABLE_BUILD.json 7649 bytes / 5B254ADE2107002B34C03602A08F0FD66C42DA0BF72CBF84DD6DF10E6B4714DA",
-  "coverage_manifest": "source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;217 historical markers",
-  "source_freeze": {
-    "files": 25,
-    "inventory_sha256": "8EBCE9C33A39BD2713FA54D479D96E1CFFA72472F8F56B3E65CFDDCB94B4644B",
-    "source_archive_A": "249541 bytes /3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E;27 entries/25 files/2 directories/971528 uncompressed file bytes/PASS",
-    "source_archive_B": "249541 bytes /3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E;27 entries/25 files/2 directories/971528 uncompressed file bytes/PASS",
-    "A_B_byte_identical": true,
-    "status": "PASS_FINAL: source ZIP249541 bytes /3CC011CEB668086CEC80DFACE6BD9747CE7085815AE0AB88A0E1BC0E7D35A78E placed in release and anonymously replayed"
+  "schema_version": 3,
+  "version": "2026-08-31-r32",
+  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.12 at canonical lines1-1193. Full EGA II and EGA corpus remain incomplete.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
   },
-  "reader_containers": {
-    "repository": {
-      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-      "pages": 228,
-      "bytes": 1424078,
-      "sha256": "1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
-      "strict_dual_build": "PASS"
-    },
-    "portable_A": {
-      "pages": 228,
-      "bytes": 1424078,
-      "sha256": "3A546A66FE3AACC0F4470A3D39BA4B6AB3BEA2B312032E34F156ADF4E18A6008",
-      "build": "PASS"
-    },
-    "portable_B": {
-      "pages": 228,
-      "bytes": 1424077,
-      "sha256": "E4E096AB47580B34E95E74F15064A619A21F79EFFCC100E9066E351E138C0142",
-      "build": "PASS"
-    },
-    "repository_A_B_byte_identical": false,
-    "difference_classification": "Differing PDF container identities are retained as an unadjudicated container-level delta only; no semantic, textual, visual, completeness or publication-status inference is permitted."
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16234,
+    "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 222
   },
-  "build_logs": {
-    "repository": "evidence/build-r27.log and evidence/build.log each51698 bytes /852F1F7505BBAB55F410313DCC95F5407B68EB6834B856DBD2E045387FC10B83",
-    "portable_A_original": "51859 bytes /AD98C9BE4ADCBBE61F39A176181E516534146C634941200509BBD5AEA594B9F6",
-    "portable_B_original": "51859 bytes /08482FDD98E54ADC1D2C202C7774F0CB33DA13C561489AB42F425F2E9AC03ECB",
-    "portable_A_sanitized": "evidence/build-r27-portable-A.log 51859 bytes /F46E7F0C667ED8EC951FE62B6D898E091928834773F1913AB82CD76AFEE5638F",
-    "portable_B_sanitized": "evidence/build-r27-portable-B.log 51859 bytes /168A8F6F588B46E6BCB34515AAE262ADBCD6269D84AD47302546335AC375E117",
-    "critical_diagnostics_each": 0
+  "exact_doi": "10.5281/zenodo.22207983",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "prior_public_checkpoint": "r31 /10.5281/zenodo.22151448; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1195 environment1.7.13;1194 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r32/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r32.json and github-receipt-r32.json, never inferred from this snapshot.",
+  "strict_reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
   },
-  "rolling_repository_extraction": {
-    "poppler": "evidence/extract.txt 824319 bytes /FC92CF50D3A23B4A1EA4820A29261BA0C3F6C1F8942E365EDA42ED7B72E18444;228 form feeds;145216 Hangul;U+FFFD0;DOI22141753 once;prior DOI22134988 zero",
-    "pypdf": "evidence/extract-pypdf.txt 668051 bytes /453B9E702691B5519E396492EA5E29C5782F4D183EBD857CB36B43748C24FCA6;227 separators between228 pages;145216 Hangul;U+FFFD0;DOI22141753 once;prior DOI22134988 zero",
-    "result": "PASS"
-  },
-  "portable_repository_A_B_extraction": {
-    "poppler": "exact-identical at692478 bytes /A02D7F73B75E29F5641A83448F5BC72C989D7C6B3D22B401A57E93D87F4F564F; each145216 Hangul/U+FFFD0/exact DOI once",
-    "pypdf": "exact-identical at668506 bytes /66CAC3798778FD755C6D79C3A2FFE5468F0926FADC47786DC263F2650EED86BB; each145216 Hangul/U+FFFD0/exact DOI once",
-    "cross_engine_hangul_counts_equal": true,
-    "result": "PASS_SEMANTIC_TEXT_IDENTITY"
-  },
-  "semantic_pagination_only_check": "PASS: r26/r27 normalized bodies each256107 characters /multiset SHA-256 0AB5FA9635CBAEFE6A24C15FD24BDAC8FF02A19C08B06A081B1754DFD9681B41; all2157 numbered-reference identifiers identical",
-  "render_replay": {
-    "status": "PASS",
-    "pages": "1,2,7,13,114,218,219,220,224,228",
-    "dpi": 200,
-    "dimensions": "1654x2339",
-    "repository_A_B_png_bytes_exact": true,
-    "comparisons": 20,
-    "page_hashes": "4996A94A595D90D0C949422319296E57D27406C21AE03DAE6E32F2193273E114;4BFAB8654E3D119CB34F09018FD28B87551B648B114B668C79C96B4118D0074A;02FEC9B6C45C9043A28BD32BDF734A2CE0FEAFF791F67E1E1B404596D082FD13;A0CAAB3F1B33F72D54CD2BE941F8F7A65F6E3B1DA133028ACB4BD72CAD5B465D;C2C856C4399BA194CB1BC29062C28418DEFF56A27C685EE06553D895040D58B6;8AA0B7DBD391400BE3360B470B73FE648FC8431BFCB3A0700F2658C05DD5B8DA;A62D82369DA5A2C521DBE4C63669FA9125127BFF9F8FCA29CB123F1DBE3A1FEE;5EC2820D1256AE3F73C113F908B022C8CE7881E435F2F3F548B9124DCA54A7DB;EF937596B9EA26B7DE9C9241F46E3588E6A142E1AB8220C5C00FA4DFA36E7FDA;DB134CFDD6C9360DCFB573EA816BD5D33C6BBDF3DFD1FDEBDDAC70D83B1ADE15"
-  },
-  "final_evidence_archive_replay": "PASS_FINAL: evidence ZIP98680606 bytes /28E9C4BE1F6843901DBEEE7BA352C89B7E8C8686F4180B9ED5995DBFD0418A40; local and anonymous Zenodo download exact",
-  "outer_manifest": "PASS_FINAL:342 bytes /D4DC6350E72FD59893BA1BC9EAB1A4E1DF33BDAF1E53A7853A10E8FB2E145F08",
-  "public_download_comparison": "PASS_ZENODO: reader, source ZIP, evidence ZIP and outer manifest replay4/4 by filename, bytes, API MD5 and local SHA-256; receipt-r27.json2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
-  "github_replay": "PENDING_R27",
-  "result": "PASS_REPOSITORY_PORTABLE_ARCHIVES_AND_ZENODO_PUBLIC_REPLAY; GITHUB_PENDING"
+  "strict_dual_build": "PASS exact repeated-container identity",
+  "portable_build": "Next deterministic check after source archive freeze; see external release receipt. This pre-freeze snapshot does not claim portable equality.",
+  "comparison_rule": "Compare strict and portable extraction using identical named runtime/options; retain any PDF-container delta without semantic or visual inference unless independently proved.",
+  "logs": {
+    "paths": [
+      "evidence/build-r32.log",
+      "evidence/build.log"
+    ],
+    "bytes": 51800,
+    "sha256": "5D2B4041657F38CC9CF256AF8EDB7D30DDF648F6DC00EBF9487CA8F34CC3F2D9",
+    "sanitization": "Local account-name text replaced only; raw build/out/main.log retained privately,51950B/B616AD65660693CE7783C517D4915E9E762EF0EA8C35643BFEA62FEDAE68D952."
+  }
 }

@@ -1,25 +1,76 @@
 {
-  "schema_version": 1,
-  "version": "2026-08-29-r31",
-  "release_state": "local_qa_pass_zenodo_draft_github_pending",
-  "scope": "complete EGA0_I and EGA I; complete EGA II Chapter II programme; contiguous EGA II main through1.7.10 / canonical lines1-1116;232-page cumulative reader",
-  "source_locator": "source/ega2/ega2-1-fr.tex lines1-1116",
-  "source_bytes": 49912,
-  "source_sha256": "B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5",
-  "target_identity": "PASS: source/c2s1.tex and private mirror each50714 bytes /48983F35AB77D62B36B903168785834D88418E296283286D2C5375A7FDC9A281;1131 LF lines",
-  "reader_identity": "PASS: reader/00_EGA_ko_CUMULATIVE_READER.pdf 232 pages /1447261 bytes /0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281; A4; independently recomputed by pdfinfo and pypdf",
-  "pagination": "PASS: marker63 remains restored;221 historical oldpage markers sum exactly and each controls an output-page rhythm",
-  "cumulative_input_manifest": "PASS: source/CUMULATIVE_INPUTS.json v2 16234 bytes /36B42FE2A408905A09A71181B1C9890F94DB401E2D1406E088BDD33A4B5EBDAE;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;221 historical markers",
-  "driver_closure": "PASS: EGA I complete; EGA II programme complete and main lines1-1116 through1.7.10 admitted; EGA II closure is not claimed",
-  "translation_formula_terminology": "PASS: R31_TRANSLATION_ADMISSION; environments2/2, labels2/2, references9/9, displays0/0, formulas, objects, variance and arrows PASS",
-  "build": "PASS: strict live-canonical dual three-pass build; build-r31.log and build.log each51945 bytes /0323818B453807591C0220FA6F55B70B94853496E969EFBAD15AF20AAC6B2290; hard diagnostics0",
-  "extraction": "PASS: Poppler717974/AB392066 with232 form feeds; pypdf680529/ACE6C704 with231 separators; each147843 Hangul, U+FFFD0, DOI22151448 once and prior exact DOI absent",
-  "internal_links": "PASS:1630 annotations;1626 internal GoTo;1626/1626 resolve against557 valid named destinations;4 well-formed HTTPS URI links",
-  "visual": "PASS:10 selected r31 pages at200dpi /1654x2339; no clipping, overlap, missing glyph, malformed formula, broken arrow or displaced marker",
-  "marker_runs": "PASS exact: EGA I introduction5-8=4, EGA0_I11-78=68, EGA I Chapter I79-214=136, EGA II5-17=13; total221",
-  "archives": "PENDING",
-  "publication": "PENDING: draft record22151448 is unsubmitted and not public evidence",
-  "external_human_certification": "not claimed or required",
-  "next_source": "EGA II ega2-1-fr.tex line1118 proposition1.7.11; line1117 blank",
-  "result": "PASS_R31_LOCAL_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING"
+  "schema_version": 3,
+  "version": "2026-08-31-r32",
+  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.12 at canonical lines1-1193. Full EGA II and EGA corpus remain incomplete.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16234,
+    "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 222
+  },
+  "exact_doi": "10.5281/zenodo.22207983",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "prior_public_checkpoint": "r31 /10.5281/zenodo.22151448; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1195 environment1.7.13;1194 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r32/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r32.json and github-receipt-r32.json, never inferred from this snapshot.",
+  "qa": {
+    "translation": "PASS independent source, Korean register, formula and structural review",
+    "build": "PASS strict live canonical BUILD.ps1; two three-pass cycles byte-identical; hard diagnostics0",
+    "extraction": {
+      "poppler": {
+        "path": "evidence/extract.txt",
+        "bytes": 707740,
+        "sha256": "05F3DDE4EDE78DECEDD30DC482936CBE67559590D330826EBDF694230729D04E"
+      },
+      "pypdf": {
+        "path": "evidence/extract-pypdf.txt",
+        "bytes": 683085,
+        "sha256": "F2FBB6414649791E1DCE5C0A26867C77C9FF68C0A133C469C6666478178C7151"
+      },
+      "each_hangul": 148304,
+      "each_replacement_characters": 0,
+      "current_exact_doi_each": 1,
+      "prior_exact_doi_each": 0,
+      "limitations": "Legacy Type1 mathematical fonts do not all contain ToUnicode mappings; extracted mathematical text is not lossless. Editable TeX and rendered formulas are authoritative."
+    },
+    "links": {
+      "annotations": 1641,
+      "internal": 1637,
+      "resolved_internal": 1637,
+      "external_uris": 4,
+      "named_destinations": 559,
+      "bookmarks": 130,
+      "result": "PASS"
+    },
+    "visual": "PASS selected pages1,2,6,231,232,233 at200dpi; root independently inspected231-233",
+    "detailed_control": "evidence/controls/R32_PDF_QA.json",
+    "human_certification": "not claimed or required"
+  },
+  "source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1193",
+    "admitted_bytes": 53487,
+    "admitted_sha256": "7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718"
+  },
+  "target": {
+    "path": "source/c2s1.tex",
+    "bytes": 54304,
+    "sha256": "C149B382E1F49565B74C0C2D72FE81F51A8B8D7F1168189BCB3DB6CF7854C47F",
+    "lf_lines": 1206
+  },
+  "result": "PASS_LOCAL_QA; package and publication receipts are separate subsequent evidence"
 }

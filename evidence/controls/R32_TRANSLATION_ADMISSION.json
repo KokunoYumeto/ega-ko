@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R32-COVERAGE",
+  "time": "2026-08-31T14:29:24+02:00",
+  "scope": "EGA II1.7.11-1.7.12",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "locator": "lines1-1193 through1.7.12; next executable1195;1194 blank",
+    "bytes": 53487,
+    "sha256": "7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "new_lines": "1118-1193",
+    "new_lf_bytes": 3574,
+    "new_sha256": "9886BF1C9A31B03EA6F5FE98E75A762BD0128B33B81C354B664B2BD1279A3D3E",
+    "new_characters": 3530
+  },
+  "target": {
+    "path": "ega/II/c2s1.tex",
+    "locator": "lines1-1206; new1133-1206",
+    "bytes": 54304,
+    "sha256": "C149B382E1F49565B74C0C2D72FE81F51A8B8D7F1168189BCB3DB6CF7854C47F",
+    "appended_bytes": 3589,
+    "appended_sha256": "2F66AF037741FADC729FC05A3459B7E89D68EDA43FE26E758D2AE4D6A13D19E2"
+  },
+  "structure": {
+    "environments": 4,
+    "items": 5,
+    "labels": 3,
+    "references": 11,
+    "inline_math": 48,
+    "displays": 1,
+    "tags": 1,
+    "oldpage": "II18",
+    "result": "PASS exact normalized formulas and structural parity"
+  },
+  "reviews": {
+    "source": "PASS independent",
+    "korean": "PASS independent after two register corrections",
+    "full_target_links": "150/150 references uniquely resolve",
+    "terminology": "AGKO-TERM-E165; established bindings, no new entry"
+  },
+  "gates": {
+    "translation": "PASS",
+    "build": "PASS strict dual three-pass cycles, exact repeated PDF1451539B/46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F",
+    "extraction_links_visual": "PASS independent selected-page review; detailed R32_PDF_QA.json",
+    "package": "PENDING",
+    "publication": "PENDING"
+  },
+  "next": "canonical1195 environment1.7.13;1194 blank",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+  },
+  "snapshot_rule": "Pre-archive snapshot. Subsequent immutable package/publication receipts outside the evidence ZIP prove those gates."
+}

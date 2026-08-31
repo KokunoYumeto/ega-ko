@@ -1,61 +1,56 @@
 {
-  "schema_version": 1,
-  "version": "2026-08-29-r31",
-  "release_state": "local_qa_pass_zenodo_draft_github_pending",
-  "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-  "reader_pages": 232,
-  "reader_bytes": 1447261,
-  "reader_sha256": "0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+  "schema_version": 3,
+  "version": "2026-08-31-r32",
+  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.12 at canonical lines1-1193. Full EGA II and EGA corpus remain incomplete.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16234,
+    "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 222
+  },
+  "exact_doi": "10.5281/zenodo.22207983",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "prior_public_checkpoint": "r31 /10.5281/zenodo.22151448; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1195 environment1.7.13;1194 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r32/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r32.json and github-receipt-r32.json, never inferred from this snapshot.",
   "dpi": 200,
+  "pages": [
+    1,
+    2,
+    6,
+    231,
+    232,
+    233
+  ],
   "dimensions": "1654x2339",
-  "render_count": 10,
-  "pages": "1,2,3,6,7,13,229,230,231,232",
-  "render_hashes": {
-    "page1": "BD52335F154E4FD152A5C0BFD3BE00136E14B8184A75416D44B37A333BD17264",
-    "page2": "86BFE4DA57489F683D4C4F4A4064F07BB33B4D1C3F1C685E7CAB490E541E19EA",
-    "page3": "B40FD0E1C2C3B6BCBF0A9FB57F2D8F917D86C25C3BB369677810E7260294760C",
-    "page6": "38AB36613C2358BFE1775F833E43235FE7A9EBDA47519E17830D2A84A6ACBD73",
-    "page7": "02FEC9B6C45C9043A28BD32BDF734A2CE0FEAFF791F67E1E1B404596D082FD13",
-    "page13": "A0CAAB3F1B33F72D54CD2BE941F8F7A65F6E3B1DA133028ACB4BD72CAD5B465D",
-    "page229": "1BE5A1CBF5F7CD6A6E2599BFFEFF02C59BF859E09AF25D23C3DCE152EE999D68",
-    "page230": "7F806086F75D5581D5455B7A3170648ED1E382B08C5C6E580014F4C4A202724B",
-    "page231": "FC2E310515D21AEBDC24971D2E6A912A3C41364D2F68A742D66D1877C85CA127",
-    "page232": "11256104701E3903B03B192CFA2EA6FD67FD5E78219993704AD2B8122CCD1AEA"
+  "result": "PASS no clipping, overlap, missing glyph, malformed formula, broken arrow or misplaced marker on inspected pages",
+  "detailed_render_identities": "evidence/controls/R32_PDF_QA.json",
+  "historical_markers": {
+    "EGA_I_introduction": "5-8 /4",
+    "EGA_0_I": "11-78 /68",
+    "EGA_I_Chapter_I": "79-214 /136",
+    "EGA_II": "5-18 /14",
+    "total": 222
   },
-  "visual_result": "PASS: no clipping, overlap, missing glyph, black box, malformed formula or arrow, margin collision, displaced page marker or other visible defect on selected front, contents, transition and terminal pages; page232 ends cleanly after1.7.10",
-  "historical_marker_runs": {
-    "EGA_I_introduction": "5-8;4 markers",
-    "EGA_0_I": "11-78;68 markers",
-    "EGA_I_Chapter_I": "79-214;136 markers",
-    "EGA_II": "5-17;13 markers",
-    "total": 221,
-    "result": "PASS exact sequence and counts"
-  },
-  "semantic_extension_check": {
-    "source_lines": "canonical ega2-1-fr.tex 1049-1116",
-    "source_lf_bytes": 3505,
-    "source_sha256": "23EDE365C2DE799F6D07C43EC268616101C86F2C2F00F034DB4943551FD328D0",
-    "target_lines": "source/c2s1.tex 1069-1131",
-    "target_lf_bytes": 3536,
-    "target_sha256": "456C2929A709D6D0EABF3271CDBC16284CF6233F51DF3EFA7645B88DAD7616E1",
-    "structure": "numbered environments2/2; labels2/2; references9/9; displays0/0",
-    "result": "PASS: r31 adds exactly the post-1.7.8 correspondence and environments1.7.9-1.7.10 and stops before canonical line1118"
-  },
-  "link_structure": {
-    "annotations": 1630,
-    "internal_goto": 1626,
-    "named_destinations": 557,
-    "valid_named_destinations": 557,
-    "resolved_internal_links": 1626,
-    "broken_internal_links": 0,
-    "external_uri_links": 4,
-    "result": "PASS internal structure; all external URIs are well-formed HTTPS links"
-  },
-  "external_resolution_snapshot": {
-    "candidate_exact_doi": "10.5281/zenodo.22151448; draft unsubmitted and not claimed public",
-    "stable_concept_doi": "10.5281/zenodo.21921513",
-    "github_repository": "https://github.com/KokunoYumeto/ega-ko"
-  },
-  "result": "PASS_R31_LOCAL_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING",
-  "disposition": "The 232-page r31 cumulative reader is visually and structurally sound through EGA II1.7.10. Draft status is not publication evidence."
+  "links": {
+    "annotations": 1641,
+    "internal": 1637,
+    "resolved_internal": 1637,
+    "external_uris": 4,
+    "named_destinations": 559,
+    "bookmarks": 130,
+    "result": "PASS"
+  }
 }

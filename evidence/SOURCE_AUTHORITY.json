@@ -1,23 +1,47 @@
 {
-  "schema": "ag-ko-public-source-authority-v2",
-  "version": "2026-08-29-r31",
-  "canonical_driver": "source/EGA_FR.tex 3313 bytes /D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086",
-  "driver_coverage": "23 canonical content rows represented in source/CUMULATIVE_INPUTS.json v2:16 complete,1 partial,6 explicitly untranslated",
-  "driver_ega1_inputs": "lines61-82:15 EGA I content inputs represented exactly once and complete",
-  "admitted_ega2_inputs": "source/ega2/front-fr.tex complete plus source/ega2/ega2-1-fr.tex lines1-1116; both represented exactly once after the complete EGA I sequence",
-  "canonical_path": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
-  "canonical_bytes": 820505,
-  "canonical_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-  "admitted_slice_bytes": 49912,
-  "admitted_slice_sha256": "B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5",
-  "r31_manifest": "source/CUMULATIVE_INPUTS.json v2 16234 bytes /36B42FE2A408905A09A71181B1C9890F94DB401E2D1406E088BDD33A4B5EBDAE;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;221 historical markers",
-  "r31_target_main_from_manifest": "source/c2s1.tex 50714 bytes /48983F35AB77D62B36B903168785834D88418E296283286D2C5375A7FDC9A281",
-  "page63_target_from_manifest": "source/c0.tex 279433 bytes /8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D; marker63 restored",
-  "front_source": "source/ega2/front-fr.tex 1423 bytes /F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
-  "front_target": "source/c2front.tex 1500 bytes /6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
-  "admission": "Complete EGA0_I and EGA I plus complete EGA II programme and main lines1-1116 through1.7.10; R31_TRANSLATION_ADMISSION PASS through local visual gate",
-  "bounded_live_regressions": "R24 EGA I controls and R13 EGA II canon adjudication retained; no corrected-current or diplomatic-source disposition falls inside new canonical lines1049-1116; EGA III is not admitted into this reader",
-  "qa_state": "PASS source-matrix closure, exact marker runs, strict deterministic dual build, dual extraction, internal links and10-page visual QA; deterministic archives and public replay pending",
-  "completion": "EGA I complete; EGA II programme and canonical lines1-1116 through1.7.10 admitted; full EGA II and full EGA corpus not claimed complete",
-  "next": "advance to source/ega2/ega2-1-fr.tex line1118 proposition1.7.11 after the r31 preservation transaction closes; line1117 blank"
+  "schema_version": 3,
+  "version": "2026-08-31-r32",
+  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.12 at canonical lines1-1193. Full EGA II and EGA corpus remain incomplete.",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 233,
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16234,
+    "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 222
+  },
+  "exact_doi": "10.5281/zenodo.22207983",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "prior_public_checkpoint": "r31 /10.5281/zenodo.22151448; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1195 environment1.7.13;1194 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r32/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r32.json and github-receipt-r32.json, never inferred from this snapshot.",
+  "source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1193",
+    "admitted_bytes": 53487,
+    "admitted_sha256": "7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718"
+  },
+  "target": {
+    "path": "source/c2s1.tex",
+    "bytes": 54304,
+    "sha256": "C149B382E1F49565B74C0C2D72FE81F51A8B8D7F1168189BCB3DB6CF7854C47F",
+    "lf_lines": 1206
+  },
+  "canonical_driver": "source/EGA_FR.tex3313B/D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086",
+  "translation_admission": "evidence/controls/R32_TRANSLATION_ADMISSION.json",
+  "new_unit": "canonical1118-1193 /3574LF bytes /9886BF1C9A31B03EA6F5FE98E75A762BD0128B33B81C354B664B2BD1279A3D3E",
+  "source_defects_in_new_unit": "None detected by independent source/formula review",
+  "later_ega": "Untranslated ega3/ega3-1-fr.tex fingerprint rebound to627914B/3490FCCC03237D47EA4A8DEC0602578B43FBF5ED6087338119A0B11E738E045A. No EGA III source-completion or translation inference."
 }

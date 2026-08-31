@@ -1,0 +1,291 @@
+{
+  "schema": "agko-r32-pdf-qa-v1",
+  "edition": "2026-08-31-r32",
+  "measured_at": "2026-08-31T12:44:12.633Z",
+  "status": "PASS",
+  "scope": "Full-file PDF identity, structure, all link destinations, full text extraction and historical-marker sequence checks; personal visual inspection of selected changed and boundary pages. No public-byte publication verification or fresh visual rereview of all233 pages is asserted.",
+  "pdf": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1451539,
+    "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F",
+    "pages": 233,
+    "page_size_points": [
+      595.28,
+      841.89
+    ],
+    "format": "A4",
+    "version": "1.7",
+    "encrypted": false,
+    "javascript": false,
+    "forms": false,
+    "build_output_pdf_sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F",
+    "metadata": {
+      "Title": "대수기하학 원론 – 한국어 누적판",
+      "Subject": "NUMDAM 프랑스어 권위본에 따른 EGA 한국어 누적 번역",
+      "Author": "알렉산더 그로텐디크와 장 디외도네",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "MiKTeX-dvipdfmx (20260404)",
+      "CreationDate": "D:20260813150000Z"
+    }
+  },
+  "tools": {
+    "poppler_pdftotext": "[USER_PROFILE]/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftotext.exe",
+    "poppler_pdftotext_version": "24.04.0",
+    "poppler_command": "pdftotext -enc UTF-8 -eol unix reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/extract.txt",
+    "pypdf_version": "6.10.0",
+    "pypdf_method": "page.extract_text() or empty string per physical page; CRLF/CR normalized to LF; pages joined with LF+FF+LF; one final LF; UTF-8 without BOM",
+    "renderer": "[USER_PROFILE]/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/pdftoppm.exe",
+    "render_command": "pdftoppm -f N -l N -singlefile -r 200 -png reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/render/r32-pNNN"
+  },
+  "extractions": [
+    {
+      "path": "evidence/extract.txt",
+      "bytes": 707740,
+      "sha256": "05F3DDE4EDE78DECEDD30DC482936CBE67559590D330826EBDF694230729D04E",
+      "characters": 384840,
+      "hangul_syllables": 148304,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 233,
+      "current_doi_count": 1,
+      "prior_doi_count": 0,
+      "source_marker_numeric_sequence_count": 222,
+      "source_marker_numeric_sequence_matches": true,
+      "strict_volume_qualified_markers": 221,
+      "legacy_math_c0_control_characters": 148
+    },
+    {
+      "path": "evidence/extract-pypdf.txt",
+      "bytes": 683085,
+      "sha256": "F2FBB6414649791E1DCE5C0A26867C77C9FF68C0A133C469C6666478178C7151",
+      "characters": 370675,
+      "hangul_syllables": 148304,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 232,
+      "current_doi_count": 1,
+      "prior_doi_count": 0,
+      "source_marker_full_sequence_count": 222,
+      "source_marker_full_sequence_matches": true,
+      "legacy_math_c0_control_characters": 2187
+    }
+  ],
+  "historical_markers": {
+    "source_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16234,
+      "sha256": "8971785CE984782F8839C588EC85755B074D8F9F06FE53E90185BF6B0C58FE55"
+    },
+    "source_count": 222,
+    "normalized_sequence_sha256": "5015A35E457FB8D28E21DD03375E4B6EDB7581A57991071508D8857A3862570D",
+    "normalization": "Source 0\\textsubscript{I} and extracted 0 I/0I map to 0I; otherwise preserve volume and page number. SHA-256 binds LF-terminal volume|page records in exact declared-input order.",
+    "first": [
+      [
+        "I",
+        "5"
+      ],
+      [
+        "I",
+        "6"
+      ],
+      [
+        "I",
+        "7"
+      ],
+      [
+        "I",
+        "8"
+      ],
+      [
+        "0I",
+        "11"
+      ]
+    ],
+    "last": [
+      [
+        "II",
+        "14"
+      ],
+      [
+        "II",
+        "15"
+      ],
+      [
+        "II",
+        "16"
+      ],
+      [
+        "II",
+        "17"
+      ],
+      [
+        "II",
+        "18"
+      ]
+    ],
+    "poppler_specific_limitation": "At source EGA0_I page70, Poppler extracts the margin marker as 0 | 70, omitting the adjacent subscript I from that token. Therefore only the222 numeric page-marker sequence passes in Poppler; the complete222 volume-and-page sequence passes independently in pypdf. No inferred volume token is silently inserted into the saved extraction."
+  },
+  "navigation": {
+    "annotations": 1641,
+    "links": 1641,
+    "internal_links": 1637,
+    "uri_links": 4,
+    "named_destinations": 559,
+    "invalid_link_destinations": [],
+    "invalid_named_destinations": [],
+    "outline_entries": 130,
+    "invalid_outline_destinations": [],
+    "uri_targets": {
+      "https://doi.org/10.5281/zenodo.21921513": 1,
+      "https://doi.org/10.5281/zenodo.22207983": 1,
+      "https://github.com/KokunoYumeto/ega-ko": 1,
+      "https://doi.org/10.5281/zenodo.20414353": 1
+    }
+  },
+  "font_unicode": {
+    "font_resources": 35,
+    "resources_with_tounicode": 27,
+    "resources_without_tounicode": [
+      "CMSY10",
+      "MSBM10",
+      "CMEX10",
+      "CMSY8",
+      "CMEX7",
+      "XYATIP-Medium",
+      "XYBTIP-Medium",
+      "XYDASH-Medium"
+    ],
+    "all_type0_hangul_fonts_have_tounicode": true
+  },
+  "build_logs": {
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51950,
+      "sha256": "B616AD65660693CE7783C517D4915E9E762EF0EA8C35643BFEA62FEDAE68D952"
+    },
+    "public_sanitized": [
+      {
+        "path": "evidence/build-r32.log",
+        "bytes": 51800,
+        "sha256": "5D2B4041657F38CC9CF256AF8EDB7D30DDF648F6DC00EBF9487CA8F34CC3F2D9"
+      },
+      {
+        "path": "evidence/build.log",
+        "bytes": 51800,
+        "sha256": "5D2B4041657F38CC9CF256AF8EDB7D30DDF648F6DC00EBF9487CA8F34CC3F2D9"
+      }
+    ],
+    "sanitization": "Exact repository roots replaced by [KOREAN_REPO_ROOT]; local profile roots replaced by [USER_PROFILE]. These are sanitized derivatives, not raw-log byte-identical copies. Raw log retained at build/out/main.log; historical logs not edited.",
+    "public_logs_equal": true,
+    "local_profile_name_absent": true,
+    "hard_diagnostics": {
+      "missing_characters": 0,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0
+    },
+    "advisories": {
+      "moved_marginpars": 136,
+      "pdf_string_token_warnings": 23,
+      "font_shape_warnings": 2
+    }
+  },
+  "renders": [
+    {
+      "path": "evidence/render/r32-p001.png",
+      "physical_page": 1,
+      "bytes": 91298,
+      "sha256": "0777CEA7BE974D0F02FA57C31B8AE5B69653F4A56A0E717F7EA1FE3557617E32",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r32-p002.png",
+      "physical_page": 2,
+      "bytes": 357634,
+      "sha256": "AADCC1E6EE3FBFC1D5B21876C94285958DE362928E71A379A1D550AF4FA28BF9",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r32-p006.png",
+      "physical_page": 6,
+      "bytes": 176809,
+      "sha256": "38AB36613C2358BFE1775F833E43235FE7A9EBDA47519E17830D2A84A6ACBD73",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r32-p231.png",
+      "physical_page": 231,
+      "bytes": 491379,
+      "sha256": "FC2E310515D21AEBDC24971D2E6A912A3C41364D2F68A742D66D1877C85CA127",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r32-p232.png",
+      "physical_page": 232,
+      "bytes": 478887,
+      "sha256": "D45F938139013F34C53622988198FD42F858F605719DDDD672B56FB72D2F9310",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r32-p233.png",
+      "physical_page": 233,
+      "bytes": 106127,
+      "sha256": "E24AA136785297E4F635274498DEFE5A88680449BFD1CB6A9D7DC13B28F9F239",
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    }
+  ],
+  "visual_findings": {
+    "status": "PASS",
+    "selected_physical_pages": [
+      1,
+      2,
+      6,
+      231,
+      232,
+      233
+    ],
+    "clipping_or_overlap": false,
+    "missing_or_tofu_glyphs": false,
+    "title_scope_and_doi_readable": true,
+    "contents_final_boundary_readable": true,
+    "new_proposition_five_items_and_proof_readable": true,
+    "equation_1_7_12_1_and_following_paragraph_readable": true,
+    "historical_page_break_note": "Physical pages232/233 split1.7.12 at source oldpageII18 by the declared historical-page rhythm. Final whitespace reflects the genuine current translation boundary; no completed translation was removed."
+  },
+  "limitations": [
+    "Plain-text extraction is not lossless for all legacy mathematical fonts. Eight Type1 resources lack ToUnicode; the recorded C0 mathematical-control counts differ between extractors. Formula authority remains source-synchronized TeX plus rendered PDF.",
+    "No source, front matter, metadata, package, Git or publication mutation was performed by this QA subtask."
+  ]
+}
