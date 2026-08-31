@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "version": "2026-08-29-r30",
+  "version": "2026-08-29-r31",
   "release_state": "local_qa_pass_zenodo_draft_github_pending",
   "engine": "XeLaTeX / MiKTeX with fixed source metadata",
   "strict_repository_passes": 6,
-  "strict_repository_build": "PASS: two independent three-pass cycles stabilize byte-identically on reader/00_EGA_ko_CUMULATIVE_READER.pdf 231 pages /1442048 bytes /B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0",
-  "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json v2 16310 bytes /2FEC8DA446A14CC6AC6AAF25BA66A52ED04FFDFDB02EA7816D0D5C0422278309;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;220 historical markers",
-  "translation_admission": "evidence/controls/R30_TRANSLATION_ADMISSION.json; canonical EGA II lines980-1047 / environments1.7.5-1.7.8 exact source, structure, terminology and Korean review PASS",
+  "strict_repository_build": "PASS: two independent three-pass cycles stabilize byte-identically on reader/00_EGA_ko_CUMULATIVE_READER.pdf 232 pages /1447261 bytes /0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+  "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json v2 16234 bytes /36B42FE2A408905A09A71181B1C9890F94DB401E2D1406E088BDD33A4B5EBDAE;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;221 historical markers",
+  "translation_admission": "evidence/controls/R31_TRANSLATION_ADMISSION.json; canonical EGA II lines1049-1116 / post-1.7.8 correspondence and environments1.7.9-1.7.10 exact source, structure, terminology and Korean review PASS",
   "build_logs": {
-    "repository": "evidence/build-r30.log and evidence/build.log each51893 bytes /19AF97DCD87DB96341C31C4CFDA13B11A02E5E7FB851DF0A064657BB7BDF97D3; output231 pages; hard diagnostics0"
+    "repository": "evidence/build-r31.log and evidence/build.log each51945 bytes /0323818B453807591C0220FA6F55B70B94853496E969EFBAD15AF20AAC6B2290; output232 pages; hard diagnostics0"
   },
-  "reader_container": "1442048 bytes /B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0;231 pages; A4; PDF1.7; unencrypted; no JavaScript or forms",
-  "rolling_extraction": "PASS: Poppler evidence/extract.txt715437 bytes /E27BB5C1042483F944DFE26F3AA490B58840C65898ABA6F8B36C5928AD9C058B with231 form feeds,394649 characters,147309 Hangul,U+FFFD0; pypdf evidence/extract-pypdf.txt678121 bytes /010DDFD54DCEDB60D0881CA50C49CA05F1072AC201169A686D54AC9CE5ABC196 with230 between-page separators,367745 characters,147309 Hangul,U+FFFD0; exact DOI22151007 once/prior DOI22143603 zero",
-  "semantic_extension": "PASS: canonical lines980-1047 2937 LF bytes /3F9BB1CFA4F0F73227BD179C2B00827C766233C03F8F395B9D69AA3342B92060 map to Korean target lines1000-1068 3052 LF bytes /34187146DD99C864116239C1FF86FD9B01985E57773880712EA4F5005BBD0447 with exact environment types, formulas, labels, references and arrows",
-  "internal_links": "PASS:1622 annotations;1618 internal GoTo links;267/267 unique internal references resolve against556 named destinations;4 well-formed HTTPS URI links",
-  "visual": "PASS:12 self-contained r30 selected-page renders at200dpi /1654x2339; no clipping, overlap, tofu, malformed diagram, broken formula or displaced marker",
+  "reader_container": "1447261 bytes /0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281;232 pages; A4; PDF1.7; unencrypted; no JavaScript or forms",
+  "rolling_extraction": "PASS: Poppler evidence/extract.txt717974 bytes /AB3920667B36278BE6185A0D0A58F4A122C0E50469BD07D327F61280ACCC9BF3 with396044 characters,147843 Hangul,U+FFFD0; pypdf evidence/extract-pypdf.txt680529 bytes /ACE6C704E22FEAEC9A91133A5CF39ABFF2E37B7AF286B8733C2AF7B4E1A1D47E with369057 characters,147843 Hangul,U+FFFD0",
+  "semantic_extension": "PASS: canonical lines1049-1116 3505 LF bytes /23EDE365C2DE799F6D07C43EC268616101C86F2C2F00F034DB4943551FD328D0 map to Korean target lines1069-1131 3536 LF bytes /456C2929A709D6D0EABF3271CDBC16284CF6233F51DF3EFA7645B88DAD7616E1 with exact environment types, formulas, labels, references and arrows",
+  "internal_links": "PASS:1630 annotations;1626/1626 internal GoTo links resolve against557 valid named destinations;4 well-formed HTTPS URI links",
+  "visual": "PASS:10 self-contained r31 selected-page renders at200dpi /1654x2339; no clipping, overlap, missing glyph, malformed formula, broken arrow or displaced marker",
   "source_archive": "PENDING",
   "final_evidence_archive_build": "PENDING",
   "outer_manifest": "PENDING",
-  "public_replay": "PENDING: Zenodo draft record22151007 is not a publication claim",
-  "result": "PASS_R30_LOCAL_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING"
+  "public_replay": "PENDING: Zenodo draft record22151448 is not a publication claim",
+  "result": "PASS_R31_LOCAL_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_PUBLICATION_PENDING"
 }

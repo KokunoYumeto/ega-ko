@@ -862,3 +862,31 @@ Zenodo 정확 DOI `10.5281/zenodo.22071490`의 익명 되읽기는 메타데이�
   Korean EGA concept `10.5281/zenodo.21921513`; publication and anonymous
   replay remain separate gates until their receipts exist. After closure,
   continue contiguously at canonical line 1049 without reopening sealed units.
+
+## 60. r31 EGA II 1.7.9--1.7.10 admission and local QA
+
+- The r31 unit is the complete post-1.7.8 correspondence paragraph and
+  environments 1.7.9--1.7.10 at canonical lines 1049--1116, 3,505 LF bytes /
+  `23EDE365C2DE799F6D07C43EC268616101C86F2C2F00F034DB4943551FD328D0`.
+  The admitted prefix is lines 1--1116, 49,912 LF bytes /
+  `B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5`.
+  Line 1117 is blank; line 1118 begins Proposition 1.7.11.
+- The Korean increment is `source/c2s1.tex` lines 1069--1131, 3,536 LF
+  bytes / `456C2929A709D6D0EABF3271CDBC16284CF6233F51DF3EFA7645B88DAD7616E1`;
+  both live mirrors are 50,714 bytes /
+  `48983F35AB77D62B36B903168785834D88418E296283286D2C5375A7FDC9A281`.
+  All nine source references are preserved: eight resolve internally and the
+  future untranslated II.8.3.3 reference remains explicit text rather than a
+  false unresolved hyperlink. Independent source, formula, Korean-register
+  and terminology reviews pass after one compound-orthography correction.
+- Two strict three-pass cycles reproduce the 232-page reader exactly at
+  1,447,261 bytes /
+  `0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281`.
+  Poppler and pypdf each extract 147,843 Hangul syllables with U+FFFD zero;
+  1,626/1,626 internal links resolve against 557 valid named destinations;
+  ten selected 200 dpi pages, including terminal 1.7.9--1.7.10, pass visual
+  QA. These tests establish exact tested properties, not perfection.
+- Exact DOI `10.5281/zenodo.22151448` is reserved in the stable Korean EGA
+  concept `10.5281/zenodo.21921513`. It remains a draft until deterministic
+  archives, publication and anonymous public-byte replay close. After that
+  transaction, continue contiguously at canonical line 1118.

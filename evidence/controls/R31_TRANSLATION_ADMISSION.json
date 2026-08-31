@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R31-COVERAGE",
+  "time": "2026-08-29T01:40:00+02:00",
+  "scope": "Korean EGA II post-1.7.8 correspondence and environments1.7.9-1.7.10 / canonical lines1049-1116",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1116",
+    "admitted_lf_bytes": 49912,
+    "admitted_sha256": "B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5",
+    "new_lines": "1049-1116",
+    "new_lf_bytes": 3505,
+    "new_sha256": "23EDE365C2DE799F6D07C43EC268616101C86F2C2F00F034DB4943551FD328D0",
+    "boundary_reason": "3471 characters including terminal LF, the nearest complete source boundary to approximately4000 characters; next complete boundary at line1140 is farther away",
+    "next": "line1118 proposition1.7.11; line1117 blank"
+  },
+  "target": {
+    "working_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 50714,
+    "lf_lines": 1131,
+    "sha256": "48983F35AB77D62B36B903168785834D88418E296283286D2C5375A7FDC9A281",
+    "new_target_lines": "1069-1131",
+    "new_target_lf_bytes": 3536,
+    "new_target_sha256": "456C2929A709D6D0EABF3271CDBC16284CF6233F51DF3EFA7645B88DAD7616E1",
+    "mirrors_exact": true
+  },
+  "source_parity": {
+    "closed_units": "complete post-1.7.8 correspondence paragraph plus env1.7.9 and env1.7.10",
+    "environments": "2/2 exact type and order",
+    "labels": "2/2 exact transformed order",
+    "references": "9/9 preserved in order:8 resolved hyperrefs plus1 explicit future textual reference to untranslated II8.3.3",
+    "displays": "0/0",
+    "oldpages": "1/1 II17",
+    "dollar_delimiters": "152/152",
+    "braces_and_math_delimiters": "PASS balanced",
+    "formula_objects_and_arrow_directions": "PASS",
+    "accidental_duplication": "PASS none"
+  },
+  "terminology": {
+    "bindings": [
+      "AGKO-T016",
+      "AGKO-T024",
+      "AGKO-T037",
+      "AGKO-T047",
+      "AGKO-T096",
+      "AGKO-T106",
+      "AGKO-T107",
+      "AGKO-T113",
+      "AGKO-T119",
+      "AGKO-T167",
+      "AGKO-T168",
+      "AGKO-T169",
+      "AGKO-T170"
+    ],
+    "typed_checks": [
+      "Universal-property arrows remain X-to-V(E), S(E)-to-A(X), and E-to-f-star O_X",
+      "f, p and j scopes remain distinct",
+      "j-star is sheaf inverse image while p-inverse is set or open inverse image",
+      "E_s is a stalk, E^s is the residue-field fibre quotient, and f-star E is the scalar-extended pullback",
+      "geometric point retains EGA's arbitrary field-valued historical definition with no separable-closure hypothesis",
+      "K-rational geometric fibre is the stated set of K-valued points, not an inserted fibre-prescheme isomorphism",
+      "the final finite-dimensional hypothesis is E^s OR K"
+    ],
+    "arxiv_role": "retained local arXiv witnesses constrain mathematical object and field/vector-space types only; they do not authorize Korean spelling or modernize the historical definition",
+    "result": "PASS"
+  },
+  "canon": {
+    "r13": "All accepted and rejected R13 loci precede this unit and remain preserved.",
+    "new_dispositions_in_lines_1049_1116": 0,
+    "result": "PASS"
+  },
+  "reviews": {
+    "source_boundary_and_structure": "PASS independent",
+    "korean_terminology_style": "PASS independent after one compound-orthography correction",
+    "semantic_formula_variance": "PASS independent"
+  },
+  "reader_qa": {
+    "reader": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 232,
+    "bytes": 1447261,
+    "sha256": "0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+    "strict_build": "PASS two independent three-pass cycles byte-identical",
+    "poppler_extraction": "717974 bytes / AB3920667B36278BE6185A0D0A58F4A122C0E50469BD07D327F61280ACCC9BF3 / 147843 Hangul / U+FFFD0",
+    "pypdf_extraction": "680529 bytes / ACE6C704E22FEAEC9A91133A5CF39ABFF2E37B7AF286B8733C2AF7B4E1A1D47E / 147843 Hangul / U+FFFD0",
+    "links": "PASS 557/557 named destinations valid;1626/1626 internal links resolved;4 expected HTTPS URI links",
+    "visual": "PASS pages1,2,3,6,7,13,229-232 at200dpi; no clipping, overlap, missing glyph, malformed formula or displaced marker"
+  },
+  "gates": {
+    "translation": "PASS",
+    "source_structure": "PASS",
+    "terminology_and_korean_review": "PASS",
+    "pdf_build": "PASS",
+    "extraction_links_visual": "PASS",
+    "archives": "PENDING",
+    "publication_and_public_replay": "PENDING"
+  },
+  "result": "PASS_TRANSLATION_SOURCE_STRUCTURE_TERMINOLOGY_BUILD_EXTRACTION_LINK_VISUAL; ARCHIVE_AND_RELEASE_GATES_PENDING"
+}
