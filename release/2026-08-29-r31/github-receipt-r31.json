@@ -1,0 +1,57 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "version": "2026-08-29-r31",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-29-r31",
+  "release_id": 379738890,
+  "tag": "ega-ko-2026-08-29-r31",
+  "tag_kind": "lightweight",
+  "release_commit": "9c2d8e01cf2b143170cabc9b13b10230c9977e16",
+  "release_tree": "c2d0738e9976b6df0fd4c1862390071851c6bbed",
+  "parent_commit": "37e3e87036fc25fc19e95cc5e41501a114f05482",
+  "tree_paths_verified": 457,
+  "zenodo_exact_doi": "10.5281/zenodo.22151448",
+  "release_assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1447261,
+      "sha256": "0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+      "asset_id": 537954710,
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 252838,
+      "sha256": "D7A26CF52DCAA95B648E4BCBBECEEBD2F6DABD079949DCBAA04200B3A7A7C33E",
+      "asset_id": 537954712,
+      "anonymous_download": "PASS"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 110436612,
+      "sha256": "CBBAC199902B0A6E814537AF5EA02222371897F3C151C1714ABD960D2E693E30",
+      "asset_id": 537954711,
+      "anonymous_download": "PASS",
+      "git_blob": false
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "9FB0C0C7AB7ECCAD4D4760CE66AA66DE4FCBD69D6445B479D72007DC5005CE21",
+      "asset_id": 537954713,
+      "anonymous_download": "PASS"
+    }
+  ],
+  "verification": {
+    "method": "unauthenticated public GitHub repository, ref, commit and tree API plus direct unauthenticated release downloads",
+    "tag_resolves_to_release_commit": true,
+    "packet_member_git_blobs": "PASS exact original byte counts and Git object hashes for all447 source/evidence members; no newline normalization",
+    "release_page_http": 200,
+    "asset_count": 4,
+    "asset_identity": "PASS filename, byte count and SHA-256 for all four freshly downloaded assets",
+    "public_access": "PASS",
+    "evidence_archive_is_release_asset_not_git_blob": true
+  },
+  "credentials_present": false,
+  "result": "PASS"
+}
