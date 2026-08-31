@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R33-COVERAGE",
+  "time": "2026-08-31T15:19:10+02:00",
+  "scope": "EGAII1.7.13-1.7.14",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "locator": "lines1-1292 through1.7.14; next1294;1293 blank",
+    "bytes": 58385,
+    "sha256": "FD1BF48DEEADAF27CEDA1E364240EFB5E4B2ACADE34A2A89BD1F3D108A5E0247",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "new_lines": "1195-1292",
+    "new_lf_bytes": 4897,
+    "new_sha256": "024612A794E5622ADE5C69C02E7101EF37091C731674AA8AC3C741376F6B263B",
+    "new_characters": 4834
+  },
+  "target": {
+    "path": "ega/II/c2s1.tex",
+    "locator": "lines1-1303; appended1208-1303",
+    "bytes": 59176,
+    "sha256": "4D5E804AE92FD0DD14C2B1B7D32C1F962827FE11CDB2A5689DF13932C0A84746",
+    "appended_bytes": 4871,
+    "appended_sha256": "F8EBAD63CAF69594D0A00BD33FADB92B6A0AA30F843BF5F4BACAAE4ED2421DF8"
+  },
+  "structure": {
+    "environments": 2,
+    "labels": 2,
+    "references": 4,
+    "inline_math": 93,
+    "displays": 3,
+    "oldpage": "II19",
+    "result": "PASS normalized formulas, display order and structural parity"
+  },
+  "reviews": {
+    "source": "PASS fresh independent",
+    "korean": "PASS fresh independent",
+    "terminology": "AGKO-TERM-E166; T171/T172 provisional source-defined compounds, no external lexical lock"
+  },
+  "gates": {
+    "translation": "PASS",
+    "build": "PENDING",
+    "extraction_links_visual": "PENDING",
+    "package": "PENDING",
+    "publication": "PENDING"
+  },
+  "next": "canonical1294 proposition1.7.15;1293 blank"
+}

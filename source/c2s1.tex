@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-1193, 53487 LF UTF-8 bytes, SHA-256 7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-1292, 58385 LF UTF-8 bytes, SHA-256 FD1BF48DEEADAF27CEDA1E364240EFB5E4B2ACADE34A2A89BD1F3D108A5E0247.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -1203,4 +1203,101 @@ $\mathbf{V}(\mathcal{O}_S)=S[T]$로도 쓰며, 따라서 다음 공식을 얻는
 $S$-단면의 싹으로 이루어진 층과 $\mathcal{O}_S$의 동일시는 여기에서
 (\hyperref[II.1.7.9-ko]{1.7.9})의 특수한 경우로서 더 일반적인 맥락
 안에서 다시 얻어진다.
+\end{env}
+
+\begin{env}[1.7.13]
+\label{II.1.7.13-ko}
+임의의 $S$-준스킴 $X$에 대하여,
+(\hyperref[II.1.7.8-ko]{1.7.8})에서
+$\operatorname{Hom}_S(X,S[T])$가
+$\operatorname{Hom}_{\mathcal{O}_S}(\mathcal{O}_S,\mathcal{A}(X))$와
+표준적으로 동일시됨을 보았다. 이 집합은
+$\Gamma(S,\mathcal{A}(X))$와 표준적으로 동형이므로 환 구조가 주어진다.
+또한 임의의 $S$-사상 $h:X\to Y$에는 이 환 구조들에 관한 사상
+$\Gamma(\mathcal{A}(h)):\Gamma(S,\mathcal{A}(Y))
+\to\Gamma(S,\mathcal{A}(X))$가 대응한다
+(\hyperref[II.1.1.2-ko]{1.1.2}).
+$\operatorname{Hom}_S(X,S[T])$에 이와 같이 정의된 환 구조를 주면,
+따라서 $\operatorname{Hom}_S(X,S[T])$를 $S$-준스킴의 범주에서 환의
+범주로 가는 \emph{$X$에 관한 반변 함자}로 볼 수 있다.
+한편 $\operatorname{Hom}_S(X,\mathbf{V}(\mathcal{E}))$도 마찬가지로
+$\operatorname{Hom}_{\mathcal{O}_S}(\mathcal{E},\mathcal{A}(X))$와
+동일시된다(여기서는 $\mathcal{A}(X)$를
+\emph{$\mathcal{O}_S$-가군}으로 본다). 따라서 여기에 환
+$\operatorname{Hom}_S(X,S[T])$ 위의 \emph{가군} 구조를 표준적으로
+줄 수 있으며, 위와 마찬가지로 쌍
+\[
+  \bigl(\operatorname{Hom}_S(X,S[T]),
+  \operatorname{Hom}_S(X,\mathbf{V}(\mathcal{E}))\bigr)
+\]
+은 $X$에 관한 반변 함자임을 알 수 있다. 이 함자는 환 $A$와
+$A$-가군 $M$으로 이루어진 쌍 $(A,M)$을 대상으로 하고 디-준동형들을
+사상으로 하는 범주에 값을 갖는다.
+
+이 사실들을 $S[T]$가 \emph{$S$ 위의 환 스킴}이고
+$\mathbf{V}(\mathcal{E})$가 $S$ 위의 환 스킴 $S[T]$ 위의
+\emph{$S$ 위의 가군 스킴}이라는 말로 해석하겠다
+(0장, \textsection8 참조).
+\end{env}
+
+\begin{env}[1.7.14]
+\label{II.1.7.14-ko}
+$S$-스킴 $\mathbf{V}(\mathcal{E})$ 위에 정의된 $S$ 위의 가군 스킴
+구조를 사용하여 $\mathcal{O}_S$-가군 $\mathcal{E}$를 유일한 동형을
+제외하고 복원할 수 있음을 보이겠다. 이를 위해 $\mathcal{E}$가 이
+구조를 사용하여 정의되는
+$\mathbf{S}(\mathcal{E})=\mathcal{A}(\mathbf{V}(\mathcal{E}))$의 한
+부분-$\mathcal{O}_S$-가군과 표준적으로 동형임을 보이겠다. 실제로
+(\hyperref[II.1.7.4-ko]{1.7.4})에 따라
+\emph{$\mathcal{O}_S$-대수} 준동형들의 집합
+$\operatorname{Hom}_{\mathcal{O}_S}(\mathbf{S}(\mathcal{E}),
+\mathcal{A}(X))$는 \emph{$\mathcal{O}_S$-가군} 준동형들의 집합
+$\operatorname{Hom}_{\mathcal{O}_S}(\mathcal{E},\mathcal{A}(X))$와
+표준적으로 동일시된다. $h$, $h'$을 이 뒤의 집합의 두 원소,
+$s_i$ ($1\leq i\leq n$)를 열린집합 $U\subset S$ 위의
+$\mathcal{E}$의 단면들, $t$를 $U$ 위의 $\mathcal{A}(X)$의 단면이라
+하면, 정의에 따라
+\[
+  (h+h')(s_1s_2\cdots s_n)
+  =\prod_{i=1}^n\bigl(h(s_i)+h'(s_i)\bigr)
+\]
+이고
+\[
+  (t.h)(s_1s_2\cdots s_n)=t^n\prod_{i=1}^n h(s_i).
+\]
+
+이제 $z$가 $U$ 위의 $\mathbf{S}(\mathcal{E})$의 단면이면,
+$h\mapsto h(z)$는
+$\operatorname{Hom}_S(X,\mathbf{V}(\mathcal{E}))
+=\operatorname{Hom}_{\mathcal{O}_S}(\mathbf{S}(\mathcal{E}),
+\mathcal{A}(X))$에서 $\Gamma(U,\mathcal{A}(X))$로 가는 사상이다.
+이제 다음을
+\oldpage[II]{19}
+보이겠다. $\mathcal{E}$는 다음 성질을 갖는
+$\mathbf{S}(\mathcal{E})$의 부분가군과 동일시된다.
+\emph{모든 열린집합 $U\subset S$, 이 부분-$\mathcal{O}_S$-가군의
+$U$ 위의 모든 단면 $z$, 모든 $S$-준스킴 $X$에 대하여,
+$\operatorname{Hom}_{\mathcal{O}_S|U}(\mathbf{S}(\mathcal{E})|U,
+\mathcal{A}(X)|U)$에서 $\Gamma(U,\mathcal{A}(X))$로 가는 사상
+$h\mapsto h(z)$가 $\Gamma(U,\mathcal{A}(X))$-가군 준동형이다.}
+
+실제로 $\mathcal{E}$가 이 성질을 갖는다는 것은 곧바로 알 수 있다.
+그 역을 증명하려면, $S=\operatorname{Spec}(A)$,
+$\mathcal{E}=\widetilde{M}$일 때 $S$ 위의
+$\mathbf{S}(\mathcal{E})$의 단면 $z$가 ($U=S$에 대하여) 위의
+성질을 가지면 반드시 $\mathcal{E}$의 단면임을 증명하는 것으로
+충분하다. 이때 $z=\sum_{n=0}^{\infty}z_n$이고
+$z_n\in\mathbf{S}_n(M)$이며, $n\ne1$이면 $z_n=0$임을 보이면 된다.
+$B=\mathbf{S}(M)$으로 놓고 $X$로 준스킴
+$\operatorname{Spec}(B[T])$를 택하자. 여기서 $T$는 부정원이다.
+집합
+$\operatorname{Hom}_{\mathcal{O}_S}(\mathbf{S}(\mathcal{E}),
+\mathcal{A}(X))$는 환 준동형 $h:B\to B[T]$들의 집합과 동일시된다
+(\hyperref[I.1.3.13-ko]{I, 1.3.13}). 위에서 본 바에 따라
+$(T.h)(z)=\sum_{n=0}^{\infty}T^nh(z_n)$이며, $z$에 관한 가정은 모든
+준동형 $h$에 대하여
+$\sum_{n=0}^{\infty}T^nh(z_n)=T.\sum_{n=0}^{\infty}h(z_n)$임을
+뜻한다. 특히 $h$로 표준 포함 사상을 택하면
+$\sum_{n=0}^{\infty}T^nz_n=T.\sum_{n=0}^{\infty}z_n$을 얻으며,
+여기서 실제로 $n\ne1$이면 $z_n=0$이라는 결론이 따른다.
 \end{env}
