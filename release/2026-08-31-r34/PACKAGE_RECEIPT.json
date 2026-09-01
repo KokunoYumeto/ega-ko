@@ -1,0 +1,172 @@
+{
+  "schema": "ag-ko-package-receipt-v3",
+  "version": "2026-08-31-r34",
+  "exact_doi": "10.5281/zenodo.22209381",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "corpus": "EGA",
+    "included_volumes": [
+      "EGA 0_I",
+      "EGA I",
+      "EGA II (front matter/programme and main text through2.1.1)"
+    ],
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1358 through2.1.1",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
+    "historical_source_pages": 224,
+    "historical_page_ranges": [
+      "EGA I introduction5-8",
+      "EGA 0_I11-78",
+      "EGA I Chapter I79-214",
+      "EGA II5-20"
+    ],
+    "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
+  },
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1462350,
+      "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8",
+      "role": "front cumulative reader artifact",
+      "pages": 235
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 255608,
+      "sha256": "86974E2A413B7404D2035F2BA4EF5FF37B8F56AD559A9A2DE344A6CA19978944",
+      "role": "deterministic editable-source archive",
+      "entries": 27,
+      "files": 25,
+      "directories": 2,
+      "uncompressed_file_bytes": 998873,
+      "verification": "PASS names, ordering, fixed metadata, compression9, CRC, sizes and decompressed SHA-256 in independent A/B cycles",
+      "inventory_bytes": 4362,
+      "inventory_sha256": "A7E45C4C34458CDCE0EE3FA0CB4BC802D9E46D9BD711869CE755319EB529453D"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 115009496,
+      "sha256": "4C2080FC44E1FA8EA45EE74CBA210D2A02809199BA8EDB0F3B499E5329A39099",
+      "role": "deterministic evidence archive",
+      "entries": 461,
+      "files": 452,
+      "directories": 9,
+      "uncompressed_file_bytes": 132778122,
+      "verification": "PASS names, ordering, fixed metadata, compression9, CRC, sizes and decompressed SHA-256 in independent A/B cycles",
+      "inventory_bytes": 77932,
+      "inventory_sha256": "59CE5926F6ECE67E79AC4EAF5A3817D61A969AF484036D3E260CC9AA55E69767"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "5DB3C106DC321377D050A10701DF17197615A8617FB02BB72685FF16CF6CFC6F",
+      "role": "outer SHA-256 manifest",
+      "listed_artifacts": 3,
+      "verification": "PASS"
+    }
+  ],
+  "total_publication_bytes": 116727797,
+  "source_archive_A_B_byte_identical": true,
+  "evidence_archive_A_B_byte_identical": true,
+  "reader_qa": {
+    "strict_build": {
+      "passes": 6,
+      "independent_three_pass_cycles": 2,
+      "repeat_pdf_bytes_identical": true,
+      "logs": {
+        "paths": [
+          "evidence/build-r34.log",
+          "evidence/build.log"
+        ],
+        "bytes": 51812,
+        "sha256": "061D7745E8266C4E0DB6CD7B7226611E63978C2B4C6C6DC39D6C7D9C3383CC73",
+        "sanitization": "Exact repository roots replaced by[KOREAN_REPO_ROOT]; local profile roots replaced by[USER_PROFILE]; public derivatives normalized to LF. Not raw-log byte-identical copies. Original raw retained only at build/out/main.log; no historical log edited."
+      },
+      "result": "PASS strict live canonical BUILD.ps1; two independent three-pass cycles byte-identical; hard diagnostics0"
+    },
+    "extraction": {
+      "poppler": {
+        "path": "evidence/extract.txt",
+        "bytes": 714079,
+        "sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98"
+      },
+      "pypdf": {
+        "path": "evidence/extract-pypdf.txt",
+        "bytes": 689260,
+        "sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C"
+      },
+      "each_hangul": 149669,
+      "each_replacement_characters": 0,
+      "current_exact_doi_each": 1,
+      "prior_exact_doi_each": 0,
+      "limitations": "Plain-text extraction is not lossless for eight inherited embedded Type1 mathematical/diagram resources that lack ToUnicode. Formula authority remains the source-synchronized TeX plus the rendered PDF; the isolated Poppler 0_I page70 token limitation is documented in R34_PDF_QA.json."
+    },
+    "links": {
+      "annotations": 1650,
+      "internal": 1646,
+      "resolved_internal": 1646,
+      "external_uris": 4,
+      "named_destinations": 563,
+      "bookmarks": 132,
+      "result": "PASS"
+    },
+    "visual": "PASS on the six inspected pages: no clipping, overlap, tofu or malformed formula; new1.7.15, Chapter2, section2.1, graded notation and prospective2.1.2 reference are readable",
+    "bound_records": {
+      "QA_STATE.json": {
+        "bytes": 3902,
+        "sha256": "82270CCDAB60F4016F7287F415AA2A3682BE2A4FDA7C2DCE93E293511B7C715A"
+      },
+      "BUILD_RECEIPT.json": {
+        "bytes": 3139,
+        "sha256": "307731B9C5D4464E33A20655ACBF0FF54FF512459F072EAF3FA6E91551C450E1"
+      },
+      "VISUAL_QA.json": {
+        "bytes": 2279,
+        "sha256": "BC999619CE42A74A3CAEB903BFCA4C2D146BB8B1CEAA94CCF2AD39C76715C540"
+      }
+    },
+    "r34_pdf_control": {
+      "path": "evidence/controls/R34_PDF_QA.json",
+      "bytes": 12190,
+      "sha256": "DB71A8BF354AC382D7EAA926C39E34C8F5781E092A69033741D16049AA4763D2"
+    }
+  },
+  "internal_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "bytes": 48514,
+    "sha256": "E4714575DF1099A363600149855CD14C8C84E34B301B3185C696B88DF6A20733",
+    "entries": 478,
+    "verification": "PASS independent path, byte-count and SHA-256 replay; manifest excludes itself and all package outputs"
+  },
+  "metadata": {
+    "bytes": 5226,
+    "sha256": "AAC14C188D9644ACF109D84879E802DF7759F9229E3EFFDE9FEDF01829702BD5",
+    "description_characters": 4232,
+    "forbidden_umbrella_mentions": 0,
+    "creators": 2,
+    "contributors": 1,
+    "sole_contributor": "AI typesetting & translation",
+    "external_links": [
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://github.com/KokunoYumeto/ega-ko"
+    ]
+  },
+  "source_inventory_sha256": "A7E45C4C34458CDCE0EE3FA0CB4BC802D9E46D9BD711869CE755319EB529453D",
+  "evidence_inventory_sha256": "59CE5926F6ECE67E79AC4EAF5A3817D61A969AF484036D3E260CC9AA55E69767",
+  "privacy_credential_check": {
+    "files_checked": 478,
+    "decodable_text_members_checked": 166,
+    "bytes_checked": 135239345,
+    "matches": 0,
+    "scope": "Every prospective source/evidence member and the reader: relative member names; full decoded UTF-8/BOM UTF-16/BOM UTF-32 text; raw UTF-8 credential assignments/prefixes; and raw UTF-8/UTF-16/UTF-32 account-identifier encodings. Private needles and secret values are not recorded.",
+    "result": "PASS"
+  },
+  "top_level_release_aliases": "pending at package freeze; post-commit PACKAGE_BUILD_RESULT.json must prove all four aliases exact",
+  "snapshot_semantics": "This receipt binds the local package at freeze time; later portable, repository and publication receipts supersede its operational-status fields without changing these package identities.",
+  "publication_status": "as of package freeze: local package only; draft and repository state are not publication claims",
+  "portable_replay": "as of package freeze: not yet run; separate PORTABLE_BUILD_REPLAY.json is required",
+  "result": "PASS_LOCAL_PACKAGE"
+}

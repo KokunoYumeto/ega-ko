@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "control_id": "AGKO-EGA2-S1-R34-COVERAGE",
+  "time": "2026-08-31T16:25:26.3333197+02:00",
+  "scope": "EGAII1.7.15 through2.1.1",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "locator": "lines1-1358 through2.1.1; next1360;1359 blank",
+    "bytes": 61676,
+    "sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118",
+    "whole_bytes": 820505,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "new_lines": "1294-1358",
+    "new_lf_bytes": 3290,
+    "new_sha256": "C507C1A7E6F3B94D1DF0320A7B7A6965EDAEC71389A05FB8B4DD7CAB27B10A7D",
+    "new_characters": 3198
+  },
+  "candidate": {
+    "path": "candidates/r34-c2s1-continuation.tex",
+    "original_bytes": 3277,
+    "original_sha256": "1BE303E21446CD7E9003CBE89377259B4C50C38552CACCCC12B7C4D456A7F525",
+    "integration_change": "One source-faithful future reference changed from hyperref to existing agref fallback; visible2.1.2 retained, no destination fabricated.",
+    "integrated_bytes": 3272,
+    "integrated_sha256": "3B2BCB905ABEE07E4B11209D7AE9D326CAAFABB038E8A35444F89129A2691AE4"
+  },
+  "target": {
+    "path": "ega/II/c2s1.tex",
+    "locator": "lines1-1368; appended1305-1368",
+    "bytes": 62449,
+    "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885"
+  },
+  "structure": {
+    "environments": 3,
+    "labels": 4,
+    "references": 4,
+    "inline_math": 84,
+    "displays": 0,
+    "oldpage": "II20",
+    "result": "PASS exact normalized formula multiset, labels, ordered references, environment and page-marker parity"
+  },
+  "reviews": {
+    "source": "PASS independent candidate review and root whole-slice replay",
+    "korean": "PASS independent candidate review and root semantic preview",
+    "terminology": "ExistingT006/T035/T127/T130/T159; bounded evidence follow-up running, no new lexical lock required"
+  },
+  "manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16256,
+    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A"
+  },
+  "front": {
+    "path": "source/front.tex",
+    "bytes": 4172,
+    "sha256": "CC8DB83844ECDFC050130D6B29D59422F0BE55F22321F64EA34330E7D5F7A3E1",
+    "predicted_pages": 235
+  },
+  "draft": {
+    "record_id": 22209381,
+    "exact_doi": "10.5281/zenodo.22209381",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "status": "reserved_unpublished"
+  },
+  "gates": {
+    "translation": "PASS",
+    "build": "PENDING",
+    "extraction_links_visual": "PENDING",
+    "package": "PENDING",
+    "publication": "PENDING"
+  },
+  "next": "canonical1360 notation2.1.2;1359 blank"
+}

@@ -1,30 +1,30 @@
 {
   "schema_version": 3,
-  "version": "2026-08-31-r33",
+  "version": "2026-08-31-r34",
   "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.14 at canonical lines1-1292. Full EGA II and EGA corpus remain incomplete.",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through2.1.1 at canonical lines1-1358. Full EGA II and EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 234,
-    "bytes": 1457536,
-    "sha256": "1115FEBE4B30752A1D86D0C4C5336E05927BFF289333C5D7077E714BE12A4103"
+    "pages": 235,
+    "bytes": 1462350,
+    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16268,
-    "sha256": "BE3D4672B761E042252DEBFCEBAF6759BD6B3ED06CE459934375F26D6549D212",
+    "bytes": 16256,
+    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 223
+    "historical_markers": 224
   },
-  "exact_doi": "10.5281/zenodo.22208685",
+  "exact_doi": "10.5281/zenodo.22209381",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r32 /10.5281/zenodo.22207983; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1294 proposition1.7.15;1293 blank",
-  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r33/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r33.json and github-receipt-r33.json, never inferred from this snapshot.",
+  "prior_public_checkpoint": "r33 /10.5281/zenodo.22208685; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1360 notation2.1.2;1359 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot.",
   "sequence": [
     "EGA I complete",
     "EGA II active and incomplete",
@@ -33,51 +33,52 @@
   ],
   "sga": "outside active scope",
   "qa": {
-    "translation": "PASS independent source, Korean register, formula and structural review",
-    "build": "PASS strict live canonical BUILD.ps1; two three-pass cycles byte-identical; hard diagnostics0",
+    "translation": "PASS exact canonical-source, Korean-register, formula and structural review; AGKO-TERM-E167 records the independent r34 terminology decision with no new lexical lock",
+    "build": "PASS strict live canonical BUILD.ps1; two independent three-pass cycles byte-identical; hard diagnostics0",
     "extraction": {
       "poppler": {
         "path": "evidence/extract.txt",
-        "bytes": 711168,
-        "sha256": "2188F17976B47B20E264C3C31ECEDF3C31F6F04B0C799F457E6E6BF0A93EE21F"
+        "bytes": 714079,
+        "sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98"
       },
       "pypdf": {
         "path": "evidence/extract-pypdf.txt",
-        "bytes": 686418,
-        "sha256": "8BE38707BD224F1E9B0D2F5C9428E88BF107BB5355C5B9D0C2275B841AB92643"
+        "bytes": 689260,
+        "sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C"
       },
-      "each_hangul": 149008,
+      "each_hangul": 149669,
       "each_replacement_characters": 0,
       "current_exact_doi_each": 1,
       "prior_exact_doi_each": 0,
-      "limitations": "Plain-text extraction is not lossless for all legacy mathematical fonts: recorded Type1 resources lack ToUnicode and C0 math-control counts differ between extractors. Formula authority remains source-synchronized TeX plus rendered PDF."
+      "limitations": "Plain-text extraction is not lossless for eight inherited embedded Type1 mathematical/diagram resources that lack ToUnicode. Formula authority remains the source-synchronized TeX plus the rendered PDF; the isolated Poppler 0_I page70 token limitation is documented in R34_PDF_QA.json."
     },
     "links": {
-      "annotations": 1645,
-      "internal": 1641,
-      "resolved_internal": 1641,
+      "annotations": 1650,
+      "internal": 1646,
+      "resolved_internal": 1646,
       "external_uris": 4,
-      "named_destinations": 560,
-      "bookmarks": 130,
+      "named_destinations": 563,
+      "bookmarks": 132,
       "result": "PASS"
     },
-    "visual": "PASS selected pages1,2,6,232,233,234 at200dpi; root independently inspected2,233,234",
-    "detailed_control": "evidence/controls/R33_PDF_QA.json",
+    "fonts": "PASS all35 resources embedded; all Hangul Type0 resources have ToUnicode; eight inherited Type1 math/diagram resources without ToUnicode are explicitly limited",
+    "visual": "PASS selected pages1,2,6,233,234,235 at200dpi; root independently inspected2,233,234,235",
+    "detailed_control": "evidence/controls/R34_PDF_QA.json",
     "human_certification": "not claimed or required"
   },
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
     "whole_bytes": 820505,
     "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-    "admitted_lines": "1-1292",
-    "admitted_bytes": 58385,
-    "admitted_sha256": "FD1BF48DEEADAF27CEDA1E364240EFB5E4B2ACADE34A2A89BD1F3D108A5E0247"
+    "admitted_lines": "1-1358",
+    "admitted_bytes": 61676,
+    "admitted_sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118"
   },
   "target": {
     "path": "source/c2s1.tex",
-    "bytes": 59176,
-    "sha256": "4D5E804AE92FD0DD14C2B1B7D32C1F962827FE11CDB2A5689DF13932C0A84746",
-    "lf_lines": 1303
+    "bytes": 62449,
+    "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885",
+    "lf_lines": 1368
   },
-  "validation_checkpoint": "evidence/controls/R33_VALIDATION_CHECKPOINT.json"
+  "validation_checkpoint": "evidence/controls/R34_VALIDATION_CHECKPOINT.json"
 }

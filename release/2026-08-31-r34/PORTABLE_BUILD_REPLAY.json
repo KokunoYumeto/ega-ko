@@ -1,0 +1,167 @@
+{
+  "schema": "ag-ko-portable-replay-v1",
+  "version": "2026-08-31-r34",
+  "exact_doi": "10.5281/zenodo.22209381",
+  "source_archive": {
+    "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 255608,
+    "sha256": "86974E2A413B7404D2035F2BA4EF5FF37B8F56AD559A9A2DE344A6CA19978944",
+    "entries_verified": 27
+  },
+  "build": {
+    "invocations": 1,
+    "internal_xelatex_passes": 6,
+    "pass_count_proof": {
+      "bytes": 12107,
+      "sha256": "676F9D1820660F36192676F0F3C3071E30052AC97588539FDC07F8F9A64F50A0",
+      "three_pass_loops": 2,
+      "declared_xelatex_invocations": 6,
+      "failure_semantics": "each loop invocation throws on nonzero exit; second three-pass result must equal first cycle PDF bytes",
+      "result": "PASS_EXACT_BUILD_SCRIPT_CONTROL_FLOW"
+    },
+    "terminal_completion_proof": {
+      "stdout_terminal_record": "PASS 1462349 bytes SHA-256 CE65DF07638B89307536FB42740CC563EB802930EC1C6E1653BAC85C7A439C34",
+      "portable_reader": {
+        "bytes": 1462349,
+        "sha256": "CE65DF07638B89307536FB42740CC563EB802930EC1C6E1653BAC85C7A439C34"
+      },
+      "result": "PASS"
+    },
+    "attempt_record": {
+      "bytes": 1365,
+      "sha256": "1C03580741E38D99C594A7C33E253364ABB33673914D66F595381FD4B5065950"
+    },
+    "resumed_postbuild_without_new_invocation": false,
+    "timeout_seconds": 1800,
+    "timed_out": false,
+    "live_authority_environment": "omitted; all portable target hashes and declared inputs enforced",
+    "returncode": 0,
+    "stdout": {
+      "bytes": 93,
+      "sha256": "3A66D20340F6CB063216418EC75415EE2CB76F91A7186224BDC1284CC78287BD"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "log": {
+      "bytes": 52183,
+      "sha256": "AB277AD78CB68046ADB3F1E0E7B4E60C611F6720C8B5B1A8E25B6BBDC3B213A0"
+    },
+    "result": "PASS"
+  },
+  "strict_reader": {
+    "bytes": 1462350,
+    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8",
+    "pages": 235
+  },
+  "portable_reader": {
+    "bytes": 1462349,
+    "sha256": "CE65DF07638B89307536FB42740CC563EB802930EC1C6E1653BAC85C7A439C34",
+    "pages": 235
+  },
+  "pdf_byte_identical": false,
+  "single_id_sequence_normalized_byte_identical": false,
+  "observed_id_sequence_counts": {
+    "strict": 1,
+    "portable": 1
+  },
+  "container_delta": "Strict and portable PDF containers differ beyond the narrowly attempted normalization of exactly one observed /ID byte sequence per file. The delta remains unadjudicated; exact same-tool Poppler and pypdf extraction equality is proven, but no PDF byte-equality or path-only claim is made.",
+  "extraction": {
+    "poppler": {
+      "bytes": 714079,
+      "sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98",
+      "strict_portable_byte_identical": true,
+      "hangul": 149669,
+      "replacement_characters": 0,
+      "relation_to_frozen_qa": {
+        "method": "The freshly compared strict/portable poppler serialization exactly equals the frozen QA extraction byte-for-byte.",
+        "frozen_bytes": 714079,
+        "frozen_sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98",
+        "result": "PASS"
+      }
+    },
+    "pypdf": {
+      "bytes": 689260,
+      "sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C",
+      "strict_portable_byte_identical": true,
+      "hangul": 149669,
+      "replacement_characters": 0,
+      "relation_to_frozen_qa": {
+        "method": "The freshly compared strict/portable pypdf serialization exactly equals the frozen QA extraction byte-for-byte.",
+        "frozen_bytes": 689260,
+        "frozen_sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C",
+        "result": "PASS"
+      }
+    }
+  },
+  "extraction_runtime": {
+    "python_version": "3.12.13",
+    "pypdf_version": "6.10.0",
+    "pypdf_page_join": "\\n\\f\\n with one final LF; CRLF/CR normalized to LF",
+    "poppler_executable": {
+      "bytes": 406016,
+      "sha256": "6F1F7D8DB783BD2FAC74043DCA400A53F42D0A03C4E7F81B2C51ED436C13FAEB"
+    },
+    "poppler_timeout_seconds_per_file": 300,
+    "poppler_options": [
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "input.pdf",
+      "-"
+    ],
+    "method": "Both frozen strict reader and portable reader freshly extracted by identical runtimes/options; no comparison across engines or pre-existing extraction conventions."
+  },
+  "visual_qa": "Portable raster bytes on pages1,234,235 exactly reproduce their already visually inspected strict-reader counterparts in the immutable evidence archive. No new full-document visual rereview is claimed.",
+  "result": "PASS_PORTABLE_BUILD_EXACT_TEXT_AND_SELECTED_RENDER_REPLAY",
+  "render_replay": {
+    "comparisons": 3,
+    "dpi": 200,
+    "renderer": {
+      "bytes": 50176,
+      "sha256": "742CBBD9A00931AD16C6618410BC40471375D639A45C61C1D86F3DCFC54B6388"
+    },
+    "timeout_seconds_per_page": 180,
+    "command": "pdftoppm -f N -l N -singlefile -r 200 -png portable-reader.pdf portable-render-r34-pNNN",
+    "reference": {
+      "archive": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 115009496,
+      "sha256": "4C2080FC44E1FA8EA45EE74CBA210D2A02809199BA8EDB0F3B499E5329A39099",
+      "qa_control_entry": "controls/R34_PDF_QA.json",
+      "qa_control_bytes": 12190,
+      "qa_control_sha256": "DB71A8BF354AC382D7EAA926C39E34C8F5781E092A69033741D16049AA4763D2"
+    },
+    "pages": [
+      {
+        "physical_page": 1,
+        "portable_stage_artifact": "portable-render-r34-p001.png",
+        "frozen_evidence_entry": "render/r34-p001.png",
+        "bytes": 91215,
+        "sha256": "F445A63094653EC3A5652B998DFCD6185455E8B89D691B67977339FCF2FB2EBF",
+        "byte_identical": true,
+        "execution": "rendered in this invocation"
+      },
+      {
+        "physical_page": 234,
+        "portable_stage_artifact": "portable-render-r34-p234.png",
+        "frozen_evidence_entry": "render/r34-p234.png",
+        "bytes": 408407,
+        "sha256": "60BCECB725089948CA47533C39746377C6C1B5CDE0F9AC74EE72E2EBDA8817AA",
+        "byte_identical": true,
+        "execution": "rendered in this invocation"
+      },
+      {
+        "physical_page": 235,
+        "portable_stage_artifact": "portable-render-r34-p235.png",
+        "frozen_evidence_entry": "render/r34-p235.png",
+        "bytes": 173610,
+        "sha256": "788125F142B7EAAC0EC1C4CA411528A9D111B7DF427BAA3A65961EE76B9776B0",
+        "byte_identical": true,
+        "execution": "rendered in this invocation"
+      }
+    ],
+    "result": "PASS_EXACT_PORTABLE_FROZEN_RASTER_IDENTITY_3_OF_3"
+  }
+}

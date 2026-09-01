@@ -1,48 +1,48 @@
 {
   "schema_version": 3,
-  "version": "2026-08-31-r33",
+  "version": "2026-08-31-r34",
   "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through1.7.14 at canonical lines1-1292. Full EGA II and EGA corpus remain incomplete.",
+  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through2.1.1 at canonical lines1-1358. Full EGA II and EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 234,
-    "bytes": 1457536,
-    "sha256": "1115FEBE4B30752A1D86D0C4C5336E05927BFF289333C5D7077E714BE12A4103"
+    "pages": 235,
+    "bytes": 1462350,
+    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16268,
-    "sha256": "BE3D4672B761E042252DEBFCEBAF6759BD6B3ED06CE459934375F26D6549D212",
+    "bytes": 16256,
+    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 223
+    "historical_markers": 224
   },
-  "exact_doi": "10.5281/zenodo.22208685",
+  "exact_doi": "10.5281/zenodo.22209381",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r32 /10.5281/zenodo.22207983; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1294 proposition1.7.15;1293 blank",
-  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside this frozen package in release/2026-08-31-r33/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r33.json and github-receipt-r33.json, never inferred from this snapshot.",
+  "prior_public_checkpoint": "r33 /10.5281/zenodo.22208685; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1360 notation2.1.2;1359 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot.",
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
     "whole_bytes": 820505,
     "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-    "admitted_lines": "1-1292",
-    "admitted_bytes": 58385,
-    "admitted_sha256": "FD1BF48DEEADAF27CEDA1E364240EFB5E4B2ACADE34A2A89BD1F3D108A5E0247"
+    "admitted_lines": "1-1358",
+    "admitted_bytes": 61676,
+    "admitted_sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118"
   },
   "target": {
     "path": "source/c2s1.tex",
-    "bytes": 59176,
-    "sha256": "4D5E804AE92FD0DD14C2B1B7D32C1F962827FE11CDB2A5689DF13932C0A84746",
-    "lf_lines": 1303
+    "bytes": 62449,
+    "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885",
+    "lf_lines": 1368
   },
   "canonical_driver": "source/EGA_FR.tex3313B/D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086",
-  "translation_admission": "evidence/controls/R33_TRANSLATION_ADMISSION.json",
-  "new_unit": "canonical1195-1292 /4897LF bytes /024612A794E5622ADE5C69C02E7101EF37091C731674AA8AC3C741376F6B263B",
+  "translation_admission": "evidence/controls/R34_TRANSLATION_ADMISSION.json",
+  "new_unit": "canonical1294-1358 /3290LF bytes /C507C1A7E6F3B94D1DF0320A7B7A6965EDAEC71389A05FB8B4DD7CAB27B10A7D",
   "source_defects_in_new_unit": "None detected by independent source/formula review",
-  "later_ega": "Untranslated ega3/ega3-1-fr.tex fingerprint rebound to627914B/3490FCCC03237D47EA4A8DEC0602578B43FBF5ED6087338119A0B11E738E045A. No EGA III source-completion or translation inference.",
-  "validation_checkpoint": "evidence/controls/R33_VALIDATION_CHECKPOINT.json"
+  "later_ega": "Untranslated ega3/ega3-1-fr.tex current inventory fingerprint627906B/01930B20A4D85534811A2F5B065D92FD5A7C043C93B6245E4F762955384619DB. Inventory binding only: no EGA III source-completion or translation inference.",
+  "validation_checkpoint": "evidence/controls/R34_VALIDATION_CHECKPOINT.json"
 }

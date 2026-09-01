@@ -1,30 +1,13 @@
 {
-  "schema_version": 3,
-  "version": "2026-08-31-r34",
-  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through2.1.1 at canonical lines1-1358. Full EGA II and EGA corpus remain incomplete.",
+  "schema": "agko-r34-validation-checkpoint-v1",
+  "time": "2026-08-31T16:52:35.6971013+02:00",
+  "status": "PASS_LOCAL_QA",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
     "pages": 235,
     "bytes": 1462350,
     "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
   },
-  "coverage_manifest": {
-    "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16256,
-    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
-    "ordered_inputs": 17,
-    "canonical_rows": 23,
-    "complete": 16,
-    "partial": 1,
-    "not_translated": 6,
-    "historical_markers": 224
-  },
-  "exact_doi": "10.5281/zenodo.22209381",
-  "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r33 /10.5281/zenodo.22208685; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1360 notation2.1.2;1359 blank",
-  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot.",
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
     "whole_bytes": 820505,
@@ -38,6 +21,44 @@
     "bytes": 62449,
     "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885",
     "lf_lines": 1368
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16256,
+    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 224
+  },
+  "translation_admission": {
+    "path": "evidence/controls/R34_TRANSLATION_ADMISSION.json",
+    "bytes": 2649,
+    "sha256": "6786F4E7B95178AC462A4709B8A9AD008C403D876CDB44E17B30F4FB943E42EB",
+    "snapshot_rule": "Preserved unchanged as the earlier translation-stage snapshot; its then-pending later gates are superseded only by this subsequent evidence."
+  },
+  "terminology_workflow": {
+    "path": "evidence/terminology/arxiv/2026-08-23/WORKFLOW_RECORD.jsonl",
+    "bytes": 51196,
+    "sha256": "5C52CB9E9925B871D22E78076B1FA7CA3FE5290D1480F617FE3D2A8325547717",
+    "event": "AGKO-TERM-E167"
+  },
+  "pdf_qa": {
+    "path": "evidence/controls/R34_PDF_QA.json",
+    "bytes": 12190,
+    "sha256": "DB71A8BF354AC382D7EAA926C39E34C8F5781E092A69033741D16049AA4763D2"
+  },
+  "root_visual_inspection": {
+    "pages": [
+      2,
+      233,
+      234,
+      235
+    ],
+    "dpi": 200,
+    "result": "PASS readable Korean and formulas, no clipping, overlap or missing glyphs on these inspected pages"
   },
   "qa": {
     "translation": "PASS exact canonical-source, Korean-register, formula and structural review; AGKO-TERM-E167 records the independent r34 terminology decision with no new lexical lock",
@@ -73,6 +94,7 @@
     "detailed_control": "evidence/controls/R34_PDF_QA.json",
     "human_certification": "not claimed or required"
   },
-  "rights": "Per-work rights, provenance and non-endorsement retained; no blanket open-licence claim",
-  "validation_checkpoint": "evidence/controls/R34_VALIDATION_CHECKPOINT.json"
+  "source_parity_recheck": "PASS whole/slice/prefix hashes,84 inline formulas,0 displays,3 environments,4 labels,4 ordered references,8 emphases,II20 marker, unchanged r33 body and exact private/public mirrors; exact validator PASS",
+  "next": "Freeze r34 source/evidence packets, run one portable replay, publish and anonymously verify in existing Zenodo/GitHub lineages; then canonical1360.",
+  "publication": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot."
 }

@@ -1,0 +1,333 @@
+{
+  "schema": "agko-r34-pdf-qa-v1",
+  "edition": "2026-08-31-r34",
+  "measured_at": "2026-08-31T16:41:56+02:00",
+  "status": "PASS",
+  "scope": "Full-file PDF identity and structure, all destinations, full-text extraction and historical-marker sequence checks; personal visual inspection of the six stated front, contents, changed and terminal pages only. Source-semantic and Korean-register adjudication are separate controls. No public-byte publication verification is asserted here.",
+  "pdf": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1462350,
+    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8",
+    "pages": 235,
+    "version": "%PDF-1.7",
+    "page_size_points": [
+      595.28,
+      841.89
+    ],
+    "all_pages_a4": true,
+    "encrypted": false,
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "대수기하학 원론 – 한국어 누적판",
+      "/Subject": "NUMDAM 프랑스어 권위본에 따른 EGA 한국어 누적 번역",
+      "/Author": "알렉산더 그로텐디크와 장 디외도네",
+      "/Producer": "MiKTeX-dvipdfmx (20260404)",
+      "/CreationDate": "D:20260813150000Z"
+    },
+    "acroform_present": false,
+    "javascript_name_tree_present": false,
+    "build_output_pdf": {
+      "path": "build/out/main.pdf",
+      "bytes": 1462350,
+      "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
+    },
+    "build_output_pdf_byte_identical": true
+  },
+  "tools": {
+    "poppler_pdftotext": "[USER_PROFILE]/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftotext.exe",
+    "poppler_pdftotext_version": "24.04.0",
+    "poppler_command": "pdftotext -enc UTF-8 -eol unix reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/extract.txt",
+    "pypdf_version": "6.10.0",
+    "pypdf_method": "page.extract_text() or empty string per physical page; CRLF/CR normalized to LF; pages joined with LF+FF+LF; one final LF; UTF-8 without BOM",
+    "renderer": "[USER_PROFILE]/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/pdftoppm.exe",
+    "render_command": "pdftoppm -f N -l N -singlefile -r 200 -png reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/render/r34-pNNN"
+  },
+  "source_bindings": {
+    "cumulative_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16256,
+      "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A"
+    },
+    "ordered_inputs_checked": 17,
+    "target_identity_errors": [],
+    "canonical_source": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820505,
+      "lf_lines": 18087,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC"
+    },
+    "canonical_prefix": {
+      "lines": "1-1358",
+      "lf_bytes": 61676,
+      "sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118",
+      "matches_manifest": true
+    },
+    "korean_target": {
+      "path": "source/c2s1.tex",
+      "bytes": 62449,
+      "lf_lines": 1368,
+      "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885"
+    },
+    "front": {
+      "path": "source/front.tex",
+      "bytes": 4172,
+      "lf_lines": 119,
+      "sha256": "CC8DB83844ECDFC050130D6B29D59422F0BE55F22321F64EA34330E7D5F7A3E1"
+    },
+    "separate_translation_control": {
+      "path": "evidence/controls/R34_TRANSLATION_ADMISSION.json",
+      "bytes": 2649,
+      "sha256": "6786F4E7B95178AC462A4709B8A9AD008C403D876CDB44E17B30F4FB943E42EB"
+    }
+  },
+  "extractions": [
+    {
+      "path": "evidence/extract.txt",
+      "bytes": 714079,
+      "sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98",
+      "characters": 388365,
+      "hangul_syllables": 149669,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 235,
+      "current_doi_count": 1,
+      "prior_doi_count": 0,
+      "strict_volume_qualified_markers": 223,
+      "full_marker_sequence_matches": false,
+      "numeric_markers": 224,
+      "numeric_marker_sequence_matches": true,
+      "legacy_math_c0_control_characters": 150
+    },
+    {
+      "path": "evidence/extract-pypdf.txt",
+      "bytes": 689260,
+      "sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C",
+      "characters": 374090,
+      "hangul_syllables": 149669,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 234,
+      "current_doi_count": 1,
+      "prior_doi_count": 0,
+      "strict_volume_qualified_markers": 224,
+      "full_marker_sequence_matches": true,
+      "numeric_markers": 224,
+      "numeric_marker_sequence_matches": true,
+      "legacy_math_c0_control_characters": 2206
+    }
+  ],
+  "historical_markers": {
+    "source_count": 224,
+    "normalized_sequence_sha256": "0D1441014BD62A034B0D7BF3489B17028342555A184664D06BF34318723DFEFD",
+    "normalization": "Source 0\\textsubscript{I} and extracted 0 I/0I map to 0I; otherwise preserve volume and page. Hash binds LF-terminal volume|page records in declared-input order.",
+    "ranges": [
+      "I|5-8",
+      "0I|11-78",
+      "I|79-214",
+      "II|5-20"
+    ],
+    "first": [
+      ["I", "5"],
+      ["I", "6"],
+      ["I", "7"],
+      ["I", "8"],
+      ["0I", "11"]
+    ],
+    "last": [
+      ["II", "16"],
+      ["II", "17"],
+      ["II", "18"],
+      ["II", "19"],
+      ["II", "20"]
+    ],
+    "poppler_specific_limitation": "Inherited EGA 0_I page 70 is extracted as 0|70 without its adjacent subscript I in that token. The saved extraction remains verbatim; the full volume/page sequence is proved in pypdf and all 224 numeric markers are proved in Poppler."
+  },
+  "navigation": {
+    "annotations": 1650,
+    "links": 1650,
+    "uri_links": 4,
+    "internal_links": 1646,
+    "named_destinations": 563,
+    "invalid_named_destinations": [],
+    "invalid_link_destinations": [],
+    "outline_entries": 132,
+    "invalid_outline_destinations": [],
+    "uri_targets": {
+      "https://doi.org/10.5281/zenodo.21921513": 1,
+      "https://doi.org/10.5281/zenodo.22209381": 1,
+      "https://github.com/KokunoYumeto/ega-ko": 1,
+      "https://doi.org/10.5281/zenodo.20414353": 1
+    }
+  },
+  "font_unicode": {
+    "font_resources": 35,
+    "embedded_font_resources": 35,
+    "resources_with_tounicode": 27,
+    "resources_without_tounicode": [
+      {
+        "basefont": "/WENPTB+CMSY10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JFXXWE+MSBM10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/ESRITT+CMEX10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/APOCYK+CMSY8",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JNUGTK+CMEX7",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/COMIEF+XYATIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/MFUSOR+XYBTIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/DPVBYQ+XYDASH-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      }
+    ],
+    "all_type0_hangul_fonts_have_tounicode": true
+  },
+  "build_logs": {
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51962,
+      "sha256": "49D6770506710BCA352467780D6C417F92A9784BD3DC0A17D3C6C8D2C09EB139"
+    },
+    "public_sanitized": [
+      {
+        "path": "evidence/build-r34.log",
+        "bytes": 51812,
+        "sha256": "061D7745E8266C4E0DB6CD7B7226611E63978C2B4C6C6DC39D6C7D9C3383CC73"
+      },
+      {
+        "path": "evidence/build.log",
+        "bytes": 51812,
+        "sha256": "061D7745E8266C4E0DB6CD7B7226611E63978C2B4C6C6DC39D6C7D9C3383CC73"
+      }
+    ],
+    "sanitization": "Exact repository roots were replaced by [KOREAN_REPO_ROOT]; local profile roots were replaced by [USER_PROFILE]; public derivatives were normalized to LF. They are not raw-log byte-identical copies. The original raw log remains only at build/out/main.log; no historical log was edited.",
+    "public_logs_equal": true,
+    "local_profile_name_absent": true,
+    "hard_diagnostics": {
+      "tex_error_lines": 0,
+      "fatal_errors": 0,
+      "emergency_stops": 0,
+      "undefined_control_sequences": 0,
+      "undefined_references_or_citations": 0,
+      "missing_characters": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0
+    },
+    "advisories": {
+      "moved_marginpars": 136,
+      "pdf_string_token_warnings": 23,
+      "font_shape_warnings": 2,
+      "font_shape_detail": "Malgun Gothic m/sc is unavailable and falls back to m/n at input line 6; the second occurrence is the summary warning.",
+      "rerunfilecheck_main_out_unchanged": true
+    }
+  },
+  "renders": [
+    {
+      "physical_page": 1,
+      "path": "evidence/render/r34-p001.png",
+      "bytes": 91215,
+      "sha256": "F445A63094653EC3A5652B998DFCD6185455E8B89D691B67977339FCF2FB2EBF",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "physical_page": 2,
+      "path": "evidence/render/r34-p002.png",
+      "bytes": 358688,
+      "sha256": "74B966A3DB768F1ECF19429F466B55DB51DE70373318228BFD17904C2818C342",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "physical_page": 6,
+      "path": "evidence/render/r34-p006.png",
+      "bytes": 189656,
+      "sha256": "491F22AF36DAB445E1ECA5614D37E137D76A38B98FE3617FF3DCE3345BF4F0C8",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "physical_page": 233,
+      "path": "evidence/render/r34-p233.png",
+      "bytes": 417821,
+      "sha256": "A13421F92A0D358179FC0B9687FF9AD3BF58C0E657CAEAF4CE4A42ECECC7251A",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "physical_page": 234,
+      "path": "evidence/render/r34-p234.png",
+      "bytes": 408407,
+      "sha256": "60BCECB725089948CA47533C39746377C6C1B5CDE0F9AC74EE72E2EBDA8817AA",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "physical_page": 235,
+      "path": "evidence/render/r34-p235.png",
+      "bytes": 173610,
+      "sha256": "788125F142B7EAAC0EC1C4CA411528A9D111B7DF427BAA3A65961EE76B9776B0",
+      "dpi": 200,
+      "pixels": [1654, 2339],
+      "personal_visual_inspection": "PASS"
+    }
+  ],
+  "visual_findings": {
+    "status": "PASS",
+    "selected_physical_pages": [1, 2, 6, 233, 234, 235],
+    "clipping_or_overlap": false,
+    "missing_or_tofu_glyphs": false,
+    "title_scope_and_current_doi_readable": true,
+    "contents_terminal_boundary_readable": true,
+    "new_proposition_1_7_15_and_surjection_readable": true,
+    "new_chapter_2_and_section_2_1_headings_readable": true,
+    "graded_notation_readable": [
+      "S_n and S_+",
+      "S^(d)",
+      "M^(d,k) and M^(d)",
+      "(M(n))_k=M_(n+k)",
+      "(S(n))_k=S_(n+k)",
+      "P->Q->M->0"
+    ],
+    "future_reference_2_1_2_visible": true,
+    "body_of_2_1_2_included": false,
+    "historical_page_break_note": "Physical pages 234 and 235 carry printed pages II|19 and II|20 under the declared historical-page rhythm. The final whitespace follows the genuine completed boundary through notation 2.1.1; the visible 2.1.2 reference is prospective, not an omitted completed body.",
+    "scope_limit": "Personal visual inspection covers only the six stated physical pages; full-file source-semantic and Korean-register audits remain separate."
+  },
+  "limitations": [
+    "Plain-text extraction is not lossless for all legacy mathematical fonts: eight embedded Type1 math or diagram resources lack ToUnicode, and C0 math-control counts differ between extractors. Formula authority remains the source-synchronized TeX plus the rendered PDF.",
+    "No source, front matter, metadata, generic evidence JSON, package, Git, publication or private-state mutation was performed by this QA subtask."
+  ]
+}
