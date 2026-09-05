@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "version": "2026-09-05-r37",
-  "updated": "2026-09-05T05:12:46+02:00",
-  "snapshot_phase": "local_build_and_pdf_qa_pass_package_portable_publication_pending",
+  "updated": "2026-09-05T15:47:23+02:00",
+  "snapshot_phase": "public_open_dual_destination_anonymous_byte_replay_pass",
   "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.9 at canonical lines1-1605. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
@@ -24,8 +24,8 @@
   "exact_doi": "10.5281/zenodo.22315714",
   "concept_doi": "10.5281/zenodo.21921513",
   "prior_public_checkpoint": "r36 / 10.5281/zenodo.22217711 / GitHub release ega-ko-2026-09-05-r36; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1607, environment2.1.10; line1606 blank",
-  "publication_evidence_rule": "R37 translation, cumulative build and PDF QA pass locally. Packaging, portable replay, GitHub/Zenodo publication and anonymous public-byte readback remain separate pending gates.",
+  "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1607, environment2.1.10; R38 translation candidate pending exact admission",
+  "publication_evidence_rule": "R37 public status is proved only by the two exact hash-bound receipts and mirrored closure control; EGA II remains incomplete.",
   "qa": {
     "translation": "PASS exact R37 source/candidate/integrated-mirror validation; environment2.1.8, Proposition2.1.9 with all three conditions and proof,99 inline formulas,2 labels, 1 reference and II23 preserved; canonical S_{n-mk} retained without guessed repair",
     "build": "PASS two independent four-pass XeLaTeX cycles under Global\\InterlanguageTeXSlotV1; pass3=pass4 within each cycle and final cycles byte-identical; hard diagnostics0",
@@ -57,7 +57,7 @@
     },
     "fonts": "PASS all35 resources embedded; all Hangul Type0 resources have ToUnicode; eight inherited Type1 math/diagram resources without ToUnicode are explicitly limited",
     "visual": "PASS selected pages1,2,6,236-238 at200dpi; no clipping, overlap, tofu or malformed formula",
-    "portable": "PENDING frozen source archive; no portable-build claim",
+    "portable": "PASS exact full extraction and selected frozen-render replay; container-only delta retained without content inference",
     "detailed_control": "evidence/controls/R37_PDF_QA.json",
     "human_certification": "not claimed or required"
   },
@@ -89,6 +89,82 @@
     "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
     "lf_lines": 1627
   },
-  "result": "PASS_LOCAL_BUILD_AND_PDF_QA; package, portable replay and publication pending",
-  "validation_checkpoint": "evidence/controls/R37_PDF_QA.json"
+  "result": "PASS_R37_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
+  "validation_checkpoint": "evidence/controls/R37_PDF_QA.json",
+  "publication_phase": "public_open_dual_destination_anonymous_byte_replay_pass",
+  "current_public_checkpoint": "r37 / exact DOI10.5281/zenodo.22315714 / GitHub release ega-ko-2026-09-05-r37; four artifacts at both destinations passed anonymous byte replay",
+  "public_r37": {
+    "status": "PASS_R37_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
+    "version": "2026-09-05-r37",
+    "control": {
+      "path": "evidence/controls/R37_PUBLIC_CLOSURE.json",
+      "bytes": 4271,
+      "sha256": "033D857627D0D5E65F7AF47C0050D7F1B065C816B5B9045BBB3F33AF3D1401C5",
+      "private_public_mirrors_exact": true
+    },
+    "reader": {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "github": {
+      "artifact_commit": "a7d387fda149b820fdd177ab7cfa33d65e967ce3",
+      "artifact_parent": "db693fbea41f287e7e9ae8734b6bee6e0dab43e7",
+      "annotated_tag": "ega-ko-2026-09-05-r37",
+      "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r37",
+      "receipt": {
+        "path": "github-receipt-r37.json",
+        "bytes": 4178,
+        "sha256": "4EBF06BBC433C18C7D875333BE45851B907198855C532E66435D25BC122D1429"
+      }
+    },
+    "zenodo": {
+      "exact_doi": "10.5281/zenodo.22315714",
+      "exact_doi_url": "https://doi.org/10.5281/zenodo.22315714",
+      "concept_doi": "10.5281/zenodo.21921513",
+      "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+      "record": "https://zenodo.org/records/22315714",
+      "receipt": {
+        "path": "receipt-r37.json",
+        "bytes": 2429,
+        "sha256": "5C9420C0970F2D38185E00C3C3116FEE491F0CA9FEF8F558A50E5B9F3F06BD05"
+      }
+    },
+    "public_artifacts": [
+      {
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1479200,
+        "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+      },
+      {
+        "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+        "bytes": 350659,
+        "sha256": "3A489C7782CAA63D743CD11C704404815AAFD4B162E4A6816140FE79F3DDDF92"
+      },
+      {
+        "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+        "bytes": 120035218,
+        "sha256": "76826967CD4868E2CA3D98BEE4ACA32088423399947F5307DF4A01B6AFB66A97"
+      },
+      {
+        "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+        "bytes": 343,
+        "sha256": "5D4B0C61819B3EC2C297245A27989B6EC8B5F177D45E5DACB4EFE113B6EF9072"
+      }
+    ],
+    "package": {
+      "path": "release/2026-09-05-r37/PACKAGE_RECEIPT.json",
+      "bytes": 15338,
+      "sha256": "9E0210434919164BB90D331A50A92100845BB8B7FED9B14EA873229889DE70A9"
+    },
+    "portable_replay": {
+      "path": "release/2026-09-05-r37/PORTABLE_BUILD_REPLAY.json",
+      "bytes": 7812,
+      "sha256": "3736C3BE48CC7BE10C936AE2FC2BFE0323379A07C778E3DF9A3B69DEA82C523D"
+    },
+    "ega_ii_status": "active_incomplete",
+    "next_source": "canonical line1607 / environment2.1.10",
+    "r38_candidate_status": "pending_exact_admission"
+  },
+  "r38_candidate_status": "PENDING_EXACT_ADMISSION; no R38 build or publication claim"
 }

@@ -1,0 +1,109 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v3",
+  "version": "2026-09-05-r37",
+  "verified_at_utc": "2026-09-05T13:39:02.581631+00:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "repository_public_active": true,
+  "main_commit": "a7d387fda149b820fdd177ab7cfa33d65e967ce3",
+  "artifact_commit": "a7d387fda149b820fdd177ab7cfa33d65e967ce3",
+  "tag": "ega-ko-2026-09-05-r37",
+  "annotated_tag_object": "92b420533f5fae13492a1c315d8ad68f44459acc",
+  "tag_peels_to_commit": "a7d387fda149b820fdd177ab7cfa33d65e967ce3",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r37",
+  "release_title": "대수기하학 원론 (EGA) — 한국어 누적판 2026-09-05-r37",
+  "release_notes_characters": 4566,
+  "release_notes_exact_local_match": true,
+  "canonical_external_links_present": [
+    "https://doi.org/10.5281/zenodo.21921513",
+    "https://doi.org/10.5281/zenodo.22315714",
+    "https://github.com/KokunoYumeto/ega-ko"
+  ],
+  "assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 350659,
+      "sha256": "3A489C7782CAA63D743CD11C704404815AAFD4B162E4A6816140FE79F3DDDF92",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 120035218,
+      "sha256": "76826967CD4868E2CA3D98BEE4ACA32088423399947F5307DF4A01B6AFB66A97",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "5D4B0C61819B3EC2C297245A27989B6EC8B5F177D45E5DACB4EFE113B6EF9072",
+      "anonymous_byte_identical": true
+    }
+  ],
+  "evidence_zip_release_asset_only": true,
+  "evidence_zip_repository_blob_matches": [],
+  "artifact_tree_sha": "6b726824347ec6eccd58ccffb2d23319885a0428",
+  "required_repository_release_blobs": [
+    "release/2026-09-05-r37/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "release/2026-09-05-r37/01_EGA_ko_EDITABLE_SOURCES.zip",
+    "release/2026-09-05-r37/03_EGA_ko_SHA256_MANIFEST.txt",
+    "release/2026-09-05-r37/PACKAGE_RECEIPT.json",
+    "release/2026-09-05-r37/PORTABLE_BUILD_REPLAY.json"
+  ],
+  "raw_commit_files": [
+    {
+      "path": ".zenodo.json",
+      "bytes": 4916,
+      "sha256": "68022F00B3BD7321DDA9C9F3C2E4F72899E47E9FA61B23DF54058832CE85FB02",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "source/c2s1.tex",
+      "bytes": 75622,
+      "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "release/2026-09-05-r37/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "release/2026-09-05-r37/01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 350659,
+      "sha256": "3A489C7782CAA63D743CD11C704404815AAFD4B162E4A6816140FE79F3DDDF92",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "release/2026-09-05-r37/03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "5D4B0C61819B3EC2C297245A27989B6EC8B5F177D45E5DACB4EFE113B6EF9072",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "release/2026-09-05-r37/PACKAGE_RECEIPT.json",
+      "bytes": 15338,
+      "sha256": "9E0210434919164BB90D331A50A92100845BB8B7FED9B14EA873229889DE70A9",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "release/2026-09-05-r37/PORTABLE_BUILD_REPLAY.json",
+      "bytes": 7812,
+      "sha256": "3736C3BE48CC7BE10C936AE2FC2BFE0323379A07C778E3DF9A3B69DEA82C523D",
+      "anonymous_byte_identical": true
+    }
+  ],
+  "credentials_present": false,
+  "result": "PASS_GITHUB_PUBLICATION_AND_ANONYMOUS_BYTE_REPLAY"
+}
