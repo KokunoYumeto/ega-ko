@@ -1,0 +1,62 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v2",
+  "version": "2026-09-05-r36",
+  "verified_at_utc": "2026-09-05T02:45:42.922315+00:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "repository_public_active": true,
+  "main_commit": "3f3a1c3971df6ca4002492ded42d5af4c360c3e4",
+  "tag": "ega-ko-2026-09-05-r36",
+  "tag_peels_to_commit": "3f3a1c3971df6ca4002492ded42d5af4c360c3e4",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r36",
+  "release_title": "Korean EGA cumulative edition r36",
+  "release_notes_characters": 4522,
+  "canonical_external_link_present": true,
+  "assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 297934,
+      "sha256": "B6F509B89CE96445D6605012B6AFF42AB983F7AF0C705AB74F0C3E6C18DAA3C6",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 118361944,
+      "sha256": "711803421C3D31A2EA90435C83790F181CCE3CD89E4DE3EFF1D5807D7C79E8FA",
+      "anonymous_byte_identical": true
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "F0F7E649D78F399581A8E2C5BF3C7163D0F92A49ABCCF4811F1F358585FA28FC",
+      "anonymous_byte_identical": true
+    }
+  ],
+  "raw_commit_files": [
+    {
+      "path": ".zenodo.json",
+      "bytes": 4900,
+      "sha256": "757881D145CEE1EBD74B0665D0694CA48A8F62A407D52237858B98C694A8B53B",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "source/c2s1.tex",
+      "bytes": 71548,
+      "sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
+      "anonymous_byte_identical": true
+    },
+    {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "anonymous_byte_identical": true
+    }
+  ],
+  "credentials_present": false,
+  "result": "PASS_GITHUB_PUBLICATION_AND_ANONYMOUS_BYTE_REPLAY"
+}

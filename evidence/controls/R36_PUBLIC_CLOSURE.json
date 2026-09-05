@@ -1,0 +1,69 @@
+{
+  "schema": "ag-ko-public-closure-v2",
+  "version": "2026-09-05-r36",
+  "corpus": "EGA",
+  "language": "ko-KR",
+  "coverage": "cumulative Korean EGA reader through EGA II 2.1.7; canonical ega2-1-fr.tex lines 1-1535",
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "main_commit": "3f3a1c3971df6ca4002492ded42d5af4c360c3e4",
+    "tag": "ega-ko-2026-09-05-r36",
+    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r36",
+    "assets": 4,
+    "anonymous_byte_replay": "PASS",
+    "receipt": {
+      "path": "github-receipt-r36.json",
+      "bytes": 2202,
+      "sha256": "F99A294FBE3581F31372EA467B1890D65E163F1362E2D48F06A959F88B7193C8"
+    },
+    "topology_note": "GitHub rejected the first unpushed candidate commit because the 118361944-byte provenance ZIP exceeds the 100 MiB repository-blob limit. No remote branch changed. The successful replacement commit excludes only that blob from Git history and supplies it, byte-identical, as a public release asset."
+  },
+  "zenodo": {
+    "record_id": 22217711,
+    "exact_doi": "10.5281/zenodo.22217711",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "record": "https://zenodo.org/records/22217711",
+    "same_lineage_reserved_draft_published_once": true,
+    "access": "public/open",
+    "assets": 4,
+    "anonymous_byte_replay": "PASS",
+    "receipt": {
+      "path": "receipt-r36.json",
+      "bytes": 2891,
+      "sha256": "9B1CB569F9DEA287F5C2E1247C93964AE0367906C315F1937150CD0B3B6AF833"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 297934,
+      "sha256": "B6F509B89CE96445D6605012B6AFF42AB983F7AF0C705AB74F0C3E6C18DAA3C6"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 118361944,
+      "sha256": "711803421C3D31A2EA90435C83790F181CCE3CD89E4DE3EFF1D5807D7C79E8FA"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "F0F7E649D78F399581A8E2C5BF3C7163D0F92A49ABCCF4811F1F358585FA28FC"
+    }
+  ],
+  "metadata": {
+    "historical_creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "sole_project_contributor": "AI typesetting & translation",
+    "umbrella_prose_mentions": 0,
+    "rights_scope_provenance_and_nonendorsement": "PASS"
+  },
+  "credentials_present": false,
+  "result": "PASS_PUBLICATION_AND_ANONYMOUS_DUAL_DESTINATION_BYTE_REPLAY"
+}
