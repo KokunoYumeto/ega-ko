@@ -1,0 +1,141 @@
+{
+  "schema": "agko-r36-translation-admission-v1",
+  "time": "2026-09-05T03:39:50+02:00",
+  "scope": "EGA II canonical lines 1449-1535, Corollaries 2.1.4-2.1.5, Lemma 2.1.6 with proof, and Corollary 2.1.7 with proof",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "unit_lines": "1449-1535",
+    "unit_bytes": 4096,
+    "unit_characters": 4009,
+    "unit_lf_lines": 87,
+    "unit_sha256": "F9AE6849245F4B23482B75B8CD8A4FC0999717A2A1DFB49B160C5EF9F58D07E3",
+    "admitted_prefix_lines": "1-1535",
+    "admitted_prefix_bytes": 70120,
+    "admitted_prefix_sha256": "ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91",
+    "next_boundary": "line 1536 blank; line 1537 begins environment 2.1.8"
+  },
+  "candidate": {
+    "path": "candidates/r36-c2s1-continuation.tex",
+    "bytes": 4716,
+    "characters": 3000,
+    "lf_lines": 94,
+    "sha256": "702F60DEAACEB6F5A915F300DC0F3344824DFCF677EC8FEEADF8F9A3BEF71D63",
+    "separator_plus_candidate_bytes": 4717,
+    "separator_plus_candidate_sha256": "EA50D0BE1DCCA5F08FA1D60B6C3E53CACD1059BEA04A070F6B4554207FD7A202"
+  },
+  "integrated_target": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 71548,
+    "lf_lines": 1554,
+    "sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
+    "r35_body_preserved_byte_exact": true,
+    "new_target_lines": "1461-1554"
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r36_candidate.py",
+    "validator_bytes": 11304,
+    "validator_lf_lines": 297,
+    "validator_sha256": "CD6C4B23F3BA8077A666ABCE9ACCB9177E7BB162EFFE100254ACAAB56EAD596F",
+    "result": "PASS_R36_SOURCE_CANDIDATE_AND_INTEGRATED_MIRRORS",
+    "source_inline_formula_count": 101,
+    "core_target_formula_multiset_exact": true,
+    "translator_note_formula_count": 5,
+    "displays": 0,
+    "labels": 4,
+    "ordered_references": 4,
+    "begin_environments": [
+      "corollary",
+      "proof",
+      "corollary",
+      "proof",
+      "lemma",
+      "enumerate",
+      "proof",
+      "corollary",
+      "proof"
+    ],
+    "enumerated_assertions": [
+      "i",
+      "ii",
+      "iii",
+      "iv",
+      "v",
+      "vi"
+    ],
+    "oldpage": "II22",
+    "navigation_only_phantomsection_count": 4,
+    "utf8_replacement_characters": 0
+  },
+  "semantic_invariants": [
+    "Finite-type ideals, algebras and modules are rendered by typed finite generation and are not collapsed into geometric finite type.",
+    "The ring grading is nonnegative while the graded module is integer graded, matching the preceding definitions.",
+    "All six quantifier patterns, degree inequalities, Veronese module and ring objects, l.c.m. construction, monomial coefficients, and Noetherian conclusion retain their exact mathematical types.",
+    "The printed threshold mismatch is preserved diplomatically and explained by a threshold-plus-one translator note; no silent source mutation occurred."
+  ],
+  "terminology_evidence": {
+    "workflow_record": "AGKO-TERM-E170",
+    "arxiv_semantic_control": {
+      "id": "1803.01127v1",
+      "text_bytes": 45003,
+      "text_sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "contexts": "294-307",
+      "authority_limit": "semantic and object-type control only, not Korean spelling authority"
+    },
+    "stacks_manager_export": {
+      "id": "STACKS-KO-TERMINOLOGY-20260905-R1",
+      "schema": "stacks_ko_terminology_manager_export/v1",
+      "bytes": 10922,
+      "sha256": "BD3E4DCD4A5CB0C0BFCCB1E4D5A33DEFEEC6424318B2B228B09A78F60DDFC639",
+      "use": "read-only cross-corpus normalization and conflict evidence",
+      "agreement": [
+        "등급환",
+        "등급 가군",
+        "유한 생성",
+        "유한형 kept distinct",
+        "뇌터"
+      ],
+      "retained_conflicts": [
+        "legacy Noether spelling",
+        "spacing variants",
+        "prescheme absent from the bounded Stacks export"
+      ]
+    }
+  },
+  "source_correction_referral": {
+    "receipt": "controls/R36_CORRECTION_REFERRAL_AUDIT_20260905.json",
+    "receipt_bytes": 3895,
+    "receipt_sha256": "6FEE5ECF6425911DA0C5F1B5DB50B0CA84E8009B3DD00BCFAA090BACFF1212CF",
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "threshold_referral": "PASS",
+    "bounded_prior-ledger_mining_and_four-packet_referral": "PASS"
+  },
+  "cumulative_reader_inputs": {
+    "front_path": "pub/ega-ko/source/front.tex",
+    "front_bytes": 4440,
+    "front_lf_lines": 123,
+    "front_sha256": "9455D5CE604C3F2CC24D683CF7778AB73B44EF7DFB4229435A8B3AB3DAB1DBC0",
+    "manifest_path": "pub/ega-ko/source/CUMULATIVE_INPUTS.json",
+    "manifest_bytes": 16262,
+    "manifest_lf_lines": 465,
+    "manifest_sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
+    "declared_historical_source_pages": 226,
+    "declared_EGA_II_range": "II5-II22",
+    "completeness_claim": "EGA I complete; EGA II partial and contiguous through 2.1.7; full EGA corpus incomplete"
+  },
+  "state": {
+    "translation": "admitted",
+    "terminology": "pass_with_documented_provisionality",
+    "source_referral": "delivered_nonblocking",
+    "build": "pending_machine_wide_TeX_mutex",
+    "extraction": "pending_build",
+    "rendered_visual_QA": "pending_build",
+    "publication": "pending_validated_reader_and_package",
+    "current_public_release": "R34 remains authoritative until the next release passes all gates"
+  },
+  "next": "Append the R36 unit and evidence index records, generate the complete expert-review views, then run exactly one mutexed cumulative build and proportional extraction/render QA when the machine-wide TeX slot is available. Publish immediately to the existing Zenodo and GitHub lineages only after those deterministic gates pass; then continue canonical line 1537."
+}

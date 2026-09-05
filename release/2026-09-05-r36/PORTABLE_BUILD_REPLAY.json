@@ -1,0 +1,119 @@
+{
+  "schema": "ag-ko-portable-replay-v2",
+  "version": "2026-09-05-r36",
+  "exact_doi": "10.5281/zenodo.22217711",
+  "source_archive": {
+    "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 297934,
+    "sha256": "B6F509B89CE96445D6605012B6AFF42AB983F7AF0C705AB74F0C3E6C18DAA3C6",
+    "entries_verified": 36
+  },
+  "build": {
+    "invocations": 1,
+    "internal_xelatex_passes": 8,
+    "pass_count_proof": {
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77",
+      "four_pass_loops": 2,
+      "declared_xelatex_invocations": 8,
+      "failure_semantics": "each engine invocation throws on nonzero exit; pass3 must equal pass4 inside each cycle; cycle B final must equal cycle A final",
+      "result": "PASS_EXACT_BUILD_SCRIPT_CONTROL_FLOW"
+    },
+    "terminal_completion_proof": {
+      "stdout_terminal_record": "PASS 1474513 bytes SHA-256 DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55; cycle_a_sha256=DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55; cycle_b_sha256=DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55; cycle_a_pass2_sha256=93674134D7DFDC7BF454D507419E9B08394B877305AE51238F6558BFB2DF0DAB; cycle_b_pass2_sha256=93674134D7DFDC7BF454D507419E9B08394B877305AE51238F6558BFB2DF0DAB; cycle_a_pass3_sha256=DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55; cycle_b_pass3_sha256=DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55; cycle_a_pass2_final_identical=false; cycle_b_pass2_final_identical=false; cycle_a_pass3_final_identical=true; cycle_b_pass3_final_identical=true; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false",
+      "portable_reader": {
+        "bytes": 1474513,
+        "sha256": "DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55"
+      },
+      "result": "PASS"
+    },
+    "timeout_seconds": 1800,
+    "timed_out": false,
+    "live_authority_environment": "omitted; frozen target hashes, declared inputs and admission records enforced",
+    "returncode": 0,
+    "stdout": {
+      "bytes": 831,
+      "sha256": "61D316B838284FFB57965364981617D9C6233FEEA18C5212E3D282C0C9DB4D18"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "log": {
+      "bytes": 52099,
+      "sha256": "D2B2514C6E461B5D69D02CB76E3A0721ECD92B190CE5AA53F8B669FE273BF3A1"
+    },
+    "result": "PASS"
+  },
+  "strict_reader": {
+    "bytes": 1474518,
+    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+    "pages": 237
+  },
+  "portable_reader": {
+    "bytes": 1474513,
+    "sha256": "DD3BEB7FBBD0229C72ECE05816B7E221B952F43B40D4CB88FD2E7B4423B2AD55",
+    "pages": 237
+  },
+  "pdf_byte_identical": false,
+  "container_delta": "If strict and portable PDF bytes differ, the delta is retained as an unadjudicated container-level difference; exact same-tool extraction and selected-render identities prove the tested content properties without a path-only claim.",
+  "extraction": {
+    "poppler": {
+      "bytes": 721726,
+      "sha256": "909937C7A40D31DA9787C01812DCB46C8CC40DACF3D5C1F69BD5099959277E46",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 151372,
+      "replacement_characters": 0
+    },
+    "pypdf": {
+      "bytes": 696608,
+      "sha256": "D56B3623A698A1E5283DB33BD7B59EDF59D2ECAAD698950420BB0A35136B81B8",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 151372,
+      "replacement_characters": 0
+    }
+  },
+  "extraction_runtime": {
+    "python_version": "3.13.9",
+    "pypdf_version": "6.12.2",
+    "pypdf_page_join": "LF+FF+LF with one final LF; CRLF/CR normalized to LF",
+    "poppler_options": [
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "input.pdf",
+      "-"
+    ]
+  },
+  "render_replay": {
+    "comparisons": 3,
+    "dpi": 200,
+    "pages": [
+      {
+        "physical_page": 1,
+        "bytes": 91321,
+        "sha256": "850D1FBA51ADB68386D499EABAD06A6E99FB34EC3657289CD16929DAEB2CFBD4",
+        "frozen_evidence_entry": "render/r36-p001.png",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 236,
+        "bytes": 478729,
+        "sha256": "1D1C0F103A5DFBBAA46E7CDA701713B52D161113FB44C06DFBDFF021753BCFE7",
+        "frozen_evidence_entry": "render/r36-p236.png",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 237,
+        "bytes": 286108,
+        "sha256": "40D30B8FF3CE84519637BEC09F548E476F144F609C49CC9A98BFD3ED588B0D01",
+        "frozen_evidence_entry": "render/r36-p237.png",
+        "byte_identical": true
+      }
+    ],
+    "result": "PASS_EXACT_PORTABLE_FROZEN_RASTER_IDENTITY_3_OF_3"
+  },
+  "visual_qa": "Portable raster bytes on pages1,236,237 exactly reproduce their already inspected strict-reader counterparts; no new full-document visual rereview is claimed.",
+  "result": "PASS_PORTABLE_BUILD_EXACT_TEXT_AND_SELECTED_RENDER_REPLAY"
+}

@@ -1,45 +1,47 @@
 {
-  "schema_version": 3,
-  "version": "2026-08-31-r34",
-  "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through2.1.1 at canonical lines1-1358. Full EGA II and EGA corpus remain incomplete.",
+  "schema_version": 4,
+  "version": "2026-09-05-r36",
+  "updated": "2026-09-05T04:25:00+02:00",
+  "snapshot_phase": "local_qa_and_portable_replay_ready_for_publication",
+  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.7 at canonical lines1-1535. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 235,
-    "bytes": 1462350,
-    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
+    "pages": 237,
+    "bytes": 1474518,
+    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16256,
-    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
+    "bytes": 16262,
+    "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 224
+    "historical_markers": 226
   },
-  "exact_doi": "10.5281/zenodo.22209381",
+  "exact_doi": "10.5281/zenodo.22217711",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r33 /10.5281/zenodo.22208685; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1360 notation2.1.2;1359 blank",
-  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot.",
-  "active_volume": "EGA II",
+  "prior_public_checkpoint": "r34 / 10.5281/zenodo.22209381; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1537, environment2.1.8; line1536 blank",
+  "publication_evidence_rule": "This alias records the locally accepted R36 bytes before publication. Deterministic archive and portable replay evidence is under release/2026-09-05-r36; public status requires separate GitHub/Zenodo receipts and anonymous byte readback.",
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
     "whole_bytes": 820505,
     "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-    "admitted_lines": "1-1358",
-    "admitted_bytes": 61676,
-    "admitted_sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118"
+    "admitted_lines": "1-1535",
+    "admitted_bytes": 70120,
+    "admitted_sha256": "ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91"
   },
   "target": {
     "path": "source/c2s1.tex",
-    "bytes": 62449,
-    "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885",
-    "lf_lines": 1368
+    "bytes": 71548,
+    "sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
+    "lf_lines": 1554
   },
-  "later_ega": "Candidate-ready, not an elapsed-time or conversational blocker. Do not skip unfinished EGA II or FGA.",
-  "validation_checkpoint": "evidence/controls/R34_VALIDATION_CHECKPOINT.json"
+  "sequence": "Finish EGA II, then FGA. Only afterward admit the contiguous source-accurate EGA sequence beginning with EGA III; stop before the first incomplete volume. SGA is outside active scope.",
+  "validation_checkpoint": "evidence/controls/R36_PDF_QA.json",
+  "active_volume": "EGA II",
+  "later_ega": "EGA III is candidate-ready by direct report but remains sequenced after EGA II and FGA; exact authority admission is required before translation."
 }

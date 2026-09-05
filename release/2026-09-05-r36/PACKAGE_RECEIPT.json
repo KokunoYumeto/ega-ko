@@ -1,0 +1,211 @@
+{
+  "schema": "ag-ko-package-receipt-v4",
+  "version": "2026-09-05-r36",
+  "exact_doi": "10.5281/zenodo.22217711",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "corpus": "EGA",
+    "included_volumes": [
+      "EGA 0_I",
+      "EGA I",
+      "EGA II (programme/table of contents and main text through2.1.7)"
+    ],
+    "terminal_coverage": "EGA II Chapter II programme/table of contents through source EOF, followed by ega2/ega2-1-fr.tex lines1-1535 through2.1.7",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
+    "historical_source_pages": 226,
+    "historical_page_ranges": [
+      "EGA I introduction5-8",
+      "EGA 0_I11-78",
+      "EGA I Chapter I79-214",
+      "EGA II5-22"
+    ]
+  },
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "role": "front cumulative reader artifact",
+      "pages": 237
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 297934,
+      "sha256": "B6F509B89CE96445D6605012B6AFF42AB983F7AF0C705AB74F0C3E6C18DAA3C6",
+      "role": "deterministic editable-source and validation-script archive",
+      "entries": 36,
+      "files": 33,
+      "directories": 3,
+      "uncompressed_file_bytes": 1125827,
+      "inventory_bytes": 3010,
+      "inventory_sha256": "70FC59A24ED07AE4CE455D70C7A7FDF686DBF6F9043BFF153717270F440110C8",
+      "verification": "PASS names, ordering, fixed metadata, compression9, CRC, sizes, decompressed bytes and SHA-256"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 118361944,
+      "sha256": "711803421C3D31A2EA90435C83790F181CCE3CD89E4DE3EFF1D5807D7C79E8FA",
+      "role": "deterministic evidence and provenance archive",
+      "entries": 481,
+      "files": 471,
+      "directories": 10,
+      "uncompressed_file_bytes": 140045807,
+      "inventory_bytes": 44056,
+      "inventory_sha256": "8EC6CADE598844C2F139D6F0A307B53534E66CF19DC0C29731FC0EF1C4F00159",
+      "verification": "PASS names, ordering, fixed metadata, compression9, CRC, sizes, decompressed bytes and SHA-256"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "F0F7E649D78F399581A8E2C5BF3C7163D0F92A49ABCCF4811F1F358585FA28FC",
+      "role": "outer SHA-256 manifest",
+      "listed_artifacts": 3,
+      "verification": "PASS"
+    }
+  ],
+  "total_publication_bytes": 120134739,
+  "source_archive_A_B_byte_identical": true,
+  "evidence_archive_A_B_byte_identical": true,
+  "reader_qa": {
+    "build_receipt": {
+      "path": "evidence/BUILD_RECEIPT.json",
+      "bytes": 5201,
+      "sha256": "77D7D02ACFF6E28EB291B4C05FC1250D20D896A3DEEDDA43AA9CDBBB8FF4BEC8"
+    },
+    "pdf_control": {
+      "path": "evidence/controls/R36_PDF_QA.json",
+      "bytes": 11605,
+      "sha256": "9FA62E458E9E376B982B0FA5BCF256B053F9E9E5C673A68DA987CC079F3D5BEF"
+    },
+    "convergence": "PASS two independent four-pass cycles; pass3=pass4 in each; cycle finals byte-identical",
+    "extraction": [
+      {
+        "path": "evidence/extract.txt",
+        "bytes": 721726,
+        "sha256": "909937C7A40D31DA9787C01812DCB46C8CC40DACF3D5C1F69BD5099959277E46",
+        "characters": 392419,
+        "hangul_syllables": 151372,
+        "hangul_jamo": 0,
+        "replacement_characters": 0,
+        "carriage_returns": 0,
+        "formfeeds": 237,
+        "current_exact_doi_count": 1,
+        "prior_exact_doi_count": 0,
+        "concept_doi_count": 1,
+        "legacy_math_c0_control_characters": 150,
+        "numeric_marker_sequence_matches_with_documented_0I_70_exception": true
+      },
+      {
+        "path": "evidence/extract-pypdf.txt",
+        "bytes": 696608,
+        "sha256": "D56B3623A698A1E5283DB33BD7B59EDF59D2ECAAD698950420BB0A35136B81B8",
+        "characters": 377972,
+        "hangul_syllables": 151372,
+        "hangul_jamo": 0,
+        "replacement_characters": 0,
+        "carriage_returns": 0,
+        "formfeeds": 236,
+        "current_exact_doi_count": 1,
+        "prior_exact_doi_count": 0,
+        "concept_doi_count": 1,
+        "legacy_math_c0_control_characters": 2248,
+        "full_marker_sequence_matches": true
+      }
+    ],
+    "links": {
+      "annotations": 1656,
+      "links": 1656,
+      "uri_links": 4,
+      "internal_links": 1652,
+      "named_destinations": 574,
+      "invalid_named_destinations": [],
+      "invalid_link_destinations": [],
+      "outline_entries": 132,
+      "invalid_outline_destinations": [],
+      "uri_targets": {
+        "https://doi.org/10.5281/zenodo.20414353": 1,
+        "https://doi.org/10.5281/zenodo.21921513": 1,
+        "https://doi.org/10.5281/zenodo.22217711": 1,
+        "https://github.com/KokunoYumeto/ega-ko": 1
+      }
+    },
+    "visual": {
+      "status": "PASS",
+      "selected_physical_pages": [
+        1,
+        2,
+        6,
+        233,
+        234,
+        235,
+        236,
+        237
+      ],
+      "clipping_or_overlap": false,
+      "missing_or_tofu_glyphs": false,
+      "title_scope_and_exact_doi_readable": true,
+      "contents_terminal_boundary_readable": true,
+      "new_corollaries_2_1_4_2_1_5_readable": true,
+      "new_lemma_2_1_6_all_six_items_and_proof_readable": true,
+      "new_corollary_2_1_7_readable": true,
+      "threshold_translator_note_readable": true,
+      "historical_page_break_note": "Physical pages 236 and 237 carry printed pages II|21 and II|22. The terminal whitespace follows the genuine completed boundary through Corollary 2.1.7; it is not evidence of omitted admitted content."
+    }
+  },
+  "expert_review": {
+    "jsonl": {
+      "path": "evidence/expert_review/EXPERT_REVIEW.jsonl",
+      "bytes": 2891439,
+      "sha256": "EE714B32EF4C17DE5C89EA8E344899820B300E3AB5B2DB4CD28C3E46E951A165"
+    },
+    "markdown": {
+      "path": "evidence/expert_review/EXPERT_REVIEW.md",
+      "bytes": 1461000,
+      "sha256": "6D1043FE982D3F52F3767DEA42CA3DA98C086C31B4D71C66D2D37539571FE3BF"
+    },
+    "receipt": {
+      "path": "evidence/expert_review/PUBLIC_EXPERT_REVIEW_RECEIPT.json",
+      "bytes": 2506,
+      "sha256": "370CC90A4CDB62DE25E2F71904E6E15D914A73985C93612226FAF8A6EE3742ED"
+    },
+    "records": 540,
+    "validation": "PASS_INDEPENDENT_EXPERT_REVIEW_REPLAY"
+  },
+  "internal_manifest": {
+    "path": "evidence/ARTIFACT_SHA256.tsv",
+    "bytes": 51290,
+    "sha256": "9DEFD85FCBB19078A92242F0B2C0640F67C49AA90B8B9C1BA2A51BD237F0CEA2",
+    "entries": 504,
+    "verification": "PASS independent path, byte-count and SHA-256 replay; manifest excludes itself and package outputs"
+  },
+  "metadata": {
+    "path": ".zenodo.json",
+    "bytes": 4900,
+    "sha256": "757881D145CEE1EBD74B0665D0694CA48A8F62A407D52237858B98C694A8B53B",
+    "description_characters": 3908,
+    "forbidden_umbrella_or_active_excluded_destination_mentions": 0,
+    "creators": 2,
+    "contributors": 1,
+    "sole_contributor": "AI typesetting & translation",
+    "rights_scope_provenance_and_nonendorsement": "PASS",
+    "external_links": [
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://github.com/KokunoYumeto/ega-ko"
+    ]
+  },
+  "privacy_credential_check": {
+    "files_checked": 505,
+    "decodable_text_members_checked": 185,
+    "bytes_checked": 142646152,
+    "matches": 0,
+    "scope": "Every prospective source/evidence member and reader; member names and UTF-8 plus raw UTF-8/UTF-16 account encodings and credential-prefix patterns. Needles are not recorded.",
+    "result": "PASS"
+  },
+  "publication_status": "as of package freeze: local package only; draft and repository state are not publication claims",
+  "portable_replay": "as of package freeze: not yet run; separate PORTABLE_BUILD_REPLAY.json is required",
+  "result": "PASS_LOCAL_PACKAGE"
+}

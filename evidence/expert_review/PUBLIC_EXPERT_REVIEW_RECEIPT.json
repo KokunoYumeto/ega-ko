@@ -1,0 +1,83 @@
+{
+  "canonical_links": {
+    "github": "https://github.com/KokunoYumeto/ega-ko",
+    "zenodo_concept": "https://doi.org/10.5281/zenodo.21921513"
+  },
+  "coverage": "Every current record in the four named public ledgers through EGA II 2.1.7; complete ledger coverage, not complete corpus coverage.",
+  "generated_at": "2026-09-05T04:10:42+02:00",
+  "inputs": [
+    {
+      "bytes": 263512,
+      "ledger": "terms",
+      "path": "evidence/terms.jsonl",
+      "records": 172,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250"
+    },
+    {
+      "bytes": 704333,
+      "ledger": "decisions",
+      "path": "evidence/decisions.jsonl",
+      "records": 184,
+      "sha256": "FAAEB6209D09EFBA55AA6342C1DBD1A9E0B8133329BF213131F231A0C56065A6"
+    },
+    {
+      "bytes": 298442,
+      "ledger": "hard",
+      "path": "evidence/hard.jsonl",
+      "records": 159,
+      "sha256": "A5065B53763ED766480F8E7AA2315594EA2664F309A392817985F9DE7330BDBD"
+    },
+    {
+      "bytes": 59148,
+      "ledger": "workflow",
+      "path": "evidence/terminology/arxiv/2026-08-23/WORKFLOW_RECORD.jsonl",
+      "records": 25,
+      "sha256": "CE02D11ED4E224764CEB88B0E215C499594093D98EB461FDF55E6085B8DEE0AA"
+    }
+  ],
+  "mirrors": {
+    "jsonl_exact": true,
+    "markdown_exact": true,
+    "private": "expert_review",
+    "public": "pub/ega-ko/evidence/expert_review"
+  },
+  "outputs": {
+    "EXPERT_REVIEW.jsonl": {
+      "bytes": 2891439,
+      "lf_lines": 540,
+      "records": 540,
+      "sha256": "EE714B32EF4C17DE5C89EA8E344899820B300E3AB5B2DB4CD28C3E46E951A165"
+    },
+    "EXPERT_REVIEW.md": {
+      "bytes": 1461000,
+      "lf_lines": 31356,
+      "record_sections": 540,
+      "sha256": "6D1043FE982D3F52F3767DEA42CA3DA98C086C31B4D71C66D2D37539571FE3BF"
+    }
+  },
+  "privacy": {
+    "absolute_user_profile_scan": "PASS",
+    "account_name_scan": "PASS",
+    "credential_pattern_scan": "PASS",
+    "path_or_account_replacements": 1
+  },
+  "provenance": {
+    "missing_fields_are_not_recorded": true,
+    "original_line_byte_and_sha256_bindings": true,
+    "original_records_embedded": true,
+    "retrospective_grouping_label": true,
+    "retrospective_question_label": true
+  },
+  "records": {
+    "by_ledger": {
+      "decisions": 184,
+      "hard": 159,
+      "terms": 172,
+      "workflow": 25
+    },
+    "total": 540,
+    "unique_ledger_id_pairs": 540
+  },
+  "result": "PASS_COMPLETE_LEDGER_COVERAGE_WITH_INCOMPLETE_CORPUS_SCOPE",
+  "schema": "agko-public-expert-review-receipt-v1"
+}

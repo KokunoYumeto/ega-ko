@@ -1,61 +1,123 @@
 {
-  "schema_version": 3,
-  "version": "2026-08-31-r34",
+  "schema_version": 4,
+  "version": "2026-09-05-r36",
   "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA0_I and EGA I complete; EGA II Chapter II programme complete; EGA II main contiguous through2.1.1 at canonical lines1-1358. Full EGA II and EGA corpus remain incomplete.",
+  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through 2.1.7 at canonical lines 1-1535. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 235,
-    "bytes": 1462350,
-    "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
+    "bytes": 1474518,
+    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+    "pages": 237
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16256,
-    "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
+    "bytes": 16262,
+    "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 224
+    "historical_markers": 226
   },
-  "exact_doi": "10.5281/zenodo.22209381",
+  "exact_doi": "10.5281/zenodo.22217711",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r33 /10.5281/zenodo.22208685; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1360 notation2.1.2;1359 blank",
-  "publication_evidence_rule": "This file is a pre-publication snapshot. Archive and portable-build evidence is recorded outside the frozen package in release/2026-08-31-r34/PACKAGE_RECEIPT.json and PORTABLE_BUILD_REPLAY.json. Subsequent public transactions are proved by receipt-r34.json and github-receipt-r34.json, never inferred from this snapshot.",
+  "prior_public_checkpoint": "r34 / 10.5281/zenodo.22209381; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line 1537, environment 2.1.8; line 1536 blank",
+  "publication_evidence_rule": "This file is a pre-publication snapshot. Frozen archive, portable replay, GitHub/Zenodo transaction and anonymous public-byte replay evidence must be recorded separately and are not inferred here.",
   "engine": "XeLaTeX / MiKTeX",
-  "strict_passes": 6,
-  "independent_three_pass_cycles": 2,
-  "repeat_pdf_bytes_identical": true,
+  "mutex": {
+    "name": "Global\\InterlanguageTeXSlotV1",
+    "timeout_ms": 300000,
+    "acquired": true,
+    "abandoned_recovery": false
+  },
+  "convergence": {
+    "strict_passes": 8,
+    "independent_four_pass_cycles": 2,
+    "cycle_a": {
+      "pass2_bytes": 1474536,
+      "pass2_sha256": "7E5DE54ACD3AEE0F114AC6AD5013C49A023401525BAC7C4665B22BA46F40FD31",
+      "pass3_bytes": 1474518,
+      "pass3_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass4_bytes": 1474518,
+      "pass4_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_b": {
+      "pass2_bytes": 1474536,
+      "pass2_sha256": "7E5DE54ACD3AEE0F114AC6AD5013C49A023401525BAC7C4665B22BA46F40FD31",
+      "pass3_bytes": 1474518,
+      "pass3_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass4_bytes": 1474518,
+      "pass4_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_finals_byte_identical": true,
+    "reader_promotion_byte_identical": true,
+    "initial_three_pass_observation": "An earlier three-pass run produced byte-identical cycle finals but pass 2 differed from pass 3, so three passes did not itself prove a fixed point. BUILD.ps1 was repaired to require pass 3 = pass 4 in both clean cycles; the accepted build satisfies that stronger gate."
+  },
+  "build_script": {
+    "path": "build/BUILD.ps1",
+    "bytes": 20370,
+    "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+  },
   "logs": {
-    "paths": [
-      "evidence/build-r34.log",
-      "evidence/build.log"
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51944,
+      "sha256": "82BDA0B99B3C2A54CA20AB121BC6375DD23BF1645F6D52507BA9BA3604254FBA"
+    },
+    "public_sanitized": [
+      {
+        "path": "evidence/build-r36.log",
+        "bytes": 51794,
+        "sha256": "BA53A9A21F5363CD2323994F849C6F1FB0803EFC8E00DB11D87EB682216CAD3E"
+      },
+      {
+        "path": "evidence/build.log",
+        "bytes": 51794,
+        "sha256": "BA53A9A21F5363CD2323994F849C6F1FB0803EFC8E00DB11D87EB682216CAD3E"
+      }
     ],
-    "bytes": 51812,
-    "sha256": "061D7745E8266C4E0DB6CD7B7226611E63978C2B4C6C6DC39D6C7D9C3383CC73",
-    "sanitization": "Exact repository roots replaced by[KOREAN_REPO_ROOT]; local profile roots replaced by[USER_PROFILE]; public derivatives normalized to LF. Not raw-log byte-identical copies. Original raw retained only at build/out/main.log; no historical log edited."
+    "public_logs_equal": true,
+    "sanitization": "Exact Korean repository, private-work, canonical and local user-profile paths replaced by bracketed role labels; derivatives normalized to LF. The raw log remains under build/out and no historical log was edited.",
+    "local_absolute_profile_absent": true
   },
   "extraction": {
     "poppler": {
       "path": "evidence/extract.txt",
-      "bytes": 714079,
-      "sha256": "BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98"
+      "bytes": 721726,
+      "sha256": "909937C7A40D31DA9787C01812DCB46C8CC40DACF3D5C1F69BD5099959277E46"
     },
     "pypdf": {
       "path": "evidence/extract-pypdf.txt",
-      "bytes": 689260,
-      "sha256": "5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C"
+      "bytes": 696608,
+      "sha256": "D56B3623A698A1E5283DB33BD7B59EDF59D2ECAAD698950420BB0A35136B81B8"
     },
-    "each_hangul": 149669,
+    "each_hangul_syllables": 151372,
     "each_replacement_characters": 0,
-    "current_exact_doi_each": 1,
-    "prior_exact_doi_each": 0,
-    "limitations": "Plain-text extraction is not lossless for eight inherited embedded Type1 mathematical/diagram resources that lack ToUnicode. Formula authority remains the source-synchronized TeX plus the rendered PDF; the isolated Poppler 0_I page70 token limitation is documented in R34_PDF_QA.json."
+    "full_historical_sequence_pypdf": true,
+    "poppler_documented_0I_page70_exception": true
   },
-  "translation_admission": "evidence/controls/R34_TRANSLATION_ADMISSION.json",
-  "portable_replay": "Recorded after frozen source archive in external release receipt; not claimed by this snapshot",
-  "validation_checkpoint": "evidence/controls/R34_VALIDATION_CHECKPOINT.json"
+  "translation_admission": {
+    "path": "evidence/controls/R36_TRANSLATION_ADMISSION.json",
+    "bytes": 6018,
+    "sha256": "7873F7BCAE78E8E134F71E9543F84A250BD9E3051E044796D2B4B48637AA9565"
+  },
+  "pdf_qa": {
+    "path": "evidence/controls/R36_PDF_QA.json",
+    "bytes": 11605,
+    "sha256": "9FA62E458E9E376B982B0FA5BCF256B053F9E9E5C673A68DA987CC079F3D5BEF"
+  },
+  "qa_script": {
+    "path": "scripts/qa_r36_pdf.py",
+    "bytes": 20878,
+    "sha256": "FA4319FF9D4EA7AB597DAE506644C91EEF3F9093E9D52854A6A55E3EA1AAE26C"
+  },
+  "portable_replay": "Required after frozen source archive; not claimed by this snapshot",
+  "status": "PASS_LOCAL_BUILD_AND_PDF_QA",
+  "measured_at": "2026-09-05T04:10:33+02:00"
 }

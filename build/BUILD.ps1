@@ -2,11 +2,17 @@ $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $src = Join-Path $root 'source'
-$out = Join-Path $root 'build\out'
+$buildRoot = Join-Path $root 'build'
+$out = Join-Path $buildRoot 'out'
 $reader = Join-Path $root 'reader\00_EGA_ko_CUMULATIVE_READER.pdf'
 $pdf = Join-Path $out 'main.pdf'
 $log = Join-Path $out 'main.log'
-$reference = Join-Path $out 'main.reference.pdf'
+$passTwoPdf = Join-Path $out 'main.pass2.pdf'
+$passThreePdf = Join-Path $out 'main.pass3.pdf'
+$cycleAPdf = Join-Path $buildRoot 'cycle-a.pdf'
+$cycleALog = Join-Path $buildRoot 'cycle-a.log'
+$cycleAPassTwoPdf = Join-Path $buildRoot 'cycle-a.pass2.pdf'
+$cycleAPassThreePdf = Join-Path $buildRoot 'cycle-a.pass3.pdf'
 $inputManifestPath = Join-Path $src 'CUMULATIVE_INPUTS.json'
 
 if (-not (Test-Path -LiteralPath $inputManifestPath -PathType Leaf)) {
@@ -185,50 +191,257 @@ if (($presentTex -join "`n") -cne ($knownTex -join "`n")) {
   throw 'The source tree contains undeclared or absent TeX files; cumulative inclusion is not proven.'
 }
 
-New-Item -ItemType Directory -Force -Path $out | Out-Null
-New-Item -ItemType Directory -Force -Path (Split-Path -Parent $reader) | Out-Null
-Get-Command xelatex -ErrorAction Stop | Out-Null
+$xelatexCommand = Get-Command xelatex -CommandType Application -ErrorAction Stop
+$xelatexPath = $xelatexCommand.Path
 
-# Freeze PDF creation metadata so clean builds are byte-reproducible.
-$previousEpoch = $env:SOURCE_DATE_EPOCH
-$previousForce = $env:FORCE_SOURCE_DATE
-$previousTz = $env:TZ
-$env:SOURCE_DATE_EPOCH = '1786633200'
-$env:FORCE_SOURCE_DATE = '1'
-$env:TZ = 'UTC'
+$badDiagnostics = @(
+  'Undefined control sequence',
+  'LaTeX Error',
+  'Fatal error',
+  'Emergency stop',
+  'undefined references',
+  'Rerun to get',
+  'Label(s) may have changed',
+  'Missing character',
+  'Overfull \hbox',
+  'Underfull \hbox',
+  'Overfull \vbox',
+  'Underfull \vbox'
+)
 
-Push-Location $src
+function Reset-TaskOwnedBuildDirectory {
+  param(
+    [Parameter(Mandatory)][string]$Path,
+    [Parameter(Mandatory)][string]$ExpectedLeaf
+  )
+
+  $fullBuildRoot = [IO.Path]::GetFullPath($buildRoot).TrimEnd([char[]]@('\', '/'))
+  $fullPath = [IO.Path]::GetFullPath($Path).TrimEnd([char[]]@('\', '/'))
+  $actualParent = [IO.Path]::GetDirectoryName($fullPath).TrimEnd([char[]]@('\', '/'))
+  $actualLeaf = [IO.Path]::GetFileName($fullPath)
+  $buildItem = Get-Item -LiteralPath $fullBuildRoot -Force
+
+  if (-not $buildItem.PSIsContainer -or
+      (($buildItem.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0)) {
+    throw 'The task build root is not an ordinary directory.'
+  }
+  if (-not [string]::Equals($actualParent, $fullBuildRoot, [StringComparison]::OrdinalIgnoreCase)) {
+    throw "Refusing to clean a path outside the exact task build root: $fullPath"
+  }
+  if (-not [string]::Equals($actualLeaf, $ExpectedLeaf, [StringComparison]::Ordinal)) {
+    throw "Refusing to clean an unexpected task build directory: $fullPath"
+  }
+  if (Test-Path -LiteralPath $fullPath) {
+    $item = Get-Item -LiteralPath $fullPath -Force
+    if (-not $item.PSIsContainer -or
+        (($item.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0)) {
+      throw "Refusing to remove a non-directory or reparse point: $fullPath"
+    }
+    Remove-Item -LiteralPath $fullPath -Recurse -Force
+  }
+  New-Item -ItemType Directory -Path $fullPath | Out-Null
+}
+
+function Test-FilesByteIdentical {
+  param(
+    [Parameter(Mandatory)][string]$Left,
+    [Parameter(Mandatory)][string]$Right
+  )
+
+  $leftStream = $null
+  $rightStream = $null
+  try {
+    $leftStream = [IO.File]::OpenRead($Left)
+    $rightStream = [IO.File]::OpenRead($Right)
+    if ($leftStream.Length -ne $rightStream.Length) { return $false }
+    $leftBuffer = New-Object byte[] 1048576
+    $rightBuffer = New-Object byte[] 1048576
+    while ($true) {
+      $leftRead = $leftStream.Read($leftBuffer, 0, $leftBuffer.Length)
+      $rightRead = $rightStream.Read($rightBuffer, 0, $rightBuffer.Length)
+      if ($leftRead -ne $rightRead) { return $false }
+      if ($leftRead -eq 0) { return $true }
+      for ($i = 0; $i -lt $leftRead; $i++) {
+        if ($leftBuffer[$i] -ne $rightBuffer[$i]) { return $false }
+      }
+    }
+  } finally {
+    if ($null -ne $rightStream) { $rightStream.Dispose() }
+    if ($null -ne $leftStream) { $leftStream.Dispose() }
+  }
+}
+
+function Invoke-XeLaTeXCycle {
+  param(
+    [Parameter(Mandatory)][string]$Cycle,
+    [Parameter(Mandatory)][string]$OutputDirectory,
+    [Parameter(Mandatory)][string]$PassTwoPdfPath,
+    [Parameter(Mandatory)][string]$PassThreePdfPath
+  )
+
+  for ($pass = 1; $pass -le 4; $pass++) {
+    $stdoutPath = Join-Path $OutputDirectory "main.pass-$pass.stdout.txt"
+    $stderrPath = Join-Path $OutputDirectory "main.pass-$pass.stderr.txt"
+    $arguments = @(
+      '-no-shell-escape',
+      '-interaction=nonstopmode',
+      '-halt-on-error',
+      ('-output-directory="{0}"' -f $OutputDirectory),
+      'main.tex'
+    )
+    $process = $null
+    $exitCode = $null
+    try {
+      $process = Start-Process -FilePath $xelatexPath -ArgumentList $arguments `
+        -WorkingDirectory $src -NoNewWindow `
+        -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath `
+        -Wait -PassThru
+      $exitCode = $process.ExitCode
+    } finally {
+      if ($null -ne $process) { $process.Dispose() }
+    }
+    if ($exitCode -ne 0) {
+      throw "$Cycle XeLaTeX pass $pass failed with exit code $exitCode."
+    }
+    if ($pass -eq 2) {
+      $currentPdf = Join-Path $OutputDirectory 'main.pdf'
+      if (-not (Test-Path -LiteralPath $currentPdf -PathType Leaf)) {
+        throw "$Cycle did not produce a pass-2 PDF."
+      }
+      Copy-Item -LiteralPath $currentPdf -Destination $PassTwoPdfPath -Force
+    }
+    if ($pass -eq 3) {
+      $currentPdf = Join-Path $OutputDirectory 'main.pdf'
+      if (-not (Test-Path -LiteralPath $currentPdf -PathType Leaf)) {
+        throw "$Cycle did not produce a pass-3 PDF."
+      }
+      Copy-Item -LiteralPath $currentPdf -Destination $PassThreePdfPath -Force
+    }
+  }
+}
+
+function Get-ValidatedCycleResult {
+  param(
+    [Parameter(Mandatory)][string]$Cycle,
+    [Parameter(Mandatory)][string]$FinalPdfPath,
+    [Parameter(Mandatory)][string]$PassTwoPdfPath,
+    [Parameter(Mandatory)][string]$PassThreePdfPath,
+    [Parameter(Mandatory)][string]$LogPath
+  )
+
+  foreach ($requiredPath in @($FinalPdfPath, $PassTwoPdfPath, $PassThreePdfPath, $LogPath)) {
+    if (-not (Test-Path -LiteralPath $requiredPath -PathType Leaf)) {
+      throw "$Cycle output is missing: $requiredPath"
+    }
+  }
+  $logText = Get-Content -LiteralPath $LogPath -Raw
+  foreach ($pattern in $badDiagnostics) {
+    if ($logText.Contains($pattern)) { throw "$Cycle build diagnostic found: $pattern" }
+  }
+  $passTwoItem = Get-Item -LiteralPath $PassTwoPdfPath
+  $passThreeItem = Get-Item -LiteralPath $PassThreePdfPath
+  $finalItem = Get-Item -LiteralPath $FinalPdfPath
+  $passTwoHash = (Get-FileHash -LiteralPath $PassTwoPdfPath -Algorithm SHA256).Hash
+  $passThreeHash = (Get-FileHash -LiteralPath $PassThreePdfPath -Algorithm SHA256).Hash
+  $finalHash = (Get-FileHash -LiteralPath $FinalPdfPath -Algorithm SHA256).Hash
+  $passTwoFinalIdentical = Test-FilesByteIdentical -Left $PassTwoPdfPath -Right $FinalPdfPath
+  $passThreeFinalIdentical = Test-FilesByteIdentical -Left $PassThreePdfPath -Right $FinalPdfPath
+  if (-not $passThreeFinalIdentical) {
+    throw "$Cycle did not converge byte-exactly between passes 3 and 4."
+  }
+  [pscustomobject]@{
+    bytes = $finalItem.Length
+    sha256 = $finalHash
+    pass_two_bytes = $passTwoItem.Length
+    pass_two_sha256 = $passTwoHash
+    pass_two_final_identical = $passTwoFinalIdentical
+    pass_three_bytes = $passThreeItem.Length
+    pass_three_sha256 = $passThreeHash
+    pass_three_final_identical = $passThreeFinalIdentical
+  }
+}
+
+$mutexName = 'Global\InterlanguageTeXSlotV1'
+$mutexTimeoutMilliseconds = 300000
+$mutex = $null
+$mutexAcquired = $false
+$abandonedMutexRecovered = $false
+$buildResult = $null
+
 try {
-  1..3 | ForEach-Object {
-    & xelatex -interaction=nonstopmode -halt-on-error -output-directory $out 'main.tex' | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "XeLaTeX pass $_ failed with exit code $LASTEXITCODE." }
+  $mutex = [Threading.Mutex]::new($false, $mutexName)
+  try {
+    $mutexAcquired = $mutex.WaitOne($mutexTimeoutMilliseconds)
+  } catch [Threading.AbandonedMutexException] {
+    $mutexAcquired = $true
+    $abandonedMutexRecovered = $true
   }
-  Copy-Item -LiteralPath $pdf -Destination $reference -Force
-  1..3 | ForEach-Object {
-    & xelatex -interaction=nonstopmode -halt-on-error -output-directory $out 'main.tex' | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "XeLaTeX repeat pass $_ failed with exit code $LASTEXITCODE." }
+  if (-not $mutexAcquired) {
+    throw "Timed out after $mutexTimeoutMilliseconds ms acquiring $mutexName."
   }
-  $referenceHash = (Get-FileHash -LiteralPath $reference -Algorithm SHA256).Hash
-  $repeatHash = (Get-FileHash -LiteralPath $pdf -Algorithm SHA256).Hash
-  if ($referenceHash -ne $repeatHash) { throw 'Repeated fixed-metadata build is not byte-identical.' }
-  Remove-Item -LiteralPath $reference
+
+  $previousEpoch = $env:SOURCE_DATE_EPOCH
+  $previousForce = $env:FORCE_SOURCE_DATE
+  $previousTz = $env:TZ
+  try {
+    $env:SOURCE_DATE_EPOCH = '1786633200'
+    $env:FORCE_SOURCE_DATE = '1'
+    $env:TZ = 'UTC'
+    New-Item -ItemType Directory -Force -Path (Split-Path -Parent $reader) | Out-Null
+
+    Reset-TaskOwnedBuildDirectory -Path $out -ExpectedLeaf 'out'
+    Invoke-XeLaTeXCycle -Cycle 'clean cycle A' -OutputDirectory $out -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf
+    $cycleA = Get-ValidatedCycleResult -Cycle 'clean cycle A' -FinalPdfPath $pdf -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf -LogPath $log
+    Copy-Item -LiteralPath $pdf -Destination $cycleAPdf -Force
+    Copy-Item -LiteralPath $log -Destination $cycleALog -Force
+    Copy-Item -LiteralPath $passTwoPdf -Destination $cycleAPassTwoPdf -Force
+    Copy-Item -LiteralPath $passThreePdf -Destination $cycleAPassThreePdf -Force
+
+    Reset-TaskOwnedBuildDirectory -Path $out -ExpectedLeaf 'out'
+    Invoke-XeLaTeXCycle -Cycle 'clean cycle B' -OutputDirectory $out -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf
+    $cycleB = Get-ValidatedCycleResult -Cycle 'clean cycle B' -FinalPdfPath $pdf -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf -LogPath $log
+
+    $cleanCyclesMatch = Test-FilesByteIdentical -Left $cycleAPdf -Right $pdf
+    if ($cycleA.bytes -ne $cycleB.bytes -or
+        $cycleA.sha256 -cne $cycleB.sha256 -or
+        -not $cleanCyclesMatch) {
+      throw 'The two independent clean builds are not byte-identical.'
+    }
+
+    Copy-Item -LiteralPath $pdf -Destination $reader -Force
+    $readerItem = Get-Item -LiteralPath $reader
+    $readerHash = (Get-FileHash -LiteralPath $reader -Algorithm SHA256).Hash
+    $promotionMatches = Test-FilesByteIdentical -Left $pdf -Right $reader
+    if ($readerItem.Length -ne $cycleB.bytes -or
+        $readerHash -cne $cycleB.sha256 -or
+        -not $promotionMatches) {
+      throw 'Reader promotion did not preserve the validated PDF bytes.'
+    }
+
+    $abandonedText = $abandonedMutexRecovered.ToString().ToLowerInvariant()
+    $buildResult = "PASS $($readerItem.Length) bytes SHA-256 $readerHash; " +
+      "cycle_a_sha256=$($cycleA.sha256); cycle_b_sha256=$($cycleB.sha256); " +
+      "cycle_a_pass2_sha256=$($cycleA.pass_two_sha256); " +
+      "cycle_b_pass2_sha256=$($cycleB.pass_two_sha256); " +
+      "cycle_a_pass3_sha256=$($cycleA.pass_three_sha256); " +
+      "cycle_b_pass3_sha256=$($cycleB.pass_three_sha256); " +
+      "cycle_a_pass2_final_identical=$($cycleA.pass_two_final_identical.ToString().ToLowerInvariant()); " +
+      "cycle_b_pass2_final_identical=$($cycleB.pass_two_final_identical.ToString().ToLowerInvariant()); " +
+      "cycle_a_pass3_final_identical=$($cycleA.pass_three_final_identical.ToString().ToLowerInvariant()); " +
+      "cycle_b_pass3_final_identical=$($cycleB.pass_three_final_identical.ToString().ToLowerInvariant()); " +
+      "mutex=$mutexName; timeout_ms=$mutexTimeoutMilliseconds; " +
+      "abandoned_recovery=$abandonedText"
+  } finally {
+    if ($null -eq $previousEpoch) { Remove-Item Env:SOURCE_DATE_EPOCH -ErrorAction SilentlyContinue } else { $env:SOURCE_DATE_EPOCH = $previousEpoch }
+    if ($null -eq $previousForce) { Remove-Item Env:FORCE_SOURCE_DATE -ErrorAction SilentlyContinue } else { $env:FORCE_SOURCE_DATE = $previousForce }
+    if ($null -eq $previousTz) { Remove-Item Env:TZ -ErrorAction SilentlyContinue } else { $env:TZ = $previousTz }
+  }
 } finally {
-  Pop-Location
-  if ($null -eq $previousEpoch) { Remove-Item Env:SOURCE_DATE_EPOCH -ErrorAction SilentlyContinue } else { $env:SOURCE_DATE_EPOCH = $previousEpoch }
-  if ($null -eq $previousForce) { Remove-Item Env:FORCE_SOURCE_DATE -ErrorAction SilentlyContinue } else { $env:FORCE_SOURCE_DATE = $previousForce }
-  if ($null -eq $previousTz) { Remove-Item Env:TZ -ErrorAction SilentlyContinue } else { $env:TZ = $previousTz }
+  try {
+    if ($mutexAcquired) { $mutex.ReleaseMutex() }
+  } finally {
+    if ($null -ne $mutex) { $mutex.Dispose() }
+  }
 }
 
-if (-not (Test-Path -LiteralPath $pdf -PathType Leaf)) { throw 'Reader PDF was not produced.' }
-if (-not (Test-Path -LiteralPath $log -PathType Leaf)) { throw 'Build log was not produced.' }
-
-$logText = Get-Content -LiteralPath $log -Raw
-$bad = @('Undefined control sequence', 'LaTeX Error', 'Fatal error', 'Emergency stop', 'undefined references', 'Rerun to get', 'Label(s) may have changed', 'Missing character', 'Overfull \hbox', 'Underfull \hbox', 'Overfull \vbox', 'Underfull \vbox')
-foreach ($pattern in $bad) {
-  if ($logText.Contains($pattern)) { throw "Build diagnostic found: $pattern" }
-}
-
-Copy-Item -LiteralPath $pdf -Destination $reader -Force
-$item = Get-Item -LiteralPath $reader
-$hash = (Get-FileHash -LiteralPath $reader -Algorithm SHA256).Hash
-Write-Output "PASS $($item.Length) bytes SHA-256 $hash"
+Write-Output $buildResult

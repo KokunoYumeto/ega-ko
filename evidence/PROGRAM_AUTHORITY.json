@@ -1,27 +1,55 @@
 {
-  "schema": "ag-ko-program-authority-public-v2",
-  "updated": "2026-08-28T13:06:56+02:00",
+  "schema": "ag-ko-program-authority-public-v3",
+  "updated": "2026-09-05T04:25:00+02:00",
   "canonical_source": "[CANONICAL_SOURCE_ROOT]/source/ega2/ega2-1-fr.tex",
   "canonical_source_bytes": 820505,
   "canonical_source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-  "package_mapping": {
-    "canonical_front": "source/ega2/front-fr.tex 1423 bytes /F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
-    "target_front": "source/c2front.tex 1500 bytes /6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
-    "canonical_main_unit": "source/ega2/ega2-1-fr.tex lines1-800 35097 LF bytes /89263B4EB529B555865CDC32B5C50D518B2CF11353ED5BF3BB6C4CE24CD9A5D5",
-    "r28_target_main": "source/c2s1.tex 35910 bytes /C7BD6E6FF32D60B9E4C5AAC952F564CEB814677269A56BCFDF39534B5ACDDF98",
-    "restored_marker_target": "source/c0.tex 279433 bytes /8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D; printed-page marker63 restored",
-    "cumulative_input_manifest": "source/CUMULATIVE_INPUTS.json v2 16270 bytes /E4B8AFF13F239365036AB5F215710099A459D24A481A60F1E1D0A0A68A710DE3;17 ordered inputs;23 rows=16 complete/1 partial/6 explicitly untranslated;218 historical markers"
+  "scope": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.7 at canonical lines1-1535. Full EGA II and the EGA corpus remain incomplete.",
+  "current_bindings": {
+    "canonical_prefix": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "whole_bytes": 820505,
+      "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "admitted_lines": "1-1535",
+      "admitted_bytes": 70120,
+      "admitted_sha256": "ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91"
+    },
+    "korean_target": {
+      "path": "source/c2s1.tex",
+      "bytes": 71548,
+      "sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
+      "lf_lines": 1554
+    },
+    "cumulative_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16262,
+      "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
+      "ordered_inputs": 17,
+      "canonical_rows": 23,
+      "complete": 16,
+      "partial": 1,
+      "not_translated": 6,
+      "historical_markers": 226
+    },
+    "reader": {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 237,
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
+    }
   },
-  "scope": "Complete EGA0_I and EGA I; complete EGA II Chapter II programme; EGA II main text contiguous through1.5.7 / canonical lines1-800; full EGA II and full EGA corpus incomplete",
-  "sequence": "EGA I then EGA II then FGA; later EGA begins with EGA III only after sequence and exact source validation; SGA is separate and inactive",
+  "sequence": "EGA I then EGA II then FGA; later EGA begins with EGA III only after the sequence and exact source validation; SGA is separate and inactive",
+  "terminology": "French authority controls meaning; Korean professional usage and the hash-bound Stacks ko-KR export are non-overriding evidence. Preserve finite-type/finite-generation distinctions and EGA 준스킴.",
   "publication": {
-    "status": "R28_ZENODO_PUBLIC_REPLAY_PASS; GitHub mirror pending",
-    "candidate_exact_doi": "10.5281/zenodo.22142960",
-    "record_id": 22142960,
+    "status": "R36_LOCAL_PACKAGE_AND_PORTABLE_REPLAY_PASS; PUBLICATION_PENDING",
+    "candidate_exact_doi": "10.5281/zenodo.22217711",
+    "record_id": 22217711,
     "concept_doi": "10.5281/zenodo.21921513",
-    "prior_public_doi": "10.5281/zenodo.22141753",
-    "github_status": "r28 pending; r27 terminal checkpoint remains public",
-    "figshare_article": "10.6084/m9.figshare.33314679",
-    "figshare_status": "existing Korean EGA target retained; no duplicate article"
+    "prior_public_doi": "10.5281/zenodo.22209381",
+    "github": "https://github.com/KokunoYumeto/ega-ko",
+    "active_destinations": [
+      "Zenodo",
+      "GitHub"
+    ]
   }
 }

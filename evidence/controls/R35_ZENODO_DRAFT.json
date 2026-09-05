@@ -1,0 +1,12 @@
+{
+  "schema": "ag-ko-zenodo-draft-state-v1",
+  "version": "2026-09-01-r35",
+  "created_at": "2026-09-01T03:08:40+02:00",
+  "parent_record_id": 22209381,
+  "record_id": 22217711,
+  "exact_doi": "10.5281/zenodo.22217711",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "operation": "POST newversion exactly once after authenticated lineage query found no unsubmitted draft",
+  "status": "reserved_unpublished",
+  "credentials_present": false
+}
