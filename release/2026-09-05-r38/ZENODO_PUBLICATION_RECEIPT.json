@@ -1,0 +1,125 @@
+{
+  "schema": "ag-ko-zenodo-publication-receipt-v3",
+  "version": "2026-09-05-r38",
+  "verified_at_utc": "2026-09-05T21:35:56.710179+00:00",
+  "record_id": 22346664,
+  "exact_doi": "10.5281/zenodo.22346664",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "record_url": "https://zenodo.org/records/22346664",
+  "predecessor": {
+    "record_id": 22315714,
+    "exact_doi": "10.5281/zenodo.22315714",
+    "lineage_verified": true
+  },
+  "operation": "used only the pre-reserved same-lineage draft; created no deposition or version; replaced inherited copies; armed one durable attempt latch; issued at most one publish request across invocations",
+  "publication_request_outcome": "accepted with HTTP 202",
+  "verification_only_recovery": false,
+  "inherited_draft_files_removed": [
+    "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "03_EGA_ko_SHA256_MANIFEST.txt"
+  ],
+  "uploaded": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 430517,
+      "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 122840828,
+      "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988"
+    }
+  ],
+  "authenticated_draft_readback": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+      "byte_identical": true
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 430517,
+      "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2",
+      "byte_identical": true
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 122840828,
+      "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197",
+      "byte_identical": true
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988",
+      "byte_identical": true
+    }
+  ],
+  "authenticated_draft_readback_status": "PASS_AUTHENTICATED_DRAFT_BYTE_REPLAY",
+  "publish_attempt_latch": {
+    "path": "controls/R38_ZENODO_PUBLISH_ATTEMPT.json",
+    "bytes": 1419,
+    "sha256": "27637E0E6995369648F4F6CAEDDF6F7E48F567493EB9AF1F90C62C166D6E1445",
+    "post_retry_permitted": false
+  },
+  "anonymous_public_readback": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+      "byte_identical": true
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 430517,
+      "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2",
+      "byte_identical": true
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 122840828,
+      "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197",
+      "byte_identical": true
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988",
+      "byte_identical": true
+    }
+  ],
+  "doi_resolution": {
+    "status_code": 200,
+    "final_url": "https://zenodo.org/records/22346664"
+  },
+  "metadata": {
+    "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+    "version": "2026-09-05-r38",
+    "access": "public/open",
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "contributors": [
+      "AI typesetting & translation"
+    ],
+    "excluded_prose_count": 0,
+    "excluded_prose_and_private_identity_count": 0,
+    "rights_scope_provenance_and_nonendorsement": "PASS"
+  },
+  "credentials_present": false,
+  "result": "PASS_ZENODO_PUBLICATION_AND_ANONYMOUS_BYTE_REPLAY"
+}

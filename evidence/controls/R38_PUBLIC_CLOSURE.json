@@ -1,0 +1,132 @@
+{
+  "schema": "ag-ko-r38-minimal-public-closure-v1",
+  "version": "2026-09-05-r38",
+  "closed_at": "2026-09-06T00:36:52+02:00",
+  "coverage": "Complete Korean EGA 0_I and EGA I; complete EGA II programme/table of contents and main text contiguously through §2.2.1 / canonical lines 1-1683. EGA II and the full EGA corpus remain incomplete.",
+  "reader": {
+    "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 239,
+    "bytes": 1485270,
+    "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+  },
+  "source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "admitted_lines": "1-1683",
+    "admitted_bytes": 78088,
+    "admitted_sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75"
+  },
+  "target": {
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006"
+  },
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "artifact_commit": "f9fdf4fccbadda75dbdb74505336c6fd33975baa",
+    "artifact_parent": "2eb01c1656c37a818fcbbc05bb431be7f5905506",
+    "artifact_tree": "5c52ce8fb6929786b1fa28db2ceea434dab3c662",
+    "tag": "ega-ko-2026-09-05-r38",
+    "annotated_tag_object": "fd1affa7b12d4a7bcbdd386186ceeb0addeb0f8c",
+    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r38",
+    "receipt": {
+      "path": "github-receipt-r38.json",
+      "bytes": 78362,
+      "sha256": "E7528B33A0CC000268E72AAD77D6612FF6931098D57E39F7E5FF9238EE35057F"
+    },
+    "anonymous_byte_replay": "PASS_4_OF_4"
+  },
+  "zenodo": {
+    "record_id": 22346664,
+    "exact_doi": "10.5281/zenodo.22346664",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "record": "https://zenodo.org/records/22346664",
+    "predecessor_record_id": 22315714,
+    "predecessor_exact_doi": "10.5281/zenodo.22315714",
+    "access": "public/open",
+    "receipt": {
+      "path": "receipt-r38.json",
+      "bytes": 4328,
+      "sha256": "2750F62CA7A87A3C72A2D997290B103CC2F40E8298EB0E842439353FEA37BAA5"
+    },
+    "anonymous_byte_replay": "PASS_4_OF_4"
+  },
+  "artifacts": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 430517,
+      "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 122840828,
+      "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988"
+    }
+  ],
+  "package": {
+    "path": "release/2026-09-05-r38/PACKAGE_RECEIPT.json",
+    "bytes": 35345,
+    "sha256": "6357FD948CEE1054FBA56AC84CB321FFC0C6C3773A0378212D5B478156C4F63C"
+  },
+  "portable_replay": {
+    "path": "release/2026-09-05-r38/PORTABLE_BUILD_REPLAY.json",
+    "bytes": 12695,
+    "sha256": "777EA4337DB3A9E213402A1B14CEC9C2E2460CE6AC293A99CF7AC63ED60D162B"
+  },
+  "source_basis": {
+    "ega_ii_source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "whole_bytes": 820504,
+      "whole_lf_lines": 18087,
+      "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "admitted_lines": "1-1683",
+      "admitted_bytes": 78088,
+      "admitted_sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75"
+    },
+    "action": "Preserve frozen R38 bytes; no rebuild or repack is warranted."
+  },
+  "continuation": {
+    "ega_ii": "active and incomplete",
+    "next": "EGA II canonical source/ega2/ega2-1-fr.tex line1685, environment §2.2.2; all future-unit candidate, admission, and integration state is controlled separately and is not bound by the R38 closure",
+    "next_unit": {
+      "status": "SEPARATELY_CONTROLLED_OUTSIDE_R38_PUBLIC_CLOSURE",
+      "source": {
+        "path": "source/ega2/ega2-1-fr.tex",
+        "next_line": 1685,
+        "environment": "§2.2.2"
+      },
+      "candidate_admission_and_integration": "separately controlled outside R38 closure"
+    },
+    "order": "finish EGA II, then FGA; later EGA only after that",
+    "sga": "outside active scope"
+  },
+  "transaction": {
+    "private_journal": "durable private evidence; not a public repository path",
+    "fresh_preimage_snapshot_sha256": "882A941B42BA3CB6D6DBC0A4F83401BC718346203721D84DFEBD5A7D0168674E"
+  },
+  "metadata": {
+    "creators": [
+      "Grothendieck, Alexander",
+      "Dieudonné, Jean"
+    ],
+    "sole_project_contributor": "AI typesetting & translation",
+    "rights_scope_provenance_and_nonendorsement": "PASS",
+    "excluded_prose_count": 0
+  },
+  "credentials_present": false,
+  "result": "PASS_R38_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY"
+}
