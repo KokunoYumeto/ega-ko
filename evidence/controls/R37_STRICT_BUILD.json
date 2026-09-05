@@ -1,0 +1,81 @@
+{
+  "schema": "agko-r37-strict-build-control-v1",
+  "version": "2026-09-05-r37",
+  "exact_doi": "10.5281/zenodo.22315714",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+    "pages": 238
+  },
+  "coverage_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16264,
+    "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED",
+    "historical_markers": 227
+  },
+  "build_script": {
+    "path": "build/BUILD.ps1",
+    "bytes": 20370,
+    "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+  },
+  "strict_build": {
+    "status": "PASS",
+    "engine": "XeLaTeX / MiKTeX",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_timeout_ms": 300000,
+    "abandoned_recovery": false,
+    "live_canonical_and_private_coverage_gate": "PASS",
+    "xelatex_passes": 8,
+    "independent_clean_cycles": 2
+  },
+  "convergence": {
+    "cycle_a": {
+      "pass2_bytes": 1479213,
+      "pass2_sha256": "24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4",
+      "pass3_bytes": 1479200,
+      "pass3_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass4_bytes": 1479200,
+      "pass4_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_b": {
+      "pass2_bytes": 1479213,
+      "pass2_sha256": "24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4",
+      "pass3_bytes": 1479200,
+      "pass3_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass4_bytes": 1479200,
+      "pass4_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_finals_byte_identical": true,
+    "reader_promotion_byte_identical": true
+  },
+  "retained_final_cycle": {
+    "pass2_pdf": {
+      "path": "build/out/main.pass2.pdf",
+      "bytes": 1479213,
+      "sha256": "24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4"
+    },
+    "pass3_pdf": {
+      "path": "build/out/main.pass3.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "pass4_pdf": {
+      "path": "build/out/main.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "raw_log": {
+      "path": "build/out/main.log",
+      "bytes": 51950,
+      "sha256": "D3EB9074068C39518143D6E2271D0552039059ED0CE99D0A94CB8F0DB97727BA"
+    }
+  },
+  "terminal_record": "PASS 1479200 bytes SHA-256 22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61; cycle_a_sha256=22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61; cycle_b_sha256=22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61; cycle_a_pass2_sha256=24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4; cycle_b_pass2_sha256=24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4; cycle_a_pass3_sha256=22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61; cycle_b_pass3_sha256=22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61; cycle_a_pass2_final_identical=false; cycle_b_pass2_final_identical=false; cycle_a_pass3_final_identical=true; cycle_b_pass3_final_identical=true; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false",
+  "status": "PASS_R37_STRICT_TWO_CYCLE_FOUR_PASS_BUILD"
+}

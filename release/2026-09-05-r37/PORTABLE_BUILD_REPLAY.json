@@ -1,0 +1,193 @@
+{
+  "schema": "ag-ko-portable-replay-v3",
+  "version": "2026-09-05-r37",
+  "exact_doi": "10.5281/zenodo.22315714",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "source_archive": {
+    "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 350659,
+    "sha256": "3A489C7782CAA63D743CD11C704404815AAFD4B162E4A6816140FE79F3DDDF92",
+    "entries_verified": 44,
+    "files_verified": 40,
+    "directories_verified": 4,
+    "complete_inventory_bytes": 4429,
+    "complete_inventory_sha256": "1822B0EFAD3C517B1DF7CF590DFDF0893BBDBE390AC7C4A18A1BF3500E5893F6",
+    "verification": "PASS safe names, no duplicates, member types, CRC, sizes, extracted bytes and per-file SHA-256 inventory",
+    "required_r37_replay_and_validation_members": [
+      "build/BUILD.ps1",
+      "candidates/r37-c2s1-continuation.tex",
+      "candidates/validate_r37_candidate.py",
+      "scripts/package_r37.py",
+      "scripts/portable_replay_r37.py",
+      "scripts/prepare_r37_release.py",
+      "scripts/qa_r37_pdf.py",
+      "scripts/validate_expert_review_log.py",
+      "source/CUMULATIVE_INPUTS.json",
+      "source/c2s1.tex"
+    ]
+  },
+  "evidence_archive": {
+    "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "bytes": 120035218,
+    "sha256": "76826967CD4868E2CA3D98BEE4ACA32088423399947F5307DF4A01B6AFB66A97",
+    "package_receipt_and_outer_manifest_identity": "PASS",
+    "frozen_replay_members": [
+      "extract.txt",
+      "extract-pypdf.txt",
+      "render/r37-p001.png",
+      "render/r37-p237.png",
+      "render/r37-p238.png"
+    ]
+  },
+  "frozen_source_bindings": {
+    "cumulative_manifest": {
+      "bytes": 16264,
+      "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED",
+      "coverage": "through2.1.9 / canonical lines1-1605 / 227 historical markers"
+    },
+    "korean_target": {
+      "bytes": 75622,
+      "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383"
+    },
+    "build_script": {
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+    }
+  },
+  "build": {
+    "invocations": 1,
+    "internal_xelatex_passes": 8,
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "pass_count_proof": {
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77",
+      "four_pass_loop_definition": 1,
+      "cycle_invocations": 2,
+      "declared_xelatex_invocations": 8,
+      "failure_semantics": "each engine invocation throws on nonzero exit; pass3 must equal pass4 inside each cycle; cycle B final must equal cycle A final",
+      "result": "PASS_EXACT_BUILD_SCRIPT_CONTROL_FLOW"
+    },
+    "terminal_completion_proof": {
+      "stdout_terminal_record": "PASS 1479190 bytes SHA-256 871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2; cycle_a_sha256=871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2; cycle_b_sha256=871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2; cycle_a_pass2_sha256=43CB8595FAFC180A653F79F848B5EBA602F176E18C33F308AF7BF717B78CBF15; cycle_b_pass2_sha256=43CB8595FAFC180A653F79F848B5EBA602F176E18C33F308AF7BF717B78CBF15; cycle_a_pass3_sha256=871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2; cycle_b_pass3_sha256=871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2; cycle_a_pass2_final_identical=false; cycle_b_pass2_final_identical=false; cycle_a_pass3_final_identical=true; cycle_b_pass3_final_identical=true; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false",
+      "cycle_a_pass3_equals_pass4": true,
+      "cycle_b_pass3_equals_pass4": true,
+      "cycle_finals_byte_identical": true,
+      "portable_reader": {
+        "bytes": 1479190,
+        "sha256": "871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2"
+      },
+      "result": "PASS"
+    },
+    "timeout_seconds": 1800,
+    "timed_out": false,
+    "live_authority_environment": "omitted; frozen target hashes, declared inputs and admission records enforced",
+    "returncode": 0,
+    "stdout": {
+      "bytes": 831,
+      "sha256": "FF2DD837D9BB9BD903E0E2E539FDC21C9011050CA2F09AB5CA666296DCD6E0CC"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "log": {
+      "bytes": 52105,
+      "sha256": "EC55CF609DCFFAC05F37C82DC97D4B8CF65A48AED6E2DFD3A1FA71AAE8B3A8CE"
+    },
+    "result": "PASS"
+  },
+  "strict_reader": {
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+    "pages": 238
+  },
+  "portable_reader": {
+    "bytes": 1479190,
+    "sha256": "871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2",
+    "pages": 238
+  },
+  "pdf_byte_identical": false,
+  "container_delta": {
+    "observed": true,
+    "strict": {
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "portable": {
+      "bytes": 1479190,
+      "sha256": "871685D7E39FDEFE6A897D7689D2676B355024E6874A47580A12250E23E4AAB2"
+    },
+    "byte_identical": false,
+    "size_delta_portable_minus_strict": -10,
+    "classification": "unadjudicated container-level delta only",
+    "retention": "portable container identity is retained in this receipt; its staging bytes are deliberately deleted after all content-property replays pass",
+    "inference_rule": "No content, correctness, completion or publication-status inference is made from a container difference."
+  },
+  "extraction": {
+    "poppler": {
+      "bytes": 724814,
+      "sha256": "DD155CF9FE4B9F7F865E3858387AF4222DA16B41E935D398612670A82953FFBF",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 152023,
+      "replacement_characters": 0
+    },
+    "pypdf": {
+      "bytes": 699470,
+      "sha256": "45A9806C13729B3D8E804897B3515FDEAB64E7719B97ADB3C73ED6C5C6AE4B3B",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 152023,
+      "replacement_characters": 0
+    }
+  },
+  "extraction_runtime": {
+    "python_version": "3.13.9",
+    "pypdf_version": "6.12.2",
+    "pypdf_version_required": "6.12.2",
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "pdftotext_version_required": "pdftotext version 24.04.0",
+    "pypdf_page_join": "LF+FF+LF with one final LF; CRLF/CR normalized to LF",
+    "poppler_options": [
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "input.pdf",
+      "-"
+    ]
+  },
+  "render_replay": {
+    "comparisons": 3,
+    "dpi": 200,
+    "pages": [
+      {
+        "physical_page": 1,
+        "bytes": 91501,
+        "sha256": "E087A30C56F76DF99A1762B4C9C8313453F266759AE38F560036CA7C3836199B",
+        "frozen_evidence_entry": "render/r37-p001.png",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 237,
+        "bytes": 574945,
+        "sha256": "BA2C144EA19A407BDD727A373FED338614EA3EE32997293296DCD0ED647F33E9",
+        "frozen_evidence_entry": "render/r37-p237.png",
+        "byte_identical": true
+      },
+      {
+        "physical_page": 238,
+        "bytes": 134494,
+        "sha256": "4AEC28026EB31066E39C74C1BF02804D704A132B987F4969282851C1CA9ED7C3",
+        "frozen_evidence_entry": "render/r37-p238.png",
+        "byte_identical": true
+      }
+    ],
+    "result": "PASS_EXACT_PORTABLE_FROZEN_RASTER_IDENTITY_3_OF_3"
+  },
+  "visual_qa": "Portable raster bytes on pages1,237,238 exactly reproduce their already inspected strict-reader counterparts; no new full-document visual rereview is claimed.",
+  "staging_cleanup": {
+    "exact_target": "[PRIVATE_ROOT]/release-staging/r37-portable-replay",
+    "scope": "only the fresh task-owned replay staging directory after all replay gates passed",
+    "deleted": true
+  },
+  "result": "PASS_PORTABLE_BUILD_EXACT_TEXT_AND_SELECTED_RENDER_REPLAY"
+}

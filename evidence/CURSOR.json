@@ -1,45 +1,72 @@
 {
   "schema_version": 4,
-  "version": "2026-09-05-r36",
-  "updated": "2026-09-05T04:25:00+02:00",
-  "snapshot_phase": "local_qa_and_portable_replay_ready_for_publication",
-  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.7 at canonical lines1-1535. Full EGA II and the EGA corpus remain incomplete.",
+  "version": "2026-09-05-r37",
+  "updated": "2026-09-05T05:12:46+02:00",
+  "snapshot_phase": "local_build_and_pdf_qa_pass_package_portable_publication_pending",
+  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.9 at canonical lines1-1605. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 237,
-    "bytes": 1474518,
-    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
+    "pages": 238,
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16262,
-    "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
+    "bytes": 16264,
+    "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 226
+    "historical_markers": 227
   },
-  "exact_doi": "10.5281/zenodo.22217711",
+  "exact_doi": "10.5281/zenodo.22315714",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r34 / 10.5281/zenodo.22209381; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1537, environment2.1.8; line1536 blank",
-  "publication_evidence_rule": "This alias records the locally accepted R36 bytes before publication. Deterministic archive and portable replay evidence is under release/2026-09-05-r36; public status requires separate GitHub/Zenodo receipts and anonymous byte readback.",
+  "prior_public_checkpoint": "r36 / 10.5281/zenodo.22217711 / GitHub release ega-ko-2026-09-05-r36; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1607, environment2.1.10; line1606 blank",
+  "publication_evidence_rule": "R37 translation, cumulative build and PDF QA pass locally. Packaging, portable replay, GitHub/Zenodo publication and anonymous public-byte readback remain separate pending gates.",
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
     "whole_bytes": 820505,
     "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-    "admitted_lines": "1-1535",
-    "admitted_bytes": 70120,
-    "admitted_sha256": "ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91"
+    "admitted_lines": "1-1605",
+    "admitted_bytes": 73897,
+    "admitted_sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182"
+  },
+  "unit": {
+    "lines": "1537-1605",
+    "bytes": 3776,
+    "characters": 3727,
+    "lf_lines": 69,
+    "sha256": "D91203350D0012E008CA3A778DD5ABB1E3A18D70641C753F6F86ECFF51F949FE"
+  },
+  "candidate": {
+    "path": "candidates/r37-c2s1-continuation.tex",
+    "bytes": 4073,
+    "characters": 2783,
+    "lf_lines": 72,
+    "sha256": "A423B075B3483FC84CA580AED46C651F84543F4444805D94388CD5574114063D"
   },
   "target": {
     "path": "source/c2s1.tex",
-    "bytes": 71548,
-    "sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
-    "lf_lines": 1554
+    "bytes": 75622,
+    "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+    "lf_lines": 1627
   },
   "sequence": "Finish EGA II, then FGA. Only afterward admit the contiguous source-accurate EGA sequence beginning with EGA III; stop before the first incomplete volume. SGA is outside active scope.",
-  "validation_checkpoint": "evidence/controls/R36_PDF_QA.json"
+  "translation_admission": {
+    "path": "evidence/controls/R37_TRANSLATION_ADMISSION.json",
+    "bytes": 5919,
+    "sha256": "C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4"
+  },
+  "build_receipt": {
+    "receipt": "evidence/BUILD_RECEIPT.json",
+    "receipt_bytes": 5462,
+    "receipt_sha256": "5864BCD80AA33AEB906034A1E07F3BDC8710D699588A448D95ACCBBEC49B84A4",
+    "strict_control": "evidence/controls/R37_STRICT_BUILD.json",
+    "strict_control_bytes": 3675,
+    "strict_control_sha256": "F58CAF4FA4BEF1179288007C4F720B2E1CD3AE5D69AA311D1C345859766C9AF2"
+  },
+  "validation_checkpoint": "evidence/controls/R37_PDF_QA.json"
 }

@@ -278,7 +278,7 @@ def main() -> None:
         "",
         (
             "**Coverage statement.** This view covers every record in the named ledgers through the "
-            "current EGA II 2.1.7 cursor. It is complete ledger coverage, not a claim that EGA II, "
+            "current EGA II 2.1.9 cursor. It is complete ledger coverage, not a claim that EGA II, "
             "FGA, or the full EGA corpus translation is complete."
         ),
         "",
@@ -373,7 +373,7 @@ def main() -> None:
         "schema": "agko-public-expert-review-receipt-v1",
         "generated_at": generated_at,
         "coverage": (
-            "Every current record in the four named public ledgers through EGA II 2.1.7; "
+            "Every current record in the four named public ledgers through EGA II 2.1.9; "
             "complete ledger coverage, not complete corpus coverage."
         ),
         "canonical_links": {"zenodo_concept": CONCEPT_DOI, "github": GITHUB},

@@ -16,16 +16,16 @@
     "included_volumes": [
       "EGA 0_I",
       "EGA I",
-      "EGA II (front matter/programme and main text through2.1.7)"
+      "EGA II (front matter/programme and main text through2.1.9)"
     ],
-    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1535 through2.1.7",
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1605 through2.1.9",
     "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
-    "historical_source_pages": 226,
+    "historical_source_pages": 227,
     "historical_page_ranges": [
       "EGA I introduction5-8",
       "EGA 0_I11-78",
       "EGA I Chapter I79-214",
-      "EGA II5-22"
+      "EGA II5-23"
     ],
     "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
@@ -96,7 +96,7 @@
     },
     {
       "path": "c2s1.tex",
-      "role": "EGA II main text contiguous through2.1.7 / canonical lines1-1535"
+      "role": "EGA II main text contiguous through2.1.9 / canonical lines1-1605"
     }
   ],
   "coverage_matrix": [
@@ -110,7 +110,7 @@
       "working_path": "ega/I/front.tex",
       "target_bytes": 4440,
       "target_lf_lines": 123,
-      "target_sha256": "9455D5CE604C3F2CC24D683CF7778AB73B44EF7DFB4229435A8B3AB3DAB1DBC0",
+      "target_sha256": "78FCF635E8551684CE5710DFFC9FE93DF311A9701A9A09BA6BC0228128AE0DDD",
       "historical_page_markers": 0,
       "status": "complete",
       "coverage": "full source EOF; public target adds cumulative-edition metadata"
@@ -348,16 +348,16 @@
       "source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
       "target_path": "c2s1.tex",
       "working_path": "ega/II/c2s1.tex",
-      "target_bytes": 71548,
-      "target_lf_lines": 1554,
-      "target_sha256": "24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3",
-      "historical_page_markers": 17,
+      "target_bytes": 75622,
+      "target_lf_lines": 1627,
+      "target_sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+      "historical_page_markers": 18,
       "status": "partial",
-      "coverage": "canonical lines1-1535 of18087 through2.1.7; next executable line1537 environment2.1.8",
+      "coverage": "canonical lines1-1605 of18087 through2.1.9; next executable line1607 environment2.1.10",
       "admitted_source_slice": {
-        "lines": "1-1535",
-        "lf_bytes": 70120,
-        "sha256": "ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91"
+        "lines": "1-1605",
+        "lf_bytes": 73897,
+        "sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182"
       }
     },
     {
@@ -456,10 +456,10 @@
     "required_latest_records": [
       "AGKO-EGA0-R27-PAGE63",
       "AGKO-EGA1-R24-COMPLETE",
-      "AGKO-EGA2-S1-R36-COVERAGE"
+      "AGKO-EGA2-S1-R37-COVERAGE"
     ],
     "external_korean_handoffs_admitted": 0,
     "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
-    "next": "continue EGA II at canonical line1537 / environment2.1.8; line1536 blank, then FGA; SGA remains separate"
+    "next": "continue EGA II at canonical line1607 / environment2.1.10; line1606 blank, then FGA; SGA remains separate"
   }
 }

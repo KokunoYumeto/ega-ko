@@ -1,29 +1,30 @@
 {
   "schema_version": 4,
-  "version": "2026-09-05-r36",
+  "version": "2026-09-05-r37",
   "snapshot_phase": "local_qa_checkpoint_before_archive_freeze",
-  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through 2.1.7 at canonical lines 1-1535. Full EGA II and the EGA corpus remain incomplete.",
+  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through 2.1.9 at canonical lines 1-1605. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "bytes": 1474518,
-    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
-    "pages": 237
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+    "pages": 238
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16262,
-    "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
+    "bytes": 16264,
+    "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED",
+    "identity_gate": "Runtime bytes/SHA-256 agree exactly with the pinned R37 manifest identity and R37_PDF_QA.json; critical scope, target, prefix and marker fields independently cross-checked by this script.",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 226
+    "historical_markers": 227
   },
-  "exact_doi": "10.5281/zenodo.22217711",
+  "exact_doi": "10.5281/zenodo.22315714",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r34 / 10.5281/zenodo.22209381; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line 1537, environment 2.1.8; line 1536 blank",
+  "prior_public_checkpoint": "r36 / 10.5281/zenodo.22217711; Zenodo and GitHub dual anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line 1607, environment 2.1.10; line 1606 blank",
   "publication_evidence_rule": "This file is a pre-publication snapshot. Frozen archive, portable replay, GitHub/Zenodo transaction and anonymous public-byte replay evidence must be recorded separately and are not inferred here.",
   "engine": "XeLaTeX / MiKTeX",
   "mutex": {
@@ -36,28 +37,28 @@
     "strict_passes": 8,
     "independent_four_pass_cycles": 2,
     "cycle_a": {
-      "pass2_bytes": 1474536,
-      "pass2_sha256": "7E5DE54ACD3AEE0F114AC6AD5013C49A023401525BAC7C4665B22BA46F40FD31",
-      "pass3_bytes": 1474518,
-      "pass3_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
-      "pass4_bytes": 1474518,
-      "pass4_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass2_bytes": 1479213,
+      "pass2_sha256": "24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4",
+      "pass3_bytes": 1479200,
+      "pass3_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass4_bytes": 1479200,
+      "pass4_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
       "pass2_equals_final": false,
       "pass3_equals_pass4": true
     },
     "cycle_b": {
-      "pass2_bytes": 1474536,
-      "pass2_sha256": "7E5DE54ACD3AEE0F114AC6AD5013C49A023401525BAC7C4665B22BA46F40FD31",
-      "pass3_bytes": 1474518,
-      "pass3_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
-      "pass4_bytes": 1474518,
-      "pass4_sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+      "pass2_bytes": 1479213,
+      "pass2_sha256": "24AFB20EEF59581E036ABBEBF590184097F31D1D9DDFFC1E5AA8A406E68FE8A4",
+      "pass3_bytes": 1479200,
+      "pass3_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+      "pass4_bytes": 1479200,
+      "pass4_sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
       "pass2_equals_final": false,
       "pass3_equals_pass4": true
     },
     "cycle_finals_byte_identical": true,
     "reader_promotion_byte_identical": true,
-    "initial_three_pass_observation": "An earlier three-pass run produced byte-identical cycle finals but pass 2 differed from pass 3, so three passes did not itself prove a fixed point. BUILD.ps1 was repaired to require pass 3 = pass 4 in both clean cycles; the accepted build satisfies that stronger gate."
+    "fixed_point_gate": "Pass 2 differs from the accepted reader; pass 3 equals pass 4 in each independent clean cycle, both cycle finals are byte-identical, and reader promotion preserves those exact bytes."
   },
   "build_script": {
     "path": "build/BUILD.ps1",
@@ -67,19 +68,23 @@
   "logs": {
     "raw_retained": {
       "path": "build/out/main.log",
-      "bytes": 51944,
-      "sha256": "82BDA0B99B3C2A54CA20AB121BC6375DD23BF1645F6D52507BA9BA3604254FBA"
+      "bytes": 51950,
+      "sha256": "D3EB9074068C39518143D6E2271D0552039059ED0CE99D0A94CB8F0DB97727BA"
+    },
+    "expected_raw_identity": {
+      "bytes": 51950,
+      "sha256": "D3EB9074068C39518143D6E2271D0552039059ED0CE99D0A94CB8F0DB97727BA"
     },
     "public_sanitized": [
       {
-        "path": "evidence/build-r36.log",
-        "bytes": 51794,
-        "sha256": "BA53A9A21F5363CD2323994F849C6F1FB0803EFC8E00DB11D87EB682216CAD3E"
+        "path": "evidence/build-r37.log",
+        "bytes": 51800,
+        "sha256": "E93345C596E00D8E37B6616BBBCB656510F10135BF82DF33CC1F23CE2B7351A1"
       },
       {
         "path": "evidence/build.log",
-        "bytes": 51794,
-        "sha256": "BA53A9A21F5363CD2323994F849C6F1FB0803EFC8E00DB11D87EB682216CAD3E"
+        "bytes": 51800,
+        "sha256": "E93345C596E00D8E37B6616BBBCB656510F10135BF82DF33CC1F23CE2B7351A1"
       }
     ],
     "public_logs_equal": true,
@@ -89,35 +94,35 @@
   "extraction": {
     "poppler": {
       "path": "evidence/extract.txt",
-      "bytes": 721726,
-      "sha256": "909937C7A40D31DA9787C01812DCB46C8CC40DACF3D5C1F69BD5099959277E46"
+      "bytes": 724814,
+      "sha256": "DD155CF9FE4B9F7F865E3858387AF4222DA16B41E935D398612670A82953FFBF"
     },
     "pypdf": {
       "path": "evidence/extract-pypdf.txt",
-      "bytes": 696608,
-      "sha256": "D56B3623A698A1E5283DB33BD7B59EDF59D2ECAAD698950420BB0A35136B81B8"
+      "bytes": 699470,
+      "sha256": "45A9806C13729B3D8E804897B3515FDEAB64E7719B97ADB3C73ED6C5C6AE4B3B"
     },
-    "each_hangul_syllables": 151372,
+    "each_hangul_syllables": 152023,
     "each_replacement_characters": 0,
     "full_historical_sequence_pypdf": true,
     "poppler_documented_0I_page70_exception": true
   },
   "translation_admission": {
-    "path": "evidence/controls/R36_TRANSLATION_ADMISSION.json",
-    "bytes": 6018,
-    "sha256": "7873F7BCAE78E8E134F71E9543F84A250BD9E3051E044796D2B4B48637AA9565"
+    "path": "evidence/controls/R37_TRANSLATION_ADMISSION.json",
+    "bytes": 5919,
+    "sha256": "C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4"
   },
   "pdf_qa": {
-    "path": "evidence/controls/R36_PDF_QA.json",
-    "bytes": 11605,
-    "sha256": "9FA62E458E9E376B982B0FA5BCF256B053F9E9E5C673A68DA987CC079F3D5BEF"
+    "path": "evidence/controls/R37_PDF_QA.json",
+    "bytes": 13472,
+    "sha256": "E3CB3AC1D47F4041ADECDA7942383EF0CA52B921E4AF5F9B97A1FF7EFBA1ACDD"
   },
   "qa_script": {
-    "path": "scripts/qa_r36_pdf.py",
-    "bytes": 20878,
-    "sha256": "FA4319FF9D4EA7AB597DAE506644C91EEF3F9093E9D52854A6A55E3EA1AAE26C"
+    "path": "scripts/qa_r37_pdf.py",
+    "bytes": 34444,
+    "sha256": "0D131E7FD0F28DB8C5769C703E8F514827C5AABB3EDF032466E1264D423D1C5F"
   },
   "portable_replay": "Required after frozen source archive; not claimed by this snapshot",
   "status": "PASS_LOCAL_BUILD_AND_PDF_QA",
-  "measured_at": "2026-09-05T04:10:33+02:00"
+  "measured_at": "2026-09-05T05:09:47+02:00"
 }

@@ -1,0 +1,14 @@
+{
+  "schema": "ag-ko-zenodo-draft-state-v2",
+  "version": "2026-09-05-r37",
+  "reserved_at_utc": "2026-09-05T02:54:48.232553+00:00",
+  "parent_record_id": 22217711,
+  "parent_exact_doi": "10.5281/zenodo.22217711",
+  "record_id": 22315714,
+  "exact_doi": "10.5281/zenodo.22315714",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "operation": "POST newversion exactly once",
+  "status": "reserved_unpublished",
+  "credentials_present": false,
+  "result": "PASS_SAME_LINEAGE_EXACT_DOI_RESERVED"
+}

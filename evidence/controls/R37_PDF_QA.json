@@ -1,0 +1,418 @@
+{
+  "schema": "agko-r37-pdf-qa-v1",
+  "edition": "2026-09-05-r37",
+  "measured_at": "2026-09-05T05:09:40+02:00",
+  "status": "PASS",
+  "scope": "Full-file PDF identity and structure, all destinations, full-text extraction, exact R37 proposition/caveat visibility, historical-marker sequence, and exact six-render identity checks; personal visual inspection covers the stated front, contents and terminal pages. Source-semantic and Korean-register adjudication remain separate controls. No public-byte publication verification is asserted here.",
+  "build_receipt_or_control": {
+    "path": "evidence/controls/R37_STRICT_BUILD.json",
+    "bytes": 3675,
+    "sha256": "F58CAF4FA4BEF1179288007C4F720B2E1CD3AE5D69AA311D1C345859766C9AF2"
+  },
+  "pdf": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+    "pages": 238,
+    "version": "%PDF-1.7",
+    "page_size_points": [
+      [
+        595.28,
+        841.89
+      ]
+    ],
+    "all_pages_a4": true,
+    "encrypted": false,
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "대수기하학 원론 – 한국어 누적판",
+      "/Subject": "NUMDAM 프랑스어 권위본에 따른 EGA 한국어 누적 번역",
+      "/Author": "알렉산더 그로텐디크와 장 디외도네",
+      "/Producer": "MiKTeX-dvipdfmx (20260404)",
+      "/CreationDate": "D:20260813150000Z"
+    },
+    "acroform_present": false,
+    "javascript_name_tree_present": false,
+    "build_output_pdf": {
+      "path": "build/out/main.pdf",
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "build_output_pdf_byte_identical": true
+  },
+  "tools": {
+    "poppler_pdftotext_version": "pdftotext version 24.04.0",
+    "poppler_command": "pdftotext -enc UTF-8 -eol unix reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/extract.txt",
+    "pypdf_version": "6.12.2",
+    "pypdf_method": "page.extract_text() or empty string per physical page; CRLF/CR normalized to LF; pages joined with LF+FF+LF; one final LF; UTF-8 without BOM",
+    "renderer": "pdftoppm",
+    "render_command": "pdftoppm -f N -l N -singlefile -r 200 -png reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/render/r37-pNNN"
+  },
+  "source_bindings": {
+    "cumulative_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16264,
+      "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED"
+    },
+    "ordered_inputs_checked": 17,
+    "canonical_source": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820505,
+      "lf_lines": 18087,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC"
+    },
+    "canonical_prefix": {
+      "lines": "1-1605",
+      "lf_bytes": 73897,
+      "sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182",
+      "matches_manifest": true
+    },
+    "korean_target": {
+      "path": "source/c2s1.tex",
+      "bytes": 75622,
+      "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+      "lf_lines": 1627,
+      "exact_environment_2_1_8_text_present": true,
+      "exact_proposition_2_1_9_text_present": true,
+      "required_labels_present_once": [
+        "II.2.1.8-ko",
+        "II.2.1.9-ko"
+      ],
+      "printed_n_minus_mk_formula_present_once": true,
+      "silent_formula_repairs_absent": [
+        "\\mathfrak{p}\\cap S_{n-k}=S_{n-k}",
+        "\\mathfrak{p}\\cap S_{n-rk}=S_{n-rk}"
+      ]
+    },
+    "candidate_binding": {
+      "path": "candidates/r37-c2s1-continuation.tex",
+      "bytes": 4073,
+      "sha256": "A423B075B3483FC84CA580AED46C651F84543F4444805D94388CD5574114063D",
+      "verification": "Exact identity and admission fields checked through the public R37 translation control; the private candidate is not required by this public PDF QA script."
+    },
+    "front": {
+      "path": "source/front.tex",
+      "bytes": 4440,
+      "sha256": "78FCF635E8551684CE5710DFFC9FE93DF311A9701A9A09BA6BC0228128AE0DDD",
+      "lf_lines": 123
+    },
+    "separate_translation_control": {
+      "path": "evidence/controls/R37_TRANSLATION_ADMISSION.json",
+      "bytes": 5919,
+      "sha256": "C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4"
+    }
+  },
+  "extractions": [
+    {
+      "path": "evidence/extract.txt",
+      "bytes": 724814,
+      "sha256": "DD155CF9FE4B9F7F865E3858387AF4222DA16B41E935D398612670A82953FFBF",
+      "characters": 394071,
+      "hangul_syllables": 152023,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 238,
+      "current_exact_doi_count": 1,
+      "prior_exact_doi_count": 0,
+      "concept_doi_count": 1,
+      "legacy_math_c0_control_characters": 150,
+      "r37_content_checks": {
+        "environment_2_1_8_heading_present": true,
+        "proposition_2_1_9_heading_present": true,
+        "environment_text_present": true,
+        "proposition_necessity_sufficiency_text_present": true,
+        "proposition_uniqueness_text_present": true,
+        "proposition_integral_domain_text_present": true,
+        "printed_n_minus_mk_formula_present": true,
+        "guessed_n_minus_k_formula_absent": true,
+        "guessed_n_minus_rk_formula_absent": true,
+        "historical_page_II_23_present": true
+      },
+      "numeric_marker_sequence_matches_with_documented_0I_70_exception": true
+    },
+    {
+      "path": "evidence/extract-pypdf.txt",
+      "bytes": 699470,
+      "sha256": "45A9806C13729B3D8E804897B3515FDEAB64E7719B97ADB3C73ED6C5C6AE4B3B",
+      "characters": 379496,
+      "hangul_syllables": 152023,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 237,
+      "current_exact_doi_count": 1,
+      "prior_exact_doi_count": 0,
+      "concept_doi_count": 1,
+      "legacy_math_c0_control_characters": 2260,
+      "r37_content_checks": {
+        "environment_2_1_8_heading_present": true,
+        "proposition_2_1_9_heading_present": true,
+        "environment_text_present": true,
+        "proposition_necessity_sufficiency_text_present": true,
+        "proposition_uniqueness_text_present": true,
+        "proposition_integral_domain_text_present": true,
+        "printed_n_minus_mk_formula_present": true,
+        "guessed_n_minus_k_formula_absent": true,
+        "guessed_n_minus_rk_formula_absent": true,
+        "historical_page_II_23_present": true
+      },
+      "full_marker_sequence_matches": true
+    }
+  ],
+  "historical_markers": {
+    "source_count": 227,
+    "normalized_sequence_sha256": "2783908AC4D3B6F5160A8B6082CEAEB277AC150C62C710D6CFAB6575E0AB1A96",
+    "pypdf_count": 227,
+    "pypdf_full_sequence_matches": true,
+    "poppler_count": 226,
+    "poppler_numeric_sequence_matches_with_documented_0I_70_exception": true,
+    "ranges": [
+      "I|5-8",
+      "0I|11-78",
+      "I|79-214",
+      "II|5-23"
+    ],
+    "first": [
+      [
+        "I",
+        5
+      ],
+      [
+        "I",
+        6
+      ],
+      [
+        "I",
+        7
+      ],
+      [
+        "I",
+        8
+      ],
+      [
+        "0I",
+        11
+      ]
+    ],
+    "last": [
+      [
+        "II",
+        19
+      ],
+      [
+        "II",
+        20
+      ],
+      [
+        "II",
+        21
+      ],
+      [
+        "II",
+        22
+      ],
+      [
+        "II",
+        23
+      ]
+    ],
+    "terminal_marker": [
+      "II",
+      23
+    ],
+    "poppler_specific_limitation": "Inherited EGA 0_I page 70 is extracted as a bare numeric token without its adjacent volume marker. The saved extraction remains verbatim; the full 227-entry volume/page sequence is proved in pypdf and the remaining 226 ordered numeric markers are proved in Poppler."
+  },
+  "navigation": {
+    "annotations": 1657,
+    "links": 1657,
+    "uri_links": 4,
+    "internal_links": 1653,
+    "named_destinations": 577,
+    "required_r37_named_destinations": {
+      "II.2.1.8-ko=>section*.316": true,
+      "II.2.1.9-ko=>section*.317": true
+    },
+    "invalid_named_destinations": [],
+    "invalid_link_destinations": [],
+    "outline_entries": 132,
+    "invalid_outline_destinations": [],
+    "uri_targets": {
+      "https://doi.org/10.5281/zenodo.20414353": 1,
+      "https://doi.org/10.5281/zenodo.21921513": 1,
+      "https://doi.org/10.5281/zenodo.22315714": 1,
+      "https://github.com/KokunoYumeto/ega-ko": 1
+    }
+  },
+  "font_unicode": {
+    "font_resources": 35,
+    "embedded_font_resources": 35,
+    "unembedded_font_resources": [],
+    "resources_with_tounicode": 27,
+    "resources_without_tounicode": [
+      {
+        "basefont": "/APOCYK+CMSY8",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/COMIEF+XYATIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/DPVBYQ+XYDASH-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/ESRITT+CMEX10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JFXXWE+MSBM10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JNUGTK+CMEX7",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/MFUSOR+XYBTIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/WENPTB+CMSY10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      }
+    ],
+    "all_type0_hangul_fonts_have_tounicode": true,
+    "type0_hangul_fonts_without_tounicode": []
+  },
+  "build_logs": {
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51950,
+      "sha256": "D3EB9074068C39518143D6E2271D0552039059ED0CE99D0A94CB8F0DB97727BA"
+    },
+    "hard_diagnostics": {
+      "tex_error_lines": 0,
+      "fatal_errors": 0,
+      "emergency_stops": 0,
+      "undefined_control_sequences": 0,
+      "undefined_references_or_citations": 0,
+      "missing_characters": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0
+    },
+    "advisories": {
+      "moved_marginpars": 136,
+      "pdf_string_token_warnings": 23,
+      "font_shape_warnings": 1,
+      "rerunfilecheck_main_out_unchanged": true
+    }
+  },
+  "renders": [
+    {
+      "path": "evidence/render/r37-p001.png",
+      "bytes": 91501,
+      "sha256": "E087A30C56F76DF99A1762B4C9C8313453F266759AE38F560036CA7C3836199B",
+      "physical_page": 1,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r37-p002.png",
+      "bytes": 368720,
+      "sha256": "2B465597A421963A802C3437CD6CA75B26864974097F0EC01128BACCE9C82252",
+      "physical_page": 2,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r37-p006.png",
+      "bytes": 189656,
+      "sha256": "491F22AF36DAB445E1ECA5614D37E137D76A38B98FE3617FF3DCE3345BF4F0C8",
+      "physical_page": 6,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r37-p236.png",
+      "bytes": 478729,
+      "sha256": "1D1C0F103A5DFBBAA46E7CDA701713B52D161113FB44C06DFBDFF021753BCFE7",
+      "physical_page": 236,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r37-p237.png",
+      "bytes": 574945,
+      "sha256": "BA2C144EA19A407BDD727A373FED338614EA3EE32997293296DCD0ED647F33E9",
+      "physical_page": 237,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    },
+    {
+      "path": "evidence/render/r37-p238.png",
+      "bytes": 134494,
+      "sha256": "4AEC28026EB31066E39C74C1BF02804D704A132B987F4969282851C1CA9ED7C3",
+      "physical_page": 238,
+      "dpi": 200,
+      "pixels": [
+        1654,
+        2339
+      ],
+      "personal_visual_inspection": "PASS"
+    }
+  ],
+  "visual_findings": {
+    "status": "PASS",
+    "selected_physical_pages": [
+      1,
+      2,
+      6,
+      236,
+      237,
+      238
+    ],
+    "clipping_or_overlap": false,
+    "missing_or_tofu_glyphs": false,
+    "title_scope_and_exact_doi_readable": true,
+    "contents_terminal_boundary_readable": true,
+    "new_environment_2_1_8_readable": true,
+    "new_proposition_2_1_9_conditions_and_proof_readable": true,
+    "printed_n_minus_mk_formula_readable_and_unaltered": true,
+    "historical_page_break_note": "Physical pages 237 and 238 carry printed pages II|22 and II|23. The terminal whitespace follows the genuine completed boundary through Proposition 2.1.9; it is not evidence of omitted admitted content."
+  },
+  "limitations": [
+    "Plain-text extraction is not lossless for inherited Type1 mathematical/diagram resources lacking ToUnicode. Formula authority remains the source-synchronized TeX plus the rendered PDF.",
+    "The printed source formula S_{n-mk} uses an unquantified m. This QA proves diplomatic preservation and excludes silent n-k/n-rk substitution; it does not adjudicate the source reading.",
+    "This local QA does not assert archive reproducibility, GitHub/Zenodo publication, or anonymous public-byte replay; those are separate release gates."
+  ]
+}

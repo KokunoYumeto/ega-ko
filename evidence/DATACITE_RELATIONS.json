@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "version": "2026-09-05-r36",
-  "release_state": "local_package_and_portable_replay_pass_publication_pending",
+  "version": "2026-09-05-r37",
+  "release_state": "reserved_unpublished_local_build_and_pdf_qa_pass_package_and_portable_pending",
   "concept_doi": "10.5281/zenodo.21921513",
-  "exact_version_doi": "10.5281/zenodo.22217711",
-  "record_id": 22217711,
-  "previous_exact_version_doi": "10.5281/zenodo.22209381",
+  "exact_version_doi": "10.5281/zenodo.22315714",
+  "record_id": 22315714,
+  "previous_exact_version_doi": "10.5281/zenodo.22217711",
   "global_ega_concept_doi": "10.5281/zenodo.20414353",
   "relation_policy": "isVersionOf the existing Korean EGA concept DOI; isNewVersionOf the prior Korean EGA exact release; isPartOf the global EGA concept; no other corpus or language lineage is reused",
-  "publication_status": "No public r36 claim until the transaction and anonymous metadata/DOI/download replay receipts exist"
+  "publication_status": "No public R37 claim until deterministic packaging, portable replay, publication and anonymous metadata/DOI/download replay receipts exist"
 }

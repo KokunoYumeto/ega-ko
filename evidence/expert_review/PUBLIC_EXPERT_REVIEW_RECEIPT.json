@@ -3,8 +3,8 @@
     "github": "https://github.com/KokunoYumeto/ega-ko",
     "zenodo_concept": "https://doi.org/10.5281/zenodo.21921513"
   },
-  "coverage": "Every current record in the four named public ledgers through EGA II 2.1.7; complete ledger coverage, not complete corpus coverage.",
-  "generated_at": "2026-09-05T04:10:42+02:00",
+  "coverage": "Every current record in the four named public ledgers through EGA II 2.1.9; complete ledger coverage, not complete corpus coverage.",
+  "generated_at": "2026-09-05T05:12:46+02:00",
   "inputs": [
     {
       "bytes": 263512,
@@ -14,18 +14,18 @@
       "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250"
     },
     {
-      "bytes": 704333,
+      "bytes": 707274,
       "ledger": "decisions",
       "path": "evidence/decisions.jsonl",
-      "records": 184,
-      "sha256": "FAAEB6209D09EFBA55AA6342C1DBD1A9E0B8133329BF213131F231A0C56065A6"
+      "records": 185,
+      "sha256": "75C40F7F0660CCD730B6A8EEADE50BCB83ABB48949D9E54D86EA36533E44420F"
     },
     {
-      "bytes": 298442,
+      "bytes": 300452,
       "ledger": "hard",
       "path": "evidence/hard.jsonl",
-      "records": 159,
-      "sha256": "A5065B53763ED766480F8E7AA2315594EA2664F309A392817985F9DE7330BDBD"
+      "records": 160,
+      "sha256": "7F2B2A2A3274BA07A1299FA918DC05A755F5812359EE8F6D0D7F902146283311"
     },
     {
       "bytes": 59148,
@@ -43,16 +43,16 @@
   },
   "outputs": {
     "EXPERT_REVIEW.jsonl": {
-      "bytes": 2891439,
-      "lf_lines": 540,
-      "records": 540,
-      "sha256": "EE714B32EF4C17DE5C89EA8E344899820B300E3AB5B2DB4CD28C3E46E951A165"
+      "bytes": 2902706,
+      "lf_lines": 542,
+      "records": 542,
+      "sha256": "74F63AB1DDBFE23C8B986A7E044906798C25D5E48781E8AB195FBF295AE815CE"
     },
     "EXPERT_REVIEW.md": {
-      "bytes": 1461000,
-      "lf_lines": 31356,
-      "record_sections": 540,
-      "sha256": "6D1043FE982D3F52F3767DEA42CA3DA98C086C31B4D71C66D2D37539571FE3BF"
+      "bytes": 1466910,
+      "lf_lines": 31469,
+      "record_sections": 542,
+      "sha256": "983BC8BDFE53DCED66425B2B9546E97D60EDD1CC1A9F0A6BA90CA776856CE699"
     }
   },
   "privacy": {
@@ -70,13 +70,13 @@
   },
   "records": {
     "by_ledger": {
-      "decisions": 184,
-      "hard": 159,
+      "decisions": 185,
+      "hard": 160,
       "terms": 172,
       "workflow": 25
     },
-    "total": 540,
-    "unique_ledger_id_pairs": 540
+    "total": 542,
+    "unique_ledger_id_pairs": 542
   },
   "result": "PASS_COMPLETE_LEDGER_COVERAGE_WITH_INCOMPLETE_CORPUS_SCOPE",
   "schema": "agko-public-expert-review-receipt-v1"

@@ -1,60 +1,58 @@
 {
   "schema_version": 4,
-  "version": "2026-09-05-r36",
-  "updated": "2026-09-05T04:25:00+02:00",
-  "snapshot_phase": "local_qa_and_portable_replay_ready_for_publication",
-  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.7 at canonical lines1-1535. Full EGA II and the EGA corpus remain incomplete.",
+  "version": "2026-09-05-r37",
+  "updated": "2026-09-05T05:12:46+02:00",
+  "snapshot_phase": "local_build_and_pdf_qa_pass_package_portable_publication_pending",
+  "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.9 at canonical lines1-1605. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
     "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 237,
-    "bytes": 1474518,
-    "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
+    "pages": 238,
+    "bytes": 1479200,
+    "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
   },
   "coverage_manifest": {
     "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16262,
-    "sha256": "C2004B6109417CAE7F8B53513C12C78CF9C23D99BEFD2A8AEDE3F83AAC36196C",
+    "bytes": 16264,
+    "sha256": "21ED41DDE0E7B850C12E9DF7A7839FB3FFE279B5BC205CC4FBE794A9FED4BAED",
     "ordered_inputs": 17,
     "canonical_rows": 23,
     "complete": 16,
     "partial": 1,
     "not_translated": 6,
-    "historical_markers": 226
+    "historical_markers": 227
   },
-  "exact_doi": "10.5281/zenodo.22217711",
+  "exact_doi": "10.5281/zenodo.22315714",
   "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r34 / 10.5281/zenodo.22209381; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1537, environment2.1.8; line1536 blank",
-  "publication_evidence_rule": "This alias records the locally accepted R36 bytes before publication. Deterministic archive and portable replay evidence is under release/2026-09-05-r36; public status requires separate GitHub/Zenodo receipts and anonymous byte readback.",
+  "prior_public_checkpoint": "r36 / 10.5281/zenodo.22217711 / GitHub release ega-ko-2026-09-05-r36; Zenodo and GitHub anonymous byte replay PASS",
+  "next_source": "EGA II source/ega2/ega2-1-fr.tex line1607, environment2.1.10; line1606 blank",
+  "publication_evidence_rule": "R37 translation, cumulative build and PDF QA pass locally. Packaging, portable replay, GitHub/Zenodo publication and anonymous public-byte readback remain separate pending gates.",
   "dpi": 200,
   "pages": [
     1,
     2,
     6,
-    233,
-    234,
-    235,
     236,
-    237
+    237,
+    238
   ],
   "dimensions": "1654x2339",
-  "result": "PASS on eight inspected pages: no clipping, overlap, tofu or malformed formula; R36 corollaries, six-part lemma, proof and threshold note are readable",
-  "detailed_render_identities": "evidence/controls/R36_PDF_QA.json",
+  "result": "PASS on six inspected pages: no clipping, overlap, tofu or malformed formula; R37 environment2.1.8, Proposition2.1.9, proof and diplomatic formula are readable",
+  "detailed_render_identities": "evidence/controls/R37_PDF_QA.json",
   "historical_markers": {
     "EGA_I_introduction": "5-8 /4",
     "EGA_0_I": "11-78 /68",
     "EGA_I_Chapter_I": "79-214 /136",
-    "EGA_II": "5-22 /18",
-    "total": 226
+    "EGA_II": "5-23 /19",
+    "total": 227
   },
   "links": {
-    "annotations": 1656,
-    "internal": 1652,
-    "resolved_internal": 1652,
+    "annotations": 1657,
+    "internal": 1653,
+    "resolved_internal": 1653,
     "external_uris": 4,
-    "named_destinations": 574,
+    "named_destinations": 577,
     "bookmarks": 132,
     "result": "PASS"
   },
-  "validation_checkpoint": "evidence/controls/R36_PDF_QA.json"
+  "validation_checkpoint": "evidence/controls/R37_PDF_QA.json"
 }

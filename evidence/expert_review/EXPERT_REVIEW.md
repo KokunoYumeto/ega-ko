@@ -1,10 +1,10 @@
 # Korean EGA expert-review ledger
 
-Generated deterministically from the four public source ledgers at 2026-09-05T04:10:42+02:00.
+Generated deterministically from the four public source ledgers at 2026-09-05T05:12:46+02:00.
 
 Canonical continuity: [Zenodo concept DOI](https://doi.org/10.5281/zenodo.21921513) · [GitHub repository](https://github.com/KokunoYumeto/ega-ko)
 
-**Coverage statement.** This view covers every record in the named ledgers through the current EGA II 2.1.7 cursor. It is complete ledger coverage, not a claim that EGA II, FGA, or the full EGA corpus translation is complete.
+**Coverage statement.** This view covers every record in the named ledgers through the current EGA II 2.1.9 cursor. It is complete ledger coverage, not a claim that EGA II, FGA, or the full EGA corpus translation is complete.
 
 **Provenance rule.** Each original JSON object is embedded in the companion JSONL after privacy-only path/account sanitization and remains bound to the exact unsanitized source line by byte count and SHA-256. Grouped fields and generated questions are retrospective; they are not presented as contemporaneous motives.
 
@@ -13,11 +13,11 @@ Canonical continuity: [Zenodo concept DOI](https://doi.org/10.5281/zenodo.219215
 | Ledger | Records | Bytes | SHA-256 |
 |---|---:|---:|---|
 | evidence/terms.jsonl | 172 | 263512 | 756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250 |
-| evidence/decisions.jsonl | 184 | 704333 | FAAEB6209D09EFBA55AA6342C1DBD1A9E0B8133329BF213131F231A0C56065A6 |
-| evidence/hard.jsonl | 159 | 298442 | A5065B53763ED766480F8E7AA2315594EA2664F309A392817985F9DE7330BDBD |
+| evidence/decisions.jsonl | 185 | 707274 | 75C40F7F0660CCD730B6A8EEADE50BCB83ABB48949D9E54D86EA36533E44420F |
+| evidence/hard.jsonl | 160 | 300452 | 7F2B2A2A3274BA07A1299FA918DC05A755F5812359EE8F6D0D7F902146283311 |
 | evidence/terminology/arxiv/2026-08-23/WORKFLOW_RECORD.jsonl | 25 | 59148 | CE02D11ED4E224764CEB88B0E215C499594093D98EB461FDF55E6085B8DEE0AA |
 
-Total normalized records: **540**.
+Total normalized records: **542**.
 
 ## Review records
 
@@ -20443,7 +20443,69 @@ For AGKO-D184 in Korean cumulative EGA R36 through EGA II2.1.7 / canonical lines
 
 _Privacy-only replacements in embedded original: 0._
 
-### 357. AGKO-H001 — hard
+### 357. AGKO-D185 — decisions
+
+Source binding: line 185, 2940 bytes, SHA-256 EA7E9F691D6D100E17EB150D83A325836B0F16785D90BA6141CFCCFC06143ADF.
+
+**Scope**
+
+EGA II environment2.1.8 and Proposition2.1.9 with proof; canonical lines1537-1605
+
+**Source or locus**
+
+Canonical unit3776 LF bytes /3727 characters /D91203350D0012E008CA3A778DD5ABB1E3A18D70641C753F6F86ECFF51F949FE; admitted prefix1-1605 73897 bytes /0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182; sealed R36 target71548 bytes /24274A13350C1D2724F02EB1591CABD5774A9B57A5833108E94F307A2E4869D3
+
+**Recorded wording or resolution**
+
+Admit the complete natural unit through Proposition2.1.9; preserve all three graded-prime-ideal conditions, existence/uniqueness construction, direct-sum and quotient gradings, proof quantifiers, oldpageII23 and exact S_{n-mk}. Accept the cumulative reader only after two clean four-pass fixed-point cycles, dual extraction, complete destination/font checks and selected-page visual QA. Record the reserved same-lineage DOI without claiming packaging, portable replay or publication.
+
+**Recorded sense or problem**
+
+EGA II environment2.1.8 and Proposition2.1.9 with proof; canonical lines1537-1605
+
+**Recorded authorities or evidence**
+
+```json
+[
+  "evidence/controls/R37_TRANSLATION_ADMISSION.json 5919 bytes /C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4",
+  "candidate4073 bytes /A423B075B3483FC84CA580AED46C651F84543F4444805D94388CD5574114063D; integrated private/public75622 bytes /FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+  "evidence/BUILD_RECEIPT.json 5462 bytes /5864BCD80AA33AEB906034A1E07F3BDC8710D699588A448D95ACCBBEC49B84A4",
+  "evidence/controls/R37_PDF_QA.json 13472 bytes /E3CB3AC1D47F4041ADECDA7942383EF0CA52B921E4AF5F9B97A1FF7EFBA1ACDD",
+  "reader238 pages /1479200 bytes /22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61",
+  "AGKO-H159 and AGKO-H160"
+]
+```
+
+**Recorded alternatives**
+
+```json
+[
+  "Silently replace the unquantified-m formula with a guessed n-k or n-rk reading",
+  "Treat the source query as a translation hold",
+  "Claim release readiness before deterministic archive and portable replay",
+  "Treat the reserved DOI as a public record"
+]
+```
+
+**Recorded rationale or rejection**
+
+Those alternatives falsify diplomatic source binding, create a forbidden non-operational hold, skip deterministic release gates or misstate public availability.
+
+**Recorded uncertainty or residual risk**
+
+Canonical line1572 remains an unadjudicated source-clarity query; exact diplomatic preservation makes it nonblocking and reversible. No local translation, build, extraction, navigation, font or selected-render defect is known. Archive portability and public-byte identity remain untested.
+
+**Recorded status**
+
+PASS_LOCAL_TRANSLATION_BUILD_AND_PDF_QA
+
+**Expert-review question (retrospective_generated_from_recorded_fields)**
+
+For AGKO-D185 in EGA II environment2.1.8 and Proposition2.1.9 with proof; canonical lines1537-1605, does the recorded choice follow from its cited authority and evidence without changing mathematical type, quantifier scope, or provenance?
+
+_Privacy-only replacements in embedded original: 0._
+
+### 358. AGKO-H001 — hard
 
 Source binding: line 1, 652 bytes, SHA-256 8361DCEBF38F6B65B886BDC09B72358ECB6FF815284ECCCDEABFEC6BD946EE14.
 
@@ -20494,7 +20556,7 @@ For AGKO-H001 at not_recorded, does the recorded resolution fully address the re
 
 _Privacy-only replacements in embedded original: 0._
 
-### 358. AGKO-H002 — hard
+### 359. AGKO-H002 — hard
 
 Source binding: line 2, 739 bytes, SHA-256 D1225A1F305FFBCDE17D1C4A068E28D48861F309767B88BA16D476FBED1AB350.
 
@@ -20549,7 +20611,7 @@ For AGKO-H002 at ega/I/main.tex input resolution, does the recorded resolution f
 
 _Privacy-only replacements in embedded original: 0._
 
-### 359. AGKO-H003 — hard
+### 360. AGKO-H003 — hard
 
 Source binding: line 3, 971 bytes, SHA-256 9D6C81BAC048DD367104DCDA2B188A8D15AB74E5F89A54AE5163F19D3D5FB3BC.
 
@@ -20604,7 +20666,7 @@ For AGKO-H003 at ega/I/bib.tex first item / PDF page 9, does the recorded resolu
 
 _Privacy-only replacements in embedded original: 0._
 
-### 360. AGKO-H004 — hard
+### 361. AGKO-H004 — hard
 
 Source binding: line 4, 1178 bytes, SHA-256 4AC7B1AD464B7821857105C5CCB4B4B4DF82560D9DC14F8005BCBCE584AFFE04.
 
@@ -20659,7 +20721,7 @@ For AGKO-H004 at state.json and cursor.json versus ega/I/c0.tex, does the record
 
 _Privacy-only replacements in embedded original: 0._
 
-### 361. AGKO-H005 — hard
+### 362. AGKO-H005 — hard
 
 Source binding: line 5, 904 bytes, SHA-256 4AA3FC47A2023AC9D7167192C23433F675699E4662C20200BD79FF1B19765439.
 
@@ -20714,7 +20776,7 @@ For AGKO-H005 at ega/I/c0.tex 1.4.5; historical render render/ega1/w-09.png, doe
 
 _Privacy-only replacements in embedded original: 0._
 
-### 362. AGKO-H006 — hard
+### 363. AGKO-H006 — hard
 
 Source binding: line 6, 995 bytes, SHA-256 6E1DE5239834CD452ECD0CE419D9C0A234BFEA3D43BE333AF1E104B642BB0D6C.
 
@@ -20769,7 +20831,7 @@ For AGKO-H006 at XeLaTeX output-directory invocation, does the recorded resoluti
 
 _Privacy-only replacements in embedded original: 0._
 
-### 363. AGKO-H007 — hard
+### 364. AGKO-H007 — hard
 
 Source binding: line 7, 1427 bytes, SHA-256 4D018B207F768C6FE00851D1CE2BA2D1DF916AF8D9923CE7ACEA8520266865C7.
 
@@ -20824,7 +20886,7 @@ For AGKO-H007 at source line 908 / ega/I/c0.tex label 0.3.1.2-ko / PDF page 14, 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 364. AGKO-H008 — hard
+### 365. AGKO-H008 — hard
 
 Source binding: line 8, 1262 bytes, SHA-256 C21D4FA183153ACF33CFFA8ABE774DEE980329DCB0CD7E723B88244A2B87D623.
 
@@ -20879,7 +20941,7 @@ For AGKO-H008 at ega/I/c0.tex first attempted insertion after 1.0.1; final inser
 
 _Privacy-only replacements in embedded original: 0._
 
-### 365. AGKO-H009 — hard
+### 366. AGKO-H009 — hard
 
 Source binding: line 9, 1578 bytes, SHA-256 429E0799BC95CE8CBCE9D7307C51DB213C6EDB91323C28DDBB83A30A2538E35A.
 
@@ -20935,7 +20997,7 @@ For AGKO-H009 at source/ega1/ega0-1-fr.tex line2026; target 0.4.1.1-ko category 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 366. AGKO-H010 — hard
+### 367. AGKO-H010 — hard
 
 Source binding: line 10, 1467 bytes, SHA-256 C0BD7A3D0079AA0B220449E2ECCB15FB9C1C072FF1A562B135B2DFFA540CD101.
 
@@ -20990,7 +21052,7 @@ For AGKO-H010 at ega/I/c0.tex erroneous first insertion at target line19 after 1
 
 _Privacy-only replacements in embedded original: 0._
 
-### 367. AGKO-H011 — hard
+### 368. AGKO-H011 — hard
 
 Source binding: line 11, 1794 bytes, SHA-256 EF542CE8FA984C650E7F9B3810B4AC8F02B9AF76413A77339C1C183ECFA05830.
 
@@ -21047,7 +21109,7 @@ For AGKO-H011 at pub/ega-ko/build/BUILD.ps1 first execution and source/$out scra
 
 _Privacy-only replacements in embedded original: 0._
 
-### 368. AGKO-H012 — hard
+### 369. AGKO-H012 — hard
 
 Source binding: line 12, 1503 bytes, SHA-256 4B4547297605ACA36A036D55687577660BBA5DD913BA62EFA42D5BABD35840D5.
 
@@ -21104,7 +21166,7 @@ For AGKO-H012 at authenticated GET for deposition 21921514, does the recorded re
 
 _Privacy-only replacements in embedded original: 0._
 
-### 369. AGKO-H013 — hard
+### 370. AGKO-H013 — hard
 
 Source binding: line 13, 1635 bytes, SHA-256 A2C1C6123D9569644E01BCDF5233FF9D29994EB83EB52ABCA0DC814DB3A2BE4F.
 
@@ -21160,7 +21222,7 @@ For AGKO-H013 at ega/I/c0.tex first insertion after target 1.0.1; final insertio
 
 _Privacy-only replacements in embedded original: 0._
 
-### 370. AGKO-H014 — hard
+### 371. AGKO-H014 — hard
 
 Source binding: line 14, 1877 bytes, SHA-256 E765BA7E618FC7E0DBC253847675241AFF3D733001F2BE08EFC5801A614A03E2.
 
@@ -21217,7 +21279,7 @@ For AGKO-H014 at French authority lines2894-2907; Korean target label0.4.4.8-ko,
 
 _Privacy-only replacements in embedded original: 0._
 
-### 371. AGKO-H015 — hard
+### 372. AGKO-H015 — hard
 
 Source binding: line 15, 2187 bytes, SHA-256 AF71009EAB124AA9D82742F8262CFD0D8E0460ED36C930CAB73C69311C8789CB.
 
@@ -21274,7 +21336,7 @@ For AGKO-H015 at build/ega1/r44a and build/ega1/r44b scratch builds, does the re
 
 _Privacy-only replacements in embedded original: 0._
 
-### 372. AGKO-H016 — hard
+### 373. AGKO-H016 — hard
 
 Source binding: line 16, 1881 bytes, SHA-256 F24BC28A65294B127701D74FD93D4E320C63F88A300C1A6A95065F6AE48F1280.
 
@@ -21331,7 +21393,7 @@ For AGKO-H016 at French authority lines3073-3077; Korean target label0.5.2.4-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 373. AGKO-H017 — hard
+### 374. AGKO-H017 — hard
 
 Source binding: line 17, 1845 bytes, SHA-256 3D838E5B32FEB64457CB85BBFA71E096EBDEBE3F4D34D7993720DFECAAD42344.
 
@@ -21388,7 +21450,7 @@ For AGKO-H017 at French authority lines3240-3249; Korean target label0.5.3.9-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 374. AGKO-H018 — hard
+### 375. AGKO-H018 — hard
 
 Source binding: line 18, 1734 bytes, SHA-256 C3E1C5BD27287F1D3CAD5473A950F5EFC2D953808C932C183E48E13706A42FCB.
 
@@ -21445,7 +21507,7 @@ For AGKO-H018 at French authority lines3365-3373; Korean target label0.5.4.3-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 375. AGKO-H019 — hard
+### 376. AGKO-H019 — hard
 
 Source binding: line 19, 1340 bytes, SHA-256 E1633FCA268023F77E232FE6AA19564AD3AE31A190C57B8CB537A23FC4A3E04E.
 
@@ -21502,7 +21564,7 @@ For AGKO-H019 at French authority lines3438-3449; Korean target label0.5.4.5-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 376. AGKO-H020 — hard
+### 377. AGKO-H020 — hard
 
 Source binding: line 20, 1394 bytes, SHA-256 B53F1B5ED3EE81733E588D00803DFD5431C7C74E56765F0D0C259C411851F7AD.
 
@@ -21559,7 +21621,7 @@ For AGKO-H020 at French authority lines3553-3559; Korean target label0.5.4.7-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 377. AGKO-H021 — hard
+### 378. AGKO-H021 — hard
 
 Source binding: line 21, 1529 bytes, SHA-256 97E0DEC540D2262FD036B071293396028DAF4438FBD9860218E2AEB020B46D4B.
 
@@ -21616,7 +21678,7 @@ For AGKO-H021 at French authority lines3599-3605; Korean target label0.5.4.7-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 378. AGKO-H022 — hard
+### 379. AGKO-H022 — hard
 
 Source binding: line 22, 1675 bytes, SHA-256 3893E91D248711A491965F360FD5DF791F93701FA33AB8E14297D8301B0072CF.
 
@@ -21673,7 +21735,7 @@ For AGKO-H022 at French authority lines3637-3646; Korean target label0.5.4.8-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 379. AGKO-H023 — hard
+### 380. AGKO-H023 — hard
 
 Source binding: line 23, 1266 bytes, SHA-256 E53C8ED3E31A9F89DBA8D36159C2903963C8924F6F88F43EE794FAACBAB77D45.
 
@@ -21730,7 +21792,7 @@ For AGKO-H023 at French authority line3805; Korean target label0.5.5.4-ko lines3
 
 _Privacy-only replacements in embedded original: 0._
 
-### 380. AGKO-H024 — hard
+### 381. AGKO-H024 — hard
 
 Source binding: line 24, 1306 bytes, SHA-256 DBEFA621C929B24C580962214F29A6A82F17FBB6380D1DD591216DF2B35CD2CD.
 
@@ -21787,7 +21849,7 @@ For AGKO-H024 at French authority lines3810-3812; Korean target label0.5.5.4-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 381. AGKO-H025 — hard
+### 382. AGKO-H025 — hard
 
 Source binding: line 25, 1299 bytes, SHA-256 70238BDD6723B763B4B293137B6BFCF0C09CA725E9CF57B29835B9AFA768D627.
 
@@ -21844,7 +21906,7 @@ For AGKO-H025 at French authority lines3830-3844; Korean target label0.5.5.5-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 382. AGKO-H026 — hard
+### 383. AGKO-H026 — hard
 
 Source binding: line 26, 1414 bytes, SHA-256 94BBF97777E7AC4F7550049D2766DF53B6ADE400B769966236B0EC6789F21C46.
 
@@ -21901,7 +21963,7 @@ For AGKO-H026 at French authority lines3851-3865; Korean target label0.5.5.5-ko 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 383. AGKO-H027 — hard
+### 384. AGKO-H027 — hard
 
 Source binding: line 27, 1944 bytes, SHA-256 D1B671ADE6553D2C42F5387D75F87BCA00EC102C03372DF8A5A4E338C5E9BF92.
 
@@ -21957,7 +22019,7 @@ For AGKO-H027 at first r60 build attempt before AGKO-E034; literal source-direct
 
 _Privacy-only replacements in embedded original: 0._
 
-### 384. AGKO-H028 — hard
+### 385. AGKO-H028 — hard
 
 Source binding: line 28, 1621 bytes, SHA-256 995C326076E33F6B7346B1B55A636A3180D3BAA0B3EFAA43CF69F5A6FAC70BE9.
 
@@ -22014,7 +22076,7 @@ For AGKO-H028 at Korean draft line3470 before AGKO-D035; final target line3470, 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 385. AGKO-H029 — hard
+### 386. AGKO-H029 — hard
 
 Source binding: line 29, 1979 bytes, SHA-256 B50EAC83C838B4D49002A030A7EA298FF1B8896346D877A4DC076BB1F7219F31.
 
@@ -22070,7 +22132,7 @@ For AGKO-H029 at build/ega1/r64a and r64b failed cross-directory comparison; bui
 
 _Privacy-only replacements in embedded original: 0._
 
-### 386. AGKO-H030 — hard
+### 387. AGKO-H030 — hard
 
 Source binding: line 30, 1916 bytes, SHA-256 3380555F36CE658F1886EA5AF53FC985AD3598176F51272B34C020C96E07F2F5.
 
@@ -22127,7 +22189,7 @@ For AGKO-H030 at French authority lines4266-4273; Korean target lines3840-3848, 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 387. AGKO-H031 — hard
+### 388. AGKO-H031 — hard
 
 Source binding: line 31, 1767 bytes, SHA-256 BFD3D278D4934A047618540701A06617796CBEE1C743547E37E8AA025207CCFE.
 
@@ -22184,7 +22246,7 @@ For AGKO-H031 at French authority transitions from6.7.6 lines4379-4398 directly 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 388. AGKO-H032 — hard
+### 389. AGKO-H032 — hard
 
 Source binding: line 32, 2535 bytes, SHA-256 D3D4F1B7B09BB2D3BFF47A31F345FF038F0E9AB4C68652EC0AC97D69D466B6F2.
 
@@ -22242,7 +22304,7 @@ For AGKO-H032 at French authority lines4413-4601; Korean target lines3989-4172, 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 389. AGKO-H033 — hard
+### 390. AGKO-H033 — hard
 
 Source binding: line 33, 2453 bytes, SHA-256 4D73AB640CD73762F5E072EE311D9F8D7217117F0514E321B033461F75220B94.
 
@@ -22299,7 +22361,7 @@ For AGKO-H033 at French authority line4818, 62 LF bytes /44A61DEBF0AC07E3F4CD75C
 
 _Privacy-only replacements in embedded original: 0._
 
-### 390. AGKO-H034 — hard
+### 391. AGKO-H034 — hard
 
 Source binding: line 34, 1997 bytes, SHA-256 9C2C5B1F6F32FD8F7A17EEEC8F3B4C28311DE0F850A09B294F1FF9662B0C0C07.
 
@@ -22356,7 +22418,7 @@ For AGKO-H034 at French authority line4894, 75 LF bytes /0C2B71128C588329411DBF3
 
 _Privacy-only replacements in embedded original: 0._
 
-### 391. AGKO-H035 — hard
+### 392. AGKO-H035 — hard
 
 Source binding: line 35, 2083 bytes, SHA-256 6AE7425F4D394DCC15FA2B435F9A360D18009E31FE01FC1B9715F801721C9EC2.
 
@@ -22413,7 +22475,7 @@ For AGKO-H035 at temporary accidental path ega/I/$build; live build root build/e
 
 _Privacy-only replacements in embedded original: 0._
 
-### 392. AGKO-H036 — hard
+### 393. AGKO-H036 — hard
 
 Source binding: line 36, 1670 bytes, SHA-256 75A3EBB70C18A0DD04A2B78A45B238E0EA2456AA8220A2F5A1066ABE1A37E4EE.
 
@@ -22470,7 +22532,7 @@ For AGKO-H036 at read-only in-memory hashing of source lines5078-5180 and struct
 
 _Privacy-only replacements in embedded original: 0._
 
-### 393. AGKO-H037 — hard
+### 394. AGKO-H037 — hard
 
 Source binding: line 37, 2248 bytes, SHA-256 115F142645687B4AAAFE7F787499887946AE49E05AA343FBDCDD2964FBEED467.
 
@@ -22527,7 +22589,7 @@ For AGKO-H037 at French authority line5258, 52 LF bytes /CAC4BBC10129B83B2468E1C
 
 _Privacy-only replacements in embedded original: 0._
 
-### 394. AGKO-H038 — hard
+### 395. AGKO-H038 — hard
 
 Source binding: line 38, 2106 bytes, SHA-256 B3949BF9BA555A4B0FB1F8EF078FD9A119CEDF84BB28549E870477881A922F86.
 
@@ -22584,7 +22646,7 @@ For AGKO-H038 at Korean target lines5013-5015 and5050-5066 after repair; French 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 395. AGKO-H039 — hard
+### 396. AGKO-H039 — hard
 
 Source binding: line 39, 2230 bytes, SHA-256 6F50E114039B09204DC83CA7D269E80B73825DAB34481CCAD63216C2E9ABCD66.
 
@@ -22641,7 +22703,7 @@ For AGKO-H039 at Korean target line5437 after repair; French authority line5695,
 
 _Privacy-only replacements in embedded original: 0._
 
-### 396. AGKO-H040 — hard
+### 397. AGKO-H040 — hard
 
 Source binding: line 40, 2012 bytes, SHA-256 4001F9DDEC9174F1997BA298D71137E2EFDCA757CAD684545694D926A8E76D8B.
 
@@ -22698,7 +22760,7 @@ For AGKO-H040 at French authority lines5743 and5834; Korean target lines5500 and
 
 _Privacy-only replacements in embedded original: 0._
 
-### 397. AGKO-H041 — hard
+### 398. AGKO-H041 — hard
 
 Source binding: line 41, 1906 bytes, SHA-256 1B312DDBEC37E7706F644EC0F859342DA32D8539835FA5DDBD9E2E5546F905A7.
 
@@ -22755,7 +22817,7 @@ For AGKO-H041 at French authority lines5827-5829, 178 LF bytes /DD8FB6306DF3B630
 
 _Privacy-only replacements in embedded original: 0._
 
-### 398. AGKO-H042 — hard
+### 399. AGKO-H042 — hard
 
 Source binding: line 42, 2087 bytes, SHA-256 58271DFBCE8DB43CB37C18F830214DEDE5B0CC99869DE8F7ACE01A745B6BB440.
 
@@ -22812,7 +22874,7 @@ For AGKO-H042 at French authority lines5958-5974 886 LF bytes /FB616B463EDC30DA6
 
 _Privacy-only replacements in embedded original: 0._
 
-### 399. AGKO-H043 — hard
+### 400. AGKO-H043 — hard
 
 Source binding: line 43, 1723 bytes, SHA-256 88E5C32A3808AE66D70E82D9D8E4C61F0AA70849C99EDFBE5D4D1AB82F70CCBB.
 
@@ -22869,7 +22931,7 @@ For AGKO-H043 at chapter1-frontmatter-fr.tex lines39-43 within lines29-45 1320 L
 
 _Privacy-only replacements in embedded original: 0._
 
-### 400. AGKO-H044 — hard
+### 401. AGKO-H044 — hard
 
 Source binding: line 44, 1973 bytes, SHA-256 6BEE0D5BD40FE765FF38B45685A56EF63D09088B51989DBCB4FD4D275447BFB2.
 
@@ -22925,7 +22987,7 @@ For AGKO-H044 at French ega1-1-fr.tex lines26-27,42-45,59-65; first Korean rende
 
 _Privacy-only replacements in embedded original: 0._
 
-### 401. AGKO-H045 — hard
+### 402. AGKO-H045 — hard
 
 Source binding: line 45, 1891 bytes, SHA-256 9437E71327A56009D63DFAD1E88EB5F1D999F6CD6807BB798FC52C3635A60E7C.
 
@@ -22982,7 +23044,7 @@ For AGKO-H045 at HARDENED.md and cursor.json before correction; live authority s
 
 _Privacy-only replacements in embedded original: 0._
 
-### 402. AGKO-H046 — hard
+### 403. AGKO-H046 — hard
 
 Source binding: line 46, 1650 bytes, SHA-256 2EB25B20A509782D91B42E42DE0B6F7EF1993814449109A4E2EB6CF68AA54FDB.
 
@@ -23039,7 +23101,7 @@ For AGKO-H046 at French ega1-1-fr.tex line341 52 LF bytes /9EC9A2A2C733A7C89BD2F
 
 _Privacy-only replacements in embedded original: 0._
 
-### 403. AGKO-H047 — hard
+### 404. AGKO-H047 — hard
 
 Source binding: line 47, 1649 bytes, SHA-256 6CB62C347FCD8C0F22576CB4F9AD68B1A8CB503306E0FEAC90BC0BD33CAAE088.
 
@@ -23096,7 +23158,7 @@ For AGKO-H047 at French lines398-403 355 LF bytes /39EE4F282736884ACBD3C50F2A00F
 
 _Privacy-only replacements in embedded original: 0._
 
-### 404. AGKO-H048 — hard
+### 405. AGKO-H048 — hard
 
 Source binding: line 48, 1611 bytes, SHA-256 73A1E95B996FC3C1D2015EF56C94DFB4981FA098F46CD5E34F007E2F10A0B3D8.
 
@@ -23153,7 +23215,7 @@ For AGKO-H048 at French lines455-460 373 LF bytes /4629E282EA4F45DF9873C63F29736
 
 _Privacy-only replacements in embedded original: 0._
 
-### 405. AGKO-H049 — hard
+### 406. AGKO-H049 — hard
 
 Source binding: line 49, 1298 bytes, SHA-256 44825AAEFCA226D8EDE2563D0D2323F6B9D6DB9DC6A561D7AF544182DB04800E.
 
@@ -23209,7 +23271,7 @@ For AGKO-H049 at first source-span hashing command; no artifact path mutated, do
 
 _Privacy-only replacements in embedded original: 0._
 
-### 406. AGKO-H050 — hard
+### 407. AGKO-H050 — hard
 
 Source binding: line 50, 2027 bytes, SHA-256 1CBB37A7F8895E3DAEF12A13D644C84288788432597F9E7F3B08FDEC6884585B.
 
@@ -23266,7 +23328,7 @@ For AGKO-H050 at intended build/ega1/r73; accidental literal scratch ega/I/$out;
 
 _Privacy-only replacements in embedded original: 0._
 
-### 407. AGKO-H051 — hard
+### 408. AGKO-H051 — hard
 
 Source binding: line 51, 2068 bytes, SHA-256 392041DF2681CB8D31E67BEB64E8C672C4CE07F2BABFF656E0DF16A4F13D6F37.
 
@@ -23323,7 +23385,7 @@ For AGKO-H051 at ega/I/c1s1.tex pre-repair lines721 and777; rejected PDF 644869 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 408. AGKO-H052 — hard
+### 409. AGKO-H052 — hard
 
 Source binding: line 52, 1914 bytes, SHA-256 EDEF1C6B1916F47305DE9814081289357BDAD811FF99DADD0574FD15779DD051.
 
@@ -23380,7 +23442,7 @@ For AGKO-H052 at build/ega1/bad.pdf and render/ega1/s13-67-bad.png; superseded b
 
 _Privacy-only replacements in embedded original: 0._
 
-### 409. AGKO-H053 — hard
+### 410. AGKO-H053 — hard
 
 Source binding: line 53, 2009 bytes, SHA-256 FC53D374AA734543A2E09C16A54DE28FC0EFA8324B0E19717B81811C2DAF6362.
 
@@ -23437,7 +23499,7 @@ For AGKO-H053 at ega/I/c1s1.tex transient 51389-byte state B3E888CDD8FD965C92643
 
 _Privacy-only replacements in embedded original: 0._
 
-### 410. AGKO-H054 — hard
+### 411. AGKO-H054 — hard
 
 Source binding: line 54, 1987 bytes, SHA-256 08974CFC22B78F85BA0BE1A88FA361DB54EFD77894DD91C291ED72538B477109.
 
@@ -23494,7 +23556,7 @@ For AGKO-H054 at source/ega1/ega1-1-fr.tex line1007; line 51 LF bytes /20ADACF1F
 
 _Privacy-only replacements in embedded original: 0._
 
-### 411. AGKO-H055 — hard
+### 412. AGKO-H055 — hard
 
 Source binding: line 55, 1948 bytes, SHA-256 0C4C89FAE79FCD826A9106ABCEDCE9FA158980DF1A00F3F34D1D11A90B86DFA8.
 
@@ -23551,7 +23613,7 @@ For AGKO-H055 at ega/I/c1s1.tex first §1.5 build r77; compared against establis
 
 _Privacy-only replacements in embedded original: 0._
 
-### 412. AGKO-H056 — hard
+### 413. AGKO-H056 — hard
 
 Source binding: line 56, 2368 bytes, SHA-256 3D9E91100F5694855317472319CC8EE49129FF3ACBC9800708AD9DAF8FAFF521.
 
@@ -23608,7 +23670,7 @@ For AGKO-H056 at source line1418 writes Gamma(Phi^*(~N')) with the global-sectio
 
 _Privacy-only replacements in embedded original: 0._
 
-### 413. AGKO-H057 — hard
+### 414. AGKO-H057 — hard
 
 Source binding: line 57, 1521 bytes, SHA-256 B9F8B32CD0046052415AC54D635CE8EF04344D70481796A665A328BB4B4CAAEC.
 
@@ -23665,7 +23727,7 @@ For AGKO-H057 at ega/I/c1s1.tex transient state with subsection1.7 inserted afte
 
 _Privacy-only replacements in embedded original: 0._
 
-### 414. AGKO-H058 — hard
+### 415. AGKO-H058 — hard
 
 Source binding: line 58, 1446 bytes, SHA-256 BC457F3BA6A14413145DA487DC4D043F815C62290DA1E3AF3DD12270C9C75705.
 
@@ -23722,7 +23784,7 @@ For AGKO-H058 at c1s1 theorem/corollary prose around1.7.3-1.7.5, does the record
 
 _Privacy-only replacements in embedded original: 0._
 
-### 415. AGKO-H059 — hard
+### 416. AGKO-H059 — hard
 
 Source binding: line 59, 1844 bytes, SHA-256 1497839DF93666022AFEE80E72C1EF846A14C6F915FBEAFB43A4DB4CD6C9A41D.
 
@@ -23779,7 +23841,7 @@ For AGKO-H059 at ega/I/$out/main.pdf versus intended build/ega1 output, does the
 
 _Privacy-only replacements in embedded original: 0._
 
-### 416. AGKO-H060 — hard
+### 417. AGKO-H060 — hard
 
 Source binding: line 60, 1725 bytes, SHA-256 C35FE5A10ABFAC695FCA7BCC10FDB85B40983A84925C6591DF3770B27606FB69.
 
@@ -23837,7 +23899,7 @@ For AGKO-H060 at ega1-2-fr.tex lines92-101; first Korean draft used 정수적 �
 
 _Privacy-only replacements in embedded original: 0._
 
-### 417. AGKO-H061 — hard
+### 418. AGKO-H061 — hard
 
 Source binding: line 61, 1805 bytes, SHA-256 25275ED1A33B6A25D32848A130CB7621C8772188ABF9E434ED5878033686DA15.
 
@@ -23894,7 +23956,7 @@ For AGKO-H061 at c1s2.tex first complete §2.2 draft, does the recorded resoluti
 
 _Privacy-only replacements in embedded original: 0._
 
-### 418. AGKO-H062 — hard
+### 419. AGKO-H062 — hard
 
 Source binding: line 62, 1970 bytes, SHA-256 AA07B009D0C9303497BF4303C78B2ECF7C5836CDA12335C5F0BDC4AB9C02AE3D.
 
@@ -23951,7 +24013,7 @@ For AGKO-H062 at index/units.jsonl original rows AGKO-EGA1-D172, P173, D173G, D1
 
 _Privacy-only replacements in embedded original: 0._
 
-### 419. AGKO-H063 — hard
+### 420. AGKO-H063 — hard
 
 Source binding: line 63, 1683 bytes, SHA-256 A18FAA304FF295FA6C732B58F237D096638FABF18EBE77EC9450A92F011A8125.
 
@@ -24008,7 +24070,7 @@ For AGKO-H063 at render/ega1/text.txt after 78-page build, does the recorded res
 
 _Privacy-only replacements in embedded original: 0._
 
-### 420. AGKO-H064 — hard
+### 421. AGKO-H064 — hard
 
 Source binding: line 64, 1607 bytes, SHA-256 5F943D249221C3058529239F9562DB11BA126A75CEE73A95C6D8BC401FF52DBD.
 
@@ -24065,7 +24127,7 @@ For AGKO-H064 at ega/I/c1s2.tex transient draft before final subsection order, d
 
 _Privacy-only replacements in embedded original: 0._
 
-### 421. AGKO-H065 — hard
+### 422. AGKO-H065 — hard
 
 Source binding: line 65, 1485 bytes, SHA-256 8692ECC02E1A84F32637EAAABA363BC98639CA3AB3BA7A31A45655420CB55BAE.
 
@@ -24122,7 +24184,7 @@ For AGKO-H065 at ega1-2-fr.tex line436 and lines463-474, does the recorded resol
 
 _Privacy-only replacements in embedded original: 0._
 
-### 422. AGKO-H066 — hard
+### 423. AGKO-H066 — hard
 
 Source binding: line 66, 1729 bytes, SHA-256 B165F6B79B0E47B8FCC07F23C738A0F705AC967AE557C80A8F53487875443959.
 
@@ -24179,7 +24241,7 @@ For AGKO-H066 at XeLaTeX PowerShell invocation and transient ega/I/$out director
 
 _Privacy-only replacements in embedded original: 0._
 
-### 423. AGKO-H067 — hard
+### 424. AGKO-H067 — hard
 
 Source binding: line 67, 1595 bytes, SHA-256 DC0E7BACC7B2C4A111576669841FED115CC8BF5A74114C52A306C20C2D8A463D.
 
@@ -24236,7 +24298,7 @@ For AGKO-H067 at one broad rg command rooted above ag_ko, does the recorded reso
 
 _Privacy-only replacements in embedded original: 0._
 
-### 424. AGKO-H068 — hard
+### 425. AGKO-H068 — hard
 
 Source binding: line 68, 1300 bytes, SHA-256 9A0432D91D9C50856F1B089EBE985EE285CF4D3F47D46EC6A7FE90610B0F22A1.
 
@@ -24293,7 +24355,7 @@ For AGKO-H068 at index/units.jsonl rows AGKO-EGA1-S24 and AGKO-EGA1-S25, does th
 
 _Privacy-only replacements in embedded original: 0._
 
-### 425. AGKO-H069 — hard
+### 426. AGKO-H069 — hard
 
 Source binding: line 69, 1699 bytes, SHA-256 BE7FA6D84DC106C84D2ADB4CFBA9F7A998B4F1CB02BD0091D920A5F6FF48C8BF.
 
@@ -24350,7 +24412,7 @@ For AGKO-H069 at XeLaTeX PowerShell invocation and transient ega/I/$out director
 
 _Privacy-only replacements in embedded original: 0._
 
-### 426. AGKO-H070 — hard
+### 427. AGKO-H070 — hard
 
 Source binding: line 70, 1590 bytes, SHA-256 4FD9720F925034191CC59C9610B2EE7CF330C604BB6492C12707EAEEEDA13FCB.
 
@@ -24407,7 +24469,7 @@ For AGKO-H070 at build/ega1/r92a and r92b versus same-path build/ega1/r92, does 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 427. AGKO-H071 — hard
+### 428. AGKO-H071 — hard
 
 Source binding: line 71, 1515 bytes, SHA-256 5294FC4FCACFE06F89800CA7D4A7FFE8129E4B03FBD1CF4832CFD17F7F0C04EB.
 
@@ -24464,7 +24526,7 @@ For AGKO-H071 at source/ega1/ega1-3-fr.tex line42; target ega/I/c1s3.tex lines40
 
 _Privacy-only replacements in embedded original: 0._
 
-### 428. AGKO-H072 — hard
+### 429. AGKO-H072 — hard
 
 Source binding: line 72, 1997 bytes, SHA-256 5D0AA9E6364EBDBE4B34A56D90BF70A19E1F75AF6608FD3B1EAC6CA84F488833.
 
@@ -24521,7 +24583,7 @@ For AGKO-H072 at index/units.jsonl former line1070 and children at orders1070-10
 
 _Privacy-only replacements in embedded original: 0._
 
-### 429. AGKO-H073 — hard
+### 430. AGKO-H073 — hard
 
 Source binding: line 73, 1619 bytes, SHA-256 FBA855902B42E9603FBC57ABFB1A1E59FD91216119368C10C26F5F76BAB0FBC2.
 
@@ -24578,7 +24640,7 @@ For AGKO-H073 at source/ega1/ega1-3-fr.tex line456; target ega/I/c1s3.tex lines4
 
 _Privacy-only replacements in embedded original: 0._
 
-### 430. AGKO-H074 — hard
+### 431. AGKO-H074 — hard
 
 Source binding: line 74, 1529 bytes, SHA-256 8AA1D55612DA794781DDC00243F8F1E3E1E925ABD5D5FF5305F94261264F3884.
 
@@ -24635,7 +24697,7 @@ For AGKO-H074 at first pdftotext path and first pdftoppm wrapper invocation afte
 
 _Privacy-only replacements in embedded original: 1._
 
-### 431. AGKO-H075 — hard
+### 432. AGKO-H075 — hard
 
 Source binding: line 75, 1684 bytes, SHA-256 3932DD3978CFD4E76E107417BAD9B9B7588C16EFE01ED7E74E9DBDA1E33C4761.
 
@@ -24692,7 +24754,7 @@ For AGKO-H075 at first mechanical append after environment3.2.6.5; detected subs
 
 _Privacy-only replacements in embedded original: 0._
 
-### 432. AGKO-H076 — hard
+### 433. AGKO-H076 — hard
 
 Source binding: line 76, 1719 bytes, SHA-256 8E0A785A4573B40FD01D58B83637AF985B4D51EE4E7DBC13FE5D7702135B824B.
 
@@ -24749,7 +24811,7 @@ For AGKO-H076 at post-r94 repeat build pdfinfo call and first render loop, does 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 433. AGKO-H077 — hard
+### 434. AGKO-H077 — hard
 
 Source binding: line 77, 1929 bytes, SHA-256 2403BB58A09F6F3BE12C33EF76A5A5BC9E509963A99B76A075B4768E53AF415B.
 
@@ -24806,7 +24868,7 @@ For AGKO-H077 at source/ega1/ega1-3-fr.tex line860; target ega/I/c1s3.tex lines8
 
 _Privacy-only replacements in embedded original: 0._
 
-### 434. AGKO-H078 — hard
+### 435. AGKO-H078 — hard
 
 Source binding: line 78, 1648 bytes, SHA-256 E1BF7CFDED02DE93F69336C03092A2A7E6D1B13D19E699FAC0D073F4F6714107.
 
@@ -24863,7 +24925,7 @@ For AGKO-H078 at terms.jsonl records T103-T108; hard.jsonl records H076-H077, do
 
 _Privacy-only replacements in embedded original: 0._
 
-### 435. AGKO-H079 — hard
+### 436. AGKO-H079 — hard
 
 Source binding: line 79, 1491 bytes, SHA-256 73F2B6677546A1CF850C8AD06B7463B97FF3E3B773D0EC8B17B2C9D74076A521.
 
@@ -24920,7 +24982,7 @@ For AGKO-H079 at index/schema.json and index/units.jsonl, does the recorded reso
 
 _Privacy-only replacements in embedded original: 0._
 
-### 436. AGKO-H080 — hard
+### 437. AGKO-H080 — hard
 
 Source binding: line 80, 1828 bytes, SHA-256 28A624A9715BCDF348251221A8C50C2B76B9D1820A6231B8EF65C74976A93BC2.
 
@@ -24977,7 +25039,7 @@ For AGKO-H080 at build/ega1/main.pdf and render/ega1/text.txt, does the recorded
 
 _Privacy-only replacements in embedded original: 0._
 
-### 437. AGKO-H081 — hard
+### 438. AGKO-H081 — hard
 
 Source binding: line 81, 2164 bytes, SHA-256 B7966DE82ABCED2E88AB5517D5ACEF22FFB8CD27E24830E0309AF070E84782C9.
 
@@ -25035,7 +25097,7 @@ For AGKO-H081 at source/ega1/ega1-3-fr.tex lines1089-1202; target ega/I/c1s3.tex
 
 _Privacy-only replacements in embedded original: 0._
 
-### 438. AGKO-H082 — hard
+### 439. AGKO-H082 — hard
 
 Source binding: line 82, 2054 bytes, SHA-256 9A0892441CF170DF400F707BE9C55B658FAF96F4DC02BCEC709A4BC42AF5E48F.
 
@@ -25093,7 +25155,7 @@ For AGKO-H082 at source lines1104-1126,1128-1139,1157-1179,1181-1201; target lin
 
 _Privacy-only replacements in embedded original: 0._
 
-### 439. AGKO-H083 — hard
+### 440. AGKO-H083 — hard
 
 Source binding: line 83, 2163 bytes, SHA-256 D4100A77CA991FDBB180D8631822ABC962C8151AAB51C9542C6A97DC840FDA30.
 
@@ -25151,7 +25213,7 @@ For AGKO-H083 at target lines1188-1189 and1209-1212; source lines1203-1204 and12
 
 _Privacy-only replacements in embedded original: 0._
 
-### 440. AGKO-H084 — hard
+### 441. AGKO-H084 — hard
 
 Source binding: line 84, 1579 bytes, SHA-256 9F03D186D54FB27561FCD902E2353682641C2B9261AD92EC4C50E322D18093C2.
 
@@ -25208,7 +25270,7 @@ For AGKO-H084 at build/ega1/main.pdf and render/ega1/text.txt, does the recorded
 
 _Privacy-only replacements in embedded original: 0._
 
-### 441. AGKO-H085 — hard
+### 442. AGKO-H085 — hard
 
 Source binding: line 85, 1818 bytes, SHA-256 B762D72067A92BD23185AB54EF5AB13AB2701EF13CE96D6C138DC625AFDD7E0C.
 
@@ -25265,7 +25327,7 @@ For AGKO-H085 at source/ega1/ega1-3-fr.tex and ega/I/c1s3.tex complete files, do
 
 _Privacy-only replacements in embedded original: 0._
 
-### 442. AGKO-H086 — hard
+### 443. AGKO-H086 — hard
 
 Source binding: line 86, 1933 bytes, SHA-256 EE58CAF98C4396178520E4BE001497AA2FF8505640C921FEBE8F3BAE698E565D.
 
@@ -25323,7 +25385,7 @@ For AGKO-H086 at definitions4.1.3; propositions4.1.2,4.1.5-4.1.6,4.1.9; environm
 
 _Privacy-only replacements in embedded original: 0._
 
-### 443. AGKO-H087 — hard
+### 444. AGKO-H087 — hard
 
 Source binding: line 87, 1756 bytes, SHA-256 3EB2B98020E70EFD735975F174E1111F77E6B9C2B77613D7D56824688DF36FF2.
 
@@ -25380,7 +25442,7 @@ For AGKO-H087 at ega1-4-fr.tex lines264-265 theta-sharp prose; line355 Gamma(psi
 
 _Privacy-only replacements in embedded original: 0._
 
-### 444. AGKO-H088 — hard
+### 445. AGKO-H088 — hard
 
 Source binding: line 88, 1832 bytes, SHA-256 44A810AE98827F5722F20581183E7062E3D70DC1F773E74771F53386307771A7.
 
@@ -25437,7 +25499,7 @@ For AGKO-H088 at temporary literal directory ega/I/$out and intended build/ega1/
 
 _Privacy-only replacements in embedded original: 0._
 
-### 445. AGKO-H089 — hard
+### 446. AGKO-H089 — hard
 
 Source binding: line 89, 2081 bytes, SHA-256 D6C2F315051D64E86626FB584364DD1374695F09F02ED59939884B3F60026DC8.
 
@@ -25494,7 +25556,7 @@ For AGKO-H089 at source/ega1/ega1-4-fr.tex lines481-484; controls/REF7.jsonl ID 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 446. AGKO-H090 — hard
+### 447. AGKO-H090 — hard
 
 Source binding: line 90, 2022 bytes, SHA-256 A71CC9451A4929491379A9E5635921DAEE2F63DB8778C3E96F3DAF57485AC938.
 
@@ -25551,7 +25613,7 @@ For AGKO-H090 at read-only PowerShell and pypdf diagnostic commands; no corpus o
 
 _Privacy-only replacements in embedded original: 0._
 
-### 447. AGKO-H091 — hard
+### 448. AGKO-H091 — hard
 
 Source binding: line 91, 1413 bytes, SHA-256 386E837B93316C31FC62F29E71395282D6381533103CEA29531BD0863C5A4413.
 
@@ -25608,7 +25670,7 @@ For AGKO-H091 at source/ega1/ega1-4-fr.tex lines585-588; target ega/I/c1s4.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 448. AGKO-H092 — hard
+### 449. AGKO-H092 — hard
 
 Source binding: line 92, 1321 bytes, SHA-256 3AA87E44AE4B5F89D79E847F1C054AE303C9EC6199794A43B9A189DF2475C626.
 
@@ -25665,7 +25727,7 @@ For AGKO-H092 at ega/I/c1s4.tex during production before final build, does the r
 
 _Privacy-only replacements in embedded original: 0._
 
-### 449. AGKO-H093 — hard
+### 450. AGKO-H093 — hard
 
 Source binding: line 93, 1315 bytes, SHA-256 2EBD2AFBEF2A0E9BF56C7490F4993B8D363DC91020AD00CF6A24BECA0881B485.
 
@@ -25722,7 +25784,7 @@ For AGKO-H093 at source/ega1/ega1-4-fr.tex lines664-682; target ega/I/c1s4.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 450. AGKO-H094 — hard
+### 451. AGKO-H094 — hard
 
 Source binding: line 94, 1499 bytes, SHA-256 FC2747DF21EC8CD9E67F810762853E791FFB74C65D50E45DB2A18F1AB63F1F42.
 
@@ -25779,7 +25841,7 @@ For AGKO-H094 at ega/I/c1s4.tex lines598-602; adverse render render/ega1/s45-93.
 
 _Privacy-only replacements in embedded original: 0._
 
-### 451. AGKO-H095 — hard
+### 452. AGKO-H095 — hard
 
 Source binding: line 95, 1468 bytes, SHA-256 72A362A6B5076021495BC66C882B41AD14037FA638FC224B345D8CE04B7F49A1.
 
@@ -25836,7 +25898,7 @@ For AGKO-H095 at source/ega1/ega1-5-fr.tex lines1-304; target ega/I/c1s5.tex lin
 
 _Privacy-only replacements in embedded original: 0._
 
-### 452. AGKO-H096 — hard
+### 453. AGKO-H096 — hard
 
 Source binding: line 96, 1482 bytes, SHA-256 CFFE3F5F58B06B906661CADE64656165DB887C6C9444DB9C4B71DE68FA269791.
 
@@ -25893,7 +25955,7 @@ For AGKO-H096 at source/ega1/ega1-5-fr.tex lines372-669; target ega/I/c1s5.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 453. AGKO-H097 — hard
+### 454. AGKO-H097 — hard
 
 Source binding: line 97, 1165 bytes, SHA-256 E759007129D46904B457E3EF0F7D94D75F5BE3411D8606BAD4C4D2308A8983FC.
 
@@ -25950,7 +26012,7 @@ For AGKO-H097 at ega/I/c1s5.tex lines660-761, does the recorded resolution fully
 
 _Privacy-only replacements in embedded original: 0._
 
-### 454. AGKO-H098 — hard
+### 455. AGKO-H098 — hard
 
 Source binding: line 98, 2061 bytes, SHA-256 E8BD4F088ECA7F6282F2369AE3AA5146A1B0FC84F2A5863E8296EC497C280DE2.
 
@@ -26007,7 +26069,7 @@ For AGKO-H098 at source/ega1/ega1-5-fr.tex lines774-1149; target ega/I/c1s5.tex 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 455. AGKO-H099 — hard
+### 456. AGKO-H099 — hard
 
 Source binding: line 99, 1494 bytes, SHA-256 8CD764DD3A5048E6BA6AD66DEEF56AD56016769C47D0A6481142655694A27613.
 
@@ -26064,7 +26126,7 @@ For AGKO-H099 at bundled pdftotext wrapper versus MiKTeX pdftotext; render/ega1/
 
 _Privacy-only replacements in embedded original: 0._
 
-### 456. AGKO-H100 — hard
+### 457. AGKO-H100 — hard
 
 Source binding: line 100, 1466 bytes, SHA-256 484BC91E84A21F8C66D9EEB8474A289927B0631A17B5B293DAD5D93C8D2C0FAA.
 
@@ -26121,7 +26183,7 @@ For AGKO-H100 at source/ega1/ega1-6-fr.tex lines145-162; ega/I/c1s6.tex lines140
 
 _Privacy-only replacements in embedded original: 0._
 
-### 457. AGKO-H101 — hard
+### 458. AGKO-H101 — hard
 
 Source binding: line 101, 1380 bytes, SHA-256 3C7A86166F69958B89A1F05FB6D55255DC6D13AB382AC798DCCC8A650A1E02B3.
 
@@ -26178,7 +26240,7 @@ For AGKO-H101 at source/ega1/ega1-6-fr.tex lines231-237; ega/I/c1s6.tex lines221
 
 _Privacy-only replacements in embedded original: 0._
 
-### 458. AGKO-H102 — hard
+### 459. AGKO-H102 — hard
 
 Source binding: line 102, 1555 bytes, SHA-256 5AD2801E597BC972550C191C161BAA0691CDDC51AA4DED7432118DD45D0EF76B.
 
@@ -26235,7 +26297,7 @@ For AGKO-H102 at PowerShell invocation of XeLaTeX output-directory; transient ow
 
 _Privacy-only replacements in embedded original: 0._
 
-### 459. AGKO-H103 — hard
+### 460. AGKO-H103 — hard
 
 Source binding: line 103, 1549 bytes, SHA-256 0C8810D30DC6179C948895CA361BED21BA6C1D464A338C2DFBC3F7CC1B96F441.
 
@@ -26292,7 +26354,7 @@ For AGKO-H103 at source/ega1/ega1-6-fr.tex lines337-348, especially printed line
 
 _Privacy-only replacements in embedded original: 0._
 
-### 460. AGKO-H104 — hard
+### 461. AGKO-H104 — hard
 
 Source binding: line 104, 1651 bytes, SHA-256 CC23AA0CB38767114D22DF67EA067A5914EA25624B6196883629B00401B33716.
 
@@ -26349,7 +26411,7 @@ For AGKO-H104 at build/ega1/r111_ref.pdf and pre-final target ordering, does the
 
 _Privacy-only replacements in embedded original: 0._
 
-### 461. AGKO-H105 — hard
+### 462. AGKO-H105 — hard
 
 Source binding: line 105, 2267 bytes, SHA-256 599A83D86201FB2079B6B54F4D94BC86B895751AB5969761D032FB4D04285DED.
 
@@ -26406,7 +26468,7 @@ For AGKO-H105 at build/ega1/r113 and build/ega1/r114 candidate heads, does the r
 
 _Privacy-only replacements in embedded original: 0._
 
-### 462. AGKO-H106 — hard
+### 463. AGKO-H106 — hard
 
 Source binding: line 106, 2567 bytes, SHA-256 16C003ACC11E7CBEE89872AC02D0C26570D74A2943D406A0D0E66ABE845BDF25.
 
@@ -26464,7 +26526,7 @@ For AGKO-H106 at source/ega1/ega1-6-fr.tex lines771-996; ega/I/c1s6.tex lines739
 
 _Privacy-only replacements in embedded original: 0._
 
-### 463. AGKO-H107 — hard
+### 464. AGKO-H107 — hard
 
 Source binding: line 107, 2280 bytes, SHA-256 A62F56ABD9F8B5E8EBDC72A015483CED51AC68599A5D724CE89CCB1EBCBBA659.
 
@@ -26522,7 +26584,7 @@ For AGKO-H107 at source/ega1/ega1-6-fr.tex lines998-1206; printed line1060; ega/
 
 _Privacy-only replacements in embedded original: 0._
 
-### 464. AGKO-H108 — hard
+### 465. AGKO-H108 — hard
 
 Source binding: line 108, 1756 bytes, SHA-256 ACEEB710AEFDBEEB3B29958649C40555EDE2F31D8CADEDF43DB8609F254CEE2D.
 
@@ -26579,7 +26641,7 @@ For AGKO-H108 at bundled override pdfinfo.cmd and pdftoppm.cmd after successful 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 465. AGKO-H109 — hard
+### 466. AGKO-H109 — hard
 
 Source binding: line 109, 2040 bytes, SHA-256 44E01DA84FA47032176530E0F304C22F9FB9BB8CAF93EA565DB3BA8731D6EC11.
 
@@ -26636,7 +26698,7 @@ For AGKO-H109 at source/ega1/ega1-7-fr.tex lines37-41; ega/I/c1s7.tex lines32-39
 
 _Privacy-only replacements in embedded original: 0._
 
-### 466. AGKO-H110 — hard
+### 467. AGKO-H110 — hard
 
 Source binding: line 110, 2145 bytes, SHA-256 BFADF8C6B508C4692AD2E453DF37EEBAF50484BE96FAB7C62BDADB6D7FAFEEE0.
 
@@ -26693,7 +26755,7 @@ For AGKO-H110 at source/ega1/ega1-7-fr.tex lines648-670; corrected Korean ega/I/
 
 _Privacy-only replacements in embedded original: 0._
 
-### 467. AGKO-H111 — hard
+### 468. AGKO-H111 — hard
 
 Source binding: line 111, 1632 bytes, SHA-256 7174ABDCBD1B9C524A2F63F5BCFF2247BB20EB38B1D987F413E65B2CD94347AD.
 
@@ -26750,7 +26812,7 @@ For AGKO-H111 at source/ega1/ega1-8-fr.tex line195; ega/I/c1s8.tex lines191-203,
 
 _Privacy-only replacements in embedded original: 0._
 
-### 468. AGKO-H112 — hard
+### 469. AGKO-H112 — hard
 
 Source binding: line 112, 1729 bytes, SHA-256 3380A1021F65AE741B44AB322A82B7E5D47794F339A7109197EB325A3E956B3B.
 
@@ -26807,7 +26869,7 @@ For AGKO-H112 at source/ega1/ega1-9-fr.tex line291; ega/I/c1s9.tex lines273-281,
 
 _Privacy-only replacements in embedded original: 0._
 
-### 469. AGKO-H113 — hard
+### 470. AGKO-H113 — hard
 
 Source binding: line 113, 1906 bytes, SHA-256 624A65749BDBA51A4B82BF51ED5CFA2CCDD1AEC5F38CA961E17A9998BEE5040C.
 
@@ -26864,7 +26926,7 @@ For AGKO-H113 at ega/I/$out and build/ega1/r125, does the recorded resolution fu
 
 _Privacy-only replacements in embedded original: 0._
 
-### 470. AGKO-H114 — hard
+### 471. AGKO-H114 — hard
 
 Source binding: line 114, 2439 bytes, SHA-256 693B5547F88FBDF12719EBC2520D599365A2ACBC03EDAE90BDC6AB54859DFBAF.
 
@@ -26921,7 +26983,7 @@ For AGKO-H114 at ega/I/c1s9.tex transient lines94-218; final lines382-506, does 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 471. AGKO-H115 — hard
+### 472. AGKO-H115 — hard
 
 Source binding: line 115, 2196 bytes, SHA-256 132120802D3203C0546A8583824BBCBC052620AC8BDCA30596B857AA2E96B54B.
 
@@ -26978,7 +27040,7 @@ For AGKO-H115 at cursor.json next; HARDENED.md section11 final sentence; AGKO-D0
 
 _Privacy-only replacements in embedded original: 0._
 
-### 472. AGKO-H116 — hard
+### 473. AGKO-H116 — hard
 
 Source binding: line 116, 2766 bytes, SHA-256 268C42E5A34B8DAFA3FF80AC948CCC27492F5FB05AED217E8133F6E3630E3522.
 
@@ -27035,7 +27097,7 @@ For AGKO-H116 at source/ega1/ega1-9-fr.tex lines671-704; target ega/I/c1s9.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 473. AGKO-H117 — hard
+### 474. AGKO-H117 — hard
 
 Source binding: line 117, 2179 bytes, SHA-256 EC2940ECF8802B8D280A345B63660E87C8285F2957463D43D628360911B66061.
 
@@ -27092,7 +27154,7 @@ For AGKO-H117 at ega/I/c1s9.tex transient order after9.5.6; final canonical line
 
 _Privacy-only replacements in embedded original: 0._
 
-### 474. AGKO-H118 — hard
+### 475. AGKO-H118 — hard
 
 Source binding: line 118, 2073 bytes, SHA-256 447714FE564A028629E3B7D2CBAD52A84113CC1648C2E4E0976442296D9B8F6D.
 
@@ -27149,7 +27211,7 @@ For AGKO-H118 at source/ega1/ega1-9-fr.tex lines788-791; target ega/I/c1s9.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 475. AGKO-H119 — hard
+### 476. AGKO-H119 — hard
 
 Source binding: line 119, 1844 bytes, SHA-256 416AA40980C1962758CDB45E85584F42ADD796B91539439294DAD678CFB4C2BC.
 
@@ -27206,7 +27268,7 @@ For AGKO-H119 at source/ega1/ega1-9-fr.tex lines817-831; target ega/I/c1s9.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 476. AGKO-H120 — hard
+### 477. AGKO-H120 — hard
 
 Source binding: line 120, 1665 bytes, SHA-256 EEBE8806C25FCAE7CEB6F730A38E9DC84D4D57C5451562D86F24DB865354836B.
 
@@ -27263,7 +27325,7 @@ For AGKO-H120 at source/ega1/ega1-9-fr.tex lines972-983; target ega/I/c1s9.tex l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 477. AGKO-H121 — hard
+### 478. AGKO-H121 — hard
 
 Source binding: line 121, 2399 bytes, SHA-256 733E3C8A05B7DF4D7E70CC681542C1C1D9B1B1B385F789795208F4813901FDF2.
 
@@ -27320,7 +27382,7 @@ For AGKO-H121 at source/ega1/ega1-10-fr.tex lines349-353 316 bytes /CF89411BCCCF
 
 _Privacy-only replacements in embedded original: 0._
 
-### 478. AGKO-H122 — hard
+### 479. AGKO-H122 — hard
 
 Source binding: line 122, 1725 bytes, SHA-256 2D4E040E80FC6D8A643D270CDE495B09F7A48DDAE2F820504DD8881D8784C02E.
 
@@ -27377,7 +27439,7 @@ For AGKO-H122 at source/ega1/ega1-10-fr.tex line459 74 bytes /E67F7EF2C9D46FBDD3
 
 _Privacy-only replacements in embedded original: 0._
 
-### 479. AGKO-H123 — hard
+### 480. AGKO-H123 — hard
 
 Source binding: line 123, 1934 bytes, SHA-256 96821D009C75D2C531F1E6534C49B6506DD5F99CB7A96625B52C5566BCB8BB77.
 
@@ -27434,7 +27496,7 @@ For AGKO-H123 at source/ega1/ega1-10-fr.tex lines479-483 291 bytes /D019FF716447
 
 _Privacy-only replacements in embedded original: 0._
 
-### 480. AGKO-H124 — hard
+### 481. AGKO-H124 — hard
 
 Source binding: line 124, 2187 bytes, SHA-256 C4439293175781511E09C17EC316B1FD5B78F5B94D81A267EBA31132B56F20F0.
 
@@ -27491,7 +27553,7 @@ For AGKO-H124 at transient ega/I/c1s10.tex whole475 LF lines /22742 bytes /AFD4A
 
 _Privacy-only replacements in embedded original: 0._
 
-### 481. AGKO-H125 — hard
+### 482. AGKO-H125 — hard
 
 Source binding: line 125, 2542 bytes, SHA-256 C45D676D789C909A014D9F5F908FB6D0D4E64F59C1CEEA0A37B16063D5F08856.
 
@@ -27548,7 +27610,7 @@ For AGKO-H125 at transient ega/I/c1s10.tex whole598 LF lines /28885 bytes /70E1E
 
 _Privacy-only replacements in embedded original: 0._
 
-### 482. AGKO-H126 — hard
+### 483. AGKO-H126 — hard
 
 Source binding: line 126, 2133 bytes, SHA-256 4A9831CF4D99A8FB993C039A1A4A8CB5CC57A48503F2D53B3384312DB0BC40D0.
 
@@ -27605,7 +27667,7 @@ For AGKO-H126 at historical render/ega1/text.txt 580375 bytes; actual SHA-256 49
 
 _Privacy-only replacements in embedded original: 0._
 
-### 483. AGKO-H127 — hard
+### 484. AGKO-H127 — hard
 
 Source binding: line 127, 2210 bytes, SHA-256 1964C16D40CB00165E5E5A426F974F1175EE08B1F7328B0F77B8C4C7C249BE79.
 
@@ -27662,7 +27724,7 @@ For AGKO-H127 at source/ega1/ega1-10-fr.tex lines718-726; printed reference at l
 
 _Privacy-only replacements in embedded original: 0._
 
-### 484. AGKO-H128 — hard
+### 485. AGKO-H128 — hard
 
 Source binding: line 128, 2243 bytes, SHA-256 B00F70726EAF112DF0582E7B56127FD825E063FAD8FC8105F6E73B79ABE28803.
 
@@ -27719,7 +27781,7 @@ For AGKO-H128 at controls/D29.json 14383 bytes /04A5F36F8C132EB6FB5B6CF69E428C15
 
 _Privacy-only replacements in embedded original: 0._
 
-### 485. AGKO-H129 — hard
+### 486. AGKO-H129 — hard
 
 Source binding: line 129, 2108 bytes, SHA-256 E17DA4494AFF96EC5DAB63C3FD08B269ADF8690BA14EAA5DB4BFD71675066432.
 
@@ -27776,7 +27838,7 @@ For AGKO-H129 at controls/P188_CHECK.json 13216 bytes /63F1BDFEF422BEF87C92D7EC0
 
 _Privacy-only replacements in embedded original: 0._
 
-### 486. AGKO-H130 — hard
+### 487. AGKO-H130 — hard
 
 Source binding: line 130, 1905 bytes, SHA-256 7D2D896C1C7FF9D661B2F90191E9FC7E8E7F65032E94BD57CA4EE0865892C9E4.
 
@@ -27833,7 +27895,7 @@ For AGKO-H130 at controls/D30.json 13186 bytes /1AA71371DA88961A8669E2449DA166E9
 
 _Privacy-only replacements in embedded original: 0._
 
-### 487. AGKO-H131 — hard
+### 488. AGKO-H131 — hard
 
 Source binding: line 131, 2598 bytes, SHA-256 DF88F86E81A4A518269B5CF012120BF5352D61A2BA1F11946B2F0AEE6DB42EA2.
 
@@ -27890,7 +27952,7 @@ For AGKO-H131 at source/ega1/ega1-10-fr.tex line957 and proposition statement li
 
 _Privacy-only replacements in embedded original: 0._
 
-### 488. AGKO-H132 — hard
+### 489. AGKO-H132 — hard
 
 Source binding: line 132, 2625 bytes, SHA-256 F7962F9BEA103266AFBD63C1FC4A43D555E4BD27616699769299B7EEF94CC893.
 
@@ -27947,7 +28009,7 @@ For AGKO-H132 at source/ega1/ega1-10-fr.tex lines913-914 132 bytes /6F8C9DF7D24E
 
 _Privacy-only replacements in embedded original: 0._
 
-### 489. AGKO-H133 — hard
+### 490. AGKO-H133 — hard
 
 Source binding: line 133, 2318 bytes, SHA-256 9A4BE7A7AE5DA16C947DF66B255DCFC844034A38E019662BBAD16065EF2D7805.
 
@@ -28003,7 +28065,7 @@ For AGKO-H133 at build/ega1/r155/run-interrupted-c2-p1.txt 14561 bytes /99873907
 
 _Privacy-only replacements in embedded original: 0._
 
-### 490. AGKO-H134 — hard
+### 491. AGKO-H134 — hard
 
 Source binding: line 134, 2762 bytes, SHA-256 AA0E18C02E7F3DF3D4FAC5C59994647A84081091FA3A66E2989738654BA3571A.
 
@@ -28060,7 +28122,7 @@ For AGKO-H134 at build/ega1/r157/main.pdf; pub/ega-ko/reader/00_EGA_ko_CUMULATIV
 
 _Privacy-only replacements in embedded original: 0._
 
-### 491. AGKO-H135 — hard
+### 492. AGKO-H135 — hard
 
 Source binding: line 135, 2582 bytes, SHA-256 202072C01C98F606D8CBF566DB28DA7FE07225DB97E76BAA49561EB952E6DD3C.
 
@@ -28117,7 +28179,7 @@ For AGKO-H135 at pub/ega-ko/release/2026-08-23-r11; pub/ega-ko/evidence/ARTIFACT
 
 _Privacy-only replacements in embedded original: 0._
 
-### 492. AGKO-H136 — hard
+### 493. AGKO-H136 — hard
 
 Source binding: line 136, 1738 bytes, SHA-256 DFDE2C8C13FBFAF2EEA6669C79B73621F29D7DC5C1EEA5128E302E35484D2CC7.
 
@@ -28168,7 +28230,7 @@ For AGKO-H136 at evidence/ARTIFACT_SHA256.tsv; GitHub artifact commit dc80850af6
 
 _Privacy-only replacements in embedded original: 0._
 
-### 493. AGKO-H137 — hard
+### 494. AGKO-H137 — hard
 
 Source binding: line 137, 2298 bytes, SHA-256 9162CC03CB61EDE2C3BA004F1E130DF68EBBEC52CC508D7AA3E1EC7E34F19332.
 
@@ -28225,7 +28287,7 @@ For AGKO-H137 at Zenodo deposition22063585 edit/publish; pub/ega-ko/.zenodo.json
 
 _Privacy-only replacements in embedded original: 0._
 
-### 494. AGKO-H138 — hard
+### 495. AGKO-H138 — hard
 
 Source binding: line 138, 2247 bytes, SHA-256 5B66615A6984DF4637035FF0E7DBCF24F8344FAB37EA952576ED228B3875DDB6.
 
@@ -28282,7 +28344,7 @@ For AGKO-H138 at Transcription/.../source/ega1/ega1-10-fr.tex line2019; NUMDAM E
 
 _Privacy-only replacements in embedded original: 0._
 
-### 495. AGKO-H139 — hard
+### 496. AGKO-H139 — hard
 
 Source binding: line 139, 1828 bytes, SHA-256 47B1B6F4717C8E07B8760B2D99EABEAD8DCC0A3A77FB153B4001BCEA34B4FF62.
 
@@ -28338,7 +28400,7 @@ For AGKO-H139 at ega/I/c1s10.tex and pub/ega-ko/source/c1s10.tex, does the recor
 
 _Privacy-only replacements in embedded original: 0._
 
-### 496. AGKO-H140 — hard
+### 497. AGKO-H140 — hard
 
 Source binding: line 140, 2349 bytes, SHA-256 A5AABCFA813681F6B4F7C11910A086215E8CC3DF4931764100F26A62673E4AE2.
 
@@ -28395,7 +28457,7 @@ For AGKO-H140 at pub/ega-ko/evidence/index/units.jsonl and visual.jsonl, does th
 
 _Privacy-only replacements in embedded original: 0._
 
-### 497. AGKO-H141 — hard
+### 498. AGKO-H141 — hard
 
 Source binding: line 141, 1966 bytes, SHA-256 DE3F4BD8344DB097817BF5FB6BF6F5218827492822EBE49EF90D757D9EA4BD3C.
 
@@ -28451,7 +28513,7 @@ For AGKO-H141 at ega/I/c1s10.tex and pub/ega-ko/source/c1s10.tex, does the recor
 
 _Privacy-only replacements in embedded original: 0._
 
-### 498. AGKO-H142 — hard
+### 499. AGKO-H142 — hard
 
 Source binding: line 142, 2249 bytes, SHA-256 50414AC8302BB743E54C34631F6920555418199F3D2FFAC448A1C739F360BB59.
 
@@ -28508,7 +28570,7 @@ For AGKO-H142 at source/ega1/ega1-10-fr.tex line2126; NUMDAM EGA_I_PMIHES_1960_4
 
 _Privacy-only replacements in embedded original: 0._
 
-### 499. AGKO-H143 — hard
+### 500. AGKO-H143 — hard
 
 Source binding: line 143, 1818 bytes, SHA-256 C9A754377784235A328EB2D45ECF0A52AE0E15ED9D4BE14DC26144A305C22673.
 
@@ -28564,7 +28626,7 @@ For AGKO-H143 at pub/ega-ko/build/out generated files only, does the recorded re
 
 _Privacy-only replacements in embedded original: 0._
 
-### 500. AGKO-H144 — hard
+### 501. AGKO-H144 — hard
 
 Source binding: line 144, 2369 bytes, SHA-256 07F7B48B39B6ECC0EEB8D755100096D04E34693EF141452EA47F2BDB4AB0DD29.
 
@@ -28621,7 +28683,7 @@ For AGKO-H144 at NUMDAM EGA_I_PMIHES_1960_4.pdf physical page202 / printed page2
 
 _Privacy-only replacements in embedded original: 0._
 
-### 501. AGKO-H145 — hard
+### 502. AGKO-H145 — hard
 
 Source binding: line 145, 2265 bytes, SHA-256 75A027F64A66C84F522662F21AA454F598E16DF2CC4C4109961F379AA91C56A9.
 
@@ -28678,7 +28740,7 @@ For AGKO-H145 at canonical NUMDAM physical page202/printed203; control NEXT_R17_
 
 _Privacy-only replacements in embedded original: 0._
 
-### 502. AGKO-H146 — hard
+### 503. AGKO-H146 — hard
 
 Source binding: line 146, 2207 bytes, SHA-256 ECDAC6005AEF473410615BCC5630B3E35651047B7F130B81B5E9982D06C89EBB.
 
@@ -28735,7 +28797,7 @@ For AGKO-H146 at linked task01a01efd-1650-7940-8e57-ca2d77ab7bab; canonical sour
 
 _Privacy-only replacements in embedded original: 0._
 
-### 503. AGKO-H147 — hard
+### 504. AGKO-H147 — hard
 
 Source binding: line 147, 2906 bytes, SHA-256 3F67B3E351D7252586E355B90996A06FC45D456AAF899E1361E83B0C744C02BB.
 
@@ -28792,7 +28854,7 @@ For AGKO-H147 at canonical unit12696 bytes /D4D1718A6D3BA5CC4EA4E724F3BF5783F7F2
 
 _Privacy-only replacements in embedded original: 0._
 
-### 504. AGKO-H148 — hard
+### 505. AGKO-H148 — hard
 
 Source binding: line 148, 2031 bytes, SHA-256 3A310B494D8CD76722C346E2C67926E104DB0C28397AB0E77C8A72D76F1484E5.
 
@@ -28849,7 +28911,7 @@ For AGKO-H148 at canonical unit 8602 bytes /CDE12FD8D6D0F9CD47577A95E9BBF5D5A349
 
 _Privacy-only replacements in embedded original: 0._
 
-### 505. AGKO-H149 — hard
+### 506. AGKO-H149 — hard
 
 Source binding: line 149, 2604 bytes, SHA-256 89EB45A2B87AFEB2E177E7005562F13CAE381C71D64C301C3FEB309DC792218C.
 
@@ -28906,7 +28968,7 @@ For AGKO-H149 at preceding published canonical archive 267952 bytes /44A6FC2DEA2
 
 _Privacy-only replacements in embedded original: 0._
 
-### 506. AGKO-H150 — hard
+### 507. AGKO-H150 — hard
 
 Source binding: line 150, 2498 bytes, SHA-256 BAAD553880D82336020B32CB0517D45A95788E5431B029919F5A666062E3C4CF.
 
@@ -28963,7 +29025,7 @@ For AGKO-H150 at authenticated /api/records/22103931/draft and documented /api/d
 
 _Privacy-only replacements in embedded original: 0._
 
-### 507. AGKO-H151 — hard
+### 508. AGKO-H151 — hard
 
 Source binding: line 151, 2718 bytes, SHA-256 F785064ED665985B37DC8D7A9F6EE04AF7E6613853D8A1448E08D6B83C0FBD78.
 
@@ -29020,7 +29082,7 @@ For AGKO-H151 at line160 77 bytes /27D37B32579926EFC792DA31D32C88A7DC54DD4838CF7
 
 _Privacy-only replacements in embedded original: 0._
 
-### 508. AGKO-H152 — hard
+### 509. AGKO-H152 — hard
 
 Source binding: line 152, 2187 bytes, SHA-256 6372EE5679196488F777AA3658EA919905E1D54560D140670B132CAE2484E938.
 
@@ -29077,7 +29139,7 @@ For AGKO-H152 at source lines445-448 256 bytes /BF1FD9F355177A28D949BB9622BD4DDD
 
 _Privacy-only replacements in embedded original: 0._
 
-### 509. AGKO-H153 — hard
+### 510. AGKO-H153 — hard
 
 Source binding: line 153, 3207 bytes, SHA-256 6A3C3CBE525553024746D7D145B30730C78C045A18ED045C57F75D5FEC1EAF43.
 
@@ -29134,7 +29196,7 @@ For AGKO-H153 at controls/EGA2_R13_CANON_ADJUDICATION.json2728 bytes /614A65714E
 
 _Privacy-only replacements in embedded original: 0._
 
-### 510. AGKO-H154 — hard
+### 511. AGKO-H154 — hard
 
 Source binding: line 154, 2216 bytes, SHA-256 61058EE51CC12D6611F25BAD1F40DD6983F57DCBBA33F5830C5CC21AD8480479.
 
@@ -29191,7 +29253,7 @@ For AGKO-H154 at c2s1.tex lines714-718 within target slice lines649-737; build/o
 
 _Privacy-only replacements in embedded original: 0._
 
-### 511. AGKO-H155 — hard
+### 512. AGKO-H155 — hard
 
 Source binding: line 155, 2020 bytes, SHA-256 84769C322FE9CC055D94FE9C6C06D72301ECE884EBDCD8CD4E8A3A54072C1A2C.
 
@@ -29248,7 +29310,7 @@ For AGKO-H155 at canonical source/ega2/ega2-1-fr.tex line713 blank and line714 \
 
 _Privacy-only replacements in embedded original: 0._
 
-### 512. AGKO-H156 — hard
+### 513. AGKO-H156 — hard
 
 Source binding: line 156, 2090 bytes, SHA-256 2F85FE51672EED145FD85227BCC86286B68E3459CB058A9BF90AF9182EF704B8.
 
@@ -29299,7 +29361,7 @@ For AGKO-H156 at source/CUMULATIVE_INPUTS.json v2 row63 binding and reader/00_EG
 
 _Privacy-only replacements in embedded original: 0._
 
-### 513. AGKO-H157 — hard
+### 514. AGKO-H157 — hard
 
 Source binding: line 157, 1764 bytes, SHA-256 8CE50F94E0B74B2BF95607D91400A2E6BCC27078DBE015B389777C792EFB323F.
 
@@ -29350,7 +29412,7 @@ For AGKO-H157 at ega/II/c2s1.tex and pub/ega-ko/source/c2s1.tex lines1000-1068, 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 514. AGKO-H158 — hard
+### 515. AGKO-H158 — hard
 
 Source binding: line 158, 3082 bytes, SHA-256 9394FCEDD77BED143069FA03F7960D734E3D5F016923628B362DACB5ECAC297F.
 
@@ -29408,7 +29470,7 @@ For AGKO-H158 at source statement lines1488-1489 and proof lines1521-1523; Korea
 
 _Privacy-only replacements in embedded original: 0._
 
-### 515. AGKO-H159 — hard
+### 516. AGKO-H159 — hard
 
 Source binding: line 159, 2170 bytes, SHA-256 D66ACFA085E748FA796AA53EA904FF2948C9F361CF5837418A9474F4C45EB6A8.
 
@@ -29459,7 +29521,58 @@ For AGKO-H159 at canonical source/ega2/ega2-1-fr.tex lines1542,1572,1581 and1587
 
 _Privacy-only replacements in embedded original: 0._
 
-### 516. AGKO-TERM-E133 — workflow
+### 517. AGKO-H160 — hard
+
+Source binding: line 160, 2009 bytes, SHA-256 94E42CD2B4352A3FA1E2FF292C47B1865E70C95773BC0B71F93BF2245485878B.
+
+**Scope**
+
+EGA II R37 canonical lines1537-1605 through Proposition2.1.9
+
+**Source or locus**
+
+canonical source/ega2/ega2-1-fr.tex line1572; Korean candidate/integrated target; controls/R37_TRANSLATION_ADMISSION.json and R37_PDF_QA.json
+
+**Recorded wording or resolution**
+
+Keep AGKO-H159 as the sole unresolved source-query row; do not duplicate it. Bind R37 to the exact printed formula, keep the query nonblocking, and state the release phase exactly as local build/PDF QA pass with package, portable replay and publication pending.
+
+**Recorded sense or problem**
+
+The printed formula uses S_{n-mk} with m unquantified. R37 is locally translation/build/PDF-QA complete, while package, portable replay and public preservation are not yet complete.
+
+**Recorded authorities or evidence**
+
+```json
+{
+  "cause_evidence": "AGKO-H159 already records and routes the source query. The R37 validator proves exact diplomatic formula preservation and absence of guessed n-k/n-rk substitutions. The 238-page reader and QA control prove local rendering/extraction only; the same-lineage exact DOI is reserved_unpublished.",
+  "tests": "Translation control5919/C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4; build receipt5462/5864BCD80AA33AEB906034A1E07F3BDC8710D699588A448D95ACCBBEC49B84A4; PDF QA13472/E3CB3AC1D47F4041ADECDA7942383EF0CA52B921E4AF5F9B97A1FF7EFBA1ACDD; reader1479200/22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61."
+}
+```
+
+**Recorded alternatives**
+
+_not recorded in the source ledger_
+
+**Recorded rationale or rejection**
+
+AGKO-H159 already records and routes the source query. The R37 validator proves exact diplomatic formula preservation and absence of guessed n-k/n-rk substitutions. The 238-page reader and QA control prove local rendering/extraction only; the same-lineage exact DOI is reserved_unpublished.
+
+**Recorded uncertainty or residual risk**
+
+A later canonical adjudication may refine the source reading and require a bounded rebase. No package reproducibility, portable-build identity or public-byte identity is claimed yet.
+
+**Recorded status**
+
+controlling_r37_local_gate_and_diplomatic_source_caveat
+
+**Expert-review question (retrospective_generated_from_recorded_fields)**
+
+For AGKO-H160 at canonical source/ega2/ega2-1-fr.tex line1572; Korean candidate/integrated target; controls/R37_TRANSLATION_ADMISSION.json and R37_PDF_QA.json, does the recorded resolution fully address the recorded symptom while preserving the stated residual risk?
+
+_Privacy-only replacements in embedded original: 0._
+
+### 518. AGKO-TERM-E133 — workflow
 
 Source binding: line 1, 2249 bytes, SHA-256 965C161E39FEE6983B03DF708A9D2B918B28D8CEC04756E0E9CD0702FBE553D6.
 
@@ -29571,7 +29684,7 @@ For AGKO-TERM-E133 in Korean EGA/FGA terminology workflow; bounded review for qu
 
 _Privacy-only replacements in embedded original: 0._
 
-### 517. AGKO-SCOPE-E134 — workflow
+### 519. AGKO-SCOPE-E134 — workflow
 
 Source binding: line 2, 794 bytes, SHA-256 AD75D0E08DB5FF4B36E770E3F616E46709C1A5C0F8483CFCE4307EBC6E681CF2.
 
@@ -29617,7 +29730,7 @@ For AGKO-SCOPE-E134 in Korean production order after the user's latest clarifica
 
 _Privacy-only replacements in embedded original: 0._
 
-### 518. AGKO-TERM-E138 — workflow
+### 520. AGKO-TERM-E138 — workflow
 
 Source binding: line 3, 1620 bytes, SHA-256 ACC95E4E9E336FF463E1FD813D1F6A9FF8B810EB65DF4AC2E7185EF31DD68348.
 
@@ -29705,7 +29818,7 @@ For AGKO-TERM-E138 in Korean EGA I subsection10.10 lines2152-2258: coherent fini
 
 _Privacy-only replacements in embedded original: 0._
 
-### 519. AGKO-TERM-E139 — workflow
+### 521. AGKO-TERM-E139 — workflow
 
 Source binding: line 4, 890 bytes, SHA-256 70267955E4C174254D73D3F34D345FFAA2082662C81579BDF720A725E92C6D16.
 
@@ -29764,7 +29877,7 @@ For AGKO-TERM-E139 in Durable identity fields for the fixed Korean EGA/FGA termi
 
 _Privacy-only replacements in embedded original: 0._
 
-### 520. AGKO-TERM-E140 — workflow
+### 522. AGKO-TERM-E140 — workflow
 
 Source binding: line 5, 1701 bytes, SHA-256 56560F1672EACC9F29F7592165B30B79A96E9270EFF65CA405D27A9C36A91DD3.
 
@@ -29852,7 +29965,7 @@ For AGKO-TERM-E140 in Korean EGA I lines2260-2296: coherence of the structure sh
 
 _Privacy-only replacements in embedded original: 0._
 
-### 521. AGKO-TERM-E142 — workflow
+### 523. AGKO-TERM-E142 — workflow
 
 Source binding: line 6, 2189 bytes, SHA-256 CF29DF38B4DB05F2BDA7D2614EEC140624F15A6371E119E568D4F30247EEED51.
 
@@ -29919,7 +30032,7 @@ For AGKO-TERM-E142 in Korean EGA I lines2298-2399: coherent modules on affine fo
 
 _Privacy-only replacements in embedded original: 0._
 
-### 522. AGKO-TERM-E144 — workflow
+### 524. AGKO-TERM-E144 — workflow
 
 Source binding: line 7, 2211 bytes, SHA-256 282F211FC37B1A0BB265E8641A6045EE1D591352D10D4F60CD174465E767CF3D.
 
@@ -29986,7 +30099,7 @@ For AGKO-TERM-E144 in Korean EGA I canonical lines2401-2514: completion morphism
 
 _Privacy-only replacements in embedded original: 0._
 
-### 523. AGKO-TERM-E146 — workflow
+### 525. AGKO-TERM-E146 — workflow
 
 Source binding: line 8, 3003 bytes, SHA-256 0CDBC6EA7BEA7249D38E066247B75AF811A32CBF3F0D0C8F4710920ED099AD83.
 
@@ -30059,7 +30172,7 @@ For AGKO-TERM-E146 in Korean EGA I canonical lines2516-2602: functorial global-H
 
 _Privacy-only replacements in embedded original: 0._
 
-### 524. AGKO-TERM-E148 — workflow
+### 526. AGKO-TERM-E148 — workflow
 
 Source binding: line 9, 2929 bytes, SHA-256 70DD3A4D08D27ADB4FC573BE0BE9D6176F695F0BDC94A4C69D294D78D828EEC2.
 
@@ -30132,7 +30245,7 @@ For AGKO-TERM-E148 in Korean EGA I canonical lines2604-2715: functorial topologi
 
 _Privacy-only replacements in embedded original: 0._
 
-### 525. AGKO-TERM-E150 — workflow
+### 527. AGKO-TERM-E150 — workflow
 
 Source binding: line 10, 1866 bytes, SHA-256 5D1AC415D9F402D502796B05D37B68C83AD33E9E9F6406A32AFEC010E09BAC4C.
 
@@ -30199,7 +30312,7 @@ For AGKO-TERM-E150 in Korean EGA I canonical lines2717-2888: adic morphisms, S-a
 
 _Privacy-only replacements in embedded original: 0._
 
-### 526. AGKO-TERM-E152 — workflow
+### 528. AGKO-TERM-E152 — workflow
 
 Source binding: line 11, 2580 bytes, SHA-256 91508973F421859DD20688EEB87BDE24E748D67C26B18D6689ED35A755C0ED8D.
 
@@ -30266,7 +30379,7 @@ For AGKO-TERM-E152 in Korean EGA I canonical lines2890-3082: finite-type morphis
 
 _Privacy-only replacements in embedded original: 0._
 
-### 527. AGKO-TERM-E157 — workflow
+### 529. AGKO-TERM-E157 — workflow
 
 Source binding: line 12, 3019 bytes, SHA-256 E69B46FBD22E98F801E83F678B89CF573EB11DFB2DD86109A919322C86F3B1EC.
 
@@ -30333,7 +30446,7 @@ For AGKO-TERM-E157 in Korean EGA I canonical lines3084-3341: closed subprescheme
 
 _Privacy-only replacements in embedded original: 0._
 
-### 528. AGKO-TERM-E158 — workflow
+### 530. AGKO-TERM-E158 — workflow
 
 Source binding: line 13, 2086 bytes, SHA-256 F2C0E60539D6D83D24F19E0717617F72FDFA8F3E4F74DD892331DC865C1A922B.
 
@@ -30400,7 +30513,7 @@ For AGKO-TERM-E158 in Korean EGA I canonical lines3343-3516: separated formal pr
 
 _Privacy-only replacements in embedded original: 0._
 
-### 529. AGKO-TERM-E159 — workflow
+### 531. AGKO-TERM-E159 — workflow
 
 Source binding: line 14, 4490 bytes, SHA-256 FADB9E321AA46AA7AC8C78613A5F510FA68D552F37722EBEACDD818E3A22F71D.
 
@@ -30548,7 +30661,7 @@ For AGKO-TERM-E159 in EGA II onward terminology workflow; reusable for later EGA
 
 _Privacy-only replacements in embedded original: 0._
 
-### 530. AGKO-TERM-E160 — workflow
+### 532. AGKO-TERM-E160 — workflow
 
 Source binding: line 15, 3348 bytes, SHA-256 1E3A7FEF2AC34D02349B314380F4699D36C4820277B7BDA00F4966ED6C398969.
 
@@ -30627,7 +30740,7 @@ For AGKO-TERM-E160 in EGA II complete front-fr.tex plus ega2-1-fr.tex lines1-90 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 531. AGKO-TERM-E161 — workflow
+### 533. AGKO-TERM-E161 — workflow
 
 Source binding: line 16, 2504 bytes, SHA-256 DD698A87D3028D14D0D4BCFA56C033F87E4BBD0AA90D1FAF32CF9693A7A98D40.
 
@@ -30698,7 +30811,7 @@ For AGKO-TERM-E161 in Canonical EGA II ega2-1-fr.tex lines91-307: affineness ove
 
 _Privacy-only replacements in embedded original: 0._
 
-### 532. AGKO-TERM-E162 — workflow
+### 534. AGKO-TERM-E162 — workflow
 
 Source binding: line 17, 2465 bytes, SHA-256 2AE4327B70B15020013D0DCE07B64ABDFB3148BE1759416092BBE1C28653C08D.
 
@@ -30764,7 +30877,7 @@ For AGKO-TERM-E162 in Canonical EGA II ega2-1-fr.tex lines308-454: relative affi
 
 _Privacy-only replacements in embedded original: 0._
 
-### 533. AGKO-TERM-E163 — workflow
+### 535. AGKO-TERM-E163 — workflow
 
 Source binding: line 18, 2598 bytes, SHA-256 291BE8A60D5B937EA7EB04E6571F307A342F39CA7841AB7C5B30BF903DFDD49E.
 
@@ -30830,7 +30943,7 @@ For AGKO-TERM-E163 in Canonical EGA II ega2-1-fr.tex lines456-622: products of r
 
 _Privacy-only replacements in embedded original: 0._
 
-### 534. AGKO-TERM-E164 — workflow
+### 536. AGKO-TERM-E164 — workflow
 
 Source binding: line 19, 2868 bytes, SHA-256 87670F808FBEAA4A29DA812D7C632393A6C76CCD69ACED63005589C3AD61C91F.
 
@@ -30902,7 +31015,7 @@ For AGKO-TERM-E164 in Canonical EGA II ega2-1-fr.tex lines624-712 through1.5.4: 
 
 _Privacy-only replacements in embedded original: 0._
 
-### 535. AGKO-TERM-E165 — workflow
+### 537. AGKO-TERM-E165 — workflow
 
 Source binding: line 20, 1454 bytes, SHA-256 AE1F669C609FD3BA4BCF3B2BAD03B9CE787DF159D02DE5D50A3F1F560A47130B.
 
@@ -30967,7 +31080,7 @@ For AGKO-TERM-E165 in EGA II canonical1118-1193 through1.7.12, do the listed sou
 
 _Privacy-only replacements in embedded original: 0._
 
-### 536. AGKO-TERM-E166 — workflow
+### 538. AGKO-TERM-E166 — workflow
 
 Source binding: line 21, 2229 bytes, SHA-256 280CF6D87C552698AC7AE7FB84C817E91A13372B9C866F092DF93F96363D2615.
 
@@ -31044,7 +31157,7 @@ For AGKO-TERM-E166 in EGAII canonical1195-1292 through1.7.14, do the listed sour
 
 _Privacy-only replacements in embedded original: 0._
 
-### 537. AGKO-TERM-E167 — workflow
+### 539. AGKO-TERM-E167 — workflow
 
 Source binding: line 22, 2081 bytes, SHA-256 B2CDEBD18B3A9CDBBBC37F6BCD43CF4E69D4CAD285C8FEDEF103CED37BDDE96D.
 
@@ -31119,7 +31232,7 @@ For AGKO-TERM-E167 in EGA II canonical1294-1358 through2.1.1, do the listed sour
 
 _Privacy-only replacements in embedded original: 0._
 
-### 538. AGKO-TERM-E168 — workflow
+### 540. AGKO-TERM-E168 — workflow
 
 Source binding: line 23, 1709 bytes, SHA-256 A833EA21304B618C18D15A49A1AE6E85DB9871FCB9C9E086DE037A8111CDE980.
 
@@ -31190,7 +31303,7 @@ For AGKO-TERM-E168 in EGA II canonical1360-1447 through2.1.3, do the listed sour
 
 _Privacy-only replacements in embedded original: 0._
 
-### 539. AGKO-TERM-E169 — workflow
+### 541. AGKO-TERM-E169 — workflow
 
 Source binding: line 24, 2321 bytes, SHA-256 F282BB5DF16EA100903F1B3BF7F508B6645161F6AD8F4AFFC2D5191578F2C74E.
 
@@ -31274,7 +31387,7 @@ For AGKO-TERM-E169 in All Korean EGA/FGA terminology choices and difficult trans
 
 _Privacy-only replacements in embedded original: 0._
 
-### 540. AGKO-TERM-E170 — workflow
+### 542. AGKO-TERM-E170 — workflow
 
 Source binding: line 25, 3919 bytes, SHA-256 63CB960E94BF433E8DF767BEB25BF214962E4B6007256F9198E8B69F456BA83A.
 
