@@ -1,0 +1,951 @@
+{
+  "schema": "agko-r38-pdf-qa-v1",
+  "edition": "2026-09-05-r38",
+  "measured_at": "2026-09-05T17:03:54+02:00",
+  "status": "PASS",
+  "scope": "Full reader/build identities, both retained convergence PDFs, raw log, all 17 cumulative Korean inputs, all 23 canonical driver inputs, five mirrored controls including post-correction source reconciliation, 239-page structure, all navigation, complete dual extraction, the full 228-marker sequence, fonts/ToUnicode, and 300-dpi inspection of six stated pages including the extraction-discovered II|24 physical page. Sampled renders do not prove the absence of every possible visual defect on unrendered pages.",
+  "required_controls": {
+    "translation_admission": {
+      "path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
+      "bytes": 8103,
+      "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2"
+    },
+    "translation_integration": {
+      "path": "evidence/controls/R38_TRANSLATION_INTEGRATION.json",
+      "bytes": 5209,
+      "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020"
+    },
+    "canonical_inventory_refresh": {
+      "path": "evidence/controls/R38_CANONICAL_INVENTORY_REFRESH.json",
+      "bytes": 1490,
+      "sha256": "A55400B0236DDB3A32C47C3AA14B45B0ACFF0260EF843779EB0487F6B649ADE3"
+    },
+    "post_correction_source_reconciliation": {
+      "path": "evidence/controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+      "bytes": 6698,
+      "sha256": "C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C"
+    },
+    "strict_build": {
+      "path": "evidence/controls/R38_STRICT_BUILD.json",
+      "bytes": 8533,
+      "sha256": "E8A844FF6DA59EAFAA890D34E180B81BE2B8D1D639E4801692897B89DA5CD6FB"
+    },
+    "all_private_public_exact": true
+  },
+  "pdf": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1485270,
+    "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+    "pages": 239,
+    "version": "%PDF-1.7",
+    "page_size_points": [
+      [
+        595.28,
+        841.89
+      ]
+    ],
+    "all_pages_a4": true,
+    "encrypted": false,
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "대수기하학 원론 – 한국어 누적판",
+      "/Subject": "NUMDAM 프랑스어 권위본에 따른 EGA 한국어 누적 번역",
+      "/Author": "알렉산더 그로텐디크와 장 디외도네",
+      "/Producer": "MiKTeX-dvipdfmx (20260404)",
+      "/CreationDate": "D:20260813150000Z"
+    },
+    "acroform_present": false,
+    "javascript_name_tree_present": false,
+    "build_output_pdf": {
+      "path": "build/out/main.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+    },
+    "build_output_pdf_byte_identical": true,
+    "retained_pass2_pdf": {
+      "path": "build/out/main.pass2.pdf",
+      "bytes": 1485279,
+      "sha256": "E6945583AA1D5AE63F0424109463DFAE04F46DFBF7EE1380638A3E3DF156D699"
+    },
+    "retained_pass3_pdf": {
+      "path": "build/out/main.pass3.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+    },
+    "pass3_equals_final": true
+  },
+  "tools": {
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "pdftoppm_version": "pdftoppm version 26.07.0",
+    "pypdf_version": "6.10.0",
+    "pypdf_method": "page.extract_text() per physical page; CRLF/CR normalized to LF; pages joined with LF+FF+LF; one final LF; UTF-8 without BOM",
+    "render_command": "pdftoppm -f N -l N -singlefile -r 300 -png reader/00_EGA_ko_CUMULATIVE_READER.pdf evidence/render/r38-pNNN"
+  },
+  "execution_safety": {
+    "normal_assertion_semantics_required_by_non_assert_startup_guard": true,
+    "optimized_mode_negative_test": {
+      "command_role": "current Python executable with -O -B and this helper --help",
+      "exit_code": 1,
+      "pass_token_emitted": false,
+      "explicit_guard_message_observed": true,
+      "result": "PASS_FAIL_CLOSED"
+    },
+    "confirmation_mode_pdftoppm_render_invocations": 0,
+    "confirmation_reused_exact_inspected_render_identity_constants": true
+  },
+  "source_bindings": {
+    "manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16250,
+      "sha256": "50C9896A8436E2A381817BA322DE45A5EFCB768F2790E7BC14A206D70AAA81AE"
+    },
+    "authority_driver": {
+      "path": "[CANONICAL_ROOT]/source/EGA_FR.tex",
+      "bytes": 3313,
+      "sha256": "D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086"
+    },
+    "input_validation": {
+      "ordered_input_count": 17,
+      "all_17_public_identities_match_manifest": true,
+      "private_working_files_checked": 17,
+      "byte_identical_private_mirrors": 16,
+      "all_non_front_private_mirrors_byte_identical": true,
+      "front_public_metadata_divergence_exactly_validated": true,
+      "ordered_inputs": [
+        {
+          "path": "front.tex",
+          "role": "edition front matter",
+          "bytes": 4440,
+          "lf_lines": 123,
+          "sha256": "1A709228BA6CE5AEACFC6653686234B2961D8309D40BC30F930E066DF048BC72",
+          "working_path": "ega/I/front.tex",
+          "private_bytes": 3888,
+          "private_lf_lines": 118,
+          "private_sha256": "E1F03F9FBD820E4CDDAF3DF52900919F35B5D49E1452940891E66EFA48221338",
+          "private_public_exact": false,
+          "historical_page_markers": 0,
+          "coverage": "full source EOF; public target adds cumulative-edition metadata"
+        },
+        {
+          "path": "intro.tex",
+          "role": "EGA I introduction",
+          "bytes": 15165,
+          "lf_lines": 127,
+          "sha256": "295CAD065AE37B6FF5556D0F5F0468F57B6FFF3D021FCA26802D51B370E1C246",
+          "working_path": "ega/I/intro.tex",
+          "private_bytes": 15165,
+          "private_lf_lines": 127,
+          "private_sha256": "295CAD065AE37B6FF5556D0F5F0468F57B6FFF3D021FCA26802D51B370E1C246",
+          "private_public_exact": true,
+          "historical_page_markers": 4,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c0.tex",
+          "role": "complete EGA 0_I",
+          "bytes": 279433,
+          "lf_lines": 5819,
+          "sha256": "8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D",
+          "working_path": "ega/I/c0.tex",
+          "private_bytes": 279433,
+          "private_lf_lines": 5819,
+          "private_sha256": "8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D",
+          "private_public_exact": true,
+          "historical_page_markers": 68,
+          "coverage": "full source EOF; printed-page marker 63 restored from canonical lines4609-4615"
+        },
+        {
+          "path": "c1front.tex",
+          "role": "EGA I Chapter I programme and front matter",
+          "bytes": 2069,
+          "lf_lines": 46,
+          "sha256": "4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
+          "working_path": "ega/I/c1front.tex",
+          "private_bytes": 2069,
+          "private_lf_lines": 46,
+          "private_sha256": "4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
+          "private_public_exact": true,
+          "historical_page_markers": 1,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s1.tex",
+          "role": "EGA I Chapter I section 1 complete",
+          "bytes": 71250,
+          "lf_lines": 1733,
+          "sha256": "E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
+          "working_path": "ega/I/c1s1.tex",
+          "private_bytes": 71250,
+          "private_lf_lines": 1733,
+          "private_sha256": "E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
+          "private_public_exact": true,
+          "historical_page_markers": 18,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s2.tex",
+          "role": "EGA I Chapter I section 2 complete",
+          "bytes": 27982,
+          "lf_lines": 620,
+          "sha256": "C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
+          "working_path": "ega/I/c1s2.tex",
+          "private_bytes": 27982,
+          "private_lf_lines": 620,
+          "private_sha256": "C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
+          "private_public_exact": true,
+          "historical_page_markers": 7,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s3.tex",
+          "role": "EGA I Chapter I section 3 complete",
+          "bytes": 58821,
+          "lf_lines": 1259,
+          "sha256": "7054D98152E57F17B2CDE69D08A00905FCE21B1C3602192B037BC70BC21971BF",
+          "working_path": "ega/I/c1s3.tex",
+          "private_bytes": 58821,
+          "private_lf_lines": 1259,
+          "private_sha256": "7054D98152E57F17B2CDE69D08A00905FCE21B1C3602192B037BC70BC21971BF",
+          "private_public_exact": true,
+          "historical_page_markers": 15,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s4.tex",
+          "role": "EGA I Chapter I section 4 complete",
+          "bytes": 35822,
+          "lf_lines": 697,
+          "sha256": "24E916362C2F54A1D479447F07EEF949DED309DD3E8E7207E9B187A6ED2E0E92",
+          "working_path": "ega/I/c1s4.tex",
+          "private_bytes": 35822,
+          "private_lf_lines": 697,
+          "private_sha256": "24E916362C2F54A1D479447F07EEF949DED309DD3E8E7207E9B187A6ED2E0E92",
+          "private_public_exact": true,
+          "historical_page_markers": 8,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s5.tex",
+          "role": "EGA I Chapter I section 5 complete",
+          "bytes": 50638,
+          "lf_lines": 1138,
+          "sha256": "0CA37A6089AB8744ABDF4764E3BCEB7CC19FC72140567D20DD32213D8988C24B",
+          "working_path": "ega/I/c1s5.tex",
+          "private_bytes": 50638,
+          "private_lf_lines": 1138,
+          "private_sha256": "0CA37A6089AB8744ABDF4764E3BCEB7CC19FC72140567D20DD32213D8988C24B",
+          "private_public_exact": true,
+          "historical_page_markers": 13,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s6.tex",
+          "role": "EGA I Chapter I section 6 complete",
+          "bytes": 57728,
+          "lf_lines": 1155,
+          "sha256": "C09AF6BE49A44F05B9A505FDF034B8445E6046998874B2030A6310A7EC75EC25",
+          "working_path": "ega/I/c1s6.tex",
+          "private_bytes": 57728,
+          "private_lf_lines": 1155,
+          "private_sha256": "C09AF6BE49A44F05B9A505FDF034B8445E6046998874B2030A6310A7EC75EC25",
+          "private_public_exact": true,
+          "historical_page_markers": 15,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s7.tex",
+          "role": "EGA I Chapter I section 7 complete",
+          "bytes": 39742,
+          "lf_lines": 776,
+          "sha256": "FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8",
+          "working_path": "ega/I/c1s7.tex",
+          "private_bytes": 39742,
+          "private_lf_lines": 776,
+          "private_sha256": "FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8",
+          "private_public_exact": true,
+          "historical_page_markers": 9,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s8.tex",
+          "role": "EGA I Chapter I section 8 complete",
+          "bytes": 21278,
+          "lf_lines": 410,
+          "sha256": "183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1",
+          "working_path": "ega/I/c1s8.tex",
+          "private_bytes": 21278,
+          "private_lf_lines": 410,
+          "private_sha256": "183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1",
+          "private_public_exact": true,
+          "historical_page_markers": 5,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s9.tex",
+          "role": "EGA I Chapter I section 9 complete",
+          "bytes": 55580,
+          "lf_lines": 1179,
+          "sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D",
+          "working_path": "ega/I/c1s9.tex",
+          "private_bytes": 55580,
+          "private_lf_lines": 1179,
+          "private_sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D",
+          "private_public_exact": true,
+          "historical_page_markers": 11,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c1s10.tex",
+          "role": "EGA I Chapter I section 10 through subsection 10.15.7 and source EOF",
+          "bytes": 166856,
+          "lf_lines": 3453,
+          "sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
+          "working_path": "ega/I/c1s10.tex",
+          "private_bytes": 166856,
+          "private_lf_lines": 3453,
+          "private_sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
+          "private_public_exact": true,
+          "historical_page_markers": 33,
+          "coverage": "full source EOF through subsection10.15.7"
+        },
+        {
+          "path": "bib.tex",
+          "role": "EGA I bibliography",
+          "bytes": 3505,
+          "lf_lines": 107,
+          "sha256": "FB3D3E90F595ACAF5E5AC71C8BED1C9407F5C892DE3612461CA19C63D71CAA1E",
+          "working_path": "ega/I/bib.tex",
+          "private_bytes": 3505,
+          "private_lf_lines": 107,
+          "private_sha256": "FB3D3E90F595ACAF5E5AC71C8BED1C9407F5C892DE3612461CA19C63D71CAA1E",
+          "private_public_exact": true,
+          "historical_page_markers": 1,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c2front.tex",
+          "role": "EGA II Chapter II programme and front matter complete",
+          "bytes": 1500,
+          "lf_lines": 37,
+          "sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
+          "working_path": "ega/II/c2front.tex",
+          "private_bytes": 1500,
+          "private_lf_lines": 37,
+          "private_sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
+          "private_public_exact": true,
+          "historical_page_markers": 1,
+          "coverage": "full source EOF"
+        },
+        {
+          "path": "c2s1.tex",
+          "role": "EGA II main text contiguous through2.2.1 / canonical lines1-1683",
+          "bytes": 80222,
+          "lf_lines": 1708,
+          "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+          "working_path": "ega/II/c2s1.tex",
+          "private_bytes": 80222,
+          "private_lf_lines": 1708,
+          "private_sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+          "private_public_exact": true,
+          "historical_page_markers": 19,
+          "coverage": "canonical lines1-1683 of18087 through2.2.1; next executable line1685 lemma2.2.2"
+        }
+      ],
+      "canonical_driver_input_count": 23,
+      "all_23_canonical_identities_match_manifest": true,
+      "canonical_inputs": [
+        {
+          "driver_line": 61,
+          "path": "ega1/frontmatter-fr.tex",
+          "bytes": 1120,
+          "lf_lines": 55,
+          "sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 62,
+          "path": "ega1/intro-fr.tex",
+          "bytes": 16433,
+          "lf_lines": 132,
+          "sha256": "CE78400CD9DBC36A4D11CC933B7BE18BEAC0C69AE6A04FBA3ECFA86053572980",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 63,
+          "path": "ega1/ega0-1-fr.tex",
+          "bytes": 282505,
+          "lf_lines": 5978,
+          "sha256": "F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 71,
+          "path": "ega1/chapter1-frontmatter-fr.tex",
+          "bytes": 2057,
+          "lf_lines": 47,
+          "sha256": "7B2D0F8F812EBA3121202F0AE6415FFC6C281B8428DA8F0F72D89DF1CEC01708",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 72,
+          "path": "ega1/ega1-1-fr.tex",
+          "bytes": 71381,
+          "lf_lines": 1624,
+          "sha256": "25840D1D77C5284A158CDC78D622A458221DA3FE9ECAECC5EA9382A5C4EC595B",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 73,
+          "path": "ega1/ega1-2-fr.tex",
+          "bytes": 27463,
+          "lf_lines": 592,
+          "sha256": "AE6B128092ACBB8C1AFB4899EEA003FB966B6FF6669A264B59FD5F095AF4F029",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 74,
+          "path": "ega1/ega1-3-fr.tex",
+          "bytes": 59766,
+          "lf_lines": 1282,
+          "sha256": "A267955CFFC5942F6EC5255ABAD85E68C5F5C266F1A6B68611AF11FD875B16AE",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 75,
+          "path": "ega1/ega1-4-fr.tex",
+          "bytes": 34792,
+          "lf_lines": 682,
+          "sha256": "A5F5CDAC81E654E9ABA75BBFEAD24F3010B122452C689B9EBAB5A7711B454EC1",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 76,
+          "path": "ega1/ega1-5-fr.tex",
+          "bytes": 50232,
+          "lf_lines": 1149,
+          "sha256": "7A33D1D68D87C7DDB3BFD23938B77F60EEABC2C44045968B5069CD3F48212BD8",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 77,
+          "path": "ega1/ega1-6-fr.tex",
+          "bytes": 57781,
+          "lf_lines": 1206,
+          "sha256": "F95D2C43C1074A1CC6485D74E24F02BF8C5F098ADB571AA024B4B499F5CDE3FE",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 78,
+          "path": "ega1/ega1-7-fr.tex",
+          "bytes": 38226,
+          "lf_lines": 786,
+          "sha256": "73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 79,
+          "path": "ega1/ega1-8-fr.tex",
+          "bytes": 20600,
+          "lf_lines": 410,
+          "sha256": "188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 80,
+          "path": "ega1/ega1-9-fr.tex",
+          "bytes": 53127,
+          "lf_lines": 1183,
+          "sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 81,
+          "path": "ega1/ega1-10-fr.tex",
+          "bytes": 159763,
+          "lf_lines": 3516,
+          "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 82,
+          "path": "ega1/bib-fr.tex",
+          "bytes": 3430,
+          "lf_lines": 106,
+          "sha256": "E69C28D9B0E54F14E11FBA2A59F66037CE9E5286BD9FACE9D64CEFB56875CF75",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 83,
+          "path": "ega2/front-fr.tex",
+          "bytes": 1423,
+          "lf_lines": 38,
+          "sha256": "F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198",
+          "translation_status": "complete"
+        },
+        {
+          "driver_line": 84,
+          "path": "ega2/ega2-1-fr.tex",
+          "bytes": 820504,
+          "lf_lines": 18087,
+          "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+          "translation_status": "partial"
+        },
+        {
+          "driver_line": 85,
+          "path": "ega2/ega2-bibliography-fr.tex",
+          "bytes": 784,
+          "lf_lines": 28,
+          "sha256": "56DE1F13088E6451D2A7BF7FAF7C575AB3E82C7FB20A736A75E3FD19B0595F7A",
+          "translation_status": "not_translated"
+        },
+        {
+          "driver_line": 86,
+          "path": "ega2/ega2-indexes-and-contents-fr.tex",
+          "bytes": 27454,
+          "lf_lines": 462,
+          "sha256": "2CEC53C734543C30ED2FE2FD01B462E5C51DE4D303CEAA7F8001316BB78EDBB1",
+          "translation_status": "not_translated"
+        },
+        {
+          "driver_line": 87,
+          "path": "ega2/ega2-errata-addenda-fr.tex",
+          "bytes": 19746,
+          "lf_lines": 522,
+          "sha256": "EC20D329248B99CF0533CB868DBDF8135D5BDAFA233133814DB67F8CD4F09643",
+          "translation_status": "not_translated"
+        },
+        {
+          "driver_line": 88,
+          "path": "ega3/ega3-1-fr.tex",
+          "bytes": 627894,
+          "lf_lines": 14616,
+          "sha256": "5058C52D12FDF25BF299C43B10C9492417DAD762841A5B8FF784C97CFD129726",
+          "translation_status": "not_translated"
+        },
+        {
+          "driver_line": 97,
+          "path": "ega3/ega3-6-fr.tex",
+          "bytes": 168838,
+          "lf_lines": 4070,
+          "sha256": "9519F1C74E5F039062476E193AF9738E4323E4777356C4AEF9725F28F24D072A",
+          "translation_status": "not_translated"
+        },
+        {
+          "driver_line": 98,
+          "path": "ega3/ega3-7-fr.tex",
+          "bytes": 172424,
+          "lf_lines": 4479,
+          "sha256": "20A61BA348909E4309A3CDA89FD6DDAF8C0FC5BA346FD44232458CDFEA2A2972",
+          "translation_status": "not_translated"
+        }
+      ],
+      "coverage_status_counts": {
+        "complete": 16,
+        "not_translated": 6,
+        "partial": 1
+      }
+    },
+    "canonical_ega2": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820504,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "lf_lines": 18087
+    },
+    "sourcekeeper_scan_restoration_control": {
+      "path": "[CANONICAL_ROOT]/controls/EGA2_SOURCEKEEPER_T2.jsonl",
+      "bytes": 1043,
+      "sha256": "65AB1EDC9C12D7E79CC00B8F6BF1835B8FBCAB9DC7AD5D8EFC07DBE2E1B2771C"
+    },
+    "canon_event_D54": {
+      "path": "[CANONICAL_ROOT]/controls/CANON_EVENT_20260905_D54.json",
+      "bytes": 5171,
+      "sha256": "DF32A17C6DF0A950D880551DDC9BE083D85D7A2CF3E702F9984A475642A438D7"
+    },
+    "korean_authority_sync_receipt": {
+      "path": "[CANONICAL_ROOT]/qa/canon/ega_d54/EGA2_1_FR_KOREAN_SYNC_RECEIPT_20260905.json",
+      "bytes": 4732,
+      "sha256": "8153FE04EC311BBDA2E377F3B305D345145D09C2691070A9DC168830F5788D7D"
+    },
+    "canonical_prefix": {
+      "lines": "1-1683",
+      "bytes": 78088,
+      "sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75",
+      "matches_current_manifest": true,
+      "historical_admission_preimage_reconciled": true
+    },
+    "korean_target": {
+      "path": "source/c2s1.tex",
+      "bytes": 80222,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+      "lf_lines": 1708,
+      "private_public_exact": true,
+      "sealed_r37_prefix_bytes": 75622,
+      "sealed_r37_prefix_sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+      "one_lf_separator_after_sealed_prefix": true,
+      "candidate_tail_exact": true,
+      "required_labels_present_once": [
+        "II.2.1.10-ko",
+        "II.2.1.11-ko",
+        "subsection:II.2.2-ko",
+        "II.2.2.1-ko"
+      ],
+      "oldpage_II_24_present_once": true
+    },
+    "candidate": {
+      "path": "candidates/r38-c2s1-continuation.tex",
+      "bytes": 4599,
+      "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
+    },
+    "front": {
+      "path": "source/front.tex",
+      "bytes": 4440,
+      "sha256": "1A709228BA6CE5AEACFC6653686234B2961D8309D40BC30F930E066DF048BC72"
+    },
+    "build_script": {
+      "path": "build/BUILD.ps1",
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+    }
+  },
+  "extractions": [
+    {
+      "path": "evidence/r38-extract-poppler.txt",
+      "bytes": 728827,
+      "sha256": "B5A047C7799FD4A741099CE9334797F26CCDDD5EC9D68F9A6A03EFABA6ADDC99",
+      "characters": 396185,
+      "hangul_syllables": 152945,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 239,
+      "current_exact_doi_count": 1,
+      "prior_exact_doi_count": 0,
+      "concept_doi_count": 1,
+      "content_checks": {
+        "environment_2_1_10_heading_present": true,
+        "environment_2_1_11_heading_present": true,
+        "environment_2_2_1_heading_present": true,
+        "subsection_fraction_ring_heading_present": true,
+        "essentially_reduced_present": true,
+        "nilradical_present": true,
+        "essentially_integral_present": true,
+        "universal_nonzero_homogeneous_condition_present": true,
+        "arbitrary_integer_including_zero_present": true,
+        "free_system_not_basis_present": true,
+        "indeterminate_present": true,
+        "historical_page_II_24_present": true
+      },
+      "numeric_markers_match_with_documented_0I_70_exception": true
+    },
+    {
+      "path": "evidence/r38-extract-pypdf.txt",
+      "bytes": 703381,
+      "sha256": "9207B6B25CBAC5113A6C718C7B970E232E159799AC68CB7C527F908455173AD6",
+      "characters": 381541,
+      "hangul_syllables": 152945,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 238,
+      "current_exact_doi_count": 1,
+      "prior_exact_doi_count": 0,
+      "concept_doi_count": 1,
+      "content_checks": {
+        "environment_2_1_10_heading_present": true,
+        "environment_2_1_11_heading_present": true,
+        "environment_2_2_1_heading_present": true,
+        "subsection_fraction_ring_heading_present": true,
+        "essentially_reduced_present": true,
+        "nilradical_present": true,
+        "essentially_integral_present": true,
+        "universal_nonzero_homogeneous_condition_present": true,
+        "arbitrary_integer_including_zero_present": true,
+        "free_system_not_basis_present": true,
+        "indeterminate_present": true,
+        "historical_page_II_24_present": true
+      },
+      "full_marker_sequence_matches": true
+    }
+  ],
+  "historical_markers": {
+    "source_count": 228,
+    "normalized_sequence_sha256": "15805A340D0B9133B7787951F07930F9E7473C90ACDE78AE916525E9A3388F3E",
+    "pypdf_count": 228,
+    "pypdf_full_sequence_matches": true,
+    "poppler_count": 227,
+    "poppler_numeric_sequence_matches_with_documented_0I_70_exception": true,
+    "ranges": [
+      "I|5-8",
+      "0I|11-78",
+      "I|79-214",
+      "II|5-24"
+    ],
+    "first": [
+      [
+        "I",
+        5
+      ],
+      [
+        "I",
+        6
+      ],
+      [
+        "I",
+        7
+      ],
+      [
+        "I",
+        8
+      ],
+      [
+        "0I",
+        11
+      ]
+    ],
+    "last": [
+      [
+        "II",
+        20
+      ],
+      [
+        "II",
+        21
+      ],
+      [
+        "II",
+        22
+      ],
+      [
+        "II",
+        23
+      ],
+      [
+        "II",
+        24
+      ]
+    ],
+    "terminal_marker": [
+      "II",
+      24
+    ],
+    "poppler_specific_limitation": "Inherited EGA 0_I page 70 is extracted without its adjacent volume marker. The pypdf extraction proves all 228 volume/page entries; Poppler proves the remaining 227 ordered numeric markers."
+  },
+  "page_location_binding": {
+    "environment_2_1_10": [
+      238
+    ],
+    "environment_2_1_11": [
+      238
+    ],
+    "historical_marker_II_24": [
+      239
+    ],
+    "arbitrary_integer_including_zero": [
+      238
+    ],
+    "new_content_begins_on_physical_page": 238,
+    "terminal_physical_page": 239,
+    "II_24_physical_page_discovered_from_full_pypdf_extraction": 239,
+    "render_selection_was_extraction_bound_not_guessed": true
+  },
+  "navigation": {
+    "annotations": 1659,
+    "links": 1659,
+    "uri_links": 4,
+    "internal_links": 1655,
+    "named_destinations": 582,
+    "invalid_named_destinations": [],
+    "invalid_link_destinations": [],
+    "outline_entries": 133,
+    "invalid_outline_destinations": [],
+    "uri_targets": {
+      "https://doi.org/10.5281/zenodo.20414353": 1,
+      "https://doi.org/10.5281/zenodo.21921513": 1,
+      "https://doi.org/10.5281/zenodo.22346664": 1,
+      "https://github.com/KokunoYumeto/ega-ko": 1
+    },
+    "required_r38_named_destinations": {
+      "II.2.1.10-ko=>section*.318": true,
+      "II.2.1.11-ko=>section*.319": true,
+      "subsection:II.2.2-ko=>subsection*.320": true,
+      "II.2.2.1-ko=>section*.321": true
+    }
+  },
+  "font_unicode": {
+    "font_resources": 35,
+    "embedded_font_resources": 35,
+    "unembedded_font_resources": [],
+    "resources_with_tounicode": 27,
+    "resources_without_tounicode": [
+      {
+        "basefont": "/APOCYK+CMSY8",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/COMIEF+XYATIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/DPVBYQ+XYDASH-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/ESRITT+CMEX10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JFXXWE+MSBM10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JNUGTK+CMEX7",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/MFUSOR+XYBTIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/WENPTB+CMSY10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      }
+    ],
+    "all_type0_hangul_fonts_have_tounicode": true,
+    "type0_hangul_fonts_without_tounicode": []
+  },
+  "build_logs": {
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51956,
+      "sha256": "3F82AC4B8E3FE604C565C3ACCE72C4559E760AA60163B53F6ED86086A8AFE4D2"
+    },
+    "hard_diagnostics": {
+      "tex_error_lines": 0,
+      "fatal_errors": 0,
+      "emergency_stops": 0,
+      "undefined_control_sequences": 0,
+      "undefined_references_or_citations": 0,
+      "missing_characters": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0
+    },
+    "advisories": {
+      "moved_marginpars": 136,
+      "pdf_string_token_warnings": 23,
+      "font_shape_warnings": 1,
+      "rerunfilecheck_main_out_unchanged": true
+    }
+  },
+  "renders": [
+    {
+      "path": "evidence/render/r38-p001.png",
+      "bytes": 133699,
+      "sha256": "8A9C079746DC9D2BAACE84D02E46635FAE87E8073D483A88C962590ED82116E6",
+      "physical_page": 1,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r38-p002.png",
+      "bytes": 494472,
+      "sha256": "97F4435291368165C762F357F86E6FCD3AEC2F5ACA41C764D9C0A7D110957723",
+      "physical_page": 2,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r38-p006.png",
+      "bytes": 273914,
+      "sha256": "BD71C92D1810D28FE7F9289F4FF20D38452A7970F0CE5BBE742209A7E3B01977",
+      "physical_page": 6,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r38-p237.png",
+      "bytes": 818805,
+      "sha256": "F639B832388C5839EA866E69E04479ACCC88FDB9154CE82D75511CBA5D8F10F2",
+      "physical_page": 237,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r38-p238.png",
+      "bytes": 733896,
+      "sha256": "3343138791A864AECF7584DB54BA7A375FE5EC613E7D82E6093C210CB66ECDF9",
+      "physical_page": 238,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r38-p239.png",
+      "bytes": 209400,
+      "sha256": "8D2157D299589D0A6743DBDF720A2FEF2E5336F2544A5A6C685E5E2DE9ACA834",
+      "physical_page": 239,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    }
+  ],
+  "visual_findings": {
+    "status": "PASS_NO_OBSERVED_DEFECTS",
+    "selected_physical_pages": [
+      1,
+      2,
+      6,
+      237,
+      238,
+      239
+    ],
+    "dpi": 300,
+    "all_selected_source_pixels_presented_at_native_scale_via_lossless_tiles": true,
+    "confirmation_run_reused_exact_inspected_render_bytes_without_rerendering": true,
+    "native_resolution_inspection_method": "Each exact 2481x3508 PNG was inspected through four lossless native-resolution quadrants of 1241x1754 pixels at x offsets 0/1240 and y offsets 0/1754.",
+    "native_resolution_inspection_tile_count": 24,
+    "clipping_or_overlap_observed": false,
+    "missing_or_tofu_glyphs_observed": false,
+    "broken_formula_or_diagram_observed": false,
+    "unreadable_text_observed": false,
+    "title_scope_and_exact_doi_readable": true,
+    "contents_terminal_boundary_readable": true,
+    "new_environments_and_subsection_readable": true,
+    "historical_II_24_marker_and_terminal_module_text_readable": true,
+    "sample_boundary": "Visual findings apply to physical pages 1, 2, 6, 237, 238 and 239. Full-document coverage is supplied separately by structural, source, extraction, marker, destination and font checks."
+  },
+  "limitations": [
+    "Plain-text extraction is not lossless for inherited Type1 mathematical or diagram resources lacking ToUnicode; source-synchronized TeX and rendering remain the formula authority.",
+    "This control does not replace the separate mathematical translation admission and integration controls.",
+    "Archive replay, GitHub/Zenodo publication and anonymous public-byte replay remain separate release gates."
+  ]
+}

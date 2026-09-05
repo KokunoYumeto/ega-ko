@@ -1,0 +1,118 @@
+{
+  "schema": "agko-r38-translation-integration-v1",
+  "time": "2026-09-05T16:05:35+02:00",
+  "precision": "second",
+  "scope": "EGA II canonical lines1607-1683: environments2.1.10-2.1.11, subsection2.2, and environment2.2.1",
+  "authority": {
+    "whole": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "bytes": 820505,
+      "lf_lines": 18087,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC"
+    },
+    "unit": {
+      "lines": "1607-1683",
+      "bytes": 4191,
+      "characters": 4096,
+      "lf_lines": 77,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6"
+    },
+    "admitted_prefix": {
+      "lines": "1-1683",
+      "bytes": 78089,
+      "characters": 76888,
+      "lf_lines": 1683,
+      "sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585"
+    }
+  },
+  "admission": {
+    "private_path": "controls/R38_TRANSLATION_ADMISSION.json",
+    "public_path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
+    "bytes": 8103,
+    "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+    "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "private_public_exact": true,
+    "validator": {
+      "path": "candidates/validate_r38_candidate.py",
+      "bytes": 16396,
+      "lf_lines": 400,
+      "sha256": "3FC051E0944E506E1F6366B84CC3B55B279FA74B7E6F183ED6ECE38E6D830AAC"
+    },
+    "formula_policy": "111 source and target inline formulas have an exact global multiset and exact multisets inside all22 exhaustive semantic-clause partitions; no formula crosses an environment, statement, assertion, proof step or definition boundary"
+  },
+  "candidate": {
+    "path": "candidates/r38-c2s1-continuation.tex",
+    "bytes": 4599,
+    "characters": 2773,
+    "lf_lines": 80,
+    "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
+  },
+  "sealed_preimage": {
+    "bytes": 75622,
+    "lf_lines": 1627,
+    "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "verified_as_exact_prefix_of_both_final_mirrors": true
+  },
+  "fail_closed_recovery": {
+    "status": "DETECTED_REJECTED_AND_RECOVERED_BEFORE_BUILD_OR_PUBLICATION",
+    "transient": {
+      "bytes": 80222,
+      "sha256": "92696CAAEEB39496CA4A12432D410BBC0124515CC0ED7E52FB1E83D49ACFDAE2",
+      "wrong_candidate_start_line": 1046
+    },
+    "transient_observation_provenance": "The integration operator reported the transient identity and locus; this sealing pass independently reverified the restored sealed prefix and the final correct integration.",
+    "cause": "The first append patch matched an earlier nonunique environment terminator and began the candidate at target line1046 instead of the true end.",
+    "detection": "The predetermined whole-target SHA-256 gate rejected the transient 80,222-byte result before any build, reader update, package or publication.",
+    "recovery": "Both target mirrors were restored exactly to the sealed R37 preimage, then the unchanged candidate was appended after the true terminal line with exactly one LF separator.",
+    "content_effect": "No transient byte was admitted, built or published; the recovery introduced no translation content change and the final target equals the predetermined prospective identity."
+  },
+  "final_integration": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "separator_line": 1628,
+    "candidate_target_lines": "1629-1708",
+    "private_public_exact": true,
+    "sealed_prefix_exact": true,
+    "line1628": "one LF-only blank separator",
+    "target_lines1629_1708_equal_candidate": true,
+    "method": "sealed preimage + one LF + exact candidate"
+  },
+  "source_queries": {
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "lines": [
+      1638,
+      1664
+    ],
+    "status": "already delivered and nonblocking; no French source byte changed"
+  },
+  "public_checkpoint": {
+    "version": "2026-09-05-r37",
+    "exact_doi": "10.5281/zenodo.22315714",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "github_release": "ega-ko-2026-09-05-r37",
+    "status": "preserved as the latest built, QA-checked and public checkpoint"
+  },
+  "state": {
+    "translation_admission": "PASS",
+    "exact_mirror_integration": "PASS",
+    "build": "PENDING",
+    "extraction": "PENDING",
+    "rendered_pdf_qa": "PENDING",
+    "package_and_portable_replay": "PENDING",
+    "publication_and_anonymous_readback": "PENDING",
+    "ega_ii": "active_incomplete"
+  },
+  "ledger_records": {
+    "decision": "AGKO-D187",
+    "evidence": "AGKO-E-R38-INTEGRATION-20260905",
+    "hard": "AGKO-H162"
+  },
+  "result": "PASS_R38_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+  "next": "Refresh cumulative declarations through canonical line1683, then run the serialized cumulative build and deterministic PDF QA; preserve R37 as the public checkpoint until all R38 release gates pass."
+}

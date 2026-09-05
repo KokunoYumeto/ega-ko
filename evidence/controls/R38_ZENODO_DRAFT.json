@@ -1,0 +1,19 @@
+{
+  "schema": "ag-ko-zenodo-draft-state-v2",
+  "version": "2026-09-05-r38",
+  "reserved_at_utc": "2026-09-05T14:06:15.860706+00:00",
+  "parent_record_id": 22315714,
+  "parent_exact_doi": "10.5281/zenodo.22315714",
+  "record_id": 22346664,
+  "exact_doi": "10.5281/zenodo.22346664",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "operation": "POST newversion exactly once",
+  "status": "reserved_unpublished",
+  "reservation_helper": {
+    "path": "candidates/reserve_r38_zenodo.py",
+    "bytes": 7343,
+    "sha256": "AF526C0844BA7F938BE38920C447D5AB11A8E124885AEFDB1CDEA49610D7B73D"
+  },
+  "credentials_present": false,
+  "result": "PASS_SAME_LINEAGE_R38_EXACT_DOI_RESERVED"
+}

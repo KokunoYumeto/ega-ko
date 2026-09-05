@@ -1,0 +1,135 @@
+{
+  "schema": "agko-r38-post-correction-source-reconciliation-v1",
+  "verified_at": "2026-09-05T16:37:22+02:00",
+  "precision": "second",
+  "scope": "Reconcile the accepted EGA II sourcekeeper scan-transcription restoration at canonical line1542 after the first R38 strict-build seal, without changing Korean translation bytes or rewriting historical admission/integration evidence.",
+  "authority_event": {
+    "category": "FRENCH_DIPLOMATIC_SCAN_TRANSCRIPTION_RESTORATION",
+    "authority_state": "SOURCEKEEPER_SCAN_RESTORATION_NO_NEW_MATH_ID",
+    "correction_id": "EG-EGA-II-P22-FR-2.1.8-PUNCTUATION-001",
+    "transaction_label": "EGA2_FR_DIPLOMATIC_SCAN_COMMA",
+    "binding_control": {
+      "path": "[CANONICAL_ROOT]/controls/EGA2_SOURCEKEEPER_T2.jsonl",
+      "bytes": 1043,
+      "sha256": "65AB1EDC9C12D7E79CC00B8F6BF1835B8FBCAB9DC7AD5D8EFC07DBE2E1B2771C"
+    },
+    "canon_event": {
+      "path": "[CANONICAL_ROOT]/controls/CANON_EVENT_20260905_D54.json",
+      "bytes": 5171,
+      "sha256": "DF32A17C6DF0A950D880551DDC9BE083D85D7A2CF3E702F9984A475642A438D7"
+    },
+    "source_plan": {
+      "path": "[GOVERNANCE_ROOT]/work/canon_keeper_successor_01a047ab_20260830/integration_mining_20260905/execution_mining_ega_final_r1/EXECUTABLE_SOURCE_BATCH_PLAN.json",
+      "bytes": 56480,
+      "sha256": "94D9F09B67EF4D523FE79DE4777275EBAA29EAAB20E147C63FFBEAFD8726FD77"
+    },
+    "execution_receipt": {
+      "path": "[GOVERNANCE_ROOT]/work/canon_keeper_successor_01a047ab_20260830/integration_execution_20260905/ega_final_batch_r1/EXECUTION_RECEIPT.json",
+      "bytes": 16875,
+      "sha256": "074F9D30661F29F95FBCBD0997364F3BAF6CF8508B747F99C6A7C27010A6079D",
+      "inverse_replay": "PASS_EXACT"
+    },
+    "korean_consumer_sync_receipt": {
+      "path": "[CANONICAL_ROOT]/qa/canon/ega_d54/EGA2_1_FR_KOREAN_SYNC_RECEIPT_20260905.json",
+      "bytes": 4732,
+      "sha256": "8153FE04EC311BBDA2E377F3B305D345145D09C2691070A9DC168830F5788D7D",
+      "status": "PASS_EXACT_SINGLE_BYTE_TRANSCRIPTION_RESTORATION__KOREAN_TEXT_UNCHANGED",
+      "text_change_required": false,
+      "pdf_rebuild_required_solely_for_this_change": false
+    }
+  },
+  "canonical_source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "line": 1542,
+    "label": "II.2.1.8-fr",
+    "preimage": {
+      "bytes": 820505,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "literal": "Alors, si $f\\in S_+$, n'appartient"
+    },
+    "postimage": {
+      "bytes": 820504,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "literal": "Alors, si $f\\in S_+$ n'appartient"
+    },
+    "delta": "Delete the single machine-added comma after $S_+$; the scan contains no comma.",
+    "current_postimage_verified": true
+  },
+  "source_span_replay": {
+    "pre_r38_prefix_lines1_1606": {
+      "preimage_bytes": 73898,
+      "preimage_sha256": "A134AA34BE77E80D873B994BB5B6EDE13A94D12F3EB56571BBD4142F0C980A51",
+      "postimage_bytes": 73897,
+      "postimage_sha256": "9D64EE5B1C998F51E58702E903EDC917EA79510C19D1389F2BED935D81EA4F74"
+    },
+    "r38_unit_lines1607_1683": {
+      "bytes": 4191,
+      "characters": 4096,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6",
+      "unchanged": true
+    },
+    "admitted_prefix_lines1_1683": {
+      "preimage_bytes": 78089,
+      "preimage_sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585",
+      "postimage_bytes": 78088,
+      "postimage_sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75"
+    },
+    "proved_single_byte_delta_before_r38_unit": true
+  },
+  "korean_target": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 80222,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "private_public_exact": true,
+    "corresponding_target_lines": "1561-1562",
+    "corresponding_target_slice_bytes": 158,
+    "corresponding_target_slice_sha256": "70E12AE44BF665DEF1753B316164057D048462FC5691514107C235518040AECD",
+    "semantic_recheck": "PASS; the Korean already expresses that f in S_+ does not belong to the prime ideal, with no analogue of the deleted machine-added comma.",
+    "translation_change_required": false
+  },
+  "historical_controls": {
+    "admission": {
+      "path": "controls/R38_TRANSLATION_ADMISSION.json",
+      "bytes": 8103,
+      "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+      "preserved": true,
+      "interpretation": "The R38 unit itself is byte-identical before and after the sourcekeeper restoration."
+    },
+    "integration": {
+      "path": "controls/R38_TRANSLATION_INTEGRATION.json",
+      "bytes": 5209,
+      "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020",
+      "preserved": true,
+      "interpretation": "The integrated Korean target remains exact; its earlier whole-source and prefix fields are historical pre-correction identities superseded for current authority by this reconciliation."
+    },
+    "first_strict_build_seal": {
+      "bytes": 5677,
+      "sha256": "2ADAFA3893EA0CD5AD30B730B9C9E99DE074F764A29D08930B3307F9D3410691",
+      "status": "SUPERSEDED_FOR_CURRENT_LIVE_GATE_BY_POST_SEAL_CANONICAL_SOURCE_CHANGE"
+    }
+  },
+  "manifest_reconciliation": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "preimage_bytes": 16250,
+    "preimage_sha256": "94DB0BE14D7833BE8298722A8E10ED03FE16360606277A4E779139050CCA1BDE",
+    "postimage_bytes": 16250,
+    "postimage_sha256": "50C9896A8436E2A381817BA322DE45A5EFCB768F2790E7BC14A206D70AAA81AE",
+    "historical_markers": 228,
+    "changed_fields": [
+      "coverage_matrix[ega2/ega2-1-fr.tex].source_bytes",
+      "coverage_matrix[ega2/ega2-1-fr.tex].source_sha256",
+      "coverage_matrix[ega2/ega2-1-fr.tex].admitted_source_slice.lf_bytes",
+      "coverage_matrix[ega2/ega2-1-fr.tex].admitted_source_slice.sha256"
+    ],
+    "all_other_manifest_fields_preserved": true
+  },
+  "build_gate": {
+    "first_seal_invalidated_for_current_authority": true,
+    "required_action": "Rerun the strict two-clean-cycle, four-pass-per-cycle build under Global\\InterlanguageTeXSlotV1 against the reconciled live authority and manifest before PDF QA or packaging. The authority receipt does not require a rebuild solely for punctuation; this bounded replay is required because the already-sealed strict build's current live-authority gate was invalidated.",
+    "reader_content_change_expected": false,
+    "status": "REBUILD_REQUIRED"
+  },
+  "ledger_record": "AGKO-E-R38-SOURCE-RECONCILIATION-20260905",
+  "result": "PASS_R38_POST_CORRECTION_SOURCE_RECONCILIATION_REBUILD_REQUIRED"
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "version": "2026-09-05-r37",
-  "updated": "2026-09-05T15:47:23+02:00",
+  "updated": "2026-09-05T16:05:35+02:00",
   "snapshot_phase": "public_open_dual_destination_anonymous_byte_replay_pass",
   "coverage": "EGA 0_I and EGA I complete; EGA II Chapter II programme/table of contents complete; EGA II main text contiguous through2.1.9 at canonical lines1-1605. Full EGA II and the EGA corpus remain incomplete.",
   "reader": {
@@ -24,41 +24,46 @@
   "exact_doi": "10.5281/zenodo.22315714",
   "concept_doi": "10.5281/zenodo.21921513",
   "prior_public_checkpoint": "r36 / 10.5281/zenodo.22217711 / GitHub release ega-ko-2026-09-05-r36; Zenodo and GitHub anonymous byte replay PASS",
-  "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1607, environment2.1.10; R38 translation candidate pending exact admission",
-  "publication_evidence_rule": "R37 public status is proved only by the two exact hash-bound receipts and mirrored closure control; EGA II remains incomplete.",
+  "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1685, Lemma2.2.2; line1684 is blank",
+  "publication_evidence_rule": "R37 remains the latest built, QA-checked and public checkpoint. R38 is only an exact local source-mirror integration until its build, PDF QA, package, publication and anonymous-readback gates pass.",
   "source": {
     "path": "source/ega2/ega2-1-fr.tex",
-    "whole_bytes": 820505,
-    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
-    "admitted_lines": "1-1605",
-    "admitted_bytes": 73897,
-    "admitted_sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182"
+    "bytes": 820505,
+    "lf_lines": 18087,
+    "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "admitted_lines": "1-1683",
+    "admitted_bytes": 78089,
+    "admitted_sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585"
   },
   "unit": {
-    "lines": "1537-1605",
-    "bytes": 3776,
-    "characters": 3727,
-    "lf_lines": 69,
-    "sha256": "D91203350D0012E008CA3A778DD5ABB1E3A18D70641C753F6F86ECFF51F949FE"
+    "lines": "1607-1683",
+    "bytes": 4191,
+    "characters": 4096,
+    "lf_lines": 77,
+    "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6"
   },
   "candidate": {
-    "path": "candidates/r37-c2s1-continuation.tex",
-    "bytes": 4073,
-    "characters": 2783,
-    "lf_lines": 72,
-    "sha256": "A423B075B3483FC84CA580AED46C651F84543F4444805D94388CD5574114063D"
+    "path": "candidates/r38-c2s1-continuation.tex",
+    "bytes": 4599,
+    "characters": 2773,
+    "lf_lines": 80,
+    "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
   },
   "target": {
     "path": "source/c2s1.tex",
-    "bytes": 75622,
-    "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
-    "lf_lines": 1627
+    "private_mirror": "private:ega/II/c2s1.tex",
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "mirrors_exact": true
   },
   "canonical_driver": "source/EGA_FR.tex; EGA II driver rows83-87",
   "translation_admission": {
-    "path": "evidence/controls/R37_TRANSLATION_ADMISSION.json",
-    "bytes": 5919,
-    "sha256": "C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4"
+    "path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
+    "bytes": 8103,
+    "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+    "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
   },
   "source_queries": "Canonical line1572 uses S_{n-mk} with m unquantified; Korean retains that formula exactly. The source query remains referred and nonblocking under AGKO-H159.",
   "later_ega": "EGA III candidate-ready by direct report; no source-completion or translation inference until its exact authority packet passes after EGA II and FGA",
@@ -138,5 +143,79 @@
     "next_source": "canonical line1607 / environment2.1.10",
     "r38_candidate_status": "pending_exact_admission"
   },
-  "r38_candidate_status": "PENDING_EXACT_ADMISSION; no R38 build or publication claim"
+  "r38_candidate_status": "INTEGRATED_EXACT_MIRRORS; build, PDF QA and publication pending",
+  "current_working_status": "PASS_R38_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+  "working_translation_coverage": "EGA 0_I and EGA I complete; EGA II programme/table of contents complete; EGA II main text translated contiguously through 2.2.1 / canonical lines1-1683. EGA II and the full corpus remain incomplete.",
+  "r38_translation_integration": {
+    "status": "PASS_R38_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+    "control": {
+      "path": "evidence/controls/R38_TRANSLATION_INTEGRATION.json",
+      "bytes": 5209,
+      "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020"
+    },
+    "source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "bytes": 820505,
+      "lf_lines": 18087,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "admitted_lines": "1-1683",
+      "admitted_bytes": 78089,
+      "admitted_sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585"
+    },
+    "unit": {
+      "lines": "1607-1683",
+      "bytes": 4191,
+      "characters": 4096,
+      "lf_lines": 77,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6"
+    },
+    "candidate": {
+      "path": "candidates/r38-c2s1-continuation.tex",
+      "bytes": 4599,
+      "characters": 2773,
+      "lf_lines": 80,
+      "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
+    },
+    "target": {
+      "private_path": "private:ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 80222,
+      "characters": 55906,
+      "lf_lines": 1708,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+      "separator_line": 1628,
+      "candidate_target_lines": "1629-1708"
+    },
+    "admission": {
+      "private_path": "controls/R38_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
+      "bytes": 8103,
+      "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+      "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
+    },
+    "recovery": {
+      "transient_sha256": "92696CAAEEB39496CA4A12432D410BBC0124515CC0ED7E52FB1E83D49ACFDAE2",
+      "wrong_candidate_start_line": 1046,
+      "gate": "rejected before build/publication; restored exact preimage; final prospective hash PASS"
+    },
+    "gates": {
+      "translation_admission": "PASS",
+      "exact_mirror_integration": "PASS",
+      "build": "PENDING",
+      "pdf_qa": "PENDING",
+      "package_portable_replay": "PENDING",
+      "publication_anonymous_readback": "PENDING"
+    },
+    "ega_ii_status": "active_incomplete",
+    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1685, Lemma2.2.2; line1684 is blank"
+  },
+  "ega_ii_status": "active_incomplete",
+  "r38_release_gates": {
+    "translation_admission": "PASS",
+    "exact_mirror_integration": "PASS",
+    "build": "PENDING",
+    "pdf_qa": "PENDING",
+    "package_portable_replay": "PENDING",
+    "publication_anonymous_readback": "PENDING"
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "schema": "ag-ko-github-operation-state-v1",
+  "version": "2026-08-31-r34",
+  "phase": "CLOSED_PUBLIC_RELEASE_AND_RECEIPT_REPLAY_PASS",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-08-31-r34",
+  "tag": "ega-ko-2026-08-31-r34",
+  "tag_kind": "lightweight",
+  "prior_main": "f132e71ae89c993b33fb67d40a53681b31bd36f3",
+  "prior_tree": "7cd6d679dc6ef1697ad7a0ab46ac557d6d4a97af",
+  "release_commit": "6ca9c25bf34e027f43548351aca4f9bb1094a7e5",
+  "release_tree": "d8a84eddf05da5cca7318fc15be92ae27ab89dc7",
+  "receipt_commit": "83233f03954210732f537602afa48f18f9420ab8",
+  "receipt_tree": "743fa61ce7a2e7ab6a9743aedf1a709885a4615d",
+  "base_paths": 516,
+  "release_paths": 533,
+  "final_paths": 535,
+  "release_delta": {"paths": 45, "modified": 28, "added": 17, "deleted": 0},
+  "final_receipt_delta": [
+    "github-receipt-r34.json",
+    "release/2026-08-31-r34/github-receipt-r34.json"
+  ],
+  "release_asset_download_replay": "PASS all four exact names, byte counts and SHA-256 values",
+  "source_evidence_archive_members_verified": 477,
+  "public_receipt": {
+    "path": "github-receipt-r34.json",
+    "history_path": "release/2026-08-31-r34/github-receipt-r34.json",
+    "bytes": 3000,
+    "sha256": "D1AFC3D8084AD0CE8B3E4D643D84B4A0FBD38974968C856D65E26E25F2A46919"
+  },
+  "verification": "PASS credential-disabled filtered Git fetch, release HTML, expanded-assets HTML, four fresh anonymous asset downloads and raw receipt replay",
+  "resume_rule": "Closed transaction: do not repush, reupload, retag, recreate the release, or repeat completed verification. Start the next edition from the verified final public main commit.",
+  "next_action": "No r34 GitHub publication work remains.",
+  "credentials_present": false
+}

@@ -1,0 +1,313 @@
+{
+  "schema": "ag-ko-portable-replay-v4",
+  "version": "2026-09-05-r38",
+  "exact_doi": "10.5281/zenodo.22346664",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "source_archive": {
+    "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 430517,
+    "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2",
+    "entries_verified": 51,
+    "files_verified": 47,
+    "directories_verified": 4,
+    "complete_inventory_bytes": 5217,
+    "complete_inventory_sha256": "2075EAC36DFEB6F9B4F0280012CF994B7A6733B19FE34C05BCF6A8FCCF847E6C",
+    "verification": "PASS safe names, no duplicates, member types, CRC, sizes, extracted bytes and per-file SHA-256 inventory",
+    "required_r38_replay_and_validation_members": [
+      "build/BUILD.ps1",
+      "candidates/r38-c2s1-continuation.tex",
+      "candidates/validate_r38_candidate.py",
+      "scripts/append_r38_integration_records.py",
+      "scripts/package_r38.py",
+      "scripts/portable_replay_r38.py",
+      "scripts/prepare_r38_release.py",
+      "scripts/qa_r38_pdf.py",
+      "scripts/r38_evidence_release_cutoff.txt",
+      "scripts/validate_expert_review_log.py",
+      "source/CUMULATIVE_INPUTS.json",
+      "source/c2s1.tex"
+    ]
+  },
+  "evidence_archive": {
+    "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "bytes": 122840828,
+    "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197",
+    "package_receipt_and_outer_manifest_identity": "PASS",
+    "frozen_replay_members": [
+      "r38-extract-poppler.txt",
+      "r38-extract-pypdf.txt",
+      "controls/R38_CANONICAL_INVENTORY_REFRESH.json",
+      "controls/R38_PDF_QA.json",
+      "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+      "controls/R38_STRICT_BUILD.json",
+      "controls/R38_STRICT_BUILD_PRE_CORRECTION.json",
+      "controls/R38_STRICT_BUILD_PRE_PRIVACY.json",
+      "controls/R38_TRANSLATION_ADMISSION.json",
+      "controls/R38_TRANSLATION_INTEGRATION.json",
+      "controls/R38_ZENODO_DRAFT.json",
+      "render/r38-p001.png",
+      "render/r38-p002.png",
+      "render/r38-p006.png",
+      "render/r38-p237.png",
+      "render/r38-p238.png",
+      "render/r38-p239.png"
+    ],
+    "r38_control_bindings": {
+      "controls/R38_TRANSLATION_ADMISSION.json": {
+        "bytes": 8103,
+        "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2"
+      },
+      "controls/R38_TRANSLATION_INTEGRATION.json": {
+        "bytes": 5209,
+        "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020"
+      },
+      "controls/R38_CANONICAL_INVENTORY_REFRESH.json": {
+        "bytes": 1490,
+        "sha256": "A55400B0236DDB3A32C47C3AA14B45B0ACFF0260EF843779EB0487F6B649ADE3"
+      },
+      "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json": {
+        "bytes": 6698,
+        "sha256": "C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C"
+      },
+      "controls/R38_STRICT_BUILD.json": {
+        "bytes": 8533,
+        "sha256": "E8A844FF6DA59EAFAA890D34E180B81BE2B8D1D639E4801692897B89DA5CD6FB"
+      },
+      "controls/R38_PDF_QA.json": {
+        "bytes": 34043,
+        "sha256": "5140761219F2C8AFAC7075BEEF1044D4190FA41B590B670FA349DF1EF6B55B45"
+      },
+      "controls/R38_ZENODO_DRAFT.json": {
+        "bytes": 676,
+        "sha256": "F6F543BE6800CD7BED602C6ED928E572A81D25550750919338833E2D9FE64330"
+      },
+      "controls/R38_STRICT_BUILD_PRE_CORRECTION.json": {
+        "bytes": 5677,
+        "sha256": "2ADAFA3893EA0CD5AD30B730B9C9E99DE074F764A29D08930B3307F9D3410691"
+      },
+      "controls/R38_STRICT_BUILD_PRE_PRIVACY.json": {
+        "bytes": 7613,
+        "sha256": "98B5AE054414650A7488B98F8DA3A0E20679D1B4036587DAEE05B599707CC8D2"
+      }
+    }
+  },
+  "frozen_source_bindings": {
+    "cumulative_manifest": {
+      "bytes": 16250,
+      "sha256": "50C9896A8436E2A381817BA322DE45A5EFCB768F2790E7BC14A206D70AAA81AE",
+      "coverage": "through2.2.1 / canonical lines1-1683 / 228 historical markers",
+      "terminal_historical_marker": "II|24",
+      "next_canonical_line": 1685
+    },
+    "canonical_r38_unit": {
+      "lines": "1607-1683",
+      "bytes": 4191,
+      "characters": 4096,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6"
+    },
+    "canonical_admitted_prefix": {
+      "lines": "1-1683",
+      "bytes": 78088,
+      "sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75",
+      "binding_control": "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json"
+    },
+    "korean_candidate": {
+      "bytes": 4599,
+      "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
+    },
+    "korean_target": {
+      "bytes": 80222,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006"
+    },
+    "build_script": {
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+    }
+  },
+  "build": {
+    "invocations": 1,
+    "internal_xelatex_passes": 8,
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "pass_count_proof": {
+      "bytes": 20370,
+      "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77",
+      "four_pass_loop_definition": 1,
+      "cycle_invocations": 2,
+      "declared_xelatex_invocations": 8,
+      "failure_semantics": "each engine invocation throws on nonzero exit; pass3 must equal pass4 inside each cycle; cycle B final must equal cycle A final",
+      "result": "PASS_EXACT_BUILD_SCRIPT_CONTROL_FLOW"
+    },
+    "terminal_completion_proof": {
+      "stdout_terminal_record": "PASS 1485271 bytes SHA-256 824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1; cycle_a_sha256=824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1; cycle_b_sha256=824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1; cycle_a_pass2_sha256=F6454A59276DA1C616C3CA2342AA8812C04BE8FE5424EE20816305C67C7B6150; cycle_b_pass2_sha256=F6454A59276DA1C616C3CA2342AA8812C04BE8FE5424EE20816305C67C7B6150; cycle_a_pass3_sha256=824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1; cycle_b_pass3_sha256=824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1; cycle_a_pass2_final_identical=false; cycle_b_pass2_final_identical=false; cycle_a_pass3_final_identical=true; cycle_b_pass3_final_identical=true; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false",
+      "cycle_a_pass3_equals_pass4": true,
+      "cycle_b_pass3_equals_pass4": true,
+      "cycle_finals_byte_identical": true,
+      "portable_reader": {
+        "bytes": 1485271,
+        "sha256": "824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1"
+      },
+      "result": "PASS"
+    },
+    "timeout_seconds": 1800,
+    "timed_out": false,
+    "live_authority_environment": "omitted; frozen target hashes, declared inputs and admission records enforced",
+    "returncode": 0,
+    "stdout": {
+      "bytes": 831,
+      "sha256": "B2AD797D38F4D1CC2A57D5E134F58E5F79272CBDD54D8EE98E0E497B5E1D89A0"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "log": {
+      "bytes": 52111,
+      "sha256": "C6549278267864DD0760361DF9FF4065088419DEE69EAFD62450BF0946A90FF1"
+    },
+    "result": "PASS"
+  },
+  "strict_reader": {
+    "bytes": 1485270,
+    "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+    "pages": 239
+  },
+  "portable_reader": {
+    "bytes": 1485271,
+    "sha256": "824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1",
+    "pages": 239
+  },
+  "pdf_byte_identical": false,
+  "container_delta": {
+    "observed": true,
+    "strict": {
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+    },
+    "portable": {
+      "bytes": 1485271,
+      "sha256": "824DDC25A0FEE2CA0435DA6EFE0467E7DE2F413DBF44C6B049CF3C7889D807C1"
+    },
+    "byte_identical": false,
+    "size_delta_portable_minus_strict": 1,
+    "classification": "unadjudicated container-level delta only",
+    "retention": "portable container identity is retained in this receipt; its staging bytes are deliberately deleted after all content-property replays pass",
+    "inference_rule": "No content, correctness, completion or publication-status inference is made from a container difference."
+  },
+  "extraction": {
+    "poppler": {
+      "bytes": 728827,
+      "sha256": "B5A047C7799FD4A741099CE9334797F26CCDDD5EC9D68F9A6A03EFABA6ADDC99",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 152945,
+      "replacement_characters": 0
+    },
+    "pypdf": {
+      "bytes": 703381,
+      "sha256": "9207B6B25CBAC5113A6C718C7B970E232E159799AC68CB7C527F908455173AD6",
+      "strict_portable_and_frozen_byte_identical": true,
+      "hangul": 152945,
+      "replacement_characters": 0
+    }
+  },
+  "extraction_runtime": {
+    "python_version": "3.13.9",
+    "pypdf_version": "6.12.2",
+    "pypdf_version_frozen_qa": "6.10.0",
+    "pypdf_replay_versions_accepted": [
+      "6.10.0",
+      "6.12.2"
+    ],
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "pdftotext_version_required": "pdftotext version 24.04.0",
+    "pdftoppm_version": "pdftoppm version 26.07.0",
+    "pdftoppm_version_required": "pdftoppm version 26.07.0",
+    "pypdf_page_join": "LF+FF+LF with one final LF; CRLF/CR normalized to LF",
+    "poppler_options": [
+      "-enc",
+      "UTF-8",
+      "-eol",
+      "unix",
+      "input.pdf",
+      "-"
+    ]
+  },
+  "render_replay": {
+    "comparisons": 6,
+    "dpi": 300,
+    "pages": [
+      {
+        "physical_page": 1,
+        "bytes": 133699,
+        "sha256": "8A9C079746DC9D2BAACE84D02E46635FAE87E8073D483A88C962590ED82116E6",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p001.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      },
+      {
+        "physical_page": 2,
+        "bytes": 494472,
+        "sha256": "97F4435291368165C762F357F86E6FCD3AEC2F5ACA41C764D9C0A7D110957723",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p002.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      },
+      {
+        "physical_page": 6,
+        "bytes": 273914,
+        "sha256": "BD71C92D1810D28FE7F9289F4FF20D38452A7970F0CE5BBE742209A7E3B01977",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p006.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      },
+      {
+        "physical_page": 237,
+        "bytes": 818805,
+        "sha256": "F639B832388C5839EA866E69E04479ACCC88FDB9154CE82D75511CBA5D8F10F2",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p237.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      },
+      {
+        "physical_page": 238,
+        "bytes": 733896,
+        "sha256": "3343138791A864AECF7584DB54BA7A375FE5EC613E7D82E6093C210CB66ECDF9",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p238.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      },
+      {
+        "physical_page": 239,
+        "bytes": 209400,
+        "sha256": "8D2157D299589D0A6743DBDF720A2FEF2E5336F2544A5A6C685E5E2DE9ACA834",
+        "dpi": 300,
+        "frozen_evidence_entry": "render/r38-p239.png",
+        "strict_frozen_byte_identical": true,
+        "portable_frozen_byte_identical": true,
+        "strict_portable_byte_identical": true
+      }
+    ],
+    "result": "PASS_EXACT_STRICT_FROZEN_PORTABLE_RASTER_IDENTITY_6_OF_6"
+  },
+  "visual_qa": "Fresh strict and portable full-page raster bytes at 300 dpi on pages1,2,6,237,238,239 exactly reproduce the frozen already-inspected strict-reader evidence; no new full-document visual rereview is claimed.",
+  "staging_cleanup": {
+    "exact_target": "[PRIVATE_ROOT]/release-staging/r38-portable-replay",
+    "scope": "only the fresh task-owned replay staging directory after all replay gates passed",
+    "deleted": true
+  },
+  "receipt_privacy_credential_check": {
+    "scope": "The final serialized PORTABLE_BUILD_REPLAY.json is scanned before exclusive creation for concrete account/profile locators and credential patterns.",
+    "matches": 0,
+    "result": "PASS_PREWRITE_FAIL_CLOSED"
+  },
+  "result": "PASS_PORTABLE_BUILD_EXACT_TEXT_AND_SELECTED_RENDER_REPLAY"
+}

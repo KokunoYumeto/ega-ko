@@ -1,0 +1,167 @@
+{
+  "schema": "agko-r38-translation-admission-v1",
+  "time": "2026-09-05T15:53:42+02:00",
+  "scope": "EGA II canonical lines 1607-1683: environments 2.1.10 and 2.1.11, subsection 2.2 heading, and environment 2.2.1",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "unit_lines": "1607-1683",
+    "unit_bytes": 4191,
+    "unit_characters": 4096,
+    "unit_lf_lines": 77,
+    "unit_sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6",
+    "preunit_prefix_lines": "1-1606",
+    "preunit_prefix_bytes": 73898,
+    "preunit_prefix_sha256": "A134AA34BE77E80D873B994BB5B6EDE13A94D12F3EB56571BBD4142F0C980A51",
+    "admitted_prefix_lines": "1-1683",
+    "admitted_prefix_bytes": 78089,
+    "admitted_prefix_sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585",
+    "boundaries": "line 1606 blank; line 1607 begins environment 2.1.10; line 1683 ends environment 2.2.1; line 1684 blank; line 1685 begins Lemma 2.2.2"
+  },
+  "candidate": {
+    "path": "candidates/r38-c2s1-continuation.tex",
+    "bytes": 4599,
+    "characters": 2773,
+    "lf_lines": 80,
+    "hangul_syllables": 913,
+    "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93",
+    "separator_plus_candidate_bytes": 4600,
+    "separator_plus_candidate_sha256": "028E9D2AF3D2297C5F8D93AE07C3C2F48B499FFAA33A1FCD38BB7D9B2BC31DF4"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 75622,
+    "lf_lines": 1627,
+    "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+    "end_boundary": "line 1627 is the closing proof marker for Proposition 2.1.9"
+  },
+  "prospective_integration": {
+    "method": "sealed R37 preimage followed by exactly one LF separator and the exact R38 candidate",
+    "target_range": "line 1628 blank separator; candidate lines 1629-1708",
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r38_candidate.py",
+    "validator_bytes": 16396,
+    "validator_lf_lines": 400,
+    "validator_sha256": "3FC051E0944E506E1F6366B84CC3B55B279FA74B7E6F183ED6ECE38E6D830AAC",
+    "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "source_inline_formula_count": 111,
+    "target_inline_formula_count": 111,
+    "global_formula_multiset_exact": true,
+    "formula_global_order_identical": false,
+    "formula_order_policy": "The exact 111-formula multiset is preserved globally. Natural Korean word order may permute formulas only inside an explicitly corresponding semantic clause. Twenty-two contiguous clause ranges partition formulas 1-111 and each range has exact source/target multiset equality, proving no formula crossed an environment, statement, sentence-level assertion, proof step, definition, or other semantic-clause boundary.",
+    "clause_local_formula_audit": {
+      "result": "PASS",
+      "partition_count": 22,
+      "formula_range": "1-111",
+      "contiguous_and_exhaustive": true,
+      "all_clause_multisets_exact": true,
+      "environment_blocks": [
+        {
+          "environment": "2.1.10",
+          "formula_range": "1-38",
+          "source_count": 38,
+          "target_count": 38,
+          "multiset_exact": true
+        },
+        {
+          "environment": "2.1.11",
+          "formula_range": "39-65",
+          "source_count": 27,
+          "target_count": 27,
+          "multiset_exact": true
+        },
+        {
+          "environment": "2.2.1",
+          "formula_range": "66-111",
+          "source_count": 46,
+          "target_count": 46,
+          "multiset_exact": true
+        }
+      ]
+    },
+    "displays": 0,
+    "labels": [
+      "II.2.1.10-ko",
+      "II.2.1.11-ko",
+      "subsection:II.2.2-ko",
+      "II.2.2.1-ko"
+    ],
+    "ordered_references": [
+      [
+        "II.2.1.9-ko",
+        "2.1.9"
+      ]
+    ],
+    "label_and_reference_suffix_policy": "Each canonical -fr suffix is changed only to -ko; visible reference text is unchanged; no -fr suffix remains.",
+    "numbered_environments": [
+      "2.1.10",
+      "2.1.11",
+      "2.2.1"
+    ],
+    "subsection": "2.2",
+    "environment_nesting_balanced": true,
+    "oldpage": "II24",
+    "navigation_only_phantomsection_count": 3,
+    "emphasis_source_target": "14/14",
+    "brace_count_open_close": "70/70",
+    "utf8_replacement_characters": 0
+  },
+  "semantic_and_terminology_invariants": [
+    "The ideal, graded prime ideal, radical, nilradical, nilpotent element, quotient ring, and homogeneous-component objects in 2.1.10 retain their distinct mathematical roles.",
+    "Essentially reduced is rendered as 본질적으로 축소 and is bound to the absence of nonzero nilpotent elements in S_+.",
+    "Zero divisor is rendered as 영인자 and essentially integral as 본질적으로 정역 without conflating either with an ordinary integral-domain assertion.",
+    "Canonical line 1638 is rendered universally: every nonzero homogeneous element of S_+ must be a non-zero-divisor; an existential weakening is not admitted.",
+    "The annihilator argument preserves the existence of one homogeneous f, the universal quantifier over g, and the final necessary-and-sufficient condition on S_0.",
+    "The localization, degree-zero subring, Laurent polynomial, and localized graded-module constructions retain all degree shifts and scalar rings.",
+    "The système libre phrase is rendered 자유계, not 기저, so linear independence is asserted without an unjustified spanning-as-a-basis claim.",
+    "The exponent h ranges over every integer including zero; the candidate states this explicitly and retains the Laurent family and its linear-independence proof."
+  ],
+  "source_queries": {
+    "status": "delivered_nonblocking_before_admission",
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "loci": [
+      {
+        "line": 1638,
+        "issue": "French indefinite singular in the sufficient condition requires a generic/universal reading rather than an existential reading.",
+        "translation_treatment": "Rendered with explicit universal force; no source-byte repair."
+      },
+      {
+        "line": 1664,
+        "issue": "Historical positif ou négatif wording must include exponent zero for the stated Laurent monomial family.",
+        "translation_treatment": "Rendered as every integer including zero; no source-byte repair."
+      }
+    ]
+  },
+  "independent_review": {
+    "method": "Independent bounded admission and formula/source-fidelity reviews against the exact canonical slice and revised exact candidate bytes.",
+    "result": "PASS",
+    "candidate_defects_found_after_revision": 0,
+    "source_target_emphasis_mapping": "PASS_14_OF_14",
+    "formula_and_quantifier_review": "PASS",
+    "clause_local_formula_migration_review": "PASS_NO_CROSS_BOUNDARY_MIGRATION",
+    "structure_navigation_review": "PASS",
+    "terminology_review": "PASS",
+    "prospective_private_public_identity_review": "PASS"
+  },
+  "state": {
+    "translation": "admitted_candidate",
+    "integration": "pending_exact_identical_write_by_root_after_R37_closure",
+    "source_referral": "delivered_nonblocking",
+    "build": "pending_integration_and_machine_wide_TeX_mutex",
+    "extraction": "pending_build",
+    "rendered_visual_QA": "pending_build",
+    "publication": "pending_validated_cumulative_reader_and_package"
+  },
+  "next": "After the sealed R37 public closure, append exactly one LF plus the exact R38 candidate to both c2s1 mirrors, prove the prospective identity, refresh cumulative declarations through canonical line 1683, then run the serialized cumulative build, extraction, rendered QA, packaging, and same-lineage publication gates."
+}

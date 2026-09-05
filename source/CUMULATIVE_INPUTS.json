@@ -16,16 +16,16 @@
     "included_volumes": [
       "EGA 0_I",
       "EGA I",
-      "EGA II (front matter/programme and main text through2.1.9)"
+      "EGA II (front matter/programme and main text through2.2.1)"
     ],
-    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1605 through2.1.9",
+    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-1683 through2.2.1",
     "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
-    "historical_source_pages": 227,
+    "historical_source_pages": 228,
     "historical_page_ranges": [
       "EGA I introduction5-8",
       "EGA 0_I11-78",
       "EGA I Chapter I79-214",
-      "EGA II5-23"
+      "EGA II5-24"
     ],
     "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
@@ -96,7 +96,7 @@
     },
     {
       "path": "c2s1.tex",
-      "role": "EGA II main text contiguous through2.1.9 / canonical lines1-1605"
+      "role": "EGA II main text contiguous through2.2.1 / canonical lines1-1683"
     }
   ],
   "coverage_matrix": [
@@ -110,7 +110,7 @@
       "working_path": "ega/I/front.tex",
       "target_bytes": 4440,
       "target_lf_lines": 123,
-      "target_sha256": "78FCF635E8551684CE5710DFFC9FE93DF311A9701A9A09BA6BC0228128AE0DDD",
+      "target_sha256": "1A709228BA6CE5AEACFC6653686234B2961D8309D40BC30F930E066DF048BC72",
       "historical_page_markers": 0,
       "status": "complete",
       "coverage": "full source EOF; public target adds cumulative-edition metadata"
@@ -343,21 +343,21 @@
     {
       "driver_line": 84,
       "source_path": "ega2/ega2-1-fr.tex",
-      "source_bytes": 820505,
+      "source_bytes": 820504,
       "source_lf_lines": 18087,
-      "source_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "source_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
       "target_path": "c2s1.tex",
       "working_path": "ega/II/c2s1.tex",
-      "target_bytes": 75622,
-      "target_lf_lines": 1627,
-      "target_sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
-      "historical_page_markers": 18,
+      "target_bytes": 80222,
+      "target_lf_lines": 1708,
+      "target_sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+      "historical_page_markers": 19,
       "status": "partial",
-      "coverage": "canonical lines1-1605 of18087 through2.1.9; next executable line1607 environment2.1.10",
+      "coverage": "canonical lines1-1683 of18087 through2.2.1; next executable line1685 lemma2.2.2",
       "admitted_source_slice": {
-        "lines": "1-1605",
-        "lf_bytes": 73897,
-        "sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182"
+        "lines": "1-1683",
+        "lf_bytes": 78088,
+        "sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75"
       }
     },
     {
@@ -408,9 +408,9 @@
     {
       "driver_line": 88,
       "source_path": "ega3/ega3-1-fr.tex",
-      "source_bytes": 627906,
+      "source_bytes": 627894,
       "source_lf_lines": 14616,
-      "source_sha256": "01930B20A4D85534811A2F5B065D92FD5A7C043C93B6245E4F762955384619DB",
+      "source_sha256": "5058C52D12FDF25BF299C43B10C9492417DAD762841A5B8FF784C97CFD129726",
       "target_path": null,
       "working_path": null,
       "target_bytes": null,
@@ -456,10 +456,10 @@
     "required_latest_records": [
       "AGKO-EGA0-R27-PAGE63",
       "AGKO-EGA1-R24-COMPLETE",
-      "AGKO-EGA2-S1-R37-COVERAGE"
+      "AGKO-EGA2-S1-R38-COVERAGE"
     ],
     "external_korean_handoffs_admitted": 0,
     "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
-    "next": "continue EGA II at canonical line1607 / environment2.1.10; line1606 blank, then FGA; SGA remains separate"
+    "next": "continue EGA II at canonical line1685 / lemma2.2.2; line1684 blank, then FGA; SGA remains separate"
   }
 }

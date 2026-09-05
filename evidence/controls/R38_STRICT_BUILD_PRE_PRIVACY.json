@@ -1,0 +1,170 @@
+{
+  "schema": "agko-r38-strict-build-control-v1",
+  "verified_at": "2026-09-05T16:43:37+02:00",
+  "precision": "second",
+  "seal_revision": 2,
+  "superseded_pre_correction_seal": {
+    "bytes": 5677,
+    "sha256": "2ADAFA3893EA0CD5AD30B730B9C9E99DE074F764A29D08930B3307F9D3410691",
+    "reason": "The accepted D54 EGA II line1542 scan-transcription restoration landed after the first seal and invalidated its current live-authority gate."
+  },
+  "release": {
+    "version": "2026-09-05-r38",
+    "exact_doi": "10.5281/zenodo.22346664",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "reservation": {
+      "path": "controls/R38_ZENODO_DRAFT.json",
+      "bytes": 676,
+      "sha256": "F6F543BE6800CD7BED602C6ED928E572A81D25550750919338833E2D9FE64330",
+      "status": "reserved_unpublished"
+    }
+  },
+  "coverage": {
+    "summary": "EGA 0_I and EGA I complete; EGA II programme/table of contents complete; EGA II main text translated contiguously through2.2.1 / canonical lines1-1683",
+    "target_mirrors": {
+      "private_path": "ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 80222,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+      "private_public_exact": true
+    },
+    "front": {
+      "path": "source/front.tex",
+      "bytes": 4440,
+      "sha256": "1A709228BA6CE5AEACFC6653686234B2961D8309D40BC30F930E066DF048BC72",
+      "version_exact_doi_and_concept_doi_bound": true
+    },
+    "manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16250,
+      "sha256": "50C9896A8436E2A381817BA322DE45A5EFCB768F2790E7BC14A206D70AAA81AE",
+      "historical_source_pages": 228,
+      "historical_marker_sum": 228
+    },
+    "canonical_inventory_refresh": {
+      "private_path": "controls/R38_CANONICAL_INVENTORY_REFRESH.json",
+      "public_path": "evidence/controls/R38_CANONICAL_INVENTORY_REFRESH.json",
+      "bytes": 1490,
+      "sha256": "A55400B0236DDB3A32C47C3AA14B45B0ACFF0260EF843779EB0487F6B649ADE3",
+      "private_public_exact": true,
+      "result": "PASS_EXACT_23_DRIVER_INPUTS_AFTER_UNTRANSLATED_EGA3_AUTHORITY_REFRESH",
+      "status": "PRESERVED_HISTORICAL_PRE_CORRECTION_CONTROL"
+    },
+    "post_correction_source_reconciliation": {
+      "private_path": "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+      "public_path": "evidence/controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+      "bytes": 7091,
+      "sha256": "9855B26A12652C11CAD584AB2B185EDD49DCA4E88552EAB9F32B578907920007",
+      "private_public_exact": true,
+      "current_canonical_source_bytes": 820504,
+      "current_canonical_source_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "current_admitted_prefix_bytes": 78088,
+      "current_admitted_prefix_sha256": "7DE4ECF8630F2B575C08ED0EE4AEC560F6BD4C6026C4BC894DD057D4AE1B9B75",
+      "r38_unit_unchanged": true,
+      "korean_target_unchanged": true,
+      "result": "PASS_R38_POST_CORRECTION_SOURCE_RECONCILIATION_REBUILD_REQUIRED"
+    },
+    "translation_integration": {
+      "private_path": "controls/R38_TRANSLATION_INTEGRATION.json",
+      "public_path": "evidence/controls/R38_TRANSLATION_INTEGRATION.json",
+      "bytes": 5209,
+      "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020",
+      "private_public_exact": true,
+      "result": "PASS_R38_TRANSLATION_INTEGRATION"
+    },
+    "post_build_identity_recheck": "PASS"
+  },
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1485270,
+    "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+    "pages": 239
+  },
+  "build_script": {
+    "path": "build/BUILD.ps1",
+    "bytes": 20370,
+    "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+  },
+  "strict_build": {
+    "status": "PASS",
+    "engine": "XeLaTeX / MiKTeX",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_timeout_ms": 300000,
+    "abandoned_recovery": false,
+    "live_canonical_and_private_coverage_gate": "PASS",
+    "xelatex_passes": 8,
+    "independent_clean_cycles": 2,
+    "passes_per_cycle": 4,
+    "replay_reason": "Renew the current live-authority gate after the post-seal D54 canonical source correction; no Korean or reader-content change was required."
+  },
+  "convergence": {
+    "cycle_a": {
+      "pass2": {
+        "path": "build/cycle-a.pass2.pdf",
+        "bytes": 1485279,
+        "sha256": "E6945583AA1D5AE63F0424109463DFAE04F46DFBF7EE1380638A3E3DF156D699"
+      },
+      "pass3": {
+        "path": "build/cycle-a.pass3.pdf",
+        "bytes": 1485270,
+        "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+      },
+      "pass4": {
+        "path": "build/cycle-a.pdf",
+        "bytes": 1485270,
+        "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+      },
+      "raw_log": {
+        "path": "build/cycle-a.log",
+        "bytes": 51956,
+        "sha256": "3F82AC4B8E3FE604C565C3ACCE72C4559E760AA60163B53F6ED86086A8AFE4D2"
+      },
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_b": {
+      "pass2": {
+        "path": "build/out/main.pass2.pdf",
+        "bytes": 1485279,
+        "sha256": "E6945583AA1D5AE63F0424109463DFAE04F46DFBF7EE1380638A3E3DF156D699"
+      },
+      "pass3": {
+        "path": "build/out/main.pass3.pdf",
+        "bytes": 1485270,
+        "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+      },
+      "pass4": {
+        "path": "build/out/main.pdf",
+        "bytes": 1485270,
+        "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+      },
+      "raw_log": {
+        "path": "build/out/main.log",
+        "bytes": 51956,
+        "sha256": "3F82AC4B8E3FE604C565C3ACCE72C4559E760AA60163B53F6ED86086A8AFE4D2"
+      },
+      "pass2_equals_final": false,
+      "pass3_equals_pass4": true
+    },
+    "cycle_pass2_byte_identical": true,
+    "cycle_pass3_byte_identical": true,
+    "cycle_finals_byte_identical": true,
+    "cycle_raw_logs_byte_identical": true,
+    "reader_promotion_byte_identical_to_both_cycle_finals": true
+  },
+  "incomplete_boundary": {
+    "ega_ii": "active_incomplete",
+    "next_canonical_source": "source/ega2/ega2-1-fr.tex line1685, Lemma2.2.2; line1684 is blank",
+    "no_completion_claim": "The build proves the current cumulative R38 checkpoint only; it does not complete EGA II or the full EGA corpus."
+  },
+  "post_correction_replay": {
+    "source_reconciliation": "PASS",
+    "manifest_reconciliation": "PASS",
+    "strict_build": "PASS",
+    "output_identity_equals_pre_correction_seal": true,
+    "reason_for_equal_output": "The accepted sourcekeeper restoration changes canonical French authority/provenance only; compiled Korean source and release metadata are byte-identical."
+  },
+  "ledger_record": "AGKO-E-R38-STRICT-REBUILD-20260905",
+  "terminal_record": "PASS post-correction replay: 1485270 bytes SHA-256 FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15; 239 pages; both cycle pass2 PDFs 1485279 bytes SHA-256 E6945583AA1D5AE63F0424109463DFAE04F46DFBF7EE1380638A3E3DF156D699; both cycle pass3 and pass4 PDFs exact; both raw logs 51956 bytes SHA-256 3F82AC4B8E3FE604C565C3ACCE72C4559E760AA60163B53F6ED86086A8AFE4D2; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false; live_coverage_gate=PASS; current_canonical_source_sha256=91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E; output_identity_equals_pre_correction_seal=true",
+  "status": "PASS_R38_STRICT_TWO_CYCLE_FOUR_PASS_BUILD"
+}

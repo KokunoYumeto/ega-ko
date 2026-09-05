@@ -1,0 +1,43 @@
+{
+  "schema": "agko-r38-canonical-inventory-refresh-v1",
+  "verified_at": "2026-09-05T16:13:06+02:00",
+  "authority_driver": {
+    "path": "source/EGA_FR.tex",
+    "bytes": 3313,
+    "lf_lines": 99,
+    "sha256": "D50FB2E31F85F03BF4C906220827DE7822999FE4B02FBE0B533CFEB75244D086"
+  },
+  "exact_driver_inputs_checked": 23,
+  "changed_authority_rows": [
+    {
+      "driver_line": 88,
+      "source_path": "ega3/ega3-1-fr.tex",
+      "translation_status": "not_translated",
+      "previous": {
+        "bytes": 627906,
+        "lf_lines": 14616,
+        "sha256": "01930B20A4D85534811A2F5B065D92FD5A7C043C93B6245E4F762955384619DB"
+      },
+      "current": {
+        "bytes": 627894,
+        "lf_lines": 14616,
+        "sha256": "5058C52D12FDF25BF299C43B10C9492417DAD762841A5B8FF784C97CFD129726"
+      },
+      "effect": "authority inventory refresh only; no Korean target, completion, readiness, or publication claim"
+    }
+  ],
+  "unchanged_authority_rows": 22,
+  "cumulative_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16250,
+    "lf_lines": 465,
+    "sha256": "94DB0BE14D7833BE8298722A8E10ED03FE16360606277A4E779139050CCA1BDE"
+  },
+  "failed_build_preflight": {
+    "stage": "live canonical input identity validation before TeX launch",
+    "tex_started": false,
+    "reader_changed": false,
+    "diagnostic": "Live canonical input identity drifted: ega3/ega3-1-fr.tex"
+  },
+  "result": "PASS_EXACT_23_DRIVER_INPUTS_AFTER_UNTRANSLATED_EGA3_AUTHORITY_REFRESH"
+}
