@@ -1,290 +1,680 @@
 {
-  "schema_version": 4,
-  "version": "2026-09-06-r39",
-  "updated": "2026-09-06T23:43:33+02:00",
-  "snapshot_phase": "working_r39_build_pdf_qa_release_evidence_pass_package_portable_publication_pending",
-  "coverage": "EGA 0_I and EGA I complete; EGA II programme/table of contents complete; EGA II main text translated contiguously through §2.2.6 / canonical lines1-1780. EGA II and the full EGA corpus remain incomplete.",
-  "reader": {
-    "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
-    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 240,
-    "bytes": 1491216,
-    "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
-  },
-  "coverage_manifest": {
-    "path": "source/CUMULATIVE_INPUTS.json",
-    "bytes": 16281,
-    "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB",
-    "ordered_inputs": 17,
-    "canonical_rows": 23,
-    "complete": 16,
-    "partial": 1,
-    "not_translated": 6,
-    "historical_markers": 229
-  },
-  "exact_doi": "10.5281/zenodo.22416007",
-  "concept_doi": "10.5281/zenodo.21921513",
-  "prior_public_checkpoint": "r38 / exact DOI10.5281/zenodo.22346664 / GitHub release ega-ko-2026-09-05-r38; four artifacts at both destinations passed anonymous byte replay",
-  "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1782, environment §2.2.7; line1781 is blank",
-  "publication_evidence_rule": "R39 is a reserved, unpublished working checkpoint whose strict build, PDF QA and release-evidence gates pass. R38 remains the latest public checkpoint until R39 packaging, portable replay, both publications and anonymous public-byte readback pass.",
-  "sequence": [
-    "EGA I complete",
-    "EGA II active and incomplete",
-    "FGA next",
-    "EGA III+ only after ordered predecessors and exact source admission"
+  "schema": "ag-ko-state-v2",
+  "updated": "2026-09-07T17:45:00+02:00",
+  "owner_task": "019f757c-a43b-7ed0-b810-b8effdc5d904",
+  "objective": "Complete source-synchronized Korean translations in the order EGA I, EGA II, then FGA. Later EGA begins with EGA III only after sequence and exact source-authority validation. SGA is outside the active scope and will be coordinated separately.",
+  "authority_order": [
+    "EGA I",
+    "EGA II",
+    "FGA"
   ],
-  "sga": "outside active scope; coordinate separately later",
-  "qa": {
-    "translation": "PASS exact current-authority and mirrored R39 target validation through §2.2.6 / canonical lines1-1780",
-    "build": "PASS two independent clean four-pass XeLaTeX cycles under Global\\InterlanguageTeXSlotV1; final cycles byte-identical; hard diagnostics0",
-    "extractions": [
-      {
-        "path": "evidence/r39-extract-poppler.txt",
-        "bytes": 732164,
-        "sha256": "CBC8D6153E4833B9028721FB9DC2470C9450C07BC0596CBFED8B072FD444C14B",
-        "characters": 398103,
-        "hangul_syllables": 153609,
-        "hangul_jamo": 0,
-        "replacement_characters": 0,
-        "carriage_returns": 0,
-        "formfeeds": 240,
-        "exact_doi_count": 1,
-        "concept_doi_count": 1,
-        "content_checks": {
-          "environment_2_2_2": true,
-          "environment_2_2_3": true,
-          "environment_2_2_4": true,
-          "environment_2_2_5": true,
-          "environment_2_2_6": true,
-          "fraction_ring": true,
-          "noetherian": true,
-          "historical_II_25": true
-        }
-      },
-      {
-        "path": "evidence/r39-extract-pypdf.txt",
-        "bytes": 706537,
-        "sha256": "26644E0CF676F459F6E4443ABA02F1353FC110AB1E318D7555DADB7FBABE8FCE",
-        "characters": 383341,
-        "hangul_syllables": 153609,
-        "hangul_jamo": 0,
-        "replacement_characters": 0,
-        "carriage_returns": 0,
-        "formfeeds": 239,
-        "exact_doi_count": 1,
-        "concept_doi_count": 1,
-        "content_checks": {
-          "environment_2_2_2": true,
-          "environment_2_2_3": true,
-          "environment_2_2_4": true,
-          "environment_2_2_5": true,
-          "environment_2_2_6": true,
-          "fraction_ring": true,
-          "noetherian": true,
-          "historical_II_25": true
-        }
-      }
+  "durable_logbooks": {
+    "decisions": "decisions.jsonl",
+    "evidence": "evidence.jsonl",
+    "hard_cases": "hard.jsonl",
+    "terms": "terms.jsonl",
+    "unit_index": "index/units.jsonl",
+    "terminology_workflow": "terminology/arxiv/2026-08-23/WORKFLOW_RECORD.jsonl",
+    "terminology_source_set": "terminology/arxiv/2026-08-26/SOURCE_SET.json",
+    "public_evidence": "pub/ega-ko/evidence",
+    "rule": "Conversation summaries are not state. Resume only from these files and rehashed primary artifacts."
+  },
+  "completed": {
+    "ega_i": "complete in Korean; all15 inputs enumerated by canonical source/EGA_FR.tex lines61-82 remain sealed",
+    "latest_public_reader": "r48:249pages/1542495B/668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E",
+    "latest_public_scope": "r48 public through EGA II2.5.12 / canonical lines1-2694; EGA II and the full corpus remain incomplete",
+    "qa": "PASS_PUBLIC_R48: exact R40-R48 batch integration, one mutex-held convergence build, one aggregate whole-reader QA, deterministic package, and dual anonymous four-asset byte readback; zero per-small-section or repeated QA loops",
+    "zenodo": "PASS_PUBLIC_R48: exact22645017/concept21921513/public-open; four-file anonymous replay exact; receipt-r48.json2177/7CAC81A922363F10219DD38593ED218476FE9CE864FF6D18E8B7760E8FABCD1B",
+    "github": "PASS_PUBLIC_R48: artifact14e963fa7cd307688cf76809d575f2d35e07e9e1; annotated release tag ega-ko-2026-09-07-r48; four assets anonymous-byte exact; github-receipt-r48.json2114/AAC3656749EC19FD068AE499F127992D6D20D9C1EE179103EB54E5149BA40AE7",
+    "receipts": [
+      "pub/ega-ko/receipt-r27.json",
+      "pub/ega-ko/receipt-r28.json",
+      "pub/ega-ko/receipt.json",
+      "pub/ega-ko/release/2026-08-28-r27/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-08-28-r28/PACKAGE_RECEIPT.json",
+      "github-terminal-r27.json",
+      "pub/ega-ko/receipt-r29.json",
+      "pub/ega-ko/release/2026-08-28-r29/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/receipt-r30.json",
+      "pub/ega-ko/release/2026-08-29-r30/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/receipt-r31.json",
+      "pub/ega-ko/release/2026-08-29-r31/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/receipt-r32.json",
+      "pub/ega-ko/release/2026-08-31-r32/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-08-31-r32/PORTABLE_BUILD_REPLAY.json",
+      "pub/ega-ko/github-receipt-r32.json",
+      "controls/R32_PUBLIC_CLOSURE.json",
+      "pub/ega-ko/receipt-r33.json",
+      "pub/ega-ko/github-receipt-r33.json",
+      "pub/ega-ko/release/2026-08-31-r33/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-08-31-r33/PORTABLE_BUILD_REPLAY.json",
+      "controls/R33_PUBLIC_CLOSURE.json",
+      "controls/R33_GITHUB_OPERATION_STATE.json",
+      "pub/ega-ko/receipt-r34.json",
+      "pub/ega-ko/github-receipt-r34.json",
+      "pub/ega-ko/release/2026-08-31-r34/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-08-31-r34/PORTABLE_BUILD_REPLAY.json",
+      "controls/R34_PUBLIC_CLOSURE.json",
+      "controls/R34_GITHUB_OPERATION_STATE.json",
+      "controls/R35_ZENODO_DRAFT.json",
+      "controls/R35_TRANSLATION_ADMISSION.json",
+      "pub/ega-ko/receipt-r36.json",
+      "pub/ega-ko/github-receipt-r36.json",
+      "pub/ega-ko/release/2026-09-05-r36/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-09-05-r36/PORTABLE_BUILD_REPLAY.json",
+      "controls/R37_ZENODO_DRAFT.json",
+      "controls/R37_TRANSLATION_ADMISSION.json",
+      "controls/R37_PDF_QA.json",
+      "pub/ega-ko/receipt-r37.json",
+      "pub/ega-ko/github-receipt-r37.json",
+      "pub/ega-ko/release/2026-09-05-r37/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-09-05-r37/PORTABLE_BUILD_REPLAY.json",
+      "controls/R37_PUBLIC_CLOSURE.json",
+      "pub/ega-ko/receipt-r48.json",
+      "pub/ega-ko/github-receipt-r48.json",
+      "pub/ega-ko/release/2026-09-07-r48/PACKAGE_RECEIPT.json",
+      "pub/ega-ko/release/2026-09-07-r48/GITHUB_PUBLICATION_RECEIPT.json",
+      "pub/ega-ko/release/2026-09-07-r48/ZENODO_PUBLICATION_RECEIPT.json",
+      "controls/R48_PUBLIC_CLOSURE_20260907.json"
     ],
-    "historical_markers": {
-      "source_count": 229,
-      "normalized_sequence_sha256": "9499162EC75962B6132499671292BDD94AC213F8149583B621259F3D0127A917",
-      "pypdf_count": 229,
-      "pypdf_full_sequence_matches": true,
-      "poppler_count": 228,
-      "poppler_numeric_sequence_matches_with_documented_0I_70_exception": true,
-      "ranges": [
-        "I|5-8",
-        "0I|11-78",
-        "I|79-214",
-        "II|5-25"
-      ],
-      "terminal_marker": [
-        "II",
-        25
-      ]
+    "working_translation_scope": "Complete Korean EGA 0_I and EGA I; complete EGA II programme/table of contents and main text contiguously through §2.5.12 / canonical lines 1-2694. EGA II and the full EGA corpus remain incomplete.",
+    "r48_public_closure": "controls/R48_PUBLIC_CLOSURE_20260907.json / 4803 bytes / D89A5C520ADFEC212E794966264147734F04F3C103EDFAD3658E1FDF538BF1A3; next canonical line2696 / Proposition2.5.13 after blank line2695"
+  },
+  "public_r27": {
+    "reader": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf 228 pages /1424078 bytes /1D9F072B6ADCB2A7D683DF706910B5AC21C9EFC7A3E16BA097AB464A3FCB57C3",
+    "coverage": "complete EGA0_I and EGA I; complete EGA II programme; EGA II main lines1-712 through1.5.4;217 historical source-page markers; EGA II incomplete",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json v2 16223 bytes /D1EAF2FBE72CDAE9CBE8D8A801AAA2E075F94603DB99A590AEC946FFCCD4D839;17 ordered inputs;23 canonical rows=16 complete/1 partial/6 explicitly untranslated",
+    "pagination_control": "pub/ega-ko/evidence/controls/R27_PAGINATION_CORRECTION.json; marker63 restored and one output-page rhythm enforced per historical marker; no semantic source-boundary advance",
+    "gates": "PASS local identity, strict/portable builds, dual extraction, exact217-marker runs, semantic/reference identity, links, visual, source/evidence archives, outer manifest, open Zenodo publication/replay4/4 and GitHub artifact/receipt anonymous replay",
+    "exact_doi": "10.5281/zenodo.22141753",
+    "receipt": "pub/ega-ko/receipt-r27.json2568 bytes /E52EFD2E10DE3AFBC9A4DB2C82CD8EE252045553BEDEBAF4210219321E3F3EA4",
+    "github_status": "PASS_PUBLIC_TERMINAL: a66a9c608b5b26038562533e2a24002cae85a09a /tree0f5b1c884765950c41f5e5cf9c647c10e6269b8a; anonymous codeload200619301 bytes /303A5A7F2F3F6FB067B0B943707FF116746A15B44BEBBF6B1DAEBE359FDDF209;403 paths /216866516 bytes /inventory780001670379216D6E20DEB2D6B6DB0FF778041DE545FCCB3A6EE9FBB53F6015; remote main exact"
+  },
+  "public_r28": {
+    "reader": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf 229 pages /1429287 bytes /709349FD26736DE7E3FA64B7F9ACF6B0959F58E9E47F12301795A57230A788C3",
+    "coverage": "complete EGA0_I and EGA I; complete EGA II programme; EGA II main lines1-800 through1.5.7;218 historical source-page markers; EGA II incomplete",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json v2 16270 bytes /E4B8AFF13F239365036AB5F215710099A459D24A481A60F1E1D0A0A68A710DE3;17 ordered inputs;23 canonical rows=16 complete/1 partial/6 explicitly untranslated",
+    "gates": "PASS local identity, strict dual build, dual extraction, exact218-marker runs, semantic/reference identity, links,11-page visual QA, deterministic archives and open Zenodo publication/replay4/4; GitHub r28 mirror pending",
+    "exact_doi": "10.5281/zenodo.22142960",
+    "receipt": "pub/ega-ko/receipt-r28.json2587 bytes /FEEB72DA067EFCB21660D615C24096AFB047AA897760824F15BA37883A725410",
+    "github_status": "PENDING_R28; r27 terminal checkpoint remains public until r28 GitHub transaction closes"
+  },
+  "public_r29": {
+    "reader": "pub/ega-ko/release/2026-08-28-r29/00_EGA_ko_CUMULATIVE_READER.pdf 231 pages /1439881 bytes /0369E5EAB332907B90987F24F7FCE62EF8F15D7E5C4CBA2B1C3882306085FD0B",
+    "coverage": "complete EGA0_I and EGA I; complete EGA II programme; EGA II main lines1-978 through1.7.4;220 historical markers; EGA II incomplete",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json r29 immutable release copy v2 16239 bytes /3D2490F9928D468D68E2D22ABCF7B90B9FB102440572156E5A2851388643A27A;17 ordered inputs;23 canonical rows=16 complete/1 partial/6 explicitly untranslated",
+    "gates": "PASS local identity, strict dual build, dual extraction, exact220-marker runs, semantic/reference identity, links,12-page visual QA, deterministic archives, open Zenodo publication/replay4/4 and GitHub release asset/receipt anonymous replay",
+    "exact_doi": "10.5281/zenodo.22143603",
+    "github_status": "PASS_PUBLIC_R29: release commit15c28c06bab4ffd4b2c0c6c4a5f7d28d7cc6a55a; receipt commit56c12081884ad0e62a0847aced32c921227b16db; all four release assets exact"
+  },
+  "public_r30": {
+    "reader": "pub/ega-ko/release/2026-08-29-r30/00_EGA_ko_CUMULATIVE_READER.pdf 231 pages /1442048 bytes /B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0",
+    "coverage": "complete EGA0_I and EGA I; complete EGA II programme; EGA II main lines1-1047 through1.7.8;220 historical markers; EGA II incomplete",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json v2 16310 bytes /2FEC8DA446A14CC6AC6AAF25BA66A52ED04FFDFDB02EA7816D0D5C0422278309;17 ordered inputs;23 canonical rows=16 complete/1 partial/6 explicitly untranslated",
+    "gates": "PASS source and Korean reviews, strict dual build, portable archive build/extraction, dual extraction, exact220-marker runs, all267 unique references,12-page visual QA, deterministic archives, open Zenodo publication/replay4/4, and GitHub release asset/receipt anonymous replay",
+    "exact_doi": "10.5281/zenodo.22151007",
+    "receipt": "pub/ega-ko/receipt-r30.json3060 bytes /3BDFBB06A2075152E48B1ECEC6D298CBB30C440E88AFA90B53CA178E3C38EC97",
+    "github_status": "PASS_PUBLIC_R30: release a83d2aa5207643c809313a4ef84e14b61922528f; receipt37e3e87036fc25fc19e95cc5e41501a114f05482; all four assets and both receipts replayed exact"
+  },
+  "public_r31": {
+    "reader": "pub/ega-ko/release/2026-08-29-r31/00_EGA_ko_CUMULATIVE_READER.pdf 232 pages /1447261 bytes /0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+    "coverage": "complete EGA0_I and EGA I; complete EGA II programme; EGA II main lines1-1116 through1.7.10;221 historical markers; EGA II incomplete",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json v2 16234 bytes /36B42FE2A408905A09A71181B1C9890F94DB401E2D1406E088BDD33A4B5EBDAE;17 ordered inputs;23 canonical rows=16 complete/1 partial/6 explicitly untranslated",
+    "gates": "PASS source/Korean reviews, strict dual build, dual extraction, exact221-marker runs,557 destinations,1626/1626 links,10-page visual QA, deterministic A/B archives, open Zenodo publication and anonymous replay4/4; GitHub r31 release/tree/assets/receipts anonymous replay PASS",
+    "exact_doi": "10.5281/zenodo.22151448",
+    "receipt": "pub/ega-ko/receipt-r31.json3146 bytes /49BC6E343222C1A1A57C73647C7F35FB4B640B256DC007D051149395D8925E37",
+    "github_status": "PASS_PUBLIC_R31: release9c2d8e01cf2b143170cabc9b13b10230c9977e16/treec2d0738e9976b6df0fd4c1862390071851c6bbed; receiptc7c33d054e93e7fe5d017ca2a29a8ccf5e12689e/treead5be0db12a97c700e213f7c8696e37514383e00;457 paths and4 assets anonymous replay PASS; github-receipt-r31.json2224/166D6991AED52709665BC2F3FAD32053E2C4EEC225A922758AE74A9CF88ADA54"
+  },
+  "active": {
+    "corpus": "EGA",
+    "volume": "EGA II",
+    "admitted": "front/programme complete plus main lines1-1780 through2.2.6; prefix81885/033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33",
+    "unit": {
+      "lines": "1685-1780",
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
     },
-    "navigation": {
-      "annotations": 1665,
-      "links": 1665,
-      "uri_links": 4,
-      "internal_links": 1661,
-      "named_destinations": 588,
-      "invalid_named_destinations": [],
-      "invalid_link_destinations": [],
-      "outline_entries": 133,
-      "invalid_outline_destinations": [],
-      "uri_targets": {
-        "https://doi.org/10.5281/zenodo.20414353": 1,
-        "https://doi.org/10.5281/zenodo.21921513": 1,
-        "https://doi.org/10.5281/zenodo.22416007": 1,
-        "https://github.com/KokunoYumeto/ega-ko": 1
+    "candidate": {
+      "path": "candidates/r39-c2s1-continuation.tex",
+      "bytes": 4051,
+      "characters": 2771,
+      "lf_lines": 100,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+    },
+    "target": {
+      "private_path": "ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+      "separator_line": 1709,
+      "candidate_target_lines": "1710-1809"
+    },
+    "reader": {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 240,
+      "bytes": 1491216,
+      "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+    },
+    "qa": {
+      "r38_public_closure": "PASS_LATEST_PUBLIC",
+      "r39_translation_and_reseals": "PASS",
+      "r39_strict_build": "PASS",
+      "r39_pdf_qa": "PASS",
+      "r39_release_evidence": "PASS",
+      "r39_package_and_portable_replay": "PENDING",
+      "r39_github_zenodo_and_anonymous_readback": "PENDING"
+    },
+    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1782, environment §2.2.7; line1781 is blank",
+    "next_target": "Package the exact R39 checkpoint, run its serialized portable replay, then publish the same four hash-bound artifacts to the existing GitHub and Zenodo Korean EGA lineages and complete anonymous byte readback.",
+    "gate": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
+    "publication": {
+      "status": "PASS_R38_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
+      "version": "2026-09-05-r38",
+      "control": {
+        "path": "controls/R38_PUBLIC_CLOSURE.json",
+        "bytes": 5137,
+        "sha256": "F0F83E182B39FD548162B8EE16CA6A5CE7C2925ACDD7792B67FB3A4C63061773",
+        "private_public_mirrors_exact": true
       },
-      "required_r39_named_destinations": {
-        "II.2.2.2-ko=>section*.322": true,
-        "II.2.2.3-ko=>section*.323": true,
-        "II.2.2.4-ko=>section*.324": true,
-        "II.2.2.5-ko=>section*.325": true,
-        "II.2.2.6-ko=>section*.326": true
-      }
-    },
-    "fonts": {
-      "font_resources": 35,
-      "embedded_font_resources": 35,
-      "unembedded_font_resources": [],
-      "resources_with_tounicode": 27,
-      "resources_without_tounicode": [
+      "reader": {
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+        "pages": 239,
+        "bytes": 1485270,
+        "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
+      },
+      "github": {
+        "artifact_commit": "f9fdf4fccbadda75dbdb74505336c6fd33975baa",
+        "artifact_parent": "2eb01c1656c37a818fcbbc05bb431be7f5905506",
+        "artifact_tree": "5c52ce8fb6929786b1fa28db2ceea434dab3c662",
+        "annotated_tag_object": "fd1affa7b12d4a7bcbdd386186ceeb0addeb0f8c",
+        "tag": "ega-ko-2026-09-05-r38",
+        "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r38",
+        "receipt": {
+          "path": "github-receipt-r38.json",
+          "bytes": 78362,
+          "sha256": "E7528B33A0CC000268E72AAD77D6612FF6931098D57E39F7E5FF9238EE35057F"
+        }
+      },
+      "zenodo": {
+        "record_id": 22346664,
+        "exact_doi": "10.5281/zenodo.22346664",
+        "exact_doi_url": "https://doi.org/10.5281/zenodo.22346664",
+        "concept_doi": "10.5281/zenodo.21921513",
+        "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+        "record": "https://zenodo.org/records/22346664",
+        "predecessor_record_id": 22315714,
+        "predecessor_exact_doi": "10.5281/zenodo.22315714",
+        "receipt": {
+          "path": "receipt-r38.json",
+          "bytes": 4328,
+          "sha256": "2750F62CA7A87A3C72A2D997290B103CC2F40E8298EB0E842439353FEA37BAA5"
+        }
+      },
+      "public_artifacts": [
         {
-          "basefont": "/APOCYK+CMSY8",
-          "subtype": "/Type1",
-          "to_unicode": false
+          "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+          "bytes": 1485270,
+          "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15"
         },
         {
-          "basefont": "/COMIEF+XYATIP-Medium",
-          "subtype": "/Type1",
-          "to_unicode": false
+          "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+          "bytes": 430517,
+          "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2"
         },
         {
-          "basefont": "/DPVBYQ+XYDASH-Medium",
-          "subtype": "/Type1",
-          "to_unicode": false
+          "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+          "bytes": 122840828,
+          "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197"
         },
         {
-          "basefont": "/ESRITT+CMEX10",
-          "subtype": "/Type1",
-          "to_unicode": false
-        },
-        {
-          "basefont": "/JFXXWE+MSBM10",
-          "subtype": "/Type1",
-          "to_unicode": false
-        },
-        {
-          "basefont": "/JNUGTK+CMEX7",
-          "subtype": "/Type1",
-          "to_unicode": false
-        },
-        {
-          "basefont": "/MFUSOR+XYBTIP-Medium",
-          "subtype": "/Type1",
-          "to_unicode": false
-        },
-        {
-          "basefont": "/WENPTB+CMSY10",
-          "subtype": "/Type1",
-          "to_unicode": false
+          "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+          "bytes": 343,
+          "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988"
         }
       ],
-      "all_type0_hangul_fonts_have_tounicode": true,
-      "type0_hangul_fonts_without_tounicode": []
+      "package": {
+        "path": "release/2026-09-05-r38/PACKAGE_RECEIPT.json",
+        "bytes": 35345,
+        "sha256": "6357FD948CEE1054FBA56AC84CB321FFC0C6C3773A0378212D5B478156C4F63C"
+      },
+      "portable_replay": {
+        "path": "release/2026-09-05-r38/PORTABLE_BUILD_REPLAY.json",
+        "bytes": 12695,
+        "sha256": "777EA4337DB3A9E213402A1B14CEC9C2E2460CE6AC293A99CF7AC63ED60D162B"
+      },
+      "coverage": "Complete Korean EGA 0_I and EGA I; complete EGA II programme/table of contents and main text contiguously through §2.2.1 / canonical lines1-1683.",
+      "ega_ii_status": "active_incomplete",
+      "next_source": "canonical line1685 / environment2.2.2"
     },
-    "visual": {
-      "status": "PASS_NO_OBSERVED_DEFECTS",
-      "selected_physical_pages": [
-        1,
-        2,
-        6,
-        25,
-        103,
-        104,
-        107,
-        109,
-        171,
-        237,
-        238,
-        239,
-        240
+    "last_public_r37_qa": {
+      "translation": "PASS exact R37 source/candidate/integrated-mirror validation; environment2.1.8, Proposition2.1.9 with all three conditions and proof,99 inline formulas,2 labels, 1 reference and II23 preserved; canonical S_{n-mk} retained without guessed repair",
+      "build": "PASS two independent four-pass XeLaTeX cycles under Global\\InterlanguageTeXSlotV1; pass3=pass4 within each cycle and final cycles byte-identical; hard diagnostics0",
+      "extraction": {
+        "poppler": {
+          "path": "evidence/extract.txt",
+          "bytes": 724814,
+          "sha256": "DD155CF9FE4B9F7F865E3858387AF4222DA16B41E935D398612670A82953FFBF",
+          "markers": 226
+        },
+        "pypdf": {
+          "path": "evidence/extract-pypdf.txt",
+          "bytes": 699470,
+          "sha256": "45A9806C13729B3D8E804897B3515FDEAB64E7719B97ADB3C73ED6C5C6AE4B3B",
+          "markers": 227
+        },
+        "each_hangul": 152023,
+        "each_replacement_characters": 0,
+        "marker_result": "pypdf full227-entry sequence PASS; Poppler ordered226-marker sequence PASS with inherited bare page70 token documented"
+      },
+      "links": {
+        "annotations": 1657,
+        "internal": 1653,
+        "resolved_internal": 1653,
+        "external_uris": 4,
+        "named_destinations": 577,
+        "bookmarks": 132,
+        "result": "PASS"
+      },
+      "fonts": "PASS all35 resources embedded; all Hangul Type0 resources have ToUnicode; eight inherited Type1 math/diagram resources without ToUnicode are explicitly limited",
+      "visual": "PASS selected pages1,2,6,236-238 at200dpi; no clipping, overlap, tofu or malformed formula",
+      "portable": "PASS exact full extraction and selected frozen-render replay; container-only delta retained without content inference",
+      "detailed_control": "evidence/controls/R37_PDF_QA.json",
+      "human_certification": "not claimed or required"
+    },
+    "coverage_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16281,
+      "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB",
+      "ordered_inputs": 17,
+      "canonical_rows": 23,
+      "complete": 16,
+      "partial": 1,
+      "not_translated": 6,
+      "historical_markers": 229
+    },
+    "working_release": {
+      "version": "2026-09-06-r39",
+      "record_id": 22416007,
+      "exact_doi": "10.5281/zenodo.22416007",
+      "exact_doi_url": "https://doi.org/10.5281/zenodo.22416007",
+      "concept_doi": "10.5281/zenodo.21921513",
+      "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+      "status": "reserved_unpublished",
+      "reservation": {
+        "path": "evidence/controls/R39_ZENODO_DRAFT_RESERVATION.json",
+        "bytes": 1444,
+        "sha256": "8799F847CCDCD35D93A401F125A830CB1759F8E2D16004E90A185979F398D7CA"
+      },
+      "latest_public_version_remains": "2026-09-05-r38",
+      "latest_public_exact_doi": "10.5281/zenodo.22346664",
+      "latest_public_record_id": 22346664,
+      "latest_public_github_tag": "ega-ko-2026-09-05-r38"
+    }
+  },
+  "later_ega": "EGA III candidate-ready by direct report, sequenced after EGA II and FGA; exact source completion must be admitted before translation, and translation stops before the first incomplete later volume.",
+  "next_executable_action": "Package the exact R39 checkpoint, run its serialized portable replay, then publish the same four hash-bound artifacts to the existing GitHub and Zenodo Korean EGA lineages and complete anonymous byte readback.",
+  "candidate_r30": {
+    "status": "PASS_PUBLIC_ZENODO_AND_GITHUB_WITH_ANONYMOUS_REPLAY",
+    "exact_doi": "10.5281/zenodo.22151007",
+    "record_id": 22151007,
+    "reader": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf 231 pages /1442048 bytes /B3EFEC7DCAD7BEA85E73808E73FDBA4B86339A1F577268917BE678F443E049F0",
+    "coverage": "complete EGA0_I and EGA I; EGA II programme complete; EGA II main canonical lines1-1047 through1.7.8;220 historical markers; EGA II incomplete",
+    "source_binding": "lines1-1047 46406 LF bytes /82B4E167D4B03EF093E674071C2BD5DA5632789EF123634ABEFDD15832D4C362",
+    "target_binding": "ega/II/c2s1.tex and public mirror each47178 bytes /5BF8FADDBC91829564E91C790BF1D6456945EBFD34937E02FDC8CDDDC0EEC4E4;1068 LF lines",
+    "qa": "translation/source/terminology reviews, strict dual3-pass build, Poppler+pypdf extraction,267/267 unique references,4 external links and12-page200dpi visual QA PASS",
+    "next_gate": "CLOSED"
+  },
+  "candidate_r31": {
+    "status": "PASS_PUBLIC_ZENODO_AND_GITHUB_WITH_ANONYMOUS_REPLAY",
+    "exact_doi": "10.5281/zenodo.22151448",
+    "record_id": 22151448,
+    "reader": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf 232 pages /1447261 bytes /0DA482A847F2984C9B3C2E27AD18A98DDCB23D593E9C2C0499573569A58FA281",
+    "coverage": "complete EGA0_I and EGA I; EGA II programme complete; EGA II main canonical lines1-1116 through1.7.10;221 historical markers; EGA II incomplete",
+    "source_binding": "lines1-1116 49912 LF bytes /B784020F4B5F1D9A9F0BC4EA023C54EA03408CF0479DEFBEA6B0CFD5B896FFE5; new lines1049-1116 3505 LF bytes /23EDE365C2DE799F6D07C43EC268616101C86F2C2F00F034DB4943551FD328D0",
+    "target_binding": "ega/II/c2s1.tex and public mirror each50714 bytes /48983F35AB77D62B36B903168785834D88418E296283286D2C5375A7FDC9A281;1131 LF lines; new target3536 LF bytes /456C2929A709D6D0EABF3271CDBC16284CF6233F51DF3EFA7645B88DAD7616E1",
+    "qa": "independent source and Korean review, two byte-identical strict three-pass cycles, Poppler+pypdf extraction with147843 Hangul/U+FFFD0,557 named destinations,1626/1626 internal links,4 URIs and10-page200dpi visual QA PASS",
+    "next_gate": "CLOSED"
+  },
+  "candidate_r32": {
+    "status": "PASS_PUBLIC_ZENODO_AND_GITHUB_WITH_ANONYMOUS_REPLAY",
+    "record_id": 22207983,
+    "exact_doi": "10.5281/zenodo.22207983",
+    "source": "new1118-1193 3574/9886BF1C9A31B03EA6F5FE98E75A762BD0128B33B81C354B664B2BD1279A3D3E;prefix1-1193 53487/7701EE8E67DFDD0F9C41BF085E6288E15D6C08E7FD1374FDB5A77960708CF718",
+    "target": "54304/C149B382E1F49565B74C0C2D72FE81F51A8B8D7F1168189BCB3DB6CF7854C47F;1206LF;increment1133-1206 3589/2F66AF037741FADC729FC05A3459B7E89D68EDA43FE26E758D2AE4D6A13D19E2",
+    "reviews": "independent source/Korean/formula PASS after two register fixes;full150 references uniquely resolve",
+    "next": "CLOSED; next production unit is canonical1195-1292",
+    "reader": {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 233,
+      "bytes": 1451539,
+      "sha256": "46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F"
+    },
+    "qa": "Strict repeated reader byte identity PASS;233pages; both extractions148304 Hangul/U+FFFD0;1637/1637internal links,559 destinations,130bookmarks; visual1,2,6,231-233PASS;222marker sequence PASS by pypdf; Poppler missing subscript0_I70 documented in R32_PDF_QA",
+    "package": {
+      "directory": "pub/ega-ko/release/2026-08-31-r32",
+      "total_publication_bytes": 113677801,
+      "source_zip": "253664/506A79B93B798F0718F8E18EF59C1789CC9E398583EA0DADCC9D66EC58677A4B",
+      "evidence_zip": "111972255/C3F05EF021B7DE1C5AA3F31922D23EB825210513FEE3933F985E7BEA41D52805",
+      "manifest": "343/375E65509026154C9C669B8DE6976C0A428C0B7AA10AE450929CB6E8812E4BA4",
+      "verification": "PASS independent A/B bytes, entries, sizes, CRC/SHA256 and frozen-input recheck",
+      "portable": "PASS one build, six passes; full same-tool text replay; three200dpi rendered pages byte-identical to immutable evidence. Eight-byte PDF-container difference remains unadjudicated; published strict reader identity unchanged."
+    },
+    "zenodo": "PASS_PUBLIC_R32: exact DOI10.5281/zenodo.22207983 /concept21921513; anonymous metadata/HTML/DOI/download replay4/4; receipt-r32.json7096B/58322C677BADDC693C8CF5C451D3D7FE25A91A9C048EC019C9767FB18B0F3E22; receipt recovery documented, no duplicate download claim",
+    "github": "PASS_PUBLIC_R32: releasecb22f50b4c4ccb8143e5e33051dadf6456449a81/treeb0528e508453b25bc707cb9438f73ac69c503f72; receipt/main1e445012d9eea7638a6d63468070fb09d96a8998/tree622ce6241eec35da80c4a3b6f2b4eb4843acaccb;468paths,4assets,6receipts anonymous PASS; github-receipt-r32.json3093B/7F043C6ABDF5EB2716E58F9E75653658DCB74CE7EA1E2A026486EF03EDA3FACE"
+  },
+  "continuation_audit": {
+    "classification": "progress",
+    "current_progress": "R38 source/candidate admission and exact mirror integration through canonical line1683 PASS after a wrong-anchor transient was rejected and recovered before build/publication."
+  },
+  "source_readiness_followup": {
+    "automation_id": "check-source-ready-ega-volumes",
+    "checked_at": "2026-08-31T15:34:50.8020051+02:00",
+    "trigger_time": "2026-08-28T19:00:05.343Z",
+    "ega_i": "complete per exact cumulative manifest",
+    "ega_ii": "incomplete; current earliest unfinished authorized item",
+    "fga": "later in ordered programme; not bypassed",
+    "ega_iii": "candidate-ready on direct user report; exact untranslated live source fingerprint refreshed in cumulative manifest, not admitted as source-accuracy completion",
+    "action": "Continue earliest unfinished EGA II. EGA III remains candidate-ready rather than a waiting blocker; no later-volume translation admission or SGA start. Existing canonical manifest is source identity evidence, not a source-completion certification.",
+    "exact_control": "controls/EGAIII_CANDIDATE_FOLLOWUP_20260831.json",
+    "exact_control_sha256": "0ADC9981FE39A677DA3DFA03A36A0D39FF545C8373976EB92BF79582268F675E",
+    "completed_in_this_followup": "Exact current three EGA III input identities checked and recorded in controls/EGAIII_CANDIDATE_FOLLOWUP_20260831.json; EGA II continued and r33 published; no later-volume/SGA admission.",
+    "current_rebind": {
+      "control": "controls/EGAIII_CANDIDATE_REBIND_20260831_R34.json",
+      "ega3_1": "627906/01930B20A4D85534811A2F5B065D92FD5A7C043C93B6245E4F762955384619DB",
+      "meaning": "inventory fingerprint only; candidate-ready, no source-accuracy admission or sequence skip"
+    }
+  },
+  "candidate_r33": {
+    "path": "candidates/r33-c2s1-continuation.tex",
+    "bytes": 4871,
+    "sha256": "F8EBAD63CAF69594D0A00BD33FADB92B6A0AA30F843BF5F4BACAAE4ED2421DF8",
+    "admission_path": "candidates/r33-c2s1-admission.json",
+    "admission_bytes": 6952,
+    "admission_sha256": "7D993F38DC1FAEF448156803E784BDD0B075E7C1A915A4AB09E386CEEA7E8AF5",
+    "source_lines": "1195-1292 /1.7.13-1.7.14",
+    "source_lf_bytes": 4897,
+    "source_sha256": "024612A794E5622ADE5C69C02E7101EF37091C731674AA8AC3C741376F6B263B",
+    "state": "PASS_PUBLIC_ZENODO_AND_GITHUB_WITH_ANONYMOUS_REPLAY",
+    "root_preview_review": "controls/R33_PREVIEW_REVIEW.json",
+    "parity_validator": "candidates/validate_r33_candidate.py",
+    "live_target": {
+      "path": "ega/II/c2s1.tex",
+      "locator": "lines1-1303; appended1208-1303",
+      "bytes": 59176,
+      "sha256": "4D5E804AE92FD0DD14C2B1B7D32C1F962827FE11CDB2A5689DF13932C0A84746",
+      "appended_bytes": 4871,
+      "appended_sha256": "F8EBAD63CAF69594D0A00BD33FADB92B6A0AA30F843BF5F4BACAAE4ED2421DF8"
+    },
+    "admitted_prefix": {
+      "lines": "1-1292",
+      "bytes": 58385,
+      "sha256": "FD1BF48DEEADAF27CEDA1E364240EFB5E4B2ACADE34A2A89BD1F3D108A5E0247"
+    },
+    "record_id": 22208685,
+    "exact_doi": "10.5281/zenodo.22208685",
+    "terminology": "AGKO-TERM-E166 and T171/T172; source-defined provisional compounds, no new lexical lock or human-review gate",
+    "reader": {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 234,
+      "bytes": 1457536,
+      "sha256": "1115FEBE4B30752A1D86D0C4C5336E05927BFF289333C5D7077E714BE12A4103"
+    },
+    "qa_control": "controls/R33_VALIDATION_CHECKPOINT.json",
+    "next": "CLOSED; next source1294, private r34 candidate",
+    "package": {
+      "directory": "pub/ega-ko/release/2026-08-31-r33",
+      "total_publication_bytes": 115242917,
+      "source_zip": "254677/04F2E526A8CE29EBDD6FA1FC271FBB58647BC676FC66B1401A21F7CBD1F9E7EB",
+      "evidence_zip": "113530361/ABC94A03488294DC3584780B3CBAA8C8AF90F4F93710A53E3452F84A9570DDF6",
+      "manifest": "343/7179E604A860CE14C92FBC5CB9B10F4737221584041DC1B75F31FA934E3EF60F",
+      "package_receipt": "7011/32CE7ED3676A6F5CB6A4DFEAEC033689198C242C605FC0C9E5B0FEA47098AE65",
+      "portable_receipt": "5086/890ACCB458C952347F20F42B1D35776D2D43BBC49EB88C9C45697375BEACA1E9",
+      "verification": "PASS independent A/B entry/CRC/size/SHA and archive bytes;468 prospective files privacy checked,zero matches",
+      "portable": "PASS one six-pass build; dual full text exact and three200dpi renders exact. Seven-byte PDF-container delta unadjudicated; strict reader remains the release artifact."
+    },
+    "publication_operation": "CLOSED; all r33 handles terminal; one initial Zenodo503 resolved by bounded retry. Never replay completed transaction.",
+    "zenodo": "PASS_PUBLIC_R33: exact22208685/concept21921513/open; anonymous API/HTML/DOI/4downloads115242917B exact; receipt-r33.json5071/D005CA385F4D600E56081332620A98AE044602693F586FE8A2D5B24E9F997F00",
+    "github": "PASS_PUBLIC_R33: releasea2427c1ee3ca0fcdef9668071b0fee72ddd4238c/treeb378754ecbd779ff58fb25f0920ac97a5c21ff56; finalmainf132e71ae89c993b33fb67d40a53681b31bd36f3/tree7cd6d679dc6ef1697ad7a0ab46ac557d6d4a97af;479paths/4assets/7rawreceipts exact; github-receipt-r33.json3000/5FB30BBA15F77F5D233855862905E8BF98718ACAFECE0979BFD8196BC2DD7D7E",
+    "public_closure": "controls/R33_PUBLIC_CLOSURE.json",
+    "public_closure_sha256": "2BBF22EB6D3C75B1295564FB7F920649A50FBE5532C9CCC04F7B5DFD08C76AC0"
+  },
+  "public_r32": {
+    "reader": "pub/ega-ko/release/2026-08-31-r32/00_EGA_ko_CUMULATIVE_READER.pdf233pages/1451539B/46325FFC93EFE7D18DAE08CA79F933601FEEAF97C98ED3E666B8F93ACCF38B8F",
+    "coverage": "complete EGA0_I and EGA I plus complete EGA II Chapter II programme and main through1.7.12/canonical1-1193;222historicalmarkers;EGAII incomplete",
+    "exact_doi": "10.5281/zenodo.22207983",
+    "zenodo_status": "PASS_PUBLIC_R32: exact DOI10.5281/zenodo.22207983 /concept21921513; anonymous metadata/HTML/DOI/download replay4/4; receipt-r32.json7096B/58322C677BADDC693C8CF5C451D3D7FE25A91A9C048EC019C9767FB18B0F3E22; receipt recovery documented, no duplicate download claim",
+    "github_status": "PASS_PUBLIC_R32: releasecb22f50b4c4ccb8143e5e33051dadf6456449a81/treeb0528e508453b25bc707cb9438f73ac69c503f72; receipt/main1e445012d9eea7638a6d63468070fb09d96a8998/tree622ce6241eec35da80c4a3b6f2b4eb4843acaccb;468paths,4assets,6receipts anonymous PASS; github-receipt-r32.json3093B/7F043C6ABDF5EB2716E58F9E75653658DCB74CE7EA1E2A026486EF03EDA3FACE",
+    "gates": "r32 PASS source/Korean/formula review, strict repeated3-pass cycles, full dual extraction, links, selected-page visual QA, deterministic A/B ZIPs, portable rebuild/full text/3render replay, Zenodo4/4 public downloads and GitHub468paths/4assets/6receipts. Legacy math extraction and portable container limits explicit."
+  },
+  "candidate_r34": {
+    "path": "candidates/r34-c2s1-continuation.tex",
+    "original_bytes": 3277,
+    "original_sha256": "1BE303E21446CD7E9003CBE89377259B4C50C38552CACCCC12B7C4D456A7F525",
+    "admission_path": "candidates/r34-c2s1-admission.json",
+    "admission_bytes": 7337,
+    "admission_sha256": "BCB772AC6B2E018B99720B455199E802AFC7C6F7512E3394C10CB710E1EA8841",
+    "source_lines": "1294-1358",
+    "source_lf_bytes": 3290,
+    "source_sha256": "C507C1A7E6F3B94D1DF0320A7B7A6965EDAEC71389A05FB8B4DD7CAB27B10A7D",
+    "source_characters": 3198,
+    "integrated_increment_bytes": 3272,
+    "integrated_increment_sha256": "3B2BCB905ABEE07E4B11209D7AE9D326CAAFABB038E8A35444F89129A2691AE4",
+    "target": {
+      "bytes": 62449,
+      "lf_lines": 1368,
+      "sha256": "A4D82A0A67936DFF1507C8D679471E431731F69CE04E27BE39464FF2DC286885"
+    },
+    "admitted_prefix": {
+      "lines": "1-1358",
+      "bytes": 61676,
+      "sha256": "C1FB25C258ACDF3695C671A917056D1BE63DF1A099987C6910D82A08FC593118"
+    },
+    "validator": "candidates/validate_r34_candidate.py",
+    "translation_control": "controls/R34_TRANSLATION_ADMISSION.json",
+    "root_preview_review": "controls/R34_PREVIEW_REVIEW.json",
+    "root_preview_sha256": "6EBEE08181A2DF2986781C8E3B0BE34EF9F67A897A71C77FBCF420B2EAA0212E",
+    "state": "PASS_LOCAL_QA_AND_PACKAGE; Zenodo record22209381 published open before cleanup override; anonymous four-file replay and GitHub closure remain unproved/pending.",
+    "future_reference": "II.2.1.2-ko treated with existing agref visible-text fallback, no fabricated destination",
+    "reader": {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 235,
+      "bytes": 1462350,
+      "sha256": "EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8"
+    },
+    "draft": {
+      "record_id": 22209381,
+      "exact_doi": "10.5281/zenodo.22209381",
+      "concept_doi": "10.5281/zenodo.21921513",
+      "status": "published_open_anonymous_readback_pass"
+    },
+    "manifest": {
+      "bytes": 16256,
+      "sha256": "12ADBE9AC8D4057C550E0FF7BD93D1042BACBBDC34831CCE90A4D599EFF8B02A",
+      "historical_markers": 224
+    },
+    "build": {
+      "preflight_failures": [
+        "front target identity was updated before any TeX pass",
+        "ega3/ega3-1-fr.tex live fingerprint changed and was rebound as untranslated inventory before any TeX pass"
       ],
-      "dpi": 300,
-      "clipping_or_overlap_observed": false,
-      "missing_or_tofu_glyphs_observed": false,
-      "broken_formula_or_diagram_observed": false,
-      "unreadable_text_observed": false,
-      "title_scope_and_exact_doi_readable": true,
-      "new_environments_and_historical_II_25_marker_readable": true,
-      "sample_boundary": "Visual findings apply to the exact rendered pages; full-document coverage is separately supplied by structural, source, extraction, marker, destination and font checks."
+      "effective_invocation": "PASS two three-pass cycles, repeated fixed-metadata PDF bytes identical",
+      "hard_diagnostics": "PASS zero TeX errors, fatal/emergency stops, undefined controls/references/citations, missing characters or over/underfull boxes"
     },
-    "portable_replay": "PENDING",
-    "detailed_control": "evidence/controls/R39_PDF_QA.json",
-    "human_certification": "not claimed or required",
-    "limitations": [
-      "Plain-text extraction is not lossless for inherited mathematical or diagram resources lacking ToUnicode; source-synchronized TeX and rendering remain the formula authority.",
-      "Hard deterministic checks and inspected renders do not constitute a claim that no conceivable defect exists.",
-      "Publication and anonymous public-byte replay remain separate release gates."
-    ]
+    "pdf_qa": {
+      "control": "pub/ega-ko/evidence/controls/R34_PDF_QA.json",
+      "bytes": 12190,
+      "sha256": "DB71A8BF354AC382D7EAA926C39E34C8F5781E092A69033741D16049AA4763D2",
+      "extraction": "Poppler714079/BC0115590A90A5454A82B9D9A4C27F85269DA6E295B9752003209F931CAB5A98; pypdf689260/5B71EB99CBE77C2611BACDE9BAC7042A84C0C7D7B0D30D8DB27F27276325638C; each149669Hangul/U+FFFD0/currentDOI1/prior0",
+      "navigation": "1650/1650 links valid;563 destinations;132 bookmarks;224 markers",
+      "visual": "pages1,2,6,233,234,235 PASS; root independently inspected2,233,234,235"
+    },
+    "validation_control": "controls/R34_VALIDATION_CHECKPOINT.json /4645/621DDDFEBF6CD475B0A82CC177507EEB9BDB785469A4CB2CDF7100CD1231E6D9",
+    "package": {
+      "directory": "pub/ega-ko/release/2026-08-31-r34",
+      "total_publication_bytes": 116727797,
+      "source_zip": "255608/86974E2A413B7404D2035F2BA4EF5FF37B8F56AD559A9A2DE344A6CA19978944",
+      "evidence_zip": "115009496/4C2080FC44E1FA8EA45EE74CBA210D2A02809199BA8EDB0F3B499E5329A39099",
+      "manifest": "343/5DB3C106DC321377D050A10701DF17197615A8617FB02BB72685FF16CF6CFC6F",
+      "package_receipt": "7552/972AA3EAD4160117896767ACDE2287F543BB11266150ADC2F86A94D56F4C7E1B",
+      "portable_receipt": "6644/758760453FC56464792652E8E19DEA587A0CCA267BB0C1F34E7AB6F89964BC50",
+      "portable": "PASS exactly one build/six passes; both full extracts exact and pages1,234,235 frozen rasters exact; one-byte PDF-container delta remains unadjudicated."
+    },
+    "zenodo": "PASS_PUBLIC_R34 exact22209381/concept21921513; receipt5391/93C912F956E360C057DAA6DE331E4266507B5396B5FE480F1FBF956DF41A3EB2",
+    "github": "PASS_PUBLIC_R34 release6ca9c25bf34e027f43548351aca4f9bb1094a7e5; finalmain83233f03954210732f537602afa48f18f9420ab8; receipt3000/D1AFC3D8084AD0CE8B3E4D643D84B4A0FBD38974968C856D65E26E25F2A46919",
+    "public_closure": "controls/R34_PUBLIC_CLOSURE.json",
+    "next": "CLOSED; R35 canonical1360-1447 admitted; no completed R34 transaction may be replayed."
   },
-  "source": {
-    "path": "source/ega2/ega2-1-fr.tex",
-    "whole_bytes": 820504,
-    "whole_lf_lines": 18087,
-    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
-    "admitted_lines": "1-1780",
-    "admitted_bytes": 81885,
-    "admitted_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+  "cleanup_20260831": {
+    "status": "PASS_VERIFIED_LOCAL_ARCHIVE_AND_EXACT_DELETION",
+    "archive": "C:/Users/[USER]/Documents/interlanguage/old stuff/ag_ko_ega_release_staging_and_build_caches_20260831.zip",
+    "archive_bytes": 4261348095,
+    "archive_sha256": "AA965EB0AF6D407D9AC3B674B143B9C41E024CE1CB192F18219CCDE17A775B3C",
+    "source_files": 3255,
+    "source_bytes": 4374504781,
+    "entries": 3256,
+    "verification": "Complete entry-name set, every uncompressed size and SHA-256, internal manifest and final ZIP SHA-256 proved before deletion; root recheck found all26 targets absent and all5 sampled durable paths present.",
+    "deleted": "release-staging r11-r19,r21-r25,r28,r30-r34; build/out,build/qa-current,build/qa-current-15; three exact r34 GitHub Temp scripts",
+    "net_bytes_freed_with_local_zip_retained": 113156686,
+    "preserved": "All final release/*, reader, source, evidence, receipts, BUILD.ps1, candidates, canonical inputs, credentials and uncertain/reusable material",
+    "cloud_upload": false
   },
-  "unit": {
-    "lines": "1685-1780",
-    "bytes": 3796,
-    "characters": 3740,
-    "lf_lines": 96,
-    "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
+  "candidate_r35": {
+    "state": "PASS_TRANSLATION_ADMISSION_NAVIGATION_REPAIR_BUILD_PENDING",
+    "path": "candidates/r35-c2s1-continuation.tex",
+    "bytes": 4381,
+    "sha256": "83D54170A84C3CF646444C06B698074221A352CE617368F0F9568FC01D98CBBF",
+    "admission_path": "candidates/r35-c2s1-admission.json",
+    "admission_bytes": 10177,
+    "admission_sha256": "7A6950CE0A43170CF819FF1D2E2BED302DC397CDE84737ACD857FD7A3CF8E4F8",
+    "source_lines": "1360-1447 complete2.1.2 and Lemma2.1.3/proof",
+    "source_characters": 4253,
+    "source_lf_bytes": 4346,
+    "source_sha256": "EA61115F87F08ED70A4BEECA4CD5154B8C610D835DA284FD24ED766C3AD607AF",
+    "checks": "PASS exact112 inline formulas,3 displays,4 labels,2 tags,0 references,11 emphases,66/66 braces, lemma/proof environments,II21 marker and independent bilingual review; two navigation-only phantomsection anchors added after structural audit; no source or translation defect",
+    "next_source": "line1449 Corollary2.1.4",
+    "target": "private/public mirrors66831/EB4EFC0437B794A61FE484313AC3B1EDB359F42618D5AF9882CEC0EF21E666AC;1459LF",
+    "terminology": "AGKO-TERM-E168; T082/T083 excluded as generic authorities; no new lexical lock",
+    "translation_control": "controls/R35_TRANSLATION_ADMISSION.json",
+    "draft": "record22217711/exact10.5281/zenodo.22217711/concept10.5281/zenodo.21921513/reserved_unpublished",
+    "next": "Run mutexed independent clean build, complete PDF QA/package/publication, then continue at canonical1449."
   },
-  "candidate": {
-    "path": "candidates/r39-c2s1-continuation.tex",
-    "bytes": 4051,
-    "characters": 2771,
-    "lf_lines": 100,
-    "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+  "ega_iii_plus_source_readiness_followup": {
+    "checked_at": "2026-09-01T00:00:00+02:00",
+    "result": "EGA III is candidate-ready by direct user report and is not a waiting blocker; exact canonical authority-packet and validator admission remains mandatory when the production sequence reaches it.",
+    "sequence_gate": "Do not interrupt unfinished EGA II or FGA. After EGA II then FGA are complete, admit EGA III and only the following contiguous volumes whose exact source-accuracy packets pass, stopping before the first failure.",
+    "current_action": "Continue earliest unfinished authorized item, EGA II, at canonical line1449 after closing R35.",
+    "sga": "inactive and separately coordinated"
   },
-  "target": {
-    "path": "source/c2s1.tex",
-    "bytes": 84274,
-    "characters": 58678,
-    "lf_lines": 1809,
-    "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
-    "separator_line": 1709,
-    "candidate_target_lines": "1710-1809",
-    "private_public_exact": true
+  "public_r34": {
+    "reader": "pub/ega-ko/release/2026-08-31-r34/00_EGA_ko_CUMULATIVE_READER.pdf235pages/1462350B/EBC2FB3338619430EAB73AC47D25205D21A8645725C7D2452A5624D0982C83C8",
+    "coverage": "Complete Korean EGA0_I and EGA I; complete EGA II programme; EGA II main1-1358 through2.1.1;224 historical markers; EGA II incomplete.",
+    "exact_doi": "10.5281/zenodo.22209381",
+    "zenodo_status": "PASS public open record and anonymous four-file replay; receipt5391/93C912F956E360C057DAA6DE331E4266507B5396B5FE480F1FBF956DF41A3EB2",
+    "github_status": "PASS release6ca9c25bf34e027f43548351aca4f9bb1094a7e5/treed8a84eddf05da5cca7318fc15be92ae27ab89dc7; finalmain83233f03954210732f537602afa48f18f9420ab8/tree743fa61ce7a2e7ab6a9743aedf1a709885a4615d; receipt3000/D1AFC3D8084AD0CE8B3E4D643D84B4A0FBD38974968C856D65E26E25F2A46919",
+    "closure": "controls/R34_PUBLIC_CLOSURE.json"
   },
-  "translation_admission": {
-    "path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
-    "bytes": 8103,
-    "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
-    "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
+  "public_r33": {
+    "reader": "pub/ega-ko/release/2026-08-31-r33/00_EGA_ko_CUMULATIVE_READER.pdf234pages/1457536B/1115FEBE4B30752A1D86D0C4C5336E05927BFF289333C5D7077E714BE12A4103",
+    "coverage": "Complete Korean EGA0_I and EGA I; complete EGA II programme; EGA II main1-1292 through1.7.14. EGA II and full corpus remain incomplete.",
+    "exact_doi": "10.5281/zenodo.22208685",
+    "zenodo_status": "PASS_PUBLIC_R33: exact22208685/concept21921513/open; anonymous API/HTML/DOI/4downloads115242917B exact; receipt-r33.json5071/D005CA385F4D600E56081332620A98AE044602693F586FE8A2D5B24E9F997F00",
+    "github_status": "PASS_PUBLIC_R33: releasea2427c1ee3ca0fcdef9668071b0fee72ddd4238c/treeb378754ecbd779ff58fb25f0920ac97a5c21ff56; finalmainf132e71ae89c993b33fb67d40a53681b31bd36f3/tree7cd6d679dc6ef1697ad7a0ab46ac557d6d4a97af;479paths/4assets/7rawreceipts exact; github-receipt-r33.json3000/5FB30BBA15F77F5D233855862905E8BF98718ACAFECE0979BFD8196BC2DD7D7E",
+    "gates": "PASS source/Korean/formula; strict repeated3-pass cycles; full dual text and223markers;1641internal links; selected-page200dpi visual; deterministic A/B archives and privacy; portable dual fulltext and3render identity. Seven-byte portable PDF-container delta and inherited mathematical extraction limits retained without false equivalence claim.",
+    "closure": "controls/R33_PUBLIC_CLOSURE.json",
+    "closure_sha256": "2BBF22EB6D3C75B1295564FB7F920649A50FBE5532C9CCC04F7B5DFD08C76AC0"
   },
-  "build_receipt": {
-    "receipt": "evidence/BUILD_RECEIPT.json",
-    "receipt_bytes": 5245,
-    "receipt_sha256": "4C32901CEEDB6AC59A1924D743B53397D0F0C23E69793BB068B30F071D112928",
-    "strict_control": "evidence/controls/R39_STRICT_BUILD.json",
-    "strict_control_bytes": 14551,
-    "strict_control_sha256": "BD631DCAE7E8F9C485D9CEB14CE0DFA53CAE3F2BD5F0144ED9C3E0DEA7016BE0",
-    "pdf_qa": "evidence/controls/R39_PDF_QA.json",
-    "pdf_qa_bytes": 14710,
-    "pdf_qa_sha256": "9FF6981048F0F8C632B5F44BEE9437B7B3DA7134CC35D1919B34912C6BAE707B"
+  "candidate_r36": {
+    "status": "PROMOTED_TO_PUBLIC_R36_DUAL_ANONYMOUS_REPLAY_PASS",
+    "record_id": 22217711,
+    "exact_doi": "10.5281/zenodo.22217711",
+    "reader": {
+      "pages": 237,
+      "bytes": 1474518,
+      "sha256": "5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D"
+    }
   },
-  "validation_checkpoint": "evidence/controls/R39_PDF_QA.json",
-  "release_gates": {
-    "translation_admission": "PASS",
-    "current_authority_validator": "PASS",
-    "exact_mirror_integration": "PASS",
-    "authority_comment_reseal": "PASS",
-    "typed_ideal_terminology_reseal": "PASS",
-    "strict_build": "PASS",
-    "pdf_qa": "PASS",
-    "release_evidence": "PASS",
-    "package": "PENDING",
-    "portable_replay": "PENDING",
-    "github_publication_and_anonymous_readback": "PENDING",
-    "zenodo_publication_and_anonymous_readback": "PENDING"
+  "public_r36": {
+    "reader": "pub/ega-ko/release/2026-09-05-r36/00_EGA_ko_CUMULATIVE_READER.pdf237pages/1474518B/5FC588FF0A50B8A12899597D49FEB1B6E41BAB43F40F14E8F5433A5FB29D093D",
+    "coverage": "Complete Korean EGA0_I and EGA I; complete EGA II programme; EGA II main1-1535 through2.1.7;226 historical markers; EGA II incomplete.",
+    "exact_doi": "10.5281/zenodo.22217711",
+    "zenodo_status": "PASS public open record and anonymous four-file replay",
+    "github_status": "PASS main3f3a1c3971df6ca4002492ded42d5af4c360c3e4 and release ega-ko-2026-09-05-r36; anonymous four-asset replay"
   },
-  "rights": "Per-work rights, provenance, author/source relationship and non-endorsement retained; no blanket public-domain or open-licence claim",
-  "publication_phase": "working_r39_build_pdf_qa_release_evidence_pass_package_portable_publication_pending",
-  "current_public_checkpoint": "r38 / exact DOI10.5281/zenodo.22346664 / GitHub release ega-ko-2026-09-05-r38; four artifacts at both destinations passed anonymous byte replay",
+  "candidate_r37": {
+    "status": "PROMOTED_TO_PUBLIC_R37_DUAL_ANONYMOUS_REPLAY_PASS",
+    "record_id": 22315714,
+    "exact_doi": "10.5281/zenodo.22315714",
+    "source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "whole_bytes": 820505,
+      "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "admitted_lines": "1-1605",
+      "admitted_bytes": 73897,
+      "admitted_sha256": "0815285B46DA35D916612CDDACB92A1DD646153FAF6AC0D15E03417F9D349182"
+    },
+    "unit": {
+      "lines": "1537-1605",
+      "bytes": 3776,
+      "characters": 3727,
+      "lf_lines": 69,
+      "sha256": "D91203350D0012E008CA3A778DD5ABB1E3A18D70641C753F6F86ECFF51F949FE"
+    },
+    "candidate": {
+      "path": "candidates/r37-c2s1-continuation.tex",
+      "bytes": 4073,
+      "characters": 2783,
+      "lf_lines": 72,
+      "sha256": "A423B075B3483FC84CA580AED46C651F84543F4444805D94388CD5574114063D"
+    },
+    "target": {
+      "path": "source/c2s1.tex",
+      "bytes": 75622,
+      "sha256": "FA2AA45404EE63442184A43AD744DE0D03CC053C77C35DA26A0ED8044CB1A383",
+      "lf_lines": 1627
+    },
+    "reader": {
+      "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "pages": 238,
+      "bytes": 1479200,
+      "sha256": "22EB1097A3BD0B9DDAEF5C64D10D06561DFADDBA5FD08B80CE417C85FBF79F61"
+    },
+    "translation_admission": {
+      "path": "evidence/controls/R37_TRANSLATION_ADMISSION.json",
+      "bytes": 5919,
+      "sha256": "C4EBA3CA0F94A04815BE6585907D0EFB20A63F999710334F758078626D8A89C4"
+    },
+    "build": {
+      "receipt": "evidence/BUILD_RECEIPT.json",
+      "receipt_bytes": 5462,
+      "receipt_sha256": "5864BCD80AA33AEB906034A1E07F3BDC8710D699588A448D95ACCBBEC49B84A4",
+      "strict_control": "evidence/controls/R37_STRICT_BUILD.json",
+      "strict_control_bytes": 3675,
+      "strict_control_sha256": "F58CAF4FA4BEF1179288007C4F720B2E1CD3AE5D69AA311D1C345859766C9AF2"
+    },
+    "pdf_qa": {
+      "path": "evidence/controls/R37_PDF_QA.json",
+      "bytes": 13472,
+      "sha256": "E3CB3AC1D47F4041ADECDA7942383EF0CA52B921E4AF5F9B97A1FF7EFBA1ACDD"
+    },
+    "next": "closed; proceed to R38 candidate admission at canonical line1607",
+    "public_closure": {
+      "path": "controls/R37_PUBLIC_CLOSURE.json",
+      "bytes": 4271,
+      "sha256": "033D857627D0D5E65F7AF47C0050D7F1B065C816B5B9045BBB3F33AF3D1401C5",
+      "private_public_mirrors_exact": true
+    }
+  },
   "public_r37": {
     "status": "PASS_R37_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
     "version": "2026-09-05-r37",
     "control": {
-      "path": "evidence/controls/R37_PUBLIC_CLOSURE.json",
+      "path": "controls/R37_PUBLIC_CLOSURE.json",
       "bytes": 4271,
       "sha256": "033D857627D0D5E65F7AF47C0050D7F1B065C816B5B9045BBB3F33AF3D1401C5",
       "private_public_mirrors_exact": true
@@ -353,14 +743,10 @@
     "next_source": "canonical line1607 / environment2.1.10",
     "r38_candidate_status": "pending_exact_admission"
   },
-  "r38_candidate_status": "INTEGRATED_EXACT_MIRRORS; build, PDF QA and publication pending",
-  "result": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
-  "current_working_status": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
-  "working_translation_coverage": "EGA 0_I and EGA I complete; EGA II programme/table of contents complete; EGA II main text translated contiguously through §2.2.6 / canonical lines1-1780. EGA II and the full EGA corpus remain incomplete.",
   "r38_translation_integration": {
     "status": "PASS_R38_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
     "control": {
-      "path": "evidence/controls/R38_TRANSLATION_INTEGRATION.json",
+      "path": "controls/R38_TRANSLATION_INTEGRATION.json",
       "bytes": 5209,
       "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020"
     },
@@ -388,7 +774,7 @@
       "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
     },
     "target": {
-      "private_path": "private:ega/II/c2s1.tex",
+      "private_path": "ega/II/c2s1.tex",
       "public_path": "source/c2s1.tex",
       "bytes": 80222,
       "characters": 55906,
@@ -420,23 +806,196 @@
     "ega_ii_status": "active_incomplete",
     "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1685, Lemma2.2.2; line1684 is blank"
   },
-  "ega_ii_status": "active_incomplete; R39 build/PDF QA/release evidence PASS through §2.2.6 / lines1-1780; package, portable replay and publication pending; latest public checkpoint R38",
-  "r38_release_gates": {
-    "translation_admission": "PASS",
-    "exact_mirror_integration": "PASS",
-    "build": "PENDING",
-    "pdf_qa": "PENDING",
-    "package_portable_replay": "PENDING",
-    "publication_anonymous_readback": "PENDING"
+  "candidate_r38": {
+    "status": "PASS_R38_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+    "control": {
+      "path": "controls/R38_TRANSLATION_INTEGRATION.json",
+      "bytes": 5209,
+      "sha256": "3901DE2B2F9BD1DDB6399D7B35005FAD196F1A3A229061D9D46F3813E58BB020"
+    },
+    "source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "bytes": 820505,
+      "lf_lines": 18087,
+      "sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "admitted_lines": "1-1683",
+      "admitted_bytes": 78089,
+      "admitted_sha256": "6C9C0EE5DC909DFE7911564F1F982FF0539C923DE706188F7935FC0585549585"
+    },
+    "unit": {
+      "lines": "1607-1683",
+      "bytes": 4191,
+      "characters": 4096,
+      "lf_lines": 77,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6"
+    },
+    "candidate": {
+      "path": "candidates/r38-c2s1-continuation.tex",
+      "bytes": 4599,
+      "characters": 2773,
+      "lf_lines": 80,
+      "sha256": "8D37AF2B8B05D9C938F2D282F58902092FB7FCF55300B0A85B28C9538340CF93"
+    },
+    "target": {
+      "private_path": "ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 80222,
+      "characters": 55906,
+      "lf_lines": 1708,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+      "separator_line": 1628,
+      "candidate_target_lines": "1629-1708"
+    },
+    "admission": {
+      "private_path": "controls/R38_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R38_TRANSLATION_ADMISSION.json",
+      "bytes": 8103,
+      "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+      "result": "PASS_R38_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
+    },
+    "recovery": {
+      "transient_sha256": "92696CAAEEB39496CA4A12432D410BBC0124515CC0ED7E52FB1E83D49ACFDAE2",
+      "wrong_candidate_start_line": 1046,
+      "gate": "rejected before build/publication; restored exact preimage; final prospective hash PASS"
+    },
+    "gates": {
+      "translation_admission": "PASS",
+      "exact_mirror_integration": "PASS",
+      "build": "PENDING",
+      "pdf_qa": "PENDING",
+      "package_portable_replay": "PENDING",
+      "publication_anonymous_readback": "PENDING"
+    },
+    "ega_ii_status": "active_incomplete",
+    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1685, Lemma2.2.2; line1684 is blank"
   },
-  "reader_scope": "R39 exact working reader; build and PDF QA PASS; publication pending",
-  "coverage_manifest_scope": "R39 exact working manifest through §2.2.6 / canonical lines1-1780",
-  "last_public_result": "PASS_R38_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
+  "candidate_r39": {
+    "status": "PASS_R39_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+    "control": {
+      "path": "controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B",
+      "private_public_mirrors_exact": true
+    },
+    "source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "whole_bytes": 820504,
+      "whole_lf_lines": 18087,
+      "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "admitted_lines": "1-1780",
+      "admitted_bytes": 81885,
+      "admitted_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "unit": {
+      "lines": "1685-1780",
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
+    },
+    "candidate": {
+      "path": "candidates/r39-c2s1-continuation.tex",
+      "bytes": 4051,
+      "characters": 2771,
+      "lf_lines": 100,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+    },
+    "target": {
+      "private_path": "ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
+      "separator_line": 1709,
+      "candidate_target_lines": "1710-1809",
+      "private_public_exact": true
+    },
+    "reseal": {
+      "path": "controls/R39_KOREAN_WORDING_RESEAL.json",
+      "bytes": 10118,
+      "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
+      "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+    },
+    "gates": {
+      "corrected_reseal": "PASS",
+      "current_authority_validator": "PASS",
+      "r38_public_closure": "PASS",
+      "exact_mirror_integration": "PASS",
+      "build": "PENDING",
+      "pdf_qa": "PENDING",
+      "package_portable_replay": "PENDING",
+      "publication_anonymous_readback": "PENDING"
+    },
+    "ega_ii_status": "active_incomplete",
+    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1782, environment §2.2.7; line1781 is blank"
+  },
+  "r39_translation_integration": {
+    "status": "PASS_R39_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+    "control": {
+      "path": "controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B",
+      "private_public_mirrors_exact": true
+    },
+    "source": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "whole_bytes": 820504,
+      "whole_lf_lines": 18087,
+      "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "admitted_lines": "1-1780",
+      "admitted_bytes": 81885,
+      "admitted_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "unit": {
+      "lines": "1685-1780",
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
+    },
+    "candidate": {
+      "path": "candidates/r39-c2s1-continuation.tex",
+      "bytes": 4051,
+      "characters": 2771,
+      "lf_lines": 100,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+    },
+    "target": {
+      "private_path": "ega/II/c2s1.tex",
+      "public_path": "source/c2s1.tex",
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
+      "separator_line": 1709,
+      "candidate_target_lines": "1710-1809",
+      "private_public_exact": true
+    },
+    "reseal": {
+      "path": "controls/R39_KOREAN_WORDING_RESEAL.json",
+      "bytes": 10118,
+      "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
+      "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+    },
+    "gates": {
+      "corrected_reseal": "PASS",
+      "current_authority_validator": "PASS",
+      "r38_public_closure": "PASS",
+      "exact_mirror_integration": "PASS",
+      "build": "PENDING",
+      "pdf_qa": "PENDING",
+      "package_portable_replay": "PENDING",
+      "publication_anonymous_readback": "PENDING"
+    },
+    "ega_ii_status": "active_incomplete",
+    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1782, environment §2.2.7; line1781 is blank"
+  },
   "public_r38": {
     "status": "PASS_R38_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
     "version": "2026-09-05-r38",
     "control": {
-      "path": "evidence/controls/R38_PUBLIC_CLOSURE.json",
+      "path": "controls/R38_PUBLIC_CLOSURE.json",
       "bytes": 5137,
       "sha256": "F0F83E182B39FD548162B8EE16CA6A5CE7C2925ACDD7792B67FB3A4C63061773",
       "private_public_mirrors_exact": true
@@ -512,89 +1071,11 @@
     "ega_ii_status": "active_incomplete",
     "next_source": "canonical line1685 / environment2.2.2"
   },
-  "working_result": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
-  "r39_candidate_status": "BUILD_PDF_QA_RELEASE_EVIDENCE_PASS_PACKAGE_PORTABLE_PUBLICATION_PENDING",
-  "r39_translation_integration": {
-    "status": "PASS_R39_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
-    "control": {
-      "path": "evidence/controls/R39_TRANSLATION_INTEGRATION.json",
-      "bytes": 6610,
-      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B",
-      "private_public_mirrors_exact": true
-    },
-    "source": {
-      "path": "source/ega2/ega2-1-fr.tex",
-      "whole_bytes": 820504,
-      "whole_lf_lines": 18087,
-      "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
-      "admitted_lines": "1-1780",
-      "admitted_bytes": 81885,
-      "admitted_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
-    },
-    "unit": {
-      "lines": "1685-1780",
-      "bytes": 3796,
-      "characters": 3740,
-      "lf_lines": 96,
-      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
-    },
-    "candidate": {
-      "path": "source/c2s1.tex",
-      "locator": "exact integrated target slice lines1710-1809 after separator line1709",
-      "role": "sealed R39 candidate recoverable as an exact public-target slice",
-      "bytes": 4051,
-      "characters": 2771,
-      "lf_lines": 100,
-      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
-    },
-    "target": {
-      "private_path": "ega/II/c2s1.tex",
-      "public_path": "source/c2s1.tex",
-      "bytes": 84274,
-      "characters": 58678,
-      "lf_lines": 1809,
-      "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
-      "separator_line": 1709,
-      "candidate_target_lines": "1710-1809",
-      "private_public_exact": true
-    },
-    "reseal": {
-      "path": "evidence/controls/R39_KOREAN_WORDING_RESEAL.json",
-      "bytes": 10118,
-      "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
-      "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
-    },
-    "gates": {
-      "corrected_reseal": "PASS",
-      "current_authority_validator": "PASS",
-      "r38_public_closure": "PASS",
-      "exact_mirror_integration": "PASS",
-      "build": "PENDING",
-      "pdf_qa": "PENDING",
-      "package_portable_replay": "PENDING",
-      "publication_anonymous_readback": "PENDING"
-    },
-    "ega_ii_status": "active_incomplete",
-    "next_source": "EGA II canonical source/ega2/ega2-1-fr.tex line1782, environment §2.2.7; line1781 is blank"
-  },
-  "working_release_gates": {
-    "translation_admission": "PASS",
-    "current_authority_validator": "PASS",
-    "exact_mirror_integration": "PASS",
-    "authority_comment_reseal": "PASS",
-    "typed_ideal_terminology_reseal": "PASS",
-    "strict_build": "PASS",
-    "pdf_qa": "PASS",
-    "release_evidence": "PASS",
-    "package": "PENDING",
-    "portable_replay": "PENDING",
-    "github_publication_and_anonymous_readback": "PENDING",
-    "zenodo_publication_and_anonymous_readback": "PENDING"
-  },
+  "current_working_status": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
   "r39_authority_comment_reseal": {
     "status": "PASS_R39_AUTHORITY_COMMENT_RESEAL_TRANSLATION_BODY_UNCHANGED",
     "control": {
-      "path": "evidence/controls/R39_AUTHORITY_COMMENT_RESEAL.json",
+      "path": "controls/R39_AUTHORITY_COMMENT_RESEAL.json",
       "bytes": 5469,
       "sha256": "63B55B0B04FA708E31434A84EE5CE57A66157380BB82615F872E83E8028A8080",
       "private_public_mirrors_exact": true
@@ -621,7 +1102,7 @@
   "r39_ideal_terminology_reseal": {
     "status": "PASS_R39_TYPED_HOMOGENEOUS_IDEAL_TERMINOLOGY_RESEAL",
     "control": {
-      "path": "evidence/controls/R39_IDEAL_TERMINOLOGY_RESEAL.json",
+      "path": "controls/R39_IDEAL_TERMINOLOGY_RESEAL.json",
       "bytes": 12197,
       "sha256": "2F88570A3523DE0718F3952C842FE00D5D8337DC0D9DF4AC93C20D9D263AF624",
       "private_public_mirrors_exact": true
@@ -660,30 +1141,41 @@
     },
     "exact_reverse_reconstruction": true
   },
-  "working_exact_version_doi": "10.5281/zenodo.22416007",
+  "working_version": "2026-09-06-r39",
+  "working_exact_doi": "10.5281/zenodo.22416007",
   "working_record_id": 22416007,
-  "working_release": {
-    "version": "2026-09-06-r39",
-    "record_id": 22416007,
-    "exact_doi": "10.5281/zenodo.22416007",
-    "exact_doi_url": "https://doi.org/10.5281/zenodo.22416007",
-    "concept_doi": "10.5281/zenodo.21921513",
-    "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
-    "status": "reserved_unpublished",
-    "reservation": {
-      "path": "evidence/controls/R39_ZENODO_DRAFT_RESERVATION.json",
-      "bytes": 1444,
-      "sha256": "8799F847CCDCD35D93A401F125A830CB1759F8E2D16004E90A185979F398D7CA"
-    },
-    "latest_public_version_remains": "2026-09-05-r38",
-    "latest_public_exact_doi": "10.5281/zenodo.22346664",
-    "latest_public_record_id": 22346664,
-    "latest_public_github_tag": "ega-ko-2026-09-05-r38"
+  "working_reader": {
+    "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 240,
+    "bytes": 1491216,
+    "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
   },
-  "latest_public_version_remains": "2026-09-05-r38",
-  "latest_public_exact_doi": "10.5281/zenodo.22346664",
-  "latest_public_record_id": 22346664,
-  "latest_public_github_tag": "ega-ko-2026-09-05-r38",
+  "working_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16281,
+    "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB",
+    "ordered_inputs": 17,
+    "canonical_rows": 23,
+    "complete": 16,
+    "partial": 1,
+    "not_translated": 6,
+    "historical_markers": 229
+  },
+  "working_release_gates": {
+    "translation_admission": "PASS",
+    "current_authority_validator": "PASS",
+    "exact_mirror_integration": "PASS",
+    "authority_comment_reseal": "PASS",
+    "typed_ideal_terminology_reseal": "PASS",
+    "strict_build": "PASS",
+    "pdf_qa": "PASS",
+    "release_evidence": "PASS",
+    "package": "PENDING",
+    "portable_replay": "PENDING",
+    "github_publication_and_anonymous_readback": "PENDING",
+    "zenodo_publication_and_anonymous_readback": "PENDING"
+  },
   "r39_build_qa_checkpoint": {
     "status": "PASS_R39_BUILD_PDF_QA_AND_RELEASE_EVIDENCE; package, portable replay, GitHub, Zenodo and anonymous public-byte readback pending",
     "version": "2026-09-06-r39",
@@ -751,27 +1243,27 @@
     },
     "controls": {
       "strict_build": {
-        "path": "evidence/controls/R39_STRICT_BUILD.json",
+        "path": "controls/R39_STRICT_BUILD.json",
         "bytes": 14551,
         "sha256": "BD631DCAE7E8F9C485D9CEB14CE0DFA53CAE3F2BD5F0144ED9C3E0DEA7016BE0"
       },
       "visual_preparation": {
-        "path": "evidence/controls/R39_VISUAL_QA_PREPARATION.json",
+        "path": "controls/R39_VISUAL_QA_PREPARATION.json",
         "bytes": 4310,
         "sha256": "991D85DB3947110E98FCCF4A12E0570F78D27F092CD47114251BCB58B953412B"
       },
       "pdf_qa": {
-        "path": "evidence/controls/R39_PDF_QA.json",
+        "path": "controls/R39_PDF_QA.json",
         "bytes": 14710,
         "sha256": "9FF6981048F0F8C632B5F44BEE9437B7B3DA7134CC35D1919B34912C6BAE707B"
       },
       "build_receipt": {
-        "path": "evidence/BUILD_RECEIPT.json",
+        "path": "controls/R39_BUILD_RECEIPT.json",
         "bytes": 5245,
         "sha256": "4C32901CEEDB6AC59A1924D743B53397D0F0C23E69793BB068B30F071D112928"
       },
       "zenodo_reservation": {
-        "path": "evidence/controls/R39_ZENODO_DRAFT_RESERVATION.json",
+        "path": "controls/R39_ZENODO_DRAFT_RESERVATION.json",
         "bytes": 1444,
         "sha256": "8799F847CCDCD35D93A401F125A830CB1759F8E2D16004E90A185979F398D7CA"
       }
@@ -977,5 +1469,6 @@
       "github_release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-05-r38"
     },
     "claim_boundary": "The recorded deterministic checks establish only the tested R39 build, extraction, navigation, font and inspected-render properties; they do not claim absolute perfection or completion of EGA II."
-  }
+  },
+  "r39_candidate_status": "BUILD_PDF_QA_RELEASE_EVIDENCE_PASS_PACKAGE_PORTABLE_PUBLICATION_PENDING"
 }

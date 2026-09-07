@@ -1,0 +1,100 @@
+{
+  "schema": "agko-r48-public-closure-v1",
+  "closed_at_utc": "2026-09-07T15:43:33.582260Z",
+  "version": "2026-09-07-r48",
+  "coverage": {
+    "included": "Complete Korean EGA 0_I and EGA I; complete EGA II Chapter II programme/table of contents; contiguous EGA II main text through 2.5.12.",
+    "canonical_source": "source/ega2/ega2-1-fr.tex",
+    "admitted_lines": "1-2694",
+    "admitted_bytes": 118946,
+    "admitted_sha256": "04113B8FFC608C7CA286A77C37363C651C7AF529804C25B3BE519023A31B9F23",
+    "next": "line 2695 blank; line 2696 begins Proposition 2.5.13",
+    "ega_ii_complete": false,
+    "full_corpus_complete": false
+  },
+  "target": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 124497,
+    "characters": 87083,
+    "lf_lines": 2752,
+    "sha256": "6DE19B9A783DD17AFEE9C5DA36F29CB6A9F63C57768A4727281B7642C2914C03",
+    "mirrors_exact": true,
+    "historical_page_markers": 29
+  },
+  "reader": {
+    "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 249,
+    "bytes": 1542495,
+    "sha256": "668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E",
+    "historical_source_page_markers": 238
+  },
+  "workflow": {
+    "integration": "R40-R48 admitted in one contiguous source-ordered batch",
+    "tex": "one mutex-held four-pass convergence cycle; pass 3 equals pass 4 byte-for-byte",
+    "qa": "one aggregate whole-reader extraction/navigation/font/render inspection",
+    "per_small_section_qa_loops": 0,
+    "repeated_whole_reader_qa_loops": 0,
+    "integration_control": {
+      "path": "controls/R40_R48_SINGLE_BATCH_INTEGRATION_20260907.json",
+      "bytes": 4902,
+      "sha256": "642595A5F47B255174D7F766ED6DE44F2719DEBE4E92A1BE92B17CF5B3F1F0CF"
+    },
+    "aggregate_qa_control": {
+      "path": "controls/R48_SINGLE_AGGREGATE_PDF_QA_20260907.json",
+      "bytes": 6529,
+      "sha256": "C825DBBF8EACC4DE8A80277A0DE01BD512B6C003BC5ED53542DAF085A15525CC"
+    },
+    "index_note": "The aggregate unit-index record retains the pre-public-log-redaction QA-control hash as historical construction evidence. The final packaged QA control differs only by the declared profile-path redaction binding and is identified above. No PDF, TeX, translation, mathematical QA result, or public asset changed."
+  },
+  "package": {
+    "receipt_path": "pub/ega-ko/release/2026-09-07-r48/PACKAGE_RECEIPT.json",
+    "receipt_bytes": 3028,
+    "receipt_sha256": "E6AB7A9B3D595C19BDEE5B5C81131C63C252A249393BD3619E3F906BF35E45BF",
+    "assets": [
+      {"name":"00_EGA_ko_CUMULATIVE_READER.pdf","bytes":1542495,"sha256":"668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E"},
+      {"name":"01_EGA_ko_EDITABLE_SOURCES.zip","bytes":593318,"sha256":"557FF9905D969C6A2A1F95C2D734F520C92785D48CF49359D4F661CB8443C7BD"},
+      {"name":"02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip","bytes":135073862,"sha256":"AE30EC2F52DAF96DA241A715A5763B6A7940C1B8029548D6EA8FBA7AEE7302DC"},
+      {"name":"03_EGA_ko_SHA256_MANIFEST.txt","bytes":343,"sha256":"38FECDA7892DCEC4F9595AA232ED9C9833A0C6236B4A0C9DBE18104C72C46189"}
+    ]
+  },
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "artifact_commit": "14e963fa7cd307688cf76809d575f2d35e07e9e1",
+    "artifact_tree": "580a6b2e2319819f656ba21edd7065267734d0d8",
+    "tag": "ega-ko-2026-09-07-r48",
+    "tag_object": "570e30228dbfd7b881f16bd332ccd383ad8bbb57",
+    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-07-r48",
+    "receipt": {
+      "path": "pub/ega-ko/release/2026-09-07-r48/GITHUB_PUBLICATION_RECEIPT.json",
+      "bytes": 2114,
+      "sha256": "AAC3656749EC19FD068AE499F127992D6D20D9C1EE179103EB54E5149BA40AE7"
+    },
+    "public": true,
+    "anonymous_four_asset_sha256_readback": "PASS"
+  },
+  "zenodo": {
+    "record_id": 22645017,
+    "exact_doi": "10.5281/zenodo.22645017",
+    "exact_doi_url": "https://doi.org/10.5281/zenodo.22645017",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+    "receipt": {
+      "path": "pub/ega-ko/release/2026-09-07-r48/ZENODO_PUBLICATION_RECEIPT.json",
+      "bytes": 2177,
+      "sha256": "7CAC81A922363F10219DD38593ED218476FE9CE864FF6D18E8B7760E8FABCD1B"
+    },
+    "public": true,
+    "access_right": "open",
+    "anonymous_four_asset_sha256_readback": "PASS",
+    "publish_post_count": 1
+  },
+  "correction_routing": {
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "audit_path": "controls/EGA_CORRECTION_JSON_BACKFILL_FOLLOWUP_AUDIT_20260907.json",
+    "audit_bytes": 2173,
+    "audit_sha256": "31EAE7E0C11BE099F33851CC71E1360D8AE2047924E0228851DADA2AE3822455",
+    "remaining_unsent_items": 0
+  },
+  "result": "PASS_R48_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_FOUR_ASSET_READBACK"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "agko-r48-zenodo-publication-receipt-v1",
+  "verified_at_utc": "2026-09-07T15:43:33.582260+00:00",
+  "record_id": 22645017,
+  "record_url": "https://zenodo.org/records/22645017",
+  "exact_doi": "10.5281/zenodo.22645017",
+  "exact_doi_url": "https://doi.org/10.5281/zenodo.22645017",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+  "version": "2026-09-07-r48",
+  "access_right": "open",
+  "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+  "description_characters": 4781,
+  "creators": [
+    {
+      "name": "Grothendieck, Alexander"
+    },
+    {
+      "name": "Dieudonné, Jean"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "AI typesetting & translation",
+      "type": "Other"
+    }
+  ],
+  "assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1542495,
+      "sha256": "668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E",
+      "download_url": "https://zenodo.org/api/records/22645017/files/00_EGA_ko_CUMULATIVE_READER.pdf/content"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 593318,
+      "sha256": "557FF9905D969C6A2A1F95C2D734F520C92785D48CF49359D4F661CB8443C7BD",
+      "download_url": "https://zenodo.org/api/records/22645017/files/01_EGA_ko_EDITABLE_SOURCES.zip/content"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 135073862,
+      "sha256": "AE30EC2F52DAF96DA241A715A5763B6A7940C1B8029548D6EA8FBA7AEE7302DC",
+      "download_url": "https://zenodo.org/api/records/22645017/files/02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip/content"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "38FECDA7892DCEC4F9595AA232ED9C9833A0C6236B4A0C9DBE18104C72C46189",
+      "download_url": "https://zenodo.org/api/records/22645017/files/03_EGA_ko_SHA256_MANIFEST.txt/content"
+    }
+  ],
+  "publish_post_repeated": false,
+  "anonymous_public_inventory_and_four_asset_byte_readback": true,
+  "result": "PASS_R48_ZENODO_PUBLIC_OPEN_AND_ANONYMOUS_FOUR_ASSET_READBACK"
+}
