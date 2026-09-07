@@ -1,0 +1,258 @@
+{
+  "schema": "ag-ko-portable-replay-receipt-v5",
+  "version": "2026-09-06-r39",
+  "verified_at": "2026-09-07T01:20:56+02:00",
+  "exact_doi": "10.5281/zenodo.22416007",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "package_receipt": {
+    "path": "release/2026-09-06-r39/PACKAGE_RECEIPT.json",
+    "bytes": 7486,
+    "sha256": "0880430E48CB07AF85DBFD815FF472417A66CCFB0E6E0AC77D3F62C14688129B"
+  },
+  "assets": [
+    {
+      "path": "release/2026-09-06-r39/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1491216,
+      "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+    },
+    {
+      "path": "release/2026-09-06-r39/01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 563003,
+      "sha256": "738C9A641E83301404BBC0BFD3755512F054AC582BDDBED76DA43FAF7994228B"
+    },
+    {
+      "path": "release/2026-09-06-r39/02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 129754049,
+      "sha256": "BA0EB437F2708CA12F0878160C9408B84DF581B9A3C3974E659EDC765F0F4070"
+    },
+    {
+      "path": "release/2026-09-06-r39/03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "337C4AA710F5B344C84E8E835EB6E4A75B0C37EC81A68797CD21718AE9DA2797"
+    }
+  ],
+  "state_seal": {
+    "path": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip!/controls/R39_BUILD_QA_STATE_SEAL.json",
+    "bytes": 11185,
+    "sha256": "5924A67C251E7583F4973428D2DAD95BA6D56B0DAECAE3FE77B52A2275270DDD",
+    "transaction_id": "AGKO-R39-BUILD-QA-STATE-SEAL-F3B3D273A6C7E886F741",
+    "fresh_preimage_sha256": "F3B3D273A6C7E886F741B49FC8456370EF9888E70A1A9A1CA181B2CD18B580AA",
+    "result": "PASS_R39_BUILD_PDF_QA_STATE_SEAL"
+  },
+  "source_archive_verification": {
+    "entries": 59,
+    "uncompressed_bytes": 2084401,
+    "inventory_sha256": "8ECDC27070A8C006C7EF78E08C04E70948173C3163D70298D6A540090109652C"
+  },
+  "evidence_archive_verification": {
+    "entries": 534,
+    "uncompressed_bytes": 155445944,
+    "inventory_sha256": "42414747311CBCF25C19AF66E7241D63277E58B2FC2F9E70ECDA9F3FBFD352DC"
+  },
+  "process_tree": {
+    "runner": "windows_job_object",
+    "root_created_suspended": true,
+    "assigned_before_resume": true,
+    "kill_on_close": true,
+    "complete_tree_wait": true,
+    "fail_closed_cleanup": true,
+    "combined_output_byte_limit": 67108864
+  },
+  "portable_build": {
+    "reader": {
+      "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1491216,
+      "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F",
+      "pages": 240
+    },
+    "portable_reader": {
+      "path": "portable/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1491207,
+      "sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+      "pages": 240
+    },
+    "container_delta": {
+      "classification": "container_only_byte_delta",
+      "byte_identical": false,
+      "size_delta_portable_minus_frozen": -9,
+      "frozen": {
+        "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1491216,
+        "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F",
+        "pages": 240
+      },
+      "portable": {
+        "path": "portable/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 1491207,
+        "sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+        "pages": 240
+      },
+      "metadata_byte_identical": true,
+      "inference_rule": "No content, correctness, completion or publication-status inference is made from a container difference.",
+      "extractions": {
+        "pypdf": {
+          "bytes": 706537,
+          "sha256": "26644E0CF676F459F6E4443ABA02F1353FC110AB1E318D7555DADB7FBABE8FCE",
+          "frozen": {
+            "bytes": 706537,
+            "sha256": "26644E0CF676F459F6E4443ABA02F1353FC110AB1E318D7555DADB7FBABE8FCE"
+          },
+          "byte_identical_to_frozen": true
+        },
+        "poppler": {
+          "bytes": 732164,
+          "sha256": "CBC8D6153E4833B9028721FB9DC2470C9450C07BC0596CBFED8B072FD444C14B",
+          "frozen": {
+            "bytes": 732164,
+            "sha256": "CBC8D6153E4833B9028721FB9DC2470C9450C07BC0596CBFED8B072FD444C14B"
+          },
+          "byte_identical_to_frozen": true
+        }
+      },
+      "render_pages": [
+        1,
+        2,
+        6,
+        25,
+        103,
+        104,
+        107,
+        109,
+        171,
+        237,
+        238,
+        239,
+        240
+      ],
+      "renders_byte_identical_to_frozen": true
+    },
+    "two_clean_four_pass_cycles": true,
+    "pass3_equals_pass4_each_cycle": true,
+    "two_cycle_finals_byte_identical": true,
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "terminal": "PASS 1491207 bytes SHA-256 DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123; cycle_a_sha256=DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123; cycle_b_sha256=DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123; cycle_a_pass2_sha256=37E03ED8821A39BF956BCA63AD4F99404F390C0430B74CA4215757CD68EA33AB; cycle_b_pass2_sha256=37E03ED8821A39BF956BCA63AD4F99404F390C0430B74CA4215757CD68EA33AB; cycle_a_pass3_sha256=DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123; cycle_b_pass3_sha256=DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123; cycle_a_pass2_final_identical=false; cycle_b_pass2_final_identical=false; cycle_a_pass3_final_identical=true; cycle_b_pass3_final_identical=true; mutex=Global\\InterlanguageTeXSlotV1; timeout_ms=300000; abandoned_recovery=false",
+    "terminal_fields": {
+      "status": "PASS",
+      "reader_bytes": 1491207,
+      "reader_sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+      "fields": {
+        "cycle_a_sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+        "cycle_b_sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+        "cycle_a_pass2_sha256": "37E03ED8821A39BF956BCA63AD4F99404F390C0430B74CA4215757CD68EA33AB",
+        "cycle_b_pass2_sha256": "37E03ED8821A39BF956BCA63AD4F99404F390C0430B74CA4215757CD68EA33AB",
+        "cycle_a_pass3_sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+        "cycle_b_pass3_sha256": "DB743FB1278A793B526819A2FE26C070CD918A529DB5E20B664B1B880432D123",
+        "cycle_a_pass2_final_identical": "false",
+        "cycle_b_pass2_final_identical": "false",
+        "cycle_a_pass3_final_identical": "true",
+        "cycle_b_pass3_final_identical": "true",
+        "mutex": "Global\\InterlanguageTeXSlotV1",
+        "timeout_ms": "300000",
+        "abandoned_recovery": "false"
+      }
+    }
+  },
+  "extraction_replay": {
+    "pypdf": {
+      "bytes": 706537,
+      "sha256": "26644E0CF676F459F6E4443ABA02F1353FC110AB1E318D7555DADB7FBABE8FCE",
+      "frozen": {
+        "bytes": 706537,
+        "sha256": "26644E0CF676F459F6E4443ABA02F1353FC110AB1E318D7555DADB7FBABE8FCE"
+      },
+      "byte_identical_to_frozen": true
+    },
+    "poppler": {
+      "bytes": 732164,
+      "sha256": "CBC8D6153E4833B9028721FB9DC2470C9450C07BC0596CBFED8B072FD444C14B",
+      "frozen": {
+        "bytes": 732164,
+        "sha256": "CBC8D6153E4833B9028721FB9DC2470C9450C07BC0596CBFED8B072FD444C14B"
+      },
+      "byte_identical_to_frozen": true
+    },
+    "pypdf_byte_identical": true,
+    "poppler_byte_identical": true
+  },
+  "render_replay": [
+    {
+      "physical_page": 1,
+      "bytes": 134324,
+      "sha256": "EB3BA6DE9AAEFC34A5FD0626EDC073292D947B36566C2DBE64AB0281C1AAE917",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 2,
+      "bytes": 493080,
+      "sha256": "8C9887A12AFD6E6A818D9BCB72E1B4A13C2C37B7255B2A55B5C8631FA4D69B95",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 6,
+      "bytes": 273914,
+      "sha256": "BD71C92D1810D28FE7F9289F4FF20D38452A7970F0CE5BBE742209A7E3B01977",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 25,
+      "bytes": 527667,
+      "sha256": "ED52AAFE71FFF6B2C9E82D89F6D6AEFAF955DF6A45C4AAC7B0F8019929642EE4",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 103,
+      "bytes": 665411,
+      "sha256": "2C3293091B6EFF708F33FE20617221DC6EA924319ECB17AF886CCB7C27424E63",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 104,
+      "bytes": 657630,
+      "sha256": "E0C0DDCAE41F005F96202F7648E9B7AD8C9AA35F0B1B7138EFF526BBA9A718E8",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 107,
+      "bytes": 646550,
+      "sha256": "DA1BFFDDA7029E45685E61A40022A8525D31016AB3D3644909532F01D328D52F",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 109,
+      "bytes": 694631,
+      "sha256": "1B516FB852A37456893E01F3C62A810646E3EBD0150771DE28B31CA0A145519A",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 171,
+      "bytes": 656310,
+      "sha256": "5A113FE7CCCFC4066BC7B897BE01EE10D6776213FF1FC068B1001F609C11913C",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 237,
+      "bytes": 821844,
+      "sha256": "2B6E8C93047FE4A2EE3F7102E421B6A14831444A07BF7F99C349A999E5B3434E",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 238,
+      "bytes": 735691,
+      "sha256": "57A31AAC8B75AA3C43EA2356B98200A20D03CCF5FB28925454E0A8EC0D651C1E",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 239,
+      "bytes": 676635,
+      "sha256": "A72C2BDCC2C17E3FC4972375C53C713FC0534C698200B68EC3B27FA773ADBA0D",
+      "byte_identical": true
+    },
+    {
+      "physical_page": 240,
+      "bytes": 223604,
+      "sha256": "9D71B2B992F093BDC05C7496BD9734FAA40CCAD3DEBE9EEC05D512655C82D574",
+      "byte_identical": true
+    }
+  ],
+  "result": "PASS_R39_PORTABLE_REPLAY"
+}

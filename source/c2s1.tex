@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-1535, 70120 LF UTF-8 bytes, SHA-256 ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-1780, 81885 LF UTF-8 bytes, SHA-256 033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -1333,7 +1333,7 @@ $\mathcal{O}_Y$-가군이다.
 음이 아닌 차수로 \emph{등급}이 주어진 환 $S$에 대하여,
 차수가 $n$인 동차 원소들로 이루어진 $S$의 부분을 $S_n$으로
 ($n\geq0$), $n>0$인 $S_n$들의 합(직합)을 $S_+$로 나타내겠다.
-$1\in S_0$이고, $S_0$는 $S$의 부분환이며, $S_+$는 $S$의 등급
+$1\in S_0$이고, $S_0$는 $S$의 부분환이며, $S_+$는 $S$의 동차
 아이디얼이고, $S$는 $S_0$와 $S_+$의 직합이다. $M$이 $S$ 위의
 \emph{등급가군}이면(음의 차수도 허용한다), 마찬가지로
 $M$의 차수가 $n$인 동차 원소들로 이루어진 $S_0$-가군을
@@ -1556,7 +1556,7 @@ $S$가 뇌터이면 모든 정수 $d>0$에 대하여 $S^{(d)}$도 뇌터이다.
 \begin{env}[2.1.8]
 \phantomsection
 \label{II.2.1.8-ko}
-$\mathfrak{p}$를 등급환 $S$의 등급 소아이디얼이라 하자. 그러면
+$\mathfrak{p}$를 등급환 $S$의 동차 소아이디얼이라 하자. 그러면
 $\mathfrak{p}$는 부분군 $\mathfrak{p}_n=\mathfrak{p}\cap S_n$들의
 직합이다. $\mathfrak{p}$가 $S_+$를 포함하지 않는다고 가정하자. 그러면
 $\mathfrak{p}$에 속하지 않는 $f\in S_+$에 대하여, 관계
@@ -1571,7 +1571,7 @@ $f^nx\in\mathfrak{p}_m$은 $x\in\mathfrak{p}_{m-nd}$와 동치이다.
 $n_0$를 $>0$인 정수라 하고, 각 $n\geq n_0$에 대하여
 $\mathfrak{p}_n$을 $S_n$의 부분군이라 하자. $S_+$를 포함하지 않으며
 모든 $n\geq n_0$에 대하여
-$\mathfrak{p}\cap S_n=\mathfrak{p}_n$을 만족하는 $S$의 등급
+$\mathfrak{p}\cap S_n=\mathfrak{p}_n$을 만족하는 $S$의 동차
 소아이디얼 $\mathfrak{p}$가 존재하기 위한 필요충분조건은 다음 조건들이
 성립하는 것이다.
 \begin{enumerate}
@@ -1583,7 +1583,7 @@ $\mathfrak{p}\cap S_n=\mathfrak{p}_n$을 만족하는 $S$의 등급
   \item[$3^\circ$] 적어도 하나의 $n\geq n_0$에 대하여
     $\mathfrak{p}_n\neq S_n$이다.
 \end{enumerate}
-또한 이때 등급 소아이디얼 $\mathfrak{p}$는 유일하다.
+또한 이때 동차 소아이디얼 $\mathfrak{p}$는 유일하다.
 \end{proposition}
 
 \begin{proof}
@@ -1631,16 +1631,16 @@ $x\in\mathfrak{p}_m$을 얻어 가정에 모순이다.
 \label{II.2.1.10-ko}
 $S_+$의 부분집합 $\mathfrak{J}$가 $S$의 아이디얼이면 이를
 \emph{$S_+$의 아이디얼}이라 한다. 또한 $\mathfrak{J}$가 $S_+$와,
-\emph{$S_+$를 포함하지 않는} $S$의 등급 소아이디얼의 교집합이면 이를
-\emph{$S_+$의 등급 소아이디얼}이라 한다(더욱이 이 소아이디얼은
+\emph{$S_+$를 포함하지 않는} $S$의 동차 소아이디얼의 교집합이면 이를
+\emph{$S_+$의 동차 소아이디얼}이라 한다(더욱이 이 소아이디얼은
 (\hyperref[II.2.1.9-ko]{2.1.9})에 따라 유일하다). $\mathfrak{J}$가
 $S_+$의 아이디얼이면, \emph{$S_+$에서의 $\mathfrak{J}$의 근기}는 어떤
 거듭제곱이 $\mathfrak{J}$에 속하는 $S_+$의 원소들로 이루어진 집합이다.
 다시 말해 이는 $r_+(\mathfrak{J})=r(\mathfrak{J})\cap S_+$이다. 특히
 $S_+$에서 $0$의 근기는 다시 $S_+$의 \emph{멱영근기}라 하고
 $\mathfrak{N}_+$로 나타낸다. 따라서 이는 $S_+$의 멱영원 전체의
-집합이다. $\mathfrak{J}$가 $S_+$의 \emph{등급} 아이디얼이면 그 근기
-$r_+(\mathfrak{J})$도 등급 아이디얼이다. 실제로 몫환
+집합이다. $\mathfrak{J}$가 $S_+$의 \emph{동차} 아이디얼이면 그 근기
+$r_+(\mathfrak{J})$도 동차 아이디얼이다. 실제로 몫환
 $S/\mathfrak{J}$로 넘어가면 $\mathfrak{J}=0$인 경우로 환원할 수 있고,
 $x=x_h+x_{h+1}+\cdots+x_k$가 멱영원이면
 $x_i\in S_i$ ($1\leq h\leq i\leq k$)들도 모두 멱영원임을 보이면
@@ -1662,7 +1662,7 @@ $\mathfrak{N}_+=0$이라는 뜻이다. 다시 말해 $S_+$가 $\neq 0$인 멱영
 $S_+$의 동차 원소 가운데 $\neq 0$인 것은 모두 이 환에서 영인자가 아니어서
 어떤 영이 아닌 원소와 곱해도 $0$이 되지 않으면 충분하다.
 $\mathfrak{p}$가 $S_+$의
-등급 소아이디얼이면 $S/\mathfrak{p}$가 본질적으로 정역임은 명백하다.
+동차 소아이디얼이면 $S/\mathfrak{p}$가 본질적으로 정역임은 명백하다.
 
 $S$를 본질적으로 정역인 등급환이라 하고 $x_0\in S_0$라 하자. 이때
 $S_+$의 동차 원소 $f\neq 0$가 \emph{하나라도} 존재하여
@@ -1706,3 +1706,104 @@ $M'$의 차수가 $0$인 동차 원소들의 집합을 $M_{(f)}$로 나타낸다
 $M_{(f)}$가 $S_{(f)}$-가군이고
 $(M^{(d)})_f=M_{(f)}\otimes_{S_{(f)}}(S^{(d)})_f$임은 바로 알 수 있다.
 \end{env}
+
+\begin{lemma}[2.2.2]
+\phantomsection
+\label{II.2.2.2-ko}
+$d$, $e$를 $>0$인 두 정수, $f\in S_d$, $g\in S_e$라 하자. 다음과 같은
+환의 표준 동형이 존재한다.
+\[
+  S_{(fg)}\xrightarrow{\sim}(S_{(f)})_{g^d/f^e}~;
+\]
+이 두 환을 표준적으로 동일시하면, 다음과 같은 가군의 표준 동형이
+존재한다.
+\[
+  M_{(fg)}\xrightarrow{\sim}(M_{(f)})_{g^d/f^e}.
+\]
+\end{lemma}
+
+\begin{proof}
+실제로 $fg$는 $f^e g^d$의 약수이고, 후자는 $(fg)^{de}$의 약수이므로
+등급환 $S_{fg}$와 $S_{f^e g^d}$는 표준적으로 동일시된다. 다른 한편
+$S_{f^e g^d}$는 $(S_{f^e})_{g^d/1}$와도 동일시되고
+(\hyperref[0.1.4.6-ko]{0, I.4.6}), $f^e/1$은 $S_{f^e}$에서 가역이므로
+$S_{f^e g^d}$는 $(S_{f^e})_{g^d/f^e}$와도 동일시된다. 그런데
+$g^d/f^e$는 차수가 $0$인 $S_{f^e}$의 원소이다. 따라서
+$(S_{f^e})_{g^d/f^e}$에서 차수가 $0$인 원소들로 이루어진 부분환은
+$(S_{(f^e)})_{g^d/f^e}$임을 곧바로 얻는다. 또 명백히
+$S_{(f^e)}=S_{(f)}$이므로, 이는 명제의 첫 번째 부분을 증명한다.
+두 번째 부분도 같은 방식으로 확립된다.
+\end{proof}
+
+\begin{env}[2.2.3]
+\phantomsection
+\label{II.2.2.3-ko}
+(\hyperref[II.2.2.2-ko]{2.2.2})의 가정 아래에서, 표준 준동형
+$S_f\to S_{fg}$ (\hyperref[0.1.4.1-ko]{0, I.4.1})은 $x/f^k$를
+$g^k x/(fg)^k$로 보내며 차수가 $0$임은 명백하다. 따라서
+제한함으로써
+\emph{표준 준동형 $S_{(f)}\to S_{(fg)}$}을 얻으며, 다음 도식은
+가환한다.
+\[
+  \xymatrix{
+    & S_{(f)}\ar[dl]\ar[dr]\\
+    S_{(fg)}\ar[rr]^-{\sim} && (S_{(f)})_{g^d/f^e}
+  }
+\]
+마찬가지로 표준 준동형 $M_{(f)}\to M_{(fg)}$을 정의한다.
+\end{env}
+
+\begin{lemma}[2.2.4]
+\phantomsection
+\label{II.2.2.4-ko}
+$f$, $g$가 $S_+$의 두 동차 원소이면, 환 $S_{(fg)}$는 $S_{(f)}$와
+$S_{(g)}$의 표준 상들의 합집합에 의해 생성된다.
+\end{lemma}
+
+\begin{proof}
+(\hyperref[II.2.2.2-ko]{2.2.2})에 따라
+$1/(g^d/f^e)=f^{d+e}/(fg)^d$가 $S_{(g)}$의 $S_{(fg)}$ 안에서의 표준
+상에 속함을 보이면 충분하며, 이는 정의상 명백하다.
+\end{proof}
+
+\begin{proposition}[2.2.5]
+\phantomsection
+\label{II.2.2.5-ko}
+$d$를 $>0$인 정수, $f\in S_d$라 하자. 그러면 다음과 같은 환의
+표준 동형이 존재한다.
+$S_{(f)}\xrightarrow{\sim}S^{(d)}/(f-1)S^{(d)}$~; 이 동형으로 두 환을
+표준적으로 동일시하면, 다음과 같은 가군의 표준 동형이 존재한다.
+$M_{(f)}\xrightarrow{\sim}M^{(d)}/(f-1)M^{(d)}$.
+\end{proposition}
+
+\begin{proof}
+이 동형들 중 첫 번째 것은 $x/f^n$($x\in S_{nd}$)에 원소
+$\overline{x}$, 곧 $x$의 $(f-1)S^{(d)}$에 대한 잉여류를 대응시켜 정의한다.
+이 사상은 잘 정의된다. 실제로 모든 양의 정수 지수에 대하여 합동식
+$f^h x\equiv x\pmod{(f-1)S^{(d)}}$이 모든 $x\in S^{(d)}$에 대해
+성립한다. 따라서 $f^h x=0$인 $h>0$가 있으면
+\oldpage[II]{25}
+$\overline{x}=0$이다. 한편 $x\in S_{nd}$이고 $x=(f-1)y$라 하자. 여기서
+$y=y_{hd}+y_{(h+1)d}+\cdots+y_{kd}$이고 $y_{jd}\in S_{jd}$이며
+$y_{hd}\neq 0$이다. 그러면 반드시 $h=n$이고 $x=-y_{hd}$이며, 또한
+관계 $y_{(j+1)d}=fy_{jd}$가 $h\leq j\leq k-1$에 대해 성립하고
+$fy_{kd}=0$이다.
+이로부터 마침내 $f^{k-n+1}x=0$을 얻는다. 따라서 $x\in S_{nd}$인 원소가
+나타내는 $(f-1)S^{(d)}$에 대한 각 잉여류 $\overline{x}$에 $S_{(f)}$의 원소
+$x/f^n$을 대응시킬 수 있다.
+앞의 고찰에 따라 이 사상은 잘 정의된다. 이렇게 정의된 두 사상이
+환 준동형이며 서로 역임을 곧바로 알 수 있다. $M$에 대해서도 완전히
+같은 방식으로 한다.
+\end{proof}
+
+\begin{corollary}[2.2.6]
+\phantomsection
+\label{II.2.2.6-ko}
+$S$가 뇌터이면, 차수가 $>0$인 임의의 동차 원소 $f$에 대하여
+$S_{(f)}$도 뇌터이다.
+\end{corollary}
+
+\begin{proof}
+이는 (\hyperref[II.2.1.7-ko]{2.1.7})과
+(\hyperref[II.2.2.5-ko]{2.2.5})에서 곧바로 따른다.
+\end{proof}

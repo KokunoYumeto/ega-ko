@@ -1,0 +1,41 @@
+{
+  "schema": "ag-ko-zenodo-r39-reservation-result-v1",
+  "version": "2026-09-06-r39",
+  "reserved_at_utc": "2026-09-05T22:57:01.175377+00:00",
+  "parent_record_id": 22346664,
+  "parent_exact_doi": "10.5281/zenodo.22346664",
+  "record_id": 22416007,
+  "exact_doi": "10.5281/zenodo.22416007",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "operation": "POST newversion exactly once",
+  "inherited_r38_files": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1485270,
+      "sha256": "FEC06D6723BFE9CC7D3C46E285C7DE8A49929F2797FD2F4F47877D2BDA06FE15",
+      "md5": "d7909a394d3b09fe740376cbe7c50246"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 430517,
+      "sha256": "A9C0178A361150C3E0A7E0A57534C40E14FDAC91511F8910EC240D69969B01C2",
+      "md5": "32bcd70239174288a3016934d98724ce"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 122840828,
+      "sha256": "871FFCB2E53B27384CB88595E593A1A446361D462E657C92360D32EC805F0197",
+      "md5": "033a82b50e30ef3a6117a8ac32208b05"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "63F478687E239426236D07C1FD4DA0CBCADA6C8990F018776722610C9FAB9988",
+      "md5": "46403a13f2973bf656945548f2fcef58"
+    }
+  ],
+  "inherited_draft_exact": true,
+  "status": "reserved_unpublished",
+  "credentials_present": false,
+  "result": "PASS_SAME_LINEAGE_R39_EXACT_DOI_RESERVED"
+}

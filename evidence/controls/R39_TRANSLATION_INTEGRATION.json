@@ -1,0 +1,171 @@
+{
+  "schema": "agko-r39-translation-integration-v1",
+  "time": "2026-09-06T00:49:21+02:00",
+  "precision": "second",
+  "scope": "EGA II canonical lines1685-1780 / environments2.2.2-2.2.6",
+  "authority": {
+    "whole": {
+      "path": "source/ega2/ega2-1-fr.tex",
+      "bytes": 820504,
+      "characters": 809277,
+      "lf_lines": 18087,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+    },
+    "unit": {
+      "lines": "1685-1780",
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
+    },
+    "admitted_prefix": {
+      "lines": "1-1780",
+      "bytes": 81885,
+      "characters": 80628,
+      "lf_lines": 1780,
+      "sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "queue": {
+      "path": "controls/EGA_CANON_QUEUE.json",
+      "id": "EGA-CANON-QUEUE-20260905-R66",
+      "bytes": 77194,
+      "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE"
+    }
+  },
+  "historical_inputs": {
+    "admission": {
+      "private_path": "controls/R39_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "bytes": 8605,
+      "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561",
+      "status": "preserved_historical_and_superseded_for_candidate_identity"
+    },
+    "canonical_rebase": {
+      "private_path": "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "public_path": "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "bytes": 6370,
+      "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349",
+      "status": "preserved_historical_and_superseded_for_candidate_identity"
+    }
+  },
+  "corrected_reseal": {
+    "private_path": "controls/R39_KOREAN_WORDING_RESEAL.json",
+    "public_path": "evidence/controls/R39_KOREAN_WORDING_RESEAL.json",
+    "bytes": 10118,
+    "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
+    "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+  },
+  "current_validator": {
+    "path": "candidates/validate_r39_current.py",
+    "bytes": 31085,
+    "sha256": "8040EC2CD547EDD2187FFA3398AEFF991069F5409E077ADD9677D8B2BEFA1366",
+    "execution_result": "PASS_R39_CURRENT_AUTHORITY_CANDIDATE_AND_PROSPECTIVE_TARGET",
+    "receipt": {
+      "private_path": "controls/R39_CURRENT_AUTHORITY_VALIDATOR.json",
+      "public_path": "evidence/controls/R39_CURRENT_AUTHORITY_VALIDATOR.json",
+      "bytes": 10257,
+      "sha256": "F572BDDCFADAC93EAC01C00E07DBA16D03BEDFE3E14B5E4FADEA1B5A76AC2350",
+      "schema": "agko-r39-current-authority-validator-receipt-v2",
+      "result": "PASS_R39_CURRENT_AUTHORITY_WORDING_RESEAL_READY"
+    }
+  },
+  "candidate": {
+    "path": "candidates/r39-c2s1-continuation.tex",
+    "bytes": 4051,
+    "characters": 2771,
+    "lf_lines": 100,
+    "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "private_public_exact": true,
+    "state": "exact R38 public source mirrors"
+  },
+  "r38_publication_prerequisite": {
+    "status": "PASS_R38_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_BYTE_REPLAY",
+    "closure_control": {
+      "bytes": 5137,
+      "sha256": "F0F83E182B39FD548162B8EE16CA6A5CE7C2925ACDD7792B67FB3A4C63061773"
+    },
+    "github_receipt": {
+      "bytes": 78362,
+      "sha256": "E7528B33A0CC000268E72AAD77D6612FF6931098D57E39F7E5FF9238EE35057F"
+    },
+    "zenodo_receipt": {
+      "bytes": 4328,
+      "sha256": "2750F62CA7A87A3C72A2D997290B103CC2F40E8298EB0E842439353FEA37BAA5"
+    },
+    "closure_commit_receipt": {
+      "bytes": 6035,
+      "sha256": "5521B646209D5318C80EFE8536BEA9B4724CFDB2A501CC7061FD11BEC1FBE5B2",
+      "closure_commit": "4f60a88e41a8a87e28c2b7138a7cf7661b003810",
+      "closure_tree": "b8920516b9a05aaff79c98b32aa793dae06eec80"
+    },
+    "closure_journal": {
+      "bytes": 5467,
+      "sha256": "7224A09456096C696C6A0C43D3BDF54485BD7E769A9613280946E3E9896F8C95",
+      "status": "COMMITTED",
+      "publication": "PASS"
+    },
+    "publication_journal": {
+      "bytes": 18911,
+      "sha256": "8CD549983B281172574AB3F9C84C0B37D89297677E7BC48A2DC2998A4F58379E",
+      "phase": "complete",
+      "sequence": 15
+    },
+    "verified_offline_from_exact_anonymous_readback_receipts": true
+  },
+  "final_integration": {
+    "method": "sealed R38 preimage + exactly one LF + corrected sealed R39 candidate",
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
+    "separator_line": 1709,
+    "candidate_target_lines": "1710-1809",
+    "private_public_exact": true,
+    "sealed_prefix_exact": true,
+    "target_tail_equal_corrected_candidate": true
+  },
+  "source_queries": {
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "lines": [
+      1709,
+      1738
+    ],
+    "status": "already delivered and nonblocking; no French source byte changed"
+  },
+  "state": {
+    "corrected_reseal": "PASS",
+    "current_authority_validation": "PASS",
+    "r38_public_closure": "PASS",
+    "exact_mirror_integration": "PASS",
+    "build": "PENDING",
+    "extraction": "PENDING",
+    "rendered_pdf_qa": "PENDING",
+    "package_and_portable_replay": "PENDING",
+    "publication_and_anonymous_readback": "PENDING",
+    "ega_ii": "active_incomplete"
+  },
+  "transaction": {
+    "journal": "controls/R39_INTEGRATION_TRANSACTION.json",
+    "fresh_preimage_snapshot_sha256": "9021E88AAA1A6C74050ED505DB296ABE8F2CBA5353CD8B2404A0B306B973FCFB",
+    "all_postimages_computed_before_first_write": true,
+    "rollback_on_failure": true
+  },
+  "ledger_records": {
+    "decision": "AGKO-D188",
+    "evidence": "AGKO-E-R39-INTEGRATION-20260906",
+    "hard": "AGKO-H163",
+    "unit": "AGKO-EGA2-S1-R39-INTEGRATED-R1"
+  },
+  "result": "PASS_R39_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending",
+  "next": "Refresh cumulative declarations through canonical line1780, then run the serialized R39 build, extraction, rendered QA, packaging, portable replay and same-lineage publication gates; continue source preparation at line1782 without reopening sealed correct units."
+}

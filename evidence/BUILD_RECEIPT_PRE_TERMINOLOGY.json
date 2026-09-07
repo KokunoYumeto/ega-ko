@@ -1,0 +1,135 @@
+{
+  "schema": "ag-ko-r39-build-receipt-v1",
+  "version": "2026-09-06-r39",
+  "prepared_at": "2026-09-06T01:28:05+02:00",
+  "exact_doi": "10.5281/zenodo.22416007",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "terminal": "EGA II §2.2.6 / canonical lines1-1780",
+    "next": "EGA II line1782 / environment2.2.7",
+    "historical_markers": 229,
+    "no_completion_claim": true
+  },
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1491217,
+    "sha256": "58D629B8E52A0C2CE1DE48348336C2CF46A6B778AAB8CC3B87A42443825B568E",
+    "pages": 240
+  },
+  "source_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16275,
+    "sha256": "2C75A0AC2430D38CBBEF69E3A7EDBCD67AA090C534B5F29A4A7CC61E14CF4E59"
+  },
+  "target": {
+    "path": "source/c2s1.tex",
+    "bytes": 84274,
+    "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD",
+    "private_public_exact": true,
+    "lf_lines": 1809
+  },
+  "build": {
+    "strict_control": {
+      "path": "evidence/controls/R39_STRICT_BUILD.json",
+      "bytes": 14173,
+      "sha256": "C64A3E7254EA4E25D26D482122A507832BB934CE94F15259D3B034B4EB18D581"
+    },
+    "pdf_qa": {
+      "path": "evidence/controls/R39_PDF_QA.json",
+      "bytes": 14048,
+      "sha256": "3EE9ACA3785D8E90955FCA11538E2AFAEC56F8EC7EEC47B385FE162FF2A02040"
+    },
+    "raw_log": {
+      "path": "build/out/main.log",
+      "bytes": 51981,
+      "sha256": "0C3A8F22B14F9034972F2E749FDECE02F3AE227AE8A2FA4CBA7E3D6DE6F52F23"
+    },
+    "sanitized_logs": [
+      {
+        "path": "evidence/build-r39.log",
+        "bytes": 51831,
+        "sha256": "D9129CD3E8525A7F37605EA43C6F1A0EB7476451BF58C917CE76A2555FC0921B"
+      },
+      {
+        "path": "evidence/build.log",
+        "bytes": 51831,
+        "sha256": "D9129CD3E8525A7F37605EA43C6F1A0EB7476451BF58C917CE76A2555FC0921B"
+      }
+    ]
+  },
+  "extractions": [
+    {
+      "path": "evidence/r39-extract-poppler.txt",
+      "bytes": 732164,
+      "sha256": "A61263E2E8A58518427BB8DFBEF2A2D8C423236C1ABC9EA5E8B6D35B2F8652AA"
+    },
+    {
+      "path": "evidence/r39-extract-pypdf.txt",
+      "bytes": 706537,
+      "sha256": "C21A50CFBB0318651369A73C7978D4D538D16F5433BF9DE612F744B1E940638C"
+    },
+    {
+      "path": "evidence/extract.txt",
+      "bytes": 732164,
+      "sha256": "A61263E2E8A58518427BB8DFBEF2A2D8C423236C1ABC9EA5E8B6D35B2F8652AA"
+    },
+    {
+      "path": "evidence/extract-pypdf.txt",
+      "bytes": 706537,
+      "sha256": "C21A50CFBB0318651369A73C7978D4D538D16F5433BF9DE612F744B1E940638C"
+    }
+  ],
+  "mirrored_r39_controls": [
+    {
+      "path": "evidence/controls/R39_AUTHORITY_COMMENT_RESEAL.json",
+      "bytes": 5469,
+      "sha256": "63B55B0B04FA708E31434A84EE5CE57A66157380BB82615F872E83E8028A8080"
+    },
+    {
+      "path": "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "bytes": 6370,
+      "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349"
+    },
+    {
+      "path": "evidence/controls/R39_CURRENT_AUTHORITY_VALIDATOR.json",
+      "bytes": 10257,
+      "sha256": "F572BDDCFADAC93EAC01C00E07DBA16D03BEDFE3E14B5E4FADEA1B5A76AC2350"
+    },
+    {
+      "path": "evidence/controls/R39_KOREAN_WORDING_RESEAL.json",
+      "bytes": 10118,
+      "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451"
+    },
+    {
+      "path": "evidence/controls/R39_PDF_QA.json",
+      "bytes": 14048,
+      "sha256": "3EE9ACA3785D8E90955FCA11538E2AFAEC56F8EC7EEC47B385FE162FF2A02040"
+    },
+    {
+      "path": "evidence/controls/R39_R43_SEQUENTIAL_CHAIN_REBASE_20260906.json",
+      "bytes": 13319,
+      "sha256": "54ED653F27FF96FECB315BEE0029BD6FFE087898DC37951D4C5F0A2A6255CE6C"
+    },
+    {
+      "path": "evidence/controls/R39_STRICT_BUILD.json",
+      "bytes": 14173,
+      "sha256": "C64A3E7254EA4E25D26D482122A507832BB934CE94F15259D3B034B4EB18D581"
+    },
+    {
+      "path": "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "bytes": 8605,
+      "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561"
+    },
+    {
+      "path": "evidence/controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B"
+    },
+    {
+      "path": "evidence/controls/R39_VISUAL_QA_PREPARATION.json",
+      "bytes": 3696,
+      "sha256": "2545A65242EB9FE1D1CB31B2D3460D69B792BEC337C2BBA43A8B35BB145D7EE9"
+    }
+  ],
+  "result": "PASS_R39_RELEASE_EVIDENCE"
+}

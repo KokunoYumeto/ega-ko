@@ -1,0 +1,225 @@
+{
+  "schema": "agko-r39-korean-wording-reseal-v1",
+  "verified_at": "2026-09-06T00:19:54+02:00",
+  "scope": "Additive current-authority reseal of the unintegrated Korean R39 candidate for EGA II canonical lines 1685-1780 after bounded quotient-class, canonical-noun, and commutative-diagram register correction; no source, integrated target, build, Git, UI, or publication byte changed.",
+  "authority": {
+    "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "bytes": 820504,
+    "characters": 809277,
+    "lf_lines": 18087,
+    "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1685-1780",
+    "unit_bytes": 3796,
+    "unit_characters": 3740,
+    "unit_lf_lines": 96,
+    "unit_sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21",
+    "relevant_french_lines": "1687-1695, 1732-1739, 1744-1748, 1752-1768"
+  },
+  "preserved_historical_evidence": {
+    "translation_admission": {
+      "private_path": "controls/R39_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "bytes": 8605,
+      "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561",
+      "preserved_byte_identical": true,
+      "status": "HISTORICAL_PRE_D54_ADMISSION_SUPERSEDED_FOR_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET_ONLY"
+    },
+    "canonical_prefix_rebase": {
+      "private_path": "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "public_path": "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "bytes": 6370,
+      "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349",
+      "preserved_byte_identical": true,
+      "still_authoritative_for": "the exact D54 single-byte source rebase, current whole source, current prefixes, and unchanged R39 source unit",
+      "status": "HISTORICAL_CANDIDATE_AND_PROSPECTIVE_FIELDS_SUPERSEDED_BY_THIS_RESEAL"
+    },
+    "historical_candidate_validator": {
+      "path": "candidates/validate_r39_candidate.py",
+      "bytes": 17815,
+      "sha256": "12C2BA268387093F2DC8F098AB0556BB2502F2B7EE609485560D2E696C6B04B4",
+      "preserved_byte_identical": true,
+      "status": "HISTORICAL_PRE_D54_AND_PRE_WORDING_RESEAL_WITNESS"
+    }
+  },
+  "candidate_transition": {
+    "path": "candidates/r39-c2s1-continuation.tex",
+    "preimage": {
+      "bytes": 4094,
+      "characters": 2788,
+      "lf_lines": 100,
+      "hangul_syllables": 653,
+      "sha256": "811AD490FC21AE287D0AD67FA897E8F47D5592B98234291B640A0AFCCAED0F26"
+    },
+    "postimage": {
+      "bytes": 4051,
+      "characters": 2771,
+      "lf_lines": 100,
+      "hangul_syllables": 640,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940",
+      "utf8_bom": false,
+      "cr_bytes": 0,
+      "final_lf": true
+    },
+    "exact_reverse_reconstruction_required": true,
+    "other_candidate_drift": false
+  },
+  "wording_changes": [
+    {
+      "candidate_line": 5,
+      "source_lines": "1687-1689",
+      "source": "isomorphisme canonique d'anneaux",
+      "preimage": "환의 표준적 동형",
+      "postimage": "환의 표준 동형",
+      "reason": "Normalize canonical as an attributive noun compound."
+    },
+    {
+      "candidate_line": 9,
+      "source_lines": "1692-1695",
+      "source": "isomorphisme canonique de modules",
+      "preimage": "가군의 표준적 동형",
+      "postimage": "가군의 표준 동형",
+      "reason": "Normalize canonical as an attributive noun compound; retain 표준적으로 for actual adverbial identification."
+    },
+    {
+      "candidate_lines": "36-37",
+      "source_lines": "1718-1726",
+      "source": "tel que le diagramme ... soit commutatif",
+      "preimage": "다음 도표는 가환이다",
+      "postimage": "다음 도식은 가환한다",
+      "reason": "Use the established EGA mathematical-diagram noun and predicate."
+    },
+    {
+      "candidate_line": 51,
+      "source_lines": "1732-1733",
+      "source": "images canoniques",
+      "preimage": "표준적 상들의",
+      "postimage": "표준 상들의",
+      "reason": "Normalize canonical as an attributive noun compound."
+    },
+    {
+      "candidate_lines": "56-57",
+      "source_lines": "1737-1739",
+      "source": "image canonique",
+      "preimage": "표준적 상에",
+      "postimage": "표준 상에",
+      "reason": "Normalize canonical as an attributive noun compound."
+    },
+    {
+      "candidate_line": 64,
+      "source_lines": "1744-1746",
+      "source": "isomorphisme canonique d'anneaux",
+      "preimage": "환의 표준적 동형",
+      "postimage": "환의 표준 동형",
+      "reason": "Normalize canonical as an attributive noun compound."
+    },
+    {
+      "candidate_line": 66,
+      "source_lines": "1746-1748",
+      "source": "isomorphisme canonique de modules",
+      "preimage": "가군의 표준적 동형",
+      "postimage": "가군의 표준 동형",
+      "reason": "Normalize canonical as an attributive noun compound; retain 표준적으로 for actual adverbial identification."
+    },
+    {
+      "candidate_line": 72,
+      "source_lines": "1752-1754",
+      "source": "classe de x mod. (f-1)S^(d)",
+      "preimage": "x의 (f-1)S^(d) 법 동치류",
+      "postimage": "x의 (f-1)S^(d)에 대한 잉여류",
+      "reason": "The quotient element is the residue/coset class of x modulo the ideal, not an arbitrary equivalence class."
+    },
+    {
+      "candidate_lines": "82-84",
+      "source_lines": "1763-1765",
+      "source": "à toute classe x-bar mod. (f-1)S^(d) d'un élément x in S_nd",
+      "preimage": "각 동치류 x-bar가 (f-1)S^(d) 법 동치류이고 x in S_nd인 원소로 대표되면, 그 동치류에 ...",
+      "postimage": "x in S_nd인 원소가 나타내는 (f-1)S^(d)에 대한 각 잉여류 x-bar에 ...",
+      "reason": "Use the typed quotient-ring term and bind the varying representative locally without introducing a global conditional."
+    }
+  ],
+  "register_evidence": {
+    "quotient_class": [
+      {
+        "path": "[INTERLANGUAGE_ROOT]/03_projects/language_management/cjk/03_working_translations/stacks_cjk_20260821/p11/ko/artin.tex",
+        "lines": "4303-4310",
+        "bytes": 280868,
+        "sha256": "7D4544BC247CC30CCBCBF6A6EA1681A69ABC266E8792DD60E4B621126E3A440E",
+        "witness": "f의 잉여류"
+      },
+      {
+        "path": "[INTERLANGUAGE_ROOT]/03_projects/language_management/cjk/03_working_translations/stacks_cjk_20260821/p11/ko/criteria.tex",
+        "lines": "2050-2062",
+        "bytes": 140151,
+        "sha256": "CFFDE8A76EA6EF9DB9C8947E10AD3AE5421482DCD0EEEFC7B8E6F391CEACB7CE",
+        "witness": "a_ij^k의 J에 대한 잉여류"
+      }
+    ],
+    "canonical_noun_compounds": "Use 표준 동형, 표준 준동형, and 표준 상 for attributive noun compounds; reserve 표준적으로 for the actual adverbial uses at candidate lines 9, 18, and 66.",
+    "commutative_diagram": "Use the established EGA form 다음 도식은 가환한다 for the source construction tel que le diagramme soit commutatif.",
+    "review_result": "PASS_PROFESSIONAL_KOREAN_QUOTIENT_AND_CANONICAL_REGISTER"
+  },
+  "source_and_formula_invariants": {
+    "inline_formula_count_source_target": "74/74",
+    "inline_formula_multiset_exact": true,
+    "display_formula_count_source_target": "3/3",
+    "display_content_and_order_exact": true,
+    "xymatrix_exact": true,
+    "labels_references_environment_order_and_nesting_oldpage_exact": true,
+    "diplomatic_line_1709_wording_preserved": true,
+    "diplomatic_line_1738_formula_preserved": true,
+    "semantic_review": "PASS",
+    "structural_review": "PASS",
+    "formula_review": "PASS_77_OF_77",
+    "other_formula_or_target_drift": false
+  },
+  "correction_routing": {
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "quotient_class_register_lead": "DELIVERED_BY_COORDINATING_TASK",
+    "canonical_noun_compound_lead": "DELIVERED_BY_COORDINATING_TASK",
+    "commutative_diagram_register_lead": "DELIVERED_BY_COORDINATING_TASK",
+    "deduplication_rule": "Do not resend these three already delivered leads unless new evidence changes them."
+  },
+  "sealed_target_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "changed": false
+  },
+  "prospective_integration": {
+    "method": "exact integrated R38 preimage followed by exactly one LF separator and the corrected exact R39 candidate",
+    "separator_plus_candidate_bytes": 4052,
+    "separator_plus_candidate_sha256": "7CF528B90E7D1D50EEAABF714AB185C574F5C8A86520F46A7D697FAFB381186C",
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "downstream_dependency_notice": "Any later unintegrated control whose prospective base includes the historical R39 candidate or D08D6AD60E00CE72AC6D64BB1D95F0AB63836F8B50D065631DC4FCD044D4F67C must be additively resealed before integration; later candidate text and source units are not changed by this R39 correction.",
+  "write_boundary": {
+    "changed": [
+      "candidates/r39-c2s1-continuation.tex",
+      "candidates/validate_r39_current.py",
+      "controls/R39_CURRENT_AUTHORITY_VALIDATOR.json"
+    ],
+    "created": [
+      "controls/R39_KOREAN_WORDING_RESEAL.json"
+    ],
+    "preserved": [
+      "controls/R39_TRANSLATION_ADMISSION.json",
+      "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "candidates/validate_r39_candidate.py",
+      "ega/II/c2s1.tex",
+      "pub/ega-ko/source/c2s1.tex",
+      "canonical EGA II source",
+      "all R38 public inventory, Git, TeX, UI, and publication state"
+    ]
+  },
+  "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+}

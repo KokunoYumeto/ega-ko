@@ -1,0 +1,486 @@
+{
+  "schema": "agko-r39-pdf-qa-v1",
+  "edition": "2026-09-06-r39",
+  "measured_at": "2026-09-06T01:27:58+02:00",
+  "status": "PASS",
+  "scope": "Full cumulative reader/build identities, two-cycle convergence, 17 Korean inputs, 23 canonical inputs, PDF structure/navigation/fonts, dual full extraction, all 229 historical markers, and 300-dpi visual inspection of fixed regression, every extraction-discovered R39-content page, and terminal pages. These hard checks provide reproducible evidence, not a claim of absolute perfection.",
+  "required_controls": {
+    "strict_build": {
+      "path": "evidence/controls/R39_STRICT_BUILD.json",
+      "bytes": 14173,
+      "sha256": "C64A3E7254EA4E25D26D482122A507832BB934CE94F15259D3B034B4EB18D581"
+    },
+    "visual_preparation": {
+      "path": "evidence/controls/R39_VISUAL_QA_PREPARATION.json",
+      "bytes": 3696,
+      "sha256": "2545A65242EB9FE1D1CB31B2D3460D69B792BEC337C2BBA43A8B35BB145D7EE9"
+    },
+    "all_private_public_exact": true
+  },
+  "pdf": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1491217,
+    "sha256": "58D629B8E52A0C2CE1DE48348336C2CF46A6B778AAB8CC3B87A42443825B568E",
+    "pages": 240,
+    "version": "%PDF-1.7",
+    "page_size_points": [
+      [
+        595.28,
+        841.89
+      ]
+    ],
+    "all_pages_a4": true,
+    "encrypted": false,
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "대수기하학 원론 – 한국어 누적판",
+      "/Subject": "NUMDAM 프랑스어 권위본에 따른 EGA 한국어 누적 번역",
+      "/Author": "알렉산더 그로텐디크와 장 디외도네",
+      "/Producer": "MiKTeX-dvipdfmx (20260404)",
+      "/CreationDate": "D:20260813150000Z"
+    },
+    "acroform_present": false,
+    "javascript_name_tree_present": false,
+    "build_output_pdf": {
+      "path": "build/out/main.pdf",
+      "bytes": 1491217,
+      "sha256": "58D629B8E52A0C2CE1DE48348336C2CF46A6B778AAB8CC3B87A42443825B568E"
+    },
+    "build_output_pdf_byte_identical": true,
+    "retained_pass2_pdf": {
+      "path": "build/out/main.pass2.pdf",
+      "bytes": 1491197,
+      "sha256": "02794030BB9799FDDC21AED76C708526C09593CE9AD92DB1CB2FAEE1924CC9B0"
+    },
+    "retained_pass3_pdf": {
+      "path": "build/out/main.pass3.pdf",
+      "bytes": 1491217,
+      "sha256": "58D629B8E52A0C2CE1DE48348336C2CF46A6B778AAB8CC3B87A42443825B568E"
+    },
+    "pass3_equals_final": true
+  },
+  "tools": {
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "pdftoppm_version": "pdftoppm version 26.07.0",
+    "pypdf_version": "6.12.2"
+  },
+  "execution_safety": {
+    "normal_assertion_semantics_required_by_non_assert_startup_guard": true,
+    "optimized_mode_negative_test": {
+      "exit_code": 1,
+      "pass_token_emitted": false,
+      "explicit_guard_message_observed": true,
+      "result": "PASS_FAIL_CLOSED"
+    },
+    "confirmation_mode_pdftoppm_render_invocations": 0,
+    "confirmation_reused_exact_inspected_render_bytes": true
+  },
+  "source_bindings": {
+    "manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16275,
+      "sha256": "2C75A0AC2430D38CBBEF69E3A7EDBCD67AA090C534B5F29A4A7CC61E14CF4E59"
+    },
+    "canonical_ega2": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820504,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+    },
+    "canonical_prefix": {
+      "lines": "1-1780",
+      "bytes": 81885,
+      "sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "korean_target": {
+      "path": "source/c2s1.tex",
+      "bytes": 84274,
+      "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD",
+      "lf_lines": 1809,
+      "private_public_exact": true,
+      "candidate_tail_exact": true,
+      "required_labels_present_once": [
+        "II.2.2.2-ko",
+        "II.2.2.3-ko",
+        "II.2.2.4-ko",
+        "II.2.2.5-ko",
+        "II.2.2.6-ko"
+      ],
+      "oldpage_II_25_present_once": true
+    },
+    "candidate": {
+      "path": "candidates/r39-c2s1-continuation.tex",
+      "bytes": 4051,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+    }
+  },
+  "extractions": [
+    {
+      "path": "evidence/r39-extract-poppler.txt",
+      "bytes": 732164,
+      "sha256": "A61263E2E8A58518427BB8DFBEF2A2D8C423236C1ABC9EA5E8B6D35B2F8652AA",
+      "characters": 398103,
+      "hangul_syllables": 153609,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 240,
+      "exact_doi_count": 1,
+      "concept_doi_count": 1,
+      "content_checks": {
+        "environment_2_2_2": true,
+        "environment_2_2_3": true,
+        "environment_2_2_4": true,
+        "environment_2_2_5": true,
+        "environment_2_2_6": true,
+        "fraction_ring": true,
+        "noetherian": true,
+        "historical_II_25": true
+      }
+    },
+    {
+      "path": "evidence/r39-extract-pypdf.txt",
+      "bytes": 706537,
+      "sha256": "C21A50CFBB0318651369A73C7978D4D538D16F5433BF9DE612F744B1E940638C",
+      "characters": 383341,
+      "hangul_syllables": 153609,
+      "hangul_jamo": 0,
+      "replacement_characters": 0,
+      "carriage_returns": 0,
+      "formfeeds": 239,
+      "exact_doi_count": 1,
+      "concept_doi_count": 1,
+      "content_checks": {
+        "environment_2_2_2": true,
+        "environment_2_2_3": true,
+        "environment_2_2_4": true,
+        "environment_2_2_5": true,
+        "environment_2_2_6": true,
+        "fraction_ring": true,
+        "noetherian": true,
+        "historical_II_25": true
+      }
+    }
+  ],
+  "historical_markers": {
+    "source_count": 229,
+    "normalized_sequence_sha256": "9499162EC75962B6132499671292BDD94AC213F8149583B621259F3D0127A917",
+    "pypdf_count": 229,
+    "pypdf_full_sequence_matches": true,
+    "poppler_count": 228,
+    "poppler_numeric_sequence_matches_with_documented_0I_70_exception": true,
+    "ranges": [
+      "I|5-8",
+      "0I|11-78",
+      "I|79-214",
+      "II|5-25"
+    ],
+    "terminal_marker": [
+      "II",
+      25
+    ]
+  },
+  "page_location_binding": {
+    "environment_2_2_2": [
+      25,
+      103,
+      239
+    ],
+    "environment_2_2_3": [
+      25,
+      103,
+      239
+    ],
+    "environment_2_2_4": [
+      25,
+      103,
+      107,
+      109,
+      171,
+      239
+    ],
+    "environment_2_2_5": [
+      25,
+      103,
+      239
+    ],
+    "environment_2_2_6": [
+      104,
+      240
+    ],
+    "historical_marker_II_25": [
+      240
+    ],
+    "new_content_pages": [
+      25,
+      103,
+      104,
+      107,
+      109,
+      171,
+      239,
+      240
+    ],
+    "terminal_physical_page": 240,
+    "render_selection_was_extraction_bound_not_guessed": true
+  },
+  "navigation": {
+    "annotations": 1665,
+    "links": 1665,
+    "uri_links": 4,
+    "internal_links": 1661,
+    "named_destinations": 588,
+    "invalid_named_destinations": [],
+    "invalid_link_destinations": [],
+    "outline_entries": 133,
+    "invalid_outline_destinations": [],
+    "uri_targets": {
+      "https://doi.org/10.5281/zenodo.20414353": 1,
+      "https://doi.org/10.5281/zenodo.21921513": 1,
+      "https://doi.org/10.5281/zenodo.22416007": 1,
+      "https://github.com/KokunoYumeto/ega-ko": 1
+    },
+    "required_r39_named_destinations": {
+      "II.2.2.2-ko=>section*.322": true,
+      "II.2.2.3-ko=>section*.323": true,
+      "II.2.2.4-ko=>section*.324": true,
+      "II.2.2.5-ko=>section*.325": true,
+      "II.2.2.6-ko=>section*.326": true
+    }
+  },
+  "font_unicode": {
+    "font_resources": 35,
+    "embedded_font_resources": 35,
+    "unembedded_font_resources": [],
+    "resources_with_tounicode": 27,
+    "resources_without_tounicode": [
+      {
+        "basefont": "/APOCYK+CMSY8",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/COMIEF+XYATIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/DPVBYQ+XYDASH-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/ESRITT+CMEX10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JFXXWE+MSBM10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/JNUGTK+CMEX7",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/MFUSOR+XYBTIP-Medium",
+        "subtype": "/Type1",
+        "to_unicode": false
+      },
+      {
+        "basefont": "/WENPTB+CMSY10",
+        "subtype": "/Type1",
+        "to_unicode": false
+      }
+    ],
+    "all_type0_hangul_fonts_have_tounicode": true,
+    "type0_hangul_fonts_without_tounicode": []
+  },
+  "build_logs": {
+    "raw_retained": {
+      "path": "build/out/main.log",
+      "bytes": 51981,
+      "sha256": "0C3A8F22B14F9034972F2E749FDECE02F3AE227AE8A2FA4CBA7E3D6DE6F52F23"
+    },
+    "hard_diagnostics": {
+      "tex_error_lines": 0,
+      "fatal_errors": 0,
+      "emergency_stops": 0,
+      "undefined_control_sequences": 0,
+      "undefined_references_or_citations": 0,
+      "missing_characters": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0
+    },
+    "advisories": {
+      "moved_marginpars": 136,
+      "pdf_string_token_warnings": 23,
+      "font_shape_warnings": 1,
+      "rerunfilecheck_main_out_unchanged": true
+    }
+  },
+  "renders": [
+    {
+      "path": "evidence/render/r39-p001.png",
+      "bytes": 134324,
+      "sha256": "EB3BA6DE9AAEFC34A5FD0626EDC073292D947B36566C2DBE64AB0281C1AAE917",
+      "physical_page": 1,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p002.png",
+      "bytes": 493080,
+      "sha256": "8C9887A12AFD6E6A818D9BCB72E1B4A13C2C37B7255B2A55B5C8631FA4D69B95",
+      "physical_page": 2,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p006.png",
+      "bytes": 273914,
+      "sha256": "BD71C92D1810D28FE7F9289F4FF20D38452A7970F0CE5BBE742209A7E3B01977",
+      "physical_page": 6,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p025.png",
+      "bytes": 527667,
+      "sha256": "ED52AAFE71FFF6B2C9E82D89F6D6AEFAF955DF6A45C4AAC7B0F8019929642EE4",
+      "physical_page": 25,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p103.png",
+      "bytes": 665411,
+      "sha256": "2C3293091B6EFF708F33FE20617221DC6EA924319ECB17AF886CCB7C27424E63",
+      "physical_page": 103,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p104.png",
+      "bytes": 657630,
+      "sha256": "E0C0DDCAE41F005F96202F7648E9B7AD8C9AA35F0B1B7138EFF526BBA9A718E8",
+      "physical_page": 104,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p107.png",
+      "bytes": 646550,
+      "sha256": "DA1BFFDDA7029E45685E61A40022A8525D31016AB3D3644909532F01D328D52F",
+      "physical_page": 107,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p109.png",
+      "bytes": 694631,
+      "sha256": "1B516FB852A37456893E01F3C62A810646E3EBD0150771DE28B31CA0A145519A",
+      "physical_page": 109,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p171.png",
+      "bytes": 656310,
+      "sha256": "5A113FE7CCCFC4066BC7B897BE01EE10D6776213FF1FC068B1001F609C11913C",
+      "physical_page": 171,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p239.png",
+      "bytes": 676635,
+      "sha256": "A72C2BDCC2C17E3FC4972375C53C713FC0534C698200B68EC3B27FA773ADBA0D",
+      "physical_page": 239,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    },
+    {
+      "path": "evidence/render/r39-p240.png",
+      "bytes": 223604,
+      "sha256": "9D71B2B992F093BDC05C7496BD9734FAA40CCAD3DEBE9EEC05D512655C82D574",
+      "physical_page": 240,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ],
+      "visual_inspection": "PASS_NO_OBSERVED_DEFECTS"
+    }
+  ],
+  "visual_findings": {
+    "status": "PASS_NO_OBSERVED_DEFECTS",
+    "selected_physical_pages": [
+      1,
+      2,
+      6,
+      25,
+      103,
+      104,
+      107,
+      109,
+      171,
+      239,
+      240
+    ],
+    "dpi": 300,
+    "clipping_or_overlap_observed": false,
+    "missing_or_tofu_glyphs_observed": false,
+    "broken_formula_or_diagram_observed": false,
+    "unreadable_text_observed": false,
+    "title_scope_and_exact_doi_readable": true,
+    "new_environments_and_historical_II_25_marker_readable": true,
+    "sample_boundary": "Visual findings apply to the exact rendered pages; full-document coverage is separately supplied by structural, source, extraction, marker, destination and font checks."
+  },
+  "limitations": [
+    "Plain-text extraction is not lossless for inherited mathematical or diagram resources lacking ToUnicode; source-synchronized TeX and rendering remain the formula authority.",
+    "Hard deterministic checks and inspected renders do not constitute a claim that no conceivable defect exists.",
+    "Publication and anonymous public-byte replay remain separate release gates."
+  ]
+}

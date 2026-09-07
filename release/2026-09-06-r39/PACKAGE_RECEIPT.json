@@ -1,0 +1,219 @@
+{
+  "schema": "ag-ko-package-receipt-v7",
+  "version": "2026-09-06-r39",
+  "created_at": "2026-09-06T23:43:33+02:00",
+  "exact_doi": "10.5281/zenodo.22416007",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "terminal": "EGA II §2.2.6 / canonical lines1-1780",
+    "next": "line1782 / environment2.2.7",
+    "historical_markers": 229,
+    "no_completion_claim": true
+  },
+  "public_artifact_count": 4,
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1491216,
+      "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 563003,
+      "sha256": "738C9A641E83301404BBC0BFD3755512F054AC582BDDBED76DA43FAF7994228B"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 129754049,
+      "sha256": "BA0EB437F2708CA12F0878160C9408B84DF581B9A3C3974E659EDC765F0F4070"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "337C4AA710F5B344C84E8E835EB6E4A75B0C37EC81A68797CD21718AE9DA2797"
+    }
+  ],
+  "source_archive": {
+    "path": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 563003,
+    "sha256": "738C9A641E83301404BBC0BFD3755512F054AC582BDDBED76DA43FAF7994228B",
+    "entries": 59,
+    "uncompressed_bytes": 2084401,
+    "inventory_sha256": "8ECDC27070A8C006C7EF78E08C04E70948173C3163D70298D6A540090109652C",
+    "deterministic_second_build_byte_identical": true
+  },
+  "evidence_archive": {
+    "path": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "bytes": 129754049,
+    "sha256": "BA0EB437F2708CA12F0878160C9408B84DF581B9A3C3974E659EDC765F0F4070",
+    "entries": 534,
+    "uncompressed_bytes": 155445944,
+    "inventory_sha256": "42414747311CBCF25C19AF66E7241D63277E58B2FC2F9E70ECDA9F3FBFD352DC",
+    "deterministic_second_build_byte_identical": true
+  },
+  "r39_evidence_release_cutoff": {
+    "path": "scripts/r39_evidence_release_cutoff.txt",
+    "entries": 533,
+    "bytes": 12223,
+    "sha256": "6633FB04EEAF79BEC209A99610A58C6EA788598EC65C7656CFDD90B1C1CCE5C6",
+    "jsonl_terminal_ids": {
+      "decisions.jsonl": "AGKO-D191",
+      "evidence.jsonl": "AGKO-E-R39-BUILD-QA-STATE-SEAL",
+      "hard.jsonl": "AGKO-H166",
+      "index/units.jsonl": "AGKO-EGA2-S1-R39-IDEAL-TERMINOLOGY-RESEAL-R1"
+    }
+  },
+  "required_controls": [
+    "R39_AUTHORITY_COMMENT_RESEAL.json",
+    "R39_BUILD_QA_STATE_SEAL.json",
+    "R39_CANONICAL_PREFIX_REBASE.json",
+    "R39_CURRENT_AUTHORITY_VALIDATOR.json",
+    "R39_IDEAL_TERMINOLOGY_RESEAL.json",
+    "R39_KOREAN_WORDING_RESEAL.json",
+    "R39_PDF_QA.json",
+    "R39_PDF_QA_PRE_TERMINOLOGY.json",
+    "R39_STRICT_BUILD.json",
+    "R39_STRICT_BUILD_PRE_TERMINOLOGY.json",
+    "R39_TRANSLATION_ADMISSION.json",
+    "R39_TRANSLATION_INTEGRATION.json",
+    "R39_VISUAL_QA_PREPARATION.json",
+    "R39_VISUAL_QA_PREPARATION_PRE_TERMINOLOGY.json",
+    "R39_ZENODO_DRAFT_RESERVATION.json"
+  ],
+  "state_seal": {
+    "path": "evidence/controls/R39_BUILD_QA_STATE_SEAL.json",
+    "bytes": 11185,
+    "sha256": "5924A67C251E7583F4973428D2DAD95BA6D56B0DAECAE3FE77B52A2275270DDD",
+    "result": "PASS_R39_BUILD_PDF_QA_STATE_SEAL",
+    "transaction_id": "AGKO-R39-BUILD-QA-STATE-SEAL-F3B3D273A6C7E886F741",
+    "fresh_preimage_sha256": "F3B3D273A6C7E886F741B49FC8456370EF9888E70A1A9A1CA181B2CD18B580AA"
+  },
+  "state_seal_producer": {
+    "path": "candidates/seal_r39_build_qa_state_exact.py",
+    "bytes": 58345,
+    "sha256": "A55B2521C7BC6E55F110B3F498E03DA66E7085363A4AD9B7B2342FBCD84C3DF1"
+  },
+  "sealed_alias_postimages": [
+    {
+      "path": "evidence/CURSOR.json",
+      "bytes": 30959,
+      "sha256": "5609DAC3405E8F5F0032BA3215AC0B49A9F5F1BA7601FA2080B0AFFBFDF0FBB5"
+    },
+    {
+      "path": "evidence/DATACITE_RELATIONS.json",
+      "bytes": 31258,
+      "sha256": "D064BCB888C1E9050CF7C00A0F79F39070982A0BE0B3841513759B4DCBC8FB63"
+    },
+    {
+      "path": "evidence/PROGRAM_AUTHORITY.json",
+      "bytes": 38939,
+      "sha256": "EDB58FF83671C3B8B538C527EE33D62646D6262C3F849B894B2AE198060D6992"
+    },
+    {
+      "path": "evidence/PROGRAM_CURSOR.json",
+      "bytes": 31152,
+      "sha256": "5EA5870B376E76EFD9468B1B6C213FE2FEF4038FD05AC2B0835DEA4CD69FCF45"
+    },
+    {
+      "path": "evidence/PROGRAM_STATE.json",
+      "bytes": 37578,
+      "sha256": "1ABD59EF44B8A76CF6FAFE2BEDAC893E3DF9F64317A14EE72AF0CCE29E9FD274"
+    },
+    {
+      "path": "evidence/QA_STATE.json",
+      "bytes": 36600,
+      "sha256": "C97993C9816996603288D6BB5872DB37A70C7EFD6F0BFF7CC9289E2AFF5F1EE5"
+    },
+    {
+      "path": "evidence/SOURCE_AUTHORITY.json",
+      "bytes": 31086,
+      "sha256": "58F08248A4E9BB21E8E1826F0A7BF52FD40703D233556F3ED3FECAFE17CDFCAB"
+    },
+    {
+      "path": "evidence/STATE.json",
+      "bytes": 37578,
+      "sha256": "1ABD59EF44B8A76CF6FAFE2BEDAC893E3DF9F64317A14EE72AF0CCE29E9FD274"
+    },
+    {
+      "path": "evidence/VISUAL_QA.json",
+      "bytes": 32228,
+      "sha256": "B9E9BE3DA39D2DD1E8089B882C62B19C31B8FE94E4B195A588E0C0E86833B758"
+    }
+  ],
+  "sealed_public_ledger_postimages": [
+    {
+      "path": "evidence/decisions.jsonl",
+      "bytes": 716210,
+      "sha256": "566270F97FB7D2317D24E551A99DFC5D9EF0105820DCC6C78300C974BB3D3626",
+      "terminal_id": "AGKO-D191"
+    },
+    {
+      "path": "evidence/evidence.jsonl",
+      "bytes": 553405,
+      "sha256": "0C47C199DE360C89CF3D4F012A8B141BC8A1254801B7888A0F266D003B39A3BB",
+      "terminal_id": "AGKO-E-R39-BUILD-QA-STATE-SEAL"
+    },
+    {
+      "path": "evidence/hard.jsonl",
+      "bytes": 308996,
+      "sha256": "EF14FA5E89A9013B4853180EE3DFF279016D4D038283F8A2E66E8948FE2EA980",
+      "terminal_id": "AGKO-H166"
+    }
+  ],
+  "sealed_unchanged_ledgers": [
+    {
+      "path": "private/index/units.jsonl",
+      "bytes": 1257226,
+      "sha256": "C82B56845193A8A20438F78F9924006C82AC84CDC50ABD57BF8F4408160D50E2"
+    },
+    {
+      "path": "private/terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250"
+    },
+    {
+      "path": "public/evidence/index/units.jsonl",
+      "bytes": 1257249,
+      "sha256": "84DB52C484E5DBAF1500C7529F82944739F45D0A1FFBD060E7EE33A58F82095A"
+    },
+    {
+      "path": "public/evidence/terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250"
+    }
+  ],
+  "reader": {
+    "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1491216,
+    "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F",
+    "pages": 240
+  },
+  "source_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16281,
+    "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB"
+  },
+  "strict_build": {
+    "path": "evidence/controls/R39_STRICT_BUILD.json",
+    "bytes": 14551,
+    "sha256": "BD631DCAE7E8F9C485D9CEB14CE0DFA53CAE3F2BD5F0144ED9C3E0DEA7016BE0"
+  },
+  "pdf_qa": {
+    "path": "evidence/controls/R39_PDF_QA.json",
+    "bytes": 14710,
+    "sha256": "9FF6981048F0F8C632B5F44BEE9437B7B3DA7134CC35D1919B34912C6BAE707B"
+  },
+  "transaction": {
+    "same_volume_sibling_stage": true,
+    "staged_verification_passes": 2,
+    "atomic_directory_rename": true,
+    "exact_final_directory_is_idempotent_success": true,
+    "differing_final_directory_fails_closed": true,
+    "precommit_repository_sidecar_writes": 0
+  },
+  "result": "PASS_R39_LOCAL_PACKAGE"
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "agko-r39-visual-qa-preparation-v1",
+  "prepared_at": "2026-09-06T01:27:23+02:00",
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1491217,
+    "sha256": "58D629B8E52A0C2CE1DE48348336C2CF46A6B778AAB8CC3B87A42443825B568E",
+    "pages": 240
+  },
+  "render_selection": {
+    "fixed_regression_pages": [
+      1,
+      2,
+      6
+    ],
+    "extraction_discovered_new_pages": [
+      25,
+      103,
+      104,
+      107,
+      109,
+      171,
+      239,
+      240
+    ],
+    "terminal_pages": [
+      239,
+      240
+    ],
+    "all_selected_pages": [
+      1,
+      2,
+      6,
+      25,
+      103,
+      104,
+      107,
+      109,
+      171,
+      239,
+      240
+    ]
+  },
+  "renders": [
+    {
+      "path": "evidence/render/r39-p001.png",
+      "bytes": 134324,
+      "sha256": "EB3BA6DE9AAEFC34A5FD0626EDC073292D947B36566C2DBE64AB0281C1AAE917",
+      "physical_page": 1,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p002.png",
+      "bytes": 493080,
+      "sha256": "8C9887A12AFD6E6A818D9BCB72E1B4A13C2C37B7255B2A55B5C8631FA4D69B95",
+      "physical_page": 2,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p006.png",
+      "bytes": 273914,
+      "sha256": "BD71C92D1810D28FE7F9289F4FF20D38452A7970F0CE5BBE742209A7E3B01977",
+      "physical_page": 6,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p025.png",
+      "bytes": 527667,
+      "sha256": "ED52AAFE71FFF6B2C9E82D89F6D6AEFAF955DF6A45C4AAC7B0F8019929642EE4",
+      "physical_page": 25,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p103.png",
+      "bytes": 665411,
+      "sha256": "2C3293091B6EFF708F33FE20617221DC6EA924319ECB17AF886CCB7C27424E63",
+      "physical_page": 103,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p104.png",
+      "bytes": 657630,
+      "sha256": "E0C0DDCAE41F005F96202F7648E9B7AD8C9AA35F0B1B7138EFF526BBA9A718E8",
+      "physical_page": 104,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p107.png",
+      "bytes": 646550,
+      "sha256": "DA1BFFDDA7029E45685E61A40022A8525D31016AB3D3644909532F01D328D52F",
+      "physical_page": 107,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p109.png",
+      "bytes": 694631,
+      "sha256": "1B516FB852A37456893E01F3C62A810646E3EBD0150771DE28B31CA0A145519A",
+      "physical_page": 109,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p171.png",
+      "bytes": 656310,
+      "sha256": "5A113FE7CCCFC4066BC7B897BE01EE10D6776213FF1FC068B1001F609C11913C",
+      "physical_page": 171,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p239.png",
+      "bytes": 676635,
+      "sha256": "A72C2BDCC2C17E3FC4972375C53C713FC0534C698200B68EC3B27FA773ADBA0D",
+      "physical_page": 239,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    },
+    {
+      "path": "evidence/render/r39-p240.png",
+      "bytes": 223604,
+      "sha256": "9D71B2B992F093BDC05C7496BD9734FAA40CCAD3DEBE9EEC05D512655C82D574",
+      "physical_page": 240,
+      "dpi": 300,
+      "pixels": [
+        2481,
+        3508
+      ]
+    }
+  ],
+  "status": "PENDING_EXPLICIT_VISUAL_INSPECTION"
+}

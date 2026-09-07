@@ -1,0 +1,398 @@
+{
+  "schema": "agko-r39-strict-build-control-v1",
+  "verified_at": "2026-09-06T22:31:55+02:00",
+  "precision": "second",
+  "release": {
+    "version": "2026-09-06-r39",
+    "exact_doi": "10.5281/zenodo.22416007",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "reservation": {
+      "path": "controls/R39_ZENODO_DRAFT_RESERVATION.json",
+      "bytes": 1444,
+      "sha256": "8799F847CCDCD35D93A401F125A830CB1759F8E2D16004E90A185979F398D7CA"
+    }
+  },
+  "coverage": {
+    "summary": "EGA 0_I and EGA I complete; EGA II programme/table of contents complete; EGA II main text translated contiguously through 2.2.6 / canonical lines1-1780",
+    "manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 16281,
+      "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB",
+      "ordered_inputs": 17,
+      "canonical_inputs": 23,
+      "historical_marker_sum": 229,
+      "status_counts": {
+        "complete": 16,
+        "not_translated": 6,
+        "partial": 1
+      }
+    },
+    "target_mirrors": {
+      "path": "source/c2s1.tex",
+      "bytes": 84274,
+      "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+      "private_path": "ega/II/c2s1.tex",
+      "private_public_exact": true,
+      "lf_lines": 1809,
+      "authority_declaration_exact": true
+    },
+    "canonical_source": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820504,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "admitted_prefix_lines": "1-1780",
+      "admitted_prefix_bytes": 81885,
+      "admitted_prefix_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "translation_integration": {
+      "path": "evidence/controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B",
+      "private_public_exact": true,
+      "schema": "agko-r39-translation-integration-v1",
+      "result": "PASS_R39_TRANSLATION_INTEGRATION; build, PDF QA, package and publication pending"
+    },
+    "wording_reseal": {
+      "path": "evidence/controls/R39_KOREAN_WORDING_RESEAL.json",
+      "bytes": 10118,
+      "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
+      "private_public_exact": true,
+      "schema": "agko-r39-korean-wording-reseal-v1",
+      "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+    },
+    "current_authority_validator": {
+      "path": "evidence/controls/R39_CURRENT_AUTHORITY_VALIDATOR.json",
+      "bytes": 10257,
+      "sha256": "F572BDDCFADAC93EAC01C00E07DBA16D03BEDFE3E14B5E4FADEA1B5A76AC2350",
+      "private_public_exact": true,
+      "schema": "agko-r39-current-authority-validator-receipt-v2",
+      "result": "PASS_R39_CURRENT_AUTHORITY_WORDING_RESEAL_READY"
+    },
+    "declaration_reseal": {
+      "path": "evidence/controls/R39_AUTHORITY_COMMENT_RESEAL.json",
+      "bytes": 5469,
+      "sha256": "63B55B0B04FA708E31434A84EE5CE57A66157380BB82615F872E83E8028A8080",
+      "private_public_exact": true,
+      "schema": "agko-r39-authority-comment-reseal-v1",
+      "result": "PASS_R39_AUTHORITY_COMMENT_RESEAL_TRANSLATION_BODY_UNCHANGED"
+    },
+    "ideal_terminology_reseal": {
+      "path": "evidence/controls/R39_IDEAL_TERMINOLOGY_RESEAL.json",
+      "bytes": 12197,
+      "sha256": "2F88570A3523DE0718F3952C842FE00D5D8337DC0D9DF4AC93C20D9D263AF624",
+      "private_public_exact": true,
+      "schema": "agko-r39-ideal-terminology-reseal-v1",
+      "result": "PASS_R39_TYPED_HOMOGENEOUS_IDEAL_TERMINOLOGY_RESEAL"
+    },
+    "all_declared_public_inputs": [
+      {
+        "path": "source/front.tex",
+        "bytes": 4440,
+        "sha256": "8419E8BC303A7C7046AC2B101D6F6B6CCAC312B30D9813624BFDF993C7063053",
+        "private_public_exact": false
+      },
+      {
+        "path": "source/intro.tex",
+        "bytes": 15165,
+        "sha256": "295CAD065AE37B6FF5556D0F5F0468F57B6FFF3D021FCA26802D51B370E1C246",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c0.tex",
+        "bytes": 279433,
+        "sha256": "8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1front.tex",
+        "bytes": 2069,
+        "sha256": "4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s1.tex",
+        "bytes": 71250,
+        "sha256": "E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s2.tex",
+        "bytes": 27982,
+        "sha256": "C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s3.tex",
+        "bytes": 58821,
+        "sha256": "7054D98152E57F17B2CDE69D08A00905FCE21B1C3602192B037BC70BC21971BF",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s4.tex",
+        "bytes": 35822,
+        "sha256": "24E916362C2F54A1D479447F07EEF949DED309DD3E8E7207E9B187A6ED2E0E92",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s5.tex",
+        "bytes": 50638,
+        "sha256": "0CA37A6089AB8744ABDF4764E3BCEB7CC19FC72140567D20DD32213D8988C24B",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s6.tex",
+        "bytes": 57728,
+        "sha256": "C09AF6BE49A44F05B9A505FDF034B8445E6046998874B2030A6310A7EC75EC25",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s7.tex",
+        "bytes": 39742,
+        "sha256": "FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s8.tex",
+        "bytes": 21278,
+        "sha256": "183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s9.tex",
+        "bytes": 55580,
+        "sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c1s10.tex",
+        "bytes": 166856,
+        "sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/bib.tex",
+        "bytes": 3505,
+        "sha256": "FB3D3E90F595ACAF5E5AC71C8BED1C9407F5C892DE3612461CA19C63D71CAA1E",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c2front.tex",
+        "bytes": 1500,
+        "sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F",
+        "private_public_exact": true
+      },
+      {
+        "path": "source/c2s1.tex",
+        "bytes": 84274,
+        "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+        "private_public_exact": true
+      }
+    ],
+    "all_declared_canonical_inputs": [
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/frontmatter-fr.tex",
+        "bytes": 1120,
+        "sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/intro-fr.tex",
+        "bytes": 16433,
+        "sha256": "CE78400CD9DBC36A4D11CC933B7BE18BEAC0C69AE6A04FBA3ECFA86053572980"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega0-1-fr.tex",
+        "bytes": 282505,
+        "sha256": "F86663178E620A678BF0857B18BB4AC8FDB34E44BF5D241AE853EA7171E06C16"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/chapter1-frontmatter-fr.tex",
+        "bytes": 2057,
+        "sha256": "7B2D0F8F812EBA3121202F0AE6415FFC6C281B8428DA8F0F72D89DF1CEC01708"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-1-fr.tex",
+        "bytes": 71381,
+        "sha256": "25840D1D77C5284A158CDC78D622A458221DA3FE9ECAECC5EA9382A5C4EC595B"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-2-fr.tex",
+        "bytes": 27463,
+        "sha256": "AE6B128092ACBB8C1AFB4899EEA003FB966B6FF6669A264B59FD5F095AF4F029"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-3-fr.tex",
+        "bytes": 59766,
+        "sha256": "A267955CFFC5942F6EC5255ABAD85E68C5F5C266F1A6B68611AF11FD875B16AE"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-4-fr.tex",
+        "bytes": 34792,
+        "sha256": "A5F5CDAC81E654E9ABA75BBFEAD24F3010B122452C689B9EBAB5A7711B454EC1"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-5-fr.tex",
+        "bytes": 50232,
+        "sha256": "7A33D1D68D87C7DDB3BFD23938B77F60EEABC2C44045968B5069CD3F48212BD8"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-6-fr.tex",
+        "bytes": 57781,
+        "sha256": "F95D2C43C1074A1CC6485D74E24F02BF8C5F098ADB571AA024B4B499F5CDE3FE"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-7-fr.tex",
+        "bytes": 38226,
+        "sha256": "73581030E142AD91D51F07A6DE7648101ECA92C7542EA52A2575F098F171F522"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-8-fr.tex",
+        "bytes": 20600,
+        "sha256": "188DD6999E42BE024ADCFFE011F94AF14FA2FC15303B3668E04BB67B1509B825"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-9-fr.tex",
+        "bytes": 53127,
+        "sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/ega1-10-fr.tex",
+        "bytes": 159763,
+        "sha256": "C43CAFDE8D5C4FB5C2AD126C86B00283B90472193EC7922ECF49B16DC42D487C"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega1/bib-fr.tex",
+        "bytes": 3430,
+        "sha256": "E69C28D9B0E54F14E11FBA2A59F66037CE9E5286BD9FACE9D64CEFB56875CF75"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega2/front-fr.tex",
+        "bytes": 1423,
+        "sha256": "F199DE0C2C8C49E2BDAEF48D764086952806E77D8066795B97B3595F7EA03198"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+        "bytes": 820504,
+        "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega2/ega2-bibliography-fr.tex",
+        "bytes": 784,
+        "sha256": "56DE1F13088E6451D2A7BF7FAF7C575AB3E82C7FB20A736A75E3FD19B0595F7A"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega2/ega2-indexes-and-contents-fr.tex",
+        "bytes": 27454,
+        "sha256": "2CEC53C734543C30ED2FE2FD01B462E5C51DE4D303CEAA7F8001316BB78EDBB1"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega2/ega2-errata-addenda-fr.tex",
+        "bytes": 19746,
+        "sha256": "EC20D329248B99CF0533CB868DBDF8135D5BDAFA233133814DB67F8CD4F09643"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega3/ega3-1-fr.tex",
+        "bytes": 627894,
+        "sha256": "5058C52D12FDF25BF299C43B10C9492417DAD762841A5B8FF784C97CFD129726"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega3/ega3-6-fr.tex",
+        "bytes": 168838,
+        "sha256": "9519F1C74E5F039062476E193AF9738E4323E4777356C4AEF9725F28F24D072A"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/source/ega3/ega3-7-fr.tex",
+        "bytes": 172424,
+        "sha256": "20A61BA348909E4309A3CDA89FD6DDAF8C0FC5BA346FD44232458CDFEA2A2972"
+      }
+    ],
+    "post_build_identity_recheck": "PASS"
+  },
+  "reader": {
+    "path": "reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1491216,
+    "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F",
+    "pages": 240
+  },
+  "build_script": {
+    "path": "build/BUILD.ps1",
+    "bytes": 20370,
+    "sha256": "330A0F8337C6019010700088E0D8D398EA0B33CA922D06641D607E2F63D51F77"
+  },
+  "strict_build": {
+    "status": "PASS",
+    "engine": "XeLaTeX / MiKTeX",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_timeout_ms": 300000,
+    "abandoned_recovery": false,
+    "live_canonical_and_private_coverage_gate": "PASS",
+    "xelatex_passes": 8,
+    "independent_clean_cycles": 2,
+    "passes_per_cycle": 4
+  },
+  "convergence": {
+    "cycle_a": {
+      "pass2": {
+        "path": "build/cycle-a.pass2.pdf",
+        "bytes": 1491202,
+        "sha256": "C5A97090A8609D93800F758E9D34FCECBCF9700AD0B39FD5E621456D10F29F04"
+      },
+      "pass3": {
+        "path": "build/cycle-a.pass3.pdf",
+        "bytes": 1491216,
+        "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+      },
+      "final": {
+        "path": "build/cycle-a.pdf",
+        "bytes": 1491216,
+        "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+      },
+      "log": {
+        "path": "build/cycle-a.log",
+        "bytes": 51981,
+        "sha256": "0C3A8F22B14F9034972F2E749FDECE02F3AE227AE8A2FA4CBA7E3D6DE6F52F23"
+      }
+    },
+    "cycle_b": {
+      "pass2": {
+        "path": "build/out/main.pass2.pdf",
+        "bytes": 1491202,
+        "sha256": "C5A97090A8609D93800F758E9D34FCECBCF9700AD0B39FD5E621456D10F29F04"
+      },
+      "pass3": {
+        "path": "build/out/main.pass3.pdf",
+        "bytes": 1491216,
+        "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+      },
+      "final": {
+        "path": "build/out/main.pdf",
+        "bytes": 1491216,
+        "sha256": "AB24AAA5A4FBEAC3528892EF998C93276BF6DD38E7520C5F18A316E3FBAEAA6F"
+      },
+      "log": {
+        "path": "build/out/main.log",
+        "bytes": 51981,
+        "sha256": "0C3A8F22B14F9034972F2E749FDECE02F3AE227AE8A2FA4CBA7E3D6DE6F52F23"
+      }
+    },
+    "cycle_pass2_byte_identical": true,
+    "cycle_pass3_byte_identical": true,
+    "cycle_finals_byte_identical": true,
+    "cycle_raw_logs_byte_identical": true,
+    "reader_promotion_byte_identical_to_both_cycle_finals": true
+  },
+  "tex_log_hard_diagnostics": {
+    "^! ": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "Emergency stop": 0,
+    "Fatal error": 0,
+    "There were undefined references": 0,
+    "Rerun to get cross-references right": 0
+  },
+  "incomplete_boundary": {
+    "ega_ii": "active_incomplete",
+    "next_canonical_source": "source/ega2/ega2-1-fr.tex line1782, environment2.2.7; line1781 is blank",
+    "no_completion_claim": "This seals the cumulative R39 checkpoint only; it does not claim completion of EGA II or the corpus."
+  },
+  "status": "PASS_R39_STRICT_TWO_CYCLE_FOUR_PASS_BUILD"
+}

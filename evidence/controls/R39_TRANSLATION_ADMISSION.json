@@ -1,0 +1,156 @@
+{
+  "schema": "agko-r39-translation-admission-v1",
+  "time": "2026-09-05T16:14:48+02:00",
+  "scope": "EGA II canonical lines 1685-1780: Lemma 2.2.2 with proof, environment 2.2.3, Lemma 2.2.4 with proof, Proposition 2.2.5 with proof, and Corollary 2.2.6 with proof",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820505,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "unit_lines": "1685-1780",
+    "unit_bytes": 3796,
+    "unit_characters": 3740,
+    "unit_lf_lines": 96,
+    "unit_sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21",
+    "preunit_prefix_lines": "1-1684",
+    "preunit_prefix_bytes": 78090,
+    "preunit_prefix_sha256": "245FBEC6615FCB67B21CDD796D30DD2FC350BF4FB22B46F7D9F45B3DAEA5BEC6",
+    "admitted_prefix_lines": "1-1780",
+    "admitted_prefix_bytes": 81886,
+    "admitted_prefix_sha256": "1F95FEC43B19B90C975F97EFAD3ECEA255FF92BBDBA97E605A0F25CD18572A43",
+    "boundaries": "line 1684 blank; line 1685 begins Lemma 2.2.2; line 1780 ends the proof of Corollary 2.2.6; line 1781 blank; line 1782 begins environment 2.2.7"
+  },
+  "candidate": {
+    "path": "candidates/r39-c2s1-continuation.tex",
+    "bytes": 4094,
+    "characters": 2788,
+    "lf_lines": 100,
+    "hangul_syllables": 653,
+    "sha256": "811AD490FC21AE287D0AD67FA897E8F47D5592B98234291B640A0AFCCAED0F26",
+    "separator_plus_candidate_bytes": 4095,
+    "separator_plus_candidate_sha256": "E08631C2FC3D7C51A0CE1553547A688D35B8B1D349A2B26C14BDF5B302AD5021"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors",
+    "end_boundary": "line 1708 is the closing environment marker for 2.2.1"
+  },
+  "prospective_integration": {
+    "method": "exact integrated R38 preimage followed by exactly one LF separator and the exact R39 candidate",
+    "target_range": "line 1709 blank separator; candidate lines 1710-1809",
+    "bytes": 84317,
+    "characters": 58695,
+    "lf_lines": 1809,
+    "sha256": "D08D6AD60E00CE72AC6D64BB1D95F0AB63836F8B50D065631DC4FCD044D4F67C",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r39_candidate.py",
+    "validator_bytes": 17815,
+    "validator_lf_lines": 433,
+    "validator_sha256": "12C2BA268387093F2DC8F098AB0556BB2502F2B7EE609485560D2E696C6B04B4",
+    "result": "PASS_R39_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "source_inline_formula_count": 74,
+    "target_inline_formula_count": 74,
+    "source_display_count": 3,
+    "target_display_count": 3,
+    "total_math_spans_each": 77,
+    "global_inline_formula_multiset_exact": true,
+    "inline_formula_global_order_identical": false,
+    "display_content_and_order_exact": true,
+    "xymatrix_exact": true,
+    "formula_order_policy": "The exact 74-inline-formula multiset is preserved globally. Natural Korean word order may permute formulas only inside an explicitly corresponding semantic clause. Seventeen contiguous clause ranges partition formulas 1-74 and each range has exact source/target multiset equality, proving no formula crossed a numbered statement, proof step, implication, condition, or conclusion. The only non-identical range is Corollary 2.2.6, where Korean places the degree >0 condition before the conclusion S_(f).",
+    "clause_local_formula_audit": {
+      "result": "PASS",
+      "partition_count": 17,
+      "formula_range": "1-74",
+      "contiguous_and_exhaustive": true,
+      "all_clause_multisets_exact": true,
+      "non_identical_order_ranges": [
+        {
+          "clause": "2.2.6 Noetherian corollary",
+          "formula_range": "71-74",
+          "reason": "source-to-Korean constituent order only; quantifier and implication binding unchanged"
+        }
+      ]
+    },
+    "labels": [
+      "II.2.2.2-ko",
+      "II.2.2.3-ko",
+      "II.2.2.4-ko",
+      "II.2.2.5-ko",
+      "II.2.2.6-ko"
+    ],
+    "ordered_references": [
+      ["0.1.4.6-ko", "0, I.4.6"],
+      ["II.2.2.2-ko", "2.2.2"],
+      ["0.1.4.1-ko", "0, I.4.1"],
+      ["II.2.2.2-ko", "2.2.2"],
+      ["II.2.1.7-ko", "2.1.7"],
+      ["II.2.2.5-ko", "2.2.5"]
+    ],
+    "label_and_reference_suffix_policy": "Each canonical -fr suffix is changed only to -ko; visible reference text is unchanged; no -fr suffix remains.",
+    "numbered_environments": ["2.2.2", "2.2.3", "2.2.4", "2.2.5", "2.2.6"],
+    "environment_classes": "lemma, proof, env, lemma, proof, proposition, proof, corollary, proof",
+    "environment_nesting_balanced": true,
+    "oldpage": "II25",
+    "navigation_only_phantomsection_count": 5,
+    "emphasis_source_target": "1/1",
+    "brace_count_open_close": "105/105",
+    "utf8_replacement_characters": 0
+  },
+  "semantic_and_terminology_invariants": [
+    "The positive degrees d and e, memberships f in S_d and g in S_e, both canonical ring/module isomorphisms, and all exponents and localization denominators are retained exactly.",
+    "The divisibility direction fg divides f^e g^d divides (fg)^(de), the resulting graded-ring identifications, invertibility of f^e/1, and the degree-zero subring conclusion remain distinct and correctly ordered.",
+    "The canonical homomorphism S_f to S_fg maps x/f^k to g^k x/(fg)^k, restricts to S_(f) to S_(fg), preserves the exact commutative xymatrix, and is followed by the separately typed module homomorphism.",
+    "Lemma 2.2.4 asserts generation by the union of the two canonical images, not equality with either image, and its proof preserves the printed membership formula exactly.",
+    "Proposition 2.2.5 retains both quotient isomorphisms, the forward map x/f^n to the residue class of x, the congruence and annihilation argument establishing well-definedness, and the inverse map with all h, j, k, and n conditions.",
+    "The two constructed maps are ring homomorphisms inverse to one another; the separate module case is not conflated with the ring assertion.",
+    "Corollary 2.2.6 retains the universal quantifier over every positive-degree homogeneous f and concludes Noetherianity of S_(f) from exactly 2.1.7 and 2.2.5.",
+    "Established Korean register is retained for graded ring, homogeneous element, canonical isomorphism/homomorphism, subring, congruence, residue class, inverse maps, and Noetherianity."
+  ],
+  "source_queries": {
+    "status": "delivered_nonblocking_before_admission",
+    "destination": "EGA correction/adjudication task",
+    "loci": [
+      {
+        "line": 1709,
+        "issue": "The proof of Lemma 2.2.2 calls its first part the first part of the proposition.",
+        "translation_treatment": "The printed proposition wording is preserved diplomatically as 명제; no source-byte repair."
+      },
+      {
+        "line": 1738,
+        "issue": "The printed identity 1/(g^d/f^e)=f^(d+e)/(fg)^d is retained pending source adjudication.",
+        "translation_treatment": "The exact printed formula is preserved diplomatically; no source-byte repair."
+      }
+    ]
+  },
+  "independent_review": {
+    "method": "Two bounded independent audits against the exact source slice and exact candidate: one sentence-by-sentence semantic/Korean-register review and one formula/structure/quantifier review.",
+    "result": "PASS",
+    "candidate_defects_found": 0,
+    "source_target_math_span_review": "PASS_77_OF_77",
+    "formula_and_quantifier_review": "PASS",
+    "clause_local_formula_migration_review": "PASS_NO_CROSS_BOUNDARY_MIGRATION",
+    "structure_navigation_review": "PASS",
+    "terminology_review": "PASS",
+    "diplomatic_oddity_review": "PASS_LINES_1709_AND_1738_UNCHANGED",
+    "prospective_private_public_identity_review": "PASS"
+  },
+  "state": {
+    "translation": "admitted_candidate",
+    "integration": "prospective_not_integrated",
+    "source_referral": "delivered_nonblocking",
+    "build": "pending_exact_integration_and_machine_wide_TeX_mutex",
+    "extraction": "pending_build",
+    "rendered_visual_QA": "pending_build",
+    "publication": "pending_validated_cumulative_reader_and_package"
+  },
+  "next": "Append exactly one LF plus the exact R39 candidate to both R38 c2s1 mirrors, prove the prospective identity, refresh cumulative declarations through canonical line 1780, then run serialized cumulative build, extraction, rendered QA, packaging, and same-lineage publication gates."
+}

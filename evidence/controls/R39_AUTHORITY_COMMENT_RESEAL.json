@@ -1,0 +1,148 @@
+{
+  "schema": "agko-r39-authority-comment-reseal-v1",
+  "time": "2026-09-06T01:22:45+02:00",
+  "precision": "second",
+  "scope": "Metadata-only first-line authority correction in both live Korean EGA II c2s1 mirrors; translation body unchanged.",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "bytes": 820504,
+    "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "prefix_lines": "1-1780",
+    "prefix_bytes": 81885,
+    "prefix_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+  },
+  "old_first_line": "% Authority slice: EGA II ega2-1-fr.tex lines 1-1535, 70120 LF UTF-8 bytes, SHA-256 ED3DC79E9408C4D5325D24F3FF1CB06548611C5C8BD79CC67348402D9A0C0D91.",
+  "new_first_line": "% Authority slice: EGA II ega2-1-fr.tex lines 1-1780, 81885 LF UTF-8 bytes, SHA-256 033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33.",
+  "preimage": {
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257"
+  },
+  "postimage": {
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD"
+  },
+  "body_after_first_line": {
+    "bytes": 84124,
+    "lf_lines": 1808,
+    "sha256": "93A98E2F4895CB4C49D7ADDDBCEA3E4129BE66BF544B116CF64E8597F26F254F"
+  },
+  "prefix": {
+    "old": {
+      "bytes": 80222,
+      "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006"
+    },
+    "new": {
+      "bytes": 80222,
+      "sha256": "003511D24111201FD1FC2E87E8C6804D430BB975D2B71461DC61E03BD7808297"
+    },
+    "change": "first comment line only"
+  },
+  "r39_tail": {
+    "bytes": 4052,
+    "sha256": "7CF528B90E7D1D50EEAABF714AB185C574F5C8A86520F46A7D697FAFB381186C",
+    "status": "exactly unchanged"
+  },
+  "cumulative_chain_after_comment_reseal": [
+    {
+      "stage": "R39",
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD"
+    },
+    {
+      "stage": "R40",
+      "bytes": 89104,
+      "characters": 61916,
+      "lf_lines": 1924,
+      "sha256": "DDCA0A13CD852831A6DFE999DC777FD9F8FCD475B08A84D943F0F6636447269F"
+    },
+    {
+      "stage": "R41",
+      "bytes": 93649,
+      "characters": 65119,
+      "lf_lines": 2031,
+      "sha256": "26C9A76D71D855670B8596FD8AE7E957B1AE5301CECF932E47943BE38B75F9F7"
+    },
+    {
+      "stage": "R42",
+      "bytes": 98295,
+      "characters": 68297,
+      "lf_lines": 2139,
+      "sha256": "338499DABB43EB850F50C1019D9E9D4E9233C00E432EEC1B8DC467D2292CE96C"
+    },
+    {
+      "stage": "R43",
+      "bytes": 102746,
+      "characters": 71522,
+      "lf_lines": 2247,
+      "sha256": "ACD8897FB293367937DB73FEFE389BFAB8D7599D8E52A4BA326E2346EB43FC20"
+    }
+  ],
+  "historical_evidence_preserved": {
+    "original_integration_journal": {
+      "path": "controls/R39_INTEGRATION_TRANSACTION.json",
+      "bytes": 18471,
+      "sha256": "CD7D2B4C0FAEC31277F27E5F960CA0B9774220603F474D777A610BA8A8CA792D",
+      "transaction_id": "AGKO-R39-INTEGRATION-9021E88AAA1A6C74050E"
+    },
+    "original_integration_controls": {
+      "private": "controls/R39_TRANSLATION_INTEGRATION.json",
+      "public": "evidence/controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B",
+      "status": "immutable; nested r39_translation_integration references remain bound here"
+    },
+    "historical_controls": [
+      {
+        "path": "controls/R39_TRANSLATION_ADMISSION.json",
+        "bytes": 8605,
+        "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561"
+      },
+      {
+        "path": "controls/R39_CANONICAL_PREFIX_REBASE.json",
+        "bytes": 6370,
+        "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349"
+      },
+      {
+        "path": "controls/R39_KOREAN_WORDING_RESEAL.json",
+        "bytes": 10118,
+        "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451"
+      },
+      {
+        "path": "controls/R39_CURRENT_AUTHORITY_VALIDATOR.json",
+        "bytes": 10257,
+        "sha256": "F572BDDCFADAC93EAC01C00E07DBA16D03BEDFE3E14B5E4FADEA1B5A76AC2350"
+      }
+    ],
+    "prior_chain_control": {
+      "path": "R39_R43_SEQUENTIAL_CHAIN_REBASE_20260906.json",
+      "bytes": 13319,
+      "sha256": "54ED653F27FF96FECB315BEE0029BD6FFE087898DC37951D4C5F0A2A6255CE6C",
+      "status": "preserved and superseded only for cumulative hashes"
+    }
+  },
+  "cumulative_manifest_postimage": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16275,
+    "sha256": "2C75A0AC2430D38CBBEF69E3A7EDBCD67AA090C534B5F29A4A7CC61E14CF4E59"
+  },
+  "transaction": {
+    "journal": "controls/R39_AUTHORITY_COMMENT_RESEAL_TRANSACTION.json",
+    "fresh_preimage_sha256": "FA1F4DCF434E031055F76370A56C02AC2279EE007C1E96A5FE7204BD4160B96D",
+    "all_postimages_computed_before_first_write": true,
+    "atomic_mirrored_writes_and_rollback": true
+  },
+  "ledger_records": {
+    "decision": "AGKO-D189",
+    "evidence": "AGKO-E-R39-DECLARATION-RESEAL",
+    "hard": "AGKO-H164",
+    "unit": "AGKO-EGA2-S1-R39-DECLARATION-RESEAL-R1"
+  },
+  "limits": "No translation-body, TeX, PDF, Git, UI, publication, or later-unit integration action.",
+  "result": "PASS_R39_AUTHORITY_COMMENT_RESEAL_TRANSLATION_BODY_UNCHANGED"
+}

@@ -1,0 +1,382 @@
+{
+  "schema": "agko-r39-ideal-terminology-reseal-v1",
+  "time": "2026-09-06T22:22:16+02:00",
+  "precision": "second",
+  "scope": "Exactly nine source-mapped Korean homogeneous-ideal adjective spans in EGA II canonical lines1-1780; all non-ideal graded terminology and all other bytes remain unchanged.",
+  "policy": {
+    "typed_mapping": {
+      "id": "XW-KO-005",
+      "concept": "homogeneous",
+      "source_type": "graded element, ideal, or component",
+      "preimage": "등급",
+      "postimage": "동차",
+      "confidence": "high",
+      "control": {
+        "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+        "bytes": 35543,
+        "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26"
+      }
+    },
+    "independent_later_unit": {
+      "control": {
+        "path": "controls/R45_TRANSLATION_ADMISSION.json",
+        "public_path": "evidence/controls/R45_TRANSLATION_ADMISSION.json",
+        "bytes": 16807,
+        "sha256": "47D257599805B6045168743EAB2A96CCB68D0C7CC932535F0BA66BA6C87E50EC"
+      },
+      "repair": "R45-WORD-001: exact idéal premier gradué context corrected from 등급 소아이디얼 to 동차 소아이디얼"
+    },
+    "professional_korean_thesis_attestation": "동차 아이디얼 attested; supplied as corroborating evidence in the current authority directive.",
+    "negative_evidence": "No primary evidence supports 등급 아이디얼 for these homogeneous-ideal loci.",
+    "preservation_rule": "Keep 등급 for graded rings, modules, algebras, grading structures, and every non-ideal concept."
+  },
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "bytes": 820504,
+    "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "prefix_lines": "1-1780",
+    "prefix_bytes": 81885,
+    "prefix_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+  },
+  "exhaustive_source_inventory": {
+    "regex_semantics": "idéal(?: premier)? (?:\\emph{)?gradué(?:})?",
+    "count": 9,
+    "source_lines": [
+      1326,
+      1539,
+      1552,
+      1564,
+      1611,
+      1612,
+      1620,
+      1621,
+      1640
+    ],
+    "loci": [
+      {
+        "id": "R39-IDEAL-001",
+        "source_lines": [
+          1326
+        ],
+        "source_text": [
+          "$1\\in S_0$, $S_0$ est un sous-anneau de $S$, $S_+$ un idéal gradué de $S$ et"
+        ],
+        "target_lines": [
+          1336,
+          1337
+        ],
+        "old": [
+          "$1\\in S_0$이고, $S_0$는 $S$의 부분환이며, $S_+$는 $S$의 등급",
+          "아이디얼이고, $S$는 $S_0$와 $S_+$의 직합이다. $M$이 $S$ 위의"
+        ],
+        "new": [
+          "$1\\in S_0$이고, $S_0$는 $S$의 부분환이며, $S_+$는 $S$의 동차",
+          "아이디얼이고, $S$는 $S_0$와 $S_+$의 직합이다. $M$이 $S$ 위의"
+        ],
+        "concept": "idéal gradué"
+      },
+      {
+        "id": "R39-IDEAL-002",
+        "source_lines": [
+          1539
+        ],
+        "source_text": [
+          "Soit $\\mathfrak{p}$ un idéal premier gradué de l'anneau gradué $S$~;"
+        ],
+        "target_lines": [
+          1559
+        ],
+        "old": [
+          "$\\mathfrak{p}$를 등급환 $S$의 등급 소아이디얼이라 하자. 그러면"
+        ],
+        "new": [
+          "$\\mathfrak{p}$를 등급환 $S$의 동차 소아이디얼이라 하자. 그러면"
+        ],
+        "concept": "idéal premier gradué"
+      },
+      {
+        "id": "R39-IDEAL-003",
+        "source_lines": [
+          1552
+        ],
+        "source_text": [
+          "sous-groupe de $S_n$. Pour qu'il existe un idéal premier gradué"
+        ],
+        "target_lines": [
+          1574,
+          1575
+        ],
+        "old": [
+          "$\\mathfrak{p}\\cap S_n=\\mathfrak{p}_n$을 만족하는 $S$의 등급",
+          "소아이디얼 $\\mathfrak{p}$가 존재하기 위한 필요충분조건은 다음 조건들이"
+        ],
+        "new": [
+          "$\\mathfrak{p}\\cap S_n=\\mathfrak{p}_n$을 만족하는 $S$의 동차",
+          "소아이디얼 $\\mathfrak{p}$가 존재하기 위한 필요충분조건은 다음 조건들이"
+        ],
+        "concept": "idéal premier gradué"
+      },
+      {
+        "id": "R39-IDEAL-004",
+        "source_lines": [
+          1564
+        ],
+        "source_text": [
+          "En outre l'idéal premier gradué $\\mathfrak{p}$ est alors unique."
+        ],
+        "target_lines": [
+          1586
+        ],
+        "old": [
+          "또한 이때 등급 소아이디얼 $\\mathfrak{p}$는 유일하다."
+        ],
+        "new": [
+          "또한 이때 동차 소아이디얼 $\\mathfrak{p}$는 유일하다."
+        ],
+        "concept": "idéal premier gradué"
+      },
+      {
+        "id": "R39-IDEAL-005",
+        "source_lines": [
+          1612
+        ],
+        "source_text": [
+          "d'un idéal premier gradué de $S$ \\emph{ne contenant pas $S_+$} (cet idéal"
+        ],
+        "target_lines": [
+          1634
+        ],
+        "old": [
+          "\\emph{$S_+$를 포함하지 않는} $S$의 등급 소아이디얼의 교집합이면 이를"
+        ],
+        "new": [
+          "\\emph{$S_+$를 포함하지 않는} $S$의 동차 소아이디얼의 교집합이면 이를"
+        ],
+        "concept": "idéal premier gradué"
+      },
+      {
+        "id": "R39-IDEAL-006",
+        "source_lines": [
+          1611
+        ],
+        "source_text": [
+          "\\emph{idéal premier gradué de $S_+$} si elle est l'intersection de $S_+$ et"
+        ],
+        "target_lines": [
+          1635
+        ],
+        "old": [
+          "\\emph{$S_+$의 등급 소아이디얼}이라 한다(더욱이 이 소아이디얼은"
+        ],
+        "new": [
+          "\\emph{$S_+$의 동차 소아이디얼}이라 한다(더욱이 이 소아이디얼은"
+        ],
+        "concept": "idéal premier gradué"
+      },
+      {
+        "id": "R39-IDEAL-007",
+        "source_lines": [
+          1620
+        ],
+        "source_text": [
+          "$S_+$. Si $\\mathfrak{J}$ est un idéal \\emph{gradué} de $S_+$, sa racine"
+        ],
+        "target_lines": [
+          1642
+        ],
+        "old": [
+          "집합이다. $\\mathfrak{J}$가 $S_+$의 \\emph{등급} 아이디얼이면 그 근기"
+        ],
+        "new": [
+          "집합이다. $\\mathfrak{J}$가 $S_+$의 \\emph{동차} 아이디얼이면 그 근기"
+        ],
+        "concept": "idéal \\emph{gradué}"
+      },
+      {
+        "id": "R39-IDEAL-008",
+        "source_lines": [
+          1621
+        ],
+        "source_text": [
+          "$r_+(\\mathfrak{J})$ est un idéal gradué~: en passant à l'anneau quotient"
+        ],
+        "target_lines": [
+          1643
+        ],
+        "old": [
+          "$r_+(\\mathfrak{J})$도 등급 아이디얼이다. 실제로 몫환"
+        ],
+        "new": [
+          "$r_+(\\mathfrak{J})$도 동차 아이디얼이다. 실제로 몫환"
+        ],
+        "concept": "idéal gradué"
+      },
+      {
+        "id": "R39-IDEAL-009",
+        "source_lines": [
+          1640
+        ],
+        "source_text": [
+          "est un idéal premier gradué de $S_+$, $S/\\mathfrak{p}$ est essentiellement"
+        ],
+        "target_lines": [
+          1664,
+          1665
+        ],
+        "old": [
+          "$\\mathfrak{p}$가 $S_+$의",
+          "등급 소아이디얼이면 $S/\\mathfrak{p}$가 본질적으로 정역임은 명백하다."
+        ],
+        "new": [
+          "$\\mathfrak{p}$가 $S_+$의",
+          "동차 소아이디얼이면 $S/\\mathfrak{p}$가 본질적으로 정역임은 명백하다."
+        ],
+        "concept": "idéal premier gradué"
+      }
+    ]
+  },
+  "target_transition": {
+    "preimage": {
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD"
+    },
+    "postimage": {
+      "bytes": 84274,
+      "characters": 58678,
+      "lf_lines": 1809,
+      "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943"
+    },
+    "old_form_counts": [
+      {
+        "form": "등급 소아이디얼",
+        "count": 5
+      },
+      {
+        "form": "등급\n소아이디얼",
+        "count": 1
+      },
+      {
+        "form": "등급\n아이디얼",
+        "count": 1
+      },
+      {
+        "form": "\\emph{등급} 아이디얼",
+        "count": 1
+      },
+      {
+        "form": "등급 아이디얼",
+        "count": 1
+      }
+    ],
+    "new_form_counts": [
+      {
+        "form": "동차 소아이디얼",
+        "count": 5
+      },
+      {
+        "form": "동차\n소아이디얼",
+        "count": 1
+      },
+      {
+        "form": "동차\n아이디얼",
+        "count": 1
+      },
+      {
+        "form": "\\emph{동차} 아이디얼",
+        "count": 1
+      },
+      {
+        "form": "동차 아이디얼",
+        "count": 1
+      }
+    ],
+    "global_typed_counts": {
+      "preimage": {
+        "등급": 56,
+        "동차": 22
+      },
+      "postimage": {
+        "등급": 47,
+        "동차": 31
+      }
+    },
+    "exact_reverse_reconstruction": true,
+    "non_hangul_projection": "exactly unchanged",
+    "formula_and_tex_command_sequences": "exactly unchanged",
+    "bytes_characters_lf": "exactly unchanged",
+    "private_public_mirrors": "exact"
+  },
+  "historical_evidence_preserved": [
+    {
+      "domain": "private",
+      "path": "controls/R39_INTEGRATION_TRANSACTION.json",
+      "bytes": 18471,
+      "sha256": "CD7D2B4C0FAEC31277F27E5F960CA0B9774220603F474D777A610BA8A8CA792D"
+    },
+    {
+      "domain": "private",
+      "path": "controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B"
+    },
+    {
+      "domain": "public",
+      "path": "evidence/controls/R39_TRANSLATION_INTEGRATION.json",
+      "bytes": 6610,
+      "sha256": "BA1B7D43FC93365C21F86E7D1494CB59483DA7863EF16E4B5D80BFF48161AF6B"
+    },
+    {
+      "domain": "private",
+      "path": "controls/R39_AUTHORITY_COMMENT_RESEAL_TRANSACTION.json",
+      "bytes": 15633,
+      "sha256": "1967B49B19B299B93F621838A61BB65177119DA25877B8F21C925C089EB23819"
+    },
+    {
+      "domain": "private",
+      "path": "controls/R39_AUTHORITY_COMMENT_RESEAL.json",
+      "bytes": 5469,
+      "sha256": "63B55B0B04FA708E31434A84EE5CE57A66157380BB82615F872E83E8028A8080"
+    },
+    {
+      "domain": "public",
+      "path": "evidence/controls/R39_AUTHORITY_COMMENT_RESEAL.json",
+      "bytes": 5469,
+      "sha256": "63B55B0B04FA708E31434A84EE5CE57A66157380BB82615F872E83E8028A8080"
+    },
+    {
+      "domain": "private",
+      "path": "controls/R39_R43_SEQUENTIAL_CHAIN_REBASE_20260906.json",
+      "bytes": 13319,
+      "sha256": "54ED653F27FF96FECB315BEE0029BD6FFE087898DC37951D4C5F0A2A6255CE6C"
+    },
+    {
+      "domain": "public",
+      "path": "evidence/controls/R39_R43_SEQUENTIAL_CHAIN_REBASE_20260906.json",
+      "bytes": 13319,
+      "sha256": "54ED653F27FF96FECB315BEE0029BD6FFE087898DC37951D4C5F0A2A6255CE6C"
+    }
+  ],
+  "cumulative_manifest_postimage": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16281,
+    "sha256": "1F414A48D02837E9999205DC7E1B9468016A687605F5594DADAEDA4616EB21FB"
+  },
+  "transaction": {
+    "journal": "controls/R39_IDEAL_TERMINOLOGY_RESEAL_TRANSACTION.json",
+    "fresh_preimage_sha256": "E4C67D5670F8B8FE8D462DB8A7B58DE3DB8971823981EE458FF920C6355C07E1",
+    "all_postimages_computed_before_first_write": true,
+    "atomic_mirrored_writes_and_exact_rollback": true
+  },
+  "ledger_records": {
+    "decision": "AGKO-D190",
+    "evidence": "AGKO-E-R39-IDEAL-TERMINOLOGY-RESEAL",
+    "hard": "AGKO-H165",
+    "unit": "AGKO-EGA2-S1-R39-IDEAL-TERMINOLOGY-RESEAL-R1",
+    "unit_order": 2136
+  },
+  "downstream": "Any prospective R40+ cumulative hash rooted in B3F0 is historical after this reseal and requires additive recomputation before later integration.",
+  "limits": "No unrelated terminology, TeX build, PDF, Git, UI, publication, or later-unit integration action.",
+  "result": "PASS_R39_TYPED_HOMOGENEOUS_IDEAL_TERMINOLOGY_RESEAL"
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "agko-r39-canonical-prefix-rebase-v1",
+  "verified_at": "2026-09-05T16:41:06+02:00",
+  "precision": "second",
+  "scope": "Additively rebase the historical R39 admission onto the current EGA II authority after the sourcekeeper restored the scan-diplomatic punctuation at canonical line 1542; preserve the immutable admission, exact R39 source unit, candidate, and prospective Korean target bytes.",
+  "authority_binding": {
+    "state": "SOURCEKEEPER_SCAN_RESTORATION_NO_NEW_MATH_ID",
+    "correction_id": "EG-EGA-II-P22-FR-2.1.8-PUNCTUATION-001",
+    "transaction_label": "EGA2_FR_DIPLOMATIC_SCAN_COMMA",
+    "canon_event_id": "EGA-CANON-EVENT-20260905-D54",
+    "sourcekeeper_control": {
+      "path": "[CANONICAL_ROOT]/controls/EGA2_SOURCEKEEPER_T2.jsonl",
+      "bytes": 1043,
+      "sha256": "65AB1EDC9C12D7E79CC00B8F6BF1835B8FBCAB9DC7AD5D8EFC07DBE2E1B2771C"
+    },
+    "canon_event": {
+      "path": "[CANONICAL_ROOT]/controls/CANON_EVENT_20260905_D54.json",
+      "bytes": 5171,
+      "sha256": "DF32A17C6DF0A950D880551DDC9BE083D85D7A2CF3E702F9984A475642A438D7"
+    },
+    "korean_sync_receipt": {
+      "path": "[CANONICAL_ROOT]/qa/canon/ega_d54/EGA2_1_FR_KOREAN_SYNC_RECEIPT_20260905.json",
+      "bytes": 4732,
+      "sha256": "8153FE04EC311BBDA2E377F3B305D345145D09C2691070A9DC168830F5788D7D",
+      "json_validation": "PASS",
+      "text_change_required": false,
+      "impact": "provenance-only rebase"
+    },
+    "finding": "The comma after $S_+$ was machine-added and is absent from the scan; deleting it restores the source transcription and introduces no new mathematical decision."
+  },
+  "supporting_reconciliation": {
+    "private_path": "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+    "public_path": "evidence/controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+    "bytes": 6698,
+    "sha256": "C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C",
+    "proved_single_byte_delta_before_r38_unit": true
+  },
+  "canonical_source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole": {
+      "preimage_bytes": 820505,
+      "preimage_lf_lines": 18087,
+      "preimage_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+      "postimage_bytes": 820504,
+      "postimage_characters": 809277,
+      "postimage_lf_lines": 18087,
+      "postimage_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+    },
+    "sole_delta": {
+      "line": 1542,
+      "preimage_literal": "Alors, si $f\\in S_+$, n'appartient",
+      "postimage_literal": "Alors, si $f\\in S_+$ n'appartient",
+      "operation": "delete exactly the single ASCII comma after $S_+$",
+      "byte_delta": -1,
+      "line_precedes_r39_unit": true,
+      "no_other_source_delta_in_replay": true
+    },
+    "preunit_prefix_lines_1_1684": {
+      "preimage_bytes": 78090,
+      "preimage_lf_lines": 1684,
+      "preimage_sha256": "245FBEC6615FCB67B21CDD796D30DD2FC350BF4FB22B46F7D9F45B3DAEA5BEC6",
+      "postimage_bytes": 78089,
+      "postimage_characters": 76888,
+      "postimage_lf_lines": 1684,
+      "postimage_sha256": "3A2B507F3CEBB0B6201A30A36D595FFC4CF726DEF231F4228B06F6A5F6DE28FE"
+    },
+    "r39_unit_lines_1685_1780": {
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21",
+      "unchanged": true
+    },
+    "admitted_prefix_lines_1_1780": {
+      "preimage_bytes": 81886,
+      "preimage_lf_lines": 1780,
+      "preimage_sha256": "1F95FEC43B19B90C975F97EFAD3ECEA255FF92BBDBA97E605A0F25CD18572A43",
+      "postimage_bytes": 81885,
+      "postimage_characters": 80628,
+      "postimage_lf_lines": 1780,
+      "postimage_sha256": "033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33"
+    },
+    "rebase_proof": "The authoritative replay deletes exactly one byte at line 1542. Consequently both R39 prefixes lose exactly that byte, while the later exact R39 unit at lines 1685-1780 retains its admitted byte count, character count, line count, and SHA-256."
+  },
+  "historical_admission": {
+    "private_path": "controls/R39_TRANSLATION_ADMISSION.json",
+    "public_path": "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+    "bytes": 8605,
+    "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561",
+    "preserved": true,
+    "interpretation": "Its whole-source and prefix identities are historical pre-restoration identities; its exact R39 unit, candidate, semantic audit, and prospective-integration evidence remain valid."
+  },
+  "candidate": {
+    "path": "candidates/r39-c2s1-continuation.tex",
+    "bytes": 4094,
+    "characters": 2788,
+    "lf_lines": 100,
+    "sha256": "811AD490FC21AE287D0AD67FA897E8F47D5592B98234291B640A0AFCCAED0F26",
+    "byte_unchanged": true,
+    "semantic_unchanged": true,
+    "reason": "The sole canonical change is at line 1542, whereas the R39 candidate translates the unchanged source unit at lines 1685-1780."
+  },
+  "prospective_integration": {
+    "method": "exact integrated R38 target preimage followed by exactly one LF separator and the exact R39 candidate",
+    "target_preimage_bytes": 80222,
+    "target_preimage_sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "bytes": 84317,
+    "characters": 58695,
+    "lf_lines": 1809,
+    "sha256": "D08D6AD60E00CE72AC6D64BB1D95F0AB63836F8B50D065631DC4FCD044D4F67C",
+    "byte_unchanged": true,
+    "semantic_unchanged": true,
+    "integration_performed": false
+  },
+  "translation_impact": {
+    "r38_corresponding_korean_semantic_recheck": "PASS; the already integrated Korean text expresses that f in S_+ does not belong to the prime ideal and requires no change for removal of the machine-added French comma.",
+    "r39_translation_change_required": false,
+    "r39_candidate_or_target_bytes_changed": false
+  },
+  "write_boundary": {
+    "changed": [
+      "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json"
+    ],
+    "not_changed": [
+      "controls/R39_TRANSLATION_ADMISSION.json",
+      "candidates/r39-c2s1-continuation.tex",
+      "ega/II/c2s1.tex",
+      "source/c2s1.tex",
+      "shared manifests, state, ledgers, metadata, TeX, Git, publication, and UI"
+    ]
+  },
+  "result": "PASS_R39_CANONICAL_PREFIX_REBASE_CANDIDATE_AND_PROSPECTIVE_TARGET_UNAFFECTED"
+}

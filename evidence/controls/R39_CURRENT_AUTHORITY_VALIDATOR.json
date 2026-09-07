@@ -1,0 +1,231 @@
+{
+  "schema": "agko-r39-current-authority-validator-receipt-v2",
+  "verified_at": "2026-09-06T00:22:31+02:00",
+  "scope": "Fail-closed validation of the additively resealed Korean R39 candidate against the current post-D54 EGA II authority, exact preserved historical admission and source-rebase evidence, the exact current R38 Korean target preimage, and the corrected predetermined R39 prospective target; no target integration, build, Git, UI, or publication operation was performed.",
+  "superseded_current_receipt_preimage": {
+    "schema": "agko-r39-current-authority-validator-receipt-v1",
+    "bytes": 5941,
+    "sha256": "47B1C989182B3DEEF9F109ADAB3F82D1A503AC5381C96ACC16DE0A81DFCE1A92",
+    "reason": "The live current receipt was resealed after intentional Korean wording corrections; its exact preimage identity is retained here, while the immutable historical admission and rebase controls remain byte-preserved."
+  },
+  "historical_validator": {
+    "path": "candidates/validate_r39_candidate.py",
+    "bytes": 17815,
+    "lf_lines": 433,
+    "sha256": "12C2BA268387093F2DC8F098AB0556BB2502F2B7EE609485560D2E696C6B04B4",
+    "preserved_unchanged": true,
+    "status": "HISTORICAL_PRE_D54_AND_PRE_WORDING_RESEAL_WITNESS"
+  },
+  "preserved_historical_controls": {
+    "translation_admission": {
+      "private_path": "controls/R39_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "bytes": 8605,
+      "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561",
+      "private_public_exact": true,
+      "preserved_unchanged": true
+    },
+    "canonical_prefix_rebase": {
+      "private_path": "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "public_path": "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "bytes": 6370,
+      "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349",
+      "private_public_exact": true,
+      "preserved_unchanged": true,
+      "still_authoritative_for": "D54 source rebase, current source and prefixes, and the unchanged R39 source unit",
+      "historical_candidate_and_prospective_fields": "superseded only by the additive Korean wording reseal"
+    }
+  },
+  "wording_reseal_control": {
+    "path": "controls/R39_KOREAN_WORDING_RESEAL.json",
+    "bytes": 10118,
+    "lf_lines": 225,
+    "sha256": "9A30C30953B7C118434541FBE8F9A362BB374BB68835E479536073B8DE730451",
+    "schema": "agko-r39-korean-wording-reseal-v1",
+    "result": "PASS_R39_KOREAN_WORDING_RESEALED_CURRENT_CANDIDATE_AND_PROSPECTIVE_TARGET"
+  },
+  "current_validator": {
+    "path": "candidates/validate_r39_current.py",
+    "bytes": 31085,
+    "lf_lines": 673,
+    "sha256": "8040EC2CD547EDD2187FFA3398AEFF991069F5409E077ADD9677D8B2BEFA1366",
+    "additive": true,
+    "optimized_mode_safe": true,
+    "assert_statements_used": false,
+    "binds_historical_and_current_candidate_identities_separately": true,
+    "binds_historical_rebase_and_additive_wording_reseal": true
+  },
+  "authority": {
+    "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "bytes": 820504,
+    "characters": 809277,
+    "lf_lines": 18087,
+    "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+  },
+  "d54_single_byte_rebase": {
+    "line": 1542,
+    "operation": "delete exactly the single ASCII comma after $S_+$",
+    "preimage_bytes": 820505,
+    "preimage_sha256": "84EDBE3E83530AF2959B441796337C9DC21EAFCA6A13114A26778760FBF437AC",
+    "postimage_bytes": 820504,
+    "postimage_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "exact_single_byte_inverse": true,
+    "r39_unit_byte_identical": true
+  },
+  "source_unit": {
+    "lines": "1685-1780",
+    "bytes": 3796,
+    "characters": 3740,
+    "lf_lines": 96,
+    "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21"
+  },
+  "candidate_transition": {
+    "path": "candidates/r39-c2s1-continuation.tex",
+    "historical_preimage": {
+      "bytes": 4094,
+      "characters": 2788,
+      "lf_lines": 100,
+      "hangul_syllables": 653,
+      "sha256": "811AD490FC21AE287D0AD67FA897E8F47D5592B98234291B640A0AFCCAED0F26"
+    },
+    "current_postimage": {
+      "bytes": 4051,
+      "characters": 2771,
+      "lf_lines": 100,
+      "hangul_syllables": 640,
+      "sha256": "E8F52EDEC11B90D3CCC4E2398279DA4DEA7A6064AABFBE87D1765D55FEDE1940"
+    },
+    "exact_reverse_reconstruction": "PASS: applying only the exact inverse of the nine recorded wording changes reconstructs the complete 4094-byte historical candidate and its SHA-256",
+    "other_candidate_drift": false
+  },
+  "current_target_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "changed": false
+  },
+  "predetermined_prospective_target": {
+    "method": "exact R38 target preimage followed by exactly one LF separator and the corrected exact R39 candidate",
+    "separator_plus_candidate_bytes": 4052,
+    "separator_plus_candidate_sha256": "7CF528B90E7D1D50EEAABF714AB185C574F5C8A86520F46A7D697FAFB381186C",
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "F3DD70691223B0D35052B4D6F4CF5E77B72AA2C5F352EDE5D9C83E98704C8257",
+    "integrated_now": false
+  },
+  "invariant_coverage": {
+    "exact_current_whole_prefix_and_unit": "PASS",
+    "exact_historical_admission_and_source_rebase": "PASS_BYTE_IDENTICAL",
+    "exact_candidate_and_authorized_diff_only": "PASS",
+    "global_inline_formula_multiset": "PASS: 74/74",
+    "clause_local_formula_partition": "PASS: 17 contiguous clauses; no formula crossed a semantic boundary",
+    "display_formula_content_and_order": "PASS: 3/3",
+    "total_math_spans": "PASS: 77/77",
+    "xymatrix": "PASS: 1/1",
+    "labels_references_environment_order_and_nesting_oldpage": "PASS",
+    "quotient_class_register": "PASS: 잉여류 with locally bound homogeneous representative",
+    "canonical_noun_compounds": "PASS: 표준 동형, 표준 준동형, 표준 상; three actual adverbial 표준적으로 uses retained",
+    "commutative_diagram_register": "PASS: 다음 도식은 가환한다",
+    "terminology_semantic_quantifier_and_diplomatic_guards": "PASS",
+    "exact_private_public_target_preimage": "PASS_UNCHANGED",
+    "exact_prospective_target": "PASS"
+  },
+  "independent_review": {
+    "bounded_french_to_korean_semantic_review": "PASS",
+    "quotient_type": "The class is a residue/coset class in S^(d)/(f-1)S^(d); the inverse-map sentence quantifies classes represented by x in S_nd without adding a global conditional.",
+    "formula_and_structure_review": "PASS_NO_OTHER_DEFECT",
+    "printed_line_1709_source_oddity_preserved": true,
+    "printed_line_1738_formula_preserved": true
+  },
+  "correction_routing": {
+    "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "quotient_class_register_lead": "DELIVERED_BY_COORDINATING_TASK",
+    "canonical_noun_compound_lead": "DELIVERED_BY_COORDINATING_TASK",
+    "commutative_diagram_register_lead": "DELIVERED_BY_COORDINATING_TASK"
+  },
+  "executions": {
+    "normal_positive": {
+      "command": "python candidates/validate_r39_current.py [CANONICAL_EGA2_TEX]",
+      "exit_code": 0,
+      "schema": "agko-r39-current-authority-validation-v2",
+      "result": "PASS_R39_CURRENT_AUTHORITY_CANDIDATE_AND_PROSPECTIVE_TARGET"
+    },
+    "optimized_positive": {
+      "command": "python -O candidates/validate_r39_current.py [CANONICAL_EGA2_TEX]",
+      "exit_code": 0,
+      "schema": "agko-r39-current-authority-validation-v2",
+      "result": "PASS_R39_CURRENT_AUTHORITY_CANDIDATE_AND_PROSPECTIVE_TARGET"
+    },
+    "bounded_negative_suite": {
+      "command": "python candidates/validate_r39_current.py [CANONICAL_EGA2_TEX] --self-test-negatives",
+      "exit_code": 0,
+      "temporary_witness_count": 6,
+      "temporary_witnesses_removed_automatically": true,
+      "checks": [
+        {
+          "witness": "wrong-current-source",
+          "validator_exit": "nonzero",
+          "expected_failure": "canonical hash drift",
+          "result": "PASS"
+        },
+        {
+          "witness": "wrong-candidate",
+          "validator_exit": "nonzero",
+          "expected_failure": "candidate hash drift",
+          "result": "PASS"
+        },
+        {
+          "witness": "wrong-private-target",
+          "validator_exit": "nonzero",
+          "expected_failure": "integrated R38 private/public preimages differ",
+          "result": "PASS"
+        },
+        {
+          "witness": "wrong-public-target",
+          "validator_exit": "nonzero",
+          "expected_failure": "integrated R38 private/public preimages differ",
+          "result": "PASS"
+        },
+        {
+          "witness": "wrong-rebase-control",
+          "validator_exit": "nonzero",
+          "expected_failure": "R39 rebase-control hash drift",
+          "result": "PASS"
+        },
+        {
+          "witness": "wrong-reseal-control",
+          "validator_exit": "nonzero",
+          "expected_failure": "R39 wording-reseal hash drift",
+          "result": "PASS"
+        }
+      ]
+    }
+  },
+  "downstream_dependency_notice": "R40 and later unintegrated prospective controls that bind the historical R39 postimage must be additively resealed before integration; no later candidate text or source unit was edited here.",
+  "write_boundary": {
+    "changed": [
+      "candidates/r39-c2s1-continuation.tex",
+      "candidates/validate_r39_current.py",
+      "controls/R39_CURRENT_AUTHORITY_VALIDATOR.json"
+    ],
+    "created": [
+      "controls/R39_KOREAN_WORDING_RESEAL.json"
+    ],
+    "preserved": [
+      "candidates/validate_r39_candidate.py",
+      "controls/R39_TRANSLATION_ADMISSION.json",
+      "evidence/controls/R39_TRANSLATION_ADMISSION.json",
+      "controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "ega/II/c2s1.tex",
+      "pub/ega-ko/source/c2s1.tex",
+      "canonical EGA II source",
+      "all R38 public inventory, Git, TeX, UI, and publication state"
+    ]
+  },
+  "result": "PASS_R39_CURRENT_AUTHORITY_WORDING_RESEAL_READY"
+}

@@ -7,9 +7,9 @@ authors:
     given-names: "Alexander"
   - family-names: "Dieudonné"
     given-names: "Jean"
-version: "2026-09-05-r38"
-date-released: 2026-09-05
-doi: "10.5281/zenodo.22346664"
+version: "2026-09-06-r39"
+date-released: 2026-09-06
+doi: "10.5281/zenodo.22416007"
 url: "https://doi.org/10.5281/zenodo.21921513"
 preferred-citation:
   type: book
@@ -23,7 +23,7 @@ preferred-citation:
     - name: "AI typesetting & translation"
   languages:
     - "ko"
-  doi: "10.5281/zenodo.22346664"
-  version: "2026-09-05-r38"
+  doi: "10.5281/zenodo.22416007"
+  version: "2026-09-06-r39"
   year: "2026"
   url: "https://doi.org/10.5281/zenodo.21921513"
