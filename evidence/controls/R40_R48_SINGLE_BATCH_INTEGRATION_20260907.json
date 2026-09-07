@@ -1,0 +1,63 @@
+{
+  "schema": "agko-r40-r48-single-batch-integration-v1",
+  "recorded_at_utc": "2026-09-07T14:51:31.4517823Z",
+  "scope": "One cumulative source/hash admission and integration transaction for every already-prepared contiguous Korean EGA II unit R40-R48; no per-unit PDF build or QA loop.",
+  "canonical_source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "admitted_prefix_lines": "1-2694",
+    "admitted_prefix_bytes": 118946,
+    "admitted_prefix_sha256": "04113B8FFC608C7CA286A77C37363C651C7AF529804C25B3BE519023A31B9F23",
+    "next": "line2695 blank; line2696 begins Proposition2.5.13"
+  },
+  "preimage": {
+    "state": "R40 already integrated before the batching correction",
+    "bytes": 89104,
+    "lf_lines": 1924,
+    "sha256": "E6ACDF633E94752149454AE263D8EC79FA771D1BC5E930CC3C94CAAF8967294C"
+  },
+  "successor_units": [
+    {"unit":"R41","source_lines":"1891-1992","source_sha256":"77FC0279D0B1D94CB72C7C7F72CBA183923F4B735AA9CB09F01530BB0F638EE8","candidate":"candidates/r41-c2s1-continuation-homogeneous-reseal.tex","candidate_bytes":4544,"candidate_sha256":"79ED45240DEC3DC8F9BEA73B958678075CE6199D63E3D0EEE053AD83E8F8B104"},
+    {"unit":"R42","source_lines":"1994-2093","source_sha256":"E37A387DDF6748B588BF43ABA9CACF5B0A9D5A03EC180F3C79C4A1594EBB732A","candidate":"candidates/r42-c2s1-continuation-homogeneous-reseal.tex","candidate_bytes":4645,"candidate_sha256":"3B74054B6D22D99A0BC15DD5DB5E8A4ED3D2EF711B424A8512B9DFE8A75C8B41"},
+    {"unit":"R43","source_lines":"2095-2194","source_sha256":"DBFF404676F8447B963899E2697D0B0F090DF18AD4B6EFD323F5ABFE263BD571","candidate":"candidates/r43-c2s1-continuation-homogeneous-reseal.tex","candidate_bytes":4450,"candidate_sha256":"E0D782F460FBAEDD2D30DBB5E05C4F63A8D60F2ADC1A6AD4BD315CD91DB2F1A2"},
+    {"unit":"R44","source_lines":"2196-2292","source_sha256":"0531F64B92A508E460320A2801B60C94FF9D3A308E0495F667E2D9A7629A5858","candidate":"candidates/r44-c2s1-continuation.tex","candidate_bytes":4580,"candidate_sha256":"5B00D25AF7E720BFD1D40CACE790D33AF200544664391E5969211F10CEA22703"},
+    {"unit":"R45","source_lines":"2294-2385","source_sha256":"AD786F41D28FE32BA8BBB472A17C66B9DDF228C3CBBB129214C6C92D01959315","candidate":"candidates/r45-c2s1-continuation.tex","candidate_bytes":4491,"candidate_sha256":"5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742"},
+    {"unit":"R46","source_lines":"2387-2477","source_sha256":"36D6FC14C5046580440466693A1AB7061A3609891BEEAD164AACBB77E9FDB628","candidate":"candidates/r46-c2s1-continuation.tex","candidate_bytes":4193,"candidate_sha256":"F3AAF17AE85C46461FE6FEEDB3C238EBB7F8F65471B2483F4E6D4C9AE9CF6F48"},
+    {"unit":"R47","source_lines":"2479-2566","source_sha256":"D32F65C5D5EC5CD97AF7D61E44878EF5F6BE79A0AE645F1416E1C30B4E290E58","candidate":"candidates/r47-c2s1-continuation.tex","candidate_bytes":3887,"candidate_sha256":"7908CB9BBFDDA07E0F8A555C872E5E841735AE06DD00D77389C00FF39AE2D1C0"},
+    {"unit":"R48","source_lines":"2568-2694","source_sha256":"C0F0FEEFB7096812B3B6FF03B3C8189BCF739C434623D8C92341CEC677D9605C","candidate":"candidates/r48-c2s1-continuation.tex","candidate_bytes":4619,"candidate_sha256":"6CC45704072D6889D791747D5636A2DC46AD5E46675DD34EE68443C12E1DB0C9"}
+  ],
+  "construction": "exact R40 preimage followed by one LF and each exact selected R41-R48 candidate in order; then one authority-header reseal to canonical lines1-2694 and one post-integration link fallback for the untranslated forward target II.7.4.14",
+  "postimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 124497,
+    "characters": 87083,
+    "lf_lines": 2752,
+    "sha256": "6DE19B9A783DD17AFEE9C5DA36F29CB6A9F63C57768A4727281B7642C2914C03",
+    "private_public_byte_identical": true,
+    "historical_page_markers": 29,
+    "terminal_environment": "2.5.12",
+    "forward_reference_fallback": {
+      "source_line": 2193,
+      "target_line": 2246,
+      "printed_reference": "7.4.14",
+      "reason": "The referenced later EGA II environment is not yet translated, so its semantic reference is preserved as plain text without fabricating a PDF destination.",
+      "source_mutation": false
+    }
+  },
+  "workflow_override": {
+    "per_small_section_pdf_qa": false,
+    "multiple_whole_reader_qa_loops": false,
+    "reader_build": "one mutex-held convergence cycle after the complete batch",
+    "reader_qa": "one aggregate extraction/link/font/render pass after that build",
+    "publication": "one cumulative release after aggregate QA"
+  },
+  "zenodo_successor": {
+    "record_id": 22645017,
+    "exact_doi": "10.5281/zenodo.22645017",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "state": "reserved_unpublished_for_the_cumulative_batch"
+  },
+  "result": "PASS_R40_R48_SINGLE_BATCH_INTEGRATION"
+}

@@ -1,0 +1,327 @@
+{
+  "schema": "agko-r45-translation-admission-v1",
+  "time": "2026-09-06T01:32:03+02:00",
+  "scope": "EGA II canonical lines 2294-2385: Proposition 2.4.7 through the statement of Proposition 2.5.2",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2294-2385",
+    "unit_bytes": 4147,
+    "unit_characters": 4094,
+    "unit_lf_lines": 92,
+    "unit_sha256": "AD786F41D28FE32BA8BBB472A17C66B9DDF228C3CBBB129214C6C92D01959315",
+    "preunit_prefix_lines": "1-2293",
+    "preunit_prefix_bytes": 103010,
+    "preunit_prefix_characters": 101412,
+    "preunit_prefix_sha256": "0C5FA0552F9DE492BA3658602FE0892E540B2ED893747B77C2C44336FC179B54",
+    "postunit_prefix_lines": "1-2385",
+    "postunit_prefix_bytes": 107157,
+    "postunit_prefix_characters": 105506,
+    "postunit_prefix_sha256": "9D4C36EFAC8A133B29E9B1CC0BDCFE17C19B96310C458C67AC79C61BEA947413",
+    "boundaries": "line 2293 blank; line 2294 begins Proposition 2.4.7; line 2385 ends the statement of Proposition 2.5.2; line 2386 blank; line 2387 begins its proof",
+    "natural_complete_boundary": true
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "r66_scope": "EGA IV-3 consumer synchronization only",
+    "ega_ii_source_and_head_unchanged": true,
+    "relevant_unit_new_dispositions": 0
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_characters": 103751,
+    "whole_lf_lines": 1769,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "643-691",
+    "slice_bytes": 3586,
+    "slice_characters": 3586,
+    "slice_lf_lines": 49,
+    "slice_sha256": "CD3CD5CB908F07E950B3FE0974A91DBA3C7B5963386D0416DD49181DA9D98799",
+    "role": "independent maintained English semantic and mathematical-type witness; French remains diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_ON_PRINTED_PAGES_30_31",
+    "rendered_scan_witnesses": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P27.png",
+        "bytes": 232505,
+        "sha256": "4808FF6587B8898CF9D89B2B14C1E8F1A22A7A74DD6D819727886F4CD8E03599"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P28.png",
+        "bytes": 248768,
+        "sha256": "7544BB940F8E450D62FDF5AE6F950FE2E01D03AEC067744DCC833FD09ECD7200"
+      }
+    ],
+    "ledgers": [
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P30_FR.jsonl",
+        "bytes": 170138,
+        "sha256": "1E632251B63CCF22D3C81B88D844804582B09EC6130D9C9FCAA55F160A807F3F"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P31_FR.jsonl",
+        "bytes": 180969,
+        "sha256": "4CFEC97BC64409B67C616F48122775D609E6923B269458870E0E4F0390FD3079"
+      }
+    ]
+  },
+  "candidate": {
+    "path": "candidates/r45-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r45-c2s1-continuation.tex",
+    "bytes": 4491,
+    "characters": 3275,
+    "lf_lines": 93,
+    "hangul_syllables": 608,
+    "sha256": "5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742",
+    "bom_cr_replacement_characters": "0/0/0"
+  },
+  "wording_reseal": {
+    "auditor_preimage": {
+      "bytes": 4470,
+      "characters": 3266,
+      "lf_lines": 93,
+      "sha256": "8CEB4E168A2CC4CCC79F47F7FB330EF51B25615C6F5F1A4312933FFCFB4B6D6C"
+    },
+    "intermediate_after_typed_term_and_particle_repairs_sha256": "B5655E6A44CF2518FCC4B2AA5867E0F9214AE04537C49CD9FAFA111F22933261",
+    "intermediate_unordered_formula_pair_sha256": "B6B065F4267494BA484CB947C3C1E3E41FB8DFBD73FFFBDBA56BA542EFF7D192",
+    "superseded_three_repair_freeze": {
+      "bytes": 4470,
+      "characters": 3266,
+      "lf_lines": 93,
+      "sha256": "C0D4A363B061C5AE248F30957042A4C61AD54DD7D6953D92B31CA89D8524B1CA"
+    },
+    "repair_count": 8,
+    "final_sha256": "5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742",
+    "repairs": [
+      {
+        "id": "R45-WORD-001",
+        "locus": "canonical line 2314 / candidate Proposition 2.4.7(i) proof",
+        "preimage": "등급\\n    소아이디얼",
+        "postimage": "동차\\n    소아이디얼",
+        "reason": "typed homogeneous-ideal mapping XW-KO-005 and AGKO-T159 context"
+      },
+      {
+        "id": "R45-WORD-002",
+        "locus": "canonical lines 2322-2324 / candidate Proposition 2.4.7(i) proof",
+        "preimage": "$\\mathfrak{p}_n$들은",
+        "postimage": "$\\mathfrak{p}_n$들이",
+        "reason": "repair the Korean subject-particle mismatch before the nominalized predicate"
+      },
+      {
+        "id": "R45-WORD-003",
+        "locus": "canonical lines 2322-2324 / candidate Proposition 2.4.7(i) proof",
+        "preimage": "이와 같이 정의한",
+        "postimage": "이와 같이 정의된",
+        "reason": "natural Korean subject syntax while preserving the exact source formula order"
+      },
+      {
+        "id": "R45-WORD-004",
+        "locus": "canonical lines 2303-2304 / candidate Proposition 2.4.7 statement",
+        "preimage": "$S'_n=S_n$($\\mathbf{Z}$-가군으로 본다)는",
+        "postimage": "$S'_n=S_n$은 ($\\mathbf{Z}$-가군으로서)",
+        "reason": "state the parenthetical module qualification idiomatically without changing assertion scope"
+      },
+      {
+        "id": "R45-WORD-005",
+        "locus": "canonical line 2323 / candidate Proposition 2.4.7(i) proof",
+        "preimage": "모든 $n>0$ 중 $d$의 배수가 아닌 것에 대하여",
+        "postimage": "$n>0$이고 $d$의 배수가 아닌 모든 경우에",
+        "reason": "clarify the quantified exceptional degrees while preserving formula order"
+      },
+      {
+        "id": "R45-WORD-006",
+        "locus": "canonical lines 2331-2332 / candidate Proposition 2.4.7(i) proof",
+        "preimage": "$\\mathfrak{p}\\in\\operatorname{Proj}(S)$인 유일한 소아이디얼이\\n    존재하여 $\\mathfrak{p}\\cap S^{(d)}=\\mathfrak{p}'$을 만족한다.",
+        "postimage": "유일한 소아이디얼 $\\mathfrak{p}\\in\\operatorname{Proj}(S)$가 존재하며,\\n    이 소아이디얼은 $\\mathfrak{p}\\cap S^{(d)}=\\mathfrak{p}'$을 만족한다.",
+        "reason": "make existence, uniqueness, and the defining equation syntactically explicit"
+      },
+      {
+        "id": "R45-WORD-007",
+        "locus": "canonical lines 2339-2343 / candidate Proposition 2.4.7(ii) proof",
+        "preimage": "각 $\\mathfrak{p}\\in\\operatorname{Proj}(S)$에,\\n    $\\mathfrak{p}'\\in\\operatorname{Proj}(S')$이고\\n    $\\mathfrak{p}'\\cap S_n=\\mathfrak{p}\\cap S_n$이 모든 $n>0$에 대하여\\n    성립하는 유일한 소아이디얼을 대응시키면",
+        "postimage": "각 $\\mathfrak{p}\\in\\operatorname{Proj}(S)$에 유일한\\n    소아이디얼 $\\mathfrak{p}'\\in\\operatorname{Proj}(S')$을 대응시키되,\\n    $\\mathfrak{p}'\\cap S_n=\\mathfrak{p}\\cap S_n$이 모든 $n>0$에 대하여\\n    성립하게 하면",
+        "reason": "attach uniqueness unambiguously to the corresponding prime ideal"
+      },
+      {
+        "id": "R45-WORD-008",
+        "locus": "canonical line 2368 / candidate Construction 2.5.1",
+        "preimage": "따라서 이에 대응하는 준연접층",
+        "postimage": "따라서 이 가군에 대응하는 준연접층",
+        "reason": "retain the typed module-associated-sheaf relation and keep it distinct from sheafification"
+      }
+    ],
+    "deterministic_reconstruction": {
+      "reverse_publication_refinements": "5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742 -> reverse R45-WORD-008..004 -> C0D4A363B061C5AE248F30957042A4C61AD54DD7D6953D92B31CA89D8524B1CA (4470 bytes)",
+      "reverse_all_repairs": "C0D4A363B061C5AE248F30957042A4C61AD54DD7D6953D92B31CA89D8524B1CA -> reverse R45-WORD-003..001 -> 8CEB4E168A2CC4CCC79F47F7FB330EF51B25615C6F5F1A4312933FFCFB4B6D6C (4470 bytes)",
+      "forward_replay": "8CEB4E168A2CC4CCC79F47F7FB330EF51B25615C6F5F1A4312933FFCFB4B6D6C -> apply R45-WORD-001..008 -> exact final candidate 5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742",
+      "transient_formula_order_inverse": "B6B065F4267494BA484CB947C3C1E3E41FB8DFBD73FFFBDBA56BA542EFF7D192 -> inverse sole n>=0/p_n order edit -> C0D4A363B061C5AE248F30957042A4C61AD54DD7D6953D92B31CA89D8524B1CA",
+      "result": "PASS_EXACT_BYTE_REVERSE_AND_FORWARD_REPLAY"
+    },
+    "superseded_identities_preserved_as_evidence": true
+  },
+  "superseded_freeze_evidence": {
+    "candidate": "4470 B / C0D4A363B061C5AE248F30957042A4C61AD54DD7D6953D92B31CA89D8524B1CA",
+    "validator": "28569 B / 3BF233395C23E2EBB7F57AB9122410602DC755731758604FCC3BF7A0B0329FD9",
+    "private_and_public_control": "12570 B each / CC76BDEF14BCA97E7B644BB582828CC59B860F46AAF9B8499EE17E834CFA540A",
+    "status": "superseded evidence only; none is final"
+  },
+  "immediate_predecessor_context": {
+    "status": "standalone_register_context_only",
+    "candidate_path": "candidates/r44-c2s1-continuation.tex",
+    "candidate_bytes": 4580,
+    "candidate_sha256": "5B00D25AF7E720BFD1D40CACE790D33AF200544664391E5969211F10CEA22703",
+    "control_path": "controls/R44_TRANSLATION_ADMISSION.json",
+    "control_bytes": 13443,
+    "control_sha256": "4E2ED7E496C5B31859E40E851A5D0AC5C345621C115EB0E70CBC328AD7812363",
+    "source_boundary": "R44 ends at canonical line 2292; line 2293 is blank; R45 begins at line 2294"
+  },
+  "integrated_mirror_observation": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "observed_bytes": 84274,
+    "observed_characters": 58678,
+    "observed_lf_lines": 1809,
+    "observed_sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD",
+    "r45_exact_candidate_containment": false,
+    "note": "the integrated mirror can advance independently; exact R45 containment, rather than suffix-only testing, is forbidden in this candidate lane"
+  },
+  "cumulative_predecessor_and_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R40_R41_R42_R43_R44",
+    "reason": "R45 is candidate-only; no speculative cumulative predecessor or prospective identity is bound.",
+    "predecessor_bytes": null,
+    "predecessor_sha256": null,
+    "prospective_bytes": null,
+    "prospective_sha256": null,
+    "integration_now": false
+  },
+  "structure_formula_and_negative_validation": {
+    "validator": "candidates/validate_r45_candidate.py",
+    "validator_bytes": 33884,
+    "validator_characters": 32350,
+    "validator_lf_lines": 756,
+    "validator_sha256": "8CF0C6A33B911C08D1626B2B7D4CB90BFD5699EFC13B1EE14527DC811E8C0D6F",
+    "result": "PASS_R45_R66_SOURCE_CANON_STANDALONE_CANDIDATE_PENDING_SEQUENTIAL_REBASE",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "source_inline_formula_count": 81,
+    "target_inline_formula_count": 81,
+    "whole_unit_formula_multiset_exact": true,
+    "formula_order": {
+      "exact_source_order_positions": 81,
+      "authorized_permutation_count": 0,
+      "result": "PASS_EXACT_ORDERED_81_OF_81"
+    },
+    "semantic_block_formula_counts": {
+      "Proposition 2.4.7": 11,
+      "Proof 2.4.7(i)": 27,
+      "Proof 2.4.7(ii)": 13,
+      "Corollary 2.4.8": 9,
+      "Proof 2.4.8": 1,
+      "Construction 2.5.1": 9,
+      "Proposition 2.5.2": 11
+    },
+    "label_count": 5,
+    "ordered_reference_count": 7,
+    "ordered_environment_event_count": 16,
+    "oldpage": "II31",
+    "navigation_only_phantomsection_count": 4,
+    "negative_witness_count": 8,
+    "negative_witnesses": [
+      "Veronese formula-owner corruption",
+      "prime-uniqueness deletion",
+      "affine-scheme/sheaf type swap",
+      "associated-sheaf/sheafification terminology collapse",
+      "label corruption",
+      "oldpage deletion",
+      "crosswalk global-replacement flip",
+      "exact R45 embedded before a later cumulative suffix"
+    ]
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_hypotheses_quantifiers_and_directions_preserved": true,
+    "veronese_prime_reconstruction_preserved": true,
+    "topological_and_chart_identifications_preserved": true,
+    "degree_zero_replacement_by_Z_preserved": true,
+    "graded_A_algebra_corollary_preserved": true,
+    "module_associated_sheaf_not_sheafification": true,
+    "affine_scheme_is_object_identified_with_D_plus_f": true,
+    "unique_quasi_coherent_module_and_restriction_maps_preserved": true,
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "terms.jsonl",
+      "private_public_exact": true,
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records": ["AGKO-T035 graded", "AGKO-T039 quasi-coherent", "AGKO-T089 module-associated sheaf", "AGKO-T159 homogeneous spectrum context"]
+    },
+    {
+      "path": "terminology/arxiv/2026-08-26/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "role": "cached primary scholarly projective/graded semantic context; not Korean spelling authority"
+    },
+    {
+      "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+      "bytes": 35543,
+      "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+      "role": "read-only nonbinding typed conflict detector; no global replacement authority",
+      "used_mappings": ["XW-KO-003", "XW-KO-004", "XW-KO-005", "XW-KO-008", "XW-KO-013", "XW-KO-016", "XW-KO-027", "XW-KO-028", "XW-KO-034"]
+    }
+  ],
+  "existing_corrected_english_disposition": {
+    "locus": "Proposition 2.4.7(i), canonical French lines 2330-2333 / maintained English line 662",
+    "english_preimage_issue": "the second localized ring once lost its S^(d) owner",
+    "existing_issue_id": "EG-EGA-II-P30-FR-2.4.7-EN-OMISSION-001",
+    "existing_correction_id": "EG-EGA-II-P30-FR-2.4.7-EN-CORRECTION-001",
+    "maintained_english_postimage_present": "S_(f) and S^(d)_(f^d) are canonically identified",
+    "french_effect": "none; French remains diplomatic",
+    "new_correction_id_allocated": false
+  },
+  "source_queries": {
+    "status": "NO_NEW_FRENCH_SOURCE_OR_CANONICAL_DEFECT",
+    "existing_english_correction_reused": true,
+    "new_correction_id_allocated": false,
+    "normalization_lead": "Review earlier unintegrated uses of 등급 소아이디얼 against typed crosswalk mapping XW-KO-005 before their own integration; no global rewrite is authorized."
+  },
+  "independent_review": {
+    "method": "Independent French/Korean/English semantic and register review, separate formula/structure review, and independent adversarial validator/privacy review followed by exact ordinary and optimized validator runs.",
+    "semantic_register_result": "PASS_FINAL_INDEPENDENT_SECOND_READ_NO_REMAINING_RECOMMENDATION_AFTER_EIGHT_REPAIRS",
+    "formula_result": "PASS_EXACT_ORDERED_81_OF_81_FORMULAS",
+    "validator_result": "PASS_NORMAL_AND_OPTIMIZED_WITH_EIGHT_NEGATIVES_EXACT_REVERSE_FORWARD_RECONSTRUCTION_AND_NO_RECOMMENDATION",
+    "privacy_result": "PASS_NO_LOCATOR_CREDENTIAL_URL_IDENTITY_PROJECT_BRAND_NOTE_OR_REPLACEMENT_CHARACTER_LEAKAGE",
+    "candidate_identity_reviewed": "4491 B / 5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "public_control_contains_prohibited_repository_reference": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_standalone_candidate",
+    "integration": "not_integrated",
+    "build": "not_run_by_R45_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "After R40 through R44 are sequentially resealed, bind the exact cumulative predecessor and R45 prospective identity; continue source-bounded translation at canonical line 2387."
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "agko-r47-translation-admission-v1",
+  "time": "2026-09-06T23:40:11+02:00",
+  "scope": "EGA II canonical lines 2479-2566: the rational-function-field paragraph and complete items 2.5.6 through 2.5.10",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2479-2566",
+    "unit_bytes": 3289,
+    "unit_characters": 3240,
+    "unit_lf_lines": 88,
+    "unit_sha256": "D32F65C5D5EC5CD97AF7D61E44878EF5F6BE79A0AE645F1416E1C30B4E290E58",
+    "preunit_prefix_lines": "1-2478",
+    "preunit_prefix_bytes": 111264,
+    "preunit_prefix_characters": 109546,
+    "preunit_prefix_lf_lines": 2478,
+    "preunit_prefix_sha256": "5E8181D302F056DB91F7DFAB9FCA1B2EAEC3C423C9451E22E985CF1FC08AF675",
+    "postunit_prefix_lines": "1-2566",
+    "postunit_prefix_bytes": 114553,
+    "postunit_prefix_characters": 112786,
+    "postunit_prefix_lf_lines": 2566,
+    "postunit_prefix_sha256": "D8FAC8A02BE6A6257F7B05AFC891B26E107D6FE242B9C785FB36E838147AF3AD",
+    "boundaries": "line 2478 is blank; line 2479 begins the complete rational-function-field paragraph; line 2566 closes item 2.5.10; line 2567 is blank; line 2568 begins item 2.5.11",
+    "natural_complete_boundary": true,
+    "boundary_rationale": "The unit is 3,240 source characters, closes the complete paragraph and every included numbered environment, and stops before item 2.5.11. Extending through 2.5.11 would materially exceed the approximately 4,000-character production unit."
+  },
+  "english_semantic_witnesses": {
+    "paired": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_characters": 103751,
+      "whole_lf_lines": 1769,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377"
+    },
+    "global": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[GLOBAL_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+      "exactly_equal_to_paired_copy": true
+    },
+    "slice_lines": "742-798",
+    "slice_bytes": 3052,
+    "slice_characters": 3052,
+    "slice_lf_lines": 57,
+    "slice_sha256": "0854E2611ACFE78D6B7403761D5F7C2A7C732E1338B2DDFA19C2983EBC608EEA",
+    "role": "independent maintained semantic and mathematical-type witnesses; French remains the diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_AND_DISPOSITIONS_ON_PRINTED_PAGE_32",
+    "rendered_scan": {
+      "path": "[CANONICAL_ROOT]/qa/ega2/P29.png",
+      "printed_page": "II-32",
+      "bytes": 221699,
+      "sha256": "8D388F13F04A77F9A7081300853B4F367BF7434A1AD73907A1501D82DFBE1066"
+    },
+    "ledger": {
+      "path": "[CANONICAL_ROOT]/controls/E2P32_FR.jsonl",
+      "bytes": 190762,
+      "sha256": "0DDA6165688B3D495304456BBDA785E0ECFE31C525D468BA7FFF57DFD4DC0304"
+    },
+    "passing_dispositions": [
+      "EG-EGA-II-P32-FR-RATIONAL-FIELD-001",
+      "EG-EGA-II-P32-FR-2.5.6-001",
+      "EG-EGA-II-P32-FR-2.5.7-001",
+      "EG-EGA-II-P32-FR-2.5.8-001",
+      "EG-EGA-II-P32-FR-2.5.9-001",
+      "EG-EGA-II-P32-FR-2.5.10-001",
+      "EG-EGA-II-P32-FR-NO-ERRATUM-001"
+    ],
+    "all_required_dispositions_pass": true,
+    "source_error_in_unit": false
+  },
+  "immediate_predecessor_context": {
+    "status": "validated_standalone_register_context_only",
+    "candidate_path": "candidates/r46-c2s1-continuation.tex",
+    "candidate_bytes": 4193,
+    "candidate_sha256": "F3AAF17AE85C46461FE6FEEDB3C238EBB7F8F65471B2483F4E6D4C9AE9CF6F48",
+    "validator_path": "candidates/validate_r46_candidate.py",
+    "validator_bytes": 22152,
+    "validator_sha256": "484FE7690DDBBDBF4C4859FD6D30CAB7953EBF04AA5C83C6788440CD8448577D",
+    "control_path": "controls/R46_TRANSLATION_ADMISSION.json",
+    "control_bytes": 14311,
+    "control_sha256": "A11945D941693B9A7D3FEF504B65F3850085D37957216313D3B2DE0A213C3A53",
+    "source_boundary": "R46 ends at canonical line 2477; line 2478 is blank; R47 begins at line 2479",
+    "r46_integration_observed": false
+  },
+  "candidate": {
+    "path": "candidates/r47-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r47-c2s1-continuation.tex",
+    "bytes": 3887,
+    "characters": 2619,
+    "lf_lines": 94,
+    "hangul_syllables": 634,
+    "sha256": "7908CB9BBFDDA07E0F8A555C872E5E841735AE06DD00D77389C00FF39AE2D1C0",
+    "bom_cr_replacement_characters": "0/0/0"
+  },
+  "cumulative_predecessor_and_prospective": {
+    "status": "pending_sequential_rebase_after_R40_R41_R42_R43_R44_R45_R46",
+    "reason": "R47 is candidate-only; no speculative cumulative predecessor or prospective identity is bound.",
+    "predecessor_bytes": null,
+    "predecessor_sha256": null,
+    "prospective_bytes": null,
+    "prospective_sha256": null,
+    "integration_now": false
+  },
+  "structure_formula_and_negative_validation": {
+    "validator": "candidates/validate_r47_candidate.py",
+    "validator_bytes": 23256,
+    "validator_characters": 21981,
+    "validator_lf_lines": 463,
+    "validator_sha256": "424143C347DA3A22042E57CD797B82CFF07E122D8422816C6A7A0B2AD818B55C",
+    "result": "PASS_R47_SOURCE_ACCURATE_STANDALONE_CANDIDATE_AFTER_VALIDATED_R46",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "source_inline_formula_count": 78,
+    "target_inline_formula_count": 78,
+    "source_display_formula_count": 3,
+    "target_display_formula_count": 3,
+    "mathematical_span_order": "PASS_EXACT_ORDERED_81_OF_81",
+    "whole_unit_formula_multiset_exact": true,
+    "label_count": 7,
+    "ordered_reference_count": 4,
+    "ordered_environment_event_count": 16,
+    "environment_inventory": {
+      "proposition": 2,
+      "proof": 3,
+      "corollary": 2,
+      "env": 1
+    },
+    "emphasis_count": 5,
+    "oldpage_markers": 0,
+    "navigation_only_phantomsection_count": 5,
+    "source_target_tex_command_inventory_exact_after_removing_navigation_anchors": true,
+    "tex_command_inventory_without_navigation_anchors": {
+      "begin": 8,
+      "bigcup": 2,
+      "emph": 5,
+      "end": 8,
+      "hyperref": 4,
+      "in": 13,
+      "label": 7,
+      "mathbf": 5,
+      "mathcal": 17,
+      "neq": 1,
+      "operatorname": 1,
+      "otimes": 1,
+      "tag": 2,
+      "widetilde": 6,
+      "xi": 2
+    },
+    "negative_witness_count": 15,
+    "negative_witnesses": [
+      "essentially integral collapsed to integral dependence",
+      "rational-function field collapsed to ring",
+      "universal homogeneous-element quantifier weakened",
+      "necessary converse changed to sufficient",
+      "degree-multiple condition weakened",
+      "generation direction reversed",
+      "bijection weakened to injection",
+      "invertible module weakened to locally free",
+      "exact functor weakened to right exact",
+      "generic ideal mistyped as graded ideal",
+      "homogeneous element mistyped as graded element",
+      "Korean label suffix corrupted",
+      "Korean reference suffix corrupted",
+      "twist formula shifted",
+      "UTF-8 BOM injection"
+    ]
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_hypotheses_quantifiers_and_directions_preserved": true,
+    "essentially_integral_ring_and_integral_scheme_types_distinguished": true,
+    "rational_function_field_and_generic_local_ring_identity_preserved": true,
+    "annihilation_quantifiers_and_necessary_converse_preserved": true,
+    "degree_multiple_condition_preserved": true,
+    "homogeneous_generation_argument_preserved": true,
+    "canonical_twist_isomorphism_and_bijection_preserved": true,
+    "invertible_module_type_preserved": true,
+    "twist_notation_and_exact_functor_statement_preserved": true,
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records_used": [
+        "AGKO-T008 exact functor",
+        "AGKO-T035 grading",
+        "AGKO-T040 annihilator/annihilation family",
+        "AGKO-T042 invertible module",
+        "AGKO-T091 integral scheme type",
+        "AGKO-T138 rational function",
+        "AGKO-T143 rational-function field"
+      ]
+    },
+    {
+      "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+      "bytes": 35543,
+      "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+      "role": "read-only nonbinding typed conflict detector; no global replacement authority",
+      "used_mappings": [
+        "XW-KO-003 graded ring",
+        "XW-KO-004 graded module",
+        "XW-KO-005 homogeneous",
+        "XW-KO-034 canonical construction"
+      ]
+    },
+    {
+      "path": "controls/R39_IDEAL_TERMINOLOGY_RESEAL.json",
+      "bytes": 12197,
+      "sha256": "2F88570A3523DE0718F3952C842FE00D5D8337DC0D9DF4AC93C20D9D263AF624",
+      "role": "typed rule: use 동차 for homogeneous elements and ideals; retain 등급 only for graded structures"
+    },
+    {
+      "path": "[CJK_LANE_CONTROL]/STACKS_KO_TERMINOLOGY_EXPORT_20260905_R1.json",
+      "bytes": 10922,
+      "sha256": "BD3E4DCD4A5CB0C0BFCCB1E4D5A33DEFEEC6424318B2B228B09A78F60DDFC639",
+      "role": "read-only shared Korean Stacks register for typed consistency"
+    }
+  ],
+  "terminology_choices": [
+    {
+      "source": "essentiellement intègre; intègre",
+      "korean": "본질적으로 정역; 정역 스킴",
+      "basis": "Existing EGA II register and AGKO-T091; the ring property is kept distinct from integral dependence and the scheme type remains explicit."
+    },
+    {
+      "source": "corps des fonctions rationnelles",
+      "korean": "유리함수체",
+      "basis": "AGKO-T143; distinct from a rational-function ring and from a fraction field of a separately specified domain."
+    },
+    {
+      "source": "homogène",
+      "korean": "동차",
+      "basis": "AGKO-T035, XW-KO-003 through XW-KO-005, and the R39 typed reseal; element homogeneity is not mistranslated as the grading structure, and this unit does not add an 등급 modifier where the source says only homogeneous."
+    },
+    {
+      "source": "Module inversible",
+      "korean": "가역 가군",
+      "basis": "AGKO-T042; tensor-invertible rank-one module language is preserved rather than weakened to generic local freeness."
+    },
+    {
+      "source": "foncteur exact",
+      "korean": "완전 함자",
+      "basis": "AGKO-T008 and established corpus syntax; not weakened to one-sided exactness."
+    }
+  ],
+  "correction_audit": {
+    "french_source_or_maintained_english_error_found": false,
+    "new_reportable_correction_candidates": [],
+    "authority_source_mutated": false
+  },
+  "state": {
+    "translation": "complete_standalone_candidate",
+    "validation": "pass_normal_and_python_optimized",
+    "integration": "not_integrated",
+    "build": "not_run_by_design",
+    "package": "not_run_by_design",
+    "publication": "not_run_by_design",
+    "git": "not_used",
+    "ui": "not_opened"
+  },
+  "next": "After the sequential R40-R46 integrations and their gates, rebase and integrate this exact R47 candidate; the next untranslated source unit begins at canonical line 2568 with item 2.5.11."
+}

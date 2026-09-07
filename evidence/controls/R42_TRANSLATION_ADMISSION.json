@@ -1,0 +1,235 @@
+{
+  "schema": "agko-r42-translation-admission-v1",
+  "time": "2026-09-05T23:16:19+02:00",
+  "scope": "EGA II canonical lines 1994-2093: Corollary 2.3.8 through Corollary 2.3.14",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1994-2093",
+    "unit_bytes": 3981,
+    "unit_characters": 3913,
+    "unit_lf_lines": 100,
+    "unit_sha256": "E37A387DDF6748B588BF43ABA9CACF5B0A9D5A03EC180F3C79C4A1594EBB732A",
+    "preunit_prefix_lines": "1-1993",
+    "preunit_prefix_bytes": 90234,
+    "preunit_prefix_characters": 88847,
+    "preunit_prefix_sha256": "838298EE8DC7B5D4CBD390778000EF836031AE8022CC19F506901DD81D422818",
+    "postunit_prefix_lines": "1-2093",
+    "postunit_prefix_bytes": 94215,
+    "postunit_prefix_characters": 92760,
+    "postunit_prefix_sha256": "5E0EBC55249F2F6E3402099C2519996EF5582498EA73E1FC6F519D9BFF07A296",
+    "boundaries": "line 1993 blank; line 1994 begins Corollary 2.3.8; line 2093 ends Corollary 2.3.14; line 2094 blank; line 2095 begins Corollary 2.3.15"
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R65",
+    "bytes": 85990,
+    "sha256": "0966A44A5D18032EE80305718CBAF88A7BADD6DCBFCBAAF643D31FA309F7DD17",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "relevant_unit_dispositions": 0,
+    "branch_application": "No accepted branch override is required inside lines 1994-2093."
+  },
+  "r63_to_r65_no_impact_proof": {
+    "historical_predecessor_basis": {
+      "private_path": "[WORKING_TRANSLATION_ROOT]/controls/EGA2_R63_SOURCE_BASIS_REFRESH_20260905.json",
+      "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/EGA2_R63_SOURCE_BASIS_REFRESH_20260905.json",
+      "bytes": 24722,
+      "sha256": "66980D875DBAC2CF4F18210FCDF3B6CE0F1AFE70A2F9953D3346683474AD5F14"
+    },
+    "r64": {
+      "queue_preimage_id": "EGA-CANON-QUEUE-20260905-R63",
+      "new_global_ids": [],
+      "scope": "EGA IV-1 and EGA IV-2 legacy alias and consumer synchronization only"
+    },
+    "r65": {
+      "queue_preimage_id": "EGA-CANON-QUEUE-20260905-R64",
+      "new_global_ids": [
+        "EGA4-3-CANON-DISP-0015",
+        "EGA4-3-CANON-DISP-0016",
+        "EGA4-3-CANON-DISP-0017"
+      ],
+      "scope": "EGA IV-3 source synchronization only"
+    },
+    "result": "PASS_EGA_II_SOURCE_HASH_ALLOCATION_HEAD_AND_UNIT_UNCHANGED_R63_TO_R65"
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "438-510",
+    "slice_bytes": 3899,
+    "slice_characters": 3899,
+    "slice_lf_lines": 73,
+    "slice_sha256": "53103313DB959C04574DFBEE778D30D4913ED781C2C1AAE7838DEA15F0E4058A",
+    "role": "independent maintained English semantic and typing witness; French remains source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_ON_PRINTED_PAGES_27_28",
+    "rendered_scan_witnesses": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P24.png",
+        "bytes": 248675,
+        "sha256": "E234D0A68CCAB9D0ACC32A354B817C98ED1CAB04C2337C4E09777E982E32FBDD"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P25.png",
+        "bytes": 334918,
+        "sha256": "754CBCE07633CB7E4D2B95EBDD3AF689CC81CFCE6EC6A148B658E3CEB109330C"
+      }
+    ]
+  },
+  "candidate": {
+    "path": "candidates/r42-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r42-c2s1-continuation.tex",
+    "bytes": 4655,
+    "characters": 3181,
+    "lf_lines": 107,
+    "hangul_syllables": 737,
+    "sha256": "9B7B47C388F493A9A248B14BD7378342F5350E1F165A0ED6E403C0AAE1D82B98",
+    "separator_plus_candidate_bytes": 4656,
+    "separator_plus_candidate_lf_lines": 108,
+    "separator_plus_candidate_sha256": "15A1C9C5126C73845B6A63BD2C8324412F92FB58D2F70ED42CD8C3A59A6B3A7C"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors; R39 through R42 are not integrated"
+  },
+  "r41_prospective_preimage": {
+    "method": "exact R38 preimage followed in order by one LF and each exact admitted R39, R40, and R41 candidate",
+    "bytes": 93692,
+    "characters": 65136,
+    "lf_lines": 2031,
+    "sha256": "391A406C5BC200DD02CF4877B39DD0130D2213308094120BE301D0AB5D41A71F",
+    "r41_admission_control_bytes": 9631,
+    "r41_admission_control_sha256": "617C33145B57A4568FC1F3260F457380CC232F2C47B146D30FC36A2768675A02"
+  },
+  "prospective_r42_integration": {
+    "method": "exact R41 prospective preimage followed by exactly one LF separator and exact R42 candidate",
+    "target_range": "line 2032 blank separator; R42 candidate lines 2033-2139",
+    "bytes": 98348,
+    "characters": 68318,
+    "lf_lines": 2139,
+    "sha256": "0FDAA876D20470C142AC8B5E6C89DE743AE464D006788C4D92022B45DAAF2160",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r42_candidate.py",
+    "validator_bytes": 20793,
+    "validator_characters": 20501,
+    "validator_lf_lines": 455,
+    "validator_sha256": "28D7BE81E278A9F8A5923F9B4E0287D78F945414C021F654C6F007AF3F086FDE",
+    "result": "PASS_R42_R65_SOURCE_CANON_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "optimized_mode_positive_exit": 0,
+    "optimized_mode_wrong_english_witness_negative_exit": 1,
+    "source_inline_formula_count": 77,
+    "target_inline_formula_count": 77,
+    "target_only_formula_count": 0,
+    "inline_formula_identity_and_order_exact": true,
+    "validator_clause_partition_count": 8,
+    "validator_clause_partition_contiguous_and_exhaustive": true,
+    "source_display_count": 0,
+    "target_display_count": 0,
+    "label_count": 7,
+    "ordered_reference_count": 3,
+    "ordered_environment_event_count": 26,
+    "balanced_environment_pair_count": 13,
+    "ordered_item_count": 7,
+    "numbered_environments": ["2.3.8", "2.3.9", "2.3.10", "2.3.11", "2.3.12", "2.3.13", "2.3.14"],
+    "oldpage": "II28",
+    "navigation_only_phantomsection_count": 7,
+    "emphasis_source_target": "1/1",
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_and_quantifiers_preserved": true,
+    "implication_equivalence_and_inclusion_directions_preserved": true,
+    "radical_prime_intersection_closure_and_covering_arguments_preserved": true,
+    "power_quantifiers": "Every element separately has a positive-integer power in the stated ideal; rendered explicitly in Korean prose without target-only formulas.",
+    "order_reversal": "The two maps are explicitly inclusion-reversing and the union/intersection correspondences retain their direction.",
+    "implicit_ideal_in_2_3_11_ii": "Legitimate elliptical universal quantification, not a source error.",
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "[TERMINOLOGY_LEDGER]/terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "role": "active Korean EGA register authority, including radical, nilpotence, closure, graded-ideal, prime-ideal, cover, and order terminology"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/math-0307189.txt",
+      "bytes": 80435,
+      "sha256": "003AEBF9CCD292263BD0FF1EE89FA5F3C54E80069E79E04B7DAA3DEDBBF25EF9",
+      "contexts": "closed-subset and support usage",
+      "role": "English semantic/type control, not Korean spelling authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "contexts": "projective and homogeneous-object usage",
+      "role": "English semantic/type control, not Korean spelling authority"
+    }
+  ],
+  "source_queries": {
+    "status": "NONE_AFTER_R65_DEDUPLICATION_AND_PRINTED_PAGE_REVIEW",
+    "destination": "EGA correction and adjudication task",
+    "result": "No possible new source, canonical, formula, or cross-reference correction remains to send from lines 1994-2093.",
+    "specific_checks": [
+      "printed pages 27-28 agree exactly with the canonical French transcription",
+      "references 2.3.7, 2.3.7, and 2.3.9 are correct",
+      "the implicit ideal in the proof of 2.3.11(ii) is a harmless universally quantified variable",
+      "the 2.3.12 union/intersection correspondence has the correct order-reversing direction",
+      "the 2.3.13-2.3.14 power criteria have the correct per-element existential scope"
+    ],
+    "deduplicated_existing_pass_records": [
+      "EG-EGA-II-P27-FR-2.3.11-001",
+      "EG-EGA-II-P27-EN-2.3.11-001",
+      "EG-EGA-II-P27-FR-2.3.8-001 through EG-EGA-II-P27-FR-2.3.12-001",
+      "EG-EGA-II-P28-FR-2.3.13-001",
+      "EG-EGA-II-P28-FR-2.3.14-001"
+    ],
+    "new_correction_id_allocated": false,
+    "external_message_required": false
+  },
+  "independent_review": {
+    "method": "Independent exact-byte Korean semantic/register review plus independent formula, structure, boundary, reference-resolution, and prospective-preimage review",
+    "semantic_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "formula_structure_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "source_formula_identity": "PASS_77_OF_77_IN_EXACT_ORDER",
+    "reference_resolution": "PASS_3_OF_3_RESOLVE_EXACTLY_ONCE_IN_PROSPECTIVE_TARGET",
+    "prospective_private_public_identity_review": "PASS_IF_IDENTICALLY_WRITTEN",
+    "correction_audit": "PASS_NO_NEW_CANDIDATE"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_candidate",
+    "integration": "prospective_not_integrated",
+    "source_referral": "none_after_deduplication",
+    "build": "not_run_by_R42_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "Only after R39, R40, and R41 are integrated to the exact R41 prospective preimage, append exactly one LF plus the exact R42 candidate to both mirrors, prove the R42 prospective identity, and continue at canonical line 2095."
+}

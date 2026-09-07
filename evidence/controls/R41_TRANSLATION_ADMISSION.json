@@ -1,0 +1,192 @@
+{
+  "schema": "agko-r41-translation-admission-v1",
+  "time": "2026-09-05T20:25:48+02:00",
+  "scope": "EGA II canonical lines 1891-1992: Proposition 2.3.4 through the proof of Corollary 2.3.7",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1891-1992",
+    "unit_bytes": 4203,
+    "unit_characters": 4154,
+    "unit_lf_lines": 102,
+    "unit_sha256": "77FC0279D0B1D94CB72C7C7F72CBA183923F4B735AA9CB09F01530BB0F638EE8",
+    "preunit_prefix_lines": "1-1890",
+    "preunit_prefix_bytes": 86030,
+    "preunit_prefix_characters": 84692,
+    "preunit_prefix_sha256": "2AF3A8B15BABA931E6AE6A01197298A47A3D191E9E5D0EBFCD40D8447ADA07DC",
+    "postunit_prefix_lines": "1-1992",
+    "postunit_prefix_bytes": 90233,
+    "postunit_prefix_characters": 88846,
+    "postunit_prefix_sha256": "23BAF858FD4D2E6DFE63B8E41EC6AA1E41B84E066F6A51D9AFF12D5122861580",
+    "boundaries": "line 1890 blank; line 1891 begins Proposition 2.3.4; line 1992 ends the proof of Corollary 2.3.7; line 1993 blank; line 1994 begins Corollary 2.3.8"
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R63",
+    "bytes": 65517,
+    "sha256": "9538E937F2AFF07105D680914A2FC8B9584ADB79DB65B5A85DE22E31BAA9701F",
+    "ega_ii_admitted_control_head_count": 20,
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "head_identity_audit": "PASS_ALL_20_LISTED_EGA_II_CONTROL_HEADS_MATCH_BYTES_AND_SHA256",
+    "relevant_unit_dispositions": 0,
+    "nearest_prior_dispositions": "D0040 and D0041 affect only R40 lines 1857-1860; they do not intersect R41",
+    "branch_application": "No accepted branch override is required inside lines 1891-1992."
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "376-436",
+    "slice_bytes": 3739,
+    "slice_characters": 3739,
+    "slice_lf_lines": 61,
+    "slice_sha256": "7F3349DB3899D88DF94E3FF38F25F17E7FF443ABCD8300FD95B034D5408DC14D",
+    "role": "independent maintained English semantic and typing witness; French remains source authority"
+  },
+  "candidate": {
+    "path": "candidates/r41-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r41-c2s1-continuation.tex",
+    "bytes": 4544,
+    "characters": 3202,
+    "lf_lines": 106,
+    "hangul_syllables": 671,
+    "sha256": "5DE6EC9F2560C92DCF6A7B5C76F1FB72749612CCD7C5724FCA65C1EE6C81A971",
+    "separator_plus_candidate_bytes": 4545,
+    "separator_plus_candidate_lf_lines": 107,
+    "separator_plus_candidate_sha256": "480344CFFBAD5E22A11DD542F49DDD1B216D37DA28280D5A66218654C1E1B5C1"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors; R39, R40, and R41 are not integrated"
+  },
+  "r40_current_prospective_preimage": {
+    "method": "exact R38 preimage followed by one LF and exact R39 candidate, then one LF and current R63-resealed R40 candidate",
+    "bytes": 89147,
+    "characters": 61933,
+    "lf_lines": 1924,
+    "sha256": "1F4203DB990A0E9E81B83AC3106439AF0DFE5A0CB32B069B5C44EFE7DC025617",
+    "r40_candidate_sha256": "4E3A5FDEFF4DE67EA548232F8A589AFF06023916DB838440A594E9D1FAA3E5AD",
+    "r40_admission_control_bytes": 11029,
+    "r40_admission_control_sha256": "204C8209CCC6D7A0D55550F532F6D016ACCEAE48BA4DC4048D34703C7F47D0B8",
+    "supersedes_stale_pre_r63_sha256": "9AA6455CA660652182CBE6C07D3C19AE2AC457A06863C1E1E85DFE0D54F189AB",
+    "reason": "R40 was intentionally resealed against R63 dispositions D0040 and D0041 while R41 was under review; the stale assigned base is not certifiable."
+  },
+  "prospective_r41_integration": {
+    "method": "exact current R40 prospective preimage followed by exactly one LF separator and exact R41 candidate",
+    "target_range": "line 1925 blank separator; R41 candidate lines 1926-2031",
+    "bytes": 93692,
+    "characters": 65136,
+    "lf_lines": 2031,
+    "sha256": "391A406C5BC200DD02CF4877B39DD0130D2213308094120BE301D0AB5D41A71F",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r41_candidate.py",
+    "validator_bytes": 17700,
+    "validator_characters": 17564,
+    "validator_lf_lines": 395,
+    "validator_sha256": "777B0C48898D7EE91A5D6C4092EDA3E72FD688292FF02BABC0CE856FF9246753",
+    "result": "PASS_R41_SOURCE_CANON_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "source_inline_formula_count": 80,
+    "target_inline_formula_count": 80,
+    "target_only_formula_count": 0,
+    "inline_formula_identity_and_order_exact": true,
+    "validator_clause_partition_count": 7,
+    "validator_clause_partition_contiguous_and_exhaustive": true,
+    "independent_clause_partition_count": 16,
+    "independent_clause_sequences_exact": true,
+    "source_display_count": 3,
+    "target_display_count": 3,
+    "display_content_tag_label_order_exact_after_fr_ko_mapping": true,
+    "label_count": 5,
+    "ordered_reference_count": 9,
+    "ordered_environment_event_count": 14,
+    "numbered_environments": ["2.3.4", "2.3.5", "2.3.6", "2.3.7"],
+    "tag": "2.3.5.1",
+    "oldpage": "II27",
+    "navigation_only_phantomsection_count": 4,
+    "emphasis_source_target": "1/1",
+    "brace_count_open_close": "95/95",
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_fidelity": {
+    "result": "PASS",
+    "all_assertions_quantifiers_implications_and_biconditionals_preserved": true,
+    "prime_ideal_and_surjectivity_arguments_preserved": true,
+    "induced_map_repair": "The final target states that the right vertical map is induced by the canonical homomorphism, not merely in correspondence with it.",
+    "range_scope": "The D_+(hf) family is explicitly tied to h ranging through the elements of the sets S_nd while preserving source formula order.",
+    "inverse_map": "The inverse on the image is rendered unambiguously as 그 역인 사상, distinct from inverse-image terminology.",
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "[TERMINOLOGY_LEDGER]/terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "role": "existing Korean EGA register authority, including graded and fraction-ring terminology"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/math-0307189.txt",
+      "bytes": 80435,
+      "sha256": "003AEBF9CCD292263BD0FF1EE89FA5F3C54E80069E79E04B7DAA3DEDBBF25EF9",
+      "contexts": "localization and prime-spectrum usage",
+      "role": "English semantic/type control, not Korean spelling authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "contexts": "projective and homogeneous-object usage",
+      "role": "English semantic/type control, not Korean spelling authority"
+    }
+  ],
+  "source_queries": {
+    "status": "NONE_AFTER_R63_DEDUPLICATION",
+    "destination": "EGA correction and adjudication task",
+    "result": "No genuinely possible new source correction was found in lines 1891-1992; nothing duplicative or speculative was resent.",
+    "specific_checks": [
+      "line 1952 D_+(hf) is correct on D_+(f)",
+      "line 1975 correctly cites 2.1.9 and is not the D0041-corrected preceding locus",
+      "the q_0/p_n exponent argument in lines 1964-1980 is type- and degree-coherent"
+    ]
+  },
+  "independent_review": {
+    "method": "Independent exact-byte Korean semantic review plus independent formula, structure, boundary, and prospective-preimage review",
+    "semantic_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "formula_structure_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "source_formula_identity": "PASS_80_OF_80_IN_EXACT_ORDER",
+    "display_review": "PASS_3_OF_3",
+    "prospective_private_public_identity_review": "PASS_IF_IDENTICALLY_WRITTEN",
+    "correction_audit": "PASS_NO_NEW_CANDIDATE"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_candidate",
+    "integration": "prospective_not_integrated",
+    "source_referral": "none_after_deduplication",
+    "build": "not_run_by_R41_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "Only after R39 and the current R63-resealed R40 are integrated to the exact current prospective preimage, append exactly one LF plus the exact R41 candidate to both mirrors, prove the R41 prospective identity, and continue at canonical line 1994."
+}

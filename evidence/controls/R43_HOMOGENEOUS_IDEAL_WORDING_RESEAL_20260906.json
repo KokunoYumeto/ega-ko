@@ -1,0 +1,251 @@
+{
+  "schema": "agko-r43-homogeneous-ideal-wording-reseal-v1",
+  "record_id": "R43-HOMOGENEOUS-IDEAL-WORDING-RESEAL-20260906",
+  "date": "2026-09-06",
+  "classification": "additive_prospective_control",
+  "scope": {
+    "work": "Korean EGA II",
+    "unit": "R43, canonical French lines 2095-2194",
+    "operation": "concept-typed terminology reseal at exactly two homogeneous-ideal loci",
+    "write_set": [
+      "candidates/r43-c2s1-continuation-homogeneous-reseal.tex",
+      "candidates/validate_r43_homogeneous_ideal_reseal.py",
+      "controls/R43_HOMOGENEOUS_IDEAL_WORDING_RESEAL_20260906.json",
+      "pub/ega-ko/evidence/controls/R43_HOMOGENEOUS_IDEAL_WORDING_RESEAL_20260906.json"
+    ],
+    "excluded": [
+      "target integration",
+      "ledger or terminology-register mutation",
+      "alias or state-manifest mutation",
+      "Git",
+      "TeX build",
+      "UI automation",
+      "publication"
+    ]
+  },
+  "authority": {
+    "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2095-2194",
+    "unit_bytes": 4293,
+    "unit_characters": 4221,
+    "unit_lf_lines": 100,
+    "unit_sha256": "DBFF404676F8447B963899E2697D0B0F090DF18AD4B6EFD323F5ABFE263BD571",
+    "boundaries": {
+      "preceding_line_2094": "blank",
+      "first_line_2095": "\\begin{corollary}[2.3.15]",
+      "last_line_2194": "\\end{example}",
+      "following_line_2195": "blank",
+      "next_line_2196": "\\begin{proposition}[2.4.4]"
+    }
+  },
+  "canon_queue_binding": {
+    "path": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "binding_policy": "Bind the EGA II allocation head only; unrelated volumes may advance the whole queue.",
+    "EGA_II": {
+      "last_allocated": "EGA2-CANON-DISP-0041",
+      "next_available": "EGA2-CANON-DISP-0042"
+    },
+    "new_source_disposition_allocated": false
+  },
+  "maintained_english_semantic_witness": {
+    "path": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "bytes": 103751,
+    "characters": 103751,
+    "lf_lines": 1769,
+    "sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "loci": {
+      "line_530": "graded prime ideals",
+      "line_539": "a graded ideal that is not prime",
+      "line_574": "S is graded by total degree"
+    },
+    "role": "independent semantic and object-type witness; French remains source authority"
+  },
+  "terminology_authority": {
+    "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+    "bytes": 35543,
+    "characters": 33384,
+    "lf_lines": 379,
+    "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+    "mapping": {
+      "id": "XW-KO-005",
+      "concept": "homogeneous",
+      "source_type": "graded element, ideal, or component",
+      "ega_ko": "동차",
+      "stacks_ko": "동차",
+      "recommendation": "동차",
+      "relation": "shared_exact",
+      "confidence": "high"
+    },
+    "typed_rule": "An ideal qualified as gradué in this projective context is a homogeneous ideal and takes 동차; an algebraic object equipped with a grading, or the grading structure itself, retains 등급."
+  },
+  "historical_artifacts_preserved": {
+    "candidate": {
+      "path": "candidates/r43-c2s1-continuation.tex",
+      "bytes": 4450,
+      "characters": 3224,
+      "lf_lines": 107,
+      "sha256": "0668CE33E37BFBF854B826958D96AD5CE6C3FD21C4386F7E8E9914424A51288A",
+      "state": "superseded for future cumulative use; bytes unchanged"
+    },
+    "validator": {
+      "path": "candidates/validate_r43_candidate.py",
+      "bytes": 21750,
+      "characters": 21283,
+      "lf_lines": 485,
+      "sha256": "778BF378E3A113A2564B45B9B6604DE497E81CF04EAD540A6EC98C6B50E59077",
+      "state": "historical standalone validator; bytes unchanged"
+    },
+    "admission": {
+      "private_path": "controls/R43_TRANSLATION_ADMISSION.json",
+      "public_path": "pub/ega-ko/evidence/controls/R43_TRANSLATION_ADMISSION.json",
+      "private_public_exact": true,
+      "bytes": 15775,
+      "characters": 15521,
+      "lf_lines": 333,
+      "sha256": "77273D771DBFDF2EFFB11EFE601130463E13075CCC0868A4960D4F951B7C1AC3",
+      "state": "historical admission; bytes unchanged"
+    }
+  },
+  "candidate": {
+    "path": "candidates/r43-c2s1-continuation-homogeneous-reseal.tex",
+    "bytes": 4450,
+    "characters": 3224,
+    "lf_lines": 107,
+    "hangul_syllables": 613,
+    "sha256": "E0D782F460FBAEDD2D30DBB5E05C4F63A8D60F2ADC1A6AD4BD315CD91DB2F1A2",
+    "bom_cr_replacement_characters": "0/0/0",
+    "derivation": "historical candidate plus exactly the two transformations below; all other bytes are identical"
+  },
+  "transformations": [
+    {
+      "id": "R43-HOMOGENEOUS-IDEAL-001",
+      "source_line": 2117,
+      "source": "correspondent les idéaux gradués premiers dans S_+",
+      "candidate_physical_line": 25,
+      "before": "등급 소아이디얼",
+      "after": "동차 소아이디얼",
+      "object_type": "homogeneous prime ideal",
+      "authority": "XW-KO-005"
+    },
+    {
+      "id": "R43-HOMOGENEOUS-IDEAL-002",
+      "source_line": 2129,
+      "source": "un idéal gradué non premier de S_+",
+      "candidate_physical_lines": "37-38",
+      "changed_physical_line": 37,
+      "before": "소아이디얼이 아닌 등급 아이디얼",
+      "after": "소아이디얼이 아닌 동차 아이디얼",
+      "object_type": "homogeneous ideal that is not prime",
+      "authority": "XW-KO-005"
+    }
+  ],
+  "locator_correction": {
+    "supplied_second_locator": 53,
+    "finding": "physical line 53 is blank",
+    "correct_second_locator": "physical lines 37-38; only line 37 changes",
+    "changed_physical_lines": [25, 37]
+  },
+  "required_graded_wording_retained": {
+    "source_line": 2187,
+    "source": "S étant gradué par le degré total",
+    "candidate_physical_line": 100,
+    "korean": "S에는 전체 차수에 따른 등급이 주어져 있다",
+    "decision": "retain 등급 because this is the grading structure on S, not a homogeneous element, ideal, or component",
+    "candidate_total_등급_occurrences": 1,
+    "candidate_total_동차_occurrences": 6
+  },
+  "validation": {
+    "validator": "candidates/validate_r43_homogeneous_ideal_reseal.py",
+    "validator_bytes": 17606,
+    "validator_characters": 17168,
+    "validator_lf_lines": 407,
+    "validator_sha256": "A260BA41B72F34E82C0400F5352B5C4DC1575864AB72F0B1696DBA4FC8A689C9",
+    "result": "PASS_R43_EXACT_TWO_LOCUS_HOMOGENEOUS_IDEAL_RESEAL_PROSPECTIVE_ONLY",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "negative_suite": {
+      "cases": 12,
+      "executions": 24,
+      "ordinary_and_optimized_exit_for_every_case": 1,
+      "mutations": [
+        "revert prime-ideal locus",
+        "revert non-prime ideal locus",
+        "over-normalize the retained ring-grading locus",
+        "change an inline formula",
+        "change a label and reference suffix",
+        "change numbered-environment order",
+        "swap adjacent structural lines",
+        "remove the source-synchronized line separator",
+        "change the historical candidate preimage",
+        "change canonical French source bytes",
+        "change maintained English witness bytes",
+        "change XW-KO-005"
+      ]
+    },
+    "exact_two_replacements_only": true,
+    "source_inline_formula_count": 72,
+    "target_inline_formula_count": 72,
+    "source_target_display_count": "1/1",
+    "authorized_inline_formula_differences": [
+      "events 51-52: Korean syntax preserves the D_+(fg), D_+(f) multiset while naming the ambient scheme first",
+      "event 71: the existing corrected layer types K[T] as Spec(K[T])"
+    ],
+    "label_count": 7,
+    "reference_count": 12,
+    "environment_event_count": 18,
+    "numbered_environment_order": [
+      "2.3.15",
+      "2.3.16",
+      "2.3.17",
+      "2.4.1",
+      "2.4.2",
+      "2.4.3"
+    ],
+    "enumeration_order": ["a", "b", "c"],
+    "oldpage": "II29",
+    "navigation_anchor_count": 6,
+    "balanced_braces": true,
+    "semantic_and_register_result": "PASS_CONCEPT_TYPED_IDEALS_AND_DISTINCT_RING_GRADING"
+  },
+  "prospective_only": {
+    "target_integrated": false,
+    "target_private_public_mirrors_checked_exact": true,
+    "candidate_is_not_current_target_tail": true,
+    "cumulative_predecessor": "intentionally not rebound by this wording-only lane",
+    "successor_rule": "A later additive chain receipt must bind this candidate in canonical R39-R43 order and supersede only the stale prospective dependency; no historical admission or validator is rewritten."
+  },
+  "privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials_or_tokens": false,
+    "locators": "repository-relative or role-relative only"
+  },
+  "control_validation": {
+    "private_public_exact": true,
+    "private_json_parse": "pass",
+    "public_json_parse": "pass",
+    "utf8_lf_only_final_lf": true,
+    "privacy_scan": "pass",
+    "negative_cases": [
+      "private/public byte mismatch rejected",
+      "invalid JSON rejected",
+      "absolute user-profile path rejected",
+      "credential-header marker rejected"
+    ],
+    "negative_result": "PASS_ALL_FOUR_MUTATIONS_REJECTED"
+  },
+  "state": {
+    "translation": "additive_corrected_candidate_sealed",
+    "historical_candidate": "preserved_superseded",
+    "integration": "not_performed",
+    "build": "not_run",
+    "ledger_alias_manifest": "not_changed",
+    "git_network_ui_publication": "not_performed"
+  },
+  "next": "Use the exact corrected candidate identity in the additive sequential-chain control and R43 stage receipt; do not integrate it from this wording lane."
+}

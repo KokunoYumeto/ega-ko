@@ -1,0 +1,88 @@
+{
+  "schema": "ag-ko-package-receipt-v8",
+  "version": "2026-09-07-r48",
+  "created_at": "2026-09-07T17:20:00+02:00",
+  "exact_doi": "10.5281/zenodo.22645017",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "coverage": {
+    "terminal": "EGA II §2.5.12 / canonical lines1-2694",
+    "next": "line2696 / Proposition2.5.13; line2695 blank",
+    "historical_markers": 238,
+    "no_completion_claim": true
+  },
+  "public_artifact_count": 4,
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1542495,
+      "sha256": "668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E"
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 593318,
+      "sha256": "557FF9905D969C6A2A1F95C2D734F520C92785D48CF49359D4F661CB8443C7BD"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 135073862,
+      "sha256": "AE30EC2F52DAF96DA241A715A5763B6A7940C1B8029548D6EA8FBA7AEE7302DC"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "38FECDA7892DCEC4F9595AA232ED9C9833A0C6236B4A0C9DBE18104C72C46189"
+    }
+  ],
+  "source_archive": {
+    "path": "01_EGA_ko_EDITABLE_SOURCES.zip",
+    "bytes": 593318,
+    "sha256": "557FF9905D969C6A2A1F95C2D734F520C92785D48CF49359D4F661CB8443C7BD",
+    "entries": 70,
+    "uncompressed_bytes": 2176069,
+    "inventory_sha256": "F8651E459D14D663F6315507E928E24D16563F8C1882D79D009B40CD0A8B57DF",
+    "single_postwrite_entry_readback": true
+  },
+  "evidence_archive": {
+    "path": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "bytes": 135073862,
+    "sha256": "AE30EC2F52DAF96DA241A715A5763B6A7940C1B8029548D6EA8FBA7AEE7302DC",
+    "entries": 573,
+    "uncompressed_bytes": 162658704,
+    "inventory_sha256": "6F54F0AD1F5C40776C465733586D00ADAC631A9D0EC11DDB6D02245331248446",
+    "single_postwrite_entry_readback": true
+  },
+  "reader": {
+    "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1542495,
+    "sha256": "668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E",
+    "pages": 249
+  },
+  "source_manifest": {
+    "path": "source/CUMULATIVE_INPUTS.json",
+    "bytes": 16281,
+    "sha256": "1687A050EFE3C655CFA7D2478BE9D0540632B8FE7C894AC9CFFF96F73832CF88"
+  },
+  "integration_control": {
+    "path": "controls/R40_R48_SINGLE_BATCH_INTEGRATION_20260907.json",
+    "bytes": 4902,
+    "sha256": "642595A5F47B255174D7F766ED6DE44F2719DEBE4E92A1BE92B17CF5B3F1F0CF"
+  },
+  "aggregate_qa_control": {
+    "path": "controls/R48_SINGLE_AGGREGATE_PDF_QA_20260907.json",
+    "bytes": 6529,
+    "sha256": "C825DBBF8EACC4DE8A80277A0DE01BD512B6C003BC5ED53542DAF085A15525CC"
+  },
+  "workflow": {
+    "translation_units_integrated_in_one_batch": "R40-R48",
+    "tex_builds_for_this_reader": 1,
+    "whole_reader_qa_passes": 1,
+    "per_unit_qa_loops": 0,
+    "package_constructions": 1,
+    "package_entry_readbacks": 1
+  },
+  "result": "PASS_R48_LOCAL_PACKAGE_SINGLE_BUILD_SINGLE_AGGREGATE_QA"
+}

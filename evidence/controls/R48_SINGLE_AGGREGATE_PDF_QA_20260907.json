@@ -1,0 +1,112 @@
+{
+  "schema": "agko-r48-single-aggregate-pdf-qa-v1",
+  "recorded_at_utc": "2026-09-07T15:10:20.6803546Z",
+  "scope": "One whole-reader QA after the single cumulative R40-R48 integration and one mutex-held convergence build; no per-unit QA and no repeated whole-reader QA loop.",
+  "reader": {
+    "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1542495,
+    "sha256": "668E8008D24C5B676D18BCA933D3DD57159877F2B45BD778EA1CE28204A4623E",
+    "pages": 249,
+    "a4_pages": 249,
+    "encrypted": false,
+    "pdf_version": "1.7",
+    "pass3_and_final_byte_identical": true
+  },
+  "source_and_manifest": {
+    "declared_inputs": 17,
+    "labels": 1134,
+    "hyperreferences": 1509,
+    "missing_hyperreference_targets": 0,
+    "historical_page_markers": 238,
+    "frontier": "ega2-1-fr.tex lines 1-2694 through 2.5.12",
+    "next": "line 2695 blank; line 2696 begins Proposition 2.5.13",
+    "target": {
+      "path": "pub/ega-ko/source/c2s1.tex",
+      "bytes": 124497,
+      "lf_lines": 2752,
+      "sha256": "6DE19B9A783DD17AFEE9C5DA36F29CB6A9F63C57768A4727281B7642C2914C03"
+    }
+  },
+  "build_log": {
+    "path": "pub/ega-ko/build/out/main.log",
+    "bytes": 52584,
+    "sha256": "E4A15349A1F2BAECF12897E16EF0C4A8693FD6E36A9CA544632659A355E7AC73",
+    "sanitized_public_projection": true,
+    "profile_path_replacements": 150,
+    "private_original_bytes": 52734,
+    "private_original_sha256": "255728097F245E41CB3B7DBE9ED33CA4598F789F3850907A150FF1ECB5A9B77E",
+    "fatal_diagnostics": 0,
+    "undefined_references": 0,
+    "rerun_requests": 0,
+    "missing_characters": 0,
+    "overfull_or_underfull_boxes": 0
+  },
+  "extraction": {
+    "pypdf": {
+      "path": "pub/ega-ko/evidence/r48-extract-pypdf.txt",
+      "bytes": 734197,
+      "sha256": "062B78D769D3D2048263F20F680D8A01D3A9617FFF7BA66C8E2ECBC4F30578A1"
+    },
+    "poppler": {
+      "path": "pub/ega-ko/evidence/r48-extract-poppler.txt",
+      "bytes": 904927,
+      "sha256": "D720CB9626E98FDF7A11EFAE4A435939D1BEB32E5648ABF36FA3773EBF6C4A5C"
+    },
+    "combined_hangul_syllables": 319346,
+    "replacement_characters": 0,
+    "required_new_text_found": [
+      "2.2.7",
+      "2.3.17",
+      "2.4.7",
+      "2.5.12",
+      "동차 소 스펙트럼",
+      "등급가군에 대응하는 층"
+    ]
+  },
+  "navigation": {
+    "named_destinations": 654,
+    "link_annotations": 1735,
+    "internal_links": 1731,
+    "required_source_labels": [
+      "II.2.2.7-ko",
+      "II.2.3.17-ko",
+      "II.2.4.7-ko",
+      "II.2.5.12-ko"
+    ],
+    "required_external_urls": [
+      "https://doi.org/10.5281/zenodo.20414353",
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://doi.org/10.5281/zenodo.22645017",
+      "https://github.com/KokunoYumeto/ega-ko"
+    ]
+  },
+  "fonts": {
+    "font_rows": 36,
+    "all_embedded": true,
+    "inventory_path": "pub/ega-ko/evidence/r48-pdffonts.txt",
+    "inventory_bytes": 3572,
+    "inventory_sha256": "4D6E198DE313B442E4D043BA768B8BF3C21ED61E62C9C6E0EF614408F623CB95"
+  },
+  "focused_visual_inspection": {
+    "physical_pages": "238-249",
+    "dpi": 200,
+    "result": "PASS",
+    "observations": "All twelve focused pages are legible and show no observed clipping, overlap, tofu, black boxes, damaged formula or diagram, or unreadable text. Headers, page numbers, and source-page markers II|23-II|34 align. Page 249 intentionally ends with whitespace after 2.5.12. The forward reference 7.4.14 is retained as plain text because its later target is not yet translated.",
+    "renders": [
+      {"path":"pub/ega-ko/evidence/render/r48-p-238.png","bytes":528222,"sha256":"A4ADB24CADA05C8B3754626D02DA58FCCF57FD721E9E684557006934CAB176DA","width":1654,"height":2339,"dark_pixels_below_245":262532},
+      {"path":"pub/ega-ko/evidence/render/r48-p-239.png","bytes":458132,"sha256":"6BAD467F72ED2A1CA1C514F4947B109A527EE8A97A8B3A47AFD3844C22A2FB5D","width":1654,"height":2339,"dark_pixels_below_245":202515},
+      {"path":"pub/ega-ko/evidence/render/r48-p-240.png","bytes":467243,"sha256":"80AC026FA8D361944D870286AAD2776F8F539A061CB3696048748F236520F8D7","width":1654,"height":2339,"dark_pixels_below_245":224533},
+      {"path":"pub/ega-ko/evidence/render/r48-p-241.png","bytes":453973,"sha256":"B4B06D424EA5538A986F86665ED23D14A1E2C7186ACF78393995E83671344C81","width":1654,"height":2339,"dark_pixels_below_245":203258},
+      {"path":"pub/ega-ko/evidence/render/r48-p-242.png","bytes":557621,"sha256":"816A6F0DF23287081B0E0AC3081478F250C4023160C6BEB72CFAE040DF283F5B","width":1654,"height":2339,"dark_pixels_below_245":261467},
+      {"path":"pub/ega-ko/evidence/render/r48-p-243.png","bytes":509144,"sha256":"74B2DF83D285EE6E0C1BDBB28173A100D18B8C86EB3C4C66E442C2BF104FF3A0","width":1654,"height":2339,"dark_pixels_below_245":230336},
+      {"path":"pub/ega-ko/evidence/render/r48-p-244.png","bytes":432748,"sha256":"66F6C15E12C1D68D8EE97B0300D36D95136CB62E889CFE2EC8ECCC0270ED83E8","width":1654,"height":2339,"dark_pixels_below_245":199707},
+      {"path":"pub/ega-ko/evidence/render/r48-p-245.png","bytes":500139,"sha256":"FD3E3FA42563AF00EC223DC6D4DC8CA0B55B181F0B7DA8D98DB05DD9163CE5AA","width":1654,"height":2339,"dark_pixels_below_245":227728},
+      {"path":"pub/ega-ko/evidence/render/r48-p-246.png","bytes":469589,"sha256":"FC4190BAA4DB01048A10A73462FFB68D276022B5ECEF0677C18E9B35AFDC32F5","width":1654,"height":2339,"dark_pixels_below_245":211889},
+      {"path":"pub/ega-ko/evidence/render/r48-p-247.png","bytes":508592,"sha256":"0C32420F45380751A617ED21DE18AD768B08A771C74E3BF17F4EAAAE51DF04C9","width":1654,"height":2339,"dark_pixels_below_245":227131},
+      {"path":"pub/ega-ko/evidence/render/r48-p-248.png","bytes":257102,"sha256":"2442BFFC616DC1CD69FBB4923CF2F85741122580621540DF2B003440A827C269","width":1654,"height":2339,"dark_pixels_below_245":104046},
+      {"path":"pub/ega-ko/evidence/render/r48-p-249.png","bytes":172461,"sha256":"999D1C4500EC0D9E1DBA6DC09721D0888BF0F0F5399FF7C0DCB43FA0A284774F","width":1654,"height":2339,"dark_pixels_below_245":68680}
+    ]
+  },
+  "receipt_reconstruction": "The single aggregate machine pass completed every check and wrote every extraction/font/render output before its terminal JSON print encountered the Windows cp1252 console encoding. This receipt records those already-produced exact outputs and the completed internal observations; the PDF build and QA were not rerun. The published log is a mechanical 150-occurrence user-profile-path redaction of the exact private log.",
+  "result": "PASS_R48_SINGLE_AGGREGATE_PDF_QA"
+}

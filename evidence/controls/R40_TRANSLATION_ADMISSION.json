@@ -1,0 +1,216 @@
+{
+  "schema": "agko-r40-translation-admission-v2",
+  "time": "2026-09-05T20:21:21+02:00",
+  "scope": "EGA II canonical lines 1782-1889: environment 2.2.7, subsection 2.3, and environments 2.3.1-2.3.3",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1782-1889",
+    "unit_bytes": 4143,
+    "unit_characters": 4062,
+    "unit_lf_lines": 108,
+    "unit_sha256": "812FA8DAF0F5852602849D172B9182E2CBA6837810088662FA1FE157292704BB",
+    "preunit_prefix_lines": "1-1781",
+    "preunit_prefix_bytes": 81886,
+    "preunit_prefix_characters": 80629,
+    "preunit_prefix_sha256": "1CA37E986BA8FF10EA83534FFCC2FC6D48B2867883F748BF69025B2821629BB7",
+    "postunit_prefix_lines": "1-1889",
+    "postunit_prefix_bytes": 86029,
+    "postunit_prefix_characters": 84691,
+    "postunit_prefix_sha256": "EFBEF859B658516C4C26C265FDF82325E213FF7C66FB2895D468BF209AAEBD2C",
+    "boundaries": "line 1781 blank; line 1782 begins environment 2.2.7; line 1889 ends environment 2.3.3; line 1890 blank; line 1891 begins Proposition 2.3.4"
+  },
+  "canonical_dispositions": {
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_D40_41.jsonl",
+    "bytes": 1899,
+    "lf_lines": 2,
+    "sha256": "D3758A642DA64EDC5402F020D0F65272644BCC852998119F93BD8003C76F0200",
+    "records": [
+      {
+        "global_id": "EGA2-CANON-DISP-0040",
+        "classification": "WRONG_QUANTIFIER_SCOPE_IN_IDEAL_MEMBERSHIP_ARGUMENT",
+        "disposition": "ACCEPT_NEW",
+        "confidence": "CERTAIN",
+        "korean_current_consumer": "Already exact: J-membership holds for every nonnegative r; only m+rd >= n is eventual."
+      },
+      {
+        "global_id": "EGA2-CANON-DISP-0041",
+        "classification": "WRONG_INTERNAL_REFERENCE_II_2_1_9_TO_II_2_1_8",
+        "disposition": "ACCEPT_NEW",
+        "confidence": "CERTAIN",
+        "korean_current_consumer": "Corrected target and visible reference from II.2.1.9 / 2.1.9 to II.2.1.8 / 2.1.8."
+      }
+    ],
+    "diplomatic_policy": "Preserve the printed French scope and 2.1.9 reference; corrected/current consumers carry the accepted repairs.",
+    "result": "PASS_ACCEPTED_CERTAIN_D0040_D0041_APPLIED"
+  },
+  "candidate": {
+    "path": "candidates/r40-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r40-c2s1-continuation.tex",
+    "bytes": 4829,
+    "characters": 3237,
+    "lf_lines": 114,
+    "hangul_syllables": 796,
+    "sha256": "4E3A5FDEFF4DE67EA548232F8A589AFF06023916DB838440A594E9D1FAA3E5AD",
+    "separator_plus_candidate_bytes": 4830,
+    "separator_plus_candidate_lf_lines": 115,
+    "separator_plus_candidate_sha256": "6EE37052EFAEB0EEE7C212751176FC93A3A8C92CB4C2774FF8094B2EB0472931"
+  },
+  "sealed_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors; neither R39 nor R40 is integrated"
+  },
+  "r39_prospective_preimage": {
+    "method": "exact R38 preimage followed by exactly one LF separator and exact R39 candidate",
+    "bytes": 84317,
+    "characters": 58695,
+    "lf_lines": 1809,
+    "sha256": "D08D6AD60E00CE72AC6D64BB1D95F0AB63836F8B50D065631DC4FCD044D4F67C",
+    "required_identity_before_R40_integration": true
+  },
+  "prospective_r40_integration": {
+    "method": "exact R39 prospective preimage followed by exactly one LF separator and exact R40 candidate",
+    "target_range": "line 1810 blank separator; R40 candidate lines 1811-1924",
+    "bytes": 89147,
+    "characters": 61933,
+    "lf_lines": 1924,
+    "sha256": "1F4203DB990A0E9E81B83AC3106439AF0DFE5A0CB32B069B5C44EFE7DC025617",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r40_candidate.py",
+    "validator_bytes": 21328,
+    "validator_characters": 20855,
+    "validator_lf_lines": 454,
+    "validator_sha256": "ED2FEB8132958F0C3895BAE8A6F240E445690440B5A6A91D02F9D0C99A98C4AE",
+    "result": "PASS_R40_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS",
+    "source_inline_formula_count": 80,
+    "target_inline_formula_count": 81,
+    "authorized_target_only_formula": "m+rd\\geq n",
+    "authorized_target_only_formula_count": 1,
+    "authorized_formula_position": "after source formula 68 and before source formula 69 in the proof of (2.3.2.4)",
+    "inline_formula_identity_and_order_after_removing_authorized_clarifier": true,
+    "source_display_count": 7,
+    "target_display_count": 7,
+    "display_content_tag_label_order_exact_after_fr_ko_mapping": true,
+    "clause_formula_audit": {
+      "result": "PASS",
+      "partition_count": 11,
+      "formula_range": "1-80",
+      "contiguous_and_exhaustive": true,
+      "all_clause_sequences_exact": true,
+      "high_degree_proof_formula_range": "59-70"
+    },
+    "label_count": 12,
+    "ordered_reference_count": 5,
+    "numbered_environments": ["2.2.7", "2.3.1", "2.3.2", "2.3.3"],
+    "oldpage": "II26",
+    "navigation_only_phantomsection_count": 4,
+    "emphasis_source_target": "7/7",
+    "brace_count_open_close": "86/86",
+    "utf8_replacement_characters": 0
+  },
+  "semantic_clarifications": {
+    "printed_ordre_0": "Rendered semantically as degree zero, consistently with graded localization; never rendered as order.",
+    "printed_lines_1857_1858": "Under accepted-certain EGA2-CANON-DISP-0040, the target explicitly separates facts obscured by the printed French scope: f^r x belongs to J intersect S_(m+rd) for every nonnegative r; only m+rd >= n is eventual; that component is then contained in the prime ideal; primality and f not belonging to the prime ideal cancel the power and yield x in the prime ideal component.",
+    "added_formula": "Only m+rd\\geq n was added, exactly once, to bind the eventual condition explicitly under EGA2-CANON-DISP-0040.",
+    "printed_reference": "Under accepted-certain EGA2-CANON-DISP-0041, diplomatic French preserves printed 2.1.9 while the corrected/current Korean consumer cites II.2.1.8 with visible text 2.1.8.",
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "[TERMINOLOGY_LEDGER]/terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "role": "existing Korean EGA register authority"
+    },
+    {
+      "path": "[STACKS_KO_EXPORT]/STACKS_KO_TERMINOLOGY_EXPORT_20260905_R1.json",
+      "bytes": 10922,
+      "sha256": "BD3E4DCD4A5CB0C0BFCCB1E4D5A33DEFEEC6424318B2B228B09A78F60DDFC639",
+      "role": "cross-corpus typed terminology evidence for graded ring and graded module"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437A2791C4B5F92BFF68805B3B009BB663D340530E6BA3B58F0066971E681",
+      "contexts": "lines 120-134 and 294-300",
+      "role": "English semantic/type control for homogeneous coordinate rings and graded modules, not Korean spelling authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1505.01307.txt",
+      "bytes": 112066,
+      "sha256": "494FE3E2E830BD39A8F01B39AB12F7D7C86E131D9DC29A2B69CCFF8C8C664BAA",
+      "contexts": "lines 84-89 and 670-675",
+      "role": "English semantic/type control for direct limits, not Korean spelling authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/math-0307189.txt",
+      "bytes": 80435,
+      "sha256": "003AF3063734F8746DDCC10E015B317A344F48B2662DC171D5675BC4096DBCC1",
+      "contexts": "lines 42-43 and 110-111",
+      "role": "English semantic/type control for underlying space and localization, not Korean spelling authority"
+    }
+  ],
+  "source_queries": {
+    "status": "D0040_D0041_adjudicated_and_applied_without_resending",
+    "destination": "EGA correction and adjudication task",
+    "loci": [
+      {
+        "line": 1788,
+        "issue": "Printed ordre 0 conflicts with the local degree-zero construction.",
+        "translation_treatment": "Rendered as degree zero as a disclosed translator semantic clarification; the source query was previously routed and source bytes remain diplomatic."
+      },
+      {
+        "lines": "1857-1858",
+        "issue": "Printed sauf pour un nombre fini scopes the wrong membership relation or is elliptically attached.",
+        "translation_treatment": "Accepted-certain EGA2-CANON-DISP-0040 is applied: J-membership holds for every nonnegative r and only m+rd >= n is eventual; source bytes remain diplomatic."
+      },
+      {
+        "line": 1860,
+        "issue": "Printed 2.1.9 may be an imprecise or off-by-one reference to the prime-ideal cancellation statement in 2.1.8.",
+        "translation_treatment": "Accepted-certain EGA2-CANON-DISP-0041 is applied: diplomatic French preserves 2.1.9; corrected/current Korean now references II.2.1.8 with visible text 2.1.8."
+      }
+    ]
+  },
+  "independent_review": {
+    "method": "Bounded independent Korean semantic/terminology review of the exact final candidate, independent structural/formula review, and deterministic reseal against accepted-certain EGA2-CANON-DISP-0040/0041.",
+    "result": "PASS",
+    "final_candidate_semantic_scope_terminology_review": "PASS",
+    "formula_and_structure_review": "PASS",
+    "final_deterministic_clause_formula_review": "PASS",
+    "source_formula_identity_after_authorized_clarifier_removal": "PASS_80_OF_80_IN_EXACT_ORDER",
+    "display_review": "PASS_7_OF_7",
+    "scope_repair_review": "PASS_MEMBERSHIP_EVENTUALITY_SUBSET_AND_PRIME_IDEAL_CANCELLATION_EXPLICIT",
+    "d0040_authority_and_logic_review": "PASS_ACCEPTED_CERTAIN_AND_EXACTLY_APPLIED",
+    "d0041_reference_review": "PASS_DIPLOMATIC_2_1_9_CURRENT_KOREAN_2_1_8",
+    "d0041_reference_target_resolution_review": "PASS_UNIQUE_LABEL_IN_SEALED_PREIMAGE",
+    "prospective_private_public_identity_review": "PASS"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_candidate",
+    "integration": "prospective_not_integrated",
+    "source_referral": "D0040_D0041_adjudicated_applied_not_resent",
+    "build": "not_run_by_R40_candidate_lane",
+    "release_metadata_or_state": "not_changed",
+    "publication": "not_performed"
+  },
+  "next": "Only after R39 is integrated to its exact prospective identity, append exactly one LF plus the exact R40 candidate to both mirrors, prove the R40 prospective identity, then run the separately authorized serialized cumulative build and QA workflow."
+}

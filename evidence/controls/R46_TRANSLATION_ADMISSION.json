@@ -1,0 +1,325 @@
+{
+  "schema": "agko-r46-translation-admission-v1",
+  "time": "2026-09-06T22:40:19+02:00",
+  "scope": "EGA II canonical lines 2387-2477: proof of Proposition 2.5.2 through the complete local-ring consequence after Proposition 2.5.5",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2387-2477",
+    "unit_bytes": 4105,
+    "unit_characters": 4038,
+    "unit_lf_lines": 91,
+    "unit_sha256": "36D6FC14C5046580440466693A1AB7061A3609891BEEAD164AACBB77E9FDB628",
+    "preunit_prefix_lines": "1-2386",
+    "preunit_prefix_bytes": 107158,
+    "preunit_prefix_characters": 105507,
+    "preunit_prefix_lf_lines": 2386,
+    "preunit_prefix_sha256": "76A1836829674F1628B7E4B23612E615CCAE1CFB72E8342A6442A2A4A08D7CC8",
+    "postunit_prefix_lines": "1-2477",
+    "postunit_prefix_bytes": 111263,
+    "postunit_prefix_characters": 109545,
+    "postunit_prefix_lf_lines": 2477,
+    "postunit_prefix_sha256": "8D01D70E9F4BF6DAA12585FDC80A597F5D6F1C1137BB5BF1381AC77AD722266E",
+    "boundaries": "line 2386 blank; line 2387 begins the proof of Proposition 2.5.2; line 2477 completes the local-ring consequence; line 2478 blank; line 2479 begins the next complete paragraph",
+    "natural_complete_boundary": true,
+    "boundary_rationale": "The unit is 4,038 source characters, closes every included proof/environment and the first complete printed-page-32 consequence, and does not enter the next rational-function-field paragraph."
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "r66_scope": "EGA IV-3 consumer synchronization only",
+    "ega_ii_source_and_head_unchanged": true,
+    "relevant_unit_new_dispositions": 0
+  },
+  "english_semantic_witnesses": {
+    "paired": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_characters": 103751,
+      "whole_lf_lines": 1769,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377"
+    },
+    "global": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[GLOBAL_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+      "exactly_equal_to_paired_copy": true
+    },
+    "slice_lines": "693-740",
+    "slice_bytes": 3813,
+    "slice_characters": 3813,
+    "slice_lf_lines": 48,
+    "slice_sha256": "391148880A7B806C912005663974ED713861A48428DF9D51EC6FAD8EF52BE7FA",
+    "role": "independent maintained semantic and mathematical-type witnesses; French remains the diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_AND_DISPOSITIONS_ON_PRINTED_PAGES_31_32",
+    "rendered_scan_witnesses": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P28.png",
+        "bytes": 248768,
+        "sha256": "7544BB940F8E450D62FDF5AE6F950FE2E01D03AEC067744DCC833FD09ECD7200"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P29.png",
+        "bytes": 221699,
+        "sha256": "8D388F13F04A77F9A7081300853B4F367BF7434A1AD73907A1501D82DFBE1066"
+      }
+    ],
+    "ledgers": [
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P31_FR.jsonl",
+        "bytes": 180969,
+        "sha256": "4CFEC97BC64409B67C616F48122775D609E6923B269458870E0E4F0390FD3079"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P32_FR.jsonl",
+        "bytes": 190762,
+        "sha256": "0DDA6165688B3D495304456BBDA785E0ECFE31C525D468BA7FFF57DFD4DC0304"
+      }
+    ],
+    "passing_dispositions": [
+      "EG-EGA-II-P31-FR-2.5.2-LOCALIZATION-001",
+      "EG-EGA-II-P31-FR-2.5.2-COCYCLE-001",
+      "EG-EGA-II-P31-FR-2.5.2-GLUE-001",
+      "EG-EGA-II-P31-FR-2.5.2-STRUCTURE-001",
+      "EG-EGA-II-P31-FR-2.5.3-001",
+      "EG-EGA-II-P31-FR-2.5.4-EXACT-001",
+      "EG-EGA-II-P31-FR-2.5.4-COLIMIT-001",
+      "EG-EGA-II-P31-FR-2.5.4-MORPHISM-001",
+      "EG-EGA-II-P31-FR-2.5.5-001",
+      "EG-EGA-II-P31-FR-NATURAL-CLOSE-001",
+      "EG-EGA-II-P32-FR-LOCAL-RING-001"
+    ]
+  },
+  "immediate_predecessor_context": {
+    "status": "standalone_register_context_only",
+    "candidate_path": "candidates/r45-c2s1-continuation.tex",
+    "candidate_bytes": 4491,
+    "candidate_sha256": "5E2639A530F4CD0A504D96593C5672809A6ED89C4C0A23E61FACC182EF4C4742",
+    "control_path": "controls/R45_TRANSLATION_ADMISSION.json",
+    "control_bytes": 16807,
+    "control_sha256": "47D257599805B6045168743EAB2A96CCB68D0C7CC932535F0BA66BA6C87E50EC",
+    "source_boundary": "R45 ends at canonical line 2385; line 2386 is blank; R46 begins at line 2387",
+    "r45_integration_observed": false
+  },
+  "candidate": {
+    "path": "candidates/r46-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r46-c2s1-continuation.tex",
+    "bytes": 4193,
+    "characters": 2895,
+    "lf_lines": 90,
+    "hangul_syllables": 649,
+    "sha256": "F3AAF17AE85C46461FE6FEEDB3C238EBB7F8F65471B2483F4E6D4C9AE9CF6F48",
+    "bom_cr_replacement_characters": "0/0/0"
+  },
+  "cumulative_predecessor_and_prospective": {
+    "status": "pending_sequential_rebase_after_R40_R41_R42_R43_R44_R45",
+    "reason": "R46 is candidate-only; no speculative cumulative predecessor or prospective identity is bound.",
+    "predecessor_bytes": null,
+    "predecessor_sha256": null,
+    "prospective_bytes": null,
+    "prospective_sha256": null,
+    "integration_now": false
+  },
+  "structure_formula_and_negative_validation": {
+    "validator": "candidates/validate_r46_candidate.py",
+    "validator_bytes": 22152,
+    "validator_characters": 21334,
+    "validator_lf_lines": 471,
+    "validator_sha256": "484FE7690DDBBDBF4C4859FD6D30CAB7953EBF04AA5C83C6788440CD8448577D",
+    "result": "PASS_R46_R66_SOURCE_ACCURATE_STANDALONE_CANDIDATE_PENDING_SEQUENTIAL_REBASE",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "source_inline_formula_count": 70,
+    "target_inline_formula_count": 70,
+    "source_display_formula_count": 1,
+    "target_display_formula_count": 1,
+    "mathematical_span_order": "PASS_EXACT_ORDERED_71_OF_71",
+    "whole_unit_formula_multiset_exact": true,
+    "label_count": 3,
+    "ordered_reference_count": 12,
+    "ordered_environment_event_count": 12,
+    "environment_inventory": {
+      "proof": 3,
+      "definition": 1,
+      "proposition": 2
+    },
+    "emphasis_count": 3,
+    "oldpage": "II32",
+    "navigation_only_phantomsection_count": 3,
+    "source_target_tex_command_inventory_exact_after_removing_navigation_anchors": true,
+    "tex_command_inventory_without_navigation_anchors": {
+      "Gamma": 2,
+      "begin": 6,
+      "circ": 2,
+      "emph": 3,
+      "end": 6,
+      "eta": 3,
+      "hyperref": 12,
+      "in": 3,
+      "label": 3,
+      "mapsto": 4,
+      "mathcal": 11,
+      "mathfrak": 9,
+      "notin": 1,
+      "oldpage": 1,
+      "operatorname": 1,
+      "sim": 1,
+      "theta": 5,
+      "to": 4,
+      "varinjlim": 1,
+      "widetilde": 20,
+      "xrightarrow": 1
+    },
+    "negative_witness_count": 9,
+    "negative_witnesses": [
+      "cocycle composition reversal",
+      "display arrow corruption",
+      "module-associated sheaf collapsed to sheafification",
+      "presheaf sheafification collapsed to association",
+      "covariance reversal",
+      "inductive limit changed to projective limit",
+      "Korean label suffix corruption",
+      "page marker corruption",
+      "local-ring fraction numerator condition deletion"
+    ]
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_hypotheses_quantifiers_and_directions_preserved": true,
+    "localized_chart_ring_and_module_types_preserved": true,
+    "theta_isomorphism_direction_and_cocycle_order_preserved": true,
+    "F_G_gluing_and_presheaf_sheafification_distinction_preserved": true,
+    "module_associated_sheaf_not_sheafification": true,
+    "exact_additive_covariant_functor_preserved": true,
+    "inductive_limits_and_direct_sums_preserved": true,
+    "degree_zero_morphism_category_preserved": true,
+    "stalk_as_directed_colimit_preserved": true,
+    "local_ring_fraction_description_preserved": true,
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": [
+    {
+      "path": "terms.jsonl",
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records_used": [
+        "AGKO-T008 exact functor and inductive limit",
+        "AGKO-T015 sheaf and presheaf",
+        "AGKO-T019 topology basis",
+        "AGKO-T026 sheafification",
+        "AGKO-T035 grading",
+        "AGKO-T039 quasi-coherent",
+        "AGKO-T085 prime spectrum",
+        "AGKO-T089 module-associated sheaf",
+        "AGKO-T167 covariant functor and direct sums"
+      ]
+    },
+    {
+      "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+      "bytes": 35543,
+      "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+      "role": "read-only nonbinding typed conflict detector; no global replacement authority",
+      "used_mappings": [
+        "XW-KO-003",
+        "XW-KO-004",
+        "XW-KO-005",
+        "XW-KO-016",
+        "XW-KO-018",
+        "XW-KO-027"
+      ]
+    },
+    {
+      "path": "terminology/arxiv/2026-08-26/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "role": "retained primary English scholarly type context for graded/projective geometry; not Korean spelling authority"
+    }
+  ],
+  "terminology_choices": [
+    {
+      "source": "spectre premier",
+      "korean": "소 스펙트럼",
+      "basis": "AGKO-T085; preserves the prime-spectrum object type"
+    },
+    {
+      "source": "faisceau associé au module",
+      "korean": "가군에 대응하는 층",
+      "basis": "AGKO-T089 and XW-KO-027; distinct from general sheafification"
+    },
+    {
+      "source": "faisceau associé au préfaisceau",
+      "korean": "준층을 층화하여 얻는 층",
+      "basis": "AGKO-T026 and XW-KO-018; preserves the presheaf-to-sheaf construction"
+    },
+    {
+      "source": "Module quasi-cohérent",
+      "korean": "준연접 가군",
+      "basis": "AGKO-T039 and XW-KO-016; the module noun is retained"
+    },
+    {
+      "source": "module gradué / élément homogène",
+      "korean": "등급가군 / 동차 원소",
+      "basis": "AGKO-T035 and XW-KO-004/XW-KO-005; grading remains distinct from homogeneity"
+    },
+    {
+      "source": "foncteur covariant additif exact / limites inductives / sommes directes",
+      "korean": "공변 가법 완전 함자 / 귀납극한 / 직합",
+      "basis": "AGKO-T008 and AGKO-T167; variance and homological exactness are explicit"
+    }
+  ],
+  "comparable_published_korean_algebraic_geometry_evidence": {
+    "pinned_record": "terms.jsonl AGKO-T093",
+    "evidence": "The retained KAIST library catalogue record for the published Korean algebraic-geometry textbook 대수기하학 입문 is a professional-domain Korean algebraic-geometry shelf witness.",
+    "limit": "Its exact attestation concerns 쌍유리 사상, which does not occur in R46; it supports only the comparable professional register and does not directly authorize any R46 lexical item.",
+    "adverse_evidence": "AGKO-T039's exact 준연접층 web attestation is secondary/AI-generated; it is recorded as adverse evidence, not upgraded to publication-grade authority.",
+    "decision": "R46 uses already locked, definition-bound Korean EGA terms corroborated by the nonbinding Stacks crosswalk; no unsupported claim of Korean publication consensus is made."
+  },
+  "source_queries": {
+    "status": "NO_NEW_FRENCH_SOURCE_CANONICAL_OR_MAINTAINED_ENGLISH_DEFECT",
+    "new_correction_id_allocated": false,
+    "correction_dispatch_required": false,
+    "reason": "The exact printed-page dispositions affirm the localization exponents, cocycle order, gluing, functor variance, colimits, stalk formula, and local-ring fraction description; the paired and global English witnesses are exact and semantically concordant."
+  },
+  "independent_review": {
+    "method": "A separate read-only French/Korean/English semantic and Korean-register review, followed by revision and a final exact-identity re-read independent of the validator implementation.",
+    "pre_final_findings": [
+      "clarify that the sheaf before restriction lives on D_+(f)",
+      "name the object associated to M as a sheaf rather than generically as a module",
+      "replace an awkward Korean indexing-set sentence"
+    ],
+    "all_findings_applied": true,
+    "final_result": "PASS_NO_REMAINING_CONCRETE_DEFECT",
+    "candidate_identity_reviewed": "4193 B / F3AAF17AE85C46461FE6FEEDB3C238EBB7F8F65471B2483F4E6D4C9AE9CF6F48",
+    "formula_result": "PASS_EXACT_ORDERED_71_OF_71_MATHEMATICAL_SPANS",
+    "reference_structure_result": "PASS_12_REFERENCES_3_LABELS_12_ENVIRONMENT_EVENTS_AND_II32_MARKER"
+  },
+  "release_privacy": {
+    "control_contains_absolute_windows_paths": false,
+    "control_contains_user_profile_path": false,
+    "control_contains_personal_name": false,
+    "control_contains_credentials": false,
+    "control_contains_prohibited_repository_reference": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_standalone_candidate",
+    "integration": "not_integrated",
+    "build": "not_run_by_R46_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "After R40 through R45 are sequentially resealed, bind the exact cumulative predecessor and R46 prospective identity; continue source-bounded translation at canonical line 2479."
+}

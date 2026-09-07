@@ -1,0 +1,49 @@
+{
+  "schema": "agko-correction-json-backfill-followup-audit-v1",
+  "audited_at": "2026-09-07T00:20:00+02:00",
+  "scope": "Exact ag_ko correction controls, candidate admission controls, and delivery receipts only; no broad scan; read-only audit.",
+  "destination_task": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+  "inputs": [
+    {
+      "path": "controls/EGA_CORRECTION_JSON_BACKFILL_DELTA_AUDIT_20260906_233612_CEST.json",
+      "bytes": 16785,
+      "sha256": "4FC9A7B94D318A5A8A37705CF65378D01FD2FA4C2CC35F9C7FBE7EBB3D46637E"
+    },
+    {
+      "path": "controls/EGA_CORRECTION_JSON_BACKFILL_DELTA_DELIVERY_20260906_235805_CEST.json",
+      "bytes": 1813,
+      "sha256": "34A5E46526349EC2CAACE883C3D1F438F0262EE83597A8C195512A2342E4934C"
+    },
+    {
+      "path": "controls/EGA_CORRECTION_JSON_BACKFILL_AUDIT_20260905_203653_CEST.json",
+      "bytes": 15790,
+      "sha256": "FAA6D8B6820E3661F1DB04D62E4FC0B0141F6793DA860C339E082B2EA3786BF8"
+    },
+    {
+      "path": "controls/EGA_CORRECTION_DELTA_AUDIT_20260905_163839_CEST.json",
+      "bytes": 6347,
+      "sha256": "930268B5FA3885FBE0769F63F78B925AA8C183B66753B744CC805F5EF421032C"
+    },
+    {
+      "path": "controls/R42_TRANSLATION_CANDIDATE_RESEAL_V3_20260906.json",
+      "bytes": 8781,
+      "sha256": "C505E153029C34A543E77290622D8DB31C492CCCFB97EF138A2FC5A3220E78D8"
+    }
+  ],
+  "findings": {
+    "remaining_unsent": 0,
+    "hidden_unsent_or_ready_for_parent_markers": 0,
+    "new_source_or_canon_defects": 0,
+    "new_maintained_english_defects": 0,
+    "latest_delta_groups_already_delivered": [
+      "AGKO-CORRECTION-DELTA-HOMOGENEOUS-IDEAL-001",
+      "AGKO-CORRECTION-DELTA-R45-WORDING-001"
+    ],
+    "historical_stale_advisory_open_fields": [
+      "EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.XW-CORR-004"
+    ],
+    "stale_open_field_interpretation": "The R42 reseal and destination-bound receipts prove delivery; the advisory open marker is historical and is not a new unsent correction."
+  },
+  "action": "No message sent and no duplicate resend performed; the exact destination already accepted all currently unsent groups.",
+  "result": "PASS_CORRECTION_ROUTING_COMPLETE_NO_UNSENT_ITEMS"
+}

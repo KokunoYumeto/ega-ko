@@ -1,0 +1,261 @@
+{
+  "schema": "agko-r48-translation-admission-v1",
+  "time": "2026-09-07T00:33:47+02:00",
+  "scope": "EGA II canonical French lines 2568-2694: complete items 2.5.11 and 2.5.12, including the printed-page II-33/II-34 boundary",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26",
+    "unit_lines": "2568-2694",
+    "unit_bytes": 4392,
+    "unit_characters": 4357,
+    "unit_lf_lines": 127,
+    "unit_sha256": "C0F0FEEFB7096812B3B6FF03B3C8189BCF739C434623D8C92341CEC677D9605C",
+    "preunit_prefix_lines": "1-2567",
+    "preunit_prefix_bytes": 114554,
+    "preunit_prefix_characters": 112787,
+    "preunit_prefix_lf_lines": 2567,
+    "preunit_prefix_sha256": "5C5B32B7F8D96EB49104A0FDB7B2EEC41D6FAE01C8666832D8B1931AB22A040E",
+    "postunit_prefix_lines": "1-2694",
+    "postunit_prefix_bytes": 118946,
+    "postunit_prefix_characters": 117144,
+    "postunit_prefix_lf_lines": 2694,
+    "postunit_prefix_sha256": "04113B8FFC608C7CA286A77C37363C651C7AF529804C25B3BE519023A31B9F23",
+    "boundaries": "line 2567 is blank; line 2568 begins item 2.5.11; line 2694 closes item 2.5.12; line 2695 is blank; line 2696 begins Proposition 2.5.13",
+    "natural_complete_boundary": true,
+    "boundary_rationale": "The unit closes both numbered environments and stops at the next complete proposition. The two printed-page markers are retained exactly at II-33 and II-34."
+  },
+  "english_semantic_witnesses": {
+    "paired": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_characters": 103751,
+      "whole_lf_lines": 1769,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377"
+    },
+    "global": {
+      "path": "source/ega2/ega2-2.tex",
+      "role_locator": "[GLOBAL_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+      "whole_bytes": 103751,
+      "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+      "exactly_equal_to_paired_copy": true
+    },
+    "slice_lines": "800-889",
+    "slice_bytes": 4000,
+    "slice_characters": 4000,
+    "slice_lf_lines": 90,
+    "slice_sha256": "BC4745A0CB1F4162009E3D9BEFD0CF209766DDE85176D96B361BFC9E545D3249",
+    "role": "Independent maintained semantic and mathematical-type witness; French remains the diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_AND_DISPOSITIONS_ON_PRINTED_PAGES_33_34",
+    "rendered_scans": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P30.png",
+        "printed_page": "II-33",
+        "bytes": 140623,
+        "sha256": "5E5DF4B12775AD06F75457C761129341C98D54A6BA3C1E78B588472C9772841C"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P31.png",
+        "printed_page": "II-34",
+        "bytes": 194144,
+        "sha256": "2FB8BF086EECA0F62F17222DD54B3E2233537B9CC035B01A97502F5C82B9C53A"
+      }
+    ],
+    "ledgers": [
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P33_FR.jsonl",
+        "bytes": 201397,
+        "sha256": "A3A31AEFB278CA2712764D4146D063EE21FEF8ACE69246998C3AD96CA3886448"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P34_FR.jsonl",
+        "bytes": 212481,
+        "sha256": "70819CAA8A3E1A6B72B094A961909F9623C8BE66D4FEC9D2C358C40DA0E14D33"
+      }
+    ],
+    "passing_dispositions": [
+      "EG-EGA-II-P33-FR-LAMBDA-F-001",
+      "EG-EGA-II-P33-FR-ELEMENT-FORMULA-001",
+      "EG-EGA-II-P33-FR-RESTRICTION-001",
+      "EG-EGA-II-P33-FR-2.5.11.2-001",
+      "EG-EGA-II-P33-FR-2.5.11.3-001",
+      "EG-EGA-II-P33-FR-2.5.11.4-BOUNDARY-001",
+      "EG-EGA-II-P33-FR-NO-ERRATUM-001",
+      "EG-EGA-II-P34-FR-25114-001",
+      "EG-EGA-II-P34-FR-25121-001",
+      "EG-EGA-II-P34-FR-2512-DIAGRAM-001",
+      "EG-EGA-II-P34-FR-25122-001",
+      "EG-EGA-II-P34-FR-PRECISION-001"
+    ],
+    "all_required_dispositions_pass": true,
+    "source_error_in_unit": false,
+    "new_authorial_correction_allocated": false
+  },
+  "immediate_predecessor_context": {
+    "status": "validated_standalone_register_context_only",
+    "candidate_path": "candidates/r47-c2s1-continuation.tex",
+    "candidate_bytes": 3887,
+    "candidate_sha256": "7908CB9BBFDDA07E0F8A555C872E5E841735AE06DD00D77389C00FF39AE2D1C0",
+    "validator_path": "candidates/validate_r47_candidate.py",
+    "validator_bytes": 23256,
+    "validator_characters": 21981,
+    "validator_lf_lines": 463,
+    "validator_sha256": "424143C347DA3A22042E57CD797B82CFF07E122D8422816C6A7A0B2AD818B55C",
+    "control_path": "controls/R47_TRANSLATION_ADMISSION.json",
+    "control_bytes": 11534,
+    "control_sha256": "6559DF92E0449DBE552AAE4AB909EB9B0E5E51A1909306CAF20F7F01085CCFD8",
+    "source_boundary": "R47 ends at canonical line 2566; line 2567 is blank; R48 begins at line 2568",
+    "r47_integration_observed": false
+  },
+  "candidate": {
+    "path": "candidates/r48-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r48-c2s1-continuation.tex",
+    "bytes": 4619,
+    "characters": 3601,
+    "lf_lines": 125,
+    "hangul_syllables": 509,
+    "sha256": "6CC45704072D6889D791747D5636A2DC46AD5E46675DD34EE68443C12E1DB0C9",
+    "bom_cr_replacement_characters": "0/0/0",
+    "integration": "not_integrated"
+  },
+  "structure_formula_and_negative_validation": {
+    "validator": "candidates/validate_r48_candidate.py",
+    "validator_bytes": 28273,
+    "validator_characters": 27461,
+    "validator_lf_lines": 627,
+    "validator_sha256": "521365FA2AE48F1D3C1CD36ECF0EDB67EE85A4B926EE69DE5B899E7BFB51A47F",
+    "result": "PASS_R48_SOURCE_ACCURATE_STANDALONE_CANDIDATE_AFTER_VALIDATED_R47",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "source_inline_formula_count": 47,
+    "target_inline_formula_count": 47,
+    "source_display_formula_count": 9,
+    "target_display_formula_count": 9,
+    "mathematical_span_order": "PASS_EXACT_ORDERED_56_OF_56_WITH_DISPLAY_LABEL_SUFFIX_TRANSFORM",
+    "whole_unit_formula_multiset_exact": true,
+    "label_count": 8,
+    "ordered_reference_count": 6,
+    "ordered_environment_event_count": 4,
+    "environment_inventory": {
+      "env": 2
+    },
+    "oldpage_markers": ["II-33", "II-34"],
+    "navigation_only_phantomsection_count": 2,
+    "source_target_tex_command_inventory_exact_after_removing_navigation_anchors": true,
+    "tex_command_inventory_without_navigation_anchors": {
+      "ar": 15,
+      "begin": 2,
+      "bigl": 3,
+      "bigr": 3,
+      "end": 2,
+      "geq": 2,
+      "hyperref": 6,
+      "in": 6,
+      "label": 8,
+      "lambda": 12,
+      "longrightarrow": 4,
+      "mathcal": 14,
+      "mathfrak": 10,
+      "mu": 5,
+      "oldpage": 2,
+      "operatorname": 7,
+      "otimes": 27,
+      "sim": 1,
+      "tag": 6,
+      "to": 6,
+      "widetilde": 21,
+      "xrightarrow": 1,
+      "xymatrix": 4
+    },
+    "negative_witness_count": 13,
+    "negative_witnesses": [
+      "graded module register erased",
+      "homogeneous ideal typed as graded ideal",
+      "homogeneous element typed as graded element",
+      "tensor denominator exponent corrupted",
+      "canonical localized isomorphism weakened",
+      "restriction square commutativity erased",
+      "global lambda arrow direction reversed",
+      "mu element image exponent weakened",
+      "Korean label suffix corrupted",
+      "Korean reference suffix corrupted",
+      "printed page marker corrupted",
+      "navigation anchor deleted",
+      "UTF-8 BOM injection"
+    ],
+    "all_negative_witnesses_rejected": true
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "graded_module_register_preserved": true,
+    "homogeneous_ideal_register_preserved": true,
+    "homogeneous_element_register_preserved": true,
+    "canonical_functorial_lambda_and_mu_maps_preserved": true,
+    "tensor_element_formula_and_m_plus_n_exponent_preserved": true,
+    "restriction_and_associativity_diagrams_preserved": true,
+    "graded_ideal_triangle_and_ideal_sheaf_type_preserved": true,
+    "u_over_f_power_action_preserved": true,
+    "translator_note_inserted": false
+  },
+  "terminology_evidence": {
+    "terms_path": "terms.jsonl",
+    "terms_bytes": 263512,
+    "terms_sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+    "records_used": [
+      "AGKO-T008 exact functor",
+      "AGKO-T015 sheaf/presheaf",
+      "AGKO-T031 ideal sheaf",
+      "AGKO-T035 grading",
+      "AGKO-T167 typed tensor/Hom and covariant functor"
+    ],
+    "crosswalk_path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+    "crosswalk_bytes": 35543,
+    "crosswalk_sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+    "homogeneous_control_path": "controls/R39_IDEAL_TERMINOLOGY_RESEAL.json",
+    "homogeneous_control_bytes": 12197,
+    "homogeneous_control_sha256": "2F88570A3523DE0718F3952C842FE00D5D8337DC0D9DF4AC93C20D9D263AF624",
+    "lane_export_path": "[CJK_LANE_CONTROL]/STACKS_KO_TERMINOLOGY_EXPORT_20260905_R1.json",
+    "lane_export_bytes": 10922,
+    "lane_export_sha256": "BD3E4DCD4A5CB0C0BFCCB1E4D5A33DEFEEC6424318B2B228B09A78F60DDFC639",
+    "typed_mapping": {
+      "graded_rings_modules_structures": "등급",
+      "homogeneous_elements_ideals_components": "동차",
+      "canonical_constructions": "표준 plus typed noun",
+      "no_global_replacement": true
+    }
+  },
+  "candidate_integration_observation": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+    "candidate_exactly_contained": false
+  },
+  "correction_audit": {
+    "french_source_or_maintained_english_error_found": false,
+    "new_reportable_correction_candidates": [],
+    "authority_source_mutated": false
+  },
+  "state": {
+    "translation": "complete_standalone_candidate",
+    "validation": "pass_normal_and_python_optimized",
+    "integration": "not_integrated",
+    "build": "not_run_by_design",
+    "package": "not_run_by_design",
+    "publication": "not_run_by_design",
+    "git": "not_used",
+    "network": "not_used",
+    "tex": "not_run",
+    "ui": "not_opened"
+  },
+  "next": "After sequential R48 admission routing and the required predecessor rebase, integrate this exact standalone candidate. The next untranslated source unit begins at canonical line 2696 with Proposition 2.5.13."
+}

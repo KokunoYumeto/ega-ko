@@ -1,0 +1,45 @@
+{
+  "schema": "agko-r40-integration-v1",
+  "recorded_at_utc": "2026-09-07T03:42:00Z",
+  "operation": "Append one exact LF separator and the admitted resealed R40 candidate to both Korean EGA II mirrors.",
+  "preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 84274,
+    "lf_lines": 1809,
+    "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+    "private_public_byte_identical": true
+  },
+  "append": {
+    "separator_bytes": 1,
+    "separator": "LF",
+    "candidate_path": "candidates/r40-c2s1-continuation-homogeneous-reseal.tex",
+    "candidate_bytes": 4829,
+    "candidate_lf_lines": 114,
+    "candidate_sha256": "5E58F20F745B021AA8E9412917358A8AB690156C48BA19E575836F94124C10C7"
+  },
+  "postimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 89104,
+    "characters": 61916,
+    "lf_lines": 1924,
+    "sha256": "E6ACDF633E94752149454AE263D8EC79FA771D1BC5E930CC3C94CAAF8967294C",
+    "private_public_byte_identical": true,
+    "candidate_is_exact_terminal_suffix": true,
+    "source_frontier": "canonical lines 1782-1889; next line 1891"
+  },
+  "validator": {
+    "path": "candidates/validate_r40_homogeneous_ideal_reseal_live.py",
+    "bytes": 1738,
+    "sha256": "818F7E6CCBA00067EB832F978A232D3998D3EAD3C6D9E82B6856F7A9B5DC66B5",
+    "result": "PASS_R40_HOMOGENEOUS_IDEAL_WORDING_RESEAL_PROSPECTIVE_ONLY"
+  },
+  "scope_safety": {
+    "out_of_order_insertion_corrected_before_postimage": true,
+    "source_bytes_changed": false,
+    "sealed_r39_bytes_rewritten": false,
+    "publication_performed": false
+  },
+  "result": "PASS_R40_INTEGRATED_PRIVATE_PUBLIC_MIRRORS"
+}

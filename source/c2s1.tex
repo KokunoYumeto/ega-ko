@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-1780, 81885 LF UTF-8 bytes, SHA-256 033E312D8BD9E22AEC1D5B8AC5705ED71C64C4E4DCFBB7ED84B9A434313ACE33.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-2694, 118946 LF UTF-8 bytes, SHA-256 04113B8FFC608C7CA286A77C37363C651C7AF529804C25B3BE519023A31B9F23.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -1807,3 +1807,946 @@ $S_{(f)}$도 뇌터이다.
 이는 (\hyperref[II.2.1.7-ko]{2.1.7})과
 (\hyperref[II.2.2.5-ko]{2.2.5})에서 곧바로 따른다.
 \end{proof}
+
+\begin{env}[2.2.7]
+\phantomsection
+\label{II.2.2.7-ko}
+$T$를 \emph{동차} 원소들로 이루어진 $S_+$의 곱셈적 부분집합이라 하자.
+그러면 $T_0=T\cup\{1\}$은 $S$의 곱셈적 부분집합이다. $T_0$의
+원소들은 동차이므로, 환 $T_0^{-1}S$에는 명백한 방식으로 여전히 등급이
+주어진다. $S_{(T)}$로 $T_0^{-1}S$에서 차수가 $0$인 원소들, 즉
+$x/h$ 꼴의 원소들로 이루어진 부분환을 나타내겠다. 여기서 $h\in T$이고
+$x$는 $h$와 차수가 같은 동차 원소이다.
+(\hyperref[0.1.4.5-ko]{0, 1.4.5})에 따라 $T_0^{-1}S$는 환
+$S_f$들($f$가 $T$를 달리며 전이사상은 표준 준동형
+$S_f\to S_{fg}$이다)의 귀납극한과 표준적으로 동일시됨이 알려져 있다.
+이 동일시는 차수를 보존하므로 $S_{(T)}$를
+$S_{(f)}$들의($f\in T$) \emph{귀납극한}과 동일시한다. 모든 등급
+$S$-가군 $M$에 대하여도 마찬가지로 가군 $M_{(T)}$(환 $S_{(T)}$ 위의
+가군)를 차수가 $0$인 $T_0^{-1}M$의 원소들로 이루어진 것으로 정의한다.
+이 가군은 $M_{(f)}$들의($f\in T$) 귀납극한임을 알 수 있다.
+
+$\mathfrak{p}$가 $S_+$의 동차 소아이디얼이면, 각각
+$S_{(\mathfrak{p})}$와 $M_{(\mathfrak{p})}$로 환 $S_{(T)}$와 가군
+$M_{(T)}$를 나타내겠다. 여기서 $T$는 $S_+$에서 $\mathfrak{p}$에
+속하지 않는 \emph{동차} 원소들의 집합이다.
+\end{env}
+
+\subsection{등급환의 동차 소 스펙트럼.}
+\label{subsection:II.2.3-ko}
+
+\begin{env}[2.3.1]
+\phantomsection
+\label{II.2.3.1-ko}
+음이 아닌 차수로 등급이 주어진 환 $S$에 대하여, $S$의
+\emph{동차 소 스펙트럼}이라 하고 $\operatorname{Proj}(S)$로 나타내는 것은
+$S_+$의 동차 소아이디얼들의 집합
+(\hyperref[II.2.1.10-ko]{2.1.10}), 또는 같은 말로 $S$의 동차
+소아이디얼 가운데 $S_+$를 \emph{포함하지 않는} 것들의 집합이다. 이제
+$\operatorname{Proj}(S)$를 바탕집합으로 갖는 \emph{스킴} 구조를 정의하겠다.
+\end{env}
+
+\begin{env}[2.3.2]
+\phantomsection
+\label{II.2.3.2-ko}
+$E$를 $S$의 임의의 부분집합이라 하고, $V_+(E)$를 $S$의 동차
+소아이디얼 가운데 $E$를 포함하고 $S_+$를 포함하지 않는 것들의 집합이라
+하자. 그러므로 이는 $V(E)\cap\operatorname{Proj}(S)$라는
+$\operatorname{Spec}(S)$의 부분집합이다. 따라서
+(\hyperref[I.1.1.2-ko]{I, 1.1.2})에서 다음을 얻는다.
+\[
+  \label{II.2.3.2.1-ko}
+  V_+(0)=\operatorname{Proj}(S),\quad
+  V_+(S)=V_+(S_+)=\varnothing
+  \tag{2.3.2.1}
+\]
+\[
+  \label{II.2.3.2.2-ko}
+  V_+\left(\bigcup_\lambda E_\lambda\right)
+  =\bigcap_\lambda V_+(E_\lambda)
+  \tag{2.3.2.2}
+\]
+\[
+  \label{II.2.3.2.3-ko}
+  V_+(EE')=V_+(E)\cup V_+(E')
+  \tag{2.3.2.3}
+\]
+$V_+(E)$는 집합 $E$를 $E$가 생성하는 동차 아이디얼로 바꾸어도 변하지
+않는다. 또한 $\mathfrak{J}$가 $S$의 동차 아이디얼이면 다음이 성립한다.
+\[
+  \label{II.2.3.2.4-ko}
+  V_+(\mathfrak{J})
+  =V_+\left(\bigcup_{q\geq n}(\mathfrak{J}\cap S_q)\right)
+  \tag{2.3.2.4}
+\]
+\oldpage[II]{26}
+이는 모든 $n>0$에 대하여 성립한다. 실제로
+$\mathfrak{p}\in\operatorname{Proj}(S)$가 $\mathfrak{J}$의 차수가
+$\geq n$인 동차 원소들을 포함한다고 하자. 가정에 따라 동차 원소
+$f\in S_d$ 가운데 $\mathfrak{p}$에 속하지 않는 것이 존재하므로, 모든
+$m\geq 0$과 모든 $x\in S_m\cap\mathfrak{J}$에 대하여 관계
+$f^r x\in\mathfrak{J}\cap S_{m+rd}$는 모든 음이 아닌 정수 $r$에 대해
+성립한다. 한편 유한 개의 값을 제외한 모든 지수에 대해서는
+$m+rd\geq n$이므로 위 교집합은 해당 소아이디얼에 포함되고, 따라서
+$f^r x\in\mathfrak{p}\cap S_{m+rd}$이다. 앞서 고른 동차 원소가 해당
+소아이디얼에 속하지 않으므로 소아이디얼의 성질로 그 거듭제곱을 소거하면
+$x\in\mathfrak{p}\cap S_m$을 얻는다
+(\hyperref[II.2.1.8-ko]{2.1.8}).
+
+마지막으로 $\mathfrak{J}$가 $S$의 임의의 동차 아이디얼이면
+\[
+  \label{II.2.3.2.5-ko}
+  V_+(\mathfrak{J})=V_+(r_+(\mathfrak{J})).
+  \tag{2.3.2.5}
+\]
+\end{env}
+
+\begin{env}[2.3.3]
+\phantomsection
+\label{II.2.3.3-ko}
+정의에 따라 $V_+(E)$ 꼴의 집합들은 $X=\operatorname{Proj}(S)$ 위에서
+$\operatorname{Spec}(S)$의 스펙트럼 위상으로부터 유도된 위상의
+닫힌집합들이다. 이 위상도 $X$ 위의 \emph{스펙트럼 위상}이라 하겠다.
+모든 $f\in S$에 대하여 다음과 같이 놓는다.
+\[
+  \label{II.2.3.3.1-ko}
+  D_+(f)=D(f)\cap\operatorname{Proj}(S)
+  =\operatorname{Proj}(S)\setminus V_+(f)
+  \tag{2.3.3.1}
+\]
+따라서 $f$, $g$가 $S$의 두 원소이면
+(\hyperref[I.1.1.9.1-ko]{I, 1.1.9.1})
+\[
+  \label{II.2.3.3.2-ko}
+  D_+(fg)=D_+(f)\cap D_+(g).
+  \tag{2.3.3.2}
+\]
+\end{env}
+
+\begin{proposition}[2.3.4]
+\phantomsection
+\label{II.2.3.4-ko}
+$f$가 $S_+$의 동차 원소 전체를 달릴 때, $D_+(f)$들은
+$X=\operatorname{Proj}(S)$의 위상의 기저를 이룬다.
+\end{proposition}
+
+\begin{proof}
+실제로 (\hyperref[II.2.3.2.2-ko]{2.3.2.2})와
+(\hyperref[II.2.3.2.4-ko]{2.3.2.4})에 따라 $X$의 모든 닫힌 부분집합은
+$V_+(f)$ 꼴 집합들의 교집합이다. 여기서 $f$는 차수가 $>0$인 동차
+원소이다.
+\end{proof}
+
+\begin{env}[2.3.5]
+\phantomsection
+\label{II.2.3.5-ko}
+$f$를 $S_+$의 차수가 $d>0$인 \emph{동차} 원소라 하자.
+$\mathfrak{p}$가 $S$의 동차 소아이디얼이고 $f$를 포함하지 않을 때,
+$x/f^n$ 꼴 원소
+가운데 $x\in\mathfrak{p}$이고 $n\geq 0$인 것들의 집합은 분수환
+$S_f$의 소아이디얼임이 알려져 있다
+(\hyperref[0.1.2.6-ko]{0, 1.2.6}). 그 아이디얼과 $S_{(f)}$의 교집합도
+이 환의 소아이디얼이므로 이를 $\psi_f(\mathfrak{p})$로 나타내겠다.
+이는 $x/f^n$ 가운데 $n\geq 0$이고
+$x\in\mathfrak{p}\cap S_{nd}$인 것들의 집합이다. 이로써 사상
+\[
+  \psi_f:D_+(f)\longrightarrow\operatorname{Spec}(S_{(f)})~;
+\]
+을 정의하였다. 또한 $g\in S_e$가 $S_+$의 또 하나의 동차 원소이면 다음
+도식은 가환한다.
+\[
+  \label{II.2.3.5.1-ko}
+  \xymatrix{
+    D_+(f)\ar[r]^{\psi_f}
+    & \operatorname{Spec}(S_{(f)})\\
+    D_+(fg)\ar[u]\ar[r]_{\psi_{fg}}
+    & \operatorname{Spec}(S_{(fg)})\ar[u]
+  }
+  \tag{2.3.5.1}
+\]
+여기서 왼쪽 수직 화살표는 포함 사상이고, 오른쪽 수직 화살표는 사상
+${}^a\omega_{fg,f}$이다. 이는 표준 준동형
+$\omega=\omega_{fg,f}:S_{(f)}\to S_{(fg)}$에서 유도된다
+(\hyperref[I.1.2.1-ko]{I, 1.2.1}). 실제로
+$x/f^n\in\omega^{-1}(\psi_{fg}(\mathfrak{p}))$이고
+$fg\notin\mathfrak{p}$라 하자. 정의에 따라
+$g^n x/(fg)^n\in\psi_{fg}(\mathfrak{p})$이므로
+$g^n x\in\mathfrak{p}$이고, 따라서 $x\in\mathfrak{p}$이다. 역은
+자명하다.
+\end{env}
+
+\begin{proposition}[2.3.6]
+\phantomsection
+\label{II.2.3.6-ko}
+사상 $\psi_f$는 $D_+(f)$에서 $\operatorname{Spec}(S_{(f)})$로의
+위상동형이다.
+\end{proposition}
+
+\begin{proof}
+먼저 $\psi_f$는 연속이다. 실제로 $h\in S_{nd}$이고
+$h/f^n\in\psi_f(\mathfrak{p})$이면 정의에 따라
+$h\in\mathfrak{p}$이며, 그 역도 성립한다. 따라서
+\[
+  \psi_f^{-1}(D(h/f^n))=D_+(hf)
+\]
+이고, 주장은 공식
+(\hyperref[II.2.3.3.2-ko]{2.3.3.2})에서 따른다. 또한 $D_+(hf)$들, 즉
+$h$가 여러 집합 $S_{nd}$의 원소 전체를 달릴 때 얻는 이 집합들은,
+(\hyperref[II.2.3.4-ko]{2.3.4})와 공식
+(\hyperref[II.2.3.3.2-ko]{2.3.3.2})에 따라 $D_+(f)$의 위상의 기저를
+이룬다.
+\oldpage[II]{27}
+그러므로 공리 $(T_0)$가 $D_+(f)$와 $\operatorname{Spec}(S_{(f)})$에서
+성립함을 위의 논의와 함께 고려하면, $\psi_f$는 단사이고 그 역인 사상
+$\psi_f(D_+(f))\longrightarrow D_+(f)$는 연속이다. 마지막으로
+$\psi_f$가 전사임을 보이자. $\mathfrak{q}_0$를 $S_{(f)}$의
+소아이디얼이라 하고, 모든 $n>0$에 대하여 $\mathfrak{p}_n$을
+$x\in S_n$ 가운데 $x^d/f^n\in\mathfrak{q}_0$인 것들의 집합이라 하자.
+그러면 $\mathfrak{p}_n$들은 (\hyperref[II.2.1.9-ko]{2.1.9})의 조건들을
+만족한다. 실제로 $x\in S_n$, $y\in S_n$이고
+$x^d/f^n\in\mathfrak{q}_0$, $y^d/f^n\in\mathfrak{q}_0$라 하자. 그러면
+$(x+y)^{2d}/f^{2n}\in\mathfrak{q}_0$이고, 따라서
+$(x+y)^d/f^n\in\mathfrak{q}_0$이다. 이는 $\mathfrak{q}_0$가
+소아이디얼이기 때문이다. 이로써
+$\mathfrak{p}_n$들이 $S_n$의 부분군임이 증명된다.
+(\hyperref[II.2.1.9-ko]{2.1.9})의 다른 조건들도 $\mathfrak{q}_0$가
+소아이디얼임을 고려하면 자명하게 확인된다. 이렇게 정의한 $\mathfrak{p}$는 $S$의
+동차 소아이디얼이고 실제로
+$\psi_f(\mathfrak{p})=\mathfrak{q}_0$이다. 왜냐하면 $x\in S_{nd}$일 때
+두 관계 $x/f^n\in\mathfrak{q}_0$와
+$x^d/f^{nd}\in\mathfrak{q}_0$는 $\mathfrak{q}_0$가 소아이디얼이므로
+서로 동치이기 때문이다.
+\end{proof}
+
+\begin{corollary}[2.3.7]
+\phantomsection
+\label{II.2.3.7-ko}
+$D_+(f)=\varnothing$이기 위한 필요충분조건은 $f$가 멱영원인 것이다.
+\end{corollary}
+
+\begin{proof}
+실제로 $\operatorname{Spec}(S_{(f)})=\varnothing$이기 위한 필요충분조건은
+$S_{(f)}=0$인 것이며, 이는 다시 $1=0$이 $S_f$에서 성립하는 것과 동치이다.
+정의에 따라 이는 $f$가 멱영원이라는 뜻이다.
+\end{proof}
+
+\begin{corollary}[2.3.8]
+\phantomsection
+\label{II.2.3.8-ko}
+$E$를 $S_+$의 부분집합이라 하자. 다음 조건들은 서로 동치이다.
+\begin{enumerate}
+  \item[\rm a)] $V_+(E)=X=\operatorname{Proj}(S)$.
+  \item[\rm b)] $E$의 모든 원소는 멱영원이다.
+  \item[\rm c)] $E$의 각 원소의 모든 동차 성분은 멱영원이다.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+c)가 b)를 함의하고 b)가 a)를 함의함은 명백하다. $\mathfrak{J}$가
+$S$의 동차 아이디얼이고 $E$로 생성된다면, 조건 a)는
+$V_+(\mathfrak{J})=X$와 동치이다. \emph{특히}, a)는 모든 동차 원소
+$f\in\mathfrak{J}$가 $V_+(f)=X$를 만족함을
+함의하므로, (\hyperref[II.2.3.7-ko]{2.3.7})에 따라 $f$는 멱영원이다.
+\end{proof}
+
+\begin{corollary}[2.3.9]
+\phantomsection
+\label{II.2.3.9-ko}
+$\mathfrak{J}$가 $S_+$의 동차 아이디얼이면,
+$r_+(\mathfrak{J})$는 $S_+$의 동차 소아이디얼들 가운데
+$\mathfrak{J}$를 포함하는 것들의 교집합이다.
+\end{corollary}
+
+\begin{proof}
+등급환 $S/\mathfrak{J}$를 고려하여 $\mathfrak{J}=0$인 경우로 환원할 수
+있다. $f\in S_+$가 멱영원이 아니면 $S$의 동차 소아이디얼 가운데
+$f$를 포함하지 않는 것이 존재함을 증명해야 한다. 그런데 $f$의 동차
+성분 중 적어도 하나는 멱영원이 아니므로 $f$가 동차라고 가정할 수 있고,
+이때 주장은 (\hyperref[II.2.3.7-ko]{2.3.7})에서 따른다.
+\end{proof}
+
+\begin{env}[2.3.10]
+\phantomsection
+\label{II.2.3.10-ko}
+$Y$를 $X=\operatorname{Proj}(S)$의 임의의 부분집합이라 하자.
+$\mathfrak{j}_+(Y)$를 모든 $f\in S_+$ 가운데 $Y\subset V_+(f)$를
+만족하는 것들의 집합으로 둔다. 다시 말해,
+$\mathfrak{j}_+(Y)=\mathfrak{j}(Y)\cap S_+$이다. 따라서
+$\mathfrak{j}_+(Y)$는 $S_+$의 아이디얼이며, $S_+$에서 취한 그 근기와
+같다.
+\end{env}
+
+\begin{proposition}[2.3.11]
+\phantomsection
+\label{II.2.3.11-ko}
+\begin{enumerate}
+  \item[\rm(i)] $E$를 $S_+$의 임의의 부분집합이라 하면,
+    $\mathfrak{j}_+(V_+(E))$는 $S_+$에서 취한, $S_+$에서 $E$가 생성하는
+    동차 아이디얼의 근기이다.
+  \item[\rm(ii)] $Y$를 $X$의 임의의 부분집합이라 하면,
+    $V_+(\mathfrak{j}_+(Y))=\overline{Y}$이다. 즉 우변은 $Y$의 폐포이며,
+    이 폐포는 $X$ 안에서 취한다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)] $\mathfrak{J}$가 $S_+$의 동차 아이디얼이고 $E$로
+    생성된다면 $V_+(E)=V_+(\mathfrak{J})$이고, 이때 주장은
+    (\hyperref[II.2.3.9-ko]{2.3.9})에서 따른다.
+  \item[\rm(ii)] $V_+(\mathfrak{J})=\bigcap_{f\in\mathfrak{J}}V_+(f)$이므로,
+    관계 $Y\subset V_+(\mathfrak{J})$는 $Y\subset V_+(f)$가 모든
+    $f\in\mathfrak{J}$에 대하여 성립함을 함의한다. 따라서
+    $\mathfrak{j}_+(Y)\supset\mathfrak{J}$이고, 이로부터
+    $V_+(\mathfrak{j}_+(Y))\subset V_+(\mathfrak{J})$를 얻는다. 따라서
+    닫힌 부분집합의 정의에 의해 (ii)가 증명된다.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[2.3.12]
+\phantomsection
+\label{II.2.3.12-ko}
+$Y$가 $X=\operatorname{Proj}(S)$의 닫힌 부분집합일 때, 그러한 부분집합
+전체와 $S_+$의 동차 아이디얼 가운데 $S_+$에서 취한 자신의 근기와 같은
+것 전체는 포함관계를 역전하는 두 사상
+$Y\longmapsto\mathfrak{j}_+(Y)$,
+$\mathfrak{J}\longmapsto V_+(\mathfrak{J})$에 의해 서로 전단사로 대응한다.
+또 $X$의 두 닫힌 부분집합의 합집합 $Y_1\cup Y_2$에는
+\oldpage[II]{28}
+$\mathfrak{j}_+(Y_1)\cap\mathfrak{j}_+(Y_2)$가 대응하고, 임의의 닫힌
+부분집합족 $(Y_\lambda)$의 교집합에는 $S_+$에서
+$\mathfrak{j}_+(Y_\lambda)$들의 합의 근기가 대응한다.
+\end{corollary}
+
+\begin{corollary}[2.3.13]
+\phantomsection
+\label{II.2.3.13-ko}
+$\mathfrak{J}$를 $S_+$의 동차 아이디얼이라 하자.
+$V_+(\mathfrak{J})=\varnothing$이기 위한 필요충분조건은 $S_+$의 각
+원소마다 그 원소의 양의 정수 거듭제곱 중 하나가 $\mathfrak{J}$에 속하는
+것이다.
+\end{corollary}
+
+마지막 따름정리는 다음과 같은 서로 동치인 형태들로도 표현된다.
+
+\begin{corollary}[2.3.14]
+\phantomsection
+\label{II.2.3.14-ko}
+$(f_\alpha)$를 $S_+$의 동차 원소족이라 하자. $D_+(f_\alpha)$들이
+$X=\operatorname{Proj}(S)$의 덮개를 이루기 위한 필요충분조건은 $S_+$의
+각 원소마다 그 원소의 양의 정수 거듭제곱 중 하나가 $f_\alpha$들이
+생성하는 아이디얼에 속하는 것이다.
+\end{corollary}
+
+\begin{corollary}[2.3.15]
+\phantomsection
+\label{II.2.3.15-ko}
+$(f_\alpha)$를 $S_+$의 동차 원소족, $f$를 $S_+$의 한 원소라 하자.
+다음 관계들은 서로 동치이다.
+\begin{enumerate}
+  \item[\rm a)] $D_+(f)\subset\bigcup_\alpha D_+(f_\alpha)$.
+  \item[\rm b)] $V_+(f)\supset\bigcap_\alpha V_+(f_\alpha)$.
+  \item[\rm c)] $f$의 어떤 양의 정수 거듭제곱이 $f_\alpha$들이 생성하는
+    아이디얼에 속한다.
+\end{enumerate}
+\end{corollary}
+
+\begin{corollary}[2.3.16]
+\phantomsection
+\label{II.2.3.16-ko}
+$X=\operatorname{Proj}(S)$가 공집합이기 위한 필요충분조건은 $S_+$의
+모든 원소가 멱영원인 것이다.
+\end{corollary}
+
+\begin{corollary}[2.3.17]
+\phantomsection
+\label{II.2.3.17-ko}
+(\hyperref[II.2.3.12-ko]{2.3.12})에서 서술한 전단사 대응에서 $X$의
+기약 닫힌 부분집합들에는 $S_+$의 동차 소아이디얼들이 대응한다.
+\end{corollary}
+
+\begin{proof}
+실제로 $Y=Y_1\cup Y_2$이고 $Y_1$, $Y_2$가 $Y$의 진부분집합인
+닫힌집합들이면
+\[
+  \mathfrak{j}_+(Y)
+  =\mathfrak{j}_+(Y_1)\cap\mathfrak{j}_+(Y_2)
+\]
+이며, 아이디얼 $\mathfrak{j}_+(Y_1)$과 $\mathfrak{j}_+(Y_2)$는 둘 다
+$\mathfrak{j}_+(Y)$와 다르므로 $\mathfrak{j}_+(Y)$는 소아이디얼이
+아니다. 역으로 $\mathfrak{J}$가 $S_+$의 소아이디얼이 아닌 동차
+아이디얼이면 두 원소 $f$, $g$가 $S_+$에 존재하여
+$f\notin\mathfrak{J}$, $g\notin\mathfrak{J}$, $fg\in\mathfrak{J}$를
+만족한다. 그러면
+$V_+(f)\not\supset V_+(\mathfrak{J})$,
+$V_+(g)\not\supset V_+(\mathfrak{J})$이지만
+(\hyperref[II.2.3.2.3-ko]{2.3.2.3})에 따라
+$V_+(\mathfrak{J})\subset V_+(f)\cup V_+(g)$이다. 따라서
+$V_+(\mathfrak{J})$는 닫힌집합
+$V_+(f)\cap V_+(\mathfrak{J})$와
+$V_+(g)\cap V_+(\mathfrak{J})$의 합집합이고, 이 두 닫힌집합은 모두
+$V_+(\mathfrak{J})$와 다르다.
+\end{proof}
+
+\subsection{$\operatorname{Proj}(S)$의 스킴 구조}
+\label{subsection:II.2.4-ko}
+
+\begin{env}[2.4.1]
+\phantomsection
+\label{II.2.4.1-ko}
+$f$, $g$를 $S_+$의 두 동차 원소라 하자. 아핀 스킴
+$Y_f=\operatorname{Spec}(S_{(f)})$,
+$Y_g=\operatorname{Spec}(S_{(g)})$,
+$Y_{fg}=\operatorname{Spec}(S_{(fg)})$를 생각하자.
+(\hyperref[II.2.2.2-ko]{2.2.2})에 따라, 사상
+$w_{fg,f}=({}^a\omega_{fg,f},\widetilde{\omega}_{fg,f})$는 $Y_{fg}$에서
+$Y_f$로 가며, 표준 준동형
+$\omega_{fg,f}:S_{(f)}\to S_{(fg)}$에 대응하고,
+\emph{열린 몰입 사상}이다
+(\hyperref[I.1.3.6-ko]{I, 1.3.6}).
+위상동형 $\psi_f:D_+(f)\to Y_f$의 역
+(\hyperref[II.2.3.6-ko]{2.3.6})을 이용하여 $D_+(f)$에 $Y_f$의 아핀
+스킴 구조를 옮길 수 있다. 도식
+(\hyperref[II.2.3.5.1-ko]{2.3.5.1})의 가환성에 따라, 이렇게 얻은 아핀
+스킴 $D_+(fg)$는 아핀 스킴 $D_+(f)$의 바탕공간의 열린 부분집합
+$D_+(fg)$에 유도된 스킴과 동일시된다. 그러면
+(\hyperref[II.2.3.4-ko]{2.3.4})를 고려할 때
+$X=\operatorname{Proj}(S)$에는 유일한 \emph{준스킴} 구조가 주어지며,
+그 구조를 각 $D_+(f)$에 제한하면 방금 정의한 아핀 스킴이 된다. 또한
+다음이 성립한다.
+\end{env}
+
+\begin{proposition}[2.4.2]
+\phantomsection
+\label{II.2.4.2-ko}
+준스킴 $\operatorname{Proj}(S)$는 스킴이다.
+\end{proposition}
+
+\begin{proof}
+(\hyperref[I.5.5.6-ko]{I, 5.5.6})에 따라, $f$, $g$가 $S_+$의 임의의
+동차 원소일 때 $D_+(f)\cap D_+(g)=D_+(fg)$가 아핀이고 그 환이
+$D_+(f)$와 $D_+(g)$의 환들의 표준 상들에 의해 생성됨을 보이면
+충분하다. 첫째 주장은 정의상 명백하고, 둘째 주장은
+(\hyperref[II.2.2.4-ko]{2.2.4})에서 따른다.
+\end{proof}
+\oldpage[II]{29}
+$\operatorname{Proj}(S)$라는 동차 소 스펙트럼을 \emph{스킴}이라고 할
+때에는 언제나 방금 정의한 구조를 뜻한다.
+
+\begin{example}[2.4.3]
+\phantomsection
+\label{II.2.4.3-ko}
+$S=K[T_1,T_2]$라 하자. 여기서 $K$는 체이고, $T_1$, $T_2$는 두
+부정원이며, $S$에는 전체 차수에 따른 등급이 주어져 있다.
+(\hyperref[II.2.3.14-ko]{2.3.14})에 따라
+$\operatorname{Proj}(S)$는 $D_+(T_1)$과 $D_+(T_2)$의 합집합이다.
+이 두 아핀 스킴은 각각 $\operatorname{Spec}(K[T])$와 표준적으로
+동형이며, $\operatorname{Proj}(S)$는
+(\hyperref[I.2.3.2-ko]{I, 2.3.2})에서 서술한 대로 이 두 아핀 스킴을
+붙여서 얻어진다((7.4.14) 참조).
+\end{example}
+
+\begin{proposition}[2.4.4]
+\phantomsection
+\label{II.2.4.4-ko}
+$S$를 음이 아닌 차수로 등급이 주어진 환이라 하고, $X$를 스킴
+$\operatorname{Proj}(S)$라 하자.
+\begin{enumerate}
+  \item[\rm(i)] $\mathfrak{N}_+$가 $S_+$의 멱영근기이면
+    (\hyperref[II.2.1.10-ko]{2.1.10}), 스킴 $X_{\mathrm{red}}$는
+    $\operatorname{Proj}(S/\mathfrak{N}_+)$와 표준적으로 동형이다. 특히
+    $S$가 본질적으로 축소이면 $\operatorname{Proj}(S)$는 축소이다.
+  \item[\rm(ii)] $S$가 본질적으로 축소라고 가정하자. 이때 $X$가 정역
+    스킴이기 위한 필요충분조건은 $S$가 본질적으로 정역인 것이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)] $\overline{S}$를 등급환 $S/\mathfrak{N}_+$라 하고, 차수가
+    $0$인 표준 준동형 $S\to\overline{S}$를
+    $x\mapsto\overline{x}$로 나타내자. 모든 $f\in S_d$ ($d>0$)에 대하여
+    표준 준동형
+    $S_f\to\overline{S}_{\overline{f}}$
+    (\hyperref[0.1.5.1-ko]{0, 1.5.1})는 전사이고 차수가 $0$이므로, 이를
+    제한하면 전사 준동형
+    $S_{(f)}\to\overline{S}_{(\overline{f})}$를 얻는다.
+    $f\notin\mathfrak{N}_+$라고 가정하면
+    $\overline{S}_{(\overline{f})}$가 축소환이고 앞의 준동형의 핵이
+    $S_{(f)}$의 멱영근기임을 바로 확인할 수 있다. 다시 말해
+    $\overline{S}_{(\overline{f})}=(S_{(f)})_{\mathrm{red}}$이다. 따라서 이
+    준동형에는 $D_+(\overline{f})$를 $(D_+(f))_{\mathrm{red}}$와 동일시하는
+    닫힌 몰입 사상
+    $D_+(\overline{f})\to D_+(f)$가 대응한다
+    (\hyperref[I.5.1.2-ko]{I, 5.1.2}). 특히 이 사상은 두 아핀 스킴의
+    바탕공간 사이의 위상동형이다. 더욱이
+    $g\notin\mathfrak{N}_+$가 $S_+$의 또 다른 동차 원소이면 도식
+    \[
+      \xymatrix{
+        S_{(f)}\ar[r]\ar[d]
+        & \overline{S}_{(\overline{f})}\ar[d]\\
+        S_{(fg)}\ar[r]
+        & \overline{S}_{(\overline{fg})}
+      }
+    \]
+    은 가환한다. 한편 $D_+(f)$들은 $f$가 차수가 $>0$인 동차 원소이고
+    $f\notin\mathfrak{N}_+$일 때
+    $X=\operatorname{Proj}(S)$의 덮개를 이룬다
+    (\hyperref[II.2.3.7-ko]{2.3.7}). 따라서 사상
+    $D_+(\overline{f})\to D_+(f)$들은 닫힌 몰입 사상
+    $\operatorname{Proj}(\overline{S})\to\operatorname{Proj}(S)$의
+    제한들이고, 이 닫힌 몰입 사상은 바탕공간 사이의 위상동형이다. 이제
+    (\hyperref[I.5.1.2-ko]{I, 5.1.2})에 의해 결론이 따른다.
+  \item[\rm(ii)] $S$가 본질적으로 정역이라고 가정하자. 다시 말해
+    $(0)$은 $S_+$와 다른 $S_+$의 등급 소아이디얼이다. 그러면 (i)에 따라
+    $X$는 축소이고, (\hyperref[II.2.3.17-ko]{2.3.17})에 따라 기약이다.
+    반대로 $S$가 본질적으로 축소이고 $X$가 정역 스킴이라고 가정하자.
+    그러면 $S_+$의 동차 원소 $f\neq0$에 대하여
+    $D_+(f)\neq\varnothing$이다
+    (\hyperref[II.2.3.7-ko]{2.3.7}). $X$가 기약이라는 가정에 따라
+    $S_+$의 동차 원소 $f$, $g$가 모두 $\neq0$이면
+    $D_+(f)\cap D_+(g)\neq\varnothing$이다. 따라서
+    (\hyperref[II.2.3.3.2-ko]{2.3.3.2})에 의해 $fg\neq0$이고, 이로부터
+    $S_+$에는 영인자가 없음을 얻으므로 처음의 주장이 따른다.
+\end{enumerate}
+\end{proof}
+
+\begin{env}[2.4.5]
+\phantomsection
+\label{II.2.4.5-ko}
+$A$를 가환환이라 하자. 등급환 $S$에 각 부분군 $S_n$이 $A$-가군이
+되도록 하는 $A$-대수 구조가 주어져 있으면 이를
+\emph{등급 $A$-대수}라고 한다는 것을 상기하자. 이를 위해서는 $S_0$가
+\oldpage[II]{30}
+$A$-대수이면 충분하다. 다시 말해 $S_0$에 $A$-대수 구조를 정의하고
+$\alpha\in A$, $x\in S_n$에 대하여
+$\alpha\cdot x=(\alpha\cdot1)x$로 놓으면 $S$에 등급 $A$-대수 구조가
+정의된다.
+\end{env}
+
+\begin{proposition}[2.4.6]
+\phantomsection
+\label{II.2.4.6-ko}
+$S$가 등급 $A$-대수라고 가정하자. 그러면
+$X=\operatorname{Proj}(S)$ 위에서 구조층 $\mathcal{O}_X$는
+$A$-대수들의 층이다($A$는 $X$ 위의 상수층으로 본다). 다시 말해 $X$는
+$\operatorname{Spec}(A)$ 위의 스킴이다.
+\end{proposition}
+
+\begin{proof}
+$S_+$의 모든 동차 원소 $f$에 대하여 $S_{(f)}$가 $A$ 위의 대수이고,
+$S_+$의 동차 원소 $f$, $g$에 대하여 도식
+\[
+  \xymatrix{
+    S_{(f)}\ar[rr] && S_{(fg)}\\
+    & A\ar[ul]\ar[ur] &
+  }
+\]
+이 가환함에 유의하면 충분하다.
+\end{proof}
+
+\begin{proposition}[2.4.7]
+\phantomsection
+\label{II.2.4.7-ko}
+$S$를 음이 아닌 차수로 등급이 주어진 환이라 하자.
+\begin{enumerate}
+  \item[\rm(i)] 모든 정수 $d>0$에 대하여 스킴
+    $\operatorname{Proj}(S)$에서 스킴
+    $\operatorname{Proj}(S^{(d)})$로 가는 표준 동형이 존재한다.
+  \item[\rm(ii)] $S'$를 다음 조건을 만족하는 등급환이라 하자:
+    $S'_0=\mathbf{Z}$이고, $S'_n=S_n$은 ($\mathbf{Z}$-가군으로서)
+    $n>0$일 때 성립한다. 그러면 스킴 $\operatorname{Proj}(S)$에서 스킴
+    $\operatorname{Proj}(S')$로 가는 표준 동형이 존재한다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)] 먼저 사상
+    $\mathfrak{p}\mapsto\mathfrak{p}\cap S^{(d)}$가 집합
+    $\operatorname{Proj}(S)$에서
+    $\operatorname{Proj}(S^{(d)})$로 가는 전단사임을 보이자. 실제로 동차
+    소아이디얼 $\mathfrak{p}'\in\operatorname{Proj}(S^{(d)})$가 주어졌다고
+    하고 $\mathfrak{p}_{nd}=\mathfrak{p}'\cap S_{nd}$ ($n\geq0$)로 놓자.
+    $n>0$이고 $d$의 배수가 아닌 모든 경우에 $\mathfrak{p}_n$을
+    $x\in S_n$이고 $x^d\in\mathfrak{p}_{nd}$인 원소들의 집합으로 정의하자.
+    $x\in\mathfrak{p}_n$, $y\in\mathfrak{p}_n$이면
+    $(x+y)^{2d}\in\mathfrak{p}_{2nd}$이고, 따라서
+    $(x+y)^d\in\mathfrak{p}_{nd}$이다. 이는 $\mathfrak{p}'$이
+    소아이디얼이기 때문이다. 이와 같이 정의된 $\mathfrak{p}_n$들이 모든
+    $n\geq0$에 대하여
+    (\hyperref[II.2.1.9-ko]{2.1.9})의 조건을 만족함은 자명하다. 따라서
+    유일한 소아이디얼 $\mathfrak{p}\in\operatorname{Proj}(S)$가 존재하며,
+    이 소아이디얼은 $\mathfrak{p}\cap S^{(d)}=\mathfrak{p}'$을 만족한다. 한편 $f$가
+    $S_+$의 동차 원소일 때마다
+    $V_+(f)=V_+(f^d)$이므로
+    (\hyperref[II.2.3.2.3-ko]{2.3.2.3}), 앞의 전단사는 위상공간들의
+    위상동형이다. 마지막으로 같은 표기 아래에서 $S_{(f)}$와
+    $S^{(d)}_{(f^d)}$는 표준적으로 동일시되므로
+    (\hyperref[II.2.2.2-ko]{2.2.2}), $\operatorname{Proj}(S)$와
+    $\operatorname{Proj}(S^{(d)})$도 스킴으로서 표준적으로 동일시된다.
+  \item[\rm(ii)] 각 $\mathfrak{p}\in\operatorname{Proj}(S)$에 유일한
+    소아이디얼 $\mathfrak{p}'\in\operatorname{Proj}(S')$을 대응시키되,
+    $\mathfrak{p}'\cap S_n=\mathfrak{p}\cap S_n$이 모든 $n>0$에 대하여
+    성립하게 하면
+    (\hyperref[II.2.1.9-ko]{2.1.9}), 바탕공간들의 표준 위상동형
+    $\operatorname{Proj}(S)\xrightarrow{\sim}\operatorname{Proj}(S')$을
+    정의함이 분명하다. 실제로 $V_+(f)$는 $S$에 대해서나 $S'$에 대해서나
+    같은 집합이다($f$가 $S_+$의 동차 원소일 때). 더욱이
+    $S_{(f)}=S'_{(f)}$이므로 $\operatorname{Proj}(S)$와
+    $\operatorname{Proj}(S')$은 스킴으로서 동일시된다.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[2.4.8]
+\phantomsection
+\label{II.2.4.8-ko}
+$S$가 등급 $A$-대수이고, $S'_A$가 다음 조건을 만족하는 등급
+$A$-대수라고 하자: $(S'_A)_0=A$, $(S'_A)_n=S_n$ ($n>0$).
+$\operatorname{Proj}(S)$에서 $\operatorname{Proj}(S'_A)$로 가는 표준
+동형이 존재한다.
+\end{corollary}
+
+\begin{proof}
+실제로 (\hyperref[II.2.4.7-ko]{2.4.7, (ii)})의 표기 아래에서 이 두
+스킴은 모두 $\operatorname{Proj}(S')$와 표준적으로 동형이다.
+\end{proof}
+
+\subsection{등급가군에 대응하는 층.}
+\label{subsection:II.2.5-ko}
+
+\begin{env}[2.5.1]
+\phantomsection
+\label{II.2.5.1-ko}
+$M$을 등급 $S$-가군이라 하자. $f$가 $S_+$의 동차 원소이면
+$M_{(f)}$는 $S_{(f)}$-가군이고, 따라서 이 가군에 대응하는 준연접층
+$\widetilde{M_{(f)}}$가 아핀 스킴
+$\operatorname{Spec}(S_{(f)})$ 위에 있다. 이 스킴은 $D_+(f)$와
+동일시된다(\hyperref[I.1.3.4-ko]{I, 1.3.4}).
+\end{env}
+\oldpage[II]{31}
+
+\begin{proposition}[2.5.2]
+\phantomsection
+\label{II.2.5.2-ko}
+$X=\operatorname{Proj}(S)$ 위에 다음 조건을 만족하는 준연접
+$\mathcal{O}_X$-가군 $\widetilde{M}$이 유일하게 존재한다. 즉 $f$가
+$S_+$의 동차 원소일 때마다
+$\Gamma(D_+(f),\widetilde{M})=M_{(f)}$이고, 제한 준동형
+$\Gamma(D_+(f),\widetilde{M})\to
+\Gamma(D_+(fg),\widetilde{M})$은 $f$, $g$가 $S_+$의 동차 원소일 때
+표준 준동형 $M_{(f)}\to M_{(fg)}$이다
+(\hyperref[II.2.2.3-ko]{2.2.3}).
+\end{proposition}
+
+\begin{proof}
+$f\in S_d$, $g\in S_e$라 하자.
+(\hyperref[II.2.2.2-ko]{2.2.2})에 따라 $D_+(fg)$는
+$(S_{(f)})_{g^d/f^e}$의 소 스펙트럼과 동일시된다. 따라서
+$D_+(fg)$로 제한한 층 $\widetilde{M_{(f)}}$---여기서 제한 전의 층은
+$D_+(f)$ 위에 있다---은 가군 $(M_{(f)})_{g^d/f^e}$에 대응하는 층과 표준적으로
+동일시되고(\hyperref[I.1.3.6-ko]{I, 1.3.6}), 따라서
+$\widetilde{M_{(fg)}}$와도 동일시된다
+(\hyperref[II.2.2.2-ko]{2.2.2}). 그러므로 표준 동형
+\[
+  \theta_{g,f}:\widetilde{M_{(f)}}|D_+(fg)
+  \xrightarrow{\sim}\widetilde{M_{(g)}}|D_+(fg)
+\]
+이 존재하며, $h$가 $S_+$의 세 번째 동차 원소이면
+$\theta_{f,h}=\theta_{f,g}\circ\theta_{g,h}$가 $D_+(fgh)$에서 성립한다.
+따라서
+(\hyperref[0.3.3.1-ko]{0, 3.3.1}) $X$ 위에 준연접
+$\mathcal{O}_X$-가군 $\mathcal{F}$가 존재하고, 각 $f$가 $S_+$의 동차
+원소일 때 동형 $\eta_f$가 $\mathcal{F}|D_+(f)$에서
+$\widetilde{M_{(f)}}$로 가며 $\theta_{g,f}=\eta_g\circ\eta_f^{-1}$을
+만족한다.
+이제 층 $\mathcal{G}$를 생각하자. 이는 $X$의 위상의 기저인
+$D_+(f)$들 위에서 $D_+(f)\to M_{(f)}$로 정의되고, 표준 준동형
+$M_{(f)}\to M_{(fg)}$를 제한 준동형으로 갖는 준층을 층화하여 얻는
+층이다. 앞의 논의로부터 $\mathcal{F}$와 $\mathcal{G}$가 동형임을 안다
+((\hyperref[I.1.3.7-ko]{I, 1.3.7})도 고려한다). 층 $\mathcal{G}$를
+$\widetilde{M}$으로 나타내면 이 층은 명제의 조건들을 만족한다. 특히
+$\widetilde{S}=\mathcal{O}_X$이다.
+\end{proof}
+
+\begin{definition}[2.5.3]
+\phantomsection
+\label{II.2.5.3-ko}
+(\hyperref[II.2.5.2-ko]{2.5.2})에서 정의한 준연접
+$\mathcal{O}_X$-가군 $\widetilde{M}$을 등급 $S$-가군 $M$에
+\emph{대응하는} 층이라 한다.
+\end{definition}
+
+등급 $S$-가군들은 등급가군의 준동형을 \emph{차수 $0$의} 준동형으로
+제한하면 하나의 범주를 이룸을 상기하자. 이 약속 아래에서 다음이
+성립한다.
+
+\begin{proposition}[2.5.4]
+\phantomsection
+\label{II.2.5.4-ko}
+함자 $M\mapsto\widetilde{M}$은 등급 $S$-가군의 범주에서 준연접
+$\mathcal{O}_X$-가군의 범주로 가는 공변 가법 완전 함자이고,
+귀납극한 및 직합과 가환한다.
+\end{proposition}
+
+\begin{proof}
+실제로 이 성질들은 국소적이므로 층
+$\widetilde{M}|D_+(f)=\widetilde{M_{(f)}}$에 대하여 확인하면 충분하다.
+그런데 함자 $M\mapsto M_f$, 함자 $N\mapsto N_0$ (등급
+$S_f$-가군의 범주에서) 및 함자 $P\mapsto\widetilde{P}$
+($S_{(f)}$-가군의 범주에서)는 모두 완전성과 귀납극한 및 직합과의
+가환성을 갖는다(\hyperref[I.1.3.5-ko]{I, 1.3.5} 및
+\hyperref[I.1.3.9-ko]{I, 1.3.9}). 이로부터 명제가 따른다.
+\end{proof}
+
+$\widetilde{u}$로 준동형 $\widetilde{M}\to\widetilde{N}$을 나타내기로
+한다. 이는 차수 $0$의 준동형 $u:M\to N$에 대응하는 준동형이다.
+(\hyperref[II.2.5.4-ko]{2.5.4})에서 곧바로, 등급 $S$-가군과 차수
+$0$의 준동형에 대해서도 (여기서 정한 $\widetilde{M}$의 뜻으로)
+(\hyperref[I.1.3.9-ko]{I, 1.3.9} 및
+\hyperref[I.1.3.10-ko]{I, 1.3.10})의 결과들이 여전히 성립함을 알 수
+있다. 실제로 그 증명들은 순전히 형식적이다.
+
+\begin{proposition}[2.5.5]
+\phantomsection
+\label{II.2.5.5-ko}
+모든 $\mathfrak{p}\in X=\operatorname{Proj}(S)$에 대하여
+$\widetilde{M}_{\mathfrak{p}}=M_{(\mathfrak{p})}$이다.
+\end{proposition}
+
+\begin{proof}
+실제로 정의에 따라
+$\widetilde{M}_{\mathfrak{p}}=
+\varinjlim\Gamma(D_+(f),\widetilde{M})$이다. 여기서 $f$의 범위는
+$S_+$의 동차 원소 가운데 $f\notin\mathfrak{p}$인 원소 전체이다. 한편
+$\Gamma(D_+(f),\widetilde{M})=M_{(f)}$이므로, 명제는
+$M_{(\mathfrak{p})}$의 정의
+(\hyperref[II.2.2.7-ko]{2.2.7})에서 따른다.
+\end{proof}
+\oldpage[II]{32}
+
+특히 \emph{국소환 $(\mathcal{O}_X)_\mathfrak{p}$}은 바로 환
+$S_{(\mathfrak{p})}$이다. 이는 분수 $x/f$들의 집합으로, 여기서 $f$는
+$S_+$의 동차 원소이고 $\mathfrak{p}$에 속하지 않으며, $x$는 $f$와
+같은 차수의 동차 원소이다.
+
+더욱 구체적으로, $S$가 \emph{본질적으로 정역}이어서
+$\operatorname{Proj}(S)=X$가 \emph{정역 스킴}이고
+(\hyperref[II.2.4.4-ko]{2.4.4}), $\xi=(0)$가 $X$의 일반점이면,
+\emph{유리함수체} $R(X)=\mathcal{O}_\xi$는 $fg^{-1}$ 꼴의 원소들로 이루어진
+체이다. 여기서 $f$와 $g$는 $S_+$에 속하는 같은 차수의 동차 원소이고
+$g\neq0$이다.
+
+\begin{proposition}[2.5.6]
+\phantomsection
+\label{II.2.5.6-ko}
+모든 $z\in M$에 대하여, $f$가 $S_+$의 동차 원소일 때마다 $f$의 어떤
+거듭제곱이 $z$를 소멸시키면, $\widetilde{M}=0$이다. 이 충분조건은
+$S_0$-대수 $S$가 집합 $S_1$에 의해 생성되고, 이 집합이 차수 $1$의
+동차 원소 전체로 이루어질 때에는 필요조건이기도 하다.
+\end{proposition}
+
+\begin{proof}
+실제로 조건 $\widetilde{M}=0$은 $M_{(f)}=0$이 $f$가 $S_+$의 동차
+원소일 때마다 성립하는 것과 동치이다. 한편 $f\in S_d$일 때
+$M_{(f)}=0$이라는 것은 모든 동차 $z\in M$ 가운데 차수가 $d$의 배수인
+각 원소에 대하여 어떤 거듭제곱 $f^n$이 존재하여 $f^nz=0$임을 뜻한다.
+$M_{(f)}=0$이 모든 $f\in S_1$에 대해 성립하면 명제의 조건은 모든
+$f\in S_1$에 대하여 성립한다. 또한 앞의 생성 가정 아래에서는 $f$가
+$S_+$의 동차 원소일 때마다 이 조건이 \emph{더 나아가}
+성립한다. 이 생성 가정은 $S_1$이 $S$를 생성한다는 것이며, 실제로
+$S_+$의 모든 동차 원소는 $S_1$의 원소들의 곱들의 선형결합이기 때문이다.
+\end{proof}
+
+\begin{proposition}[2.5.7]
+\phantomsection
+\label{II.2.5.7-ko}
+$d$를 $>0$인 정수라 하고 $f\in S_d$라 하자. 그러면 모든
+$n\in\mathbf{Z}$에 대하여 $(\mathcal{O}_X|D_+(f))$-가군
+$\widetilde{S(nd)}|D_+(f)$는 $\mathcal{O}_X|D_+(f)$와 표준적으로
+동형이다.
+\end{proposition}
+
+\begin{proof}
+실제로 $(f/1)^n$은 $S_f$의 가역원이며, 이를 곱하는 사상은
+$S_{(f)}=(S_f)_0$에서
+$(S_f)_{nd}=(S_f(nd))_0=(S(nd)_f)_0=S(nd)_{(f)}$로 가는 전단사이다.
+다시 말해 $S_{(f)}$-가군 $S_{(f)}$와 $S(nd)_{(f)}$는 표준적으로
+동형이고, 따라서 명제가 성립한다.
+\end{proof}
+
+\begin{corollary}[2.5.8]
+\phantomsection
+\label{II.2.5.8-ko}
+열린부분집합
+\[
+  U=\bigcup_{f\in S_d}D_+(f),
+\]
+위에서 $\mathcal{O}_X$-가군 $\widetilde{S(nd)}$의 제한은 가역인
+$(\mathcal{O}_X|U)$-가군이다
+(\hyperref[0.5.4.1-ko]{0, 5.4.1}).
+\end{corollary}
+
+\begin{corollary}[2.5.9]
+\phantomsection
+\label{II.2.5.9-ko}
+아이디얼 $S_+$가 $S$에서 집합 $S_1$에 의해 생성되고, 이 집합이 차수
+$1$의 동차 원소 전체로 이루어지면, $\mathcal{O}_X$-가군
+$\widetilde{S(n)}$은 모든 $n\in\mathbf{Z}$에 대하여 가역이다.
+\end{corollary}
+
+\begin{proof}
+$X=\bigcup_{f\in S_1}D_+(f)$임은 가정과
+(\hyperref[II.2.3.14-ko]{2.3.14})에서 따른다. 이제 $U=X$로 두고
+(\hyperref[II.2.5.8-ko]{2.5.8})을 적용하면 충분하다.
+\end{proof}
+
+\begin{env}[2.5.10]
+\phantomsection
+\label{II.2.5.10-ko}
+이 절의 나머지 부분 전체에서
+\[
+\label{II.2.5.10.1-ko}
+  \mathcal{O}_X(n)=\widetilde{S(n)}
+\tag{2.5.10.1}
+\]
+로 두기로 한다. 이는 모든 $n\in\mathbf{Z}$에 대한 약속이다. 또한
+$U$를 $X$의 임의의 열린부분집합이라 하고, 임의의
+$(\mathcal{O}_X|U)$-가군 $\mathcal{F}$에 대하여
+\[
+\label{II.2.5.10.2-ko}
+  \mathcal{F}(n)=
+  \mathcal{F}\otimes_{\mathcal{O}_X|U}(\mathcal{O}_X(n)|U)
+\tag{2.5.10.2}
+\]
+로 두기로 한다. 이는 모든 $n\in\mathbf{Z}$에 대한 약속이다. 아이디얼
+$S_+$가 $S_1$에 의해 생성되면, $\mathcal{F}(n)$을 대응시키는 함자는
+$\mathcal{F}$에 관해 모든 $n\in\mathbf{Z}$에 대하여 \emph{완전}하다. 이 경우
+$\mathcal{O}_X(n)$이 가역인 $\mathcal{O}_X$-가군이기 때문이다.
+\end{env}
+
+\begin{env}[2.5.11]
+\phantomsection
+\label{II.2.5.11-ko}
+$M$과 $N$을 두 등급 $S$-가군이라 하자. 모든 $f\in S_d$ ($d>0$)에
+대하여 다음과 같은 $S_{(f)}$-가군의 함자적인 표준 준동형을 정의한다.
+\[
+\label{II.2.5.11.1-ko}
+  \lambda_f:M_{(f)}\otimes_{S_{(f)}}N_{(f)}
+  \longrightarrow(M\otimes_S N)_{(f)}
+\tag{2.5.11.1}
+\]
+\oldpage[II]{33}
+
+정의는 준동형
+$M_{(f)}\otimes_{S_{(f)}}N_{(f)}\to M_f\otimes_{S_f}N_f$
+---이는 단사 준동형들 $M_{(f)}\to M_f$, $N_{(f)}\to N_f$ 및
+$S_{(f)}\to S_f$에서 유도된다---과 표준 동형
+$M_f\otimes_{S_f}N_f\xrightarrow{\sim}(M\otimes_S N)_f$
+(\hyperref[0.1.3.4-ko]{0, 1.3.4})을 합성하여 얻는다. 또한 두 등급가군의
+텐서곱의 정의에 따라 뒤의 동형이 차수를 보존한다는 점을 사용한다. 따라서
+$x\in M_{md}$, $y\in N_{nd}$ ($m\geq0$, $n\geq0$)에 대하여
+\[
+  \lambda_f((x/f^m)\otimes(y/f^n))=(x\otimes y)/f^{m+n}.
+\]
+
+이 정의에서 곧바로, $g\in S_e$ ($e>0$)이면 다음 도식이 가환함을 알 수
+있다.
+\[
+  \xymatrix{
+    M_{(f)}\otimes_{S_{(f)}}N_{(f)}\ar[r]^{\lambda_f}\ar[d]
+    & (M\otimes_S N)_{(f)}\ar[d]\\
+    M_{(fg)}\otimes_{S_{(fg)}}N_{(fg)}\ar[r]_{\lambda_{fg}}
+    & (M\otimes_S N)_{(fg)}
+  }
+\]
+여기서 오른쪽 세로 화살표는 표준 준동형이고 왼쪽 세로 화살표는 표준
+준동형들에서 유도된다. 따라서 이들 $\lambda$로부터
+$\mathcal{O}_X$-가군의 함자적인 표준 준동형
+\[
+\label{II.2.5.11.2-ko}
+  \lambda:\widetilde{M}\otimes_{\mathcal{O}_X}\widetilde{N}
+  \longrightarrow\widetilde{M\otimes_S N}.
+\tag{2.5.11.2}
+\]
+을 얻는다.
+
+특히 두 동차 아이디얼 $\mathfrak{J}$, $\mathfrak{K}$를 생각하자. 이들은
+$S$의 아이디얼이다. $\widetilde{\mathfrak{J}}$와
+$\widetilde{\mathfrak{K}}$는 $\mathcal{O}_X$의 아이디얼층이므로 표준 준동형
+$\widetilde{\mathfrak{J}}\otimes_{\mathcal{O}_X}
+\widetilde{\mathfrak{K}}\to\mathcal{O}_X$가 존재하며, 다음 도식은 가환한다.
+\[
+\label{II.2.5.11.3-ko}
+  \xymatrix{
+    \widetilde{\mathfrak{J}}\otimes_{\mathcal{O}_X}
+    \widetilde{\mathfrak{K}}\ar[rr]^\lambda\ar[dr]
+    && \widetilde{\mathfrak{J}\otimes_S\mathfrak{K}}\ar[dl]\\
+    & \mathcal{O}_X &
+  }
+\tag{2.5.11.3}
+\]
+실제로 각 열린집합 $D_+(f)$ ($f$는 $S_+$의 동차 원소)에서 이를 확인하는
+경우로 귀착할 수 있고, 이는 $\lambda_f$의 정의
+(\hyperref[II.2.5.11.1-ko]{2.5.11.1})와
+(\hyperref[I.1.3.13-ko]{I, 1.3.13})에서 곧바로 따른다.
+
+끝으로 $M$, $N$, $P$를 세 등급 $S$-가군이라 하면 다음 도식을 얻는다.
+\[
+\label{II.2.5.11.4-ko}
+  \xymatrix{
+    \widetilde{M}\otimes_{\mathcal{O}_X}\widetilde{N}
+    \otimes_{\mathcal{O}_X}\widetilde{P}
+    \ar[r]^{\lambda\otimes1}\ar[d]_{1\otimes\lambda}
+    & \widetilde{M\otimes_S N}\otimes_{\mathcal{O}_X}\widetilde{P}
+    \ar[d]^\lambda\\
+    \widetilde{M}\otimes_{\mathcal{O}_X}\widetilde{N\otimes_S P}
+    \ar[r]_\lambda
+    & \widetilde{M\otimes_S N\otimes_S P}
+  }
+\tag{2.5.11.4}
+\]
+\oldpage[II]{34}
+
+이 도식은 가환한다. 다시 각 $D_+(f)$에서 확인하면 충분하며, 이는 정의와
+(\hyperref[I.1.3.13-ko]{I, 1.3.13})에서 곧바로 따른다.
+\end{env}
+
+\begin{env}[2.5.12]
+\phantomsection
+\label{II.2.5.12-ko}
+(\hyperref[II.2.5.11-ko]{2.5.11})의 가정 아래에서 다음과 같은
+$S_{(f)}$-가군의 함자적인 표준 준동형을 정의한다.
+\[
+\label{II.2.5.12.1-ko}
+  \mu_f:\bigl(\operatorname{Hom}_S(M,N)\bigr)_{(f)}
+  \longrightarrow
+  \operatorname{Hom}_{S_{(f)}}(M_{(f)},N_{(f)})
+\tag{2.5.12.1}
+\]
+이는 $u/f^n$---여기서 $u$는 차수 $nd$인 준동형이다---에 준동형
+$M_{(f)}\to N_{(f)}$을 대응시켜 정의한다. 이 준동형은 $x/f^m$
+($x\in M_{md}$)을 $u(x)/f^{m+n}$으로 보낸다. $g\in S_e$ ($e>0$)에
+대해서도 다음 도식은 가환한다.
+\[
+  \xymatrix{
+    \bigl(\operatorname{Hom}_S(M,N)\bigr)_{(f)}
+    \ar[r]^{\mu_f}\ar[d]
+    & \operatorname{Hom}_{S_{(f)}}(M_{(f)},N_{(f)})\ar[d]\\
+    \bigl(\operatorname{Hom}_S(M,N)\bigr)_{(fg)}
+    \ar[r]_{\mu_{fg}}
+    & \operatorname{Hom}_{S_{(fg)}}(M_{(fg)},N_{(fg)})
+  }
+\]
+여기서 왼쪽 화살표는 표준 준동형이고 오른쪽 화살표는 표준 준동형들에서
+유도된다. 따라서 (\hyperref[I.1.3.8-ko]{I, 1.3.8})을 고려하면
+$\mu_f$들이 다음과 같은 $\mathcal{O}_X$-가군의 함자적인 표준 준동형을
+정의함을 다시 얻는다.
+\[
+\label{II.2.5.12.2-ko}
+  \mu:\widetilde{\operatorname{Hom}_S(M,N)}
+  \longrightarrow
+  \mathcal{H}om_{\mathcal{O}_X}(\widetilde{M},\widetilde{N}).
+\tag{2.5.12.2}
+\]
+\end{env}

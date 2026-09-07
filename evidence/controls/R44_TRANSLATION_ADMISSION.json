@@ -1,0 +1,280 @@
+{
+  "schema": "agko-r44-translation-admission-v1",
+  "time": "2026-09-06T00:36:43+02:00",
+  "scope": "EGA II canonical lines 2196-2292: Proposition 2.4.4 through the proof of Proposition 2.4.6",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2196-2292",
+    "unit_bytes": 4499,
+    "unit_characters": 4428,
+    "unit_lf_lines": 97,
+    "unit_sha256": "0531F64B92A508E460320A2801B60C94FF9D3A308E0495F667E2D9A7629A5858",
+    "preunit_prefix_lines": "1-2195",
+    "preunit_prefix_bytes": 98510,
+    "preunit_prefix_characters": 96983,
+    "preunit_prefix_sha256": "2E9ADA23E4C93A417C2DC8DD535CAFF4E781BBEA236B7A0F114C7EFA09EF75AA",
+    "postunit_prefix_lines": "1-2292",
+    "postunit_prefix_bytes": 103009,
+    "postunit_prefix_characters": 101411,
+    "postunit_prefix_sha256": "D6DC80FFC990A58195685909C9E9E32E9BD8CB529B3A633B5A48E85992D8427C",
+    "boundaries": "line 2195 blank; line 2196 begins Proposition 2.4.4; line 2292 ends the proof of Proposition 2.4.6; line 2293 blank; line 2294 begins Proposition 2.4.7",
+    "natural_complete_boundary": true
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "relevant_unit_new_dispositions": 0
+  },
+  "r65_to_r66_no_impact_proof": {
+    "queue_preimage_id": "EGA-CANON-QUEUE-20260905-R65",
+    "queue_preimage_bytes": 85990,
+    "queue_preimage_sha256": "0966A44A5D18032EE80305718CBAF88A7BADD6DCBFCBAAF643D31FA309F7DD17",
+    "new_global_ids": [
+      "EGA4-3-CANON-DISP-0018"
+    ],
+    "scope": "EGA IV-3 English and Spanish consumer synchronization only",
+    "french_source_files_changed": 0,
+    "ega_ii_allocation_head_unchanged": true,
+    "ega_ii_source_hash_unchanged": true,
+    "result": "PASS_EGA_II_SOURCE_HASH_ALLOCATION_HEAD_AND_R44_UNIT_UNCHANGED_R65_TO_R66"
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_characters": 103751,
+    "whole_lf_lines": 1769,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "579-641",
+    "slice_bytes": 4022,
+    "slice_characters": 4022,
+    "slice_lf_lines": 63,
+    "slice_sha256": "CEDD75F85092B810F25D14F277B272949F1C0B6FDEED91A78806EB36B4A14E61",
+    "role": "independent maintained English semantic and mathematical-type witness; French remains diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_ON_PRINTED_PAGES_29_30",
+    "rendered_scan_witnesses": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P26.png",
+        "bytes": 343560,
+        "sha256": "84ECA5D184B197DA4AEA8DFDFA230D9F1A4A4DC4A57DEAC37E1988AEB67BBB01"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P27.png",
+        "bytes": 232505,
+        "sha256": "4808FF6587B8898CF9D89B2B14C1E8F1A22A7A74DD6D819727886F4CD8E03599"
+      }
+    ],
+    "ledger": {
+      "path": "[CANONICAL_ROOT]/controls/E2P30_FR.jsonl",
+      "bytes": 170138,
+      "sha256": "1E632251B63CCF22D3C81B88D844804582B09EC6130D9C9FCAA55F160A807F3F"
+    }
+  },
+  "candidate": {
+    "path": "candidates/r44-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r44-c2s1-continuation.tex",
+    "bytes": 4580,
+    "characters": 3190,
+    "lf_lines": 98,
+    "hangul_syllables": 695,
+    "sha256": "5B00D25AF7E720BFD1D40CACE790D33AF200544664391E5969211F10CEA22703",
+    "bom_cr_replacement_characters": "0/0/0"
+  },
+  "immediate_predecessor_context": {
+    "status": "standalone_register_context_only",
+    "candidate_path": "candidates/r43-c2s1-continuation.tex",
+    "candidate_bytes": 4450,
+    "candidate_sha256": "0668CE33E37BFBF854B826958D96AD5CE6C3FD21C4386F7E8E9914424A51288A",
+    "control_path": "controls/R43_TRANSLATION_ADMISSION.json",
+    "control_bytes": 15775,
+    "control_sha256": "77273D771DBFDF2EFFB11EFE601130463E13075CCC0868A4960D4F951B7C1AC3",
+    "source_boundary": "R43 ends at canonical line 2194; line 2195 is blank; R44 begins at line 2196"
+  },
+  "sealed_integrated_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors; corrected R39 through R43 and R44 are not integrated"
+  },
+  "cumulative_predecessor_and_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R39_R40_R41_R42_R43",
+    "reason": "The corrected R39-R43 chain is not yet sealed into one exact cumulative predecessor; no stale prospective hash is bound.",
+    "predecessor_bytes": null,
+    "predecessor_characters": null,
+    "predecessor_lf_lines": null,
+    "predecessor_sha256": null,
+    "prospective_bytes": null,
+    "prospective_characters": null,
+    "prospective_lf_lines": null,
+    "prospective_sha256": null,
+    "integration_now": false,
+    "required_rebase": "After corrected R39 through R43 have final exact admission identities, reconstruct the chain from sealed R38 with exactly one LF separator before each candidate, then append this exact R44 candidate with exactly one LF and bind the resulting prospective identity."
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r44_candidate.py",
+    "validator_bytes": 23273,
+    "validator_characters": 22612,
+    "validator_lf_lines": 495,
+    "validator_sha256": "C42FCA5182B7082F9BB8EC4D83D340ACF1D3C9E6D9A631888946F6155554A0AE",
+    "result": "PASS_R44_R66_SOURCE_CANON_STANDALONE_CANDIDATE_PENDING_SEQUENTIAL_REBASE",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "wrong_english_witness_negative_exit": 1,
+    "source_inline_formula_count": 87,
+    "target_inline_formula_count": 87,
+    "whole_unit_formula_multiset_exact": true,
+    "source_display_count": 2,
+    "target_display_count": 2,
+    "display_formula_identity_exact": true,
+    "semantic_block_formula_counts": {
+      "Proposition 2.4.4": 12,
+      "Proof 2.4.4(i)": 26,
+      "Proof 2.4.4(ii)": 18,
+      "Definition 2.4.5": 15,
+      "Proposition 2.4.6": 9,
+      "Proof 2.4.6": 7
+    },
+    "semantic_block_formula_multisets_exact": true,
+    "label_count": 3,
+    "ordered_reference_count": 8,
+    "ordered_environment_event_count": 14,
+    "balanced_environment_pair_count": 7,
+    "ordered_item_count": 4,
+    "numbered_environments": [
+      "2.4.4",
+      "2.4.5",
+      "2.4.6"
+    ],
+    "oldpage": "II30",
+    "navigation_only_phantomsection_count": 3,
+    "emphasis_source_target": "1/1",
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_hypotheses_and_quantifiers_preserved": true,
+    "reduction_identification_preserved": "X_red is canonically isomorphic to Proj(S/N_+), and the affine chart quotient is (S_(f))_red.",
+    "contravariance_preserved": "The surjection S_(f) to bar-S_(bar-f) corresponds to the closed immersion D_+(bar-f) to D_+(f).",
+    "compatibility_square_preserved": true,
+    "cover_and_gluing_preserved": "All positive-degree homogeneous f outside N_+ provide the cover whose compatible chart immersions restrict the global closed immersion.",
+    "essential_integrality_preserved": "The zero graded prime, reducedness, irreducibility, nonempty standard opens, and no-zero-divisor argument retain both directions.",
+    "graded_A_algebra_definition_preserved": "Every S_n is an A-module; an A-algebra structure on S_0 suffices and alpha*x=(alpha*1)x is exact.",
+    "relative_scheme_typing_preserved": "The A-algebra sheaf structure on O_X and compatible chart maps define X over Spec(A).",
+    "translator_note_inserted": false
+  },
+  "existing_diplomatic_typography_disposition": {
+    "locus": "Proposition 2.4.4(i), canonical French line 2204",
+    "printed_french": "si S est essentiellement réduite",
+    "existing_id": "EG-EGA-II-P29-FR-GRAMMAR-001",
+    "decision": "retain the printed feminine adjective literally in diplomatic French; translate the unambiguous mathematical sense",
+    "new_correction_id_allocated": false,
+    "deduplication_result": "EXACT_EXISTING_PRINTED_PAGE_29_GRAMMAR_DISPOSITION_REUSED",
+    "delivery_state": "reported_to_root_for_delivery_to_the_designated_EGA_correction_task"
+  },
+  "terminology_evidence": [
+    {
+      "path": "[TERMINOLOGY_LEDGER]/terms.jsonl",
+      "private_public_exact": true,
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records": [
+        "AGKO-T003 reduced ring",
+        "AGKO-T004 nilradical",
+        "AGKO-T035 graded",
+        "AGKO-T091 integral scheme",
+        "AGKO-T121 closed immersion"
+      ],
+      "role": "active Korean EGA register authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "contexts": "homogeneous coordinate rings of projective schemes and structure-sheaf typing",
+      "role": "cached primary scholarly semantic/type control, not Korean spelling authority"
+    },
+    {
+      "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+      "bytes": 35543,
+      "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+      "role": "current bounded read-only nonbinding EGA/Stacks Korean conflict detector; no global replacement authority"
+    },
+    {
+      "paths": [
+        "pub/ega-ko/source/c1s2.tex",
+        "pub/ega-ko/source/c1s5.tex",
+        "pub/ega-ko/source/c2s1.tex"
+      ],
+      "contexts": "축소환; 멱영근기; 정역 스킴; 닫힌 몰입 사상; 바탕공간; 등급 A-대수; 상수층",
+      "role": "established Korean corpus usage"
+    }
+  ],
+  "canonical_noun_and_adverb_review": {
+    "noun_forms": [
+      "표준 동형",
+      "표준 준동형",
+      "표준 상"
+    ],
+    "candidate_noun_use": "표준 준동형",
+    "candidate_genuine_adverbial_use": "표준적으로 동형이다",
+    "forbidden_adjectival_compounds_absent": true,
+    "typed_aliases_only_no_global_replacement": true,
+    "new_terminology_lock_created": false
+  },
+  "source_queries": {
+    "status": "ONE_EXISTING_DIPLOMATIC_GRAMMAR_DISPOSITION_REUSED;_NO_NEW_SOURCE_OR_TRANSCRIPTION_DEFECT",
+    "destination": "designated EGA correction task via root",
+    "delivery": "reported_to_root_nonblocking",
+    "specific_checks": [
+      "printed pages 29-30 agree with the diplomatic canonical French transcription",
+      "the feminine agreement at line 2204 is already bound to EG-EGA-II-P29-FR-GRAMMAR-001",
+      "all eight French cross-references are preserved in order with Korean target suffixes",
+      "the reduction/localization square and the A-algebra triangle are exact",
+      "closed-immersion and ring-homomorphism directions are contravariant and exact",
+      "all universal and nonzero-element quantifiers are explicit"
+    ],
+    "new_correction_id_allocated": false
+  },
+  "independent_review": {
+    "method": "Independent source-boundary/formula review and independent Korean semantic/register review, followed by exact validator runs in ordinary and optimized modes.",
+    "semantic_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "structure_formula_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "candidate_identity_reviewed": "4580 B / 5B00D25AF7E720BFD1D40CACE790D33AF200544664391E5969211F10CEA22703",
+    "source_formula_transform": "PASS_87_INLINE_MULTISETS_EXACT_WITHIN_ALL_SIX_SEMANTIC_BLOCKS_PLUS_2_DISPLAYS_BYTE_NORMALIZED_EXACT",
+    "correction_audit": "PASS_EXISTING_GRAMMAR_DISPOSITION_REUSED_NO_NEW_SOURCE_DEFECT",
+    "normalization_audit": "PASS_NO_ACTIONABLE_KOREAN_WORDING_OR_TERM_LEAD"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_standalone_candidate",
+    "cumulative_rebase": "pending_sequential_rebase_after_corrected_R39_R40_R41_R42_R43",
+    "integration": "not_integrated",
+    "source_referral": "existing_duplicate_reported_nonblocking; no new lead",
+    "build": "not_run_by_R44_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "After corrected R39 through R43 are sequentially resealed, recompute the exact cumulative predecessor, append exactly one LF plus this exact R44 candidate, bind the prospective target identity, and continue at canonical line 2294."
+}

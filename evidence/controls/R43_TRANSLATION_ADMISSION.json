@@ -1,0 +1,333 @@
+{
+  "schema": "agko-r43-translation-admission-v1",
+  "time": "2026-09-06T00:21:34+02:00",
+  "scope": "EGA II canonical lines 2095-2194: Corollary 2.3.15 through Example 2.4.3",
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "2095-2194",
+    "unit_bytes": 4293,
+    "unit_characters": 4221,
+    "unit_lf_lines": 100,
+    "unit_sha256": "DBFF404676F8447B963899E2697D0B0F090DF18AD4B6EFD323F5ABFE263BD571",
+    "preunit_prefix_lines": "1-2094",
+    "preunit_prefix_bytes": 94216,
+    "preunit_prefix_characters": 92761,
+    "preunit_prefix_sha256": "CB878C6DD749A7AF963D3588C67591CB9DD2B0F861A90FDAE29CDEB38D34654C",
+    "postunit_prefix_lines": "1-2194",
+    "postunit_prefix_bytes": 98509,
+    "postunit_prefix_characters": 96982,
+    "postunit_prefix_sha256": "FAA845945B334B59D85E96E7B6AED2DA39A730F46662D61FA2D5B3937EC080AB",
+    "boundaries": "line 2094 blank; line 2095 begins Corollary 2.3.15; line 2194 ends Example 2.4.3; line 2195 blank; line 2196 begins Proposition 2.4.4",
+    "natural_complete_boundary": true
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "relevant_unit_new_dispositions": 0,
+    "branch_application": "The only relevant corrected-layer item predates the live queue and is bound below to the printed-page E2P29/F28 disposition."
+  },
+  "r65_to_r66_no_impact_proof": {
+    "queue_preimage_id": "EGA-CANON-QUEUE-20260905-R65",
+    "queue_preimage_bytes": 85990,
+    "queue_preimage_sha256": "0966A44A5D18032EE80305718CBAF88A7BADD6DCBFCBAAF643D31FA309F7DD17",
+    "new_global_ids": [
+      "EGA4-3-CANON-DISP-0018"
+    ],
+    "scope": "EGA IV-3 English and Spanish consumer synchronization only",
+    "french_source_files_changed": 0,
+    "ega_ii_allocation_head_unchanged": true,
+    "ega_ii_source_hash_unchanged": true,
+    "result": "PASS_EGA_II_SOURCE_HASH_ALLOCATION_HEAD_AND_R43_UNIT_UNCHANGED_R65_TO_R66"
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_characters": 103751,
+    "whole_lf_lines": 1769,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "512-577",
+    "slice_bytes": 3854,
+    "slice_characters": 3854,
+    "slice_lf_lines": 66,
+    "slice_sha256": "14C0B7447CAC60CEE749083DDDB525B46CC6BE3BD27F0574C50DC3A9A3A99F9C",
+    "role": "independent maintained English semantic and mathematical-type witness; French remains diplomatic source authority"
+  },
+  "printed_authority_review": {
+    "result": "PASS_EXACT_TRANSCRIPTION_ON_PRINTED_PAGES_28_29",
+    "rendered_scan_witnesses": [
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P25.png",
+        "bytes": 334918,
+        "sha256": "754CBCE07633CB7E4D2B95EBDD3AF689CC81CFCE6EC6A148B658E3CEB109330C"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/qa/ega2/P26.png",
+        "bytes": 343560,
+        "sha256": "84ECA5D184B197DA4AEA8DFDFA230D9F1A4A4DC4A57DEAC37E1988AEB67BBB01"
+      }
+    ]
+  },
+  "candidate": {
+    "path": "candidates/r43-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r43-c2s1-continuation.tex",
+    "bytes": 4450,
+    "characters": 3224,
+    "lf_lines": 107,
+    "hangul_syllables": 613,
+    "sha256": "0668CE33E37BFBF854B826958D96AD5CE6C3FD21C4386F7E8E9914424A51288A",
+    "bom_cr_replacement_characters": "0/0/0"
+  },
+  "sealed_integrated_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 80222,
+    "characters": 55906,
+    "lf_lines": 1708,
+    "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006",
+    "state": "exact integrated R38 mirrors; corrected R39 through R42 and R43 are not integrated"
+  },
+  "cumulative_predecessor_and_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R39_R40_R41_R42",
+    "reason": "R39 and R42 are undergoing authorized Korean normalization reseals; stale R42 prospective identity 0FDAA876... and live-but-unsealed predecessor bytes are deliberately not rebound.",
+    "predecessor_bytes": null,
+    "predecessor_characters": null,
+    "predecessor_lf_lines": null,
+    "predecessor_sha256": null,
+    "prospective_bytes": null,
+    "prospective_characters": null,
+    "prospective_lf_lines": null,
+    "prospective_sha256": null,
+    "integration_now": false,
+    "required_rebase": "After corrected R39, R40, R41, and R42 each have final exact admission identities, reconstruct the chain from sealed R38 with exactly one LF separator before each candidate, then append this exact R43 candidate with exactly one LF and update this control with the resulting exact prospective identity."
+  },
+  "structure_and_formula_validation": {
+    "validator": "candidates/validate_r43_candidate.py",
+    "validator_bytes": 21750,
+    "validator_characters": 21283,
+    "validator_lf_lines": 485,
+    "validator_sha256": "778BF378E3A113A2564B45B9B6604DE497E81CF04EAD540A6EC98C6B50E59077",
+    "result": "PASS_R43_R66_SOURCE_CANON_STANDALONE_CANDIDATE_PENDING_SEQUENTIAL_REBASE",
+    "ordinary_mode_positive_exit": 0,
+    "optimized_mode_positive_exit": 0,
+    "optimized_mode_wrong_english_witness_negative_exit": 1,
+    "source_inline_formula_count": 72,
+    "target_inline_formula_count": 72,
+    "source_display_count": 1,
+    "target_display_count": 1,
+    "display_formula_identity_exact": true,
+    "authorized_formula_transform_exhaustive": true,
+    "korean_syntax_permutation": {
+      "source_events_51_52": [
+        "D_+(fg)",
+        "D_+(f)"
+      ],
+      "target_events_51_52": [
+        "D_+(f)",
+        "D_+(fg)"
+      ],
+      "reason": "Korean states the ambient affine scheme before naming the open subset of its underlying space; the subject, ambient scheme, open subset, and induced-scheme roles remain exact."
+    },
+    "corrected_layer_substitution": {
+      "formula_event": 71,
+      "source": "K[T]",
+      "target": "\\operatorname{Spec}(K[T])",
+      "authorization": "EG-EGA-II-P29-FR-2.4.3-CORRECTION-001"
+    },
+    "all_other_inline_formula_events_identical_and_order_exact": true,
+    "validator_clause_partition_count": 10,
+    "validator_clause_partition_contiguous_and_exhaustive": true,
+    "label_count": 7,
+    "ordered_reference_count": 12,
+    "ordered_environment_event_count": 18,
+    "balanced_environment_pair_count": 9,
+    "substantive_environment_count": 8,
+    "ordered_item_count": 3,
+    "numbered_environments": [
+      "2.3.15",
+      "2.3.16",
+      "2.3.17",
+      "2.4.1",
+      "2.4.2",
+      "2.4.3"
+    ],
+    "oldpage": "II29",
+    "navigation_only_phantomsection_count": 6,
+    "emphasis_source_target": "3/3",
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_fidelity": {
+    "result": "PASS_EXACT_FINAL_CANDIDATE",
+    "all_assertions_and_quantifiers_preserved": true,
+    "inclusion_and_negated_superset_directions_preserved": true,
+    "lowercase_vanishing_ideal_and_uppercase_graded_ideal_distinct": true,
+    "proper_closed_subsets_explicit": "$Y_1$ and $Y_2$ are stated to be closed proper subsets of $Y$.",
+    "contravariance_preserved": "$Y_{fg}\\to Y_f$ is paired with $S_{(f)}\\to S_{(fg)}$.",
+    "transport_vs_induction_preserved": "The affine scheme structure is transported to $D_+(f)$ through the inverse of the homeomorphism, while the scheme on the open subset $D_+(fg)$ is induced.",
+    "prescheme_vs_scheme_preserved": "Section 2.4.1 constructs a unique prescheme structure; Proposition 2.4.2 then proves it is a scheme.",
+    "canonical_image_generation_preserved": true,
+    "homogeneous_prime_spectrum_register_preserved": true,
+    "gluing_and_future_reference_preserved": true,
+    "honest_forward_reference": "II.7.4.14-ko",
+    "translator_note_inserted": false
+  },
+  "corrected_layer_application": {
+    "locus": "Example 2.4.3, canonical French line 2190",
+    "printed_french": "ces schémas affines sont canoniquement isomorphes à K[T]",
+    "diplomatic_french_disposition": "retained literally without source mutation",
+    "mathematically_typed_korean": "the two affine schemes are canonically isomorphic to Spec(K[T])",
+    "existing_author_error_id": "EG-EGA-II-P29-FR-2.4.3-AUTHOR-ERROR-001",
+    "existing_corrected_layer_id": "EG-EGA-II-P29-FR-2.4.3-CORRECTION-001",
+    "new_correction_id_allocated": false,
+    "deduplication_result": "EXACT_EXISTING_PRINTED_PAGE_29_AUTHOR_ERROR_AND_CORRECTED_LAYER_REUSED",
+    "controls": [
+      {
+        "path": "[CANONICAL_ROOT]/controls/E2P29_FR.jsonl",
+        "bytes": 158403,
+        "sha256": "398A0656C4EFAD4F55DC917A28B52F04FE2F8BEC019BAE067A628B83993FEFF3"
+      },
+      {
+        "path": "[CANONICAL_ROOT]/controls/F28.json",
+        "bytes": 10097,
+        "sha256": "626A8F4727C9E6DEE654C5CF42BFC4FF9B2DED5BFD3245833587CE2FF44B0EAB"
+      }
+    ],
+    "required_correction_task_delivery": "destination_confirmed_by_root",
+    "delivery_state": "delivered_nonblocking"
+  },
+  "terminology_evidence": [
+    {
+      "path": "[TERMINOLOGY_LEDGER]/terms.jsonl",
+      "private_public_exact": true,
+      "bytes": 263512,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records": [
+        "AGKO-T002 prescheme",
+        "AGKO-T017 underlying space",
+        "AGKO-T022 gluing",
+        "AGKO-T121 open immersion",
+        "AGKO-T159 homogeneous prime spectrum"
+      ],
+      "role": "active Korean EGA register authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/math-0307189.txt",
+      "bytes": 80435,
+      "sha256": "003AEBF9CCD292263BD0FF1EE89FA5F3C54E80069E79E04B7DAA3DEDBBF25EF9",
+      "contexts": "closed-subset, irreducibility, and support usage",
+      "role": "cached external scholarly semantic/type control, not Korean spelling authority"
+    },
+    {
+      "path": "[LOCAL_ARXIV_INDEX]/1803.01127v1.txt",
+      "bytes": 45003,
+      "sha256": "85F437D6212F2008BAE6FA6F985A84F9C81DAE4BBED04858314B42135DF648BF",
+      "contexts": "projective and homogeneous-object usage",
+      "role": "cached external scholarly semantic/type control, not Korean spelling authority"
+    },
+    {
+      "paths": [
+        "pub/ega-ko/source/c1s2.tex",
+        "pub/ega-ko/source/c1s4.tex",
+        "pub/ega-ko/source/c2s1.tex"
+      ],
+      "contexts": "기약 닫힌 부분집합; 준스킴; 바탕공간; 열린 몰입 사상; 부정원; 전체 차수; 동차 소 스펙트럼; 붙이기",
+      "role": "adjacent and established Korean corpus usage"
+    }
+  ],
+  "normalization_reviews": {
+    "required_correction_task_delivery": "destination_confirmed_by_root",
+    "delivery_state": "delivered_nonblocking",
+    "applied_before_seal": [
+      {
+        "issue": "unattested inverse-homeomorphism compound",
+        "before": "역위상동형",
+        "after": "위상동형 ... 의 역"
+      },
+      {
+        "issue": "unspaced canonical-image noun compound",
+        "before": "표준상들",
+        "after": "표준 상들"
+      },
+      {
+        "issue": "established irreducible-closed collocation",
+        "before": "닫힌 기약 부분집합들",
+        "after": "기약 닫힌 부분집합들"
+      },
+      {
+        "issue": "proper-subset relation made explicit",
+        "before": "Y와 다른 닫힌 부분집합들",
+        "after": "Y의 진부분집합인 닫힌집합들"
+      },
+      {
+        "issue": "ambient/open-subset binding",
+        "before": "open subset named before its ambient underlying space",
+        "after": "ambient affine scheme D_+(f) precedes its open subset D_+(fg)"
+      }
+    ],
+    "reversible_register_reviews": [
+      {
+        "id": "AGKO-T159",
+        "current": "동차 소 스펙트럼",
+        "status": "definition_context_supported_but_front_locked_definition_pending",
+        "decision": "Use the established contextual form in R43; do not claim an externally evidenced corpus-wide lock."
+      },
+      {
+        "issue": "소 아이디얼 versus 소아이디얼 spacing",
+        "decision": "Follow adjacent EGA II form 소아이디얼/등급 소아이디얼 in R43; retain as a separate corpus-normalization review."
+      }
+    ]
+  },
+  "source_queries": {
+    "status": "ONE_EXISTING_AUTHOR_ERROR_REUSED;_NO_NEW_SOURCE_OR_TRANSCRIPTION_DEFECT",
+    "destination": "EGA correction and normalization task",
+    "delivery": "destination_confirmed_by_root",
+    "result": "The sole source-type issue is the already-ledgered Example 2.4.3 scheme-versus-ring defect; no new ID was created. All Korean wording and terminology leads were separately delivered as non-source normalization reviews.",
+    "specific_checks": [
+      "printed pages 28-29 agree exactly with the diplomatic canonical French transcription",
+      "all twelve French cross-references resolve exactly once in the canonical corpus",
+      "the 2.3.15 inclusion directions and power criterion are exact",
+      "the 2.3.17 proof preserves both negated superset relations and proper closed subsets",
+      "the 2.4.1 morphism and ring-homomorphism directions are contravariant and exact",
+      "the 2.4.1 transported structure and induced open-subset scheme remain distinct",
+      "the 2.4.3 forward reference II.7.4.14 is preserved without fabricating a Korean target"
+    ],
+    "new_correction_id_allocated": false
+  },
+  "independent_review": {
+    "method": "Two independent exact-byte reviews: Korean semantic/register review and French/English/printed-page structure-formula review, followed by final-candidate rechecks after every normalization change.",
+    "semantic_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "structure_formula_result": "PASS_EXACT_FINAL_CANDIDATE",
+    "candidate_identity_reviewed": "4450 B / 0668CE33E37BFBF854B826958D96AD5CE6C3FD21C4386F7E8E9914424A51288A",
+    "source_formula_transform": "PASS_72_INLINE_PLUS_1_DISPLAY_WITH_ONLY_BOUND_SYNTAX_PERMUTATION_AND_EXISTING_CORRECTED_LAYER_SUBSTITUTION",
+    "correction_audit": "PASS_EXISTING_DUPLICATE_REUSED_NO_NEW_SOURCE_DEFECT",
+    "normalization_audit": "PASS_ALL_IDENTIFIED_R43_WORDING_LEADS_APPLIED_AND_DELIVERED"
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "admitted_standalone_candidate",
+    "cumulative_rebase": "pending_sequential_rebase_after_corrected_R39_R40_R41_R42",
+    "integration": "not_integrated",
+    "source_referral": "existing_duplicate_and_all_normalization_reviews_delivered_nonblocking",
+    "build": "not_run_by_R43_candidate_lane",
+    "shared_state_manifest_metadata_or_ledgers": "not_changed",
+    "git_network_ui_packaging_or_publication": "not_performed"
+  },
+  "next": "After corrected R39, R40, R41, and R42 are sequentially resealed, recompute the exact cumulative predecessor, append exactly one LF plus this exact R43 candidate to form a prospective target, update this control with its exact identity, and continue at canonical line 2196."
+}

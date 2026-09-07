@@ -1,0 +1,180 @@
+{
+  "schema": "agko-r41-homogeneous-ideal-wording-reseal-v1",
+  "time": "2026-09-06T01:41:10+02:00",
+  "scope": "EGA II canonical lines 1891-1992: concept-typed Korean terminology reseal for the two homogeneous prime-ideal loci; candidate remains prospective and unintegrated",
+  "policy": {
+    "id": "XW-KO-005",
+    "rule": "In a graded ring, French ideal gradue and ideal premier gradue denote a homogeneous ideal and homogeneous prime ideal, rendered 동차 아이디얼 and 동차 소아이디얼 in Korean.",
+    "type_boundary": "Retain 등급 for graded rings, graded modules, and grading structures; do not transfer that structural modifier to a homogeneous ideal.",
+    "application": "Both R41 ideal loci are typed homogeneous prime ideals; the unit contains no graded-ring, graded-module, or grading-structure occurrence requiring 등급."
+  },
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1891-1992",
+    "unit_bytes": 4203,
+    "unit_characters": 4154,
+    "unit_lf_lines": 102,
+    "unit_sha256": "77FC0279D0B1D94CB72C7C7F72CBA183923F4B735AA9CB09F01530BB0F638EE8",
+    "boundaries": "line 1890 blank; line 1891 begins Proposition 2.3.4; line 1992 ends the proof of Corollary 2.3.7; line 1993 blank; line 1994 begins Corollary 2.3.8"
+  },
+  "canon_queue_binding": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "binding_mode": "EGA II allocation head only; no whole-queue snapshot binding",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "reason": "Other-volume queue advances do not alter the fixed EGA II source bytes or its allocation head."
+  },
+  "exhaustive_locus_audit": {
+    "french_gradue_count": 2,
+    "french_ideal_premier_gradue_count": 2,
+    "french_literal_ideal_homogene_count": 0,
+    "french_homogene_element_count": 4,
+    "old_candidate_deunggeup_count": 2,
+    "old_candidate_deunggeup_typed_prime_ideal_count": 2,
+    "old_candidate_deunggeup_ring_module_or_grading_structure_count": 0,
+    "candidate_ideal_token_count": 9,
+    "candidate_prime_ideal_token_count": 8,
+    "line_wrapped_loci": [
+      {
+        "source_lines": "1907-1908",
+        "source_typing": "homogene modifies f; ideal premier gradue modifies p",
+        "candidate_lines": "18-19",
+        "changed_line": 19,
+        "old": "$\\mathfrak{p}$가 $S$의 등급 소아이디얼이고 $f$를 포함하지 않을 때,",
+        "new": "$\\mathfrak{p}$가 $S$의 동차 소아이디얼이고 $f$를 포함하지 않을 때,"
+      },
+      {
+        "source_lines": "1976-1977",
+        "source_typing": "ideal premier gradue de S modifies the constructed p across the source wrap",
+        "candidate_lines": "88-90",
+        "changed_line": 89,
+        "old": "등급 소아이디얼이고 실제로",
+        "new": "동차 소아이디얼이고 실제로"
+      }
+    ],
+    "result": "PASS_EXHAUSTIVE_TWO_OF_TWO_TYPED_IDEAL_LOCI"
+  },
+  "old_candidate": {
+    "path": "candidates/r41-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r41-c2s1-continuation.tex",
+    "bytes": 4544,
+    "characters": 3202,
+    "lf_lines": 106,
+    "hangul_syllables": 671,
+    "sha256": "5DE6EC9F2560C92DCF6A7B5C76F1FB72749612CCD7C5724FCA65C1EE6C81A971",
+    "state": "preserved_unchanged_superseded_wording"
+  },
+  "corrected_candidate": {
+    "path": "candidates/r41-c2s1-continuation-homogeneous-reseal.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r41-c2s1-continuation-homogeneous-reseal.tex",
+    "bytes": 4544,
+    "characters": 3202,
+    "lf_lines": 106,
+    "hangul_syllables": 671,
+    "sha256": "79ED45240DEC3DC8F9BEA73B958678075CE6199D63E3D0EEE053AD83E8F8B104",
+    "separator_plus_candidate_bytes": 4545,
+    "separator_plus_candidate_characters": 3203,
+    "separator_plus_candidate_lf_lines": 107,
+    "separator_plus_candidate_sha256": "5F3C6D93E3B536687F0153915B76CA9F23537BF0DDBBA548850503AE31E9E3A5",
+    "exact_delta": "Replace exactly two same-byte-length occurrences of 등급 소아이디얼 with 동차 소아이디얼, on candidate lines 19 and 89; every other byte is identical to the old candidate."
+  },
+  "historical_layers": [
+    {
+      "path": "controls/R41_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R41_TRANSLATION_ADMISSION.json",
+      "bytes": 9631,
+      "lf_lines": 192,
+      "sha256": "617C33145B57A4568FC1F3260F457380CC232F2C47B146D30FC36A2768675A02",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r41_candidate.py",
+      "bytes": 17700,
+      "lf_lines": 395,
+      "sha256": "777B0C48898D7EE91A5D6C4092EDA3E72FD688292FF02BABC0CE856FF9246753",
+      "state": "preserved_unchanged_old_candidate_validator"
+    },
+    {
+      "path": "candidates/validate_r41_current.py",
+      "bytes": 26120,
+      "lf_lines": 596,
+      "sha256": "4EFB3D68B0A59E9C4418B6CFE40D556FDEA07FEA372FC859CB1093BF3ADCAE09",
+      "state": "preserved_unchanged_old_candidate_current_validator"
+    },
+    {
+      "path": "candidates/validate_r41_current_post_comment.py",
+      "bytes": 31374,
+      "lf_lines": 731,
+      "sha256": "2B6C64EA5C2B0931043653931EF0263E0184AF27E91DAE9C8DB33B010C57C890",
+      "state": "preserved_unchanged_old_candidate_postcomment_validator"
+    }
+  ],
+  "formula_order_labels_structure_register": {
+    "source_inline_formula_occurrences": 80,
+    "target_inline_formula_occurrences": 80,
+    "inline_formula_identity_and_order_exact": true,
+    "target_only_formula_occurrences": 0,
+    "source_display_count": 3,
+    "target_display_count": 3,
+    "display_content_tag_label_order_exact_after_fr_ko_mapping": true,
+    "clause_partition_count": 7,
+    "clause_partition_contiguous_and_exhaustive": true,
+    "label_count": 5,
+    "ordered_reference_count": 9,
+    "ordered_environment_event_count": 14,
+    "numbered_environments": ["2.3.4", "2.3.5", "2.3.6", "2.3.7"],
+    "tag": "2.3.5.1",
+    "oldpage": "II27",
+    "balanced_braces": true,
+    "utf8_bom_cr_replacement_characters": "0/0/0",
+    "xw_ko_005_new_term_count": 2,
+    "superseded_old_term_count": 0,
+    "other_korean_text_formula_labels_order_and_structure": "exactly unchanged from the admitted old candidate"
+  },
+  "validation": {
+    "validator": "candidates/validate_r41_homogeneous_ideal_reseal.py",
+    "validator_bytes": 20465,
+    "validator_characters": 20104,
+    "validator_lf_lines": 386,
+    "validator_sha256": "73960A43C9AA4E396B5D86089222BC85C8D368EBD2585592505785733627DA9E",
+    "normal_positive_exit": 0,
+    "optimized_positive_exit": 0,
+    "normal_self_test_exit": 0,
+    "optimized_self_test_exit": 0,
+    "internal_bounded_negative_count": 7,
+    "wrong_source_normal_negative_exit": 1,
+    "wrong_source_optimized_negative_exit": 1,
+    "old_candidate_normal_negative_exit": 1,
+    "old_candidate_optimized_negative_exit": 1,
+    "result": "PASS_SOURCE_FORMULA_ORDER_LABELS_STRUCTURE_REGISTER_MIRROR_PRIVACY_AND_NEGATIVES"
+  },
+  "independent_review": {
+    "exhaustive_locus_result": "PASS",
+    "french_to_korean_mapping_result": "PASS_TWO_OF_TWO",
+    "additional_typed_ideal_locus_found": false,
+    "graded_ring_module_or_structure_locus_found": false,
+    "all_four_homogeneous_element_loci_already_correct": true
+  },
+  "release_privacy": {
+    "absolute_windows_paths": false,
+    "user_profile_paths": false,
+    "personal_names": false,
+    "secret_values": false,
+    "locators": "role-relative or repository-relative only",
+    "private_public_exact": true
+  },
+  "state": {
+    "translation": "corrected_candidate_resealed_and_frozen",
+    "integration": "prospective_only_not_integrated",
+    "build_tex_git_network_ui_packaging_publication": "not_performed",
+    "historical_candidate_controls_and_validators": "preserved_unchanged",
+    "shared_manifests_metadata_aliases_or_ledgers": "not_changed"
+  },
+  "next": "The ordered R39-R43 chain must consume the corrected R41 candidate identity after its exact R40 predecessor; this reseal does not integrate any target."
+}

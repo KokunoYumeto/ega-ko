@@ -1,0 +1,148 @@
+{
+  "schema": "agko-r42-translation-candidate-reseal-v1",
+  "time": "2026-09-06T00:21:27+02:00",
+  "scope": "EGA II canonical lines 1994-2093: corrected Korean wording in Corollary 2.3.12; candidate remains unintegrated",
+  "supersedes": {
+    "path": "controls/R42_TRANSLATION_ADMISSION.json",
+    "public_path": "evidence/controls/R42_TRANSLATION_ADMISSION.json",
+    "bytes": 11108,
+    "sha256": "CB07739A307886BB9EA515D922C9B4A1B196C6AEE6FC7020E4E1ED3696B7D72F",
+    "preservation": "Historical admission and its public mirror remain byte-identical and unchanged.",
+    "old_candidate": {
+      "bytes": 4655,
+      "characters": 3181,
+      "lf_lines": 107,
+      "sha256": "9B7B47C388F493A9A248B14BD7378342F5350E1F165A0ED6E403C0AAE1D82B98"
+    },
+    "old_prospective_r42_sha256": "0FDAA876D20470C142AC8B5E6C89DE743AE464D006788C4D92022B45DAAF2160",
+    "status": "superseded_for_candidate_wording_only"
+  },
+  "correction": {
+    "locus": "candidate lines 82-85, Corollary 2.3.12",
+    "old": "또 $Y_1\\cup Y_2$가 $X$의 두 닫힌 부분집합의 합집합이면 이에",
+    "new": "또 합집합 $Y_1\\cup Y_2$를 이루는 두 부분집합이 $X$에서 닫혀 있으면, 이 합집합에는",
+    "continuation": "the preserved II:28 page marker is followed by $\\mathfrak{j}_+(Y_1)\\cap\\mathfrak{j}_+(Y_2)$가 대응하고",
+    "reason": "The revised Korean explicitly predicates closedness in X of the two component subsets and binds the correspondence to their union. It also preserves the source formula sequence exactly.",
+    "classification": "Korean grammatical and semantic binding correction; not a French transcription or canon correction"
+  },
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1994-2093",
+    "unit_bytes": 3981,
+    "unit_characters": 3913,
+    "unit_lf_lines": 100,
+    "unit_sha256": "E37A387DDF6748B588BF43ABA9CACF5B0A9D5A03EC180F3C79C4A1594EBB732A",
+    "preunit_prefix_sha256": "838298EE8DC7B5D4CBD390778000EF836031AE8022CC19F506901DD81D422818",
+    "postunit_prefix_sha256": "5E0EBC55249F2F6E3402099C2519996EF5582498EA73E1FC6F519D9BFF07A296"
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "r66_scope": "EGA IV-3 only; zero French source files changed",
+    "result": "PASS_EGA_II_SOURCE_HASH_AND_ALLOCATION_HEAD_UNCHANGED"
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "438-510",
+    "slice_bytes": 3899,
+    "slice_lf_lines": 73,
+    "slice_sha256": "53103313DB959C04574DFBEE778D30D4913ED781C2C1AAE7838DEA15F0E4058A",
+    "role": "independent maintained English semantic witness; French remains source authority"
+  },
+  "corrected_candidate": {
+    "path": "candidates/r42-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r42-c2s1-continuation.tex",
+    "bytes": 4686,
+    "characters": 3194,
+    "lf_lines": 108,
+    "hangul_syllables": 746,
+    "sha256": "2A8223055C349BC42E65CE879B6580290CAECC7E4F5F51F0B736EF69666A4B8A",
+    "separator_plus_candidate_bytes": 4687,
+    "separator_plus_candidate_lf_lines": 109,
+    "separator_plus_candidate_sha256": "A05D9548FE159399843E804AC5D22291B83A96D28369EECC55C1CF425DB75CE3"
+  },
+  "validation": {
+    "validator": "candidates/validate_r42_candidate_reseal.py",
+    "validator_bytes": 14749,
+    "validator_characters": 14381,
+    "validator_lf_lines": 305,
+    "validator_sha256": "40DC4E7D6530C8E265F39B26F1FAEDEAEB522256E61FD326A7F1D0AF946747FB",
+    "normal_positive_exit": 0,
+    "optimized_positive_exit": 0,
+    "wrong_canonical_negative_exit": 1,
+    "wrong_english_negative_exit": 1,
+    "wrong_candidate_negative_exit": 1,
+    "result": "PASS_R42_CORRECTED_CANDIDATE_SOURCE_FORMULA_STRUCTURE_GRAMMAR"
+  },
+  "formula_and_structure_review": {
+    "source_inline_formula_count": 77,
+    "target_inline_formula_count": 77,
+    "inline_formula_identity_and_order_exact": true,
+    "target_only_formula_count": 0,
+    "source_display_count": 0,
+    "target_display_count": 0,
+    "clause_partition_count": 8,
+    "clause_partition_contiguous_and_exhaustive": true,
+    "label_count": 7,
+    "ordered_reference_count": 3,
+    "reference_targets_unique_in_exact_R41_plus_R42_witness": true,
+    "ordered_environment_event_count": 26,
+    "ordered_item_count": 7,
+    "oldpage": "II28",
+    "balanced_braces": true,
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_and_korean_review": {
+    "result": "PASS_CORRECTED_EXACT_CANDIDATE",
+    "corollary_2_3_12_union_subject": "The union Y_1 cup Y_2 is explicitly identified as formed by two subsets closed in X.",
+    "corollary_2_3_12_correspondence": "The deictic target is explicitly the union, and its corresponding ideal is exactly the intersection of j_+(Y_1) and j_+(Y_2).",
+    "arbitrary_family_intersection": "The intersection of an arbitrary closed-subset family still corresponds to the radical in S_+ of the sum of the j_+(Y_lambda).",
+    "all_assertions_quantifiers_inclusions_and_equivalences_preserved": true,
+    "active_register_preserved": "근기, 등급 아이디얼, 등급 소아이디얼, 멱영원, 폐포, 덮개",
+    "translator_note_inserted": false
+  },
+  "correction_task_delivery": {
+    "destination_thread_id": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "endpoint_proof_thread_id": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "delivered": true,
+    "classification": "Korean wording correction; no new French canon disposition requested"
+  },
+  "cumulative_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R39_R40_R41",
+    "reason": "The corrected R39 candidate shifts every downstream cumulative identity. No R42 cumulative hash is asserted until the one ordered R39-to-R42 rebase.",
+    "historical_r41_prospective": {
+      "bytes": 93692,
+      "sha256": "391A406C5BC200DD02CF4877B39DD0130D2213308094120BE301D0AB5D41A71F",
+      "role": "historical pre-correction identity only; not reused as a current chain base"
+    }
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "corrected_candidate_resealed",
+    "integration": "not_integrated",
+    "build_tex_git_network_ui_packaging_publication": "not_performed",
+    "historical_admission": "preserved_unchanged",
+    "shared_manifests_metadata_or_terminology_ledgers": "not_changed"
+  },
+  "next": "After corrected R39 is final, compute one exact sequential cumulative rebase through R40, R41, and this corrected R42 candidate; then integrate only in canonical order."
+}
+

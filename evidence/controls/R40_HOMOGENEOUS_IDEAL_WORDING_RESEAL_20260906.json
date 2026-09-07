@@ -1,0 +1,262 @@
+{
+  "schema": "agko-r40-homogeneous-ideal-wording-reseal-v1",
+  "time": "2026-09-06T01:41:32+02:00",
+  "scope": "EGA II canonical lines 1782-1889; exhaustive XW-KO-005 ideal-noun normalization in the still-unintegrated R40 Korean candidate",
+  "policy": {
+    "authority": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+    "bytes": 35543,
+    "lf_lines": 379,
+    "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+    "mapping_id": "XW-KO-005",
+    "concept": "homogeneous",
+    "source_type": "graded element, ideal, or component",
+    "recommendation": "동차",
+    "application": "French idéal gradué and idéal premier gradué in a graded-ring context are rendered as 동차 아이디얼 and 동차 소아이디얼; 등급 remains the register for rings, modules, and grading structures.",
+    "result": "PASS_CONCEPT_TYPED_APPLICATION"
+  },
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1782-1889",
+    "unit_bytes": 4143,
+    "unit_characters": 4062,
+    "unit_lf_lines": 108,
+    "unit_sha256": "812FA8DAF0F5852602849D172B9182E2CBA6837810088662FA1FE157292704BB",
+    "boundaries": "line1781 blank; line1782 begins environment2.2.7; line1889 ends environment2.3.3; line1890 blank; line1891 begins Proposition2.3.4"
+  },
+  "historical_candidate": {
+    "path": "candidates/r40-c2s1-continuation.tex",
+    "bytes": 4829,
+    "characters": 3237,
+    "lf_lines": 114,
+    "hangul_syllables": 796,
+    "sha256": "4E3A5FDEFF4DE67EA548232F8A589AFF06023916DB838440A594E9D1FAA3E5AD",
+    "state": "preserved_byte_exact_superseded_for_future_chain_use"
+  },
+  "correction": {
+    "classification": "bounded Korean terminology normalization; no French transcription or Canon correction",
+    "changed_candidate_lines": [19, 33, 34, 42, 64, 65, 86],
+    "changed_line_count": 7,
+    "changed_character_count": 14,
+    "byte_count_delta": 0,
+    "character_count_delta": 0,
+    "lf_count_delta": 0,
+    "only_change": "At each typed ideal locus, the two-syllable modifier 등급 is replaced by 동차; every other byte is exact.",
+    "loci": [
+      {
+        "candidate_lines": "19",
+        "source_lines": "1799",
+        "source": "un idéal premier gradué",
+        "old": "등급 소아이디얼",
+        "new": "동차 소아이디얼"
+      },
+      {
+        "candidate_lines": "33",
+        "source_lines": "1812",
+        "source": "des idéaux premiers gradués",
+        "old": "등급 소아이디얼들의",
+        "new": "동차 소아이디얼들의"
+      },
+      {
+        "candidate_lines": "34-35",
+        "source_lines": "1814",
+        "source": "des idéaux premiers gradués",
+        "old": "등급\\n소아이디얼",
+        "new": "동차\\n소아이디얼"
+      },
+      {
+        "candidate_lines": "42-43",
+        "source_lines": "1821-1822",
+        "source": "des idéaux premiers\\ngradués",
+        "old": "등급\\n소아이디얼",
+        "new": "동차\\n소아이디얼"
+      },
+      {
+        "candidate_lines": "64",
+        "source_lines": "1843",
+        "source": "l'idéal gradué",
+        "old": "등급 아이디얼",
+        "new": "동차 아이디얼"
+      },
+      {
+        "candidate_lines": "65",
+        "source_lines": "1844",
+        "source": "un idéal gradué",
+        "old": "등급 아이디얼",
+        "new": "동차 아이디얼"
+      },
+      {
+        "candidate_lines": "86",
+        "source_lines": "1862",
+        "source": "tout idéal gradué",
+        "old": "등급 아이디얼",
+        "new": "동차 아이디얼"
+      }
+    ],
+    "exhaustiveness": {
+      "old_grade_token_count": 11,
+      "new_grade_token_count": 4,
+      "old_homogeneous_token_count": 9,
+      "new_homogeneous_token_count": 16,
+      "old_typed_graded_prime_ideal_count": 4,
+      "new_typed_homogeneous_prime_ideal_count": 4,
+      "old_typed_graded_ideal_count": 3,
+      "new_typed_homogeneous_ideal_count": 3,
+      "new_typed_graded_ideal_or_prime_residue_count": 0,
+      "prime_ideal_noun_total_preserved": 7,
+      "ideal_noun_total_preserved": 10,
+      "result": "PASS_EXACTLY_SEVEN_TYPED_IDEAL_MODIFIERS_AND_NO_OTHER_CHANGE"
+    }
+  },
+  "grading_structure_register_preserved": [
+    {
+      "candidate_lines": "6-7",
+      "source_lines": "1786-1787",
+      "source_type": "ring remains graded",
+      "target": "환 ... 여전히 등급이 주어진다"
+    },
+    {
+      "candidate_lines": "14-15",
+      "source_lines": "1794-1795",
+      "source_type": "graded module",
+      "target": "모든 등급 S-가군"
+    },
+    {
+      "candidate_line": 25,
+      "source_line": 1805,
+      "source_type": "graded ring",
+      "target": "등급환"
+    },
+    {
+      "candidate_line": 31,
+      "source_line": 1810,
+      "source_type": "ring supplied with a grading",
+      "target": "등급이 주어진 환"
+    }
+  ],
+  "plain_referential_prime_ideal_nouns_preserved": {
+    "candidate_lines": [80, 82],
+    "count": 3,
+    "reason": "These refer back to the already typed prime ideal in the proof and contain no fresh graded modifier."
+  },
+  "resealed_candidate": {
+    "path": "candidates/r40-c2s1-continuation-homogeneous-reseal.tex",
+    "bytes": 4829,
+    "characters": 3237,
+    "lf_lines": 114,
+    "hangul_syllables": 796,
+    "sha256": "5E58F20F745B021AA8E9412917358A8AB690156C48BA19E575836F94124C10C7",
+    "separator_plus_candidate_bytes": 4830,
+    "separator_plus_candidate_lf_lines": 115,
+    "separator_plus_candidate_sha256": "4FC731E3F86717971014982E63EB6E6A6A411815734B436DFB15B0330257864A"
+  },
+  "formula_and_structure": {
+    "source_inline_formula_count": 80,
+    "target_inline_formula_count": 81,
+    "authorized_target_only_formula": "m+rd\\geq n",
+    "authorized_target_only_formula_count": 1,
+    "authorized_formula_position": "after source formula68 and before source formula69 under accepted D0040",
+    "all_other_formula_identity_and_order_exact": true,
+    "semantic_clause_partition_count": 11,
+    "source_display_count": 7,
+    "target_display_count": 7,
+    "display_content_tag_label_order_exact_after_fr_ko_mapping": true,
+    "label_count": 12,
+    "ordered_reference_count": 5,
+    "d0041_current_korean_reference": "II.2.1.8-ko / 2.1.8",
+    "ordered_environment_event_count": 8,
+    "numbered_environments": ["2.2.7", "2.3.1", "2.3.2", "2.3.3"],
+    "navigation_anchor_count": 4,
+    "oldpage": "II26",
+    "balanced_braces": true,
+    "utf8_bom_cr_replacement_characters": "0/0/0",
+    "result": "PASS_ALL_NON_TERMINOLOGY_BYTES_FORMULAS_LABELS_REFERENCES_AND_STRUCTURE_PRESERVED"
+  },
+  "validation": {
+    "validator": "candidates/validate_r40_homogeneous_ideal_reseal.py",
+    "validator_bytes": 23198,
+    "validator_characters": 22060,
+    "validator_lf_lines": 514,
+    "validator_sha256": "855FC95A65EF15B2B060B2867ECF20ABA5FE77D314BC1C6F6E39D7C4C7F76A71",
+    "normal_positive_exit": 0,
+    "optimized_positive_exit": 0,
+    "negative_tests": [
+      {"case": "historical old candidate substituted", "normal_exit": 1, "optimized_exit": 1},
+      {"case": "wrong R41 candidate substituted", "exit": 1},
+      {"case": "wrong canonical input substituted", "exit": 1}
+    ],
+    "result": "PASS_R40_HOMOGENEOUS_IDEAL_WORDING_RESEAL_PROSPECTIVE_ONLY"
+  },
+  "historical_evidence": [
+    {
+      "private_path": "controls/R40_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R40_TRANSLATION_ADMISSION.json",
+      "bytes": 11029,
+      "lf_lines": 216,
+      "sha256": "204C8209CCC6D7A0D55550F532F6D016ACCEAE48BA4DC4048D34703C7F47D0B8",
+      "state": "preserved_byte_exact_superseded_candidate_admission"
+    },
+    {
+      "path": "candidates/validate_r40_candidate.py",
+      "bytes": 21328,
+      "lf_lines": 454,
+      "sha256": "ED2FEB8132958F0C3895BAE8A6F240E445690440B5A6A91D02F9D0C99A98C4AE",
+      "state": "preserved_byte_exact_historical_candidate_validator"
+    },
+    {
+      "path": "candidates/validate_r40_current.py",
+      "bytes": 30618,
+      "lf_lines": 682,
+      "sha256": "4C0C4DA97B42DEB27D564CC78EE1435E131A11AC427C30E8A1D4EC98EF239E57",
+      "state": "preserved_byte_exact_superseded_F3DD_chain_validator"
+    },
+    {
+      "path": "candidates/validate_r40_current_post_comment.py",
+      "bytes": 25524,
+      "lf_lines": 578,
+      "sha256": "1B88ACA3AAD1CE33D098D539AF6BD6DEEA48AC1F1F8848819F9720F212E076DF",
+      "state": "preserved_byte_exact_superseded_old_candidate_postcomment_validator"
+    }
+  ],
+  "current_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "source/c2s1.tex",
+    "private_public_exact": true,
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "B3F0D07439653AFC8420D6AFEA840725D96A84BACA0C428A1501C2663E7C32AD",
+    "state": "exact current R39 mirrors; R40 remains unintegrated"
+  },
+  "prospective_r40": {
+    "method": "exact current R39 preimage followed by exactly one LF and exact resealed R40 candidate",
+    "target_range": "line1810 blank separator; resealed R40 candidate lines1811-1924",
+    "bytes": 89104,
+    "characters": 61916,
+    "lf_lines": 1924,
+    "sha256": "918E78806A418CC93393AFAAABC0E6F0DCEF58D2DC206C7A4EAF7BDA99712633",
+    "private_public_if_identically_written": true,
+    "integrated_now": false
+  },
+  "release_privacy": {
+    "private_public_controls_exact": true,
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "resealed_successor_candidate_frozen",
+    "integration": "prospective_not_integrated",
+    "target_ledger_alias_manifest_metadata": "not_changed",
+    "build_tex_git_network_ui_packaging_publication": "not_performed",
+    "historical_candidate_validators_controls": "preserved_unchanged",
+    "chain_effect": "Every prospective R40-R43 chain identity based on the old R40 candidate is superseded and must be recomputed from this successor."
+  },
+  "next": "The ordered chain transaction must consume this exact resealed R40 candidate, append it to the exact current R39 mirrors with one LF, and recompute every downstream R41-R43 prospective identity before any authorized integration."
+}

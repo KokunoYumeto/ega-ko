@@ -1,0 +1,161 @@
+{
+  "schema": "agko-r42-translation-candidate-reseal-v2",
+  "time": "2026-09-06T00:37:42+02:00",
+  "scope": "EGA II canonical lines 1994-2093: final direct Korean wording in Corollary 2.3.12; candidate remains unintegrated",
+  "supersedes": {
+    "path": "controls/R42_TRANSLATION_CANDIDATE_RESEAL_20260906.json",
+    "public_path": "evidence/controls/R42_TRANSLATION_CANDIDATE_RESEAL_20260906.json",
+    "bytes": 7529,
+    "sha256": "F983830AF0B59A847416A84F0D3897B9042F90D3001067ACEC56C315617E45C0",
+    "preservation": "The first reseal, its validator, and the original admission remain byte-identical historical evidence.",
+    "v1_candidate": {
+      "bytes": 4686,
+      "characters": 3194,
+      "lf_lines": 108,
+      "sha256": "2A8223055C349BC42E65CE879B6580290CAECC7E4F5F51F0B736EF69666A4B8A"
+    },
+    "status": "superseded_by_clearer_direct_Y_1_Y_2_binding"
+  },
+  "historical_layers": [
+    {
+      "path": "controls/R42_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R42_TRANSLATION_ADMISSION.json",
+      "bytes": 11108,
+      "sha256": "CB07739A307886BB9EA515D922C9B4A1B196C6AEE6FC7020E4E1ED3696B7D72F",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r42_candidate_reseal.py",
+      "bytes": 14749,
+      "lf_lines": 305,
+      "sha256": "40DC4E7D6530C8E265F39B26F1FAEDEAEB522256E61FD326A7F1D0AF946747FB",
+      "state": "preserved_unchanged_historical_v1_validator"
+    }
+  ],
+  "correction": {
+    "locus": "candidate lines 82-85, Corollary 2.3.12",
+    "v1": "또 합집합 $Y_1\\cup Y_2$를 이루는 두 부분집합이 $X$에서 닫혀 있으면, 이 합집합에는",
+    "v2": "$Y_1$, $Y_2$가 $X$의 두 닫힌 부분집합이면, 합집합 $Y_1\\cup Y_2$에는",
+    "continuation": "the preserved II:28 page marker is followed by $\\mathfrak{j}_+(Y_1)\\cap\\mathfrak{j}_+(Y_2)$가 대응하고",
+    "reason": "The final Korean directly names Y_1 and Y_2 as the two closed subsets of X, then makes their union the correspondence argument.",
+    "classification": "Korean grammatical and semantic-binding refinement; not a French transcription or canon correction"
+  },
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1994-2093",
+    "unit_bytes": 3981,
+    "unit_characters": 3913,
+    "unit_lf_lines": 100,
+    "unit_sha256": "E37A387DDF6748B588BF43ABA9CACF5B0A9D5A03EC180F3C79C4A1594EBB732A",
+    "preunit_prefix_sha256": "838298EE8DC7B5D4CBD390778000EF836031AE8022CC19F506901DD81D422818",
+    "postunit_prefix_sha256": "5E0EBC55249F2F6E3402099C2519996EF5582498EA73E1FC6F519D9BFF07A296"
+  },
+  "canon_queue": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "id": "EGA-CANON-QUEUE-20260905-R66",
+    "bytes": 77194,
+    "sha256": "4A1139A32FA2445E6C04040AD7CDC2E6C92E56B6728A8FE8744506F72DFBE4FE",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "r66_scope": "EGA IV-3 only; zero French source files changed",
+    "result": "PASS_EGA_II_SOURCE_HASH_AND_ALLOCATION_HEAD_UNCHANGED"
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "438-510",
+    "slice_bytes": 3899,
+    "slice_lf_lines": 73,
+    "slice_sha256": "53103313DB959C04574DFBEE778D30D4913ED781C2C1AAE7838DEA15F0E4058A",
+    "role": "independent maintained English semantic witness; French remains source authority"
+  },
+  "final_candidate": {
+    "path": "candidates/r42-c2s1-continuation.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r42-c2s1-continuation.tex",
+    "bytes": 4665,
+    "characters": 3193,
+    "lf_lines": 108,
+    "hangul_syllables": 736,
+    "sha256": "1FBE7A59AD100AF4F6555EDF36A2CF6BDEBD1CB2429A035A1B4D2609196AE777",
+    "separator_plus_candidate_bytes": 4666,
+    "separator_plus_candidate_lf_lines": 109,
+    "separator_plus_candidate_sha256": "B70B7D0410CD75A78757B8A23053D4631D58C92A46AD97E183B71F690DF03609"
+  },
+  "validation": {
+    "validator": "candidates/validate_r42_candidate_reseal_v2.py",
+    "validator_bytes": 17143,
+    "validator_characters": 16741,
+    "validator_lf_lines": 346,
+    "validator_sha256": "DBC3E67CD51F7EC76AD3B9A108BC1ACBC6C3A1CAEF514344E5FAD9BA877FC59A",
+    "normal_positive_exit": 0,
+    "optimized_positive_exit": 0,
+    "wrong_canonical_negative_exit": 1,
+    "wrong_english_negative_exit": 1,
+    "wrong_candidate_negative_exit": 1,
+    "result": "PASS_R42_FINAL_V2_CANDIDATE_SOURCE_FORMULA_STRUCTURE_GRAMMAR"
+  },
+  "formula_and_structure_review": {
+    "source_inline_formula_occurrences": 77,
+    "target_inline_formula_occurrences": 79,
+    "unchanged_source_formula_occurrences_preserved": 77,
+    "additional_source_grounded_binder_occurrences": ["Y_1", "Y_2"],
+    "unbound_target_only_mathematical_content": 0,
+    "direct_binder_mapping_exact": true,
+    "source_display_count": 0,
+    "target_display_count": 0,
+    "clause_partition_count": 8,
+    "clause_partition_contiguous_and_exhaustive": true,
+    "label_count": 7,
+    "ordered_reference_count": 3,
+    "reference_targets_unique_in_exact_R41_plus_R42_witness": true,
+    "ordered_environment_event_count": 26,
+    "ordered_item_count": 7,
+    "oldpage": "II28",
+    "balanced_braces": true,
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_and_korean_review": {
+    "result": "PASS_FINAL_DIRECT_BINDING",
+    "closed_subsets": "Y_1 and Y_2 are directly named as the two closed subsets of X.",
+    "union": "Their union Y_1 cup Y_2 is directly marked as the argument of the correspondence.",
+    "corresponding_ideal": "The corresponding ideal is exactly the intersection of j_+(Y_1) and j_+(Y_2).",
+    "arbitrary_family_intersection": "The following arbitrary-family intersection clause remains unchanged and exact.",
+    "all_assertions_quantifiers_inclusions_and_equivalences_preserved": true,
+    "active_register_preserved": "근기, 등급 아이디얼, 등급 소아이디얼, 멱영원, 폐포, 덮개",
+    "translator_note_inserted": false
+  },
+  "correction_task_delivery": {
+    "destination_thread_id": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "endpoint_proof_thread_id": "01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "delivered": true,
+    "classification": "final Korean wording refinement; no new French canon disposition requested"
+  },
+  "cumulative_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R39_R40_R41",
+    "reason": "No R42 cumulative hash is asserted in this candidate-only reseal. The root transaction will compute one ordered R39-to-R42 chain."
+  },
+  "release_privacy": {
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "final_v2_candidate_resealed",
+    "integration": "not_integrated",
+    "build_tex_git_network_ui_packaging_publication": "not_performed",
+    "historical_layers": "preserved_unchanged",
+    "shared_manifests_metadata_or_terminology_ledgers": "not_changed"
+  },
+  "next": "Compute one exact sequential cumulative rebase through corrected R39, unchanged R40 and R41, and this final R42 candidate; then integrate only in canonical order."
+}
+

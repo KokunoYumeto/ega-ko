@@ -1,0 +1,302 @@
+{
+  "schema": "agko-r42-homogeneous-ideal-wording-reseal-v1",
+  "time": "2026-09-06T01:43:17+02:00",
+  "scope": "EGA II canonical lines 1994-2093: exhaustive concept-typed normalization of graded ideal and graded prime ideal nouns in the still-unintegrated R42 Korean candidate",
+  "supersedes": {
+    "path": "controls/R42_TRANSLATION_CANDIDATE_RESEAL_V3_20260906.json",
+    "public_path": "evidence/controls/R42_TRANSLATION_CANDIDATE_RESEAL_V3_20260906.json",
+    "bytes": 8781,
+    "lf_lines": 178,
+    "sha256": "C505E153029C34A543E77290622D8DB31C492CCCFB97EF138A2FC5A3220E78D8",
+    "state": "preserved_unchanged_superseded_candidate_evidence",
+    "reason": "The v3 clause correction remains exact, but XW-KO-005 concept typing requires homogeneous terminology for ideal objects while reserving graded terminology for grading structures."
+  },
+  "historical_layers": [
+    {
+      "path": "controls/R42_TRANSLATION_ADMISSION.json",
+      "public_path": "evidence/controls/R42_TRANSLATION_ADMISSION.json",
+      "bytes": 11108,
+      "lf_lines": 235,
+      "sha256": "CB07739A307886BB9EA515D922C9B4A1B196C6AEE6FC7020E4E1ED3696B7D72F",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "controls/R42_TRANSLATION_CANDIDATE_RESEAL_20260906.json",
+      "public_path": "evidence/controls/R42_TRANSLATION_CANDIDATE_RESEAL_20260906.json",
+      "bytes": 7529,
+      "lf_lines": 148,
+      "sha256": "F983830AF0B59A847416A84F0D3897B9042F90D3001067ACEC56C315617E45C0",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "controls/R42_TRANSLATION_CANDIDATE_RESEAL_V2_20260906.json",
+      "public_path": "evidence/controls/R42_TRANSLATION_CANDIDATE_RESEAL_V2_20260906.json",
+      "bytes": 7839,
+      "lf_lines": 161,
+      "sha256": "E1830376C527C360422DE0CAE13430D782D72AF4F9002282E38FBBC6C15D794F",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r42_candidate.py",
+      "bytes": 20793,
+      "lf_lines": 455,
+      "sha256": "28D7BE81E278A9F8A5923F9B4E0287D78F945414C021F654C6F007AF3F086FDE",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r42_candidate_reseal.py",
+      "bytes": 14749,
+      "lf_lines": 305,
+      "sha256": "40DC4E7D6530C8E265F39B26F1FAEDEAEB522256E61FD326A7F1D0AF946747FB",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r42_candidate_reseal_v2.py",
+      "bytes": 17143,
+      "lf_lines": 346,
+      "sha256": "DBC3E67CD51F7EC76AD3B9A108BC1ACBC6C3A1CAEF514344E5FAD9BA877FC59A",
+      "state": "preserved_unchanged"
+    },
+    {
+      "path": "candidates/validate_r42_candidate_reseal_v3.py",
+      "bytes": 17979,
+      "lf_lines": 359,
+      "sha256": "E020FAD2677E4308FE98D69E9C515668F5220592EA152787BC2974B2793F547A",
+      "state": "preserved_unchanged"
+    }
+  ],
+  "authority": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "role_locator": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_characters": 809277,
+    "whole_lf_lines": 18087,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "unit_lines": "1994-2093",
+    "unit_bytes": 3981,
+    "unit_characters": 3913,
+    "unit_lf_lines": 100,
+    "unit_sha256": "E37A387DDF6748B588BF43ABA9CACF5B0A9D5A03EC180F3C79C4A1594EBB732A",
+    "boundaries": "line 1993 blank; line 1994 begins Corollary 2.3.8; line 2093 ends Corollary 2.3.14; line 2094 blank; line 2095 begins Corollary 2.3.15"
+  },
+  "canon_allocation": {
+    "path": "controls/EGA_CANON_QUEUE.json",
+    "role_locator": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+    "ega_ii_last_allocated": "EGA2-CANON-DISP-0041",
+    "ega_ii_next_available": "EGA2-CANON-DISP-0042",
+    "binding_rule": "Bind the EGA II source identity and allocation head, not a whole-queue snapshot; other-volume queue advances do not invalidate this reseal."
+  },
+  "english_semantic_witness": {
+    "path": "source/ega2/ega2-2.tex",
+    "role_locator": "[MAINTAINED_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+    "whole_bytes": 103751,
+    "whole_sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+    "slice_lines": "438-510",
+    "slice_bytes": 3899,
+    "slice_lf_lines": 73,
+    "slice_sha256": "53103313DB959C04574DFBEE778D30D4913ED781C2C1AAE7838DEA15F0E4058A",
+    "role": "independent maintained English semantic witness; canonical French remains authority"
+  },
+  "terminology_authority": {
+    "policy": "French idéal gradué and idéal premier gradué denote homogeneous ideal objects and map to Korean 동차 아이디얼 and 동차 소아이디얼; 등급 remains reserved here for the graded-ring structure.",
+    "crosswalk": {
+      "path": "controls/EGA_STACKS_KO_TERMINOLOGY_CROSSWALK_20260906.json",
+      "bytes": 35543,
+      "lf_lines": 379,
+      "sha256": "844FA08B97F5B8CF206925F443DD218B8378B30A2E376D2664F9F1DEF3572A26",
+      "mapping_id": "XW-KO-005",
+      "mapping": "homogeneous -> 동차 for graded element, ideal, or component",
+      "confidence": "high"
+    },
+    "ledger": {
+      "private_path": "terms.jsonl",
+      "public_path": "evidence/terms.jsonl",
+      "bytes": 263512,
+      "lf_lines": 172,
+      "sha256": "756644F578732E9A41770CB6EE86F3BD6C39331AAA0A39F84A06FCA4A054D250",
+      "records": [
+        "AGKO-T035 graded-ring/module structure -> 등급",
+        "AGKO-T159 homogeneous-prime spectrum context -> 동차"
+      ]
+    }
+  },
+  "source_ideal_inventory": {
+    "all_source_ideal_lines": [2007, 2015, 2016, 2023, 2035, 2042, 2051, 2066, 2080, 2092],
+    "typed_homogeneous_ideal_lines": [2007, 2015, 2016, 2023, 2042, 2051, 2066, 2080],
+    "generic_ideal_lines": [2035, 2092],
+    "exhaustive": true
+  },
+  "frozen_v3_candidate": {
+    "path": "candidates/r42-c2s1-continuation.tex",
+    "bytes": 4645,
+    "characters": 3177,
+    "lf_lines": 107,
+    "hangul_syllables": 734,
+    "sha256": "738F6826A8293EA316C84A59159E74D499C8F9C8B3C20C898D0BA75C68FEBC81",
+    "state": "preserved_unchanged_superseded"
+  },
+  "additive_candidate": {
+    "path": "candidates/r42-c2s1-continuation-homogeneous-reseal.tex",
+    "role_locator": "[WORKING_TRANSLATION_ROOT]/candidates/r42-c2s1-continuation-homogeneous-reseal.tex",
+    "bytes": 4645,
+    "characters": 3177,
+    "lf_lines": 107,
+    "hangul_syllables": 734,
+    "sha256": "3B74054B6D22D99A0BC15DD5DB5E8A4ED3D2EF711B424A8512B9DFE8A75C8B41",
+    "separator_plus_candidate_bytes": 4646,
+    "separator_plus_candidate_lf_lines": 108,
+    "separator_plus_candidate_sha256": "12CB761EF23E8D867C00E1693FA27273AA9C72135EF95E427305F11E45DF9CF1",
+    "integration": "prospective_only_not_integrated"
+  },
+  "exact_changes": [
+    {
+      "candidate_line": 14,
+      "source_line": 2007,
+      "source_type": "idéal gradué",
+      "before": "$S$의 등급 아이디얼이고 $E$로 생성된다면, 조건 a)는",
+      "after": "$S$의 동차 아이디얼이고 $E$로 생성된다면, 조건 a)는"
+    },
+    {
+      "candidate_line": 23,
+      "source_line": 2015,
+      "source_type": "idéal gradué",
+      "before": "$\\mathfrak{J}$가 $S_+$의 등급 아이디얼이면,",
+      "after": "$\\mathfrak{J}$가 $S_+$의 동차 아이디얼이면,"
+    },
+    {
+      "candidate_line": 24,
+      "source_line": 2016,
+      "source_type": "idéaux premiers gradués",
+      "before": "$r_+(\\mathfrak{J})$는 $S_+$의 등급 소아이디얼들 가운데",
+      "after": "$r_+(\\mathfrak{J})$는 $S_+$의 동차 소아이디얼들 가운데"
+    },
+    {
+      "candidate_line": 30,
+      "source_line": 2023,
+      "source_type": "idéal premier gradué",
+      "before": "있다. $f\\in S_+$가 멱영원이 아니면 $S$의 등급 소아이디얼 가운데",
+      "after": "있다. $f\\in S_+$가 멱영원이 아니면 $S$의 동차 소아이디얼 가운데"
+    },
+    {
+      "candidate_line": 53,
+      "source_line": 2042,
+      "source_type": "idéal gradué",
+      "before": "    등급 아이디얼의 근기이다.",
+      "after": "    동차 아이디얼의 근기이다."
+    },
+    {
+      "candidate_line": 62,
+      "source_line": 2051,
+      "source_type": "idéal gradué",
+      "before": "  \\item[\\rm(i)] $\\mathfrak{J}$가 $S_+$의 등급 아이디얼이고 $E$로",
+      "after": "  \\item[\\rm(i)] $\\mathfrak{J}$가 $S_+$의 동차 아이디얼이고 $E$로"
+    },
+    {
+      "candidate_line": 78,
+      "source_line": 2066,
+      "source_type": "idéaux gradués",
+      "before": "전체와 $S_+$의 등급 아이디얼 가운데 $S_+$에서 취한 자신의 근기와 같은",
+      "after": "전체와 $S_+$의 동차 아이디얼 가운데 $S_+$에서 취한 자신의 근기와 같은"
+    },
+    {
+      "candidate_line": 92,
+      "source_line": 2080,
+      "source_type": "idéal gradué",
+      "before": "$\\mathfrak{J}$를 $S_+$의 등급 아이디얼이라 하자.",
+      "after": "$\\mathfrak{J}$를 $S_+$의 동차 아이디얼이라 하자."
+    }
+  ],
+  "deliberately_unchanged": [
+    {
+      "candidate_line": 29,
+      "source_line": 2021,
+      "source": "anneau gradué",
+      "target": "등급환",
+      "reason": "graded ring is a grading structure, not a homogeneous ideal object"
+    },
+    {
+      "candidate_line": 43,
+      "source_line": 2035,
+      "source": "un idéal",
+      "target": "아이디얼",
+      "reason": "generic ideal has no gradué modifier"
+    },
+    {
+      "candidate_line": 106,
+      "source_line": 2092,
+      "source": "l'idéal engendré",
+      "target": "생성하는 아이디얼",
+      "reason": "generic generated ideal has no gradué modifier"
+    }
+  ],
+  "validation": {
+    "validator": "candidates/validate_r42_homogeneous_ideal_reseal.py",
+    "validator_bytes": 23105,
+    "validator_characters": 22069,
+    "validator_lf_lines": 464,
+    "validator_sha256": "A6B4F0A03F8B4E33D5151D1FD94251FEEC92C6B402AFA9BEC93ACF91A979434A",
+    "normal_positive_exit": 0,
+    "optimized_positive_exit": 0,
+    "negative_cases": [
+      "wrong typed-ideal wording",
+      "wrong formula",
+      "wrong structure",
+      "wrong old-v3 witness",
+      "wrong canonical source",
+      "wrong maintained-English witness"
+    ],
+    "normal_negative_exits": [1, 1, 1, 1, 1, 1],
+    "optimized_negative_exits": [1, 1, 1, 1, 1, 1],
+    "result": "PASS_R42_HOMOGENEOUS_IDEAL_RESEAL_SOURCE_FORMULA_STRUCTURE_REGISTER"
+  },
+  "formula_and_structure": {
+    "source_inline_formula_occurrences": 77,
+    "target_inline_formula_occurrences": 77,
+    "v3_formula_sequence_preserved_exactly": true,
+    "target_only_formula_occurrences": 0,
+    "clause_2_3_12_formula_multiset_exact": true,
+    "controlled_clause_local_transposition": ["X", "Y_1\\cup Y_2"],
+    "all_other_formula_occurrences_identity_and_order_exact": true,
+    "source_display_count": 0,
+    "target_display_count": 0,
+    "clause_partition_count": 8,
+    "clause_partition_contiguous_and_exhaustive": true,
+    "label_count": 7,
+    "ordered_reference_count": 3,
+    "ordered_environment_event_count": 26,
+    "ordered_item_count": 7,
+    "oldpage": "II28",
+    "balanced_braces": true,
+    "utf8_bom_cr_replacement_characters": "0/0/0"
+  },
+  "semantic_and_register_review": {
+    "result": "PASS_EXHAUSTIVE_TYPED_IDEAL_NORMALIZATION",
+    "homogeneous_ideal_occurrences": 6,
+    "homogeneous_prime_ideal_occurrences": 2,
+    "graded_ring_occurrences": 1,
+    "generic_ideal_occurrences": 2,
+    "v3_natural_closed_subset_union_clause_preserved": true,
+    "all_assertions_quantifiers_inclusions_equivalences_and_power_scopes_preserved": true,
+    "translator_note_inserted": false
+  },
+  "cumulative_prospective": {
+    "status": "pending_sequential_rebase_after_corrected_R39_R40_R41",
+    "reason": "No cumulative R42 hash is asserted here; the ordered chain transaction must consume this additive candidate instead of the superseded v3 candidate."
+  },
+  "release_privacy": {
+    "private_public_control_exact": true,
+    "public_control_contains_absolute_windows_paths": false,
+    "public_control_contains_user_profile_path": false,
+    "public_control_contains_personal_name": false,
+    "public_control_contains_credentials": false,
+    "locators": "role-relative or repository-relative only"
+  },
+  "state": {
+    "translation": "additive_homogeneous_ideal_candidate_resealed_and_frozen",
+    "integration": "not_integrated",
+    "build_tex_git_network_ui_packaging_publication": "not_performed",
+    "historical_layers": "preserved_unchanged",
+    "shared_manifests_metadata_aliases_or_terminology_ledgers": "not_changed"
+  },
+  "next": "The ordered R39-R43 chain transaction must use candidates/r42-c2s1-continuation-homogeneous-reseal.tex for R42 and leave the historical v3 candidate and evidence unchanged."
+}

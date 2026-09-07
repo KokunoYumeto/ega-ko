@@ -1,0 +1,39 @@
+{
+  "schema": "agko-stacks-terminology-coordination-v1",
+  "dispatch_id": "AGKO-R47-STACKS-KO-TERMS-001",
+  "dispatched_at": "2026-09-06T23:42:55+02:00",
+  "destination_task": "01a0256d-5693-77c1-96b2-cf37101e0c6c",
+  "destination_result": {
+    "thread_id": "01a0256d-5693-77c1-96b2-cf37101e0c6c",
+    "accepted_by_send_message_to_thread": true
+  },
+  "scope": "Read-only, non-overriding comparison of the exact prospective EGA II R47 Korean terminology against the current hash-bound Korean Stacks register.",
+  "r47_candidate": {
+    "path": "candidates/r47-c2s1-continuation.tex",
+    "bytes": 3887,
+    "sha256": "7908CB9BBFDDA07E0F8A555C872E5E841735AE06DD00D77389C00FF39AE2D1C0",
+    "canonical_french_lines": "2479-2566",
+    "integration": false
+  },
+  "r47_control": {
+    "path": "controls/R47_TRANSLATION_ADMISSION.json",
+    "bytes": 11534,
+    "sha256": "6559DF92E0449DBE552AAE4AB909EB9B0E5E51A1909306CAF20F7F01085CCFD8"
+  },
+  "terms_requested": [
+    {"source": "essentiellement intègre / essentially integral", "ko": "본질적으로 정역"},
+    {"source": "intègre / integral scheme", "ko": "정역 스킴"},
+    {"source": "corps des fonctions rationnelles / field of rational functions", "ko": "유리함수체"},
+    {"source": "point générique / generic point", "ko": "일반점"},
+    {"source": "élément homogène / homogeneous element", "ko": "동차 원소"},
+    {"source": "module inversible / invertible module", "ko": "가역 가군"},
+    {"source": "foncteur exact / exact functor", "ko": "완전한 함자 / 함자가 완전하다"}
+  ],
+  "constraints": [
+    "No mutation of either corpus was authorized or performed.",
+    "Only material conflicts or a compact exact-evidence crosswalk were requested.",
+    "Absence of external evidence is not a release or translation hold.",
+    "Korean EGA translation ownership remains in this task."
+  ],
+  "status": "DISPATCHED_RESPONSE_PENDING_NONBLOCKING"
+}

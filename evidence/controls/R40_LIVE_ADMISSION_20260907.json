@@ -1,0 +1,69 @@
+{
+  "schema": "agko-r40-live-admission-v1",
+  "recorded_at_utc": "2026-09-07T03:35:00Z",
+  "scope": "Prospective Korean EGA II unit only; no target integration, build, publication, or source mutation occurred in this admission check.",
+  "canonical_source": {
+    "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+    "lines": "1782-1889",
+    "bytes": 4143,
+    "characters": 4062,
+    "lf_lines": 108,
+    "sha256": "812FA8DAF0F5852602849D172B9182E2CBA6837810088662FA1FE157292704BB",
+    "whole_bytes": 820504,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E"
+  },
+  "candidate": {
+    "path": "candidates/r40-c2s1-continuation-homogeneous-reseal.tex",
+    "bytes": 4829,
+    "characters": 3237,
+    "lf_lines": 114,
+    "hangul_syllables": 796,
+    "sha256": "5E58F20F745B021AA8E9412917358A8AB690156C48BA19E575836F94124C10C7",
+    "historical_superseded_candidate": {
+      "path": "candidates/r40-c2s1-continuation.tex",
+      "bytes": 4829,
+      "sha256": "4E3A5FDEFF4DE67EA548232F8A589AFF06023916DB838440A594E9D1FAA3E5AD"
+    }
+  },
+  "terminology_reseal": {
+    "control": "controls/R40_HOMOGENEOUS_IDEAL_WORDING_RESEAL_20260906.json",
+    "control_bytes": 10581,
+    "control_sha256": "04B5753A6FA247EFC1DDC9B83D31C4C851682D3D344E1B2E50D5FF10E7F65E78",
+    "ideal_noun_changes": 7,
+    "grading_structure_uses_preserved": 4,
+    "changed_candidate_lines": [19, 33, 34, 42, 64, 65, 86],
+    "formula_source_inline": 80,
+    "formula_target_inline": 81,
+    "authorized_extra": "m+rd\\geq n",
+    "display_count": 7,
+    "labels_and_references_order_exact": true
+  },
+  "current_preimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 84274,
+    "characters": 58678,
+    "lf_lines": 1809,
+    "sha256": "59D07958D5CE1765F4901202CE97B3AC6257F6DC6C0D114C37B314C6A6EB1943",
+    "private_public_byte_identical": true
+  },
+  "prospective_target": {
+    "method": "exact current preimage + one LF + resealed candidate",
+    "bytes": 89104,
+    "characters": 61916,
+    "lf_lines": 1924,
+    "sha256": "E6ACDF633E94752149454AE263D8EC79FA771D1BC5E930CC3C94CAAF8967294C",
+    "integrated_now": false,
+    "next_source_line": 1891
+  },
+  "validator": {
+    "adapter": "candidates/validate_r40_homogeneous_ideal_reseal_live.py",
+    "adapter_bytes": 1738,
+    "adapter_sha256": "818F7E6CCBA00067EB832F978A232D3998D3EAD3C6D9E82B6856F7A9B5DC66B5",
+    "frozen_validator": "candidates/validate_r40_homogeneous_ideal_reseal.py",
+    "frozen_validator_bytes": 23198,
+    "frozen_validator_sha256": "855FC95A65EF15B2B060B2867ECF20ABA5FE77D314BC1C6F6E39D7C4C7F76A71",
+    "result": "PASS_R40_HOMOGENEOUS_IDEAL_WORDING_RESEAL_PROSPECTIVE_ONLY"
+  },
+  "result": "PASS_R40_LIVE_ADMISSION_PROSPECTIVE_ONLY"
+}
