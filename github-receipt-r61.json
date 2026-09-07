@@ -1,0 +1,43 @@
+{
+  "schema": "agko-r61-github-publication-receipt-v1",
+  "verified_at_utc": "2026-09-07T17:54:27.553117+00:00",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "artifact_parent_commit": "0f29557e0e389e17dbe68d4cd627301a7e014393",
+  "artifact_tree": "bb94c70e689650af0c0afdfad4104376c84de368",
+  "artifact_commit": "f753144dff7dd90a6b7ecba83f3dde6c784d7b8c",
+  "annotated_tag": "ega-ko-2026-09-07-r61",
+  "annotated_tag_object": "409614d5f8d7a48b8c338f12974e0fbaa573be49",
+  "release_id": 384246996,
+  "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-07-r61",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1618555,
+      "sha256": "ED7DE0C7330DD035CA7389B6435C9C7AB16A815237C0750CD241A235DF80DEC6",
+      "anonymous_download_url": "https://github.com/KokunoYumeto/ega-ko/releases/download/ega-ko-2026-09-07-r61/00_EGA_ko_CUMULATIVE_READER.pdf"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 640633,
+      "sha256": "05A45B3370720347281DE45D0D42A79B12FEEDD2A3C2038BC015A0E0E2E9F58A",
+      "anonymous_download_url": "https://github.com/KokunoYumeto/ega-ko/releases/download/ega-ko-2026-09-07-r61/01_EGA_ko_EDITABLE_SOURCES.zip"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 146932310,
+      "sha256": "975B0169D19E65156E62829D7DD1D0E02BB03014135B4DD07D03FEDE0ED33F7B",
+      "anonymous_download_url": "https://github.com/KokunoYumeto/ega-ko/releases/download/ega-ko-2026-09-07-r61/02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "68B016AC9161C01600EBB4108F8BD4A7D4AFFC9978CF8EC581A023D2E8FFF3C7",
+      "anonymous_download_url": "https://github.com/KokunoYumeto/ega-ko/releases/download/ega-ko-2026-09-07-r61/03_EGA_ko_SHA256_MANIFEST.txt"
+    }
+  ],
+  "remote_main_matches_artifact_commit_at_release": true,
+  "anonymous_public_inventory_and_four_asset_byte_readback": true,
+  "result": "PASS_R61_GITHUB_PUBLIC_AND_ANONYMOUS_FOUR_ASSET_READBACK"
+}

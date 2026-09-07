@@ -1,0 +1,113 @@
+{
+  "schema": "agko-r61-public-closure-v1",
+  "verified_at_utc": "2026-09-07T17:54:27.553117+00:00",
+  "version": "2026-09-07-r61",
+  "coverage": {
+    "included": "Complete Korean EGA 0_I and EGA I; complete EGA II Chapter II programme/table of contents; contiguous EGA II main text through complete Section 2 / proof 2.9.5 / canonical lines1-4040.",
+    "next": "Canonical line4041 is blank; line4042 begins Section 3.",
+    "ega_ii_complete": false,
+    "corpus_complete": false,
+    "historical_page_markers": 253
+  },
+  "reader": {
+    "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 264,
+    "bytes": 1618555,
+    "sha256": "ED7DE0C7330DD035CA7389B6435C9C7AB16A815237C0750CD241A235DF80DEC6"
+  },
+  "cumulative_ega_ii_target": {
+    "path": "source/c2s1.tex",
+    "bytes": 181163,
+    "lf_lines": 4138,
+    "sha256": "893C8E4D68134E0F03479D760F916AADD2DA4687CFF8E04DAA300C355023EF9D"
+  },
+  "workflow": {
+    "translation_units": "R49-R61",
+    "integration_batches": 1,
+    "tex_convergence_builds": 1,
+    "aggregate_reader_qa_passes": 1,
+    "small_section_qa_loops": 0,
+    "integration_control": {
+      "path": "evidence/controls/R49_R61_SINGLE_BATCH_INTEGRATION_20260907.json",
+      "bytes": 6852,
+      "sha256": "AA04BFF9A595741CBA2F57399E3F87EE4BA1C73603A3BD35F1CBBBF016251BC1"
+    },
+    "source_reconciliation_control": {
+      "path": "evidence/controls/R61_EGA1_D68_SOURCE_RECONCILIATION.json",
+      "bytes": 2904,
+      "sha256": "654E53295DF4E75B594D7F83149EFC6164867FC8D42B0C2FEB0B297C6E92008A"
+    },
+    "aggregate_qa_control": {
+      "path": "evidence/controls/R61_SINGLE_AGGREGATE_PDF_QA_20260907.json",
+      "bytes": 15054,
+      "sha256": "483EEC0A0191E9354DBBB179F6BC5C9DC7CC5917B5321B4A83DBFC143E86A025",
+      "result": "PASS_R61_SINGLE_AGGREGATE_PDF_QA"
+    },
+    "package_receipt": {
+      "path": "release/2026-09-07-r61/PACKAGE_RECEIPT.json",
+      "bytes": 3252,
+      "sha256": "B751882B1DC8CDFBE4A3EB9674BC4DF8AA16FD0C8E4546876B55E0D1AF1EBDFF",
+      "result": "PASS_R61_LOCAL_PACKAGE_SINGLE_BUILD_SINGLE_AGGREGATE_QA"
+    }
+  },
+  "public_assets": [
+    {
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 1618555,
+      "sha256": "ED7DE0C7330DD035CA7389B6435C9C7AB16A815237C0750CD241A235DF80DEC6"
+    },
+    {
+      "name": "01_EGA_ko_EDITABLE_SOURCES.zip",
+      "bytes": 640633,
+      "sha256": "05A45B3370720347281DE45D0D42A79B12FEEDD2A3C2038BC015A0E0E2E9F58A"
+    },
+    {
+      "name": "02_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 146932310,
+      "sha256": "975B0169D19E65156E62829D7DD1D0E02BB03014135B4DD07D03FEDE0ED33F7B"
+    },
+    {
+      "name": "03_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 343,
+      "sha256": "68B016AC9161C01600EBB4108F8BD4A7D4AFFC9978CF8EC581A023D2E8FFF3C7"
+    }
+  ],
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "artifact_parent_commit": "0f29557e0e389e17dbe68d4cd627301a7e014393",
+    "artifact_tree": "bb94c70e689650af0c0afdfad4104376c84de368",
+    "artifact_commit": "f753144dff7dd90a6b7ecba83f3dde6c784d7b8c",
+    "tag": "ega-ko-2026-09-07-r61",
+    "tag_object": "409614d5f8d7a48b8c338f12974e0fbaa573be49",
+    "release_id": 384246996,
+    "release_url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-07-r61",
+    "draft": false,
+    "prerelease": false,
+    "receipt": {
+      "path": "github-receipt-r61.json",
+      "bytes": 2126,
+      "sha256": "C2A005CCB80F6E3661C09F0220E52C835C95039EA2256CD4FD27F7525CC5A332"
+    },
+    "remote_main_matched_artifact_commit_at_release": true,
+    "anonymous_inventory_and_four_asset_byte_readback": "PASS"
+  },
+  "zenodo": {
+    "record_id": 22647516,
+    "record_url": "https://zenodo.org/records/22647516",
+    "exact_doi": "10.5281/zenodo.22647516",
+    "exact_doi_url": "https://doi.org/10.5281/zenodo.22647516",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+    "access_right": "open",
+    "description_characters": 4594,
+    "pdf_uploaded_first_for_preview": true,
+    "receipt": {
+      "path": "receipt-r61.json",
+      "bytes": 2177,
+      "sha256": "7C6F4C8476810BEEE8913A0640C46836FE40F4BC70EFB7B5F3FE2FBA0864E348"
+    },
+    "publish_post_count": 1,
+    "anonymous_inventory_and_four_asset_byte_readback": "PASS"
+  },
+  "result": "PASS_R61_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_FOUR_ASSET_READBACK"
+}
