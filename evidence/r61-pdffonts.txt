@@ -1,0 +1,38 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+BWHFSZ+MalgunGothic                  CID TrueType      Identity-H       yes yes yes      5  0
+WDEJHS+MalgunGothicBold              CID TrueType      Identity-H       yes yes yes      7  0
+PDYJPL+MalgunGothic                  CID TrueType      Identity-H       yes yes yes      9  0
+OUCGJB+LMMono10-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     15  0
+PYCPMN+CMR10                         Type 1C           Builtin          yes yes yes     17  0
+GCHUQP+CMMI10                        Type 1C           Builtin          yes yes yes     35  0
+WPSOYV+CMMI7                         Type 1C           Builtin          yes yes yes     36  0
+WENPTB+CMSY10                        Type 1C           Builtin          yes yes no      52  0
+KDPYFW+EUFM10                        Type 1C           Builtin          yes yes yes    104  0
+AIEKBX+CMSY7                         Type 1C           Builtin          yes yes yes    207  0
+GPOCEX+CMR7                          Type 1C           Builtin          yes yes yes    221  0
+EMJDLP+EUFM7                         Type 1C           Builtin          yes yes yes    228  0
+ACEAWA+CMMI5                         Type 1C           Builtin          yes yes yes    229  0
+NFFUVM+CMSY5                         Type 1C           Builtin          yes yes yes    230  0
+JFXXWE+MSBM10                        Type 1C           Builtin          yes yes no     234  0
+SPTBDJ+CMR5                          Type 1C           Builtin          yes yes yes    235  0
+ESRITT+CMEX10                        Type 1C           Builtin          yes yes no     242  0
+FDAUFE+CMMI12                        Type 1C           Builtin          yes yes yes    252  0
+DDIBXX+CMMI8                         Type 1C           Builtin          yes yes yes    253  0
+TWBZNC+EUFM5                         Type 1C           Builtin          yes yes yes    257  0
+BVXDRA+MSAM10                        Type 1C           Builtin          yes yes yes    264  0
+APOCYK+CMSY8                         Type 1C           Builtin          yes yes no     274  0
+YDINPM+CMR8                          Type 1C           Builtin          yes yes yes    275  0
+LJUKEG+CMSY6                         Type 1C           Builtin          yes yes yes    284  0
+NUVKYK+CMMI6                         Type 1C           Builtin          yes yes yes    285  0
+WABDQH+CMEX8                         Type 1C           Builtin          yes yes yes    286  0
+GJMSTY+MSBM7                         Type 1C           Builtin          yes yes yes    364  0
+JNUGTK+CMEX7                         Type 1C           Builtin          yes yes no     419  0
+CFGBBP+rsfs10                        Type 1C           Builtin          yes yes yes    513  0
+COMIEF+XYATIP-Medium                 Type 1C           Builtin          yes yes no     518  0
+MFUSOR+XYBTIP-Medium                 Type 1C           Builtin          yes yes no     519  0
+DPVBYQ+XYDASH-Medium                 Type 1C           Builtin          yes yes no     573  0
+NTUALU+rsfs7                         Type 1C           Builtin          yes yes yes    868  0
+ZKSMGL+MalgunGothicBold              CID TrueType      Identity-H       yes yes yes   1149  0
+UGAXBZ+CMR6                          Type 1C           Builtin          yes yes yes   1579  0
+FYZRWA+CMR12                         Type 1C           Builtin          yes yes yes   2473  0

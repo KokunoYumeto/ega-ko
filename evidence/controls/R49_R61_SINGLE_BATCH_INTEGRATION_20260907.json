@@ -1,0 +1,75 @@
+{
+  "schema": "agko-r49-r61-single-batch-integration-v1",
+  "recorded_at": "2026-09-07T18:59:16+02:00",
+  "scope": "One contiguous Korean EGA II translation admission and integration transaction from Proposition2.5.13 through the end of section2 / proof2.9.5; no per-unit build, render, publication, or QA loop.",
+  "canonical_source": {
+    "path": "source/ega2/ega2-1-fr.tex",
+    "whole_bytes": 820504,
+    "whole_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+    "admitted_prefix_lines": "1-4040",
+    "admitted_prefix_bytes": 173428,
+    "admitted_prefix_sha256": "E6911F259382EBEFA590F25970FD3F47297E1EC78D8C4703AD1627DA0BA4C720",
+    "next": "line4041 blank; line4042 begins section3"
+  },
+  "preimage": {
+    "bytes": 124497,
+    "lf_lines": 2752,
+    "sha256": "6DE19B9A783DD17AFEE9C5DA36F29CB6A9F63C57768A4727281B7642C2914C03",
+    "reconstructed_exact_after_header_reversal": true
+  },
+  "units": [
+    {"unit":"R49","source_lines":"2696-2791","source_bytes":3689,"source_sha256":"E9165D765107DC23F73D597DE2B8CB9DDEF80FE4B8AA8F3AEA6DB4A10ECC08A6","candidate_bytes":3937,"candidate_sha256":"62D9310B849BC0B541DBE26E07A12CD7CF639E657616C93B6D0213DA74F6A3CF"},
+    {"unit":"R50","source_lines":"2793-2907","source_bytes":4231,"source_sha256":"10E170F4F953C3E9B7F1D50F316E6F64E697E384F124E1547A81AB24036968F3","candidate_bytes":4441,"candidate_sha256":"F3688F48AA08700629FB7F7376A20E729AF7539E6CA0CC931246F4DDD297F66C"},
+    {"unit":"R51","source_lines":"2909-3000","source_bytes":3382,"source_sha256":"83D616C3DFE8BC29FC72BEBF0086A1A2E8A66EEA381EE29824BAA1E0394A421D","candidate_bytes":3461,"candidate_sha256":"5BF505CB83DDD0284AFB4012AFDA642A01EC30DE1F297C6BA9EDE735063B2E71"},
+    {"unit":"R52","source_lines":"3002-3109","source_bytes":4634,"source_sha256":"5E214493BB1E382045E9F245542DC4D05FACA112C22A6604A9A3CCC86C498033","candidate_bytes":4982,"candidate_sha256":"B92D1398B9ADCBE9FE69AAC56D821BBE7DE9D50686F9BA1583CB9AD0A5EF6C94"},
+    {"unit":"R53","source_lines":"3111-3211","source_bytes":4869,"source_sha256":"E61CCB881B248526272528F5BD07B31076AE682A4AEB526391B1584DB8DDB947","candidate_bytes":5016,"candidate_sha256":"11FA2DB9E165366D52CB9071ACCBBBCEFA73324DEE2F8E79EAF77886B2DF4C04"},
+    {"unit":"R54","source_lines":"3213-3329","source_bytes":5428,"source_sha256":"786075A27DB702BDBAE2A38A86A34FB644843C72F2CBAD3CA0BB85CDC25C517A","candidate_bytes":5687,"candidate_sha256":"0B08180EAE287D7FBB0D586B412F1EF88FB116034A8E764416DFAAA06D63D53A"},
+    {"unit":"R55","source_lines":"3331-3435","source_bytes":4744,"source_sha256":"0B3690E05EA1728EE25A92239C5041D0FCEA6D9A9EBCEFF3CB3AF05D55DAF228","candidate_bytes":4932,"candidate_sha256":"57B1AAC43B5B0FD5A45564F76BC211E724DB163C2E0389D62A3D739135F0E2F2"},
+    {"unit":"R56","source_lines":"3437-3539","source_bytes":3975,"source_sha256":"BEF72BC80737BA8B6D1491FB89FBA8C4F6B47E7E8D33688D02515D1EE51467AF","candidate_bytes":4095,"candidate_sha256":"6FA2E278B819A78838B459D185A0DCF1CDE53857600F2B2EA084E25416D074B4"},
+    {"unit":"R57","source_lines":"3541-3670","source_bytes":5192,"source_sha256":"81861E91F162E721C1667D3969DD6C3DAC7B8B3A61CFD2FA5BC05054917F4B7B","candidate_bytes":5322,"candidate_sha256":"F8C728513A7E32C5588C335F7725E54F7725AE935DDFEA339A33231C854867BD"},
+    {"unit":"R58","source_lines":"3672-3752","source_bytes":3015,"source_sha256":"5413F7DBA164D1251C66A7DF35D5B56548117CEEA7CD42615337DA9546480C81","candidate_bytes":3211,"candidate_sha256":"A286DF05912FD00D4E3BE2CDA2FA02A735E6EF85907B3E3501C6671A8357774E"},
+    {"unit":"R59","source_lines":"3754-3816","source_bytes":1920,"source_sha256":"9D35437CE7D5DF8B234F15A3D0156BCB1D7BD734649AE13EA755465094720C8C","candidate_bytes":1995,"candidate_sha256":"EFA145E9E6B26D5C56AEAA023D44E5DFBEB1E8F2BB67DABBFCD7CF533EC107DE"},
+    {"unit":"R60","source_lines":"3818-3906","source_bytes":3199,"source_sha256":"F15ED6DECA69DD6CE9BC6F980067727DA225A7997558875AE90E1B09F79550B4","candidate_bytes":3212,"candidate_sha256":"30FDE2E19298971D86DD33BD49947062C218A246363C7B53FAFF273A10D152BD"},
+    {"unit":"R61","source_lines":"3908-4040","source_bytes":6191,"source_sha256":"782061D0D876ECA1A9872635714A061405CD0F67052BA9124144207BB79EE7A6","candidate_bytes":6362,"candidate_sha256":"800AE913BC286F65E7B506BA4D16D86C74116DEA21B6952BA0852EAF6D58B412"}
+  ],
+  "seams": "Every omitted source line between units is blank. Historical marker II|47 is included explicitly at the start of R60; no nonblank source byte is omitted.",
+  "editorial_admission": {
+    "mode": "one continuous batch-level review",
+    "repairs_before_postimage_seal": [
+      "finite type of an algebra normalized to 유한형 while finite generation of a module remains 유한 생성",
+      "di-homomorphism normalized to the locked Korean term 쌍준동형",
+      "positive-degree grading normalized to the established corpus wording 음이 아닌 차수로 등급이 주어진",
+      "source emphasis and display-terminal punctuation restored",
+      "the untranslated forward reference II.3.1.7 represented by agref fallback without fabricating a destination",
+      "the 2.9.3 proof reference order restored to the source order"
+    ],
+    "structure": "environment, label, reference, tag, historical-marker, item and diagram sequences exact after fr-to-ko destination mapping; 55 displayed formula blocks exact after punctuation restoration",
+    "accepted_canonical_delta": "EGA2-CANON-DISP-0002 at2.6.4 is explicit and reversible in one translation note",
+    "new_source_question": "Possible missing nonnegativity condition on the integer tuple in2.7.3 proof / canonical lines3203-3204; preserved without silent emendation and dispatched as a question to correction task01a047ab-fc94-7120-af1d-5701ba37aacd",
+    "test_harness_note": "The single aggregate admission was resumed rather than restarted after correcting one reference-order mismatch; a literal hyperref #1 macro placeholder was excluded from missing-destination accounting."
+  },
+  "postimage": {
+    "private_path": "ega/II/c2s1.tex",
+    "public_path": "pub/ega-ko/source/c2s1.tex",
+    "bytes": 181163,
+    "characters": 128753,
+    "lf_lines": 4138,
+    "sha256": "893C8E4D68134E0F03479D760F916AADD2DA4687CFF8E04DAA300C355023EF9D",
+    "private_public_exact": true,
+    "historical_page_markers": 44,
+    "terminal_environment": "proof2.9.5 / complete section2"
+  },
+  "release_binding": {
+    "version": "2026-09-07-r61",
+    "zenodo_record_id": 22647516,
+    "exact_doi": "10.5281/zenodo.22647516",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "state": "reserved_unpublished_before_single_build"
+  },
+  "workflow": {
+    "per_small_section_qa_loops": 0,
+    "repeated_qa_loops": 0,
+    "next": "one mutex-held cumulative convergence build followed by one aggregate whole-reader QA"
+  },
+  "result": "PASS_R49_R61_SINGLE_BATCH_INTEGRATION"
+}

@@ -1,0 +1,460 @@
+{
+  "schema": "agko-r61-single-aggregate-pdf-qa-v1",
+  "recorded_at_utc": "2026-09-07T17:27:57.132559+00:00",
+  "scope": "One whole-reader QA after one substantial R49-R61 integration and one mutex-held cumulative convergence build; no per-unit QA and no repeated whole-reader QA loop.",
+  "reader": {
+    "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "bytes": 1618555,
+    "sha256": "ED7DE0C7330DD035CA7389B6435C9C7AB16A815237C0750CD241A235DF80DEC6",
+    "pages": 264,
+    "a4_pages": 264,
+    "encrypted": false,
+    "pdf_version": "1.7",
+    "pass3_and_final_byte_identical": true
+  },
+  "source_and_manifest": {
+    "manifest": {
+      "path": "pub/ega-ko/source/CUMULATIVE_INPUTS.json",
+      "bytes": 16359,
+      "sha256": "40CC8BCCC456D7BF2B97551DDF12AA9FC1268319FF1BFCCB423D171C705FB060"
+    },
+    "declared_inputs": 17,
+    "labels": 1204,
+    "hyperreferences": 1647,
+    "missing_hyperreference_targets": 0,
+    "historical_page_markers": 253,
+    "frontier": "ega2-1-fr.tex lines 1-4040 through complete section 2 / proof 2.9.5",
+    "next": "line 4041 blank; line 4042 begins Section 3",
+    "target": {
+      "path": "pub/ega-ko/source/c2s1.tex",
+      "bytes": 181163,
+      "sha256": "893C8E4D68134E0F03479D760F916AADD2DA4687CFF8E04DAA300C355023EF9D",
+      "lf_lines": 4138,
+      "private_public_exact": true,
+      "manifest_row": {
+        "driver_line": 84,
+        "source_path": "ega2/ega2-1-fr.tex",
+        "source_bytes": 820504,
+        "source_lf_lines": 18087,
+        "source_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+        "target_path": "c2s1.tex",
+        "working_path": "ega/II/c2s1.tex",
+        "target_bytes": 181163,
+        "target_lf_lines": 4138,
+        "target_sha256": "893C8E4D68134E0F03479D760F916AADD2DA4687CFF8E04DAA300C355023EF9D",
+        "historical_page_markers": 44,
+        "status": "partial",
+        "coverage": "canonical lines1-4040 of18087 through complete section2 /2.9.5; next executable line4042 section3",
+        "admitted_source_slice": {
+          "lines": "1-4040",
+          "lf_bytes": 173428,
+          "sha256": "E6911F259382EBEFA590F25970FD3F47297E1EC78D8C4703AD1627DA0BA4C720"
+        }
+      }
+    },
+    "ega1_d68_source_reconciliation": {
+      "path": "controls/R61_EGA1_D68_SOURCE_RECONCILIATION.json",
+      "bytes": 2904,
+      "sha256": "654E53295DF4E75B594D7F83149EFC6164867FC8D42B0C2FEB0B297C6E92008A"
+    }
+  },
+  "build_log": {
+    "path": "pub/ega-ko/evidence/build-r61.log",
+    "bytes": 54734,
+    "sha256": "A0642CD040493C3FC43C02622232F083340246E9E15D9C13C4D3332437B1D81E",
+    "sanitized_public_projection": true,
+    "profile_path_replacements": 150,
+    "private_original_bytes": 54884,
+    "private_original_sha256": "04011093A9567E473B19D6502BBACBC6732B0FD2E275BB8AB1CB7C412140F850",
+    "fatal_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references": 0,
+    "rerun_requests": 0,
+    "missing_characters": 0,
+    "overfull_or_underfull_boxes": 0,
+    "multiply_defined_labels": 0
+  },
+  "extraction": {
+    "pypdf": {
+      "path": "pub/ega-ko/evidence/r61-extract-pypdf.txt",
+      "bytes": 773762,
+      "sha256": "33A238558533298A2FBD8FE67DC3B27DF254E51A6B9FCE78A1BFD2BC0BA686EF"
+    },
+    "poppler": {
+      "path": "pub/ega-ko/evidence/r61-extract-poppler.txt",
+      "bytes": 954592,
+      "sha256": "5AAF7E2E9749AE0553C874D1332083B84D501130A1AF99A56635CF7DB4471A2F"
+    },
+    "pypdf_hangul_syllables": 167356,
+    "poppler_hangul_syllables": 167356,
+    "combined_hangul_syllables": 334712,
+    "replacement_characters": 0,
+    "required_new_text_found": [
+      "2.5.13",
+      "2.6.1",
+      "2.7.11",
+      "2.8.15",
+      "2.9.5",
+      "등급 아이디얼",
+      "닫힌 몰입 사상"
+    ]
+  },
+  "navigation": {
+    "named_destinations": 740,
+    "link_annotations": 1878,
+    "internal_links": 1874,
+    "required_source_labels": [
+      "II.2.5.13-ko",
+      "II.2.6.1-ko",
+      "II.2.7.11-ko",
+      "II.2.8.15-ko",
+      "II.2.9.5-ko"
+    ],
+    "required_external_urls": [
+      "https://doi.org/10.5281/zenodo.21921513",
+      "https://doi.org/10.5281/zenodo.22647516",
+      "https://github.com/KokunoYumeto/ega-ko"
+    ]
+  },
+  "fonts": {
+    "font_rows": 36,
+    "all_embedded": true,
+    "to_unicode_yes_rows": 28,
+    "inventory": {
+      "path": "pub/ega-ko/evidence/r61-pdffonts.txt",
+      "bytes": 3572,
+      "sha256": "C6AF5B3BB462BFA63DBB58AD34F6B4396D3818BEB8AFE3998D7C63C7A3D87EDE"
+    }
+  },
+  "focused_visual_inspection": {
+    "physical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264
+    ],
+    "dpi": 200,
+    "machine_render_and_nonblank_gate": "PASS",
+    "human_view_status": "PASS_SINGLE_CONTACT_SHEET_INSPECTION",
+    "observations": "The four contact sheets covering physical pages 1-8 and 248-264 were inspected once as one aggregate reader review. The title and public-facing edition page are legible; the exact-version, concept, repository, and source links are visible; the cumulative contents reaches EGA II section 2.9 on page 262. All focused mathematical pages are legible with no observed clipping, overlap, tofu, black boxes, broken diagrams, displaced labels, or damaged formulas. The historical markers advance continuously from II|33 through II|49. The page-253 translator note remains inside the text block. Physical page 264 closes proof 2.9.5 cleanly and its remaining whitespace is intentional because untranslated Section 3 was not admitted.",
+    "renders": [
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-001.png",
+        "bytes": 91048,
+        "sha256": "898F6DB211A778C8DACD3B50EE07B14D5CD9D4312FB4BBAD49A6ED1E60FD29D0",
+        "page": 1,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 42632
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-002.png",
+        "bytes": 368995,
+        "sha256": "F7FAC3539CF94E21A3A78D3CABF02BCE3082FE67CAFD8BF876E03AA6BB88F26A",
+        "page": 2,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 188305
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-003.png",
+        "bytes": 39635,
+        "sha256": "B40FD0E1C2C3B6BCBF0A9FB57F2D8F917D86C25C3BB369677810E7260294760C",
+        "page": 3,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 12402
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-004.png",
+        "bytes": 257984,
+        "sha256": "F6E82CB816A43FD81F536B75E2CF53AA893E4CCEDE09739C1DBB4127C2AD68FD",
+        "page": 4,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 131660
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-005.png",
+        "bytes": 358042,
+        "sha256": "A496AEBCE82C0EEE78A3420F77754C73D10F180536354D0D57DD372ED7658979",
+        "page": 5,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 182701
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-006.png",
+        "bytes": 242347,
+        "sha256": "AB27DE8EC8FDE44863444D7CC915A760C38574AC878E7C7C083E4258025B0486",
+        "page": 6,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 117372
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-007.png",
+        "bytes": 326038,
+        "sha256": "02FEC9B6C45C9043A28BD32BDF734A2CE0FEAFF791F67E1E1B404596D082FD13",
+        "page": 7,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 171397
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-008.png",
+        "bytes": 272862,
+        "sha256": "90DF56A1715CDB598DA81C9A5EB8EC76C6733D46DBADBBF2647B00E4C8A163E4",
+        "page": 8,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 143745
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-248.png",
+        "bytes": 257102,
+        "sha256": "2442BFFC616DC1CD69FBB4923CF2F85741122580621540DF2B003440A827C269",
+        "page": 248,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 104046
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-249.png",
+        "bytes": 405652,
+        "sha256": "096C4DDDBCEFD3D3E2A386B682FCA6DACEBCCB5188CEFA9C698A33589B312575",
+        "page": 249,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 163219
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-250.png",
+        "bytes": 437075,
+        "sha256": "5928F392E2920839475CEF4F67A15D4DC2A3F84F43B2CE3AB5C23EE3BEA00478",
+        "page": 250,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 185030
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-251.png",
+        "bytes": 428571,
+        "sha256": "DDBC6D2E2B225B7EF602949B74E15E0C1A4266158BDBDC2E67E86F5BC2964AD2",
+        "page": 251,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 183489
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-252.png",
+        "bytes": 460005,
+        "sha256": "39EFF7EB2C40501AF8145C919C10E45C5D1D3EBD10C2749903B86AD68AE92BB2",
+        "page": 252,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 195239
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-253.png",
+        "bytes": 323845,
+        "sha256": "CF10E1D2F7714DE4E866C9E86EC7E132C73EFFCD8B8F3D76A60E24E42937F0B1",
+        "page": 253,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 134468
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-254.png",
+        "bytes": 488839,
+        "sha256": "428B59F11AD6F798795AFED357CF80E9A77A5F7CD6B627F0BD07949BAA6D84E3",
+        "page": 254,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 230908
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-255.png",
+        "bytes": 504867,
+        "sha256": "207008B2547FD5B7E467F400F6110D08F039F8F1020E3969894D2240DC44700F",
+        "page": 255,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 225313
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-256.png",
+        "bytes": 486215,
+        "sha256": "D8951194E2138917AAF42D6340E1FC04302D0F98B0E25C1A6114512099D9C135",
+        "page": 256,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 217827
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-257.png",
+        "bytes": 315905,
+        "sha256": "6756B5C0B23C5ECF4D7F0A3F72AE27B6985C8A7117817021044065EA4A640CD8",
+        "page": 257,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 126184
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-258.png",
+        "bytes": 304886,
+        "sha256": "36F1FB209DBD14AD7EA6F8003FCAA6B94F6C275A5D8E84E597AE58F582492E00",
+        "page": 258,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 134510
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-259.png",
+        "bytes": 381602,
+        "sha256": "9A8C2C47D738F015A0DCF58C60D576F943F7AA07BEE02A4798DE9BA332DD6BC2",
+        "page": 259,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 160576
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-260.png",
+        "bytes": 404145,
+        "sha256": "C522BB11CB41C9318F8CC6B2B5047363933AED64DC5471753C3D15CEFF90A0B8",
+        "page": 260,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 170990
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-261.png",
+        "bytes": 217882,
+        "sha256": "B851B421F02D1CBC81BA1C084BC60F9D78123992E3F6567D0BC9C32DCB7C8D71",
+        "page": 261,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 83075
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-262.png",
+        "bytes": 269826,
+        "sha256": "A22A5475C1B3043507167E5FAA86A8B4EC5AAAC05164B994C34F48D8ACD58DD6",
+        "page": 262,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 107996
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-263.png",
+        "bytes": 494845,
+        "sha256": "DB656E214AA20E8558111CDCA746ACC239C2CDD217D801A8BA2254D7E3A4814E",
+        "page": 263,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 224746
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-p-264.png",
+        "bytes": 204008,
+        "sha256": "16AA121BAB8060924479C005FF86AFFEEE0534D400A915939DEDE1F2660C693F",
+        "page": 264,
+        "width": 1654,
+        "height": 2339,
+        "dark_pixels_below_245": 84641
+      }
+    ],
+    "contact_sheets": [
+      {
+        "path": "pub/ega-ko/evidence/render/r61-contact-01.png",
+        "bytes": 1040947,
+        "sha256": "E7BE76B5FC1D180222B9AB62CED97B065548336BA5DD7530EE3F1360D9420715",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "width": 1240,
+        "height": 3620
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-contact-02.png",
+        "bytes": 1624926,
+        "sha256": "9E3E1C3C9B10495A9CC9F22B757E688845CE5E4DDA028B80C2A672E9C3073141",
+        "pages": [
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255
+        ],
+        "width": 1240,
+        "height": 3620
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-contact-03.png",
+        "bytes": 1423188,
+        "sha256": "2C249761076122BA7B700743C6EAB23C46D653D95DABF866CD8F94D7827D807E",
+        "pages": [
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263
+        ],
+        "width": 1240,
+        "height": 3620
+      },
+      {
+        "path": "pub/ega-ko/evidence/render/r61-contact-04.png",
+        "bytes": 104712,
+        "sha256": "74E34108E4565A2974131E66A8FE5DD1F3CBF55E26809DC4B6A807AA542CB7FF",
+        "pages": [
+          264
+        ],
+        "width": 1240,
+        "height": 905
+      }
+    ]
+  },
+  "policy": {
+    "small_section_qa_loops": 0,
+    "whole_reader_qa_loops": 1,
+    "rerun_guard": "The script refuses execution when this receipt or any R61 render already exists.",
+    "continued_after_font_parser_error": true,
+    "continuation_semantics": "Existing build-log, dual-extraction, and font outputs were consumed without regeneration; the stopped machine pass continued from its font-table parser boundary."
+  },
+  "result": "PASS_R61_SINGLE_AGGREGATE_PDF_QA"
+}

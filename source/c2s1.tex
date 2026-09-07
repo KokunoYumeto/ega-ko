@@ -1,4 +1,4 @@
-% Authority slice: EGA II ega2-1-fr.tex lines 1-2694, 118946 LF UTF-8 bytes, SHA-256 04113B8FFC608C7CA286A77C37363C651C7AF529804C25B3BE519023A31B9F23.
+% Authority slice: EGA II ega2-1-fr.tex lines 1-4040, 173428 LF UTF-8 bytes, SHA-256 E6911F259382EBEFA590F25970FD3F47297E1EC78D8C4703AD1627DA0BA4C720.
 \setcounter{section}{0}
 \section{아핀 사상}
 \label{section:II.1-ko}
@@ -2750,3 +2750,1389 @@ $\mu_f$들이 다음과 같은 $\mathcal{O}_X$-가군의 함자적인 표준 준
 \tag{2.5.12.2}
 \]
 \end{env}
+
+\begin{proposition}[2.5.13]
+\phantomsection
+\label{II.2.5.13-ko}
+아이디얼 $S_+$가 $S_1$에 의해 생성된다고 가정하자. 그러면 준동형
+$\lambda$(\hyperref[II.2.5.11.2-ko]{2.5.11.2})는 동형사상이고, 준동형
+$\mu$(\hyperref[II.2.5.12.2-ko]{2.5.12.2})도 등급 $S$-가군 $M$이
+유한 표시를 가지는 경우(\hyperref[II.2.1.1-ko]{2.1.1})에는 동형사상이다.
+\end{proposition}
+
+\begin{proof}
+$X$가 $D_+(f)$ ($f\in S_1$)들의 합집합이므로
+(\hyperref[II.2.3.14-ko]{2.3.14}), 고려하는 각각의 가정 아래에서
+$\lambda_f$와 $\mu_f$가 $f$가 동차이고 \emph{차수가 $1$}일 때
+동형사상임을 보이는 것으로 귀착된다. 이때 $\mathbf{Z}$-쌍선형 사상
+\[
+  M_m\times N_n\longrightarrow
+  M_{(f)}\otimes_{S_{(f)}}N_{(f)}
+\]
+을 $(x,y)$에 원소 $(x/f^m)\otimes(y/f^n)$을 대응시켜 정의한다
+($m<0$이면 $x/f^m$은 $f^{-m}x/1$을 뜻한다). 이 사상들로
+$\mathbf{Z}$-선형 사상
+\[
+  M\otimes_{\mathbf{Z}}N\longrightarrow
+  M_{(f)}\otimes_{S_{(f)}}N_{(f)},
+\]
+을 정의할 수 있다. $s\in S_q$이면 이 사상은 $(sx)\otimes y$를
+\[
+  (s/f^q)\bigl((x/f^m)\otimes(y/f^n)\bigr)
+\]
+으로 보낸다($x\in M_m$, $y\in N_n$). 따라서 가군의 쌍준동형
+\[
+  \gamma_f:M\otimes_S N\longrightarrow
+  M_{(f)}\otimes_{S_{(f)}}N_{(f)},
+\]
+을 얻는다. 이는 표준 준동형 $S\to S_{(f)}$---$s\in S_q$를
+$s/f^q$로 보내는 준동형---에 관한 것이다. 더 나아가 원소
+$\sum_i(x_i\otimes y_i)$가 $M\otimes_S N$에 속하고, 여기서
+$x_i$, $y_i$는 각각 차수가
+$m_i$, $n_i$인 동차 원소이다---에 대하여
+\[
+  f^r\sum_i(x_i\otimes y_i)=0,
+\]
+즉 $\sum_i(f^rx_i\otimes y_i)=0$이라고 가정하자.
+(\hyperref[0.1.3.4-ko]{0, 1.3.4})에 따라
+\[
+  \sum_i(f^rx_i/f^{m_i+r})\otimes(y_i/f^{n_i})=0,
+\]
+을 얻는다. 다시 말해 $\gamma_f(\sum_i(x_i\otimes y_i))=0$이다. 따라서
+$\gamma_f$는 다음과 같이 인수분해된다.
+\[
+  M\otimes_S N\longrightarrow(M\otimes_S N)_f
+  \xrightarrow{\gamma'_f}
+  M_{(f)}\otimes_{S_{(f)}}N_{(f)}~;
+\]
+$\lambda'_f$를 $\gamma'_f$의
+\oldpage[II]{35}
+$(M\otimes_S N)_{(f)}$로의 제한이라 하면,
+$\lambda_f$와 $\lambda'_f$가 서로 역인 $S_{(f)}$-준동형임을 곧바로
+확인할 수 있다. 이로써 명제의 첫 번째 부분이 증명된다.
+
+두 번째 부분을 증명하기 위해, $M$이 준동형 $P\to Q$의 여핵이라고
+가정하자. 이는 등급 $S$-가군의 준동형이며, $P$와 $Q$는 $S(n)$ 꼴인
+가군들의 유한 직합이다. $\operatorname{Hom}_S(L,N)$의 $L$에 관한
+왼쪽 완전성과 $M_{(f)}$의 $M$에 관한 완전성을 사용하면, $\mu_f$가
+$M=S(n)$일 때 동형사상임을 보이는 것으로 곧바로 귀착된다. 이제 임의의
+동차 원소 $z$를 $N$에서 택하고, $u_z$를 $S(n)$에서 $N$으로 가며
+$u_z(1)=z$를 만족하는 준동형이라 하자. 그러면
+$\eta:z\mapsto u_z$는 차수 $0$이고 $N(-n)$에서
+$\operatorname{Hom}_S(S(n),N)$으로 가는 동형사상임을 곧바로
+알 수 있다. 이에 대응하는 동형사상
+\[
+  \eta_f:\bigl(N(-n)\bigr)_{(f)}
+  \longrightarrow
+  \bigl(\operatorname{Hom}_S(S(n),N)\bigr)_{(f)}.
+\]
+이 있다. 한편 $\eta'_f$를 다음 동형사상이라 하자.
+\[
+  N_{(f)}\longrightarrow
+  \operatorname{Hom}_{S_{(f)}}\bigl(S(n)_{(f)},N_{(f)}\bigr)
+\]
+이는 각 $z'\in N_{(f)}$에 준동형 $v_{z'}$를 대응시키며, 이 준동형은
+$v_{z'}(s/f^k)=sz'/f^{n+k}$를 만족한다
+($s\in S_{n+k}=(S(n))_k$). 합성 사상
+\[
+  \bigl(N(-n)\bigr)_{(f)}
+  \xrightarrow{\eta_f}
+  \bigl(\operatorname{Hom}_S(S(n),N)\bigr)_{(f)}
+  \xrightarrow{\mu_f}
+  \operatorname{Hom}_{S_{(f)}}\bigl(S(n)_{(f)},N_{(f)}\bigr)
+  \xrightarrow{{\eta'_f}^{-1}}N_{(f)}
+\]
+은 $z/f^h\mapsto z/f^{h-n}$으로 주어지는
+$\bigl(N(-n)\bigr)_{(f)}$에서 $N_{(f)}$로 가는 동형사상임을 쉽게 확인할 수
+있다. 따라서 $\mu_f$는 동형사상이다.
+\end{proof}
+
+아이디얼 $S_+$가 $S_1$에 의해 생성되면,
+(\hyperref[II.2.5.13-ko]{2.5.13})에서 $S$의 모든 등급 아이디얼
+$\mathfrak{J}$와 모든 등급 $S$-가군 $M$에 대하여
+\[
+\label{II.2.5.13.1-ko}
+  \widetilde{\mathfrak{J}}\cdot\widetilde{M}
+  =\widetilde{\mathfrak{J}\cdot M}
+\tag{2.5.13.1}
+\]
+가 표준 동형까지 성립함을 얻는다. 실제로 이는 다음 도식의 가환성에서
+따른다.
+\[
+  \xymatrix{
+    \widetilde{\mathfrak{J}}\otimes_{\mathcal{O}_X}\widetilde{M}
+    \ar[rr]^\lambda\ar[dr]
+    && \widetilde{\mathfrak{J}\otimes_S M}\ar[dl]\\
+    & \widetilde{M} &
+  }
+\]
+이 가환성은 (\hyperref[II.2.5.11.3-ko]{2.5.11.3})의 경우와 마찬가지로
+확인한다.
+
+\begin{corollary}[2.5.14]
+\phantomsection
+\label{II.2.5.14-ko}
+$S$가 $S_1$에 의해 생성된다고 하자. 어떠한 $m,n\in\mathbf{Z}$에
+대해서도 다음 공식들이 성립한다.
+\[
+\label{II.2.5.14.1-ko}
+  \mathcal{O}_X(m)\otimes_{\mathcal{O}_X}\mathcal{O}_X(n)
+  =\mathcal{O}_X(m+n)
+\tag{2.5.14.1}
+\]
+\[
+\label{II.2.5.14.2-ko}
+  \mathcal{O}_X(n)=\bigl(\mathcal{O}_X(1)\bigr)^{\otimes n}
+\tag{2.5.14.2}
+\]
+여기서 등식들은 표준 동형까지 성립한다.
+\end{corollary}
+
+\begin{proof}
+첫째 공식은 (\hyperref[II.2.5.13-ko]{2.5.13})과 차수 $0$인 표준 동형
+$S(m)\otimes_S S(n)\xrightarrow{\sim}S(m+n)$의 존재에서 따른다. 이 동형은
+$1\otimes1$---여기서 첫째 인자 $1$은 $(S(m))_{-m}$에, 둘째 인자 $1$은
+$(S(n))_{-n}$에 속한다---을 원소 $1\in(S(m+n))_{-m-n}$에 대응시킨다.
+이제 둘째 공식은 $n=-1$인 경우만 증명하면 충분하다. 그리고
+(\hyperref[II.2.5.13-ko]{2.5.13})에 의하면 이는
+$\operatorname{Hom}_S(S(1),S)$가 $S(-1)$과 표준적으로 동형임을 보이는
+것으로 귀착한다. 정의들 (\hyperref[II.2.1.2-ko]{2.1.2})을 되짚어 보고
+$S(1)$이 한 원소로 생성되는 $S$-가군임을 상기하면 곧바로 확인된다.
+\end{proof}
+
+\oldpage[II]{36}
+\begin{corollary}[2.5.15]
+\phantomsection
+\label{II.2.5.15-ko}
+$S$가 $S_1$에 의해 생성된다고 하자. 모든 등급 $S$-가군 $M$과 모든
+$n\in\mathbf{Z}$에 대하여
+\[
+\label{II.2.5.15.1-ko}
+  \widetilde{M(n)}=\widetilde{M}(n)
+\tag{2.5.15.1}
+\]
+가 표준 동형까지 성립한다.
+\end{corollary}
+
+\begin{proof}
+이는 정의들 (\hyperref[II.2.5.10.2-ko]{2.5.10.2})와
+(\hyperref[II.2.5.10.1-ko]{2.5.10.1}), 명제
+(\hyperref[II.2.5.13-ko]{2.5.13}), 그리고 차수 $0$인 표준 동형
+$M(n)\xrightarrow{\sim}M\otimes_S S(n)$의 존재에서 따른다. 이 동형은 모든
+$z\in(M(n))_h=M_{n+h}$를
+$z\otimes1\in M_{n+h}\otimes(S(n))_{-n}\subset(M\otimes_S S(n))_h$에
+대응시킨다.
+\end{proof}
+
+\begin{env}[2.5.16]
+\phantomsection
+\label{II.2.5.16-ko}
+$S'_0=\mathbf{Z}$이고 $n>0$에 대하여 $S'_n=S_n$인 등급환을 $S'$라 하자.
+그러면 $f\in S_d$ ($d>0$)일 때 모든 $n\in\mathbf{Z}$에 대하여
+$(S(n))_{(f)}=(S'(n))_{(f)}$이다. 실제로 $(S'(n))_{(f)}$의 원소는
+$x\in S'_{n+kd}$ ($k>0$)인 $x/f^k$ 꼴이며, 항상 $n+kd\neq0$이 되도록
+$k$를 택할 수 있다. $X=\operatorname{Proj}(S)$와
+$X'=\operatorname{Proj}(S')$가 표준적으로 동일시되므로
+(\hyperref[II.2.4.7-ko]{2.4.7, (ii)}), 모든 $n\in\mathbf{Z}$에 대하여
+$\mathcal{O}_X(n)$과 $\mathcal{O}_{X'}(n)$은 앞의 동일시에서 서로
+대응한다.
+
+한편 모든 $d>0$과 모든 $n\in\mathbf{Z}$에 대하여
+\[
+  (S^{(d)}(n))_h=S_{(n+h)d}=(S(nd))_{hd}
+\]
+이며, $f\in S_d$이면 따라서
+$(S^{(d)}(n))_{(f)}=(S(nd))_{(f)}$이다. 스킴
+$X=\operatorname{Proj}(S)$와 $X^{(d)}=\operatorname{Proj}(S^{(d)})$가
+표준적으로 동일시됨을 알고 있다
+(\hyperref[II.2.4.7-ko]{2.4.7, (i)}). 앞의 논의에 따르면 $S_0$-대수
+$S^{(d)}$가 $S_d$에 의해 생성될 때, 모든 $n\in\mathbf{Z}$에 대하여
+$\mathcal{O}_X(nd)$와 $\mathcal{O}_{X^{(d)}}(n)$은 이 동일시에서 서로
+대응한다.
+\end{env}
+
+\begin{proposition}[2.5.17]
+\phantomsection
+\label{II.2.5.17-ko}
+$d$를 $>0$인 정수라 하고
+$U=\bigcup_{f\in S_d}D_+(f)$라 하자. 표준 준동형
+$\mathcal{O}_X(nd)\otimes_{\mathcal{O}_X}\mathcal{O}_X(-nd)
+\to\mathcal{O}_X$의 $U$에 대한 제한은 모든 정수 $n$에 대하여
+동형이다.
+\end{proposition}
+
+\begin{proof}
+(\hyperref[II.2.5.16-ko]{2.5.16})에 의해 $d=1$인 경우로 환원할 수 있고,
+그 경우 결론은 (\hyperref[II.2.5.13-ko]{2.5.13})의 증명에서 따른다.
+\end{proof}
+
+\subsection{$\operatorname{Proj}(S)$ 위의 층에 대응하는 등급
+$S$-가군.}
+\label{subsection:II.2.6-ko}
+
+\emph{이 절 전체에서 $S$의 아이디얼 $S_+$가 차수 $1$의 동차 원소들의
+집합 $S_1$에 의해 생성된다고 가정한다.}
+
+\begin{env}[2.6.1]
+\phantomsection
+\label{II.2.6.1-ko}
+그러면 $\mathcal{O}_X$-가군 $\mathcal{O}_X(1)$은
+\emph{가역}이다(\hyperref[II.2.5.9-ko]{2.5.9}). 이때 모든
+$\mathcal{O}_X$-가군 $\mathcal{F}$
+(\hyperref[0.5.4.6-ko]{0, 5.4.6})에 대하여
+\[
+\label{II.2.6.1.1-ko}
+  \Gamma_*(\mathcal{F})
+  =\Gamma_*(\mathcal{O}_X(1),\mathcal{F})
+  =\bigoplus_{n\in\mathbf{Z}}\Gamma(X,\mathcal{F}(n))
+\tag{2.6.1.1}
+\]
+로 둔다. 여기서는 (\hyperref[II.2.5.14.2-ko]{2.5.14.2})를 고려하였다.
+(\hyperref[0.5.4.6-ko]{0, 5.4.6})에서 상기한 바와 같이
+$\Gamma_*(\mathcal{O}_X)$는 \emph{등급환}의 구조를 가지며,
+$\Gamma_*(\mathcal{F})$는 $\Gamma_*(\mathcal{O}_X)$ 위의
+\emph{등급가군} 구조를 가진다.
+
+$\mathcal{O}_X(n)$이 국소 자유이므로
+$\mathcal{F}\mapsto\Gamma_*(\mathcal{F})$는 $\mathcal{F}$에 관한
+공변 가법 \emph{왼쪽 완전} 함자이다. 특히 $\mathcal{J}$가
+$\mathcal{O}_X$의 아이디얼층이면, $\Gamma_*(\mathcal{J})$는
+$\Gamma_*(\mathcal{O}_X)$의 \emph{등급 아이디얼}과 표준적으로
+동일시된다.
+\end{env}
+
+\begin{env}[2.6.2]
+\phantomsection
+\label{II.2.6.2-ko}
+$M$을 등급 $S$-가군이라 하자. 모든 $f\in S_d$ ($d>0$)에 대하여
+$x\mapsto x/1$은 아벨군의 준동형 $M_0\to M_{(f)}$이고,
+$M_{(f)}$는 표준적으로
+
+\oldpage[II]{37}
+
+$\Gamma(D_+(f),\widetilde{M})$와 동일시되므로 아벨군의 준동형
+\[
+  \alpha_0^f:M_0\longrightarrow\Gamma(D_+(f),\widetilde{M}).
+\]
+을 얻는다. 모든 $g\in S_e$ ($e>0$)에 대하여 다음 도식이 가환함은
+명백하다.
+\[
+  \xymatrix{
+    & \Gamma(D_+(f),\widetilde{M})\ar[dd]\\
+    M_0\ar[ur]^{\alpha_0^f}\ar[dr]_{\alpha_0^{fg}}\\
+    & \Gamma(D_+(fg),\widetilde{M})
+  }
+\]
+이는 모든 $x\in M_0$에 대하여 $\widetilde{M}$의 단면
+$\alpha_0^f(x)$와 $\alpha_0^g(x)$가 $D_+(f)\cap D_+(g)$에서
+일치함을 뜻한다. 따라서 각 $D_+(f)$로의 제한이 $\alpha_0^f(x)$인
+유일한 단면 $\alpha_0(x)\in\Gamma(X,\widetilde{M})$이 존재한다.
+이로써 ($S$가 $S_1$에 의해 생성된다는 가정을 사용하지 않고) 아벨군의
+준동형
+\[
+\label{II.2.6.2.1-ko}
+  \alpha_0:M_0\longrightarrow\Gamma(X,\widetilde{M}).
+\tag{2.6.2.1}
+\]
+을 정의하였다.
+
+이 결과를 모든 $n\in\mathbf{Z}$에 대하여 등급 $S$-가군 $M(n)$에
+적용하면, 각 $n\in\mathbf{Z}$에 대하여 아벨군의 준동형
+\[
+\label{II.2.6.2.2-ko}
+  \alpha_n:M_n=(M(n))_0\longrightarrow\Gamma(X,\widetilde{M}(n))
+\tag{2.6.2.2}
+\]
+을 얻는다((\hyperref[II.2.5.15-ko]{2.5.15})를 고려한다). 따라서 등급
+아벨군의 함자적인 준동형(차수 $0$)
+\[
+\label{II.2.6.2.3-ko}
+  \alpha:M\longrightarrow\Gamma_*(\widetilde{M})
+\tag{2.6.2.3}
+\]
+을 얻으며, 이를 $\alpha_M$으로도 나타낸다. 이 준동형은 각 $M_n$에서
+$\alpha_n$과 일치한다.
+
+특히 $M=S$로 두면, $\Gamma_*(\mathcal{O}_X)$의 곱셈의 정의
+(\hyperref[0.5.4.6-ko]{0, 5.4.6})를 고려하여
+$\alpha:S\to\Gamma_*(\mathcal{O}_X)$가 등급환의 준동형임을 곧바로
+확인할 수 있다. 또한 모든 등급 $S$-가군 $M$에 대하여
+(\hyperref[II.2.6.2.3-ko]{2.6.2.3})은 등급 가군의 쌍준동형이다.
+\end{env}
+
+\begin{proposition}[2.6.3]
+\phantomsection
+\label{II.2.6.3-ko}
+모든 $f\in S_d$ ($d>0$)에 대하여, $D_+(f)$는 $\mathcal{O}_X(d)$의
+단면 $\alpha_d(f)$가 소멸하지 않는 $\mathfrak{p}\in X$들의 집합과
+일치한다(\hyperref[0.5.5.2-ko]{0, 5.5.2}).
+\end{proposition}
+
+\begin{proof}
+가정에 따라 $X=\bigcup_{g\in S_1}D_+(g)$이므로, 모든 $g\in S_1$에
+대하여 $\alpha_d(f)$가 소멸하지 않는 $\mathfrak{p}\in D_+(g)$들의
+집합이 $D_+(fg)$와 일치함을 보이면 충분하다. 그런데 $\alpha_d(f)$의
+$D_+(g)$에 대한 제한은 정의상 $(S(d))_{(g)}$의 원소 $f/1$에 대응하는
+단면이다. 표준 동형
+$(S(d))_{(g)}\xrightarrow{\sim}S_{(g)}$
+(\hyperref[II.2.5.7-ko]{2.5.7}) 아래에서, $D_+(g)$ 위의
+$\mathcal{O}_X(d)$의 이 단면은 $S_{(g)}$의 원소 $f/g^d$에 대응하는
+$D_+(g)$ 위의 $\mathcal{O}_X$의 단면과 동일시된다. 이 단면이
+$\mathfrak{p}\in D_+(g)$에서 소멸한다는 것은 $f/g^d\in\mathfrak{q}$임을
+뜻한다. 여기서 $\mathfrak{q}$는 $\mathfrak{p}$에 대응하는 $S_{(g)}$의
+소아이디얼이다(\hyperref[II.2.3.6-ko]{2.3.6}). 정의상 이는
+$f\in\mathfrak{p}$라는 뜻이므로 명제가 성립한다.
+\end{proof}
+
+\begin{env}[2.6.4]
+\phantomsection
+\label{II.2.6.4-ko}
+이제 $\mathcal{F}$를 $\mathcal{O}_X$-가군이라 하고
+$M=\Gamma_*(\mathcal{F})$로 두자. 등급환 준동형
+$\alpha:S\to\Gamma_*(\mathcal{O}_X)$가 존재하므로, $M$을 등급
+$S$-가군으로 볼 수 있다. 모든 $f\in S_d$ ($d>0$)에 대하여
+(\hyperref[II.2.6.3-ko]{2.6.3})에서 $\mathcal{O}_X(d)$의 단면
+$\alpha_d(f)$의 $D_+(f)$에 대한 제한이 가역임을 알 수 있다. 따라서
+모든 $n>0$에 대하여 $\mathcal{O}_X(nd)$의 단면
+$\alpha_{nd}(f^n)$\footnote{\textbf{번역 주.} 인쇄 원문은 이 문단의 세
+곳에서 각각 $\alpha_d(f^n)$, $\alpha_d(f^k)$, $\alpha_d(f^n)$을
+쓰지만, $f^n\in S_{nd}$와 $f^k\in S_{kd}$이므로
+EGA2-CANON-DISP-0002에 따라 각각 $\alpha_{nd}(f^n)$,
+$\alpha_{kd}(f^k)$, $\alpha_{nd}(f^n)$으로 교정했다.}의 $D_+(f)$에
+대한 제한도 가역이다. 이제
+$z\in M_{nd}=\Gamma(X,\mathcal{F}(nd))$ ($n>0$)라 하자. 어떤 정수
+$k\geq0$에 대하여 $f^kz$의 $D_+(f)$에 대한 제한, 즉
+\oldpage[II]{38}
+단면
+$(z|D_+(f))(\alpha_{kd}(f^k)|D_+(f))$가
+$\mathcal{F}((n+k)d)$의 단면으로서 영이면, 앞의 설명에 따라
+$z|D_+(f)=0$이기도 하다. 이로써 원소 $z/f^n$에 $D_+(f)$ 위의
+$\mathcal{F}$의 단면
+$(z|D_+(f))(\alpha_{nd}(f^n)|D_+(f))^{-1}$을 대응시켜
+$S_{(f)}$-가군 준동형
+$\beta_f:M_{(f)}\to\Gamma(D_+(f),\mathcal{F})$를 정의할 수 있다.
+또한 $g\in S_e$ ($e>0$)일 때 다음 도식이 가환함을 곧바로 확인할 수
+있다.
+\[
+\label{II.2.6.4.1-ko}
+  \xymatrix{
+    M_{(f)}\ar[r]^{\beta_f}\ar[d]
+    & \Gamma(D_+(f),\mathcal{F})\ar[d]\\
+    M_{(fg)}\ar[r]_{\beta_{fg}}
+    & \Gamma(D_+(fg),\mathcal{F})
+  }
+\tag{2.6.4.1}
+\]
+$M_{(f)}$가 $\Gamma(D_+(f),\widetilde{M})$과 표준적으로 동일시되고
+$D_+(f)$들이 $X$의 위상의 기저를 이룬다는 사실
+(\hyperref[II.2.3.4-ko]{2.3.4})을 상기하면, $\beta_f$들이 유일한 표준
+$\mathcal{O}_X$-가군 준동형
+\[
+\label{II.2.6.4.2-ko}
+  \beta:\widetilde{\Gamma_*(\mathcal{F})}
+  \longrightarrow\mathcal{F}
+\tag{2.6.4.2}
+\]
+에서 유도됨을 알 수 있다. 이 준동형은 $\beta_{\mathcal{F}}$로도
+표기하며 명백히 함자적이다.
+\end{env}
+
+\begin{proposition}[2.6.5]
+\phantomsection
+\label{II.2.6.5-ko}
+$M$을 등급 $S$-가군, $\mathcal{F}$를 $\mathcal{O}_X$-가군이라 하자.
+그러면 다음 합성 준동형들은 각각 항등 준동형이다.
+\[
+\label{II.2.6.5.1-ko}
+  \widetilde{M}\xrightarrow{\widetilde{\alpha}}
+  \widetilde{\Gamma_*(\widetilde{M})}
+  \xrightarrow{\beta}\widetilde{M}
+\tag{2.6.5.1}
+\]
+\[
+\label{II.2.6.5.2-ko}
+  \Gamma_*(\mathcal{F})\xrightarrow{\alpha}
+  \Gamma_*(\widetilde{\Gamma_*(\mathcal{F})})
+  \xrightarrow{\Gamma_*(\beta)}\Gamma_*(\mathcal{F})
+\tag{2.6.5.2}
+\]
+\end{proposition}
+
+\begin{proof}
+(\hyperref[II.2.6.5.1-ko]{2.6.5.1})의 확인은 국소적이다. 열린집합
+$D_+(f)$에서는 정의들과, 준연접 층에 적용한 $\beta$가 $D_+(f)$ 위의
+단면들에 대한 작용으로 정해진다는 사실
+(\hyperref[I.1.3.8-ko]{I, 1.3.8})에서 곧바로 따른다.
+(\hyperref[II.2.6.5.2-ko]{2.6.5.2})의 확인은 각 차수에서 따로 이루어진다.
+$M=\Gamma_*(\mathcal{F})$로 두면
+$M_n=\Gamma(X,\mathcal{F}(n))$이고
+$(\Gamma_*(\widetilde{M}))_n=\Gamma(X,\widetilde{M}(n))
+=\Gamma(X,\widetilde{M(n)})$이다. 그런데 $f\in S_1$이고 $z\in M_n$이면,
+$\alpha_n^f(z)$는 $(M(n))_{(f)}$의 원소 $z/1$이며
+$(f/1)^n(z/f^n)$과 같다. 이에 $\beta_f$로 대응하는 것은 $D_+(f)$ 위의
+단면
+\[
+  ((\alpha_1(f))^n|D_+(f))
+  ((z|D_+(f))((\alpha_1(f))^n|D_+(f))^{-1})
+\]
+이다. 이는 곧 $z$의 $D_+(f)$에 대한 제한이므로
+(\hyperref[II.2.6.5.2-ko]{2.6.5.2})가 확인된다.
+\end{proof}
+
+\subsection{유한성 조건.}
+\label{subsection:II.2.7-ko}
+
+\begin{proposition}[2.7.1]
+\phantomsection
+\label{II.2.7.1-ko}
+\begin{enumerate}
+  \item[\rm(i)] $S$가 뇌터인 등급환이면
+    $X=\operatorname{Proj}(S)$는 뇌터 스킴이다.
+  \item[\rm(ii)] $S$가 유한형 등급 $A$-대수이면
+    $X=\operatorname{Proj}(S)$는 $Y=\operatorname{Spec}(A)$ 위의
+    유한형 스킴이다.
+\end{enumerate}
+\end{proposition}
+
+\oldpage[II]{39}
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)] $S$가 뇌터이면 아이디얼 $S_+$는 동차 원소들
+    $f_i$ ($1\leq i\leq p$)로 이루어진 유한 생성계를 갖는다. 따라서
+    (\hyperref[II.2.3.14-ko]{2.3.14}) 바탕공간 $X$는
+    $D_+(f_i)=\operatorname{Spec}(S_{(f_i)})$들의 합집합이고, 각
+    $S_{(f_i)}$가 뇌터임을 보이면 충분하다. 이는
+    (\hyperref[II.2.2.6-ko]{2.2.6})에서 따른다.
+  \item[\rm(ii)] 가정으로부터 $S_0$가 유한형 $A$-대수이고 $S$가
+    유한형 $S_0$-대수임이 따른다. 따라서 $S_+$는 유한 생성
+    아이디얼이다(\hyperref[II.2.1.4-ko]{2.1.4}). 그러면 (i)에서와 같이
+    $f\in S_d$일 때 $S_{(f)}$가 유한형 $A$-대수임을 증명하면
+    충분하다. (\hyperref[II.2.2.5-ko]{2.2.5})에 따라 $S^{(d)}$가 유한형
+    $A$-대수임을 보이면 충분하고, 이는
+    (\hyperref[II.2.1.6-ko]{2.1.6})에서 따른다.
+\end{enumerate}
+\end{proof}
+
+\begin{env}[2.7.2]
+\phantomsection
+\label{II.2.7.2-ko}
+이하에서는 등급 $S$-가군 $M$에 관한 다음 유한성 조건들을 고려하겠다.
+\begin{enumerate}
+  \item[\rm(TF)] 어떤 정수 $n$이 존재하여 부분가군
+    $\bigoplus_{k\geq n}M_k$가 유한 생성 $S$-가군이다.
+  \item[\rm(TN)] 어떤 정수 $n$이 존재하여 $k\geq n$이면 $M_k=0$이다.
+\end{enumerate}
+
+$M$이 (TN)을 만족하면 $S_+$의 모든 동차 원소 $f$에 대하여
+$M_{(f)}=0$이고, 따라서 $\widetilde{M}=0$이다.
+
+$M$, $N$을 두 등급 $S$-가군이라 하자. 차수 $0$의 준동형
+$u:M\to N$에 대하여, 어떤 정수 $n$이 존재하여 $k\geq n$일 때
+$u_k:M_k\to N_k$가 단사(각각 전사, 전단사)이면 $u$를
+(TN)-\emph{단사}(각각 (TN)-\emph{전사}, (TN)-\emph{전단사})라고 한다.
+따라서 $u$가 (TN)-단사(각각 (TN)-전사)라는 것은
+$\operatorname{Ker}u$(각각 $\operatorname{Coker}u$)가 (TN)을
+만족한다는 것과 같다. (\hyperref[II.2.5.4-ko]{2.5.4})에 따라 $u$가
+(TN)-단사(각각 (TN)-전사, (TN)-전단사)이면 $\widetilde{u}$는
+단사(각각 전사, 전단사)이다. $u$가 (TN)-전단사일 때 $u$를
+(TN)-\emph{동형사상}이라고도 한다.
+\end{env}
+
+\begin{proposition}[2.7.3]
+\phantomsection
+\label{II.2.7.3-ko}
+$S$를 아이디얼 $S_+$가 유한 생성인 등급환이라 하고, $M$을 등급
+$S$-가군이라 하자.
+\begin{enumerate}
+  \item[\rm(i)] $M$이 조건 (TF)를 만족하면 $\mathcal{O}_X$-가군
+    $\widetilde{M}$은 유한 생성이다.
+  \item[\rm(ii)] $M$이 (TF)를 만족한다고 가정하자. $\widetilde{M}=0$일
+    필요충분조건은 $M$이 (TN)을 만족하는 것이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+방금 본 바와 같이 조건 (TN)은 $\widetilde{M}=0$을 함의한다. $M$이
+(TF)를 만족하면, 가정에 따라 유한 생성인 등급 부분가군
+$M'=\bigoplus_{k\geq n}M_k$에 대하여 $M/M'$은 (TN)을 만족한다. 따라서
+$\widetilde{M/M'}=0$이고, 함자 $M\mapsto\widetilde{M}$의 완전성
+(\hyperref[II.2.5.4-ko]{2.5.4})으로부터
+$\widetilde{M}=\widetilde{M'}$을 얻는다. 그러므로 $\widetilde{M}$이 유한
+생성임을 증명하기 위해 $M$이 유한 생성인 경우로 귀착할 수 있다. 문제는
+국소적이므로 $M_{(f)}$가 유한 생성 $S_{(f)}$-가군임을 보이면 충분하다
+(\hyperref[I.1.3.9-ko]{I, 1.3.9}). 그런데 $M^{(d)}$는 유한 생성
+$S^{(d)}$-가군이고(\hyperref[II.2.1.6-ko]{2.1.6, (iii)}), 이제 주장은
+(\hyperref[II.2.2.5-ko]{2.2.5})에서 따른다.
+
+이제 $M$이 (TF)를 만족하고 $\widetilde{M}=0$이라고 가정하자. 위와 같은
+표기에서 $\widetilde{M'}=0$이고, $M'$에 대한 조건 (TN)은 $M$에 대한
+조건 (TN)과 동치이다. 따라서 $\widetilde{M}=0$이 $M$의 조건 (TN)을
+함의함을 증명하기 위해, 다시 $M$이 유한 개의 동차 원소 $x_i$
+($1\leq i\leq p$)에 의해 생성되는 경우만 고려하면 된다. 또
+$(f_j)_{1\leq j\leq q}$를 아이디얼 $S_+$의 동차 생성계라 하자. 가정에
+따라 모든 $j$에 대하여 $M_{(f_j)}=0$이므로, 어떤 정수 $n$이 존재하여
+모든 $i$, $j$에 대하여 $f_j^nx_i=0$이다. $n_j$를 $f_j$의 차수라 하고,
+$\sum_jr_j\leq nq$를 만족하는 정수족 $(r_j)$에 대하여
+$\sum_jr_jn_j$가 취하는 최댓값을 $m$이라 하자. 그러면
+
+\oldpage[II]{40}
+$k>m$이면 모든 $i$에 대하여 $S_kx_i=0$임이 명백하다. $x_i$들의 차수 중
+최댓값을 $h$라 하면 $k>h+m$일 때 $M_k=0$이고, 이것으로 증명이 끝난다.
+\end{proof}
+
+\begin{corollary}[2.7.4]
+\phantomsection
+\label{II.2.7.4-ko}
+$S$를 아이디얼 $S_+$가 유한 생성인 등급환이라 하자. 그러면
+$X=\operatorname{Proj}(S)=\varnothing$이기 위한 필요충분조건은 어떤 $n$이
+존재하여 $k\geq n$일 때 $S_k=0$인 것이다.
+\end{corollary}
+
+\begin{proof}
+실제로 조건 $X=\varnothing$은
+$\mathcal{O}_X=\widetilde{S}=0$과 동치이고, $S$는 한 원소로 생성되는
+$S$-가군이다.
+\end{proof}
+
+\begin{theorem}[2.7.5]
+\phantomsection
+\label{II.2.7.5-ko}
+아이디얼 $S_+$가 차수 $1$인 유한 개의 동차 원소로 생성된다고 가정하고,
+$X=\operatorname{Proj}(S)$라 하자. 그러면 모든 준연접
+$\mathcal{O}_X$-가군 $\mathcal{F}$에 대하여 표준 준동형
+$\beta:\widetilde{\Gamma_*(\mathcal{F})}
+\to\mathcal{F}$ (\hyperref[II.2.6.4-ko]{2.6.4})는 동형이다.
+\end{theorem}
+
+\begin{proof}
+실제로 $S_+$가 유한 개의 원소 $f_i\in S_1$로 생성되면, $X$는 준콤팩트인
+부분공간 $\operatorname{Spec}(S_{(f_i)})$
+(\hyperref[II.2.3.6-ko]{2.3.6})들의 합집합이므로 준콤팩트이다. 또한 $X$는
+스킴이다(\hyperref[II.2.4.2-ko]{2.4.2}).
+(\hyperref[I.9.3.2-ko]{I, 9.3.2}),
+(\hyperref[II.2.5.14.2-ko]{2.5.14.2}) 및
+(\hyperref[II.2.6.3-ko]{2.6.3})에 따라 모든 $f\in S_d$ ($d>0$)에 대하여
+표준 동형
+$(\Gamma_*(\mathcal{F}))_{(\alpha_d(f))}\xrightarrow{\sim}
+\Gamma(D_+(f),\mathcal{F})$을 얻는다. 더욱이
+$(\Gamma_*(\mathcal{F}))_{(\alpha_d(f))}$는
+$\Gamma_*(\mathcal{F})$를 $\Gamma_*(\mathcal{O}_X)$-가군으로 볼 때의
+가군인데, 이는 $\Gamma_*(\mathcal{F})$를 $S$-가군으로 볼 때의
+$(\Gamma_*(\mathcal{F}))_{(f)}$와 다름없다. 앞의 표준 동형의 정의
+(\hyperref[I.9.3.1-ko]{I, 9.3.1})를 참조하면 이 동형이 준동형
+$\beta_f$와 일치함을 알 수 있고, 정리가 따른다.
+\end{proof}
+
+\begin{remark}[2.7.6]
+\phantomsection
+\label{II.2.7.6-ko}
+등급환 $S$가 \emph{뇌터}라고 가정하면, 아이디얼 $S_+$가 차수 $1$의 동차
+원소 전체의 집합 $S_1$에 의해 생성된다고 가정하는 것만으로
+(\hyperref[II.2.7.5-ko]{2.7.5})의 조건이 \emph{자동으로} 성립한다.
+\end{remark}
+
+\begin{corollary}[2.7.7]
+\phantomsection
+\label{II.2.7.7-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정 아래에서 모든 준연접
+$\mathcal{O}_X$-가군 $\mathcal{F}$는 $\widetilde{M}$ 꼴의
+$\mathcal{O}_X$-가군과 동형이다. 여기서 $M$은 등급 $S$-가군이다.
+\end{corollary}
+
+\begin{corollary}[2.7.8]
+\phantomsection
+\label{II.2.7.8-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정 아래에서 모든 유한 생성 준연접
+$\mathcal{O}_X$-가군 $\mathcal{F}$는 $\widetilde{N}$ 꼴의
+$\mathcal{O}_X$-가군과 동형이다. 여기서 $N$은 유한 생성 등급
+$S$-가군이다.
+\end{corollary}
+
+\begin{proof}
+(\hyperref[II.2.7.7-ko]{2.7.7})에 따라 $\mathcal{F}=\widetilde{M}$이라고
+가정할 수 있다. 여기서 $M$은 등급 $S$-가군이다.
+$(f_\lambda)_{\lambda\in L}$를 $M$의 동차 생성계라 하자. $L$의 모든 유한
+부분집합 $H$에 대하여, $\lambda\in H$인 $f_\lambda$들로 생성되는 $M$의
+등급 부분가군을 $M_H$라 하자. $M$이 부분가군 $M_H$들의 귀납극한임은
+명백하므로, $\mathcal{F}$는 그 $\mathcal{O}_X$-부분가군
+$\widetilde{M_H}$들의 귀납극한이다
+(\hyperref[II.2.5.4-ko]{2.5.4}). 그런데 $\mathcal{F}$가 유한 생성이고
+바탕공간 $X$가 준콤팩트이므로, (\hyperref[0.5.2.3-ko]{0, 5.2.3})에서
+$L$의 어떤 유한 부분집합 $H$에 대하여
+$\mathcal{F}=\widetilde{M_H}$임이 따른다.
+\end{proof}
+
+\begin{corollary}[2.7.9]
+\phantomsection
+\label{II.2.7.9-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정 아래에서 $\mathcal{F}$를 유한 생성
+준연접 $\mathcal{O}_X$-가군이라 하자. 그러면 어떤 정수 $n_0$가 존재하여,
+모든 $n\geq n_0$에 대하여 $\mathcal{F}(n)$은 $\mathcal{O}_X^k$의 어떤
+몫가군과 동형이다. 여기서 $k>0$은 $n$에 의존한다. 따라서
+$\mathcal{F}(n)$은 $X$ 위의 유한 개 단면으로 생성된다
+(\hyperref[0.5.1.1-ko]{0, 5.1.1}).
+\end{corollary}
+
+\begin{proof}
+(\hyperref[II.2.7.8-ko]{2.7.8})에 따라 $\mathcal{F}=\widetilde{M}$이라고
+가정할 수 있다. 여기서 $M$은 $S(m_i)$ 꼴의 $S$-가군들의 유한 직합의
+몫가군이다. 따라서 (\hyperref[II.2.5.4-ko]{2.5.4})에 따라 $M=S(m)$인
+경우로 귀착할 수 있고, 이때
+$\mathcal{F}(n)=\widetilde{S(m+n)}
+=\mathcal{O}_X(m+n)$이다
+(\hyperref[II.2.5.15-ko]{2.5.15}). 그러므로 다음 보조정리를 증명하면
+충분하다.
+
+\oldpage[II]{41}
+\begin{lemma}[2.7.9.1]
+\phantomsection
+\label{II.2.7.9.1-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정 아래에서 모든 $n\geq0$에 대하여,
+어떤 정수 $k$가 존재하여(이는 $n$에 의존한다) 전사 준동형
+$\mathcal{O}_X^k\to\mathcal{O}_X(n)$이 존재한다.
+\end{lemma}
+
+실제로 (\hyperref[II.2.7.2-ko]{2.7.2})에 따라, 적당한 $k$에 대하여 등급
+$S$-가군 곱 $S^k$에서 $S(n)$으로 가는 \emph{차수 $0$}의
+(TN)-전사 준동형 $u$가 존재함을 보이면 충분하다. 그런데
+$(S(n))_0=S_n$이고 가정에 따라 모든 $h>0$에 대하여 $S_h=S_1^h$이므로
+$SS_n=S_n+S_{n+1}+\cdots$이다. $S_n$은 유한 생성 $S_0$-가군이므로
+(\hyperref[II.2.1.5-ko]{2.1.5} 및
+\hyperref[II.2.1.6-ko]{2.1.6, (i)}), 이 가군의 생성계
+$(a_i)_{1\leq i\leq k}$를 택하자. 준동형 $u$는 $S^k$의 $i$번째 표준 기저
+원소를 $a_i$에 대응시킨다($1\leq i\leq k$). 이때
+$\operatorname{Coker}u$는
+$(S(n))_{-n}+\cdots+(S(n))_{-1}$과 동일시되므로, $u$는 요구한 조건을
+충족한다.
+\end{proof}
+
+\begin{corollary}[2.7.10]
+\phantomsection
+\label{II.2.7.10-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정 아래에서, $\mathcal{F}$를 유한 생성
+준연접 $\mathcal{O}_X$-가군이라 하자. 그러면 어떤 정수 $n_0$가 존재하여,
+모든 $n\geq n_0$에 대하여 $\mathcal{F}$는
+$(\mathcal{O}_X(-n))^k$ 꼴의 $\mathcal{O}_X$-가군의 몫과 동형이다
+($k$는 $n$에 의존한다).
+\end{corollary}
+
+\begin{proposition}[2.7.11]
+\phantomsection
+\label{II.2.7.11-ko}
+(\hyperref[II.2.7.5-ko]{2.7.5})의 가정이 성립한다고 하고, $M$을 등급
+$S$-가군이라 하자. 그러면 다음이 성립한다.
+\begin{enumerate}
+  \item[\rm(i)] 표준 준동형
+    $\widetilde{\alpha}:\widetilde{M}\to
+    \widetilde{\Gamma_*(\widetilde{M})}$은 동형이다.
+  \item[\rm(ii)] $\mathcal{G}$를 $\widetilde{M}$의 준연접
+    $\mathcal{O}_X$-부분가군이라 하고, $N$을 $\alpha$에 의한
+    $\Gamma_*(\mathcal{G})$의 역상인 $M$의 등급 $S$-부분가군이라 하자.
+    그러면 $\widetilde{N}=\mathcal{G}$이다. 여기서
+    (\hyperref[II.2.5.4-ko]{2.5.4})에 따라 $\widetilde{N}$을
+    $\widetilde{M}$의 $\mathcal{O}_X$-부분가군으로 동일시한다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(\hyperref[II.2.7.5-ko]{2.7.5})에 따라
+$\beta:\widetilde{\Gamma_*(\widetilde{M})}\to\widetilde{M}$가 동형이므로,
+(\hyperref[II.2.6.5.1-ko]{2.6.5.1})에 따라 $\widetilde{\alpha}$는 그
+역동형이다. 이로써 (i)가 따른다. $P$를 $\Gamma_*(\widetilde{M})$의 등급
+부분가군 $\alpha(M)$이라 하자. $M\mapsto\widetilde{M}$은 완전함자이므로
+(\hyperref[II.2.5.4-ko]{2.5.4}), $\widetilde{\alpha}$에 의한
+$\widetilde{M}$의 상은 $\widetilde{P}$와 같다. 따라서 (i)에 따라
+$\widetilde{P}=\widetilde{\Gamma_*(\widetilde{M})}$이다. 이제
+$Q=\Gamma_*(\mathcal{G})\cap P$로 놓자. 앞의 결과와
+(\hyperref[II.2.5.4-ko]{2.5.4})에 따라
+$\widetilde{Q}=\widetilde{\Gamma_*(\mathcal{G})}$이므로,
+(\hyperref[II.2.7.5-ko]{2.7.5})에 따라 $\beta$를 $\widetilde{Q}$에 제한한
+사상은 이 $\mathcal{O}_X$-가군에서 $\mathcal{G}$ 위로 가는
+\emph{동형}이다. 한편 $N$의 정의와
+(\hyperref[II.2.5.4-ko]{2.5.4})에 따라, 동형 $\widetilde{\alpha}$를
+$\widetilde{N}$에 제한한 사상은 $\widetilde{N}$에서
+$\widetilde{Q}$ 위로 가는 동형이다. 따라서
+(\hyperref[II.2.6.5.1-ko]{2.6.5.1})에 의해 결론이 따른다.
+\end{proof}
+
+\subsection{함자적 성질.}
+\label{subsection:II.2.8-ko}
+
+\begin{env}[2.8.1]
+\phantomsection
+\label{II.2.8.1-ko}
+$S$, $S'$을 음이 아닌 차수로 등급이 주어진 두 환이라 하고,
+$\varphi:S'\to S$를 등급환의 준동형이라 하자. $X=\operatorname{Proj}(S)$에서
+$V_+(\varphi(S'_+))$의 여집합인 열린부분집합, 또는 같은 말로 $S'_+$의
+동차 원소 $f'$ 전체에 대한 $D_+(\varphi(f'))$들의 합집합을
+$G(\varphi)$로 나타내겠다. $\operatorname{Spec}(S)$에서
+$\operatorname{Spec}(S')$로 가는 연속사상 ${}^a\varphi$
+(\hyperref[I.1.2.1-ko]{I, 1.2.1})를 $G(\varphi)$에 제한하면
+$G(\varphi)$에서 $\operatorname{Proj}(S')$로 가는 연속사상이 된다. 표기의
+남용으로 이 사상도 ${}^a\varphi$로 나타내겠다. $f'\in S'_+$가 동차
+원소이면
+\[
+\label{II.2.8.1.1-ko}
+  {}^a\varphi^{-1}(D_+(f'))=D_+(\varphi(f'))
+\tag{2.8.1.1}
+\]
+이다. 이는 ${}^a\varphi$가 $G(\varphi)$를 $\operatorname{Proj}(S')$로
+보낸다는 사실과 (\hyperref[I.1.2.2.2-ko]{I, 1.2.2.2})에서 따른다. 한편
+같은 표기 아래에서 준동형 $\varphi$는 등급환의 준동형
+$S'_{f'}\to S_f$를 표준적으로 정의하며, 이를 차수 $0$인 원소들에
+제한하면 다음 준동형을 얻는다.
+
+\oldpage[II]{42}
+$S'_{(f')}\to S_{(f)}$; 이를 $\varphi_{(f)}$로 나타내겠다. 이에 대응하여
+(\hyperref[I.1.6.1-ko]{I, 1.6.1}) 아핀 스킴의 사상
+$({}^a\varphi_{(f)},\widetilde{\varphi}_{(f)}):
+\operatorname{Spec}(S_{(f)})\to\operatorname{Spec}(S'_{(f')})$을 얻는다.
+$\operatorname{Spec}(S_{(f)})$를 $D_+(f)$ 위에서
+$\operatorname{Proj}(S)$로부터 유도된 스킴과 표준적으로 동일시하면
+(\hyperref[II.2.3.6-ko]{2.3.6}), 이로써 사상
+$\Phi_f:D_+(f)\to D_+(f')$를 정의하였고, ${}^a\varphi_{(f)}$는
+${}^a\varphi$를 $D_+(f)$에 제한한 사상과 동일시된다. 한편 $g'$이
+$S'_+$의 두 번째 동차 원소이고 $g=\varphi(g')$이면 다음 도식이
+가환임을 곧 알 수 있다.
+\[
+  \xymatrix{
+    D_+(f)\ar[r]^{\Phi_f} & D_+(f')\\
+    D_+(fg)\ar[u]\ar[r]_{\Phi_{fg}} & D_+(f'g')\ar[u]
+  }
+\]
+이는 다음 도식이 가환하기 때문이다.
+\[
+  \xymatrix{
+    S'_{(f')}\ar[r]^{\varphi_{(f)}}\ar[d]_{\omega_{f'g',f'}}
+    & S_{(f)}\ar[d]^{\omega_{fg,f}}\\
+    S'_{(f'g')}\ar[r]_{\varphi_{(fg)}} & S_{(fg)}
+  }
+\]
+$G(\varphi)$의 정의와 (\hyperref[II.2.3.3.2-ko]{2.3.3.2})을 고려하면
+따라서 다음을 알 수 있다.
+\end{env}
+
+\begin{proposition}[2.8.2]
+\phantomsection
+\label{II.2.8.2-ko}
+등급환 준동형 $\varphi:S'\to S$가 주어지면, 유도 준스킴
+$G(\varphi)$에서 $\operatorname{Proj}(S')$로 가는 유일한 사상
+$({}^a\varphi,\widetilde{\varphi})$가 존재한다. 이 사상을
+\emph{$\varphi$에 대응하는 사상}이라 하고 $\operatorname{Proj}(\varphi)$로
+나타낸다. 모든 동차 원소 $f'\in S'_+$에 대하여, 이 사상을
+$D_+(\varphi(f'))$에 제한한 사상은 $\varphi$가 정하는 준동형
+$S'_{(f')}\to S_{(\varphi(f'))}$에 대응하는 사상과 일치한다.
+\end{proposition}
+
+\begin{proof}
+앞의 표기에서 $f'\in S'_d$이면 다음 도식이 가환함에 유의하자.
+\[
+\label{II.2.8.2.1-ko}
+  \xymatrix{
+    S'_{(f')}\ar[r]^{\varphi_{(f)}}\ar[d]_{\sim}
+    & S_{(f)}\ar[d]^{\sim}\\
+    {S'}^{(d)}/(f'-1){S'}^{(d)}\ar[r]
+    & S^{(d)}/(f-1)S^{(d)}
+  }
+\tag{2.8.2.1}
+\]
+여기서 세로 화살표들은
+(\hyperref[II.2.2.5-ko]{2.2.5})의 동형들이다.
+\end{proof}
+
+\begin{corollary}[2.8.3]
+\phantomsection
+\label{II.2.8.3-ko}
+\begin{enumerate}
+  \item[\rm(i)] 사상 $\operatorname{Proj}(\varphi)$는 아핀이다.
+  \item[\rm(ii)] $\operatorname{Ker}(\varphi)$가 멱영이면(특히
+    $\varphi$가 단사이면), 사상 $\operatorname{Proj}(\varphi)$는
+    우세 사상이다.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i)은 (\hyperref[II.2.8.2-ko]{2.8.2})와
+(\hyperref[II.2.8.1.1-ko]{2.8.1.1})에서 곧바로 따른다. 한편
+$\operatorname{Ker}(\varphi)$가 멱영이면, 모든 동차 원소
+$f'\in S'_+$에 대하여 $f=\varphi(f')$로 둘 때
+$\operatorname{Ker}(\varphi_f)$가 멱영임을 곧바로 확인할 수 있고,
+따라서 $\operatorname{Ker}(\varphi_{(f)})$도 멱영이다. 그러므로 결론은
+(\hyperref[II.2.8.2-ko]{2.8.2})와
+(\hyperref[I.1.2.7-ko]{I, 1.2.7})에서 따른다.
+\end{proof}
+
+\oldpage[II]{43}
+일반적으로 $\operatorname{Proj}(S)$에서 $\operatorname{Proj}(S')$로 가는
+사상들 가운데 아핀이 아닌 것이 있으며, 따라서 이러한 사상은 등급환 준동형
+$S'\to S$에서 나오지 않는다. 예를 들어 $A$가 체일 때의 구조 사상
+$\operatorname{Proj}(S)\to\operatorname{Spec}(A)$이 그러하다. 여기서는
+$\operatorname{Spec}(A)$를 $\operatorname{Proj}(A[T])$와 동일시한다
+(\agref{II.3.1.7-ko}{3.1.7} 참조). 실제로 이는
+(\hyperref[I.2.3.2-ko]{I, 2.3.2})에서 따른다.
+
+\begin{env}[2.8.4]
+\phantomsection
+\label{II.2.8.4-ko}
+$S''$을 음이 아닌 차수로 등급이 주어진 세 번째 환이라 하고,
+$\varphi':S''\to S'$을 등급환 준동형이라 하며,
+$\varphi''=\varphi\circ\varphi'$으로 놓자.
+(\hyperref[II.2.8.1.1-ko]{2.8.1.1})과 공식
+${}^a\varphi''=({}^a\varphi')\circ({}^a\varphi)$에 따라
+$G(\varphi'')\subset G(\varphi)$임을 곧바로 확인할 수 있다. 또한
+$\Phi$, $\Phi'$, $\Phi''$이 각각 $\varphi$, $\varphi'$, $\varphi''$에
+대응하는 사상이면
+$\Phi''=\Phi'\circ(\Phi|G(\varphi''))$이다.
+\end{env}
+
+\begin{env}[2.8.5]
+\phantomsection
+\label{II.2.8.5-ko}
+$S$가 등급 $A$-대수이고 $S'$이 등급 $A'$-대수라고 하자. 또
+$\psi:A'\to A$를 다음 도식이 가환하도록 하는 환 준동형이라 하자.
+\[
+\label{II.2.8.5.1-ko}
+  \xymatrix{
+    A'\ar[r]^{\psi}\ar[d] & A\ar[d]\\
+    S'\ar[r]_{\varphi} & S
+  }
+\tag{2.8.5.1}
+\]
+그러면 $G(\varphi)$와 $\operatorname{Proj}(S')$을 각각
+$\operatorname{Spec}(A)$와 $\operatorname{Spec}(A')$ 위의 스킴으로 볼 수
+있다. $\Phi$와 $\Psi$가 각각 $\varphi$와 $\psi$에 대응하는 사상이면
+다음 도식은 가환한다.
+\[
+  \xymatrix{
+    G(\varphi)\ar[r]^{\Phi}\ar[d] & \operatorname{Proj}(S')\ar[d]\\
+    \operatorname{Spec}(A)\ar[r]_{\Psi} & \operatorname{Spec}(A')
+  }
+\]
+실제로 $f=\varphi(f')$이고 $f'$이 $S'_+$의 동차 원소일 때, $\Phi$를
+$D_+(f)$에 제한한 사상에 대해 이를 보이면 충분하다. 이 경우에는 다음
+도식의 가환성에서 결론이 따른다.
+\[
+  \xymatrix{
+    A'\ar[r]^{\psi}\ar[d] & A\ar[d]\\
+    S'_{(f')}\ar[r]_{\varphi_{(f)}} & S_{(f)}
+  }
+\]
+\end{env}
+
+\begin{env}[2.8.6]
+\phantomsection
+\label{II.2.8.6-ko}
+이제 $M$을 등급 $S$-가군이라 하고, 자명하게 등급이 매겨지는
+$S'$-가군 $M_{[\varphi]}$를 생각하자. $f'$을 $S'_+$의 동차 원소라 하고
+$f=\varphi(f')$이라 하자. 표준 동형
+$(M_{[\varphi]})_{f'}\xrightarrow{\sim}(M_f)_{[\varphi_f]}$이 존재함을
+알고 있으며(\hyperref[0.1.5.2-ko]{0, 1.5.2}), 이 동형이 차수를
+보존함은 자명하다. 따라서 표준 동형
+$(M_{[\varphi]})_{(f')}\xrightarrow{\sim}
+(M_{(f)})_{[\varphi_{(f)}]}$이 존재한다. 이 동형에 표준적으로 대응하는
+층의 동형
+$\widetilde{M_{[\varphi]}}|D_+(f')
+\xrightarrow{\sim}(\Phi_f)_*(\widetilde{M}|D_+(f))$
+이 존재한다
+(\hyperref[II.2.5.2-ko]{2.5.2} 및
+\hyperref[I.1.6.3-ko]{I, 1.6.3}). 더욱이,
+
+\oldpage[II]{44}
+$g'$가 $S'_+$의 두 번째 동차 원소이고 $g=\varphi(g')$이면 다음 도식은
+가환한다.
+\[
+  \xymatrix{
+    (M_{[\varphi]})_{(f')}\ar[r]^{\sim}\ar[d]
+    & (M_{(f)})_{[\varphi_{(f)}]}\ar[d]\\
+    (M_{[\varphi]})_{(f'g')}\ar[r]^{\sim}
+    & (M_{(fg)})_{[\varphi_{(fg)}]}
+  }
+\]
+따라서 동형
+\[
+  \widetilde{M_{[\varphi]}}|D_+(f'g')
+  \xrightarrow{\sim}(\Phi_{fg})_*(\widetilde{M}|D_+(fg))
+\]
+은 동형
+$\widetilde{M_{[\varphi]}}|D_+(f')
+\xrightarrow{\sim}(\Phi_f)_*(\widetilde{M}|D_+(f))$을
+$D_+(f'g')$로 제한한 것임을 곧바로 알 수 있다. $\Phi_f$는 사상
+$\Phi$를 $D_+(f)$로 제한한 것이므로,
+(\hyperref[II.2.8.1.1-ko]{2.8.1.1})을 고려하고
+$X'=\operatorname{Proj}(S')$으로 두면 다음을 얻는다.
+\end{env}
+
+\begin{proposition}[2.8.7]
+\phantomsection
+\label{II.2.8.7-ko}
+$\mathcal{O}_{X'}$-가군 $\widetilde{M_{[\varphi]}}$에서
+$\mathcal{O}_{X'}$-가군 $\Phi_*(\widetilde{M}|G(\varphi))$로 가는
+함자적인 표준 동형이 존재한다.
+\end{proposition}
+
+이로부터 등급 $S'$-가군 $M'$에서 등급 $S$-가군 $M$으로 가는
+$\varphi$-사상들의 집합에서 $\Phi$-사상
+$\widetilde{M'}\to\widetilde{M}|G(\varphi)$들의 집합으로 가는 함자적인
+표준 사상을 곧바로 얻는다. (\hyperref[II.2.8.4-ko]{2.8.4})의 표기
+아래에서 $M''$가 등급 $S''$-가군이면, $\varphi$-사상 $M'\to M$과
+$\varphi'$-사상 $M''\to M'$의 합성에
+$\widetilde{M'}|G(\varphi')\to\widetilde{M}|G(\varphi'')$와
+$\widetilde{M''}\to\widetilde{M'}|G(\varphi')$의 합성이 표준적으로
+대응한다.
+
+\begin{proposition}[2.8.8]
+\phantomsection
+\label{II.2.8.8-ko}
+(\hyperref[II.2.8.1-ko]{2.8.1})의 가정 아래에서 $M'$을 등급
+$S'$-가군이라 하자. $(\mathcal{O}_X|G(\varphi))$-가군
+$\Phi^*(\widetilde{M'})$에서 $(\mathcal{O}_X|G(\varphi))$-가군
+$\widetilde{M'\otimes_{S'}S}|G(\varphi)$로 가는 함자적인 표준 준동형
+$\nu$가 존재한다. 아이디얼 $S'_+$가 $S'_1$에 의해 생성되면
+$\nu$는 동형이다.
+\end{proposition}
+
+\begin{proof}
+실제로 $f'\in S'_d$ ($d>0$)에 대하여 다음과 같은
+$S_{(f)}$-가군의 함자적인 표준 준동형을 정의한다. 여기서
+$f=\varphi(f')$이다.
+\[
+\label{II.2.8.8.1-ko}
+  \nu_f:M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}
+  \longrightarrow(M'\otimes_{S'}S)_{(f)}
+\tag{2.8.8.1}
+\]
+이는 준동형
+$M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}\to
+M'_{f'}\otimes_{S'_{f'}}S_f$와 표준 동형
+$M'_{f'}\otimes_{S'_{f'}}S_f\xrightarrow{\sim}(M'\otimes_{S'}S)_f$
+(\hyperref[0.1.5.4-ko]{0, 1.5.4})을 합성하여 정의하며, 뒤의 동형이
+차수를 보존한다는 점을 사용한다. 두 번째 원소 $g'\in S'_+$와
+$g=\varphi(g')$에 대하여 $D_+(f)$에서 $D_+(fg)$로 가는 제한
+준동형과 $\nu_f$들이 양립함을 곧바로 확인할 수 있다. 따라서
+(\hyperref[I.1.6.5-ko]{I, 1.6.5})을 고려하면 준동형
+\[
+  \nu:\Phi^*(\widetilde{M'})
+  \longrightarrow\widetilde{M'\otimes_{S'}S}|G(\varphi)
+\]
+가 정의된다. 두 번째 주장을 증명하려면 모든 $f'\in S'_1$에 대하여
+$\nu_f$가 동형임을 보이면 충분하다. 실제로 이 경우 $G(\varphi)$는
+$D_+(\varphi(f'))$들의 합집합이다. 먼저 $\mathbf{Z}$-쌍선형 사상
+$M'_m\times S_n\to M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$을 정의하자.
+이 사상은 $(x',s)$에 원소
+$(x'/{f'}^m)\otimes(s/f^n)$을 대응시킨다. 여기서 $m<0$일 때에는
+$x'/{f'}^m$이 ${f'}^{-m}x'/1$이라는 약속을 쓴다.
+
+\oldpage[II]{45}
+(\hyperref[II.2.5.13-ko]{2.5.13})의 증명에서와 같이 이 사상으로부터
+가군의 쌍준동형
+\[
+  \eta_f:M'\otimes_{S'}S
+  \longrightarrow M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}.
+\]
+을 얻는다. 또한 어떤 $r>0$에 대하여
+$f^r\sum_i(x'_i\otimes s_i)=0$이면, 이를
+$\sum_i({f'}^rx'_i\otimes s_i)=0$으로도 쓸 수 있다. 따라서
+(\hyperref[0.1.5.4-ko]{0, 1.5.4})에 의해
+$\sum_i({f'}^rx'_i/{f'}^{m_i+r})\otimes(s_i/f^{n_i})=0$이다. 즉
+$\eta_f(\sum_i x'_i\otimes s_i)=0$이므로 $\eta_f$는 다음과 같이
+인수분해된다.
+\[
+  M'\otimes_{S'}S\longrightarrow(M'\otimes_{S'}S)_f
+  \xrightarrow{\eta'_f}M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}~;
+\]
+끝으로 $\eta'_f$와 $\nu_f$가 서로 역인 동형임을 확인할 수 있다.
+
+특히 (\hyperref[II.2.1.2.1-ko]{2.1.2.1})에서 모든
+$n\in\mathbf{Z}$에 대하여 표준 준동형
+\[
+\label{II.2.8.8.2-ko}
+  \Phi^*(\mathcal{O}_{X'}(n))\xrightarrow{\sim}
+  \mathcal{O}_X(n)|G(\varphi)
+\tag{2.8.8.2}
+\]
+을 얻는다.
+\end{proof}
+
+\begin{env}[2.8.9]
+\phantomsection
+\label{II.2.8.9-ko}
+$A$, $A'$을 두 환이라 하고, $\psi:A'\to A$를 환 준동형이라 하자. 이
+준동형은 사상
+$\Psi:\operatorname{Spec}(A)\to\operatorname{Spec}(A')$를 정의한다.
+$S'$를 음이 아닌 차수로 등급이 주어진 $A'$-대수라 하고
+$S=S'\otimes_{A'}A$로 두자. 이는 자명하게 $S'_n\otimes_{A'}A$들을
+동차 성분으로 갖는 등급 $A$-대수이다. 그러면 사상
+$\varphi:s'\mapsto s'\otimes1$은 도식
+(\hyperref[II.2.8.5.1-ko]{2.8.5.1})을 가환하게 하는 등급환
+준동형이다. 여기서는 $S_+$가 $\varphi(S'_+)$에 의해 생성되는
+$A$-가군이므로 $G(\varphi)=\operatorname{Proj}(S)=X$이다. 따라서
+$X'=\operatorname{Proj}(S')$로 두면 다음 가환 도식을 얻는다.
+\[
+\label{II.2.8.9.1-ko}
+  \xymatrix{
+    X\ar[r]^{\Phi}\ar[d]_p & X'\ar[d]\\
+    Y\ar[r]_{\Psi} & Y'
+  }
+\tag{2.8.9.1}
+\]
+
+이제 $M'$을 등급 $S'$-가군이라 하고
+$M=M'\otimes_{A'}A=M'\otimes_{S'}S$로 두자. 이 조건 아래에서는
+다음이 성립한다.
+\end{env}
+
+\begin{proposition}[2.8.10]
+\phantomsection
+\label{II.2.8.10-ko}
+도식 (\hyperref[II.2.8.9.1-ko]{2.8.9.1})은 스킴 $X$를 곱
+$X'\times_{Y'}Y$와 동일시한다. 또한 표준 준동형
+$\nu:\Phi^*(\widetilde{M'})\to\widetilde{M}$
+(\hyperref[II.2.8.8-ko]{2.8.8})은 동형이다.
+\end{proposition}
+
+\begin{proof}
+첫째 주장은 $S'_+$의 모든 동차 원소 $f'$에 대하여
+$f=\varphi(f')$로 둘 때, $\Phi$와 $p$를 $D_+(f)$에 제한한 사상들이
+이 스킴을 곱 $D_+(f')\times_{Y'}Y$와 동일시함을 보이면 증명된다
+(\hyperref[I.3.2.6.2-ko]{I, 3.2.6.2}). 다시 말해
+(\hyperref[I.3.2.2-ko]{I, 3.2.2})에 따라 $S_{(f)}$가
+$S'_{(f')}\otimes_{A'}A$와 표준적으로 동일시됨을 보이면 충분하다.
+이는 차수를 보존하는 표준 동형
+$S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$가 존재하므로 곧바로
+따른다(\hyperref[0.1.5.4-ko]{0, 1.5.4}). 둘째 주장은 앞에서 본 바에
+따라 $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$가
+$M'_{(f')}\otimes_{A'}A$와 동일시되고, 후자가 $M_{(f)}$와 동일시되는
+사실에서 따른다. 실제로 $M_f$는 차수를 보존하는 동형에 의해
+$M'_{f'}\otimes_{A'}A$와 표준적으로 동일시된다.
+\end{proof}
+
+\begin{corollary}[2.8.11]
+\phantomsection
+\label{II.2.8.11-ko}
+모든 정수 $n\in\mathbf{Z}$에 대하여 $\widetilde{M(n)}$은
+$\Phi^*(\widetilde{M'(n)})
+=\widetilde{M'(n)}\otimes_{Y'}\mathcal{O}_Y$와 동일시된다. 특히
+$\mathcal{O}_X(n)=\Phi^*(\mathcal{O}_{X'}(n))
+=\mathcal{O}_{X'}(n)\otimes_{Y'}\mathcal{O}_Y$이다.
+\end{corollary}
+
+\begin{proof}
+이는 (\hyperref[II.2.8.10-ko]{2.8.10})과
+(\hyperref[II.2.5.15-ko]{2.5.15})에서 따른다.
+\end{proof}
+
+\oldpage[II]{46}
+
+\begin{env}[2.8.12]
+\phantomsection
+\label{II.2.8.12-ko}
+(\hyperref[II.2.8.9-ko]{2.8.9})의 가정 아래에서
+$f'\in S'_d$ ($d>0$) 및 $f=\varphi(f')$에 대하여 다음 도식은
+가환한다.
+\[
+\label{II.2.8.12.1-ko}
+  \xymatrix{
+    M'_{(f')}\ar[r]^{\sim}\ar[d]
+    & M'^{(d)}/(f'-1)M'^{(d)}\ar[d]\\
+    M_{(f)}\ar[r]^{\sim}
+    & M^{(d)}/(f-1)M^{(d)}
+  }
+\tag{2.8.12.1}
+\]
+(\hyperref[II.2.2.5-ko]{2.2.5} 참조).
+\end{env}
+
+\begin{env}[2.8.13]
+\phantomsection
+\label{II.2.8.13-ko}
+(\hyperref[II.2.8.9-ko]{2.8.9})의 표기와 가정을 그대로 두고,
+$\mathcal{F}'$를 $\mathcal{O}_{X'}$-가군이라 하자.
+$\mathcal{F}=\Phi^*(\mathcal{F}')$로 두면,
+(\hyperref[II.2.8.11-ko]{2.8.11})과
+(\hyperref[0.4.3.3-ko]{0, 4.3.3})에 의해 모든 $n\in\mathbf{Z}$에
+대하여 $\mathcal{F}(n)=\Phi^*(\mathcal{F}'(n))$이다. 따라서
+(\hyperref[0.3.7.1-ko]{0, 3.7.1})에 의해 표준 준동형
+\[
+  \Gamma(\rho):\Gamma(X',\mathcal{F}'(n))
+  \longrightarrow\Gamma(X,\mathcal{F}(n))
+\]
+이 존재하며, 이로부터 등급가군의 표준 쌍준동형
+\[
+  \Gamma_\bullet(\mathcal{F}')\longrightarrow
+  \Gamma_\bullet(\mathcal{F}).
+\]
+을 얻는다.
+
+아이디얼 $S_+$가 $S_1$에 의해 생성된다고 가정하고,
+$\mathcal{F}'=\widetilde{M'}$라 하자. 그러면
+$M=M'\otimes_{A'}A$로 둘 때 $\mathcal{F}=\widetilde{M}$이다.
+$f'$가 $S'_+$의 동차 원소이고 $f=\varphi(f')$이면,
+$M_{(f)}=M'_{(f')}\otimes_{A'}A$임을 이미 보았으며 다음 도식은
+가환한다.
+\[
+  \xymatrix{
+    M'_0\ar[r]\ar[d]
+    & M'_{(f')}\ar[d]
+    & =\Gamma(D_+(f'),\widetilde{M'})\\
+    M_0\ar[r]
+    & M_{(f)}
+    & =\Gamma(D_+(f),\widetilde{M})
+  }
+\]
+이 관찰과 준동형 $\alpha$의 정의
+(\hyperref[II.2.6.2-ko]{2.6.2})에서 다음 도식이 가환함을 곧바로
+얻는다.
+\[
+\label{II.2.8.13.1-ko}
+  \xymatrix{
+    M'\ar[r]^{\alpha_{M'}}\ar[d]
+    & \Gamma_\bullet(\widetilde{M'})\ar[d]\\
+    M\ar[r]_{\alpha_M}
+    & \Gamma_\bullet(\widetilde{M})
+  }
+\tag{2.8.13.1}
+\]
+마찬가지로 다음 도식도 가환한다.
+\[
+\label{II.2.8.13.2-ko}
+  \xymatrix{
+    \widetilde{\Gamma_\bullet(\mathcal{F}')}\ar[r]^{\beta_{\mathcal{F}'}}
+      \ar[d]
+    & \mathcal{F}'\ar[d]\\
+    \widetilde{\Gamma_\bullet(\mathcal{F})}\ar[r]_{\beta_{\mathcal{F}}}
+    & \mathcal{F}
+  }
+\tag{2.8.13.2}
+\]
+(오른쪽 세로 화살표는 표준 $\Phi$-사상
+$\mathcal{F}'\to\Phi^*(\mathcal{F}')=\mathcal{F}$이다.)
+\end{env}
+
+\oldpage[II]{47}
+
+\begin{env}[2.8.14]
+\phantomsection
+\label{II.2.8.14-ko}
+계속해서 (\hyperref[II.2.8.9-ko]{2.8.9})의 가정과 표기법을 유지하고,
+$N'$을 또 하나의 등급 $S'$-가군이라 하며
+$N=N'\otimes_{A'}A$라 하자. 표준 쌍준동형 $M'\to M$, $N'\to N$은
+(표준 환 준동형 $S'\to S$에 상대적인) 쌍준동형
+$M'\otimes_{S'}N'\to M\otimes_S N$을 주며, 따라서 차수~$0$의
+$S$-준동형
+\[
+  (M'\otimes_{S'}N')\otimes_{A'}A\longrightarrow M\otimes_S N,
+\]
+도 준다는 것은 곧바로 알 수 있다. 이에
+(\hyperref[II.2.8.10-ko]{2.8.10})을 고려하여 다음과 같은
+$\mathcal{O}_X$-가군의 준동형이 대응한다.
+\[
+\label{II.2.8.14.1-ko}
+  \Phi^*(\widetilde{M'\otimes_{S'}N'})
+  \longrightarrow\widetilde{M\otimes_S N}.
+\tag{2.8.14.1}
+\]
+
+더 나아가 다음 도식이 가환함을 곧바로 확인할 수 있다.
+\[
+\label{II.2.8.14.2-ko}
+  \xymatrix{
+    \Phi^*(\widetilde{M'}\otimes_{\mathcal{O}_{X'}}\widetilde{N'})
+      \ar[r]^{\sim}\ar[d]_{\Phi^*(\lambda)}
+    & \widetilde{M}\otimes_{\mathcal{O}_X}\widetilde{N}
+      \ar[d]^{\lambda}
+    & =\Phi^*(\widetilde{M'})\otimes_{\mathcal{O}_X}
+      \Phi^*(\widetilde{N'})\\
+    \Phi^*(\widetilde{M'\otimes_{S'}N'})\ar[r]
+    & \widetilde{M\otimes_S N}
+  }
+\tag{2.8.14.2}
+\]
+여기서 첫째 가로줄은 표준 동형
+(\hyperref[0.4.3.3-ko]{0, 4.3.3})이다. 아이디얼 $S'_+$가
+$S'_1$에 의해 생성되면, $S_+$가 $S_1$에 의해 생성됨은 명백하다.
+이 경우 (\hyperref[II.2.8.14.2-ko]{2.8.14.2})의 두 세로 화살표는
+동형이며(\hyperref[II.2.5.13-ko]{2.5.13}), 따라서
+(\hyperref[II.2.8.14.1-ko]{2.8.14.1})도 동형이다.
+
+마찬가지로, 차수 $k$의 준동형 $u'$에 역시 차수 $k$인 준동형
+$u'\otimes1$을 대응시키면 표준 쌍준동형
+$\operatorname{Hom}_{S'}(M',N')\to\operatorname{Hom}_S(M,N)$을 얻는다.
+이로부터 다시 차수~$0$의 $S$-준동형
+\[
+  (\operatorname{Hom}_{S'}(M',N'))\otimes_{A'}A
+  \longrightarrow\operatorname{Hom}_S(M,N)
+\]
+을 얻으며, 따라서 $\mathcal{O}_X$-가군의 준동형
+\[
+\label{II.2.8.14.3-ko}
+  \Phi^*(\widetilde{\operatorname{Hom}_{S'}(M',N')})
+  \longrightarrow\widetilde{\operatorname{Hom}_S(M,N)}.
+\tag{2.8.14.3}
+\]
+을 얻는다.
+
+더 나아가 다음 도식은 가환한다.
+\[
+  \xymatrix{
+    \Phi^*(\widetilde{\operatorname{Hom}_{S'}(M',N')})\ar[r]
+      \ar[d]_{\Phi^*(\mu)}
+    & \widetilde{\operatorname{Hom}_S(M,N)}\ar[d]^{\mu}\\
+    \Phi^*(\mathcal{H}om_{\mathcal{O}_{X'}}
+      (\widetilde{M'},\widetilde{N'}))\ar[r]
+    & \mathcal{H}om_{\mathcal{O}_X}(\widetilde{M},\widetilde{N})
+  }
+\]
+여기서 둘째 가로줄은 표준 준동형
+(\hyperref[0.4.4.6-ko]{0, 4.4.6})이다.
+\end{env}
+
+\oldpage[II]{48}
+
+\begin{env}[2.8.15]
+\phantomsection
+\label{II.2.8.15-ko}
+표기법과 가정이 (\hyperref[II.2.8.1-ko]{2.8.1})의 것이라 하자.
+(\hyperref[II.2.4.7-ko]{2.4.7})에 의하면, $S_0$과 $S'_0$을
+$\mathbf{Z}$로 바꾸고 $\varphi_0$을 항등사상으로 바꾼 뒤, 각각 $S$와
+$S'$을 $S^{(d)}$와 ${S'}^{(d)}$로 바꾸고($d>0$) $\varphi$를
+$S^{(d)}$에 대한 제한 $\varphi^{(d)}$로 바꾸어도 사상 $\Phi$는 동형까지
+변하지 않는다.
+\end{env}
+
+\subsection{$\operatorname{Proj}(S)$ 스킴의 닫힌 부분스킴.}
+\label{subsection:II.2.9-ko}
+
+\begin{env}[2.9.1]
+\phantomsection
+\label{II.2.9.1-ko}
+$\varphi:S\to S'$이 등급환의 준동형이라고 하자. 어떤 정수 $n$이 존재하여
+$k\geq n$일 때 $\varphi_k:S_k\to S'_k$가 전사이면(각각 단사이면,
+전단사이면), $\varphi$를 (TN)-\emph{전사}(각각 (TN)-\emph{단사},
+(TN)-\emph{전단사})라고 한다. 그러면
+(\hyperref[II.2.8.15-ko]{2.8.15})에 따라 $\Phi$의 연구는 $\varphi$가
+\emph{전사}(각각 \emph{단사}, \emph{전단사})인 경우로 환원된다.
+$\varphi$가 (TN)-전단사라고 하는 대신, 이때 이를
+(TN)-\emph{동형사상}이라고도 한다.
+\end{env}
+
+\begin{proposition}[2.9.2]
+\phantomsection
+\label{II.2.9.2-ko}
+$S$를 음이 아닌 차수로 등급이 주어진 환이라 하고
+$X=\operatorname{Proj}(S)$라 하자.
+\begin{enumerate}
+  \item[\rm(i)] $\varphi:S\to S'$이 등급환의 (TN)-전사 준동형이면, 이에
+    대응하는 사상 $\Phi$ (\hyperref[II.2.8.1-ko]{2.8.1})는
+    $\operatorname{Proj}(S')$ 전체에서 정의되며
+    $\operatorname{Proj}(S')$에서 $X$로 가는 닫힌 몰입 사상이다.
+    $\mathfrak{J}$가 $\varphi$의 핵이면, $\Phi$에 결부된 $X$의 닫힌
+    부분스킴은 $\mathcal{O}_X$의 준연접 아이디얼층
+    $\widetilde{\mathfrak{J}}$로 정의된다.
+  \item[\rm(ii)] 더 나아가 아이디얼 $S_+$가 차수~$1$인 유한 개의 동차
+    원소로 생성된다고 가정하자. $X'$을 $\mathcal{O}_X$의 준연접
+    아이디얼층 $\mathcal{J}$로 정의되는 $X$의 닫힌 부분스킴이라 하자.
+    $\mathfrak{J}$를 표준 준동형
+    $\alpha:S\to\Gamma_\bullet(\mathcal{O}_X)$
+    (\hyperref[II.2.6.2-ko]{2.6.2})에 의한
+    $\Gamma_\bullet(\mathcal{J})$의 역상인 $S$의 등급 아이디얼이라 하고,
+    $S'=S/\mathfrak{J}$라 놓자. 그러면 $X'$은 등급환의 표준 준동형
+    $S\to S'$에 대응하는 닫힌 몰입 사상
+    $\operatorname{Proj}(S')\to X$에 결부된 부분스킴이다.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)] $\varphi$가 전사라고 가정해도 된다
+    (\hyperref[II.2.9.1-ko]{2.9.1}). 가정에 따라 $\varphi(S_+)$가
+    $S'_+$를 생성하므로 $G(\varphi)=\operatorname{Proj}(S')$이다.
+    한편 둘째 주장은 $X$ 위에서 국소적으로 확인할 수 있다. 따라서
+    $f$를 $S_+$의 동차 원소라 하고 $f'=\varphi(f)$라 놓자.
+    $\varphi$는 등급환의 전사 준동형이므로
+    $\varphi_{(f')}:S_{(f)}\to S'_{(f')}$가 전사이고 그 핵이
+    $\mathfrak{J}_{(f)}$임을 곧바로 확인할 수 있다. 이로써 (i)가
+    증명된다 (\hyperref[I.4.2.3-ko]{I, 4.2.3}).
+  \item[\rm(ii)] (i)에 따라, 표준 단사 준동형
+    $j:\mathfrak{J}\to S$에서 유도되는 준동형
+    $\widetilde{j}:\widetilde{\mathfrak{J}}\to\mathcal{O}_X$가
+    $\widetilde{\mathfrak{J}}$에서 $\mathcal{J}$로 가는 동형임을
+    확인하면 충분하다. 이는 (\hyperref[II.2.7.11-ko]{2.7.11})에서
+    따른다.
+\end{enumerate}
+\end{proof}
+
+$\mathfrak{J}$는
+$\widetilde{j}(\widetilde{\mathfrak{J}'})=\mathcal{J}$를 만족하는
+$S$의 등급 아이디얼 $\mathfrak{J}'$들 가운데 \emph{가장 큰} 것이다.
+실제로 정의로 거슬러 올라가 곧바로 확인하면
+(\hyperref[II.2.6.2-ko]{2.6.2}), 이 관계에서
+$\alpha(\mathfrak{J}')\subset\Gamma_\bullet(\mathcal{J})$가 따른다.
+
+\begin{corollary}[2.9.3]
+\phantomsection
+\label{II.2.9.3-ko}
+(\hyperref[II.2.9.2-ko]{2.9.2}, (i))의 가정이 성립하고, 더 나아가
+아이디얼 $S_+$가 $S_1$로 생성된다고 가정하자. 그러면 모든
+$n\in\mathbf{Z}$에 대하여 $\Phi^*(\widetilde{S(n)})$은
+$\widetilde{S'(n)}$과 표준적으로 동형이고, 따라서 모든
+$\mathcal{O}_X$-가군 $\mathcal{F}$에 대하여
+$\Phi^*(\mathcal{F}(n))$은 $\Phi^*(\mathcal{F})(n)$과 표준적으로
+동형이다.
+\end{corollary}
+
+\begin{proof}
+이는 (\hyperref[II.2.8.8-ko]{2.8.8})의 특수한 경우이며,
+(\hyperref[II.2.5.10.2-ko]{2.5.10.2})를 고려한다.
+\end{proof}
+
+\begin{corollary}[2.9.4]
+\phantomsection
+\label{II.2.9.4-ko}
+(\hyperref[II.2.9.2-ko]{2.9.2}, (ii))의 가정이 성립한다고 하자.
+$X$의 닫힌 부분준스킴 $X'$이 정역 스킴이기 위한 필요충분조건은 등급
+아이디얼 $\mathfrak{J}$가 $S$의 소아이디얼인 것이다.
+\end{corollary}
+
+\oldpage[II]{49}
+
+\begin{proof}
+$X'$은 $\operatorname{Proj}(S/\mathfrak{J})$와 동형이므로,
+(\hyperref[II.2.4.4-ko]{2.4.4})에 따라 조건은 충분하다. 필요성을
+보이기 위하여 완전열
+$0\to\mathcal{J}\to\mathcal{O}_X\to\mathcal{O}_X/\mathcal{J}$를
+생각하자. 이로부터 완전열
+\[
+  0\longrightarrow\Gamma_\bullet(\mathcal{J})
+  \longrightarrow\Gamma_\bullet(\mathcal{O}_X)
+  \longrightarrow\Gamma_\bullet(\mathcal{O}_X/\mathcal{J}).
+\]
+을 얻는다. $f\in S_m$, $g\in S_n$이고
+$\Gamma_\bullet(\mathcal{O}_X/\mathcal{J})$에서
+$\alpha_{n+m}(fg)$의 상이 영일 때, $\alpha_m(f)$와
+$\alpha_n(g)$의 상 가운데 하나가 영임을 보이면 충분하다. 그런데
+정의에 따라 이 상들은 정역 스킴 $X'$ 위의 가역
+$(\mathcal{O}_X/\mathcal{J})$-가군
+$\mathcal{L}=(\mathcal{O}_X/\mathcal{J})(m)$과
+$\mathcal{L}'=(\mathcal{O}_X/\mathcal{J})(n)$의 단면들이다. 가정에
+의하면 이 두 단면의 곱은 $\mathcal{L}\otimes\mathcal{L}'$에서 영이다
+((\hyperref[II.2.9.3-ko]{2.9.3}) 및
+(\hyperref[II.2.5.14.1-ko]{2.5.14.1})). 따라서
+(\hyperref[I.7.4.4-ko]{I, 7.4.4})에 따라 둘 중 하나가 영이다.
+\end{proof}
+
+\begin{corollary}[2.9.5]
+\phantomsection
+\label{II.2.9.5-ko}
+$A$를 환, $M$을 $A$-가군, $S$를 차수~$1$인 동차 원소들의 집합
+$S_1$로 생성되는 등급 $A$-대수라 하자. $u:M\to S_1$을 $A$-가군의
+전사 준동형이라 하고, $\overline{u}:\mathbf{S}(M)\to S$를 $u$를
+확장하는 $M$의 대칭대수 $\mathbf{S}(M)$에서 $S$로 가는
+($A$-대수의) 준동형이라 하자. 그러면 $\overline{u}$에 대응하는 사상은
+$\operatorname{Proj}(S)$에서 $\operatorname{Proj}(\mathbf{S}(M))$로
+가는 닫힌 몰입 사상이다.
+\end{corollary}
+
+\begin{proof}
+가정에 따라 $\overline{u}$는 전사이므로
+(\hyperref[II.2.9.2-ko]{2.9.2})를 적용하면 된다.
+\end{proof}

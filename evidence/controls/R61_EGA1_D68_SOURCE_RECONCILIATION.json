@@ -1,0 +1,62 @@
+{
+  "schema": "agko_source_reconciliation_v1",
+  "id": "AGKO-R61-EGA1-D68-SOURCE-RECONCILIATION",
+  "recorded": "2026-09-07T19:12:39.2216197+02:00",
+  "reason": "The single cumulative build preflight detected an exact canonical-source identity change before any TeX process launched.",
+  "scope": "EGA I section 9 closure-definition paragraph immediately after 9.5.11 only.",
+  "canonical_event": {
+    "path": "[CANONICAL_ROOT]/controls/CANON_EVENT_20260907_D68.json",
+    "bytes": 2536,
+    "sha256": "300616CF85EBB02BED0C5242574EA7D348A8044F23C0298200B4A92A413AF4BC"
+  },
+  "canonical_disposition": {
+    "global_id": "EGA1-CANON-ERR-0045",
+    "path": "[CANONICAL_ROOT]/controls/EGA1_DIPLOMATIC_D68_0045.jsonl",
+    "bytes": 4279,
+    "sha256": "29D471B91E7AA287A09BE165186C9FB50B6300647C275C9B7F8DFABE7A7D9124",
+    "classification": "DIPLOMATIC_MISTRANSCRIPTION_WITH_SEPARATE_PRINTED_OMITTED_PRIME"
+  },
+  "source_preimage": {
+    "path": "source/ega1/ega1-9-fr.tex",
+    "bytes": 53127,
+    "lf_lines": 1183,
+    "sha256": "976E4873EA52E77E74E942B2FC75AD986A3D5EDFF4F6188B4F5776C4A0464091"
+  },
+  "source_postimage": {
+    "path": "source/ega1/ega1-9-fr.tex",
+    "bytes": 53106,
+    "lf_lines": 1183,
+    "sha256": "DA26245BF5E016B4CDFE4237EA8BBB2C2AF362204BDB41A861B3D9E26018F23C"
+  },
+  "affected_postimage_slice": {
+    "lines": "1019-1022",
+    "bytes": 206,
+    "sha256": "762E2D0C045C22AF0649544F5EF22B024BE2D8597B3D9EEA76CF4831A91AEF29"
+  },
+  "korean_binding": {
+    "private_path": "ega/I/c1s9.tex",
+    "public_path": "source/c1s9.tex",
+    "whole_bytes": 55580,
+    "whole_lf_lines": 1179,
+    "whole_sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D",
+    "affected_lines": "1032-1034",
+    "affected_bytes": 235,
+    "affected_sha256": "2525D3D6C9A468CE4FF90DC10FF173A1072813BB7F60819F4CE47A3F4D26DD1E",
+    "semantic_reading": "The least closed subprescheme containing Y is denoted by the already-established closure notation overline-Y and is called the closure of Y in X.",
+    "text_mutated": false,
+    "reason": "The Korean text already preserves the corrected mathematical object and contains neither erroneous overbarred first-Y reading from the former French transcription nor an omitted-prime ambiguity. Only its exact source-authority identity required rebinding."
+  },
+  "coverage_manifest_update": {
+    "path": "pub/ega-ko/source/CUMULATIVE_INPUTS.json",
+    "fields": [
+      "coverage_matrix[c1s9.tex].source_bytes",
+      "coverage_matrix[c1s9.tex].source_sha256"
+    ]
+  },
+  "build_preflight": {
+    "first_attempt_launched_tex": false,
+    "status_after_reconciliation": "READY_FOR_ONE_CUMULATIVE_BUILD"
+  },
+  "qa_policy": "No section-level QA and no repeated QA loop. This authority reconciliation feeds the single substantial cumulative build and one aggregate QA pass.",
+  "result": "PASS_EXACT_SOURCE_REBIND_NO_KOREAN_TEXT_CHANGE"
+}
