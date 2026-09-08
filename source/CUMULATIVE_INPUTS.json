@@ -16,16 +16,16 @@
     "included_volumes": [
       "EGA 0_I",
       "EGA I",
-      "EGA II (front matter/programme and main text through complete section2 /2.9.5)"
+      "EGA II complete: front matter/programme, main text through section8 /8.14.14, bibliography, indexes/contents, and errata/addenda"
     ],
-    "terminal_coverage": "EGA II Chapter II front matter/programme through source EOF, followed by ega2/ega2-1-fr.tex lines1-4040 through complete section2 /2.9.5",
-    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II and the full EGA corpus remain incomplete",
-    "historical_source_pages": 253,
+    "terminal_coverage": "EGA II Chapter II front matter/programme, complete ega2/ega2-1-fr.tex through section8 / proposition8.14.14 proof / EOF, bibliography, indexes/contents, and errata/addenda through their respective source EOFs",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II is complete, while the wider EGA corpus remains incomplete",
+    "historical_source_pages": 423,
     "historical_page_ranges": [
       "EGA I introduction5-8",
       "EGA 0_I11-78",
       "EGA I Chapter I79-214",
-      "EGA II5-49"
+      "EGA II5-222"
     ],
     "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
@@ -96,7 +96,19 @@
     },
     {
       "path": "c2s1.tex",
-      "role": "EGA II main text contiguous through complete section2 /2.9.5 / canonical lines1-4040"
+      "role": "EGA II main text complete through section8 /8.14.14 / canonical lines1-18087 / source EOF"
+    },
+    {
+      "path": "c2bibliography.tex",
+      "role": "EGA II bibliography complete"
+    },
+    {
+      "path": "c2indexes-and-contents.tex",
+      "role": "EGA II notation index, terminology index, and original contents complete"
+    },
+    {
+      "path": "c2errata-addenda.tex",
+      "role": "EGA II errata and addenda complete"
     }
   ],
   "coverage_matrix": [
@@ -343,21 +355,21 @@
     {
       "driver_line": 84,
       "source_path": "ega2/ega2-1-fr.tex",
-      "source_bytes": 820504,
+      "source_bytes": 820503,
       "source_lf_lines": 18087,
-      "source_sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "source_sha256": "AEF273683A786E968FA47C92CD7C14E5EE2D85056ABC451CD4398BA05ECD0B74",
       "target_path": "c2s1.tex",
       "working_path": "ega/II/c2s1.tex",
-      "target_bytes": 181163,
-      "target_lf_lines": 4138,
-      "target_sha256": "893C8E4D68134E0F03479D760F916AADD2DA4687CFF8E04DAA300C355023EF9D",
-      "historical_page_markers": 44,
-      "status": "partial",
-      "coverage": "canonical lines1-4040 of18087 through complete section2 /2.9.5; next executable line4042 section3",
+      "target_bytes": 840480,
+      "target_lf_lines": 18062,
+      "target_sha256": "B3E6A0D98095665F82E08D68E4AF9F89CF51B91EF844C2EFFDE2981A16F556A3",
+      "historical_page_markers": 198,
+      "status": "complete",
+      "coverage": "full source EOF through complete section8 / proposition8.14.14 proof",
       "admitted_source_slice": {
-        "lines": "1-4040",
-        "lf_bytes": 173428,
-        "sha256": "E6911F259382EBEFA590F25970FD3F47297E1EC78D8C4703AD1627DA0BA4C720"
+        "lines": "1-18087",
+        "lf_bytes": 820503,
+        "sha256": "AEF273683A786E968FA47C92CD7C14E5EE2D85056ABC451CD4398BA05ECD0B74"
       }
     },
     {
@@ -366,14 +378,14 @@
       "source_bytes": 784,
       "source_lf_lines": 28,
       "source_sha256": "56DE1F13088E6451D2A7BF7FAF7C575AB3E82C7FB20A736A75E3FD19B0595F7A",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "target_path": "c2bibliography.tex",
+      "working_path": "ega/II/c2bibliography.tex",
+      "target_bytes": 1792,
+      "target_lf_lines": 53,
+      "target_sha256": "631A184C1B28048ED94EB470D1D6866901830E6EEC9AB7FE6B1F5ACC65F3588F",
+      "historical_page_markers": 1,
+      "status": "complete",
+      "coverage": "full source EOF; inherited EGA I bibliography entries retained under an explicit editorial note before the EGA II continuation"
     },
     {
       "driver_line": 86,
@@ -381,14 +393,14 @@
       "source_bytes": 27454,
       "source_lf_lines": 462,
       "source_sha256": "2CEC53C734543C30ED2FE2FD01B462E5C51DE4D303CEAA7F8001316BB78EDBB1",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "target_path": "c2indexes-and-contents.tex",
+      "working_path": "ega/II/c2indexes-and-contents.tex",
+      "target_bytes": 26043,
+      "target_lf_lines": 462,
+      "target_sha256": "37D02F90E52685FE75BC2744C0848A43E12FCC1ABBC891D3F655BF6EB546F3EE",
+      "historical_page_markers": 9,
+      "status": "complete",
+      "coverage": "full source EOF: notation index, terminology index, and original contents"
     },
     {
       "driver_line": 87,
@@ -396,14 +408,14 @@
       "source_bytes": 19746,
       "source_lf_lines": 522,
       "source_sha256": "EC20D329248B99CF0533CB868DBDF8135D5BDAFA233133814DB67F8CD4F09643",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "target_path": "c2errata-addenda.tex",
+      "working_path": "ega/II/c2errata-addenda.tex",
+      "target_bytes": 21619,
+      "target_lf_lines": 518,
+      "target_sha256": "9DAA4F116FEB35141427CE6224E726DACB5DF915D786295AF80B25EBD593F44E",
+      "historical_page_markers": 6,
+      "status": "complete",
+      "coverage": "full source EOF; accepted corrected-current dispositions 0024-0027 applied while the French authority remains diplomatic"
     },
     {
       "driver_line": 88,
@@ -456,10 +468,11 @@
     "required_latest_records": [
       "AGKO-EGA0-R27-PAGE63",
       "AGKO-EGA1-R24-COMPLETE",
-      "AGKO-EGA2-S1-R61-CUMULATIVE-BATCH-R1"
+      "AGKO-EGA2-S1-R61-CUMULATIVE-BATCH-R1",
+      "AGKO-EGA2-BACKMATTER-COMPLETE-20260908"
     ],
     "external_korean_handoffs_admitted": 0,
     "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
-    "next": "continue EGA II at canonical line4042 / section3 after blank line4041; finish EGA II, then FGA; SGA remains separate"
+    "next": "perform exactly one cumulative convergence build and one whole-reader aggregate QA for complete EGA II, publish the validated cumulative edition, then begin FGA; SGA remains separate"
   }
 }

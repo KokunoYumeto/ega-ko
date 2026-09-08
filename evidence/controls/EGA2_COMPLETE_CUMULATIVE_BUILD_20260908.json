@@ -1,0 +1,44 @@
+{
+  "schema": "agko-ega2-complete-cumulative-build-v1",
+  "recorded_at": "2026-09-08T04:32:43+02:00",
+  "result": "PASS_SINGLE_CUMULATIVE_CONVERGENCE_BUILD",
+  "scope": "Complete Korean EGA cumulative reader through all EGA II source EOFs.",
+  "builder": {
+    "path": "pub/ega-ko/build/BUILD.ps1",
+    "bytes": 18861,
+    "sha256": "E8C5864EFAEE0188B24DCF7F908B2101D8F8429814EE239A6CC9910918EDE1A1",
+    "cycle": "one four-pass XeLaTeX convergence build",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_timeout_ms": 300000,
+    "abandoned_mutex_recovered": false
+  },
+  "inputs": {
+    "entrypoint": "pub/ega-ko/source/main.tex / 3844 bytes / 2CB7C94433FD56131F1161B7F44D7618CFFFC8878C78619273A606C0B48EA2CE",
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json / 17437 bytes / CDB254441301C4A2C71EDCEA21B855150D2A8BAD573B320414EEC25E60E367BC",
+    "manifest_topology": "20 ordered complete Korean targets, 3 untranslated EGA III rows, 423 historical page markers"
+  },
+  "outputs": {
+    "pass2": "pub/ega-ko/build/out/main.pass2.pdf / 2552581 bytes / 40A8E2155EC7239351C7D5926B1C66401DD02348B92194AEDAA14B12F58BC784",
+    "pass3": "pub/ega-ko/build/out/main.pass3.pdf / 2552588 bytes / 7F9B246E2623FB1992903C76A2AE2E46A7AD9FCC7B1FC7804DF4E0E2ADFBD575",
+    "final": "pub/ega-ko/build/out/main.pdf / 2552588 bytes / 7F9B246E2623FB1992903C76A2AE2E46A7AD9FCC7B1FC7804DF4E0E2ADFBD575",
+    "promoted_reader": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf / 2552588 bytes / 7F9B246E2623FB1992903C76A2AE2E46A7AD9FCC7B1FC7804DF4E0E2ADFBD575",
+    "log": "pub/ega-ko/build/out/main.log / 67765 bytes / DD15F470DD518BA1879ED0E7B37E0D61B82D5F35BC0AD3603E8488616AAC2BBD"
+  },
+  "convergence": {
+    "pass2_final_byte_identical": false,
+    "pass3_final_byte_identical": true,
+    "final_promoted_reader_byte_identical": true
+  },
+  "terminal_build_gates": {
+    "fatal_errors": 0,
+    "latex_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references": 0,
+    "rerun_requests": 0,
+    "missing_characters": 0,
+    "overfull_or_underfull_boxes": 0,
+    "multiply_defined_labels": 0
+  },
+  "history": "Earlier pass-1 compile failures and the first complete-cycle layout diagnostic were repaired before this successful cycle. They were build failures, not PDF QA loops. The sole whole-reader aggregate PDF QA has not yet started.",
+  "next": "Invoke scripts/single_aggregate_ega2_complete.py exactly once."
+}

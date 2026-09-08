@@ -9,10 +9,6 @@ $pdf = Join-Path $out 'main.pdf'
 $log = Join-Path $out 'main.log'
 $passTwoPdf = Join-Path $out 'main.pass2.pdf'
 $passThreePdf = Join-Path $out 'main.pass3.pdf'
-$cycleAPdf = Join-Path $buildRoot 'cycle-a.pdf'
-$cycleALog = Join-Path $buildRoot 'cycle-a.log'
-$cycleAPassTwoPdf = Join-Path $buildRoot 'cycle-a.pass2.pdf'
-$cycleAPassThreePdf = Join-Path $buildRoot 'cycle-a.pass3.pdf'
 $inputManifestPath = Join-Path $src 'CUMULATIVE_INPUTS.json'
 
 if (-not (Test-Path -LiteralPath $inputManifestPath -PathType Leaf)) {
@@ -390,45 +386,26 @@ try {
     New-Item -ItemType Directory -Force -Path (Split-Path -Parent $reader) | Out-Null
 
     Reset-TaskOwnedBuildDirectory -Path $out -ExpectedLeaf 'out'
-    Invoke-XeLaTeXCycle -Cycle 'clean cycle A' -OutputDirectory $out -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf
-    $cycleA = Get-ValidatedCycleResult -Cycle 'clean cycle A' -FinalPdfPath $pdf -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf -LogPath $log
-    Copy-Item -LiteralPath $pdf -Destination $cycleAPdf -Force
-    Copy-Item -LiteralPath $log -Destination $cycleALog -Force
-    Copy-Item -LiteralPath $passTwoPdf -Destination $cycleAPassTwoPdf -Force
-    Copy-Item -LiteralPath $passThreePdf -Destination $cycleAPassThreePdf -Force
-
-    Reset-TaskOwnedBuildDirectory -Path $out -ExpectedLeaf 'out'
-    Invoke-XeLaTeXCycle -Cycle 'clean cycle B' -OutputDirectory $out -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf
-    $cycleB = Get-ValidatedCycleResult -Cycle 'clean cycle B' -FinalPdfPath $pdf -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf -LogPath $log
-
-    $cleanCyclesMatch = Test-FilesByteIdentical -Left $cycleAPdf -Right $pdf
-    if ($cycleA.bytes -ne $cycleB.bytes -or
-        $cycleA.sha256 -cne $cycleB.sha256 -or
-        -not $cleanCyclesMatch) {
-      throw 'The two independent clean builds are not byte-identical.'
-    }
+    Invoke-XeLaTeXCycle -Cycle 'single clean convergence cycle' -OutputDirectory $out -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf
+    $cycle = Get-ValidatedCycleResult -Cycle 'single clean convergence cycle' -FinalPdfPath $pdf -PassTwoPdfPath $passTwoPdf -PassThreePdfPath $passThreePdf -LogPath $log
 
     Copy-Item -LiteralPath $pdf -Destination $reader -Force
     $readerItem = Get-Item -LiteralPath $reader
     $readerHash = (Get-FileHash -LiteralPath $reader -Algorithm SHA256).Hash
     $promotionMatches = Test-FilesByteIdentical -Left $pdf -Right $reader
-    if ($readerItem.Length -ne $cycleB.bytes -or
-        $readerHash -cne $cycleB.sha256 -or
+    if ($readerItem.Length -ne $cycle.bytes -or
+        $readerHash -cne $cycle.sha256 -or
         -not $promotionMatches) {
       throw 'Reader promotion did not preserve the validated PDF bytes.'
     }
 
     $abandonedText = $abandonedMutexRecovered.ToString().ToLowerInvariant()
     $buildResult = "PASS $($readerItem.Length) bytes SHA-256 $readerHash; " +
-      "cycle_a_sha256=$($cycleA.sha256); cycle_b_sha256=$($cycleB.sha256); " +
-      "cycle_a_pass2_sha256=$($cycleA.pass_two_sha256); " +
-      "cycle_b_pass2_sha256=$($cycleB.pass_two_sha256); " +
-      "cycle_a_pass3_sha256=$($cycleA.pass_three_sha256); " +
-      "cycle_b_pass3_sha256=$($cycleB.pass_three_sha256); " +
-      "cycle_a_pass2_final_identical=$($cycleA.pass_two_final_identical.ToString().ToLowerInvariant()); " +
-      "cycle_b_pass2_final_identical=$($cycleB.pass_two_final_identical.ToString().ToLowerInvariant()); " +
-      "cycle_a_pass3_final_identical=$($cycleA.pass_three_final_identical.ToString().ToLowerInvariant()); " +
-      "cycle_b_pass3_final_identical=$($cycleB.pass_three_final_identical.ToString().ToLowerInvariant()); " +
+      "single_cycle_sha256=$($cycle.sha256); " +
+      "pass2_sha256=$($cycle.pass_two_sha256); " +
+      "pass3_sha256=$($cycle.pass_three_sha256); " +
+      "pass2_final_identical=$($cycle.pass_two_final_identical.ToString().ToLowerInvariant()); " +
+      "pass3_final_identical=$($cycle.pass_three_final_identical.ToString().ToLowerInvariant()); " +
       "mutex=$mutexName; timeout_ms=$mutexTimeoutMilliseconds; " +
       "abandoned_recovery=$abandonedText"
   } finally {

@@ -1,0 +1,497 @@
+{
+  "schema": "agko-ega2-r63-source-basis-refresh-v1",
+  "verified_at": "2026-09-05T20:25:49+02:00",
+  "precision": "second",
+  "scope": "Refresh the active Korean EGA II source basis against integrated Canon queue R63 through the admitted source frontier at French line 1889 and the immediate R41 source unit beginning at line 1891. This additive control does not reopen sealed Korean text or mutate any translation, manifest, ledger, build, repository, publication, or UI state.",
+  "role_roots": {
+    "canonical_root": "Maintained EGA French and paired-English corpus root",
+    "global_english_root": "Maintained global-English EGA corpus root",
+    "governance_root": "Shared interlanguage governance root",
+    "working_translation_root": "Private Korean algebraic-geometry working root",
+    "public_repository_root": "Korean EGA public repository root"
+  },
+  "authority_snapshot": {
+    "queue": {
+      "path": "[CANONICAL_ROOT]/controls/EGA_CANON_QUEUE.json",
+      "id": "EGA-CANON-QUEUE-20260905-R63",
+      "updated_utc": "2026-09-05T20:30:00Z",
+      "bytes": 65517,
+      "sha256": "9538E937F2AFF07105D680914A2FC8B9584ADB79DB65B5A85DE22E31BAA9701F",
+      "ega2_allocation_head": "EGA2-CANON-DISP-0041",
+      "ega2_next_available": "EGA2-CANON-DISP-0042"
+    },
+    "ega2_admitted_control_head": {
+      "listed_file_count": 20,
+      "listed_total_bytes": 104894,
+      "serialization": "path<TAB>bytes<TAB>uppercase_sha256<LF>, entries sorted by path",
+      "serialization_bytes": 2054,
+      "tree_sha256": "DA564889FFB4229C8E8339BB9F90C29185EEBCB4CB158160465F8F2170A6765C",
+      "all_listed_files_match_queue_bytes_and_sha256": true
+    },
+    "governing_event": {
+      "path": "[CANONICAL_ROOT]/controls/CANON_EVENT_20260905_D56.json",
+      "id": "EGA-CANON-EVENT-20260905-D56",
+      "bytes": 3307,
+      "sha256": "848BE63D269D58066836A42677C4A9396DD8692CA696DC7BA614938D7B9CD4E5",
+      "new_ega2_ids": [
+        "EGA2-CANON-DISP-0040",
+        "EGA2-CANON-DISP-0041"
+      ]
+    },
+    "governing_ega2_control": {
+      "path": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_D40_41.jsonl",
+      "bytes": 1899,
+      "sha256": "D3758A642DA64EDC5402F020D0F65272644BCC852998119F93BD8003C76F0200"
+    },
+    "english_application_receipt": {
+      "path": "[GOVERNANCE_ROOT]/work/canon_keeper_successor_01a047ab_20260830/integration_execution_20260905/ega2_r40_1857_1860_r1/EGA2_R40_1857_1860_ENGLISH_APPLY_RECEIPT.json",
+      "bytes": 2217,
+      "sha256": "93DD7811FA26130E4EF98029AAE476C0C8478E041E637F6CB58393C97B7D0668",
+      "status": "PASS",
+      "inverse_exact": true
+    }
+  },
+  "maintained_sources": {
+    "french": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "bytes": 820504,
+      "characters": 809277,
+      "lf_lines": 18087,
+      "sha256": "91685C9C53FD77171677CA3E490F84DE3B84EE983C84B334440B64679BC2E26E",
+      "state": "current scan-diplomatic transcription after the D54 line-1542 restoration; D40 and D41 remain printed diplomatically"
+    },
+    "paired_english_chapter_1": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1.tex",
+      "bytes": 51706,
+      "sha256": "E0CD7F6F310016864CD704BB30676943E8EE1112DA5C1472F258FDCE423BCFC5"
+    },
+    "global_english_chapter_1": {
+      "path": "[GLOBAL_ENGLISH_ROOT]/source/ega2/ega2-1.tex",
+      "bytes": 51706,
+      "sha256": "E0CD7F6F310016864CD704BB30676943E8EE1112DA5C1472F258FDCE423BCFC5",
+      "exactly_equal_to_paired_copy": true
+    },
+    "paired_english_chapter_2": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+      "bytes": 103751,
+      "sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377"
+    },
+    "global_english_chapter_2": {
+      "path": "[GLOBAL_ENGLISH_ROOT]/source/ega2/ega2-2.tex",
+      "bytes": 103751,
+      "sha256": "AB388606F510D447A07385C6D386E038F4CBF15660E9AC91E44C4446C30CA377",
+      "exactly_equal_to_paired_copy": true
+    }
+  },
+  "source_frontier": {
+    "current_r40_source_prefix": {
+      "lines": "1-1889",
+      "bytes": 86029,
+      "characters": 84691,
+      "lf_lines": 1889,
+      "sha256": "EFBEF859B658516C4C26C265FDF82325E213FF7C66FB2895D468BF209AAEBD2C"
+    },
+    "current_r41_admitted_source_prefix": {
+      "lines": "1-1992",
+      "bytes": 90233,
+      "characters": 88846,
+      "lf_lines": 1992,
+      "sha256": "23BAF858FD4D2E6DFE63B8E41EC6AA1E41B84E066F6A51D9AFF12D5122861580"
+    },
+    "r38_unit": {
+      "lines": "1607-1683",
+      "bytes": 4191,
+      "characters": 4096,
+      "lf_lines": 77,
+      "sha256": "44583D53F17603797145FE63822F3F78DC6ECFD7ADA1B38EF01813F9E3F22BE6",
+      "current_authority_exact": true
+    },
+    "r39_unit": {
+      "lines": "1685-1780",
+      "bytes": 3796,
+      "characters": 3740,
+      "lf_lines": 96,
+      "sha256": "BE7EC704F82B9283A48AFF1A01D7CF34F14A2C29F1B50269511DD699514BBC21",
+      "current_authority_exact": true
+    },
+    "r40_unit": {
+      "lines": "1782-1889",
+      "bytes": 4143,
+      "characters": 4062,
+      "lf_lines": 108,
+      "sha256": "812FA8DAF0F5852602849D172B9182E2CBA6837810088662FA1FE157292704BB",
+      "current_authority_exact": true
+    },
+    "immediate_r41_unit": {
+      "lines": "1891-1992",
+      "bytes": 4203,
+      "characters": 4154,
+      "lf_lines": 102,
+      "sha256": "77FC0279D0B1D94CB72C7C7F72CBA183923F4B735AA9CB09F01530BB0F638EE8",
+      "boundaries": "line 1890 blank; line 1891 begins Proposition 2.3.4; line 1992 ends the proof of Corollary 2.3.7; line 1993 blank; line 1994 begins Corollary 2.3.8",
+      "candidate": {
+        "path": "[WORKING_TRANSLATION_ROOT]/candidates/r41-c2s1-continuation.tex",
+        "bytes": 4544,
+        "characters": 3202,
+        "lf_lines": 106,
+        "sha256": "5DE6EC9F2560C92DCF6A7B5C76F1FB72749612CCD7C5724FCA65C1EE6C81A971",
+        "status": "admitted candidate; not integrated"
+      },
+      "validator": {
+        "path": "[WORKING_TRANSLATION_ROOT]/candidates/validate_r41_candidate.py",
+        "bytes": 17700,
+        "characters": 17564,
+        "lf_lines": 395,
+        "sha256": "777B0C48898D7EE91A5D6C4092EDA3E72FD688292FF02BABC0CE856FF9246753",
+        "result": "PASS_R41_SOURCE_CANON_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
+      },
+      "admission": {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R41_TRANSLATION_ADMISSION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R41_TRANSLATION_ADMISSION.json",
+        "schema": "agko-r41-translation-admission-v1",
+        "bytes": 9631,
+        "sha256": "617C33145B57A4568FC1F3260F457380CC232F2C47B146D30FC36A2768675A02",
+        "private_public_exact": true
+      },
+      "prospective_target": {
+        "method": "exact current R40 prospective target followed by one LF separator and the exact R41 candidate",
+        "target_range": "line 1925 separator; R41 candidate lines 1926-2031",
+        "bytes": 93692,
+        "characters": 65136,
+        "lf_lines": 2031,
+        "sha256": "391A406C5BC200DD02CF4877B39DD0130D2213308094120BE301D0AB5D41A71F",
+        "integrated_now": false
+      }
+    }
+  },
+  "accepted_applied_overlap_audit": [
+    {
+      "id": "EGA2-CANON-DISP-0029",
+      "locus": "French line 160, Proposition II.1.2.7",
+      "printed": "Soient X un S-schéma affine au-dessus de S",
+      "corrected_current": "Soit X un S-schéma affine au-dessus de S",
+      "control": {
+        "path": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_D29_30.jsonl",
+        "bytes": 5246,
+        "sha256": "ACD1DCB7C99715D425D8A28DF0483085C134D685BEA53143EDE2CB0694880C3D"
+      },
+      "classification_for_current_lane": "pre-R38 cumulative basis; French diplomatic, English already correct, sealed Korean text not reopened"
+    },
+    {
+      "id": "EGA2-CANON-DISP-0001",
+      "locus": "French line 188, proof of II.1.2.7",
+      "printed": "U=D(\\lambda), avec \\lambda\\in S",
+      "corrected_current": "U=D(\\lambda), avec \\lambda\\in A",
+      "control": {
+        "path": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_INTAKE.jsonl",
+        "bytes": 13927,
+        "sha256": "1E64F307BDD3686A1CB2E9078B41D862DB33674F58649412E490CD9F81E609AD"
+      },
+      "classification_for_current_lane": "pre-R38 cumulative basis; French diplomatic, paired English already corrected with provenance, sealed Korean text not reopened"
+    },
+    {
+      "id": "EGA2-CANON-DISP-0030",
+      "locus": "French line 354, proof of Corollary II.1.3.7",
+      "printed": "\\Gamma(U,\\widetilde{B})=B",
+      "corrected_current": "\\Gamma(S,\\widetilde{B})=B",
+      "control": {
+        "path": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_D29_30.jsonl",
+        "bytes": 5246,
+        "sha256": "ACD1DCB7C99715D425D8A28DF0483085C134D685BEA53143EDE2CB0694880C3D"
+      },
+      "classification_for_current_lane": "pre-R38 cumulative basis; French diplomatic, English already correct, sealed Korean text not reopened"
+    },
+    {
+      "id": "EGA2-CANON-DISP-0031",
+      "locus": "French line 446, proof of II.1.4.5",
+      "printed": "Alors \\mathcal{B}=\\widetilde{B}, où B est une A-algèbre de type fini (I, 9.6.2)",
+      "corrected_current": "Alors \\mathcal{B}=\\widetilde{B}, où B est une A-algèbre",
+      "control": {
+        "path": "[CANONICAL_ROOT]/controls/EGA2_DEFECT_D31.jsonl",
+        "bytes": 3011,
+        "sha256": "A8B5DACD40C849A488D3FB88005852DFEFEA1DA3FB4CA920B7646B471ACE20E7"
+      },
+      "classification_for_current_lane": "pre-R38 cumulative basis; French diplomatic, English already correct, sealed Korean text not reopened"
+    },
+    {
+      "id": "EG-EGA-II-P22-FR-2.1.8-PUNCTUATION-001",
+      "locus": "French line 1542, II.2.1.8",
+      "category": "FRENCH_DIPLOMATIC_SCAN_TRANSCRIPTION_RESTORATION",
+      "preimage": "Alors, si $f\\in S_+$, n'appartient",
+      "postimage": "Alors, si $f\\in S_+$ n'appartient",
+      "current_line": {
+        "bytes": 62,
+        "sha256": "3A35C46EE28480EA4E0560D82F85E2A6ECC599A6E3709F94E597C18B5AB814EA"
+      },
+      "control": {
+        "path": "[CANONICAL_ROOT]/controls/EGA2_SOURCEKEEPER_T2.jsonl",
+        "bytes": 1043,
+        "sha256": "65AB1EDC9C12D7E79CC00B8F6BF1835B8FBCAB9DC7AD5D8EFC07DBE2E1B2771C"
+      },
+      "classification_for_current_lane": "provenance-only rebase; existing Korean wording already has the scan-correct sense; no Korean text change"
+    },
+    {
+      "id": "EGA2-CANON-DISP-0040",
+      "locus": "French lines 1857-1858, proof of II.2.3.2",
+      "classification": "WRONG_QUANTIFIER_SCOPE_IN_IDEAL_MEMBERSHIP_ARGUMENT",
+      "printed_semantics": "f^r x belongs to J intersect S_(m+rd) for all but finitely many r",
+      "corrected_current_semantics": "J-membership holds for every r>=0; only m+rd>=n is eventual",
+      "status": "ACCEPTED_APPLIED_TO_BOTH_ACTIVE_ENGLISH_ROOTS",
+      "confidence": "CERTAIN",
+      "classification_for_current_lane": "Korean semantic text already conforms; provenance-only authority refresh, no Korean text change"
+    },
+    {
+      "id": "EGA2-CANON-DISP-0041",
+      "locus": "French line 1860, proof of II.2.3.2",
+      "classification": "WRONG_INTERNAL_REFERENCE_II_2_1_9_TO_II_2_1_8",
+      "printed": "II.2.1.9",
+      "corrected_current": "II.2.1.8",
+      "status": "ACCEPTED_APPLIED_TO_BOTH_ACTIVE_ENGLISH_ROOTS",
+      "confidence": "CERTAIN",
+      "classification_for_current_lane": "direct R40 Korean consumer change required before admission or integration"
+    }
+  ],
+  "d40_d41_exact_evidence": {
+    "french_diplomatic_locus": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-1-fr.tex",
+      "lines": "1852-1860",
+      "bytes": 502,
+      "characters": 493,
+      "lf_lines": 9,
+      "sha256": "2C052C77549F33B1C61A165613734182EBDB7C25F8C66A275837E006660E3653",
+      "line_1860_literal": "(\\hyperref[II.2.1.9-fr]{2.1.9}).",
+      "line_1860_bytes": 33,
+      "line_1860_sha256": "8727FC4EB264606877CBF8440E54A87FDA602A65194B487DD78AC6CC02452DD2"
+    },
+    "accepted_english_before": "we have $f^r x\\in\\mathfrak{J}\\cap S_{m+rd}$ for all but finitely many values of $r$, so $f^r x\\in\\mathfrak{p}\\cap S_{m+rd}$, which implies that $x\\in\\mathfrak{p}\\cap S_m$ \\sref{II.2.1.9}.",
+    "accepted_english_after": "we have $f^r x\\in\\mathfrak{J}\\cap S_{m+rd}$ for every $r\\geq0$; for all but finitely many values of $r$, $m+rd\\geq n$, so $f^r x\\in\\mathfrak{p}\\cap S_{m+rd}$, which implies that $x\\in\\mathfrak{p}\\cap S_m$ \\sref{II.2.1.8}.",
+    "current_english_line_350": {
+      "path": "[CANONICAL_ROOT]/source/ega2/ega2-2.tex",
+      "bytes": 505,
+      "characters": 505,
+      "lf_lines": 1,
+      "sha256": "55D1862EA6DFCA1675ACD637120B284DEF331D64B9271454AB0D62E054EF6DB4",
+      "global_copy_exact": true
+    }
+  },
+  "korean_control_reconciliation": {
+    "reviewed_private_public_pairs": [
+      {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R38_TRANSLATION_ADMISSION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R38_TRANSLATION_ADMISSION.json",
+        "bytes": 8103,
+        "sha256": "23CA8C711E89448D910BCD585BCC815B1A87F56A9890220485F27E3E8377FEC2",
+        "exact": true,
+        "interpretation": "immutable pre-D54 historical admission; exact R38 unit remains current"
+      },
+      {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+        "bytes": 6698,
+        "sha256": "C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C",
+        "exact": true,
+        "interpretation": "current D54 reconciliation; Korean text change false"
+      },
+      {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R39_TRANSLATION_ADMISSION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R39_TRANSLATION_ADMISSION.json",
+        "bytes": 8605,
+        "sha256": "D7122B74AADB7E26B987AFABAA0D12E59E1342D4F63FEDA0DFE3AB0557330561",
+        "exact": true,
+        "interpretation": "immutable pre-D54 historical admission; exact R39 unit remains current"
+      },
+      {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R39_CANONICAL_PREFIX_REBASE.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+        "bytes": 6370,
+        "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349",
+        "exact": true,
+        "interpretation": "current additive R39 rebase with its supporting-reconciliation identity refreshed to the amended R38 control"
+      },
+      {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R40_TRANSLATION_ADMISSION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R40_TRANSLATION_ADMISSION.json",
+        "bytes": 11029,
+        "sha256": "204C8209CCC6D7A0D55550F532F6D016ACCEAE48BA4DC4048D34703C7F47D0B8",
+        "exact": true,
+        "interpretation": "current v2 admission: D0040 provenance bound, D0041 corrected Korean reference applied, R63/D56 authority pinned, and line 1788 disclosed only as a translator semantic clarification"
+      }
+    ],
+    "r39_supporting_reconciliation_repair": {
+      "field": "supporting_reconciliation",
+      "stale_preimage_control": {
+        "bytes": 6370,
+        "sha256": "F606258673EC5E92BBD30A2D11FF7FBA688253E8F9E19F5FC5D7061ABF005258",
+        "recorded_path": "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+        "recorded_bytes": 6206,
+        "recorded_sha256": "D3C2F24D462F36ACC6064A1D975553BA2E9D5B1CD130E2CA280C9A8D6B4BECBE"
+      },
+      "current_postimage_control": {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R39_CANONICAL_PREFIX_REBASE.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+        "bytes": 6370,
+        "sha256": "CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349",
+        "supporting_path": "controls/R38_POST_CORRECTION_SOURCE_RECONCILIATION.json",
+        "supporting_bytes": 6698,
+        "supporting_sha256": "C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C",
+        "private_public_exact": true
+      },
+      "disposition": "repaired additively before this basis-refresh control was sealed; no remaining R39 provenance work"
+    }
+  },
+  "korean_consumer_classification": {
+    "d0040": {
+      "candidate_path": "[WORKING_TRANSLATION_ROOT]/candidates/r40-c2s1-continuation.tex",
+      "candidate_lines": "76-83",
+      "slice_bytes": 631,
+      "slice_characters": 361,
+      "slice_lf_lines": 8,
+      "slice_sha256": "91C3BED007FDAD8A36776529AC4C1D6369E553C518F14D3023B71D07503C0755",
+      "finding": "The Korean already asserts J-membership for every nonnegative integer r, then separately asserts that m+rd>=n is eventual, and applies prime-ideal cancellation.",
+      "text_change_required": false,
+      "provenance_refresh_required": true
+    },
+    "d0041": {
+      "candidate_path": "[WORKING_TRANSLATION_ROOT]/candidates/r40-c2s1-continuation.tex",
+      "preimage_candidate": {
+        "bytes": 4829,
+        "characters": 3237,
+        "lf_lines": 114,
+        "sha256": "13832C26D57B9623D49FAC4535B8351C54DC618F789AED549C193D544CB4CB7F"
+      },
+      "exact_occurrence_count": 1,
+      "candidate_line": 84,
+      "preimage_literal": "(\\hyperref[II.2.1.9-ko]{2.1.9}).",
+      "preimage_line_bytes": 33,
+      "preimage_line_sha256": "E8A69084C6073DF2316EE2C3C2B31A295568CDDCBA11321A7376C17922539FE7",
+      "required_postimage_literal": "(\\hyperref[II.2.1.8-ko]{2.1.8}).",
+      "current_postimage_candidate": {
+        "bytes": 4829,
+        "characters": 3237,
+        "lf_lines": 114,
+        "sha256": "4E3A5FDEFF4DE67EA548232F8A589AFF06023916DB838440A594E9D1FAA3E5AD"
+      },
+      "text_change_was_required": true,
+      "text_change_now_applied": true,
+      "write_performed_by_this_basis_control": false,
+      "current_validator": {
+        "path": "[WORKING_TRANSLATION_ROOT]/candidates/validate_r40_candidate.py",
+        "bytes": 21328,
+        "characters": 20855,
+        "lf_lines": 454,
+        "sha256": "ED2FEB8132958F0C3895BAE8A6F240E445690440B5A6A91D02F9D0C99A98C4AE",
+        "result": "PASS_R40_SOURCE_CANDIDATE_AND_PROSPECTIVE_MIRRORS"
+      },
+      "current_admission": {
+        "private_path": "[WORKING_TRANSLATION_ROOT]/controls/R40_TRANSLATION_ADMISSION.json",
+        "public_path": "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R40_TRANSLATION_ADMISSION.json",
+        "schema": "agko-r40-translation-admission-v2",
+        "bytes": 11029,
+        "sha256": "204C8209CCC6D7A0D55550F532F6D016ACCEAE48BA4DC4048D34703C7F47D0B8",
+        "private_public_exact": true
+      },
+      "gate": "PASS; exact D0041 replacement is applied, deterministically validated, and bound in the current private/public R40 admission before integration."
+    },
+    "prospective_target_after_required_d0041_change": {
+      "integrated_r38_preimage": {
+        "bytes": 80222,
+        "sha256": "4E6C76FDA3FBADCDA044DCD11A38D0BF0764CAACA3D29CD8A3F8067D13B3F006"
+      },
+      "r39_candidate": {
+        "bytes": 4094,
+        "sha256": "811AD490FC21AE287D0AD67FA897E8F47D5592B98234291B640A0AFCCAED0F26"
+      },
+      "r39_prospective_target": {
+        "bytes": 84317,
+        "characters": 58695,
+        "lf_lines": 1809,
+        "sha256": "D08D6AD60E00CE72AC6D64BB1D95F0AB63836F8B50D065631DC4FCD044D4F67C"
+      },
+      "corrected_r40_prospective_target": {
+        "bytes": 89147,
+        "characters": 61933,
+        "lf_lines": 1924,
+        "sha256": "1F4203DB990A0E9E81B83AC3106439AF0DFE5A0CB32B069B5C44EFE7DC025617"
+      },
+      "actual_integration_performed_by_this_control": false
+    }
+  },
+  "immediate_r41_authority_audit": {
+    "accepted_r63_delta_in_source_lines_1891_1992": false,
+    "finding": "No accepted/applied R63 EGA II record overlaps the immediate R41 source unit. The next admitted line-addressed defect after the current frontier is EGA2-CANON-DISP-0002 at French line 3033.",
+    "distinct_2_1_9_references": {
+      "french_lines": [1968, 1975],
+      "korean_candidate_lines": [80, 87],
+      "korean_slice_lines": "80-87",
+      "korean_slice_bytes": 512,
+      "korean_slice_characters": 374,
+      "korean_slice_lf_lines": 8,
+      "korean_slice_sha256": "185CD2D5B0BD2B5FCAA265EAE1842A81E19E38215B10B08C3D7F0099601BD29E",
+      "disposition": "retain; these references invoke the graded-prime-ideal construction conditions in 2.1.9 and are not the erroneous D0041 locus"
+    },
+    "future_candidate_treatment_required_by_r63": false
+  },
+  "routed_but_unbound_loci": [
+    {
+      "source_lines": [1638, 1664],
+      "origin": "R38 source queries",
+      "current_treatment": "retain the already-admitted Korean semantic readings; no exact R63 EGA II authority ID was found for these queries"
+    },
+    {
+      "source_lines": [1709, 1738],
+      "origin": "R39 source queries",
+      "current_treatment": "retain the diplomatic candidate treatments; no exact R63 EGA II authority ID was found for these queries"
+    },
+    {
+      "source_lines": [1788],
+      "origin": "R40 source query",
+      "current_treatment": "The Korean degree-zero rendering remains mathematically correct, but no exact R63 EGA II authority ID binds ordre 0. The current R40 v2 admission now correctly discloses it as a translator semantic clarification and records that the source query was previously routed."
+    }
+  ],
+  "nonoverlap_findings": {
+    "ega2_canon_dispositions_0034_0039": "Their loci are in EGA II Chapter 8, outside French lines 1-1992; they do not affect R38-R41.",
+    "r63_latest_batch": "R63 itself adds no EGA II Canon ID; its current batch is an EGA IV-3 Spanish residual binding. D0040 and D0041 remain the current EGA II head through R63.",
+    "span_reopen_required": false
+  },
+  "consumer_work_state": {
+    "completed_during_refresh": [
+      "The sole R40 candidate-line-84 reference was changed exactly from 2.1.9-ko/2.1.9 to 2.1.8-ko/2.1.8 under EGA2-CANON-DISP-0041.",
+      "The R40 validator and byte-identical private/public v2 admission were regenerated against R63/D56 and pass exact formula, structure, semantic, mirror, and privacy checks.",
+      "EGA2-CANON-DISP-0040 is bound as provenance for the already-correct Korean quantifier scope without rewriting that Korean prose.",
+      "The current R39 rebase is 6370 B/CD9E1E2CF87D2E35C49AE7AF16E797AF146B72C6060869B631019DB8F6782349 and now binds the amended R38 reconciliation at 6698 B/C60088AE26B2E33B2CFBCD88044E1F5BDA2636DB2BF93D5E392B62CB4915688C.",
+      "The R40 line-1788 wording now identifies degree zero as a disclosed translator semantic clarification rather than claiming an unproved adjudication."
+    ],
+    "remaining_basis_correction": false,
+    "production_boundary": "Retain the valid 2.1.9 references in R41. Integrate R39 and then the corrected R40 only in the parent workflow's canonical order."
+  },
+  "correction_routing": {
+    "new_possible_ega_correction_found": false,
+    "reason": "All anomalies encountered are either accepted in R63 or already present in the known routed source-query loci through R40.",
+    "additional_dispatch_required": false
+  },
+  "write_boundary": {
+    "changed_by_this_basis_control_lane": [
+      "[WORKING_TRANSLATION_ROOT]/controls/EGA2_R63_SOURCE_BASIS_REFRESH_20260905.json",
+      "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/EGA2_R63_SOURCE_BASIS_REFRESH_20260905.json"
+    ],
+    "concurrent_in_scope_repair_observed_and_bound": [
+      "[WORKING_TRANSLATION_ROOT]/candidates/r40-c2s1-continuation.tex",
+      "[WORKING_TRANSLATION_ROOT]/candidates/validate_r40_candidate.py",
+      "[WORKING_TRANSLATION_ROOT]/controls/R40_TRANSLATION_ADMISSION.json",
+      "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R40_TRANSLATION_ADMISSION.json",
+      "[WORKING_TRANSLATION_ROOT]/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R39_CANONICAL_PREFIX_REBASE.json",
+      "[WORKING_TRANSLATION_ROOT]/candidates/r41-c2s1-continuation.tex",
+      "[WORKING_TRANSLATION_ROOT]/candidates/validate_r41_candidate.py",
+      "[WORKING_TRANSLATION_ROOT]/controls/R41_TRANSLATION_ADMISSION.json",
+      "[PUBLIC_REPOSITORY_ROOT]/evidence/controls/R41_TRANSLATION_ADMISSION.json"
+    ],
+    "not_changed_by_this_basis_control_lane": [
+      "Korean translation candidates or integrated targets",
+      "historical controls",
+      "canonical French or maintained English sources",
+      "manifests, shared ledgers, state cursors, TeX, Git, UI, release metadata, and publication"
+    ]
+  },
+  "result": "PASS_R63_BASIS_REFRESH__R38_R39_CURRENT__R40_D0040_BOUND__R40_D0041_APPLIED_AND_VALIDATED__R41_UNAFFECTED"
+}

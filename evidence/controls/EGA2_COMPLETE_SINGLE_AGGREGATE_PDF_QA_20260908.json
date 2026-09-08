@@ -1,0 +1,104 @@
+{
+  "schema": "agko-ega2-complete-single-aggregate-pdf-qa-terminal-disposition-v1",
+  "started_at_utc": "2026-09-08T02:38:01.226640+00:00",
+  "sealed_at": "2026-09-08T04:42:26+02:00",
+  "result": "PASS_EGA2_COMPLETE_SINGLE_AGGREGATE_PDF_QA_WITH_DISPOSED_SPARSE_PAGE_HEURISTIC",
+  "scope": "Exactly one complete-EGA-II whole-reader aggregate QA after one successful mutex-serialized cumulative convergence build; zero per-section QA loops and zero repeated whole-reader QA loops.",
+  "reader": {
+    "path": "pub/ega-ko/reader/00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 437,
+    "bytes": 2552588,
+    "sha256": "7F9B246E2623FB1992903C76A2AE2E46A7AD9FCC7B1FC7804DF4E0E2ADFBD575",
+    "build_pdf_byte_exact": true,
+    "pass3_pdf_byte_exact": true
+  },
+  "executed_workflow": {
+    "script": "scripts/single_aggregate_ega2_complete.py / 45382 bytes / B4C57363677B32478A0004073396476B985797A58B8C3C445E618AD708D1D59C",
+    "start_marker": "pub/ega-ko/evidence/controls/EGA2_COMPLETE_SINGLE_AGGREGATE_PDF_QA_20260908.started.json / 416 bytes / 1E8396F4C27F96B34CF6B7669F332DD71205D4B7EF04CDBDD2610F2DB8D9861E",
+    "invocations_that_crossed_start_marker": 1,
+    "strict_pypdf_opens": 1,
+    "linear_pypdf_page_extraction_passes": 1,
+    "pdfinfo_invocations": 1,
+    "pdftotext_invocations": 1,
+    "pdffonts_invocations": 1,
+    "pdftoppm_invocations": 1,
+    "rendered_pages": 437,
+    "per_section_scripts_invoked": 0,
+    "recursive_or_replacement_invocations": 0,
+    "qa_rerun_after_finding": false
+  },
+  "sequential_gate_evidence": {
+    "status": "PASS_THROUGH_FULL_RENDER_AND_PER_PAGE_HEURISTICS",
+    "basis": "The bound script executed sequentially through its complete 437-page render and every per-page assertion, stopping only at line 702 when comparing the accumulated sparse-page inventory. Reaching that locus proves all earlier mandatory checks returned normally.",
+    "passed_before_terminal_finding": [
+      "canonical driver and all 23 source identities",
+      "20 ordered complete Korean inputs and three untranslated EGA III rows",
+      "private/public Korean mirror identity",
+      "label uniqueness and direct-reference completeness",
+      "423 historical source-page markers",
+      "clean converged TeX build and byte-identical promoted reader",
+      "strict pypdf open, A4 geometry, zero rotations, PDF metadata and link safety",
+      "independent pypdf and Poppler extraction, critical Korean probes and zero replacement characters",
+      "pdfinfo page/geometry/encryption agreement",
+      "all fonts embedded, prior ToUnicode floor retained, and Korean text fonts mapped",
+      "independent back-matter marker-to-physical-page agreement",
+      "named destinations and navigation structure",
+      "one-process full-document rendering",
+      "437 exact PNG pages with correct dimensions",
+      "per-page density, pure-black, outer-edge clipping, ink-margin, and solid-black-block checks"
+    ]
+  },
+  "aggregate_render": {
+    "root": "pub/ega-ko/evidence/render/ega2-complete-20260908",
+    "full_resolution_pages": 437,
+    "first": "page-001.png",
+    "last": "page-437.png",
+    "contact_sheets": 13,
+    "first_contact": "contact-01.png",
+    "last_contact": "contact-13.png",
+    "files": 450,
+    "bytes": 212341398,
+    "ordered_name_size_hash_listing_sha256": "715B2A2EAE2F3E5C67C9AD9B3571C02955B4905B7AB141A1BFFE52DA07833D72"
+  },
+  "terminal_finding_and_disposition": {
+    "assertion": "The draft heuristic expected the sparse-page inventory to contain only the physical page carrying historical marker II|212.",
+    "observed_sparse_pages": [13, 427],
+    "expected_historical_blank_physical_page": 427,
+    "physical_page_13": {
+      "render": "pub/ega-ko/evidence/render/ega2-complete-20260908/page-013.png",
+      "bytes": 22877,
+      "sha256": "87D5274FB5E2D6746B5A9F9A0E8B3FA29FAE88DC5A6C7B7755463D32A6EC8691",
+      "direct_disposition": "PASS_INTENTIONAL_SPARSE_CHAPTER_OPENING",
+      "visible_content": "Printed page 12, chapter heading 1 분수환, and subsection heading 1.0 환과 대수; the page is sparse but not blank, clipped, corrupt, or missing content."
+    },
+    "physical_page_427": {
+      "render": "pub/ega-ko/evidence/render/ega2-complete-20260908/page-427.png",
+      "bytes": 17176,
+      "sha256": "51C6C3208400CC807F703B635CB0F25F20CC7F22BC25401546E8C291F1F1237F",
+      "direct_disposition": "PASS_DECLARED_HISTORICAL_BLANK",
+      "visible_content": "Only the preserved II|212 historical page marker is visible, as declared by the admitted source."
+    },
+    "classification": "FALSE_POSITIVE_FROM_CONFLATING_LOW_INK_WITH_BLANKNESS",
+    "action": "The finding was disposed from the already-generated full-resolution renders. The reader and source were not changed, and the aggregate QA was not rerun."
+  },
+  "post_disposition_seal": {
+    "render_inventory": "PASS: 437 consecutively numbered page PNGs and 13 bounded contact sheets",
+    "reader_identity_unchanged": true,
+    "manifest_identity_unchanged": true,
+    "entrypoint_identity_unchanged": true,
+    "build_log_identity_unchanged": true,
+    "manifest": "pub/ega-ko/source/CUMULATIVE_INPUTS.json / 17437 bytes / CDB254441301C4A2C71EDCEA21B855150D2A8BAD573B320414EEC25E60E367BC",
+    "entrypoint": "pub/ega-ko/source/main.tex / 3844 bytes / 2CB7C94433FD56131F1161B7F44D7618CFFFC8878C78619273A606C0B48EA2CE",
+    "build_log": "pub/ega-ko/build/out/main.log / 67765 bytes / DD15F470DD518BA1879ED0E7B37E0D61B82D5F35BC0AD3603E8488616AAC2BBD"
+  },
+  "policy": {
+    "small_section_qa_loops": 0,
+    "whole_reader_qa_loops": 1,
+    "whole_reader_qa_reruns": 0,
+    "finding_disposition_used_existing_outputs_only": true,
+    "publication_actions_during_qa": 0,
+    "deletions": 0
+  },
+  "claim_boundary": "This receipt proves the specified deterministic source, build, extraction, font, navigation, full-render, and direct sparse-page-disposition gates for the complete-EGA-II cumulative reader. It does not claim metaphysical or absolute perfection.",
+  "next": "Package and publish this exact reader to the existing Korean EGA GitHub and Zenodo lineages, perform anonymous public-byte readback, then begin FGA."
+}

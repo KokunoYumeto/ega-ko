@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this exact Korean EGA cumulative edition."
+message: "Please cite this Korean EGA cumulative edition."
 title: "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition"
 type: book
 authors:
@@ -7,9 +7,9 @@ authors:
     given-names: "Alexander"
   - family-names: "Dieudonné"
     given-names: "Jean"
-version: "2026-09-07-r61"
-date-released: 2026-09-07
-doi: "10.5281/zenodo.22647516"
+version: "2026-09-08-ega2-complete"
+date-released: 2026-09-08
+doi: "10.5281/zenodo.21921513"
 url: "https://doi.org/10.5281/zenodo.21921513"
 preferred-citation:
   type: book
@@ -23,7 +23,7 @@ preferred-citation:
     - name: "AI typesetting & translation"
   languages:
     - "ko"
-  doi: "10.5281/zenodo.22647516"
-  version: "2026-09-07-r61"
+  doi: "10.5281/zenodo.21921513"
+  version: "2026-09-08-ega2-complete"
   year: "2026"
   url: "https://doi.org/10.5281/zenodo.21921513"

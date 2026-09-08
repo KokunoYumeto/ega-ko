@@ -1,0 +1,8 @@
+{
+  "schema": "agko-ega2-complete-single-aggregate-pdf-qa-start-v1",
+  "started_at_utc": "2026-09-08T02:38:01.226640+00:00",
+  "reader_bytes": 2552588,
+  "reader_sha256": "7F9B246E2623FB1992903C76A2AE2E46A7AD9FCC7B1FC7804DF4E0E2ADFBD575",
+  "manifest_sha256": "CDB254441301C4A2C71EDCEA21B855150D2A8BAD573B320414EEC25E60E367BC",
+  "policy": "exactly one whole-reader aggregate QA; zero sectional or repeated loops"
+}

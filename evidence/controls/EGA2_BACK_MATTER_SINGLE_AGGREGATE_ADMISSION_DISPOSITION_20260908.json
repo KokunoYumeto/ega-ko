@@ -1,0 +1,28 @@
+{
+  "schema":"ag-ko-ega2-back-matter-single-aggregate-admission-disposition-v1",
+  "recorded":"2026-09-08T02:57:54.1032541+02:00",
+  "admission_record":"controls/EGA2_BACK_MATTER_SINGLE_AGGREGATE_ADMISSION_20260908.json",
+  "single_pass_statement":"This disposition closes the one and only aggregate back-matter admission. It is not a second scan or QA pass. No fragment or section was admitted separately and the admission was not rerun after mutation.",
+  "pre_post": [
+    {"file":"c2bibliography.candidate.tex","pre_sha256":"16AE47F00EA3CE4A8A3CADC87E3D30A22D532682A908115B56AF459E68FEB4D8","post_sha256":"16AE47F00EA3CE4A8A3CADC87E3D30A22D532682A908115B56AF459E68FEB4D8","changed":false},
+    {"file":"c2indexes-and-contents.candidate.tex","pre_sha256":"F5C7E07DE264B1EC0537EE0FBDD2D6C152C15209E50945EF13726489B95A2004","post_sha256":"37D02F90E52685FE75BC2744C0848A43E12FCC1ABBC891D3F655BF6EB546F3EE","changed":true},
+    {"file":"c2errata-addenda.candidate.tex","pre_sha256":"283E5CC575F0BF09C37F26A275CE59FCFBAF8F622B5616C6AA54D1CCB6D3FCFC","post_sha256":"9DAA4F116FEB35141427CE6224E726DACB5DF915D786295AF80B25EBD593F44E","changed":true}
+  ],
+  "dispositions": [
+    {"finding_id":"EGA2-BM-ADM-001","status":"RESOLVED","mutation":"Inserted \\phantomsection immediately before the terminological-index contents insertion."},
+    {"finding_id":"EGA2-BM-ADM-002","status":"RESOLVED","mutation":"Normalized the original-contents entry to 정오표 및 추록 (목록 1), matching the translated title."},
+    {"finding_id":"EGA2-BM-ADM-003","status":"RESOLVED","mutation":"Made the displayed replacement instruction grammatical with explicit 를 and 로 바꾼다 while preserving both formulas and their order."},
+    {"finding_id":"EGA2-BM-ADM-004","status":"RESOLVED","mutation":"Localized all five running heads while preserving the authoritative old-page sequence."},
+    {"finding_id":"EGA2-BM-ADM-005","status":"RESOLVED","mutation":"Replaced the lone 절단 occurrence with the established mathematical term 단면."},
+    {"finding_id":"EGA2-BM-ADM-006","status":"RESOLVED","mutation":"Added the first-use gloss 원문의 용어로 ‘단순층’ before the established one-point-space rendering 상수층."},
+    {"finding_id":"EGA2-BM-ADM-007","status":"DETERMINATE_DOWNSTREAM_PREREQUISITE","mutation":"No driver mutation in this admission. The authorized integration must load longtable before these candidates are input."}
+  ],
+  "preserved": [
+    "All French old-page markers, mathematical formulas, displayed equation tags, source order, labels, and environment order.",
+    "All 252 index/contents references and all 34 Korean addendum references resolve against the bound live or self label inventory.",
+    "Accepted corrected-current readings EGA2-CANON-DISP-0024 through EGA2-CANON-DISP-0027, with printed provenance for 0025 through 0027.",
+    "Bibliographic titles in their published languages and the explicit standalone-reader editorial provenance note."
+  ],
+  "unresolved":[],
+  "final_status":"PASS_SINGLE_AGGREGATE_ADMISSION_CANDIDATES_ADMITTED__NO_SECTIONAL_OR_MULTIPLE_QA_LOOP__DRIVER_LONGTABLE_PREREQUISITE_RECORDED"
+}

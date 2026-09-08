@@ -11,6 +11,7 @@
 \XeTeXlinebreaklocale "ko"
 \XeTeXlinebreakskip=0pt plus 1pt
 \usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{longtable}
 \usepackage[all]{xy}
 \usepackage{tikz-cd}
 \usepackage[a4paper,margin=22mm]{geometry}
@@ -54,6 +55,17 @@
   \marginpar{\scriptsize\textbf{#1}~|~#2}\ignorespaces}
 \newcommand{\agref}[2]{%
   \ifcsname r@#1\endcsname\hyperref[#1]{#2}\else#2\fi}
+% Compatibility forms retained by the source-synchronized EGA II indexes and
+% addenda.  They are defined centrally so the editable source stays legible.
+\providecommand{\sh}[1]{\mathcal{#1}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\Proj}{\operatorname{Proj}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Hyp}{\operatorname{Hyp}}
+\providecommand{\vphi}{\varphi}
+\providecommand{\kres}{\kappa}
+\providecommand{\isoto}{\xrightarrow{\sim}}
+\providecommand{\supertilde}{^{\sim}}
 \newenvironment{env}[1][]{\par\medskip\noindent\textbf{(#1)}\ }{\par}
 \newenvironment{definition}[1][]{%
   \par\medskip\noindent\itshape 정의 (#1). ---\ }{\par}
@@ -102,4 +114,7 @@
 \input{bib.tex}
 \input{c2front.tex}
 \input{c2s1.tex}
+\input{c2bibliography.tex}
+\input{c2indexes-and-contents.tex}
+\input{c2errata-addenda.tex}
 \end{document}

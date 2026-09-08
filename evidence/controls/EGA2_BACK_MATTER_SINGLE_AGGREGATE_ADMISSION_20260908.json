@@ -1,0 +1,69 @@
+{
+  "schema": "ag-ko-ega2-back-matter-single-aggregate-admission-v1",
+  "recorded": "2026-09-08T02:57:54.1032541+02:00",
+  "scope": "Exactly one aggregate admission over the complete assembled EGA II Korean back-matter tranche: bibliography, notation and terminological indexes, original contents, and Errata et Addenda (List 1).",
+  "workflow_guarantee": {
+    "aggregate_admission_passes": 1,
+    "rerun": false,
+    "sectional_or_fragment_admissions": 0,
+    "qa_loops": 0,
+    "tex_builds": 0,
+    "renders": 0,
+    "live_public_driver_ledger_or_state_edits": 0,
+    "candidate_mutation_transactions_applied": 1,
+    "statement": "No sectional, per-fragment, repeated, or multiple QA loop occurred. All findings were accumulated during one continuous whole-tranche pass before one consolidated candidate mutation transaction."
+  },
+  "authority": [
+    {"path":"Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1/source/ega2/ega2-bibliography-fr.tex","bytes":784,"sha256":"56DE1F13088E6451D2A7BF7FAF7C575AB3E82C7FB20A736A75E3FD19B0595F7A"},
+    {"path":"Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1/source/ega2/ega2-indexes-and-contents-fr.tex","bytes":27454,"sha256":"2CEC53C734543C30ED2FE2FD01B462E5C51DE4D303CEAA7F8001316BB78EDBB1"},
+    {"path":"Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1/source/ega2/ega2-errata-addenda-fr.tex","bytes":19746,"sha256":"EC20D329248B99CF0533CB868DBDF8135D5BDAFA233133814DB67F8CD4F09643"}
+  ],
+  "corrected_current_english_witness": [
+    {"path":"03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1/source/ega2/ega2-bibliography.tex","bytes":1588,"sha256":"01D0462AB15839094994AD9B56E3D7D1B0E9789FC594B9D303498A0733291BF0"},
+    {"path":"03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1/source/ega2/ega2-indexes-and-contents.tex","bytes":24079,"sha256":"74D1D06B670E66B9D6DD371E94C4FB6C19F8AAD93F13E9121A76A5F6BF60E353"},
+    {"path":"03_projects/language_management/english_germanic/03_working_translations/EGA_English_Global_0_IV_french_recheck_source_successor_20260802_r1/source/ega2/ega2-errata-addenda.tex","bytes":17951,"sha256":"D5E6BD4BD33E311D68FEA2C0FFA9DB9A75D8E7B4C8D5EEA682328E46D0C63739"}
+  ],
+  "governing_controls": [
+    {"path":"03_projects/language_management/cjk/03_working_translations/ag_ko/controls/EGA2_BACK_MATTER_CANON_PACKET_20260908.json","bytes":12479,"sha256":"2CE8E90448487B80DC858E85634A0E30BF721AFDD9393485DDE7DCA8CB5856F5"},
+    {"path":"03_projects/language_management/cjk/03_working_translations/ag_ko/controls/EGA2_BACK_MATTER_CANON_REVIEW_20260908.md","bytes":4557,"sha256":"75EDDEAD3F20A4E7B8B6B6B43D65C55643B29A32FB886A0DB3E0031546D415BA"},
+    {"path":"Transcription/03_working_transcriptions/EGA_French_NUMDAM_canonical_TeX_20260801_r1/controls/EGA2_DEFECT_D17_27.jsonl","bytes":19021,"sha256":"711ADA571BA29629E201A02C1AA5C012EAAD2DCADB9ADF12D00D0FE65C19FED3"},
+    {"path":"03_projects/language_management/cjk/03_working_translations/ag_ko/tmp/ega2_backmatter_20260908/ASSEMBLY_MANIFEST.json","bytes":4775,"sha256":"340F4D728B28690FEC92D548DEA7FE866EEEE3E01B20F0F97CD8B748586D50D9"}
+  ],
+  "candidate_identities": [
+    {"path":"tmp/ega2_backmatter_20260908/c2bibliography.candidate.tex","pre":{"bytes":1748,"lf":53,"sha256":"16AE47F00EA3CE4A8A3CADC87E3D30A22D532682A908115B56AF459E68FEB4D8"},"post":{"bytes":1748,"lf":53,"sha256":"16AE47F00EA3CE4A8A3CADC87E3D30A22D532682A908115B56AF459E68FEB4D8"}},
+    {"path":"tmp/ega2_backmatter_20260908/c2indexes-and-contents.candidate.tex","pre":{"bytes":26033,"lf":461,"sha256":"F5C7E07DE264B1EC0537EE0FBDD2D6C152C15209E50945EF13726489B95A2004"},"post":{"bytes":26043,"lf":462,"sha256":"37D02F90E52685FE75BC2744C0848A43E12FCC1ABBC891D3F655BF6EB546F3EE"}},
+    {"path":"tmp/ega2_backmatter_20260908/c2errata-addenda.candidate.tex","pre":{"bytes":21506,"lf":517,"sha256":"283E5CC575F0BF09C37F26A275CE59FCFBAF8F622B5616C6AA54D1CCB6D3FCFC"},"post":{"bytes":21619,"lf":518,"sha256":"9DAA4F116FEB35141427CE6224E726DACB5DF915D786295AF80B25EBD593F44E"}}
+  ],
+  "methods": [
+    "One full source-synchronized reading of all three Korean candidates against all three authoritative French leaves and all three corrected-current English successor leaves.",
+    "One bounded comparison to the live Korean c0, c1, and complete c2s1 label and terminology register.",
+    "One static structural extraction comparing old-page order, environment order, normalized labels, tags, references, delimiter balance, and live/self target existence.",
+    "One static cumulative-driver macro plausibility review; no TeX engine was invoked."
+  ],
+  "structural_result": {
+    "bibliography":{"oldpages_equal":true,"environments":"2/2","labels":"0/0","tags":"0/0","missing_targets":0,"brace_balance":0,"display_balance":0},
+    "indexes_and_contents":{"oldpages_equal":true,"oldpages":[207,208,209,210,211,212,213,214,215],"environments":"8/8","labels":"0/0","tags":"0/0","hyperrefs":"252/252","missing_targets":0,"brace_balance":0,"display_balance":0},
+    "errata_addenda":{"oldpages_equal":true,"oldpages":[217,218,219,220,221,222],"environments":"48/48","labels":"23/23","tags":"10/10","candidate_hyperrefs":34,"missing_targets":0,"brace_balance":0,"display_balance":0}
+  },
+  "accepted_corrected_current_readings": [
+    {"id":"EGA2-CANON-DISP-0024","reading":"section f of the A-algebra B","candidate":"present"},
+    {"id":"EGA2-CANON-DISP-0025","reading":"8.3.1","candidate":"present with printed-provenance note"},
+    {"id":"EGA2-CANON-DISP-0026","reading":"Y to Spec(A)","candidate":"present with printed-provenance note"},
+    {"id":"EGA2-CANON-DISP-0027","reading":"canonical map (1.8.9.1)","candidate":"present with printed-provenance note"}
+  ],
+  "findings": [
+    {"id":"EGA2-BM-ADM-001","severity":"navigation","locus":"indexes, start of printed page 209","finding":"The terminological-index contents entry lacked its own phantom anchor."},
+    {"id":"EGA2-BM-ADM-002","severity":"register","locus":"original contents, printed page 215","finding":"The listed back-matter title used a different Korean rendering and spacing from the translated work title."},
+    {"id":"EGA2-BM-ADM-003","severity":"meaning_and_grammar","locus":"Errata (0, 2.1.6)","finding":"The replacement instruction had an incomplete Korean construction inside the display."},
+    {"id":"EGA2-BM-ADM-004","severity":"localization","locus":"Errata running heads, printed pages 218-222","finding":"Five running heads remained untranslated French/English strings."},
+    {"id":"EGA2-BM-ADM-005","severity":"terminology","locus":"proof of Addendum I.1.8.1","finding":"Mathematical section was rendered once as 절단 instead of the established 단면."},
+    {"id":"EGA2-BM-ADM-006","severity":"provenance","locus":"Addendum I.1.8.4 first use of faisceau simple","finding":"The Korean result 상수층 was present but the historical source term was not transparently retained at first use."},
+    {"id":"EGA2-BM-ADM-007","severity":"driver_prerequisite","locus":"pub/ega-ko/source/main.tex","finding":"The candidate uses longtable, while the current cumulative driver does not yet load the longtable package; the exact downstream remedy is known and was not applied because driver edits were outside this admission task."}
+  ],
+  "result": {
+    "status":"PASS_SINGLE_AGGREGATE_ADMISSION_CANDIDATE_CONTENT_ADMITTED_WITH_DETERMINATE_DRIVER_PREREQUISITE",
+    "candidate_content_admitted":true,
+    "unresolved_candidate_or_authority_findings":0,
+    "required_before_cumulative_build":"Add \\usepackage{longtable} to the cumulative driver in the authorized integration transaction."
+  }
+}
