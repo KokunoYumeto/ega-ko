@@ -3,6 +3,7 @@
 [현재까지 완성된 한국어 번역 전체 — 누적 독자용 PDF](reader/00_EGA_ko_CUMULATIVE_READER.pdf)
 
 - 한국어판 안정 DOI: [10.5281/zenodo.21921513](https://doi.org/10.5281/zenodo.21921513)
+- 현재 정확판 DOI: [10.5281/zenodo.22652574](https://doi.org/10.5281/zenodo.22652574)
 - 공개 저장소: [KokunoYumeto/ega-ko](https://github.com/KokunoYumeto/ega-ko)
 - 현재 판: `2026-09-08-ega2-complete`
 - 범위: EGA 0_I, EGA I, EGA II 완역

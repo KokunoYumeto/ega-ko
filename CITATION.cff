@@ -9,7 +9,7 @@ authors:
     given-names: "Jean"
 version: "2026-09-08-ega2-complete"
 date-released: 2026-09-08
-doi: "10.5281/zenodo.21921513"
+doi: "10.5281/zenodo.22652574"
 url: "https://doi.org/10.5281/zenodo.21921513"
 preferred-citation:
   type: book
@@ -23,7 +23,7 @@ preferred-citation:
     - name: "AI typesetting & translation"
   languages:
     - "ko"
-  doi: "10.5281/zenodo.21921513"
+  doi: "10.5281/zenodo.22652574"
   version: "2026-09-08-ega2-complete"
   year: "2026"
   url: "https://doi.org/10.5281/zenodo.21921513"
