@@ -1,0 +1,66 @@
+{
+  "schema": "ag-ko-github-publication-receipt-v1",
+  "recorded": "2026-09-20T23:20:34.5792366+02:00",
+  "result": "PASS_PUBLIC_RELEASE_AND_ANONYMOUS_FIVE_ASSET_HASH_READBACK",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "release": {
+    "id": 392577386,
+    "tag": "ega-ko-2026-09-20-ega3-iii1-complete",
+    "url": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-20-ega3-iii1-complete",
+    "published_at": "2026-09-20T21:18:00Z",
+    "target_commitish": "main",
+    "release_commit": "19d30461ed153d2f8dc637d38fb96dc9306b90a0",
+    "public_main_commit_at_readback": "19d30461ed153d2f8dc637d38fb96dc9306b90a0"
+  },
+  "anonymous_readback": {
+    "authentication_sent": false,
+    "asset_count": 5,
+    "asset_order_rule": "Numeric filename prefixes define the public reading/source order; GitHub API enumeration order is not relied upon.",
+    "size_mismatches": 0,
+    "hash_mismatches": 0,
+    "assets": [
+      {
+        "order": 1,
+        "asset_id": 577579915,
+        "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+        "bytes": 3311979,
+        "sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59"
+      },
+      {
+        "order": 2,
+        "asset_id": 577579921,
+        "name": "01_EGA_ko_CUMULATIVE.tex",
+        "bytes": 2416890,
+        "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E"
+      },
+      {
+        "order": 3,
+        "asset_id": 577579919,
+        "name": "02_EGA_ko_COMPLETE_SOURCES.zip",
+        "bytes": 1150951,
+        "sha256": "B08C5C7694C690E635BB6D15D110F0EDCF6C5EAA53110E591E5CD2F8693080DE"
+      },
+      {
+        "order": 4,
+        "asset_id": 577579916,
+        "name": "03_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+        "bytes": 7169369,
+        "sha256": "688BB695770990E509CF9EE9D6C9C470BFA49B8AE3901C6413C8FBB913A4FFDA"
+      },
+      {
+        "order": 5,
+        "asset_id": 577579917,
+        "name": "04_EGA_ko_SHA256_MANIFEST.txt",
+        "bytes": 440,
+        "sha256": "BCA71CF0C55703A9EBB5EFB444BF4CBEC01255563F02AE5BF52221475094E644"
+      }
+    ]
+  },
+  "qa_policy": {
+    "path": "controls/EGA3_III1_QA_POLICY_20260920.json",
+    "bytes": 1597,
+    "sha256": "D22CE4B923A06825757C7FAD921080F7108B7738CC6F61BB96C3760CAA321186",
+    "publication_readback_is_not_a_qa_rerun": true
+  },
+  "credential_material_recorded": false
+}

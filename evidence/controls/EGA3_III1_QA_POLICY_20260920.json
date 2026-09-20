@@ -1,0 +1,30 @@
+{
+  "schema": "ag-ko-qa-policy-v1",
+  "recorded": "2026-09-20T21:35:16.2209528+02:00",
+  "scope": "Korean EGA III-1 and subsequent in-scope volume production",
+  "user_directive": "Multiple QA loops are forbidden. QA loops per small section are forbidden.",
+  "invariants": {
+    "sectional_content_qa_loops": 0,
+    "per_fragment_content_qa_loops": 0,
+    "repeated_content_qa_loops": 0,
+    "maximum_whole_volume_content_qa_passes": 1,
+    "maximum_whole_release_output_validation_passes": 1,
+    "repeated_output_validation_loops": 0,
+    "whole_volume_boundary_required": true
+  },
+  "permitted_integrity_operations_before_the_boundary": [
+    "JSON parsing",
+    "cryptographic hashing",
+    "ordered byte assembly",
+    "exact source-authority identity checks",
+    "syntax-only build preflight"
+  ],
+  "execution_rule": "After the complete volume candidate is assembled, perform at most one finite aggregate whole-volume content-QA transaction and at most one finite aggregate whole-release output-validation transaction. Do not subdivide either into recurring section reviews, do not restart either review from the beginning, and do not create a QA loop around individual units. Apply findings from the single content pass once. Ordinary one-shot hash, parse, build, packaging, publication, and public-byte identity operations are integrity transactions, not invitations to rerun QA.",
+  "current_counters": {
+    "sectional_content_qa": 0,
+    "repeated_content_qa": 0,
+    "whole_volume_content_qa": 1,
+    "whole_release_output_validation": 1,
+    "repeated_output_validation": 0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "agko-ega3-iii1-public-closure-v1",
+  "closed_at": "2026-09-20T21:25:10.0113386Z",
+  "result": "PASS_EGA3_III1_COMPLETE_PUBLIC_OPEN_DUAL_DESTINATION_AND_ANONYMOUS_FIVE_ASSET_READBACK",
+  "scope": "Complete cumulative Korean EGA through EGA III-1: EGA 0_I, EGA I, EGA II, and EGA III-1. Later EGA III parts and later volumes are not included.",
+  "qa_policy": {
+    "sectional_content_qa_loops": 0,
+    "repeated_content_qa_loops": 0,
+    "whole_volume_content_qa_passes": 1,
+    "whole_release_output_validation_passes": 1,
+    "repeated_output_validation_loops": 0,
+    "path": "controls/EGA3_III1_QA_POLICY_20260920.json",
+    "bytes": 1597,
+    "sha256": "D22CE4B923A06825757C7FAD921080F7108B7738CC6F61BB96C3760CAA321186"
+  },
+  "source": {
+    "path": "ega/III/iii1-working.tex",
+    "bytes": 629501,
+    "sha256": "5807C502FA71B7C62DABC42941464F875E08428353B36D8C8E0FC3F0D16808A9"
+  },
+  "build": {
+    "result": "PASS_ONE_MUTEX_HELD_FOUR_PASS_CUMULATIVE_BUILD",
+    "receipt": "controls/EGA3_III1_COMPLETE_CUMULATIVE_BUILD_20260920.json",
+    "receipt_bytes": 4791,
+    "receipt_sha256": "228C0A13BCB8EBFD8F72E271E304F80F7317E36163BB5CA64121FEFF1DEEBD53",
+    "reader_pages": 602,
+    "reader_bytes": 3311979,
+    "reader_sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59"
+  },
+  "single_aggregate_output_validation": {
+    "result": "PASS_SINGLE_AGGREGATE_OUTPUT_VALIDATION_WITH_EXTRACTION_ARTIFACT_DISPOSITION",
+    "receipt": "controls/EGA3_III1_COMPLETE_SINGLE_AGGREGATE_PDF_QA_20260920.json",
+    "receipt_bytes": 5173,
+    "receipt_sha256": "07B6A6A179C46E15C5650A7B5B0ABC96AB9366969D7960FA2FC1BD5E0C638467"
+  },
+  "package": {
+    "directory": "pub/ega-ko/release/2026-09-20-ega3-iii1-complete",
+    "receipt": "pub/ega-ko/release/2026-09-20-ega3-iii1-complete/PACKAGE_RECEIPT.json",
+    "receipt_bytes": 3233,
+    "receipt_sha256": "7200EC0491AE46A12451AC86E8E4020B5310B842AE5C75F937EDEAE4A8902F65",
+    "asset_count": 5
+  },
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/ega-ko",
+    "release": "https://github.com/KokunoYumeto/ega-ko/releases/tag/ega-ko-2026-09-20-ega3-iii1-complete",
+    "tag": "ega-ko-2026-09-20-ega3-iii1-complete",
+    "release_commit": "19d30461ed153d2f8dc637d38fb96dc9306b90a0",
+    "receipt": "pub/ega-ko/release/2026-09-20-ega3-iii1-complete/GITHUB_PUBLICATION_RECEIPT.json",
+    "receipt_bytes": 2372,
+    "receipt_sha256": "05EA6D2C3D5F8E1250E7224AB12DF82EF197A99B29877759A959DF607EC6BB75",
+    "anonymous_asset_hash_mismatches": 0
+  },
+  "zenodo": {
+    "record": "https://zenodo.org/records/22864049",
+    "exact_doi": "10.5281/zenodo.22864049",
+    "exact_doi_url": "https://doi.org/10.5281/zenodo.22864049",
+    "concept_doi": "10.5281/zenodo.21921513",
+    "concept_doi_url": "https://doi.org/10.5281/zenodo.21921513",
+    "receipt": "pub/ega-ko/release/2026-09-20-ega3-iii1-complete/ZENODO_PUBLICATION_RECEIPT.json",
+    "receipt_bytes": 3596,
+    "receipt_sha256": "7018E611487405C021AC5B3A7664E2D58CB880F394B815DED6566B6D8ECDD56C",
+    "access_right": "open",
+    "pdf_preview_file": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "anonymous_asset_hash_mismatches": 0
+  },
+  "assets": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 3311979,
+      "sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59"
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_CUMULATIVE.tex",
+      "bytes": 2416890,
+      "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E"
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_COMPLETE_SOURCES.zip",
+      "bytes": 1150951,
+      "sha256": "B08C5C7694C690E635BB6D15D110F0EDCF6C5EAA53110E591E5CD2F8693080DE"
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 7169369,
+      "sha256": "688BB695770990E509CF9EE9D6C9C470BFA49B8AE3901C6413C8FBB913A4FFDA"
+    },
+    {
+      "order": 4,
+      "name": "04_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 440,
+      "sha256": "BCA71CF0C55703A9EBB5EFB444BF4CBEC01255563F02AE5BF52221475094E644"
+    }
+  ],
+  "publication_readbacks_are_integrity_transactions_not_qa_reruns": true,
+  "credential_material_recorded": false,
+  "next": "Begin EGA III-2 only from the exact admitted corrected-current authority. Keep the staged but uninstalled III.6 successor loci reversible; do not begin SGA."
+}
