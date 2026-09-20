@@ -1,0 +1,142 @@
+{
+  "schema": "ega-ko-public-release-scope-v1",
+  "version": "2026-09-20-ega3-iii1-complete",
+  "scope": "Complete Korean EGA 0_I, EGA I, EGA II, and EGA III-1.",
+  "not_in_scope": "Later EGA III parts, later EGA volumes, FGA, SGA, and other language lineages.",
+  "reader": {
+    "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
+    "pages": 602,
+    "bytes": 3311979,
+    "sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59"
+  },
+  "direct_cumulative_latex": {
+    "path": "01_EGA_ko_CUMULATIVE.tex",
+    "bytes": 2416890,
+    "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E",
+    "external_inputs": 0
+  },
+  "ordered_modular_inputs": [
+    {
+      "path": "front.tex",
+      "bytes": 4377,
+      "sha256": "3B769344AE443206998213253896DB8536C11EE7DC0EAB1BFC0D914BC193C18B"
+    },
+    {
+      "path": "intro.tex",
+      "bytes": 15165,
+      "sha256": "295CAD065AE37B6FF5556D0F5F0468F57B6FFF3D021FCA26802D51B370E1C246"
+    },
+    {
+      "path": "c0.tex",
+      "bytes": 279433,
+      "sha256": "8D6B0751599BF6E9DC8779A0233318BCF8B0EF23416568CE2DF27F107A1EF44D"
+    },
+    {
+      "path": "c1front.tex",
+      "bytes": 2069,
+      "sha256": "4E4AA85B9C6E7A2824BC56A265111ADF7F9693D0B0A709956278351D1DFA08D0"
+    },
+    {
+      "path": "c1s1.tex",
+      "bytes": 71250,
+      "sha256": "E0E32F37838F48CB92D17E8267CFB717531DB9E4F694FA707F38C637277CF68D"
+    },
+    {
+      "path": "c1s2.tex",
+      "bytes": 27982,
+      "sha256": "C1829B55CA5C5020FBC2374627FF84549C05BC739D9637FA2CE470F9D8A330A1"
+    },
+    {
+      "path": "c1s3.tex",
+      "bytes": 58821,
+      "sha256": "7054D98152E57F17B2CDE69D08A00905FCE21B1C3602192B037BC70BC21971BF"
+    },
+    {
+      "path": "c1s4.tex",
+      "bytes": 35822,
+      "sha256": "24E916362C2F54A1D479447F07EEF949DED309DD3E8E7207E9B187A6ED2E0E92"
+    },
+    {
+      "path": "c1s5.tex",
+      "bytes": 50638,
+      "sha256": "0CA37A6089AB8744ABDF4764E3BCEB7CC19FC72140567D20DD32213D8988C24B"
+    },
+    {
+      "path": "c1s6.tex",
+      "bytes": 57728,
+      "sha256": "C09AF6BE49A44F05B9A505FDF034B8445E6046998874B2030A6310A7EC75EC25"
+    },
+    {
+      "path": "c1s7.tex",
+      "bytes": 39742,
+      "sha256": "FAF00DDA88AEC5B6B8280DBE6F8253434A4E3493C24A00AFA8D392E77AA2BAD8"
+    },
+    {
+      "path": "c1s8.tex",
+      "bytes": 21278,
+      "sha256": "183750D872584169B101FBF29B4E383B7AECDCBB4EE12876361CF4C664C046D1"
+    },
+    {
+      "path": "c1s9.tex",
+      "bytes": 55580,
+      "sha256": "E9DD1D2B63C3151546C953F6F69F50F7DF3C3CE8477C7D9ADCA4B5F459F8E91D"
+    },
+    {
+      "path": "c1s10.tex",
+      "bytes": 166856,
+      "sha256": "1FE8F37C0590C93E0D4501F82BE65EE97131A80D6D5CD6E9F0011A9B96E2E183"
+    },
+    {
+      "path": "bib.tex",
+      "bytes": 3505,
+      "sha256": "FB3D3E90F595ACAF5E5AC71C8BED1C9407F5C892DE3612461CA19C63D71CAA1E"
+    },
+    {
+      "path": "c2front.tex",
+      "bytes": 1500,
+      "sha256": "6ED165B0E8F8618331A1D4B46D589AB99E5D0389DB06DD04648D94D505E4D47F"
+    },
+    {
+      "path": "c2s1.tex",
+      "bytes": 840480,
+      "sha256": "B3E6A0D98095665F82E08D68E4AF9F89CF51B91EF844C2EFFDE2981A16F556A3"
+    },
+    {
+      "path": "c2bibliography.tex",
+      "bytes": 1792,
+      "sha256": "631A184C1B28048ED94EB470D1D6866901830E6EEC9AB7FE6B1F5ACC65F3588F"
+    },
+    {
+      "path": "c2indexes-and-contents.tex",
+      "bytes": 26043,
+      "sha256": "37D02F90E52685FE75BC2744C0848A43E12FCC1ABBC891D3F655BF6EB546F3EE"
+    },
+    {
+      "path": "c2errata-addenda.tex",
+      "bytes": 21619,
+      "sha256": "9DAA4F116FEB35141427CE6224E726DACB5DF915D786295AF80B25EBD593F44E"
+    },
+    {
+      "path": "c3-1.tex",
+      "bytes": 629501,
+      "sha256": "5807C502FA71B7C62DABC42941464F875E08428353B36D8C8E0FC3F0D16808A9"
+    }
+  ],
+  "historical_source_page_markers": 581,
+  "authority": {
+    "ega_iii_1_corrected_current_source_sha256": "E225BB06195D44B7145CA8FD6BB5495E64DE00DB020DB457A0D907FBE8ECE08B",
+    "coverage_manifest": {
+      "path": "source/CUMULATIVE_INPUTS.json",
+      "bytes": 18053,
+      "sha256": "AC7B2021F396D22569A1DF057713FC07622C4776BCD59F73F00A7B533D67A5E7"
+    }
+  },
+  "qa_policy": {
+    "sectional_content_qa_loops": 0,
+    "repeated_content_qa_loops": 0,
+    "whole_volume_content_qa_transactions": 1,
+    "aggregate_pdf_output_validation_transactions": 1,
+    "render_cycles": 1
+  },
+  "rights": "See RIGHTS_AND_PROVENANCE.md; no blanket public-domain or open-license claim."
+}

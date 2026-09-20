@@ -1,0 +1,93 @@
+{
+  "schema": "agko-ega3-iii1-complete-public-package-v1",
+  "version": "2026-09-20-ega3-iii1-complete",
+  "result": "PASS_PACKAGE_READY_FOR_EXISTING_GITHUB_AND_ZENODO_LINEAGES",
+  "title": "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "recommended_git_tag": "ega-ko-2026-09-20-ega3-iii1-complete",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "exact_doi": "10.5281/zenodo.22864049",
+  "scope": {
+    "reader_pages": 602,
+    "historical_page_markers": 581,
+    "ordered_inputs": 21
+  },
+  "direct_latex": {
+    "fully_assembled": true,
+    "external_input_directives": 0,
+    "bytes": 2416890,
+    "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E"
+  },
+  "source_archive": {
+    "name": "02_EGA_ko_COMPLETE_SOURCES.zip",
+    "bytes": 1150951,
+    "sha256": "B08C5C7694C690E635BB6D15D110F0EDCF6C5EAA53110E591E5CD2F8693080DE",
+    "entries": 32,
+    "uncompressed_bytes": 4868893,
+    "ordered_entry_inventory_sha256": "4C2B3447A19A69F33F08ED3E5FD0B00E28D71363309D77D550AEA755F1FD9B6A",
+    "single_postwrite_entry_readback": true
+  },
+  "evidence_archive": {
+    "name": "03_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+    "bytes": 7169369,
+    "sha256": "688BB695770990E509CF9EE9D6C9C470BFA49B8AE3901C6413C8FBB913A4FFDA",
+    "entries": 26,
+    "uncompressed_bytes": 10251234,
+    "ordered_entry_inventory_sha256": "C5C6CFBC489FE670920E34E6D7E23997C8049DE080BE340D31233C2413ADCE8B",
+    "single_postwrite_entry_readback": true
+  },
+  "assets": [
+    {
+      "upload_order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 3311979,
+      "sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59",
+      "human_preview": true
+    },
+    {
+      "upload_order": 1,
+      "name": "01_EGA_ko_CUMULATIVE.tex",
+      "bytes": 2416890,
+      "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E",
+      "human_preview": false
+    },
+    {
+      "upload_order": 2,
+      "name": "02_EGA_ko_COMPLETE_SOURCES.zip",
+      "bytes": 1150951,
+      "sha256": "B08C5C7694C690E635BB6D15D110F0EDCF6C5EAA53110E591E5CD2F8693080DE",
+      "human_preview": false
+    },
+    {
+      "upload_order": 3,
+      "name": "03_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 7169369,
+      "sha256": "688BB695770990E509CF9EE9D6C9C470BFA49B8AE3901C6413C8FBB913A4FFDA",
+      "human_preview": false
+    },
+    {
+      "upload_order": 4,
+      "name": "04_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 440,
+      "sha256": "BCA71CF0C55703A9EBB5EFB444BF4CBEC01255563F02AE5BF52221475094E644",
+      "human_preview": false
+    }
+  ],
+  "public_metadata": {
+    "description_characters": 4765,
+    "creator_count": 2,
+    "sole_project_contributor": "AI typesetting & translation",
+    "license": "cc-by-4.0 scoped to project-owned material",
+    "forbidden_umbrella_mentions": 0,
+    "machine_local_user_paths": 0,
+    "excluded_repository_mentions": 0
+  },
+  "workflow": {
+    "package_constructions": 1,
+    "archive_postwrite_entry_readbacks": 1,
+    "tex_builds": 0,
+    "renders": 0,
+    "extractions": 0,
+    "content_qa_passes": 0
+  }
+}

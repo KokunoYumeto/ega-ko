@@ -16,16 +16,19 @@
     "included_volumes": [
       "EGA 0_I",
       "EGA I",
-      "EGA II complete: front matter/programme, main text through section8 /8.14.14, bibliography, indexes/contents, and errata/addenda"
+      "EGA II complete: front matter/programme, main text through section8 /8.14.14, bibliography, indexes/contents, and errata/addenda",
+      "EGA III-1 complete: chapter 0 continuation sections8-13, chapter III sections1-5, bibliography, and original contents through source EOF"
     ],
-    "terminal_coverage": "EGA II Chapter II front matter/programme, complete ega2/ega2-1-fr.tex through section8 / proposition8.14.14 proof / EOF, bibliography, indexes/contents, and errata/addenda through their respective source EOFs",
-    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA II is complete, while the wider EGA corpus remains incomplete",
-    "historical_source_pages": 423,
+    "terminal_coverage": "Complete EGA 0_I, EGA I and EGA II, followed by complete corrected-current ega3/ega3-1-fr.tex through chapter III section5 / source EOF, including the EGA III-1 bibliography and original contents",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA 0_I, EGA I, EGA II and EGA III-1 are complete, while later EGA volumes remain incomplete",
+    "historical_source_pages": 581,
     "historical_page_ranges": [
       "EGA I introduction5-8",
       "EGA 0_I11-78",
       "EGA I Chapter I79-214",
-      "EGA II5-222"
+      "EGA II5-222",
+      "EGA 0_III5-79",
+      "EGA III81-167"
     ],
     "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
@@ -109,6 +112,10 @@
     {
       "path": "c2errata-addenda.tex",
       "role": "EGA II errata and addenda complete"
+    },
+    {
+      "path": "c3-1.tex",
+      "role": "EGA III-1 complete through corrected-current source EOF"
     }
   ],
   "coverage_matrix": [
@@ -420,17 +427,17 @@
     {
       "driver_line": 88,
       "source_path": "ega3/ega3-1-fr.tex",
-      "source_bytes": 627894,
-      "source_lf_lines": 14616,
-      "source_sha256": "5058C52D12FDF25BF299C43B10C9492417DAD762841A5B8FF784C97CFD129726",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "source_bytes": 630447,
+      "source_lf_lines": 14661,
+      "source_sha256": "E225BB06195D44B7145CA8FD6BB5495E64DE00DB020DB457A0D907FBE8ECE08B",
+      "target_path": "c3-1.tex",
+      "working_path": "ega/III/iii1-working.tex",
+      "target_bytes": 629501,
+      "target_lf_lines": 14860,
+      "target_sha256": "5807C502FA71B7C62DABC42941464F875E08428353B36D8C8E0FC3F0D16808A9",
+      "historical_page_markers": 158,
+      "status": "complete",
+      "coverage": "full corrected-current source lines1-14661 / EOF: chapter 0 continuation sections8-13, chapter III sections1-5, bibliography, and original contents"
     },
     {
       "driver_line": 97,
@@ -469,10 +476,11 @@
       "AGKO-EGA0-R27-PAGE63",
       "AGKO-EGA1-R24-COMPLETE",
       "AGKO-EGA2-S1-R61-CUMULATIVE-BATCH-R1",
-      "AGKO-EGA2-BACKMATTER-COMPLETE-20260908"
+      "AGKO-EGA2-BACKMATTER-COMPLETE-20260908",
+      "AGKO-EGA3-III1-COMPLETE-20260920"
     ],
     "external_korean_handoffs_admitted": 0,
     "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
-    "next": "perform exactly one cumulative convergence build and one whole-reader aggregate QA for complete EGA II, publish the validated cumulative edition, then begin FGA; SGA remains separate"
+    "next": "perform one mutex-held cumulative build and one aggregate output validation for the complete EGA III-1 cumulative edition, publish it in the existing EGA lineage, then continue with the next source-admitted EGA III volume; SGA remains separate"
   }
 }
