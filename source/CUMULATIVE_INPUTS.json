@@ -17,18 +17,20 @@
       "EGA 0_I",
       "EGA I",
       "EGA II complete: front matter/programme, main text through section8 /8.14.14, bibliography, indexes/contents, and errata/addenda",
-      "EGA III-1 complete: chapter 0 continuation sections8-13, chapter III sections1-5, bibliography, and original contents through source EOF"
+      "EGA III-1 complete: chapter 0 continuation sections8-13, chapter III sections1-5, bibliography, and original contents through source EOF",
+      "EGA III-2 complete: chapter III sections6-7, bibliography, indexes/contents, and errata/addenda through source EOF"
     ],
-    "terminal_coverage": "Complete EGA 0_I, EGA I and EGA II, followed by complete corrected-current ega3/ega3-1-fr.tex through chapter III section5 / source EOF, including the EGA III-1 bibliography and original contents",
-    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA 0_I, EGA I, EGA II and EGA III-1 are complete, while later EGA volumes remain incomplete",
-    "historical_source_pages": 581,
+    "terminal_coverage": "Complete EGA 0_I, EGA I and EGA II, followed by complete corrected-current EGA III-1 and EGA III-2 through both admitted source EOFs",
+    "completeness_claim": "all locally completed and hash-admitted Korean EGA targets are included; EGA 0_I, EGA I, EGA II, EGA III-1 and EGA III-2 are complete, while later EGA volumes remain outside this release",
+    "historical_source_pages": 667,
     "historical_page_ranges": [
       "EGA I introduction5-8",
       "EGA 0_I11-78",
       "EGA I Chapter I79-214",
       "EGA II5-222",
       "EGA 0_III5-79",
-      "EGA III81-167"
+      "EGA III81-167",
+      "EGA III-2 137-215 and217-223 (printed page216 is blank)"
     ],
     "pagination_policy": "each historical oldpage marker begins a new output-page rhythm; edition front matter and contents are additional"
   },
@@ -116,6 +118,10 @@
     {
       "path": "c3-1.tex",
       "role": "EGA III-1 complete through corrected-current source EOF"
+    },
+    {
+      "path": "c3-2.tex",
+      "role": "EGA III-2 complete through both admitted corrected-current source leaves"
     }
   ],
   "coverage_matrix": [
@@ -127,9 +133,9 @@
       "source_sha256": "D506B87684E2136E3F87495190EECDF40B79DB8887ED71093C4CD56648E282A9",
       "target_path": "front.tex",
       "working_path": "ega/I/front.tex",
-      "target_bytes": 4440,
-      "target_lf_lines": 123,
-      "target_sha256": "26D84B22E3A896015ACAC5213282BB3F11EF945F671B745A763298D554214C6D",
+      "target_bytes": 4648,
+      "target_lf_lines": 125,
+      "target_sha256": "82CE274799ABD7A052DC27F9530A1BBED88E93E89463964356FABC46921066A5",
       "historical_page_markers": 0,
       "status": "complete",
       "coverage": "full source EOF; public target adds cumulative-edition metadata"
@@ -433,7 +439,7 @@
       "target_path": "c3-1.tex",
       "working_path": "ega/III/iii1-working.tex",
       "target_bytes": 629501,
-      "target_lf_lines": 14860,
+      "target_lf_lines": 14859,
       "target_sha256": "5807C502FA71B7C62DABC42941464F875E08428353B36D8C8E0FC3F0D16808A9",
       "historical_page_markers": 158,
       "status": "complete",
@@ -442,32 +448,34 @@
     {
       "driver_line": 97,
       "source_path": "ega3/ega3-6-fr.tex",
-      "source_bytes": 168838,
-      "source_lf_lines": 4070,
-      "source_sha256": "9519F1C74E5F039062476E193AF9738E4323E4777356C4AEF9725F28F24D072A",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "source_bytes": 168951,
+      "source_lf_lines": 4071,
+      "source_sha256": "F504D66880630F8E4423A36E12A535743CE2A583CEFF7B3FC81D7444CA24DEEF",
+      "target_path": "c3-2.tex",
+      "working_path": "ega/III/iii2-working.tex",
+      "target_bytes": 356621,
+      "target_lf_lines": 8865,
+      "target_sha256": "609999F1A287FF54B53F3B824CE7658739709361CEC6E3DCB967F48968DA91A7",
+      "historical_page_markers": 39,
+      "status": "complete",
+      "coverage": "full installed R71 corrected-current section6 lines1-4071 / EOF; first segment of combined c3-2.tex",
+      "admission": "controls/EGA3_ADMISSION_20260913.json"
     },
     {
       "driver_line": 98,
       "source_path": "ega3/ega3-7-fr.tex",
-      "source_bytes": 172424,
-      "source_lf_lines": 4479,
-      "source_sha256": "20A61BA348909E4309A3CDA89FD6DDAF8C0FC5BA346FD44232458CDFEA2A2972",
-      "target_path": null,
-      "working_path": null,
-      "target_bytes": null,
-      "target_lf_lines": null,
-      "target_sha256": null,
-      "historical_page_markers": 0,
-      "status": "not_translated",
-      "coverage": "not translated; excluded from the reader"
+      "source_bytes": 173932,
+      "source_lf_lines": 4494,
+      "source_sha256": "06291262B5D5BEAF29A0CF373614A2AEE192C9A10FB7E43C0B7E6BDD0A78AD45",
+      "target_path": "c3-2.tex",
+      "working_path": "ega/III/iii2-working.tex",
+      "target_bytes": 356621,
+      "target_lf_lines": 8865,
+      "target_sha256": "609999F1A287FF54B53F3B824CE7658739709361CEC6E3DCB967F48968DA91A7",
+      "historical_page_markers": 47,
+      "status": "complete",
+      "coverage": "full installed R71 corrected-current section7 lines1-4494 / EOF; second segment of combined c3-2.tex",
+      "admission": "controls/EGA3_ADMISSION_20260913.json"
     }
   ],
   "reconciliation": {
@@ -481,6 +489,12 @@
     ],
     "external_korean_handoffs_admitted": 0,
     "rule": "a completed Korean target outside this matrix must arrive by exact hash-bound handoff before inclusion; source readiness alone is not a Korean translation",
-    "next": "perform one mutex-held cumulative build and one aggregate output validation for the complete EGA III-1 cumulative edition, publish it in the existing EGA lineage, then continue with the next source-admitted EGA III volume; SGA remains separate"
+    "next": "perform one mutex-held cumulative build and one aggregate output validation for the complete EGA III-2 cumulative edition, publish it in the existing EGA lineage, then admit only the next contiguous source-accurate EGA volume; SGA remains separate"
+  },
+  "production_disclosure": {
+    "contributor": "AI typesetting & translation",
+    "model": "OpenAI Codex — GPT-5.6 Sol",
+    "effort": "Ultra",
+    "scope": "Korean translation, correction integration, typesetting, and deterministic release preparation"
   }
 }

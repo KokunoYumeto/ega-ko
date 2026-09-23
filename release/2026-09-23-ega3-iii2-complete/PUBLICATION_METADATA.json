@@ -1,4 +1,5 @@
 {
+  "schema": "agko-ega3-iii2-complete-publication-metadata-v1",
   "creators": [
     {
       "name": "Grothendieck, Alexander"
@@ -42,5 +43,47 @@
   "license": "cc-by-4.0",
   "upload_type": "publication",
   "publication_type": "book",
-  "language": "kor"
+  "language": "kor",
+  "publication_date": "2026-09-23",
+  "concept_doi": "10.5281/zenodo.21921513",
+  "exact_doi": "10.5281/zenodo.22922228",
+  "repository": "https://github.com/KokunoYumeto/ega-ko",
+  "recommended_git_tag": "ega-ko-2026-09-23-ega3-iii2-complete",
+  "files": [
+    {
+      "order": 0,
+      "name": "00_EGA_ko_CUMULATIVE_READER.pdf",
+      "bytes": 3733604,
+      "sha256": "55CAA845FB676DC4110719B4B189B9E3986909F890322783AB950067B7624738",
+      "human_preview": true
+    },
+    {
+      "order": 1,
+      "name": "01_EGA_ko_CUMULATIVE.tex",
+      "bytes": 2773977,
+      "sha256": "FA1360126C7E1600CA28896A07AD223016C6462B4A66EB30CE5805848D1AC559",
+      "human_preview": false
+    },
+    {
+      "order": 2,
+      "name": "02_EGA_ko_COMPLETE_SOURCES.zip",
+      "bytes": 1311302,
+      "sha256": "BEE267E8821CA784D1792CEBB98CCF692C0821194B2CBFD3C335FAB2CFCA1AE7",
+      "human_preview": false
+    },
+    {
+      "order": 3,
+      "name": "03_EGA_ko_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 8849844,
+      "sha256": "F79CB28579140E33D0379E205DE770B3C1CE21CBE33C3D604DC4134E0F9622F4",
+      "human_preview": false
+    },
+    {
+      "order": 4,
+      "name": "04_EGA_ko_SHA256_MANIFEST.txt",
+      "bytes": 440,
+      "sha256": "82D03A8DAC8B25185CF5D7847AD42978F0AA9DF8DB040FF30DEFE0E33FEA9EAC",
+      "human_preview": false
+    }
+  ]
 }

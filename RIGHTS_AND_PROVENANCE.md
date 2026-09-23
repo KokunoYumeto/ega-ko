@@ -1,16 +1,14 @@
-# Rights, provenance, and non-endorsement
+# 권리, 출처 및 비공인 고지
 
-CC BY 4.0 applies only where this project holds the relevant rights: the Korean
-translation and typesetting, project-authored metadata, indexes, decision
-records, and verification evidence. The underlying mathematical work,
-historical French edition, transcriptions, quotations, bibliography, and all
-other third-party material retain their own exact provenance, attribution,
-author/source relationships, copyright status, and license or permission
-terms. This release makes no blanket public-domain or open-license claim.
+CC BY 4.0은 이 프로젝트가 해당 권리를 보유하는 부분, 즉 한국어 번역과
+조판, 프로젝트가 작성한 메타데이터·색인·선택 기록·검증 증거에만
+적용된다. 기초 수학 저작물, 역사적 프랑스어 판, 전사본, 인용문,
+참고문헌 및 그 밖의 제3자 자료는 각각의 정확한 출처, 귀속, 저자/원천
+관계, 저작권 상태와 이용허락 조건을 그대로 유지한다. 이 공개판은
+일괄적인 퍼블릭 도메인 또는 공개 라이선스 주장을 하지 않는다.
 
-The mathematical work is historically authored by Alexander Grothendieck and
-Jean Dieudonné. This Korean edition is independent and unofficial. It is not
-endorsed by the historical authors, NUMDAM, IHÉS, publishers, repositories,
-institutions named in the work, or cited third parties. The public French
-authority and prior editions remain distinct source records; this release does
-not replace or broaden their terms.
+수학 저작물의 역사적 저자는 Alexander Grothendieck와 Jean Dieudonné이다.
+이 한국어 판은 독립적이고 비공식적이다. 역사적 저자, NUMDAM, IHÉS,
+출판사, 저장소, 저작물에 언급된 기관 또는 인용된 제3자가 이를 승인한
+것이 아니다. 공개 프랑스어 권위 자료와 종전 판은 별개의 출처 기록이며,
+이 공개판은 그 조건을 대체하거나 넓히지 않는다.

@@ -3,24 +3,20 @@
 [현재까지 완성된 한국어 번역 전체 — 누적 독자용 PDF](reader/00_EGA_ko_CUMULATIVE_READER.pdf)
 
 - 안정 DOI: https://doi.org/10.5281/zenodo.21921513
-- 이 정확판 DOI: https://doi.org/10.5281/zenodo.22864049
+- 이 정확판 DOI: https://doi.org/10.5281/zenodo.22922228
 - 공개 저장소: https://github.com/KokunoYumeto/ega-ko
-- 판: `2026-09-20-ega3-iii1-complete`
-- 범위: EGA 0_I, EGA I, EGA II, EGA III-1 완역
-- 역사적 원전 쪽 표지: 581개
-- 독자용 PDF: 602쪽 / 3,311,979 B / `942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59`
-- 직접 내려받는 누적 LaTeX: 2,416,890 B / `2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E`
+- 판: `2026-09-23-ega3-iii2-complete`
+- 범위: EGA 0_I, EGA I, EGA II, EGA III-1, EGA III-2 완역
+- 역사적 원전 쪽 표지: 667개
+- 독자용 PDF: 691쪽 / 3,733,604 B / `55CAA845FB676DC4110719B4B189B9E3986909F890322783AB950067B7624738`
+- 직접 내려받는 누적 LaTeX: 2,773,977 B / `FA1360126C7E1600CA28896A07AD223016C6462B4A66EB30CE5805848D1AC559`
 
-이 판은 정본 원전과 결박된 EGA 0_I, EGA I, EGA II, EGA III-1의 한국어 번역 전체를 수록한다. EGA III-1은 제0장 제8–13절, 제III장 제1–5절, 참고문헌과 원 목차를 정본 파일 끝까지 포함한다. 그 뒤의 EGA III 및 후속 권은 아직 이 판의 범위가 아니다.
+이 판은 정본 원전과 결박된 EGA 0_I, EGA I, EGA II, EGA III-1 및 EGA III-2의 현재 한국어 완역 전체를 처음부터 한 파일에 수록한다. EGA III-2는 제III장 제6–7절, 참고문헌, 표기·용어 색인, 원 목차, 정오 및 추가를 허가된 corrected-current 원천 끝까지 포함한다. EGA III의 뒤 권과 후속 EGA 권은 아직 이 판의 범위가 아니다.
 
-공개 파일 순서는 독자용 PDF, 완전히 합쳐진 직접 LaTeX, 완전한 모듈식 원본 ZIP, 범위가 제한된 증거·출처 ZIP, SHA-256 목록이다. `source/`는 원래의 모듈 구조와 21개 입력, 누적 드라이버, 범위 명세를 보존한다. `BUILD.ps1`은 전역 TeX 뮤텍스를 획득한 뒤 네 번 수렴 빌드한다.
+공개 파일은 독자용 PDF, 완전히 합쳐진 직접 LaTeX, 완전한 모듈식 원본 ZIP, 범위가 제한된 증거·출처 ZIP, SHA-256 목록 순서로 제공된다. `source/`는 원래 모듈 구조와 순서가 고정된 입력 22개, 누적 드라이버와 범위 명세를 보존한다. `BUILD.ps1`은 기계 전역 TeX 뮤텍스를 획득한 뒤 네 번 수렴 빌드하며 제3·4회 PDF가 바이트 단위로 같은지 확인한다.
 
-이 누적판은 한 번의 전권 내용 검사와 한 번의 602쪽 출력 집계 검사를 통과했다. 작은 절마다 반복하는 검사나 전권 재검사는 하지 않았다. 오래된 수학·도식 글꼴의 ToUnicode 한계 때문에 평문 추출이 손실될 수 있으므로 편집 가능한 TeX와 렌더링된 수식·도식이 해당 객체의 권위 자료이다.
+이 누적판은 EGA III-2 전체에 대한 한 번의 내용 집계 검사와 691쪽 전체에 대한 한 번의 출력 집계 검사를 통과했다. 절마다 반복하는 검사나 전권 재검사는 하지 않았다. 691쪽 전부를 한 번 렌더링하여 판면·링크·글꼴·추출·도식·경계를 확인했다. 오래된 수학·도식 글꼴의 ToUnicode 한계 때문에 평문 추출이 손실될 수 있으므로 편집 가능한 TeX와 렌더링된 수식·도식이 해당 객체의 권위 자료이다.
 
-## English identification
+수학 저작물의 역사적 창작자는 Alexander Grothendieck와 Jean Dieudonné이다. 표준화된 프로젝트 기여자는 `AI typesetting & translation` 하나뿐이다. 이 판의 AI 전사·번역·교정·편집·조판 작업은 **OpenAI Codex — GPT-5.6 Sol, Ultra effort**로 수행되었다. 사람의 편집·검토·저작을 암시하지 않는다.
 
-This repository contains the independently maintained Korean cumulative edition of Grothendieck and Dieudonné's *Éléments de géométrie algébrique*. Version `2026-09-20-ega3-iii1-complete` contains complete Korean EGA 0_I, EGA I, EGA II, and EGA III-1. It does not claim completion of later EGA III parts or later volumes.
-
-The 602-page PDF is the human-readable preview. The complete assembled LaTeX is directly downloadable, and the deterministic source ZIP preserves the modular source tree and reconstruction instructions. This independent edition claims neither perfection nor endorsement; confirmed defects are corrected in later immutable versions of the same lineage.
-
-CC BY 4.0 applies only to project-owned Korean translation, typesetting, metadata, indexes, decisions, and evidence. Historical and third-party materials retain their exact provenance, attribution, rights, and license terms.
+CC BY 4.0은 프로젝트가 권리를 보유하는 한국어 번역·조판, 프로젝트 작성 메타데이터·색인·선택 기록·검증 증거에만 적용된다. 역사적·제3자 자료는 정확한 출처, 귀속, 저자/원천 관계, 권리와 이용허락 조건을 그대로 유지한다. 이 독립적 비공식 판은 완전무결이나 외부 인증을 주장하지 않으며, 확인된 결함은 같은 공개 계보의 다음 불변판에서 고친다.

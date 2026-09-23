@@ -1,25 +1,25 @@
 {
   "schema": "ega-ko-public-release-scope-v1",
-  "version": "2026-09-20-ega3-iii1-complete",
-  "scope": "Complete Korean EGA 0_I, EGA I, EGA II, and EGA III-1.",
-  "not_in_scope": "Later EGA III parts, later EGA volumes, FGA, SGA, and other language lineages.",
+  "version": "2026-09-23-ega3-iii2-complete",
+  "scope": "한국어 EGA 0_I, EGA I, EGA II, EGA III-1 및 EGA III-2 완역 누적판.",
+  "not_in_scope": "EGA III의 뒤 권, 후속 EGA 권, FGA·SGA 및 다른 언어 계보.",
   "reader": {
     "path": "00_EGA_ko_CUMULATIVE_READER.pdf",
-    "pages": 602,
-    "bytes": 3311979,
-    "sha256": "942945B123903A34F1295399BAD282658916D52174AA3616B6380A60E571FC59"
+    "pages": 691,
+    "bytes": 3733604,
+    "sha256": "55CAA845FB676DC4110719B4B189B9E3986909F890322783AB950067B7624738"
   },
   "direct_cumulative_latex": {
     "path": "01_EGA_ko_CUMULATIVE.tex",
-    "bytes": 2416890,
-    "sha256": "2B9479D8124576B45CAEFC43D8E8A90567F99DAFD8494B357471AF350ED6655E",
+    "bytes": 2773977,
+    "sha256": "FA1360126C7E1600CA28896A07AD223016C6462B4A66EB30CE5805848D1AC559",
     "external_inputs": 0
   },
   "ordered_modular_inputs": [
     {
       "path": "front.tex",
-      "bytes": 4377,
-      "sha256": "3B769344AE443206998213253896DB8536C11EE7DC0EAB1BFC0D914BC193C18B"
+      "bytes": 4648,
+      "sha256": "82CE274799ABD7A052DC27F9530A1BBED88E93E89463964356FABC46921066A5"
     },
     {
       "path": "intro.tex",
@@ -120,15 +120,22 @@
       "path": "c3-1.tex",
       "bytes": 629501,
       "sha256": "5807C502FA71B7C62DABC42941464F875E08428353B36D8C8E0FC3F0D16808A9"
+    },
+    {
+      "path": "c3-2.tex",
+      "bytes": 356621,
+      "sha256": "609999F1A287FF54B53F3B824CE7658739709361CEC6E3DCB967F48968DA91A7"
     }
   ],
-  "historical_source_page_markers": 581,
+  "historical_source_page_markers": 667,
   "authority": {
     "ega_iii_1_corrected_current_source_sha256": "E225BB06195D44B7145CA8FD6BB5495E64DE00DB020DB457A0D907FBE8ECE08B",
+    "ega_iii_2_section_6_corrected_current_source_sha256": "F504D66880630F8E4423A36E12A535743CE2A583CEFF7B3FC81D7444CA24DEEF",
+    "ega_iii_2_section_7_corrected_current_source_sha256": "06291262B5D5BEAF29A0CF373614A2AEE192C9A10FB7E43C0B7E6BDD0A78AD45",
     "coverage_manifest": {
       "path": "source/CUMULATIVE_INPUTS.json",
-      "bytes": 18053,
-      "sha256": "AC7B2021F396D22569A1DF057713FC07622C4776BCD59F73F00A7B533D67A5E7"
+      "bytes": 19008,
+      "sha256": "080D062B8B7A8083CA59758AE6452B9F9EC181E433C94050D29D0B8F86BC0402"
     }
   },
   "qa_policy": {
@@ -138,5 +145,5 @@
     "aggregate_pdf_output_validation_transactions": 1,
     "render_cycles": 1
   },
-  "rights": "See RIGHTS_AND_PROVENANCE.md; no blanket public-domain or open-license claim."
+  "rights": "RIGHTS_AND_PROVENANCE.md 참조. 일괄적인 퍼블릭 도메인 또는 공개 라이선스 주장을 하지 않는다."
 }

@@ -15,7 +15,7 @@ try {
   $acquired = $mutex.WaitOne(300000)
   if (-not $acquired) { throw 'Timed out waiting for Global\InterlanguageTeXSlotV1.' }
   New-Item -ItemType Directory -Force -Path $outRoot | Out-Null
-  $env:SOURCE_DATE_EPOCH = '1789862400'
+  $env:SOURCE_DATE_EPOCH = '1790121600'
   $env:FORCE_SOURCE_DATE = '1'
   $env:TZ = 'UTC'
   foreach ($pass in 1..4) {
