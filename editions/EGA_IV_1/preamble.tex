@@ -1,0 +1,98 @@
+\documentclass[10pt,oneside]{book}
+
+\usepackage{fontspec}
+\setmainfont{Malgun Gothic}[
+  ItalicFont={Malgun Gothic},
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont={Malgun Gothic Bold},
+  BoldItalicFeatures={FakeSlant=0.2}
+]
+\setsansfont{Malgun Gothic}
+\XeTeXlinebreaklocale "ko"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{longtable}
+\usepackage[all]{xy}
+\usepackage{tikz-cd}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  hypertexnames=false,
+  unicode=true,
+  pdfencoding=auto
+]{hyperref}
+\hypersetup{
+  pdftitle={대수기하학 원론 IV, 제1분책},
+  pdfauthor={알렉산더 그로텐디크와 장 디외도네},
+  pdfsubject={EGA IV, 제1분책의 한국어 번역}
+}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\bibname}{참고문헌}
+\renewcommand{\contentsname}{목차}
+\makeatletter
+\renewcommand{\@pnumwidth}{2em}
+\renewcommand{\@tocrmarg}{3em}
+\makeatother
+\newif\ifagoldpageseen
+\agoldpageseenfalse
+\newcommand{\oldpage}[2][]{%
+  \ifagoldpageseen
+    \ifhmode
+      \vadjust pre{\penalty -10000}%
+    \else
+      \ifvmode\penalty -10000\fi
+    \fi
+  \else
+    \global\agoldpageseentrue
+  \fi
+  \setcounter{footnote}{0}%
+  \marginpar{\scriptsize\textbf{#1}~|~#2}\ignorespaces}
+\newcommand{\agref}[2]{%
+  \ifcsname r@#1\endcsname\hyperref[#1]{#2}\else#2\fi}
+\makeatletter
+\def\ag@sref@strip0.#1-#2\@nil#3{\agref{#3}{(#1)}}
+\providecommand{\sref}[1]{\ag@sref@strip#1\@nil{#1}}
+\makeatother
+\providecommand{\sh}[1]{\mathcal{#1}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\Proj}{\operatorname{Proj}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Hyp}{\operatorname{Hyp}}
+\providecommand{\gr}{\operatorname{gr}}
+\providecommand{\vphi}{\varphi}
+\providecommand{\kres}{\kappa}
+\providecommand{\isoto}{\xrightarrow{\sim}}
+\providecommand{\supertilde}{^{\sim}}
+\newenvironment{env}[1][]{\par\medskip\noindent\textbf{(#1)}\ }{\par}
+\newenvironment{definition}[1][]{%
+  \par\medskip\noindent\itshape 정의 (#1). ---\ }{\par}
+\newenvironment{proposition}[1][]{%
+  \par\medskip\noindent\itshape 명제 (#1). ---\ }{\par}
+\newenvironment{theorem}[1][]{%
+  \par\medskip\noindent\itshape 정리 (#1). ---\ }{\par}
+\newenvironment{corollary}[1][]{%
+  \par\medskip\noindent\itshape 따름정리 (#1). ---\ }{\par}
+\newenvironment{remark}[1][]{%
+  \par\medskip\noindent\itshape 주 (#1). ---\ }{\par}
+\newenvironment{remarks}[1][]{%
+  \par\medskip\noindent\itshape 주들 (#1). ---\ }{\par}
+\newenvironment{scholium}[1][]{%
+  \par\medskip\noindent\itshape 보충설명 (#1). ---\ }{\par}
+\newenvironment{lemma}[1][]{%
+  \par\medskip\noindent\itshape 보조정리 (#1). ---\ }{\par}
+\newenvironment{example}[1][]{%
+  \par\medskip\noindent\textit{예 (#1). ---\ }}{\par}
+\newenvironment{examples}[1][]{%
+  \par\medskip\noindent\textit{예들 (#1). ---\ }}{\par}
+\newenvironment{notation}[1][]{%
+  \par\medskip\noindent\textit{표기 (#1). ---\ }}{\par}
+\newenvironment{proof}{%
+  \par\medskip\noindent\textit{증명. ---\ }}{\par}
+\newenvironment{namedtheorem}[2][]{%
+  \par\medskip\noindent\itshape #2 (#1). ---\ }{\par}
+\newenvironment{namedlemma}[2][]{%
+  \par\medskip\noindent\itshape #2 (#1). ---\ }{\par}
+

@@ -1,22 +1,23 @@
-# 대수기하학 원론 (EGA) — 한국어 누적판
+# 대수기하학 원론 (EGA) — 한국어판
 
-[현재까지 완성된 한국어 번역 전체 — 누적 독자용 PDF](reader/00_EGA_ko_CUMULATIVE_READER.pdf)
+[누적 독자용 PDF: EGA 0_I, I, II, III-1, III-2](reader/00_EGA_ko_CUMULATIVE_READER.pdf) · [편집 가능한 누적 LaTeX](01_EGA_ko_CUMULATIVE.tex) · [전체 소스 ZIP](02_EGA_ko_COMPLETE_SOURCES.zip).
 
-- 안정 DOI: https://doi.org/10.5281/zenodo.21921513
-- 이 정확판 DOI: https://doi.org/10.5281/zenodo.22922228
-- 공개 저장소: https://github.com/KokunoYumeto/ega-ko
-- 판: `2026-09-23-ega3-iii2-complete`
-- 범위: EGA 0_I, EGA I, EGA II, EGA III-1, EGA III-2 완역
-- 역사적 원전 쪽 표지: 667개
-- 독자용 PDF: 691쪽 / 3,733,604 B / `55CAA845FB676DC4110719B4B189B9E3986909F890322783AB950067B7624738`
-- 직접 내려받는 누적 LaTeX: 2,773,977 B / `FA1360126C7E1600CA28896A07AD223016C6462B4A66EB30CE5805848D1AC559`
+기존 누적 독자용 PDF의 범위는 EGA 0_I, I, II, III-1, III-2입니다.
 
-이 판은 정본 원전과 결박된 EGA 0_I, EGA I, EGA II, EGA III-1 및 EGA III-2의 현재 한국어 완역 전체를 처음부터 한 파일에 수록한다. EGA III-2는 제III장 제6–7절, 참고문헌, 표기·용어 색인, 원 목차, 정오 및 추가를 허가된 corrected-current 원천 끝까지 포함한다. EGA III의 뒤 권과 후속 EGA 권은 아직 이 판의 범위가 아니다.
+EGA IV, 제1분책의 [편집 가능한 번역과 빌드 입력](editions/EGA_IV_1/README.md).
 
-공개 파일은 독자용 PDF, 완전히 합쳐진 직접 LaTeX, 완전한 모듈식 원본 ZIP, 범위가 제한된 증거·출처 ZIP, SHA-256 목록 순서로 제공된다. `source/`는 원래 모듈 구조와 순서가 고정된 입력 22개, 누적 드라이버와 범위 명세를 보존한다. `BUILD.ps1`은 기계 전역 TeX 뮤텍스를 획득한 뒤 네 번 수렴 빌드하며 제3·4회 PDF가 바이트 단위로 같은지 확인한다.
+제0장 §§14–23, 제IV장 §1, 참고문헌과 색인. 번역과 교정은 AI가 수행했습니다. 출판자는 번역하지 않았습니다. 수학 원저자는 Alexandre Grothendieck와 Jean Dieudonné입니다.
 
-이 누적판은 EGA III-2 전체에 대한 한 번의 내용 집계 검사와 691쪽 전체에 대한 한 번의 출력 집계 검사를 통과했다. 절마다 반복하는 검사나 전권 재검사는 하지 않았다. 691쪽 전부를 한 번 렌더링하여 판면·링크·글꼴·추출·도식·경계를 확인했다. 오래된 수학·도식 글꼴의 ToUnicode 한계 때문에 평문 추출이 손실될 수 있으므로 편집 가능한 TeX와 렌더링된 수식·도식이 해당 객체의 권위 자료이다.
+## 출처
 
-수학 저작물의 역사적 창작자는 Alexander Grothendieck와 Jean Dieudonné이다. 표준화된 프로젝트 기여자는 `AI typesetting & translation` 하나뿐이다. 이 판의 AI 전사·번역·교정·편집·조판 작업은 **OpenAI Codex — GPT-5.6 Sol, Ultra effort**로 수행되었다. 사람의 편집·검토·저작을 암시하지 않는다.
+[프랑스어 원전](https://www.numdam.org/journals/PMIHES/) · [한국어판의 영구 DOI](https://doi.org/10.5281/zenodo.21921513) · [2026-09-23 누적판 DOI](https://doi.org/10.5281/zenodo.22922228).
 
-CC BY 4.0은 프로젝트가 권리를 보유하는 한국어 번역·조판, 프로젝트 작성 메타데이터·색인·선택 기록·검증 증거에만 적용된다. 역사적·제3자 자료는 정확한 출처, 귀속, 저자/원천 관계, 권리와 이용허락 조건을 그대로 유지한다. 이 독립적 비공식 판은 완전무결이나 외부 인증을 주장하지 않으며, 확인된 결함은 같은 공개 계보의 다음 불변판에서 고친다.
+## Rights and AI authorship
+
+Rights in the original works and in any protected contributions to these derivative translations and transcriptions remain with their respective rights holders. This project does not dedicate those works or contributions to the public domain or grant a licence over them. Existing third-party notices and any permissions already granted remain applicable.
+
+These editions are made available free of charge for non-commercial, purely educational purposes, on the presumption that the respective rights holders would not object to these translations and transcriptions being freely available alongside the French originals on [NUMDAM](https://www.numdam.org/journals/PMIHES/). This presumption is not a statement that permission has been obtained; free access to the originals does not itself grant permission to translate, adapt or republish them.
+
+If you hold rights in any material presented here and object to its availability, please [open a GitHub issue](https://github.com/KokunoYumeto/ega-ko/issues). The publisher will take down the affected material at the rights holder's request.
+
+The translation is AI-translated. Subsequent corrections and typesetting are AI-produced. The publisher did not translate the text. [EGA IV sources and attribution](editions/EGA_IV_1/SOURCES.md).
