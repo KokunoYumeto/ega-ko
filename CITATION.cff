@@ -1,29 +1,47 @@
 cff-version: 1.2.0
-message: "이 정확한 한국어 EGA 누적판을 인용해 주십시오."
-title: "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition"
-type: book
+message: 이 정확한 한국어 EGA 누적판을 인용해 주십시오.
+title: 대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition
 authors:
-  - family-names: "Grothendieck"
-    given-names: "Alexander"
-  - family-names: "Dieudonné"
-    given-names: "Jean"
-version: "2026-09-23-ega3-iii2-complete"
-date-released: 2026-09-23
-doi: "10.5281/zenodo.22922228"
-url: "https://doi.org/10.5281/zenodo.21921513"
+- family-names: Grothendieck
+  given-names: Alexander
+- family-names: Dieudonné
+  given-names: Jean
+version: 2026-09-23-ega3-iii2-complete
+date-released: '2026-09-23'
+doi: 10.5281/zenodo.22922228
+url: https://doi.org/10.5281/zenodo.21921513
 preferred-citation:
   type: book
-  title: "대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition"
+  title: 대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition
   authors:
-    - family-names: "Grothendieck"
-      given-names: "Alexander"
-    - family-names: "Dieudonné"
-      given-names: "Jean"
+  - family-names: Grothendieck
+    given-names: Alexander
+  - family-names: Dieudonné
+    given-names: Jean
   translators:
-    - name: "AI typesetting & translation"
+  - name: AI typesetting & translation
   languages:
-    - "ko"
-  doi: "10.5281/zenodo.22922228"
-  version: "2026-09-23-ega3-iii2-complete"
-  year: "2026"
-  url: "https://doi.org/10.5281/zenodo.21921513"
+  - ko
+  doi: 10.5281/zenodo.22922228
+  version: 2026-09-23-ega3-iii2-complete
+  year: '2026'
+  url: https://doi.org/10.5281/zenodo.21921513
+references:
+- type: software
+  title: EGA — community English translation
+  authors:
+  - family-names: Carmona
+    given-names: Mateo
+  - family-names: Holzschuh
+    given-names: Tim
+  - family-names: Hosgood
+    given-names: Tim
+  - family-names: Keleti
+    given-names: Ryan
+  - family-names: Solovera & Nery
+    given-names: Thiago
+  - family-names: Yang
+    given-names: Wayne
+  repository-code: https://github.com/ryankeleti/ega
+  url: https://github.com/ryankeleti/ega/tree/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971
+  commit: 3d7afe28c99d1887ccdb85acf2ca1afd93fb1971
