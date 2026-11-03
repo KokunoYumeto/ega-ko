@@ -1,7 +1,5 @@
-# Rights and availability
+# 권리와 이용 조건
 
-Rights in the original works and in any protected contributions to these derivative translations and transcriptions remain with their respective rights holders. Anything in these editions that the publisher holds rights to is dedicated to the public domain under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). Existing third-party notices and any permissions already granted remain applicable.
+출판자가 AI가 만든 번역, 교정, 조판에 대해 권리를 가지는 범위에서, 그 권리는 CC0 1.0(https://creativecommons.org/publicdomain/zero/1.0/deed.ko)에 따라 퍼블릭 도메인에 헌정합니다. 이 헌정은 원저작물과 출처에 적은 인간의 기여에 대한 권리에 영향을 주지 않으며, 그것들을 이용할 권한을 부여하지 않습니다. 제3자의 권리 고지와 이미 주어진 허락은 그대로 유효합니다.
 
-These editions are made available free of charge for non-commercial, purely educational purposes, on the presumption that the respective rights holders would not object to these translations and transcriptions being freely available alongside the French originals on [NUMDAM](https://www.numdam.org/journals/PMIHES/). This presumption is not a statement that permission has been obtained; free access to the originals does not itself grant permission to translate, adapt or republish them.
-
-If you hold rights in any material presented here and object to its availability, please [open a GitHub issue](https://github.com/KokunoYumeto/ega-ko/issues). The publisher will take down the affected material at the rights holder's request.
+이 판은 [NUMDAM](https://www.numdam.org/journals/PMIHES/)의 프랑스어 원문 곁에서 무료로, 비상업적 교육 목적으로 제공되며, 권리자들이 이에 반대하지 않으리라는 전제에 서 있습니다. 이 전제는 허락을 받았다는 뜻이 아닙니다. 여기 있는 자료에 대한 권리를 가진 분이 그 공개에 반대하시면 [GitHub 이슈](https://github.com/KokunoYumeto/ega-ko/issues)를 열어 주십시오. 해당 자료를 내리겠습니다.

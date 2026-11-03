@@ -1,10 +1,8 @@
-# Purpose and use
+# 목적과 이용
 
-This is an independent, non-commercial, educational edition. It was made and paid for privately by its
-maintainer, so that people can read the works of Alexander Grothendieck and his collaborators in their own
-language. Nothing here is sold, and no revenue is collected. The aim is to turn this material into open teaching
-resources, including public lesson plans.
+이 판은 독립적이고 비상업적인 교육용 판입니다. 관리자가 개인적으로 만들고 비용을 부담했으며, 누구나 알렉상드르
+그로텐디크와 그 협력자들의 저작을 자기 언어로 읽을 수 있게 하려는 것입니다. 여기서는 아무것도 팔지 않으며 어떤
+수익도 받지 않습니다. 이 자료를 공개 교안을 포함한 열린 교육 자료로 만드는 것이 목표입니다.
 
-The original works remain their authors' work, and the rights in them remain with their holders; this edition
-claims no ownership of the originals. The original texts are freely readable elsewhere, for example on Numdam and
-arXiv.
+원저작물은 여전히 원저자의 저작이고, 그에 대한 권리는 권리자에게 있습니다. 이 판은 원저작물에 대한 소유권을
+주장하지 않습니다. 원문은 Numdam, arXiv 등에서 무료로 읽을 수 있습니다.

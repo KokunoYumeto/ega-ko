@@ -1,31 +1,22 @@
-# Rights and availability
+권리와 이용 조건
+================
 
-Rights in the original works and in any protected contributions to these derivative translations and transcriptions remain with their respective rights holders. Anything in these editions that the publisher holds rights to is dedicated to the public domain under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). Existing third-party notices and any permissions already granted remain applicable.
+원저작물은 알렉상드르 그로텐디크(Alexander Grothendieck)와 장 디외도네(Jean Dieudonné)의 『대수기하학 원론』
+(Éléments de géométrie algébrique)입니다. 원저작물, 그 역사적 프랑스어 판, 제3자의 참고문헌 자료에 대한 권리는 각
+권리자에게 있습니다.
 
-These editions are made available free of charge for non-commercial, purely educational purposes, on the presumption that the respective rights holders would not object to these translations and transcriptions being freely available alongside the French originals on [NUMDAM](https://www.numdam.org/journals/PMIHES/). This presumption is not a statement that permission has been obtained; free access to the originals does not itself grant permission to translate, adapt or republish them.
+출판자가 AI가 만든 한국어 번역, 교정, 조판, 메타데이터에 대해 권리를 가지는 범위에서, 그 권리는 CC0 1.0
+유니버설(https://creativecommons.org/publicdomain/zero/1.0/deed.ko)에 따라 퍼블릭 도메인에 헌정합니다. 이 헌정은
+원저작물에 대한 권리에 영향을 주지 않으며 원저작물을 이용할 권한을 부여하지 않습니다. 제3자의 권리 고지와 이미
+주어진 허락은 그대로 유효합니다.
 
-If you hold rights in any material presented here and object to its availability, please [open a GitHub issue](https://github.com/KokunoYumeto/ega-ko/issues). The publisher will take down the affected material at the rights holder's request.
+이 판은 NUMDAM(https://www.numdam.org/journals/PMIHES/)의 프랑스어 원문 곁에서 무료로, 비상업적 교육 목적으로
+제공되며, 권리자들이 이에 반대하지 않으리라는 전제에 서 있습니다. 이 전제는 허락을 받았다는 뜻이 아닙니다.
+여기 있는 자료에 대한 권리를 가진 분이 그 공개에 반대하시면 GitHub 이슈
+(https://github.com/KokunoYumeto/ega-ko/issues)를 열어 주십시오. 해당 자료를 내리겠습니다.
 
-The conditional project-contribution notice below is retained with its limited scope. It does not license the underlying work or third-party translations. Any rights actually granted under that notice remain subject to its stated limits.
-
-KOREAN TRANSLATION AND EDITORIAL APPARATUS
-==========================================
-
-To the extent that the Interlanguage project holds rights in the Korean
-translation, Korean typesetting, project-authored metadata, indexes, decision
-records, and QA evidence in this repository, those materials are licensed
-under Creative Commons Attribution 4.0 International (CC BY 4.0):
-
-https://creativecommons.org/licenses/by/4.0/
-
-Project contribution: "AI typesetting & translation."
-
-UNDERLYING WORK AND SOURCE EDITION
-==================================
-
-The underlying mathematical work is by Alexander Grothendieck and Jean
-Dieudonné. The historical French edition and third-party bibliographic
-material retain their own rights and attribution. This file does not purport
-to relicense rights that the Interlanguage project does not hold. The release
-includes Korean editable source and exact identifiers/hashes for the French
-authority; it does not bundle the complete French authority file.
+이전 고지: 한국어 번역, 한국어 조판, 프로젝트가 작성한 메타데이터, 색인, 선택 기록, 검증 증거에는 이전에
+CC BY 4.0(https://creativecommons.org/licenses/by/4.0/) 이용허락 고지가 있었고, 그 고지는 명시된 제한된 범위에서
+유지됩니다(기여 표시: "AI typesetting & translation"). 이 고지는 원저작물이나 제3자의 번역에 대한 이용허락이
+아닙니다. 공개판에는 한국어 편집 원본과 프랑스어 원문의 정확한 식별자와 해시가 들어 있으며, 프랑스어 원문 파일
+자체는 들어 있지 않습니다.

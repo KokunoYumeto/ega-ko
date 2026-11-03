@@ -2,7 +2,7 @@
 
 Release `2026-09-06-r39` advances the source-synchronized Korean EGA II translation through §2.2.6 while preserving every previously admitted Korean unit. The cumulative reader contains complete Korean EGA 0_I and EGA I, the complete EGA II Chapter II programme/table of contents, and contiguous EGA II main text from canonical `ega2-1-fr.tex` lines 1–1780. EGA II and the full corpus remain incomplete. Work resumes after blank line 1781 at line 1782, environment 2.2.7.
 
-The evolving Korean edition is identified by [concept DOI 10.5281/zenodo.21921513](https://doi.org/10.5281/zenodo.21921513); this immutable checkpoint is identified by [exact DOI 10.5281/zenodo.22416007](https://doi.org/10.5281/zenodo.22416007). The working lineage remains [KokunoYumeto/ega-ko](https://github.com/KokunoYumeto/ega-ko). The preceding [r38 record](https://doi.org/10.5281/zenodo.22346664) and GitHub release remain immutable.
+The working lineage remains [KokunoYumeto/ega-ko](https://github.com/KokunoYumeto/ega-ko). The preceding r38 GitHub release remains immutable.
 
 ## R39 increment
 

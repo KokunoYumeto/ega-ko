@@ -8,8 +8,6 @@ The front reader is 249 A4 pages, 1,542,495 bytes, SHA-256 `668E8008D24C5B676D18
 
 This is a worthwhile cumulative checkpoint, not a completion claim. EGA II continues at Proposition 2.5.13 after blank canonical line 2695. Editable TeX and rendered formulae remain authoritative where legacy mathematics-font extraction is lossy.
 
-- Stable Korean EGA DOI: https://doi.org/10.5281/zenodo.21921513
-- Exact r48 DOI: https://doi.org/10.5281/zenodo.22645017
 - Repository: https://github.com/KokunoYumeto/ega-ko
 
 Alexander Grothendieck and Jean Dieudonné remain the historical creators. `AI typesetting & translation` is the sole standardized project contributor. The edition is independently maintained and is not endorsed by the historical authors, NUMDAM, IHÉS, publishers, repositories, or cited third parties. CC BY 4.0 applies only where the project holds the relevant rights; underlying works and third-party material retain their exact provenance, attribution, rights, and licence status.

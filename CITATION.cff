@@ -8,8 +8,7 @@ authors:
   given-names: Jean
 version: 2026-09-23-ega3-iii2-complete
 date-released: '2026-09-23'
-doi: 10.5281/zenodo.22922228
-url: https://doi.org/10.5281/zenodo.21921513
+url: https://github.com/KokunoYumeto/ega-ko
 preferred-citation:
   type: book
   title: 대수기하학 원론 (EGA) — 한국어 누적판 / Éléments de géométrie algébrique — Korean Cumulative Edition
@@ -22,10 +21,9 @@ preferred-citation:
   - name: AI typesetting & translation
   languages:
   - ko
-  doi: 10.5281/zenodo.22922228
   version: 2026-09-23-ega3-iii2-complete
   year: '2026'
-  url: https://doi.org/10.5281/zenodo.21921513
+  url: https://github.com/KokunoYumeto/ega-ko
 references:
 - type: software
   title: EGA — community English translation
