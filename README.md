@@ -8,8 +8,8 @@ EGA IV 제1분책 가운데 제0장 §§14–23과 제IV장 §1의 번역이 있
 ## 만든 방법
 
 번역, 교정, 편집, 조판은 AI가 했습니다. EGA I–III 누적판은 OpenAI Codex의 GPT-5.6 Sol(Ultra 추론 강도)이
-전사, 번역, 교정, 편집, 조판했습니다. EGA IV 제1분책 원고에는 OpenAI Codex의 GPT-5.6 Sol과 GPT-6 Astra(Ultra)의
-작업이 기록되어 있습니다. 번역의 기준은 프랑스어 원문이며, 영어 공동체 번역(ryankeleti/ega)을 참고 자료로
+전사, 번역, 교정, 편집, 조판했습니다. EGA IV 제1분책은 OpenAI Codex의 GPT-5.6 Sol이 번역하고 GPT-6 Astra가
+검토·교정·조립했습니다(Ultra). 번역의 기준은 프랑스어 원문이며, 영어 공동체 번역(ryankeleti/ega)을 참고 자료로
 썼습니다(「출처와 기여」 참조). 공개판 PDF는 같은 결과가 바이트 단위로 재현되도록 빌드했습니다([BUILD.md](BUILD.md)).
 
 ## 상태
