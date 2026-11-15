@@ -96,6 +96,11 @@
 \newenvironment{namedlemma}[2][]{%
   \par\medskip\noindent\itshape #2 (#1). ---\ }{\par}
 
+
+% --- build fix (typesetting only), 14-15 Nov 2026 ---
+\usepackage{adjustbox}
+\setlength{\emergencystretch}{5em}
+\tolerance=2000
 \begin{document}
 
 % ===== BEGIN EXACT INLINE INPUT: front.tex =====
@@ -42906,11 +42911,11 @@ f^*(\mathcal{E}xt_{\mathcal O_Y}^{p}(\mathcal O_Y^n,\mathcal G))
 을 얻는다. 여기서 $f^*(\mathcal O_Y)=\mathcal O_X$이고, $f^*$가
 완전하므로 두 행은 완전하다. 또한
 \[
-\mathcal{E}xt_{\mathcal O_Y}^p(\mathcal O_Y^n,\mathcal G)=0
+\adjustbox{max width=\displaywidth}{$\displaystyle \mathcal{E}xt_{\mathcal O_Y}^p(\mathcal O_Y^n,\mathcal G)=0
 \quad\hbox{모든 }p>0\hbox{에 대하여},
 \quad\hbox{그리고 마찬가지로}\quad
 \mathcal{E}xt_{\mathcal O_X}^p(\mathcal O_X^n,f^*(\mathcal G))=0
-\quad\hbox{모든 }p>0\hbox{에 대하여}
+\quad\hbox{모든 }p>0\hbox{에 대하여}$}
 \]
 이다 (T, 4.2.3). 귀납가정에 따라 앞 도식의 처음 두 수직 화살표는
 동형이고 오른쪽 항들은 0이므로,
